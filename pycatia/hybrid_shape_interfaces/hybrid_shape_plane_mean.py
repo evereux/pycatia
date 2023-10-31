@@ -67,7 +67,6 @@ class HybridShapePlaneMean(Plane):
                 |         Boundary object): Vertex.
 
         :param Reference i_passing_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_plane_mean.AddPoint(i_passing_point.com_object)
@@ -107,7 +106,6 @@ class HybridShapePlaneMean(Plane):
 
         :param int i_rank:
         :param Reference o_passing_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_plane_mean.GetPoint(i_rank, o_passing_point.com_object)
@@ -145,7 +143,6 @@ class HybridShapePlaneMean(Plane):
                 |             position of point
 
         :param Reference i_point:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_plane_mean.GetPos(i_point.com_object)
@@ -165,7 +162,6 @@ class HybridShapePlaneMean(Plane):
                 |         oSize
                 |             position of point
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_plane_mean.GetSize()
@@ -180,7 +176,6 @@ class HybridShapePlaneMean(Plane):
                 | 
                 |     Removes all elements in the list of points.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_plane_mean.RemoveAll()
@@ -201,7 +196,6 @@ class HybridShapePlaneMean(Plane):
                 |             The rank of the point to remove
 
         :param int i_rank:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_plane_mean.RemoveElement(i_rank)
@@ -226,7 +220,6 @@ class HybridShapePlaneMean(Plane):
 
         :param Reference i_point:
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_plane_mean.ReplacePointAtPosition(i_point.com_object, i_pos)

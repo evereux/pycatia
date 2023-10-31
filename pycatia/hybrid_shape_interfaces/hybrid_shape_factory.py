@@ -210,7 +210,6 @@ class HybridShapeFactory(Factory):
         :param int i_orientation1:
         :param int i_orientation2:
         :param bool i_trim:
-        :return: HybridShapeCorner
         :rtype: HybridShapeCorner
         """
         return HybridShapeCorner(
@@ -267,7 +266,6 @@ class HybridShapeFactory(Factory):
         :param float i_offset:
         :param float i_corner_radius:
         :param float i_corner_tension:
-        :return: HybridShape3DCurveOffset
         :rtype: HybridShape3DCurveOffset
         """
         return HybridShape3DCurveOffset(
@@ -319,7 +317,6 @@ class HybridShapeFactory(Factory):
         :param float i_x_ratio:
         :param float i_y_ratio:
         :param float i_z_ratio:
-        :return: HybridShapeAffinity
         :rtype: HybridShapeAffinity
         """
         return HybridShapeAffinity(
@@ -351,7 +348,6 @@ class HybridShapeFactory(Factory):
                 |             Created axis line
 
         :param Reference i_element:
-        :return: HybridShapeAxisLine
         :rtype: HybridShapeAxisLine
         """
         return HybridShapeAxisLine(self.hybrid_shape_factory.AddNewAxisLine(i_element.com_object))
@@ -388,7 +384,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_object:
         :param Reference i_reference_axis:
         :param Reference i_target_axis:
-        :return: HybridShapeAxisToAxis
         :rtype: HybridShapeAxisToAxis
         """
         return HybridShapeAxisToAxis(
@@ -414,7 +409,6 @@ class HybridShapeFactory(Factory):
                 |         oBlend
                 |             The Blend object if succeded
 
-        :return: HybridShapeBlend
         :rtype: HybridShapeBlend
         """
         return HybridShapeBlend(self.hybrid_shape_factory.AddNewBlend())
@@ -461,7 +455,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_initial_element:
         :param Reference i_support:
         :param int i_typede_propagation:
-        :return: HybridShapeBoundary
         :rtype: HybridShapeBoundary
         """
         return HybridShapeBoundary(
@@ -493,7 +486,6 @@ class HybridShapeFactory(Factory):
                 |             parameter
 
         :param Reference surface:
-        :return: HybridShapeBoundary
         :rtype: HybridShapeBoundary
         """
         return HybridShapeBoundary(self.hybrid_shape_factory.AddNewBoundaryOfSurface(surface.com_object))
@@ -517,7 +509,6 @@ class HybridShapeFactory(Factory):
                 |             oBump Bump result
 
         :param Reference i_body_to_bump:
-        :return: HybridShapeBump
         :rtype: HybridShapeBump
         """
         return HybridShapeBump(self.hybrid_shape_factory.AddNewBump(i_body_to_bump.com_object))
@@ -579,7 +570,6 @@ class HybridShapeFactory(Factory):
         :param bool i_geodesic:
         :param float i_radius:
         :param int i_ori:
-        :return: HybridShapeCircle2PointsRad
         :rtype: HybridShapeCircle2PointsRad
         """
         return HybridShapeCircle2PointsRad(
@@ -632,7 +622,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_point1:
         :param Reference i_point2:
         :param Reference i_point3:
-        :return: HybridShapeCircle3Points
         :rtype: HybridShapeCircle3Points
         """
         return HybridShapeCircle3Points(
@@ -700,7 +689,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_support:
         :param int i_ori1:
         :param int i_ori2:
-        :return: HybridShapeCircleBitangentPoint
         :rtype: HybridShapeCircleBitangentPoint
         """
         return HybridShapeCircleBitangentPoint(
@@ -770,7 +758,6 @@ class HybridShapeFactory(Factory):
         :param float i_radius:
         :param int i_ori1:
         :param int i_ori2:
-        :return: HybridShapeCircleBitangentRadius
         :rtype: HybridShapeCircleBitangentRadius
         """
         return HybridShapeCircleBitangentRadius(
@@ -823,7 +810,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_point:
         :param float i_value:
         :param bool i_projection:
-        :return: HybridShapeCircleCenterAxis
         :rtype: HybridShapeCircleCenterAxis
         """
         return HybridShapeCircleCenterAxis(
@@ -888,7 +874,6 @@ class HybridShapeFactory(Factory):
         :param bool i_projection:
         :param float i_start_angle:
         :param float i_end_angle:
-        :return: HybridShapeCircleCenterAxis
         :rtype: HybridShapeCircleCenterAxis
         """
         return HybridShapeCircleCenterAxis(
@@ -941,7 +926,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_tangent_curve:
         :param Reference i_support:
         :param float i_radius:
-        :return: HybridShapeCircleCenterTangent
         :rtype: HybridShapeCircleCenterTangent
         """
         return HybridShapeCircleCenterTangent(
@@ -997,7 +981,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_crossing_point:
         :param Reference i_support:
         :param bool i_geodesic:
-        :return: HybridShapeCircleCtrPt
         :rtype: HybridShapeCircleCtrPt
         """
         return HybridShapeCircleCtrPt(
@@ -1063,7 +1046,6 @@ class HybridShapeFactory(Factory):
         :param bool i_geodesic:
         :param float i_start_angle:
         :param float i_end_angle:
-        :return: HybridShapeCircleCtrPt
         :rtype: HybridShapeCircleCtrPt
         """
         return HybridShapeCircleCtrPt(
@@ -1120,7 +1102,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_support:
         :param bool i_geodesic:
         :param float i_radius:
-        :return: HybridShapeCircleCtrRad
         :rtype: HybridShapeCircleCtrRad
         """
         return HybridShapeCircleCtrRad(
@@ -1185,7 +1166,6 @@ class HybridShapeFactory(Factory):
         :param float i_radius:
         :param float i_start_angle:
         :param float i_end_angle:
-        :return: HybridShapeCircleCtrRad
         :rtype: HybridShapeCircleCtrRad
         """
         return HybridShapeCircleCtrRad(
@@ -1221,7 +1201,6 @@ class HybridShapeFactory(Factory):
                 |             occurs.
 
         :param Reference i_object:
-        :return: HybridShapeCircleExplicit
         :rtype: HybridShapeCircleExplicit
         """
         return HybridShapeCircleExplicit(self.hybrid_shape_factory.AddNewCircleDatum(i_object.com_object))
@@ -1287,7 +1266,6 @@ class HybridShapeFactory(Factory):
         :param int i_ori1:
         :param int i_ori2:
         :param int i_ori3:
-        :return: HybridShapeCircleTritangent
         :rtype: HybridShapeCircleTritangent
         """
         return HybridShapeCircleTritangent(
@@ -1344,7 +1322,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_first_curve:
         :param Reference i_second_curve:
         :param int i_nearest_solutions:
-        :return: HybridShapeCombine
         :rtype: HybridShapeCombine
         """
         return HybridShapeCombine(
@@ -1394,7 +1371,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_support:
         :param Reference i_starting_point:
         :param Reference i_end_point:
-        :return: HybridShapeConic
         :rtype: HybridShapeConic
         """
         return HybridShapeConic(self.hybrid_shape_factory.AddNewConic(
@@ -1457,7 +1433,6 @@ class HybridShapeFactory(Factory):
         :param float i_angle:
         :param int i_orientation_support:
         :param int i_type:
-        :return: HybridShapeReflectLine
         :rtype: HybridShapeReflectLine
         """
         return HybridShapeReflectLine(
@@ -1553,7 +1528,6 @@ class HybridShapeFactory(Factory):
         :param int i_continuity2:
         :param float i_tension2:
         :param bool trim:
-        :return: HybridShapeConnect
         :rtype: HybridShapeConnect
         """
         return HybridShapeConnect(
@@ -1637,7 +1611,6 @@ class HybridShapeFactory(Factory):
         :param int i_orientation1:
         :param int i_orientation2:
         :param bool i_trim:
-        :return: HybridShapeCorner
         :rtype: HybridShapeCorner
         """
         return HybridShapeCorner(
@@ -1674,7 +1647,6 @@ class HybridShapeFactory(Factory):
                 |             occurs.
 
         :param Reference i_object:
-        :return: HybridShapeCurveExplicit
         :rtype: HybridShapeCurveExplicit
         """
         return HybridShapeCurveExplicit(self.hybrid_shape_factory.AddNewCurveDatum(i_object.com_object))
@@ -1727,7 +1699,6 @@ class HybridShapeFactory(Factory):
         :param float distance:
         :param bool invert_direction:
         :param bool geodesic:
-        :return: HybridShapeCurvePar
         :rtype: HybridShapeCurvePar
         """
         return HybridShapeCurvePar(
@@ -1759,7 +1730,6 @@ class HybridShapeFactory(Factory):
                 |             Smoothened curve
 
         :param Reference ip_ia_curve:
-        :return: HybridShapeCurveSmooth
         :rtype: HybridShapeCurveSmooth
         """
         return HybridShapeCurveSmooth(self.hybrid_shape_factory.AddNewCurveSmooth(ip_ia_curve.com_object))
@@ -1808,7 +1778,6 @@ class HybridShapeFactory(Factory):
         :param float i_first_length:
         :param float i_second_length:
         :param HybridShapeDirection i_direction:
-        :return: HybridShapeCylinder
         :rtype: HybridShapeCylinder
         """
         return HybridShapeCylinder(
@@ -1864,7 +1833,6 @@ class HybridShapeFactory(Factory):
                 |                   reference
 
         :param Reference i_elem:
-        :return: tuple
         :rtype: tuple
         """
         # return self.hybrid_shape_factory.AddNewDatums(i_elem.com_object)
@@ -1912,7 +1880,6 @@ class HybridShapeFactory(Factory):
         :param int i_mode:
         :param Reference i_to_develop:
         :param Reference i_support:
-        :return: HybridShapeDevelop
         :rtype: HybridShapeDevelop
         """
         return HybridShapeDevelop(
@@ -1950,7 +1917,6 @@ class HybridShapeFactory(Factory):
                 |         Created direction.
 
         :param Reference i_element:
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
         return HybridShapeDirection(self.hybrid_shape_factory.AddNewDirection(i_element.com_object))
@@ -1982,7 +1948,6 @@ class HybridShapeFactory(Factory):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
         return HybridShapeDirection(self.hybrid_shape_factory.AddNewDirectionByCoord(i_x, i_y, i_z))
@@ -1997,7 +1962,6 @@ class HybridShapeFactory(Factory):
                 |
                 |     Creates a new empty Rotate within the current body.
 
-        :return: HybridShapeRotate
         :rtype: HybridShapeRotate
         """
         return HybridShapeRotate(self.hybrid_shape_factory.AddNewEmptyRotate())
@@ -2012,7 +1976,6 @@ class HybridShapeFactory(Factory):
                 |
                 |     Creates a new empty Translate within the current body.
 
-        :return: HybridShapeTranslate
         :rtype: HybridShapeTranslate
         """
         return HybridShapeTranslate(self.hybrid_shape_factory.AddNewEmptyTranslate())
@@ -2040,7 +2003,6 @@ class HybridShapeFactory(Factory):
                 |         The extracted object
 
         :param Reference element:
-        :return: HybridShapeExtract
         :rtype: HybridShapeExtract
         """
         return HybridShapeExtract(self.hybrid_shape_factory.AddNewExtract(element.com_object))
@@ -2068,7 +2030,6 @@ class HybridShapeFactory(Factory):
                 |         The extracted object
 
         :param Reference element:
-        :return: HybridShapeExtractMulti
         :rtype: HybridShapeExtractMulti
         """
         return HybridShapeExtractMulti(self.hybrid_shape_factory.AddNewExtractMulti(element.com_object))
@@ -2112,7 +2073,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_boundary:
         :param Reference i_to_extrapol:
         :param float i_length:
-        :return: HybridShapeExtrapol
         :rtype: HybridShapeExtrapol
         """
         return HybridShapeExtrapol(
@@ -2162,7 +2122,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_boundary:
         :param Reference i_to_extrapol:
         :param Reference i_until:
-        :return: HybridShapeExtrapol
         :rtype: HybridShapeExtrapol
         """
         return HybridShapeExtrapol(
@@ -2204,7 +2163,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_objet:
         :param HybridShapeDirection i_dir:
         :param int i_min_max:
-        :return: HybridShapeExtremum
         :rtype: HybridShapeExtremum
         """
         return HybridShapeExtremum(
@@ -2238,7 +2196,6 @@ class HybridShapeFactory(Factory):
 
         :param int i_type:
         :param Reference ip_ia_contour:
-        :return: HybridShapeExtremumPolar
         :rtype: HybridShapeExtremumPolar
         """
         return HybridShapeExtremumPolar(self.hybrid_shape_factory.AddNewExtremumPolar(i_type, ip_ia_contour.com_object))
@@ -2284,7 +2241,6 @@ class HybridShapeFactory(Factory):
         :param float i_offset_debut:
         :param float i_offset_fin:
         :param HybridShapeDirection i_direction:
-        :return: HybridShapeExtrude
         :rtype: HybridShapeExtrude
         """
         return HybridShapeExtrude(
@@ -2311,7 +2267,6 @@ class HybridShapeFactory(Factory):
                 |         oFill
                 |             Fill object
 
-        :return: HybridShapeFill
         :rtype: HybridShapeFill
         """
         return HybridShapeFill(self.hybrid_shape_factory.AddNewFill())
@@ -2374,7 +2329,6 @@ class HybridShapeFactory(Factory):
         :param int i_orientation2:
         :param int i_supports_trim_mode:
         :param int i_ribbon_relimitation_mode:
-        :return: HybridShapeFilletBiTangent
         :rtype: HybridShapeFilletBiTangent
         """
         return HybridShapeFilletBiTangent(
@@ -2454,7 +2408,6 @@ class HybridShapeFactory(Factory):
         :param int i_remove_orientation:
         :param int i_supports_trim_mode:
         :param int i_ribbon_relimitation_mode:
-        :return: HybridShapeFilletTriTangent
         :rtype: HybridShapeFilletTriTangent
         """
         return HybridShapeFilletTriTangent(
@@ -2489,7 +2442,6 @@ class HybridShapeFactory(Factory):
                 |             The created healing
 
         :param Reference i_body_toheal:
-        :return: HybridShapeHealing
         :rtype: HybridShapeHealing
         """
         return HybridShapeHealing(self.hybrid_shape_factory.AddNewHealing(i_body_toheal.com_object))
@@ -2563,7 +2515,6 @@ class HybridShapeFactory(Factory):
         :param float i_starting_angle:
         :param float i_taper_angle:
         :param bool i_taper_outward:
-        :return: HybridShapeHelix
         :rtype: HybridShapeHelix
         """
         return HybridShapeHelix(
@@ -2614,7 +2565,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_elem_to_scale:
         :param Reference i_center:
         :param float i_ratio:
-        :return: HybridShapeScaling
         :rtype: HybridShapeScaling
         """
         return HybridShapeScaling(
@@ -2661,7 +2611,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_element1:
         :param Reference i_element2:
         :param int i_orientation:
-        :return: HybridShapeSplit
         :rtype: HybridShapeSplit
         """
         return HybridShapeSplit(
@@ -2712,7 +2661,6 @@ class HybridShapeFactory(Factory):
         :param int i_orientation1:
         :param Reference i_element2:
         :param int i_orientation2:
-        :return: HybridShapeTrim
         :rtype: HybridShapeTrim
         """
         return HybridShapeTrim(
@@ -2742,7 +2690,6 @@ class HybridShapeFactory(Factory):
                 |             0 : None | 1 : Constant | 2 : Linear | 3 : SType | 4 : Advanced | 5 : Implicit
 
         :param int i_type:
-        :return: HybridShapeIntegratedLaw
         :rtype: HybridShapeIntegratedLaw
         """
         return HybridShapeIntegratedLaw(self.hybrid_shape_factory.AddNewIntegratedLaw(i_type))
@@ -2776,7 +2723,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_object1:
         :param Reference i_object2:
-        :return: HybridShapeIntersection
         :rtype: HybridShapeIntersection
         """
         return HybridShapeIntersection(
@@ -2809,7 +2755,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference element:
         :param int inverse:
-        :return: HybridShapeInverse
         :rtype: HybridShapeInverse
         """
         return HybridShapeInverse(self.hybrid_shape_factory.AddNewInverse(element.com_object, inverse))
@@ -2845,7 +2790,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference element1:
         :param Reference element2:
-        :return: HybridShapeAssemble
         :rtype: HybridShapeAssemble
         """
         return HybridShapeAssemble(self.hybrid_shape_factory.AddNewJoin(element1.com_object, element2.com_object))
@@ -2878,7 +2822,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_reference:
         :param Reference i_definition:
-        :return: HybridShapeLawDistProj
         :rtype: HybridShapeLawDistProj
         """
         return HybridShapeLawDistProj(
@@ -2950,7 +2893,6 @@ class HybridShapeFactory(Factory):
         :param float i_end_offset:
         :param float i_angle:
         :param bool i_orientation:
-        :return: HybridShapeLineAngle
         :rtype: HybridShapeLineAngle
         """
         return HybridShapeLineAngle(
@@ -3006,7 +2948,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_curve1:
         :param Reference i_element2:
         :param Reference i_support:
-        :return: HybridShapeLineBiTangent
         :rtype: HybridShapeLineBiTangent
         """
         return HybridShapeLineBiTangent(
@@ -3070,7 +3011,6 @@ class HybridShapeFactory(Factory):
         :param float i_end_offset:
         :param bool i_orientation:
         :param int solution_nb:
-        :return: HybridShapeLineBisecting
         :rtype: HybridShapeLineBisecting
         """
         return HybridShapeLineBisecting(
@@ -3145,7 +3085,6 @@ class HybridShapeFactory(Factory):
         :param float i_end_offset:
         :param bool i_orientation:
         :param int solution_nb:
-        :return: HybridShapeLineBisecting
         :rtype: HybridShapeLineBisecting
         """
         return HybridShapeLineBisecting(
@@ -3227,7 +3166,6 @@ class HybridShapeFactory(Factory):
         :param float i_end_offset:
         :param bool i_orientation:
         :param int solution_nb:
-        :return: HybridShapeLineBisecting
         :rtype: HybridShapeLineBisecting
         """
         return HybridShapeLineBisecting(
@@ -3304,7 +3242,6 @@ class HybridShapeFactory(Factory):
         :param float i_end_offset:
         :param bool i_orientation:
         :param int solution_nb:
-        :return: HybridShapeLineBisecting
         :rtype: HybridShapeLineBisecting
         """
         return HybridShapeLineBisecting(
@@ -3341,7 +3278,6 @@ class HybridShapeFactory(Factory):
                 |             occurs.
 
         :param Reference i_object:
-        :return: HybridShapeLineExplicit
         :rtype: HybridShapeLineExplicit
         """
         return HybridShapeLineExplicit(self.hybrid_shape_factory.AddNewLineDatum(i_object.com_object))
@@ -3394,7 +3330,6 @@ class HybridShapeFactory(Factory):
         :param float i_begin_offset:
         :param float i_end_offset:
         :param bool i_orientation:
-        :return: HybridShapeLineNormal
         :rtype: HybridShapeLineNormal
         """
         return HybridShapeLineNormal(
@@ -3454,7 +3389,6 @@ class HybridShapeFactory(Factory):
         :param float i_begin_offset:
         :param float i_end_offset:
         :param bool i_orientation:
-        :return: HybridShapeLinePtDir
         :rtype: HybridShapeLinePtDir
         """
         return HybridShapeLinePtDir(
@@ -3522,7 +3456,6 @@ class HybridShapeFactory(Factory):
         :param float i_begin_offset:
         :param float i_end_offset:
         :param bool i_orientation:
-        :return: HybridShapeLinePtDir
         :rtype: HybridShapeLinePtDir
         """
         return HybridShapeLinePtDir(
@@ -3567,7 +3500,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_pt_origine:
         :param Reference i_pt_extremite:
-        :return: HybridShapeLinePtPt
         :rtype: HybridShapeLinePtPt
         """
         return HybridShapeLinePtPt(
@@ -3619,7 +3551,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt_extremite:
         :param float i_begin_offset:
         :param float i_end_offset:
-        :return: HybridShapeLinePtPt
         :rtype: HybridShapeLinePtPt
         """
         return HybridShapeLinePtPt(
@@ -3671,7 +3602,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt_origine:
         :param Reference i_pt_extremite:
         :param Reference i_support:
-        :return: HybridShapeLinePtPt
         :rtype: HybridShapeLinePtPt
         """
         return HybridShapeLinePtPt(
@@ -3732,7 +3662,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_support:
         :param float i_begin_offset:
         :param float i_end_offset:
-        :return: HybridShapeLinePtPt
         :rtype: HybridShapeLinePtPt
         """
         return HybridShapeLinePtPt(
@@ -3794,7 +3723,6 @@ class HybridShapeFactory(Factory):
         :param float i_begin_offset:
         :param float i_end_offset:
         :param bool i_orientation:
-        :return: HybridShapeLineTangency
         :rtype: HybridShapeLineTangency
         """
         return HybridShapeLineTangency(
@@ -3864,7 +3792,6 @@ class HybridShapeFactory(Factory):
         :param float i_begin_offset:
         :param float i_end_offset:
         :param bool i_orientation:
-        :return: HybridShapeLineTangency
         :rtype: HybridShapeLineTangency
         """
         return HybridShapeLineTangency(
@@ -3893,7 +3820,6 @@ class HybridShapeFactory(Factory):
                 |         oExt
                 |             CATIAHybridShapeLoft created
 
-        :return: HybridShapeLoft
         :rtype: HybridShapeLoft
         """
         return HybridShapeLoft(self.hybrid_shape_factory.AddNewLoft())
@@ -3930,7 +3856,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_support:
         :param int i_creation_mode:
         :param float i_threshold:
-        :return: HybridShapeMidSurface
         :rtype: HybridShapeMidSurface
         """
         return HybridShapeMidSurface(
@@ -3978,7 +3903,6 @@ class HybridShapeFactory(Factory):
         :param int i_creation_mode:
         :param float i_threshold:
         :param int i_auto_thickness_threshold:
-        :return: HybridShapeMidSurface
         :rtype: HybridShapeMidSurface
         """
         return HybridShapeMidSurface(
@@ -4020,7 +3944,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference multi_element:
         :param Reference reference_element:
-        :return: HybridShapeNear
         :rtype: HybridShapeNear
         """
         return HybridShapeNear(
@@ -4070,7 +3993,6 @@ class HybridShapeFactory(Factory):
         :param float i_offset:
         :param bool i_orientation:
         :param float i_precision:
-        :return: HybridShapeOffset
         :rtype: HybridShapeOffset
         """
         return HybridShapeOffset(
@@ -4106,7 +4028,6 @@ class HybridShapeFactory(Factory):
                 |         Created plane
 
         :param Reference i_planar_curve:
-        :return: HybridShapePlane1Curve
         :rtype: HybridShapePlane1Curve
         """
         return HybridShapePlane1Curve(self.hybrid_shape_factory.AddNewPlane1Curve(i_planar_curve.com_object))
@@ -4141,7 +4062,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_ln:
         :param Reference i_pt:
-        :return: HybridShapePlane1Line1Pt
         :rtype: HybridShapePlane1Line1Pt
         """
         return HybridShapePlane1Line1Pt(self.hybrid_shape_factory.AddNewPlane1Line1Pt(i_ln.com_object, i_pt.com_object))
@@ -4177,7 +4097,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_ln1:
         :param Reference i_ln2:
-        :return: HybridShapePlane2Lines
         :rtype: HybridShapePlane2Lines
         """
         return HybridShapePlane2Lines(self.hybrid_shape_factory.AddNewPlane2Lines(i_ln1.com_object, i_ln2.com_object))
@@ -4216,7 +4135,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt1:
         :param Reference i_pt2:
         :param Reference i_pt3:
-        :return: HybridShapePlane3Points
         :rtype: HybridShapePlane3Points
         """
         return HybridShapePlane3Points(
@@ -4267,7 +4185,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_revol_axis:
         :param float i_angle:
         :param bool i_orientation:
-        :return: HybridShapePlaneAngle
         :rtype: HybridShapePlaneAngle
         """
         return HybridShapePlaneAngle(
@@ -4301,7 +4218,6 @@ class HybridShapeFactory(Factory):
                 |             occurs.
 
         :param Reference i_object:
-        :return: HybridShapePlaneExplicit
         :rtype: HybridShapePlaneExplicit
         """
         return HybridShapePlaneExplicit(self.hybrid_shape_factory.AddNewPlaneDatum(i_object.com_object))
@@ -4342,7 +4258,6 @@ class HybridShapeFactory(Factory):
         :param float i_b_coeff:
         :param float i_c_coeff:
         :param float i_d_coeff:
-        :return: HybridShapePlaneEquation
         :rtype: HybridShapePlaneEquation
         """
         return HybridShapePlaneEquation(
@@ -4378,7 +4293,6 @@ class HybridShapeFactory(Factory):
 
         :param tuple i_list_of_points:
         :param int nb_point:
-        :return: HybridShapePlaneMean
         :rtype: HybridShapePlaneMean
         """
         return HybridShapePlaneMean(self.hybrid_shape_factory.AddNewPlaneMean(i_list_of_points, nb_point))
@@ -4411,7 +4325,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_curve:
         :param Reference i_pt:
-        :return: HybridShapePlaneNormal
         :rtype: HybridShapePlaneNormal
         """
         return HybridShapePlaneNormal(self.hybrid_shape_factory.AddNewPlaneNormal(i_curve.com_object, i_pt.com_object))
@@ -4447,7 +4360,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_plane:
         :param float i_offset:
         :param bool i_orientation:
-        :return: HybridShapePlaneOffset
         :rtype: HybridShapePlaneOffset
         """
         return HybridShapePlaneOffset(
@@ -4487,7 +4399,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_plane:
         :param Reference i_pt:
-        :return: HybridShapePlaneOffsetPt
         :rtype: HybridShapePlaneOffsetPt
         """
         return HybridShapePlaneOffsetPt(
@@ -4524,7 +4435,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_surface:
         :param Reference i_pt:
-        :return: HybridShapePlaneTangent
         :rtype: HybridShapePlaneTangent
         """
         return HybridShapePlaneTangent(
@@ -4571,7 +4481,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_point2:
         :param float i_ratio:
         :param int i_orientation:
-        :return: HybridShapePointBetween
         :rtype: HybridShapePointBetween
         """
         return HybridShapePointBetween(
@@ -4606,7 +4515,6 @@ class HybridShapeFactory(Factory):
                 |         Created point
 
         :param Reference i_curve:
-        :return: HybridShapePointCenter
         :rtype: HybridShapePointCenter
         """
         return HybridShapePointCenter(self.hybrid_shape_factory.AddNewPointCenter(i_curve.com_object))
@@ -4638,7 +4546,6 @@ class HybridShapeFactory(Factory):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: HybridShapePointCoord
         :rtype: HybridShapePointCoord
         """
         return HybridShapePointCoord(self.hybrid_shape_factory.AddNewPointCoord(i_x, i_y, i_z))
@@ -4698,7 +4605,6 @@ class HybridShapeFactory(Factory):
         :param float i_y:
         :param float i_z:
         :param Reference i_pt:
-        :return: HybridShapePointCoord
         :rtype: HybridShapePointCoord
         """
         return HybridShapePointCoord(
@@ -4732,7 +4638,6 @@ class HybridShapeFactory(Factory):
                 |             occurs.
 
         :param Reference i_object:
-        :return: HybridShapePointExplicit
         :rtype: HybridShapePointExplicit
         """
         return HybridShapePointExplicit(self.hybrid_shape_factory.AddNewPointDatum(i_object.com_object))
@@ -4779,7 +4684,6 @@ class HybridShapeFactory(Factory):
         :param float i_long:
         :param bool i_orientation:
         :param HybridShapeDirection i_direction:
-        :return: HybridShapePointOnCurve
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
@@ -4827,7 +4731,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_crv:
         :param float i_long:
         :param bool i_orientation:
-        :return: HybridShapePointOnCurve
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
@@ -4875,7 +4778,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_crv:
         :param float i_long:
         :param bool i_orientation:
-        :return: HybridShapePointOnCurve
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
@@ -4934,7 +4836,6 @@ class HybridShapeFactory(Factory):
         :param float i_long:
         :param bool i_orientation:
         :param HybridShapeDirection i_direction:
-        :return: HybridShapePointOnCurve
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
@@ -4991,7 +4892,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt:
         :param float i_long:
         :param bool i_orientation:
-        :return: HybridShapePointOnCurve
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
@@ -5047,7 +4947,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt:
         :param float i_long:
         :param bool i_orientation:
-        :return: HybridShapePointOnCurve
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
@@ -5089,7 +4988,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_plane:
         :param float i_x:
         :param float i_y:
-        :return: HybridShapePointOnPlane
         :rtype: HybridShapePointOnPlane
         """
         return HybridShapePointOnPlane(self.hybrid_shape_factory.AddNewPointOnPlane(i_plane.com_object, i_x, i_y))
@@ -5138,7 +5036,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt:
         :param float i_x:
         :param float i_y:
-        :return: HybridShapePointOnPlane
         :rtype: HybridShapePointOnPlane
         """
         return HybridShapePointOnPlane(
@@ -5185,7 +5082,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_surface:
         :param HybridShapeDirection i_direction:
         :param float i_x:
-        :return: HybridShapePointOnSurface
         :rtype: HybridShapePointOnSurface
         """
         return HybridShapePointOnSurface(
@@ -5239,7 +5135,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt:
         :param HybridShapeDirection i_direction:
         :param float i_x:
-        :return: HybridShapePointOnSurface
         :rtype: HybridShapePointOnSurface
         """
         return HybridShapePointOnSurface(
@@ -5277,7 +5172,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_curve:
         :param HybridShapeDirection i_direction:
-        :return: HybridShapePointTangent
         :rtype: HybridShapePointTangent
         """
         return HybridShapePointTangent(
@@ -5302,7 +5196,6 @@ class HybridShapeFactory(Factory):
                 |         oPolyline
                 |             The Polyline object if succeded
 
-        :return: HybridShapePolyline
         :rtype: HybridShapePolyline
         """
         return HybridShapePolyline(self.hybrid_shape_factory.AddNewPolyline())
@@ -5327,7 +5220,6 @@ class HybridShapeFactory(Factory):
                 |             profile).
 
         :param int i_mode:
-        :return: HybridShapePositionTransfo
         :rtype: HybridShapePositionTransfo
         """
         return HybridShapePositionTransfo(self.hybrid_shape_factory.AddNewPositionTransfo(i_mode))
@@ -5360,7 +5252,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_element:
         :param Reference i_support:
-        :return: HybridShapeProject
         :rtype: HybridShapeProject
         """
         return HybridShapeProject(self.hybrid_shape_factory.AddNewProject(i_element.com_object, i_support.com_object))
@@ -5412,7 +5303,6 @@ class HybridShapeFactory(Factory):
         :param float i_angle:
         :param int i_orientation_support:
         :param int i_orientation_direction:
-        :return: HybridShapeReflectLine
         :rtype: HybridShapeReflectLine
         """
         return HybridShapeReflectLine(
@@ -5482,7 +5372,6 @@ class HybridShapeFactory(Factory):
         :param int i_orientation_support:
         :param int i_orientation_direction:
         :param int i_type:
-        :return: HybridShapeReflectLine
         :rtype: HybridShapeReflectLine
         """
         return HybridShapeReflectLine(
@@ -5542,7 +5431,6 @@ class HybridShapeFactory(Factory):
         :param float i_offset_debut:
         :param float i_offset_fin:
         :param Reference i_axis:
-        :return: HybridShapeRevol
         :rtype: HybridShapeRevol
         """
         return HybridShapeRevol(
@@ -5591,7 +5479,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_to_rotate:
         :param Reference i_axis:
         :param float i_angle:
-        :return: HybridShapeRotate
         :rtype: HybridShapeRotate
         """
         return HybridShapeRotate(
@@ -5617,7 +5504,6 @@ class HybridShapeFactory(Factory):
                 |         oSection
                 |             Created Section
 
-        :return: HybridShapeSection
         :rtype: HybridShapeSection
         """
         return HybridShapeSection(self.hybrid_shape_factory.AddNewSection())
@@ -5676,7 +5562,6 @@ class HybridShapeFactory(Factory):
         :param float i_end_parallel_angle:
         :param float i_begin_meridian_angle:
         :param float i_end_meridian_angle:
-        :return: HybridShapeSphere
         :rtype: HybridShapeSphere
         """
 
@@ -5712,7 +5597,6 @@ class HybridShapeFactory(Factory):
                 |         oExt
                 |             CATIAHybridShapeSpine created
 
-        :return: HybridShapeSpine
         :rtype: HybridShapeSpine
         """
         return HybridShapeSpine(self.hybrid_shape_factory.AddNewSpine())
@@ -5766,7 +5650,6 @@ class HybridShapeFactory(Factory):
         :param HybridShapeDirection i_axis:
         :param float i_starting_radius:
         :param bool i_clockwise_revolution:
-        :return: HybridShapeSpiral
         :rtype: HybridShapeSpiral
         """
         return HybridShapeSpiral(
@@ -5795,7 +5678,6 @@ class HybridShapeFactory(Factory):
                 |         oSpline
                 |             Created spline.
 
-        :return: HybridShapeSpline
         :rtype: HybridShapeSpline
         """
         return HybridShapeSpline(self.hybrid_shape_factory.AddNewSpline())
@@ -5822,7 +5704,6 @@ class HybridShapeFactory(Factory):
                 |             occurs.
 
         :param Reference i_object:
-        :return: HybridShapeSurfaceExplicit
         :rtype: HybridShapeSurfaceExplicit
         """
         return HybridShapeSurfaceExplicit(self.hybrid_shape_factory.AddNewSurfaceDatum(i_object.com_object))
@@ -5850,7 +5731,6 @@ class HybridShapeFactory(Factory):
                 |         Created swept surface.
 
         :param Reference i_guide1:
-        :return: HybridShapeSweepCircle
         :rtype: HybridShapeSweepCircle
         """
         return HybridShapeSweepCircle(self.hybrid_shape_factory.AddNewSweepCircle(i_guide1.com_object))
@@ -5874,7 +5754,6 @@ class HybridShapeFactory(Factory):
                 |             Created swept surface.
 
         :param Reference ip_ia_guide1:
-        :return: HybridShapeSweepConic
         :rtype: HybridShapeSweepConic
         """
         return HybridShapeSweepConic(self.hybrid_shape_factory.AddNewSweepConic(ip_ia_guide1.com_object))
@@ -5907,7 +5786,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_profile:
         :param Reference i_guide:
-        :return: HybridShapeSweepExplicit
         :rtype: HybridShapeSweepExplicit
         """
         return HybridShapeSweepExplicit(
@@ -5936,7 +5814,6 @@ class HybridShapeFactory(Factory):
                 |             Created swept surface.
 
         :param Reference i_guide1:
-        :return: HybridShapeSweepLine
         :rtype: HybridShapeSweepLine
         """
         return HybridShapeSweepLine(self.hybrid_shape_factory.AddNewSweepLine(i_guide1.com_object))
@@ -5969,7 +5846,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_object:
         :param Reference i_reference:
-        :return: HybridShapeSymmetry
         :rtype: HybridShapeSymmetry
         """
         return HybridShapeSymmetry(
@@ -5998,7 +5874,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_element_to_transfer:
         :param int i_type_of_transfer:
-        :return: HybridShapeTransfer
         :rtype: HybridShapeTransfer
         """
         return HybridShapeTransfer(
@@ -6042,7 +5917,6 @@ class HybridShapeFactory(Factory):
         :param Reference i_element:
         :param HybridShapeDirection i_direction:
         :param float i_distance:
-        :return: HybridShapeTranslate
         :rtype: HybridShapeTranslate
         """
         return HybridShapeTranslate(
@@ -6069,7 +5943,6 @@ class HybridShapeFactory(Factory):
                 |         oExt
                 |             Created unfold operation.
 
-        :return: HybridShapeUnfold
         :rtype: HybridShapeUnfold
         """
         return HybridShapeUnfold(self.hybrid_shape_factory.AddNewUnfold())
@@ -6097,7 +5970,6 @@ class HybridShapeFactory(Factory):
                 |             occurs.
 
         :param Reference i_object:
-        :return: HybridShapeVolumeExplicit
         :rtype: HybridShapeVolumeExplicit
         """
         return HybridShapeVolumeExplicit(self.hybrid_shape_factory.AddNewVolumeDatum(i_object.com_object))
@@ -6118,7 +5990,6 @@ class HybridShapeFactory(Factory):
                 |         oWrapCurve
                 |             The Wrap Curve object if succeded
 
-        :return: HybridShapeWrapCurve
         :rtype: HybridShapeWrapCurve
         """
         return HybridShapeWrapCurve(self.hybrid_shape_factory.AddNewWrapCurve())
@@ -6143,7 +6014,6 @@ class HybridShapeFactory(Factory):
                 |             The Wrap Surface object if succeded
 
         :param Reference i_body_to_deform:
-        :return: HybridShapeWrapSurface
         :rtype: HybridShapeWrapSurface
         """
         return HybridShapeWrapSurface(self.hybrid_shape_factory.AddNewWrapSurface(i_body_to_deform.com_object))
@@ -6168,7 +6038,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_elem:
         :param str name:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_factory.ChangeFeatureName(i_elem.com_object, name)
@@ -6204,7 +6073,6 @@ class HybridShapeFactory(Factory):
                 |             Object to delete
 
         :param Reference i_object:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_factory.DeleteObjectForDatum(i_object.com_object)
@@ -6244,7 +6112,6 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_elem:
         :param int show:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_factory.GSMVisibility(i_elem.com_object, show)

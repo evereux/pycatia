@@ -65,7 +65,6 @@ class TritangentFillet(Fillet):
                 | 
                 |              Set removedFace = firstTritangentFillet.FaceToRemove
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -101,7 +100,6 @@ class TritangentFillet(Fillet):
                 | 
                 |              Set face1 = firstTritangentFillet.FirstFace
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -137,7 +135,6 @@ class TritangentFillet(Fillet):
                 | 
                 |              Set face2 = firstTritangentFillet.SecondFace
 
-        :return: Reference
         :rtype: Reference
         """
 

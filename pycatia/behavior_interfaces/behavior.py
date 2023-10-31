@@ -62,7 +62,6 @@ class Behavior(AnyObject):
                 |          Dim BehCollection As Behaviors
                 |          Set BehCollection = Beh.Behaviors
 
-        :return: Behaviors
         :rtype: Behaviors
         """
 
@@ -84,7 +83,6 @@ class Behavior(AnyObject):
                 | 
                 |          Beh.Activate
 
-        :return: None
         :rtype: None
         """
         return self.behavior.Activate()
@@ -104,7 +102,6 @@ class Behavior(AnyObject):
                 | 
                 |          Beh.Deactivate
 
-        :return: None
         :rtype: None
         """
         return self.behavior.Deactivate()
@@ -133,7 +130,6 @@ class Behavior(AnyObject):
                 |          Set BehParameter = Beh.GetInput("Nb_Cylinder")
 
         :param str p_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.behavior.GetInput(p_name))
@@ -161,7 +157,6 @@ class Behavior(AnyObject):
                 |          Set BehPower = Beh.GetOutput("Power")
 
         :param str p_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.behavior.GetOutput(p_name))
@@ -197,7 +192,6 @@ class Behavior(AnyObject):
 
         :param str p_name:
         :param AnyObject o_value:
-        :return: None
         :rtype: None
         """
         return self.behavior.PutOutput(p_name, o_value.com_object)
@@ -225,7 +219,6 @@ class Behavior(AnyObject):
                 |          if (Beh.TestInput("Nb_Cylinder"))
 
         :param str p_name:
-        :return: int
         :rtype: int
         """
         return self.behavior.TestInput(p_name)
@@ -253,7 +246,6 @@ class Behavior(AnyObject):
                 |          if (Beh.TestOutput("Power"))
 
         :param str p_name:
-        :return: int
         :rtype: int
         """
         return self.behavior.TestOutput(p_name)

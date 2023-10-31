@@ -58,7 +58,7 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |         ABQ_ATI_GLOBAL
                 |         ABQ_ATI_ELEMENT_BY_ELEMENT
 
-        :return: int
+        :return: enum auto_time_increment_method
         :rtype: int
         """
 
@@ -67,7 +67,7 @@ class ABQExplicitDynamicsStep(ABQStep):
     @auto_time_increment_method.setter
     def auto_time_increment_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum auto_time_increment_method
         """
 
         self.abq_explicit_dynamics_step.AutoTimeIncrementMethod = value
@@ -93,7 +93,6 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |          Dim abqBCs As ABQBoundaryConditions
                 |          Set abqBCs = abqStep.BoundaryConditions
 
-        :return: ABQBoundaryConditions
         :rtype: ABQBoundaryConditions
         """
 
@@ -114,7 +113,6 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |     Returns:
                 |         The description of the Abaqus explicit dynamics step.
 
-        :return: str
         :rtype: str
         """
 
@@ -147,7 +145,6 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |          Dim abqFields As ABQFields
                 |          Set abqFields = abqStep.Fields
 
-        :return: ABQFields
         :rtype: ABQFields
         """
 
@@ -168,7 +165,7 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |     ABQ_FTI_USER_DEFINED, the UserDefinedTimeIncrementValue property must be set to
                 |     specifiy the time increment value.
 
-        :return: int
+        :return: enum fixed_time_increment_method
         :rtype: int
         """
 
@@ -177,7 +174,7 @@ class ABQExplicitDynamicsStep(ABQStep):
     @fixed_time_increment_method.setter
     def fixed_time_increment_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum fixed_time_increment_method
         """
 
         self.abq_explicit_dynamics_step.FixedTimeIncrementMethod = value
@@ -201,7 +198,6 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |          Dim abqLoads As ABQLoads
                 |          Set abqLoads = abqStep.Loads
 
-        :return: ABQLoads
         :rtype: ABQLoads
         """
 
@@ -223,7 +219,6 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |     Returns:
                 |         The maximum time increment limit.
 
-        :return: float
         :rtype: float
         """
 
@@ -253,7 +248,6 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |         A boolean specifying whether the geometry remains linear during the
                 |         analysis.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -287,7 +281,7 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |           AUTO_INCREMENT
                 |           FIXED_INCREMENT
 
-        :return: int
+        :return: enum incrementation_type
         :rtype: int
         """
 
@@ -296,7 +290,7 @@ class ABQExplicitDynamicsStep(ABQStep):
     @time_incrementation_method.setter
     def time_incrementation_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum incrementation_type
         """
 
         self.abq_explicit_dynamics_step.TimeIncrementationMethod = value
@@ -316,7 +310,6 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |     Returns:
                 |         The total time period of the Abaqus explicit dynamics step.
 
-        :return: float
         :rtype: float
         """
 
@@ -341,7 +334,6 @@ class ABQExplicitDynamicsStep(ABQStep):
                 | 
                 |     Sets or returns the time scaling factor.
 
-        :return: float
         :rtype: float
         """
 
@@ -367,7 +359,6 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |     Sets or returns the user-defined time increment value. Applies only when
                 |     FixedTimeIncrementMethod is set to ABQ_FTI_USER_DEFINED.
 
-        :return: float
         :rtype: float
         """
 

@@ -72,8 +72,7 @@ class SimulationInitState(AnyObject):
                 |         E_FAIL
                 |             The restore operation failed
 
-        :param int i_attr_mask:
-        :return: None
+        :param int i_attr_mask: enum dnb_sim_init_state_attr
         :rtype: None
         """
         return self.simulation_init_state.RestoreInitialState(i_attr_mask)
@@ -109,8 +108,7 @@ class SimulationInitState(AnyObject):
                 |             The restore operation failed
 
         :param tuple i_product_lists:
-        :param int i_attr_mask:
-        :return: None
+        :param int i_attr_mask: enum dnb_sim_init_state_attr
         :rtype: None
         """
         return self.simulation_init_state.RestoreInitialStateList(i_product_lists, i_attr_mask)
@@ -155,8 +153,7 @@ class SimulationInitState(AnyObject):
                 |         E_FAIL
                 |             The save operation failed
 
-        :param int i_attr_mask:
-        :return: None
+        :param int i_attr_mask: enum dnb_sim_init_state_attr
         :rtype: None
         """
         return self.simulation_init_state.SaveInitialState(i_attr_mask)
@@ -192,8 +189,7 @@ class SimulationInitState(AnyObject):
                 |             The save operation failed
 
         :param tuple i_product_lists:
-        :param int i_attr_mask:
-        :return: None
+        :param int i_attr_mask: enum dnb_sim_init_state_attr
         :rtype: None
         """
         return self.simulation_init_state.SaveInitialStateList(i_product_lists, i_attr_mask)

@@ -58,7 +58,6 @@ class AssemblyFeature(AnyObject):
                 |          assemblyFeat.AddAffectedComponent( ProdToAffect )
 
         :param Product i_component:
-        :return: None
         :rtype: None
         """
         return self.assembly_feature.AddAffectedComponent(i_component.com_object)
@@ -94,7 +93,6 @@ class AssemblyFeature(AnyObject):
                 | 
                 |          affectedListSize = assemblyFeat.AffectedComponentsCount
 
-        :return: int
         :rtype: int
         """
         return self.assembly_feature.AffectedComponentsCount()
@@ -128,7 +126,6 @@ class AssemblyFeature(AnyObject):
                 |      assemblyFeat.ListAffectedComponents(affectedList)
 
         :param tuple o_list_of_components:
-        :return: None
         :rtype: None
         """
         return self.assembly_feature.ListAffectedComponents(o_list_of_components)
@@ -173,7 +170,6 @@ class AssemblyFeature(AnyObject):
                 |          assemblyFeat.RemoveAffectedComponent( ProdToRemove )
 
         :param Product i_component:
-        :return: None
         :rtype: None
         """
         return self.assembly_feature.RemoveAffectedComponent(i_component.com_object)

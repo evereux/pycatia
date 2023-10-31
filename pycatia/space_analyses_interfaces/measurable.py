@@ -57,7 +57,6 @@ class Measurable(AnyObject):
             | AAngle = NewMeasurable.Angle
 
 
-        :return: float
         :rtype: float
         """
 
@@ -80,7 +79,6 @@ class Measurable(AnyObject):
             |   AArea = NewMeasurable.Area
 
 
-        :return: float
         :rtype: float
         """
         return self.measurable.Area
@@ -93,7 +91,6 @@ class Measurable(AnyObject):
 
             CAA V5 Visual Basic help
 
-        :return: int
         :rtype: int
             | Returns the name of the geometry of the measured object.
             | Example:
@@ -102,7 +99,8 @@ class Measurable(AnyObject):
             |   AGeometryName = NewMeasurable.GeometryName
 
 
-        :return: int enumeration_type.measurable_name
+        :return: enum cat_measurable_name
+        :return: int
         """
 
         return self.measurable.GeometryName
@@ -122,7 +120,6 @@ class Measurable(AnyObject):
             |   ALength = NewMeasurable.Length
 
 
-        :return: float
         :rtype: float
         """
 
@@ -145,7 +142,6 @@ class Measurable(AnyObject):
             |    APerimeter = NewMeasurable.Perimeter
 
 
-        :return: float
         :rtype: float
         """
 
@@ -166,7 +162,6 @@ class Measurable(AnyObject):
             |   ARadius = NewMeasurable.Radius
 
 
-        :return: float
         :rtype: float
         """
 
@@ -186,7 +181,6 @@ class Measurable(AnyObject):
             |   AVolume = NewMeasurable.Volume
 
 
-        :return: float
         :rtype: float
         """
 
@@ -221,7 +215,6 @@ class Measurable(AnyObject):
             | MinimumDistance = TheMeasurable.GetAngleBetween(reference2)
 
 
-        :return: float
         :rtype: float
         """
 

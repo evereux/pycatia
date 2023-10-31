@@ -58,7 +58,6 @@ class Layout2DRoot(AnyObject):
                 |          Set MyRoot = CATIA.ActiveDocument.Part.GetItem("CATLayout2DRoot)"
                 |          Dim MySheet = MyRoot.GetActiveSheet
 
-        :return: Layout2DSheet
         :rtype: Layout2DSheet
         """
 
@@ -97,7 +96,6 @@ class Layout2DRoot(AnyObject):
                 |          Dim layoutParameters As Parameters
                 |          Set layoutParameters = MyRoot.Parameters
 
-        :return: Parameters
         :rtype: Parameters
         """
 
@@ -128,7 +126,6 @@ class Layout2DRoot(AnyObject):
                 |          Dim layoutRelations As Relations
                 |          Set layoutRelations = MyRoot.Relations
 
-        :return: Relations
         :rtype: Relations
         """
 
@@ -155,7 +152,7 @@ class Layout2DRoot(AnyObject):
                 |          Set MyRoot = CATIA.ActiveDocument.Part.GetItem("CATLayout2DRoot)"
                 |          MyRoot. RenderingMode  = catRenderShadingWithEdges
 
-        :return: int
+        :return: enum cat_rendering_mode
         :rtype: int
         """
 
@@ -164,7 +161,7 @@ class Layout2DRoot(AnyObject):
     @rendering_mode.setter
     def rendering_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_rendering_mode
         """
 
         self.layout_2d_root.RenderingMode = value
@@ -191,7 +188,6 @@ class Layout2DRoot(AnyObject):
                 |          Dim SheetCollection As Layout2DSheets
                 |          Set SheetCollection = MyRoot.Sheets.
 
-        :return: Layout2DSheets
         :rtype: Layout2DSheets
         """
 
@@ -217,7 +213,7 @@ class Layout2DRoot(AnyObject):
                 |          Set MyRoot = CATIA.ActiveDocument.Part.GetItem("CATLayout2DRoot)"
                 |          MyRoot.Standard = catISO
 
-        :return: int
+        :return: enum cat_drawing_standard
         :rtype: int
         """
 
@@ -226,7 +222,7 @@ class Layout2DRoot(AnyObject):
     @standard.setter
     def standard(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_drawing_standard
         """
 
         self.layout_2d_root.Standard = value
@@ -247,7 +243,7 @@ class Layout2DRoot(AnyObject):
                 |     See also:
                 |         CatVisuIn3DMode
 
-        :return: int
+        :return: enum cat_visu_in_3d_mode
         :rtype: int
         """
 
@@ -256,7 +252,7 @@ class Layout2DRoot(AnyObject):
     @visu_in_3d.setter
     def visu_in_3d(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_visu_in_3d_mode
         """
 
         self.layout_2d_root.VisuIn3D = value
@@ -287,7 +283,6 @@ class Layout2DRoot(AnyObject):
                 |          drwsheetsorder.reorder_Sheets(newsheetorder)
 
         :param tuple i_ordered_sheets:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_root.reorder_Sheets(i_ordered_sheets)

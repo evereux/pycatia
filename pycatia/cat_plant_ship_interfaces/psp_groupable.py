@@ -56,7 +56,6 @@ class PSPGroupable(AnyObject):
                 |           ...
                 |          Set ObjArg1 = objThisIntf.Groups
 
-        :return: PSPListOfObjects
         :rtype: PSPListOfObjects
         """
 

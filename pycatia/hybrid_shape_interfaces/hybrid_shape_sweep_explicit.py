@@ -73,7 +73,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -106,7 +105,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: int
         :rtype: int
         """
 
@@ -140,7 +138,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: int
         :rtype: int
         """
 
@@ -169,7 +166,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     0 No detection of canonical surface is performed.
                 |     2 Detection of canonical surfaces is performed.
 
-        :return: int
         :rtype: int
         """
 
@@ -207,7 +203,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |          Dim oContext
                 |          Set oContext = Sweep.Context
 
-        :return: int
         :rtype: int
         """
 
@@ -246,7 +241,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -272,7 +266,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     Returns deviation value (length) from guide curves allowed during sweeping
                 |     operation in order to smooth it.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -293,7 +286,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     operation.
                 |     TRUE or FALSE (FALSE if not specified).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -330,7 +322,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 | 
                 |          Sweep.GuideProjection = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -370,7 +361,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: int
         :rtype: int
         """
 
@@ -408,7 +398,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 | 
                 |      oPosMode = Sweep.PositionMode
 
-        :return: int
         :rtype: int
         """
 
@@ -447,7 +436,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -486,7 +474,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -532,7 +519,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 | 
                 |      oDirCompMode = Sweep.ProfileXAxisComputationMode
 
-        :return: int
         :rtype: int
         """
 
@@ -566,7 +552,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |          Dim ohDir As CATIAHybridShapeDirection
                 |          Set ohDir = Sweep.PullingDirection
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -600,7 +585,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     See also:
                 |         Reference
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -639,7 +623,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -666,7 +649,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     not.
                 |     TRUE or FALSE (FALSE if not specified).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -691,7 +673,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 | 
                 |     Returns angular threshold.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -711,7 +692,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     For example: a explicit sweep with reference surface leads to four possible
                 |     solutions.
 
-        :return: int
         :rtype: int
         """
 
@@ -747,7 +727,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -779,7 +758,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     3 Explicit profile swept surface defined with pulling
                 |     direction
 
-        :return: int
         :rtype: int
         """
 
@@ -817,7 +795,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :param int ii:
-        :return: Angle
         :rtype: Angle
         """
         return Angle(self.hybrid_shape_sweep_explicit.GetAngleRef(ii))
@@ -839,7 +816,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param Reference op_ia_elem_a:
         :param Reference op_ia_elem_b:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetFittingPoints(op_ia_elem_a.com_object, op_ia_elem_b.com_object)
@@ -876,7 +852,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param Reference op_ia_elem_a:
         :param Reference op_ia_elem_b:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetLongitudinalRelimiters(op_ia_elem_a.com_object,
@@ -909,7 +884,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     param : oAng Number of Angle.
 
         :param int o_ang:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetNbAngle(o_ang)
@@ -926,7 +900,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     param : oNum Number of guide curves.
 
         :param int o_num:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetNbGuide(o_num)
@@ -944,7 +917,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     param : oPosAng Number of parameters
 
         :param int o_pos_ang:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetNbPosAngle(o_pos_ang)
@@ -962,7 +934,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     param oPosCoord Number of parameters
 
         :param int o_pos_coord:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetNbPosCoord(o_pos_coord)
@@ -993,7 +964,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :param int ii:
-        :return: Angle
         :rtype: Angle
         """
         return Angle(self.hybrid_shape_sweep_explicit.GetPosAngle(ii))
@@ -1025,7 +995,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :param int ii:
-        :return: Length
         :rtype: Length
         """
         return Length(self.hybrid_shape_sweep_explicit.GetPosCoord(ii))
@@ -1054,7 +1023,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :param int ii:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_sweep_explicit.GetPosDirection(ii))
@@ -1084,7 +1052,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :param int ii:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_sweep_explicit.GetPosPoint(ii))
@@ -1117,7 +1084,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :param int ii:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_sweep_explicit.GetPosSwapAxes(ii)
@@ -1154,7 +1120,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param int op_orient1:
         :param Reference op_ia_elem2:
         :param int op_orient2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetRelimiters(op_ia_elem1.com_object, op_orient1,
@@ -1190,7 +1155,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     param oBoolean TRUE if the 2D sketch axis must be used, FALSE if not.
 
         :param bool o_boolean:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.IsSketchAxisUsedAsDefault(o_boolean)
@@ -1220,7 +1184,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 | 
                 |     Removes an Angle.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.RemoveAngle()
@@ -1235,7 +1198,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 | 
                 |     Removes the fitting points.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.RemoveFittingPoints()
@@ -1250,7 +1212,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 | 
                 |     Removes a guide curve.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.RemoveGuide()
@@ -1278,7 +1239,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :param float elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetAngleRef(ii, elem)
@@ -1302,7 +1262,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param Reference ip_ia_elem_a:
         :param Reference ip_ia_elem_b:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetFittingPoints(ip_ia_elem_a.com_object, ip_ia_elem_b.com_object)
@@ -1335,7 +1294,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     param : iLength Numerical value.
 
         :param float i_length:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetGuideDeviation(i_length)
@@ -1357,7 +1315,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param Reference ip_ia_elem_a:
         :param Reference ip_ia_elem_b:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetLongitudinalRelimiters(ip_ia_elem_a.com_object,
@@ -1403,7 +1360,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :param float elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetPosAngle(ii, elem)
@@ -1434,7 +1390,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :param float elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetPosCoord(ii, elem)
@@ -1464,7 +1419,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :param Reference elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetPosDirection(ii, elem.com_object)
@@ -1510,7 +1464,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :param Reference elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetPosPoint(ii, elem.com_object)
@@ -1561,7 +1514,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :param int elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetPosSwapAxes(ii, elem)
@@ -1598,7 +1550,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param int ip_orient1:
         :param Reference ip_ia_elem2:
         :param int ip_orient2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetRelimiters(ip_ia_elem1.com_object, ip_orient1,
@@ -1631,7 +1582,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     param : iAngle Numerical value.
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetSmoothAngleThreshold(i_angle)
@@ -1651,7 +1601,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     param iBoolean TRUE if the 2D sketch axis must be used, FALSE if not.
 
         :param bool i_boolean:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.UseSketchAxisAsDefault(i_boolean)

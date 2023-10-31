@@ -49,7 +49,6 @@ class MaterialFamily(AnyObject):
                 |     Returns the material collection object from the current
                 |     material family.
 
-        :return: Materials
         :rtype: Materials
         """
 

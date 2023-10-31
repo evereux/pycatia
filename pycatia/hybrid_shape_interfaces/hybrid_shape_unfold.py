@@ -58,7 +58,6 @@ class HybridShapeUnfold(HybridShape):
                 | 
                 |     Returns or sets the direction to unfold.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -88,7 +87,6 @@ class HybridShapeUnfold(HybridShape):
                 |         1= The orientation is the default one
                 |         2= The orientation is inversed
 
-        :return: int
         :rtype: int
         """
 
@@ -113,7 +111,6 @@ class HybridShapeUnfold(HybridShape):
                 | 
                 |     Returns or sets the origin to unfold.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -140,7 +137,6 @@ class HybridShapeUnfold(HybridShape):
                 |     Sub-element(s) supported (see Boundary object): Face, TriDimFeatEdge and
                 |     BiDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -169,7 +165,6 @@ class HybridShapeUnfold(HybridShape):
                 |         1= The type of surface is ruled
                 |         2= The type of surface is all
 
-        :return: int
         :rtype: int
         """
 
@@ -204,7 +199,6 @@ class HybridShapeUnfold(HybridShape):
                 |         axis
                 |         7= Swap U and V axis
 
-        :return: int
         :rtype: int
         """
 
@@ -230,7 +224,6 @@ class HybridShapeUnfold(HybridShape):
                 |     Returns or sets the target plane.
                 |     Sub-element(s) supported (see Boundary object):
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -270,7 +263,6 @@ class HybridShapeUnfold(HybridShape):
                 |      HybridShapeUnfold.AddEdgeToTear iElement
 
         :param Reference i_element:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_unfold.AddEdgeToTear(i_element.com_object)
@@ -314,7 +306,6 @@ class HybridShapeUnfold(HybridShape):
 
         :param Reference i_element:
         :param int i_type_of_transfer:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_unfold.AddElementToTransfer(i_element.com_object, i_type_of_transfer)
@@ -358,7 +349,6 @@ class HybridShapeUnfold(HybridShape):
                 |          Set oElement = HybridShapeUnfold.GetEdgeToTear (iRank).
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_unfold.GetEdgeToTear(i_rank))
@@ -391,7 +381,6 @@ class HybridShapeUnfold(HybridShape):
         :param int i_rank:
         :param Reference op_element:
         :param int o_type_of_transfer:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_unfold.GetElementToTransfer(i_rank, op_element.com_object, o_type_of_transfer)
@@ -434,7 +423,6 @@ class HybridShapeUnfold(HybridShape):
                 |          HybridShapeUnfold.RemoveEdgeToTear iRank.
 
         :param int i_rank:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_unfold.RemoveEdgeToTear(i_rank)
@@ -455,7 +443,6 @@ class HybridShapeUnfold(HybridShape):
                 |             the position of the specification to remove
 
         :param int i_rank:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_unfold.RemoveElementToTransfer(i_rank)
@@ -480,7 +467,6 @@ class HybridShapeUnfold(HybridShape):
 
         :param int i_rank:
         :param Reference i_element:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_unfold.ReplaceElementsToTransfer(i_rank, i_element.com_object)

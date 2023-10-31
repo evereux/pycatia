@@ -75,7 +75,6 @@ class Tag(AnyObject):
                 |              objTag.GetName Name
 
         :param str o_tag_name:
-        :return: None
         :rtype: None
         """
         return self.tag.GetName(o_tag_name)
@@ -120,7 +119,6 @@ class Tag(AnyObject):
                 |              objTag.GetType FrameType
 
         :param str o_frame_name:
-        :return: None
         :rtype: None
         """
         return self.tag.GetType(o_frame_name)
@@ -158,7 +156,6 @@ class Tag(AnyObject):
                 |              objTag.GetXYZ List
 
         :param tuple io_xyz:
-        :return: None
         :rtype: None
         """
         return self.tag.GetXYZ(io_xyz)
@@ -211,7 +208,6 @@ class Tag(AnyObject):
                 |              objTag.GetYPR List
 
         :param tuple io_ypr:
-        :return: None
         :rtype: None
         """
         return self.tag.GetYPR(io_ypr)
@@ -263,7 +259,6 @@ class Tag(AnyObject):
                 |              objTag.SetName("My_Tag")
 
         :param str i_tag_name:
-        :return: None
         :rtype: None
         """
         return self.tag.SetName(i_tag_name)
@@ -307,7 +302,6 @@ class Tag(AnyObject):
                 |              objTag.SetType("Design")
 
         :param str i_frame_name:
-        :return: None
         :rtype: None
         """
         return self.tag.SetType(i_frame_name)
@@ -352,7 +346,6 @@ class Tag(AnyObject):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: None
         :rtype: None
         """
         return self.tag.SetXYZ(i_x, i_y, i_z)
@@ -397,7 +390,6 @@ class Tag(AnyObject):
         :param float i_y:
         :param float i_p:
         :param float i_r:
-        :return: None
         :rtype: None
         """
         return self.tag.SetYPR(i_y, i_p, i_r)

@@ -62,7 +62,7 @@ class AssemblyHole(AssemblyFeature):
                 |          Set holeAnchorMode = assemblyHole.AnchorMode
                 |          assemblyHole.AnchorMode = catMiddlePointHoleAnchor
 
-        :return: int
+        :return: enum cat_hole_anchor_mode
         :rtype: int
         """
 
@@ -71,7 +71,7 @@ class AssemblyHole(AssemblyFeature):
     @anchor_mode.setter
     def anchor_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_anchor_mode
         """
 
         self.assembly_hole.AnchorMode = value
@@ -96,7 +96,6 @@ class AssemblyHole(AssemblyFeature):
                 |          Dim holeBottomAngle As Angle
                 |          Set holeBottomAngle = assemblyHole.BottomAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -122,7 +121,6 @@ class AssemblyHole(AssemblyFeature):
                 |          Dim limit As Limit
                 |          Set limit = assemblyHole.BottomLimit
 
-        :return: Limit
         :rtype: Limit
         """
 
@@ -148,7 +146,7 @@ class AssemblyHole(AssemblyFeature):
                 |          Set holeBottomType = assemblyHole.BottomType
                 |          assemblyHole.BottomType = catVHoleBottom
 
-        :return: int
+        :return: enum cat_hole_bottom_type
         :rtype: int
         """
 
@@ -157,7 +155,7 @@ class AssemblyHole(AssemblyFeature):
     @bottom_type.setter
     def bottom_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_bottom_type
         """
 
         self.assembly_hole.BottomType = value
@@ -181,7 +179,6 @@ class AssemblyHole(AssemblyFeature):
                 |          Dim holeDiam As Length
                 |          Set holeDiam = assemblyHole.Diameter
 
-        :return: Length
         :rtype: Length
         """
 
@@ -208,7 +205,6 @@ class AssemblyHole(AssemblyFeature):
                 |          Dim holeHeadAngle As Angle
                 |          Set holeHeadAngle = assemblyHole.HeadAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -235,7 +231,6 @@ class AssemblyHole(AssemblyFeature):
                 |          Dim holeHeadDepth As Length
                 |          Set holeHeadDepth = assemblyHole.HeadDepth
 
-        :return: Length
         :rtype: Length
         """
 
@@ -262,7 +257,6 @@ class AssemblyHole(AssemblyFeature):
                 |          Dim holeHeadDiam As Length
                 |          Set holeHeadDiam = assemblyHole.HeadDiameter
 
-        :return: Length
         :rtype: Length
         """
 
@@ -286,7 +280,6 @@ class AssemblyHole(AssemblyFeature):
                 |          Dim sketch As Sketch
                 |          Set sketch = assemblyHole.Sketch
 
-        :return: Sketch
         :rtype: Sketch
         """
 
@@ -311,7 +304,6 @@ class AssemblyHole(AssemblyFeature):
                 |          Dim skComp As Product
                 |          Set skComp = assemblyHole.SketchComponent
 
-        :return: Product
         :rtype: Product
         """
 
@@ -336,7 +328,7 @@ class AssemblyHole(AssemblyFeature):
                 |          Set holeType = assemblyHole.Type
                 |          assemblyHole.Type = catTaperedHole
 
-        :return: int
+        :return: enum cat_hole_type
         :rtype: int
         """
 
@@ -345,7 +337,7 @@ class AssemblyHole(AssemblyFeature):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_type
         """
 
         self.assembly_hole.Type = value
@@ -380,7 +372,6 @@ class AssemblyHole(AssemblyFeature):
                 |          Set z = dirArray[2]
 
         :param tuple io_direction:
-        :return: None
         :rtype: None
         """
         return self.assembly_hole.GetDirection()
@@ -431,7 +422,6 @@ class AssemblyHole(AssemblyFeature):
                 |          Set z = coordArray[2]
 
         :param tuple io_origin:
-        :return: None
         :rtype: None
         """
         return self.assembly_hole.GetOrigin()
@@ -478,7 +468,6 @@ class AssemblyHole(AssemblyFeature):
 
         :param Reference i_line:
         :param Product i_line_comp:
-        :return: None
         :rtype: None
         """
         return self.assembly_hole.SetDirection(i_line.com_object, i_line_comp.com_object)

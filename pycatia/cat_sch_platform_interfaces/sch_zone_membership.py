@@ -51,7 +51,6 @@ class SchZoneMembership(AnyObject):
                 |           ...
                 |          objThisIntf.UpdateZoneMembership
 
-        :return: None
         :rtype: None
         """
         return self.sch_zone_membership.UpdateZoneMembership()

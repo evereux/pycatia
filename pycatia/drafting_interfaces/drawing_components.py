@@ -86,7 +86,6 @@ class DrawingComponents(Collection):
         :param DrawingView i_drawing_component_ref:
         :param float i_position_x:
         :param float i_position_y:
-        :return: DrawingComponent
         :rtype: DrawingComponent
         """
         return DrawingComponent(
@@ -136,7 +135,6 @@ class DrawingComponents(Collection):
                 |      Set ThisDrawingComponent = MyView.Components.Item(2)
 
         :param cat_variant i_index:
-        :return: DrawingComponent
         :rtype: DrawingComponent
         """
         return DrawingComponent(self.drawing_components.Item(i_index))
@@ -174,7 +172,6 @@ class DrawingComponents(Collection):
                 |      MyView.Components.Remove(3)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.drawing_components.Remove(i_index)

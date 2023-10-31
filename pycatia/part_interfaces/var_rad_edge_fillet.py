@@ -16,7 +16,6 @@ from pycatia.part_interfaces.edge_fillet import EdgeFillet
 
 
 class VarRadEdgeFillet(EdgeFillet):
-
     """
         .. note::
             :class: toggle
@@ -60,7 +59,7 @@ class VarRadEdgeFillet(EdgeFillet):
                 |         iType
                 |             The type used to perform the fillet : catSphereBitangencyType or catCircleBitangencyType
 
-        :return: int
+        :return: enum cat_fillet_bitangency_type
         :rtype: int
         """
 
@@ -69,7 +68,7 @@ class VarRadEdgeFillet(EdgeFillet):
     @bitangency_type.setter
     def bitangency_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_fillet_bitangency_type
         """
 
         self.var_rad_edge_fillet.BitangencyType = value
@@ -91,7 +90,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 | 
                 |          Set edges = firstVarEdgeFillet.EdgesToFillet
 
-        :return: References
         :rtype: References
         """
 
@@ -114,7 +112,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 |             The spine to be used for a circle bitangency
                 |             fillet
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -148,7 +145,7 @@ class VarRadEdgeFillet(EdgeFillet):
                 |          mode = firstVarEdgeFillet.FilletVariation
                 |          firstVarEdgeFillet.FilletVariation = CATLinearFilletVariation
 
-        :return: int
+        :return: enum cat_fillet_variation
         :rtype: int
         """
 
@@ -157,7 +154,7 @@ class VarRadEdgeFillet(EdgeFillet):
     @fillet_variation.setter
     def fillet_variation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_fillet_variation
         """
 
         self.var_rad_edge_fillet.FilletVariation = value
@@ -181,7 +178,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 | 
                 |          Set vertices = firstVarEdgeFillet.ImposedVertices
 
-        :return: References
         :rtype: References
         """
 
@@ -217,7 +213,6 @@ class VarRadEdgeFillet(EdgeFillet):
 
         :param Reference i_edge:
         :param float i_radius:
-        :return: None
         :rtype: None
         """
         return self.var_rad_edge_fillet.AddEdgeToFillet(i_edge.com_object, i_radius)
@@ -265,7 +260,6 @@ class VarRadEdgeFillet(EdgeFillet):
 
         :param Reference i_vertex:
         :param float i_radius:
-        :return: None
         :rtype: None
         """
         return self.var_rad_edge_fillet.AddImposedVertex(i_vertex.com_object, i_radius)
@@ -311,7 +305,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 |          Set radius = firstVarEdgeFillet.ImposedVertexRadius(vertex)
 
         :param Reference i_imposed_vertex:
-        :return: Length
         :rtype: Length
         """
         return Length(self.var_rad_edge_fillet.ImposedVertexRadius(i_imposed_vertex.com_object))
@@ -341,7 +334,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 |      call firstVarEdgeFillet.WithdrawEdgeToFillet(edge)
 
         :param Reference i_edge:
-        :return: None
         :rtype: None
         """
         return self.var_rad_edge_fillet.WithdrawEdgeToFillet(i_edge.com_object)
@@ -384,7 +376,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 |          call firstVarEdgeFillet.WithdrawImposedVertex(vertex)
 
         :param Reference i_vertex:
-        :return: None
         :rtype: None
         """
         return self.var_rad_edge_fillet.WithdrawImposedVertex(i_vertex.com_object)
@@ -405,4 +396,4 @@ class VarRadEdgeFillet(EdgeFillet):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'VarRadEdgeFillet(name="{ self.name }")'
+        return f'VarRadEdgeFillet(name="{self.name}")'

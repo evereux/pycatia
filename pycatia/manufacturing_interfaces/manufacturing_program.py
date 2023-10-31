@@ -56,7 +56,6 @@ class ManufacturingProgram(ManufacturingActivity):
                 | 
                 |          Set ActivitiesList = CurrentProgram.Activities
 
-        :return: MfgActivities
         :rtype: MfgActivities
         """
 
@@ -79,7 +78,6 @@ class ManufacturingProgram(ManufacturingActivity):
                 | 
                 |          Set CurrentProgram.Comment
 
-        :return: str
         :rtype: str
         """
 
@@ -112,7 +110,6 @@ class ManufacturingProgram(ManufacturingActivity):
                 |          Set GOTO1 = firstProgram.AddGotoPoint(MyPoint)
 
         :param str i_point_name:
-        :return: ManufacturingActivity
         :rtype: ManufacturingActivity
         """
         return ManufacturingActivity(self.manufacturing_program.AddGotoPoint(i_point_name))
@@ -144,7 +141,6 @@ class ManufacturingProgram(ManufacturingActivity):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: ManufacturingActivity
         :rtype: ManufacturingActivity
         """
         return ManufacturingActivity(self.manufacturing_program.AddGotoPointfromCoordinates(i_x, i_y, i_z))
@@ -167,7 +163,6 @@ class ManufacturingProgram(ManufacturingActivity):
                 |          Set PPWORD1 = firstProgram.AddPPInstruction(PPWORD)
 
         :param str i_pp_instruction:
-        :return: ManufacturingActivity
         :rtype: ManufacturingActivity
         """
         return ManufacturingActivity(self.manufacturing_program.AddPPInstruction(i_pp_instruction))
@@ -195,7 +190,6 @@ class ManufacturingProgram(ManufacturingActivity):
         :param str i_rotabl:
         :param str i_sens:
         :param float ival:
-        :return: ManufacturingActivity
         :rtype: ManufacturingActivity
         """
         return ManufacturingActivity(self.manufacturing_program.AddRotabl(i_rotabl, i_sens, ival))
@@ -230,7 +224,6 @@ class ManufacturingProgram(ManufacturingActivity):
         :param str i_tool_type:
         :param str i_tool_catalog:
         :param int i_num_syntaxe:
-        :return: ManufacturingActivity
         :rtype: ManufacturingActivity
         """
         return ManufacturingActivity(
@@ -275,7 +268,6 @@ class ManufacturingProgram(ManufacturingActivity):
         :param str i_tool_catalog:
         :param int i_num_fs_data:
         :param int i_num_syntax:
-        :return: ManufacturingActivity
         :rtype: ManufacturingActivity
         """
         return ManufacturingActivity(
@@ -309,7 +301,6 @@ class ManufacturingProgram(ManufacturingActivity):
 
         :param str type:
         :param int auto_sequence:
-        :return: ManufacturingOperation
         :rtype: ManufacturingOperation
         """
         return ManufacturingOperation(self.manufacturing_program.AppendOperation(type, auto_sequence))
@@ -325,7 +316,6 @@ class ManufacturingProgram(ManufacturingActivity):
                 |     Method is used for associate APT file to V4 program iFileName = path for APT file.... Call on V4 ManufacturingProgram
 
         :param str i_file_name:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_program.AssociateOutputCode(i_file_name)
@@ -359,7 +349,6 @@ class ManufacturingProgram(ManufacturingActivity):
         :param MfgActivities i_liste_mfg_activity:
         :param str i_axe_ref:
         :param str i_sens_rotation:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_program.CompletewithPolarStrategy(
@@ -404,7 +393,6 @@ class ManufacturingProgram(ManufacturingActivity):
 
         :param ExpertReportObjects i_report_succeed:
         :param str i_type_mo:
-        :return: MfgActivities
         :rtype: MfgActivities
         """
         return ManufacturingActivities(
@@ -421,7 +409,6 @@ class ManufacturingProgram(ManufacturingActivity):
                 |     Get the output file (APT or ISO) associated to the program (if associated
                 |     during computation).
 
-        :return: str
         :rtype: str
         """
         return self.manufacturing_program.GetNCOutputFile()
@@ -445,7 +432,6 @@ class ManufacturingProgram(ManufacturingActivity):
                 |          Angle = firstProgram.GetTableCurrentAbsolutePosition(iActivityRef)
 
         :param ManufacturingActivity i_activity_ref:
-        :return: float
         :rtype: float
         """
         return self.manufacturing_program.GetTableCurrentAbsolutePosition(i_activity_ref.com_object)
@@ -472,7 +458,6 @@ class ManufacturingProgram(ManufacturingActivity):
         :param str i_type:
         :param str i_nc_output_file:
         :param str i_pp_name:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_program.ImportNCOutputOnProgram(i_type, i_nc_output_file, i_pp_name)
@@ -502,7 +487,6 @@ class ManufacturingProgram(ManufacturingActivity):
 
         :param ManufacturingOperation i_reference_operation:
         :param ManufacturingOperation i_manufacturing_operation:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_program.InsertOperation(
@@ -536,7 +520,6 @@ class ManufacturingProgram(ManufacturingActivity):
                 |     Method is used for Locking and Unloking all activity in program Call on
                 |     ManufacturingProgram on which Lock and Unlock want
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_program.LockActivitesWithinProgram()
@@ -568,7 +551,6 @@ class ManufacturingProgram(ManufacturingActivity):
 
         :param ManufacturingActivity i_reference_operation:
         :param ManufacturingActivity i_manufacturing_operation:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_program.MoveOperation(
@@ -623,7 +605,6 @@ class ManufacturingProgram(ManufacturingActivity):
         :param str i_type_mo:
         :param str i_axe_rotabl:
         :param str i_sens_rotation:
-        :return: MfgActivities
         :rtype: MfgActivities
         """
         return ManufacturingActivities(
@@ -643,7 +624,6 @@ class ManufacturingProgram(ManufacturingActivity):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub UnlockActivitesWithinProgram()
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_program.UnlockActivitesWithinProgram()

@@ -63,7 +63,6 @@ class ABQSolutionSteps(Collection):
                 |         The specified ABQSolutionStep.
 
         :param cat_variant i_index:
-        :return: ABQSolutionStep
         :rtype: ABQSolutionStep
         """
         return ABQSolutionStep(self.abq_solution_steps.Item(i_index))

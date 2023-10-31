@@ -92,12 +92,12 @@ auto_time_increment_method = (
     "ABQ_ATI_ELEMENT_BY_ELEMENT",
 )
 
-cat3_d_color_inheritance_mode = (
+cat_3d_color_inheritance_mode = (
     "cat3DColorInheritanceModeOff",
     "cat3DColorInheritanceModeOn",
 )
 
-cat3_d_xml_geom_representation_type = (
+cat_3d_xml_geom_representation_type = (
     "cat3DXmlExact",
     "cat3DXmlTessellation",
     "cat3DXmlCompressedTessellation",
@@ -106,7 +106,7 @@ cat3_d_xml_geom_representation_type = (
     "cat3DXmlXmlTessellation",
 )
 
-cat3_d_xml_ppr_save_config = (
+cat_3d_xml_ppr_save_config = (
     "cat3DXmlProductAndResourceList",
     "cat3DXmlProductList",
     "cat3DXmlResourceList",
@@ -551,6 +551,7 @@ cat_dim_line_rep = (
     "catDimOffset",
 )
 
+# todo: find where this should be referenced
 cat_dim_mode = (
     "catDimClassical",
     "catDimCumulate",
@@ -797,6 +798,7 @@ cat_fillet_variation = (
     "catCubicFilletVariation",
 )
 
+# todo: find out where this should be referenced
 cat_fitting_shuttle_vector = (
     "CATFittingShuttleVectorX",
     "CATFittingShuttleVectorY",
@@ -931,6 +933,7 @@ cat_ig2_import_unit_enum = (
     "catIg2ImportUnitEnumAutomatic",
 )
 
+# todo: find where this should be referenced
 cat_image_rotation = (
     "catImageNoRotation",
     "catImageRotation90",
@@ -969,11 +972,13 @@ cat_limit_mode = (
     "catUpThruNextLimit",
 )
 
+# todo: find out where this should be referenced
 cat_manip_auto_insert_mode = (
     "CATOnMouseRelease",
     "CATWhileMouseMoving",
 )
 
+# todo: find out where this should be referenced
 cat_manip_clash_mode = (
     "CATManipClashModeNo",
     "CATManipClashModeOn",
@@ -985,7 +990,7 @@ cat_manufacturing_precedence_type = (
     "catPrecedenceTypeBefore",
 )
 
-cat_marker2_d_type = (
+cat_marker_2d_type = (
     "catMarker2DTypeLine",
     "catMarker2DTypeArrow",
     "catMarker2DTypeRectangle",
@@ -995,7 +1000,7 @@ cat_marker2_d_type = (
     "catMarker2DTypePicture",
 )
 
-cat_marker3_d_type = (
+cat_marker_3d_type = (
     "catMarker3DTypeText",
 )
 
@@ -1106,24 +1111,28 @@ cat_points_projection_mode = (
     "catPointsProjectionModeOn",
 )
 
+# todo: find where this should be referenced
 cat_print_color = (
     "catColorTrueColor",
     "catColorGreyScale",
     "catColorMonochrome",
 )
 
+# todo: find where this should be referenced
 cat_print_line_cap = (
     "catPrintFlat",
     "catPrintSquare",
     "catPrintRound",
 )
 
+# todo: find where this should be referenced
 cat_print_line_specification = (
     "catPrintAbsolute",
     "catPrintScaled",
     "catPrintNoThickness",
 )
 
+# todo: find where this should be referenced
 cat_print_quality = (
     "catPrintQualityDraft",
     "catPrintQualityLow",
@@ -1132,6 +1141,7 @@ cat_print_quality = (
     "catPrintQualityCustom",
 )
 
+# todo: find where this should be referenced
 cat_print_rendering_mode = (
     "catPrintRenderingModeDefault",
     "catPrintRenderingModeWireframe",
@@ -1333,6 +1343,7 @@ cat_sch_idl_application_id = (
     "catSchIDLCATElectricalDiagram",
 )
 
+# todo: find where this should be referenced
 cat_sch_idl_arrow_frequency = (
     "catSchIDLArrowAllSegs",
     "catSchIDLArrowAllButLastSeg",
@@ -1340,11 +1351,13 @@ cat_sch_idl_arrow_frequency = (
     "catSchIDLArrowMiddleSeg",
 )
 
+# todo: find where this should be referenced
 cat_sch_idl_arrow_position = (
     "catSchIDLMidSegArrow",
     "catSchIDLEndSegArrow",
 )
 
+# todo: find where this should be referenced
 cat_sch_idl_arrow_style = (
     "catSchIDLFillArrow",
     "catSchIDLNotFillArrow",
@@ -1394,6 +1407,7 @@ cat_sch_idl_gap_priority = (
     "catSchIDLGapVerticalSeg",
 )
 
+# todo: find where this should be referenced
 cat_sch_idl_gap_style = (
     "catSchIDLBlankGap",
     "catSchIDLJumpGap",
@@ -1603,6 +1617,7 @@ cat_split_side = (
     "catNegativeSide",
 )
 
+# todo: find out where this should be referenced
 cat_str_creation_mode = (
     "catStrPartMode",
     "catStrSheetMetalMode",
@@ -1616,6 +1631,7 @@ cat_str_cutback_type = (
     "catStrNotchingType",
 )
 
+# todo: find out where this should be referenced
 cat_str_link_mode = (
     "catStrWithLinkMode",
     "catStrNoLinkMode",
@@ -1634,6 +1650,7 @@ cat_str_member_extremity = (
     "catBothExtremity",
 )
 
+# todo: find out where this should be referenced
 cat_str_placement_point = (
     "catStrDefault",
     "catStrBottomLeft",
@@ -1858,7 +1875,7 @@ cat_tree_type_enum = (
     "catTreeTypeRelational",
 )
 
-cat_view2_d_mode_visu = (
+cat_view_2d_mode_visu = (
     "catView2DModeNotActivated",
     "catView2DModeNoShow",
 )
@@ -1894,6 +1911,7 @@ cat_view_type = (
     "catSectionCutView",
 )
 
+# todo: have a look at vis_property_set.get_layer needs fixing I suspect
 cat_vis_layer_type = (
     "catVisLayerBasic",
     "catVisLayerNone",
@@ -1904,11 +1922,13 @@ cat_vis_property_pick = (
     "catVisPropertyNoPickAttr",
 )
 
+# todo: have a look at vis_property_set.get_show needs fixing I suspect
 cat_vis_property_show = (
     "catVisPropertyShowAttr",
     "catVisPropertyNoShowAttr",
 )
 
+# todo: have a look at vis_property_set.get_layer needs fixing I suspect
 cat_vis_property_status = (
     "catVisPropertyDefined",
     "catVisPropertyUnDefined",
@@ -1929,7 +1949,7 @@ cat_visu_background_mode = (
     "catLowIntNoPick",
 )
 
-cat_visu_in3_d_mode = (
+cat_visu_in_3d_mode = (
     "catShowAll",
     "catHideAll",
 )
@@ -2075,6 +2095,7 @@ cd5_save_operation_scope = (
     "CD5SaveOperation_Session",
 )
 
+# todo: find where this should be referenced
 contact_stiffness_type = (
     "DEFAULT",
     "STIFF_VALUE",
@@ -2092,11 +2113,13 @@ dmu_track_move_mode = (
     "DMUTrackTimeMode",
 )
 
+# todo: find where this should be referenced
 dnb_act_behavior_type = (
     "DNBBehaviorProcess",
     "DNBBehaviorParent",
 )
 
+# todo: find where this should be referenced
 dnb_analysis_level = (
     "DNBAnalysisLevelOff",
     "DNBAnalysisLevelHighlight",
@@ -2120,11 +2143,13 @@ dnb_auxilliary_device_type = (
     "AuxilliaryDeviceType_Conveyor",
 )
 
+# todo: find where this should be referenced
 dnb_hlnk_behavior_type = (
     "DNBBehaviorContinue",
     "DNBBehaviorPause",
 )
 
+# todo: find where this should be referenced
 dnb_sim_graph_update_mode = (
     "DNBSimGraphUpdateDisabled",
     "DNBSimGraphUpdateEnabled",
@@ -2148,11 +2173,13 @@ dnb_sim_init_state_attr = (
     "DNBAllInitStateAttr",
 )
 
+# todo: find where this should be referenced
 dnb_sim_navigation_mode = (
     "DNBSimNavigationModeStep",
     "DNBSimNavigationModeAnimate",
 )
 
+# todo: find where this should be referenced
 dnb_visualization_mode = (
     "DNBVisualizationModeHighlight",
     "DNBVisualizationModeCurves",
@@ -2234,6 +2261,7 @@ formulation_type = (
     "PENALTY",
 )
 
+# todo: find where this should be referenced
 frame_visibility = (
     "VisNo",
     "VisYes",
@@ -2376,6 +2404,7 @@ pressure_overclosure_type = (
     "TABULAR",
 )
 
+# todo: find where this should be referenced
 raster_level_of_detail = (
     "LowQuality",
     "NormalQuality",

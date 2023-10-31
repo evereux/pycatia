@@ -64,7 +64,6 @@ class AnalysisSet(AnyObject):
                 |          Dim analysisEntities As AnalysisEntities
                 |          Set analysisEntities = MySet.AnalysisEntities
 
-        :return: AnalysisEntities
         :rtype: AnalysisEntities
         """
 
@@ -89,7 +88,6 @@ class AnalysisSet(AnyObject):
                 |          Dim analysisimages As AnalysisImages
                 |          Set analysisimages = MySet.AnalysisImages
 
-        :return: AnalysisImages
         :rtype: AnalysisImages
         """
 
@@ -116,7 +114,6 @@ class AnalysisSet(AnyObject):
                 |          Dim analysisEntities As AnalysisOutputEntities
                 |          Set analysisEntities = MySet.AnalysisOutputEntities
 
-        :return: AnalysisOutputEntities
         :rtype: AnalysisOutputEntities
         """
 
@@ -142,7 +139,6 @@ class AnalysisSet(AnyObject):
                 |          Dim analysisSets As AnalysisSets
                 |          Set analysisSets = MySet.AnalysisSets
 
-        :return: AnalysisSets
         :rtype: AnalysisSets
         """
 
@@ -168,7 +164,6 @@ class AnalysisSet(AnyObject):
                 |          Dim basiccomponents As BasicComponents 
                 |          Set basiccomponents = MySet.BasicComponents
 
-        :return: BasicComponents
         :rtype: BasicComponents
         """
 
@@ -192,7 +187,6 @@ class AnalysisSet(AnyObject):
                 |          Dim TypeofSet As CATBSTR
                 |          Set TypeofSet = MySet.Type
 
-        :return: str
         :rtype: str
         """
 
@@ -208,7 +202,6 @@ class AnalysisSet(AnyObject):
                 | 
                 |     Launch the update (computation if needed) of an AnalysisSet.
 
-        :return: None
         :rtype: None
         """
         return self.analysis_set.Update()

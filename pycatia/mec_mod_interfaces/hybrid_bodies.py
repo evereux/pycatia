@@ -61,7 +61,6 @@ class HybridBodies(Collection):
                 | 
                 |          Set NewPartBody = rootPart.Bodies.AddPartBody()
 
-        :return: HybridBody
         :rtype: HybridBody
         """
         return HybridBody(self.hybrid_bodies.Add())
@@ -100,7 +99,6 @@ class HybridBodies(Collection):
                 |          Set ThatHybridBody = hybridBodyColl.Item("MyHybridBody")
 
         :param cat_variant i_index:
-        :return: HybridBody
         :rtype: HybridBody
         """
         try:

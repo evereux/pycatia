@@ -108,7 +108,6 @@ class Operation(Activity):
         :param AnyObject i_ref_act:
         :param bool i_before:
         :param RobotMotion o_target_motion:
-        :return: None
         :rtype: None
         """
         return self.operation.CreateRobotMotion(i_ref_act.com_object, i_before, o_target_motion.com_object)
@@ -161,7 +160,6 @@ class Operation(Activity):
                 |                objOperation.GetActions ActionList
 
         :param tuple o_children_list:
-        :return: None
         :rtype: None
         """
         return self.operation.GetActions(o_children_list)
@@ -214,7 +212,6 @@ class Operation(Activity):
                 |                objOperation.GetRobotMotion objRobotmotion
 
         :param RobotMotion o_robot_target_motion:
-        :return: None
         :rtype: None
         """
         return self.operation.GetRobotMotion(o_robot_target_motion.com_object)
@@ -268,7 +265,6 @@ class Operation(Activity):
                 |                objOperation.GetViaMode ViaMode
 
         :param int index:
-        :return: None
         :rtype: None
         """
         return self.operation.GetViaMode(index)
@@ -306,7 +302,6 @@ class Operation(Activity):
                 |                objOperation.SetViaMode 0
 
         :param int index:
-        :return: None
         :rtype: None
         """
         return self.operation.SetViaMode(index)

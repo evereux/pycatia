@@ -85,7 +85,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 | 
                 |      oMode = hybShpCurveSmooth.CorrectionMode
 
-        :return: int
         :rtype: int
         """
 
@@ -116,7 +115,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |      Dim CurvatureThH as double
                 |      CurvatureThH = hybShpCurvePar.CurvatureThreshold
 
-        :return: float
         :rtype: float
         """
 
@@ -147,7 +145,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |      Dim CurvatureActivity as boolean 
                 |      CurvatureActivity = hybShpCurvePar.CurvatureThresholdActivity
 
-        :return: bool
         :rtype: bool
         """
 
@@ -178,7 +175,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |      Dim Curve as CATIAReference 
                 |      Curve  = hybShpCurvePar.CurveToSmooth
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -221,7 +217,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 | 
                 |      oContinuity = hybShpCurveSmooth.EndExtremityContinuity
 
-        :return: int
         :rtype: int
         """
 
@@ -252,7 +247,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |      Dim MaximumDeviationVal as CATIALength
                 |      MaximumDeviationVal  = hybShpCurvePar.MaximumDeviation
 
-        :return: Length
         :rtype: Length
         """
 
@@ -275,7 +269,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |      Dim MaxActivity as boolean
                 |      MaxActivity  = hybShpCurvePar.MaximumDeviationActivity
 
-        :return: bool
         :rtype: bool
         """
 
@@ -318,7 +311,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 | 
                 |      oContinuity = hybShpCurveSmooth.StartExtremityContinuity
 
-        :return: int
         :rtype: int
         """
 
@@ -350,7 +342,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |      Dim Support  as CATIAReference 
                 |      Support   = ybShpCurveSmooth.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -381,7 +372,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |      Dim Curve as CATIAAngle  
                 |      AngleThH  = ybShpCurveSmooth.TangencyThreshold
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -594,7 +584,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |         iTangencyThreshold
                 |             The tangency threshold
 
-        :return: bool
         :rtype: bool
         """
 
@@ -632,7 +621,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |          hybShpCurveSmooth.AddFrozenCurveSegment iCurve
 
         :param Reference i_curve:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_curve_smooth.AddFrozenCurveSegment(i_curve.com_object)
@@ -676,7 +664,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |          hybShpCurveSmooth.AddFrozenPoint iPoint
 
         :param Reference i_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_curve_smooth.AddFrozenPoint(i_point.com_object)
@@ -721,7 +708,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |          Set oCurve = hybShpCurveSmooth.GetFrozenCurveSegment (iPos).
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_curve_smooth.GetFrozenCurveSegment(i_pos))
@@ -751,7 +737,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |                  Dim oSize As  long
                 |                  oSize = hybShpCurveSmooth.GetFrozenCurveSegmentsSize
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_curve_smooth.GetFrozenCurveSegmentsSize()
@@ -780,7 +765,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |          Set oPoint = hybShpCurveSmooth.GetFrozenPoint (iPos).
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_curve_smooth.GetFrozenPoint(i_pos))
@@ -808,7 +792,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |                  Dim oSize As  long
                 |                  oSize = hybShpCurveSmooth.GetFrozenPointsSize
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_curve_smooth.GetFrozenPointsSize()
@@ -830,7 +813,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |
                 |      hybShpCurveSmooth.RemoveAllFrozenCurveSegments
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_curve_smooth.RemoveAllFrozenCurveSegments()
@@ -852,7 +834,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |
                 |      hybShpCurveSmooth.RemoveAllFrozenPoints
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_curve_smooth.RemoveAllFrozenPoints()
@@ -880,7 +861,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |          hybShpCurveSmooth.RemoveFrozenCurveSegment iCurve.
 
         :param Reference i_curve:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_curve_smooth.RemoveFrozenCurveSegment(i_curve.com_object)
@@ -923,7 +903,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |          hybShpCurveSmooth.RemoveFrozenPoint iPoint.
 
         :param Reference i_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_curve_smooth.RemoveFrozenPoint(i_point.com_object)
@@ -959,7 +938,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |             The maximium deviation
 
         :param float i_max_deviation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_curve_smooth.SetMaximumDeviation(i_max_deviation)
@@ -980,7 +958,6 @@ class HybridShapeCurveSmooth(HybridShape):
                 |             The tangency threshold
 
         :param float i_tangency_threshold:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_curve_smooth.SetTangencyThreshold(i_tangency_threshold)

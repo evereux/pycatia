@@ -53,7 +53,6 @@ class ABQOutputRequest(AnyObject):
                 |         A boolean specifying whether the output request is activated or
                 |         deactivated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -79,7 +78,6 @@ class ABQOutputRequest(AnyObject):
                 | 
                 |     Sets request for output results at specified increment.
 
-        :return: int
         :rtype: int
         """
 
@@ -110,7 +108,6 @@ class ABQOutputRequest(AnyObject):
                 |         from previous step, it will return "PROPAGATED" if the output request feature
                 |         is modified in current step, it will return "MODIFIED"
 
-        :return: str
         :rtype: str
         """
 
@@ -130,7 +127,6 @@ class ABQOutputRequest(AnyObject):
                 |     Returns:
                 |         The string representing the type of the output request.
 
-        :return: str
         :rtype: str
         """
 
@@ -152,7 +148,6 @@ class ABQOutputRequest(AnyObject):
                 |     Returns:
                 |         A boolean specifying whether the whole model is selected as support.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -191,7 +186,6 @@ class ABQOutputRequest(AnyObject):
 
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_output_request.AddSupportFromProduct(i_product.com_object, i_support.com_object)
@@ -236,7 +230,6 @@ class ABQOutputRequest(AnyObject):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_output_request.AddSupportFromPublication(i_product.com_object, i_publication.com_object)
@@ -281,7 +274,6 @@ class ABQOutputRequest(AnyObject):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_output_request.AddSupportFromReference(i_reference.com_object, i_support.com_object)
@@ -311,7 +303,6 @@ class ABQOutputRequest(AnyObject):
                 | 
                 |     Sets request for output results at last increment.
 
-        :return: None
         :rtype: None
         """
         return self.abq_output_request.SetOutputAtLastIncrement()

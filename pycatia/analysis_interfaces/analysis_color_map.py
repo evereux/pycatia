@@ -58,7 +58,6 @@ class AnalysisColorMap(AnyObject):
                 |          In this example, oDiscreteMode is the output Discrete Mode for
                 |          analysisColorMap.
 
-        :return: cat_variant
         :rtype: cat_variant
         """
 
@@ -94,7 +93,7 @@ class AnalysisColorMap(AnyObject):
                 |          In this example, oDistMode is the output distribution mode for
                 |          analysisColorMap.
 
-        :return: int
+        :return: enum spm_distribution_mode
         :rtype: int
         """
 
@@ -103,7 +102,7 @@ class AnalysisColorMap(AnyObject):
     @distribution_mode.setter
     def distribution_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum spm_distribution_mode
         """
 
         self.analysis_color_map.DistributionMode = value
@@ -132,7 +131,6 @@ class AnalysisColorMap(AnyObject):
                 |          In this example, oMaxValue is the output Imposed Maximum value for
                 |          analysisColorMap.
 
-        :return: float
         :rtype: float
         """
 
@@ -169,7 +167,6 @@ class AnalysisColorMap(AnyObject):
                 |          In this example, oMinValue is the output Imposed Minimum value for
                 |          analysisColorMap.
 
-        :return: float
         :rtype: float
         """
 
@@ -205,7 +202,6 @@ class AnalysisColorMap(AnyObject):
                 |          In this example, oInverseMode is the output Inverse Mode for
                 |          analysisColorMap.
 
-        :return: cat_variant
         :rtype: cat_variant
         """
 
@@ -243,7 +239,6 @@ class AnalysisColorMap(AnyObject):
                 |          In this example, oNbColors is the output Number of colors for
                 |          analysisColorMap.
 
-        :return: int
         :rtype: int
         """
 
@@ -279,7 +274,6 @@ class AnalysisColorMap(AnyObject):
                 |          In this example, oSmoothMode is the output Smooth Mode for
                 |          analysisColorMap.
 
-        :return: cat_variant
         :rtype: cat_variant
         """
 
@@ -320,7 +314,6 @@ class AnalysisColorMap(AnyObject):
                 |          list at Index 3.
 
         :param int index_value:
-        :return: float
         :rtype: float
         """
         return self.analysis_color_map.GetDistributionValue(index_value)
@@ -380,7 +373,6 @@ class AnalysisColorMap(AnyObject):
         :param int index_value:
         :param float i_mode_value:
         :param cat_variant i_smoothening_flag:
-        :return: None
         :rtype: None
         """
         return self.analysis_color_map.SetDistributionValue(index_value, i_mode_value, i_smoothening_flag)
@@ -411,7 +403,6 @@ class AnalysisColorMap(AnyObject):
                 |     Updates the visualization of the color map. This method should be called
                 |     after one or all previous PUT methods are called on Color Map.
 
-        :return: None
         :rtype: None
         """
         return self.analysis_color_map.Update()

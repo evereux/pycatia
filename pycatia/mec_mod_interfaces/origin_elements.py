@@ -56,7 +56,6 @@ class OriginElements(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          Set plnXY = partRoot.originElements.PlaneXY
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -80,7 +79,6 @@ class OriginElements(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          Set plnYZ = partRoot.originElements.PlaneYZ
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -104,7 +102,6 @@ class OriginElements(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          Set plnZX = partRoot.originElements.PlaneZX
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 

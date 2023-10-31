@@ -51,7 +51,6 @@ class TPSViews(Collection):
                 |     Retrieve a TPS View.
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return TPSView(self.tps_views.Item(i_index))

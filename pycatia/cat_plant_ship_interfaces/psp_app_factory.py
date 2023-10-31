@@ -76,7 +76,6 @@ class PSPAppFactory(AnyObject):
         :param Product i_current_product:
         :param str i_group_type:
         :param str i_group_id:
-        :return: PSPGroup
         :rtype: PSPGroup
         """
         return PSPGroup(self.psp_app_factory.CreateGroup(i_current_product.com_object, i_group_type, i_group_id))
@@ -104,7 +103,6 @@ class PSPAppFactory(AnyObject):
                 |          objThisIntf.DeleteCompartment iobj1
 
         :param PSPGroup i_compartment:
-        :return: None
         :rtype: None
         """
         return self.psp_app_factory.DeleteCompartment(i_compartment.com_object)
@@ -147,7 +145,6 @@ class PSPAppFactory(AnyObject):
                 |          objThisIntf.DeleteGroup iobj1
 
         :param PSPGroup i_group:
-        :return: None
         :rtype: None
         """
         return self.psp_app_factory.DeleteGroup(i_group.com_object)
@@ -190,7 +187,6 @@ class PSPAppFactory(AnyObject):
                 |          objThisIntf.DeleteLogicalLine iobj1
 
         :param PSPLogicalLine i_logical_line:
-        :return: None
         :rtype: None
         """
         return self.psp_app_factory.DeleteLogicalLine(i_logical_line.com_object)
@@ -233,7 +229,6 @@ class PSPAppFactory(AnyObject):
                 |          objThisIntf.DeletePart iobj1
 
         :param Product i_part:
-        :return: None
         :rtype: None
         """
         return self.psp_app_factory.DeletePart(i_part.com_object)
@@ -287,7 +282,6 @@ class PSPAppFactory(AnyObject):
 
         :param Product i_current_product:
         :param str i_compartment_id:
-        :return: PSPGroup
         :rtype: PSPGroup
         """
         return PSPGroup(self.psp_app_factory.GetCompartment(i_current_product.com_object, i_compartment_id))
@@ -324,7 +318,6 @@ class PSPAppFactory(AnyObject):
 
         :param Product i_current_product:
         :param str i_logical_line_id:
-        :return: PSPLogicalLine
         :rtype: PSPLogicalLine
         """
         return PSPLogicalLine(self.psp_app_factory.GetLogicalLine(i_current_product.com_object, i_logical_line_id))
@@ -359,7 +352,6 @@ class PSPAppFactory(AnyObject):
                 |          Set ObjArg2 = objThisIntf.ListCompartments (iobj1 )
 
         :param Product i_current_product:
-        :return: PSPListOfObjects
         :rtype: PSPListOfObjects
         """
         return PSPListOfObjects(self.psp_app_factory.ListCompartments(i_current_product.com_object))
@@ -392,7 +384,6 @@ class PSPAppFactory(AnyObject):
                 |          Set ObjArg2 = objThisIntf.ListGroups (iobj1)
 
         :param Product i_current_product:
-        :return: PSPListOfObjects
         :rtype: PSPListOfObjects
         """
         return PSPListOfObjects(self.psp_app_factory.ListGroups(i_current_product.com_object))
@@ -426,7 +417,6 @@ class PSPAppFactory(AnyObject):
                 |          Set ObjArg2 = objThisIntf.ListLogicalLines (iobj1 )
 
         :param Product i_current_product:
-        :return: PSPListOfObjects
         :rtype: PSPListOfObjects
         """
         return PSPListOfObjects(self.psp_app_factory.ListLogicalLines(i_current_product.com_object))
@@ -463,8 +453,7 @@ class PSPAppFactory(AnyObject):
                 |          Set ObjArg3 = objThisIntf.ListPhysicals (iobj1, iobjArg2 )
 
         :param Product i_current_product:
-        :param int i_domain_id:
-        :return: PSPListOfObjects
+        :param int i_domain_id: enum cat_psp_idl_domain_id
         :rtype: PSPListOfObjects
         """
         return PSPListOfObjects(self.psp_app_factory.ListPhysicals(i_current_product.com_object, i_domain_id))

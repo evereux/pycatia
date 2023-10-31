@@ -58,7 +58,6 @@ class TCPTraceActivity(Activity):
         :param int o_r:
         :param int o_g:
         :param int o_b:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_activity.GetLineColor(o_r, o_g, o_b)
@@ -79,7 +78,6 @@ class TCPTraceActivity(Activity):
                 |             long. Get the line thickness property defined in the trace
                 |             activity.
 
-        :return: int
         :rtype: int
         """
         return self.tcp_trace_activity.GetLineThickness()
@@ -100,7 +98,6 @@ class TCPTraceActivity(Activity):
                 |             long. Get the line type property defined in the trace
                 |             activity.
 
-        :return: int
         :rtype: int
         """
         return self.tcp_trace_activity.GetLineType()
@@ -124,7 +121,6 @@ class TCPTraceActivity(Activity):
                 |             Boolean. Indicates if the tracing capability is active or
                 |             not.
 
-        :return: bool
         :rtype: bool
         """
         return self.tcp_trace_activity.GetTCPTraceMode()
@@ -150,7 +146,6 @@ class TCPTraceActivity(Activity):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_activity.SetLineColor(i_r, i_g, i_b)
@@ -172,7 +167,6 @@ class TCPTraceActivity(Activity):
                 |             activity.
 
         :param int i_thickness:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_activity.SetLineThickness(i_thickness)
@@ -193,7 +187,6 @@ class TCPTraceActivity(Activity):
                 |             long. Set the line type property for the trace.
 
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_activity.SetLineType(i_type)
@@ -217,7 +210,6 @@ class TCPTraceActivity(Activity):
                 |             Boolean. Value to set.
 
         :param bool i_tcp_trace_mode:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_activity.SetTCPTraceMode(i_tcp_trace_mode)

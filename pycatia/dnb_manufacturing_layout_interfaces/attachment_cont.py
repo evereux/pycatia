@@ -60,7 +60,6 @@ class AttachmentCont(AnyObject):
                 |         An HRESULT
 
         :param AnyObject o_attach_factory:
-        :return: None
         :rtype: None
         """
         return self.attachment_cont.GetAttachmentFactory(o_attach_factory.com_object)
@@ -85,7 +84,6 @@ class AttachmentCont(AnyObject):
                 |         An HRESULT
 
         :param tuple o_attach_list:
-        :return: None
         :rtype: None
         """
         return self.attachment_cont.GetListofAttachments(o_attach_list)

@@ -86,7 +86,6 @@ class SchDropOffView(AnyObject):
         :param tuple i_db2_pos_xy:
         :param float i_db1_scale:
         :param float i_db1_angl:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_drop_off_view.AddDropOffView(
@@ -134,7 +133,6 @@ class SchDropOffView(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListDropOffViews
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_drop_off_view.ListDropOffViews())
@@ -162,7 +160,6 @@ class SchDropOffView(AnyObject):
                 |          objThisIntf.RemoveDropOffViewobjArg1
 
         :param DrawingView i_view_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_drop_off_view.RemoveDropOffView(i_view_to_remove.com_object)

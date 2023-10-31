@@ -53,7 +53,7 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.AnchorPoint = catRight
 
-        :return: int
+        :return: enum cat_text_anchor_position
         :rtype: int
         """
 
@@ -62,7 +62,7 @@ class DrawingTextProperties(CATBaseDispatch):
     @anchor_point.setter
     def anchor_point(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_text_anchor_position
         """
 
         self.drawing_text_properties.AnchorPoint = value
@@ -84,7 +84,7 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Blanking = catBlankingOnGeom
 
-        :return: int
+        :return: enum cat_blanking_mode
         :rtype: int
         """
 
@@ -93,7 +93,7 @@ class DrawingTextProperties(CATBaseDispatch):
     @blanking.setter
     def blanking(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_blanking_mode
         """
 
         self.drawing_text_properties.Blanking = value
@@ -116,7 +116,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          oVal = MyText.Bold
 
-        :return: int
         :rtype: int
         """
 
@@ -149,7 +148,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          B=0   A=255)
                 |          MyText.Color = redCol
 
-        :return: int
         :rtype: int
         """
 
@@ -180,7 +178,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.SetFontName("Courrier 10 BT")
 
-        :return: str
         :rtype: str
         """
 
@@ -212,7 +209,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          iFontSize = 3.5
                 |          MyText.SetFontSize 0, 0, iFontSize
 
-        :return: float
         :rtype: float
         """
 
@@ -243,7 +239,7 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.FrameType = catEllipse
 
-        :return: int
+        :return: enum cat_text_frame_type
         :rtype: int
         """
 
@@ -252,7 +248,7 @@ class DrawingTextProperties(CATBaseDispatch):
     @frame_type.setter
     def frame_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_text_frame_type
         """
 
         self.drawing_text_properties.FrameType = value
@@ -275,7 +271,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Italic = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -308,7 +303,7 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Justification = catRight
 
-        :return: int
+        :return: enum cat_justification
         :rtype: int
         """
 
@@ -317,7 +312,7 @@ class DrawingTextProperties(CATBaseDispatch):
     @justification.setter
     def justification(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_justification
         """
 
         self.drawing_text_properties.Justification = value
@@ -340,7 +335,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Kerning = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -371,7 +365,7 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Mirror = catTextNoFlip
 
-        :return: int
+        :return: enum cat_text_flip_mode
         :rtype: int
         """
 
@@ -403,7 +397,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          oval = MyText.Overline()
 
-        :return: int
         :rtype: int
         """
 
@@ -436,7 +429,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.StrikeThru = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -468,7 +460,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Subscript = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -501,7 +492,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Superscript = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -533,7 +523,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          oval = MyText.Underline
 
-        :return: int
         :rtype: int
         """
 
@@ -569,17 +558,14 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          CatTextFrameType itype = catRectangle
                 |          MyText.ActivateFrame itype
                 |          
-                | 
                 | Example:
                 | 
                 |       This example remove the frame to MyText drawing text.
-                |      
-                | 
+                |
                 |      CatTextFrameType itype = catNone
                 |      MyText.ActivateFrame itype
 
-        :param int i_type:
-        :return: None
+        :param int i_type: enum cat_text_frame_type
         :rtype: None
         """
         return self.drawing_text_properties.ActivateFrame(i_type)
@@ -618,7 +604,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 |     Copyright © 1999-2011, Dassault Systèmes. All rights
                 |     reserved.
 
-        :return: None
         :rtype: None
         """
         return self.drawing_text_properties.Update()

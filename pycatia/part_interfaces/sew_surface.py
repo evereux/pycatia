@@ -56,7 +56,6 @@ class SewSurface(SurfaceBasedShape):
                 |      Dim DeviationValue As double
                 |      Set DeviationValue = Sew.MaximumDeviationValue
 
-        :return: float
         :rtype: float
         """
 
@@ -102,7 +101,6 @@ class SewSurface(SurfaceBasedShape):
                 |          Dim oMode
                 |          Set oMode = Sew.DeviationMode
 
-        :return: int
         :rtype: int
         """
 
@@ -137,7 +135,7 @@ class SewSurface(SurfaceBasedShape):
                 |          Set sptSide = mySew.SewingSide
                 |          mySew.SewingSide = catPositiveSide
 
-        :return: int
+        :return: enum cat_sewing_intersection_mode
         :rtype: int
         """
 
@@ -146,7 +144,7 @@ class SewSurface(SurfaceBasedShape):
     @sewing_intersection_mode.setter
     def sewing_intersection_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_sewing_intersection_mode
         """
 
         self.sew_surface.SewingIntersectionMode = value
@@ -171,7 +169,7 @@ class SewSurface(SurfaceBasedShape):
                 |          Set sptSide = mySew.SewingSide
                 |          mySew.SewingSide = catPositiveSide
 
-        :return: int
+        :return: enum cat_split_side
         :rtype: int
         """
 
@@ -180,7 +178,7 @@ class SewSurface(SurfaceBasedShape):
     @sewing_side.setter
     def sewing_side(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_split_side
         """
 
         self.sew_surface.SewingSide = value
@@ -203,7 +201,6 @@ class SewSurface(SurfaceBasedShape):
                 |         Reference for more information)
 
         :param Reference i_support_surface:
-        :return: None
         :rtype: None
         """
         return self.sew_surface.SetSurfaceSupport(i_support_surface.com_object)
@@ -248,7 +245,6 @@ class SewSurface(SurfaceBasedShape):
                 |              firstSewSurface.SetVolumeSupport volumeExtrudeRef
 
         :param Reference i_volume:
-        :return: None
         :rtype: None
         """
         return self.sew_surface.SetVolumeSupport(i_volume.com_object)

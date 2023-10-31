@@ -50,7 +50,6 @@ class Annotations(Collection):
                 |     Add an Annotation.
 
         :param Annotation i_annot:
-        :return: None
         :rtype: None
         """
         return self.annotations.Add(i_annot.com_object)
@@ -82,7 +81,6 @@ class Annotations(Collection):
                 |     Item method is replaced by Item2 has.
 
         :param cat_variant i_index:
-        :return: Annotation
         :rtype: Annotation
         """
         return Annotation(self.annotations.Item(i_index))
@@ -98,7 +96,6 @@ class Annotations(Collection):
                 |     Retrieve an Annotation using interface CATIAAnnotation2
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.annotations.Item2(i_index))

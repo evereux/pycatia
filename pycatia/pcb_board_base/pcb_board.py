@@ -53,7 +53,6 @@ class PCBBoard(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -78,7 +77,6 @@ class PCBBoard(AnyObject):
                 | 
                 |     set the pad of a Board or a component or a panel.
 
-        :return: Pad
         :rtype: Pad
         """
 
@@ -151,7 +149,6 @@ class PCBBoard(AnyObject):
         :param str i_associated_part_name:
         :param str i_hole_type:
         :param str i_hole_owner:
-        :return: None
         :rtype: None
         """
         return self.pcb_board.create_pcbhole(
@@ -235,7 +232,6 @@ class PCBBoard(AnyObject):
         :param str i_associated_part_name:
         :param str i_hole_type:
         :param str i_hole_owner:
-        :return: None
         :rtype: None
         """
         return self.pcb_board.create_pcbpattern(
@@ -287,7 +283,6 @@ class PCBBoard(AnyObject):
 
         :param str zonetype:
         :param Pad i_pad:
-        :return: None
         :rtype: None
         """
         return self.pcb_board.create_zone(zonetype, i_pad.com_object)

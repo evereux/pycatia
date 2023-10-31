@@ -68,7 +68,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Mode)
                 |     Role: Returns or sets the state of mode for details migration.
 
-        :return: int
         :rtype: int
         """
 
@@ -95,7 +94,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Mode)
                 |     Role: Returns or sets the state of mode for details migration.
 
-        :return: int
         :rtype: int
         """
 
@@ -122,7 +120,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     (WireFrame Mode)
                 |     Role: Returns or sets the state of mode for details migration.
 
-        :return: int
         :rtype: int
         """
 
@@ -150,7 +147,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Role: Returns or sets the activation state of mode with external
                 |     deformation (Gap Healing). during a Copy/Paste As Spec.
 
-        :return: float
         :rtype: float
         """
 
@@ -178,7 +174,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Role: Returns or sets the activation state of type for external deformation
                 |     (Model relative or User defined value) during a Copy/Paste As Spec.
 
-        :return: int
         :rtype: int
         """
 
@@ -206,7 +201,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Role: Returns or sets the activation state of mode with internal
                 |     deformation during a Copy/Paste As Spec.
 
-        :return: float
         :rtype: float
         """
 
@@ -234,7 +228,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Role: Returns or sets the activation state of type for internal deformation
                 |     (Model relative or User defined value) during a Copy/Paste As Spec.
 
-        :return: int
         :rtype: int
         """
 
@@ -262,7 +255,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Role: Returns or sets the activation state of mode with segmentation during
                 |     a Copy/Paste As Spec.
 
-        :return: int
         :rtype: int
         """
 
@@ -290,7 +282,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Role: Returns or sets the state of mode for isolated Solids Mock-Up
                 |     migration.
 
-        :return: str
         :rtype: str
         """
 
@@ -317,7 +308,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     migration
                 |     Role: Returns or sets the state of mode for 3D Text migration.
 
-        :return: int
         :rtype: int
         """
 
@@ -346,7 +336,6 @@ class V4V5SpaceSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_v5_space_setting_att.GetDetailsModeExplodeInfo(admin_level, o_locked)
@@ -366,7 +355,6 @@ class V4V5SpaceSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_v5_space_setting_att.GetDetailsModeUsualInfo(admin_level, o_locked)
@@ -386,7 +374,6 @@ class V4V5SpaceSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_v5_space_setting_att.GetDetailsModeWireframeInfo(admin_level, o_locked)
@@ -406,7 +393,6 @@ class V4V5SpaceSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_v5_space_setting_att.GetExternalMaxDeformationInfo(admin_level, o_locked)
@@ -426,7 +412,6 @@ class V4V5SpaceSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_v5_space_setting_att.GetExternalTypeDeformationInfo(admin_level, o_locked)
@@ -446,7 +431,6 @@ class V4V5SpaceSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_v5_space_setting_att.GetInternalMaxDeformationInfo(admin_level, o_locked)
@@ -466,7 +450,6 @@ class V4V5SpaceSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_v5_space_setting_att.GetInternalTypeDeformationInfo(admin_level, o_locked)
@@ -486,7 +469,6 @@ class V4V5SpaceSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_v5_space_setting_att.GetKeepSegmentationInfo(admin_level, o_locked)
@@ -506,7 +488,6 @@ class V4V5SpaceSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_v5_space_setting_att.GetSolidMUInfo(admin_level, o_locked)
@@ -526,7 +507,6 @@ class V4V5SpaceSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_v5_space_setting_att.GetTextMigrationInfo(admin_level, o_locked)
@@ -544,7 +524,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_v5_space_setting_att.SetDetailsModeExplodeLock(i_lock)
@@ -577,7 +556,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_v5_space_setting_att.SetDetailsModeUsualLock(i_lock)
@@ -610,7 +588,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_v5_space_setting_att.SetDetailsModeWireframeLock(i_lock)
@@ -643,7 +620,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_v5_space_setting_att.SetExternalMaxDeformationLock(i_lock)
@@ -678,7 +654,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_v5_space_setting_att.SetExternalTypeDeformationLock(i_lock)
@@ -711,7 +686,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_v5_space_setting_att.SetInternalMaxDeformationLock(i_lock)
@@ -746,7 +720,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_v5_space_setting_att.SetInternalTypeDeformationLock(i_lock)
@@ -778,7 +751,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_v5_space_setting_att.SetKeepSegmentationLock(i_lock)
@@ -811,7 +783,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_v5_space_setting_att.SetSolidMULock(i_lock)
@@ -843,7 +814,6 @@ class V4V5SpaceSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_v5_space_setting_att.SetTextMigrationLock(i_lock)

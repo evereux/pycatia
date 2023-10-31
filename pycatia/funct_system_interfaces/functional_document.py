@@ -48,7 +48,6 @@ class FunctionalDocument(Document):
                 | 
                 |     Returns the Current Description.
 
-        :return: FunctionalDescription
         :rtype: FunctionalDescription
         """
 
@@ -65,7 +64,6 @@ class FunctionalDocument(Document):
                 | 
                 |     Returns the Facet Managers.
 
-        :return: FunctFacetManagers
         :rtype: FunctFacetManagers
         """
 
@@ -83,7 +81,6 @@ class FunctionalDocument(Document):
                 | 
                 |     Returns the Original Description.
 
-        :return: FunctionalDescription
         :rtype: FunctionalDescription
         """
 

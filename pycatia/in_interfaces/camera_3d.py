@@ -61,7 +61,6 @@ class Camera3D(Camera):
                 |          MyCamera.Viewpoint3D.Zoom = 2
                 |          CATIA.ActiveWindow.ActiveViewer.Viewpoint3D = MyCamera.Viewpoint3D
 
-        :return: Viewpoint3D
         :rtype: Viewpoint3D
         """
 

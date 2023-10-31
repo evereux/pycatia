@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class TreeVizManipSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -48,7 +47,6 @@ class TreeVizManipSettingAtt(SettingController):
                 | 
                 |     Retrieves or Sets the arc-selection mode applied to the specification tree.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -74,7 +72,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |     Retrieves or Sets the automatic expand mode applied to the specification
                 |     tree.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -100,7 +97,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |     Retrieves or Sets the automatic scrolling mode applied to the specification
                 |     tree.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -125,7 +121,6 @@ class TreeVizManipSettingAtt(SettingController):
                 | 
                 |     Retrieves or Sets the "display geometry on scrolling" mode.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -150,7 +145,7 @@ class TreeVizManipSettingAtt(SettingController):
                 | 
                 |     Retrieves or Sets the orientation applied to the specification tree.
 
-        :return: int
+        :return: enum cat_tree_orientation_enum
         :rtype: int
         """
 
@@ -159,7 +154,7 @@ class TreeVizManipSettingAtt(SettingController):
     @orientation.setter
     def orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_tree_orientation_enum
         """
 
         self.tree_viz_manip_setting_att.Orientation = value
@@ -176,7 +171,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |     Retrieves or Sets the visualization Show/NoShow's mode applied to the
                 |     specification tree.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -202,7 +196,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |     Retrieves or Sets the number of characters shown for the text of the
                 |     specification tree.
 
-        :return: int
         :rtype: int
         """
 
@@ -228,7 +221,7 @@ class TreeVizManipSettingAtt(SettingController):
                 |     Retrieves or Sets the type of size applied to the text of the specification
                 |     tree.
 
-        :return: int
+        :return: enum cat_tree_size_type_enum
         :rtype: int
         """
 
@@ -237,7 +230,7 @@ class TreeVizManipSettingAtt(SettingController):
     @size_type.setter
     def size_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_tree_size_type_enum
         """
 
         self.tree_viz_manip_setting_att.SizeType = value
@@ -253,7 +246,7 @@ class TreeVizManipSettingAtt(SettingController):
                 | 
                 |     Retrieves or Sets the type applied to the specification tree.
 
-        :return: int
+        :return: enum cat_tree_type_enum
         :rtype: int
         """
 
@@ -262,7 +255,7 @@ class TreeVizManipSettingAtt(SettingController):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_tree_type_enum
         """
 
         self.tree_viz_manip_setting_att.Type = value
@@ -299,7 +292,6 @@ class TreeVizManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_viz_manip_setting_att.GetArcSelectionActivationInfo(io_admin_level, io_locked)
@@ -336,7 +328,6 @@ class TreeVizManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_viz_manip_setting_att.GetAutoExpandActivationInfo(io_admin_level, io_locked)
@@ -373,7 +364,6 @@ class TreeVizManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_viz_manip_setting_att.GetAutoScrollActivationInfo(io_admin_level, io_locked)
@@ -410,7 +400,6 @@ class TreeVizManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_viz_manip_setting_att.GetDisplayGeomOnScrollingInfo(io_admin_level, io_locked)
@@ -447,7 +436,6 @@ class TreeVizManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_viz_manip_setting_att.GetOrientationInfo(io_admin_level, io_locked)
@@ -484,7 +472,6 @@ class TreeVizManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_viz_manip_setting_att.GetShowActivationInfo(io_admin_level, io_locked)
@@ -523,7 +510,6 @@ class TreeVizManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_viz_manip_setting_att.GetSizeTypeInfo(io_admin_level, io_locked)
@@ -560,7 +546,6 @@ class TreeVizManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_viz_manip_setting_att.GetTypeInfo(io_admin_level, io_locked)
@@ -588,7 +573,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_viz_manip_setting_att.SetArcSelectionActivationLock(i_locked)
@@ -631,7 +615,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_viz_manip_setting_att.SetAutoExpandActivationLock(i_locked)
@@ -674,7 +657,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_viz_manip_setting_att.SetAutoScrollActivationLock(i_locked)
@@ -716,7 +698,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_viz_manip_setting_att.SetDisplayGeomOnScrollingLock(i_locked)
@@ -759,7 +740,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_viz_manip_setting_att.SetOrientationLock(i_locked)
@@ -802,7 +782,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_viz_manip_setting_att.SetShowActivationLock(i_locked)
@@ -847,7 +826,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_viz_manip_setting_att.SetSizeTypeLock(i_locked)
@@ -889,7 +867,6 @@ class TreeVizManipSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_viz_manip_setting_att.SetTypeLock(i_locked)
@@ -910,4 +887,4 @@ class TreeVizManipSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'TreeVizManipSettingAtt(name="{ self.name }")'
+        return f'TreeVizManipSettingAtt(name="{self.name}")'

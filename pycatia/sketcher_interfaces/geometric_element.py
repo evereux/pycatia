@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class GeometricElement(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -51,11 +50,11 @@ class GeometricElement(AnyObject):
                 |         oType
                 |             Specific type of the geometric interface
 
-        :return: int
+        :return: enum cat_geometric_type
         :rtype: int
         """
 
         return self.geometric_element.GeometricType
 
     def __repr__(self):
-        return f'GeometricElement(name="{ self.name }")'
+        return f'GeometricElement(name="{self.name}")'

@@ -62,7 +62,6 @@ class SFMWeld(AnyObject):
                 |              ustrAddedMaterial = EachWeld.AddedMaterial
                 |              Next
 
-        :return: str
         :rtype: str
         """
 
@@ -94,7 +93,6 @@ class SFMWeld(AnyObject):
                 |              ustrEdgePrep = EachWeld.EdgePreparation
                 |              Next
 
-        :return: str
         :rtype: str
         """
 
@@ -126,7 +124,6 @@ class SFMWeld(AnyObject):
                 |              ustrFitUp = EachWeld.FitUp
                 |              Next
 
-        :return: str
         :rtype: str
         """
 
@@ -162,7 +159,6 @@ class SFMWeld(AnyObject):
                 |              ustrWeldType = EachWeld.WeldType
                 |              Next
 
-        :return: str
         :rtype: str
         """
 

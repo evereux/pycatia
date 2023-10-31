@@ -46,7 +46,6 @@ class FastenerWorkBench(AnyObject):
                 | oCurveFastenerArray)
 
         :param tuple o_curve_fastener_array:
-        :return: None
         :rtype: None
         """
         return self.fastener_work_bench.CurveFasteners(o_curve_fastener_array)
@@ -76,7 +75,6 @@ class FastenerWorkBench(AnyObject):
                 | oFastenerGroupArray)
 
         :param tuple o_fastener_group_array:
-        :return: None
         :rtype: None
         """
         return self.fastener_work_bench.FastenerGroups(o_fastener_group_array)
@@ -104,7 +102,6 @@ class FastenerWorkBench(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetNumberOfCurveFasteners() As long
 
-        :return: int
         :rtype: int
         """
         return self.fastener_work_bench.GetNumberOfCurveFasteners()
@@ -117,7 +114,6 @@ class FastenerWorkBench(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetNumberOfFastenerGroups() As long
 
-        :return: int
         :rtype: int
         """
         return self.fastener_work_bench.GetNumberOfFastenerGroups()
@@ -130,7 +126,6 @@ class FastenerWorkBench(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetNumberOfPointFasteners() As long
 
-        :return: int
         :rtype: int
         """
         return self.fastener_work_bench.GetNumberOfPointFasteners()
@@ -145,7 +140,6 @@ class FastenerWorkBench(AnyObject):
                 | oPointFastenerArray)
 
         :param tuple o_point_fastener_array:
-        :return: None
         :rtype: None
         """
         return self.fastener_work_bench.PointFasteners(o_point_fastener_array)

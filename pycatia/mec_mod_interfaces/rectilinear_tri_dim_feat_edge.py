@@ -97,7 +97,6 @@ class RectilinearTriDimFeatEdge(TriDimFeatEdge):
                 |             The Z Coordinate of the direction
 
         :param tuple o_direction:
-        :return: None
         :rtype: None
         """
         return self.rectilinear_tri_dim_feat_edge.GetDirection(o_direction)
@@ -137,7 +136,6 @@ class RectilinearTriDimFeatEdge(TriDimFeatEdge):
                 |             The Z Coordinate of the rectilinear edge origin
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
         return self.rectilinear_tri_dim_feat_edge.GetOrigin(o_origin)

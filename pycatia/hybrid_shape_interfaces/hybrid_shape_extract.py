@@ -62,7 +62,6 @@ class HybridShapeExtract(HybridShape):
                 |      Dim AngularThH as double
                 |      AngularThH = hybShpExtract.AngularThreshold
 
-        :return: float
         :rtype: float
         """
 
@@ -93,7 +92,6 @@ class HybridShapeExtract(HybridShape):
                 |      Dim AngularActivity as boolean 
                 |      AngularActivity = hybShpExtract.AngularThresholdActivity
 
-        :return: bool
         :rtype: bool
         """
 
@@ -118,7 +116,6 @@ class HybridShapeExtract(HybridShape):
                 | 
                 |     Returns or sets the ComplementaryExtract checked/unchecked for the extract.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -149,7 +146,6 @@ class HybridShapeExtract(HybridShape):
                 |      Dim CurvatureThH as double
                 |      CurvatureThH = hybShpExtract.CurvatureThreshold
 
-        :return: float
         :rtype: float
         """
 
@@ -180,7 +176,6 @@ class HybridShapeExtract(HybridShape):
                 |      Dim CurvatureActivity as boolean 
                 |      CurvatureActivity = hybShpExtract.CurvatureThresholdActivity
 
-        :return: bool
         :rtype: bool
         """
 
@@ -211,7 +206,6 @@ class HybridShapeExtract(HybridShape):
                 |      Dim DistanceThH as double
                 |      DistanceThH = hybShpExtract.DistanceThreshold
 
-        :return: float
         :rtype: float
         """
 
@@ -242,7 +236,6 @@ class HybridShapeExtract(HybridShape):
                 |      Dim DistanceActivity as boolean 
                 |      DistanceActivity = hybShpExtract.DistanceThresholdActivity
 
-        :return: bool
         :rtype: bool
         """
 
@@ -271,7 +264,6 @@ class HybridShapeExtract(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -296,7 +288,6 @@ class HybridShapeExtract(HybridShape):
                 | 
                 |     Returns or sets the IsFederated flag checked/unchecked for the extract.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -327,7 +318,6 @@ class HybridShapeExtract(HybridShape):
                 |         2 for extraction propagation in tangent continuity
                 |         3 for extraction without propagation
 
-        :return: int
         :rtype: int
         """
 
@@ -352,7 +342,6 @@ class HybridShapeExtract(HybridShape):
                 | 
                 |     Returns or sets the support for the extract.
 
-        :return: Reference
         :rtype: Reference
         """
 

@@ -53,7 +53,6 @@ class HybridShapeSpine(HybridShape):
                 |     Gets or Sets the orientation. Orientation by reference with the normal to
                 |     the first section/plane
 
-        :return: int
         :rtype: int
         """
 
@@ -78,7 +77,6 @@ class HybridShapeSpine(HybridShape):
                 | 
                 |     Returns or sets the start point of the spine.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -108,7 +106,6 @@ class HybridShapeSpine(HybridShape):
                 |             The guide curve to be added
 
         :param Reference i_guide:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spine.AddGuide(i_guide.com_object)
@@ -148,7 +145,6 @@ class HybridShapeSpine(HybridShape):
                 |         Boundary object): PlanarFace.
 
         :param Reference i_section:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spine.AddSection(i_section.com_object)
@@ -188,7 +184,6 @@ class HybridShapeSpine(HybridShape):
 
         :param int i_idx:
         :param Reference op_ia_guide:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spine.GetGuide(i_idx, op_ia_guide.com_object)
@@ -223,7 +218,6 @@ class HybridShapeSpine(HybridShape):
                 |         oNbGuides
                 |             Number of guides in a spine curve
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_spine.GetNumberOfGuides()
@@ -243,7 +237,6 @@ class HybridShapeSpine(HybridShape):
                 |         oNbSections
                 |             Number of sections in a spine curve
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_spine.GetNumberOfSections()
@@ -268,7 +261,6 @@ class HybridShapeSpine(HybridShape):
 
         :param int i_idx:
         :param Reference o_section:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spine.GetSection(i_idx, o_section.com_object)
@@ -309,7 +301,6 @@ class HybridShapeSpine(HybridShape):
 
         :param Reference ip_ia_guide:
         :param Reference ip_ia_new_guide:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spine.ModifyGuideCurve(ip_ia_guide.com_object, ip_ia_new_guide.com_object)
@@ -350,7 +341,6 @@ class HybridShapeSpine(HybridShape):
 
         :param Reference ip_ia_section:
         :param Reference ip_ia_new_section:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spine.ModifySectionCurve(ip_ia_section.com_object, ip_ia_new_section.com_object)
@@ -386,7 +376,6 @@ class HybridShapeSpine(HybridShape):
                 |             The guide curve to be removed.
 
         :param Reference i_guide:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spine.RemoveGuide(i_guide.com_object)
@@ -425,7 +414,6 @@ class HybridShapeSpine(HybridShape):
                 |         Boundary object): PlanarFace.
 
         :param Reference i_section:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spine.RemoveSection(i_section.com_object)
@@ -465,7 +453,6 @@ class HybridShapeSpine(HybridShape):
                 |         Boundary object): Vertex.
 
         :param Reference i_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spine.SetStartPoint(i_point.com_object)

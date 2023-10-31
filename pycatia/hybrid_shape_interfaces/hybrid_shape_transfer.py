@@ -59,7 +59,6 @@ class HybridShapeTransfer(HybridShape):
                 | 
                 |     Returns or sets the element to transfer.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -84,7 +83,6 @@ class HybridShapeTransfer(HybridShape):
                 | 
                 |     Returns or sets the surface to unfold.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -113,7 +111,6 @@ class HybridShapeTransfer(HybridShape):
                 |         1= The type of transfer is folded to unfolded
                 |         2= The type of surface is unfolded to folded
 
-        :return: int
         :rtype: int
         """
 
@@ -143,7 +140,6 @@ class HybridShapeTransfer(HybridShape):
                 |         1= The surface to unfold is ruled,
                 |         2= the surface to unfold is all
 
-        :return: int
         :rtype: int
         """
 
@@ -168,7 +164,6 @@ class HybridShapeTransfer(HybridShape):
                 | 
                 |     Returns or sets the unfolded surface.
 
-        :return: Reference
         :rtype: Reference
         """
 

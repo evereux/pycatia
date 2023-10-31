@@ -16,7 +16,6 @@ from pycatia.part_interfaces.pattern import Pattern
 
 
 class CloseSurface(Pattern):
-
     """
         .. note::
             :class: toggle
@@ -49,7 +48,7 @@ class CloseSurface(Pattern):
         self.close_surface = com_object
 
     @property
-    def angular_direction_row(self):
+    def angular_direction_row(self) -> IntParam:
         """
         .. note::
             :class: toggle
@@ -72,7 +71,7 @@ class CloseSurface(Pattern):
         return IntParam(self.close_surface.AngularDirectionRow)
 
     @property
-    def angular_repartition(self):
+    def angular_repartition(self) -> AngularRepartition:
         """
         .. note::
             :class: toggle
@@ -96,7 +95,7 @@ class CloseSurface(Pattern):
         return AngularRepartition(self.close_surface.AngularRepartition)
 
     @property
-    def circular_pattern_parameters(self):
+    def circular_pattern_parameters(self) -> int:
         """
         .. note::
             :class: toggle
@@ -119,6 +118,7 @@ class CloseSurface(Pattern):
                 |          Set firstPattern.CircularPatternParameters = catCompleteCrown
 
         :return: enum cat_circular_pattern_parameters
+        :return: int
         """
 
         return self.close_surface.CircularPatternParameters
@@ -126,13 +126,13 @@ class CloseSurface(Pattern):
     @circular_pattern_parameters.setter
     def circular_pattern_parameters(self, value):
         """
-        :param enum cat_circular_pattern_parameters value:
+        :param int value: enum cat_circular_pattern_parameters
         """
 
         self.close_surface.CircularPatternParameters = value
 
     @property
-    def radial_alignment(self):
+    def radial_alignment(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -166,7 +166,7 @@ class CloseSurface(Pattern):
         self.close_surface.RadialAlignment = value
 
     @property
-    def radial_direction_row(self):
+    def radial_direction_row(self) -> IntParam:
         """
         .. note::
             :class: toggle
@@ -189,7 +189,7 @@ class CloseSurface(Pattern):
         return IntParam(self.close_surface.RadialDirectionRow)
 
     @property
-    def radial_repartition(self):
+    def radial_repartition(self) -> LinearRepartition:
         """
         .. note::
             :class: toggle
@@ -213,7 +213,7 @@ class CloseSurface(Pattern):
         return LinearRepartition(self.close_surface.RadialRepartition)
 
     @property
-    def rotation_orientation(self):
+    def rotation_orientation(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -504,4 +504,4 @@ class CloseSurface(Pattern):
         return self.close_surface.SetUnequalStep(i_instance_number)
 
     def __repr__(self):
-        return f'CloseSurface(name="{ self.name }")'
+        return f'CloseSurface(name="{self.name}")'

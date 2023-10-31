@@ -53,7 +53,6 @@ class DrawingPicture(AnyObject):
                 | 
                 |          MyPicture.cropBottom = 10.
 
-        :return: float
         :rtype: float
         """
 
@@ -86,7 +85,6 @@ class DrawingPicture(AnyObject):
                 | 
                 |          MyPicture.cropLeft = 10.
 
-        :return: float
         :rtype: float
         """
 
@@ -119,7 +117,6 @@ class DrawingPicture(AnyObject):
                 | 
                 |          MyPicture.cropRight = 10.
 
-        :return: float
         :rtype: float
         """
 
@@ -152,7 +149,6 @@ class DrawingPicture(AnyObject):
                 | 
                 |          MyPicture.cropTop = 10.
 
-        :return: float
         :rtype: float
         """
 
@@ -197,7 +193,7 @@ class DrawingPicture(AnyObject):
                 |     See also:
                 |         CatPictureFormat
 
-        :return: int
+        :return: enum cat_picture_format
         :rtype: int
         """
 
@@ -206,7 +202,7 @@ class DrawingPicture(AnyObject):
     @format.setter
     def format(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_picture_format
         """
 
         self.drawing_picture.format = value
@@ -229,7 +225,6 @@ class DrawingPicture(AnyObject):
                 | 
                 |          Height = MyPicture.height
 
-        :return: float
         :rtype: float
         """
 
@@ -264,7 +259,6 @@ class DrawingPicture(AnyObject):
                 | 
                 |          MyPicture.ratioLock = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -296,7 +290,6 @@ class DrawingPicture(AnyObject):
                 | 
                 |          Width = MyPicture.width
 
-        :return: float
         :rtype: float
         """
 
@@ -331,7 +324,6 @@ class DrawingPicture(AnyObject):
                 |          NewXCoordinate = 5*25.4
                 |          MyPicture.x =  NewXCoordinate
 
-        :return: float
         :rtype: float
         """
 
@@ -366,7 +358,6 @@ class DrawingPicture(AnyObject):
                 |          NewYCoordinate = 5*25.4
                 |          MyPicture.y =  NewYCoordinate
 
-        :return: float
         :rtype: float
         """
 
@@ -397,7 +388,6 @@ class DrawingPicture(AnyObject):
                 | 
                 |          Height = MyPicture.GetOriginalHeight()
 
-        :return: float
         :rtype: float
         """
         return self.drawing_picture.GetOriginalHeight()
@@ -419,7 +409,6 @@ class DrawingPicture(AnyObject):
                 | 
                 |          Width = MyPicture.GetOriginalWidth()
 
-        :return: float
         :rtype: float
         """
         return self.drawing_picture.GetOriginalWidth()

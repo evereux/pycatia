@@ -52,8 +52,7 @@ class ManufacturingPrecedences(Collection):
                 |     object is a CATIAManufacturingActivity.
 
         :param ManufacturingActivity i_object:
-        :param int i_type:
-        :return: None
+        :param int i_type: enum cat_manufacturing_precedence_type
         :rtype: None
         """
         return self.manufacturing_precedences.AddOperation(i_object.com_object, i_type)
@@ -84,7 +83,6 @@ class ManufacturingPrecedences(Collection):
                 |     Returns a precedence object from the precedence collection.
 
         :param cat_variant i_index:
-        :return: ManufacturingPrecedence
         :rtype: ManufacturingPrecedence
         """
         return ManufacturingPrecedence(self.manufacturing_precedences.Item(i_index))
@@ -101,7 +99,6 @@ class ManufacturingPrecedences(Collection):
                 |     will be deleted, but not the referenced object attach to this precedence.
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_precedences.Remove(i_index)
@@ -116,7 +113,6 @@ class ManufacturingPrecedences(Collection):
                 | 
                 |     Removes all objects from the precedences collection.
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_precedences.RemoveAll()

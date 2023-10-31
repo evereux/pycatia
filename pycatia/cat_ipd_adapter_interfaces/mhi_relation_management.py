@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class MhiRelationManagement(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -60,7 +59,7 @@ class MhiRelationManagement(AnyObject):
                 |         iRelationName
                 |             Name of the relation existing between the selected activity and the
                 |             item/resource The possible values for relation name can be obtained through a
-                |             call to “DNBIAMHIRelationManagement#GetSupportedRelations” method
+                |             call to "DNBIAMHIRelationManagement#GetSupportedRelations" method
                 |             
                 |         iAssignedObject
                 |             The item/resource that is related to the selected activity
@@ -74,7 +73,6 @@ class MhiRelationManagement(AnyObject):
 
         :param str i_relation_name:
         :param AnyObject i_assigned_object:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.mhi_relation_management.GetRelationObject(i_relation_name, i_assigned_object.com_object)
@@ -88,7 +86,7 @@ class MhiRelationManagement(AnyObject):
                 | o Func GetSupportedRelations() As CATSafeArrayVariant
                 | 
                 |     This method lists all the possible values that can passed as the relation
-                |     name for “DNBIAMHIRelationManagement#GetRelationObject”
+                |     name for "DNBIAMHIRelationManagement#GetRelationObject"
                 |     method.
                 | 
                 |     Parameters:
@@ -100,10 +98,9 @@ class MhiRelationManagement(AnyObject):
                 |     Returns:
                 |         S_OK or E_FAIL
 
-        :return: tuple
         :rtype: tuple
         """
         return self.mhi_relation_management.GetSupportedRelations()
 
     def __repr__(self):
-        return f'MhiRelationManagement(name="{ self.name }")'
+        return f'MhiRelationManagement(name="{self.name}")'

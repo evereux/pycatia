@@ -65,7 +65,6 @@ class StrComputeServices(AnyObject):
         :param float o_x:
         :param float o_y:
         :param float o_z:
-        :return: None
         :rtype: None
         """
         return self.str_compute_services.GetCenterOfGravity(i_product.com_object, o_x, o_y, o_z)
@@ -101,7 +100,6 @@ class StrComputeServices(AnyObject):
                 |             The selected structure object
 
         :param Product i_product:
-        :return: float
         :rtype: float
         """
         return self.str_compute_services.GetLength(i_product.com_object)
@@ -122,7 +120,6 @@ class StrComputeServices(AnyObject):
                 |             The selected structure object
 
         :param Product i_product:
-        :return: float
         :rtype: float
         """
         return self.str_compute_services.GetMass(i_product.com_object)
@@ -145,7 +142,6 @@ class StrComputeServices(AnyObject):
                 |             The name of the material
 
         :param Product i_product:
-        :return: str
         :rtype: str
         """
         return self.str_compute_services.GetMaterialName(i_product.com_object)
@@ -166,7 +162,6 @@ class StrComputeServices(AnyObject):
                 |             The selected structure object
 
         :param Product i_product:
-        :return: float
         :rtype: float
         """
         return self.str_compute_services.GetSurface(i_product.com_object)
@@ -187,7 +182,6 @@ class StrComputeServices(AnyObject):
                 |             The selected structure object
 
         :param Product i_product:
-        :return: float
         :rtype: float
         """
         return self.str_compute_services.GetVolume(i_product.com_object)
@@ -208,7 +202,6 @@ class StrComputeServices(AnyObject):
                 |             The selected structure object
 
         :param Product i_product:
-        :return: float
         :rtype: float
         """
         return self.str_compute_services.GetWetArea(i_product.com_object)

@@ -47,7 +47,6 @@ class SWKErgoPushPull(AnyObject):
                 |     This distance must specified at least once.
                 |     Failure to do so will result in invalid output values.
 
-        :return: str
         :rtype: str
         """
 
@@ -74,7 +73,6 @@ class SWKErgoPushPull(AnyObject):
                 |     This distance must specified at least once.
                 |     Failure to do so will result in invalid output values.
 
-        :return: str
         :rtype: str
         """
 
@@ -103,7 +101,6 @@ class SWKErgoPushPull(AnyObject):
                 |     the study.
                 |     Failure to do so will result in invalid output values.
 
-        :return: float
         :rtype: float
         """
 
@@ -129,7 +126,6 @@ class SWKErgoPushPull(AnyObject):
                 |     This field is the maximum initial pulling force, produced by the study,
                 |     given the current input guidelines.
 
-        :return: str
         :rtype: str
         """
 
@@ -147,7 +143,6 @@ class SWKErgoPushPull(AnyObject):
                 |     This field is the maximum initial pushing force, produced by the study,
                 |     given the current input guidelines.
 
-        :return: str
         :rtype: str
         """
 
@@ -165,7 +160,6 @@ class SWKErgoPushPull(AnyObject):
                 |     This field is the maximum sustained pulling force, produced by the study,
                 |     given the current input guidelines.
 
-        :return: str
         :rtype: str
         """
 
@@ -183,7 +177,6 @@ class SWKErgoPushPull(AnyObject):
                 |     This field is the maximum sustained pushing force, produced by the study,
                 |     given the current input guidelines.
 
-        :return: str
         :rtype: str
         """
 
@@ -204,7 +197,6 @@ class SWKErgoPushPull(AnyObject):
                 |     specified at least once.
                 |     Failure to do so will result in invalid output values.
 
-        :return: float
         :rtype: float
         """
 

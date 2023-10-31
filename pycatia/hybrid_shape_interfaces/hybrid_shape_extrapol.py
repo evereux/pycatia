@@ -73,7 +73,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     extrapolated surface that are adjacent to the boundary
                 |     CATGSMTangentBorder(=1)).
 
-        :return: int
         :rtype: int
         """
 
@@ -102,7 +101,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     Migration instructions: use the signature that uses an integer as the first
                 |     argument.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -129,7 +127,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     limit.
                 |     This applies in case of Length extrapolation limit.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -158,7 +155,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     Migration instructions: use the signature that uses an integer as the first
                 |     argument.
 
-        :return: int
         :rtype: int
         """
 
@@ -185,7 +181,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     Sub-element(s) supported (see Boundary object): see Face , TriDimFeatEdge
                 |     or BiDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -214,7 +209,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     Migration instructions: use the signature that uses an integer as the first
                 |     argument.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -241,7 +235,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     This applies in case of tangent continuity mode, tangent border mode and
                 |     assembled result.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -268,7 +261,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     according to the first side's settings or to its own ones.
                 |     This applies in case the element to extrapol is a wire.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -297,7 +289,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     Migration instructions: use the signature that uses an integer as the first
                 |     argument.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -318,7 +309,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     Migration instructions: use the signature that uses an integer as the first
                 |     argument.
 
-        :return: int
         :rtype: int
         """
 
@@ -344,7 +334,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     Returns or sets the propagation mode.
                 |     This applies in case of curvature extrapolation of a shell.
 
-        :return: int
         :rtype: int
         """
 
@@ -372,7 +361,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     surface is given, the extrapolation will lie on it.
                 |     Sub-element(s) supported (see Boundary object): see Face.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -404,7 +392,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     or BiDimFeatEdge.
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_extrapol.GetBoundary(i_pos))
@@ -425,7 +412,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     CATGSMCurvatureContinuity (=1).
 
         :param int i_pos:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_extrapol.GetContinuityType(i_pos)
@@ -445,7 +431,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     This applies when the limit type is CATGSMUpToElementLimit (=1).
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_extrapol.GetElemUntil(i_pos))
@@ -469,7 +454,6 @@ class HybridShapeExtrapol(HybridShape):
                 |             position of internal element to be retrieved.
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_extrapol.GetInternalEdgesElement(i_pos))
@@ -489,7 +473,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     This applies when the limit type is CATGSMLengthLimit (=0).
 
         :param int i_pos:
-        :return: Length
         :rtype: Length
         """
         return Length(self.hybrid_shape_extrapol.GetLength(i_pos))
@@ -510,7 +493,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     CATGSMUpToElementLimit(1).
 
         :param int i_pos:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_extrapol.GetLimitType(i_pos)
@@ -528,7 +510,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     a boundary of the element to extrapolate, a limit type, a limit and a
                 |     continuity type.
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_extrapol.GetNumberOfExtrapolations()
@@ -551,7 +532,6 @@ class HybridShapeExtrapol(HybridShape):
                 |             True when the extrapolation is assembled with extrapolated curve or
                 |             surface, and False otherwise
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_extrapol.IsAssemble()
@@ -566,7 +546,6 @@ class HybridShapeExtrapol(HybridShape):
                 | 
                 |     Removes all extrapolations that may have been set, except the first one.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extrapol.RemoveAllExtrapolationsExceptTheFirstOne()
@@ -581,7 +560,6 @@ class HybridShapeExtrapol(HybridShape):
                 | 
                 |     Removes all internal elements.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extrapol.RemoveAllInternalEdgesElement()
@@ -597,7 +575,6 @@ class HybridShapeExtrapol(HybridShape):
                 |     Removes the iPos-th extrapolation that has been set.
 
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extrapol.RemoveExtrapolation(i_pos)
@@ -621,7 +598,6 @@ class HybridShapeExtrapol(HybridShape):
                 |             curve or surface, and False otherwise.
 
         :param bool i_assemble:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extrapol.SetAssemble(i_assemble)
@@ -652,7 +628,6 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :param Reference i_boundary:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extrapol.SetBoundary(i_pos, i_boundary.com_object)
@@ -683,7 +658,6 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :param int i_lim:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extrapol.SetContinuityType(i_pos, i_lim)
@@ -699,7 +673,6 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :param Reference i_elem_until:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extrapol.SetElemUntil(i_pos, i_elem_until.com_object)
@@ -732,7 +705,6 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :param Length i_length:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extrapol.SetLength(i_pos, i_length.com_object)
@@ -763,7 +735,6 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :param float i_length:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extrapol.SetLengthD(i_pos, i_length)
@@ -779,7 +750,6 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :param int i_lim:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extrapol.SetLimitType(i_pos, i_lim)

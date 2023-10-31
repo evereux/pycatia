@@ -50,7 +50,6 @@ class AxisSystem(AnyObject):
                 |     system is defined by a rotation around an axis, wich means that its type is
                 |     catAxisSystemAxisRotation.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -69,7 +68,6 @@ class AxisSystem(AnyObject):
                 |     system is defined by a rotation around an axis, wich means that its type is
                 |     catAxisSystemAxisRotation.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -111,7 +109,6 @@ class AxisSystem(AnyObject):
                 |
                 |          axisSystem.IsCurrent = 0
 
-        :return: bool
         :rtype: bool
         """
 
@@ -152,7 +149,6 @@ class AxisSystem(AnyObject):
                 |      Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry(HybridShapePointCoord5)
                 |      AxisSystem0.OriginPoint = Reference6
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -196,7 +192,7 @@ class AxisSystem(AnyObject):
                 | 
                 |          axisSystem.OriginType = 1
 
-        :return: int
+        :return: enum cat_axis_system_origin_type
         :rtype: int
         """
 
@@ -205,7 +201,7 @@ class AxisSystem(AnyObject):
     @origin_type.setter
     def origin_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_axis_system_origin_type
         """
 
         self.axis_system.OriginType = value
@@ -243,7 +239,7 @@ class AxisSystem(AnyObject):
                 | 
                 |      axisSystem1.Type = 3
 
-        :return: int
+        :return: enum cat_axis_system_main_type
         :rtype: int
         """
 
@@ -252,7 +248,7 @@ class AxisSystem(AnyObject):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value:  enum cat_axis_system_main_type
         """
 
         self.axis_system.Type = value
@@ -284,7 +280,6 @@ class AxisSystem(AnyObject):
                 |      Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry( HybridShapePointCoord5 )
                 |      AxisSystem0.XAxisDirection = Reference6
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -328,7 +323,7 @@ class AxisSystem(AnyObject):
                 | 
                 |          axisSystem.XAxisType = 1
 
-        :return: int
+        :return: enum cat_axis_system_axis_type
         :rtype: int
         """
 
@@ -337,7 +332,7 @@ class AxisSystem(AnyObject):
     @x_axis_type.setter
     def x_axis_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_axis_system_axis_type
         """
 
         self.axis_system.XAxisType = value
@@ -370,7 +365,6 @@ class AxisSystem(AnyObject):
                 |                               CreateReferenceFromGeometry(HybridShapePointCoord5 )
                 |          AxisSystem0.YAxisDirection = Reference6
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -414,7 +408,7 @@ class AxisSystem(AnyObject):
                 | 
                 |          axisSystem.YAxisType = 1
 
-        :return: int
+        :return: enum cat_axis_system_axis_type
         :rtype: int
         """
 
@@ -423,7 +417,7 @@ class AxisSystem(AnyObject):
     @y_axis_type.setter
     def y_axis_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_axis_system_axis_type
         """
 
         self.axis_system.YAxisType = value
@@ -456,7 +450,6 @@ class AxisSystem(AnyObject):
                 |                               CreateReferenceFromGeometry(HybridShapePointCoord5)
                 |          AxisSystem0.ZAxisDirection = Reference6
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -500,7 +493,7 @@ class AxisSystem(AnyObject):
                 | 
                 |          axisSystem.ZAxisType = 1
 
-        :return: int
+        :return: enum cat_axis_system_axis_type
         :rtype: int
         """
 
@@ -509,7 +502,7 @@ class AxisSystem(AnyObject):
     @z_axis_type.setter
     def z_axis_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_axis_system_axis_type
         """
 
         self.axis_system.ZAxisType = value
@@ -531,7 +524,6 @@ class AxisSystem(AnyObject):
         :param Angle o_first_angle:
         :param Angle o_second_angle:
         :param Angle third_angle:
-        :return: None
         :rtype: None
         """
 
@@ -573,7 +565,6 @@ class AxisSystem(AnyObject):
                 |          axisSystem.GetOrigin originCoord
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
 
@@ -621,7 +612,6 @@ class AxisSystem(AnyObject):
                 |          Dim vectorYCoord(2)
                 |          axisSystem.GetVectors vectorXCoord, vectorYCoord
 
-        :return: None
         :rtype: None
         """
 
@@ -667,7 +657,6 @@ class AxisSystem(AnyObject):
                 |          axisSystem.GetXAxis XAxisCoord
 
         :param tuple o_x_axis:
-        :return: None
         :rtype: None
         """
 
@@ -709,7 +698,6 @@ class AxisSystem(AnyObject):
                 |          axisSystem.GetYAxis XAxisCoord
 
         :param tuple o_y_axis:
-        :return: None
         :rtype: None
         """
 
@@ -751,7 +739,6 @@ class AxisSystem(AnyObject):
                 |          axisSystem.GetZAxis ZAxisCoord
 
         :param tuple o_z_axis:
-        :return: None
         :rtype: None
         """
 
@@ -796,7 +783,6 @@ class AxisSystem(AnyObject):
                 |          axisSystem.PutOrigin originCoord
 
         :param tuple i_origin:
-        :return: None
         :rtype: None
         """
         return self.axis_system.PutOrigin(i_origin)
@@ -856,7 +842,6 @@ class AxisSystem(AnyObject):
 
         :param tuple i_vector_x:
         :param tuple i_vector_y:
-        :return: None
         :rtype: None
         """
         return self.axis_system.PutVectors(i_vector_x, i_vector_y)
@@ -905,7 +890,6 @@ class AxisSystem(AnyObject):
                 |          axisSystem.PutXAxis XAxis
 
         :param tuple i_x_axis:
-        :return: None
         :rtype: None
         """
         return self.axis_system.PutXAxis(i_x_axis)
@@ -954,7 +938,6 @@ class AxisSystem(AnyObject):
                 |          axisSystem.PutYAxis YAxis
 
         :param tuple i_y_axis:
-        :return: None
         :rtype: None
         """
         return self.axis_system.PutYAxis(i_y_axis)
@@ -1003,7 +986,6 @@ class AxisSystem(AnyObject):
                 |          axisSystem.PutZAxis ZAxis
 
         :param tuple i_z_axis:
-        :return: None
         :rtype: None
         """
         return self.axis_system.PutZAxis(i_z_axis)

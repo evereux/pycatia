@@ -72,7 +72,6 @@ class HybridShapePointTangent(Point):
                 |          Dim oCurve As CATIAReference   
                 |          Set oCurve  = PointTangent.Curve
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -105,7 +104,6 @@ class HybridShapePointTangent(Point):
                 |          Dim oDirection As CATIAHybridShapeDirection
                 |          Set oDirection  = PointTangent.Direction
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 

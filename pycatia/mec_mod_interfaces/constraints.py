@@ -64,7 +64,6 @@ class Constraints(Collection):
                 | 
                 |          BknCstNum = myListofConstraints.BrokenConstraintsCount
 
-        :return: int
         :rtype: int
         """
 
@@ -89,7 +88,6 @@ class Constraints(Collection):
                 | 
                 |          UnUpdCstNum = myListofConstraints.UnUpdatedConstraintsCount
 
-        :return: int
         :rtype: int
         """
 
@@ -128,10 +126,9 @@ class Constraints(Collection):
                 |
                 |      Set newCst = skCstList.AddBiEltCst(4, c1, c2)
 
-        :param int i_cst_type:
+        :param int i_cst_type: enum cat_constraint_type
         :param Reference i_first_elem:
         :param Reference i_second_elem:
-        :return: Constraint
         :rtype: Constraint
         """
         return Constraint(self.constraints.AddBiEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object))
@@ -166,9 +163,8 @@ class Constraints(Collection):
                 |
                 |      Set NewCst = cstList.AddMonoEltCst(0, P1)
 
-        :param int i_cst_type:
+        :param int i_cst_type: enum cat_constraint_type
         :param Reference i_elem:
-        :return: Constraint
         :rtype: Constraint
         """
         return Constraint(self.constraints.AddMonoEltCst(i_cst_type, i_elem.com_object))
@@ -211,11 +207,10 @@ class Constraints(Collection):
                 |
                 |      Set symCst = prtCstList.AddTriEltCst(15, cyl1, cyl2, symPlane)
 
-        :param int i_cst_type:
+        :param int i_cst_type: enum cat_constraint_type
         :param Reference i_first_elem:
         :param Reference i_second_elem:
         :param Reference i_third_elem:
-        :return: Constraint
         :rtype: Constraint
         """
         return Constraint(self.constraints.AddTriEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object,
@@ -253,7 +248,6 @@ class Constraints(Collection):
                 |          Set cst2 = cstList.Item("Constraint.2")
 
         :param cat_variant i_index:
-        :return: Constraint
         :rtype: Constraint
         """
         return Constraint(self.constraints.Item(i_index))
@@ -286,7 +280,6 @@ class Constraints(Collection):
                 |      cstList.Remove(cstList.Count)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.constraints.Remove(i_index)

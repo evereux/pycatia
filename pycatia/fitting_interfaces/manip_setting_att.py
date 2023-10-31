@@ -74,7 +74,6 @@ class ManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.manip_setting_att.GetAngleStepInfo(io_admin_level, io_locked)
@@ -111,7 +110,6 @@ class ManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.manip_setting_att.GetClashModeInfo(io_admin_level, io_locked)
@@ -148,7 +146,6 @@ class ManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.manip_setting_att.GetClashSoundInfo(io_admin_level, io_locked)
@@ -185,7 +182,6 @@ class ManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.manip_setting_att.GetDistanceStepInfo(io_admin_level, io_locked)
@@ -222,7 +218,6 @@ class ManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.manip_setting_att.GetManipAutoInsertInfo(io_admin_level, io_locked)
@@ -259,7 +254,6 @@ class ManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.manip_setting_att.GetRecordModeInfo(io_admin_level, io_locked)
@@ -296,7 +290,6 @@ class ManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.manip_setting_att.GetSnapAngleDistanceInfo(io_admin_level, io_locked)
@@ -333,7 +326,6 @@ class ManipSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.manip_setting_att.GetSnapPositionInfo(io_admin_level, io_locked)
@@ -365,7 +357,6 @@ class ManipSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.manip_setting_att.SetAngleStepLock(i_locked)
@@ -411,7 +402,6 @@ class ManipSettingAtt(SettingController):
                 |         E_FAIL : if the ManipAutoInsert value was not correctly obtained
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.manip_setting_att.SetClashModeLock(i_locked)
@@ -457,7 +447,6 @@ class ManipSettingAtt(SettingController):
                 |         E_FAIL : if the RecordMode value was not correctly obtained
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.manip_setting_att.SetClashSoundLock(i_locked)
@@ -504,7 +493,6 @@ class ManipSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.manip_setting_att.SetDistanceStepLock(i_locked)
@@ -551,7 +539,6 @@ class ManipSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.manip_setting_att.SetManipAutoInsertLock(i_locked)
@@ -598,7 +585,6 @@ class ManipSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.manip_setting_att.SetRecordModeLock(i_locked)
@@ -645,7 +631,6 @@ class ManipSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.manip_setting_att.SetSnapAngleDistanceLock(i_locked)
@@ -692,7 +677,6 @@ class ManipSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.manip_setting_att.SetSnapPositionLock(i_locked)

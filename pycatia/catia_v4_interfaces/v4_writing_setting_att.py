@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class V4WritingSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -69,7 +68,7 @@ class V4WritingSettingAtt(SettingController):
                 |     Role: Returns or sets the associativity mode of migration.If non
                 |     associative mode is chosen, it is possible to create or not the solid.
 
-        :return: int
+        :return: enum catv4_iv5_v4_associativity_mode_enum
         :rtype: int
         """
 
@@ -78,7 +77,7 @@ class V4WritingSettingAtt(SettingController):
     @asso_mode.setter
     def asso_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum catv4_iv5_v4_associativity_mode_enum
         """
 
         self.v4_writing_setting_att.Asso_mode = value
@@ -97,7 +96,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Role: Returns or sets the small edges and faces cleaning tolerance
                 |     activation.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -125,7 +123,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Role: Returns or sets the small edges and faces cleaning tolerance value if
                 |     activated.
 
-        :return: float
         :rtype: float
         """
 
@@ -152,7 +149,6 @@ class V4WritingSettingAtt(SettingController):
                 |     page.
                 |     Role: Returns or sets the value of the writing code page.
 
-        :return: int
         :rtype: int
         """
 
@@ -178,7 +174,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Returns or sets the initial model file path.
                 |     Role: Returns or sets the initial model file path.
 
-        :return: str
         :rtype: str
         """
 
@@ -204,7 +199,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Returns or sets the layer for not associative data.
                 |     Role: Returns or sets the layer for not associative data.
 
-        :return: int
         :rtype: int
         """
 
@@ -233,7 +227,7 @@ class V4WritingSettingAtt(SettingController):
                 |     Role: Returns or sets the curves associated to faces'boundaries creation
                 |     option.
 
-        :return: int
+        :return: enum catv4_iv5_v4_internal_curve_creation_enum
         :rtype: int
         """
 
@@ -242,7 +236,7 @@ class V4WritingSettingAtt(SettingController):
     @mode_create_display.setter
     def mode_create_display(self, value: int):
         """
-        :param int value:
+        :param int value: enum catv4_iv5_v4_internal_curve_creation_enum
         """
 
         self.v4_writing_setting_att.ModeCreateDisplay = value
@@ -260,7 +254,7 @@ class V4WritingSettingAtt(SettingController):
                 |     Returns or sets the error feature creation option.
                 |     Role: Returns or sets the error feature creation option.
 
-        :return: int
+        :return: enum catv4_iv5_v4_error_feature_creation_enum
         :rtype: int
         """
 
@@ -269,7 +263,7 @@ class V4WritingSettingAtt(SettingController):
     @mode_error_display.setter
     def mode_error_display(self, value: int):
         """
-        :param int value:
+        :param int value: enum catv4_iv5_v4_error_feature_creation_enum
         """
 
         self.v4_writing_setting_att.ModeErrorDisplay = value
@@ -286,7 +280,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Returns or sets the model dimension.
                 |     Role: Returns or sets the model dimension.
 
-        :return: float
         :rtype: float
         """
 
@@ -313,7 +306,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Role: Returns or sets the model factor that manages the conversion of model
                 |     dimension in millimeters.
 
-        :return: float
         :rtype: float
         """
 
@@ -340,7 +332,6 @@ class V4WritingSettingAtt(SettingController):
                 |     option.
                 |     Role: Returns or sets the model file name in capital letters option.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -366,7 +357,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Returns or sets the model unit.
                 |     Role: Returns or sets the model unit.
 
-        :return: int
         :rtype: int
         """
 
@@ -395,7 +385,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetAsso_modeInfo(admin_level, o_locked)
@@ -415,7 +404,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetCleanTolCheckInfo(admin_level, o_locked)
@@ -435,7 +423,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetCleanTolValueInfo(admin_level, o_locked)
@@ -455,7 +442,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetCode_page_DestInfo(admin_level, o_locked)
@@ -475,7 +461,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetInitial_Model_File_PathInfo(admin_level, o_locked)
@@ -495,7 +480,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetLayer_for_No_AssoInfo(admin_level, o_locked)
@@ -515,7 +499,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetModeCreateDisplayInfo(admin_level, o_locked)
@@ -535,7 +518,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetModeErrorDisplayInfo(admin_level, o_locked)
@@ -555,7 +537,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetModel_DimensionInfo(admin_level, o_locked)
@@ -575,7 +556,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetModel_FactorInfo(admin_level, o_locked)
@@ -595,7 +575,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetModel_File_NameInfo(admin_level, o_locked)
@@ -615,7 +594,6 @@ class V4WritingSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.v4_writing_setting_att.GetModel_UnitInfo(admin_level, o_locked)
@@ -632,7 +610,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetAsso_modeLock(i_lock)
@@ -664,7 +641,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetCleanTolCheckLock(i_lock)
@@ -696,7 +672,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetCleanTolValueLock(i_lock)
@@ -728,7 +703,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetCode_page_DestLock(i_lock)
@@ -761,7 +735,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetInitial_Model_File_PathLock(i_lock)
@@ -793,7 +766,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetLayer_for_No_AssoLock(i_lock)
@@ -825,7 +797,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetModeCreateDisplayLock(i_lock)
@@ -857,7 +828,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetModeErrorDisplayLock(i_lock)
@@ -889,7 +859,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetModel_DimensionLock(i_lock)
@@ -921,7 +890,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetModel_FactorLock(i_lock)
@@ -953,7 +921,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetModel_File_NameLock(i_lock)
@@ -985,7 +952,6 @@ class V4WritingSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.v4_writing_setting_att.SetModel_UnitLock(i_lock)
@@ -1006,4 +972,4 @@ class V4WritingSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'V4WritingSettingAtt(name="{ self.name }")'
+        return f'V4WritingSettingAtt(name="{self.name}")'

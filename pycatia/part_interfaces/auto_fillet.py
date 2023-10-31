@@ -16,7 +16,6 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 
 
 class AutoFillet(DressUpShape):
-
     """
         .. note::
             :class: toggle
@@ -58,7 +57,6 @@ class AutoFillet(DressUpShape):
                 | 
                 |          Set Curvatureradius = Autofillet.Radius
 
-        :return: Length
         :rtype: Length
         """
 
@@ -83,14 +81,13 @@ class AutoFillet(DressUpShape):
                 |          Set Facestofillet = autoFillet.Facestofillet
                 |          autofillet.Facestofillet = NewFacestofillet
 
-        :return: References
         :rtype: References
         """
 
         return References(self.auto_fillet.FacesToFillet)
 
     @property
-    def faces_to_fillets(self) -> None:
+    def faces_to_fillets(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -98,8 +95,7 @@ class AutoFillet(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FacesToFillets(Reference iFace) (Write Only)
 
-        :return: None
-        :rtype: None
+        :rtype: Reference
         """
 
         return self.auto_fillet.FacesToFillets
@@ -129,14 +125,13 @@ class AutoFillet(DressUpShape):
                 | 
                 |          Set Filletradius = Autofillet.Radius
 
-        :return: Length
         :rtype: Length
         """
 
         return Length(self.auto_fillet.FilletRadius)
 
     @property
-    def functional_face(self):
+    def functional_face(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -144,7 +139,7 @@ class AutoFillet(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFace(Reference iFace) (Write Only)
 
-
+        :rtype: Reference
         """
 
         self.functional_face.FunctionFace
@@ -176,7 +171,6 @@ class AutoFillet(DressUpShape):
                 |          Set functionalFace = autoFillet.FunctionalFace
                 |          autofillet.FunctionalFace = NewfunctionalFace
 
-        :return: References
         :rtype: References
         """
 
@@ -201,7 +195,6 @@ class AutoFillet(DressUpShape):
                 |          Set Parting element = autoFillet.PartingElement
                 |          autofillet.PartingElement = NewPartingElement
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -232,7 +225,6 @@ class AutoFillet(DressUpShape):
                 | 
                 |          Set roundradius = Autofillet.Radius
 
-        :return: Length
         :rtype: Length
         """
 
@@ -257,7 +249,6 @@ class AutoFillet(DressUpShape):
                 | 
                 |         Example:
 
-        :return: bool
         :rtype: bool
         """
 
@@ -272,7 +263,7 @@ class AutoFillet(DressUpShape):
         self.auto_fillet.RoundRadiusActivation = value
 
     @property
-    def slivers_and_crack(self) -> None:
+    def slivers_and_crack(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -280,8 +271,7 @@ class AutoFillet(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SliversAndCrack(Reference iSlivers) (Write Only)
 
-        :return: None
-        :rtype: None
+        :rtype: Reference
         """
 
         return self.auto_fillet.SliversAndCrack
@@ -312,7 +302,6 @@ class AutoFillet(DressUpShape):
                 |          Set sliversFace = autoFillet.SliversFace
                 |          autofillet.SliversFace = NewsliversFace
 
-        :return: References
         :rtype: References
         """
 
@@ -337,7 +326,6 @@ class AutoFillet(DressUpShape):
                 |          Set SupportSurface = autoFillet.SupportSurface
                 |          autofillet.SupportSurface = NewSupportSurface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -352,4 +340,4 @@ class AutoFillet(DressUpShape):
         self.auto_fillet.SupportSurface = reference.com_object
 
     def __repr__(self):
-        return f'AutoFillet(name="{ self.name }")'
+        return f'AutoFillet(name="{self.name}")'

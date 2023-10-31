@@ -70,7 +70,6 @@ class HybridShapeCylinder(HybridShape):
                 |          Dim CylinderCenter As Reference 
                 |          Set CylinderCenter = Cylinder.Center
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -103,7 +102,6 @@ class HybridShapeCylinder(HybridShape):
                 |          Dim CylinderDirection As HybridShapeDirection 
                 |          Set CylinderDirection = Cylinder.Direction
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -137,7 +135,6 @@ class HybridShapeCylinder(HybridShape):
                 |          Dim CylinderLength1 As Length
                 |          Set CylinderLength1 = Cylinder.Length1
 
-        :return: Length
         :rtype: Length
         """
 
@@ -171,7 +168,6 @@ class HybridShapeCylinder(HybridShape):
                 |          Dim CylinderLength2 As Length
                 |          Set CylinderLength2 = Cylinder.Length2
 
-        :return: Length
         :rtype: Length
         """
 
@@ -203,7 +199,6 @@ class HybridShapeCylinder(HybridShape):
                 |          Dim IsInverted As boolean
                 |          Set IsInverted = Cylinder.Orientation
 
-        :return: bool
         :rtype: bool
         """
 
@@ -235,7 +230,6 @@ class HybridShapeCylinder(HybridShape):
                 |          Dim CylinderRadius As Length
                 |          Set CylinderRadius = Cylinder.Radius
 
-        :return: Length
         :rtype: Length
         """
 
@@ -265,7 +259,6 @@ class HybridShapeCylinder(HybridShape):
                 |         iSym
                 |             Symetry flag
 
-        :return: bool
         :rtype: bool
         """
 
@@ -295,7 +288,6 @@ class HybridShapeCylinder(HybridShape):
                 | 
                 |          Cylinder.InvertOrientation
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_cylinder.InvertOrientation()

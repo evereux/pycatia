@@ -54,7 +54,6 @@ class ABQGravity(ABQLoad):
                 |     Returns:
                 |         boolean specifying whether local csys is active.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -82,7 +81,6 @@ class ABQGravity(ABQLoad):
                 |     Returns:
                 |         The gravity component in the 1-direction.
 
-        :return: float
         :rtype: float
         """
 
@@ -110,7 +108,6 @@ class ABQGravity(ABQLoad):
                 |     Returns:
                 |         The gravity component in the 2-direction.
 
-        :return: float
         :rtype: float
         """
 
@@ -138,7 +135,6 @@ class ABQGravity(ABQLoad):
                 |     Returns:
                 |         The gravity component in the 3-direction.
 
-        :return: float
         :rtype: float
         """
 
@@ -167,7 +163,6 @@ class ABQGravity(ABQLoad):
                 |     Returns:
                 |         The local coordinate system.
 
-        :return: AxisSystem
         :rtype: AxisSystem
         """
 
@@ -205,7 +200,6 @@ class ABQGravity(ABQLoad):
 
         :param Product o_product:
         :param AxisSystem o_pub_axis_system:
-        :return: None
         :rtype: None
         """
         return self.abq_gravity.GetLocalCsysFromPublication(o_product.com_object, o_pub_axis_system.com_object)
@@ -251,7 +245,6 @@ class ABQGravity(ABQLoad):
 
         :param Product i_product:
         :param Publication i_pub_axis_system:
-        :return: None
         :rtype: None
         """
         return self.abq_gravity.SetLocalCsysFromPublication(i_product.com_object, i_pub_axis_system.com_object)

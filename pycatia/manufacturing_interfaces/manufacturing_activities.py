@@ -55,7 +55,6 @@ class ManufacturingActivities(Collection):
                 |          ListActivities.Add(ThisActivity)
 
         :param ManufacturingActivity i_real_obj:
-        :return: None
         :rtype: None
         """
         return self.mfg_activities.Add(i_real_obj.com_object)
@@ -94,7 +93,6 @@ class ManufacturingActivities(Collection):
                 |          Set ThisActivity = ListActivities.GetElement(Numpos)
 
         :param int i_index:
-        :return: ManufacturingActivity
         :rtype: ManufacturingActivity
         """
         return ManufacturingActivity(self.mfg_activities.GetElement(i_index))
@@ -118,7 +116,6 @@ class ManufacturingActivities(Collection):
                 |          Set ThisActivity = ListActivities.Item(Numpos)
 
         :param cat_variant i_index:
-        :return: ManufacturingActivity
         :rtype: ManufacturingActivity
         """
         return ManufacturingActivity(self.mfg_activities.Item(i_index))

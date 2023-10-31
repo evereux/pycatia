@@ -42,9 +42,9 @@ class AMPTag(AnyObject):
                 | and tag there is a corresponding AMPTag from which these information are
                 | retrieved ). AMPTags are non-persistent and they are just intermediate buffers
                 | for holding these information. Through the ability of executing VB script file
-                | by embedding the call to it through the “Execute” keyword, these AMPTags are
+                | by embedding the call to it through the "Execute" keyword, these AMPTags are
                 | made available to the user for further customization of these information.
-                | “Execute” keyword facilitates calling the VB script file’s CATMain method by
+                | "Execute" keyword facilitates calling the VB script file’s CATMain method by
                 | passing it the AMPPath object as the single argument.
                 | 
                 | USAGE :
@@ -87,7 +87,6 @@ class AMPTag(AnyObject):
 
         :param str name:
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.AddAttributeReal(name, value)
@@ -120,7 +119,6 @@ class AMPTag(AnyObject):
 
         :param str name:
         :param str value:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.AddAttributeString(name, value)
@@ -153,7 +151,6 @@ class AMPTag(AnyObject):
 
         :param str i_name:
         :param str i_value:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.AddAuxAttribute(i_name, i_value)
@@ -187,7 +184,6 @@ class AMPTag(AnyObject):
 
         :param str name:
         :param float o_value:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.GetAttributeValueReal(name, o_value)
@@ -221,7 +217,6 @@ class AMPTag(AnyObject):
 
         :param str name:
         :param str value:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.GetAttributeValueString(name, value)
@@ -258,7 +253,6 @@ class AMPTag(AnyObject):
         :param int i_index:
         :param str o_name:
         :param str o_value:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.GetAuxAttribute(i_index, o_name, o_value)
@@ -288,7 +282,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int o_num:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.GetAuxAttributeNum(o_num)
@@ -318,7 +311,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param tuple o_auxillary_axis_values:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.GetAuxAxesValues(o_auxillary_axis_values)
@@ -361,7 +353,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int oconfig:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.GetConfig(oconfig)
@@ -389,7 +380,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int o_op_type:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.GetOpType(o_op_type)
@@ -419,7 +409,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param tuple o_transform:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.GetPosition(o_transform)
@@ -462,7 +451,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param str o_tag_type:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.GetType(o_tag_type)
@@ -490,7 +478,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int o_via_status:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.GetVia(o_via_status)
@@ -518,7 +505,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param float o_speed:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.GetWeldSpeed(o_speed)
@@ -547,7 +533,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param str name:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.RemoveAttribute(name)
@@ -576,7 +561,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.RemoveAuxAttribute(i_index)
@@ -609,7 +593,6 @@ class AMPTag(AnyObject):
 
         :param str name:
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.SetAttributeValueReal(name, value)
@@ -642,7 +625,6 @@ class AMPTag(AnyObject):
 
         :param str name:
         :param str value:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.SetAttributeValueString(name, value)
@@ -672,7 +654,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param tuple i_auxillary_axis_values:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.SetAuxAxesValues(i_auxillary_axis_values)
@@ -715,7 +696,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int iconfig:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.SetConfig(iconfig)
@@ -744,7 +724,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int i_op_type:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.SetOpType(i_op_type)
@@ -774,7 +753,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param tuple i_transform:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.SetPosition(i_transform)
@@ -817,7 +795,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param str i_tag_type:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.SetType(i_tag_type)
@@ -845,7 +822,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int i_via_status:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.SetVia(i_via_status)
@@ -873,7 +849,6 @@ class AMPTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param float i_speed:
-        :return: None
         :rtype: None
         """
         return self.amp_tag.SetWeldSpeed(i_speed)

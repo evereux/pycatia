@@ -59,7 +59,6 @@ class File(FileComponent):
                 |          Dim FileSize As Long
                 |          FileSize = TestFile.Size
 
-        :return: int
         :rtype: int
         """
 
@@ -84,7 +83,6 @@ class File(FileComponent):
                 |          Dim FileType As String
                 |          FileSize = TestFile.Size
 
-        :return: str
         :rtype: str
         """
 
@@ -110,7 +108,6 @@ class File(FileComponent):
                 |          Set TextStr = TestFile.OpenAsTextStream("ForReading")
 
         :param str i_mode:
-        :return: TextStream
         :rtype: TextStream
         """
         return TextStream(self.file.OpenAsTextStream(i_mode))

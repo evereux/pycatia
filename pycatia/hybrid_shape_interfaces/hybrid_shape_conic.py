@@ -67,7 +67,6 @@ class HybridShapeConic(HybridShape):
                 |          Dim conicParm As double 
                 |          Set conicParm = hybConic.ConicParameter
 
-        :return: float
         :rtype: float
         """
 
@@ -103,7 +102,6 @@ class HybridShapeConic(HybridShape):
                 |     See also:
                 |         Length
 
-        :return: Length
         :rtype: Length
         """
 
@@ -128,7 +126,6 @@ class HybridShapeConic(HybridShape):
                 |          Dim endPt As Reference 
                 |          Set endPt = hybConic.EndPoint
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -161,7 +158,6 @@ class HybridShapeConic(HybridShape):
                 |          Dim endTgt As Reference 
                 |          Set endTgt = hybConic.EndTangent
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -195,7 +191,6 @@ class HybridShapeConic(HybridShape):
                 |          ... ' Value startPt
                 |          hybConic.StartPoint startPt
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -229,7 +224,6 @@ class HybridShapeConic(HybridShape):
                 |          ... ' Value startTangent
                 |          hybConic.StartTangent startTgt
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -263,7 +257,6 @@ class HybridShapeConic(HybridShape):
                 |          Dim supportPln As Reference 
                 |          Set supportPln = hybConic.SupportPlane
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -296,7 +289,6 @@ class HybridShapeConic(HybridShape):
                 |          Dim tgtIntPt As Reference 
                 |          Set tgtIntPt = hybConic.TangentIntPoint
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -340,7 +332,6 @@ class HybridShapeConic(HybridShape):
                 |          hybConic.GetEndTangentDirectionFlag endPtTgtOrient
 
         :param int o_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.GetEndTangentDirectionFlag(o_orientation)
@@ -380,7 +371,6 @@ class HybridShapeConic(HybridShape):
                 |          Set tgtDir = hybConic.GetIntermedTangent (passingPtIdx)
 
         :param int i_index_point:
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
         return HybridShapeDirection(self.hybrid_shape_conic.GetIntermedTangent(i_index_point))
@@ -419,7 +409,6 @@ class HybridShapeConic(HybridShape):
 
         :param int i_index_point:
         :param Reference o_end_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.GetIntermediatePoint(i_index_point, o_end_point.com_object)
@@ -478,7 +467,6 @@ class HybridShapeConic(HybridShape):
 
         :param int i_index_point:
         :param int o_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.GetIntermediateTangentDirectionFlag(i_index_point, o_orientation)
@@ -514,7 +502,6 @@ class HybridShapeConic(HybridShape):
                 |          startPtTgtOrient
 
         :param int o_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.GetStartTangentDirectionFlag(o_orientation)
@@ -551,7 +538,6 @@ class HybridShapeConic(HybridShape):
                 |          hybConic.SetEndTangentDirectionFlag endPtTgtOrient
 
         :param int i_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SetEndTangentDirectionFlag(i_orientation)
@@ -593,7 +579,6 @@ class HybridShapeConic(HybridShape):
 
         :param int i_index_point:
         :param Reference i_end_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SetIntermediatePoint(i_index_point, i_end_point.com_object)
@@ -650,7 +635,6 @@ class HybridShapeConic(HybridShape):
 
         :param int i_index_point:
         :param HybridShapeDirection i_tgt_dir:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SetIntermediateTangent(i_index_point, i_tgt_dir.com_object)
@@ -711,7 +695,6 @@ class HybridShapeConic(HybridShape):
 
         :param int i_index_point:
         :param int i_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SetIntermediateTangentDirectionFlag(i_index_point, i_orientation)
@@ -755,7 +738,6 @@ class HybridShapeConic(HybridShape):
         :param HybridShapeDirection i_start_tgt:
         :param HybridShapeDirection i_end_tgt:
         :param float i_conic_param:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SetStartAndEndTangentsPlusConicParameter(i_start_tgt.com_object,
@@ -819,7 +801,6 @@ class HybridShapeConic(HybridShape):
         :param HybridShapeDirection i_start_tgt:
         :param HybridShapeDirection i_end_tgt:
         :param Reference i_passing_pt:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SetStartAndEndTangentsPlusPassingPoint(i_start_tgt.com_object,
@@ -874,7 +855,6 @@ class HybridShapeConic(HybridShape):
                 |          startPtTgtOrient
 
         :param int i_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SetStartTangentDirectionFlag(i_orientation)
@@ -916,7 +896,6 @@ class HybridShapeConic(HybridShape):
 
         :param Reference i_tgt_int:
         :param float i_conic_param:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SetTangentIntersectPointPlusConicParm(i_tgt_int.com_object, i_conic_param)
@@ -977,7 +956,6 @@ class HybridShapeConic(HybridShape):
 
         :param Reference i_tgt_int:
         :param Reference i_passing_pt:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SetTangentIntersectPointPlusPassingPoint(i_tgt_int.com_object,
@@ -1040,7 +1018,6 @@ class HybridShapeConic(HybridShape):
         :param Reference i_pass_pt1:
         :param Reference i_pass_pt2:
         :param Reference i_pass_pt3:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SetThreeIntermediatePassingPoints(i_pass_pt1.com_object, i_pass_pt2.com_object,
@@ -1114,7 +1091,6 @@ class HybridShapeConic(HybridShape):
         :param Reference i_pass_pt2:
         :param HybridShapeDirection i_tgt_dir:
         :param int i_index_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SetTwoIntermediatePassingPointsPlusOneTangent(i_pass_pt1.com_object,
@@ -1157,7 +1133,6 @@ class HybridShapeConic(HybridShape):
                 | 
                 |          hybConic.SwitchEndTangentDirection
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SwitchEndTangentDirection()
@@ -1193,7 +1168,6 @@ class HybridShapeConic(HybridShape):
                 |          passingPtIdx
 
         :param int i_index_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SwitchIntermediateTangentDirection(i_index_point)
@@ -1218,7 +1192,6 @@ class HybridShapeConic(HybridShape):
                 | 
                 |          hybConic.SwitchStartTangentDirection
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_conic.SwitchStartTangentDirection()

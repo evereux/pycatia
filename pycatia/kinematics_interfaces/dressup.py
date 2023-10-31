@@ -56,7 +56,6 @@ class Dressup(AnyObject):
                 |             Dim MecaContext As Product
                 |             Set MecaContext = MyDressup.Context
 
-        :return: Product
         :rtype: Product
         """
 
@@ -82,7 +81,6 @@ class Dressup(AnyObject):
                 |           Dim Meca As Mechanism
                 |           Set Meca = MyDressup.Mechanism
 
-        :return: Mechanism
         :rtype: Mechanism
         """
 
@@ -124,7 +122,6 @@ class Dressup(AnyObject):
 
         :param Product i_link:
         :param Product i_attached_prod:
-        :return: None
         :rtype: None
         """
         return self.dressup.Attach(i_link.com_object, i_attached_prod.com_object)
@@ -172,7 +169,6 @@ class Dressup(AnyObject):
                 |             MyDressup.Detach(Product1)
 
         :param Product i_attached_prod:
-        :return: None
         :rtype: None
         """
         return self.dressup.Detach(i_attached_prod.com_object)
@@ -225,7 +221,6 @@ class Dressup(AnyObject):
                 |             Next
 
         :param Product i_link:
-        :return: tuple
         :rtype: tuple
         """
         return self.dressup.ListAttached(i_link.com_object)

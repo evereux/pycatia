@@ -67,7 +67,6 @@ class CD5IDs(Collection):
                 |          Set oID = CD5IDs.Item(1)
 
         :param cat_variant i_index:
-        :return: CD5ID
         :rtype: CD5ID
         """
         return CD5ID(self.cd5_i_ds.Item(i_index))

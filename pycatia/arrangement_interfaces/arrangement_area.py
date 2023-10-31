@@ -57,7 +57,6 @@ class ArrangementArea(AnyObject):
                 |          Dim objArrContours   As ArrangementContours
                 |          Set objArrContours  = objArea1.ArrangementContours
 
-        :return: ArrangementContours
         :rtype: ArrangementContours
         """
 
@@ -81,7 +80,6 @@ class ArrangementArea(AnyObject):
                 |          Dim dblAreaHeight   As Double
                 |          dblAreaHeight  = objArea1.Height
 
-        :return: float
         :rtype: float
         """
 
@@ -113,7 +111,6 @@ class ArrangementArea(AnyObject):
                 |          Dim dblAreaSize   As Double
                 |          dblAreaSize  = objArea1.Size
 
-        :return: float
         :rtype: float
         """
 
@@ -137,7 +134,7 @@ class ArrangementArea(AnyObject):
                 | 
                 |          objArea1.VisuMode = CatArrangementAreaVisuModeVolume
 
-        :return: int
+        :return: enum cat_arrangement_area_visu_mode
         :rtype: int
         """
 
@@ -146,7 +143,7 @@ class ArrangementArea(AnyObject):
     @visu_mode.setter
     def visu_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_arrangement_area_visu_mode
         """
 
         self.arrangement_area.VisuMode = value
@@ -179,7 +176,6 @@ class ArrangementArea(AnyObject):
                 |              objProd  = objArea1.GetTechnologicalObject("Product")
 
         :param str i_application_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.arrangement_area.GetTechnologicalObject(i_application_type)

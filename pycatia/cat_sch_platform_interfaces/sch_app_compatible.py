@@ -80,7 +80,6 @@ class SchAppCompatible(AnyObject):
         :param SchListOfObjects i_l_comp_source_cntrs:
         :param SchListOfObjects o_l_source_cntrs:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_compatible.AppIsTargetOKForInsert(
@@ -151,7 +150,6 @@ class SchAppCompatible(AnyObject):
         :param SchListOfObjects i_l_comp_source_cntrs:
         :param SchListOfObjects o_l_target_cntrs:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_compatible.AppIsTargetOKForPlace(
@@ -219,7 +217,6 @@ class SchAppCompatible(AnyObject):
         :param str i_route_cntr_class_type:
         :param SchListOfObjects o_lok_cntrs:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_compatible.AppIsTargetOKForRoute(

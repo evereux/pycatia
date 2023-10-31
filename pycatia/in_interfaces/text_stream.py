@@ -55,7 +55,6 @@ class TextStream(AnyObject):
                 |          Dim EndLine As Boolean
                 |          EndLine = TestStream.AtEndOfLine
 
-        :return: bool
         :rtype: bool
         """
 
@@ -80,7 +79,6 @@ class TextStream(AnyObject):
                 |          Dim EndStream As Boolean
                 |          EndStream = TestStream.AtEndOfStream
 
-        :return: bool
         :rtype: bool
         """
 
@@ -101,7 +99,6 @@ class TextStream(AnyObject):
                 | 
                 |          TestStream.Close
 
-        :return: None
         :rtype: None
         """
         return self.text_stream.Close()
@@ -133,7 +130,6 @@ class TextStream(AnyObject):
                 |              Set ReadString = TestStream.Read(50)
 
         :param int i_num_of_char:
-        :return: str
         :rtype: str
         """
         return self.text_stream.Read(i_num_of_char)
@@ -159,7 +155,6 @@ class TextStream(AnyObject):
                 |              Dim ReadString As String
                 |              Set ReadString = TestStream.ReadLine
 
-        :return: str
         :rtype: str
         """
         return self.text_stream.ReadLine()
@@ -186,7 +181,6 @@ class TextStream(AnyObject):
                 |                  TestStream.Write("This is a test")
 
         :param str i_written_string:
-        :return: None
         :rtype: None
         """
         return self.text_stream.Write(i_written_string)

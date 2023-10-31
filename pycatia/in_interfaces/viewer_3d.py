@@ -60,7 +60,7 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.ClippingMode = catClippingModeNearAndFar
 
-        :return: int
+        :return: enum cat_clipping_mode
         :rtype: int
         """
 
@@ -69,7 +69,7 @@ class Viewer3D(Viewer):
     @clipping_mode.setter
     def clipping_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_clipping_mode
         """
 
         self.viewer_3d.ClippingMode = value
@@ -95,7 +95,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.FarLimit = 150
 
-        :return: float
         :rtype: float
         """
 
@@ -127,7 +126,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.Foggy = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -158,7 +156,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.Ground = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -189,7 +186,6 @@ class Viewer3D(Viewer):
                 | 
                 |          Set VPLightSources = My3DViewer.LightSources
 
-        :return: LightSources
         :rtype: LightSources
         """
 
@@ -213,7 +209,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.LightingIntensity = 0.35
 
-        :return: float
         :rtype: float
         """
 
@@ -244,7 +239,7 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.LightingMode = catInfiniteLightSource
 
-        :return: int
+        :return: enum cat_lighting_mode
         :rtype: int
         """
 
@@ -253,7 +248,7 @@ class Viewer3D(Viewer):
     @lighting_mode.setter
     def lighting_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_lighting_mode
         """
 
         self.viewer_3d.LightingMode = value
@@ -275,7 +270,7 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.NavigationStyle = catNavigationWalk
 
-        :return: int
+        :return: enum cat_navigation_style
         :rtype: int
         """
 
@@ -284,7 +279,7 @@ class Viewer3D(Viewer):
     @navigation_style.setter
     def navigation_style(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_navigation_style
         """
 
         self.viewer_3d.NavigationStyle = value
@@ -310,7 +305,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.NearLimit = 75
 
-        :return: float
         :rtype: float
         """
 
@@ -341,7 +335,7 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.RenderingMode = catRenderShadingWithEdges
 
-        :return: int
+        :return: enum cat_rendering_mode
         :rtype: int
         """
 
@@ -350,7 +344,7 @@ class Viewer3D(Viewer):
     @rendering_mode.setter
     def rendering_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_rendering_mode
         """
 
         self.viewer_3d.RenderingMode = value
@@ -373,7 +367,6 @@ class Viewer3D(Viewer):
                 |          Dim Nice3DViewpoint As Viewpoint3D
                 |          Set Nice3DViewpoint = My3DViewer.Viewpoint3D
 
-        :return: Viewpoint3D
         :rtype: Viewpoint3D
         """
 
@@ -409,7 +402,6 @@ class Viewer3D(Viewer):
 
         :param tuple i_axis:
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.viewer_3d.Rotate(i_axis, i_angle)
@@ -447,7 +439,6 @@ class Viewer3D(Viewer):
                 |          MyViewer3D.Translate Array(1, 1, 1)
 
         :param tuple i_vector:
-        :return: None
         :rtype: None
         """
         return self.viewer_3d.Translate(i_vector)

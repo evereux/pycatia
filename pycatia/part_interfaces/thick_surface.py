@@ -59,7 +59,6 @@ class ThickSurface(SurfaceBasedShape):
                 | 
                 |          Set botoffset = firstThickSurface.BotOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -83,7 +82,6 @@ class ThickSurface(SurfaceBasedShape):
                 | 
                 |          Set offsetside = firstThickSurface.OffsetSide
 
-        :return: int
         :rtype: int
         """
 
@@ -106,7 +104,6 @@ class ThickSurface(SurfaceBasedShape):
                 | 
                 |          Set topoffset = firstThickSurface.TopOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -132,7 +129,6 @@ class ThickSurface(SurfaceBasedShape):
                 |     Copyright © 1999-2011, Dassault Systèmes. All rights
                 |     reserved.
 
-        :return: None
         :rtype: None
         """
         return self.thick_surface.swap_OffsetSide()

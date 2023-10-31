@@ -58,7 +58,6 @@ class ManufacturingView(AnyObject):
                 | 
                 |          Set ManufacturingFeatures = MfgView.ManufacturingFeatures
 
-        :return: ManufacturingFeatures
         :rtype: ManufacturingFeatures
         """
 
@@ -81,7 +80,6 @@ class ManufacturingView(AnyObject):
                 | 
                 |          Set Relations = MfgView.Relations
 
-        :return: Relations
         :rtype: Relations
         """
 
@@ -105,7 +103,6 @@ class ManufacturingView(AnyObject):
                 |         MfgView.CreateAllMachinableAreaFeaturesFromTechResultsOfUDF(iFinishPartProduct)
 
         :param Product i_finish_part_product:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_view.CreateAllMachinableAreaFeaturesFromTechResultsOfUDF(

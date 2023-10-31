@@ -48,7 +48,6 @@ class ListParameter(Parameter):
                 | 
                 |     Returns or sets the value of the List object.
 
-        :return: List
         :rtype: List
         """
 

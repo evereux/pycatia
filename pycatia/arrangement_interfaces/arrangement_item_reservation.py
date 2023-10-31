@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ArrangementItemReservation(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -57,7 +56,6 @@ class ArrangementItemReservation(AnyObject):
                 |          Dim dblHeight   As Double
                 |          dblHeight  = objItemRes1.Height
 
-        :return: float
         :rtype: float
         """
 
@@ -89,7 +87,7 @@ class ArrangementItemReservation(AnyObject):
                 | 
                 |          objItemRes1.VisuMode = CatArrangementItemReservationVisuModeBox
 
-        :return: int
+        :return: enum cat_arrangement_item_res_visu_mode
         :rtype: int
         """
 
@@ -98,7 +96,7 @@ class ArrangementItemReservation(AnyObject):
     @visu_mode.setter
     def visu_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_arrangement_item_res_visu_mode
         """
 
         self.arrangement_item_reservation.VisuMode = value
@@ -122,7 +120,6 @@ class ArrangementItemReservation(AnyObject):
                 |          Dim dblXLength   As Double
                 |          dblXLength  = objItemRes1.XLength
 
-        :return: float
         :rtype: float
         """
 
@@ -155,7 +152,6 @@ class ArrangementItemReservation(AnyObject):
                 |          Dim dblYLength   As Double
                 |          dblYLength  = objItemRes1.YLength
 
-        :return: float
         :rtype: float
         """
 
@@ -195,7 +191,6 @@ class ArrangementItemReservation(AnyObject):
                 |                  objItemRes1.GetDimension(dblDimension)
 
         :param tuple io_item_res_dimensions:
-        :return: None
         :rtype: None
         """
         return self.arrangement_item_reservation.GetDimension(io_item_res_dimensions)
@@ -242,7 +237,6 @@ class ArrangementItemReservation(AnyObject):
                 |                  objProd  = objItemRes1.GetTechnologicalObject("Product")
 
         :param str i_application_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.arrangement_item_reservation.GetTechnologicalObject(i_application_type)
@@ -279,7 +273,6 @@ class ArrangementItemReservation(AnyObject):
                 |                  objItemRes1.SetDimension(dblDimension)
 
         :param tuple i_item_res_dimensions:
-        :return: None
         :rtype: None
         """
         return self.arrangement_item_reservation.SetDimension(i_item_res_dimensions)
@@ -300,4 +293,4 @@ class ArrangementItemReservation(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'ArrangementItemReservation(name="{ self.name }")'
+        return f'ArrangementItemReservation(name="{self.name}")'

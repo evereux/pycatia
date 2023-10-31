@@ -54,7 +54,6 @@ class WIChangeNotification(WIText):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: tuple
         :rtype: tuple
         """
         return self.wi_change_notification.GetParametersList()
@@ -82,7 +81,6 @@ class WIChangeNotification(WIText):
                 |         E_FAIL: on failure
 
         :param tuple i_list_of_parameters:
-        :return: None
         :rtype: None
         """
         return self.wi_change_notification.SetParametersList(i_list_of_parameters)

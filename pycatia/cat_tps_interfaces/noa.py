@@ -53,7 +53,6 @@ class Noa(AnyObject):
                 |         oText
                 |             Returned text for NOA hidden text.
 
-        :return: str
         :rtype: str
         """
 
@@ -83,7 +82,6 @@ class Noa(AnyObject):
                 |         oText
                 |             Returned text for graphical representation.
 
-        :return: str
         :rtype: str
         """
 
@@ -113,7 +111,6 @@ class Noa(AnyObject):
                 |             URL to Set
 
         :param str i_url:
-        :return: None
         :rtype: None
         """
         return self.noa.AddURL(i_url)
@@ -128,7 +125,6 @@ class Noa(AnyObject):
                 | 
                 |     Gets the ditto as a DrawingComponent of the Noa entity.
 
-        :return: DrawingComponent
         :rtype: DrawingComponent
         """
         return DrawingComponent(self.noa.GetDitto())
@@ -152,7 +148,6 @@ class Noa(AnyObject):
                 |             returns a CATIADrawingText
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.noa.GetModifiableText(i_index))
@@ -174,7 +169,6 @@ class Noa(AnyObject):
                 |             returns the number of modifiable text included into the ditto which
                 |             represents this NOA.
 
-        :return: int
         :rtype: int
         """
         return self.noa.GetModifiableTextsCount()
@@ -191,7 +185,6 @@ class Noa(AnyObject):
                 |         V5-6R2017 This method is replaced by Noa.GetNbrURL2
 
         :param cat_variant o_number_of_url:
-        :return: None
         :rtype: None
         """
         return self.noa.GetNbrURL(o_number_of_url)
@@ -226,7 +219,6 @@ class Noa(AnyObject):
                 |         oNumberOfURL
                 |             returns param oNumberOfURL.
 
-        :return: int
         :rtype: int
         """
         return self.noa.GetNbrURL2()
@@ -251,7 +243,6 @@ class Noa(AnyObject):
 
         :param str i_url:
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.noa.ModifyURL(i_url, i_index)
@@ -287,7 +278,6 @@ class Noa(AnyObject):
                 |             position of the URL to remove.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.noa.RemoveURL(i_index)
@@ -317,7 +307,6 @@ class Noa(AnyObject):
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.
 
-        :return: TPSParallelOnScreen
         :rtype: TPSParallelOnScreen
         """
 
@@ -341,7 +330,6 @@ class Noa(AnyObject):
                 |             URL
 
         :param cat_variant i_index:
-        :return: str
         :rtype: str
         """
         return self.noa.URL(i_index)

@@ -56,7 +56,6 @@ class Layout2DViews(Collection):
                 |          Dim ViewToWorkIn As Layout2DView
                 |          Set ViewToWorkIn = MyRoot.Sheets.ActiveSheet.Layout2DViews.ActiveView
 
-        :return: Layout2DView
         :rtype: Layout2DView
         """
 
@@ -151,10 +150,9 @@ class Layout2DViews(Collection):
         :param tuple i_bc_segment:
         :param float i_xorient:
         :param float i_yorient:
-        :param int i_section_type:
+        :param int i_section_type: enum cat_view_type
         :param float i_x:
         :param float i_y:
-        :return: Layout2DView
         :rtype: Layout2DView
         """
         return Layout2DView(
@@ -206,7 +204,6 @@ class Layout2DViews(Collection):
                 |     Dim MyView As Layout2DView Set MyView = CATIA.ActiveDocument.Part.GetItem("CATLayoutRoot").Sheets.ActiveSheet. Views.AddDetail()
 
         :param str i_detail_name:
-        :return: Layout2DView
         :rtype: Layout2DView
         """
         return Layout2DView(self.layout2_d_views.AddDetail(i_detail_name))
@@ -266,10 +263,9 @@ class Layout2DViews(Collection):
                 |         The created Layout2D view
 
         :param tuple i_plane:
-        :param int i_view_type:
+        :param int i_view_type: enum cat_view_type
         :param float i_x:
         :param float i_y:
-        :return: Layout2DView
         :rtype: Layout2DView
         """
         return Layout2DView(self.layout2_d_views.AddFrom3DPlane(i_plane, i_view_type, i_x, i_y))
@@ -312,7 +308,6 @@ class Layout2DViews(Collection):
 
         :param float i_x:
         :param float i_y:
-        :return: Layout2DView
         :rtype: Layout2DView
         """
         return Layout2DView(self.layout2_d_views.AddPrimary(i_x, i_y))
@@ -369,10 +364,9 @@ class Layout2DViews(Collection):
                 |                   AddRelated(MyFirstView,catLeftSide, x, y)
 
         :param Layout2DView i_reference_view:
-        :param int i_side:
+        :param int i_side: enum cat_view_side
         :param float i_x:
         :param float i_y:
-        :return: Layout2DView
         :rtype: Layout2DView
         """
         return Layout2DView(self.layout2_d_views.AddRelated(i_reference_view.com_object, i_side, i_x, i_y))
@@ -421,7 +415,6 @@ class Layout2DViews(Collection):
                 |          Set ThatLayout2DView = MySheet.Views.ActiveView.Item("MyView")
 
         :param cat_variant i_index:
-        :return: Layout2DView
         :rtype: Layout2DView
         """
         return Layout2DView(self.layout2_d_views.Item(i_index))
@@ -461,7 +454,6 @@ class Layout2DViews(Collection):
                 |      MySheet.ActiveViews.Remove("TopView")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.layout2_d_views.Remove(i_index)

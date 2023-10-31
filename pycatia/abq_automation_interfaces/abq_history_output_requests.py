@@ -63,7 +63,6 @@ class ABQHistoryOutputRequests(Collection):
                 |          ABQHistoryOutputRequest
                 |          Set abqHistoryOutputRequest =  abqHistoryOutputRequests.Add()
 
-        :return: ABQHistoryOutputRequest
         :rtype: ABQHistoryOutputRequest
         """
         return ABQHistoryOutputRequest(self.abq_history_output_requests.Add())
@@ -94,7 +93,6 @@ class ABQHistoryOutputRequests(Collection):
                 |         The specified ABQHistoryOutputRequest.
 
         :param cat_variant i_index:
-        :return: ABQHistoryOutputRequest
         :rtype: ABQHistoryOutputRequest
         """
         return ABQHistoryOutputRequest(self.abq_history_output_requests.Item(i_index))
@@ -122,7 +120,6 @@ class ABQHistoryOutputRequests(Collection):
                 |             property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_history_output_requests.Remove(i_index)

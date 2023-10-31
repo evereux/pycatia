@@ -89,7 +89,6 @@ class SFMOpeningContoursMgr(AnyObject):
                 |               Next
 
         :param tuple o_list_contour_names:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.sfm_opening_contours_mgr.GetAvailableStdOpeningContours(o_list_contour_names)
@@ -169,7 +168,6 @@ class SFMOpeningContoursMgr(AnyObject):
                 |                Next
 
         :param str i_contour_name:
-        :return: SFMStandardContourParameters
         :rtype: SFMStandardContourParameters
         """
         return SFMStandardContourParameters(self.sfm_opening_contours_mgr.GetStdOpeningContourParams(i_contour_name))

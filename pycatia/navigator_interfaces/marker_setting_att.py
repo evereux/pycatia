@@ -98,7 +98,6 @@ class MarkerSettingAtt(SettingController):
                 |     Returns or sets the activation state for 2D annotations automatic naming
                 |     (TRUE naming is automatic, FALSE the naming is not automatic).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -124,7 +123,6 @@ class MarkerSettingAtt(SettingController):
                 |     Returns or sets the activation state for 3D annotations automatic naming
                 |     (TRUE naming is automatic, FALSE the naming is not automatic).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -150,7 +148,6 @@ class MarkerSettingAtt(SettingController):
                 |     Returns or sets the default dashed value of an annotation (oValue the
                 |     dashed value).
 
-        :return: int
         :rtype: int
         """
 
@@ -176,7 +173,6 @@ class MarkerSettingAtt(SettingController):
                 |     Returns or sets the default weight value of an annotation (oValue the
                 |     weight value).
 
-        :return: int
         :rtype: int
         """
 
@@ -202,7 +198,6 @@ class MarkerSettingAtt(SettingController):
                 |     Returns or sets the default dashed value of a 2D text annotation (oValue
                 |     the dashed value).
 
-        :return: int
         :rtype: int
         """
 
@@ -228,7 +223,6 @@ class MarkerSettingAtt(SettingController):
                 |     Returns or sets the default dashed value of a 3D text annotation (oValue
                 |     the dashed value).
 
-        :return: int
         :rtype: int
         """
 
@@ -253,7 +247,6 @@ class MarkerSettingAtt(SettingController):
                 | 
                 |     Returns or sets the default font of a 2D annotation (oValue the font name).
 
-        :return: str
         :rtype: str
         """
 
@@ -278,7 +271,6 @@ class MarkerSettingAtt(SettingController):
                 | 
                 |     Returns or sets the default font of a 3D annotation (oValue the font name).
 
-        :return: str
         :rtype: str
         """
 
@@ -304,7 +296,6 @@ class MarkerSettingAtt(SettingController):
                 |     Returns or sets the default size value of a 2d annotation (oValue the size
                 |     value)..
 
-        :return: int
         :rtype: int
         """
 
@@ -330,7 +321,6 @@ class MarkerSettingAtt(SettingController):
                 |     Returns or sets the default size value of a 3d annotation (oValue the size
                 |     value)..
 
-        :return: int
         :rtype: int
         """
 
@@ -356,7 +346,6 @@ class MarkerSettingAtt(SettingController):
                 |     Returns or sets the default weight value of a 2D text annotation (oValue
                 |     the weight value).
 
-        :return: int
         :rtype: int
         """
 
@@ -382,7 +371,6 @@ class MarkerSettingAtt(SettingController):
                 |     Returns or sets the default weight value of a 3D text annotation (oValue
                 |     the weight value).
 
-        :return: int
         :rtype: int
         """
 
@@ -428,7 +416,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarker2DAutoNamingInfo(io_admin_level, io_locked)
@@ -465,7 +452,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarker3DAutoNamingInfo(io_admin_level, io_locked)
@@ -486,7 +472,6 @@ class MarkerSettingAtt(SettingController):
         :param int o_red:
         :param int o_green:
         :param int o_blue:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.GetMarkerDefaultsColor(o_red, o_green, o_blue)
@@ -523,7 +508,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerDefaultsColorInfo(io_admin_level, io_locked)
@@ -560,7 +544,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerDefaultsDashedInfo(io_admin_level, io_locked)
@@ -597,7 +580,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerDefaultsWeightInfo(io_admin_level, io_locked)
@@ -618,7 +600,6 @@ class MarkerSettingAtt(SettingController):
         :param int o_red:
         :param int o_green:
         :param int o_blue:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.GetMarkerTextColor2D(o_red, o_green, o_blue)
@@ -655,7 +636,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextColor2DInfo(io_admin_level, io_locked)
@@ -676,7 +656,6 @@ class MarkerSettingAtt(SettingController):
         :param int o_red:
         :param int o_green:
         :param int o_blue:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.GetMarkerTextColor3D(o_red, o_green, o_blue)
@@ -713,7 +692,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextColor3DInfo(io_admin_level, io_locked)
@@ -750,7 +728,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDashed2DInfo(io_admin_level, io_locked)
@@ -787,7 +764,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDashed3DInfo(io_admin_level, io_locked)
@@ -824,7 +800,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDefaultsFont2DInfo(io_admin_level, io_locked)
@@ -861,7 +836,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDefaultsFont3DInfo(io_admin_level, io_locked)
@@ -898,7 +872,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDefaultsSize2DInfo(io_admin_level, io_locked)
@@ -935,7 +908,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDefaultsSize3DInfo(io_admin_level, io_locked)
@@ -972,7 +944,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextWeight2DInfo(io_admin_level, io_locked)
@@ -1009,7 +980,6 @@ class MarkerSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextWeight3DInfo(io_admin_level, io_locked)
@@ -1036,7 +1006,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarker2DAutoNamingLock(i_locked)
@@ -1078,7 +1047,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarker3DAutoNamingLock(i_locked)
@@ -1114,7 +1082,6 @@ class MarkerSettingAtt(SettingController):
         :param int i_red:
         :param int i_green:
         :param int i_blue:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerDefaultsColor(i_red, i_green, i_blue)
@@ -1141,7 +1108,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerDefaultsColorLock(i_locked)
@@ -1183,7 +1149,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerDefaultsDashedLock(i_locked)
@@ -1225,7 +1190,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerDefaultsWeightLock(i_locked)
@@ -1261,7 +1225,6 @@ class MarkerSettingAtt(SettingController):
         :param int i_red:
         :param int i_green:
         :param int i_blue:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextColor2D(i_red, i_green, i_blue)
@@ -1288,7 +1251,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextColor2DLock(i_locked)
@@ -1324,7 +1286,6 @@ class MarkerSettingAtt(SettingController):
         :param int i_red:
         :param int i_green:
         :param int i_blue:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextColor3D(i_red, i_green, i_blue)
@@ -1351,7 +1312,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextColor3DLock(i_locked)
@@ -1393,7 +1353,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDashed2DLock(i_locked)
@@ -1435,7 +1394,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDashed3DLock(i_locked)
@@ -1477,7 +1435,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDefaultsFont2DLock(i_locked)
@@ -1519,7 +1476,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDefaultsFont3DLock(i_locked)
@@ -1561,7 +1517,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDefaultsSize2DLock(i_locked)
@@ -1603,7 +1558,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDefaultsSize3DLock(i_locked)
@@ -1645,7 +1599,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextWeight2DLock(i_locked)
@@ -1687,7 +1640,6 @@ class MarkerSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextWeight3DLock(i_locked)

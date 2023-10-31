@@ -63,7 +63,6 @@ class MHIOpenAccess(AnyObject):
 
         :param str i_username:
         :param str i_password:
-        :return: None
         :rtype: None
         """
         return self.mhi_open_access.ConnectToPPRHub(i_username, i_password)
@@ -88,7 +87,6 @@ class MHIOpenAccess(AnyObject):
                 |     Returns:
                 |         S_OK if object created ok and interface returned OK E_FAIL on error
 
-        :return: MHILoadParameters
         :rtype: MHILoadParameters
         """
         return MHILoadParameters(self.mhi_open_access.CreateLoadParameters())
@@ -140,7 +138,6 @@ class MHIOpenAccess(AnyObject):
         :param bool i_create_default_window:
         :param bool i_is_read_only:
         :param tuple o_error_messages:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -206,7 +203,6 @@ class MHIOpenAccess(AnyObject):
         :param str i_user_name:
         :param str i_pwd:
         :param tuple o_error_messages:
-        :return: None
         :rtype: None
         """
         return self.mhi_open_access.SetEnvironmentForVBSLaunch(

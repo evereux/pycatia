@@ -45,7 +45,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Initial gap value
 
-        :return: float
         :rtype: float
         """
 
@@ -70,7 +69,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Initial thickness value
 
-        :return: float
         :rtype: float
         """
 
@@ -95,7 +93,7 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Initial thickness type
 
-        :return: int
+        :return: enum initial_thickness_type
         :rtype: int
         """
 
@@ -104,7 +102,7 @@ class ABQGasketProperty(ABQProperty):
     @initial_thickness_type.setter
     def initial_thickness_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum initial_thickness_type
         """
 
         self.abq_gasket_property.InitialThicknessType = value
@@ -120,7 +118,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Initial void value
 
-        :return: float
         :rtype: float
         """
 
@@ -145,7 +142,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Stabilization stiffness value
 
-        :return: float
         :rtype: float
         """
 
@@ -171,7 +167,7 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Stabilization stiffness type
 
-        :return: int
+        :return: enum stabilization_stiffness_type
         :rtype: int
         """
 
@@ -180,7 +176,7 @@ class ABQGasketProperty(ABQProperty):
     @stabilization_stiffness_type.setter
     def stabilization_stiffness_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum stabilization_stiffness_type
         """
 
         self.abq_gasket_property.StabilizationStiffnessType = value
@@ -196,7 +192,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the 3D structrel property.
 
-        :return: AnalysisEntity
         :rtype: AnalysisEntity
         """
 

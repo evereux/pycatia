@@ -83,7 +83,6 @@ class AnalysisV4Services(AnyObject):
 
         :param str i_model_path:
         :param str o_prefix:
-        :return: str
         :rtype: str
         """
         return self.analysis_v4_services.GetStorageInfo(i_model_path, o_prefix)
@@ -130,7 +129,6 @@ class AnalysisV4Services(AnyObject):
         :param str i_session_path:
         :param str i_print_path:
         :param int i_submesh:
-        :return: None
         :rtype: None
         """
         return self.analysis_v4_services.PrintAssembledSetsInfo(i_session_path, i_print_path, i_submesh)
@@ -173,7 +171,6 @@ class AnalysisV4Services(AnyObject):
         :param str i_session_path:
         :param str i_print_path:
         :param int i_submesh:
-        :return: None
         :rtype: None
         """
         return self.analysis_v4_services.PrintCouplingAnalysisInfo(i_session_path, i_print_path, i_submesh)
@@ -212,7 +209,6 @@ class AnalysisV4Services(AnyObject):
 
         :param str i_session_path:
         :param str i_print_path:
-        :return: None
         :rtype: None
         """
         return self.analysis_v4_services.PrintSessionInfo(i_session_path, i_print_path)

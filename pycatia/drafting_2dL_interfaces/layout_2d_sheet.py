@@ -54,7 +54,7 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.Orientation = catPaperLandscape
 
-        :return: int
+        :return: enum cat_paper_orientation
         :rtype: int
         """
 
@@ -63,7 +63,7 @@ class Layout2DSheet(AnyObject):
     @orientation.setter
     def orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_paper_orientation
         """
 
         self.layout_2d_sheet.Orientation = value
@@ -86,7 +86,6 @@ class Layout2DSheet(AnyObject):
                 |          Dim MySheetPageSetup As DrawingPageSetup
                 |          Set MySheetPageSetup = MySheet.PageSetup
 
-        :return: DrawingPageSetup
         :rtype: DrawingPageSetup
         """
 
@@ -113,7 +112,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |                  Layout2DSheet1.GetPaperHeight oPaperHeight
 
-        :return: float
         :rtype: float
         """
 
@@ -144,7 +142,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.PaperName = DSFormat1
 
-        :return: str
         :rtype: str
         """
 
@@ -175,7 +172,7 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.PaperSize = catPaperA4
 
-        :return: int
+        :return: enum cat_paper_size
         :rtype: int
         """
 
@@ -184,7 +181,7 @@ class Layout2DSheet(AnyObject):
     @paper_size.setter
     def paper_size(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_paper_size
         """
 
         self.layout_2d_sheet.PaperSize = value
@@ -209,7 +206,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |                  Sheet1.GetPaperWidth oPaperWidth
 
-        :return: float
         :rtype: float
         """
 
@@ -241,7 +237,6 @@ class Layout2DSheet(AnyObject):
                 |          Dim MyPrintArea As PrintArea
                 |          Set MyPrintArea = MySheet.PrintArea
 
-        :return: PrintArea
         :rtype: PrintArea
         """
 
@@ -264,7 +259,7 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.ProjectionMethod = catFirstAngle
 
-        :return: int
+        :return: enum cat_sheet_projection_method
         :rtype: int
         """
 
@@ -273,7 +268,7 @@ class Layout2DSheet(AnyObject):
     @projection_method.setter
     def projection_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_sheet_projection_method
         """
 
         self.layout_2d_sheet.ProjectionMethod = value
@@ -295,7 +290,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.SheetScale = 0.5
 
-        :return: float
         :rtype: float
         """
 
@@ -328,7 +322,6 @@ class Layout2DSheet(AnyObject):
                 |          Dim ViewCollection As Layout2DViews
                 |          Set ViewCollection = MySheet.Views.
 
-        :return: Layout2DViews
         :rtype: Layout2DViews
         """
 
@@ -350,7 +343,7 @@ class Layout2DSheet(AnyObject):
                 |     See also:
                 |         CatVisuIn3DMode
 
-        :return: int
+        :return: enum cat_visu_in_3d_mode
         :rtype: int
         """
 
@@ -359,7 +352,7 @@ class Layout2DSheet(AnyObject):
     @visu_in_3d.setter
     def visu_in_3d(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_visu_in_3d_mode
         """
 
         self.layout_2d_sheet.VisuIn3D = value
@@ -382,7 +375,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.Activate
 
-        :return: None
         :rtype: None
         """
         return self.layout_2d_sheet.Activate()
@@ -403,7 +395,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          IsDetail = MySheet.IsDetail
 
-        :return: bool
         :rtype: bool
         """
         return self.layout_2d_sheet.IsDetail()
@@ -432,8 +423,7 @@ class Layout2DSheet(AnyObject):
                 |                  Layout2DSheet1.PrintOut
                 |                  catRenderShadingWithEdges
 
-        :param int i_rendering_mode:
-        :return: None
+        :param int i_rendering_mode: enum cat_rendering_mode
         :rtype: None
         """
         return self.layout_2d_sheet.PrintOut(i_rendering_mode)
@@ -457,7 +447,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          Layout2DSheet1.PrintOut2
 
-        :return: None
         :rtype: None
         """
         return self.layout_2d_sheet.PrintOut2()
@@ -489,8 +478,7 @@ class Layout2DSheet(AnyObject):
                 |          "e:\temp\sheet1.prn",catRenderShadingWithEdges
 
         :param str file_name:
-        :param int i_rendering_mode:
-        :return: None
+        :param int i_rendering_mode: enum cat_rendering_mode
         :rtype: None
         """
         return self.layout_2d_sheet.PrintToFile(file_name, i_rendering_mode)
@@ -519,7 +507,6 @@ class Layout2DSheet(AnyObject):
                 |          Layout2DSheet1.PrintToFile2 "e:\temp\sheet1.prn"
 
         :param str file_name:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_sheet.PrintToFile2(file_name)
@@ -554,7 +541,6 @@ class Layout2DSheet(AnyObject):
                 |          drwviewsorder.reorder_Views(newvieworder)
 
         :param tuple i_ordered_views:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_sheet.reorder_Views(i_ordered_views)

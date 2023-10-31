@@ -60,7 +60,7 @@ class Prism(SketchBasedShape):
                 |              Set dirOrientation = firstPrism.DirectionOrientation
                 |              firstPrism.DirectionOrientation = catInverseOrientation
 
-        :return: int
+        :return: enum cat_prism_orientation
         :rtype: int
         """
 
@@ -69,7 +69,7 @@ class Prism(SketchBasedShape):
     @direction_orientation.setter
     def direction_orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_prism_orientation
         """
 
         self.prism.DirectionOrientation = value
@@ -97,7 +97,7 @@ class Prism(SketchBasedShape):
                 |              Set dirType = firstPrism.DirectionType
                 |              firstPrism.DirectionType = catNormalToSketchDirection
 
-        :return: int
+        :return: enum cat_prism_extrusion_direction
         :rtype: int
         """
 
@@ -106,7 +106,7 @@ class Prism(SketchBasedShape):
     @direction_type.setter
     def direction_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_prism_extrusion_direction
         """
 
         self.prism.DirectionType = value
@@ -133,7 +133,6 @@ class Prism(SketchBasedShape):
                 | 
                 |              Set firstLimit = firstPrism.FirstLimit
 
-        :return: Limit
         :rtype: Limit
         """
 
@@ -163,7 +162,6 @@ class Prism(SketchBasedShape):
                 |              Set symFlag = firstPrism.IsSymmetric
                 |              firstPrism.IsSymmetric = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -201,7 +199,6 @@ class Prism(SketchBasedShape):
                 |              Set thinFlag = firstPrism.IsThin
                 |              firstPrism.IsThin = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -238,7 +235,6 @@ class Prism(SketchBasedShape):
                 |              Set MergeEndFlag = firstPrism.IsMergeEnd
                 |              firstPrism.IsMergeEnd = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -277,7 +273,6 @@ class Prism(SketchBasedShape):
                 |              Set NeutralFiberFlag = firstPrism.IsNeutralFiber
                 |              firstPrism.IsNeutralFiber = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -313,7 +308,6 @@ class Prism(SketchBasedShape):
                 | 
                 |              Set secondLimit = firstPrism.SecondLimit
 
-        :return: Limit
         :rtype: Limit
         """
 
@@ -345,7 +339,6 @@ class Prism(SketchBasedShape):
                 |              Set z = dirArray[3]
 
         :param tuple io_direction:
-        :return: None
         :rtype: None
         """
         return self.prism.GetDirection(io_direction)
@@ -382,7 +375,6 @@ class Prism(SketchBasedShape):
                 | 
                 |          firstPrism.ReverseInnerSide
 
-        :return: None
         :rtype: None
         """
         return self.prism.ReverseInnerSide()
@@ -416,7 +408,6 @@ class Prism(SketchBasedShape):
                 |              firstPrism.SetDirection prismDirRef
 
         :param Reference i_line:
-        :return: None
         :rtype: None
         """
         return self.prism.SetDirection(i_line.com_object)

@@ -58,7 +58,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |             0 : to not display trailing zeros
                 |             1 : to display trailing zeros.
 
-        :return: int
         :rtype: int
         """
 
@@ -91,7 +90,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |         oExpNotationValuesGreater
                 |             The minimum value for exponential notation values.
 
-        :return: float
         :rtype: float
         """
 
@@ -124,7 +122,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |         oExpNotationValuesLower
                 |             The maximum value for exponential notation values.
 
-        :return: float
         :rtype: float
         """
 
@@ -152,7 +149,6 @@ class UnitsSheetSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -171,7 +167,6 @@ class UnitsSheetSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -198,7 +193,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |             0 : to not display same display
                 |             1 : to display same display.
 
-        :return: int
         :rtype: int
         """
 
@@ -225,7 +219,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |     See also:
                 |         UnitsSheetSettingAtt.CommitForUnits
 
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.CommitForUnits()
@@ -243,7 +236,6 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param str i_magnitude_name:
         :param float o_decimal_place_read_only:
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.GetDecimalReadOnly(i_magnitude_name, o_decimal_place_read_only)
@@ -261,7 +253,6 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param str i_magnitude_name:
         :param float o_decimal_place_read_write:
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.GetDecimalReadWrite(i_magnitude_name, o_decimal_place_read_write)
@@ -281,7 +272,6 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.units_sheet_setting_att.GetDimensionsDisplayInfo(io_admin_level, io_locked)
@@ -318,7 +308,6 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.units_sheet_setting_att.GetDisplayTrailingZerosInfo(io_admin_level, io_locked)
@@ -355,7 +344,6 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.units_sheet_setting_att.GetExpNotationValuesGreaterInfo(io_admin_level, io_locked)
@@ -392,7 +380,6 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.units_sheet_setting_att.GetExpNotationValuesLowerInfo(io_admin_level, io_locked)
@@ -412,7 +399,6 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.units_sheet_setting_att.GetListOfMagnitudesInfo(io_admin_level, io_locked)
@@ -440,7 +426,6 @@ class UnitsSheetSettingAtt(SettingController):
         :param str o_unit_name:
         :param float o_decimal_place_read_write:
         :param float o_decimal_place_read_only:
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.GetMagnitudeValues(i_magnitude_name, o_unit_name,
@@ -478,7 +463,6 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.units_sheet_setting_att.GetSameDisplayInfo(io_admin_level, io_locked)
@@ -496,7 +480,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |     See also:
                 |         UnitsSheetSettingAtt.ResetToAdminValuesForUnits
 
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.ResetToAdminValuesForUnits()
@@ -514,7 +497,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |     See also:
                 |         UnitsSheetSettingAtt.RollbackForUnits
 
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.RollbackForUnits()
@@ -532,7 +514,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |     See also:
                 |         UnitsSheetSettingAtt.SaveRepositoryForUnits
 
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.SaveRepositoryForUnits()
@@ -549,7 +530,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.SetDimensionsDisplayLock(i_locked)
@@ -592,7 +572,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.SetDisplayTrailingZerosLock(i_locked)
@@ -635,7 +614,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.SetExpNotationValuesGreaterLock(i_locked)
@@ -678,7 +656,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.SetExpNotationValuesLowerLock(i_locked)
@@ -710,7 +687,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.SetListOfMagnitudesLock(i_locked)
@@ -753,7 +729,6 @@ class UnitsSheetSettingAtt(SettingController):
         :param str i_unit_name:
         :param float i_decimal_place_read_write:
         :param float i_decimal_place_read_only:
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.SetMagnitudeValues(i_magnitude_name, i_unit_name,
@@ -782,7 +757,6 @@ class UnitsSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.units_sheet_setting_att.SetSameDisplayLock(i_locked)

@@ -107,7 +107,6 @@ class ShapeFactory(Factory):
                 |         The created add operation
 
         :param Body i_body_to_add:
-        :return: Add
         :rtype: Add
         """
         return Add(self.shape_factory.AddNewAdd(i_body_to_add.com_object))
@@ -139,7 +138,6 @@ class ShapeFactory(Factory):
         :param float x_ratio:
         :param float y_ratio:
         :param float z_ratio:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewAffinity2(x_ratio, y_ratio, z_ratio))
@@ -164,7 +162,6 @@ class ShapeFactory(Factory):
                 |         The created assembly operation
 
         :param Body i_body_to_assemble:
-        :return: Assemble
         :rtype: Assemble
         """
         return Assemble(self.shape_factory.AddNewAssemble(i_body_to_assemble.com_object))
@@ -190,7 +187,6 @@ class ShapeFactory(Factory):
                 |         The created autodraft.
 
         :param float i_draft_angle:
-        :return: AutoDraft
         :rtype: AutoDraft
         """
         return AutoDraft(self.shape_factory.AddNewAutoDraft(i_draft_angle))
@@ -220,7 +216,6 @@ class ShapeFactory(Factory):
 
         :param float i_fillet_radius:
         :param float i_round_radius:
-        :return: AutoFillet
         :rtype: AutoFillet
         """
         return AutoFillet(self.shape_factory.AddNewAutoFillet(i_fillet_radius, i_round_radius))
@@ -248,7 +243,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_reference:
         :param Reference i_target:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewAxisToAxis2(i_reference.com_object, i_target.com_object))
@@ -266,13 +260,19 @@ class ShapeFactory(Factory):
                 |     Returns:
                 |         The created Blend feature
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewBlend())
 
-    def add_new_chamfer(self, i_object_to_chamfer: Reference, i_propagation: int, i_mode: int, i_orientation: int,
-                        i_length1: float, i_length2_or_angle: float) -> Chamfer:
+    def add_new_chamfer(
+            self,
+            i_object_to_chamfer: Reference,
+            i_propagation: int,
+            i_mode: int,
+            i_orientation: int,
+            i_length1: float,
+            i_length2_or_angle: float
+    ) -> Chamfer:
         """
         .. note::
             :class: toggle
@@ -318,17 +318,23 @@ class ShapeFactory(Factory):
                 |         The created chamfer
 
         :param Reference i_object_to_chamfer:
-        :param int i_propagation:
+        :param int i_propagation: enum cat_chamfer_propagation
         :param int i_mode:
         :param int i_orientation:
         :param float i_length1:
         :param float i_length2_or_angle:
-        :return: Chamfer
         :rtype: Chamfer
         """
         return Chamfer(
-            self.shape_factory.AddNewChamfer(i_object_to_chamfer.com_object, i_propagation, i_mode, i_orientation,
-                                             i_length1, i_length2_or_angle))
+            self.shape_factory.AddNewChamfer(
+                i_object_to_chamfer.com_object,
+                i_propagation,
+                i_mode,
+                i_orientation,
+                i_length1,
+                i_length2_or_angle
+            )
+        )
 
     def add_new_circ_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_radial_dir: int,
                              i_nb_of_copies_in_angular_dir: int, i_step_in_radial_dir: float,
@@ -421,7 +427,6 @@ class ShapeFactory(Factory):
         :param bool i_is_reversed_rotation_axis:
         :param float i_rotation_angle:
         :param bool i_is_radius_aligned:
-        :return: CircPattern
         :rtype: CircPattern
         """
         return CircPattern(
@@ -521,7 +526,6 @@ class ShapeFactory(Factory):
         :param bool i_is_reversed_rotation_axis:
         :param float i_rotation_angle:
         :param bool i_is_radius_aligned:
-        :return: CircPattern
         :rtype: CircPattern
         """
         return CircPattern(
@@ -554,7 +558,6 @@ class ShapeFactory(Factory):
                 |         The created CloseSurface feature
 
         :param Reference i_close_element:
-        :return: CloseSurface
         :rtype: CloseSurface
         """
         return CloseSurface(self.shape_factory.AddNewCloseSurface(i_close_element.com_object))
@@ -573,14 +576,23 @@ class ShapeFactory(Factory):
                 |     Returns:
                 |         The created defeaturing operation
 
-        :return: Defeaturing
         :rtype: Defeaturing
         """
         return Defeaturing(self.shape_factory.AddNewDefeaturing())
 
-    def add_new_draft(self, i_face_to_draft: Reference, i_neutral: Reference, i_neutral_mode: int, i_parting: Reference,
-                      i_dir_x: float, i_dir_y: float, i_dir_z: float, i_mode: int, i_angle: float,
-                      i_multiselection_mode: int) -> Draft:
+    def add_new_draft(
+            self,
+            i_face_to_draft: Reference,
+            i_neutral: Reference,
+            i_neutral_mode: int,
+            i_parting: Reference,
+            i_dir_x: float,
+            i_dir_y: float,
+            i_dir_z: float,
+            i_mode: int,
+            i_angle: float,
+            i_multiselection_mode: int
+    ) -> Draft:
         """
         .. note::
             :class: toggle
@@ -651,20 +663,30 @@ class ShapeFactory(Factory):
 
         :param Reference i_face_to_draft:
         :param Reference i_neutral:
-        :param int i_neutral_mode:
+        :param int i_neutral_mode: enum cat_draft_neutral_propagation_mode
         :param Reference i_parting:
         :param float i_dir_x:
         :param float i_dir_y:
         :param float i_dir_z:
-        :param int i_mode:
+        :param int i_mode: enum cat_draft_mode
         :param float i_angle:
-        :param int i_multiselection_mode:
-        :return: Draft
+        :param int i_multiselection_mode: enum cat_draft_multiselection_mode
         :rtype: Draft
         """
-        return Draft(self.shape_factory.AddNewDraft(i_face_to_draft.com_object, i_neutral.com_object, i_neutral_mode,
-                                                    i_parting.com_object, i_dir_x, i_dir_y, i_dir_z, i_mode, i_angle,
-                                                    i_multiselection_mode))
+        return Draft(
+            self.shape_factory.AddNewDraft(
+                i_face_to_draft.com_object,
+                i_neutral.com_object,
+                i_neutral_mode,
+                i_parting.com_object,
+                i_dir_x,
+                i_dir_y,
+                i_dir_z,
+                i_mode,
+                i_angle,
+                i_multiselection_mode
+            )
+        )
 
     def add_new_edge_fillet_with_constant_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int,
                                                  i_radius: float) -> ConstRadEdgeFillet:
@@ -685,9 +707,8 @@ class ShapeFactory(Factory):
                 |         want to create
 
         :param Reference i_edge_to_fillet:
-        :param int i_propag_mode:
+        :param int i_propag_mode: enum cat_fillet_edge_propagation
         :param float i_radius:
-        :return: ConstRadEdgeFillet
         :rtype: ConstRadEdgeFillet
         """
         return ConstRadEdgeFillet(
@@ -713,10 +734,9 @@ class ShapeFactory(Factory):
                 |         want to create
 
         :param Reference i_edge_to_fillet:
-        :param int i_propag_mode:
-        :param int i_variation_mode:
+        :param int i_propag_mode: enum cat_fillet_edge_propagation
+        :param int i_variation_mode: enum cat_fillet_variation
         :param float i_default_radius:
-        :return: VarRadEdgeFillet
         :rtype: VarRadEdgeFillet
         """
         return VarRadEdgeFillet(
@@ -740,7 +760,6 @@ class ShapeFactory(Factory):
         :param Reference i_f1:
         :param Reference i_f2:
         :param float i_radius:
-        :return: FaceFillet
         :rtype: FaceFillet
         """
         return FaceFillet(self.shape_factory.AddNewFaceFillet(i_f1.com_object, i_f2.com_object, i_radius))
@@ -788,7 +807,6 @@ class ShapeFactory(Factory):
         :param bool i_is_radius_aligned:
         :param bool i_complete_crown:
         :param float i_type:
-        :return: CircPattern
         :rtype: CircPattern
         """
         return CircPattern(
@@ -840,7 +858,6 @@ class ShapeFactory(Factory):
         :param bool i_is_reversed_dir2:
         :param float i_rotation_angle:
         :param float i_type:
-        :return: RectPattern
         :rtype: RectPattern
         """
         return RectPattern(self.shape_factory.AddNewGSDRectPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_dir1,
@@ -875,7 +892,6 @@ class ShapeFactory(Factory):
                 |         The created groove
 
         :param Sketch i_sketch:
-        :return: Groove
         :rtype: Groove
         """
         return Groove(self.shape_factory.AddNewGroove(i_sketch.com_object))
@@ -900,7 +916,6 @@ class ShapeFactory(Factory):
                 |         The created groove
 
         :param Reference i_profile_elt:
-        :return: Groove
         :rtype: Groove
         """
         return Groove(self.shape_factory.AddNewGrooveFromRef(i_profile_elt.com_object))
@@ -935,7 +950,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_support:
         :param float i_depth:
-        :return: Hole
         :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHole(i_support.com_object, i_depth))
@@ -983,7 +997,6 @@ class ShapeFactory(Factory):
         :param float i_z:
         :param Reference i_support:
         :param float i_depth:
-        :return: Hole
         :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHoleFromPoint(i_x, i_y, i_z, i_support.com_object, i_depth))
@@ -1019,7 +1032,6 @@ class ShapeFactory(Factory):
         :param Reference i_origin:
         :param Reference i_support:
         :param float i_depth:
-        :return: Hole
         :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHoleFromRefPoint(i_origin.com_object, i_support.com_object, i_depth))
@@ -1053,7 +1065,6 @@ class ShapeFactory(Factory):
 
         :param Sketch i_sketch:
         :param float i_depth:
-        :return: Hole
         :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHoleFromSketch(i_sketch.com_object, i_depth))
@@ -1111,7 +1122,6 @@ class ShapeFactory(Factory):
         :param Reference i_edge2:
         :param Reference i_support:
         :param float i_depth:
-        :return: Hole
         :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHoleWith2Constraints(i_x, i_y, i_z, i_edge1.com_object, i_edge2.com_object,
@@ -1169,7 +1179,6 @@ class ShapeFactory(Factory):
         :param Reference i_edge:
         :param Reference i_support:
         :param float i_depth:
-        :return: Hole
         :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHoleWithConstraint(i_x, i_y, i_z, i_edge.com_object, i_support.com_object,
@@ -1195,7 +1204,6 @@ class ShapeFactory(Factory):
                 |         The created intersect operation
 
         :param Body i_body_to_intersect:
-        :return: Intersect
         :rtype: Intersect
         """
         return Intersect(self.shape_factory.AddNewIntersect(i_body_to_intersect.com_object))
@@ -1213,7 +1221,6 @@ class ShapeFactory(Factory):
                 |     Returns:
                 |         The created Loft feature
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewLoft())
@@ -1242,7 +1249,6 @@ class ShapeFactory(Factory):
                 |         The created mirror
 
         :param Reference i_mirroring_element:
-        :return: Mirror
         :rtype: Mirror
         """
         return Mirror(self.shape_factory.AddNewMirror(i_mirroring_element.com_object))
@@ -1270,7 +1276,6 @@ class ShapeFactory(Factory):
 
         :param Sketch i_sketch:
         :param float i_height:
-        :return: Pad
         :rtype: Pad
         """
         return Pad(self.shape_factory.AddNewPad(i_sketch.com_object, i_height))
@@ -1299,7 +1304,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_profile_elt:
         :param float i_height:
-        :return: Pad
         :rtype: Pad
         """
         return Pad(self.shape_factory.AddNewPadFromRef(i_profile_elt.com_object, i_height))
@@ -1327,7 +1331,6 @@ class ShapeFactory(Factory):
 
         :param Sketch i_sketch:
         :param float i_height:
-        :return: Pocket
         :rtype: Pocket
         """
         return Pocket(self.shape_factory.AddNewPocket(i_sketch.com_object, i_height))
@@ -1356,7 +1359,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_profile_elt:
         :param float i_height:
-        :return: Pocket
         :rtype: Pocket
         """
         return Pocket(self.shape_factory.AddNewPocketFromRef(i_profile_elt.com_object, i_height))
@@ -1452,7 +1454,6 @@ class ShapeFactory(Factory):
         :param bool i_is_reversed_dir1:
         :param bool i_is_reversed_dir2:
         :param float i_rotation_angle:
-        :return: RectPattern
         :rtype: RectPattern
         """
         return RectPattern(self.shape_factory.AddNewRectPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_dir1,
@@ -1550,7 +1551,6 @@ class ShapeFactory(Factory):
         :param bool i_is_reversed_dir1:
         :param bool i_is_reversed_dir2:
         :param float i_rotation_angle:
-        :return: RectPattern
         :rtype: RectPattern
         """
         return RectPattern(
@@ -1581,7 +1581,6 @@ class ShapeFactory(Factory):
                 |         The created remove operation
 
         :param Body i_body_to_remove:
-        :return: Remove
         :rtype: Remove
         """
         return Remove(self.shape_factory.AddNewRemove(i_body_to_remove.com_object))
@@ -1609,7 +1608,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_keep_faces:
         :param Reference i_remove_faces:
-        :return: RemoveFace
         :rtype: RemoveFace
         """
         return RemoveFace(self.shape_factory.AddNewRemoveFace(i_keep_faces.com_object, i_remove_faces.com_object))
@@ -1627,7 +1625,6 @@ class ShapeFactory(Factory):
                 |     Returns:
                 |         The created Removed Blend feature
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewRemovedBlend())
@@ -1645,7 +1642,6 @@ class ShapeFactory(Factory):
                 |     Returns:
                 |         The created Removed Loft feature
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewRemovedLoft())
@@ -1679,8 +1675,7 @@ class ShapeFactory(Factory):
 
         :param Reference i_split_plane:
         :param Reference i_remove_face:
-        :param int i_splitting_side:
-        :return: ReplaceFace
+        :param int i_splitting_side: enum cat_split_side
         :rtype: ReplaceFace
         """
         return ReplaceFace(
@@ -1711,7 +1706,6 @@ class ShapeFactory(Factory):
 
         :param Sketch i_sketch:
         :param Sketch i_center_curve:
-        :return: Rib
         :rtype: Rib
         """
         return Rib(self.shape_factory.AddNewRib(i_sketch.com_object, i_center_curve.com_object))
@@ -1741,7 +1735,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_profile:
         :param Reference i_center_curve:
-        :return: Rib
         :rtype: Rib
         """
         return Rib(self.shape_factory.AddNewRibFromRef(i_profile.com_object, i_center_curve.com_object))
@@ -1775,7 +1768,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_scaling_reference:
         :param float i_factor:
-        :return: Scaling
         :rtype: Scaling
         """
         return Scaling(self.shape_factory.AddNewScaling(i_scaling_reference.com_object, i_factor))
@@ -1805,8 +1797,7 @@ class ShapeFactory(Factory):
                 |         The created sewing operation
 
         :param Reference i_sewing_element:
-        :param int i_sewing_side:
-        :return: SewSurface
+        :param int i_sewing_side: enum cat_split_side
         :rtype: SewSurface
         """
         return SewSurface(self.shape_factory.AddNewSewSurface(i_sewing_element.com_object, i_sewing_side))
@@ -1843,7 +1834,6 @@ class ShapeFactory(Factory):
                 |         The created shaft
 
         :param Sketch i_sketch:
-        :return: Shaft
         :rtype: Shaft
         """
         return Shaft(self.shape_factory.AddNewShaft(i_sketch.com_object))
@@ -1868,7 +1858,6 @@ class ShapeFactory(Factory):
                 |         The created shaft
 
         :param Reference i_profile_elt:
-        :return: Shaft
         :rtype: Shaft
         """
         return Shaft(self.shape_factory.AddNewShaftFromRef(i_profile_elt.com_object))
@@ -1907,7 +1896,6 @@ class ShapeFactory(Factory):
         :param Reference i_face_to_remove:
         :param float i_internal_thickness:
         :param float i_external_thickness:
-        :return: Shell
         :rtype: Shell
         """
         return Shell(
@@ -1938,7 +1926,6 @@ class ShapeFactory(Factory):
 
         :param Sketch i_sketch:
         :param Sketch i_center_curve:
-        :return: Slot
         :rtype: Slot
         """
         return Slot(self.shape_factory.AddNewSlot(i_sketch.com_object, i_center_curve.com_object))
@@ -1968,7 +1955,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_profile:
         :param Reference i_center_curve:
-        :return: Slot
         :rtype: Slot
         """
         return Slot(self.shape_factory.AddNewSlotFromRef(i_profile.com_object, i_center_curve.com_object))
@@ -1998,7 +1984,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_profile_elt_first:
         :param Reference i_profile_elt_second:
-        :return: SolidCombine
         :rtype: SolidCombine
         """
         return SolidCombine(
@@ -2035,9 +2020,8 @@ class ShapeFactory(Factory):
                 |         The created edge fillet
 
         :param Reference i_edge_to_fillet:
-        :param int i_propag_mode:
+        :param int i_propag_mode: enum cat_fillet_edge_propagation
         :param float i_radius:
-        :return: ConstRadEdgeFillet
         :rtype: ConstRadEdgeFillet
         """
         return ConstRadEdgeFillet(
@@ -2081,10 +2065,9 @@ class ShapeFactory(Factory):
                 |         The created edge fillet
 
         :param Reference i_edge_to_fillet:
-        :param int i_propag_mode:
-        :param int i_variation_mode:
+        :param int i_propag_mode: enum cat_fillet_edge_propagation
+        :param int i_variation_mode: enum cat_fillet_variation
         :param float i_default_radius:
-        :return: VarRadEdgeFillet
         :rtype: VarRadEdgeFillet
         """
         return VarRadEdgeFillet(
@@ -2124,7 +2107,6 @@ class ShapeFactory(Factory):
         :param Reference i_f1:
         :param Reference i_f2:
         :param float i_radius:
-        :return: FaceFillet
         :rtype: FaceFillet
         """
         return FaceFillet(self.shape_factory.AddNewSolidFaceFillet(i_f1.com_object, i_f2.com_object, i_radius))
@@ -2167,7 +2149,6 @@ class ShapeFactory(Factory):
         :param Reference i_f1:
         :param Reference i_f2:
         :param Reference i_removed_face:
-        :return: TritangentFillet
         :rtype: TritangentFillet
         """
         return TritangentFillet(
@@ -2199,8 +2180,7 @@ class ShapeFactory(Factory):
                 |         The created split operation
 
         :param Reference i_splitting_element:
-        :param int i_split_side:
-        :return: Split
+        :param int i_split_side: enum cat_split_side
         :rtype: Split
         """
         return Split(self.shape_factory.AddNewSplit(i_splitting_element.com_object, i_split_side))
@@ -2229,7 +2209,6 @@ class ShapeFactory(Factory):
                 |         The created stiffener
 
         :param Sketch i_sketch:
-        :return: Stiffener
         :rtype: Stiffener
         """
         return Stiffener(self.shape_factory.AddNewStiffener(i_sketch.com_object))
@@ -2256,7 +2235,6 @@ class ShapeFactory(Factory):
                 |         The created stiffener
 
         :param Reference i_profile_elt:
-        :return: Stiffener
         :rtype: Stiffener
         """
         return Stiffener(self.shape_factory.AddNewStiffenerFromRef(i_profile_elt.com_object))
@@ -2292,9 +2270,8 @@ class ShapeFactory(Factory):
                 |         The created edge fillet
 
         :param Reference i_edge_to_fillet:
-        :param int i_propag_mode:
+        :param int i_propag_mode: enum cat_fillet_edge_propagation
         :param float i_radius:
-        :return: ConstRadEdgeFillet
         :rtype: ConstRadEdgeFillet
         """
         return ConstRadEdgeFillet(
@@ -2338,10 +2315,9 @@ class ShapeFactory(Factory):
                 |         The created edge fillet
 
         :param Reference i_edge_to_fillet:
-        :param int i_propag_mode:
-        :param int i_variation_mode:
+        :param int i_propag_mode: enum cat_fillet_edge_propagation
+        :param int i_variation_mode: enum cat_fillet_variation
         :param float i_default_radius:
-        :return: VarRadEdgeFillet
         :rtype: VarRadEdgeFillet
         """
         return VarRadEdgeFillet(
@@ -2381,7 +2357,6 @@ class ShapeFactory(Factory):
         :param Reference i_f1:
         :param Reference i_f2:
         :param float i_radius:
-        :return: FaceFillet
         :rtype: FaceFillet
         """
         return FaceFillet(self.shape_factory.AddNewSurfaceFaceFillet(i_f1.com_object, i_f2.com_object, i_radius))
@@ -2424,7 +2399,6 @@ class ShapeFactory(Factory):
         :param Reference i_f1:
         :param Reference i_f2:
         :param Reference i_removed_face:
-        :return: TritangentFillet
         :rtype: TritangentFillet
         """
         return TritangentFillet(self.shape_factory.AddNewSurfaceTritangentFillet(i_f1.com_object, i_f2.com_object,
@@ -2452,7 +2426,6 @@ class ShapeFactory(Factory):
                 |         The created autofillet
 
         :param float i_fillet_radius:
-        :return: AutoFillet
         :rtype: AutoFillet
         """
         return AutoFillet(self.shape_factory.AddNewSurfacicAutoFillet(i_fillet_radius))
@@ -2555,7 +2528,6 @@ class ShapeFactory(Factory):
         :param float i_rotation_angle:
         :param bool i_is_radius_aligned:
         :param bool i_complete_crown:
-        :return: CircPattern
         :rtype: CircPattern
         """
         return CircPattern(
@@ -2660,7 +2632,6 @@ class ShapeFactory(Factory):
         :param bool i_is_reversed_dir1:
         :param bool i_is_reversed_dir2:
         :param float i_rotation_angle:
-        :return: RectPattern
         :rtype: RectPattern
         """
         return RectPattern(
@@ -2706,8 +2677,7 @@ class ShapeFactory(Factory):
         :param int i_type:
         :param Reference i_support_surface:
         :param Reference i_sewing_element:
-        :param int i_sewing_side:
-        :return: SewSurface
+        :param int i_sewing_side: enum cat_split_side
         :rtype: SewSurface
         """
         return SewSurface(self.shape_factory.AddNewSurfacicSewSurface(i_type, i_support_surface.com_object,
@@ -2737,7 +2707,6 @@ class ShapeFactory(Factory):
 
         :param AnyObject i_shape_to_copy:
         :param int i_nb_of_copies:
-        :return: UserPattern
         :rtype: UserPattern
         """
         return UserPattern(self.shape_factory.AddNewSurfacicUserPattern(i_shape_to_copy.com_object, i_nb_of_copies))
@@ -2762,7 +2731,6 @@ class ShapeFactory(Factory):
                 |         Created symmetry.
 
         :param Reference i_reference:
-        :return: HybridShapeSymmetry
         :rtype: HybridShapeSymmetry
         """
         return HybridShapeSymmetry(
@@ -2805,7 +2773,6 @@ class ShapeFactory(Factory):
         :param int i_isens_offset:
         :param float i_top_offset:
         :param float i_bot_offset:
-        :return: ThickSurface
         :rtype: ThickSurface
         """
         return ThickSurface(
@@ -2842,7 +2809,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_face_to_thicken:
         :param float i_offset:
-        :return: Thickness
         :rtype: Thickness
         """
         return Thickness(self.shape_factory.AddNewThickness(i_face_to_thicken.com_object, i_offset))
@@ -2861,7 +2827,6 @@ class ShapeFactory(Factory):
                 |     Returns:
                 |         The created Thread
 
-        :return: Thread
         :rtype: Thread
         """
         return Thread(self.shape_factory.AddNewThreadWithOutRef())
@@ -2894,7 +2859,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_lateral_face:
         :param Reference i_limit_face:
-        :return: Thread
         :rtype: Thread
         """
         return Thread(self.shape_factory.AddNewThreadWithRef(i_lateral_face.com_object, i_limit_face.com_object))
@@ -2919,7 +2883,6 @@ class ShapeFactory(Factory):
                 |         The created Trim operation
 
         :param Body i_body_to_trim:
-        :return: Trim
         :rtype: Trim
         """
         return Trim(self.shape_factory.AddNewTrim(i_body_to_trim.com_object))
@@ -2943,7 +2906,6 @@ class ShapeFactory(Factory):
         :param Reference i_f1:
         :param Reference i_f2:
         :param Reference i_removed_face:
-        :return: TritangentFillet
         :rtype: TritangentFillet
         """
         return TritangentFillet(
@@ -2973,7 +2935,6 @@ class ShapeFactory(Factory):
 
         :param AnyObject i_shape_to_copy:
         :param int i_nb_of_copies:
-        :return: UserPattern
         :rtype: UserPattern
         """
         return UserPattern(self.shape_factory.AddNewUserPattern(i_shape_to_copy.com_object, i_nb_of_copies))
@@ -3003,7 +2964,6 @@ class ShapeFactory(Factory):
 
         :param AnyObject i_shape_to_copy:
         :param int i_nb_of_copies:
-        :return: UserPattern
         :rtype: UserPattern
         """
         return UserPattern(self.shape_factory.AddNewUserPatternofList(i_shape_to_copy.com_object, i_nb_of_copies))
@@ -3035,7 +2995,6 @@ class ShapeFactory(Factory):
         :param Reference i_body1:
         :param Reference i_body2:
         :param float i_type:
-        :return: Add
         :rtype: Add
         """
         return Add(self.shape_factory.AddNewVolumeAdd(i_body1.com_object, i_body2.com_object, i_type))
@@ -3061,7 +3020,6 @@ class ShapeFactory(Factory):
                 |         The created CloseSurface feature
 
         :param Reference i_close_element:
-        :return: CloseSurface
         :rtype: CloseSurface
         """
         return CloseSurface(self.shape_factory.AddNewVolumeCloseSurface(i_close_element.com_object))
@@ -3093,7 +3051,6 @@ class ShapeFactory(Factory):
         :param Reference i_body1:
         :param Reference i_body2:
         :param float i_type:
-        :return: Intersect
         :rtype: Intersect
         """
         return Intersect(self.shape_factory.AddNewVolumeIntersect(i_body1.com_object, i_body2.com_object, i_type))
@@ -3125,7 +3082,6 @@ class ShapeFactory(Factory):
         :param Reference i_body1:
         :param Reference i_body2:
         :param float i_type:
-        :return: Remove
         :rtype: Remove
         """
         return Remove(self.shape_factory.AddNewVolumeRemove(i_body1.com_object, i_body2.com_object, i_type))
@@ -3165,8 +3121,7 @@ class ShapeFactory(Factory):
         :param int i_type:
         :param Reference i_support_volume:
         :param Reference i_sewing_element:
-        :param int i_sewing_side:
-        :return: SewSurface
+        :param int i_sewing_side: enum cat_split_side
         :rtype: SewSurface
         """
         return SewSurface(
@@ -3212,7 +3167,6 @@ class ShapeFactory(Factory):
         :param float i_internal_thickness:
         :param float i_external_thickness:
         :param Reference i_volume_support:
-        :return: Shell
         :rtype: Shell
         """
         return Shell(self.shape_factory.AddNewVolumeShell(i_face_to_remove.com_object, i_internal_thickness,
@@ -3254,7 +3208,6 @@ class ShapeFactory(Factory):
         :param int i_isens_offset:
         :param float i_top_offset:
         :param float i_bot_offset:
-        :return: ThickSurface
         :rtype: ThickSurface
         """
         return ThickSurface(
@@ -3300,7 +3253,6 @@ class ShapeFactory(Factory):
         :param float i_offset:
         :param int i_type:
         :param Reference i_volume_support:
-        :return: Thickness
         :rtype: Thickness
         """
         return Thickness(self.shape_factory.AddNewVolumeThickness(i_face_to_thicken.com_object, i_offset, i_type,
@@ -3330,7 +3282,6 @@ class ShapeFactory(Factory):
 
         :param Reference i_support_volume:
         :param Reference i_cutting_volume:
-        :return: Trim
         :rtype: Trim
         """
         return Trim(self.shape_factory.AddNewVolumeTrim(i_support_volume.com_object, i_cutting_volume.com_object))
@@ -3416,17 +3367,16 @@ class ShapeFactory(Factory):
 
         :param Reference i_face_to_draft:
         :param Reference i_neutral:
-        :param int i_neutral_mode:
+        :param int i_neutral_mode: enum cat_draft_neutral_propagation_mode
         :param Reference i_parting:
         :param float i_dir_x:
         :param float i_dir_y:
         :param float i_dir_z:
-        :param int i_mode:
+        :param int i_mode: enum cat_draft_mode
         :param float i_angle:
-        :param int i_multiselection_mode:
+        :param int i_multiselection_mode: enum cat_draft_multiselection_mode
         :param int i_type:
         :param Reference i_volume_support:
-        :return: Draft
         :rtype: Draft
         """
         return Draft(

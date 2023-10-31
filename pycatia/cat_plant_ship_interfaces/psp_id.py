@@ -58,7 +58,6 @@ class PSPId(AnyObject):
                 |           ...
                 |          iStrVar1 =objThisIntf.GenAndPutID
 
-        :return: str
         :rtype: str
         """
         return self.psp_id.GenAndPutID()
@@ -84,7 +83,6 @@ class PSPId(AnyObject):
                 |           ...
                 |          iStrVar1 =objThisIntf.GenAndPutIDNoGenSeqNum
 
-        :return: str
         :rtype: str
         """
         return self.psp_id.GenAndPutIDNoGenSeqNum()
@@ -112,7 +110,6 @@ class PSPId(AnyObject):
                 |           ...
                 |          iStrVar1 =objThisIntf.GenIDNoGenSeqNum
 
-        :return: str
         :rtype: str
         """
         return self.psp_id.GenIDNoGenSeqNum()
@@ -136,7 +133,6 @@ class PSPId(AnyObject):
                 |           ...
                 |          iStrVar1 =objThisIntf.GetID
 
-        :return: str
         :rtype: str
         """
         return self.psp_id.GetID()
@@ -161,7 +157,6 @@ class PSPId(AnyObject):
                 |           ...
                 |          iStrVar1 =objThisIntf.GetLocalID
 
-        :return: str
         :rtype: str
         """
         return self.psp_id.GetLocalID()
@@ -189,7 +184,6 @@ class PSPId(AnyObject):
                 |           ...
                 |          bVar1 =objThisIntf.IsIDGenerated
 
-        :return: bool
         :rtype: bool
         """
         return self.psp_id.IsIDGenerated()
@@ -217,7 +211,6 @@ class PSPId(AnyObject):
                 |          objThisIntf.SetID iStrVar1
 
         :param str i_id:
-        :return: None
         :rtype: None
         """
         return self.psp_id.SetID(i_id)

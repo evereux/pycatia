@@ -59,7 +59,6 @@ class DNB3DState(AnyObject):
                 | 
                 |          mySelected3DState.StateName = "NewStateName"
 
-        :return: str
         :rtype: str
         """
 
@@ -100,7 +99,6 @@ class DNB3DState(AnyObject):
                 |                  myState1.Add3DState(myPostion)
 
         :param DNBIA3DStatePosition i_position:
-        :return: None
         :rtype: None
         """
         return self.dnb_3d_state.Add3DPosition(i_position.com_object)
@@ -147,7 +145,6 @@ class DNB3DState(AnyObject):
                 |                  myState1.Add3DState(myState2)
 
         :param DNB3DState i_state:
-        :return: None
         :rtype: None
         """
         return self.dnb_3d_state.Add3DState(i_state.com_object)
@@ -201,7 +198,6 @@ class DNB3DState(AnyObject):
 
         :param Activity i_process:
         :param str i_condition:
-        :return: None
         :rtype: None
         """
         return self.dnb_3d_state.Assign3DState(i_process.com_object, i_condition)
@@ -256,7 +252,6 @@ class DNB3DState(AnyObject):
 
         :param str i_type:
         :param tuple o_children_array:
-        :return: None
         :rtype: None
         """
         return self.dnb_3d_state.GetChildren(i_type, o_children_array)
@@ -311,7 +306,6 @@ class DNB3DState(AnyObject):
                 |              conditionName = myState.GetConditionName(iRelatedActivity)
 
         :param Activity i_related_activity:
-        :return: str
         :rtype: str
         """
         return self.dnb_3d_state.GetConditionName(i_related_activity.com_object)
@@ -347,7 +341,6 @@ class DNB3DState(AnyObject):
                 |              numStates = myState.GetNumberOfChildren("3D State")
 
         :param str i_type:
-        :return: int
         :rtype: int
         """
         return self.dnb_3d_state.GetNumberOfChildren(i_type)
@@ -386,7 +379,6 @@ class DNB3DState(AnyObject):
                 |              numOfActivities = myState.GetNumberofRelatedActivities("End Conditon")
 
         :param str i_condition_type:
-        :return: int
         :rtype: int
         """
         return self.dnb_3d_state.GetNumberofRelatedActivities(i_condition_type)
@@ -413,7 +405,6 @@ class DNB3DState(AnyObject):
                 |              myState = 
                 |              parentObj = myState.GetParent
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.dnb_3d_state.GetParent()
@@ -455,7 +446,6 @@ class DNB3DState(AnyObject):
 
         :param str i_condition_type:
         :param tuple o_activities_array:
-        :return: None
         :rtype: None
         """
         return self.dnb_3d_state.GetRelatedActivities(i_condition_type, o_activities_array)
@@ -498,7 +488,6 @@ class DNB3DState(AnyObject):
                 |              myState = 
                 |              Set relObj = myState.GetRelatedObject
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.dnb_3d_state.GetRelatedObject()
@@ -529,7 +518,6 @@ class DNB3DState(AnyObject):
                 |                  myState1.Remove3DPosition(myPostion)
 
         :param DNBIA3DStatePosition i_position:
-        :return: None
         :rtype: None
         """
         return self.dnb_3d_state.Remove3DPosition(i_position.com_object)
@@ -575,7 +563,6 @@ class DNB3DState(AnyObject):
                 |                  myState1.Remove3DState(myState2)
 
         :param DNB3DState i_state:
-        :return: None
         :rtype: None
         """
         return self.dnb_3d_state.Remove3DState(i_state.com_object)
@@ -621,7 +608,6 @@ class DNB3DState(AnyObject):
                 |                  myState.Assign3DState(mySelectedAct)
 
         :param Activity i_process:
-        :return: None
         :rtype: None
         """
         return self.dnb_3d_state.Unassign3DState(i_process.com_object)

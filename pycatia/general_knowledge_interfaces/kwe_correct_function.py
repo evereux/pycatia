@@ -47,7 +47,6 @@ class KweCorrectFunction(AnyObject):
                 |     Returns:
                 |         oAssociatedCheck ExpertCheck associated to this correct function.
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.kwe_correct_function.Check()
@@ -65,7 +64,6 @@ class KweCorrectFunction(AnyObject):
                 |     Returns:
                 |         oArraySize Number of roots of facts.
 
-        :return: int
         :rtype: int
         """
         return self.kwe_correct_function.GetNumberOfListFailedElements()
@@ -87,7 +85,6 @@ class KweCorrectFunction(AnyObject):
                 |             array of tuple elements.
 
         :param tuple o_list_elements_of_tuple_failed:
-        :return: tuple
         :rtype: tuple
         """
         return self.kwe_correct_function.ListFailedElements()

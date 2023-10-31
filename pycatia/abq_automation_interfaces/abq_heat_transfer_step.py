@@ -60,7 +60,6 @@ class ABQHeatTransferStep(ABQStep):
                 |          Dim abqBCs As ABQBoundaryConditions
                 |          Set abqBCs = abqHeatStep.BoundaryConditions
 
-        :return: ABQBoundaryConditions
         :rtype: ABQBoundaryConditions
         """
 
@@ -82,7 +81,6 @@ class ABQHeatTransferStep(ABQStep):
                 |         Maximum temperature change to be allowed in an
                 |         increment
 
-        :return: float
         :rtype: float
         """
 
@@ -110,7 +108,6 @@ class ABQHeatTransferStep(ABQStep):
                 |     Returns:
                 |         The description of the step
 
-        :return: str
         :rtype: str
         """
 
@@ -140,7 +137,6 @@ class ABQHeatTransferStep(ABQStep):
                 |         A boolean indicating whether the step will end when steady state is
                 |         reached
 
-        :return: bool
         :rtype: bool
         """
 
@@ -168,7 +164,6 @@ class ABQHeatTransferStep(ABQStep):
                 |     Returns:
                 |         The initial increment size
 
-        :return: float
         :rtype: float
         """
 
@@ -201,7 +196,6 @@ class ABQHeatTransferStep(ABQStep):
                 |          Dim abqLoads As ABQLoads
                 |          Set abqLoads = abqHeatStep.Loads
 
-        :return: ABQLoads
         :rtype: ABQLoads
         """
 
@@ -222,7 +216,6 @@ class ABQHeatTransferStep(ABQStep):
                 |     Returns:
                 |         The maximum increment size
 
-        :return: float
         :rtype: float
         """
 
@@ -251,7 +244,6 @@ class ABQHeatTransferStep(ABQStep):
                 |     Returns:
                 |         The maximum number of increments
 
-        :return: int
         :rtype: int
         """
 
@@ -280,7 +272,6 @@ class ABQHeatTransferStep(ABQStep):
                 |     Returns:
                 |         The minimum increment size
 
-        :return: float
         :rtype: float
         """
 
@@ -309,7 +300,6 @@ class ABQHeatTransferStep(ABQStep):
                 |     Returns:
                 |         The maximum allowable emissivity change
 
-        :return: float
         :rtype: float
         """
 
@@ -343,7 +333,7 @@ class ABQHeatTransferStep(ABQStep):
                 |           STEADY_STATE  
                 |           TRANSIENT
 
-        :return: int
+        :return: enum response_type
         :rtype: int
         """
 
@@ -352,7 +342,7 @@ class ABQHeatTransferStep(ABQStep):
     @response.setter
     def response(self, value: int):
         """
-        :param int value:
+        :param int value: enum response_type
         """
 
         self.abq_heat_transfer_step.Response = value
@@ -377,7 +367,7 @@ class ABQHeatTransferStep(ABQStep):
                 |           AUTO_INCREMENT
                 |           FIXED_INCREMENT
 
-        :return: int
+        :return: enum incrementation_type
         :rtype: int
         """
 
@@ -386,7 +376,7 @@ class ABQHeatTransferStep(ABQStep):
     @time_incrementation_method.setter
     def time_incrementation_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum incrementation_type
         """
 
         self.abq_heat_transfer_step.TimeIncrementationMethod = value
@@ -405,7 +395,6 @@ class ABQHeatTransferStep(ABQStep):
                 |     Returns:
                 |         The step time
 
-        :return: float
         :rtype: float
         """
 

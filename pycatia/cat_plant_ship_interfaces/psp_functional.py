@@ -55,7 +55,6 @@ class PSPFunctional(AnyObject):
                 |           ...
                 |          Set strVar1 = objThisIntf.CatalogPartName
 
-        :return: str
         :rtype: str
         """
 
@@ -80,7 +79,7 @@ class PSPFunctional(AnyObject):
                 |           ...
                 |          objArg1 = objThisIntf.FunctionStatus
 
-        :return: int
+        :return: enum cat_psp_idl_function_status
         :rtype: int
         """
 
@@ -105,7 +104,6 @@ class PSPFunctional(AnyObject):
                 |           ...
                 |          strVar1 = objThisIntf.PartCatalogName
 
-        :return: str
         :rtype: str
         """
 
@@ -130,7 +128,6 @@ class PSPFunctional(AnyObject):
                 |           ...
                 |          strVar1 = objThisIntf.PartNumber
 
-        :return: str
         :rtype: str
         """
 
@@ -155,7 +152,6 @@ class PSPFunctional(AnyObject):
                 |           ...
                 |          strVar1 = objThisIntf.PartType
 
-        :return: str
         :rtype: str
         """
 
@@ -179,7 +175,6 @@ class PSPFunctional(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.Physicals
 
-        :return: PSPListOfObjects
         :rtype: PSPListOfObjects
         """
 
@@ -203,7 +198,6 @@ class PSPFunctional(AnyObject):
                 |           ...
                 |          strVar1 = objThisIntf.Standard
 
-        :return: str
         :rtype: str
         """
 
@@ -239,7 +233,6 @@ class PSPFunctional(AnyObject):
                 |          Set objArg1 = objThisIntf.GetCompatiblePartTypes   (strVar1)
 
         :param str iu_standard:
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
         return PSPListOfBSTRs(self.psp_functional.GetCompatiblePartTypes(iu_standard))
@@ -265,7 +258,6 @@ class PSPFunctional(AnyObject):
                 |           ...
                 |          objArg1 = objThisIntf.IsOKToIntegrate
 
-        :return: bool
         :rtype: bool
         """
         return self.psp_functional.IsOKToIntegrate()
@@ -290,7 +282,6 @@ class PSPFunctional(AnyObject):
                 |           ...
                 |          objArg1 = objThisIntf.IsRealized
 
-        :return: bool
         :rtype: bool
         """
         return self.psp_functional.IsRealized()
@@ -316,7 +307,6 @@ class PSPFunctional(AnyObject):
                 |           ...
                 |          objArg1 = objThisIntf.IsSpecDriven
 
-        :return: bool
         :rtype: bool
         """
         return self.psp_functional.IsSpecDriven()
@@ -375,7 +365,6 @@ class PSPFunctional(AnyObject):
         :param str iu_catalog_name:
         :param PSPListOfBSTRs o_l_part_types:
         :param PSPListOfBSTRs o_l_catalog_part_names:
-        :return: None
         :rtype: None
         """
         return self.psp_functional.ListCompatiblePartNumbers(

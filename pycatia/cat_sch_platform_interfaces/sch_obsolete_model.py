@@ -59,7 +59,6 @@ class SchObsoleteModel(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.FindObsoleteClasses
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_obsolete_model.FindObsoleteClasses())
@@ -87,7 +86,6 @@ class SchObsoleteModel(AnyObject):
                 |          objThisIntf.HasObsoleteClassbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_obsolete_model.HasObsoleteClass(o_b_yes)

@@ -49,7 +49,6 @@ class FunctScript(AnyObject):
                 | 
                 |     Get the ScriptText.
 
-        :return: str
         :rtype: str
         """
 

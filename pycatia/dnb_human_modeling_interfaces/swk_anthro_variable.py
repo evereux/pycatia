@@ -55,7 +55,6 @@ class SWKAnthroVariable(SWKManikinPart):
                 |     property FullName yields the character
                 |     string "Head length".
 
-        :return: str
         :rtype: str
         """
 
@@ -79,7 +78,6 @@ class SWKAnthroVariable(SWKManikinPart):
                 |     variable is managed by the system and that its value may be overriden, every
                 |     time the anthropometry is updated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -108,7 +106,6 @@ class SWKAnthroVariable(SWKManikinPart):
                 |     If this variable is a mass, the value returned is in
                 |     kilograms; if not, the value returned is in centimeters.
 
-        :return: float
         :rtype: float
         """
 
@@ -129,7 +126,6 @@ class SWKAnthroVariable(SWKManikinPart):
                 |     If this variable is a mass, the value returned is in
                 |     kilograms; if not, the value returned is in centimeters.
 
-        :return: float
         :rtype: float
         """
 
@@ -150,7 +146,6 @@ class SWKAnthroVariable(SWKManikinPart):
                 |     If this variable is a mass, the value returned is in
                 |     kilograms; if not, the value returned is in centimeters.
 
-        :return: float
         :rtype: float
         """
 
@@ -168,7 +163,6 @@ class SWKAnthroVariable(SWKManikinPart):
                 |     Returns the reference number of the variable.
                 |     This reference number is unique to the variable.
 
-        :return: int
         :rtype: int
         """
 
@@ -188,7 +182,6 @@ class SWKAnthroVariable(SWKManikinPart):
                 |     If this variable is a mass, the value returned is in
                 |     kilograms; if not, the value returned is in centimeters.
 
-        :return: float
         :rtype: float
         """
 
@@ -205,7 +198,6 @@ class SWKAnthroVariable(SWKManikinPart):
                 | 
                 |     Returns or sets the value of the variable.
 
-        :return: float
         :rtype: float
         """
 
@@ -236,7 +228,6 @@ class SWKAnthroVariable(SWKManikinPart):
                 |     If this variable is a mass, the value returned or set is in
                 |     kilograms, if not, the value returned or set is in centimeters.
 
-        :return: float
         :rtype: float
         """
 
@@ -261,7 +252,6 @@ class SWKAnthroVariable(SWKManikinPart):
                 | 
                 |     Returns or sets the value of the variable, as a string.
 
-        :return: str
         :rtype: str
         """
 
@@ -292,7 +282,6 @@ class SWKAnthroVariable(SWKManikinPart):
                 |             us100, etc).
 
         :param int pi_ref_number_of_other:
-        :return: float
         :rtype: float
         """
         return self.swk_anthro_variable.GetCorrelationWith(pi_ref_number_of_other)

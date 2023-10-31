@@ -71,7 +71,6 @@ class HybridShapeSplit(HybridShape):
                 |      Dim AutoExtrapolMode As boolean
                 |      AutoExtrapolMode = Split.AutomaticExtrapolationMode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -105,7 +104,6 @@ class HybridShapeSplit(HybridShape):
                 |      Dim BothSides As boolean
                 |      BothSides = Split.BothSidesMode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -139,7 +137,6 @@ class HybridShapeSplit(HybridShape):
                 |          Dim CuttingElement As Reference
                 |          Set CuttingElement = Split.CuttingElem
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -171,7 +168,6 @@ class HybridShapeSplit(HybridShape):
                 |          Dim Element As Reference
                 |          Set Element = Split.ElemToCut
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -202,7 +198,6 @@ class HybridShapeSplit(HybridShape):
                 |     This example retrieves in ExtrapolateType the extrapolation type for the Split hybrid shape
                 |     feature.
 
-        :return: int
         :rtype: int
         """
 
@@ -236,7 +231,6 @@ class HybridShapeSplit(HybridShape):
                 |      Dim Intersection As boolean
                 |      Intersection = Split.IntersectionComputation
 
-        :return: bool
         :rtype: bool
         """
 
@@ -308,7 +302,6 @@ class HybridShapeSplit(HybridShape):
                 |          Dim OrientValue As long
                 |          Set OrientValue = Split.Orientation
 
-        :return: int
         :rtype: int
         """
 
@@ -342,7 +335,6 @@ class HybridShapeSplit(HybridShape):
                 |          Dim Element As Reference
                 |          Set Element = Split.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -382,7 +374,6 @@ class HybridShapeSplit(HybridShape):
                 |      Dim RType As long
                 |      Set RType = Split.ResultType
 
-        :return: int
         :rtype: int
         """
 
@@ -419,7 +410,6 @@ class HybridShapeSplit(HybridShape):
 
         :param Reference i_elem:
         :param int i_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_split.AddCuttingElem(i_elem.com_object, i_orientation)
@@ -456,7 +446,6 @@ class HybridShapeSplit(HybridShape):
                 |             Element to keep.
 
         :param Reference i_element:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_split.AddElementToKeep(i_element.com_object)
@@ -493,7 +482,6 @@ class HybridShapeSplit(HybridShape):
                 |             Element to remove.
 
         :param Reference i_element:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_split.AddElementToRemove(i_element.com_object)
@@ -532,7 +520,6 @@ class HybridShapeSplit(HybridShape):
                 |             Index of one of the cutting features
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_split.GetCuttingElem(i_rank))
@@ -555,7 +542,6 @@ class HybridShapeSplit(HybridShape):
                 |             Index of one of the intersection features
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_split.GetIntersection(i_rank))
@@ -578,7 +564,6 @@ class HybridShapeSplit(HybridShape):
                 |             Index of one of the kept features
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_split.GetKeptElem(i_rank))
@@ -598,7 +583,6 @@ class HybridShapeSplit(HybridShape):
                 |         oNbCuttingElem
                 |             Number of cutting features
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_split.GetNbCuttingElem()
@@ -618,7 +602,6 @@ class HybridShapeSplit(HybridShape):
                 |         oNbElementsToKeep
                 |             Number of elements to keep
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_split.GetNbElementsToKeep()
@@ -638,7 +621,6 @@ class HybridShapeSplit(HybridShape):
                 |         oNbElementsToRemove
                 |             Number of elements to remove
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_split.GetNbElementsToRemove()
@@ -665,7 +647,6 @@ class HybridShapeSplit(HybridShape):
                 |             2 : KoOrientation
 
         :param int i_rank:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_split.GetOrientation(i_rank)
@@ -685,7 +666,6 @@ class HybridShapeSplit(HybridShape):
                 |         oElem
                 |             Other side
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_split.GetOtherSide())
@@ -708,7 +688,6 @@ class HybridShapeSplit(HybridShape):
                 |             Index of one of the removed features
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_split.GetRemovedElem(i_rank))
@@ -723,7 +702,6 @@ class HybridShapeSplit(HybridShape):
                 | 
                 |     Inverts the orientation used to compute the split.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_split.InvertOrientation()
@@ -744,7 +722,6 @@ class HybridShapeSplit(HybridShape):
                 |             cutting feature
 
         :param Reference i_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_split.RemoveCuttingElem(i_elem.com_object)
@@ -780,7 +757,6 @@ class HybridShapeSplit(HybridShape):
                 |             Index of the kept element.
 
         :param int i_rank:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_split.RemoveElementToKeep(i_rank)
@@ -801,7 +777,6 @@ class HybridShapeSplit(HybridShape):
                 |             Index of the removed element.
 
         :param int i_rank:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_split.RemoveElementToRemove(i_rank)
@@ -830,7 +805,6 @@ class HybridShapeSplit(HybridShape):
 
         :param int i_rank:
         :param int i_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_split.SetOrientation(i_rank, i_orientation)

@@ -82,7 +82,6 @@ class HybridShapeAffinity(HybridShape):
                 |          Dim FirstDir As Reference 
                 |          Set FirstDir = Affinity.AxisFirstDirection
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -116,7 +115,6 @@ class HybridShapeAffinity(HybridShape):
                 |          Dim Origin As Reference 
                 |          Set Origin = Affinity.AxisOrigin
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -152,7 +150,6 @@ class HybridShapeAffinity(HybridShape):
                 |          Dim RefPlane As Reference 
                 |          Set RefPlane = Affinity.AxisPlane
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -188,7 +185,6 @@ class HybridShapeAffinity(HybridShape):
                 | 
                 |          hybShpAffinity.CreationMode = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -221,7 +217,6 @@ class HybridShapeAffinity(HybridShape):
                 |          Dim ElementToTransform As Reference 
                 |          Set ElementToTransform = Affinity.ElemToTransform
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -257,7 +252,6 @@ class HybridShapeAffinity(HybridShape):
                 | 
                 |          hybShpAffinity.VolumeResult = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -291,7 +285,6 @@ class HybridShapeAffinity(HybridShape):
                 |          Dim X As RealParam 
                 |          Set X = Affinity.XRatios
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -317,7 +310,6 @@ class HybridShapeAffinity(HybridShape):
                 |          Dim Y As RealParam 
                 |          Set Y = Affinity.YRatios
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -343,7 +335,6 @@ class HybridShapeAffinity(HybridShape):
                 |          Dim Z As RealParam 
                 |          Set Z = Affinity.ZRatios
 
-        :return: RealParam
         :rtype: RealParam
         """
 

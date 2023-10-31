@@ -73,7 +73,6 @@ class SchAppMultiImage(AnyObject):
         :param Document o_document:
         :param str o_document_name:
         :param str o_symbolic_link_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_multi_image.AppGetMasterDocument(
@@ -121,12 +120,11 @@ class SchAppMultiImage(AnyObject):
                 |           ...
                 |          Set objMaster = objThisIntf.AppGetMasterObject
 
-        :return: SchAppMultiImageMaster
         :rtype: SchAppMultiImageMaster
         """
         return SchAppMultiImageMaster(self.sch_app_multi_image.AppGetMasterObject())
 
-    def app_is_up_to_date(self, o_status: int) -> None:
+    def app_is_up_to_date(self) -> int:
         """
         .. note::
             :class: toggle
@@ -150,11 +148,10 @@ class SchAppMultiImage(AnyObject):
                 |          objThisIntf.AppIsUpToDate
                 |          CatSchIDLMultiImageStatus_Enum
 
-        :param int o_status:
-        :return: None
-        :rtype: None
+        :return: enum cat_sch_idl_multi_image_status
+        :rtype: int
         """
-        return self.sch_app_multi_image.AppIsUpToDate(o_status)
+        return self.sch_app_multi_image.AppIsUpToDate()
 
     def app_update(self, i_master_image: SchAppMultiImageMaster, o_image: 'SchAppMultiImage') -> None:
         """
@@ -191,7 +188,6 @@ class SchAppMultiImage(AnyObject):
 
         :param SchAppMultiImageMaster i_master_image:
         :param SchAppMultiImage o_image:
-        :return: None
         :rtype: None
         """
         return self.sch_app_multi_image.AppUpdate(i_master_image.com_object, o_image.com_object)

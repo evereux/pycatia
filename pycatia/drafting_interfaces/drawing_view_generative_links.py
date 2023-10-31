@@ -56,7 +56,6 @@ class DrawingViewGenerativeLinks(CATBaseDispatch):
                 |          viewLinks.AddLink(MyPartDocument)
 
         :param AnyObject i_link:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_links.AddLink(i_link.com_object)
@@ -81,7 +80,6 @@ class DrawingViewGenerativeLinks(CATBaseDispatch):
                 |          viewLinks.CopyLinksTo(MyLinks)
 
         :param DrawingViewGenerativeLinks i_links:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_links.CopyLinksTo(i_links.drawing_view_generative_links)
@@ -120,7 +118,6 @@ class DrawingViewGenerativeLinks(CATBaseDispatch):
                 |          Dim firstLink As AnyObject
                 |          Set firstLink = MyView.FirstLink()
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.drawing_view_generative_links.FirstLink())
@@ -144,7 +141,6 @@ class DrawingViewGenerativeLinks(CATBaseDispatch):
                 |          Dim nextLink As AnyObject
                 |          nextLink = viewLinks.NextLink()
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.drawing_view_generative_links.NextLink())
@@ -167,7 +163,6 @@ class DrawingViewGenerativeLinks(CATBaseDispatch):
                 |          Set viewLinks = MyView.GenerativeLinks
                 |          viewLinks.RemoveAllLinks()
 
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_links.RemoveAllLinks()

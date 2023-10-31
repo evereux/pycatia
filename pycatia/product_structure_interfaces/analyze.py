@@ -55,7 +55,6 @@ class Analyze(AnyObject):
                 |
                 |          MassValue = myProduct.Analyze.Mass
 
-        :return: float
         :rtype: float
         """
 
@@ -81,7 +80,6 @@ class Analyze(AnyObject):
                 |
                 |          VolumeValue = myProduct.Analyze.Volume
 
-        :return: float
         :rtype: float
         """
 
@@ -111,7 +109,6 @@ class Analyze(AnyObject):
                 |
                 |          WetAreaValue = myProduct.Analyze.WetArea
 
-        :return: float
         :rtype: float
         """
 

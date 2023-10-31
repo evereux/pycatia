@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class DxfSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -64,7 +63,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
+        :return: enum cat_dxf_export_blocks_enum
         :rtype: int
         """
 
@@ -96,7 +95,6 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: bool
         :rtype: bool
         """
 
@@ -126,7 +124,6 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: bool
         :rtype: bool
         """
 
@@ -154,7 +151,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
+        :return: enum cat_dxf_export_mode_enum
         :rtype: int
         """
 
@@ -183,7 +180,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
+        :return: enum cat_dxf_export_sheets_enum
         :rtype: int
         """
 
@@ -212,7 +209,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
+        :return: enum cat_dxf_export_version_enum
         :rtype: int
         """
 
@@ -243,7 +240,6 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: bool
         :rtype: bool
         """
 
@@ -272,7 +268,6 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: str
         :rtype: str
         """
 
@@ -301,7 +296,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
+        :return: enum cat_dxf_import_dimensions_enum
         :rtype: int
         """
 
@@ -329,7 +324,6 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: str
         :rtype: str
         """
 
@@ -358,7 +352,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
+        :return: enum cat_dxf_import_create_end_points_enum
         :rtype: int
         """
 
@@ -387,7 +381,6 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: bool
         :rtype: bool
         """
 
@@ -416,7 +409,6 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: bool
         :rtype: bool
         """
 
@@ -446,7 +438,6 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: bool
         :rtype: bool
         """
 
@@ -474,7 +465,6 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: float
         :rtype: float
         """
 
@@ -502,7 +492,6 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: float
         :rtype: float
         """
 
@@ -530,7 +519,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
+        :return: enum cat_dxf_import_unit_enum
         :rtype: int
         """
 
@@ -570,7 +559,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetExportBlocksInfo(io_admin_level, io_locked)
@@ -610,7 +598,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetExportDimensionsAsDimensionsInfo(io_admin_level, io_locked)
@@ -649,7 +636,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetExportLayerNameInfo(io_admin_level, io_locked)
@@ -688,7 +674,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetExportModeInfo(io_admin_level, io_locked)
@@ -727,7 +712,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetExportSheetsInfo(io_admin_level, io_locked)
@@ -766,7 +750,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetExportVersionInfo(io_admin_level, io_locked)
@@ -805,7 +788,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetExportViewsAsViewportsInfo(io_admin_level, io_locked)
@@ -844,7 +826,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetImportDftStandardInfo(io_admin_level, io_locked)
@@ -883,7 +864,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetImportDimensionsInfo(io_admin_level, io_locked)
@@ -922,7 +902,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetImportDxfStandardInfo(io_admin_level, io_locked)
@@ -961,7 +940,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetImportEndPointsInfo(io_admin_level, io_locked)
@@ -1000,7 +978,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetImportKeepModelSpaceInfo(io_admin_level, io_locked)
@@ -1039,7 +1016,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetImportMapLayerOn2DLInfo(io_admin_level, io_locked)
@@ -1079,7 +1055,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetImportPaperSpacesInBackgroundInfo(io_admin_level, io_locked)
@@ -1118,7 +1093,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetImportScaleDenominatorInfo(io_admin_level, io_locked)
@@ -1157,7 +1131,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetImportScaleNumeratorInfo(io_admin_level, io_locked)
@@ -1196,7 +1169,6 @@ class DxfSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dxf_setting_att.GetImportUnitInfo(io_admin_level, io_locked)
@@ -1227,7 +1199,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetExportBlocksLock(i_locked)
@@ -1273,7 +1244,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetExportDimensionsAsDimensionsLock(i_locked)
@@ -1319,7 +1289,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetExportLayerNameLock(i_locked)
@@ -1365,7 +1334,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetExportModeLock(i_locked)
@@ -1411,7 +1379,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetExportSheetsLock(i_locked)
@@ -1457,7 +1424,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetExportVersionLock(i_locked)
@@ -1503,7 +1469,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetExportViewsAsViewportsLock(i_locked)
@@ -1549,7 +1514,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetImportDftStandardLock(i_locked)
@@ -1595,7 +1559,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetImportDimensionsLock(i_locked)
@@ -1641,7 +1604,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetImportDxfStandardLock(i_locked)
@@ -1687,7 +1649,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetImportEndPointsLock(i_locked)
@@ -1733,7 +1694,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetImportKeepModelSpaceLock(i_locked)
@@ -1779,7 +1739,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetImportMapLayerOn2DLLock(i_locked)
@@ -1825,7 +1784,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetImportPaperSpacesInBackgroundLock(i_locked)
@@ -1871,7 +1829,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetImportScaleDenominatorLock(i_locked)
@@ -1917,7 +1874,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetImportScaleNumeratorLock(i_locked)
@@ -1963,7 +1919,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.SetImportUnitLock(i_locked)
@@ -2005,8 +1960,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_export_blocks:
-        :return: None
+        :param int i_export_blocks: enum cat_dxf_export_blocks_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ExportBlocks(i_export_blocks)
@@ -2037,7 +1991,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_export_dimension:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.set_ExportDimensionsAsDimensions(i_export_dimension)
@@ -2081,7 +2034,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_export_layer_name:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.set_ExportLayerName(i_export_layer_name)
@@ -2122,8 +2074,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_mode:
-        :return: None
+        :param int i_mode: enum cat_dxf_export_mode_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ExportMode(i_mode)
@@ -2149,8 +2100,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_sheets:
-        :return: None
+        :param int i_sheets: enum cat_dxf_export_sheets_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ExportSheets(i_sheets)
@@ -2176,8 +2126,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_version:
-        :return: None
+        :param int i_version:enum cat_dxf_export_version_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ExportVersion(i_version)
@@ -2207,7 +2156,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_views_as_viewports:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.set_ExportViewsAsViewports(i_views_as_viewports)
@@ -2250,7 +2198,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param str i_dft_standard:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportDftStandard(i_dft_standard)
@@ -2277,8 +2224,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_dimensions:
-        :return: None
+        :param int i_dimensions: enum cat_dxf_import_dimensions_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportDimensions(i_dimensions)
@@ -2305,7 +2251,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param str i_dxf_standard:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportDxfStandard(i_dxf_standard)
@@ -2332,8 +2277,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_end_points:
-        :return: None
+        :param int i_end_points: enum cat_dxf_import_create_end_points_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportEndPoints(i_end_points)
@@ -2361,7 +2305,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_keep_model_space:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportKeepModelSpace(i_keep_model_space)
@@ -2404,7 +2347,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_map_layer_on2_dl:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportMapLayerOn2DL(i_map_layer_on2_dl)
@@ -2448,7 +2390,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_paper_spaces_in_background:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportPaperSpacesInBackground(i_paper_spaces_in_background)
@@ -2491,7 +2432,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param float i_scale_den:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportScaleDenominator(i_scale_den)
@@ -2518,7 +2458,6 @@ class DxfSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param float i_scale_num:
-        :return: None
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportScaleNumerator(i_scale_num)
@@ -2544,11 +2483,10 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_unit:
-        :return: None
+        :param int i_unit: enum cat_dxf_import_unit_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportUnit(i_unit)
 
     def __repr__(self):
-        return f'DxfSettingAtt(name="{ self.name }")'
+        return f'DxfSettingAtt(name="{self.name}")'

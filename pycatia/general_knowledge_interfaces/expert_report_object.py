@@ -49,7 +49,6 @@ class ExpertReportObject(AnyObject):
                 | 
                 |     "True" or "False" for the tuple.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -103,7 +102,6 @@ class ExpertReportObject(AnyObject):
                 |             The collection of objects.
 
         :param tuple o_safe_array:
-        :return: None
         :rtype: None
         """
         return self.expert_report_object.getTuple(o_safe_array)
@@ -137,7 +135,6 @@ class ExpertReportObject(AnyObject):
                 |     Returns:
                 |         Size of the tuple
 
-        :return: int
         :rtype: int
         """
         return self.expert_report_object.getTupleSize()

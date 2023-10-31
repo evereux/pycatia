@@ -54,7 +54,6 @@ class BehaviorVBScript(Behavior):
                 |     Deprecated:
                 |         V5R15 (Not needed)
 
-        :return: None
         :rtype: None
         """
         return self.behavior_vb_script.Cancel()
@@ -74,7 +73,6 @@ class BehaviorVBScript(Behavior):
                 |     Deprecated:
                 |         V5R15 (Not needed)
 
-        :return: None
         :rtype: None
         """
         return self.behavior_vb_script.Done()
@@ -99,7 +97,6 @@ class BehaviorVBScript(Behavior):
                 |          Set BehParameter = Beh.GetInternal("XXX")
 
         :param str p_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.behavior_vb_script.GetInternal(p_name))
@@ -126,7 +123,6 @@ class BehaviorVBScript(Behavior):
 
         :param str p_name:
         :param AnyObject o_value:
-        :return: None
         :rtype: None
         """
         return self.behavior_vb_script.PutInternal(p_name, o_value.com_object)
@@ -146,7 +142,6 @@ class BehaviorVBScript(Behavior):
                 |     Deprecated:
                 |         V5R15 (Not needed)
 
-        :return: None
         :rtype: None
         """
         return self.behavior_vb_script.Start()
@@ -167,7 +162,6 @@ class BehaviorVBScript(Behavior):
                 |     Deprecated:
                 |         V5R15 (Not needed)
 
-        :return: None
         :rtype: None
         """
         return self.behavior_vb_script.Suspend()
@@ -191,7 +185,6 @@ class BehaviorVBScript(Behavior):
                 |          if (Beh.TestInternal("XXX"))
 
         :param str p_name:
-        :return: int
         :rtype: int
         """
         return self.behavior_vb_script.TestInternal(p_name)

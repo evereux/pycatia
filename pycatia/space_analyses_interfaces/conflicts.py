@@ -68,7 +68,6 @@ class Conflicts(Collection):
                 |             Set ThisConflict = TheConflicts.Item(9)
 
         :param cat_variant i_index:
-        :return: Conflict
         :rtype: Conflict
         """
         return Conflict(self.conflicts.Item(i_index))

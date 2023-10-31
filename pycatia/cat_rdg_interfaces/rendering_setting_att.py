@@ -48,7 +48,6 @@ class RenderingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -75,7 +74,6 @@ class RenderingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -102,7 +100,6 @@ class RenderingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -138,7 +135,6 @@ class RenderingSettingAtt(SettingController):
                 |             1 : same size as viewpoint.
                 |             2 : fixed size. Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -174,7 +170,6 @@ class RenderingSettingAtt(SettingController):
                 |             1 : image saved to default file.
                 |             2 : save image to specific file.
 
-        :return: int
         :rtype: int
         """
 
@@ -201,7 +196,6 @@ class RenderingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -228,7 +222,6 @@ class RenderingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -274,7 +267,6 @@ class RenderingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rendering_setting_att.GetEngineInterfaceInfo(io_admin_level, io_locked)
@@ -311,7 +303,6 @@ class RenderingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rendering_setting_att.GetOutputHeightInfo(io_admin_level, io_locked)
@@ -348,7 +339,6 @@ class RenderingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rendering_setting_att.GetOutputPathInfo(io_admin_level, io_locked)
@@ -385,7 +375,6 @@ class RenderingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rendering_setting_att.GetOutputSizeFromInfo(io_admin_level, io_locked)
@@ -422,7 +411,6 @@ class RenderingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rendering_setting_att.GetOutputTypeInfo(io_admin_level, io_locked)
@@ -459,7 +447,6 @@ class RenderingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rendering_setting_att.GetOutputWidthInfo(io_admin_level, io_locked)
@@ -496,7 +483,6 @@ class RenderingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rendering_setting_att.GetSaveAutoIncrementInfo(io_admin_level, io_locked)
@@ -523,7 +509,6 @@ class RenderingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rendering_setting_att.SetEngineInterfaceLock(i_locked)
@@ -565,7 +550,6 @@ class RenderingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rendering_setting_att.SetOutputHeightLock(i_locked)
@@ -607,7 +591,6 @@ class RenderingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rendering_setting_att.SetOutputPathLock(i_locked)
@@ -649,7 +632,6 @@ class RenderingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rendering_setting_att.SetOutputSizeFromLock(i_locked)
@@ -691,7 +673,6 @@ class RenderingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rendering_setting_att.SetOutputTypeLock(i_locked)
@@ -733,7 +714,6 @@ class RenderingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rendering_setting_att.SetOutputWidthLock(i_locked)
@@ -775,7 +755,6 @@ class RenderingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rendering_setting_att.SetSaveAutoIncrementLock(i_locked)

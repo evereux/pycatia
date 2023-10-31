@@ -641,7 +641,6 @@ class StrObjectFactory(AnyObject):
 
         :param tuple i_coord:
         :param float i_offset:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.str_object_factory.AddDefExtFromCoordinates(i_coord, i_offset))
@@ -667,7 +666,6 @@ class StrObjectFactory(AnyObject):
 
         :param Reference i_reference:
         :param float i_offset:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.str_object_factory.AddDefExtFromReference(i_reference.com_object, i_offset))
@@ -699,10 +697,9 @@ class StrObjectFactory(AnyObject):
                 |             The offset on the extremity
 
         :param StrMember i_member:
-        :param int i_side:
+        :param int i_side: enum cat_str_member_extremity
         :param float i_distance:
         :param float i_offset:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.str_object_factory.AddDefExtOnMember(i_member.com_object, i_side, i_distance, i_offset))
@@ -757,7 +754,6 @@ class StrObjectFactory(AnyObject):
         :param tuple i_math_direction:
         :param float i_length:
         :param str i_type:
-        :return: StrMember
         :rtype: StrMember
         """
         return StrMember(
@@ -833,10 +829,9 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param tuple i_direction:
-        :param int i_mode:
+        :param int i_mode: enum cat_str_plane_mode
         :param float i_length:
         :param str i_type:
-        :return: StrMember
         :rtype: StrMember
         """
         return StrMember(
@@ -904,7 +899,6 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr2:
         :param float i_length:
         :param str i_type:
-        :return: StrMember
         :rtype: StrMember
         """
         return StrMember(
@@ -983,11 +977,10 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param Reference i_direction:
-        :param int i_mode:
-        :param int i_orientation:
+        :param int i_mode: enum cat_str_plane_mode
+        :param int i_orientation: enum cat_str_material_orientation
         :param float i_length:
         :param str i_type:
-        :return: StrMember
         :rtype: StrMember
         """
         return StrMember(
@@ -1051,7 +1044,6 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param str i_type:
-        :return: StrMember
         :rtype: StrMember
         """
         return StrMember(
@@ -1122,9 +1114,8 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param Reference i_direction:
-        :param int i_mode:
+        :param int i_mode: enum cat_str_plane_mode
         :param str i_type:
-        :return: StrMember
         :rtype: StrMember
         """
         return StrMember(
@@ -1192,7 +1183,6 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr2:
         :param tuple i_direction:
         :param str i_type:
-        :return: StrMember
         :rtype: StrMember
         """
         return StrMember(
@@ -1262,9 +1252,8 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param tuple i_plane:
-        :param int i_plane_mode:
+        :param int i_plane_mode: enum cat_str_plane_mode
         :param str i_type:
-        :return: StrMember
         :rtype: StrMember
         """
         return StrMember(
@@ -1332,7 +1321,6 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param str i_type:
-        :return: StrMember
         :rtype: StrMember
         """
         return StrMember(
@@ -1408,7 +1396,6 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param str i_type:
-        :return: StrMember
         :rtype: StrMember
         """
         return StrMember(
@@ -1466,11 +1453,10 @@ class StrObjectFactory(AnyObject):
 
         :param Reference i_support:
         :param float i_thickness:
-        :param int i_orientation:
+        :param int i_orientation: enum cat_str_material_orientation
         :param tuple i_contour:
         :param float i_offset:
         :param str i_type:
-        :return: StrPlate
         :rtype: StrPlate
         """
         return StrPlate(
@@ -1521,11 +1507,10 @@ class StrObjectFactory(AnyObject):
                 |             added as an attribute on the plate.
 
         :param float i_thickness:
-        :param int i_orientation:
+        :param int i_orientation: enum cat_str_material_orientation
         :param Reference i_surface:
         :param float i_offset:
         :param str i_type:
-        :return: StrPlate
         :rtype: StrPlate
         """
         return StrPlate(
@@ -1583,13 +1568,12 @@ class StrObjectFactory(AnyObject):
                 |             added as an attribute on the plate.
 
         :param StrMember i_member:
-        :param int i_side:
+        :param int i_side: enum cat_str_member_extremity
         :param float i_thickness:
         :param float i_height:
         :param float i_width:
-        :param int i_orientation:
+        :param int i_orientation: enum cat_str_material_orientation
         :param str i_type:
-        :return: StrPlate
         :rtype: StrPlate
         """
         return StrPlate(
@@ -1623,7 +1607,6 @@ class StrObjectFactory(AnyObject):
                 |             defined
 
         :param Document i_part:
-        :return: StrSection
         :rtype: StrSection
         """
         return StrSection(self.str_object_factory.AddSection(i_part.com_object))
@@ -1666,7 +1649,6 @@ class StrObjectFactory(AnyObject):
         :param str i_catalog_name:
         :param str i_family_name:
         :param str i_section_name:
-        :return: StrSection
         :rtype: StrSection
         """
         return StrSection(
@@ -1695,7 +1677,6 @@ class StrObjectFactory(AnyObject):
                 |             the name of the user class
 
         :param str i_class:
-        :return: StrFoundation
         :rtype: StrFoundation
         """
         return StrFoundation(self.str_object_factory.ExtendProductAsFoundation(i_class))

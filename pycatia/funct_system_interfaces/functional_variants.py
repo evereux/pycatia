@@ -47,7 +47,6 @@ class FunctionalVariants(Collection):
                 |     Create a FunctionalVariant.
 
         :param str i_name:
-        :return: FunctionalVariant
         :rtype: FunctionalVariant
         """
         return FunctionalVariant(self.functional_variants.Create(i_name))
@@ -63,7 +62,6 @@ class FunctionalVariants(Collection):
                 |     Delete a FunctionalVariant.
 
         :param FunctionalVariant i_variant:
-        :return: None
         :rtype: None
         """
         return self.functional_variants.Delete(i_variant.com_object)
@@ -116,7 +114,6 @@ class FunctionalVariants(Collection):
                 |          Set Act2 = Desc.Variant("Adding new substance")
 
         :param cat_variant i_index:
-        :return: FunctionalVariant
         :rtype: FunctionalVariant
         """
         return FunctionalVariant(self.functional_variants.Elem(i_index))

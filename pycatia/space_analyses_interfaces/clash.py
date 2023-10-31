@@ -59,7 +59,6 @@ class Clash(AnyObject):
                 |             Dim TheAnnotatedViewsList As AnnotatedViews
                 |             Set TheAnnotatedViewsList = NewClash.AnnotatedViews
 
-        :return: AnnotatedViews
         :rtype: AnnotatedViews
         """
 
@@ -98,7 +97,6 @@ class Clash(AnyObject):
                 | 
                 |                 NewClash.Clearance = 10.
 
-        :return: float
         :rtype: float
         """
 
@@ -125,24 +123,18 @@ class Clash(AnyObject):
                 | 
                 |     Example:
                 | 
-                |              The first example retrieves the computation type of NewClash
-                |              Clash.
+                |             The first example retrieves the computation type of NewClash
+                |             Clash.
                 |             
-                | 
                 |             Dim ComputationType As CatClashComputationType
                 |             ComputationType = NewClash.ComputationType
-                |             
-                | 
-                | 
-                |             
-                | 
-                |                 The second example sets the computation type of NewClash
-                |                 Clash.
-                |                 
-                | 
-                |                 NewClash.ComputationType = catClashComputationTypeBetweenAll
+                |
+                |            The second example sets the computation type of NewClash
+                |            Clash.
+                |
+                |            NewClash.ComputationType = catClashComputationTypeBetweenAll
 
-        :return: int
+        :return: enum cat_clash_computation_type
         :rtype: int
         """
 
@@ -151,7 +143,7 @@ class Clash(AnyObject):
     @computation_type.setter
     def computation_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_clash_computation_type
         """
 
         self.clash.ComputationType = value
@@ -176,7 +168,6 @@ class Clash(AnyObject):
                 |             Dim NewConflicts As Conflicts
                 |             Set NewConflicts = NewClash.Conflicts
 
-        :return: Conflicts
         :rtype: Conflicts
         """
 
@@ -213,7 +204,6 @@ class Clash(AnyObject):
                 |                 Dim FirstGroup As Group
                 |                 NewClash.FirstGroup = FirstGroup
 
-        :return: Group
         :rtype: Group
         """
 
@@ -257,7 +247,7 @@ class Clash(AnyObject):
                 | 
                 |                 NewClash.InterferenceType = CatClashInterferenceTypeContact
 
-        :return: int
+        :return: enum cat_clash_interference_type
         :rtype: int
         """
 
@@ -291,7 +281,6 @@ class Clash(AnyObject):
                 |             Dim TheMarker3DsList As Marker3Ds
                 |             Set TheMarker3DsList = NewClash.Marker3Ds
 
-        :return: Marker3Ds
         :rtype: Marker3Ds
         """
 
@@ -328,7 +317,6 @@ class Clash(AnyObject):
                 |                 Dim SecondGroup As Group
                 |                 NewClash.SecondGroup = SecondGroup
 
-        :return: Group
         :rtype: Group
         """
 
@@ -360,7 +348,6 @@ class Clash(AnyObject):
                 | 
                 |             NewClash.Compute
 
-        :return: None
         :rtype: None
         """
         return self.clash.Compute()
@@ -393,9 +380,8 @@ class Clash(AnyObject):
                 |             NewClash.Export CatClashExportTypeXMLResultOnly,
                 |             "c:\\tmp\\sample.xml"
 
-        :param int i_type:
+        :param int i_type: enum cat_clash_export_type
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.clash.Export(i_type, i_path)

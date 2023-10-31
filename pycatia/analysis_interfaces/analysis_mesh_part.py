@@ -61,7 +61,6 @@ class AnalysisMeshPart(AnalysisSet):
                 |             TRUE
                 |                 Mesh Part is active.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -87,7 +86,6 @@ class AnalysisMeshPart(AnalysisSet):
                 | 
                 |     Returns the local specification collection from the meshpart analysis.
 
-        :return: AnalysisMeshLocalSpecifications
         :rtype: AnalysisMeshLocalSpecifications
         """
 
@@ -119,7 +117,6 @@ class AnalysisMeshPart(AnalysisSet):
 
         :param Product i_product:
         :param Publication i_support:
-        :return: None
         :rtype: None
         """
         return self.analysis_mesh_part.AddSupportFromPublication(i_product.com_object, i_support.com_object)
@@ -165,7 +162,6 @@ class AnalysisMeshPart(AnalysisSet):
 
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.analysis_mesh_part.AddSupportFromReference(i_product.com_object, i_support.com_object)
@@ -206,7 +202,6 @@ class AnalysisMeshPart(AnalysisSet):
 
         :param str i_name:
         :param cat_variant i_value:
-        :return: None
         :rtype: None
         """
         return self.analysis_mesh_part.SetGlobalSpecification(i_name, i_value)
@@ -251,7 +246,6 @@ class AnalysisMeshPart(AnalysisSet):
                 |             Operation failed.
 
         :param tuple i_mesh_parts:
-        :return: None
         :rtype: None
         """
         return self.analysis_mesh_part.SetMeshPartsToCapture(i_mesh_parts)
@@ -319,7 +313,6 @@ class AnalysisMeshPart(AnalysisSet):
         :param Product i_product:
         :param Publication i_support:
         :param int i_mode:
-        :return: None
         :rtype: None
         """
         return self.analysis_mesh_part.SetSpecificationFromPublication(
@@ -392,7 +385,6 @@ class AnalysisMeshPart(AnalysisSet):
         :param Product i_product:
         :param Reference i_support:
         :param int i_mode:
-        :return: None
         :rtype: None
         """
         return self.analysis_mesh_part.SetSpecificationFromReference(

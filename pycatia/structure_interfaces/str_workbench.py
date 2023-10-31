@@ -56,7 +56,6 @@ class StrWorkbench(Workbench):
                 |          Dim services As StrComputeServices
                 |          Set services = workbench_1.StrComputeServices
 
-        :return: StrComputeServices
         :rtype: StrComputeServices
         """
 

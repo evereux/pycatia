@@ -76,7 +76,6 @@ class Document(AnyObject):
                 |          Dim CameraCollection As Cameras
                 |          Set CameraCollection = Doc.Cameras
 
-        :return: Cameras
         :rtype: Cameras
         """
 
@@ -102,7 +101,6 @@ class Document(AnyObject):
                 |
                 |          Doc.CurrentFilter = "Filter001"
 
-        :return: str
         :rtype: str
         """
 
@@ -135,7 +133,6 @@ class Document(AnyObject):
                 |
                 |          Doc.CurrentLayer = "Layer 3"
 
-        :return: str
         :rtype: str
         """
 
@@ -243,7 +240,6 @@ class Document(AnyObject):
                 |
                 |          IsReadOnly = Doc.ReadOnly
 
-        :return: bool
         :rtype: bool
         """
 
@@ -301,7 +297,6 @@ class Document(AnyObject):
                 |          Dim CurSel As Selection
                 |          Set CurSel = Doc.Selection
 
-        :return: Selection
         :rtype: Selection
         """
         from pycatia.in_interfaces.selection import Selection
@@ -329,7 +324,6 @@ class Document(AnyObject):
                 |
                 |          Doc.Activate()
 
-        :return: None
         :rtype: None
         """
 
@@ -384,7 +378,6 @@ class Document(AnyObject):
 
         :param str i_filter_name:
         :param str i_filter_definition:
-        :return: None
         :rtype: None
         """
         return self.document.CreateFilter(i_filter_name, i_filter_definition)
@@ -409,7 +402,6 @@ class Document(AnyObject):
                 |         The reference to the object.
 
         :param str i_label:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.document.CreateReferenceFromName(i_label))
@@ -436,7 +428,6 @@ class Document(AnyObject):
                 |                  Doc.GetWorkbench("Structural")
 
         :param str workbench_name:
-        :return: Workbench
         :rtype: Workbench
         """
         return Workbench(self.document.GetWorkbench(workbench_name))
@@ -734,7 +725,6 @@ class Document(AnyObject):
                 |              Doc.RemoveFilter ("Filter001")
 
         :param str i_filter_name:
-        :return: None
         :rtype: None
         """
         return self.document.RemoveFilter(i_filter_name)
@@ -754,7 +744,6 @@ class Document(AnyObject):
                 |
                 |          Doc.Save()
 
-        :return: None
         :rtype: None
         """
         self.logger.info(f'Saving the current document.')

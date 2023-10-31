@@ -71,8 +71,7 @@ class PrintersSettingAtt(SettingController):
                 |             CatPrinterDirFree : the printers included in the directory are free.
 
         :param str i_printer_dir:
-        :param int i_printer_dir_state:
-        :return: None
+        :param int i_printer_dir_state: enum cat_printer_dir_state
         :rtype: None
         """
         return self.printers_setting_att.AddPrinterDirectory(i_printer_dir, i_printer_dir_state)
@@ -98,7 +97,6 @@ class PrintersSettingAtt(SettingController):
 
         :param str i_printer_group_name:
         :param tuple i_printer_names:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.AddPrinterGroup(i_printer_group_name, i_printer_names)
@@ -134,7 +132,6 @@ class PrintersSettingAtt(SettingController):
                 |             path of the driver configuration file
 
         :param str o_driver_cfg_path:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.GetDriverConfigurationPath(o_driver_cfg_path)
@@ -170,7 +167,6 @@ class PrintersSettingAtt(SettingController):
 
         :param str o_admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.printers_setting_att.GetDriverConfigurationPathInfo(o_admin_level, o_locked)
@@ -193,7 +189,6 @@ class PrintersSettingAtt(SettingController):
                 |             directory.
 
         :param str o_new_printer_dir:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.GetNewPrinterDirectory(o_new_printer_dir)
@@ -229,7 +224,6 @@ class PrintersSettingAtt(SettingController):
 
         :param str o_admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.printers_setting_att.GetNewPrinterDirectoryInfo(o_admin_level, o_locked)
@@ -254,7 +248,6 @@ class PrintersSettingAtt(SettingController):
                 |         array of printers included in the group.
 
         :param str i_printer_group_name:
-        :return: tuple
         :rtype: tuple
         """
         return self.printers_setting_att.GetPrinterArrayForGroup(i_printer_group_name)
@@ -272,7 +265,6 @@ class PrintersSettingAtt(SettingController):
                 |     Returns:
                 |         array of directories where 3DPLM printers are defined.
 
-        :return: tuple
         :rtype: tuple
         """
         return self.printers_setting_att.GetPrinterDirectories()
@@ -308,7 +300,6 @@ class PrintersSettingAtt(SettingController):
 
         :param str o_admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.printers_setting_att.GetPrinterDirectoriesInfo(o_admin_level, o_locked)
@@ -344,7 +335,7 @@ class PrintersSettingAtt(SettingController):
                 |         CatPrinterDirFree : the printers included in the directory are free.
 
         :param str i_printer_dir:
-        :return: int
+        :return: enum cat_printer_dir_state
         :rtype: int
         """
         return self.printers_setting_att.GetPrinterDirectoryState(i_printer_dir)
@@ -362,7 +353,6 @@ class PrintersSettingAtt(SettingController):
                 |     Returns:
                 |         array of printer group names
 
-        :return: tuple
         :rtype: tuple
         """
         return self.printers_setting_att.GetPrinterGroups()
@@ -398,7 +388,6 @@ class PrintersSettingAtt(SettingController):
 
         :param str o_admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.printers_setting_att.GetPrinterGroupsInfo(o_admin_level, o_locked)
@@ -424,7 +413,6 @@ class PrintersSettingAtt(SettingController):
 
         :param str i_printer_group_name:
         :param tuple i_printer_names:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.ModifyPrinterArrayForGroup(i_printer_group_name, i_printer_names)
@@ -475,8 +463,7 @@ class PrintersSettingAtt(SettingController):
                 |             CatPrinterDirFree : the printers included in the directory are free.
 
         :param str i_printer_dir:
-        :param int i_printer_dir_state:
-        :return: None
+        :param int i_printer_dir_state: enum cat_printer_dir_state
         :rtype: None
         """
         return self.printers_setting_att.ModifyPrinterDirectoryState(i_printer_dir, i_printer_dir_state)
@@ -491,7 +478,6 @@ class PrintersSettingAtt(SettingController):
                 | 
                 |     Remove all the directories including printer files.
 
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.RemoveAllPrinterDirectories()
@@ -506,7 +492,6 @@ class PrintersSettingAtt(SettingController):
                 | 
                 |     Remove all the groups of printers.
 
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.RemoveAllPrinterGroups()
@@ -528,7 +513,6 @@ class PrintersSettingAtt(SettingController):
                 |             directory where some 3DPLM printers are defined.
 
         :param str i_printer_dir:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.RemovePrinterDirectory(i_printer_dir)
@@ -549,7 +533,6 @@ class PrintersSettingAtt(SettingController):
                 |             name of the group to remove.
 
         :param str i_printer_group_name:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.RemovePrinterGroup(i_printer_group_name)
@@ -570,7 +553,6 @@ class PrintersSettingAtt(SettingController):
                 |             path of the driver configuration file
 
         :param str i_driver_cfg_path:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.SetDriverConfigurationPath(i_driver_cfg_path)
@@ -597,7 +579,6 @@ class PrintersSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.SetDriverConfigurationPathLock(i_lock)
@@ -635,7 +616,6 @@ class PrintersSettingAtt(SettingController):
                 |             directory.
 
         :param str i_new_printer_dir:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.SetNewPrinterDirectory(i_new_printer_dir)
@@ -663,7 +643,6 @@ class PrintersSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.SetNewPrinterDirectoryLock(i_lock)
@@ -706,7 +685,6 @@ class PrintersSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.SetPrinterDirectoriesLock(i_lock)
@@ -748,7 +726,6 @@ class PrintersSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.printers_setting_att.SetPrinterGroupsLock(i_lock)

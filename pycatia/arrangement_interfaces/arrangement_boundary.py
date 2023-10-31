@@ -56,7 +56,6 @@ class ArrangementBoundary(AnyObject):
                 |          Dim objArrNodes   As ArrangementNodes
                 |          Set objArrNodes = objBoundary1.ArrangementNodes
 
-        :return: ArrangementNodes
         :rtype: ArrangementNodes
         """
 
@@ -80,7 +79,6 @@ class ArrangementBoundary(AnyObject):
                 |          Dim dblBoundaryLength   As Double
                 |          dblBoundaryLength  = objBoundary1.Length
 
-        :return: float
         :rtype: float
         """
 
@@ -105,7 +103,6 @@ class ArrangementBoundary(AnyObject):
                 |          Dim dblSectionHeight   As Double
                 |          dblSectionHeight = objBoundary1.SectionHeight
 
-        :return: float
         :rtype: float
         """
 
@@ -141,7 +138,7 @@ class ArrangementBoundary(AnyObject):
                 | 
                 |          objBoundary1.SectionType = CatArrangementRouteSectionRectangular
 
-        :return: int
+        :return: enum cat_arrangement_route_section
         :rtype: int
         """
 
@@ -150,7 +147,7 @@ class ArrangementBoundary(AnyObject):
     @section_type.setter
     def section_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_arrangement_route_section
         """
 
         self.arrangement_boundary.SectionType = value
@@ -174,7 +171,6 @@ class ArrangementBoundary(AnyObject):
                 |          Dim dblSectionWidth   As Double
                 |          dblSectionWidth = objBoundary1.SectionWidth
 
-        :return: float
         :rtype: float
         """
 
@@ -206,7 +202,7 @@ class ArrangementBoundary(AnyObject):
                 | 
                 |          objBoundary1.VisuMode = CatArrangementRouteVisuModeSolid
 
-        :return: int
+        :return: enum cat_arrangement_route_visu_mode
         :rtype: int
         """
 
@@ -215,7 +211,7 @@ class ArrangementBoundary(AnyObject):
     @visu_mode.setter
     def visu_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_arrangement_route_visu_mode
         """
 
         self.arrangement_boundary.VisuMode = value
@@ -247,7 +243,6 @@ class ArrangementBoundary(AnyObject):
                 |                  objProd  = objBoundary1.GetTechnologicalObject("Product")
 
         :param str i_application_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.arrangement_boundary.GetTechnologicalObject(i_application_type)

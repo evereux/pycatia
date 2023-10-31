@@ -47,7 +47,6 @@ class Text(AnyObject):
                 | 
                 |     Gets the annotation's text.
 
-        :return: str
         :rtype: str
         """
 
@@ -71,7 +70,6 @@ class Text(AnyObject):
                 | 
                 |     Retrieves Drafting text.
 
-        :return: DrawingText
         :rtype: DrawingText
         """
         return DrawingText(self.text_com.Get2dAnnot())
@@ -86,7 +84,6 @@ class Text(AnyObject):
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.
 
-        :return: TPSParallelOnScreen
         :rtype: TPSParallelOnScreen
         """
         return TPSParallelOnScreen(self.text_com.TPSParallelOnScreen())

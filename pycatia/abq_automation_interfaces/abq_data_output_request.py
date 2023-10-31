@@ -66,8 +66,7 @@ class ABQDataOutputRequest(ABQOutputRequest):
                 |             "DATOUTPUTTYPE_ENERGY"
 
         :param str i_variable_name_bstr:
-        :param int i_dat_output_var_type:
-        :return: None
+        :param int i_dat_output_var_type: enum abq_dat_output_var_type
         :rtype: None
         """
         return self.abq_data_output_request.SetSpecifiedOutputVariables(i_variable_name_bstr, i_dat_output_var_type)
@@ -96,8 +95,7 @@ class ABQDataOutputRequest(ABQOutputRequest):
                 |             "DATOUTPUTTYPE_CONTACT"
                 |             "DATOUTPUTTYPE_ENERGY"
 
-        :param int i_dat_output_var_type:
-        :return: None
+        :param int i_dat_output_var_type: enum abq_dat_output_var_type
         :rtype: None
         """
         return self.abq_data_output_request.UnsetOutputType(i_dat_output_var_type)

@@ -47,7 +47,6 @@ class HtsCCPSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -74,7 +73,6 @@ class HtsCCPSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -101,7 +99,6 @@ class HtsCCPSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -128,7 +125,6 @@ class HtsCCPSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -155,7 +151,6 @@ class HtsCCPSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -201,7 +196,6 @@ class HtsCCPSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_ccp_setting_att.GetAutoCCPInfo(io_admin_level, io_locked)
@@ -238,7 +232,6 @@ class HtsCCPSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_ccp_setting_att.GetCompassPosInfo(io_admin_level, io_locked)
@@ -275,7 +268,6 @@ class HtsCCPSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_ccp_setting_att.GetCurrentPosInfo(io_admin_level, io_locked)
@@ -312,7 +304,6 @@ class HtsCCPSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_ccp_setting_att.GetFirstActInfo(io_admin_level, io_locked)
@@ -349,7 +340,6 @@ class HtsCCPSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_ccp_setting_att.GetLastActInfo(io_admin_level, io_locked)
@@ -376,7 +366,6 @@ class HtsCCPSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_ccp_setting_att.SetAutoCCPLock(i_locked)
@@ -418,7 +407,6 @@ class HtsCCPSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_ccp_setting_att.SetCompassPosLock(i_locked)
@@ -460,7 +448,6 @@ class HtsCCPSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_ccp_setting_att.SetCurrentPosLock(i_locked)
@@ -502,7 +489,6 @@ class HtsCCPSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_ccp_setting_att.SetFirstActLock(i_locked)
@@ -544,7 +530,6 @@ class HtsCCPSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_ccp_setting_att.SetLastActLock(i_locked)

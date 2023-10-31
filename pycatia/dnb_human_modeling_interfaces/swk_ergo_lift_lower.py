@@ -54,7 +54,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     is "NIOSH1991". Failure to do so will result in invalid output
                 |     values.
 
-        :return: str
         :rtype: str
         """
 
@@ -83,7 +82,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     value from the study.
                 |     Failure to do so will result in invalid output values.
 
-        :return: float
         :rtype: float
         """
 
@@ -112,7 +110,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     study.
                 |     Failure to do so will result in invalid output values.
 
-        :return: float
         :rtype: float
         """
 
@@ -143,7 +140,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     to retrive any output value from the study, otherwise these outputs
                 |     will have invalid values.
 
-        :return: str
         :rtype: str
         """
 
@@ -170,7 +166,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     It is the weight below which the task could be considered reasonably
                 |     safe.
 
-        :return: str
         :rtype: str
         """
 
@@ -194,7 +189,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This property gives the asymmetry angle at the destination
                 |     (i.e., given the final posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -218,7 +212,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This property gives the asymmetry angle at the origin
                 |     (i.e., given the initial posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -241,7 +234,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     destination
                 |     (i.e., given the final posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -264,7 +256,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     origin
                 |     (i.e., given the initial posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -288,7 +279,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     destination
                 |     (i.e., given the final
 
-        :return: str
         :rtype: str
         """
 
@@ -311,7 +301,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This property gives the coupling multiplier at the origin
                 |     (i.e., given the initial posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -331,7 +320,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This value provides the distance multiplier.
                 |     This property gives the distance multiplier.
 
-        :return: str
         :rtype: str
         """
 
@@ -353,7 +341,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     continuous lifting.
                 |     This property gives the frequency multiplier.
 
-        :return: str
         :rtype: str
         """
 
@@ -377,7 +364,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     destination
                 |     (i.e., given the final posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -400,7 +386,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This property gives the horizontal location at the origin
                 |     (i.e., given the initial posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -423,7 +408,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     destination
                 |     (i.e., given the final posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -446,7 +430,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     origin
                 |     (i.e., given the initial posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -468,7 +451,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This property gives the lifting index at the destination
                 |     (i.e., given the final posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -490,7 +472,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This property gives the lifting index at the origin
                 |     (i.e., given the initial posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -511,7 +492,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This property gives the load constant at the destination
                 |     (i.e., given the final posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -531,7 +511,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This value represents a weight limit, above which the
                 |     task is considered dangerous and requires engineering controls.
 
-        :return: str
         :rtype: str
         """
 
@@ -555,7 +534,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     destination
                 |     (i.e., given the final posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -577,7 +555,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This property gives the recommended weight at the origin
                 |     (i.e., given the initial posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -599,7 +576,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     V5 units.
                 |     This property gives the travel distance
 
-        :return: str
         :rtype: str
         """
 
@@ -623,7 +599,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     destination
                 |     (i.e., given the final posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -646,7 +621,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This property gives the vertical location at the origin
                 |     (i.e., given the initial posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -670,7 +644,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     destination
                 |     (i.e., given the final posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -693,7 +666,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     This property gives the vertical multiplier at the origin
                 |     (i.e., given the initial posture of the manikin).
 
-        :return: str
         :rtype: str
         """
 
@@ -713,7 +685,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     "NIOSH1991".
                 |     Failure to do so will result in invalid output values.
 
-        :return: str
         :rtype: str
         """
 
@@ -744,7 +715,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     "NIOSH1991".
                 |     Failure to do so will result in invalid output values.
 
-        :return: float
         :rtype: float
         """
 
@@ -773,7 +743,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     population
                 |     can lift or carry with reasonable safety.
 
-        :return: str
         :rtype: str
         """
 
@@ -790,7 +759,6 @@ class SWKErgoLiftLower(AnyObject):
                 | 
                 |     Returns an eventual warning message generated along with the study.
 
-        :return: str
         :rtype: str
         """
 
@@ -807,7 +775,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     Saves the current posture of the mankin as the final posture for the
                 |     lift/lower analysis.
 
-        :return: None
         :rtype: None
         """
         return self.swk_ergo_lift_lower.SaveFinalPosture()
@@ -823,7 +790,6 @@ class SWKErgoLiftLower(AnyObject):
                 |     Saves the current posture of the mankin as the initial posture for the
                 |     lift/lower analysis.
 
-        :return: None
         :rtype: None
         """
         return self.swk_ergo_lift_lower.SaveInitialPosture()

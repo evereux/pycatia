@@ -89,7 +89,6 @@ class SFMPositioningStrategyManager(AnyObject):
                 |               Next
 
         :param tuple o_list_strategy_names:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.sfm_positioning_strategy_manager.GetAvailablePositioningStrategies(o_list_strategy_names)
@@ -147,7 +146,6 @@ class SFMPositioningStrategyManager(AnyObject):
                 |               Set PositionStrategyParms = ObjSfmPosStrategyMgr.GetPositioningStrategyParams("CATSfmPosMidDistMidDist")
 
         :param str i_pos_strategy_name:
-        :return: SFMStandardPosStrategyParameters
         :rtype: SFMStandardPosStrategyParameters
         """
         return SFMStandardPosStrategyParameters(

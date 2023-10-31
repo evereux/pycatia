@@ -95,7 +95,6 @@ class DevAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dev_analysis_setting_att.GetAccelColorInfo(io_admin_level, io_locked)
@@ -132,7 +131,6 @@ class DevAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dev_analysis_setting_att.GetAccelLimitInfo(io_admin_level, io_locked)
@@ -169,7 +167,6 @@ class DevAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dev_analysis_setting_att.GetCautionColorInfo(io_admin_level, io_locked)
@@ -206,7 +203,6 @@ class DevAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dev_analysis_setting_att.GetCautionZoneInfo(io_admin_level, io_locked)
@@ -243,7 +239,6 @@ class DevAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dev_analysis_setting_att.GetToolTipModeInfo(io_admin_level, io_locked)
@@ -280,7 +275,6 @@ class DevAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dev_analysis_setting_att.GetTravelColorInfo(io_admin_level, io_locked)
@@ -317,7 +311,6 @@ class DevAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dev_analysis_setting_att.GetTravelLimitInfo(io_admin_level, io_locked)
@@ -354,7 +347,6 @@ class DevAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dev_analysis_setting_att.GetVelocityColorInfo(io_admin_level, io_locked)
@@ -391,7 +383,6 @@ class DevAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dev_analysis_setting_att.GetVelocityLimitInfo(io_admin_level, io_locked)
@@ -418,7 +409,6 @@ class DevAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dev_analysis_setting_att.SetAccelColorLock(i_locked)
@@ -460,7 +450,6 @@ class DevAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dev_analysis_setting_att.SetAccelLimitLock(i_locked)
@@ -502,7 +491,6 @@ class DevAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dev_analysis_setting_att.SetCautionColorLock(i_locked)
@@ -544,7 +532,6 @@ class DevAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dev_analysis_setting_att.SetCautionZoneLock(i_locked)
@@ -586,7 +573,6 @@ class DevAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dev_analysis_setting_att.SetToolTipModeLock(i_locked)
@@ -628,7 +614,6 @@ class DevAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dev_analysis_setting_att.SetTravelColorLock(i_locked)
@@ -670,7 +655,6 @@ class DevAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dev_analysis_setting_att.SetTravelLimitLock(i_locked)
@@ -712,7 +696,6 @@ class DevAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dev_analysis_setting_att.SetVelocityColorLock(i_locked)
@@ -754,7 +737,6 @@ class DevAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dev_analysis_setting_att.SetVelocityLimitLock(i_locked)

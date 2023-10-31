@@ -50,7 +50,6 @@ class SWKSegmentNode(AnyObject):
                 | 
                 |     Returns the number of children segment nodes under this node.
 
-        :return: int
         :rtype: int
         """
 
@@ -67,7 +66,6 @@ class SWKSegmentNode(AnyObject):
                 | 
                 |     Returns the number of children segments under this node.
 
-        :return: int
         :rtype: int
         """
 
@@ -93,7 +91,6 @@ class SWKSegmentNode(AnyObject):
                 |             segments on this segment node, minus 1.
 
         :param int pi_index:
-        :return: SWKSegment
         :rtype: SWKSegment
         """
         return SWKSegment(self.swk_segment_node.GetSegment(pi_index))
@@ -118,7 +115,6 @@ class SWKSegmentNode(AnyObject):
                 |             children nodes on this segment node, minus 1.
 
         :param int pi_index:
-        :return: SWKSegmentNode
         :rtype: SWKSegmentNode
         """
         return SWKSegmentNode(self.swk_segment_node.GetSegmentNode(pi_index))
@@ -135,7 +131,6 @@ class SWKSegmentNode(AnyObject):
                 |     manikin. For instance, it copies the posture from the right leg to the left
                 |     leg.
 
-        :return: None
         :rtype: None
         """
         return self.swk_segment_node.MirrorCopyPosture()
@@ -151,7 +146,6 @@ class SWKSegmentNode(AnyObject):
                 |     Set the posture of all segment under this node back to their default
                 |     position.
 
-        :return: None
         :rtype: None
         """
         return self.swk_segment_node.ResetPosture()
@@ -168,7 +162,6 @@ class SWKSegmentNode(AnyObject):
                 |     manikin. For instance, the right leg takes the posture of the left leg, and
                 |     vice versa.
 
-        :return: None
         :rtype: None
         """
         return self.swk_segment_node.SwapPosture()

@@ -64,7 +64,6 @@ class Pattern(TransformationShape):
                 |          Set shape = firstPattern.ItemToCopy
                 |          firstPattern.ItemToCopy = pad1
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -97,7 +96,6 @@ class Pattern(TransformationShape):
                 | 
                 |          Set globAng = firstPattern.RotationAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -123,7 +121,6 @@ class Pattern(TransformationShape):
 
         :param int i_pos_u:
         :param int i_pos_v:
-        :return: None
         :rtype: None
         """
         return self.pattern.ActivatePosition(i_pos_u, i_pos_v)
@@ -148,7 +145,6 @@ class Pattern(TransformationShape):
 
         :param int i_pos_u:
         :param int i_pos_v:
-        :return: None
         :rtype: None
         """
         return self.pattern.DesactivatePosition(i_pos_u, i_pos_v)

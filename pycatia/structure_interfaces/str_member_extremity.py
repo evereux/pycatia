@@ -51,7 +51,6 @@ class StrMemberExtremity(AnyObject):
                 | 
                 |     Returns the angle cut for a member extremity.
 
-        :return: float
         :rtype: float
         """
 
@@ -68,7 +67,6 @@ class StrMemberExtremity(AnyObject):
                 | 
                 |     Returns the cutback object.
 
-        :return: StrCutback
         :rtype: StrCutback
         """
 
@@ -86,7 +84,6 @@ class StrMemberExtremity(AnyObject):
                 |     Returns or sets the input object defining the extremity. The input object
                 |     may not belong to the support object.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -112,7 +109,6 @@ class StrMemberExtremity(AnyObject):
                 |     Returns the offset parameter defined on this extremity. This parameter can
                 |     be null.
 
-        :return: Parameter
         :rtype: Parameter
         """
 
@@ -130,7 +126,6 @@ class StrMemberExtremity(AnyObject):
                 |     Returns the point defining the extremity. This point belongs to the support
                 |     object.
 
-        :return: Point
         :rtype: Point
         """
 
@@ -148,7 +143,6 @@ class StrMemberExtremity(AnyObject):
                 |     extremity has no offset already defined, else you will get an error.
 
         :param float i_offset:
-        :return: None
         :rtype: None
         """
         return self.str_member_extremity.AddOffset(i_offset)
@@ -169,7 +163,6 @@ class StrMemberExtremity(AnyObject):
                 |             The coordinates of the the extremity
 
         :param tuple o_coordinates:
-        :return: None
         :rtype: None
         """
         return self.str_member_extremity.GetCoordinates()
@@ -199,7 +192,6 @@ class StrMemberExtremity(AnyObject):
                 | 
                 |     Resets the defined cutback object.
 
-        :return: None
         :rtype: None
         """
         return self.str_member_extremity.ResetCutback()
@@ -222,7 +214,6 @@ class StrMemberExtremity(AnyObject):
                 |             The coordinates to modify the extremity
 
         :param tuple i_coordinates:
-        :return: None
         :rtype: None
         """
         return self.str_member_extremity.SetExtremityFromCoordinates(i_coordinates)

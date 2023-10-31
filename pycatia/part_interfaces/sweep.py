@@ -15,7 +15,6 @@ from pycatia.sketcher_interfaces.sketch import Sketch
 
 
 class Sweep(SketchBasedShape):
-
     """
         .. note::
             :class: toggle
@@ -60,7 +59,6 @@ class Sweep(SketchBasedShape):
                 | 
                 |         Example:
 
-        :return: bool
         :rtype: bool
         """
 
@@ -92,7 +90,6 @@ class Sweep(SketchBasedShape):
                 | 
                 |          Set centerCurve = firstSweep.CenterCurve
 
-        :return: Sketch
         :rtype: Sketch
         """
 
@@ -111,7 +108,6 @@ class Sweep(SketchBasedShape):
                 |     To set the property, you can use the following Boundary object:
                 |     TriDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -149,7 +145,6 @@ class Sweep(SketchBasedShape):
                 |              Set thinFlag = firstSweep.IsThin
                 |              firstSweep.IsThin = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -186,7 +181,6 @@ class Sweep(SketchBasedShape):
                 |              Set MergeEndFlag = firstSweep.IsMergeEnd
                 |              firstSweep.IsMergeEnd = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -211,7 +205,7 @@ class Sweep(SketchBasedShape):
                 | 
                 |     Returns or sets the end mode .
 
-        :return: int
+        :return: enum cat_merge_mode
         :rtype: int
         """
 
@@ -220,7 +214,7 @@ class Sweep(SketchBasedShape):
     @merge_mode.setter
     def merge_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_merge_mode
         """
 
         self.sweep.MergeMode = value
@@ -245,7 +239,6 @@ class Sweep(SketchBasedShape):
                 | 
                 |         Example:
 
-        :return: bool
         :rtype: bool
         """
 
@@ -284,7 +277,6 @@ class Sweep(SketchBasedShape):
                 |              Set NeutralFiberFlag = firstSweep.IsNeutralFiber
                 |              firstSweep.IsNeutralFiber = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -318,7 +310,6 @@ class Sweep(SketchBasedShape):
                 | 
                 |         Example:
 
-        :return: bool
         :rtype: bool
         """
 
@@ -346,7 +337,6 @@ class Sweep(SketchBasedShape):
                 |     PlanarFace, RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge,
                 |     RectilinearMonoDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -372,7 +362,6 @@ class Sweep(SketchBasedShape):
                 |     Returns or sets the reference surface .
                 |     To set the property, you can use the following Boundary object: Face.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -396,10 +385,9 @@ class Sweep(SketchBasedShape):
                 | 
                 |     Actives KeepAngleOption.
 
-        :return: None
         :rtype: None
         """
         return self.sweep.SetKeepAngleOption()
 
     def __repr__(self):
-        return f'Sweep(name="{ self.name }")'
+        return f'Sweep(name="{self.name}")'

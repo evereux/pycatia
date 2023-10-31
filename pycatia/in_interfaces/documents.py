@@ -84,7 +84,6 @@ class Documents(Collection):
                 |          Set PartDoc = Documents.Add("Part")
 
         :param str document_type:
-        :return: Document
         :rtype: Document
         """
 
@@ -148,7 +147,6 @@ class Documents(Collection):
                 |          Set Doc = Documents.NewFrom(FileToRead)
 
         :param str file_name:
-        :return: Document
         :rtype: Document
         """
 
@@ -193,7 +191,6 @@ class Documents(Collection):
                 |          Set ThatDoc = Documents.Item("MyDoc")
 
         :param cat_variant index:
-        :return: Document
         :rtype: Document
         """
         try:
@@ -210,7 +207,6 @@ class Documents(Collection):
             The COM object can return the incorrect number of documents open. After a document is closed CATIA can keep
             the linked document `ABQMaterialPropertiesCatalog.CATfct` open.
 
-        :return: int
         :rtype: int
         """
 
@@ -255,7 +251,6 @@ class Documents(Collection):
                 |          Set Doc = Documents.Open(FileToOpen)
 
         :param str file_name:
-        :return: Document
         :rtype: Document
         """
 
@@ -306,7 +301,6 @@ class Documents(Collection):
                 |          Set Doc = Documents.Read(FileToOpen)
 
         :param str file_name:
-        :return: Document
         :rtype: Document
         """
         # return Document(self.documents.Read(file_name))

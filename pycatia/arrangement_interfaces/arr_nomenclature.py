@@ -77,7 +77,6 @@ class ArrNomenclature(AnyObject):
                 |     type. The icon definition file must be in one of the icon directories defined
                 |     in the search paths used by CATIA.
 
-        :return: str
         :rtype: str
         """
 
@@ -103,7 +102,6 @@ class ArrNomenclature(AnyObject):
                 |     Gets/Sets the internal class names for System nomenclatures. This value is
                 |     set only for System nomenclatures
 
-        :return: str
         :rtype: str
         """
 
@@ -128,7 +126,6 @@ class ArrNomenclature(AnyObject):
                 | 
                 |     Gets/Sets the InstanceName
 
-        :return: str
         :rtype: str
         """
 
@@ -154,7 +151,6 @@ class ArrNomenclature(AnyObject):
                 |     Returns the collection of subtype UserNomenclatures within this
                 |     UserNomenclature.
 
-        :return: ArrNomenclatures
         :rtype: ArrNomenclatures
         """
         from pycatia.arrangement_interfaces.arr_nomenclatures import ArrNomenclatures
@@ -172,7 +168,6 @@ class ArrNomenclature(AnyObject):
                 |     Get/Set the Supertype Information This property is used to set the subtypes
                 |     for system classes
 
-        :return: str
         :rtype: str
         """
 
@@ -197,7 +192,6 @@ class ArrNomenclature(AnyObject):
                 |     Returns TRUE if the nomenclature happens to be a system nomenclature.
                 |     Returns FALSE if it is a user specified nomenclature.
 
-        :return: bool
         :rtype: bool
         """
         return self.arr_nomenclature.IsSystemNomenclature()

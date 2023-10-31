@@ -80,7 +80,6 @@ class OperationProfile(Activity):
 
         :param str i_profile_type:
         :param tuple o_profiles:
-        :return: ParameterProfiles
         :rtype: ParameterProfiles
         """
         return ParameterProfiles(self.operation_profile.GetUserProfilesList(i_profile_type, o_profiles))
@@ -136,7 +135,6 @@ class OperationProfile(Activity):
                 |                MyListOfProfiles
 
         :param tuple i_user_profiles:
-        :return: ParameterProfiles
         :rtype: ParameterProfiles
         """
         return ParameterProfiles(self.operation_profile.SetUserProfilesList(i_user_profiles))

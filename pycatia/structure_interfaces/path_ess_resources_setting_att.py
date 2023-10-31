@@ -48,7 +48,6 @@ class PathEssResourcesSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -75,7 +74,6 @@ class PathEssResourcesSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -102,7 +100,6 @@ class PathEssResourcesSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -148,7 +145,6 @@ class PathEssResourcesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.path_ess_resources_setting_att.GetResolvedSectionsPathInfo(io_admin_level, io_locked)
@@ -185,7 +181,6 @@ class PathEssResourcesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.path_ess_resources_setting_att.GetSectionsCatalogPathInfo(io_admin_level, io_locked)
@@ -222,7 +217,6 @@ class PathEssResourcesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.path_ess_resources_setting_att.GetThicknessListPathInfo(io_admin_level, io_locked)
@@ -249,7 +243,6 @@ class PathEssResourcesSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.path_ess_resources_setting_att.SetResolvedSectionsPathLock(i_locked)
@@ -291,7 +284,6 @@ class PathEssResourcesSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.path_ess_resources_setting_att.SetSectionsCatalogPathLock(i_locked)
@@ -333,7 +325,6 @@ class PathEssResourcesSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.path_ess_resources_setting_att.SetThicknessListPathLock(i_locked)

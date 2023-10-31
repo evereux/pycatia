@@ -61,7 +61,6 @@ class ABQDisplayGroups(Collection):
                 |         The specified ABQDisplayGroup.
 
         :param cat_variant i_index:
-        :return: ABQDisplayGroup
         :rtype: ABQDisplayGroup
         """
         return ABQDisplayGroup(self.abq_display_groups.Item(i_index))

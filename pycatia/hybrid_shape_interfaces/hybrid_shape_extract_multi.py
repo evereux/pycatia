@@ -98,7 +98,6 @@ class HybridShapeExtractMulti(HybridShape):
         :param bool i_is_federated:
         :param float i_crvtre_thsld:
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.AddConstraint(i_constraint.com_object, i_type, i_complementaire,
@@ -183,7 +182,6 @@ class HybridShapeExtractMulti(HybridShape):
         :param float i_angtre_thsld:
         :param float i_crvtre_thsld:
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.AddConstraintTolerant(i_constraint.com_object, i_type, i_complementaire,
@@ -225,7 +223,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |          AngularThH = HybShpExtractMulti.GetAngularThreshold(1)
 
         :param int i_pos:
-        :return: float
         :rtype: float
         """
         return self.hybrid_shape_extract_multi.GetAngularThreshold(i_pos)
@@ -250,7 +247,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |          oAngtreThsldActivity  = HybShpExtractMulti.GetAngularThresholdActivity (1)
 
         :param int i_pos:
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_extract_multi.GetAngularThresholdActivity(i_pos)
@@ -275,7 +271,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |          oComplementaire  = HybShpExtractMulti.GetComplementaryExtractMulti(1)
 
         :param int i_pos:
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_extract_multi.GetComplementaryExtractMulti(i_pos)
@@ -300,7 +295,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |          CurvatureThH = HybShpExtractMulti.GetCurvatureThreshold(1)
 
         :param int i_pos:
-        :return: float
         :rtype: float
         """
         return self.hybrid_shape_extract_multi.GetCurvatureThreshold(i_pos)
@@ -325,7 +319,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |          oCrvtreThsldActivity  = HybShpExtractMulti.GetCurvatureThresholdActivity (1)
 
         :param int i_pos:
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_extract_multi.GetCurvatureThresholdActivity(i_pos)
@@ -350,7 +343,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |          DistanceThH = HybShpExtractMulti.GetDistanceThreshold(1)
 
         :param int i_pos:
-        :return: float
         :rtype: float
         """
         return self.hybrid_shape_extract_multi.GetDistanceThreshold(i_pos)
@@ -375,7 +367,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |          oDistreThsldActivity  = HybShpExtractMulti.GetDistanceThresholdActivity (1)
 
         :param int i_pos:
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_extract_multi.GetDistanceThresholdActivity(i_pos)
@@ -402,7 +393,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |         HybridShapeFactory
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_extract_multi.GetElement(i_pos))
@@ -427,7 +417,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |          oIsFederated  = HybShpExtractMulti.GetIsFederated(1)
 
         :param int i_pos:
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_extract_multi.GetIsFederated(i_pos)
@@ -468,7 +457,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |                     oListOfExtractedConstraints(nbconstraints-1)
 
         :param tuple o_list_of_extracted_constraints:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.GetListOfConstraints(o_list_of_extracted_constraints)
@@ -514,7 +502,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |                  HybShpExtractMulti.GetNbConstraints (oNbConstraints )
 
         :param int o_nb_constraints:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.GetNbConstraints(o_nb_constraints)
@@ -546,7 +533,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |          oTypePropag  = HybShpExtractMulti.GetPropagationType(1)
 
         :param int i_pos:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_extract_multi.GetPropagationType(i_pos)
@@ -568,7 +554,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |             The support.
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_extract_multi.GetSupport(i_pos))
@@ -597,7 +582,6 @@ class HybridShapeExtractMulti(HybridShape):
                 |                  HybShpExtractMulti.RemoveElement  1
 
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.RemoveElement(i_position)
@@ -637,7 +621,6 @@ class HybridShapeExtractMulti(HybridShape):
         :param Reference i_extract_to_replace:
         :param Reference i_new_extract:
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.ReplaceElement(i_extract_to_replace.com_object, i_new_extract.com_object,
@@ -680,7 +663,6 @@ class HybridShapeExtractMulti(HybridShape):
 
         :param int i_pos:
         :param float i_angtre_thsld:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.SetAngularThreshold(i_pos, i_angtre_thsld)
@@ -708,7 +690,6 @@ class HybridShapeExtractMulti(HybridShape):
 
         :param int i_pos:
         :param bool i_angtre_thsld_activity:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.SetAngularThresholdActivity(i_pos, i_angtre_thsld_activity)
@@ -751,7 +732,6 @@ class HybridShapeExtractMulti(HybridShape):
 
         :param int i_pos:
         :param bool i_complementaire:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.SetComplementaryExtractMulti(i_pos, i_complementaire)
@@ -793,7 +773,6 @@ class HybridShapeExtractMulti(HybridShape):
 
         :param int i_pos:
         :param float i_crvtre_thsld:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.SetCurvatureThreshold(i_pos, i_crvtre_thsld)
@@ -822,7 +801,6 @@ class HybridShapeExtractMulti(HybridShape):
 
         :param int i_pos:
         :param bool i_crvtre_thsld_activity:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.SetCurvatureThresholdActivity(i_pos, i_crvtre_thsld_activity)
@@ -864,7 +842,6 @@ class HybridShapeExtractMulti(HybridShape):
 
         :param int i_pos:
         :param float i_distre_thsld:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.SetDistanceThreshold(i_pos, i_distre_thsld)
@@ -893,7 +870,6 @@ class HybridShapeExtractMulti(HybridShape):
 
         :param int i_pos:
         :param bool i_distre_thsld_activity:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.SetDistanceThresholdActivity(i_pos, i_distre_thsld_activity)
@@ -938,7 +914,6 @@ class HybridShapeExtractMulti(HybridShape):
 
         :param int i_pos:
         :param Reference i_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.SetElement(i_pos, i_elem.com_object)
@@ -981,7 +956,6 @@ class HybridShapeExtractMulti(HybridShape):
 
         :param int i_pos:
         :param bool i_is_federated:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.SetIsFederated(i_pos, i_is_federated)
@@ -1031,7 +1005,6 @@ class HybridShapeExtractMulti(HybridShape):
 
         :param int i_pos:
         :param int i_type_propag:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.SetPropagationType(i_pos, i_type_propag)
@@ -1055,7 +1028,6 @@ class HybridShapeExtractMulti(HybridShape):
 
         :param int i_pos:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_extract_multi.SetSupport(i_pos, i_support.com_object)

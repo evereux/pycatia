@@ -49,7 +49,6 @@ class HybridShapeBump(HybridShape):
                 | 
                 |     Returns or sets the element to Bump.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -74,7 +73,6 @@ class HybridShapeBump(HybridShape):
                 | 
                 |     Returns or sets the tension center parameter.
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -104,7 +102,6 @@ class HybridShapeBump(HybridShape):
                 |      TangentContinuity    =1 
                 |      CurvatureContinuity  =2
 
-        :return: int
         :rtype: int
         """
 
@@ -129,7 +126,6 @@ class HybridShapeBump(HybridShape):
                 | 
                 |     Returns or sets the Deformation Center.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -154,7 +150,6 @@ class HybridShapeBump(HybridShape):
                 | 
                 |     Returns or sets the Deformation Direction.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -183,7 +178,6 @@ class HybridShapeBump(HybridShape):
                 |     Parameters are value are given in the Part Unit
                 |     Example : if Part Unit for dimensions is mm: for 1 mmm, oDefDist.Value will return 1.000
 
-        :return: Length
         :rtype: Length
         """
 
@@ -210,7 +204,6 @@ class HybridShapeBump(HybridShape):
                 |     Note: Distance value is expressed in MKS = Meters
                 |     Example to set up 1mm , use .001
 
-        :return: float
         :rtype: float
         """
 
@@ -235,7 +228,6 @@ class HybridShapeBump(HybridShape):
                 | 
                 |     Returns or sets the limit curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -260,7 +252,6 @@ class HybridShapeBump(HybridShape):
                 | 
                 |     Returns or sets the limit curve.
 
-        :return: Reference
         :rtype: Reference
         """
 

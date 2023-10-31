@@ -55,7 +55,6 @@ class Capture(AnyObject):
                 | 
                 |     Retrieves the active view for the capture.
 
-        :return: TPSView
         :rtype: TPSView
         """
 
@@ -82,7 +81,6 @@ class Capture(AnyObject):
                 |     describes what happens when Capture is displayed, if TRUE, the active view of
                 |     the tolerancing set is replaced by the active view of the capture.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -107,7 +105,6 @@ class Capture(AnyObject):
                 | 
                 |     Retrieves the TPSs that are visualy managed by this Capture.
 
-        :return: Annotations
         :rtype: Annotations
         """
         from pycatia.cat_tps_interfaces.annotations import Annotations
@@ -132,7 +129,6 @@ class Capture(AnyObject):
                 | 
                 |     Retrieves or sets a camera.
 
-        :return: Camera3D
         :rtype: Camera3D
         """
 
@@ -165,7 +161,6 @@ class Capture(AnyObject):
                 |         oClipPlane
                 |             The clipping plane state.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -197,7 +192,6 @@ class Capture(AnyObject):
                 |             the creation of the capture, the future TPSs that would be added to the
                 |             document will belong to the capture.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -229,7 +223,6 @@ class Capture(AnyObject):
                 |             TRUE: If Hide/Show of these elements will be managed FALSE: If
                 |             Hide/Show of these elements will not be managed
 
-        :return: bool
         :rtype: bool
         """
 
@@ -254,7 +247,6 @@ class Capture(AnyObject):
                 | 
                 |     Retrieves tolerancing set the Capture belongs too.
 
-        :return: AnnotationSet
         :rtype: AnnotationSet
         """
         from pycatia.cat_tps_interfaces.annotation_set import AnnotationSet
@@ -271,7 +263,6 @@ class Capture(AnyObject):
                 | 
                 |     Retrieves the TPS Views that are visualy managed by this Capture.
 
-        :return: TPSViews
         :rtype: TPSViews
         """
 
@@ -298,7 +289,6 @@ class Capture(AnyObject):
                 |     what happens when Capture is displayed, if TRUE, the 3D Camera of the Capture
                 |     is used to change the 3D ViewPoint.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -322,7 +312,6 @@ class Capture(AnyObject):
                 | 
                 |     Displays the Capture.
 
-        :return: None
         :rtype: None
         """
         return self.capture.DisplayCapture()
@@ -346,7 +335,6 @@ class Capture(AnyObject):
                 |             desactivated.
 
         :param bool ib_apply_mirror:
-        :return: None
         :rtype: None
         """
         return self.capture.DisplayCapture2(ib_apply_mirror)
@@ -376,7 +364,6 @@ class Capture(AnyObject):
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.
 
-        :return: TPSParallelOnScreen
         :rtype: TPSParallelOnScreen
         """
         return TPSParallelOnScreen(self.capture.TPSParallelOnScreen())

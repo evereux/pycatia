@@ -70,7 +70,6 @@ class SchConnectable(AnyObject):
 
         :param SchListOfBSTRs i_l_cntr_class_filter:
         :param SchGRR i_grr:
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_connectable.ListConnectors(i_l_cntr_class_filter.com_object, i_grr.com_object))

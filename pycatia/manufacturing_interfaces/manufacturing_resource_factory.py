@@ -64,7 +64,6 @@ class ManufacturingResourceFactory(AnyObject):
 
         :param str i_type:
         :param bool i_add_list:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.manufacturing_resource_factory.CreateResource(i_type, i_add_list))

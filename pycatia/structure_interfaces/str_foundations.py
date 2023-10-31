@@ -88,7 +88,6 @@ class StrFoundations(Collection):
                 |          Set ThatFoundation = Assembly.Item("Column_1")
 
         :param cat_variant i_index:
-        :return: StrFoundation
         :rtype: StrFoundation
         """
         return StrFoundation(self.str_foundations.Item(i_index))

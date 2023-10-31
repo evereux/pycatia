@@ -45,7 +45,6 @@ class FunctNodeGraphLayout(FunctionalFacet):
                 | 
                 |     Returns the Height coordinate.
 
-        :return: float
         :rtype: float
         """
 
@@ -62,7 +61,6 @@ class FunctNodeGraphLayout(FunctionalFacet):
                 | 
                 |     Returns the Width coordinate.
 
-        :return: float
         :rtype: float
         """
 
@@ -88,7 +86,6 @@ class FunctNodeGraphLayout(FunctionalFacet):
 
         :param float i_height:
         :param float i_width:
-        :return: None
         :rtype: None
         """
         return self.funct_node_graph_layout.SetHeightAndWidth(i_height, i_width)

@@ -59,7 +59,6 @@ class SchTempListFactory(AnyObject):
                 |          Dim NewList As SchListOfBSTRs
                 |          Set NewList = SchListFact.CreateListOfBSTRs
 
-        :return: SchListOfBSTRs
         :rtype: SchListOfBSTRs
         """
         return SchListOfBSTRs(self.sch_temp_list_factory.CreateListOfBSTRs())
@@ -86,7 +85,6 @@ class SchTempListFactory(AnyObject):
                 |          Dim NewList As SchListOfDoubles
                 |          Set NewList = SchListFact.CreateListOfDoubles
 
-        :return: SchListOfDoubles
         :rtype: SchListOfDoubles
         """
         return SchListOfDoubles(self.sch_temp_list_factory.CreateListOfDoubles())
@@ -112,7 +110,6 @@ class SchTempListFactory(AnyObject):
                 |          Dim NewList As SchListOfLongs
                 |          Set NewList = SchListFact.CreateListOfLongs
 
-        :return: SchListOfLongs
         :rtype: SchListOfLongs
         """
         return SchListOfLongs(self.sch_temp_list_factory.CreateListOfLongs())
@@ -139,7 +136,6 @@ class SchTempListFactory(AnyObject):
                 |          Dim NewList As SchListOfObjects
                 |          Set NewList = SchListFact.CreateListOfObjects
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_temp_list_factory.CreateListOfObjects())

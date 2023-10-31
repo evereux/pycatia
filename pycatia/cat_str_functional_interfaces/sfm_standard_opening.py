@@ -74,7 +74,6 @@ class SFMStandardOpening(AnyObject):
 
         :param str o_contour_name:
         :param SFMStandardContourParameters o_list_contour_params:
-        :return: None
         :rtype: None
         """
         return self.sfm_standard_opening.GetContour(o_contour_name, o_list_contour_params.com_object)
@@ -135,7 +134,6 @@ class SFMStandardOpening(AnyObject):
 
         :param str o_pos_strategy_name:
         :param SFMStandardPosStrategyParameters o_list_pos_params:
-        :return: None
         :rtype: None
         """
         return self.sfm_standard_opening.GetPositioningStrategy(o_pos_strategy_name, o_list_pos_params.com_object)
@@ -216,7 +214,6 @@ class SFMStandardOpening(AnyObject):
 
         :param str i_contour_name:
         :param SFMStandardContourParameters i_list_contour_params:
-        :return: None
         :rtype: None
         """
         return self.sfm_standard_opening.SetContour(i_contour_name, i_list_contour_params.com_object)
@@ -300,7 +297,6 @@ class SFMStandardOpening(AnyObject):
 
         :param str i_pos_strategy_name:
         :param SFMStandardPosStrategyParameters i_list_pos_params:
-        :return: None
         :rtype: None
         """
         return self.sfm_standard_opening.SetPositioningStrategy(i_pos_strategy_name, i_list_pos_params.com_object)

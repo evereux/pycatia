@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.3
+
+* renamed wrongly named enumeration_types where 2d or 3d are in name.
+* added references for all enumeration_types throughout pycatia where I could
+  find them. These are labelled for example `:param int value: enum cat_circular_pattern_parameters`.
+* various type hinting additions where they were missing.
+* Extended `parameters.item()` for parameter type lists. @Mithro86
+
 ## 0.6.2
 
 * reformatted HybridShapeFactory class to better readability.

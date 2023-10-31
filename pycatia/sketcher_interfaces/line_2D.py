@@ -57,7 +57,6 @@ class Line2D(Curve2D):
                 |             The Y Coordinate of the unit vector pointing in the direction of
                 |             the line
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -90,7 +89,6 @@ class Line2D(Curve2D):
                 |         oPoint[1]
                 |             The Y Coordinate of a point lying on the line
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -136,7 +134,6 @@ class Line2D(Curve2D):
         :param float i_y:
         :param float i_x_direction:
         :param float i_y_direction:
-        :return: None
         :rtype: None
         """
         return self.line_2d.SetData(i_x, i_y, i_x_direction, i_y_direction)

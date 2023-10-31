@@ -56,7 +56,6 @@ class ABQIAABQSteadyStateLinDynStepSubspaceVB(ABQIAABQSteadyStateLinDynStepBasic
                 |     Returns:
                 |         The Maximum Damping Change. Applicable only for Projection Type = As a function of property changes.
 
-        :return: float
         :rtype: float
         """
 
@@ -84,7 +83,6 @@ class ABQIAABQSteadyStateLinDynStepSubspaceVB(ABQIAABQSteadyStateLinDynStepBasic
                 |     Returns:
                 |         The Maximum Stiffness Change. Applicable only for Projection Type = As a function of property changes.
 
-        :return: float
         :rtype: float
         """
 
@@ -112,7 +110,6 @@ class ABQIAABQSteadyStateLinDynStepSubspaceVB(ABQIAABQSteadyStateLinDynStepBasic
                 |     Returns:
                 |         A boolean specifying whether the Subspace Response is used.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -153,7 +150,6 @@ class ABQIAABQSteadyStateLinDynStepSubspaceVB(ABQIAABQSteadyStateLinDynStepBasic
                 | 
                 |              abqSSDStep.SubspaceProjectionType = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -193,7 +189,6 @@ class ABQIAABQSteadyStateLinDynStepSubspaceVB(ABQIAABQSteadyStateLinDynStepBasic
                 | 
                 |              abqSSDStep.SubspaceResponase = 1
 
-        :return: int
         :rtype: int
         """
 

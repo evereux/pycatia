@@ -76,7 +76,6 @@ class HybridShapeScaling(HybridShape):
                 |          Dim RefElem As Reference
                 |          Set RefElem = Scaling.Center
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -112,7 +111,6 @@ class HybridShapeScaling(HybridShape):
                 | 
                 |          hybShpScaling.CreationMode = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -144,7 +142,6 @@ class HybridShapeScaling(HybridShape):
                 |          Dim Elem As Reference
                 |          Set Elem = Scaling.ElemToScale
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -169,7 +166,6 @@ class HybridShapeScaling(HybridShape):
                 | 
                 |     Returns the scaling ratio.
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -193,7 +189,6 @@ class HybridShapeScaling(HybridShape):
                 |          Dim Value As double
                 |          Set Value = Scaling.RatioValue
 
-        :return: float
         :rtype: float
         """
 
@@ -229,7 +224,6 @@ class HybridShapeScaling(HybridShape):
                 | 
                 |          hybShpScaling.VolumeResult = True
 
-        :return: bool
         :rtype: bool
         """
 

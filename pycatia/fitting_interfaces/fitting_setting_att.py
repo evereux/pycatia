@@ -75,7 +75,6 @@ class FittingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fitting_setting_att.GetAngleLimitInfo(io_admin_level, io_locked)
@@ -112,7 +111,6 @@ class FittingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fitting_setting_att.GetClashWhileMovingInfo(io_admin_level, io_locked)
@@ -149,7 +147,6 @@ class FittingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fitting_setting_att.GetDefaultSpeedInfo(io_admin_level, io_locked)
@@ -186,7 +183,6 @@ class FittingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fitting_setting_att.GetDefaultTimeInfo(io_admin_level, io_locked)
@@ -223,7 +219,6 @@ class FittingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fitting_setting_att.GetMaxAngleInfo(io_admin_level, io_locked)
@@ -260,7 +255,6 @@ class FittingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fitting_setting_att.GetPathFinderSmoothInfo(io_admin_level, io_locked)
@@ -297,7 +291,6 @@ class FittingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fitting_setting_att.GetTrackAutoUpdateInfo(io_admin_level, io_locked)
@@ -334,7 +327,6 @@ class FittingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fitting_setting_att.GetVectorInfo(io_admin_level, io_locked)
@@ -366,7 +358,6 @@ class FittingSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fitting_setting_att.SetAngleLimitLock(i_locked)
@@ -413,7 +404,6 @@ class FittingSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fitting_setting_att.SetClashWhileMovingLock(i_locked)
@@ -460,7 +450,6 @@ class FittingSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fitting_setting_att.SetDefaultSpeedLock(i_locked)
@@ -507,7 +496,6 @@ class FittingSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fitting_setting_att.SetDefaultTimeLock(i_locked)
@@ -554,7 +542,6 @@ class FittingSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fitting_setting_att.SetMaxAngleLock(i_locked)
@@ -601,7 +588,6 @@ class FittingSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fitting_setting_att.SetPathFinderSmoothLock(i_locked)
@@ -648,7 +634,6 @@ class FittingSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fitting_setting_att.SetTrackAutoUpdateLock(i_locked)
@@ -695,7 +680,6 @@ class FittingSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fitting_setting_att.SetVectorLock(i_locked)

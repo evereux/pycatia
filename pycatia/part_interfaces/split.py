@@ -13,7 +13,6 @@ from pycatia.part_interfaces.surface_based_shape import SurfaceBasedShape
 
 
 class Split(SurfaceBasedShape):
-
     """
         .. note::
             :class: toggle
@@ -60,7 +59,7 @@ class Split(SurfaceBasedShape):
                 |          Set sptSide = mySplit.SplittingSide
                 |          mySplit.SplittingSide = catPositiveSide
 
-        :return: int
+        :return: enum cat_split_side
         :rtype: int
         """
 
@@ -69,10 +68,10 @@ class Split(SurfaceBasedShape):
     @splitting_side.setter
     def splitting_side(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_split_side
         """
 
         self.split.SplittingSide = value
 
     def __repr__(self):
-        return f'Split(name="{ self.name }")'
+        return f'Split(name="{self.name}")'

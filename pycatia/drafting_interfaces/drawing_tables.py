@@ -89,7 +89,6 @@ class DrawingTables(Collection):
         :param int i_number_of_column:
         :param float i_row_height:
         :param float i_column_width:
-        :return: DrawingTable
         :rtype: DrawingTable
         """
         return DrawingTable(
@@ -135,7 +134,6 @@ class DrawingTables(Collection):
                 |          Set ThisDrawingTable = MyView.Tables.Item(2)
 
         :param int i_index:
-        :return: DrawingTable
         :rtype: DrawingTable
         """
         return DrawingTable(self.drawing_tables.Item(i_index))

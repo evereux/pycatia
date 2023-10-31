@@ -48,7 +48,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 | 
                 |     Tells if Product Structure Cache Mode will be handled.
 
-        :return: int
         :rtype: int
         """
 
@@ -73,7 +72,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 | 
                 |     Retrieves if pointed document will be loaded.
 
-        :return: int
         :rtype: int
         """
 
@@ -98,7 +96,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 | 
                 |     Tells if Automatic naming will be activated.
 
-        :return: int
         :rtype: int
         """
 
@@ -123,7 +120,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 | 
                 |     Retrieves if a default analysis Case will be created.
 
-        :return: int
         :rtype: int
         """
 
@@ -148,7 +144,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 | 
                 |     Retrieves the name of the default analysis Case that will be created.
 
-        :return: str
         :rtype: str
         """
 
@@ -174,7 +169,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 |     Retrieves if the Parameter set is visible in the feature tree of the
                 |     analysis document.
 
-        :return: int
         :rtype: int
         """
 
@@ -200,7 +194,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 |     Retrieves if the Relation set is visible in the feature tree of the
                 |     analysis document.
 
-        :return: int
         :rtype: int
         """
 
@@ -249,7 +242,6 @@ class AnalysisGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_general_setting_att.GetAnalysisCacheModeInfo(io_admin_level, io_locked)
@@ -289,7 +281,6 @@ class AnalysisGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_general_setting_att.GetAnalysisLoadModeInfo(io_admin_level, io_locked)
@@ -329,7 +320,6 @@ class AnalysisGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_general_setting_att.GetAnalysisNamingAutoInfo(io_admin_level, io_locked)
@@ -369,7 +359,6 @@ class AnalysisGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_general_setting_att.GetDefaultAnalysisFlagInfo(io_admin_level, io_locked)
@@ -410,7 +399,6 @@ class AnalysisGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_general_setting_att.GetDefaultAnalysisTemplateInfo(io_admin_level, io_locked)
@@ -450,7 +438,6 @@ class AnalysisGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_general_setting_att.GetViewAnalysisParameterInfo(io_admin_level, io_locked)
@@ -490,7 +477,6 @@ class AnalysisGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_general_setting_att.GetViewAnalysisRelationInfo(io_admin_level, io_locked)
@@ -522,7 +508,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_general_setting_att.SetAnalysisCacheModeLock(i_locked)
@@ -569,7 +554,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_general_setting_att.SetAnalysisLoadModeLock(i_locked)
@@ -616,7 +600,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_general_setting_att.SetAnalysisNamingAutoLock(i_locked)
@@ -663,7 +646,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_general_setting_att.SetDefaultAnalysisFlagLock(i_locked)
@@ -710,7 +692,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_general_setting_att.SetDefaultAnalysisTemplateLock(i_locked)
@@ -757,7 +738,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_general_setting_att.SetViewAnalysisParameterLock(i_locked)
@@ -804,7 +784,6 @@ class AnalysisGeneralSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_general_setting_att.SetViewAnalysisRelationLock(i_locked)

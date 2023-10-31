@@ -69,7 +69,6 @@ class MachiningProcess(ManufacturingActivity):
                 |          Set mpReference = ...
                 |          mpReference.InsertionLevel = programReference
 
-        :return: ManufacturingActivity
         :rtype: ManufacturingActivity
         """
 
@@ -99,7 +98,6 @@ class MachiningProcess(ManufacturingActivity):
                 |         oMfgActivities
                 |             The Manufacturing Activities list
 
-        :return: MfgActivities
         :rtype: MfgActivities
         """
         return ManufacturingActivities(self.machining_process.GetActivities())
@@ -149,7 +147,6 @@ class MachiningProcess(ManufacturingActivity):
 
         :param str i_activity_type:
         :param ManufacturingActivity i_referenced_activity:
-        :return: ManufacturingActivity
         :rtype: ManufacturingActivity
         """
         return ManufacturingActivity(
@@ -184,7 +181,6 @@ class MachiningProcess(ManufacturingActivity):
                 |          mpReference.Instantiate(DesignFeature)
 
         :param AnyObject i_feature:
-        :return: None
         :rtype: None
         """
         return self.machining_process.Instantiate(i_feature.com_object)
@@ -232,7 +228,6 @@ class MachiningProcess(ManufacturingActivity):
 
         :param AnyObject i_feature:
         :param Product i_product:
-        :return: None
         :rtype: None
         """
         return self.machining_process.InstantiateInProductContext(i_feature.com_object, i_product.com_object)

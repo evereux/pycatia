@@ -67,7 +67,6 @@ class Sketch(AnyObject):
                 | 
                 |              Set myAxis = mySketch.AbsoluteAxis
 
-        :return: Axis2D
         :rtype: Axis2D
         """
 
@@ -96,7 +95,6 @@ class Sketch(AnyObject):
                 | 
                 |              Set myCenterLine = mySketch.CenterLine
 
-        :return: Line2D
         :rtype: Line2D
         """
 
@@ -133,7 +131,6 @@ class Sketch(AnyObject):
                 | 
                 |              Set colConstraint = mySketch.Constraints
 
-        :return: Constraints
         :rtype: Constraints
         """
 
@@ -164,7 +161,6 @@ class Sketch(AnyObject):
                 | 
                 |              Set my2DFactory = mySketch.Factory2D
 
-        :return: Factory2D
         :rtype: Factory2D
         """
 
@@ -195,7 +191,6 @@ class Sketch(AnyObject):
                 | 
                 |              Set colGeometry = mySketch.GeometricElements
 
-        :return: GeometricElements
         :rtype: GeometricElements
         """
 
@@ -220,7 +215,6 @@ class Sketch(AnyObject):
                 | 
                 |          mySketch.CloseEdition
 
-        :return: None
         :rtype: None
         """
         return self.sketch.CloseEdition()
@@ -235,7 +229,6 @@ class Sketch(AnyObject):
                 | 
                 |     Evaluate the constraint system of the sketch
 
-        :return: None
         :rtype: None
         """
         return self.sketch.Evaluate()
@@ -277,7 +270,6 @@ class Sketch(AnyObject):
                 |              Set VerticalY = myAxisCoordinate(8)
                 |              Set VerticalZ = myAxisCoordinate(9)
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -303,7 +295,6 @@ class Sketch(AnyObject):
                 | 
                 |     Inverse Orientation Of Sketch
 
-        :return: None
         :rtype: None
         """
         return self.sketch.InverseOrientation()
@@ -332,7 +323,6 @@ class Sketch(AnyObject):
                 | 
                 |              Set my2DFactory = mySketch.OpenEdition
 
-        :return: Factory2D
         :rtype: Factory2D
         """
         return Factory2D(self.sketch.OpenEdition())
@@ -358,7 +348,6 @@ class Sketch(AnyObject):
                 |             axis.
 
         :param tuple i_axis_data:
-        :return: None
         :rtype: None
         """
         return self.sketch.SetAbsoluteAxisData(i_axis_data)

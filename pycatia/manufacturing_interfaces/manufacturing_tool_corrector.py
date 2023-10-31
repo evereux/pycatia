@@ -46,7 +46,6 @@ class ManufacturingToolCorrector(AnyObject):
                 |     Gives the corrector diameter tool diameter.
                 |     Returns HRESULT.
 
-        :return: float
         :rtype: float
         """
 
@@ -64,7 +63,6 @@ class ManufacturingToolCorrector(AnyObject):
                 |     Gives the corrector length number.
                 |     Returns HRESULT.
 
-        :return: int
         :rtype: int
         """
 
@@ -82,7 +80,6 @@ class ManufacturingToolCorrector(AnyObject):
                 |     Gives the corrector number.
                 |     Returns HRESULT.
 
-        :return: int
         :rtype: int
         """
 
@@ -101,7 +98,6 @@ class ManufacturingToolCorrector(AnyObject):
                 |     oPoint : Type point (Ex: P1, ..., P9)
                 |     Returns HRESULT.
 
-        :return: str
         :rtype: str
         """
 
@@ -119,7 +115,6 @@ class ManufacturingToolCorrector(AnyObject):
                 |     Gives the corrector radius number.
                 |     Returns HRESULT.
 
-        :return: int
         :rtype: int
         """
 
@@ -145,7 +140,6 @@ class ManufacturingToolCorrector(AnyObject):
                 |     oDiameter : Tool Diameter where corrector applyes (if non fixed corrector)
                 |     Returns HRESULT.
 
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_tool_corrector.GetValues()
@@ -182,7 +176,6 @@ class ManufacturingToolCorrector(AnyObject):
         :param int o_length_number:
         :param int o_radius_number:
         :param float o_diameter:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_tool_corrector.SetValues(

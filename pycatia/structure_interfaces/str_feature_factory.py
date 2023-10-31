@@ -250,7 +250,6 @@ class StrFeatureFactory(AnyObject):
 
         :param Reference i_contour:
         :param Reference i_direction:
-        :return: StrCutoutFeature
         :rtype: StrCutoutFeature
         """
         return StrCutoutFeature(
@@ -310,7 +309,6 @@ class StrFeatureFactory(AnyObject):
 
         :param Reference i_contour:
         :param Reference i_surface:
-        :return: StrCutoutFeature
         :rtype: StrCutoutFeature
         """
         return StrCutoutFeature(
@@ -359,7 +357,6 @@ class StrFeatureFactory(AnyObject):
 
         :param tuple i_list_of_limiting_elements:
         :param str i_nibbling_type:
-        :return: StrNibblingFeature
         :rtype: StrNibblingFeature
         """
         return StrNibblingFeature(self.str_feature_factory.AddNibbling(i_list_of_limiting_elements, i_nibbling_type))

@@ -69,7 +69,6 @@ class HybridShapeLineTangency(Line):
                 |          Dim oStart As  CATIALength 
                 |          Set oStart = LineTangency.BeginOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -96,7 +95,6 @@ class HybridShapeLineTangency(Line):
                 |          Dim oCurve As Reference
                 |          Set oCurve = LineTangency.Curve
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -129,7 +127,6 @@ class HybridShapeLineTangency(Line):
                 |          Dim oEnd As  CATIALength 
                 |          Set oEnd = LineTangency.EndOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -157,7 +154,6 @@ class HybridShapeLineTangency(Line):
                 |          Dim oOrientation As long
                 |          Set oOrientation = LineTangency.Orientation
 
-        :return: int
         :rtype: int
         """
 
@@ -190,7 +186,6 @@ class HybridShapeLineTangency(Line):
                 |          Dim oPoint As Reference
                 |          Set oPoint = LineTangency.Point
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -225,7 +220,6 @@ class HybridShapeLineTangency(Line):
                 |          Dim oSurface As Reference
                 |          Set oSurface = LineTangency.Surface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -256,7 +250,6 @@ class HybridShapeLineTangency(Line):
                 |             the line is infinite = 2 : infinite start point - the line is infinite on the side of the
                 |             start point = 3 : infinite end point - the line is infinite on the side of the end point
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_line_tangency.GetLengthType()
@@ -277,7 +270,6 @@ class HybridShapeLineTangency(Line):
                 |         oSym
                 |             Symetry flag
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_line_tangency.GetSymmetricalExtension()
@@ -292,7 +284,6 @@ class HybridShapeLineTangency(Line):
                 | 
                 |     Removes the support surface.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_tangency.RemoveSupport()
@@ -316,7 +307,6 @@ class HybridShapeLineTangency(Line):
                 |             of the end point
 
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_tangency.SetLengthType(i_type)
@@ -337,7 +327,6 @@ class HybridShapeLineTangency(Line):
                 |             Symetry flag
 
         :param bool i_sym:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_tangency.SetSymmetricalExtension(i_sym)

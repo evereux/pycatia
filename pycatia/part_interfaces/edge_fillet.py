@@ -64,7 +64,7 @@ class EdgeFillet(Fillet):
                 |          Set mode = firstEdgeFillet.EdgePropagation
                 |          Set firstEdgeFillet.EdgePropagation = CATMinimalFilletEdgePropagation
 
-        :return: int
+        :return: enum cat_fillet_edge_propagation
         :rtype: int
         """
 
@@ -73,7 +73,7 @@ class EdgeFillet(Fillet):
     @edge_propagation.setter
     def edge_propagation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_fillet_edge_propagation
         """
 
         self.edge_fillet.EdgePropagation = value
@@ -96,7 +96,6 @@ class EdgeFillet(Fillet):
                 | 
                 |          Set edges = firstCstEdgeFillet.EdgesToKeep
 
-        :return: References
         :rtype: References
         """
 
@@ -128,7 +127,6 @@ class EdgeFillet(Fillet):
                 |      firstCstEdgeFillet.AddEdgeToKeep(edge)
 
         :param Reference i_edge_to_keep:
-        :return: None
         :rtype: None
         """
         return self.edge_fillet.AddEdgeToKeep(i_edge_to_keep.com_object)
@@ -175,7 +173,6 @@ class EdgeFillet(Fillet):
                 |      firstCstEdgeFillet.WithdrawEdgeToKeep(edge)
 
         :param Reference i_edge_to_withdraw:
-        :return: None
         :rtype: None
         """
         return self.edge_fillet.WithdrawEdgeToKeep(i_edge_to_withdraw.com_object)

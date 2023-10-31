@@ -69,7 +69,6 @@ class Publications(Collection):
                 |              Set Pub1 = Prod1.Add(PubName)
 
         :param str i_public_name:
-        :return: Publication
         :rtype: Publication
         """
         return Publication(self.publications.Add(i_public_name))
@@ -99,7 +98,6 @@ class Publications(Collection):
                 |              Set Pub1 = Prod1.Item(PubId)
 
         :param cat_variant i_identifier:
-        :return: Publication
         :rtype: Publication
         """
         return Publication(self.publications.Item(i_identifier))
@@ -126,7 +124,6 @@ class Publications(Collection):
                 |              Prod1.Remove(PubId)
 
         :param str i_identifier:
-        :return: None
         :rtype: None
         """
         return self.publications.Remove(i_identifier)
@@ -162,7 +159,6 @@ class Publications(Collection):
 
         :param cat_variant i_identifier:
         :param Reference i_pointed:
-        :return: None
         :rtype: None
         """
         return self.publications.SetDirect(i_identifier, i_pointed.com_object)
@@ -215,7 +211,6 @@ class Publications(Collection):
         :param cat_variant i_identifier:
         :param Publications i_relayer:
         :param cat_variant i_name_in_relay:
-        :return: None
         :rtype: None
         """
         return self.publications.SetRelay(i_identifier, i_relayer.com_object, i_name_in_relay)

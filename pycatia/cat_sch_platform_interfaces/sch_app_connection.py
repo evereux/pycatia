@@ -62,7 +62,6 @@ class SchAppConnection(AnyObject):
                 |          objThisIntf.AppAddConnectorobjArg1
 
         :param SchAppConnector i_cntr_to_add:
-        :return: None
         :rtype: None
         """
         return self.sch_app_connection.AppAddConnector(i_cntr_to_add.com_object)
@@ -130,7 +129,6 @@ class SchAppConnection(AnyObject):
         :param SchListOfBSTRs i_l_cntble_class_filter:
         :param SchListOfObjects o_l_cntbles:
         :param SchListOfObjects o_l_cntrs:
-        :return: None
         :rtype: None
         """
         return self.sch_app_connection.AppListConnectables(
@@ -185,7 +183,6 @@ class SchAppConnection(AnyObject):
                 |          Set objArg2 = objThisIntf.AppListConnectors(objArg1)
 
         :param SchListOfBSTRs i_l_cntr_class_filter:
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_app_connection.AppListConnectors(i_l_cntr_class_filter.com_object))
@@ -215,7 +212,6 @@ class SchAppConnection(AnyObject):
                 |          objThisIntf.AppRemoveConnectorobjArg1
 
         :param SchAppConnector i_cntr_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_app_connection.AppRemoveConnector(i_cntr_to_remove.com_object)

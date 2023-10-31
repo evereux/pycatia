@@ -54,7 +54,6 @@ class PSPClass(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.StartUpConnectors
 
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
 
@@ -78,7 +77,6 @@ class PSPClass(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.StartupFunctions
 
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
 
@@ -102,7 +100,6 @@ class PSPClass(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.StartupPhysicals
 
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
 

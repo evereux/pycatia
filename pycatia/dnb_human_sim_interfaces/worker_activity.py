@@ -60,7 +60,6 @@ class WorkerActivity(Activity):
                 |     Returns:
                 |         oHumanTask (see HumanTask for more details)
 
-        :return: HumanTask
         :rtype: HumanTask
         """
 
@@ -81,7 +80,6 @@ class WorkerActivity(Activity):
                 |     Returns:
                 |         oManikin (see SWKManikin for more details)
 
-        :return: SWKManikin
         :rtype: SWKManikin
         """
 

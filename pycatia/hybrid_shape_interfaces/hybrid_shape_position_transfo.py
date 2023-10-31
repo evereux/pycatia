@@ -73,7 +73,6 @@ class HybridShapePositionTransfo(HybridShape):
                 |                 of the profile at the origin(the origin then HAS to be on the profile).
                 |             2 : the X axis is specified by a direction by SetPositionDirection(1,UserInputDirection).
 
-        :return: int
         :rtype: int
         """
 
@@ -106,7 +105,6 @@ class HybridShapePositionTransfo(HybridShape):
                 |         sweep plane
                 |     CATGSMPositionMode_Develop
 
-        :return: int
         :rtype: int
         """
 
@@ -131,7 +129,6 @@ class HybridShapePositionTransfo(HybridShape):
                 | 
                 |     Returns or sets the profile to be positioned.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -160,7 +157,6 @@ class HybridShapePositionTransfo(HybridShape):
                 |         oI
                 |             Number of parameters
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_position_transfo.GetNbPosAngle()
@@ -180,7 +176,6 @@ class HybridShapePositionTransfo(HybridShape):
                 |         oI
                 |             Number of parameters
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_position_transfo.GetNbPosCoord()
@@ -205,7 +200,6 @@ class HybridShapePositionTransfo(HybridShape):
                 |             The angle value.
 
         :param int i_i:
-        :return: Angle
         :rtype: Angle
         """
         return Angle(self.hybrid_shape_position_transfo.GetPosAngle(i_i))
@@ -230,7 +224,6 @@ class HybridShapePositionTransfo(HybridShape):
                 |             The coordinate value
 
         :param int ii:
-        :return: Length
         :rtype: Length
         """
         return Length(self.hybrid_shape_position_transfo.GetPosCoord(ii))
@@ -255,7 +248,6 @@ class HybridShapePositionTransfo(HybridShape):
                 |             The origin point
 
         :param int ii:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_position_transfo.GetPosPoint(ii))
@@ -289,7 +281,6 @@ class HybridShapePositionTransfo(HybridShape):
                 |                 Both axes inverted
 
         :param int ii:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_position_transfo.GetPosSwapAxes(ii)
@@ -315,7 +306,6 @@ class HybridShapePositionTransfo(HybridShape):
                 |             The direction element
 
         :param int i_i:
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
         return HybridShapeDirection(self.hybrid_shape_position_transfo.GetPositionDirection(i_i))
@@ -330,7 +320,6 @@ class HybridShapePositionTransfo(HybridShape):
                 | 
                 |     Removes all numerical positioning parameters : first axis direction angles.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_position_transfo.RemoveAllPosAngle()
@@ -345,7 +334,6 @@ class HybridShapePositionTransfo(HybridShape):
                 | 
                 |     Removes all numerical positioning parameters : origin planar coordinates.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_position_transfo.RemoveAllPosCoord()
@@ -371,7 +359,6 @@ class HybridShapePositionTransfo(HybridShape):
 
         :param int i_i:
         :param Angle i_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_position_transfo.SetPosAngle(i_i, i_angle.com_object)
@@ -413,7 +400,6 @@ class HybridShapePositionTransfo(HybridShape):
 
         :param int i_i:
         :param Length i_coordinate:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_position_transfo.SetPosCoord(i_i, i_coordinate.com_object)
@@ -455,7 +441,6 @@ class HybridShapePositionTransfo(HybridShape):
 
         :param int i_i:
         :param Reference i_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_position_transfo.SetPosPoint(i_i, i_elem.com_object)
@@ -506,7 +491,6 @@ class HybridShapePositionTransfo(HybridShape):
 
         :param int ii:
         :param int i_inversion:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_position_transfo.SetPosSwapAxes(ii, i_inversion)
@@ -534,7 +518,6 @@ class HybridShapePositionTransfo(HybridShape):
 
         :param int i_i:
         :param HybridShapeDirection i_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_position_transfo.SetPositionDirection(i_i, i_elem.com_object)

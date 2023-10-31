@@ -73,7 +73,6 @@ class HybridShapeExtrude(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Length
         :rtype: Length
         """
 
@@ -104,7 +103,6 @@ class HybridShapeExtrude(HybridShape):
                 |          Dim oContext
                 |          Set oContext = Extrude1.Context
 
-        :return: int
         :rtype: int
         """
 
@@ -143,7 +141,6 @@ class HybridShapeExtrude(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -185,7 +182,6 @@ class HybridShapeExtrude(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Length
         :rtype: Length
         """
 
@@ -216,7 +212,6 @@ class HybridShapeExtrude(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -258,7 +253,6 @@ class HybridShapeExtrude(HybridShape):
                 |      Dim oLim1Type
                 |      Set oLim1Type = Extrude.FirstLimitType
 
-        :return: int
         :rtype: int
         """
 
@@ -291,7 +285,6 @@ class HybridShapeExtrude(HybridShape):
                 |          Dim Lim1Elem As Reference 
                 |          Set Lim1Elem = Extrude.FirstUptoElement
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -322,7 +315,6 @@ class HybridShapeExtrude(HybridShape):
                 |      Dim IsInverted As boolean
                 |      IsInverted = Extrude.Orientation
 
-        :return: bool
         :rtype: bool
         """
 
@@ -364,7 +356,6 @@ class HybridShapeExtrude(HybridShape):
                 |      Dim oLim2Type
                 |      Set oLim2Type = Extrude.SecondLimitType
 
-        :return: int
         :rtype: int
         """
 
@@ -397,7 +388,6 @@ class HybridShapeExtrude(HybridShape):
                 |          Dim Lim2Elem As Reference 
                 |          Set Lim2Elem = Extrude.SecondUptoElement
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -427,7 +417,6 @@ class HybridShapeExtrude(HybridShape):
                 |         iSym
                 |             Symetry flag
 
-        :return: bool
         :rtype: bool
         """
 

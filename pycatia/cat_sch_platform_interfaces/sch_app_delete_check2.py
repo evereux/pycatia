@@ -59,7 +59,6 @@ class SchAppDeleteCheck2(AnyObject):
                 |          objThisIntf.AppOkToDeletebVar1
 
         :param bool o_ok:
-        :return: None
         :rtype: None
         """
         return self.sch_app_delete_check2.AppOkToDelete(o_ok)

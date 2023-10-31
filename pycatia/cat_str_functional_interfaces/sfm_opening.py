@@ -62,7 +62,6 @@ class SFMOpening(AnyObject):
                 |          Dim CreationMode As Long
                 |          CreationMode = OpenFact.CreationMode
 
-        :return: int
         :rtype: int
         """
 
@@ -96,7 +95,6 @@ class SFMOpening(AnyObject):
                 |          Set DirRef = part1.CreateReferenceFromObject(Dir)
                 |          Opening1.Direction = DirRef
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -138,7 +136,6 @@ class SFMOpening(AnyObject):
                 |          Set sketchref = part1.CreateReferenceFromObject(Sketch)
                 |          Opening1.IntersectingElement = sketchref
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -174,7 +171,6 @@ class SFMOpening(AnyObject):
                 |          Set GSDSurfref = part1.CreateReferenceFromObject(GSDSurf)
                 |          Opening1.MoldedSurface = GSDSurfref
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -216,7 +212,6 @@ class SFMOpening(AnyObject):
                 |              y = Dir(1)
                 |              z = Dir(2)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.sfm_opening.GetDirection()
@@ -256,7 +251,6 @@ class SFMOpening(AnyObject):
                 |              Dim status As Long
                 |              status = OpenFact.IsAPlateOpening
 
-        :return: int
         :rtype: int
         """
         return self.sfm_opening.IsAPlateOpening()
@@ -288,7 +282,6 @@ class SFMOpening(AnyObject):
                 |              Set OpenFact = Sel.FindObject("CATIASfmOpening")
                 |              OpenFact.SetMasterMode
 
-        :return: None
         :rtype: None
         """
         return self.sfm_opening.SetMasterMode()

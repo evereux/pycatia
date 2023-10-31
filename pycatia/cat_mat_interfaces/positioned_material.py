@@ -52,7 +52,6 @@ class PositionedMaterial(AnyObject):
                 |         1: Material has been applied as a link on the
                 |         geometrical object
 
-        :return: int
         :rtype: int
         """
 
@@ -76,7 +75,6 @@ class PositionedMaterial(AnyObject):
                 |         2: The material do not accept material propagated by
                 |            its father (forced mode)
 
-        :return: int
         :rtype: int
         """
 
@@ -102,7 +100,6 @@ class PositionedMaterial(AnyObject):
                 |     Returns the material object from the current positioned
                 |     material.
 
-        :return: Material
         :rtype: Material
         """
 

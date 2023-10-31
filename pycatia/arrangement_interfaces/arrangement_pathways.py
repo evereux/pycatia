@@ -67,7 +67,6 @@ class ArrangementPathways(Collection):
         :param Move i_rel_axis:
         :param tuple i_listof_math_points:
         :param tuple i_math_direction:
-        :return: ArrangementPathway
         :rtype: ArrangementPathway
         """
         return ArrangementPathway(
@@ -107,7 +106,6 @@ class ArrangementPathways(Collection):
                 |         The retrieved ArrangementPathway object.
 
         :param cat_variant i_index:
-        :return: ArrangementPathway
         :rtype: ArrangementPathway
         """
         return ArrangementPathway(self.arrangement_pathways.Item(i_index))
@@ -139,7 +137,6 @@ class ArrangementPathways(Collection):
                 |         AnyObject.Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.arrangement_pathways.Remove(i_index)

@@ -67,7 +67,6 @@ class Optimizations(Collection):
         :param str i_name:
         :param str i_comment:
         :param str i_formula_body:
-        :return: SetOfEquation
         :rtype: SetOfEquation
         """
         return SetOfEquation(self.optimizations.CreateConstraintsSatisfaction(i_name, i_comment, i_formula_body))
@@ -83,7 +82,6 @@ class Optimizations(Collection):
                 |     Creates an empty optimization.
                 |     This optimization cannot be used while its properties have not been set.
 
-        :return: Optimization
         :rtype: Optimization
         """
         return Optimization(self.optimizations.CreateOptimization())
@@ -122,7 +120,6 @@ class Optimizations(Collection):
                 |          Set lastItem = optimizations.Item(optimizations.Count)
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.optimizations.Item(i_index))

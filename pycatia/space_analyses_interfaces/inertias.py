@@ -72,7 +72,6 @@ class Inertias(Collection):
                 |             Set NewInertia = TheInertias.Add(TheProduct)
 
         :param AnyObject i_object:
-        :return: Inertia
         :rtype: Inertia
         """
         return Inertia(self.inertias.Add(i_object.com_object))
@@ -112,7 +111,6 @@ class Inertias(Collection):
                 |             Set ThatInertia = TheInertias.Item("Inertia Of MyProduct")
 
         :param cat_variant i_index:
-        :return: Inertia
         :rtype: Inertia
         """
         return Inertia(self.inertias.Item(i_index))
@@ -148,7 +146,6 @@ class Inertias(Collection):
                 |             TheInertias.Remove("Inertia Of MyProduct")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.inertias.Remove(i_index)

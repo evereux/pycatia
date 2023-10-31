@@ -47,7 +47,6 @@ class Roughness(AnyObject):
                 | 
                 |     Retrieves or sets roughness applicability.
 
-        :return: int
         :rtype: int
         """
 
@@ -72,7 +71,6 @@ class Roughness(AnyObject):
                 | 
                 |     Retrieves or sets roughness obtention mode.
 
-        :return: int
         :rtype: int
         """
 
@@ -117,7 +115,6 @@ class Roughness(AnyObject):
                 |             The contain of the iIndex field.
 
         :param int i_index:
-        :return: str
         :rtype: str
         """
         return self.roughness.Field(i_index)
@@ -155,7 +152,6 @@ class Roughness(AnyObject):
 
         :param int i_index:
         :param str i_field:
-        :return: None
         :rtype: None
         """
         return self.roughness.SetField(i_index, i_field)
@@ -170,7 +166,6 @@ class Roughness(AnyObject):
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.
 
-        :return: TPSParallelOnScreen
         :rtype: TPSParallelOnScreen
         """
         return TPSParallelOnScreen(self.roughness.TPSParallelOnScreen())

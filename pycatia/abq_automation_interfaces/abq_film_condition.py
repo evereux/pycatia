@@ -51,7 +51,6 @@ class ABQFilmCondition(ABQLoad):
                 |         A boolean specifying whether a nonuniform film coefficient is defined
                 |         in user subroutine FILM.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -80,7 +79,6 @@ class ABQFilmCondition(ABQLoad):
                 |     Returns:
                 |         The number of temperature-dependent film coefficients.
 
-        :return: int
         :rtype: int
         """
 
@@ -102,7 +100,6 @@ class ABQFilmCondition(ABQLoad):
                 |         The reference film coefficient if the film condition is not temperature
                 |         dependent.
 
-        :return: float
         :rtype: float
         """
 
@@ -130,7 +127,6 @@ class ABQFilmCondition(ABQLoad):
                 |     Returns:
                 |         The reference sink temperature.
 
-        :return: float
         :rtype: float
         """
 
@@ -159,7 +155,6 @@ class ABQFilmCondition(ABQLoad):
                 |         A boolean specifying whether the film condition is dependent on
                 |         temperature.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -197,7 +192,6 @@ class ABQFilmCondition(ABQLoad):
 
         :param tuple i_film_coeff:
         :param tuple i_temperature:
-        :return: None
         :rtype: None
         """
         return self.abq_film_condition.AddTempDependentFilmCoeffTable(i_film_coeff, i_temperature)
@@ -235,7 +229,6 @@ class ABQFilmCondition(ABQLoad):
                 |             film coefficient with time.
 
         :param str ofilm_amplitude:
-        :return: None
         :rtype: None
         """
         return self.abq_film_condition.GetNameOfFilmCoeffAmplitude()
@@ -258,7 +251,6 @@ class ABQFilmCondition(ABQLoad):
                 |             temperature with time.
 
         :param str osink_amplitude:
-        :return: None
         :rtype: None
         """
         return self.abq_film_condition.GetNameOfSinkAmplitude()
@@ -285,7 +277,6 @@ class ABQFilmCondition(ABQLoad):
 
         :param tuple o_film_coeff:
         :param tuple o_temperature:
-        :return: None
         :rtype: None
         """
         return self.abq_film_condition.GetTempDependentFilmCoeffTable()
@@ -323,7 +314,6 @@ class ABQFilmCondition(ABQLoad):
                 |             coefficient with time.
 
         :param str ifilm_amplitude:
-        :return: None
         :rtype: None
         """
         return self.abq_film_condition.SetNamedFilmCoeffAmplitude(ifilm_amplitude)
@@ -346,7 +336,6 @@ class ABQFilmCondition(ABQLoad):
                 |             temperature with time.
 
         :param str isink_amplitude:
-        :return: None
         :rtype: None
         """
         return self.abq_film_condition.SetNamedSinkAmplitude(isink_amplitude)
