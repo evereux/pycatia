@@ -53,7 +53,6 @@ class ManufacturingTool(AnyObject):
                 | 
                 |          ToolComment=CurrentTool.Comment
 
-        :return: str
         :rtype: str
         """
 
@@ -76,7 +75,6 @@ class ManufacturingTool(AnyObject):
                 | 
                 |          Set NbCorr = CurrentTool.CorrectorCount
 
-        :return: int
         :rtype: int
         """
 
@@ -99,7 +97,6 @@ class ManufacturingTool(AnyObject):
                 | 
                 |          Number = CurrentTool.NumberOfAttributes
 
-        :return: int
         :rtype: int
         """
 
@@ -123,7 +120,6 @@ class ManufacturingTool(AnyObject):
                 | 
                 |          PicturePath=CurrentTool.Picture
 
-        :return: str
         :rtype: str
         """
 
@@ -146,7 +142,6 @@ class ManufacturingTool(AnyObject):
                 | 
                 |          Number = CurrentTool.ToolNumber
 
-        :return: int
         :rtype: int
         """
 
@@ -169,7 +164,6 @@ class ManufacturingTool(AnyObject):
                 | 
                 |          Set ToolType=CurrentTool.ToolType
 
-        :return: str
         :rtype: str
         """
 
@@ -191,7 +185,6 @@ class ManufacturingTool(AnyObject):
                 | 
                 |          Set Corr = CurrentTool.AddCorrector
 
-        :return: ManufacturingToolCorrector
         :rtype: ManufacturingToolCorrector
         """
         return ManufacturingToolCorrector(self.manufacturing_tool.AddCorrector())
@@ -214,7 +207,6 @@ class ManufacturingTool(AnyObject):
                 |          Set Diameter = firstTool.GetAttribute(MfgDiameter)
 
         :param str i_attribute:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.manufacturing_tool.GetAttribute(i_attribute))
@@ -231,7 +223,6 @@ class ManufacturingTool(AnyObject):
                 |     Tool.
 
         :param str i_attribute_name:
-        :return: str
         :rtype: str
         """
         return self.manufacturing_tool.GetAttributeNLSName(i_attribute_name)
@@ -254,7 +245,6 @@ class ManufacturingTool(AnyObject):
                 |          Set Corr = CurrentTool.GetCorrector(index)
 
         :param int index:
-        :return: ManufacturingToolCorrector
         :rtype: ManufacturingToolCorrector
         """
         return ManufacturingToolCorrector(self.manufacturing_tool.GetCorrector(index))
@@ -273,7 +263,6 @@ class ManufacturingTool(AnyObject):
                 |     Parameters are returned in an array of real values.
 
         :param tuple o_list_of_apt_parameters:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_tool.GetListOfAptParameters(o_list_of_apt_parameters)
@@ -317,7 +306,6 @@ class ManufacturingTool(AnyObject):
                 |          firstTool.GetListOfAttributeUnits(TabAttributeUnits)
 
         :param tuple o_list_of_attribute_units:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_tool.GetListOfAttributeUnits(o_list_of_attribute_units)
@@ -356,7 +344,6 @@ class ManufacturingTool(AnyObject):
                 |          call firstTool.GetListOfAttributes(TabAttributes)
 
         :param tuple o_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_tool.GetListOfAttributes(o_list_of_attributes)
@@ -397,7 +384,6 @@ class ManufacturingTool(AnyObject):
                 |          call firstTool.GetListOfGeomAttributes(TabAttributes)
 
         :param tuple o_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_tool.GetListOfGeomAttributes(o_list_of_attributes)

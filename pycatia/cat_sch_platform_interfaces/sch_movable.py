@@ -57,7 +57,6 @@ class SchMovable(AnyObject):
                 |          objThisIntf.Rotate
 
         :param float i_db1_rotation_angle_in_radian:
-        :return: None
         :rtype: None
         """
         return self.sch_movable.Rotate(i_db1_rotation_angle_in_radian)
@@ -85,7 +84,6 @@ class SchMovable(AnyObject):
                 |          objThisIntf.Scale
 
         :param float i_db1_scale_factor:
-        :return: None
         :rtype: None
         """
         return self.sch_movable.Scale(i_db1_scale_factor)
@@ -118,7 +116,6 @@ class SchMovable(AnyObject):
 
         :param SchListOfObjects i_l_cntbl_to_scale:
         :param float i_db1_scale_factor:
-        :return: None
         :rtype: None
         """
         return self.sch_movable.ScaleSelectedObjects(i_l_cntbl_to_scale.com_object, i_db1_scale_factor)
@@ -163,7 +160,6 @@ class SchMovable(AnyObject):
                 |          objThisIntf.TransformdbVar1
 
         :param tuple i_db6_trans_matrix:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_movable.Transform(i_db6_trans_matrix)
@@ -206,7 +202,6 @@ class SchMovable(AnyObject):
                 |          objThisIntf.TranslatedbVar1
 
         :param tuple i_db2_vector:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_movable.Translate(i_db2_vector)

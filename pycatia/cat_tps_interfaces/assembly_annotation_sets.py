@@ -50,7 +50,6 @@ class AssemblyAnnotationSets(Collection):
                 |     Retrieve a set.
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.assembly_annotation_sets.Item(i_index))
@@ -68,7 +67,6 @@ class AssemblyAnnotationSets(Collection):
                 |     Annotation Set is not automatically loaded If the Annotation Set is already
                 |     loaded nothing happens.
 
-        :return: None
         :rtype: None
         """
         return self.assembly_annotation_sets.LoadAnnotationSetsList()

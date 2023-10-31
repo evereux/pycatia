@@ -59,7 +59,6 @@ class AnalysisLocalSensor(AnalysisSensor):
                 | 
                 |          MyObjectName = AnalysisSensor1.XMLName
 
-        :return: str
         :rtype: str
         """
 

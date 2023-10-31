@@ -74,7 +74,6 @@ class CD5Property(AnyObject):
                 |
                 |          oCD5Property.PropertyName
 
-        :return: str
         :rtype: str
         """
 
@@ -102,7 +101,6 @@ class CD5Property(AnyObject):
                 |
                 |          oCD5Property.PropertyValue
 
-        :return: str
         :rtype: str
         """
 

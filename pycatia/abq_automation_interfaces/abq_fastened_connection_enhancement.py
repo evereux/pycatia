@@ -47,7 +47,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the adjust slave node flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -72,7 +71,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the connection property.
 
-        :return: AnalysisEntity
         :rtype: AnalysisEntity
         """
 
@@ -106,7 +104,7 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 |         SURFACETOSURFACE
                 |         NODETOSURFACE
 
-        :return: int
+        :return: enum formulation_option_type
         :rtype: int
         """
 
@@ -115,7 +113,7 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
     @formulation_option.setter
     def formulation_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum formulation_option_type
         """
 
         self.abq_fastened_connection_enhancement.FormulationOption = value
@@ -131,7 +129,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the include shell element thickness flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -156,7 +153,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the invert master surface flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -181,7 +177,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the invert slave surface flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -214,7 +209,7 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 |         COMPUTED
                 |         SPECIFIED
 
-        :return: int
+        :return: enum position_tolerance_type
         :rtype: int
         """
 
@@ -223,7 +218,7 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
     @position_tolerance.setter
     def position_tolerance(self, value: int):
         """
-        :param int value:
+        :param int value: enum position_tolerance_type
         """
 
         self.abq_fastened_connection_enhancement.PositionTolerance = value
@@ -239,7 +234,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the position tolerance value
 
-        :return: float
         :rtype: float
         """
 
@@ -264,7 +258,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the swap master/slave surface flag.
 
-        :return: bool
         :rtype: bool
         """
 

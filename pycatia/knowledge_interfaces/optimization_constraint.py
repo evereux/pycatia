@@ -53,7 +53,6 @@ class OptimizationConstraint(Check):
                 | 
                 |     Returns the parameter containing the distance to constraint satisfaction.
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -73,7 +72,6 @@ class OptimizationConstraint(Check):
                 |     The constraint precision allows the system to know when an equality constraint can be declared as
                 |     satisfied (when : distance to satisfaction < precision).
 
-        :return: float
         :rtype: float
         """
 
@@ -98,7 +96,6 @@ class OptimizationConstraint(Check):
                 | 
                 |     Returns the constraint satisfaction.
 
-        :return: bool
         :rtype: bool
         """
 

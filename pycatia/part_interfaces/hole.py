@@ -63,7 +63,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeAnchorMode = firstHole.AnchorMode
 
-        :return: int
+        :return: enum cat_hole_anchor_mode
         :rtype: int
         """
 
@@ -72,7 +72,7 @@ class Hole(SketchBasedShape):
     @anchor_mode.setter
     def anchor_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_anchor_mode
         """
 
         self.hole.AnchorMode = value
@@ -99,7 +99,6 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeBottomAngle = firstHole.BottomAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -127,7 +126,6 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeBottomLimit = firstHole.BottomLimit
 
-        :return: Limit
         :rtype: Limit
         """
 
@@ -154,7 +152,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeBottomType = firstHole.BottomType
 
-        :return: int
+        :return: enum cat_hole_bottom_type
         :rtype: int
         """
 
@@ -163,7 +161,7 @@ class Hole(SketchBasedShape):
     @bottom_type.setter
     def bottom_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_bottom_type
         """
 
         self.hole.BottomType = value
@@ -189,7 +187,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set CSMode = firsthole.CounterSunkMode
 
-        :return: int
+        :return: enum cat_cs_hole_mode
         :rtype: int
         """
 
@@ -198,7 +196,7 @@ class Hole(SketchBasedShape):
     @counter_sunk_mode.setter
     def counter_sunk_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_cs_hole_mode
         """
 
         self.hole.CounterSunkMode = value
@@ -224,7 +222,6 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeDiam = firstHole.Diameter
 
-        :return: Length
         :rtype: Length
         """
 
@@ -252,7 +249,6 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeHeadAngle = firstHole.HeadAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -280,7 +276,6 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeHeadDepth = firstHole.HeadDepth
 
-        :return: Length
         :rtype: Length
         """
 
@@ -308,7 +303,6 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeHeadDiam = firstHole.HeadDiameter
 
-        :return: Length
         :rtype: Length
         """
 
@@ -338,7 +332,6 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeThreadDescription = firstHole.HoleThreadDescription
 
-        :return: StrParam
         :rtype: StrParam
         """
 
@@ -366,7 +359,6 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeThreadDepth = firstHole.ThreadDepth
 
-        :return: Length
         :rtype: Length
         """
 
@@ -394,7 +386,6 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeThreadDiameter = firstHole.ThreadDiameter
 
-        :return: Length
         :rtype: Length
         """
 
@@ -422,7 +413,6 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeThreadPitch = firstHole.ThreadPitch
 
-        :return: Length
         :rtype: Length
         """
 
@@ -449,7 +439,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeThreadSide = firstHole.ThreadSide
 
-        :return: int
+        :return: enum cat_hole_thread_side
         :rtype: int
         """
 
@@ -458,7 +448,7 @@ class Hole(SketchBasedShape):
     @thread_side.setter
     def thread_side(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_thread_side
         """
 
         self.hole.ThreadSide = value
@@ -484,7 +474,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeThreadingMode = firstHole.ThreadingMode
 
-        :return: int
+        :return: enum cat_hole_threading_mode
         :rtype: int
         """
 
@@ -493,7 +483,7 @@ class Hole(SketchBasedShape):
     @threading_mode.setter
     def threading_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_threading_mode
         """
 
         self.hole.ThreadingMode = value
@@ -519,7 +509,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeType = firstHole.Type
 
-        :return: int
+        :return: enum cat_hole_type
         :rtype: int
         """
 
@@ -528,7 +518,7 @@ class Hole(SketchBasedShape):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_type
         """
 
         self.hole.Type = value
@@ -559,8 +549,7 @@ class Hole(SketchBasedShape):
                 |              firstHole.CreateStandardThreadDesignTable
                 |              catHoleMetricThinPitch
 
-        :param int i_standard_type:
-        :return: None
+        :param int i_standard_type: enum cat_hole_thread_standard
         :rtype: None
         """
         return self.hole.CreateStandardThreadDesignTable(i_standard_type)
@@ -604,7 +593,6 @@ class Hole(SketchBasedShape):
 
         :param str i_standard_name:
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.hole.CreateUserStandardDesignTable(i_standard_name, i_path)
@@ -633,7 +621,6 @@ class Hole(SketchBasedShape):
                 |              Set z = dirArray[3]
 
         :param tuple io_direction:
-        :return: None
         :rtype: None
         """
         return self.hole.GetDirection(io_direction)
@@ -677,7 +664,6 @@ class Hole(SketchBasedShape):
                 |              Set z = coordArray[3]
 
         :param tuple io_origin:
-        :return: None
         :rtype: None
         """
         return self.hole.GetOrigin(io_origin)
@@ -713,7 +699,6 @@ class Hole(SketchBasedShape):
                 | 
                 |          firstHole.Reverse()
 
-        :return: None
         :rtype: None
         """
         return self.hole.Reverse()
@@ -745,7 +730,6 @@ class Hole(SketchBasedShape):
                 |              firstHole.SetDirection holeDirref
 
         :param Reference i_direction:
-        :return: None
         :rtype: None
         """
         return self.hole.SetDirection(i_direction.com_object)
@@ -797,7 +781,6 @@ class Hole(SketchBasedShape):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: None
         :rtype: None
         """
         return self.hole.SetOrigin(i_x, i_y, i_z)

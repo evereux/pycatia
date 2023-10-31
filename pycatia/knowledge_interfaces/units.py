@@ -68,7 +68,6 @@ class Units(Collection):
                 |          Set unitmm = units.Item("mm")
 
         :param cat_variant i_index:
-        :return: Unit
         :rtype: Unit
         """
         return Unit(self.units.Item(i_index))

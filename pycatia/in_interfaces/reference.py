@@ -59,7 +59,6 @@ class Reference(AnyObject):
                 |
                 |          StrName = FirstRef.DisplayName
 
-        :return: str
         :rtype: str
         """
 
@@ -91,7 +90,6 @@ class Reference(AnyObject):
                 |                  Set CompositeRef = FirstRef.ComposeWith(SecondRef)
 
         :param Reference i_reference:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.reference.ComposeWith(i_reference.com_object))

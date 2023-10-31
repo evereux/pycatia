@@ -90,7 +90,6 @@ class TCPTraceManager(AnyObject):
                 |             Boolean. Indicates if the tracing capability is activ or
                 |             not.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -124,7 +123,6 @@ class TCPTraceManager(AnyObject):
                 |             Boolean. Indicates if the tracing capability is activ or
                 |             not.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -158,7 +156,6 @@ class TCPTraceManager(AnyObject):
                 |             CATIABase. Attached owner of the trace. Output parameter. Returns
                 |             nothing if the trace is defined related to the world
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.tcp_trace_manager.GetAttachedOwner())
@@ -178,7 +175,6 @@ class TCPTraceManager(AnyObject):
                 |         oNb
                 |             Long. Number of traces. Output parameter.
 
-        :return: int
         :rtype: int
         """
         return self.tcp_trace_manager.GetNbPath()
@@ -202,7 +198,6 @@ class TCPTraceManager(AnyObject):
                 |             DNBIATCPTrace. Pointer on the trace. Output parameter.
 
         :param int i_index:
-        :return: TCPTrace
         :rtype: TCPTrace
         """
         return TCPTrace(self.tcp_trace_manager.GetPath(i_index))
@@ -218,7 +213,6 @@ class TCPTraceManager(AnyObject):
                 |     Remove all traces from the current resource. All traces associated with the
                 |     current resource will be removed from the 3D and deleted.
 
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_manager.RemoveAllPath()
@@ -241,7 +235,6 @@ class TCPTraceManager(AnyObject):
                 |             parameter.
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_manager.RemovePathByIndex(i_index)
@@ -263,7 +256,6 @@ class TCPTraceManager(AnyObject):
                 |             DNBIATCPTrace. Path to be removed.
 
         :param TCPTrace tcp_path:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_manager.RemovePathByObject(tcp_path.com_object)
@@ -295,7 +287,6 @@ class TCPTraceManager(AnyObject):
                 |     be created, it will defined with respect to the world.
                 |     Remark: this will not change the exported values.
 
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_manager.ResetAttachedOwner()
@@ -320,7 +311,6 @@ class TCPTraceManager(AnyObject):
                 |             CATIABase. Attached owner of the trace. Input parameter.
 
         :param AnyObject i_owner:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_manager.SetAttachedOwner(i_owner.com_object)

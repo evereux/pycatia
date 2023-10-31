@@ -60,7 +60,6 @@ class DraftingPageSetup(PageSetup):
                 | 
                 |          MySheet.DrawingPageSetUp.ChooseBestOrientation = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -90,7 +89,6 @@ class DraftingPageSetup(PageSetup):
                 | 
                 |          MySheet.DrawingPageSetUp.FitToPrinterFormat = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -120,7 +118,6 @@ class DraftingPageSetup(PageSetup):
                 | 
                 |          MySheet.DrawingPageSetUp.FitToSheetFormat = TRUE
 
-        :return: bool
         :rtype: bool
         """
 

@@ -65,7 +65,6 @@ class Body(AnyObject):
                 |          Set body = partDoc.Part.Bodies.MainBody
                 |          Set hybridBodyColl = body.HybridBodies
 
-        :return: HybridBodies
         :rtype: HybridBodies
         """
 
@@ -95,7 +94,6 @@ class Body(AnyObject):
                 |              Dim HybridShapes1 As HybridShapes
                 |              Set HybridShapes1 = Body1.HybridShapes
 
-        :return: HybridShapes
         :rtype: HybridShapes
         """
 
@@ -119,7 +117,6 @@ class Body(AnyObject):
                 | 
                 |          operated = body1.InBooleanOperation
 
-        :return: bool
         :rtype: bool
         """
 
@@ -144,7 +141,6 @@ class Body(AnyObject):
                 | 
                 |          Set OrderedGe
 
-        :return: OrderedGeometricalSets
         :rtype: OrderedGeometricalSets
         """
 
@@ -171,7 +167,6 @@ class Body(AnyObject):
                 |          Set body = partDoc.Part.Bodies.MainBody
                 |          Set shapColl = body.Shapes
 
-        :return: Shapes
         :rtype: Shapes
         """
 
@@ -197,7 +192,6 @@ class Body(AnyObject):
                 |          Set body = partDoc.Part.Bodies.MainBody
                 |          Set skColl = body.Sketches
 
-        :return: Sketches
         :rtype: Sketches
         """
 
@@ -225,7 +219,6 @@ class Body(AnyObject):
                 |          Body1.InsertHybridShape (HybridShape1)
 
         :param HybridShape i_hybrid_shape:
-        :return: None
         :rtype: None
         """
         return self.body.InsertHybridShape(i_hybrid_shape.com_object)

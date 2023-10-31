@@ -47,7 +47,6 @@ class AnalysisMaterial(AnyObject):
                 |
                 |     Returns the analysis type (Ex: MATERIAL_ORTHOTROPIC, MATERIAL_ISOTROPIC).
 
-        :return: str
         :rtype: str
         """
         return self.analysis_material.GetType()
@@ -64,7 +63,6 @@ class AnalysisMaterial(AnyObject):
                 |     needed
 
         :param str i_label:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.analysis_material.GetValue(i_label)
@@ -83,7 +81,6 @@ class AnalysisMaterial(AnyObject):
 
         :param str i_label:
         :param cat_variant i_value:
-        :return: None
         :rtype: None
         """
         return self.analysis_material.PutValue(i_label, i_value)

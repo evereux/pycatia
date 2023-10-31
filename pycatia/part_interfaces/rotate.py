@@ -62,7 +62,6 @@ class Rotate(Shape):
                 | 
                 |     Returns the rotation angle.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -85,7 +84,6 @@ class Rotate(Shape):
                 |      Dim AngleValue As double
                 |      Set AngleValue = Rotate.AngleValue
 
-        :return: float
         :rtype: float
         """
 
@@ -119,7 +117,6 @@ class Rotate(Shape):
                 |      Dim RotationAxis As Reference
                 |      Set RotationAxis = Rotate.Axis
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -152,7 +149,6 @@ class Rotate(Shape):
                 |           Set oHybridShape=oRotate.HybridShape
                 |           oHybridShape.SectionCoupling = 2
 
-        :return: HybridShape
         :rtype: HybridShape
         """
 

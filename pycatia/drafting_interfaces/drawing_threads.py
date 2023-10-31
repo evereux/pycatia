@@ -69,7 +69,6 @@ class DrawingThreads(Collection):
                 |      Set MyThread = MyView.Threads.Add(iGeomElem)
 
         :param i_geom_elem:
-        :return: DrawingThread
         :rtype: DrawingThread
         """
         return DrawingThread(self.drawing_threads.Add(i_geom_elem.com_object))
@@ -107,7 +106,6 @@ class DrawingThreads(Collection):
                 |          Set ThisDrawingThread = MyView.Threads.Item(2)
 
         :param int i_index:
-        :return: DrawingThread
         :rtype: DrawingThread
         """
         return DrawingThread(self.drawing_threads.Item(i_index))
@@ -142,7 +140,6 @@ class DrawingThreads(Collection):
                 |          MyView.DrawingThreads.Remove(3)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.drawing_threads.Remove(i_index)

@@ -58,7 +58,6 @@ class SchRouteGraphic(AnyObject):
                 |          objThisIntf.AddGraphicalPrimitiveobjArg1
 
         :param SchGRRRoute i_grr_to_add:
-        :return: None
         :rtype: None
         """
         return self.sch_route_graphic.AddGraphicalPrimitive(i_grr_to_add.com_object)
@@ -101,7 +100,6 @@ class SchRouteGraphic(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListGraphicalPrimitives
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_route_graphic.ListGraphicalPrimitives())
@@ -123,7 +121,6 @@ class SchRouteGraphic(AnyObject):
                 |           ...
                 |          objThisIntf.RemoveAllGraphicalPrimitives
 
-        :return: None
         :rtype: None
         """
         return self.sch_route_graphic.RemoveAllGraphicalPrimitives()
@@ -151,7 +148,6 @@ class SchRouteGraphic(AnyObject):
                 |          objThisIntf.RemoveGraphicalPrimitiveobjArg1
 
         :param SchGRRRoute i_grr_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_route_graphic.RemoveGraphicalPrimitive(i_grr_to_remove.com_object)

@@ -63,7 +63,6 @@ class Trim(BooleanShape):
                 |      call firstTrim.AddFaceToKeep(face)
 
         :param Reference i_face_to_keep:
-        :return: None
         :rtype: None
         """
         return self.trim.AddFaceToKeep(i_face_to_keep.com_object)
@@ -115,7 +114,6 @@ class Trim(BooleanShape):
 
         :param Reference i_face_to_keep:
         :param Reference i_face_adjacent_for_keep:
-        :return: None
         :rtype: None
         """
         return self.trim.AddFaceToKeep2(i_face_to_keep.com_object, i_face_adjacent_for_keep.com_object)
@@ -161,7 +159,6 @@ class Trim(BooleanShape):
                 |      call firstTrim.AddFaceToRemove(face)
 
         :param Reference i_face_to_remove:
-        :return: None
         :rtype: None
         """
         return self.trim.AddFaceToRemove(i_face_to_remove.com_object)
@@ -213,7 +210,6 @@ class Trim(BooleanShape):
 
         :param Reference i_face_to_remove:
         :param Reference i_face_adjacent_for_remove:
-        :return: None
         :rtype: None
         """
         return self.trim.AddFaceToRemove2(i_face_to_remove.com_object, i_face_adjacent_for_remove.com_object)
@@ -259,7 +255,6 @@ class Trim(BooleanShape):
                 |      call firstTrim.WithdrawFaceToKeep(face)
 
         :param Reference i_face_to_withdraw:
-        :return: None
         :rtype: None
         """
         return self.trim.WithdrawFaceToKeep(i_face_to_withdraw.com_object)
@@ -311,7 +306,6 @@ class Trim(BooleanShape):
 
         :param Reference i_face_to_withdraw:
         :param Reference i_face_adjacent_for_keep:
-        :return: None
         :rtype: None
         """
         return self.trim.WithdrawFaceToKeep2(i_face_to_withdraw.com_object, i_face_adjacent_for_keep.com_object)
@@ -357,7 +351,6 @@ class Trim(BooleanShape):
                 |      call firstTrim.WithdrawFaceToRemove(face)
 
         :param Reference i_face_to_withdraw:
-        :return: None
         :rtype: None
         """
         return self.trim.WithdrawFaceToRemove(i_face_to_withdraw.com_object)
@@ -409,7 +402,6 @@ class Trim(BooleanShape):
 
         :param Reference i_face_to_withdraw:
         :param Reference i_face_adjacent_for_remove:
-        :return: None
         :rtype: None
         """
         return self.trim.WithdrawFaceToRemove2(i_face_to_withdraw.com_object, i_face_adjacent_for_remove.com_object)

@@ -59,7 +59,6 @@ class ThreeDCuts(Collection):
 
         :param Group group_of_selected_products:
         :param Document three_d_cut_document:
-        :return: None
         :rtype: None
         """
         return self.three_d_cuts.Compute3DCut(group_of_selected_products.com_object, three_d_cut_document.com_object)
@@ -112,7 +111,6 @@ class ThreeDCuts(Collection):
         :param Group group_of_selected_products:
         :param Product i_reference_product:
         :param Document three_d_cut_document:
-        :return: None
         :rtype: None
         """
         return self.three_d_cuts.Compute3DCutWithAReference(
@@ -158,7 +156,6 @@ class ThreeDCuts(Collection):
                 |         ThreeDCutDocument: Document containing the result.
 
         :param Group group_of_selected_products:
-        :return: Document
         :rtype: Document
         """
         return Document(self.three_d_cuts.GetCompute3DCut(group_of_selected_products.com_object))
@@ -193,7 +190,6 @@ class ThreeDCuts(Collection):
 
         :param Group group_of_selected_products:
         :param Product i_reference_product:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -269,7 +265,6 @@ class ThreeDCuts(Collection):
         :param float vx:
         :param float vy:
         :param float vz:
-        :return: None
         :rtype: None
         """
         return self.three_d_cuts.SetBox(origin_x, origin_y, origin_z, vx, vy, vz)
@@ -291,7 +286,6 @@ class ThreeDCuts(Collection):
                 |             Components of the 4x4 matrix, placed in rows.
 
         :param tuple i_components:
-        :return: None
         :rtype: None
         """
         return self.three_d_cuts.SetMatrix(i_components)
@@ -328,7 +322,6 @@ class ThreeDCuts(Collection):
                 |             1 : We keep entirely included triangles
 
         :param int on_borders:
-        :return: None
         :rtype: None
         """
         return self.three_d_cuts.SetOnBorders(on_borders)
@@ -350,7 +343,6 @@ class ThreeDCuts(Collection):
                 |             1 : We keep the outer triangles
 
         :param int type:
-        :return: None
         :rtype: None
         """
         return self.three_d_cuts.SetType(type)
@@ -366,7 +358,6 @@ class ThreeDCuts(Collection):
                 |     Returns the name of the associated shape.
 
         :param str name:
-        :return: None
         :rtype: None
         """
         return self.three_d_cuts.ThreeDCutShapeName(name)

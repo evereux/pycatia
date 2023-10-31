@@ -68,7 +68,6 @@ class HybridShapeCombine(HybridShape):
                 | 
                 |          hybCombCurve.Direction1 = firstDir
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -104,7 +103,6 @@ class HybridShapeCombine(HybridShape):
                 |          Dim secondDir As CATIAHybridShapeDirection
                 |          Set secondDir = hybCombCurve.Direction2
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -141,7 +139,6 @@ class HybridShapeCombine(HybridShape):
                 | 
                 |          hybCombCurve.Elem1 = firstCurve
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -179,7 +176,6 @@ class HybridShapeCombine(HybridShape):
                 |          Dim secondCurve As CATIAReference
                 |          Set secondCurve = hybCombCurve.Elem2
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -220,7 +216,6 @@ class HybridShapeCombine(HybridShape):
                 | 
                 |          hybCombCurve.NearestSolution = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -263,7 +258,6 @@ class HybridShapeCombine(HybridShape):
                 | 
                 |          hybCombCurve.SolutionTypeCombine = 0
 
-        :return: int
         :rtype: int
         """
 

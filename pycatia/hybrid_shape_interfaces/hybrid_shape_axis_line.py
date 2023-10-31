@@ -82,7 +82,6 @@ class HybridShapeAxisLine(HybridShape):
                 |      Dim oType
                 |      Set oType = AxisLine.AxisLineType
 
-        :return: int
         :rtype: int
         """
 
@@ -117,7 +116,6 @@ class HybridShapeAxisLine(HybridShape):
                 |          Dim oDir As CATIAHybridShapeDirection
                 |          Set oDir = AxisLine.Direction
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -149,7 +147,6 @@ class HybridShapeAxisLine(HybridShape):
                 |          Dim Element As Reference 
                 |          Set Element = AxisLine.Element
 
-        :return: Reference
         :rtype: Reference
         """
 

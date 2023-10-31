@@ -67,7 +67,6 @@ class Plane(HybridShape):
                 |         HybridShapeFactory
 
         :param tuple o_first_axis:
-        :return: None
         :rtype: None
         """
         return self.plane.GetFirstAxis(o_first_axis)
@@ -110,7 +109,6 @@ class Plane(HybridShape):
                 |         HybridShapeFactory
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
         return self.plane.GetOrigin(o_origin)
@@ -157,7 +155,6 @@ class Plane(HybridShape):
         :param float o_x:
         :param float o_y:
         :param float o_z:
-        :return: None
         :rtype: None
         """
         return self.plane.GetPosition(o_x, o_y, o_z)
@@ -185,7 +182,6 @@ class Plane(HybridShape):
                 |         HybridShapeFactory
 
         :param tuple o_second_axis:
-        :return: None
         :rtype: None
         """
         return self.plane.GetSecondAxis(o_second_axis)
@@ -219,7 +215,6 @@ class Plane(HybridShape):
                 |     Returns:
                 |         0 when the plane is a reference plane, 1 else.
 
-        :return: int
         :rtype: int
         """
         return self.plane.IsARefPlane()
@@ -250,7 +245,6 @@ class Plane(HybridShape):
                 |         HybridShapeFactory
 
         :param tuple i_first_axis:
-        :return: None
         :rtype: None
         """
         return self.plane.PutFirstAxis(i_first_axis)
@@ -295,7 +289,6 @@ class Plane(HybridShape):
                 |         HybridShapeFactory
 
         :param tuple i_origin:
-        :return: None
         :rtype: None
         """
         return self.plane.PutOrigin(i_origin)
@@ -341,7 +334,6 @@ class Plane(HybridShape):
                 |         HybridShapeFactory
 
         :param tuple i_second_axis:
-        :return: None
         :rtype: None
         """
         return self.plane.PutSecondAxis(i_second_axis)
@@ -372,7 +364,6 @@ class Plane(HybridShape):
                 |     Removes reference position of a plane.
                 |     Note: When removed, the plane is displayed at its default position.
 
-        :return: None
         :rtype: None
         """
         return self.plane.RemovePosition()
@@ -401,7 +392,6 @@ class Plane(HybridShape):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: None
         :rtype: None
         """
         return self.plane.SetPosition(i_x, i_y, i_z)

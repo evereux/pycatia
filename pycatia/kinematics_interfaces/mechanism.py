@@ -55,7 +55,6 @@ class Mechanism(AnyObject):
                 |             The collection of commands. This property is read only because
                 |             because list is aggregated in the Mechanism
 
-        :return: MechanismCommands
         :rtype: MechanismCommands
         """
 
@@ -77,7 +76,6 @@ class Mechanism(AnyObject):
                 |         oFixedPart
                 |             The fixed part.
 
-        :return: Product
         :rtype: Product
         """
 
@@ -108,7 +106,6 @@ class Mechanism(AnyObject):
                 |             The collection of joints. This property is read only because
                 |             because list is aggregated in the Mechanism
 
-        :return: Joints
         :rtype: Joints
         """
 
@@ -131,7 +128,6 @@ class Mechanism(AnyObject):
                 |             The number of commands. This property is read only because number
                 |             depends on commands creation/destruction
 
-        :return: int
         :rtype: int
         """
 
@@ -154,7 +150,6 @@ class Mechanism(AnyObject):
                 |             The degree of freedom. This property is read only because because
                 |             it depends on joints and commands
 
-        :return: int
         :rtype: int
         """
 
@@ -177,7 +172,6 @@ class Mechanism(AnyObject):
                 |             The number of joints. This property is read only because number
                 |             depends on joints creation/destruction
 
-        :return: int
         :rtype: int
         """
 
@@ -201,7 +195,6 @@ class Mechanism(AnyObject):
                 |             The number of products. This property is read only because number
                 |             depends on joints creation/destruction
 
-        :return: int
         :rtype: int
         """
 
@@ -229,7 +222,6 @@ class Mechanism(AnyObject):
 
         :param str i_cmd_type:
         :param Joint i_joint:
-        :return: MechanismCommand
         :rtype: MechanismCommand
         """
         return MechanismCommand(self.mechanism.AddCommand(i_cmd_type, i_joint.com_object))
@@ -257,7 +249,6 @@ class Mechanism(AnyObject):
 
         :param str i_joint_type:
         :param tuple i_list_elem:
-        :return: Joint
         :rtype: Joint
         """
         return Joint(self.mechanism.AddJoint(i_joint_type, i_list_elem))
@@ -278,7 +269,6 @@ class Mechanism(AnyObject):
                 |             current command values
 
         :param tuple io_cmd_values:
-        :return: None
         :rtype: None
         """
         return self.mechanism.GetCommandValues(io_cmd_values)
@@ -320,7 +310,6 @@ class Mechanism(AnyObject):
                 |         HRESULT
 
         :param int i_index:
-        :return: Product
         :rtype: Product
         """
         return Product(self.mechanism.GetProduct(i_index))
@@ -350,7 +339,6 @@ class Mechanism(AnyObject):
 
         :param Product i_product:
         :param tuple io_motion:
-        :return: None
         :rtype: None
         """
         return self.mechanism.GetProductMotion(i_product.com_object, io_motion)
@@ -387,7 +375,6 @@ class Mechanism(AnyObject):
                 |             command values to be solved for
 
         :param tuple i_cmd_values:
-        :return: None
         :rtype: None
         """
         return self.mechanism.PutCommandValues(i_cmd_values)
@@ -439,7 +426,6 @@ class Mechanism(AnyObject):
         :param tuple i_cmd_values:
         :param int i_nb_steps:
         :param int o_step_reached:
-        :return: None
         :rtype: None
         """
         return self.mechanism.PutCommandValuesWithMultiSteps(i_cmd_values, i_nb_steps, o_step_reached)
@@ -476,7 +462,6 @@ class Mechanism(AnyObject):
                 |             The command to reset to zero
 
         :param MechanismCommand i_command:
-        :return: None
         :rtype: None
         """
         return self.mechanism.ResetCmdValueToZero(i_command.com_object)
@@ -506,7 +491,6 @@ class Mechanism(AnyObject):
                 | 
                 |     Reassembles the mechanism after dimension changes in the parts.
 
-        :return: None
         :rtype: None
         """
         return self.mechanism.Update()

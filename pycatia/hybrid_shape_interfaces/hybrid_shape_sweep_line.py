@@ -51,7 +51,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Returns or sets the angular law.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -80,7 +79,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     0 The angular law has NOT to be inverted
                 |     1 The angular law has to be inverted
 
-        :return: int
         :rtype: int
         """
 
@@ -112,7 +110,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     4 Law specified by a GSD law feature
                 |     (CATGSMBasicLawType_Advanced)
 
-        :return: int
         :rtype: int
         """
 
@@ -141,7 +138,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     0 No detection of canonical surface is performed.
                 |     2 Detection of canonical surfaces is performed.
 
-        :return: int
         :rtype: int
         """
 
@@ -179,7 +175,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |          Dim oContext
                 |          Set oContext = Sweep.Context
 
-        :return: int
         :rtype: int
         """
 
@@ -204,7 +199,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Returns or sets the draft computation mode.
 
-        :return: int
         :rtype: int
         """
 
@@ -237,7 +231,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |          Dim oDirection As CATIAHybridShapeDirection
                 |          Set oDirection = LinearSweep.DraftDirection
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -262,7 +255,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Returns or sets the sweep operation first guide curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -287,7 +279,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Returns or sets the sweep operation first guide surface.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -312,7 +303,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Returns or sets the first length law useful in some linear sweep types.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -341,7 +331,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     0 The length law has NOT to be inverted
                 |     1 The length law has to be inverted
 
-        :return: int
         :rtype: int
         """
 
@@ -367,7 +356,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     Returns the deviation value (length) from guide curves allowed during a
                 |     sweeping operation in order to smooth it.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -389,7 +377,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     TRUE if a deviation from guide curves is allowed, or FALSE otherwise (FALSE
                 |     if not specified).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -432,7 +419,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     7 Linear profile swept surface defined by two tangency surfaces
                 |     (CATGSMLinearSweep_TwoTangencySurfaces)
 
-        :return: int
         :rtype: int
         """
 
@@ -457,7 +443,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Returns or sets the sweep operation second guide curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -482,7 +467,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Returns or sets the sweep operation second guide surface.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -507,7 +491,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Returns or sets second length law useful in some linear sweep types.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -536,7 +519,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     0 The length law has NOT to be inverted
                 |     1 The length law has to be inverted
 
-        :return: int
         :rtype: int
         """
 
@@ -567,7 +549,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     (CATGSMSweepTrimMode_None)
                 |     1 Trim computed (CATGSMSweepTrimMode_On)
 
-        :return: int
         :rtype: int
         """
 
@@ -594,7 +575,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     TRUE if the sweeping operation is smoothed, or FALSE otherwise (FALSE if
                 |     not specified).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -619,7 +599,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Returns the angular threshold.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -639,7 +618,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     For example: a linear sweep with reference surface leads to four possible
                 |     solutions.
 
-        :return: int
         :rtype: int
         """
 
@@ -664,7 +642,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Returns or sets the sweep operation spine (optional).
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -694,7 +671,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     (CATGSMSweepTrimMode_None)
                 |     1 Trim computed (CATGSMSweepTrimMode_On)
 
-        :return: int
         :rtype: int
         """
 
@@ -729,7 +705,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
         :param Reference ip_ia_loc_elem:
         :param float i_ang:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.AddDraftAngleDefinitionLocation(ip_ia_loc_elem.com_object, i_ang)
@@ -769,7 +744,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |         The angle value
 
         :param int i_i:
-        :return: Angle
         :rtype: Angle
         """
         return Angle(self.hybrid_shape_sweep_line.GetAngle(i_i))
@@ -806,7 +780,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param Angle op_start_ang:
         :param Angle op_end_ang:
         :param int o_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetAngularLaw(op_start_ang.com_object, op_end_ang.com_object, o_law_type)
@@ -880,7 +853,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param int o_surf_coupl_ori1:
         :param int o_surf_coupl_ori2:
         :param int o_no:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetChoiceNbSurfaces(o_surf_ori1, o_surf_ori2, o_surf_coupl_ori1,
@@ -913,7 +885,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param int o_val1:
         :param int o_val2:
         :param int o_val3:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetChoiceNo(o_val1, o_val2, o_val3)
@@ -943,7 +914,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param int i_loc:
         :param Reference op_ia_element:
         :param Angle o_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetDraftAngleDefinitionLocation(i_loc, op_ia_element.com_object,
@@ -980,7 +950,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |             The draft angle location list size
 
         :param int o_count:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetDraftAngleDefinitionLocationsNb(o_count)
@@ -1021,7 +990,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
         :param int o_first_type:
         :param Reference op_ia_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetFirstLengthDefinitionType(o_first_type, op_ia_elem.com_object)
@@ -1073,7 +1041,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param Length o_length1:
         :param Length o_length2:
         :param int o_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetFirstLengthLaw(o_length1.com_object, o_length2.com_object, o_law_type)
@@ -1113,7 +1080,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |         The length value
 
         :param int i_i:
-        :return: Length
         :rtype: Length
         """
         return Length(self.hybrid_shape_sweep_line.GetLength(i_i))
@@ -1144,7 +1110,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
         :param int o_first_type:
         :param int o_second_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetLengthLawTypes(o_first_type, o_second_type)
@@ -1170,7 +1135,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
         :param Reference op_ia_elem1:
         :param Reference op_ia_elem2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetLongitudinalRelimiters(op_ia_elem1.com_object, op_ia_elem2.com_object)
@@ -1206,7 +1170,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |             The number of angles
 
         :param int o_ang:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetNbAngle(o_ang)
@@ -1227,7 +1190,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |             The number of guide curves
 
         :param int o_num:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetNbGuideCrv(o_num)
@@ -1248,7 +1210,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |             The number of guides surfaces
 
         :param int o_num:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetNbGuideSur(o_num)
@@ -1269,7 +1230,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |             The number of lengths
 
         :param int o_len:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetNbLength(o_len)
@@ -1306,7 +1266,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param int op_orient1:
         :param Reference op_ia_elem2:
         :param int op_orient2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetRelimiters(op_ia_elem1.com_object, op_orient1, op_ia_elem2.com_object,
@@ -1363,7 +1322,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
         :param int o_second_type:
         :param Reference op_ia_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetSecondLengthDefinitionType(o_second_type, op_ia_elem.com_object)
@@ -1415,7 +1373,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param Length o_length1:
         :param Length o_length2:
         :param int o_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.GetSecondLengthLaw(o_length1.com_object, o_length2.com_object, o_law_type)
@@ -1460,7 +1417,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param Reference i_elem:
         :param Angle i_angle:
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.InsertDraftAngleDefinitionLocation(i_elem.com_object, i_angle.com_object,
@@ -1492,7 +1448,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |     Removes all geometrical elements and values necessary for draft angle
                 |     definition.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.RemoveAllDraftAngleDefinitionLocations()
@@ -1507,7 +1462,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Removes an angle.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.RemoveAngle()
@@ -1529,7 +1483,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |             remove
 
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.RemoveDraftAngleDefinitionLocationPosition(i_pos)
@@ -1544,7 +1497,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Removes a guide curve.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.RemoveGuideCrv()
@@ -1559,7 +1511,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Removes a guide surface.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.RemoveGuideSur()
@@ -1574,7 +1525,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 | 
                 |     Removes a length.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.RemoveLength()
@@ -1599,7 +1549,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
         :param int i_i:
         :param float i_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetAngle(i_i, i_elem)
@@ -1635,7 +1584,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param float i_start_ang:
         :param float i_end_ang:
         :param int i_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetAngularLaw(i_start_ang, i_end_ang, i_law_type)
@@ -1693,7 +1641,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param int i_surf_coupl_ori1:
         :param int i_surf_coupl_ori2:
         :param int i_no:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetChoiceNbSurfaces(i_surf_ori1, i_surf_ori2, i_surf_coupl_ori1,
@@ -1726,7 +1673,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param int i_val1:
         :param int i_val2:
         :param int i_val3:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetChoiceNo(i_val1, i_val2, i_val3)
@@ -1767,7 +1713,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
         :param int i_first_type:
         :param Reference ip_ia_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetFirstLengthDefinitionType(i_first_type, ip_ia_elem.com_object)
@@ -1819,7 +1764,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param float i_length1:
         :param float i_length2:
         :param int i_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetFirstLengthLaw(i_length1, i_length2, i_law_type)
@@ -1841,7 +1785,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |             The deviation value
 
         :param float i_length:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetGuideDeviation(i_length)
@@ -1866,7 +1809,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
         :param int i_i:
         :param float i_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetLength(i_i, i_elem)
@@ -1897,7 +1839,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
         :param int i_first_type:
         :param int i_second_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetLengthLawTypes(i_first_type, i_second_type)
@@ -1923,7 +1864,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
         :param Reference ip_ia_elem1:
         :param Reference ip_ia_elem2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetLongitudinalRelimiters(ip_ia_elem1.com_object, ip_ia_elem2.com_object)
@@ -1975,7 +1915,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param int ip_orient1:
         :param Reference ip_ia_elem2:
         :param int ip_orient2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetRelimiters(ip_ia_elem1.com_object, ip_orient1, ip_ia_elem2.com_object,
@@ -2032,7 +1971,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
         :param int i_second_type:
         :param Reference ip_ia_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetSecondLengthDefinitionType(i_second_type, ip_ia_elem.com_object)
@@ -2084,7 +2022,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
         :param float i_length1:
         :param float i_length2:
         :param int i_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetSecondLengthLaw(i_length1, i_length2, i_law_type)
@@ -2105,7 +2042,6 @@ class HybridShapeSweepLine(HybridShapeSweep):
                 |             The angle numerical value
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_line.SetSmoothAngleThreshold(i_angle)

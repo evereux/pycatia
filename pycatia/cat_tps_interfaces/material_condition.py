@@ -46,7 +46,6 @@ class MaterialCondition(AnyObject):
                 | 
                 |     Retrieves Material Condition modifier.
 
-        :return: str
         :rtype: str
         """
 

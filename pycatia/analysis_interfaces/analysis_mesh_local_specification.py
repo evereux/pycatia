@@ -51,7 +51,6 @@ class AnalysisMeshLocalSpecification(AnyObject):
                 |     Returns:
                 |         The string that represent the type of local specification.
 
-        :return: str
         :rtype: str
         """
 
@@ -86,7 +85,6 @@ class AnalysisMeshLocalSpecification(AnyObject):
         :param str i_name:
         :param Product i_product:
         :param Publication i_support:
-        :return: None
         :rtype: None
         """
         return self.analysis_mesh_local_specification.AddSupportFromPublication(
@@ -138,7 +136,6 @@ class AnalysisMeshLocalSpecification(AnyObject):
         :param str i_name:
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.analysis_mesh_local_specification.AddSupportFromReference(
@@ -183,7 +180,6 @@ class AnalysisMeshLocalSpecification(AnyObject):
 
         :param str i_name:
         :param cat_variant i_value:
-        :return: None
         :rtype: None
         """
         return self.analysis_mesh_local_specification.SetAttribute(i_name, i_value)

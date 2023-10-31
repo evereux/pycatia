@@ -69,7 +69,6 @@ class SFMSlot(AnyObject):
                 |              Dim UDFName As String
                 |              UDFName = SlotObj.GetCntnDetailName
 
-        :return: str
         :rtype: str
         """
         return self.sfm_slot.GetCntnDetailName()
@@ -121,7 +120,6 @@ class SFMSlot(AnyObject):
 
         :param SFMConnectionParameters o_list_of_slot_parameters:
         :param tuple o_list_of_parameter_names:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.sfm_slot.GetCntnDetailParameters(o_list_of_slot_parameters.com_object, o_list_of_parameter_names)
@@ -174,7 +172,6 @@ class SFMSlot(AnyObject):
                 |              y = Coord(1)
                 |              z = Coord(2)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.sfm_slot.GetConnectionCoordinate()
@@ -208,7 +205,6 @@ class SFMSlot(AnyObject):
                 |              Dim oPenetratingRef As Reference
                 |              Set oPenetratingRef = SlotObj.GetMasterObject
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.sfm_slot.GetMasterObject())
@@ -242,7 +238,6 @@ class SFMSlot(AnyObject):
                 |              Dim oPenetratedRef As Reference
                 |              Set oPenetratedRef = SlotObj.GetSlaveObject
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.sfm_slot.GetSlaveObject())
@@ -278,7 +273,6 @@ class SFMSlot(AnyObject):
                 |              SlotObj.SetSlaveObject(oPenetratedRef)
 
         :param Reference i_slave_object:
-        :return: None
         :rtype: None
         """
         return self.sfm_slot.SetSlaveObject(i_slave_object.com_object)
@@ -320,7 +314,6 @@ class SFMSlot(AnyObject):
                 |              Set SlotObj = SlotsonPlate.Item(1)
                 |              SlotObj.UpdateConnectionsSet
 
-        :return: None
         :rtype: None
         """
         return self.sfm_slot.UpdateConnectionsSet()

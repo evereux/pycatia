@@ -72,7 +72,6 @@ class ABQBoundaryConditions(Collection):
                 |          Set abqClampBC =  abaqusBCs.Add("ABQClamp")
 
         :param str i_boundary_type:
-        :return: ABQBoundaryCondition
         :rtype: ABQBoundaryCondition
         """
         return ABQBoundaryCondition(self.abq_boundary_conditions.Add(i_boundary_type))
@@ -103,7 +102,6 @@ class ABQBoundaryConditions(Collection):
                 |         The specified ABQBoundaryCondition.
 
         :param cat_variant i_index:
-        :return: ABQBoundaryCondition
         :rtype: ABQBoundaryCondition
         """
         return ABQBoundaryCondition(self.abq_boundary_conditions.Item(i_index))
@@ -131,7 +129,6 @@ class ABQBoundaryConditions(Collection):
                 |             CATIACollection::Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_boundary_conditions.Remove(i_index)

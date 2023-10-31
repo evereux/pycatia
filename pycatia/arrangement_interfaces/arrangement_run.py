@@ -56,7 +56,6 @@ class ArrangementRun(AnyObject):
                 |          Dim objArrNodes   As ArrangementNodes
                 |          Set objArrNodes = objRun1.ArrangementNodes
 
-        :return: ArrangementNodes
         :rtype: ArrangementNodes
         """
 
@@ -80,7 +79,6 @@ class ArrangementRun(AnyObject):
                 |          Dim dblLength   As Double
                 |          dblLength  = objRun1.Length
 
-        :return: float
         :rtype: float
         """
 
@@ -105,7 +103,6 @@ class ArrangementRun(AnyObject):
                 |          Dim dblSectionDia   As Double
                 |          dblSectionDia = objRun1.SectionDiameter
 
-        :return: float
         :rtype: float
         """
 
@@ -138,7 +135,6 @@ class ArrangementRun(AnyObject):
                 |          Dim dblSectionHeight   As Double
                 |          dblSectionHeight = objRun1.SectionHeight
 
-        :return: float
         :rtype: float
         """
 
@@ -170,7 +166,6 @@ class ArrangementRun(AnyObject):
                 | 
                 |          objRun1.SectionType = CatArrangementRouteSectionRectangular
 
-        :return: int
         :rtype: int
         """
 
@@ -203,7 +198,6 @@ class ArrangementRun(AnyObject):
                 |          Dim dblSectionWidth   As Double
                 |          dblSectionWidth = objRun1.SectionWidth
 
-        :return: float
         :rtype: float
         """
 
@@ -235,7 +229,7 @@ class ArrangementRun(AnyObject):
                 | 
                 |          objRun1.VisuMode = CatArrangementRouteVisuModeSolid
 
-        :return: int
+        :return: enum cat_arrangement_route_visu_mode
         :rtype: int
         """
 
@@ -244,7 +238,7 @@ class ArrangementRun(AnyObject):
     @visu_mode.setter
     def visu_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_arrangement_route_visu_mode
         """
 
         self.arrangement_run.VisuMode = value
@@ -276,7 +270,6 @@ class ArrangementRun(AnyObject):
                 |                  objProd  = objRun1.GetTechnologicalObject("Product")
 
         :param str i_application_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.arrangement_run.GetTechnologicalObject(i_application_type)

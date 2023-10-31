@@ -57,7 +57,6 @@ class Shuttle(AnyObject):
                 |     Returns/Stores the angle limit attribute. Role:/b> Retrieves/stores the
                 |     shuttle's angle limit attribute.
 
-        :return: float
         :rtype: float
         """
 
@@ -83,7 +82,6 @@ class Shuttle(AnyObject):
                 |     Returns/Stores the angle validation attribute. Role:/b> Retrieves/stores
                 |     the shuttle's angle validation attribute.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -109,7 +107,6 @@ class Shuttle(AnyObject):
                 |     Returns or sets the associated group object. Role:/b> Retrieves/stores the
                 |     objects within the shuttle as a group, that is a CATIAGroup.
 
-        :return: Group
         :rtype: Group
         """
 
@@ -146,7 +143,6 @@ class Shuttle(AnyObject):
                 |          Dim EngineMoveObject As Move
                 |          Set EngineMoveObject = Engine.Move
 
-        :return: Move
         :rtype: Move
         """
 
@@ -165,7 +161,7 @@ class Shuttle(AnyObject):
                 |     move mode. This can be either shuttle mode (to move the shuttle) or axis mode
                 |     (to simply move the shuttle axis).
 
-        :return: int
+        :return: enum cat_shuttle_move_mode
         :rtype: int
         """
 
@@ -174,7 +170,7 @@ class Shuttle(AnyObject):
     @move_mode.setter
     def move_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_shuttle_move_mode
         """
 
         self.shuttle.MoveMode = value
@@ -201,7 +197,6 @@ class Shuttle(AnyObject):
                 |          Dim EnginePositionObject As Position
                 |          Set EnginePositionObject = Engine.Position
 
-        :return: Position
         :rtype: Position
         """
 
@@ -219,7 +214,6 @@ class Shuttle(AnyObject):
                 |     Returns or sets the associated reference object. Role:/b> Retrieves/stores
                 |     the shuttle's reference object.
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -245,10 +239,9 @@ class Shuttle(AnyObject):
                 |     Returns any shuttles that are contained within the current shuttle.
                 |     Role:/b> Returns any shuttles that are contained within the current shuttle.
 
-        :return: Shuttles
         :rtype: Shuttles
         """
-        
+
         from pycatia.fitting_interfaces.shuttles import Shuttles
         return Shuttles(self.shuttle.SubShuttles)
 
@@ -264,7 +257,7 @@ class Shuttle(AnyObject):
                 |     Returns/Stores the validation vector attribute. Role:/b> Retrieves/stores
                 |     the validation vector attribute.
 
-        :return: int
+        :return: enum cat_shuttle_vector
         :rtype: int
         """
 
@@ -273,7 +266,7 @@ class Shuttle(AnyObject):
     @vector.setter
     def vector(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_shuttle_vector
         """
 
         self.shuttle.Vector = value

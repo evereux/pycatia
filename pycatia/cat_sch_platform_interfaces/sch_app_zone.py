@@ -59,7 +59,6 @@ class SchAppZone(AnyObject):
                 |          objThisIntf.AppAddZoneMemberobjArg1
 
         :param SchAppConnectable i_app_cntbl_to_add:
-        :return: None
         :rtype: None
         """
         return self.sch_app_zone.AppAddZoneMember(i_app_cntbl_to_add.com_object)
@@ -101,7 +100,6 @@ class SchAppZone(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.AppListZoneMembers
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_app_zone.AppListZoneMembers())
@@ -131,7 +129,6 @@ class SchAppZone(AnyObject):
                 |          objThisIntf.AppRemoveZoneMemberobjArg1
 
         :param SchAppConnectable i_app_cntbl_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_app_zone.AppRemoveZoneMember(i_app_cntbl_to_remove.com_object)

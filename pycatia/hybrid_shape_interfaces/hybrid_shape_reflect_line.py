@@ -69,7 +69,6 @@ class HybridShapeReflectLine(HybridShape):
                 |          Dim Ang As CATIAAngle
                 |          Set Ang = ReflectLine.Angle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -102,7 +101,6 @@ class HybridShapeReflectLine(HybridShape):
                 |          Dim Dir As CATIAHybridShapeDirection
                 |          Set Dir = ReflectLine.Direction
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -133,7 +131,6 @@ class HybridShapeReflectLine(HybridShape):
                 |     Normal(support) ^ Tangent(FirstReferenceCurve).
                 |     Legal values: 1 for same orientation, and -1 for inverse
 
-        :return: int
         :rtype: int
         """
 
@@ -164,7 +161,6 @@ class HybridShapeReflectLine(HybridShape):
                 |     Normal(support) ^ Tangent(FirstReferenceCurve).
                 |     Legal values: 1 for same orientation, and -1 for inverse
 
-        :return: int
         :rtype: int
         """
 
@@ -198,7 +194,6 @@ class HybridShapeReflectLine(HybridShape):
                 |          Dim Point As Reference
                 |          Set Point = ReflectLine.Origin
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -229,7 +224,6 @@ class HybridShapeReflectLine(HybridShape):
                 |     light source for conical type.
                 |     Legal values: 0 for cylindrical and 1 for conical.
 
-        :return: int
         :rtype: int
         """
 
@@ -263,7 +257,6 @@ class HybridShapeReflectLine(HybridShape):
                 |          Dim Surface As Reference
                 |          Set Surface = ReflectLine.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -295,7 +288,6 @@ class HybridShapeReflectLine(HybridShape):
                 |     direction.
                 |     Legal values: 0 for the normal and 1 for the tangent plane.
 
-        :return: int
         :rtype: int
         """
 
@@ -323,7 +315,6 @@ class HybridShapeReflectLine(HybridShape):
                 | 
                 |      hybRefLine.InvertOrientationDirection
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_reflect_line.InvertOrientationDirection()
@@ -342,7 +333,6 @@ class HybridShapeReflectLine(HybridShape):
                 | 
                 |      hybRefLine.InvertOrientationSupport
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_reflect_line.InvertOrientationSupport()

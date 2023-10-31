@@ -50,7 +50,6 @@ class ReplaceFace(SurfaceBasedShape):
                 | 
                 |     Returns the face to be removed.
 
-        :return: References
         :rtype: References
         """
 
@@ -69,7 +68,7 @@ class ReplaceFace(SurfaceBasedShape):
                 |     body kept after the splitting. A positive side refers to the same orientation
                 |     than the splitting element normal vector.
 
-        :return: int
+        :return: enum cat_split_side
         :rtype: int
         """
 
@@ -78,7 +77,7 @@ class ReplaceFace(SurfaceBasedShape):
     @splitting_side.setter
     def splitting_side(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_split_side
         """
 
         self.replace_face.SplittingSide = value
@@ -94,7 +93,6 @@ class ReplaceFace(SurfaceBasedShape):
                 |     Sets the face to be removed.
 
         :param Reference i_remove_face:
-        :return: None
         :rtype: None
         """
         return self.replace_face.AddRemoveFace(i_remove_face.com_object)
@@ -125,7 +123,6 @@ class ReplaceFace(SurfaceBasedShape):
                 |     Sets the replacing element.
 
         :param Reference i_split_plane:
-        :return: None
         :rtype: None
         """
         return self.replace_face.AddSplitPlane(i_split_plane.com_object)
@@ -156,7 +153,6 @@ class ReplaceFace(SurfaceBasedShape):
                 |     Remove the face to be removed.
 
         :param Reference i_remove_face:
-        :return: None
         :rtype: None
         """
         return self.replace_face.DeleteRemoveFace(i_remove_face.com_object)

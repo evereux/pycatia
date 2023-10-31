@@ -54,7 +54,6 @@ class ArrNomenclatureTree(AnyObject):
                 | 
                 |     Returns the collection of BaseNomenclatures within this UserDictionary.
 
-        :return: ArrNomenclatures
         :rtype: ArrNomenclatures
         """
 
@@ -71,7 +70,6 @@ class ArrNomenclatureTree(AnyObject):
                 |     Finds a UserNomenclature by Name from this UserDictionary.
 
         :param str i_type_name:
-        :return: ArrNomenclature
         :rtype: ArrNomenclature
         """
         return ArrNomenclature(self.arr_nomenclature_tree.GetNomenclature(i_type_name))

@@ -63,7 +63,6 @@ class Sections(Collection):
                 |             Dim NewSection As Section
                 |             Set NewSection = TheSections.Add
 
-        :return: Section
         :rtype: Section
         """
         return Section(self.sections.Add())
@@ -90,7 +89,6 @@ class Sections(Collection):
                 |             Dim NewSection As Section
                 |             Set NewSection = TheSections.AddFromSel
 
-        :return: Section
         :rtype: Section
         """
         return Section(self.sections.AddFromSel())
@@ -130,7 +128,6 @@ class Sections(Collection):
                 |             Set ThatSection = TheSections.Item("Section Of MyProduct")
 
         :param cat_variant i_index:
-        :return: Section
         :rtype: Section
         """
         return Section(self.sections.Item(i_index))
@@ -166,7 +163,6 @@ class Sections(Collection):
                 |             TheSections.Remove("Section Of MyProduct")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.sections.Remove(i_index)

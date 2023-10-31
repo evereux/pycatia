@@ -98,7 +98,6 @@ class RobotTask(Activity):
 
         :param Operation i_after_operation:
         :param Operation o_created_operation:
-        :return: None
         :rtype: None
         """
         return self.robot_task.CreateAfterOperation(i_after_operation.com_object, o_created_operation.com_object)
@@ -173,7 +172,6 @@ class RobotTask(Activity):
         :param Operation i_after_operation:
         :param bool i_where:
         :param AnyObject o_created_call_task:
-        :return: None
         :rtype: None
         """
         return self.robot_task.CreateCallTask(
@@ -252,7 +250,6 @@ class RobotTask(Activity):
         :param Operation i_reference_operation:
         :param Operation i_after_operation:
         :param Operation o_created_operation:
-        :return: None
         :rtype: None
         """
         return self.robot_task.CreateOperation(
@@ -309,7 +306,6 @@ class RobotTask(Activity):
                 |                objRobotTask.DeleteOperations objOperationList
 
         :param tuple i_operation_list:
-        :return: None
         :rtype: None
         """
         return self.robot_task.DeleteOperations(i_operation_list)
@@ -362,7 +358,6 @@ class RobotTask(Activity):
                 |                objRobotTask.GetAllOperations objOperationList
 
         :param tuple o_operation_list:
-        :return: None
         :rtype: None
         """
         return self.robot_task.GetAllOperations(o_operation_list)

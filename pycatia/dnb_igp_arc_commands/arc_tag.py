@@ -66,7 +66,6 @@ class ARCTag(AnyObject):
                 |             .
 
         :param cat_variant o_arc_tag_group:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.GetARCTagGroup(o_arc_tag_group)
@@ -112,7 +111,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param tuple io_aux_axes_values_list:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.GetAuxAxesValues(io_aux_axes_values_list)
@@ -157,7 +155,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param tuple o_base_vec:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.GetBaseSurfaceNormal(o_base_vec)
@@ -202,7 +199,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int o_index:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.GetIndex(o_index)
@@ -231,7 +227,6 @@ class ARCTag(AnyObject):
                 |             .
 
         :param cat_variant o_tag:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.GetTag(o_tag)
@@ -282,7 +277,6 @@ class ARCTag(AnyObject):
 
         :param str i_param_name:
         :param float o_val:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.GetTagParam(i_param_name, o_val)
@@ -312,7 +306,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param tuple o_wall_vec:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.GetWallSurfaceNormal(o_wall_vec)
@@ -357,7 +350,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int b_status:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.GetWeldGeometry(b_status)
@@ -393,7 +385,6 @@ class ARCTag(AnyObject):
 
         :param float i_angle:
         :param tuple i_dir_vector:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.Rotate(i_angle, i_dir_vector)
@@ -437,7 +428,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.RotateX(i_angle)
@@ -466,7 +456,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.RotateY(i_angle)
@@ -495,7 +484,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.RotateZ(i_angle)
@@ -525,7 +513,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param tuple i_base_vec:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.SetBaseSurfaceNormal(i_base_vec)
@@ -575,7 +562,6 @@ class ARCTag(AnyObject):
 
         :param str i_param_name:
         :param float i_val:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.SetTagParam(i_param_name, i_val)
@@ -605,7 +591,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param tuple i_wall_vec:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.SetWallSurfaceNormal(i_wall_vec)
@@ -650,7 +635,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int b_status:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.SetWeldGeometry(b_status)
@@ -685,7 +669,6 @@ class ARCTag(AnyObject):
 
         :param float i_distance:
         :param tuple i_dir_vector:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.Translate(i_distance, i_dir_vector)
@@ -729,7 +712,6 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise.
 
         :param float i_distance:
-        :return: None
         :rtype: None
         """
         return self.arc_tag.TranslateAlongSeam(i_distance)

@@ -71,7 +71,6 @@ class AnalysisLocalEntity(AnyObject):
                 |          Dim myAnalysisImages As AnalysisImages
                 |          Set myAnalysisImages = MyEntity.AnalysisImages
 
-        :return: AnalysisImages
         :rtype: AnalysisImages
         """
 
@@ -89,7 +88,6 @@ class AnalysisLocalEntity(AnyObject):
                 |     Returns the list of Analysis Supports (Selection of geometrical or mesh
                 |     entities) which define the area on which the analysis is applied on.
 
-        :return: AnalysisSupports
         :rtype: AnalysisSupports
         """
 
@@ -119,7 +117,6 @@ class AnalysisLocalEntity(AnyObject):
                 |          Dim myBasicComponents As BasicComponents
                 |          Set myBasicComponents = MyEntity.BasicComponents
 
-        :return: BasicComponents
         :rtype: BasicComponents
         """
         from pycatia.analysis_interfaces.basic_components import BasicComponents
@@ -139,7 +136,6 @@ class AnalysisLocalEntity(AnyObject):
                 |     Returns:
                 |         The string that represent the analysis entity type.
 
-        :return: str
         :rtype: str
         """
 
@@ -170,7 +166,6 @@ class AnalysisLocalEntity(AnyObject):
 
         :param Product i_constraint_product:
         :param Constraint i_constraint:
-        :return: None
         :rtype: None
         """
         return self.analysis_local_entity.AddSupportFromConstraint(
@@ -219,7 +214,6 @@ class AnalysisLocalEntity(AnyObject):
 
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.analysis_local_entity.AddSupportFromProduct(i_product.com_object, i_support.com_object)
@@ -265,7 +259,6 @@ class AnalysisLocalEntity(AnyObject):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.analysis_local_entity.AddSupportFromPublication(i_product.com_object, i_publication.com_object)
@@ -312,7 +305,6 @@ class AnalysisLocalEntity(AnyObject):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.analysis_local_entity.AddSupportFromReference(i_reference.com_object, i_support.com_object)
@@ -371,7 +363,6 @@ class AnalysisLocalEntity(AnyObject):
         :param int i_line_index:
         :param int i_column_index:
         :param int i_layer_index:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(
@@ -422,7 +413,6 @@ class AnalysisLocalEntity(AnyObject):
         :param int i_line_index:
         :param int i_column_index:
         :param int i_layer_index:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.analysis_local_entity.GetValue(i_component, i_label, i_line_index, i_column_index, i_layer_index)
@@ -470,7 +460,6 @@ class AnalysisLocalEntity(AnyObject):
         :param int i_column_index:
         :param int i_layer_index:
         :param Reference i_value:
-        :return: None
         :rtype: None
         """
         return self.analysis_local_entity.SetReference(
@@ -558,7 +547,6 @@ class AnalysisLocalEntity(AnyObject):
         :param int i_column_index:
         :param int i_layer_index:
         :param cat_variant i_value:
-        :return: None
         :rtype: None
         """
         return self.analysis_local_entity.SetValue(

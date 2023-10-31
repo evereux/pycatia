@@ -53,7 +53,7 @@ class HumanActivityGroup(WorkerActivity):
                 |     Returns or Sets Motion-Basis (see HTSActivityGroupMotionBasis for list of
                 |     possible values)
 
-        :return: int
+        :return: enum hts_activity_group_motion_basis
         :rtype: int
         """
 
@@ -62,7 +62,7 @@ class HumanActivityGroup(WorkerActivity):
     @motion_basis.setter
     def motion_basis(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_activity_group_motion_basis
         """
 
         self.human_activity_group.MotionBasis = value
@@ -78,7 +78,6 @@ class HumanActivityGroup(WorkerActivity):
                 | 
                 |     Returns or Sets ReferenceTime for HumanActivityGroup Activity
 
-        :return: float
         :rtype: float
         """
 
@@ -103,7 +102,6 @@ class HumanActivityGroup(WorkerActivity):
                 | 
                 |     Returns or Sets Speed for HumanActivityGroup Activity
 
-        :return: float
         :rtype: float
         """
 
@@ -128,7 +126,6 @@ class HumanActivityGroup(WorkerActivity):
                 | 
                 |     Returns or Sets Time for HumanActivityGroup Activity
 
-        :return: float
         :rtype: float
         """
 

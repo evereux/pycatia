@@ -45,7 +45,6 @@ class ElectricalSchematicWire(AnyObject):
                 | 
                 |     Wire color
 
-        :return: str
         :rtype: str
         """
 

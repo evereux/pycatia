@@ -74,7 +74,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 |          Dim CircleAxis As Reference 
                 |          Set CircleAxis = HybShpCircle.Axis
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -107,7 +106,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 |      Dim HybShpCircleDiameter As Length
                 |      HybShpCircleDiameter = HybShpCircle.Diameter
 
-        :return: Length
         :rtype: Length
         """
 
@@ -136,7 +134,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 | 
                 |           HybShpCircle.DiameterMode = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -169,7 +166,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 |          Dim CirclePoint As Reference 
                 |          Set CirclePoint = HybShpCircle.Point
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -206,7 +202,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 | 
                 |           HybShpCircle.ProjectionMode = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -239,7 +234,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 |      Dim HybShpCircleRadius As Length
                 |      HybShpCircleRadius = HybShpCircle.Radius
 
-        :return: Length
         :rtype: Length
         """
 

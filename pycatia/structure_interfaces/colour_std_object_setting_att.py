@@ -52,7 +52,6 @@ class ColourStdObjectSettingAtt(SettingController):
         :param int o_plate_colour_r:
         :param int o_plate_colour_g:
         :param int o_plate_colour_b:
-        :return: None
         :rtype: None
         """
         return self.colour_std_object_setting_att.GetPlateColor(o_plate_colour_r, o_plate_colour_g, o_plate_colour_b)
@@ -89,7 +88,6 @@ class ColourStdObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.colour_std_object_setting_att.GetPlateColorInfo(io_admin_level, io_locked)
@@ -111,7 +109,6 @@ class ColourStdObjectSettingAtt(SettingController):
         :param int o_shape_colour_r:
         :param int o_shape_colour_g:
         :param int o_shape_colour_b:
-        :return: None
         :rtype: None
         """
         return self.colour_std_object_setting_att.GetShapeColor(o_shape_colour_r, o_shape_colour_g, o_shape_colour_b)
@@ -148,7 +145,6 @@ class ColourStdObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.colour_std_object_setting_att.GetShapeColorInfo(io_admin_level, io_locked)
@@ -166,7 +162,6 @@ class ColourStdObjectSettingAtt(SettingController):
         :param int i_plate_colour_r:
         :param int i_plate_colour_g:
         :param int i_plate_colour_b:
-        :return: None
         :rtype: None
         """
         return self.colour_std_object_setting_att.SetPlateColor(i_plate_colour_r, i_plate_colour_g, i_plate_colour_b)
@@ -193,7 +188,6 @@ class ColourStdObjectSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.colour_std_object_setting_att.SetPlateColorLock(i_locked)
@@ -226,7 +220,6 @@ class ColourStdObjectSettingAtt(SettingController):
         :param int i_shape_colour_r:
         :param int i_shape_colour_g:
         :param int i_shape_colour_b:
-        :return: None
         :rtype: None
         """
         return self.colour_std_object_setting_att.SetShapeColor(i_shape_colour_r, i_shape_colour_g, i_shape_colour_b)
@@ -253,7 +246,6 @@ class ColourStdObjectSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.colour_std_object_setting_att.SetShapeColorLock(i_locked)

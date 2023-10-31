@@ -73,7 +73,6 @@ class CD5SaveOperation(AnyObject):
                 |
                 |          oSaveOperation.AllowDiskSave = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -105,7 +104,6 @@ class CD5SaveOperation(AnyObject):
                 |
                 |          oSaveOperation.Comment = "ABC"
 
-        :return: str
         :rtype: str
         """
 
@@ -138,7 +136,6 @@ class CD5SaveOperation(AnyObject):
                 |
                 |          oSaveOperation.CreateVersion = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -173,7 +170,6 @@ class CD5SaveOperation(AnyObject):
                 |          Dim oSaveItems As CD5SaveItems
                 |          Set oSaveItems = oSaveOperation.Items
 
-        :return: CD5SaveItems
         :rtype: CD5SaveItems
         """
 
@@ -198,7 +194,6 @@ class CD5SaveOperation(AnyObject):
                 |
                 |          oSaveOperation.RetainLock = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -229,7 +224,6 @@ class CD5SaveOperation(AnyObject):
                 |
                 |          oSaveOperation.Run
 
-        :return: None
         :rtype: None
         """
         return self.cd5_save_operation.Run()
@@ -251,7 +245,6 @@ class CD5SaveOperation(AnyObject):
                 |
                 |          oSaveOperation.ShowPanel
 
-        :return: None
         :rtype: None
         """
         return self.cd5_save_operation.ShowPanel()

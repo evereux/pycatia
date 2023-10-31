@@ -137,7 +137,6 @@ class StiDBChildren(AnyObject):
                 |          Dim oNbChildren As long
                 |          oNbChildren = oStiDBChildren.Count
 
-        :return: int
         :rtype: int
         """
 
@@ -183,7 +182,6 @@ class StiDBChildren(AnyObject):
                 |          Set oStiDBItem = oStiDBChildren.Item(3)
 
         :param cat_variant i_index:
-        :return: StiDBItem
         :rtype: StiDBItem
         """
         return StiDBItem(self.sti_db_children.Item(i_index))
@@ -228,7 +226,6 @@ class StiDBChildren(AnyObject):
                 |          oLinkType = oStiDBChildren.LinkType(3)
 
         :param cat_variant i_index:
-        :return: str
         :rtype: str
         """
         return self.sti_db_children.LinkType(i_index)

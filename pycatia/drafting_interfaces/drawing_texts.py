@@ -78,7 +78,6 @@ class DrawingTexts(Collection):
         :param str i_drawing_text:
         :param float i_position_x:
         :param float i_position_y:
-        :return: DrawingText
         :rtype: DrawingText
         """
         return DrawingText(self.drawing_texts.Add(i_drawing_text, i_position_x, i_position_y))
@@ -115,7 +114,6 @@ class DrawingTexts(Collection):
                 |          Set ThisDrawingText = MyView.Texts.Item(2)
 
         :param int i_index:
-        :return: DrawingText
         :rtype: DrawingText
         """
         return DrawingText(self.drawing_texts.Item(i_index))
@@ -148,7 +146,6 @@ class DrawingTexts(Collection):
                 |          MyView.DrawingTexts.Remove(3)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.drawing_texts.Remove(i_index)

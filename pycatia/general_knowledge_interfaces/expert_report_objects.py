@@ -55,7 +55,6 @@ class ExpertReportObjects(Collection):
                 | 
                 |          ObjectNumber = MyCollection.CountFail
 
-        :return: int
         :rtype: int
         """
 
@@ -81,7 +80,6 @@ class ExpertReportObjects(Collection):
                 | 
                 |          ObjectNumber = MyCollection.CountSucceed
 
-        :return: int
         :rtype: int
         """
 
@@ -116,7 +114,6 @@ class ExpertReportObjects(Collection):
                 |         The retrieved Report component
 
         :param cat_variant i_index:
-        :return: ExpertReportObject
         :rtype: ExpertReportObject
         """
         return ExpertReportObject(self.expert_report_objects.FailItem(i_index))
@@ -150,7 +147,6 @@ class ExpertReportObjects(Collection):
                 |         The retrieved Report component
 
         :param cat_variant i_index:
-        :return: ExpertReportObject
         :rtype: ExpertReportObject
         """
         return ExpertReportObject(self.expert_report_objects.Item(i_index))
@@ -182,7 +178,6 @@ class ExpertReportObjects(Collection):
                 |         The retrieved Report component
 
         :param cat_variant i_index:
-        :return: ExpertReportObject
         :rtype: ExpertReportObject
         """
         return ExpertReportObject(self.expert_report_objects.SucceedItem(i_index))

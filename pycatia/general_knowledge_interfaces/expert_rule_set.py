@@ -114,7 +114,6 @@ class ExpertRuleSet(ExpertRuleSetRuntime):
         :param str i_check_variables:
         :param str i_check_body:
         :param str i_rule_set:
-        :return: ExpertCheck
         :rtype: ExpertCheck
         """
         return ExpertCheck(self.expert_rule_set.CreateCheck(i_name, i_check_variables, i_check_body, i_rule_set))
@@ -182,7 +181,6 @@ class ExpertRuleSet(ExpertRuleSetRuntime):
         :param str i_rule_variables:
         :param str i_rule_body:
         :param str i_rule_set:
-        :return: ExpertRule
         :rtype: ExpertRule
         """
         return ExpertRule(self.expert_rule_set.CreateRule(i_name, i_rule_variables, i_rule_body, i_rule_set))
@@ -231,7 +229,6 @@ class ExpertRuleSet(ExpertRuleSetRuntime):
 
         :param str i_name:
         :param str i_rule_set:
-        :return: ExpertRuleSet
         :rtype: ExpertRuleSet
         """
         return ExpertRuleSet(self.expert_rule_set.CreateRuleSet(i_name, i_rule_set))

@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Printer(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -54,7 +53,6 @@ class Printer(AnyObject):
                 | 
                 |          MsgBox myPrinter.DeviceName
 
-        :return: str
         :rtype: str
         """
 
@@ -78,7 +76,7 @@ class Printer(AnyObject):
                 |          Dim DefaultPaperOrientation As CatPaperOrientation
                 |          DefaultPaperOrientation = myPrinter.Orientation
 
-        :return: int
+        :return: enum cat_paper_orientation
         :rtype: int
         """
 
@@ -102,7 +100,6 @@ class Printer(AnyObject):
                 |          Dim Height
                 |          Height = myPrinter.PaperHeight
 
-        :return: float
         :rtype: float
         """
 
@@ -126,7 +123,7 @@ class Printer(AnyObject):
                 |          Dim DefaultPaperSize As CatPaperSize
                 |          DefaultPaperSize = myPrinter.PaperSize
 
-        :return: int
+        :return: enum cat_paper_size
         :rtype: int
         """
 
@@ -150,11 +147,10 @@ class Printer(AnyObject):
                 |          Dim Width As float
                 |          Width = myPrinter.PaperWidth
 
-        :return: float
         :rtype: float
         """
 
         return self.printer.PaperWidth
 
     def __repr__(self):
-        return f'Printer(name="{ self.name }")'
+        return f'Printer(name="{self.name}")'

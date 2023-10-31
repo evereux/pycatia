@@ -46,7 +46,6 @@ class TPSParallelOnScreen(AnyObject):
                 | 
                 |     Retrieves the Parallel On Screen for the annotation.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -71,7 +70,6 @@ class TPSParallelOnScreen(AnyObject):
                 | 
                 |     Retrieves the Zoomable for the annotation.
 
-        :return: bool
         :rtype: bool
         """
 

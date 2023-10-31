@@ -52,7 +52,6 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
                 |     indicates the order in which the rules are evaluated. Rules with the same
                 |     priority are evaluated in the order of their creation.
 
-        :return: float
         :rtype: float
         """
 
@@ -77,7 +76,6 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
                 | 
                 |     Returns the editable object corresponding to this rule. Be careful that, according to your licence, or the type of rule you're handling, you may not have the right to edit the rule. Dim aRuleEdition As ExpertRule Set aRuleEdition = aRuleRuntime.RuleEdition If not(aRuleEdition is Nothing) Then CATIA.SystemService.Print aRuleEdition.Body End if
 
-        :return: ExpertRule
         :rtype: ExpertRule
         """
         

@@ -102,7 +102,6 @@ class SFMConnectionParameters(Collection):
                 |              Next
 
         :param cat_variant i_index:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.sfm_connection_parameters.Item(i_index))

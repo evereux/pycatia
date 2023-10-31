@@ -60,7 +60,6 @@ class DrawingDocument(Document):
                 | 
                 |          CATIA.ActiveDocument.DrawingRoot
 
-        :return: DrawingRoot
         :rtype: DrawingRoot
         """
         from pycatia.drafting_interfaces.drawing_root import DrawingRoot
@@ -90,7 +89,6 @@ class DrawingDocument(Document):
                 |          Dim DrawingParameters As Parameters
                 |          Set DrawingParameters = CATIA.ActiveDocument.Parameters
 
-        :return: Parameters
         :rtype: Parameters
         """
 
@@ -120,7 +118,6 @@ class DrawingDocument(Document):
                 |          Dim DrawingRelations As Relations
                 |          Set DrawingRelations = CATIA.ActiveDocument.Relations
 
-        :return: Relations
         :rtype: Relations
         """
 
@@ -146,7 +143,6 @@ class DrawingDocument(Document):
                 |          Dim SheetCollection As DrawingSheets
                 |          Set SheetCollection = CATIA.ActiveDocument.Sheets
 
-        :return: DrawingSheets
         :rtype: DrawingSheets
         """
 
@@ -170,7 +166,7 @@ class DrawingDocument(Document):
                 | 
                 |          CATIA.ActiveDocument.Standard = catISO
 
-        :return: int
+        :return: enum cat_drawing_standard
         :rtype: int
         """
 
@@ -179,7 +175,7 @@ class DrawingDocument(Document):
     @standard.setter
     def standard(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_drawing_standard
         """
 
         self.drawing_document.Standard = value
@@ -202,7 +198,6 @@ class DrawingDocument(Document):
                 | 
                 |          CATIA.ActiveDocument.Isolate
 
-        :return: None
         :rtype: None
         """
         return self.drawing_document.Isolate()
@@ -223,7 +218,6 @@ class DrawingDocument(Document):
                 | 
                 |          CATIA.ActiveDocument.Update
 
-        :return: None
         :rtype: None
         """
         return self.drawing_document.Update()

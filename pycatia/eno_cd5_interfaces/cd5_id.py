@@ -64,7 +64,6 @@ class CD5ID(AnyObject):
                 |          Dim oID As CATBSTR
                 |          oID = oCD5ID.GetID
 
-        :return: str
         :rtype: str
         """
         return self.cd5_id.GetID()

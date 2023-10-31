@@ -81,7 +81,6 @@ class CallRobotTaskActivity(Activity):
                 |                strTaskName
 
         :param str o_robot_task_name:
-        :return: None
         :rtype: None
         """
         return self.call_robot_task_activity.GetPointedTaskName(o_robot_task_name)
@@ -121,7 +120,6 @@ class CallRobotTaskActivity(Activity):
                 |                objCallRobotTaskActy.GetTask objPointedTask
 
         :param Activity o_robot_task:
-        :return: None
         :rtype: None
         """
         return self.call_robot_task_activity.GetTask(o_robot_task.com_object)
@@ -184,7 +182,6 @@ class CallRobotTaskActivity(Activity):
 
         :param Activity i_target_robot_task:
         :param tuple o_list_of_pointing_tasks:
-        :return: None
         :rtype: None
         """
         return self.call_robot_task_activity.SetTask(i_target_robot_task.com_object, o_list_of_pointing_tasks)

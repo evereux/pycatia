@@ -69,7 +69,6 @@ class AssemblyConvertor(AnyObject):
         :param str i_file_type:
         :param Path i_file:
         :param Product i_product:
-        :return: None
         :rtype: None
         """
 
@@ -100,7 +99,6 @@ class AssemblyConvertor(AnyObject):
                 |             list of properties to display
 
         :param tuple ilist_props:
-        :return: None
         :rtype: None
         """
         return self.assembly_convertor.SetCurrentFormat(ilist_props)
@@ -122,7 +120,6 @@ class AssemblyConvertor(AnyObject):
                 |             secondary list of properties to display
 
         :param tuple ilist_props:
-        :return: None
         :rtype: None
         """
         return self.assembly_convertor.SetSecondaryFormat(ilist_props)

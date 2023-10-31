@@ -83,7 +83,6 @@ class DeviceTaskFactory(AnyObject):
 
         :param str i_name:
         :param DeviceTask o_device_task:
-        :return: None
         :rtype: None
         """
         return self.device_task_factory.CreateDeviceTask(i_name, o_device_task.com_object)
@@ -137,7 +136,6 @@ class DeviceTaskFactory(AnyObject):
                 |                objDeviceTask
 
         :param DeviceTask i_device_task:
-        :return: None
         :rtype: None
         """
         return self.device_task_factory.DeleteDeviceTask(i_device_task.com_object)
@@ -193,7 +191,6 @@ class DeviceTaskFactory(AnyObject):
                 |                objDeviceTask
 
         :param tuple o_robot_task_list:
-        :return: None
         :rtype: None
         """
         return self.device_task_factory.GetAllDeviceTasks(o_robot_task_list)

@@ -51,7 +51,6 @@ class HybridShapePlaneOffset(Plane):
                 | 
                 |     Returns the offset value.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -72,7 +71,6 @@ class HybridShapePlaneOffset(Plane):
                 |     Legal values: the orientation is 1 if the plane orientation is not
                 |     inverted, and -1 otherwise.
 
-        :return: int
         :rtype: int
         """
 
@@ -98,7 +96,6 @@ class HybridShapePlaneOffset(Plane):
                 |     Returns or sets the reference plane.
                 |     Sub-element(s) supported (see Boundary object): PlanarFace.
 
-        :return: Reference
         :rtype: Reference
         """
 

@@ -72,7 +72,6 @@ class MfgAssembly(AnyObject):
                 |          Dim Number As Long
                 |          Number = obj.Count
 
-        :return: int
         :rtype: int
         """
 
@@ -104,7 +103,6 @@ class MfgAssembly(AnyObject):
                 |          newName = "NewMAName"
                 |          obj.MAName = newName
 
-        :return: str
         :rtype: str
         """
 
@@ -144,7 +142,6 @@ class MfgAssembly(AnyObject):
                 |          newPartNbr = "NewMAPartNumber"
                 |          obj.MAPartNumber = newPartNbr
 
-        :return: str
         :rtype: str
         """
 
@@ -182,7 +179,7 @@ class MfgAssembly(AnyObject):
                 |            MAtype = "Manufacturing Kit"
                 |          End If
 
-        :return: int
+        :return: enum dnbia_mfg_assembly_type
         :rtype: int
         """
 
@@ -215,7 +212,6 @@ class MfgAssembly(AnyObject):
                 |                  obj.AddPart(Part)
 
         :param Item i_item:
-        :return: None
         :rtype: None
         """
         return self.mfg_assembly.AddPart(i_item.com_object)
@@ -267,7 +263,6 @@ class MfgAssembly(AnyObject):
                 |              Next
 
         :param cat_variant i_index:
-        :return: Item
         :rtype: Item
         """
         return Item(self.mfg_assembly.Item(i_index))
@@ -299,7 +294,6 @@ class MfgAssembly(AnyObject):
                 |                  obj.RemovePart(Part)
 
         :param Item i_item:
-        :return: None
         :rtype: None
         """
         return self.mfg_assembly.RemovePart(i_item.com_object)

@@ -71,7 +71,6 @@ class DofState(AnyObject):
                 |            Next
 
         :param tuple o_values:
-        :return: None
         :rtype: None
         """
         return self.dof_state.GetDeviceDOFValues(o_values)

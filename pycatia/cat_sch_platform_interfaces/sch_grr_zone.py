@@ -58,7 +58,6 @@ class SchGRRZone(AnyObject):
                 |          objThisIntf.AddBoundaryElementobjArg1
 
         :param SchBoundaryElem i_zone_bndy_to_add:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_zone.AddBoundaryElement(i_zone_bndy_to_add.com_object)
@@ -102,7 +101,6 @@ class SchGRRZone(AnyObject):
                 |          objThisIntf.IsBoundaryValidbVar1
 
         :param bool b_is_valid:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_zone.IsBoundaryValid(b_is_valid)
@@ -148,7 +146,6 @@ class SchGRRZone(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListBoundaryElements
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_grr_zone.ListBoundaryElements())
@@ -177,7 +174,6 @@ class SchGRRZone(AnyObject):
                 |          objThisIntf.RemoveBoundaryElementobjArg1
 
         :param SchBoundaryElem i_zone_bndy_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_zone.RemoveBoundaryElement(i_zone_bndy_to_remove.com_object)

@@ -55,7 +55,6 @@ class ControlPoint2D(Point2D):
                 |             The curvature of the tangent determined at the control
                 |             point
 
-        :return: float
         :rtype: float
         """
 
@@ -88,7 +87,6 @@ class ControlPoint2D(Point2D):
                 |             The Y Coordinate of the tangent determined at the control
                 |             point
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -126,7 +124,6 @@ class ControlPoint2D(Point2D):
 
         :param float i_tangent_x:
         :param float i_tangent_y:
-        :return: None
         :rtype: None
         """
         return self.control_point_2d.SetTangent(i_tangent_x, i_tangent_y)
@@ -141,7 +138,6 @@ class ControlPoint2D(Point2D):
                 | 
                 |     Unsets the curvature properties of the spline control point
 
-        :return: None
         :rtype: None
         """
         return self.control_point_2d.UnsetCurvature()
@@ -156,7 +152,6 @@ class ControlPoint2D(Point2D):
                 | 
                 |     Unsets the tangent properties of the spline control point
 
-        :return: None
         :rtype: None
         """
         return self.control_point_2d.UnsetTangent()

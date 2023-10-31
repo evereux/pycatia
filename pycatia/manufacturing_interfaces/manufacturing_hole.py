@@ -57,7 +57,6 @@ class ManufacturingHole(AnyObject):
                 | 
                 |              Set holeDepth = firstHole.Depth
 
-        :return: Length
         :rtype: Length
         """
 
@@ -84,7 +83,6 @@ class ManufacturingHole(AnyObject):
                 | 
                 |              Set holeDiam = firstHole.Diameter
 
-        :return: Length
         :rtype: Length
         """
 
@@ -114,7 +112,6 @@ class ManufacturingHole(AnyObject):
         :param float o_x:
         :param float o_y:
         :param float o_z:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_hole.GetDirection(o_x, o_y, o_z)
@@ -143,7 +140,6 @@ class ManufacturingHole(AnyObject):
         :param float o_x:
         :param float o_y:
         :param float o_z:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_hole.GetOrigin(o_x, o_y, o_z)

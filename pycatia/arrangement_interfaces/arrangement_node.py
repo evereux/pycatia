@@ -56,7 +56,6 @@ class ArrangementNode(AnyObject):
                 |          Dim dblBendAngle   As Double
                 |          dblBendBendAngle  = objNode1.BendAngle
 
-        :return: float
         :rtype: float
         """
 
@@ -81,7 +80,6 @@ class ArrangementNode(AnyObject):
                 |          Dim dblBendRadius   As Double
                 |          dblBendRadius  = objNode1.BendRadius
 
-        :return: float
         :rtype: float
         """
 
@@ -127,7 +125,6 @@ class ArrangementNode(AnyObject):
 
         :param Move i_rel_axis:
         :param tuple io_node_location:
-        :return: None
         :rtype: None
         """
         return self.arrangement_node.GetPoint(i_rel_axis.com_object, io_node_location)
@@ -182,7 +179,6 @@ class ArrangementNode(AnyObject):
 
         :param Move i_rel_axis:
         :param tuple i_node_location:
-        :return: None
         :rtype: None
         """
         return self.arrangement_node.SetPoint(i_rel_axis.com_object, i_node_location)

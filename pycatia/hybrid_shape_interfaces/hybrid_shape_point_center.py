@@ -65,7 +65,6 @@ class HybridShapePointCenter(Point):
                 |          Dim Ref_Circle As Reference
                 |          Set Ref_Circle = PointCenter.Element
 
-        :return: Reference
         :rtype: Reference
         """
 

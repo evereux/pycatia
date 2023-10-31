@@ -52,7 +52,6 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
                 | 
                 |     Returns the list of the RuleBaseComponent.
 
-        :return: ExpertRuleBaseComponentRuntimes
         :rtype: ExpertRuleBaseComponentRuntimes
         """
 
@@ -80,7 +79,6 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
                 |            ' .. some actions
                 |          End if
 
-        :return: ExpertRuleSet
         :rtype: ExpertRuleSet
         """
         
@@ -107,7 +105,6 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
                 |     Returns:
                 |         Status of the ruleset
 
-        :return: int
         :rtype: int
         """
         return self.expert_rule_set_runtime.Status()

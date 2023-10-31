@@ -60,7 +60,6 @@ class ABQSolutionCase(AnyObject):
                 |          Dim ListSolutionCaseImages As ABQSolutionCaseImages
                 |          Set ListSolutionCaseImages = MySolutionCase.AnalysisImages
 
-        :return: ABQSolutionCaseImages
         :rtype: ABQSolutionCaseImages
         """
 
@@ -88,7 +87,6 @@ class ABQSolutionCase(AnyObject):
                 |          Dim ListSolutionSteps As ABQSolutionSteps
                 |          Set ListSolutionSteps = MySolutionCase.SolutionSteps
 
-        :return: ABQSolutionSteps
         :rtype: ABQSolutionSteps
         """
 
@@ -141,7 +139,6 @@ class ABQSolutionCase(AnyObject):
         :param cat_variant i_hide_existing_images:
         :param cat_variant i_step_number:
         :param cat_variant i_increment_number:
-        :return: AnalysisImage
         :rtype: AnalysisImage
         """
         return AnalysisImage(
@@ -180,7 +177,6 @@ class ABQSolutionCase(AnyObject):
         :param cat_variant i_step_number:
         :param cat_variant i_increment_number:
         :param AnalysisImage i_image:
-        :return: None
         :rtype: None
         """
         return self.abq_solution_case.SetStepIncrementNumber(

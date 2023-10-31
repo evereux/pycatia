@@ -59,7 +59,6 @@ class FileSystem(AnyObject):
                 |         oTmpDirectory
                 |             The file separator string.
 
-        :return: str
         :rtype: str
         """
 
@@ -81,7 +80,6 @@ class FileSystem(AnyObject):
                 |         oTmpDirectory
                 |             The path separator string.
 
-        :return: str
         :rtype: str
         """
 
@@ -105,7 +103,6 @@ class FileSystem(AnyObject):
                 |             A folder which corresponds to the temporary system
                 |             directory.
 
-        :return: Folder
         :rtype: Folder
         """
 
@@ -138,7 +135,6 @@ class FileSystem(AnyObject):
 
         :param str i_path_chunk1:
         :param str i_path_chunk2:
-        :return: str
         :rtype: str
         """
         return self.file_system.ConcatenatePaths(i_path_chunk1, i_path_chunk2)
@@ -178,7 +174,6 @@ class FileSystem(AnyObject):
         :param str i_path_source:
         :param str i_path_destination:
         :param bool i_overwrite:
-        :return: None
         :rtype: None
         """
         return self.file_system.CopyFile(i_path_source, i_path_destination, i_overwrite)
@@ -229,7 +224,6 @@ class FileSystem(AnyObject):
 
         :param str i_source_path:
         :param str i_destination_path:
-        :return: None
         :rtype: None
         """
         return self.file_system.CopyFolder(i_source_path, i_destination_path)
@@ -267,7 +261,6 @@ class FileSystem(AnyObject):
 
         :param str i_path:
         :param bool i_overwrite:
-        :return: File
         :rtype: File
         """
         return File(self.file_system.CreateFile(i_path, i_overwrite))
@@ -299,7 +292,6 @@ class FileSystem(AnyObject):
                 |              Set FoldObj = FileSys.CreateFolder("C:/Tests/Fold1")
 
         :param str i_path:
-        :return: Folder
         :rtype: Folder
         """
         return Folder(self.file_system.CreateFolder(i_path))
@@ -327,7 +319,6 @@ class FileSystem(AnyObject):
                 |                  FileSys.DeleteFile("C:/Tests/File1")
 
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.file_system.DeleteFile(i_path)
@@ -355,7 +346,6 @@ class FileSystem(AnyObject):
                 |                  FileSys.DeleteFolder("C:/Tests/Fold1")
 
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.file_system.DeleteFolder(i_path)
@@ -385,7 +375,6 @@ class FileSystem(AnyObject):
                 |                  Exists = FileSys.FileExists("C:/Tests/File1")
 
         :param str i_path:
-        :return: bool
         :rtype: bool
         """
         return self.file_system.FileExists(i_path)
@@ -415,7 +404,6 @@ class FileSystem(AnyObject):
                 |                  Exists=FileSys.FolderExists("C:/Tests/Fold1")
 
         :param str i_path:
-        :return: bool
         :rtype: bool
         """
         return self.file_system.FolderExists(i_path)
@@ -444,7 +432,6 @@ class FileSystem(AnyObject):
                 |                  Set FileObj = FileSys.GetFile("C:/Tests")
 
         :param str i_path:
-        :return: File
         :rtype: File
         """
         return File(self.file_system.GetFile(i_path))
@@ -476,7 +463,6 @@ class FileSystem(AnyObject):
                 |              Set FoldObj = FileSys.GetFolder("C:/Tests/")
 
         :param str i_path:
-        :return: Folder
         :rtype: Folder
         """
         return Folder(self.file_system.GetFolder(i_path))

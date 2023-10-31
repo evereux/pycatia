@@ -69,7 +69,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the loaded context will be appended to the
                 |     existing context in the V5 process document
 
-        :return: bool
         :rtype: bool
         """
 
@@ -98,7 +97,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the label effectivity will be applied to all
                 |     components associated with the Alternative
 
-        :return: bool
         :rtype: bool
         """
 
@@ -127,7 +125,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the manufacturing context is automatically
                 |     (computed and) loaded into the V5 process document during load
 
-        :return: bool
         :rtype: bool
         """
 
@@ -156,7 +153,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the existing volumetric context is to be
                 |     automatically loaded into the V5 process document during load
 
-        :return: bool
         :rtype: bool
         """
 
@@ -185,7 +181,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the existing volumetric context is to be
                 |     automatically loaded into the V5 process document during load
 
-        :return: bool
         :rtype: bool
         """
 
@@ -213,7 +208,6 @@ class MfgHubSettingAtt(SettingController):
                 | 
                 |     A TRUE value indicates that the Shape Rollup won't be added during load
 
-        :return: bool
         :rtype: bool
         """
 
@@ -248,7 +242,6 @@ class MfgHubSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if everything ran ok
 
-        :return: str
         :rtype: str
         """
 
@@ -285,7 +278,6 @@ class MfgHubSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if everything ran ok
 
-        :return: int
         :rtype: int
         """
 
@@ -314,7 +306,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the ENOVIA product geometry will be loaded from
                 |     ENOVIA database.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -343,7 +334,6 @@ class MfgHubSettingAtt(SettingController):
                 |     If set to TRUE than during load of manufacturing context the child
                 |     processes of the previous processes will also be considered
 
-        :return: bool
         :rtype: bool
         """
 
@@ -372,7 +362,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the associated prdres children will be loaded
                 |     from the database.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -401,7 +390,6 @@ class MfgHubSettingAtt(SettingController):
                 |     If set to TRUE than during load of manufacturing context the child
                 |     processes of the previous processes will also be considered
 
-        :return: bool
         :rtype: bool
         """
 
@@ -430,7 +418,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the existing volumetric context is to be
                 |     automatically loaded into the V5 process document during load
 
-        :return: bool
         :rtype: bool
         """
 
@@ -459,7 +446,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the manufacturing context is display in the V5
                 |     process document
 
-        :return: bool
         :rtype: bool
         """
 
@@ -488,7 +474,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the duplicate objects will be loaded in the
                 |     context in the V5 process document
 
-        :return: bool
         :rtype: bool
         """
 
@@ -517,7 +502,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the ENOVIA product geometry will be loaded from
                 |     ENOVIA database.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -547,7 +531,6 @@ class MfgHubSettingAtt(SettingController):
                 |     include products / resource of the feeder process of the previous processes in
                 |     process graph
 
-        :return: bool
         :rtype: bool
         """
 
@@ -576,7 +559,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the Manufacturing Assemblies related to process
                 |     will be loaded when a PPRHub project is opened in V5
 
-        :return: bool
         :rtype: bool
         """
 
@@ -605,7 +587,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates tthat the Manufacturing Kits related to process will
                 |     be loaded when a PPRHub project is opened in V5
 
-        :return: bool
         :rtype: bool
         """
 
@@ -633,7 +614,6 @@ class MfgHubSettingAtt(SettingController):
                 | 
                 |     A TRUE value indicates that the PSS data will be loaded from the database.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -659,7 +639,6 @@ class MfgHubSettingAtt(SettingController):
                 |     Retrieves (or sets, if not initialized) the LoadPrdResUserAttribs
                 |     parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -688,7 +667,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates tthat the Geometries related to Resource will be
                 |     loaded when a PPRHub project is opened in V5
 
-        :return: bool
         :rtype: bool
         """
 
@@ -718,7 +696,6 @@ class MfgHubSettingAtt(SettingController):
                 |     include products / resource of the processes not linked in the process graph
                 |     containing loaded process
 
-        :return: bool
         :rtype: bool
         """
 
@@ -747,7 +724,6 @@ class MfgHubSettingAtt(SettingController):
                 |     If set to TRUE than on load all the products assigned to process(es) will
                 |     be locked in WRITE mode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -784,7 +760,6 @@ class MfgHubSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if everything ran ok
 
-        :return: bool
         :rtype: bool
         """
 
@@ -812,7 +787,6 @@ class MfgHubSettingAtt(SettingController):
                 |     The valid integer values (0,1) define the type of Process Traversal
                 |     Relations to consider while computing Manufacturing Context
 
-        :return: int
         :rtype: int
         """
 
@@ -841,7 +815,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the existing volumetric context is to be
                 |     automatically loaded into the V5 process document during load
 
-        :return: bool
         :rtype: bool
         """
 
@@ -874,7 +847,6 @@ class MfgHubSettingAtt(SettingController):
                 |             values are as follows 0: Read-Write Mode (Default) 1: Partial Read Only Mode 2:
                 |             Read Only mode
 
-        :return: int
         :rtype: int
         """
 
@@ -909,7 +881,6 @@ class MfgHubSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if everything ran ok
 
-        :return: str
         :rtype: str
         """
 
@@ -938,7 +909,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the provided script in the editor will be
                 |     executed post Load
 
-        :return: bool
         :rtype: bool
         """
 
@@ -973,7 +943,6 @@ class MfgHubSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if everything ran ok
 
-        :return: str
         :rtype: str
         """
 
@@ -1007,7 +976,6 @@ class MfgHubSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if everything ran ok
 
-        :return: str
         :rtype: str
         """
 
@@ -1036,7 +1004,6 @@ class MfgHubSettingAtt(SettingController):
                 |     The valid integer values (0,1,2) define extent of parsing previous process
                 |     in the loaded process' parent process structure
 
-        :return: int
         :rtype: int
         """
 
@@ -1064,7 +1031,6 @@ class MfgHubSettingAtt(SettingController):
                 | 
                 |     A safe array of process - product relations to be loaded
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -1092,7 +1058,6 @@ class MfgHubSettingAtt(SettingController):
                 | 
                 |     A safe array of process - resource relations to be loaded
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -1122,7 +1087,6 @@ class MfgHubSettingAtt(SettingController):
                 |     resources that are not assigned to any loaded processes will be removed from
                 |     the V5 document.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1151,7 +1115,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the Control flow will be saved to the database
                 |     in Partial Read only mode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1180,7 +1143,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that simulation detailing data is NOT saved in PPR
                 |     hub during save.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1209,7 +1171,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the relation to unexposed part will be saved in
                 |     the database
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1238,7 +1199,6 @@ class MfgHubSettingAtt(SettingController):
                 |     If set to TRUE (and SavePPRNoDetailing is TRUE) a panel is displayed
                 |     showing effectivity filter information
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1267,7 +1227,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the calculated cycle time for V5 process should
                 |     be assigned to corresponding E5 process attribure on save
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1296,7 +1255,6 @@ class MfgHubSettingAtt(SettingController):
                 |     A TRUE value indicates that the Only Filtered objects will be shown in
                 |     Search Results
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1342,7 +1300,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetAppendContextChkBInfo(io_admin_level, io_locked)
@@ -1379,7 +1336,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetApplyLabelEffToAltChildInfo(io_admin_level, io_locked)
@@ -1416,7 +1372,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetAutoLoadMfgCtxInfo(io_admin_level, io_locked)
@@ -1453,7 +1408,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetAutoLoadSrvMfgCtxInfo(io_admin_level, io_locked)
@@ -1490,7 +1444,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetAutoLoadVolCtxInfo(io_admin_level, io_locked)
@@ -1527,7 +1480,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetDisableShapeRollUpInfo(io_admin_level, io_locked)
@@ -1555,7 +1507,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetIssueRepositoryPathInfo(io_admin_level, io_locked)
@@ -1583,7 +1534,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLinkSendModeInfo(io_admin_level, io_locked)
@@ -1620,7 +1570,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoad3dStateAndPosInfo(io_admin_level, io_locked)
@@ -1657,7 +1606,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadAllChildProcMfgCtxInfo(io_admin_level, io_locked)
@@ -1694,7 +1642,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadAssocPrdResChildInfo(io_admin_level, io_locked)
@@ -1731,7 +1678,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadChildProcMfgCtxInfo(io_admin_level, io_locked)
@@ -1768,7 +1714,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadCtxWithFileGeometryInfo(io_admin_level, io_locked)
@@ -1805,7 +1750,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadDispMfgCtxInfo(io_admin_level, io_locked)
@@ -1843,7 +1787,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadDuplicatesInContextTreeChkBInfo(io_admin_level, io_locked)
@@ -1880,7 +1823,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadENVGeomFromENVdbInfo(io_admin_level, io_locked)
@@ -1917,7 +1859,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadFeedProcMfgCtxInfo(io_admin_level, io_locked)
@@ -1954,7 +1895,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadMfgAssmblyInfo(io_admin_level, io_locked)
@@ -1991,7 +1931,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadMfgKitsInfo(io_admin_level, io_locked)
@@ -2028,7 +1967,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadPSSDataInfo(io_admin_level, io_locked)
@@ -2065,7 +2003,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadPrdResUserAttribsInfo(io_admin_level, io_locked)
@@ -2102,7 +2039,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadResGeoInfo(io_admin_level, io_locked)
@@ -2139,7 +2075,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLoadUnconstrainedMfgCtxInfo(io_admin_level, io_locked)
@@ -2176,7 +2111,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetLockAssignedPrdOnLoadInfo(io_admin_level, io_locked)
@@ -2204,7 +2138,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetMailClientLaunchModeInfo(io_admin_level, io_locked)
@@ -2242,7 +2175,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetMfgCtxPrevProcRelationTypeInfo(io_admin_level, io_locked)
@@ -2279,7 +2211,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetOnlyLoadCtxWithGeometryInfo(io_admin_level, io_locked)
@@ -2316,7 +2247,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetOpenModeForLoadInfo(io_admin_level, io_locked)
@@ -2345,7 +2275,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetPackAndGoRepositoryPathInfo(io_admin_level, io_locked)
@@ -2382,7 +2311,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetPostLoadScriptOptionInfo(io_admin_level, io_locked)
@@ -2410,7 +2338,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetPostLoadScriptPathInfo(io_admin_level, io_locked)
@@ -2438,7 +2365,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetPostLoadVBAModuleInfo(io_admin_level, io_locked)
@@ -2476,7 +2402,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetPrevProcParseTypeForMfgCtxInfo(io_admin_level, io_locked)
@@ -2513,7 +2438,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetProcProdRelationsInfo(io_admin_level, io_locked)
@@ -2550,7 +2474,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetProcResRelationsInfo(io_admin_level, io_locked)
@@ -2587,7 +2510,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetRmvNotAssgnPrdResOnSyncInfo(io_admin_level, io_locked)
@@ -2624,7 +2546,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetSaveControlFlowInPROModeInfo(io_admin_level, io_locked)
@@ -2661,7 +2582,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetSavePPRNoDetailingInfo(io_admin_level, io_locked)
@@ -2699,7 +2619,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetSaveRelationToUnExposedPartInfo(io_admin_level, io_locked)
@@ -2736,7 +2655,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetSaveShowEffctvtPanelInfo(io_admin_level, io_locked)
@@ -2773,7 +2691,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetSaveV5CalcTimeInfo(io_admin_level, io_locked)
@@ -2810,7 +2727,6 @@ class MfgHubSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.mfg_hub_setting_att.GetShowOnlyFilteredObjectsInfo(io_admin_level, io_locked)
@@ -2837,7 +2753,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetAppendContextChkBLock(i_locked)
@@ -2879,7 +2794,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetApplyLabelEffToAltChildLock(i_locked)
@@ -2921,7 +2835,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetAutoLoadMfgCtxLock(i_locked)
@@ -2963,7 +2876,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetAutoLoadSrvMfgCtxLock(i_locked)
@@ -3005,7 +2917,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetAutoLoadVolCtxLock(i_locked)
@@ -3047,7 +2958,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetDisableShapeRollUpLock(i_locked)
@@ -3094,7 +3004,6 @@ class MfgHubSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetIssueRepositoryPathLock(i_locked)
@@ -3141,7 +3050,6 @@ class MfgHubSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLinkSendModeLock(i_locked)
@@ -3183,7 +3091,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoad3dStateAndPosLock(i_locked)
@@ -3225,7 +3132,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadAllChildProcMfgCtxLock(i_locked)
@@ -3267,7 +3173,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadAssocPrdResChildLock(i_locked)
@@ -3309,7 +3214,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadChildProcMfgCtxLock(i_locked)
@@ -3351,7 +3255,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadCtxWithFileGeometryLock(i_locked)
@@ -3393,7 +3296,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadDispMfgCtxLock(i_locked)
@@ -3436,7 +3338,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadDuplicatesInContextTreeChkBLock(i_locked)
@@ -3478,7 +3379,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadENVGeomFromENVdbLock(i_locked)
@@ -3520,7 +3420,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadFeedProcMfgCtxLock(i_locked)
@@ -3562,7 +3461,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadMfgAssmblyLock(i_locked)
@@ -3604,7 +3502,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadMfgKitsLock(i_locked)
@@ -3646,7 +3543,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadPSSDataLock(i_locked)
@@ -3688,7 +3584,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadPrdResUserAttribsLock(i_locked)
@@ -3730,7 +3625,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadResGeoLock(i_locked)
@@ -3772,7 +3666,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLoadUnconstrainedMfgCtxLock(i_locked)
@@ -3814,7 +3707,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetLockAssignedPrdOnLoadLock(i_locked)
@@ -3861,7 +3753,6 @@ class MfgHubSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetMailClientLaunchModeLock(i_locked)
@@ -3904,7 +3795,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetMfgCtxPrevProcRelationTypeLock(i_locked)
@@ -3946,7 +3836,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetOnlyLoadCtxWithGeometryLock(i_locked)
@@ -3988,7 +3877,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetOpenModeForLoadLock(i_locked)
@@ -4035,7 +3923,6 @@ class MfgHubSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetPackAndGoRepositoryPathLock(i_locked)
@@ -4077,7 +3964,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetPostLoadScriptOptionLock(i_locked)
@@ -4124,7 +4010,6 @@ class MfgHubSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetPostLoadScriptPathLock(i_locked)
@@ -4171,7 +4056,6 @@ class MfgHubSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetPostLoadVBAModuleLock(i_locked)
@@ -4213,7 +4097,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetPrevProcParseTypeForMfgCtxLock(i_locked)
@@ -4255,7 +4138,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetProcProdRelationsLock(i_locked)
@@ -4297,7 +4179,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetProcResRelationsLock(i_locked)
@@ -4339,7 +4220,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetRmvNotAssgnPrdResOnSyncLock(i_locked)
@@ -4381,7 +4261,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetSaveControlFlowInPROModeLock(i_locked)
@@ -4423,7 +4302,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetSavePPRNoDetailingLock(i_locked)
@@ -4466,7 +4344,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetSaveRelationToUnExposedPartLock(i_locked)
@@ -4508,7 +4385,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetSaveShowEffctvtPanelLock(i_locked)
@@ -4550,7 +4426,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetSaveV5CalcTimeLock(i_locked)
@@ -4592,7 +4467,6 @@ class MfgHubSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.mfg_hub_setting_att.SetShowOnlyFilteredObjectsLock(i_locked)

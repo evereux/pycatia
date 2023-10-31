@@ -46,7 +46,6 @@ class Merges(Collection):
                 | 
                 |     Performs some clean-up.
 
-        :return: None
         :rtype: None
         """
         return self.merges.CleanUp()
@@ -90,7 +89,6 @@ class Merges(Collection):
         :param float i_accuracy_for_simplification:
         :param int i_keep_edges:
         :param int i_decoration:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -112,7 +110,6 @@ class Merges(Collection):
                 | 
                 |     Returns the name of the associated shape.
 
-        :return: str
         :rtype: str
         """
         return self.merges.MergeShapeName()

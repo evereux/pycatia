@@ -52,7 +52,6 @@ class ABQTemperatureHistory(ABQTemperature):
                 |     Returns:
                 |         A boolean specifying whether the feature is activated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -85,7 +84,6 @@ class ABQTemperatureHistory(ABQTemperature):
                 |          Dim abqAmplitude As ABQTabularAmplitude 
                 |          Set abqAmplitude = abqTemperature.Amplitude
 
-        :return: ABQTabularAmplitude
         :rtype: ABQTabularAmplitude
         """
 
@@ -111,7 +109,6 @@ class ABQTemperatureHistory(ABQTemperature):
                 |     Sets or returns the step number at which to start reading the temperature
                 |     data.
 
-        :return: int
         :rtype: int
         """
 
@@ -137,7 +134,6 @@ class ABQTemperatureHistory(ABQTemperature):
                 |     Sets or returns the step number at which to stop reading the temperature
                 |     data.
 
-        :return: int
         :rtype: int
         """
 
@@ -166,7 +162,6 @@ class ABQTemperatureHistory(ABQTemperature):
                 |         A boolean specifying whether an amplitude will be
                 |         used.
 
-        :return: bool
         :rtype: bool
         """
 

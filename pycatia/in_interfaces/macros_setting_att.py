@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class MacrosSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -46,7 +45,6 @@ class MacrosSettingAtt(SettingController):
                 | 
                 |     Returns the list of default macro libraries.
 
-        :return: tuple
         :rtype: tuple
         """
         return self.macros_setting_att.GetDefaultMacroLibraries()
@@ -82,7 +80,6 @@ class MacrosSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.macros_setting_att.GetDefaultMacroLibrariesInfo(admin_level, o_locked)
@@ -97,7 +94,6 @@ class MacrosSettingAtt(SettingController):
                 | 
                 |     Returns the list of external references.
 
-        :return: tuple
         :rtype: tuple
         """
         return self.macros_setting_att.GetExternalReferences()
@@ -133,7 +129,6 @@ class MacrosSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.macros_setting_att.GetExternalReferencesInfo(admin_level, o_locked)
@@ -149,8 +144,7 @@ class MacrosSettingAtt(SettingController):
                 | 
                 |     Returns the editor path for the specified language.
 
-        :param int i_language:
-        :return: str
+        :param int i_language: enum cat_script_language
         :rtype: str
         """
         return self.macros_setting_att.GetLanguageEditor(i_language)
@@ -186,7 +180,6 @@ class MacrosSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.macros_setting_att.GetLanguageEditorInfo(admin_level, o_locked)
@@ -203,7 +196,6 @@ class MacrosSettingAtt(SettingController):
                 |     Sets the list of default macro libraries.
 
         :param tuple i_libraries:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetDefaultMacroLibraries(i_libraries)
@@ -245,7 +237,6 @@ class MacrosSettingAtt(SettingController):
                 |             False: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetDefaultMacroLibrariesLock(i_locked)
@@ -276,7 +267,6 @@ class MacrosSettingAtt(SettingController):
                 |     Sets the list of external references.
 
         :param tuple i_references:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetExternalReferences(i_references)
@@ -318,7 +308,6 @@ class MacrosSettingAtt(SettingController):
                 |             False: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetExternalReferencesLock(i_locked)
@@ -349,9 +338,8 @@ class MacrosSettingAtt(SettingController):
                 | 
                 |     Sets the editor path for the specified language.
 
-        :param int i_language:
+        :param int i_language: enum cat_script_language
         :param str i_editor_path:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetLanguageEditor(i_language, i_editor_path)
@@ -378,7 +366,6 @@ class MacrosSettingAtt(SettingController):
                 |             False: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetLanguageEditorLock(i_locked)
@@ -399,4 +386,4 @@ class MacrosSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'MacrosSettingAtt(name="{ self.name }")'
+        return f'MacrosSettingAtt(name="{self.name}")'

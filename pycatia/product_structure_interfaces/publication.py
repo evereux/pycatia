@@ -58,7 +58,6 @@ class Publication(AnyObject):
                 | 
                 |              Pub1.Relay(Pub2)
 
-        :return: Publication
         :rtype: Publication
         """
 
@@ -95,7 +94,6 @@ class Publication(AnyObject):
                 |              Dim Ref As Reference
                 |              Ref = Pub1.Valuation
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 

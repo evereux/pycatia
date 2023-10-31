@@ -54,7 +54,6 @@ class SFMManager(AnyObject):
                 |     Returns:
                 |         S_OK if everything ran ok.
 
-        :return: None
         :rtype: None
         """
         return self.sfm_manager.AddHull()
@@ -83,7 +82,6 @@ class SFMManager(AnyObject):
                 |              Dim Welds As SfmWelds
                 |              Set Welds = ManagerObj.GetWelds(Nothing)
 
-        :return: SFMWelds
         :rtype: SFMWelds
         """
         return SFMWelds(self.sfm_manager.GetAllUC1Welds())
@@ -104,7 +102,6 @@ class SFMManager(AnyObject):
                 |          Dim Hull As Reference
                 |          SfmManager.GetHull Hull
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.sfm_manager.GetHull())
@@ -126,7 +123,6 @@ class SFMManager(AnyObject):
                 |          Dim PlaneSystems As References
                 |          SfmManager.GetPlaneSystems PlaneSystems
 
-        :return: References
         :rtype: References
         """
         return References(self.sfm_manager.GetPlaneSystems())
@@ -151,7 +147,6 @@ class SFMManager(AnyObject):
 
         :param cat_variant i_plane_system_index:
         :param cat_variant i_plane_index:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(
@@ -178,7 +173,6 @@ class SFMManager(AnyObject):
                 |          Dim SuperMembers As References
                 |          SfmManager.GetSuperMembers SuperMembers
 
-        :return: References
         :rtype: References
         """
         return References(self.sfm_manager.GetSuperMembers())
@@ -200,7 +194,6 @@ class SFMManager(AnyObject):
                 |          Dim SuperPlates As References
                 |          SfmManager.GetSuperPlates SuperPlates
 
-        :return: References
         :rtype: References
         """
         return References(self.sfm_manager.GetSuperPlates())
@@ -222,7 +215,6 @@ class SFMManager(AnyObject):
                 |          Dim SuperStiffeners As References
                 |          SfmManager.GetSuperStiffeners SuperStiffeners
 
-        :return: References
         :rtype: References
         """
         return References(self.sfm_manager.GetSuperStiffeners())
@@ -245,7 +237,6 @@ class SFMManager(AnyObject):
                 |          SfmManager.GetSuperStiffenersOnFreeEdge
                 |          SuperStiffenersOnFreeEdge
 
-        :return: References
         :rtype: References
         """
         return References(self.sfm_manager.GetSuperStiffenersOnFreeEdge())
@@ -264,7 +255,6 @@ class SFMManager(AnyObject):
                 |     Returns:
                 |         S_OK if everything ran ok.
 
-        :return: None
         :rtype: None
         """
         return self.sfm_manager.InitResources()
@@ -284,7 +274,6 @@ class SFMManager(AnyObject):
                 |     Returns:
                 |         S_OK if everything ran ok.
 
-        :return: None
         :rtype: None
         """
         return self.sfm_manager.SynchronizeHull()
@@ -304,7 +293,6 @@ class SFMManager(AnyObject):
                 |     Returns:
                 |         S_OK if everything ran ok.
 
-        :return: None
         :rtype: None
         """
         return self.sfm_manager.SynchronizePlanes()

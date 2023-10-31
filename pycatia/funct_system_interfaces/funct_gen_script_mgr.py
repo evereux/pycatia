@@ -47,7 +47,6 @@ class FunctGenScriptMgr(FunctionalFacet):
                 | 
                 |     Get the CurrentScript.
 
-        :return: int
         :rtype: int
         """
 
@@ -72,7 +71,6 @@ class FunctGenScriptMgr(FunctionalFacet):
                 | 
                 |     Get the Generative Scripts collection.
 
-        :return: FunctScripts
         :rtype: FunctScripts
         """
 

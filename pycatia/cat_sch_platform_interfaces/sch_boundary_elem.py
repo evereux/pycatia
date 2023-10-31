@@ -60,7 +60,6 @@ class SchBoundaryElem(AnyObject):
                 |          objThisIntf.GetBoundaryPointsobjArg1
 
         :param SchListOfDoubles o_l_db_pts:
-        :return: None
         :rtype: None
         """
         return self.sch_boundary_elem.GetBoundaryPoints(o_l_db_pts.com_object)
@@ -104,7 +103,6 @@ class SchBoundaryElem(AnyObject):
                 |          objThisIntf.GetEndPointsobjArg1
 
         :param SchListOfDoubles o_l_db4_pts:
-        :return: None
         :rtype: None
         """
         return self.sch_boundary_elem.GetEndPoints(o_l_db4_pts.com_object)
@@ -146,7 +144,6 @@ class SchBoundaryElem(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListGRRZoneOwners
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_boundary_elem.ListGRRZoneOwners())

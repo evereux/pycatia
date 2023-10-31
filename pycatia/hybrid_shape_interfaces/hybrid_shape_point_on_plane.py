@@ -64,7 +64,6 @@ class HybridShapePointOnPlane(Point):
                 |          Dim oDirection As CATIAHybridShapeDirection
                 |          Set oDirection = PointOnPlane.FirstDirection
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -99,7 +98,6 @@ class HybridShapePointOnPlane(Point):
                 |          Dim oPlane As CATIAReference
                 |          Set oPlane  = PointOnPlane.Plane
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -136,7 +134,6 @@ class HybridShapePointOnPlane(Point):
                 |          Dim oPoint As CATIAReference
                 |          Set oPoint  = PointOnPlane.Point
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -170,7 +167,6 @@ class HybridShapePointOnPlane(Point):
                 |          Dim oProjSur As CATIAReference
                 |          Set oProjSur = PointOnPlane.ProjectionSurface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -203,7 +199,6 @@ class HybridShapePointOnPlane(Point):
                 |          Dim oX As  CATIALength
                 |          Set oX  = PointOnPlane.XOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -228,7 +223,6 @@ class HybridShapePointOnPlane(Point):
                 |          Dim oY As  CATIALength
                 |          Set oY  = PointOnPlane.YOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -260,7 +254,6 @@ class HybridShapePointOnPlane(Point):
         :param float o_dir_x:
         :param float o_dir_y:
         :param float o_dir_z:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_point_on_plane.GetSecondDirection(o_dir_x, o_dir_y, o_dir_z)
@@ -291,7 +284,6 @@ class HybridShapePointOnPlane(Point):
         :param float i_dir_x:
         :param float i_dir_y:
         :param float i_dir_z:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_point_on_plane.SetSecondDirection(i_dir_x, i_dir_y, i_dir_z)

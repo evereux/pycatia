@@ -89,8 +89,7 @@ class MfgAssemblyFactory(AnyObject):
 
         :param str i_name_bstr:
         :param str i_part_number_bstr:
-        :param int i_type:
-        :return: Item
+        :param int i_type: enum dnbia_mfg_assembly_type
         :rtype: Item
         """
         return Item(self.mfg_assembly_factory.CreateMfgAssembly(i_name_bstr, i_part_number_bstr, i_type))
@@ -120,7 +119,6 @@ class MfgAssemblyFactory(AnyObject):
                 |                  Set nbMfgAssemblies =  objMAfact.GetNumberOfMfgAssemblies
                 |                  MsgBox  nbMfgAssemblies
 
-        :return: int
         :rtype: int
         """
         return self.mfg_assembly_factory.GetNumberOfMfgAssemblies()
@@ -156,9 +154,8 @@ class MfgAssemblyFactory(AnyObject):
                 |                  matype,nbMfgAssemblies
                 |                  MsgBox  nbMfgAssemblies
 
-        :param int i_type:
+        :param int i_type: enum dnbia_mfg_assembly_type
         :param int o_num_of_mfg_assemblies:
-        :return: None
         :rtype: None
         """
         return self.mfg_assembly_factory.GetNumberofALLMfgAssy(i_type, o_num_of_mfg_assemblies)
@@ -188,7 +185,6 @@ class MfgAssemblyFactory(AnyObject):
                 |                  objMAfact.RemoveMfgAssembly mfgAssy
 
         :param Item i_mfg_assembly:
-        :return: None
         :rtype: None
         """
         return self.mfg_assembly_factory.RemoveMfgAssembly(i_mfg_assembly.com_object)
@@ -256,7 +252,6 @@ class MfgAssemblyFactory(AnyObject):
         :param str i_name_bstr:
         :param tuple o_mfg_assemblies:
         :param int o_num_of_mfg_assemblies:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(
@@ -312,7 +307,6 @@ class MfgAssemblyFactory(AnyObject):
                 |                 Next
 
         :param cat_variant i_index:
-        :return: Item
         :rtype: Item
         """
         return Item(self.mfg_assembly_factory.RetrieveMfgAssemblyAtIndex(i_index))
@@ -362,10 +356,9 @@ class MfgAssemblyFactory(AnyObject):
                 |                  objMAfact.RetriveALLMfgAssy
                 |                  matype,MAList,NbMA
 
-        :param int i_type:
+        :param int i_type: enum dnbia_mfg_assembly_type
         :param tuple o_all_m_as:
         :param int o_num_of_mfg_assemblies:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.mfg_assembly_factory.RetriveALLMfgAssy(i_type, o_all_m_as, o_num_of_mfg_assemblies))

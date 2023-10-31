@@ -103,11 +103,10 @@ class DrawingDimensions(Collection):
                 |      Dim MyDimension2 As DrawingDimension
                 |      Set MyDimension2 = MyView.Dimensions.Add(iType, myElements2(1), selpoints(3),catDimOffset)
 
-        :param int i_type_dim:
+        :param int i_type_dim: enum cat_dim_type
         :param tuple i_geom_elem:
         :param tuple i_pt_coord_elem:
         :param int i_line_rep:
-        :return: DrawingDimension
         :rtype: DrawingDimension
         """
         return DrawingDimension(
@@ -186,12 +185,11 @@ class DrawingDimensions(Collection):
                 |      Dim MyDimension As DrawingDimension
                 |      Set MyDimension = MyView.Dimensions.Add2(iType, myElements(1), selpoints(3), Line1, 0)
 
-        :param int i_type_dim:
+        :param int i_type_dim: enum cat_dim_type
         :param tuple i_geom_elem:
         :param tuple i_pt_coord_elem:
         :param cat_variant i_ldc_ref_elem:
         :param int i_ldc_ref_angle:
-        :return: DrawingDimension
         :rtype: DrawingDimension
         """
         return DrawingDimension(
@@ -246,7 +244,6 @@ class DrawingDimensions(Collection):
                 |          Set ThatDrawingDimension = MyView.Dimensions.Item("MyDimension")
 
         :param cat_variant i_index:
-        :return: DrawingDimension
         :rtype: DrawingDimension
         """
         return DrawingDimension(self.drawing_dimensions.Item(i_index))
@@ -281,7 +278,6 @@ class DrawingDimensions(Collection):
                 |          MyView.Dimensions.Remove(3)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.drawing_dimensions.Remove(i_index)

@@ -46,7 +46,6 @@ class FreeState(AnyObject):
                 | 
                 |     Retrieves Free State modifier.
 
-        :return: str
         :rtype: str
         """
 

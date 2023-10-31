@@ -85,7 +85,6 @@ class Part(AnyObject):
                 |          Dim EngineAnalysis As Analyze
                 |          Set EngineAnalysis = Engine.Analyze
 
-        :return: Analyze
         :rtype: Analyze
         """
 
@@ -168,7 +167,6 @@ class Part(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          Set bodiesColl = partRoot.Bodies
 
-        :return: Bodies
         :rtype: Bodies
         """
 
@@ -194,7 +192,6 @@ class Part(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          Set csts = partRoot.Constraints
 
-        :return: Constraints
         :rtype: Constraints
         """
 
@@ -218,7 +215,6 @@ class Part(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          MsgBox "The density is " & partRoot.Density
 
-        :return: float
         :rtype: float
         """
 
@@ -227,7 +223,6 @@ class Part(AnyObject):
     @property
     def file_name(self) -> str:
         """
-        :return: str
         :rtype: str
         """
         try:
@@ -238,7 +233,6 @@ class Part(AnyObject):
     @property
     def full_name(self) -> str:
         """
-        :return: str
         :rtype: str
         """
         try:
@@ -267,7 +261,6 @@ class Part(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          Set geomElts = partRoot.GeometricElements
 
-        :return: GeometricElements
         :rtype: GeometricElements
         """
 
@@ -293,7 +286,6 @@ class Part(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          Set hybridBodiesColl = partRoot.HybridBodies
 
-        :return: HybridBodies
         :rtype: HybridBodies
         """
 
@@ -320,7 +312,6 @@ class Part(AnyObject):
                 |          Dim hybridShapeFact As Factory
                 |          Set hybridShapeFact = partRoot.HybridShapeFactory
 
-        :return: HybridShapeFactory
         :rtype: HybridShapeFactory
         """
 
@@ -346,7 +337,6 @@ class Part(AnyObject):
                 |           MsgBox "There is a big problem"
                 |      End If
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -378,7 +368,6 @@ class Part(AnyObject):
                 |          Dim mainBody As Body
                 |          Set mainBody=CATIA.ActiveDocument.Part.MainBody
 
-        :return: Body
         :rtype: Body
         """
 
@@ -413,7 +402,6 @@ class Part(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          Set ogsColl = partRoot.OrderedGeometricalSets
 
-        :return: OrderedGeometricalSets
         :rtype: OrderedGeometricalSets
         """
 
@@ -438,7 +426,6 @@ class Part(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          Set originElts = partRoot.OriginElements
 
-        :return: OriginElements
         :rtype: OriginElements
         """
 
@@ -465,7 +452,6 @@ class Part(AnyObject):
                 |          Dim params As Parameters
                 |          Set params = partRoot.Parameters
 
-        :return: Parameters
         :rtype: Parameters
         """
 
@@ -491,7 +477,6 @@ class Part(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          Set rels = partRoot.Relations
 
-        :return: Relations
         :rtype: Relations
         """
 
@@ -517,7 +502,6 @@ class Part(AnyObject):
                 |          Dim shapeFact As Factory
                 |          Set shapeFact = partRoot.ShapeFactory
 
-        :return: ShapeFactory
         :rtype: ShapeFactory
         """
 
@@ -569,7 +553,6 @@ class Part(AnyObject):
                 |          Dim sheetMetalParm As SheetMetalParameters
                 |          Set sheetMetalFact = partRoot.SheetMetalParameters
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -596,7 +579,6 @@ class Part(AnyObject):
                 |          Dim userSurfaces As UserSurfaces
                 |          Set userSurfaces = partRoot.UserSurfaces
 
-        :return: Collection
         :rtype: Collection
         """
 
@@ -626,7 +608,6 @@ class Part(AnyObject):
                 |          partRoot.Activate(pad1)
 
         :param AnyObject i_object:
-        :return: None
         :rtype: None
         """
         return self.part.Activate(i_object.com_object)
@@ -659,7 +640,6 @@ class Part(AnyObject):
 
         :param str i_label:
         :param AnyObject i_object_context:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.part.CreateReferenceFromBRepName(i_label, i_object_context.com_object))
@@ -674,7 +654,6 @@ class Part(AnyObject):
                 |     Member of MECMOD.Part
 
         :param AnyObject i_object:
-        :return: Reference
         :rtype: Reference
         """
 
@@ -702,7 +681,6 @@ class Part(AnyObject):
                 |         The reference to a B-Rep sub-element such a face or an edge
 
         :param str i_label:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.part.CreateReferenceFromName(i_label))
@@ -730,7 +708,6 @@ class Part(AnyObject):
                 |         edge of a pad or a 3D line.
 
         :param AnyObject i_object:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.part.CreateReferenceFromObject(i_object.com_object))
@@ -739,7 +716,6 @@ class Part(AnyObject):
         """
         See inactivate
         :param i_object:
-        :return: None
         :rtype: None
         """
         return self.part.Inactivate(i_object.com_object)
@@ -773,7 +749,6 @@ class Part(AnyObject):
                 |          End If
 
         :param str i_obj_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -800,7 +775,6 @@ class Part(AnyObject):
                 |             The code name of the factory
 
         :param str i_factory_iid:
-        :return: Factory
         :rtype: Factory
         """
         return Factory(self.part.GetCustomerFactory(i_factory_iid))
@@ -830,7 +804,6 @@ class Part(AnyObject):
                 |          partRoot.Inactivate(pad1)
 
         :param AnyObject i_object:
-        :return: None
         :rtype: None
         """
         return self.part.Inactivate(i_object.com_object)
@@ -860,7 +833,6 @@ class Part(AnyObject):
                 |          isInactive = partRoot.IsInactive(pad1)
 
         :param AnyObject i_object:
-        :return: bool
         :rtype: bool
         """
         return self.part.IsInactive(i_object.com_object)
@@ -891,7 +863,6 @@ class Part(AnyObject):
                 |          isuptodate = partRoot.IsUpToDate(pad1)
 
         :param AnyObject i_object:
-        :return: bool
         :rtype: bool
         """
         return self.part.IsUpToDate(i_object.com_object)
@@ -908,7 +879,6 @@ class Part(AnyObject):
         >>> Part.path().suffix
         .CATPart
 
-        :return: Path()
         :rtype: Path()
         """
         return Path(self.full_name)
@@ -931,7 +901,6 @@ class Part(AnyObject):
                 |          Set partRoot = partDoc.Part
                 |          partRoot.Update
 
-        :return: None
         :rtype: None
         """
         return self.part.Update()
@@ -961,7 +930,6 @@ class Part(AnyObject):
                 |          partRoot.UpdateObject(pad1)
 
         :param AnyObject i_object:
-        :return: None
         :rtype: None
         """
         return self.part.UpdateObject(i_object.com_object)

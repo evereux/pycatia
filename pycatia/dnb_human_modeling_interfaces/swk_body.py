@@ -49,7 +49,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Returns the center of gravity of the current manikin.
 
-        :return: SWKCenterOfGravity
         :rtype: SWKCenterOfGravity
         """
 
@@ -66,7 +65,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Returns or sets the display of the center of gravity.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -91,7 +89,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Returns or sets the central cone display of the active line of sight.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -117,7 +114,6 @@ class SWKBody(SWKBodyElement):
                 |     Returns or sets the cone type display to bounded cone for the peripheral
                 |     and central cone.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -135,7 +131,6 @@ class SWKBody(SWKBodyElement):
                 |     Returns or sets the cone type display to boundings for the peripheral and
                 |     central cone.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -153,7 +148,6 @@ class SWKBody(SWKBodyElement):
                 |     Returns or sets the cone type display to flat for the peripheral and
                 |     central cone.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -171,7 +165,6 @@ class SWKBody(SWKBodyElement):
                 |     Returns or sets the cone type display to spherical for the peripheral and
                 |     central cone.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -188,7 +181,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Returns or sets the display of the manikin ellipses.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -213,7 +205,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Returns or sets the display of the active line of sight.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -238,7 +229,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Returns or records miscellaneous user-added comments about the posture.
 
-        :return: str
         :rtype: str
         """
 
@@ -263,7 +253,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Returns the number of segments of the body.
 
-        :return: int
         :rtype: int
         """
 
@@ -280,7 +269,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Returns or sets the peripheral cone display of the active line of sight.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -312,7 +300,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |           myManikin.Body.Referential = "LowestFoot"
 
-        :return: str
         :rtype: str
         """
 
@@ -337,7 +324,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Returns or sets the display of the referential.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -362,7 +348,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Returns or sets the display of the segments.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -387,7 +372,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Returns or sets the display of the manikin surfaces (skin).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -413,7 +397,6 @@ class SWKBody(SWKBodyElement):
                 |     Returns or sets the manikin skin resolution.
                 |     The valid values range from 4 to 128.
 
-        :return: int
         :rtype: int
         """
 
@@ -473,7 +456,6 @@ class SWKBody(SWKBodyElement):
                 |          myManikin.Body.ApplyPosition myPosition
 
         :param tuple pi_position_increment:
-        :return: None
         :rtype: None
         """
         return self.swk_body.ApplyPosition(pi_position_increment)
@@ -512,7 +494,6 @@ class SWKBody(SWKBodyElement):
                 |             segments on the body, minus 1.
 
         :param int pi_index:
-        :return: SWKSegment
         :rtype: SWKSegment
         """
         return SWKSegment(self.swk_body.GetSegment(pi_index))
@@ -531,7 +512,6 @@ class SWKBody(SWKBodyElement):
                 |         manikin
                 |         falls inside its basis of support, given the manikin's current posture.
 
-        :return: bool
         :rtype: bool
         """
         return self.swk_body.IsBalanced()
@@ -547,7 +527,6 @@ class SWKBody(SWKBodyElement):
                 |     Lock the body in the given dof
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_body.LockPosture(pi_dof_id)
@@ -568,7 +547,6 @@ class SWKBody(SWKBodyElement):
 
         :param int pi_dof_id:
         :param int pi_reset:
-        :return: None
         :rtype: None
         """
         return self.swk_body.ResetAngularLimitations(pi_dof_id, pi_reset)
@@ -583,7 +561,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Reset the attaches of the body.
 
-        :return: None
         :rtype: None
         """
         return self.swk_body.ResetAttaches()
@@ -598,7 +575,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Reset the offsets of the body.
 
-        :return: None
         :rtype: None
         """
         return self.swk_body.ResetIKOffsets()
@@ -613,7 +589,6 @@ class SWKBody(SWKBodyElement):
                 | 
                 |     Set the manikin to the default (standing) posture.
 
-        :return: None
         :rtype: None
         """
         return self.swk_body.ResetPosture()
@@ -629,7 +604,6 @@ class SWKBody(SWKBodyElement):
                 |     Reset the pref angles of the body.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_body.ResetPrefAngles(pi_dof_id)
@@ -642,7 +616,6 @@ class SWKBody(SWKBodyElement):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetConeTypeBoundedCone()
 
-        :return: None
         :rtype: None
         """
         return self.swk_body.SetConeTypeBoundedCone()
@@ -655,7 +628,6 @@ class SWKBody(SWKBodyElement):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetConeTypeBoundings()
 
-        :return: None
         :rtype: None
         """
         return self.swk_body.SetConeTypeBoundings()
@@ -668,7 +640,6 @@ class SWKBody(SWKBodyElement):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetConeTypeFlat()
 
-        :return: None
         :rtype: None
         """
         return self.swk_body.SetConeTypeFlat()
@@ -681,7 +652,6 @@ class SWKBody(SWKBodyElement):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetConeTypeSpherical()
 
-        :return: None
         :rtype: None
         """
         return self.swk_body.SetConeTypeSpherical()
@@ -731,7 +701,6 @@ class SWKBody(SWKBodyElement):
                 |          myManikin.Body.SetPosition myPosition
 
         :param tuple pi_new_position:
-        :return: None
         :rtype: None
         """
         return self.swk_body.SetPosition(pi_new_position)
@@ -772,9 +741,8 @@ class SWKBody(SWKBodyElement):
                 |             keeps the referential after the change of the
                 |             posture
 
-        :param int pi_posture_spec:
+        :param int pi_posture_spec: enum swk_posture_spec
         :param bool pi_keep_referential:
-        :return: None
         :rtype: None
         """
         return self.swk_body.SetPosture(pi_posture_spec, pi_keep_referential)
@@ -806,7 +774,6 @@ class SWKBody(SWKBodyElement):
                 |     When the manikin is in that posture, then the output of property
                 |     PosturalScore will be the same as that of property MaxPosturalScore.
 
-        :return: None
         :rtype: None
         """
         return self.swk_body.SetToBestPosture()
@@ -822,7 +789,6 @@ class SWKBody(SWKBodyElement):
                 |     Swap the angular limitations of the body.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_body.SwapAngularLimitations(pi_dof_id)
@@ -839,7 +805,6 @@ class SWKBody(SWKBodyElement):
                 |     manikin. For instance, the right leg takes the posture of the left leg, and
                 |     vice versa.
 
-        :return: None
         :rtype: None
         """
         return self.swk_body.SwapPosture()
@@ -855,7 +820,6 @@ class SWKBody(SWKBodyElement):
                 |     Swap the preferred angles of the body.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_body.SwapPrefAngles(pi_dof_id)

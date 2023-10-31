@@ -62,7 +62,6 @@ class SchCntrDocLink(AnyObject):
 
         :param SchAppConnector o_sch_connector:
         :param str o_document_name:
-        :return: None
         :rtype: None
         """
         return self.sch_cntr_doc_link.GetLink(o_sch_connector.com_object, o_document_name)
@@ -105,7 +104,6 @@ class SchCntrDocLink(AnyObject):
                 |          objThisIntf.LinkobjArg1
 
         :param SchAppConnector i_sch_connector:
-        :return: None
         :rtype: None
         """
         return self.sch_cntr_doc_link.Link(i_sch_connector.com_object)
@@ -143,7 +141,6 @@ class SchCntrDocLink(AnyObject):
                 |           ...
                 |          objThisIntf.UnLink
 
-        :return: None
         :rtype: None
         """
         return self.sch_cntr_doc_link.UnLink()

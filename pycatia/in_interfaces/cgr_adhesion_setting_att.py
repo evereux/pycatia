@@ -48,7 +48,6 @@ class CgrAdhesionSettingAtt(SettingController):
                 | 
                 |     Retrieves the V4V5_FDT container activation state.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -73,7 +72,6 @@ class CgrAdhesionSettingAtt(SettingController):
                 | 
                 |     Retrieves the V4_Model_CommentPage container activation state.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -98,7 +96,6 @@ class CgrAdhesionSettingAtt(SettingController):
                 | 
                 |     Retrieves the V4_Model_LnF container activation state.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -123,7 +120,6 @@ class CgrAdhesionSettingAtt(SettingController):
                 | 
                 |     Retrieves the V5_SPA container activation state.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -148,7 +144,6 @@ class CgrAdhesionSettingAtt(SettingController):
                 | 
                 |     Retrieves the Voxels container activation state.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -177,7 +172,6 @@ class CgrAdhesionSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.cgr_adhesion_setting_att.GetV4V5_FDTInfo(admin_level, o_locked)
@@ -197,7 +191,6 @@ class CgrAdhesionSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.cgr_adhesion_setting_att.GetV4_Model_CommentPageInfo(admin_level, o_locked)
@@ -217,7 +210,6 @@ class CgrAdhesionSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.cgr_adhesion_setting_att.GetV4_Model_LnFInfo(admin_level, o_locked)
@@ -237,7 +229,6 @@ class CgrAdhesionSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.cgr_adhesion_setting_att.GetV5_SPAInfo(admin_level, o_locked)
@@ -257,7 +248,6 @@ class CgrAdhesionSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.cgr_adhesion_setting_att.GetVoxelsInfo(admin_level, o_locked)
@@ -274,7 +264,6 @@ class CgrAdhesionSettingAtt(SettingController):
                 |     Refer to CATSysSettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.cgr_adhesion_setting_att.SetV4V5_FDTLock(i_locked)
@@ -307,7 +296,6 @@ class CgrAdhesionSettingAtt(SettingController):
                 |     Refer to CATSysSettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.cgr_adhesion_setting_att.SetV4_Model_CommentPageLock(i_locked)
@@ -340,7 +328,6 @@ class CgrAdhesionSettingAtt(SettingController):
                 |     Refer to CATSysSettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.cgr_adhesion_setting_att.SetV4_Model_LnFLock(i_locked)
@@ -372,7 +359,6 @@ class CgrAdhesionSettingAtt(SettingController):
                 |     Refer to CATSysSettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.cgr_adhesion_setting_att.SetV5_SPALock(i_locked)
@@ -404,7 +390,6 @@ class CgrAdhesionSettingAtt(SettingController):
                 |     Refer to CATSysSettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.cgr_adhesion_setting_att.SetVoxelsLock(i_locked)

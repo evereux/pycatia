@@ -83,7 +83,6 @@ class RobotTaskFactory(AnyObject):
 
         :param str i_name:
         :param RobotTask o_robot_task:
-        :return: None
         :rtype: None
         """
         return self.robot_task_factory.CreateRobotTask(i_name, o_robot_task.com_object)
@@ -138,7 +137,6 @@ class RobotTaskFactory(AnyObject):
                 |                objRobotTask
 
         :param RobotTask i_robot_task:
-        :return: None
         :rtype: None
         """
         return self.robot_task_factory.DeleteRobotTask(i_robot_task.com_object)
@@ -193,7 +191,6 @@ class RobotTaskFactory(AnyObject):
                 |                objRobotTask
 
         :param tuple o_robot_task_list:
-        :return: None
         :rtype: None
         """
         return self.robot_task_factory.GetAllRobotTasks(o_robot_task_list)

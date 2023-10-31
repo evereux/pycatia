@@ -46,7 +46,6 @@ class FunctMultiRepMgr(FunctionalFacet):
                 | 
                 |     Get the Associations collection.
 
-        :return: FunctAssociations
         :rtype: FunctAssociations
         """
 
@@ -63,7 +62,6 @@ class FunctMultiRepMgr(FunctionalFacet):
                 | 
                 |     Get the CurrentAssoc.
 
-        :return: int
         :rtype: int
         """
 

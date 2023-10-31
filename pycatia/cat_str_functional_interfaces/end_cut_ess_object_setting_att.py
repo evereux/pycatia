@@ -48,7 +48,6 @@ class EndCutESSObjectSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -71,7 +70,6 @@ class EndCutESSObjectSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property SFEEndCut() As CATBSTR
 
-        :return: str
         :rtype: str
         """
 
@@ -94,7 +92,6 @@ class EndCutESSObjectSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property StiffenerEndCut() As CATBSTR
 
-        :return: str
         :rtype: str
         """
 
@@ -140,7 +137,6 @@ class EndCutESSObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.end_cut_ess_object_setting_att.GetMemberEndCutInfo(io_admin_level, io_locked)
@@ -177,7 +173,6 @@ class EndCutESSObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.end_cut_ess_object_setting_att.GetSFEEndCutInfo(io_admin_level, io_locked)
@@ -214,7 +209,6 @@ class EndCutESSObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.end_cut_ess_object_setting_att.GetStiffenerEndCutInfo(io_admin_level, io_locked)
@@ -228,7 +222,6 @@ class EndCutESSObjectSettingAtt(SettingController):
                 | o Sub SetMemberEndCutLock(boolean iLocked)
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.end_cut_ess_object_setting_att.SetMemberEndCutLock(i_locked)
@@ -257,7 +250,6 @@ class EndCutESSObjectSettingAtt(SettingController):
                 | o Sub SetSFEEndCutLock(boolean iLocked)
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.end_cut_ess_object_setting_att.SetSFEEndCutLock(i_locked)
@@ -286,7 +278,6 @@ class EndCutESSObjectSettingAtt(SettingController):
                 | o Sub SetStiffenerEndCutLock(boolean iLocked)
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.end_cut_ess_object_setting_att.SetStiffenerEndCutLock(i_locked)

@@ -55,7 +55,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ComputationDir = "D:\CompDir"
 
-        :return: str
         :rtype: str
         """
 
@@ -91,7 +90,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ContactPrint = False
 
-        :return: bool
         :rtype: bool
         """
 
@@ -122,7 +120,6 @@ class ABQJob(AnyObject):
                 | 
                 |          myJob.Description = "AutomatedJob"
 
-        :return: str
         :rtype: str
         """
 
@@ -158,7 +155,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.EchoPrint = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -193,7 +189,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.HistoryPrint = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -234,7 +229,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.InputFileFormat = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -269,7 +263,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.MaxMemory = 60
 
-        :return: float
         :rtype: float
         """
 
@@ -308,7 +301,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.MemoryUnit = PERCENT
 
-        :return: int
+        :return: enum memory_unit_type
         :rtype: int
         """
 
@@ -317,7 +310,7 @@ class ABQJob(AnyObject):
     @memory_unit.setter
     def memory_unit(self, value: int):
         """
-        :param int value:
+        :param int value: enum memory_unit_type
         """
 
         self.abq_job.MemoryUnit = value
@@ -344,7 +337,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ModelConsistencyCheck = False
 
-        :return: bool
         :rtype: bool
         """
 
@@ -380,7 +372,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ModelPrint = False
 
-        :return: bool
         :rtype: bool
         """
 
@@ -415,7 +406,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.NumCpus = 3
 
-        :return: int
         :rtype: int
         """
 
@@ -457,7 +447,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ParallelizationMethodStandard = TREE
 
-        :return: int
+        :return: enum parallel_method_std_type
         :rtype: int
         """
 
@@ -466,7 +456,7 @@ class ABQJob(AnyObject):
     @parallelization_method_standard.setter
     def parallelization_method_standard(self, value: int):
         """
-        :param int value:
+        :param int value: enum parallel_method_std_type
         """
 
         self.abq_job.ParallelizationMethodStandard = value
@@ -493,7 +483,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadInterval = 10
 
-        :return: int
         :rtype: int
         """
 
@@ -528,7 +517,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadJob = "D:\myoriginaljob.odb"
 
-        :return: str
         :rtype: str
         """
 
@@ -574,7 +562,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadOption = ABQ_RESTART_END_OF_STEP
 
-        :return: int
+        :return: enum abq_restart_read_option
         :rtype: int
         """
 
@@ -583,7 +571,7 @@ class ABQJob(AnyObject):
     @restart_read_option.setter
     def restart_read_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum abq_restart_read_option
         """
 
         self.abq_job.RestartReadOption = value
@@ -607,7 +595,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadStep = 2
 
-        :return: ABQStep
         :rtype: ABQStep
         """
 
@@ -643,7 +630,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadStepNumber = 2
 
-        :return: int
         :rtype: int
         """
 
@@ -684,7 +670,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadStepSelectionOption = ABQ_STEP_OBJECT
 
-        :return: int
+        :return: enum abq_restart_read_step_sel_option
         :rtype: int
         """
 
@@ -693,7 +679,7 @@ class ABQJob(AnyObject):
     @restart_read_step_selection_option.setter
     def restart_read_step_selection_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum abq_restart_read_step_sel_option
         """
 
         self.abq_job.RestartReadStepSelectionOption = value
@@ -727,7 +713,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestFrequency = 999
 
-        :return: int
         :rtype: int
         """
 
@@ -763,7 +748,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestFrequencyValue = 10
 
-        :return: int
         :rtype: int
         """
 
@@ -799,7 +783,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestIntervalValue = 10
 
-        :return: int
         :rtype: int
         """
 
@@ -849,7 +832,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestOption = RESTART_EVERYINC
 
-        :return: int
+        :return: enum ABQ_RESTART_NONE
         :rtype: int
         """
 
@@ -858,7 +841,7 @@ class ABQJob(AnyObject):
     @restart_request_option.setter
     def restart_request_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum ABQ_RESTART_NONE
         """
 
         self.abq_job.RestartRequestOption = value
@@ -885,7 +868,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestOverlay = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -920,7 +902,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestTimeMarks = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -954,7 +935,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.Scratch = "D:\Scratch"
 
-        :return: str
         :rtype: str
         """
 
@@ -988,7 +968,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.Source = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1031,7 +1010,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.Type = ANALYSIS
 
-        :return: int
+        :return: enum job_type
         :rtype: int
         """
 
@@ -1040,7 +1019,7 @@ class ABQJob(AnyObject):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value: enum job_type
         """
 
         self.abq_job.Type = value
@@ -1065,7 +1044,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.UserSubroutine = "D:/UserSub"
 
-        :return: str
         :rtype: str
         """
 
@@ -1089,7 +1067,6 @@ class ABQJob(AnyObject):
                 | 
                 |     Submits the job.
 
-        :return: None
         :rtype: None
         """
         return self.abq_job.SubmitJob()
@@ -1104,7 +1081,6 @@ class ABQJob(AnyObject):
                 | 
                 |     Writes the input file for the job.
 
-        :return: None
         :rtype: None
         """
         return self.abq_job.WriteInputFile()

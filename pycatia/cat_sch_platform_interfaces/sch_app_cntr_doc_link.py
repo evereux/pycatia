@@ -83,7 +83,6 @@ class SchAppCntrDocLink(AnyObject):
         :param SchListOfObjects o_l_cntrs:
         :param SchListOfBSTRs o_l_document_names:
         :param str o_publication_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_doc_link.AppGetLink(
@@ -166,7 +165,6 @@ class SchAppCntrDocLink(AnyObject):
         :param SchListOfBSTRs o_l_document_uuid:
         :param SchListOfLongs o_l_open_status:
         :param SchListOfObjects o_l_cntr:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_doc_link.AppGetLinkedDocs(
@@ -223,7 +221,6 @@ class SchAppCntrDocLink(AnyObject):
 
         :param SchAppConnector i_sch_connector:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_doc_link.AppIsLinkable(i_sch_connector.com_object, o_b_yes)
@@ -268,7 +265,6 @@ class SchAppCntrDocLink(AnyObject):
                 |          objThisIntf.AppLinkobjArg1
 
         :param SchAppConnector i_sch_connector:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_doc_link.AppLink(i_sch_connector.com_object)
@@ -313,7 +309,6 @@ class SchAppCntrDocLink(AnyObject):
                 |          objThisIntf.AppLinkInitstrVar1
 
         :param str i_publication_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_doc_link.AppLinkInit(i_publication_name)
@@ -355,7 +350,6 @@ class SchAppCntrDocLink(AnyObject):
         :param str i_document_name:
         :param str i_document_uuid:
         :param Document o_document:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_doc_link.AppOpenLinkedDoc(i_document_name, i_document_uuid, o_document.com_object)
@@ -401,7 +395,6 @@ class SchAppCntrDocLink(AnyObject):
                 |          objThisIntf.AppUnLinkintVar1
 
         :param int i_unpublish:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_doc_link.AppUnLink(i_unpublish)

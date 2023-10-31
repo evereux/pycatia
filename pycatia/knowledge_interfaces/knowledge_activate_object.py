@@ -58,7 +58,6 @@ class KnowledgeActivateObject(KnowledgeObject):
                 |               MsgBox "maximummass is activated"
                 |          End If
 
-        :return: bool
         :rtype: bool
         """
 
@@ -80,7 +79,6 @@ class KnowledgeActivateObject(KnowledgeObject):
                 | 
                 |          maximummass.Activate()
 
-        :return: None
         :rtype: None
         """
         return self.knowledge_activate_object.Activate()
@@ -101,7 +99,6 @@ class KnowledgeActivateObject(KnowledgeObject):
                 | 
                 |          maximummass.Deactivate()
 
-        :return: None
         :rtype: None
         """
         return self.knowledge_activate_object.Deactivate()

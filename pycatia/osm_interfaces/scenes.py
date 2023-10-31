@@ -67,7 +67,6 @@ class Scenes(Collection):
 
         :param str i_name:
         :param Scene i_reference_scene:
-        :return: Scene
         :rtype: Scene
         """
         return Scene(self.scenes.AddCopyScene(i_name, i_reference_scene.com_object))
@@ -105,7 +104,6 @@ class Scenes(Collection):
 
         :param str i_name:
         :param Product i_reference_product:
-        :return: Scene
         :rtype: Scene
         """
         return Scene(self.scenes.AddNewScene(i_name, i_reference_product.com_object))
@@ -133,7 +131,6 @@ class Scenes(Collection):
                 |             ToolKits.Remove Engine
 
         :param Scene i_scene:
-        :return: None
         :rtype: None
         """
         return self.scenes.Remove(i_scene.com_object)

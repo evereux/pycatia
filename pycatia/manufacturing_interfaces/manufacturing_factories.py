@@ -54,7 +54,6 @@ class ManufacturingFactories(AnyObject):
                 |         oResourceFactory
                 |             The manufacturing resource factory.
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.manufacturing_factories.GetManufacturingResourceFactory())

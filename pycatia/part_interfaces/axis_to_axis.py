@@ -74,7 +74,6 @@ class AxisToAxis(Shape):
                 |           Set oHybridShape=oAxisToAxis.HybridShape
                 |           oHybridShape.ElemToAxisToAxis = reference1
 
-        :return: HybridShape
         :rtype: HybridShape
         """
 

@@ -61,7 +61,6 @@ class HybridShapePlaneAngle(Plane):
                 | 
                 |     Returns the rotation angle.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -82,7 +81,6 @@ class HybridShapePlaneAngle(Plane):
                 |     Legal values: the orientation is 1 if the plane orientation is not
                 |     inverted, and -1 otherwise.
 
-        :return: int
         :rtype: int
         """
 
@@ -108,7 +106,6 @@ class HybridShapePlaneAngle(Plane):
                 |     Returns or sets the reference plane.
                 |     Sub-element(s) supported (see Boundary object): PlanarFace.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -139,7 +136,6 @@ class HybridShapePlaneAngle(Plane):
                 |      Dim ProjMode As boolean
                 |      ProjMode = PlaneAngle.ProjectionMode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -166,7 +162,6 @@ class HybridShapePlaneAngle(Plane):
                 |     Sub-element(s) supported (see Boundary object): RectilinearTriDimFeatEdge,
                 |     RectilinearBiDimFeatEdge or RectilinearMonoDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 

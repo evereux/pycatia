@@ -74,10 +74,9 @@ class DrawingWeldings(Collection):
                 |      Set MyWelding = 
                 |         MyView.Weldings.Add(catSquareWelding, 0., 0.)
 
-        :param int i_symbol:
+        :param int i_symbol: enum cat_welding_symbol
         :param float i_position_x:
         :param float i_position_y:
-        :return: DrawingWelding
         :rtype: DrawingWelding
         """
         return DrawingWelding(self.drawing_weldings.Add(i_symbol, i_position_x, i_position_y))
@@ -116,7 +115,6 @@ class DrawingWeldings(Collection):
                 |      Set ThisDrawingWelding = MyView.Weldings.Item(2)
 
         :param int i_index:
-        :return: DrawingWelding
         :rtype: DrawingWelding
         """
         return DrawingWelding(self.drawing_weldings.Item(i_index))
@@ -151,7 +149,6 @@ class DrawingWeldings(Collection):
                 |          MyView.Drawing.Remove(3)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.drawing_weldings.Remove(i_index)

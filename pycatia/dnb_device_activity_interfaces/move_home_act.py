@@ -74,7 +74,6 @@ class MoveHomeAct(Activity):
                 |            Accl  = 30
                 |            objMoveAct.Acceleration=Accl
 
-        :return: float
         :rtype: float
         """
 
@@ -118,7 +117,6 @@ class MoveHomeAct(Activity):
                 |            Rounding = 30
                 |            objMoveAct.CornerRounding=Rounding
 
-        :return: float
         :rtype: float
         """
 
@@ -160,7 +158,6 @@ class MoveHomeAct(Activity):
                 |            HomeName  = "Home.2"
                 |            objMoveAct.HomeName=HomeName
 
-        :return: str
         :rtype: str
         """
 
@@ -204,7 +201,6 @@ class MoveHomeAct(Activity):
                 |            MechIndex = 1
                 |            objMoveAct.MechanismIndex=MechIndex
 
-        :return: int
         :rtype: int
         """
 
@@ -246,7 +242,6 @@ class MoveHomeAct(Activity):
                 |            MotionBas  = "SPEED"
                 |            objMoveAct.MotionBasis=MotionBas
 
-        :return: str
         :rtype: str
         """
 
@@ -291,7 +286,6 @@ class MoveHomeAct(Activity):
                 |            SpeedValPr = 80
                 |            objMoveAct.SpeedPercent=SpeedValPr
 
-        :return: float
         :rtype: float
         """
 

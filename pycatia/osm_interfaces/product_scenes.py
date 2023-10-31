@@ -69,7 +69,6 @@ class ProductScenes(Collection):
 
         :param str i_name:
         :param tuple i_reference_products:
-        :return: ProductScene
         :rtype: ProductScene
         """
         return ProductScene(self.product_scenes.AddProductSceneFull(i_name, i_reference_products))
@@ -107,7 +106,6 @@ class ProductScenes(Collection):
 
         :param str i_name:
         :param tuple i_reference_products:
-        :return: ProductScene
         :rtype: ProductScene
         """
         return ProductScene(self.product_scenes.AddProductScenePartial(i_name, i_reference_products))
@@ -147,7 +145,6 @@ class ProductScenes(Collection):
                 |             Set ThatProductScene = TheProductScenes.Item("ProductScene3")
 
         :param cat_variant i_index:
-        :return: ProductScene
         :rtype: ProductScene
         """
         return ProductScene(self.product_scenes.Item(i_index))
@@ -175,7 +172,6 @@ class ProductScenes(Collection):
                 |             ToolKits.Remove Engine
 
         :param ProductScene i_product_scene:
-        :return: None
         :rtype: None
         """
         return self.product_scenes.Remove(i_product_scene.com_object)

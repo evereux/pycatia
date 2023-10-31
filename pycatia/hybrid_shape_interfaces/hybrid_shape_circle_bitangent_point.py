@@ -72,7 +72,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
                 | 
                 |          hybShpcircle.BeginOfCircle = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -107,7 +106,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
                 |          Dim HybShpCircleFirstCurve As Reference 
                 |          HybShpCircleFirstCurve = HybShpCircle.Curve1
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -141,7 +139,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
                 | 
                 |          HybShpCircle.Curve2 Crv5
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -178,7 +175,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
                 | 
                 |          hybShpcircle.DiscriminationIndex = 2
 
-        :return: int
         :rtype: int
         """
 
@@ -218,7 +214,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
                 | 
                 |          HybShpCircle.Orientation1 -1
 
-        :return: int
         :rtype: int
         """
 
@@ -258,7 +253,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
                 | 
                 |          HybShpCircleOrientation = HybShpCircle.Orientation2
 
-        :return: int
         :rtype: int
         """
 
@@ -292,7 +286,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
                 |          Dim HybShpCirclePassingPoint As Reference
                 |          Set HybShpCirclePassingPoint = HybShpCircle.Pt
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -325,7 +318,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
                 |          Dim HybShpCircleSupportSurf As Reference 
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -361,7 +353,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
                 |          Dim firstOrient As long
                 |          firstOrient = hybShpcircle.FirstTangentOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -397,7 +388,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
                 |          Dim secondOrient As long
                 |          secondOrient = hybShpcircle.SecondTangentOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -436,7 +426,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
                 | 
                 |          hybShpCircle.TrimMode = 1
 
-        :return: int
         :rtype: int
         """
 

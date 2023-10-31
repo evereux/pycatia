@@ -57,7 +57,6 @@ class EnumParam(Parameter):
                 |              density.Value = 1
                 |          End If
 
-        :return: str
         :rtype: str
         """
 

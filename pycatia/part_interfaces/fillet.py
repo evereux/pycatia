@@ -13,7 +13,6 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 
 
 class Fillet(DressUpShape):
-
     """
         .. note::
             :class: toggle
@@ -63,7 +62,7 @@ class Fillet(DressUpShape):
                 |          Set mode = firstFillet.FilletBoundaryRelimitation
                 |          Set FirstFillet.FilletBoundaryRelimitation = catMinimumFilletBoundaryRelimitation
 
-        :return: int
+        :return: enum cat_fillet_boundary_relimitation
         :rtype: int
         """
 
@@ -72,7 +71,7 @@ class Fillet(DressUpShape):
     @fillet_boundary_relimitation.setter
     def fillet_boundary_relimitation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_fillet_boundary_relimitation
         """
 
         self.fillet.FilletBoundaryRelimitation = value
@@ -98,7 +97,7 @@ class Fillet(DressUpShape):
                 |          Set mode = firstFillet.FilletTrimSupport
                 |          Set FirstFillet.FilletTrimSupport = catNoTrimFilletSupport
 
-        :return: int
+        :return: enum cat_fillet_trim_support
         :rtype: int
         """
 
@@ -107,10 +106,10 @@ class Fillet(DressUpShape):
     @fillet_trim_support.setter
     def fillet_trim_support(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_fillet_trim_support
         """
 
         self.fillet.FilletTrimSupport = value
 
     def __repr__(self):
-        return f'Fillet(name="{ self.name }")'
+        return f'Fillet(name="{self.name}")'

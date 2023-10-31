@@ -59,7 +59,6 @@ class Hyperlink(AnyObject):
                 |             NewHyperlink.AddUrl(TheUrl)
 
         :param str i_url:
-        :return: None
         :rtype: None
         """
         return self.hyperlink.AddUrl(i_url)
@@ -84,7 +83,6 @@ class Hyperlink(AnyObject):
                 |             Dim number As Integer
                 |             number = NewHyperlink.CountObject
 
-        :return: int
         :rtype: int
         """
         return self.hyperlink.CountObject()
@@ -120,7 +118,6 @@ class Hyperlink(AnyObject):
                 |             Set ThisUrl = NewHyperlink.ItemObject(9)
 
         :param cat_variant i_index:
-        :return: str
         :rtype: str
         """
         return self.hyperlink.ItemObject(i_index)
@@ -152,7 +149,6 @@ class Hyperlink(AnyObject):
                 |             NewHyperlink.RemoveObject(9)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.hyperlink.RemoveObject(i_index)

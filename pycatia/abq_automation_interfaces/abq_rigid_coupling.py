@@ -49,7 +49,6 @@ class ABQRigidCoupling(ABQInteraction):
                 | 
                 |     Returns the number of currently active exclusion regions.
 
-        :return: int
         :rtype: int
         """
 
@@ -66,7 +65,6 @@ class ABQRigidCoupling(ABQInteraction):
                 | 
                 |     Returns the number of supports.
 
-        :return: int
         :rtype: int
         """
 
@@ -83,7 +81,6 @@ class ABQRigidCoupling(ABQInteraction):
                 | 
                 |     Sets or returns the U1 degree of freedom.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -108,7 +105,6 @@ class ABQRigidCoupling(ABQInteraction):
                 | 
                 |     Sets or returns the U2 degree of freedom.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -133,7 +129,6 @@ class ABQRigidCoupling(ABQInteraction):
                 | 
                 |     Sets or returns the U3 degree of freedom.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -158,7 +153,6 @@ class ABQRigidCoupling(ABQInteraction):
                 | 
                 |     Sets or returns the UR1 degree of freedom.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -183,7 +177,6 @@ class ABQRigidCoupling(ABQInteraction):
                 | 
                 |     Sets or returns the UR2 degree of freedom.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -208,7 +201,6 @@ class ABQRigidCoupling(ABQInteraction):
                 | 
                 |     Sets or returns the UR3 degree of freedom.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -234,7 +226,6 @@ class ABQRigidCoupling(ABQInteraction):
                 |     Sets or returns the local coordinate system. If nothing is passed in, it
                 |     defaults to the global coordinate system.
 
-        :return: AxisSystem
         :rtype: AxisSystem
         """
 
@@ -274,7 +265,6 @@ class ABQRigidCoupling(ABQInteraction):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.AddSupportFromPublication(i_product.com_object, i_publication.com_object)
@@ -316,7 +306,6 @@ class ABQRigidCoupling(ABQInteraction):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.AddSupportFromReference(i_reference.com_object, i_support.com_object)
@@ -346,7 +335,6 @@ class ABQRigidCoupling(ABQInteraction):
                 | 
                 |     Clears the exclusion regions list.
 
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.ClearExclusionRegions()
@@ -361,7 +349,6 @@ class ABQRigidCoupling(ABQInteraction):
                 | 
                 |     Clears the handler.
 
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.ClearHandler()
@@ -388,7 +375,6 @@ class ABQRigidCoupling(ABQInteraction):
 
         :param tuple o_products:
         :param tuple o_regions:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.GetExclusionRegions(o_products, o_regions)
@@ -428,7 +414,6 @@ class ABQRigidCoupling(ABQInteraction):
 
         :param Reference o_product:
         :param Reference o_ref:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.GetHandler(o_product.com_object, o_ref.com_object)
@@ -472,7 +457,6 @@ class ABQRigidCoupling(ABQInteraction):
 
         :param Product o_product:
         :param AxisSystem o_pub_axis_system:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.GetLocalCsysFromPublication(o_product.com_object, o_pub_axis_system.com_object)
@@ -514,7 +498,6 @@ class ABQRigidCoupling(ABQInteraction):
 
         :param tuple o_products:
         :param tuple o_supports:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.GetSupports(o_products, o_supports)
@@ -560,7 +543,6 @@ class ABQRigidCoupling(ABQInteraction):
 
         :param tuple i_products:
         :param tuple i_regions:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.SetExclusionRegions(i_products, i_regions)
@@ -601,7 +583,6 @@ class ABQRigidCoupling(ABQInteraction):
 
         :param Reference i_product:
         :param Reference i_ref:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.SetHandler(i_product.com_object, i_ref.com_object)
@@ -644,7 +625,6 @@ class ABQRigidCoupling(ABQInteraction):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.SetHandlerFromPublication(i_product.com_object, i_publication.com_object)
@@ -688,7 +668,6 @@ class ABQRigidCoupling(ABQInteraction):
 
         :param Product i_product:
         :param Publication i_pub_axis_system:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.SetLocalCsysFromPublication(i_product.com_object, i_pub_axis_system.com_object)
@@ -733,7 +712,6 @@ class ABQRigidCoupling(ABQInteraction):
 
         :param tuple i_products:
         :param tuple i_regions:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_coupling.SetSupports(i_products, i_regions)

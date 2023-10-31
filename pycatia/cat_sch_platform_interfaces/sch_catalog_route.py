@@ -70,7 +70,6 @@ class SchCatalogRoute(AnyObject):
         :param bool o_b_yes:
         :param SchRoute o_route_ref:
         :param SchGRR o_pointed_to_grr:
-        :return: None
         :rtype: None
         """
         return self.sch_catalog_route.QueryDropAbility(o_b_yes, o_route_ref.com_object, o_pointed_to_grr.com_object)

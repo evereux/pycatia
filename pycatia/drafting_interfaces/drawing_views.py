@@ -65,7 +65,6 @@ class DrawingViews(Collection):
                 |          Dim ViewToWorkIn As DrawingView
                 |          Set ViewToWorkIn = MyDrawingDoc.Sheets.ActiveSheet.DrawingViews.ActiveView
 
-        :return: DrawingView
         :rtype: DrawingView
         """
 
@@ -106,7 +105,6 @@ class DrawingViews(Collection):
                 |      Set MyView = MySheet.Views.Add("LeftView")
 
         :param str i_drawing_view_name:
-        :return: DrawingView
         :rtype: DrawingView
         """
         return DrawingView(self.drawing_views.Add(i_drawing_view_name))
@@ -157,7 +155,6 @@ class DrawingViews(Collection):
                 |          Set ThatDrawingView = MySheet.Views.ActiveView.Item("MyView")
 
         :param cat_variant i_index:
-        :return: DrawingView
         :rtype: DrawingView
         """
         return DrawingView(self.drawing_views.Item(i_index))
@@ -199,7 +196,6 @@ class DrawingViews(Collection):
                 |      MySheet.ActiveViews.Remove("TopView")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.drawing_views.Remove(i_index)

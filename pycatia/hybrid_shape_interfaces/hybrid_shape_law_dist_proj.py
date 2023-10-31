@@ -52,7 +52,6 @@ class HybridShapeLawDistProj(HybridShape):
                 | 
                 |     Returns or sets the applied unit symbol for heterogeneous law.
 
-        :return: str
         :rtype: str
         """
 
@@ -79,7 +78,6 @@ class HybridShapeLawDistProj(HybridShape):
                 |     Sub-element(s) supported (see Boundary object): see TriDimFeatEdge or
                 |     BiDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -104,7 +102,6 @@ class HybridShapeLawDistProj(HybridShape):
                 | 
                 |     Returns or sets the measure unit symbol for heterogeneous law.
 
-        :return: str
         :rtype: str
         """
 
@@ -139,7 +136,6 @@ class HybridShapeLawDistProj(HybridShape):
                 |      Dim ParOnDef As boolean
                 |      ParOnDef = hybridShapeLawDist.ParameterOnDefinition
 
-        :return: bool
         :rtype: bool
         """
 
@@ -164,7 +160,6 @@ class HybridShapeLawDistProj(HybridShape):
                 | 
                 |     Returns or sets the positive value direction.
 
-        :return: int
         :rtype: int
         """
 
@@ -191,7 +186,6 @@ class HybridShapeLawDistProj(HybridShape):
                 |     Sub-element(s) supported (see Boundary object): see
                 |     RectilinearTriDimFeatEdge or RectilinearBiDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -216,7 +210,6 @@ class HybridShapeLawDistProj(HybridShape):
                 | 
                 |     Returns or sets the scaling ratio of the law.
 
-        :return: float
         :rtype: float
         """
 
@@ -253,7 +246,6 @@ class HybridShapeLawDistProj(HybridShape):
                 |          hybridShapeLawDist.GetAppliedUnitSymboloSymbol
 
         :param str o_symbol:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_law_dist_proj.GetAppliedUnitSymbol(o_symbol)
@@ -281,7 +273,6 @@ class HybridShapeLawDistProj(HybridShape):
                 |          hybridShapeLawDist.GetMeasureUnitSymboloSymbol
 
         :param str o_symbol:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_law_dist_proj.GetMeasureUnitSymbol(o_symbol)
@@ -302,7 +293,6 @@ class HybridShapeLawDistProj(HybridShape):
                 |             The support plane normal
 
         :param tuple o_normal:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_law_dist_proj.GetPlaneNormal(o_normal)
@@ -338,7 +328,6 @@ class HybridShapeLawDistProj(HybridShape):
                 |             heterogeneous law mode = TRUE : Heterogeneous Law mode is active. =
                 |             FALSE : Heterogeneous Law mode is inactive.
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_law_dist_proj.IsHeterogeneousLaw()
@@ -359,7 +348,6 @@ class HybridShapeLawDistProj(HybridShape):
                 |             The support plane normal
 
         :param tuple i_normal:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_law_dist_proj.PutPlaneNormal(i_normal)

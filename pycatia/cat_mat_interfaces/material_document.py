@@ -52,7 +52,6 @@ class MaterialDocument(Document):
                 |     Returns the Family collection object from the current
                 |     material document.
 
-        :return: MaterialFamilies
         :rtype: MaterialFamilies
         """
         return MaterialFamilies(self.material_document.Families)

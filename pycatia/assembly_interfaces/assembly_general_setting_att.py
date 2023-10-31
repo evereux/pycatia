@@ -73,7 +73,7 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |          Set SwitchMode = AsmGeneralSettingAtt1.AutoSwitchToDesignMode
                 |          AsmGeneralSettingAtt1.AutoSwitchToDesignMode = catAutoSwitchAvailable
 
-        :return: int
+        :return: enum cat_asm_auto_switch_to_design_mode
         :rtype: int
         """
 
@@ -82,7 +82,7 @@ class AssemblyGeneralSettingAtt(SettingController):
     @auto_switch_to_design_mode.setter
     def auto_switch_to_design_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_asm_auto_switch_to_design_mode
         """
 
         self.assembly_general_setting_att.AutoSwitchToDesignMode = value
@@ -111,7 +111,7 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |          Set UpdateMode = AsmGeneralSettingAtt1.AutoUpdateMode
                 |          AsmGeneralSettingAtt1.AutoUpdateMode = catManualUpdate
 
-        :return: int
+        :return: enum cat_asm_update_mode
         :rtype: int
         """
 
@@ -120,7 +120,7 @@ class AssemblyGeneralSettingAtt(SettingController):
     @auto_update_mode.setter
     def auto_update_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_asm_update_mode
         """
 
         self.assembly_general_setting_att.AutoUpdateMode = value
@@ -154,7 +154,7 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |          Set MoveMode = AsmGeneralSettingAtt1.MoveWithFixTExtendMode
                 |          AsmGeneralSettingAtt1.MoveWithFixTExtendMode = catAlwaysExtendMoveToFixT
 
-        :return: int
+        :return: enum cat_asm_extend_move_to_fix_t
         :rtype: int
         """
 
@@ -197,7 +197,7 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |          Set StatusMode = AsmGeneralSettingAtt1.UpdateStatusMode
                 |          AsmGeneralSettingAtt1.UpdateStatusMode = catAutomaticCompute
 
-        :return: int
+        :return: enum cat_asm_update_status_compute_mode
         :rtype: int
         """
 
@@ -206,7 +206,7 @@ class AssemblyGeneralSettingAtt(SettingController):
     @update_status_mode.setter
     def update_status_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_asm_update_status_compute_mode
         """
 
         self.assembly_general_setting_att.UpdateStatusMode = value
@@ -226,7 +226,6 @@ class AssemblyGeneralSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.assembly_general_setting_att.GetAutoSwitchToDesignModeInfo(admin_level, o_locked)
@@ -246,7 +245,6 @@ class AssemblyGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.assembly_general_setting_att.GetAutoUpdateModeInfo(io_admin_level, io_locked)
@@ -266,7 +264,6 @@ class AssemblyGeneralSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.assembly_general_setting_att.GetMoveWithFixTExtendModeInfo(admin_level, o_locked)
@@ -286,7 +283,6 @@ class AssemblyGeneralSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.assembly_general_setting_att.GetUpdateStatusModeInfo(admin_level, o_locked)
@@ -304,7 +300,6 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.assembly_general_setting_att.SetAutoSwitchToDesignModeLock(i_locked)
@@ -336,7 +331,6 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.assembly_general_setting_att.SetAutoUpdateModeLock(i_locked)
@@ -369,7 +363,6 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.assembly_general_setting_att.SetMoveWithFixTExtendModeLock(i_locked)
@@ -402,7 +395,6 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.assembly_general_setting_att.SetUpdateStatusModeLock(i_locked)

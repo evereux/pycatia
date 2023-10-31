@@ -62,7 +62,6 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |          Dim FirstElem As Reference 
                 |          Set FirstElem = HybShpFilletTriTangent.FirstElem
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -90,7 +89,6 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |     Note; Orientation is same or inverse than the normal to the first surface
                 |     support
 
-        :return: int
         :rtype: int
         """
 
@@ -115,7 +113,6 @@ class HybridShapeFilletTriTangent(HybridShape):
                 | 
                 |     Returns or sets the support surface to remove feature.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -143,7 +140,6 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |     note: Orientation is same or inverse than the normal to the surface support
                 |     to remove
 
-        :return: int
         :rtype: int
         """
 
@@ -170,7 +166,6 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |     mode).
                 |     note: Smooth(0) or Straight(1) or Maximum(2) or Minimum(3)
 
-        :return: int
         :rtype: int
         """
 
@@ -208,7 +203,6 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |         oElem
                 |             Second support surface feature.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -236,7 +230,6 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |     note: Orientation is same or inverse than the normal to the Second surface
                 |     support
 
-        :return: int
         :rtype: int
         """
 
@@ -265,7 +258,6 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |     note: if "Trim" the 2 supports are trimmed and assembled with the fillet
                 |     ribbon.
 
-        :return: int
         :rtype: int
         """
 
@@ -289,7 +281,6 @@ class HybridShapeFilletTriTangent(HybridShape):
                 | 
                 |     Inverts first orientation used to specify fillet center position.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fillet_tri_tangent.InvertFirstOrientation()
@@ -304,7 +295,6 @@ class HybridShapeFilletTriTangent(HybridShape):
                 | 
                 |     Inverts third orientation used to specify fillet center position.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fillet_tri_tangent.InvertRemoveOrientation()
@@ -319,7 +309,6 @@ class HybridShapeFilletTriTangent(HybridShape):
                 | 
                 |     Inverts second orientation used to specify fillet center position.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fillet_tri_tangent.InvertSecondOrientation()

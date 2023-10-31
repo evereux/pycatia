@@ -68,7 +68,6 @@ class HybridShapeCircle3Points(HybridShapeCircle):
                 |          Set HybShpCircle3PtFirstPassingPoint=
                 |          HybShpCircle3Pt.Element1
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -100,7 +99,6 @@ class HybridShapeCircle3Points(HybridShapeCircle):
                 | 
                 |          HybShpCircle3Pt.Element2 Point2
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -135,7 +133,6 @@ class HybridShapeCircle3Points(HybridShapeCircle):
                 |          Set HybShpCircle3PtThirdPassingPoint=
                 |          HybShpCircle3Pt.Element3
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -168,7 +165,6 @@ class HybridShapeCircle3Points(HybridShapeCircle):
                 |          Dim HybShpCircleSupportSurf As Reference 
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -192,7 +188,6 @@ class HybridShapeCircle3Points(HybridShapeCircle):
                 | 
                 |     Removes the support surface.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle3_points.RemoveSupport()

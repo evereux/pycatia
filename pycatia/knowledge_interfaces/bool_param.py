@@ -63,7 +63,6 @@ class BoolParam(EnumParam):
                 |              availability.Value = True
                 |          End If
 
-        :return: bool
         :rtype: bool
         """
 

@@ -91,9 +91,8 @@ class ABQImageQuery(AnyObject):
 
         :param AnalysisImages i_images_list:
         :param AnalysisEntity i_group:
-        :param int i_type:
+        :param int i_type: enum abq_entity_type
         :param str i_file:
-        :return: None
         :rtype: None
         """
         return self.abq_image_query.ExportGroupImageData(i_images_list.com_object, i_group.com_object, i_type, i_file)
@@ -162,9 +161,8 @@ class ABQImageQuery(AnyObject):
 
         :param AnalysisImages i_images_list:
         :param tuple i_list_numbers:
-        :param int i_type:
+        :param int i_type: enum abq_entity_type
         :param str i_file:
-        :return: None
         :rtype: None
         """
         return self.abq_image_query.ExportImageData(i_images_list.com_object, i_list_numbers, i_type, i_file)

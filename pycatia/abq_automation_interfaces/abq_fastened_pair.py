@@ -48,7 +48,6 @@ class ABQFastenedPair(ABQInteraction):
                 | 
                 |     Sets or returns the adjust slave node flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -74,7 +73,6 @@ class ABQFastenedPair(ABQInteraction):
                 |     This property has been deprecated. Use the AddSupportFromAnalysisEntity
                 |     instead.
 
-        :return: AnalysisEntity
         :rtype: AnalysisEntity
         """
 
@@ -108,7 +106,7 @@ class ABQFastenedPair(ABQInteraction):
                 |         SURFACETOSURFACE
                 |         NODETOSURFACE
 
-        :return: int
+        :return: enum formulation_option_type
         :rtype: int
         """
 
@@ -117,7 +115,7 @@ class ABQFastenedPair(ABQInteraction):
     @formulation_option.setter
     def formulation_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum formulation_option_type
         """
 
         self.abq_fastened_pair.FormulationOption = value
@@ -133,7 +131,6 @@ class ABQFastenedPair(ABQInteraction):
                 | 
                 |     Sets or returns the include shell element thickness flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -158,7 +155,6 @@ class ABQFastenedPair(ABQInteraction):
                 | 
                 |     Sets or returns the invert master surface flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -183,7 +179,6 @@ class ABQFastenedPair(ABQInteraction):
                 | 
                 |     Sets or returns the invert slave surface flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -216,7 +211,7 @@ class ABQFastenedPair(ABQInteraction):
                 |         COMPUTED
                 |         SPECIFIED
 
-        :return: int
+        :return: enum position_tolerance_type
         :rtype: int
         """
 
@@ -225,7 +220,7 @@ class ABQFastenedPair(ABQInteraction):
     @position_tolerance.setter
     def position_tolerance(self, value: int):
         """
-        :param int value:
+        :param int value: enum position_tolerance_type
         """
 
         self.abq_fastened_pair.PositionTolerance = value
@@ -241,7 +236,6 @@ class ABQFastenedPair(ABQInteraction):
                 | 
                 |     Sets or returns the position tolerance value.
 
-        :return: float
         :rtype: float
         """
 
@@ -266,7 +260,6 @@ class ABQFastenedPair(ABQInteraction):
                 | 
                 |     Sets or returns the swap master/slave surface flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -303,7 +296,6 @@ class ABQFastenedPair(ABQInteraction):
 
         :param Product i_product:
         :param AnalysisEntity i_entity:
-        :return: None
         :rtype: None
         """
         return self.abq_fastened_pair.AddSupportFromAnalysisEntity(i_product.com_object, i_entity.com_object)
@@ -346,7 +338,6 @@ class ABQFastenedPair(ABQInteraction):
 
         :param Product i_product:
         :param Constraint i_constraint:
-        :return: None
         :rtype: None
         """
         return self.abq_fastened_pair.AddSupportFromConstraint(i_product.com_object, i_constraint.com_object)

@@ -73,7 +73,6 @@ class SFMFunctionFactory(Factory):
                 |          Set UrefList = Factory.SfmReferences
                 |          UrefList.Add Uref1
 
-        :return: SFMReferences
         :rtype: SFMReferences
         """
 
@@ -134,7 +133,6 @@ class SFMFunctionFactory(Factory):
         :param int i_mode:
         :param Reference i_intersecting_element:
         :param Reference i_sfm_object:
-        :return: SFMOpening
         :rtype: SFMOpening
         """
         return SFMOpening(
@@ -220,7 +218,6 @@ class SFMFunctionFactory(Factory):
         :param str i_pos_strategy_name:
         :param SFMStandardPosStrategyParameters i_position_strategy_parms:
         :param Reference isp_target_sfm_object:
-        :return: SFMStandardOpening
         :rtype: SFMStandardOpening
         """
         return SFMStandardOpening(
@@ -279,7 +276,6 @@ class SFMFunctionFactory(Factory):
 
         :param Part i_prt_part:
         :param str i_mgr_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.sfm_function_factory.GetOpeningMgr(i_prt_part.com_object, i_mgr_name)

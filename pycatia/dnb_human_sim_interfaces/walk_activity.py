@@ -46,7 +46,7 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Body Posture option (see HTSBodyPoseOptions for list of
                 |     possible values)
 
-        :return: int
+        :return: enum hts_body_pose_options
         :rtype: int
         """
 
@@ -55,7 +55,7 @@ class WalkActivity(WorkerActivity):
     @body_pose.setter
     def body_pose(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_body_pose_options
         """
 
         self.walk_activity.BodyPose = value
@@ -72,7 +72,7 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Motion-Basis (see HTSWalkMotionBasis for list of possible
                 |     values)
 
-        :return: int
+        :return: enum hts_walk_motion_basis
         :rtype: int
         """
 
@@ -81,7 +81,7 @@ class WalkActivity(WorkerActivity):
     @motion_basis.setter
     def motion_basis(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_walk_motion_basis
         """
 
         self.walk_activity.MotionBasis = value
@@ -98,7 +98,7 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Stride option (see HTSStrideOptions for list of possible
                 |     values)
 
-        :return: int
+        :return: enum hts_stride_options
         :rtype: int
         """
 
@@ -107,7 +107,7 @@ class WalkActivity(WorkerActivity):
     @stride.setter
     def stride(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_stride_options
         """
 
         self.walk_activity.Stride = value
@@ -124,7 +124,7 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Swing option (see HTSSwingOptions for list of possible
                 |     values)
 
-        :return: int
+        :return: enum hts_swing_options
         :rtype: int
         """
 
@@ -133,7 +133,7 @@ class WalkActivity(WorkerActivity):
     @swing.setter
     def swing(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_swing_options
         """
 
         self.walk_activity.Swing = value
@@ -149,7 +149,6 @@ class WalkActivity(WorkerActivity):
                 | 
                 |     Returns or Sets Speed for Walk Activity
 
-        :return: float
         :rtype: float
         """
 
@@ -174,7 +173,6 @@ class WalkActivity(WorkerActivity):
                 | 
                 |     Returns or Sets Time for Walk Activity
 
-        :return: float
         :rtype: float
         """
 
@@ -199,7 +197,6 @@ class WalkActivity(WorkerActivity):
                 | 
                 |     Returns WalkLength for Walk Activity
 
-        :return: float
         :rtype: float
         """
 
@@ -228,7 +225,6 @@ class WalkActivity(WorkerActivity):
 
         :param int i_num_points:
         :param tuple ad_points:
-        :return: None
         :rtype: None
         """
         return self.walk_activity.GetWalkCurveDefPoints(i_num_points, ad_points)
@@ -261,7 +257,6 @@ class WalkActivity(WorkerActivity):
                 |     Returns:
                 |         bFlag TRUE, if there exist any Part-Relation
 
-        :return: bool
         :rtype: bool
         """
         return self.walk_activity.HasPartRelation()
@@ -288,7 +283,6 @@ class WalkActivity(WorkerActivity):
 
         :param int i_num_points:
         :param tuple ad_points:
-        :return: None
         :rtype: None
         """
         return self.walk_activity.SetWalkCurveDefPoints(i_num_points, ad_points)
@@ -320,7 +314,6 @@ class WalkActivity(WorkerActivity):
                 |     created Walk.
                 |     This is must be called after setting appropriate values for Walk Activity.
 
-        :return: None
         :rtype: None
         """
         return self.walk_activity.Update()

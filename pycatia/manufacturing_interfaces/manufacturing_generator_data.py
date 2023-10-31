@@ -58,7 +58,6 @@ class ManufacturingGeneratorData(AnyObject):
                 |             The object to add
 
         :param CATBaseUnknown i_object:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_generator_data.AddObjectToGenerate(i_object)
@@ -94,7 +93,6 @@ class ManufacturingGeneratorData(AnyObject):
                 |             The object to add
 
         :param CATBaseUnknown i_object:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_generator_data.AddObjectToGenerateFromBuffer(i_object)
@@ -130,7 +128,6 @@ class ManufacturingGeneratorData(AnyObject):
                 |             The object to add
 
         :param CATBaseUnknown i_object:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_generator_data.AddObjectToGenerateWithBuffer(i_object)
@@ -167,7 +164,6 @@ class ManufacturingGeneratorData(AnyObject):
                 |             The object to add
 
         :param CATBaseUnknown i_object:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_generator_data.AddObjectToGenerateWithOutBuffer(i_object)
@@ -203,7 +199,6 @@ class ManufacturingGeneratorData(AnyObject):
                 |             The object to add
 
         :param CATBaseUnknown i_object:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_generator_data.AddObjectToModalValues(i_object)
@@ -239,7 +234,6 @@ class ManufacturingGeneratorData(AnyObject):
                 |             The retrieved stream
 
         :param ManufacturingOutput o_stream:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_generator_data.GetFT06Stream(o_stream.com_object)
@@ -275,7 +269,6 @@ class ManufacturingGeneratorData(AnyObject):
                 |             The retrieved object
 
         :param CATBaseUnknown o_object:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_generator_data.GetLastObjectToGenerate(o_object)
@@ -311,7 +304,6 @@ class ManufacturingGeneratorData(AnyObject):
                 |             The retrieved stream
 
         :param ManufacturingOutput o_stream:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_generator_data.GetOutputStream(o_stream.com_object)
@@ -341,7 +333,6 @@ class ManufacturingGeneratorData(AnyObject):
                 | 
                 |     Resets all modal values.
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_generator_data.ResetAllModalValues()
@@ -362,7 +353,6 @@ class ManufacturingGeneratorData(AnyObject):
                 |             The activity to generate
 
         :param CATBaseUnknown i_object:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_generator_data.SetLastObjectToGenerate(i_object)

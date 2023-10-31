@@ -57,7 +57,6 @@ class Move(AnyObject):
                 | Move Set myMovableObject = MyObject.Move.MovableObject
                 |
 
-        :return: Move
         :rtype: Move
         """
 
@@ -105,7 +104,6 @@ class Move(AnyObject):
                 | MyMovableObject.Move.Apply TransformationArray
 
         :param tuple i_transformation_array:
-        :return: None
         :rtype: None
         """
         return self.move.Apply(i_transformation_array)

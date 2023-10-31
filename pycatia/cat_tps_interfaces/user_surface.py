@@ -52,7 +52,6 @@ class UserSurface(AnyObject):
                 |             Surface.
 
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.user_surface.AddReference(i_support.com_object)
@@ -93,7 +92,6 @@ class UserSurface(AnyObject):
 
         :param Product i_prod_inst:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.user_surface.AddReferenceInAProductCtx(i_prod_inst.com_object, i_support.com_object)
@@ -130,7 +128,6 @@ class UserSurface(AnyObject):
                 |             Surface.
 
         :param UserSurface i_user_surf:
-        :return: None
         :rtype: None
         """
         return self.user_surface.AddUserSurface(i_user_surf.com_object)

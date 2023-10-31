@@ -46,7 +46,6 @@ class SWKDOF(SWKManikinPart):
                 | 
                 |     Returns the default value of a DOF. The value read is always in radians.
 
-        :return: float
         :rtype: float
         """
 
@@ -67,7 +66,6 @@ class SWKDOF(SWKManikinPart):
                 |     AnyObject, which gives the short name or abbreviated name
                 |     of the DOF (e.g. "DOF1").
 
-        :return: str
         :rtype: str
         """
 
@@ -89,7 +87,6 @@ class SWKDOF(SWKManikinPart):
                 |     default, the DOF limits are locked and the application must unlock these limits
                 |     before changing them.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -115,7 +112,6 @@ class SWKDOF(SWKManikinPart):
                 |     Returns the mean value of the upper limit of the DOF (in
                 |     radians).
 
-        :return: float
         :rtype: float
         """
 
@@ -130,7 +126,6 @@ class SWKDOF(SWKManikinPart):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property MaxMeanInterSegment() As double (Read Only)
 
-        :return: float
         :rtype: float
         """
 
@@ -147,7 +142,6 @@ class SWKDOF(SWKManikinPart):
                 | 
                 |     Returns the highest score that this DOF can take.
 
-        :return: float
         :rtype: float
         """
 
@@ -165,7 +159,6 @@ class SWKDOF(SWKManikinPart):
                 |     Returns the standard deviation value of the upper limit of the DOF (in
                 |     radians).
 
-        :return: float
         :rtype: float
         """
 
@@ -187,7 +180,6 @@ class SWKDOF(SWKManikinPart):
                 |     value can be obtained by a call to property
                 |     StatisticalMaxValue.
 
-        :return: float
         :rtype: float
         """
 
@@ -218,7 +210,6 @@ class SWKDOF(SWKManikinPart):
                 |     When setting the value, the new value given
                 |     must also lie in the range [ 0.0 ; 100.0 ].
 
-        :return: float
         :rtype: float
         """
 
@@ -244,7 +235,6 @@ class SWKDOF(SWKManikinPart):
                 |     Returns the mean value of the lower limit of the DOF (in
                 |     radians).
 
-        :return: float
         :rtype: float
         """
 
@@ -259,7 +249,6 @@ class SWKDOF(SWKManikinPart):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property MinMeanInterSegment() As double (Read Only)
 
-        :return: float
         :rtype: float
         """
 
@@ -277,7 +266,6 @@ class SWKDOF(SWKManikinPart):
                 |     Returns the standard deviation value of the lower limit of
                 |     the DOF (in radians).
 
-        :return: float
         :rtype: float
         """
 
@@ -299,7 +287,6 @@ class SWKDOF(SWKManikinPart):
                 |     value can be obtained by a call to property
                 |     StatisticalMinValue.
 
-        :return: float
         :rtype: float
         """
 
@@ -330,7 +317,6 @@ class SWKDOF(SWKManikinPart):
                 |     When setting the value, the new value given
                 |     must also lie in the range [ 0.0 ; 100.0 ].
 
-        :return: float
         :rtype: float
         """
 
@@ -353,7 +339,6 @@ class SWKDOF(SWKManikinPart):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property MinValueInterSegment() As double (Read Only)
 
-        :return: float
         :rtype: float
         """
 
@@ -374,7 +359,6 @@ class SWKDOF(SWKManikinPart):
                 |     See also:
                 |         SWKSegment
 
-        :return: int
         :rtype: int
         """
 
@@ -391,7 +375,6 @@ class SWKDOF(SWKManikinPart):
                 | 
                 |     Returns the score corresponding to the DOF's current value.
 
-        :return: float
         :rtype: float
         """
 
@@ -409,7 +392,6 @@ class SWKDOF(SWKManikinPart):
                 |     Returns or sets the value of a DOF.
                 |     The value read or set is always in radians.
 
-        :return: float
         :rtype: float
         """
 
@@ -439,7 +421,6 @@ class SWKDOF(SWKManikinPart):
                 |           myManikin.Body.GetSegment("LSLeTh").
                 |          ValueAsString = "10deg"
 
-        :return: str
         :rtype: str
         """
 
@@ -470,7 +451,6 @@ class SWKDOF(SWKManikinPart):
                 |     other value than the current one, and will not be changed by an inverse
                 |     kinematics resolution, for instance.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -494,7 +474,6 @@ class SWKDOF(SWKManikinPart):
                 | 
                 |     Sets the value of the DOF to its default value.
 
-        :return: None
         :rtype: None
         """
         return self.swkdof.ResetValue()
@@ -520,7 +499,6 @@ class SWKDOF(SWKManikinPart):
                 |     If no preferred angles have been defined on this DOF, then the angular
                 |     limitations are not modified.
 
-        :return: None
         :rtype: None
         """
         return self.swkdof.SetLimitsToMatchBestPrefAngle()

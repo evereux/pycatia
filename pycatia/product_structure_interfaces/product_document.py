@@ -64,7 +64,6 @@ class ProductDocument(Document):
                 |          Dim RootProduct As Product
                 |          Set RootProduct = MyProductDoc.Product
 
-        :return: Product
         :rtype: Product
         """
 

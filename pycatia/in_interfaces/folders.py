@@ -72,7 +72,6 @@ class Folders(Collection):
                 |          Set ThatFolder = TestFolders.Item("MyFolder")
 
         :param int i_number:
-        :return: Folder
         :rtype: Folder
         """
         return Folder(self.folders.Item(i_number))

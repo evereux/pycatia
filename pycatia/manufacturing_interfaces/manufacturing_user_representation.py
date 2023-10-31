@@ -54,7 +54,6 @@ class ManufacturingUserRepresentation(AnyObject):
                 |             Object
 
         :param str i_path_name:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_user_representation.SetRepresentation(i_path_name)

@@ -56,7 +56,6 @@ class ClashResult(AnyObject):
                 |             Dim NewConflicts As Conflicts
                 |             Set NewConflicts = NewClashResult.Conflicts
 
-        :return: Conflicts
         :rtype: Conflicts
         """
 
@@ -90,9 +89,8 @@ class ClashResult(AnyObject):
                 |             NewClashResult.Export CatClashExportTypeXMLResultOnly,
                 |             "c:\\tmp\\sample.xml"
 
-        :param int i_type:
+        :param int i_type: enum cat_clash_export_type
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.clash_result.Export(i_type, i_path)

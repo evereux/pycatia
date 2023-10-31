@@ -45,7 +45,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
                 | 
                 |     Returns or sets the comment of a rulebase component.
 
-        :return: str
         :rtype: str
         """
 
@@ -74,7 +73,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
                 |     Returns:
                 |         Type name of the rule base component
 
-        :return: str
         :rtype: str
         """
         return self.expert_rule_base_component_runtime.AccurateType()
@@ -100,7 +98,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
                 |          Set part      = partdoc.Part
                 |          part.Relations.Item("RuleBase").RuleSet.ExpertRuleBaseComponentRuntimes.Item("SolidActivity").Activate()
 
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_component_runtime.Activate()
@@ -127,7 +124,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
                 |          Set part      = partdoc.Part
                 |          part.Relations.Item("RuleBase").RuleSet.ExpertRuleBaseComponentRuntimes.Item("SolidActivity").Deactivate()
 
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_component_runtime.Deactivate()
@@ -145,7 +141,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
                 |     Returns:
                 |         Use only status of the component
 
-        :return: bool
         :rtype: bool
         """
         return self.expert_rule_base_component_runtime.IsUseOnly()
@@ -176,7 +171,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
                 |     Returns:
                 |         Activity of the rule base component
 
-        :return: bool
         :rtype: bool
         """
         return self.expert_rule_base_component_runtime.Isactivate()
@@ -194,7 +188,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
                 |     Returns:
                 |         Empty string if the parse is correct, otherwise comments on the errors
 
-        :return: str
         :rtype: str
         """
         return self.expert_rule_base_component_runtime.Parse()
@@ -210,7 +203,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
                 |     Prevents any access to the component for reading or deleting.
                 |     Be careful : this operation is not reversible.
 
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_component_runtime.SetUseOnly()

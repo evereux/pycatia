@@ -53,7 +53,6 @@ class BooleanShape(Shape):
                 | 
                 |     Returns the inserted body.
 
-        :return: Body
         :rtype: Body
         """
 
@@ -70,7 +69,6 @@ class BooleanShape(Shape):
                 |     Modifies the Second Operand. input object to replace with Body or Volume
 
         :param Reference i_reference_object:
-        :return: None
         :rtype: None
         """
         return self.boolean_shape.SetOperatedObject(i_reference_object.com_object)
@@ -102,7 +100,6 @@ class BooleanShape(Shape):
                 |     only for Volume Add and Volume UnionTrim Operations
 
         :param Reference i_reference_object:
-        :return: None
         :rtype: None
         """
         return self.boolean_shape.SetOperatingVolume(i_reference_object.com_object)

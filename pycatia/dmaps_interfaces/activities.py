@@ -56,7 +56,6 @@ class Activities(Collection):
                 |             The activity Handle
 
         :param Activity i_activity:
-        :return: None
         :rtype: None
         """
         return self.activities.Add(i_activity.com_object)
@@ -96,7 +95,6 @@ class Activities(Collection):
                 |         oActivity The activity
 
         :param cat_variant i_index:
-        :return: Activity
         :rtype: Activity
         """
         return Activity(self.activities.Item(i_index))
@@ -118,7 +116,6 @@ class Activities(Collection):
                 |             The activity identifier
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.activities.Remove(i_index)

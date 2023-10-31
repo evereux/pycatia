@@ -54,7 +54,6 @@ class AnnotationSets(Collection):
 
         :param Product i_product:
         :param str i_standard:
-        :return: AnnotationSet
         :rtype: AnnotationSet
         """
         return AnnotationSet(self.annotation_sets.AddInAProduct(i_product.com_object, i_standard))
@@ -70,7 +69,6 @@ class AnnotationSets(Collection):
                 |     Retrieve a set.
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnnotationSet(self.annotation_sets.Item(i_index))
@@ -88,7 +86,6 @@ class AnnotationSets(Collection):
                 |     Annotation Set is not automatically loaded If the Annotation Set is already
                 |     loaded nothing happens.
 
-        :return: None
         :rtype: None
         """
         return self.annotation_sets.LoadAnnotationSetsList()

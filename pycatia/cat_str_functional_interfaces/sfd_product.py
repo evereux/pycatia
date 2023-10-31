@@ -72,7 +72,6 @@ class SFDProduct(AnyObject):
                 |              Dim FactoryObj As SfmFactory
                 |              Set FactoryObj = SfdSystemPart.GetCustomerFactory("SfmFactory")
 
-        :return: Part
         :rtype: Part
         """
         return Part(self.sfd_product.CreateFunctionalSystem())

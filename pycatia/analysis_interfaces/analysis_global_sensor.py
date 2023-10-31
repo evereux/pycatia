@@ -59,7 +59,6 @@ class AnalysisGlobalSensor(AnalysisSensor):
 
         :param str o_type_bstr:
         :param str o_sub_type_bstr:
-        :return: None
         :rtype: None
         """
         return self.analysis_global_sensor.GetIdentifier(o_type_bstr, o_sub_type_bstr)
@@ -85,7 +84,6 @@ class AnalysisGlobalSensor(AnalysisSensor):
 
         :param str i_type_bstr:
         :param str i_sub_type_bstr:
-        :return: None
         :rtype: None
         """
         return self.analysis_global_sensor.SetIdentifier(i_type_bstr, i_sub_type_bstr)

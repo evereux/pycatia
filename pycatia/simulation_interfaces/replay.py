@@ -56,7 +56,6 @@ class Replay(AnyObject):
                 |             Channel number.
 
         :param Product i_product:
-        :return: int
         :rtype: int
         """
         return self.replay.AddProductMotion(i_product.com_object)
@@ -87,7 +86,6 @@ class Replay(AnyObject):
         :param int i_channel:
         :param float i_current_time:
         :param tuple i_position:
-        :return: None
         :rtype: None
         """
         return self.replay.AddSample(i_channel, i_current_time, i_position)
@@ -122,7 +120,6 @@ class Replay(AnyObject):
                 |         oNbChannel
                 |             Number of channel associated to products.
 
-        :return: int
         :rtype: int
         """
         return self.replay.GetNbProductMotion()
@@ -145,7 +142,6 @@ class Replay(AnyObject):
                 |             Number of samples.
 
         :param int i_channel:
-        :return: int
         :rtype: int
         """
         return self.replay.GetNbSample(i_channel)
@@ -168,7 +164,6 @@ class Replay(AnyObject):
                 |             Product.
 
         :param int i_channel:
-        :return: Product
         :rtype: Product
         """
         return Product(self.replay.GetProduct(i_channel))
@@ -197,7 +192,6 @@ class Replay(AnyObject):
         :param int i_channel:
         :param int i_sample:
         :param tuple o_position:
-        :return: None
         :rtype: None
         """
         return self.replay.GetSamplePosition(i_channel, i_sample, o_position)
@@ -239,7 +233,6 @@ class Replay(AnyObject):
 
         :param int i_channel:
         :param int i_sample:
-        :return: float
         :rtype: float
         """
         return self.replay.GetSampleTime(i_channel, i_sample)
@@ -264,7 +257,6 @@ class Replay(AnyObject):
 
         :param int i_channel:
         :param int i_sample:
-        :return: None
         :rtype: None
         """
         return self.replay.RemoveSample(i_channel, i_sample)

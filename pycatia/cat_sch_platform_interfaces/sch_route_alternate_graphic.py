@@ -70,7 +70,6 @@ class SchRouteAlternateGraphic(AnyObject):
 
         :param tuple i_initial_xy_position:
         :param SchGRR o_added_grr:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_route_alternate_graphic.AddAlternateGraphic(i_initial_xy_position, o_added_grr.com_object)
@@ -115,7 +114,6 @@ class SchRouteAlternateGraphic(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListAlternateGraphics
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_route_alternate_graphic.ListAlternateGraphics())
@@ -136,7 +134,6 @@ class SchRouteAlternateGraphic(AnyObject):
                 |           ...
                 |          objThisIntf.RemoveAllAlternateGraphics
 
-        :return: None
         :rtype: None
         """
         return self.sch_route_alternate_graphic.RemoveAllAlternateGraphics()
@@ -165,8 +162,7 @@ class SchRouteAlternateGraphic(AnyObject):
                 |           ...
                 |          objThisIntf.RemoveAllAlternateGraphicsOfStyleCatSchIDLRouteAlternateGraphicStyle_Enum
 
-        :param int i_style:
-        :return: None
+        :param int i_style: enum cat_sch_idl_route_alternate_graphic_style
         :rtype: None
         """
         return self.sch_route_alternate_graphic.RemoveAllAlternateGraphicsOfStyle(i_style)
@@ -196,7 +192,6 @@ class SchRouteAlternateGraphic(AnyObject):
                 |          objThisIntf.RemoveAlternateGraphicobjArg1
 
         :param SchGRR i_grr_to_be_removed:
-        :return: None
         :rtype: None
         """
         return self.sch_route_alternate_graphic.RemoveAlternateGraphic(i_grr_to_be_removed.com_object)

@@ -77,7 +77,6 @@ class SchBaseFactory(AnyObject):
 
         :param SchListOfObjects i_l_cntbls:
         :param SchListOfObjects i_lgr_rs:
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_base_factory.CreateNetwork(i_l_cntbls.com_object, i_lgr_rs.com_object))
@@ -158,9 +157,8 @@ class SchBaseFactory(AnyObject):
         :param SchGRRComp i_grr_comp_from:
         :param SchGRRComp i_grr_comp_to:
         :param tuple i_l_db2_pt_path:
-        :param int i_e_route_mode:
+        :param int i_e_route_mode: enum cat_sch_idl_route_mode
         :param SchRoute o_sch_route:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_base_factory.CreateRouteAndConnectToObjects(
@@ -235,7 +233,6 @@ class SchBaseFactory(AnyObject):
         :param AnyObject i_app_group:
         :param SchListOfObjects i_lgrr:
         :param SchListOfObjects i_l_member:
-        :return: SchCompGroupExt
         :rtype: SchCompGroupExt
         """
         return SchCompGroupExt(
@@ -282,7 +279,6 @@ class SchBaseFactory(AnyObject):
 
         :param AnyObject i_app_component_ref:
         :param SchListOfObjects i_lgrr:
-        :return: SchComponent
         :rtype: SchComponent
         """
         return SchComponent(self.sch_base_factory.CreateSchComponent(i_app_component_ref.com_object, i_lgrr.com_object))
@@ -321,7 +317,6 @@ class SchBaseFactory(AnyObject):
         :param AnyObject i_app_route:
         :param tuple i_l_db_pt:
         :param SchRoute o_sch_route:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_base_factory.CreateSchRouteByPoints(i_app_route.com_object, i_l_db_pt, o_sch_route.com_object)
@@ -372,7 +367,6 @@ class SchBaseFactory(AnyObject):
 
         :param AnyObject i_app_route:
         :param SchListOfObjects i_lgrr:
-        :return: SchRoute
         :rtype: SchRoute
         """
         return SchRoute(self.sch_base_factory.CreateSchRouteByPrim(i_app_route.com_object, i_lgrr.com_object))
@@ -410,7 +404,6 @@ class SchBaseFactory(AnyObject):
 
         :param AnyObject i_app_zone:
         :param SchListOfObjects i_lgrr:
-        :return: SchZone
         :rtype: SchZone
         """
         return SchZone(self.sch_base_factory.CreateSchZone(i_app_zone.com_object, i_lgrr.com_object))
@@ -438,7 +431,6 @@ class SchBaseFactory(AnyObject):
                 |          objThisIntf.DeleteObjectobjArg1
 
         :param AnyObject i_object:
-        :return: None
         :rtype: None
         """
         return self.sch_base_factory.DeleteObject(i_object.com_object)

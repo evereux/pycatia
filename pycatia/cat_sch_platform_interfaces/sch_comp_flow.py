@@ -64,7 +64,6 @@ class SchCompFlow(AnyObject):
                 |          Set objArg2 = objThisIntf.AddInternalFlow(objArg1)
 
         :param SchListOfObjects i_l_flow_cntrs:
-        :return: SchInternalFlow
         :rtype: SchInternalFlow
         """
         return SchInternalFlow(self.sch_comp_flow.AddInternalFlow(i_l_flow_cntrs.com_object))
@@ -108,7 +107,6 @@ class SchCompFlow(AnyObject):
 
         :param SchListOfObjects i_l_flow_cntrs:
         :param SchListOfObjects i_l_owner_grr:
-        :return: SchInternalFlow
         :rtype: SchInternalFlow
         """
         return SchInternalFlow(
@@ -141,7 +139,6 @@ class SchCompFlow(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListInternalFlows
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_comp_flow.ListInternalFlows())
@@ -170,7 +167,6 @@ class SchCompFlow(AnyObject):
                 |          objThisIntf.RemoveInternalFlowobjArg1
 
         :param SchInternalFlow i_internal_flow_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_comp_flow.RemoveInternalFlow(i_internal_flow_to_remove.com_object)

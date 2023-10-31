@@ -72,7 +72,6 @@ class HybridShapeDirection(HybridShape):
                 |         Boundary object): RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge
                 |         or RectilinearMonoDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -109,7 +108,6 @@ class HybridShapeDirection(HybridShape):
                 |      Dim oRefAxis As CATIAReference
                 |      Set oRefAxis  = Direction.RefAxisSystem
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -142,7 +140,6 @@ class HybridShapeDirection(HybridShape):
                 |     1
                 |         The direction is specified using its components
 
-        :return: int
         :rtype: int
         """
 
@@ -164,7 +161,6 @@ class HybridShapeDirection(HybridShape):
                 |             direction specification = 0 : Direction is not specified. = 1 :
                 |            Direction is specified and is valid. = -1 : Direction is specified but is not valid.
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_direction.DirectionSpecification()
@@ -187,7 +183,6 @@ class HybridShapeDirection(HybridShape):
                 |         oCoordinates
                 |             The direction X component
 
-        :return: RealParam
         :rtype: RealParam
         """
         return RealParam(self.hybrid_shape_direction.GetX())
@@ -208,7 +203,6 @@ class HybridShapeDirection(HybridShape):
                 |         oX
                 |             The direction X component
 
-        :return: float
         :rtype: float
         """
         return self.hybrid_shape_direction.GetXVal()
@@ -231,7 +225,6 @@ class HybridShapeDirection(HybridShape):
                 |         oCoordinates
                 |             The direction Y component
 
-        :return: RealParam
         :rtype: RealParam
         """
         return RealParam(self.hybrid_shape_direction.GetY())
@@ -252,7 +245,6 @@ class HybridShapeDirection(HybridShape):
                 |         oY
                 |             The direction Y component
 
-        :return: float
         :rtype: float
         """
         return self.hybrid_shape_direction.GetYVal()
@@ -275,7 +267,6 @@ class HybridShapeDirection(HybridShape):
                 |         oCoordinates
                 |             The direction Z component
 
-        :return: RealParam
         :rtype: RealParam
         """
         return RealParam(self.hybrid_shape_direction.GetZ())
@@ -296,7 +287,6 @@ class HybridShapeDirection(HybridShape):
                 |         oZ
                 |             The direction Z component
 
-        :return: float
         :rtype: float
         """
         return self.hybrid_shape_direction.GetZVal()

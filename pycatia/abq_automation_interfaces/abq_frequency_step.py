@@ -61,7 +61,6 @@ class ABQFrequencyStep(ABQStep):
                 |          Dim abqBCs As ABQBoundaryConditions
                 |          Set abqBCs = abqFreqStep.BoundaryConditions
 
-        :return: ABQBoundaryConditions
         :rtype: ABQBoundaryConditions
         """
 
@@ -82,7 +81,6 @@ class ABQFrequencyStep(ABQStep):
                 |     Returns:
                 |         The description of the Abaqus general static step.
 
-        :return: str
         :rtype: str
         """
 
@@ -122,7 +120,6 @@ class ABQFrequencyStep(ABQStep):
                 | 
                 |              abqFreqStep.EigensolverValue = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -156,7 +153,6 @@ class ABQFrequencyStep(ABQStep):
                 | 
                 |              abqFreqStep.FrequencyShift = 10
 
-        :return: int
         :rtype: int
         """
 
@@ -189,7 +185,6 @@ class ABQFrequencyStep(ABQStep):
                 |          Dim abqLoads As ABQLoads
                 |          Set abqLoads = abqFreqStep.Loads
 
-        :return: ABQLoads
         :rtype: ABQLoads
         """
 
@@ -215,7 +210,6 @@ class ABQFrequencyStep(ABQStep):
                 | 
                 |              abqFreqStep.MaximumFrequency = 100
 
-        :return: int
         :rtype: int
         """
 
@@ -249,7 +243,6 @@ class ABQFrequencyStep(ABQStep):
                 | 
                 |              abqFreqStep.MinimumFrequency = 10
 
-        :return: int
         :rtype: int
         """
 
@@ -289,7 +282,6 @@ class ABQFrequencyStep(ABQStep):
                 | 
                 |              abqFreqStep.NormalizationValue = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -329,7 +321,7 @@ class ABQFrequencyStep(ABQStep):
                 | 
                 |              abqFreqStep.RequestedModesOption = ABQ_ALL
 
-        :return: int
+        :return: enum abq_requested_modes_option
         :rtype: int
         """
 
@@ -338,7 +330,7 @@ class ABQFrequencyStep(ABQStep):
     @requested_modes_option.setter
     def requested_modes_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum abq_requested_modes_option
         """
 
         self.abq_frequency_step.RequestedModesOption = value
@@ -364,7 +356,6 @@ class ABQFrequencyStep(ABQStep):
                 | 
                 |              abqFreqStep.RequestedModesValue = 10
 
-        :return: int
         :rtype: int
         """
 
@@ -392,7 +383,6 @@ class ABQFrequencyStep(ABQStep):
                 |     Returns:
                 |         The Residual Mode Request Boolean Value.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -420,7 +410,6 @@ class ABQFrequencyStep(ABQStep):
                 |     Returns:
                 |         The SIM Architecture Request Boolean Value.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -456,7 +445,6 @@ class ABQFrequencyStep(ABQStep):
 
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_frequency_step.AddResidualModeRegion(i_product.com_object, i_support.com_object)
@@ -496,7 +484,6 @@ class ABQFrequencyStep(ABQStep):
 
         :param int i_dof:
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_frequency_step.AddResidualModeRegionDOF(i_dof, i_index)

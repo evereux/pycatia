@@ -72,7 +72,6 @@ class ABQLoads(Collection):
                 |          Set abqPressure =  abaqusLoads.Add("ABQPressure")
 
         :param str i_load_type:
-        :return: ABQLoad
         :rtype: ABQLoad
         """
         return ABQLoad(self.abq_loads.Add(i_load_type))
@@ -102,7 +101,6 @@ class ABQLoads(Collection):
                 |         The specified ABQLoad.
 
         :param cat_variant i_index:
-        :return: ABQLoad
         :rtype: ABQLoad
         """
         return ABQLoad(self.abq_loads.Item(i_index))
@@ -129,7 +127,6 @@ class ABQLoads(Collection):
                 |             CATIACollection::Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_loads.Remove(i_index)

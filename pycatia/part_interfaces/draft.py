@@ -57,7 +57,6 @@ class Draft(DressUpShape):
                 | 
                 |          Set list = firstDraft.DraftDomains
 
-        :return: DraftDomains
         :rtype: DraftDomains
         """
 
@@ -82,7 +81,7 @@ class Draft(DressUpShape):
                 |          Set mode = firstDraft.Mode
                 |          Set firstDraft.Mode = CatReflectKeepFaceDraftMode
 
-        :return: int
+        :rtype: enum cat_draft_mode
         :rtype: int
         """
 
@@ -91,7 +90,7 @@ class Draft(DressUpShape):
     @mode.setter
     def mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_draft_mode
         """
 
         self.draft.Mode = value
@@ -117,7 +116,6 @@ class Draft(DressUpShape):
                 |          Set element = firstDraft.PartingElement
                 |          Set firstDraft.PartingElement = element2
 
-        :return: Reference
         :rtype: Reference
         """
 

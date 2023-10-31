@@ -60,7 +60,6 @@ class SchCompGroupExt(AnyObject):
                 |          objThisIntf.GetPlacementAxisobjArg1
 
         :param SchListOfDoubles o_db6_place_matrix:
-        :return: None
         :rtype: None
         """
         return self.sch_comp_group_ext.GetPlacementAxis(o_db6_place_matrix.com_object)
@@ -106,7 +105,6 @@ class SchCompGroupExt(AnyObject):
                 |          objThisIntf.SetPlacementAxisdbVar1
 
         :param tuple o_db6_place_matrix:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_comp_group_ext.SetPlacementAxis(o_db6_place_matrix)

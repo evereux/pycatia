@@ -76,7 +76,6 @@ class Marker2Ds(Collection):
                 |             Set NewMarker2DArrow = TheMarker2Ds.Add2DArrow(Positions)
 
         :param tuple i_coordinates:
-        :return: Marker2D
         :rtype: Marker2D
         """
         return Marker2D(self.marker_2ds.Add2DArrow(i_coordinates))
@@ -125,7 +124,6 @@ class Marker2Ds(Collection):
 
         :param tuple i_coordinates:
         :param int i_fill_status:
-        :return: Marker2D
         :rtype: Marker2D
         """
         return Marker2D(self.marker_2ds.Add2DCircle(i_coordinates, i_fill_status))
@@ -173,7 +171,6 @@ class Marker2Ds(Collection):
                 |             Set NewMarker2DFreeHand = TheMarker2Ds.Add2DFreeHand(Positions)
 
         :param tuple i_coordinates:
-        :return: Marker2D
         :rtype: Marker2D
         """
         return Marker2D(self.marker_2ds.Add2DFreeHand(i_coordinates))
@@ -217,7 +214,6 @@ class Marker2Ds(Collection):
                 |             Set NewMarker2DLine = TheMarker2Ds.Add2DLine(Positions)
 
         :param tuple i_coordinates:
-        :return: Marker2D
         :rtype: Marker2D
         """
         return Marker2D(self.marker_2ds.Add2DLine(i_coordinates))
@@ -265,7 +261,6 @@ class Marker2Ds(Collection):
 
         :param tuple i_coordinates:
         :param str i_path:
-        :return: Marker2D
         :rtype: Marker2D
         """
         return Marker2D(self.marker_2ds.Add2DPicture(i_coordinates, i_path))
@@ -314,7 +309,6 @@ class Marker2Ds(Collection):
 
         :param tuple i_coordinates:
         :param int i_fill_status:
-        :return: Marker2D
         :rtype: Marker2D
         """
         return Marker2D(self.marker_2ds.Add2DRectangle(i_coordinates, i_fill_status))
@@ -358,7 +352,6 @@ class Marker2Ds(Collection):
 
         :param tuple i_coordinates:
         :param str i_text:
-        :return: Marker2D
         :rtype: Marker2D
         """
         return Marker2D(self.marker_2ds.Add2DText(i_coordinates, i_text))
@@ -395,7 +388,6 @@ class Marker2Ds(Collection):
                 |             Set ThisMarker2D = TheMarker2Ds.Item(9)
 
         :param cat_variant i_index:
-        :return: Marker2D
         :rtype: Marker2D
         """
         return Marker2D(self.marker_2ds.Item(i_index))
@@ -427,7 +419,6 @@ class Marker2Ds(Collection):
                 |             TheMarker2Ds.Remove(10)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.marker_2ds.Remove(i_index)

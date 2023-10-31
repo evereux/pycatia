@@ -49,7 +49,6 @@ class ConstraintSatisfaction(SetOfEquation):
                 | 
                 |     Solves the constraint satisfaction problem.
 
-        :return: None
         :rtype: None
         """
         return self.constraint_satisfaction.Solve()

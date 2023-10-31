@@ -20,6 +20,7 @@ from pycatia.system_interfaces.system_service import SystemService
 if TYPE_CHECKING:
     from pycatia.in_interfaces.document import Document
 
+
 class Section(AnyObject):
     """
         .. note::
@@ -64,7 +65,6 @@ class Section(AnyObject):
                 |             Dim TheAnnotatedViewsList As AnnotatedViews
                 |             Set TheAnnotatedViewsList = NewSection.AnnotatedViews
 
-        :return: AnnotatedViews
         :rtype: AnnotatedViews
         """
 
@@ -88,22 +88,16 @@ class Section(AnyObject):
                 | 
                 |              The first example retrieves the behavior of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim SectionBehavior As CatSectionBehavior
                 |             Behavior = NewSection.Behavior
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the behavior of NewSection
                 |                 Section.
-                |                 
-                | 
+                |
                 |                 NewSection.Behavior = catSectionBehaviorAutomatic
 
-        :return: int
+        :return: enum cat_section_behavior
         :rtype: int
         """
 
@@ -112,7 +106,7 @@ class Section(AnyObject):
     @behavior.setter
     def behavior(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_section_behavior
         """
 
         self.section.Behavior = value
@@ -150,7 +144,6 @@ class Section(AnyObject):
                 | 
                 |                 NewSection.CutMode = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -191,7 +184,6 @@ class Section(AnyObject):
                 |                 Dim AGroup As Group
                 |                 NewSection.Group = AGroup
 
-        :return: Group
         :rtype: Group
         """
 
@@ -237,7 +229,6 @@ class Section(AnyObject):
                 | 
                 |                 NewSection.Height = 100.
 
-        :return: float
         :rtype: float
         """
 
@@ -271,7 +262,6 @@ class Section(AnyObject):
                 |             Dim TheMarker3DsList As Marker3Ds
                 |             Set TheMarker3DsList = NewSection.Marker3Ds
 
-        :return: Marker3Ds
         :rtype: Marker3Ds
         """
 
@@ -309,7 +299,6 @@ class Section(AnyObject):
                 | 
                 |                 NewSection.Thickness = 100.
 
-        :return: float
         :rtype: float
         """
 
@@ -340,22 +329,16 @@ class Section(AnyObject):
                 | 
                 |              The first example retrieves the type of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim SectionType As CatSectionType
                 |             SectionType = NewSection.Type
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the type of NewSection
                 |                 Section.
-                |                 
-                | 
+                |
                 |                 NewSection.Type = catSectionTypeSlice
 
-        :return: int
+        :return: enum cat_section_type
         :rtype: int
         """
 
@@ -364,7 +347,7 @@ class Section(AnyObject):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_section_type
         """
 
         self.section.Type = value
@@ -401,7 +384,6 @@ class Section(AnyObject):
                 | 
                 |                 NewSection.Width = 100.
 
-        :return: float
         :rtype: float
         """
 
@@ -436,7 +418,6 @@ class Section(AnyObject):
                 |             Dim PartDoc As Document
                 |             PartDoc = NewSection.Export
 
-        :return: Document
         :rtype: Document
         """
         from pycatia.in_interfaces.document import Document
@@ -496,7 +477,6 @@ class Section(AnyObject):
                 |             Dim Components (11)
                 |             NewSection.GetPosition Components
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -534,7 +514,6 @@ class Section(AnyObject):
                 |             Dim Indicator
                 |             Indicator = NewSection.IsEmpty
 
-        :return: int
         :rtype: int
         """
         return self.section.IsEmpty()

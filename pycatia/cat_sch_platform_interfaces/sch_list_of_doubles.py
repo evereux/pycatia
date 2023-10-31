@@ -51,7 +51,6 @@ class SchListOfDoubles(AnyObject):
                 | 
                 |          NumberOfdoubles = MyList.Count
 
-        :return: int
         :rtype: int
         """
 
@@ -82,7 +81,6 @@ class SchListOfDoubles(AnyObject):
                 |          MyList.Append(MyDouble)
 
         :param float i_double:
-        :return: None
         :rtype: None
         """
         return self.sch_list_of_doubles.Append(i_double)
@@ -115,7 +113,6 @@ class SchListOfDoubles(AnyObject):
                 |          Set MyDouble = SchListOfDoubles.Item(2)
 
         :param int i_index:
-        :return: float
         :rtype: float
         """
         return self.sch_list_of_doubles.Item(i_index)
@@ -146,7 +143,6 @@ class SchListOfDoubles(AnyObject):
                 |          MyList.Remove(1)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.sch_list_of_doubles.RemoveByIndex(i_index)

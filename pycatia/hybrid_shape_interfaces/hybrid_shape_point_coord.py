@@ -72,7 +72,6 @@ class HybridShapePointCoord(Point):
                 |          Dim oPtRef As CATIAReference
                 |          Set oPtRef  = PointCoord.PtRef
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -112,7 +111,6 @@ class HybridShapePointCoord(Point):
                 |          Dim oRefAxis As CATIAReference
                 |          Set oRefAxis  = PointCoord.RefAxisSystem
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -145,7 +143,6 @@ class HybridShapePointCoord(Point):
                 |          Dim oX As CATIALength
                 |          Set oX = PointCoord.X
 
-        :return: Length
         :rtype: Length
         """
 
@@ -170,7 +167,6 @@ class HybridShapePointCoord(Point):
                 |          Dim oY As CATIALength
                 |          Set oY = PointCoord.Y
 
-        :return: Length
         :rtype: Length
         """
 
@@ -195,7 +191,6 @@ class HybridShapePointCoord(Point):
                 |          Dim oZ As CATIALength
                 |          Set oZ = PointCoord.Z
 
-        :return: Length
         :rtype: Length
         """
 

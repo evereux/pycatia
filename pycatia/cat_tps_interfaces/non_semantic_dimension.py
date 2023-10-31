@@ -51,7 +51,6 @@ class NonSemanticDimension(AnyObject):
                 |         oDimLim
                 |             The Dimension Limits.
 
-        :return: DimensionLimit
         :rtype: DimensionLimit
         """
         return DimensionLimit(self.non_semantic_dimension.DimensionLimit())
@@ -71,7 +70,6 @@ class NonSemanticDimension(AnyObject):
                 |         oDim
                 |             The Drafting Dimension.
 
-        :return: DrawingDimension
         :rtype: DrawingDimension
         """
         return DrawingDimension(self.non_semantic_dimension.Get2dAnnot())
@@ -93,7 +91,6 @@ class NonSemanticDimension(AnyObject):
                 |                 TRUE: Dimension Limit exists
                 |                 FALSE: Dimension Limit does not exist
 
-        :return: bool
         :rtype: bool
         """
         return self.non_semantic_dimension.HasDimensionLimit()

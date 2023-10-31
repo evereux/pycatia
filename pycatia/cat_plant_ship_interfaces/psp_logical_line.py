@@ -83,7 +83,6 @@ class PSPLogicalLine(PSPGroup):
         :param PSPListOfObjects o_list_from_minor:
         :param PSPListOfObjects o_list_to_major:
         :param PSPListOfObjects o_list_to_minor:
-        :return: None
         :rtype: None
         """
         return self.psp_logical_line.GetFromTo(
@@ -130,7 +129,6 @@ class PSPLogicalLine(PSPGroup):
                 |          ...
                 |          intValueMaxSize = objThisIntf.GetFromToInfoArrayMaxSize
 
-        :return: int
         :rtype: int
         """
         return self.psp_logical_line.GetFromToInfoArrayMaxSize()
@@ -192,7 +190,6 @@ class PSPLogicalLine(PSPGroup):
         :param tuple o_ft_major:
         :param tuple o_ft_minor:
         :param int o_size_of_output:
-        :return: String
         :rtype: String
         """
         return self.psp_logical_line.GetFromToInformation(o_from_to_label, o_ft_major, o_ft_minor, o_size_of_output)

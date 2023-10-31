@@ -54,7 +54,6 @@ class Circle2D(Curve2D):
                 |         oCenterPoint
                 |             The center point of the circle
 
-        :return: Point2D
         :rtype: Point2D
         """
 
@@ -84,7 +83,6 @@ class Circle2D(Curve2D):
                 |         oRadius
                 |             The radius of the circle
 
-        :return: float
         :rtype: float
         """
 
@@ -112,7 +110,6 @@ class Circle2D(Curve2D):
                 |             of the circle myCircle: double center(1) myCircle.GetCenter
                 |             center
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -152,7 +149,6 @@ class Circle2D(Curve2D):
         :param float i_center_x:
         :param float i_center_y:
         :param float i_radius:
-        :return: None
         :rtype: None
         """
         return self.circle_2d.SetData(i_center_x, i_center_y, i_radius)

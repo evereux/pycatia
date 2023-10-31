@@ -60,7 +60,6 @@ class SendToService(AnyObject):
                 |             Send.AddFile(iPath)
 
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.send_to_service.AddFile(i_path)
@@ -102,7 +101,6 @@ class SendToService(AnyObject):
 
         :param str o_error_param:
         :param int o_error_code:
-        :return: None
         :rtype: None
         """
         return self.send_to_service.GetLastSendToMethodError(o_error_param, o_error_code)
@@ -128,7 +126,6 @@ class SendToService(AnyObject):
                 |             Send.GetListOfDependantFile(oDependant)
 
         :param tuple o_dependant:
-        :return: None
         :rtype: None
         """
         return self.send_to_service.GetListOfDependantFile(o_dependant)
@@ -169,7 +166,6 @@ class SendToService(AnyObject):
                 |             Send.GetListOfToBeCopiedFiles(oWillBeCopied)
 
         :param tuple o_will_be_copied:
-        :return: None
         :rtype: None
         """
         return self.send_to_service.GetListOfToBeCopiedFiles(o_will_be_copied)
@@ -214,7 +210,6 @@ class SendToService(AnyObject):
                 |             Send.KeepDirectory(ikeep)
 
         :param bool i_keep:
-        :return: None
         :rtype: None
         """
         return self.send_to_service.KeepDirectory(i_keep)
@@ -253,7 +248,6 @@ class SendToService(AnyObject):
                 |             Send.RemoveFile(iFile)
 
         :param str i_file:
-        :return: None
         :rtype: None
         """
         return self.send_to_service.RemoveFile(i_file)
@@ -271,7 +265,6 @@ class SendToService(AnyObject):
                 |     A "report.txt" report file is generated in the specified destination
                 |     directory.
 
-        :return: None
         :rtype: None
         """
         return self.send_to_service.Run()
@@ -297,7 +290,6 @@ class SendToService(AnyObject):
                 |             Send.SetDirectoryFile(iDirectory)
 
         :param str i_directory:
-        :return: None
         :rtype: None
         """
         return self.send_to_service.SetDirectoryFile(i_directory)
@@ -327,7 +319,6 @@ class SendToService(AnyObject):
 
         :param str i_file:
         :param str i_directory:
-        :return: None
         :rtype: None
         """
         return self.send_to_service.SetDirectoryOneFile(i_file, i_directory)
@@ -357,7 +348,6 @@ class SendToService(AnyObject):
                 |              Send.SetInitialFile(iPath)
 
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.send_to_service.SetInitialFile(i_path)
@@ -385,7 +375,6 @@ class SendToService(AnyObject):
 
         :param str i_oldname:
         :param str i_new_name:
-        :return: None
         :rtype: None
         """
         return self.send_to_service.SetRenameFile(i_oldname, i_new_name)

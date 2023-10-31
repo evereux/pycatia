@@ -74,7 +74,6 @@ class ARCTagGroup(AnyObject):
         :param int i_first_tag_idx:
         :param int i_second_tag_idx:
         :param float o_distance:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.ComputeDistanceAlongSeam(i_first_tag_idx, i_second_tag_idx, o_distance)
@@ -103,7 +102,6 @@ class ARCTagGroup(AnyObject):
                 |             E_FAIL otherwise.
 
         :param tuple o_arc_tag_list:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.GetARCTagsList(o_arc_tag_list)
@@ -147,7 +145,6 @@ class ARCTagGroup(AnyObject):
                 |             E_FAIL otherwise.
 
         :param int o_size:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.GetNumARCTags(o_size)
@@ -175,7 +172,6 @@ class ARCTagGroup(AnyObject):
                 |             E_FAIL otherwise.
 
         :param cat_variant o_tag_group:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.GetTagGroup(o_tag_group)
@@ -230,7 +226,6 @@ class ARCTagGroup(AnyObject):
         :param int i_idx:
         :param str i_param_name:
         :param float o_val:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.GetTagParam(i_idx, i_param_name, o_val)
@@ -268,7 +263,6 @@ class ARCTagGroup(AnyObject):
         :param int i_idx:
         :param float i_angle:
         :param tuple i_dir_vector:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.RotateTag(i_idx, i_angle, i_dir_vector)
@@ -317,7 +311,6 @@ class ARCTagGroup(AnyObject):
 
         :param int i_idx:
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.RotateXTag(i_idx, i_angle)
@@ -351,7 +344,6 @@ class ARCTagGroup(AnyObject):
 
         :param int i_idx:
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.RotateYTag(i_idx, i_angle)
@@ -385,7 +377,6 @@ class ARCTagGroup(AnyObject):
 
         :param int i_idx:
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.RotateZTag(i_idx, i_angle)
@@ -425,7 +416,6 @@ class ARCTagGroup(AnyObject):
         :param int i_idx:
         :param str i_param_name:
         :param float i_val:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.SetTagParam(i_idx, i_param_name, i_val)
@@ -463,7 +453,6 @@ class ARCTagGroup(AnyObject):
         :param int i_idx:
         :param float i_distance:
         :param tuple i_dir_vector:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.TranslateTag(i_idx, i_distance, i_dir_vector)
@@ -512,7 +501,6 @@ class ARCTagGroup(AnyObject):
 
         :param int i_idx:
         :param float i_distance:
-        :return: None
         :rtype: None
         """
         return self.arc_tag_group.TranslateTagAlongSeam(i_idx, i_distance)

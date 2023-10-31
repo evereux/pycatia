@@ -64,7 +64,6 @@ class ABQPretensionProperty(ABQProperty):
 
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_pretension_property.AddSupportFromProduct(i_product.com_object, i_support.com_object)
@@ -109,7 +108,6 @@ class ABQPretensionProperty(ABQProperty):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_pretension_property.AddSupportFromPublication(i_product.com_object, i_publication.com_object)
@@ -154,7 +152,6 @@ class ABQPretensionProperty(ABQProperty):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_pretension_property.AddSupportFromReference(i_reference.com_object, i_support.com_object)
@@ -184,7 +181,6 @@ class ABQPretensionProperty(ABQProperty):
                 | 
                 |     Clears the cutting plane.
 
-        :return: None
         :rtype: None
         """
         return self.abq_pretension_property.ClearCuttingPlane()
@@ -211,7 +207,6 @@ class ABQPretensionProperty(ABQProperty):
 
         :param Reference i_product:
         :param Reference i_ref:
-        :return: None
         :rtype: None
         """
         return self.abq_pretension_property.SetCuttingPlane(i_product.com_object, i_ref.com_object)

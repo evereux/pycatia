@@ -46,7 +46,6 @@ class FunctionalFacet(AnyObject):
                 | 
                 |     Get the Functional Element owning the Facet.
 
-        :return: FunctionalElement
         :rtype: FunctionalElement
         """
 
@@ -62,7 +61,6 @@ class FunctionalFacet(AnyObject):
                 | 
                 |     Free the resources allocated by the Facet.
 
-        :return: None
         :rtype: None
         """
         return self.functional_facet.Free()
@@ -77,7 +75,6 @@ class FunctionalFacet(AnyObject):
                 | 
                 |     Init resources for the Facet.
 
-        :return: None
         :rtype: None
         """
         return self.functional_facet.Init()

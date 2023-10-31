@@ -64,7 +64,6 @@ class CD5Templates(Collection):
                 |          Set oTemplate = oTemplates.Item(1)
 
         :param cat_variant i_index:
-        :return: CD5Template
         :rtype: CD5Template
         """
         return CD5Template(self.cd5_templates.Item(i_index))

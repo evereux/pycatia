@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DrawingDimValue(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -55,7 +54,7 @@ class DrawingDimValue(AnyObject):
                 | 
                 |          oFakeType = MyDimValue.FakeDimType
 
-        :return: int
+        :return: enum cat_dim_fake
         :rtype: int
         """
 
@@ -64,7 +63,7 @@ class DrawingDimValue(AnyObject):
     @fake_dim_type.setter
     def fake_dim_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_fake
         """
 
         self.drawing_dim_value.FakeDimType = value
@@ -84,7 +83,7 @@ class DrawingDimValue(AnyObject):
                 | 
                 |      ValueScoreType = MyValue.ScoringMode
 
-        :return: int
+        :return: enum cat_dim_score
         :rtype: int
         """
 
@@ -93,7 +92,7 @@ class DrawingDimValue(AnyObject):
     @scoring_mode.setter
     def scoring_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_score
         """
 
         self.drawing_dim_value.ScoringMode = value
@@ -115,7 +114,6 @@ class DrawingDimValue(AnyObject):
                 | 
                 |          oValue = MyDimValue.Value
 
-        :return: float
         :rtype: float
         """
 
@@ -137,7 +135,7 @@ class DrawingDimValue(AnyObject):
                 | 
                 |      ValueFramedElement = MyValue.ValueFramedElement
 
-        :return: int
+        :return: enum cat_dim_frame_element
         :rtype: int
         """
 
@@ -146,7 +144,7 @@ class DrawingDimValue(AnyObject):
     @value_framed_element.setter
     def value_framed_element(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_frame_element
         """
 
         self.drawing_dim_value.ValueFramedElement = value
@@ -168,7 +166,7 @@ class DrawingDimValue(AnyObject):
                 | 
                 |          oValueFramedGroup = MyDimValue.FakeDimType
 
-        :return: int
+        :return: enum cat_dim_framed_group
         :rtype: int
         """
 
@@ -177,7 +175,7 @@ class DrawingDimValue(AnyObject):
     @value_framed_group.setter
     def value_framed_group(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_framed_group
         """
 
         self.drawing_dim_value.ValueFramedGroup = value
@@ -219,7 +217,6 @@ class DrawingDimValue(AnyObject):
         :param str o_after:
         :param str o_upper:
         :param str o_lower:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_value.GetBaultText(i_index, o_before, o_after, o_upper, o_lower)
@@ -246,7 +243,6 @@ class DrawingDimValue(AnyObject):
                 |              FrmUnit = MyValue.GetDisplayUnit(iIndex)
 
         :param int i_index:
-        :return: int
         :rtype: int
         """
         return self.drawing_dim_value.GetDisplayUnit(i_index)
@@ -273,7 +269,6 @@ class DrawingDimValue(AnyObject):
                 |              FakeDimValue = MyValue.GetFakeDimValue(iIndex)
 
         :param int i_index:
-        :return: str
         :rtype: str
         """
         return self.drawing_dim_value.GetFakeDimValue(i_index)
@@ -301,7 +296,6 @@ class DrawingDimValue(AnyObject):
                 |              FrmDspFact = MyValue.GetFormatDisplayFactor(iIndex)
 
         :param int i_index:
-        :return: int
         :rtype: int
         """
         return self.drawing_dim_value.GetFormatDisplayFactor(i_index)
@@ -328,7 +322,6 @@ class DrawingDimValue(AnyObject):
                 |              FmName = MyValue.GetFormatName(iIndex)
 
         :param int i_index:
-        :return: str
         :rtype: str
         """
         return self.drawing_dim_value.GetFormatName(i_index)
@@ -356,7 +349,6 @@ class DrawingDimValue(AnyObject):
                 |              FrmPrecision = MyValue.GetFormatPrecision(iIndex)
 
         :param int index:
-        :return: float
         :rtype: float
         """
         return self.drawing_dim_value.GetFormatPrecision(index)
@@ -383,7 +375,6 @@ class DrawingDimValue(AnyObject):
                 |              FrmType = MyValue.GetFormatType(iIndex)
 
         :param int i_index:
-        :return: int
         :rtype: int
         """
         return self.drawing_dim_value.GetFormatType(i_index)
@@ -410,7 +401,6 @@ class DrawingDimValue(AnyObject):
                 |              FrmUnit = MyValue.GetFormatUnit(iIndex)
 
         :param int i_index:
-        :return: int
         :rtype: int
         """
         return self.drawing_dim_value.GetFormatUnit(i_index)
@@ -443,7 +433,6 @@ class DrawingDimValue(AnyObject):
         :param int i_index:
         :param str o_prefix:
         :param str o_suffix:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_value.GetPSText(i_index, o_prefix, o_suffix)
@@ -472,7 +461,6 @@ class DrawingDimValue(AnyObject):
                 |              ScoredElement = MyValue.GetScoredElement(iIndex)
 
         :param int i_index:
-        :return: bool
         :rtype: bool
         """
         return self.drawing_dim_value.GetScoredElement(i_index)
@@ -514,7 +502,6 @@ class DrawingDimValue(AnyObject):
         :param str i_after:
         :param str i_upper:
         :param str i_lower:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_value.SetBaultText(i_index, i_before, i_after, i_upper, i_lower)
@@ -543,7 +530,6 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :param str i_fake_dim_value:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_value.SetFakeDimValue(i_index, i_fake_dim_value)
@@ -574,7 +560,6 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :param int i_frm_dsp_fact:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_value.SetFormatDisplayFactor(i_index, i_frm_dsp_fact)
@@ -603,7 +588,6 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :param str i_frm_name:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_value.SetFormatName(i_index, i_frm_name)
@@ -633,7 +617,6 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :param float i_frm_precision:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_value.SetFormatPrecision(i_index, i_frm_precision)
@@ -662,7 +645,6 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :param int i_frm_type:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_value.SetFormatType(i_index, i_frm_type)
@@ -691,7 +673,6 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :param int i_frm_unit:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_value.SetFormatUnit(i_index, i_frm_unit)
@@ -724,7 +705,6 @@ class DrawingDimValue(AnyObject):
         :param int i_index:
         :param str i_prefix:
         :param str i_suffix:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_value.SetPSText(i_index, i_prefix, i_suffix)
@@ -755,7 +735,6 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :param bool i_scored_element:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_value.SetScoredElement(i_index, i_scored_element)
@@ -776,4 +755,4 @@ class DrawingDimValue(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DrawingDimValue(name="{ self.name }")'
+        return f'DrawingDimValue(name="{self.name}")'

@@ -51,7 +51,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
                 | 
                 |     Sets or returns the move to center of mass flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -76,7 +75,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
                 | 
                 |     Gets the number of pin point supports for the rigid body.
 
-        :return: int
         :rtype: int
         """
 
@@ -93,7 +91,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
                 | 
                 |     Gets the number of tie point supports for the rigid body.
 
-        :return: int
         :rtype: int
         """
 
@@ -124,7 +121,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
 
         :param Product i_product:
         :param Body i_body:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_body_constraint.AddSupportFromBody(i_product.com_object, i_body.com_object)
@@ -169,7 +165,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
 
         :param Product i_product:
         :param Part i_part:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_body_constraint.AddSupportFromPart(i_product.com_object, i_part.com_object)
@@ -214,7 +209,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_body_constraint.AddSupportFromPublication(i_product.com_object, i_publication.com_object)
@@ -244,7 +238,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
                 | 
                 |     Clears the pin point supports for the rigid body.
 
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_body_constraint.ClearPinSupports()
@@ -259,7 +252,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
                 | 
                 |     Clears the tie point supports for the rigid body.
 
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_body_constraint.ClearTieSupports()
@@ -287,7 +279,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
 
         :param tuple i_products:
         :param tuple i_regions:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_body_constraint.GetPinSupports(i_products, i_regions)
@@ -330,7 +321,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
 
         :param tuple i_products:
         :param tuple i_regions:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_body_constraint.GetTieSupports(i_products, i_regions)
@@ -372,7 +362,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
 
         :param Product i_product:
         :param Reference i_ref:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_body_constraint.SetHandler(i_product.com_object, i_ref.com_object)
@@ -415,7 +404,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_body_constraint.SetHandlerFromPublication(i_product.com_object, i_publication.com_object)
@@ -460,7 +448,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
 
         :param tuple i_products:
         :param tuple i_regions:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_body_constraint.SetPinSupports(i_products, i_regions)
@@ -505,7 +492,6 @@ class ABQRigidBodyConstraint(ABQInteraction):
 
         :param tuple i_products:
         :param tuple i_regions:
-        :return: None
         :rtype: None
         """
         return self.abq_rigid_body_constraint.SetTieSupports(i_products, i_regions)

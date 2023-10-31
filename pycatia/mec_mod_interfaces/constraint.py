@@ -85,7 +85,7 @@ class Constraint(AnyObject):
                 |                  angleSector = angleCst.AngleSector
                 |                  angleCst.AngleSector = 2
 
-        :return: int
+        :return: enum cat_constraint_angle_sector
         :rtype: int
         """
 
@@ -94,7 +94,7 @@ class Constraint(AnyObject):
     @angle_sector.setter
     def angle_sector(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_constraint_angle_sector
         """
 
         self.constraint.AngleSector = value
@@ -119,7 +119,6 @@ class Constraint(AnyObject):
                 |
                 |          Set cstDimension = firstCst.Dimension
 
-        :return: Dimension
         :rtype: Dimension
         """
 
@@ -146,7 +145,7 @@ class Constraint(AnyObject):
                 |
                 |          distCstConfig = distCst.DistanceConfig
 
-        :return: int
+        :return: enum cat_constraint_dist_config
         :rtype: int
         """
 
@@ -155,7 +154,7 @@ class Constraint(AnyObject):
     @distance_config.setter
     def distance_config(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_constraint_dist_config
         """
 
         self.constraint.DistanceConfig = value
@@ -177,7 +176,7 @@ class Constraint(AnyObject):
                 | 
                 |          distCstConfig = distCst.DistanceDirection
 
-        :return: int
+        :return: enum cat_constraint_dist_direction
         :rtype: int
         """
 
@@ -186,7 +185,7 @@ class Constraint(AnyObject):
     @distance_direction.setter
     def distance_direction(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_constraint_dist_direction
         """
 
         self.constraint.DistanceDirection = value
@@ -211,7 +210,7 @@ class Constraint(AnyObject):
                 |
                 |          currentMode = distCst.Mode
 
-        :return: int
+        :return: enum cat_constraint_mode
         :rtype: int
         """
 
@@ -220,7 +219,7 @@ class Constraint(AnyObject):
     @mode.setter
     def mode(self, value: int):
         """
-        :param int value:
+        :param int value:  enum cat_constraint_mode
         """
 
         self.constraint.Mode = value
@@ -245,7 +244,7 @@ class Constraint(AnyObject):
                 |
                 |          distCstOrient = distCst.Orientation
 
-        :return: int
+        :return: enum cat_constraint_orientation
         :rtype: int
         """
 
@@ -254,7 +253,7 @@ class Constraint(AnyObject):
     @orientation.setter
     def orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_constraint_orientation
         """
 
         self.constraint.Orientation = value
@@ -279,7 +278,7 @@ class Constraint(AnyObject):
                 |
                 |          refAxis = axisPerpCst.ReferenceAxis
 
-        :return: int
+        :return: enum cat_constraint_ref_axis
         :rtype: int
         """
 
@@ -288,7 +287,7 @@ class Constraint(AnyObject):
     @reference_axis.setter
     def reference_axis(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_constraint_ref_axis
         """
 
         self.constraint.ReferenceAxis = value
@@ -311,7 +310,7 @@ class Constraint(AnyObject):
                 |
                 |          refCst2.ReferenceType = refCst1.ReferenceType
 
-        :return: int
+        :return: enum cat_constraint_ref_type
         :rtype: int
         """
 
@@ -320,7 +319,7 @@ class Constraint(AnyObject):
     @reference_type.setter
     def reference_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_constraint_ref_type
         """
 
         self.constraint.ReferenceType = value
@@ -344,7 +343,7 @@ class Constraint(AnyObject):
                 |
                 |          distCstSide = distCst.Side
 
-        :return: int
+        :return: enum cat_constraint_side
         :rtype: int
         """
 
@@ -376,7 +375,7 @@ class Constraint(AnyObject):
                 |
                 |          distCstSts = distCst.Status
 
-        :return: int
+        :return: enum cat_constraint_status
         :rtype: int
         """
 
@@ -399,7 +398,7 @@ class Constraint(AnyObject):
                 |
                 |          cstType = firstCst.Type
 
-        :return: int
+        :return: enum cat_constraint_type
         :rtype: int
         """
 
@@ -424,7 +423,6 @@ class Constraint(AnyObject):
                 |
                 |      tangencyCst.Activate
 
-        :return: None
         :rtype: None
         """
         return self.constraint.Activate()
@@ -447,7 +445,6 @@ class Constraint(AnyObject):
                 |
                 |      tangencyCst.Deactivate
 
-        :return: None
         :rtype: None
         """
         return self.constraint.Deactivate()
@@ -480,7 +477,6 @@ class Constraint(AnyObject):
                 |          reference1=tangencyCst.GetConstraintElement( 1 )
 
         :param int i_element_number:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.constraint.GetConstraintElement(i_element_number))
@@ -521,7 +517,6 @@ class Constraint(AnyObject):
 
         :param tuple o_anchor_point:
         :param tuple o_anchor_vector:
-        :return: None
         :rtype: None
         """
         return self.constraint.GetConstraintVisuLocation(o_anchor_point, o_anchor_vector)
@@ -559,7 +554,6 @@ class Constraint(AnyObject):
                 |
                 |      Set isInactive = tangencyCst.IsInactive
 
-        :return: bool
         :rtype: bool
         """
         return self.constraint.IsInactive()
@@ -592,7 +586,6 @@ class Constraint(AnyObject):
 
         :param int i_element_number:
         :param Reference i_new_element:
-        :return: None
         :rtype: None
         """
         return self.constraint.SetConstraintElement(i_element_number, i_new_element.com_object)
@@ -645,7 +638,6 @@ class Constraint(AnyObject):
         :param float i_new_x:
         :param float i_new_y:
         :param float i_new_z:
-        :return: None
         :rtype: None
         """
         return self.constraint.SetConstraintVisuLocation(i_new_x, i_new_y, i_new_z)

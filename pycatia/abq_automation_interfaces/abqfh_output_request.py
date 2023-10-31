@@ -56,7 +56,6 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             The increment number which allows the user to set output results at
                 |             this interval
 
-        :return: int
         :rtype: int
         """
 
@@ -89,7 +88,6 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             The time interval which allows the user to set output results at
                 |             this interval
 
-        :return: int
         :rtype: int
         """
 
@@ -126,7 +124,7 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             "ABQDEFAULTSECPTS"
                 |             "ABQALLSECPTS"
 
-        :return: int
+        :return: enum abq_output_at_sec_pts
         :rtype: int
         """
 
@@ -164,8 +162,8 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             "ABQPRESELECTDEFVAR"
                 |             "ABQALLVAR"
 
-        :return: None
-        :rtype: None
+        :return: enum abq_output_variable_type
+        :rtype: int
         """
 
         return self.abqfh_output_request.PreSelectDefaultOrAll
@@ -196,7 +194,6 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |         iSpecifiedModes
                 |             The list of modes for which output is requested
 
-        :return: int
         :rtype: int
         """
 
@@ -230,7 +227,6 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             user wants to request output for variables 'U' and 'S', then iVariableNameBSTR
                 |             will be "U, S"
 
-        :return: int
         :rtype: int
         """
 
@@ -263,7 +259,6 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             The list of section points at which output is
                 |             requested
 
-        :return: int
         :rtype: int
         """
 
@@ -294,7 +289,6 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |         A boolean specifying whether request for output results at approximate
                 |         or exact times.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -318,7 +312,6 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 | 
                 |     For frequency step: Sets request for output results at all modes.
 
-        :return: None
         :rtype: None
         """
         return self.abqfh_output_request.SetOutputAtAllModes()

@@ -60,7 +60,7 @@ class SystemService(AnyObject):
         """
         return str(self.system_service.Environ(i_env_string))
 
-    def evaluate(self, i_script_text, i_language, i_function_name, i_parameters):
+    def evaluate(self, i_script_text: str, i_language: int, i_function_name: str, i_parameters: list):
         """
         .. note::
             :class: toggle
@@ -100,7 +100,7 @@ class SystemService(AnyObject):
                 |          "CATMain", params
 
         :param str i_script_text:
-        :param CATScriptLanguage i_language:
+        :param int i_language: enum cat_script_language
         :param str i_function_name:
         :param list i_parameters:
         :return: None
@@ -199,7 +199,14 @@ class SystemService(AnyObject):
         """
         return int(self.system_service.ExecuteProcessus(i_executable_path))
 
-    def execute_script(self, i_library_name, i_type, i_program_name, i_function_name, i_parameters):
+    def execute_script(
+            self,
+            i_library_name: str,
+            i_type: int,
+            i_program_name: str,
+            i_function_name: str,
+            i_parameters: list
+    ):
         """
         .. note::
             :class: toggle
@@ -238,7 +245,7 @@ class SystemService(AnyObject):
                 |          params
 
         :param str i_library_name:
-        :param CatScriptLibraryType i_type:
+        :param int i_type: enum cat_script_library_type
         :param str i_program_name:
         :param str i_function_name:
         :param tuple i_parameters:

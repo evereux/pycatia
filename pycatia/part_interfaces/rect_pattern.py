@@ -62,7 +62,6 @@ class RectPattern(Pattern):
                 | 
                 |          Set repart1 = firstPattern.FirstDirectionRepartition
 
-        :return: LinearRepartition
         :rtype: LinearRepartition
         """
 
@@ -87,7 +86,6 @@ class RectPattern(Pattern):
                 | 
                 |          Set FirstDirPos = firstPattern.FirstDirectionRow
 
-        :return: IntParam
         :rtype: IntParam
         """
 
@@ -115,7 +113,6 @@ class RectPattern(Pattern):
                 |          Set aligned1 = firstPattern.FirstOrientation
                 |          firstPattern.FirstOrientation = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -152,7 +149,7 @@ class RectPattern(Pattern):
                 |          Set parameters = firstPattern.FirstCircularPatternParameters
                 |          Set firstPattern.FirstCircularPatternParameters = catUnequalSpacing
 
-        :return: int
+        :return: enum cat_rectangular_pattern_parameters
         :rtype: int
         """
 
@@ -161,7 +158,7 @@ class RectPattern(Pattern):
     @first_rectangular_pattern_parameters.setter
     def first_rectangular_pattern_parameters(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_rectangular_pattern_parameters
         """
 
         self.rect_pattern.FirstRectangularPatternParameters = value
@@ -184,7 +181,6 @@ class RectPattern(Pattern):
                 | 
                 |          Set repart2 = firstPattern.SecondDirectionRepartition
 
-        :return: LinearRepartition
         :rtype: LinearRepartition
         """
 
@@ -209,7 +205,6 @@ class RectPattern(Pattern):
                 | 
                 |          Set SecondDirPos = firstPattern.SecondDirectionRow
 
-        :return: IntParam
         :rtype: IntParam
         """
 
@@ -238,7 +233,6 @@ class RectPattern(Pattern):
                 |          Set aligned2 = firstPattern.SecondOrientation
                 |          firstPattern.SecondOrientation = False
 
-        :return: bool
         :rtype: bool
         """
 
@@ -275,7 +269,7 @@ class RectPattern(Pattern):
                 |          Set parameters = secondPattern.SecondCircularPatternParameters
                 |          Set secondPattern.SecondCircularPatternParameters = catUnequalSpacing
 
-        :return: int
+        :return: enum cat_rectangular_pattern_parameters
         :rtype: int
         """
 
@@ -284,7 +278,7 @@ class RectPattern(Pattern):
     @second_rectangular_pattern_parameters.setter
     def second_rectangular_pattern_parameters(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_rectangular_pattern_parameters
         """
 
         self.rect_pattern.SecondRectangularPatternParameters = value
@@ -317,7 +311,6 @@ class RectPattern(Pattern):
                 |          z = FirstDir(2)
 
         :param tuple io_first_direction:
-        :return: None
         :rtype: None
         """
         return self.rect_pattern.GetFirstDirection(io_first_direction)
@@ -364,7 +357,6 @@ class RectPattern(Pattern):
                 |          z = SecondDir[2]
 
         :param tuple io_second_direction:
-        :return: None
         :rtype: None
         """
         return self.rect_pattern.GetSecondDirection(io_second_direction)
@@ -414,7 +406,6 @@ class RectPattern(Pattern):
                 |      firstPattern.SetFirstDirection refToLine1
 
         :param Reference i_first_direction:
-        :return: None
         :rtype: None
         """
         return self.rect_pattern.SetFirstDirection(i_first_direction.com_object)
@@ -462,7 +453,6 @@ class RectPattern(Pattern):
         :param int i_instance_number:
         :param float i_spacing:
         :param int i_direction:
-        :return: None
         :rtype: None
         """
         return self.rect_pattern.SetInstanceSpacing(i_instance_number, i_spacing, i_direction)
@@ -497,7 +487,6 @@ class RectPattern(Pattern):
                 |      firstPattern.SetSecondDirection refToLine2
 
         :param Reference i_second_direction:
-        :return: None
         :rtype: None
         """
         return self.rect_pattern.SetSecondDirection(i_second_direction.com_object)
@@ -540,7 +529,6 @@ class RectPattern(Pattern):
 
         :param int i_instance_number:
         :param int i_direction:
-        :return: None
         :rtype: None
         """
         return self.rect_pattern.SetUnequalInstanceNumber(i_instance_number, i_direction)

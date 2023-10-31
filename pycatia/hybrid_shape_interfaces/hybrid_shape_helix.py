@@ -71,7 +71,6 @@ class HybridShapeHelix(HybridShape):
                 |         Boundary object): CATIARectlinearTriDimFeatEdge or
                 |         RectilinearBiDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -102,7 +101,6 @@ class HybridShapeHelix(HybridShape):
                 |             FALSE means that revolutions are counter-clockwise. TRUE means that
                 |             revolutions are clockwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -132,7 +130,6 @@ class HybridShapeHelix(HybridShape):
                 |         oHeight
                 |             Height.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -155,7 +152,6 @@ class HybridShapeHelix(HybridShape):
                 |             FALSE means that there is no invertion (natural orientation). TRUE
                 |             to invert this orientation.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -185,7 +181,6 @@ class HybridShapeHelix(HybridShape):
                 |         oPitch
                 |             Pitch.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -207,7 +202,6 @@ class HybridShapeHelix(HybridShape):
                 |         Pitch2
                 |             Pitch2 for Helix.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -229,7 +223,6 @@ class HybridShapeHelix(HybridShape):
                 |         LawType
                 |             LawType for Helix.
 
-        :return: int
         :rtype: int
         """
 
@@ -259,7 +252,6 @@ class HybridShapeHelix(HybridShape):
                 |         Profile
                 |             Profile for Helix.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -289,7 +281,6 @@ class HybridShapeHelix(HybridShape):
                 |         oNbRevol
                 |             Revolutions.
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -311,7 +302,6 @@ class HybridShapeHelix(HybridShape):
                 |         oStartingAngle
                 |             Starting angle.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -337,7 +327,6 @@ class HybridShapeHelix(HybridShape):
                 | 
                 |         Boundary object): Vertex.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -367,7 +356,6 @@ class HybridShapeHelix(HybridShape):
                 |         oTaperAngle
                 |             Taper angle.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -390,7 +378,6 @@ class HybridShapeHelix(HybridShape):
                 |             FALSE means that helix radius decreases. TRUE means that helix
                 |             radius increases.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -420,7 +407,6 @@ class HybridShapeHelix(HybridShape):
                 |             Height.
 
         :param float i_height:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_helix.SetHeight(i_height)
@@ -441,7 +427,6 @@ class HybridShapeHelix(HybridShape):
                 |             Pitch.
 
         :param float i_pitch:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_helix.SetPitch(i_pitch)
@@ -462,7 +447,6 @@ class HybridShapeHelix(HybridShape):
                 |             Pitch2 for Helix.
 
         :param float i_pitch2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_helix.SetPitch2(i_pitch2)
@@ -483,7 +467,6 @@ class HybridShapeHelix(HybridShape):
                 |             Number of revolutions for Helix.
 
         :param float i_nb_revol:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_helix.SetRevolutionNumber(i_nb_revol)
@@ -504,7 +487,6 @@ class HybridShapeHelix(HybridShape):
                 |             Starting angle.
 
         :param float i_starting_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_helix.SetStartingAngle(i_starting_angle)
@@ -525,7 +507,6 @@ class HybridShapeHelix(HybridShape):
                 |             Taper angle.
 
         :param float i_taper_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_helix.SetTaperAngle(i_taper_angle)

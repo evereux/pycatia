@@ -63,7 +63,6 @@ class HybridShapePlane1Curve(Plane):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 

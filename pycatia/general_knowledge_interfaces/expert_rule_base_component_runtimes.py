@@ -81,7 +81,6 @@ class ExpertRuleBaseComponentRuntimes(Collection):
                 |       Set lastRuleBaseComponent = RuleSet.Item(RuleCollection.Count)
 
         :param cat_variant i_index:
-        :return: ExpertRuleBaseComponentRuntime
         :rtype: ExpertRuleBaseComponentRuntime
         """
         return ExpertRuleBaseComponentRuntime(self.expert_rule_base_component_runtimes.Item(i_index))
@@ -126,7 +125,6 @@ class ExpertRuleBaseComponentRuntimes(Collection):
                 |      Set massCheck    = part.Relations.Item("RuleBase").RuleSet.ExpertRuleBaseComponentRuntimes.Remove("density")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_component_runtimes.Remove(i_index)
@@ -163,7 +161,6 @@ class ExpertRuleBaseComponentRuntimes(Collection):
                 | 
                 |          ObjectNumber = MyCollection.ShallowCount
 
-        :return: int
         :rtype: int
         """
         return self.expert_rule_base_component_runtimes.ShallowCount()
@@ -204,7 +201,6 @@ class ExpertRuleBaseComponentRuntimes(Collection):
                 |       Set lastRuleBaseComponent = RuleSet.ShallowItem(RuleCollection.ShallowCount)
 
         :param cat_variant i_index:
-        :return: ExpertRuleBaseComponentRuntime
         :rtype: ExpertRuleBaseComponentRuntime
         """
         return ExpertRuleBaseComponentRuntime(self.expert_rule_base_component_runtimes.ShallowItem(i_index))
@@ -246,7 +242,6 @@ class ExpertRuleBaseComponentRuntimes(Collection):
                 |      Set massCheck    = part.Relations.Item("RuleBase").RuleSet.ExpertRuleBaseComponentRuntimes.ShallowRemove("density")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_component_runtimes.ShallowRemove(i_index)

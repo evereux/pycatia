@@ -58,7 +58,7 @@ class AssemblyPocket(AssemblyFeature):
                 |          Set dirOrientation = assemblyPocket.DirectionOrientation
                 |          assemblyPocket.DirectionOrientation = catInverseOrientation
 
-        :return: int
+        :return: enum cat_prism_orientation
         :rtype: int
         """
 
@@ -67,7 +67,7 @@ class AssemblyPocket(AssemblyFeature):
     @direction_orientation.setter
     def direction_orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_prism_orientation
         """
 
         self.assembly_pocket.DirectionOrientation = value
@@ -92,7 +92,7 @@ class AssemblyPocket(AssemblyFeature):
                 |          Set dirType = assemblyPocket.DirectionType
                 |          assemblyPocket.DirectionType = catNormalToSketchDirection
 
-        :return: int
+        :return: enum cat_prism_extrusion_direction
         :rtype: int
         """
 
@@ -101,7 +101,7 @@ class AssemblyPocket(AssemblyFeature):
     @direction_type.setter
     def direction_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_prism_extrusion_direction
         """
 
         self.assembly_pocket.DirectionType = value
@@ -126,7 +126,6 @@ class AssemblyPocket(AssemblyFeature):
                 |          Dim firstLimit As Limit
                 |          Set firstLimit = assemblyPocket.FirstLimit
 
-        :return: Limit
         :rtype: Limit
         """
 
@@ -154,7 +153,6 @@ class AssemblyPocket(AssemblyFeature):
                 |          Set symFlag = assemblyPocket.IsSymmetric
                 |          assemblyPocket.IsSymmetric = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -188,7 +186,6 @@ class AssemblyPocket(AssemblyFeature):
                 |          Dim secondLimit As Limit
                 |          Set secondLimit = assemblyPocket.SecondLimit
 
-        :return: Limit
         :rtype: Limit
         """
 
@@ -212,7 +209,6 @@ class AssemblyPocket(AssemblyFeature):
                 |          Dim sketch As Sketch
                 |          Set sketch = assemblyPocket.Sketch
 
-        :return: Sketch
         :rtype: Sketch
         """
 
@@ -236,7 +232,6 @@ class AssemblyPocket(AssemblyFeature):
                 |          Dim skComp As Product
                 |          Set skComp = assemblyPocket.SketchComponent
 
-        :return: Product
         :rtype: Product
         """
 
@@ -272,7 +267,6 @@ class AssemblyPocket(AssemblyFeature):
                 |          Set z = dirArray[2]
 
         :param tuple io_direction:
-        :return: None
         :rtype: None
         """
         return self.assembly_pocket.GetDirection()
@@ -309,7 +303,6 @@ class AssemblyPocket(AssemblyFeature):
                 | 
                 |          assemblyPocket.ReverseInnerSide
 
-        :return: None
         :rtype: None
         """
         return self.assembly_pocket.ReverseInnerSide()
@@ -343,7 +336,6 @@ class AssemblyPocket(AssemblyFeature):
 
         :param Reference i_line:
         :param Product i_line_comp:
-        :return: None
         :rtype: None
         """
         return self.assembly_pocket.SetDirection(i_line.com_object, i_line_comp.com_object)

@@ -57,7 +57,6 @@ class PSPPhysical(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.GetFunctional
 
-        :return: PSPFunctional
         :rtype: PSPFunctional
         """
         return PSPFunctional(self.psp_physical.GetFunctional())
@@ -82,7 +81,6 @@ class PSPPhysical(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.GetSpatial
 
-        :return: PSPSpatial
         :rtype: PSPSpatial
         """
         return PSPSpatial(self.psp_physical.GetSpatial())

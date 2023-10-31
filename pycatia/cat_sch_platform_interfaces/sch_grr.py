@@ -63,7 +63,6 @@ class SchGRR(AnyObject):
                 |          objThisIntf.GetGRRNamestrVar1
 
         :param str o_grr_name:
-        :return: None
         :rtype: None
         """
         return self.sch_grr.GetGRRName(o_grr_name)
@@ -99,7 +98,6 @@ class SchGRR(AnyObject):
 
         :param SchAppConnector o_cntr_owner:
         :param SchGRR o_grr_owner:
-        :return: None
         :rtype: None
         """
         return self.sch_grr.GetSchCntrOwners(o_cntr_owner.com_object, o_grr_owner.com_object)
@@ -142,7 +140,6 @@ class SchGRR(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.GetSchObjOwner
 
-        :return: SchAppConnectable
         :rtype: SchAppConnectable
         """
         return SchAppConnectable(self.sch_grr.GetSchObjOwner())
@@ -214,7 +211,6 @@ class SchGRR(AnyObject):
         :param SchListOfObjects o_l_cntbles:
         :param SchListOfObjects o_l_cntrs_on_this_obj:
         :param SchListOfObjects o_l_cntrs_on_connected:
-        :return: None
         :rtype: None
         """
         return self.sch_grr.ListConnectedGRRs(
@@ -264,7 +260,6 @@ class SchGRR(AnyObject):
                 |          objThisIntf.SetGRRNamestrVar1
 
         :param str i_grr_name:
-        :return: None
         :rtype: None
         """
         return self.sch_grr.SetGRRName(i_grr_name)

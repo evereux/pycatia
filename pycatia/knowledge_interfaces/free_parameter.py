@@ -48,7 +48,6 @@ class FreeParameter(AnyObject):
                 |     Returns or sets the inferior bound of the free parameter object. The
                 |     optimization cannot escape those bounds.
 
-        :return: float
         :rtype: float
         """
 
@@ -74,7 +73,6 @@ class FreeParameter(AnyObject):
                 |     Returns or sets which parameter (CATIAParameter) is linked to this object.
                 |     The parameter must be real.
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -101,7 +99,6 @@ class FreeParameter(AnyObject):
                 |     better solution. This step is just a preliminary indication. It will vary
                 |     during the optimisation process.
 
-        :return: float
         :rtype: float
         """
 
@@ -127,7 +124,6 @@ class FreeParameter(AnyObject):
                 |     Returns or sets the superior bound of the free parameter object. The
                 |     optimization cannot escape those bounds.
 
-        :return: float
         :rtype: float
         """
 

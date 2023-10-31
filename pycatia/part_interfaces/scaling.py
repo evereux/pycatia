@@ -58,7 +58,6 @@ class Scaling(DressUpShape):
                 | 
                 |          Set factor = firstScaling.Factor
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -87,7 +86,6 @@ class Scaling(DressUpShape):
                 |          Set MyRef = part.CreateReferenceFromGeometry (Point)
                 |          firstScaling.ScalingSupport = MyRef
 
-        :return: Reference
         :rtype: Reference
         """
 

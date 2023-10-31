@@ -59,7 +59,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 | 
                 |          Set ThisComment = CurrentMo.Comment
 
-        :return: str
         :rtype: str
         """
 
@@ -99,7 +98,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param float i_b:
         :param float i_c:
         :param float i_d:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.AddClearance(i_type_macro, i_a, i_b, i_c, i_d)
@@ -136,7 +134,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param float i_distance:
         :param AnyObject i_line:
         :param Product i_product:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.AddDistanceAlongAlineMotion(
@@ -215,7 +212,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param Product i_product:
         :param str i_feedrate_type:
         :param float i_feedrate_value:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.AddDistanceAlongAlineMotionFeed(
@@ -263,7 +259,6 @@ class ManufacturingOperation(ManufacturingActivity):
 
         :param str i_type:
         :param float i_distance:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.AddDistanceAlongAxis(i_type, i_distance)
@@ -315,7 +310,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param float i_distance:
         :param str i_feedrate_type:
         :param float i_feedrate_value:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.AddDistanceAlongAxisFeed(
@@ -349,7 +343,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param float i_distance:
         :param float i_angle1:
         :param float i_angle2:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.AddGotoHorizontal(i_type_macro, i_distance, i_angle1, i_angle2)
@@ -376,7 +369,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param str i_type_macro:
         :param AnyObject i_point:
         :param Product i_product:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.AddMotionGoToAPoint(i_type_macro, i_point.com_object, i_product.com_object)
@@ -446,7 +438,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param Product i_product:
         :param str i_feedrate_type:
         :param float i_feedrate_value:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.AddMotionGoToAPointFeed(
@@ -504,7 +495,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param int i_mode:
         :param AnyObject i_plane:
         :param Product i_product:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.AddMotionToAPlane(
@@ -549,7 +539,6 @@ class ManufacturingOperation(ManufacturingActivity):
 
         :param str i_type_macro:
         :param str i_pp_words:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.AddPPWords(i_type_macro, i_pp_words)
@@ -573,7 +562,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Set Offset = firstOperation.GetAttribute(OriginOffset)
 
         :param str i_attribute:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.manufacturing_operation.GetAGeometricAttribute(i_attribute))
@@ -595,7 +583,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Set RapidFeed = firstOperation.GetAttribute(MfgRapidFeed)
 
         :param str i_attribute:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.manufacturing_operation.GetAnAttribute(i_attribute))
@@ -617,7 +604,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 | 
                 |          call firstOperation.GetFeature(Feature)
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.manufacturing_operation.GetFeature())
@@ -652,7 +638,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |             isAutoUpdateEnabled = firstOperation.GetFeedSpeedAutoUpdate("FEEDRATE")
 
         :param str i_type:
-        :return: bool
         :rtype: bool
         """
         return self.manufacturing_operation.GetFeedSpeedAutoUpdate(i_type)
@@ -703,7 +688,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 | 
                 |          Set Feature = firstOperation.GetManufacturingFeature
 
-        :return: ManufacturingFeature
         :rtype: ManufacturingFeature
         """
         return ManufacturingFeature(self.manufacturing_operation.GetManufacturingFeature())
@@ -726,7 +710,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Dim A
                 |          Set A = firstOperation.GetMfgBparamTopPln
 
-        :return: float
         :rtype: float
         """
         return self.manufacturing_operation.GetMfgAparamTopPln()
@@ -749,7 +732,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Dim Diam 
                 |          Set Diam = firstOperation.GetMfgAxialFeatureDiameter
 
-        :return: float
         :rtype: float
         """
         return self.manufacturing_operation.GetMfgAxialFeatureDiameter()
@@ -772,7 +754,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Dim B
                 |          Set B = firstOperation.GetMfgBparamTopPln
 
-        :return: float
         :rtype: float
         """
         return self.manufacturing_operation.GetMfgBparamTopPln()
@@ -795,7 +776,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Dim C
                 |          Set C = firstOperation.GetMfgCparamTopPln
 
-        :return: float
         :rtype: float
         """
         return self.manufacturing_operation.GetMfgCparamTopPln()
@@ -818,7 +798,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Dim D
                 |          Set D = firstOperation.GetMfgDparamTopPln
 
-        :return: float
         :rtype: float
         """
         return self.manufacturing_operation.GetMfgDparamTopPln()
@@ -858,7 +837,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |              z = oPositionArray[2]
 
         :param tuple io_position:
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_operation.GetMfgFeaturePosition(io_position)
@@ -896,7 +874,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Dim X
                 |          X = firstOperation.GetMfgFeatureXPosition
 
-        :return: float
         :rtype: float
         """
         return self.manufacturing_operation.GetMfgFeatureXPosition()
@@ -919,7 +896,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Dim Y
                 |          Y = firstOperation.GetMfgFeatureYPosition
 
-        :return: float
         :rtype: float
         """
         return self.manufacturing_operation.GetMfgFeatureYPosition()
@@ -942,7 +918,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Dim Z
                 |          Z = firstOperation.GetMfgFeatureZPosition
 
-        :return: float
         :rtype: float
         """
         return self.manufacturing_operation.GetMfgFeatureZPosition()
@@ -971,7 +946,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param float o_b:
         :param float o_c:
         :param float o_d:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.GetMfgTopPlane(o_a, o_b, o_c, o_d)
@@ -993,7 +967,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 | 
                 |          Set Pattern = firstOperation.GetPattern
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.manufacturing_operation.GetPattern())
@@ -1038,7 +1011,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          RadValue = CircularMilling1.GetRadiusOnMacro("Retract")
 
         :param str i_macro_type:
-        :return: float
         :rtype: float
         """
         return self.manufacturing_operation.GetRadiusOnMacro(i_macro_type)
@@ -1101,7 +1073,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param AnyObject o_product:
         :param float o_offset:
         :param str o_position:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.GetRelimitingGeometry(
@@ -1161,7 +1132,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param AnyObject o_reference:
         :param AnyObject o_product:
         :param float o_offset:
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_operation.GetStartPointGeometry(
@@ -1191,7 +1161,6 @@ class ManufacturingOperation(ManufacturingActivity):
 
         :param float o_min_tool_length:
         :param float o_min_tool_gage:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.GetToolGage(o_min_tool_length, o_min_tool_gage)
@@ -1217,7 +1186,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          y = oEndPoint(1)
                 |          z = oEndPoint(2)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_operation.GetTrajectoryEndPointCoord()
@@ -1259,7 +1227,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          y = oStartPoint(1)
                 |          z = oStartPoint(2)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_operation.GetTrajectoryStartPointCoord()
@@ -1302,7 +1269,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param str i_type:
         :param str i_nc_output_file:
         :param str i_pp_name:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.ImportNCOutput(i_type, i_nc_output_file, i_pp_name)
@@ -1357,7 +1323,6 @@ class ManufacturingOperation(ManufacturingActivity):
 
         :param str i_type:
         :param int i_position:
-        :return: ManufacturingToolMotion
         :rtype: ManufacturingToolMotion
         """
         return ManufacturingToolMotion(self.manufacturing_operation.InsertToolMotion(i_type, i_position))
@@ -1390,7 +1355,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |                  isAccessible = firstOperation.IsGeometricallyAccessibleOnSetup(firstSetup)
 
         :param AnyObject i_manufacturing_setup:
-        :return: bool
         :rtype: bool
         """
         return self.manufacturing_operation.IsGeometricallyAccessibleOnSetup(i_manufacturing_setup.com_object)
@@ -1406,7 +1370,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |     Method is used for Locking and Unloking specific activity Call on
                 |     ManufacturingOperation
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.LockActivty()
@@ -1440,7 +1403,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Contouring1.RemoveRelimitingGeometry("EndElement")
 
         :param str i_geometry_type:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.RemoveRelimitingGeometry(i_geometry_type)
@@ -1462,7 +1424,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 | 
                 |          Call Pocketing1.RemoveStartPointGeometry
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.RemoveStartPointGeometry()
@@ -1485,7 +1446,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          call firstOperation.SetFeature(Feature)
 
         :param AnyObject i_machinable_feature:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.SetFeature(i_machinable_feature.com_object)
@@ -1524,7 +1484,6 @@ class ManufacturingOperation(ManufacturingActivity):
 
         :param str i_type:
         :param bool i_auto_update:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.SetFeedSpeedAutoUpdate(i_type, i_auto_update)
@@ -1569,7 +1528,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |      Operation1.SetFeedrateMagnitude("LINEARFEEDRATE")
 
         :param str i_magnitude_name:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.SetFeedrateMagnitude(i_magnitude_name)
@@ -1625,7 +1583,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param AnyObject i_reference:
         :param AnyObject i_product:
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.SetGeometry(
@@ -1653,7 +1610,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          call firstOperation.SetPattern(Pattern)
 
         :param AnyObject i_pattern:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.SetPattern(i_pattern.com_object)
@@ -1702,7 +1658,6 @@ class ManufacturingOperation(ManufacturingActivity):
 
         :param str i_macro_type:
         :param float i_radius:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.SetRadiusOnMacro(i_macro_type, i_radius)
@@ -1768,7 +1723,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param AnyObject i_product:
         :param float i_offset:
         :param str i_position:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.SetRelimitingGeometry(
@@ -1801,7 +1755,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |      Operation1.SetSpindleMagnitude("ANGULARSPINDLESPEED")
 
         :param str i_magnitude_name:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.SetSpindleMagnitude(i_magnitude_name)
@@ -1856,7 +1809,6 @@ class ManufacturingOperation(ManufacturingActivity):
         :param AnyObject i_reference:
         :param AnyObject i_product:
         :param float i_offset:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.SetStartPointGeometry(
@@ -1890,7 +1842,6 @@ class ManufacturingOperation(ManufacturingActivity):
                 |          Operation1.SetTool("D-9.7")
 
         :param str i_tool_name:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.SetTool(i_tool_name)
@@ -1903,7 +1854,6 @@ class ManufacturingOperation(ManufacturingActivity):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub UnlockActivty()
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_operation.UnlockActivty()

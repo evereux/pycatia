@@ -72,7 +72,6 @@ class TagGroup(Collection):
                 |           objTagGroup.CreateTag objTag
 
         :param Tag io_tag:
-        :return: None
         :rtype: None
         """
         return self.tag_group.CreateTag(io_tag.com_object)
@@ -122,7 +121,6 @@ class TagGroup(Collection):
                 |           objTagGroup.DeleteTag objTag
 
         :param Tag i_tag:
-        :return: None
         :rtype: None
         """
         return self.tag_group.DeleteTag(i_tag.com_object)
@@ -172,7 +170,6 @@ class TagGroup(Collection):
                 |           objTagGroup.GetOwner ownerName
 
         :param str io_parent_product:
-        :return: None
         :rtype: None
         """
         return self.tag_group.GetOwner(io_parent_product)
@@ -211,7 +208,6 @@ class TagGroup(Collection):
                 |           Next
 
         :param int index:
-        :return: Tag
         :rtype: Tag
         """
         return Tag(self.tag_group.GetTag(index))
@@ -246,7 +242,6 @@ class TagGroup(Collection):
                 |           objTagGroup.GetTagList List
 
         :param tuple io_tag_list:
-        :return: None
         :rtype: None
         """
         return self.tag_group.GetTagList(io_tag_list)

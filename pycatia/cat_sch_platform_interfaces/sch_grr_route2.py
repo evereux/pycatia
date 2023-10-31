@@ -34,7 +34,7 @@ class SchGRRRoute2(AnyObject):
         super().__init__(com_object)
         self.sch_grr_route2 = com_object
 
-    def get_reshape_mode(self, o_reshape_mode: int) -> None:
+    def get_reshape_mode(self) -> int:
         """
         .. note::
             :class: toggle
@@ -60,11 +60,10 @@ class SchGRRRoute2(AnyObject):
                 |           ...
                 |          objThisIntf.GetReshapeModeCatSchIDLGRRRouteReshapeMode_Enum
 
-        :param int o_reshape_mode:
-        :return: None
+        :return: enum cat_sch_idlgrr_route_reshape_mode
         :rtype: None
         """
-        return self.sch_grr_route2.GetReshapeMode(o_reshape_mode)
+        return self.sch_grr_route2.GetReshapeMode()
 
     def set_reshape_mode(self, i_reshape_mode: int) -> None:
         """
@@ -92,8 +91,7 @@ class SchGRRRoute2(AnyObject):
                 |           ...
                 |          objThisIntf.SetReshapeModeCatSchIDLGRRRouteReshapeMode_Enum
 
-        :param int i_reshape_mode:
-        :return: None
+        :param int i_reshape_mode: enum cat_sch_idlgrr_route_reshape_mode
         :rtype: None
         """
         return self.sch_grr_route2.SetReshapeMode(i_reshape_mode)

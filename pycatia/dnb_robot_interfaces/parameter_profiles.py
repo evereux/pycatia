@@ -111,7 +111,6 @@ class ParameterProfiles(AnyObject):
 
         :param str i_attribute_name:
         :param str o_encapsulated_attribute_value:
-        :return: None
         :rtype: None
         """
         return self.parameter_profiles.GetAttributeValue(i_attribute_name, o_encapsulated_attribute_value)
@@ -146,7 +145,6 @@ class ParameterProfiles(AnyObject):
                 |            MyProfile.GetName(InstanceName)
 
         :param str o_instance_name:
-        :return: None
         :rtype: None
         """
         return self.parameter_profiles.GetName(o_instance_name)
@@ -191,7 +189,6 @@ class ParameterProfiles(AnyObject):
 
         :param str i_attribute_name:
         :param str i_encapsulated_attribute_value:
-        :return: None
         :rtype: None
         """
         return self.parameter_profiles.SetAttributeValue(i_attribute_name, i_encapsulated_attribute_value)
@@ -228,7 +225,6 @@ class ParameterProfiles(AnyObject):
                 |            MyProfile.SetName(InstanceName)
 
         :param str i_new_instance_name:
-        :return: None
         :rtype: None
         """
         return self.parameter_profiles.SetName(i_new_instance_name)

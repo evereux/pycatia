@@ -92,7 +92,6 @@ class HumanActivityGroupFactory(AnyObject):
                 |            Set oCreatedAutoWalk = oHumActsFactory.CreateAutoWalk(iPrevAct)
 
         :param Activity i_prev_act:
-        :return: AutoWalkActivity
         :rtype: AutoWalkActivity
         """
         return AutoWalkActivity(self.human_activity_group_factory.CreateAutoWalk(i_prev_act.com_object))
@@ -196,10 +195,9 @@ class HumanActivityGroupFactory(AnyObject):
         :param Activity i_prev_act:
         :param Product i_arr_area:
         :param int i_num_points:
-        :param int i_search_int:
+        :param int i_search_int: enum hts_search_intensity
         :param float i_clearence:
         :param tuple i_points:
-        :return: CollisionFreeWalk
         :rtype: CollisionFreeWalk
         """
         return CollisionFreeWalk(
@@ -328,10 +326,9 @@ class HumanActivityGroupFactory(AnyObject):
         :param Product i_plane_prod:
         :param tuple i_plane_def:
         :param int i_num_points:
-        :param int i_search_int:
+        :param int i_search_int: enum hts_search_intensity
         :param float i_clearence:
         :param tuple i_points:
-        :return: CollisionFreeWalk
         :rtype: CollisionFreeWalk
         """
         return CollisionFreeWalk(
@@ -449,10 +446,9 @@ class HumanActivityGroupFactory(AnyObject):
         :param Activity i_prev_act:
         :param Product i_arr_area:
         :param int i_num_points:
-        :param int i_search_int:
+        :param int i_search_int: enum hts_search_intensity
         :param float i_clearence:
         :param tuple i_points:
-        :return: CollisionFreeWalk
         :rtype: CollisionFreeWalk
         """
         return CollisionFreeWalk(
@@ -577,10 +573,9 @@ class HumanActivityGroupFactory(AnyObject):
         :param Product i_plane_prod:
         :param tuple i_plane_def:
         :param int i_num_points:
-        :param int i_search_int:
+        :param int i_search_int: enum hts_search_intensity
         :param float i_clearence:
         :param tuple i_points:
-        :return: CollisionFreeWalk
         :rtype: CollisionFreeWalk
         """
         return CollisionFreeWalk(
@@ -636,7 +631,6 @@ class HumanActivityGroupFactory(AnyObject):
                 |            ....
 
         :param Activity i_prev_act:
-        :return: MoveToPostureActivity
         :rtype: MoveToPostureActivity
         """
         return MoveToPostureActivity(self.human_activity_group_factory.CreateMoveToPosture(i_prev_act.com_object))
@@ -707,11 +701,10 @@ class HumanActivityGroupFactory(AnyObject):
                 |            Set oCreatePick = oHumActsFactory.CreatePick(iPrevAct,SINGLE_HAND, TRUE, HAND_RIGHT, iPickedProducts)
 
         :param Activity i_prev_act:
-        :param int i_pick_type:
+        :param int i_pick_type: enum hts_pick_type
         :param bool b_create_cst_with_picking_hand:
-        :param int i_picking_hand:
+        :param int i_picking_hand: enum hts_hand
         :param tuple i_picked_products:
-        :return: PickActivity
         :rtype: PickActivity
         """
         return PickActivity(
@@ -812,7 +805,6 @@ class HumanActivityGroupFactory(AnyObject):
         :param Activity i_prev_act:
         :param tuple i_picked_products:
         :param tuple i_offset:
-        :return: PlaceActivity
         :rtype: PlaceActivity
         """
         return PlaceActivity(
@@ -899,7 +891,6 @@ class HumanActivityGroupFactory(AnyObject):
         :param Product i_arr_area:
         :param tuple i_start_pt:
         :param tuple i_end_pt:
-        :return: WalkActivity
         :rtype: WalkActivity
         """
         return WalkActivity(
@@ -1011,7 +1002,6 @@ class HumanActivityGroupFactory(AnyObject):
         :param tuple i_plane_def:
         :param tuple i_start_pt:
         :param tuple i_end_pt:
-        :return: WalkActivity
         :rtype: WalkActivity
         """
         return WalkActivity(
@@ -1111,7 +1101,6 @@ class HumanActivityGroupFactory(AnyObject):
         :param Product i_arr_area:
         :param int i_num_points:
         :param tuple i_points:
-        :return: WalkActivity
         :rtype: WalkActivity
         """
         return WalkActivity(
@@ -1224,7 +1213,6 @@ class HumanActivityGroupFactory(AnyObject):
         :param tuple i_plane_def:
         :param int i_num_points:
         :param tuple i_points:
-        :return: WalkActivity
         :rtype: WalkActivity
         """
         return WalkActivity(
@@ -1324,7 +1312,6 @@ class HumanActivityGroupFactory(AnyObject):
         :param Product i_arr_area:
         :param int i_num_points:
         :param tuple i_points:
-        :return: WalkActivity
         :rtype: WalkActivity
         """
         return WalkActivity(
@@ -1436,7 +1423,6 @@ class HumanActivityGroupFactory(AnyObject):
         :param tuple i_plane_def:
         :param int i_num_points:
         :param tuple i_points:
-        :return: WalkActivity
         :rtype: WalkActivity
         """
         return WalkActivity(

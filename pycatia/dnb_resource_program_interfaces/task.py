@@ -78,7 +78,6 @@ class Task(Activity):
                 |                objTask.GetName strTaskName
 
         :param str o_name:
-        :return: None
         :rtype: None
         """
         return self.task.GetName(o_name)
@@ -117,7 +116,6 @@ class Task(Activity):
                 |                objTask.GetResource objRobot
 
         :param Product o_res:
-        :return: None
         :rtype: None
         """
         return self.task.GetResource(o_res.com_object)
@@ -169,7 +167,6 @@ class Task(Activity):
                 |                objTask.SetName("RobotTask.2")
 
         :param str i_name:
-        :return: None
         :rtype: None
         """
         return self.task.SetName(i_name)

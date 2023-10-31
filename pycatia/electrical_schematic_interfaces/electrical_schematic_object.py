@@ -48,7 +48,6 @@ class ElectricalSchematicObject(Product):
                 |     This method returns the collection of Electrical Schematic Connected
                 |     Objects.
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
 
@@ -67,7 +66,6 @@ class ElectricalSchematicObject(Product):
                 |     This method returns the collection of Electrical Schematic Object's
                 |     Children (component in Pipe Line, Assembly).
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
 
@@ -85,7 +83,6 @@ class ElectricalSchematicObject(Product):
                 | 
                 |     This method returns the electrical schematic parent.
 
-        :return: ElecSchematicObject
         :rtype: ElecSchematicObject
         """
 
@@ -103,7 +100,6 @@ class ElectricalSchematicObject(Product):
                 |     Defines if the electrical schematic object has a reservation box in 3D
                 |     world
 
-        :return: bool
         :rtype: bool
         """
 
@@ -121,7 +117,6 @@ class ElectricalSchematicObject(Product):
                 |     Returns the Electrical Schematic Object's Root Type (Equipment, Signal,
                 |     Bundle, Wire).
 
-        :return: str
         :rtype: str
         """
 
@@ -139,7 +134,6 @@ class ElectricalSchematicObject(Product):
                 |     Returns the Electrical Schematic Object's Type (Alternator, Signal, Bundle,
                 |     Wire, ...).
 
-        :return: str
         :rtype: str
         """
 
@@ -159,7 +153,6 @@ class ElectricalSchematicObject(Product):
 
         :param ElecSchematicObject i_connected_object:
         :param str i_attr_name:
-        :return: str
         :rtype: str
         """
         return self.elec_schematic_object.GetPinAttribute(i_connected_object.com_object, i_attr_name)
