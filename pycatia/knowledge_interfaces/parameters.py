@@ -377,6 +377,18 @@ class Parameters(Collection):
         except com_error:
             return False
 
+    def is_list_parameter(self, index: cat_variant):
+        """
+        :param cat_variant index: parameter name or parameter number
+        :return: bool
+        :rtype: bool
+        """
+        try:
+            if self.parameters.Item(index).ValueList:
+                return True
+        except AttributeError:
+            return False
+
     def item(self, index: cat_variant) -> any_parameter:
         """
         .. note::
