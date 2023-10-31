@@ -22,6 +22,10 @@
     Documentation
     =============
     https://pycatia.readthedocs.io
+
+    More examples and user scripts can be found at:
+    https://github.com/evereux/pycatia/tree/master/examples
+    https://github.com/evereux/pycatia/tree/master/user_scripts
 """
 
 ##########################################################

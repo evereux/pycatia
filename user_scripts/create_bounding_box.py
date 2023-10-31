@@ -25,14 +25,13 @@
     CATIA V5 running with a part open that has a Body to be bounded and a
     reference Axis System.
 
-    Documentaiton
+    Documentation
     =============
     https://pycatia.readthedocs.io
 
     More examples and user scripts can be found at:
     https://github.com/evereux/pycatia/tree/master/examples
     https://github.com/evereux/pycatia/tree/master/user_scripts
-
 """
 
 ##########################################################
