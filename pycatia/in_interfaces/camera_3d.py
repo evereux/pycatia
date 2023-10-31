@@ -10,7 +10,7 @@
 """
 
 from pycatia.in_interfaces.camera import Camera
-from pycatia.in_interfaces.viewpoint_3d import Viewpoint3D
+from pycatia.in_interfaces.viewpoint_3d import ViewPoint3D
 
 
 class Camera3D(Camera):
@@ -39,7 +39,7 @@ class Camera3D(Camera):
         self.camera_3d = com_object
 
     @property
-    def viewpoint_3d(self) -> Viewpoint3D:
+    def viewpoint_3d(self) -> ViewPoint3D:
         """
         .. note::
             :class: toggle
@@ -61,15 +61,15 @@ class Camera3D(Camera):
                 |          MyCamera.Viewpoint3D.Zoom = 2
                 |          CATIA.ActiveWindow.ActiveViewer.Viewpoint3D = MyCamera.Viewpoint3D
 
-        :rtype: Viewpoint3D
+        :rtype: ViewPoint3D
         """
 
-        return Viewpoint3D(self.camera_3d.Viewpoint3D)
+        return ViewPoint3D(self.camera_3d.Viewpoint3D)
 
     @viewpoint_3d.setter
-    def viewpoint_3d(self, value: Viewpoint3D):
+    def viewpoint_3d(self, value: ViewPoint3D):
         """
-        :param Viewpoint3D value:
+        :param ViewPoint3D value:
         """
 
         self.camera_3d.Viewpoint3D = value
