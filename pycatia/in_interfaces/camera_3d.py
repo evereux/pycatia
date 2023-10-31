@@ -39,7 +39,7 @@ class Camera3D(Camera):
         self.camera_3d = com_object
 
     @property
-    def viewpoint3_d(self) -> Viewpoint3D:
+    def viewpoint_3d(self) -> Viewpoint3D:
         """
         .. note::
             :class: toggle
@@ -66,8 +66,8 @@ class Camera3D(Camera):
 
         return Viewpoint3D(self.camera_3d.Viewpoint3D)
 
-    @viewpoint3_d.setter
-    def viewpoint3_d(self, value: Viewpoint3D):
+    @viewpoint_3d.setter
+    def viewpoint_3d(self, value: Viewpoint3D):
         """
         :param Viewpoint3D value:
         """
