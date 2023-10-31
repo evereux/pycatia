@@ -54,7 +54,6 @@ class StrObject(Product):
                 |          Dim oType As Parameter
                 |          Set oType = StructureMember.Type
 
-        :return: Parameter
         :rtype: Parameter
         """
 

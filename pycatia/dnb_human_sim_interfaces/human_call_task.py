@@ -60,7 +60,6 @@ class HumanCallTask(WorkerActivity):
                 |     Returns:
                 |         Error code of function.
 
-        :return: HumanTask
         :rtype: HumanTask
         """
 
@@ -84,7 +83,6 @@ class HumanCallTask(WorkerActivity):
                 |         E_FAIL : If the Desired Task belongs to different Manikin or there is Cyclic
 
         :param HumanTask i_target_task:
-        :return: None
         :rtype: None
         """
         return self.human_call_task.SetCalledTask(i_target_task.com_object)

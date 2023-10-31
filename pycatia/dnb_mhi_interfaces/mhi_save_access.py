@@ -65,7 +65,6 @@ class MHISaveAccess(AnyObject):
                 |         object E_FAIL on error
 
         :param str o_currently_loaded_detailing:
-        :return: tuple
         :rtype: tuple
         """
         return self.mhi_save_access.GetDetailingNames(o_currently_loaded_detailing)
@@ -89,7 +88,6 @@ class MHISaveAccess(AnyObject):
                 |     Returns:
                 |         S_OK if everything ran OK E_FAIL on error
 
-        :return: MHILoadParameters
         :rtype: MHILoadParameters
         """
         return MHILoadParameters(self.mhi_save_access.GetLoadParameters())
@@ -129,7 +127,6 @@ class MHISaveAccess(AnyObject):
 
         :param str i_detailing_name:
         :param bool i_overwrite_detailing:
-        :return: tuple
         :rtype: tuple
         """
         return self.mhi_save_access.SaveToPPRHub(i_detailing_name, i_overwrite_detailing)

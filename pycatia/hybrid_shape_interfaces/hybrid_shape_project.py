@@ -69,7 +69,6 @@ class HybridShapeProject(HybridShape):
                 |      Dim Dir As Reference
                 |      Set Dir = Project.Direction
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -103,7 +102,6 @@ class HybridShapeProject(HybridShape):
                 |      Dim Elem As Reference
                 |      Set Elem = Project.ElemToProject
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -137,7 +135,6 @@ class HybridShapeProject(HybridShape):
                 |      Dim ExtrapolMode As long
                 |      Set ExtrapolMode = Project.ExtrapolationMode
 
-        :return: int
         :rtype: int
         """
 
@@ -172,7 +169,6 @@ class HybridShapeProject(HybridShape):
                 |      Dim DeviationValue As CATIALength
                 |      Set DeviationValue = Project.MaximumDeviationValue
 
-        :return: float
         :rtype: float
         """
 
@@ -206,7 +202,6 @@ class HybridShapeProject(HybridShape):
                 |      Dim NormalOption As boolean
                 |      Set NormalOption = Project.Normal
 
-        :return: bool
         :rtype: bool
         """
 
@@ -241,7 +236,6 @@ class HybridShapeProject(HybridShape):
                 |      Dim SType As long
                 |      Set SType = Project.SmoothingType
 
-        :return: int
         :rtype: int
         """
 
@@ -275,7 +269,6 @@ class HybridShapeProject(HybridShape):
                 |      Dim SolType As long
                 |      Set SolType = Project.SolutionType
 
-        :return: int
         :rtype: int
         """
 
@@ -309,7 +302,6 @@ class HybridShapeProject(HybridShape):
                 |      Dim SupportElem As Reference
                 |      Set SupportElem = Project.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -343,7 +335,6 @@ class HybridShapeProject(HybridShape):
                 |      Dim 3DSmoothingOption As boolean
                 |      Set 3DSmoothingOption = Project.p3DSmoothing
 
-        :return: bool
         :rtype: bool
         """
 

@@ -69,7 +69,6 @@ class ManufacturingPattern(ManufacturingFeature):
                 | 
                 |      CurrentMfgPattern.ToolAxisStrategy = "Fixed"
 
-        :return: str
         :rtype: str
         """
 
@@ -105,7 +104,6 @@ class ManufacturingPattern(ManufacturingFeature):
                 |                  call mfgPattern.ActivatePoint(2)
 
         :param int i_point_number:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_pattern.ActivatePoint(i_point_number)
@@ -148,7 +146,6 @@ class ManufacturingPattern(ManufacturingFeature):
         :param AnyObject i_part_surface:
         :param Product i_product:
         :param int i_notify:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_pattern.AddPartSurface(i_part_surface.com_object, i_product.com_object, i_notify)
@@ -218,7 +215,6 @@ class ManufacturingPattern(ManufacturingFeature):
         :param AnyObject i_position:
         :param Product i_product:
         :param int i_notify:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_pattern.AddPosition(i_position.com_object, i_product.com_object, i_notify)
@@ -260,7 +256,6 @@ class ManufacturingPattern(ManufacturingFeature):
                 |                  call mfgPattern.DeactivatePoint(2)
 
         :param int i_point_number:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_pattern.DeactivatePoint(i_point_number)
@@ -294,7 +289,6 @@ class ManufacturingPattern(ManufacturingFeature):
                 |                  call mfgPattern.GetAnAttribute(JumpDistance,JumpParm)
 
         :param str i_attribute:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.manufacturing_pattern.GetAnAttribute(i_attribute))
@@ -331,7 +325,6 @@ class ManufacturingPattern(ManufacturingFeature):
                 | 
                 |                  call mfgPattern.GetLocalToolAxis(3,oX,oY,oZ)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_pattern.GetLocalToolAxis()
@@ -359,7 +352,6 @@ class ManufacturingPattern(ManufacturingFeature):
                 |                  call mfgPattern.GetNumbers(oNumbers)
 
         :param tuple o_numbers:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_pattern.GetNumbers()
@@ -395,7 +387,6 @@ class ManufacturingPattern(ManufacturingFeature):
                 | 
                 |          call mfgPattern.RemovePartSurfaces()
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_pattern.RemovePartSurfaces()
@@ -416,7 +407,6 @@ class ManufacturingPattern(ManufacturingFeature):
                 | 
                 |          call mfgPattern.Reverse()
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_pattern.Reverse()
@@ -451,7 +441,6 @@ class ManufacturingPattern(ManufacturingFeature):
                 |                  call mfgPattern.SetItemToCopy(Hole1)
 
         :param AnyObject i_item:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_pattern.SetItemToCopy(i_item.com_object)
@@ -492,7 +481,6 @@ class ManufacturingPattern(ManufacturingFeature):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_pattern.SetLocalToolAxis(i_point_number, i_x, i_y, i_z)
@@ -520,7 +508,6 @@ class ManufacturingPattern(ManufacturingFeature):
                 |                  call mfgPattern.StartPoint(2)
 
         :param int i_point_number:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_pattern.StartPoint(i_point_number)

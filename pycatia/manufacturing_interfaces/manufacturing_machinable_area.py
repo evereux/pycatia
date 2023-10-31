@@ -65,7 +65,6 @@ class ManufacturingMachinableArea(ManufacturingMachinableFeature):
                 |          Dim bFreezed As boolean
                 |          Set bFreezed = firstMachArea.Freezed
 
-        :return: bool
         :rtype: bool
         """
 
@@ -104,7 +103,6 @@ class ManufacturingMachinableArea(ManufacturingMachinableFeature):
                 |          Dim bVisibleInMfgView As boolean
                 |          Set bVisibleInMfgView = firstMachArea.VisibleInMfgView
 
-        :return: bool
         :rtype: bool
         """
 
@@ -146,7 +144,6 @@ class ManufacturingMachinableArea(ManufacturingMachinableFeature):
                 |          )
 
         :param ManufacturingMachinableFeature i_machinable_geometry:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machinable_area.AddMachinableGeometry(i_machinable_geometry.com_object)
@@ -203,7 +200,6 @@ class ManufacturingMachinableArea(ManufacturingMachinableFeature):
                 |      End If
 
         :param tuple o_list_of_machinable_geometry:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_machinable_area.ListMachinableGeometry(o_list_of_machinable_geometry)
@@ -259,7 +255,6 @@ class ManufacturingMachinableArea(ManufacturingMachinableFeature):
                 |      End If
 
         :param tuple o_list_of_manufacturing_activity_connected:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_machinable_area.ListManufacturingActivityConnected(
@@ -305,7 +300,6 @@ class ManufacturingMachinableArea(ManufacturingMachinableFeature):
                 |          Dim MachinableGeometryListSize As Long
                 |          Set MachinableGeometryListSize = firstMachArea.MachinableGeometryCount
 
-        :return: int
         :rtype: int
         """
         return self.manufacturing_machinable_area.MachinableGeometryCount()
@@ -335,7 +329,6 @@ class ManufacturingMachinableArea(ManufacturingMachinableFeature):
                 |          Dim ManufacturingActivityConnectedListSize As Long
                 |          Set ManufacturingActivityConnectedListSize = firstMachArea.ManufacturingActivityConnectedCount
 
-        :return: int
         :rtype: int
         """
         return self.manufacturing_machinable_area.ManufacturingActivityConnectedCount()
@@ -369,7 +362,6 @@ class ManufacturingMachinableArea(ManufacturingMachinableFeature):
                 |          )
 
         :param ManufacturingMachinableFeature i_machinable_geometry:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machinable_area.RemoveMachinableGeometry(i_machinable_geometry.com_object)

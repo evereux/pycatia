@@ -63,7 +63,6 @@ class Groups(Collection):
                 |             Dim NewGroup As Group
                 |             Set NewGroup = TheGroups.Add
 
-        :return: Group
         :rtype: Group
         """
         return Group(self.groups.Add())
@@ -91,7 +90,6 @@ class Groups(Collection):
                 |             Dim NewGroup As Group
                 |             Set NewGroup = TheGroups.AddFromSel
 
-        :return: Group
         :rtype: Group
         """
         return Group(self.groups.AddFromSel())
@@ -116,7 +114,6 @@ class Groups(Collection):
                 |             Dim AllLeavesGroup As Group
                 |             Set AllLeavesGroup = TheGroups.AllLeaves
 
-        :return: Group
         :rtype: Group
         """
         return Group(self.groups.AllLeaves())
@@ -157,7 +154,6 @@ class Groups(Collection):
                 |             Set ThatGroup = TheGroups.Item("Group3")
 
         :param cat_variant i_index:
-        :return: Group
         :rtype: Group
         """
         return Group(self.groups.Item(i_index))
@@ -192,7 +188,6 @@ class Groups(Collection):
                 |             TheGroups.Remove("Group2")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.groups.Remove(i_index)

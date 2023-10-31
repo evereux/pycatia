@@ -68,7 +68,6 @@ class HybridShapeSpline(HybridShape):
                 |             Point element.
 
         :param Reference ip_ia_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.AddPoint(ip_ia_point.com_object)
@@ -133,7 +132,6 @@ class HybridShapeSpline(HybridShape):
         :param int i_inverse_tangency:
         :param HybridShapeDirection or vba_nothing ip_ia_dir_curvature:
         :param float i_curvature_radius:
-        :return: None
         :rtype: None
         """
 
@@ -203,7 +201,6 @@ class HybridShapeSpline(HybridShape):
         :param float i_tangency_norm:
         :param int i_invert_value:
         :param int i_crv_cst_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.AddPointWithConstraintFromCurve(ip_ia_point.com_object,
@@ -245,7 +242,6 @@ class HybridShapeSpline(HybridShape):
                 |             0
                 |                 for an open curve
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_spline.GetClosure()
@@ -269,7 +265,6 @@ class HybridShapeSpline(HybridShape):
                 |             (CstType=0 : not defined / CstType=1 : Explicit / CstType=2 : FromCurve)
 
         :param int i_pos:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_spline.GetConstraintType(i_pos)
@@ -295,7 +290,6 @@ class HybridShapeSpline(HybridShape):
                 |             The curvature radius value at this point
 
         :param int i_pos:
-        :return: Length
         :rtype: Length
         """
         return Length(self.hybrid_shape_spline.GetCurvatureRadius(i_pos))
@@ -319,7 +313,6 @@ class HybridShapeSpline(HybridShape):
                 |             E_FAIL
 
         :param int i_pos:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_spline.GetDirectionInversion(i_pos)
@@ -339,7 +332,6 @@ class HybridShapeSpline(HybridShape):
                 |         oNbCtrPt
                 |             The number of control points.
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_spline.GetNbControlPoint()
@@ -362,7 +354,6 @@ class HybridShapeSpline(HybridShape):
                 |             Type of Control point (TypeCtrPoint =1 : Explicit / TypeCtrPoint =2 : FromCurve)
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_spline.GetPoint(i_pos))
@@ -408,7 +399,6 @@ class HybridShapeSpline(HybridShape):
         :param int o_inverse_tangency:
         :param HybridShapeDirection op_ia_dir_curvature:
         :param float o_curvature_radius:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.GetPointConstraintExplicit(i_pos, op_ia_dir_tangency.com_object,
@@ -466,7 +456,6 @@ class HybridShapeSpline(HybridShape):
         :param float o_tangency_norm:
         :param int o_invert_value:
         :param int o_crv_cst_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.GetPointConstraintFromCurve(i_pos, op_ia_curve_cst.com_object, o_tangency_norm,
@@ -505,7 +494,6 @@ class HybridShapeSpline(HybridShape):
                 |             The position of the point (=0 Point Not in Spline)
 
         :param Reference ip_ia_point:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_spline.GetPointPosition(ip_ia_point.com_object)
@@ -525,7 +513,6 @@ class HybridShapeSpline(HybridShape):
                 |         oType
                 |             = 0 : Cubic Type Spline. = 1 : WilsonFowler Type Spline.
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_spline.GetSplineType()
@@ -545,7 +532,6 @@ class HybridShapeSpline(HybridShape):
                 |         oSupport
                 |             Supporting surface for spline (if exist)
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_spline.GetSupport())
@@ -571,7 +557,6 @@ class HybridShapeSpline(HybridShape):
                 |             The tension at this point
 
         :param int i_pos:
-        :return: RealParam
         :rtype: RealParam
         """
         return RealParam(self.hybrid_shape_spline.GetTangentNorm(i_pos))
@@ -593,7 +578,6 @@ class HybridShapeSpline(HybridShape):
                 |             E_FAIL
 
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.InvertDirection(i_pos)
@@ -608,7 +592,6 @@ class HybridShapeSpline(HybridShape):
                 | 
                 |     Removes all elements in the list of points.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.RemoveAll()
@@ -629,7 +612,6 @@ class HybridShapeSpline(HybridShape):
                 |             The position of the point to remove
 
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.RemoveControlPoint(i_pos)
@@ -652,7 +634,6 @@ class HybridShapeSpline(HybridShape):
                 |             E_FAIL
 
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.RemoveCurvatureRadiusDirection(i_pos)
@@ -675,7 +656,6 @@ class HybridShapeSpline(HybridShape):
                 |             E_FAIL
 
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.RemoveCurvatureRadiusValue(i_pos)
@@ -690,7 +670,6 @@ class HybridShapeSpline(HybridShape):
                 | 
                 |     Removes the support surface.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.RemoveSupport()
@@ -713,7 +692,6 @@ class HybridShapeSpline(HybridShape):
                 |             E_FAIL
 
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.RemoveTangentDirection(i_pos)
@@ -735,7 +713,6 @@ class HybridShapeSpline(HybridShape):
                 |             E_FAIL
 
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.RemoveTension(i_pos)
@@ -760,7 +737,6 @@ class HybridShapeSpline(HybridShape):
 
         :param int i_pos:
         :param Reference i_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.ReplacePointAtPosition(i_pos, i_point.com_object)
@@ -796,7 +772,6 @@ class HybridShapeSpline(HybridShape):
                 |             The spline closing option
 
         :param int i_closing_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.SetClosing(i_closing_type)
@@ -821,7 +796,6 @@ class HybridShapeSpline(HybridShape):
 
         :param int i_pos:
         :param Reference ip_ia_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.SetPointAfter(i_pos, ip_ia_point.com_object)
@@ -861,7 +835,6 @@ class HybridShapeSpline(HybridShape):
 
         :param int i_pos:
         :param Reference ip_ia_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.SetPointBefore(i_pos, ip_ia_point.com_object)
@@ -922,7 +895,6 @@ class HybridShapeSpline(HybridShape):
         :param int i_inverse_tangency:
         :param HybridShapeDirection ip_ia_dir_curvature:
         :param float i_curvature_radius:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.SetPointConstraintExplicit(i_pos, ip_ia_dir_tangency.com_object,
@@ -980,7 +952,6 @@ class HybridShapeSpline(HybridShape):
         :param float i_tangency_norm:
         :param int i_invert_value:
         :param int i_crv_cst_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.SetPointConstraintFromCurve(i_pos, ip_ia_curve_cst.com_object, i_tangency_norm,
@@ -1018,7 +989,6 @@ class HybridShapeSpline(HybridShape):
                 |             Legal values: Cubic spline (0) or WilsonFowler (1)
 
         :param int i_spline_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.SetSplineType(i_spline_type)
@@ -1044,7 +1014,6 @@ class HybridShapeSpline(HybridShape):
                 |         Boundary object): Face.
 
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spline.SetSupport(i_support.com_object)

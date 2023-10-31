@@ -71,7 +71,6 @@ class E5Property(AnyObject):
                 |             CATBoolean value of the Attribute
 
         :param str i_attr_name:
-        :return: bool
         :rtype: bool
         """
         return self.e5_property.GetBooleanAttribute(i_attr_name)
@@ -94,7 +93,6 @@ class E5Property(AnyObject):
                 |             Double value of the Attribute
 
         :param str i_attr_name:
-        :return: float
         :rtype: float
         """
         return self.e5_property.GetDoubleAttribute(i_attr_name)
@@ -117,7 +115,6 @@ class E5Property(AnyObject):
                 |             Long value of the Attribute
 
         :param str i_attr_name:
-        :return: int
         :rtype: int
         """
         return self.e5_property.GetLongAttribute(i_attr_name)
@@ -141,7 +138,6 @@ class E5Property(AnyObject):
                 |         CATUnicodeString value of the Attribute
 
         :param str i_attr_name:
-        :return: str
         :rtype: str
         """
         return self.e5_property.GetStringAttribute(i_attr_name)
@@ -169,7 +165,6 @@ class E5Property(AnyObject):
 
         :param str i_attr_name:
         :param bool i_attr_value:
-        :return: None
         :rtype: None
         """
         return self.e5_property.SetBooleanAttribute(i_attr_name, i_attr_value)
@@ -212,7 +207,6 @@ class E5Property(AnyObject):
 
         :param str i_attr_name:
         :param float i_attr_value:
-        :return: None
         :rtype: None
         """
         return self.e5_property.SetDoubleAttribute(i_attr_name, i_attr_value)
@@ -238,7 +232,6 @@ class E5Property(AnyObject):
 
         :param str i_attr_name:
         :param int i_attr_value:
-        :return: None
         :rtype: None
         """
         return self.e5_property.SetLongAttribute(i_attr_name, i_attr_value)
@@ -263,7 +256,6 @@ class E5Property(AnyObject):
 
         :param str i_attr_name:
         :param str i_attr_value:
-        :return: None
         :rtype: None
         """
         return self.e5_property.SetStringAttribute(i_attr_name, i_attr_value)

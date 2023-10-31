@@ -68,7 +68,6 @@ class DraftDomains(Collection):
                 |              Set domain = firstDraftDomains.Item(3)
 
         :param cat_variant i_index:
-        :return: DraftDomain
         :rtype: DraftDomain
         """
         return DraftDomain(self.draft_domains.Item(i_index))

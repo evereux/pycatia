@@ -64,7 +64,6 @@ class SampledsNode(AnyObject):
                 |          Set myTracks = SampledsNode.GetSampleds ("Tracks")
 
         :param str i_collection_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.sampleds_node.GetSampleds(i_collection_name)

@@ -56,7 +56,7 @@ class AnnotatedView(AnyObject):
                 |             Dim Mode
                 |             Mode = NewAnnotatedView.BehaviorMode
 
-        :return: int
+        :return: enum cat_annotated_view_behavior
         :rtype: int
         """
 
@@ -65,7 +65,7 @@ class AnnotatedView(AnyObject):
     @behavior_mode.setter
     def behavior_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_annotated_view_behavior
         """
 
         self.annotated_view.BehaviorMode = value
@@ -91,7 +91,6 @@ class AnnotatedView(AnyObject):
                 |             Dim text As String
                 |             text = NewAnnotatedView.Comment
 
-        :return: str
         :rtype: str
         """
 
@@ -128,7 +127,6 @@ class AnnotatedView(AnyObject):
                 |             Dim Field As Double
                 |             Field = NewAnnotatedView.FieldOfView
 
-        :return: float
         :rtype: float
         """
 
@@ -156,7 +154,6 @@ class AnnotatedView(AnyObject):
                 |             Dim TheMarker2Ds As AnnotatedView
                 |             Set TheMarker2Ds = NewAnnotatedView.Marker2Ds(9)
 
-        :return: Marker2Ds
         :rtype: Marker2Ds
         """
 
@@ -183,7 +180,7 @@ class AnnotatedView(AnyObject):
                 |             Dim Mode
                 |             Mode = NewAnnotatedView.ProjectionMode
 
-        :return: int
+        :return: enum cat_projection_mode
         :rtype: int
         """
 
@@ -221,7 +218,6 @@ class AnnotatedView(AnyObject):
                 |             Dim path As String
                 |             path = NewAnnotatedView.Sound
 
-        :return: str
         :rtype: str
         """
 
@@ -257,7 +253,6 @@ class AnnotatedView(AnyObject):
                 |             Dim ZoomFactor As Double
                 |             ZoomFactor = NewAnnotatedView.Zoom
 
-        :return: float
         :rtype: float
         """
 
@@ -294,7 +289,6 @@ class AnnotatedView(AnyObject):
                 |             NewAnnotatedView.GetOrigin origin
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
         return self.annotated_view.GetOrigin(o_origin)
@@ -349,7 +343,6 @@ class AnnotatedView(AnyObject):
                 |             NewAnnotatedView.GetSightDirection sight
 
         :param tuple o_sight:
-        :return: None
         :rtype: None
         """
         return self.annotated_view.GetSightDirection(o_sight)
@@ -400,7 +393,6 @@ class AnnotatedView(AnyObject):
                 |             NewAnnotatedView.GetUpDirection up
 
         :param tuple o_up:
-        :return: None
         :rtype: None
         """
         return self.annotated_view.GetUpDirection(o_up)
@@ -439,7 +431,6 @@ class AnnotatedView(AnyObject):
                 | 
                 |             NewAnnotatedView.Update
 
-        :return: None
         :rtype: None
         """
         return self.annotated_view.Update()

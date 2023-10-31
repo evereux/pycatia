@@ -70,7 +70,6 @@ class SchCompGraphic(AnyObject):
         :param str i_grr_name:
         :param tuple i_db2_where_at:
         :param SchGRRComp o_grr:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_comp_graphic.Activate(i_grr_name, i_db2_where_at, o_grr.com_object)
@@ -113,7 +112,6 @@ class SchCompGraphic(AnyObject):
                 |          objThisIntf.AddGraphicalRepresentationobjArg1
 
         :param SchGRRComp i_grr_to_add:
-        :return: None
         :rtype: None
         """
         return self.sch_comp_graphic.AddGraphicalRepresentation(i_grr_to_add.com_object)
@@ -162,7 +160,6 @@ class SchCompGraphic(AnyObject):
                 |          objThisIntf.DeactivateobjArg1
 
         :param SchGRRComp i_grr:
-        :return: None
         :rtype: None
         """
         return self.sch_comp_graphic.Deactivate(i_grr.com_object)
@@ -206,7 +203,6 @@ class SchCompGraphic(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListGraphicalImages
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_comp_graphic.ListGraphicalImages())
@@ -234,7 +230,6 @@ class SchCompGraphic(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListGraphicalRepresentations
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_comp_graphic.ListGraphicalRepresentations())
@@ -262,7 +257,6 @@ class SchCompGraphic(AnyObject):
                 |          objThisIntf.RemoveGraphicalRepresentationobjArg1
 
         :param SchGRRComp i_grr_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_comp_graphic.RemoveGraphicalRepresentation(i_grr_to_remove.com_object)
@@ -315,7 +309,6 @@ class SchCompGraphic(AnyObject):
         :param SchGRRComp i_grr:
         :param str i_grr_name:
         :param SchGRRComp o_grr:
-        :return: None
         :rtype: None
         """
         return self.sch_comp_graphic.Switch(i_grr.com_object, i_grr_name, o_grr.com_object)
@@ -359,7 +352,6 @@ class SchCompGraphic(AnyObject):
                 |          objThisIntf.SwitchAllstrVar1
 
         :param str i_grr_name:
-        :return: None
         :rtype: None
         """
         return self.sch_comp_graphic.SwitchAll(i_grr_name)

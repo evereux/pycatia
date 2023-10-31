@@ -58,7 +58,6 @@ class FileComponent(AnyObject):
                 | 
                 |          TestFile.ParentFolder
 
-        :return: Folder
         :rtype: Folder
         """
         from pycatia.in_interfaces.folder import Folder
@@ -90,7 +89,6 @@ class FileComponent(AnyObject):
                 |          Dim FilePath As String
                 |          FilePath = TestFile.Path
 
-        :return: str
         :rtype: str
         """
 

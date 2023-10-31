@@ -68,7 +68,6 @@ class Layout2DFactory(AnyObject):
                 |          end if
 
         :param str i_standard_name:
-        :return: Layout2DRoot
         :rtype: Layout2DRoot
         """
         return Layout2DRoot(self.layout_2d_factory.Create2DLayout(i_standard_name))

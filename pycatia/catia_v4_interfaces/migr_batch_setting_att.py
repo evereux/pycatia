@@ -82,7 +82,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     in the Migration Report. For each element, the list of its attributes is
                 |     displayed with their names and values.
 
-        :return: str
         :rtype: str
         """
 
@@ -112,7 +111,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     retrieve associativity in CATIA V5. You can specify the directory path of your
                 |     choice: Batch Target Directory, Model Directory or Specified Directory.
 
-        :return: str
         :rtype: str
         """
 
@@ -141,7 +139,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     in V4 MML Solids and to retrieve associativity in CATIA V5. You can specify the
                 |     directory path of your choice.
 
-        :return: str
         :rtype: str
         """
 
@@ -169,7 +166,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Role: The "Format" mode enables you to select the format of the Migration
                 |     in Batch Mode: AS SPEC or AS RESULT.
 
-        :return: str
         :rtype: str
         """
 
@@ -198,7 +194,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     V5. You can choose how your applicative data will be migrated by writing source
                 |     code
 
-        :return: str
         :rtype: str
         """
 
@@ -226,7 +221,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Role: The "Conversion Mode" mode enables you to separate the treatment of
                 |     SPACE data and DRAW data when a model is migrated.
 
-        :return: str
         :rtype: str
         """
 
@@ -254,7 +248,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Role: This setting enables to retrieve the size of the "Mapping Files
                 |     Location for Retrieving" list.
 
-        :return: int
         :rtype: int
         """
 
@@ -283,7 +276,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     document which will serve as a template. The standard used by this document
                 |     will be used during the migration.
 
-        :return: str
         :rtype: str
         """
 
@@ -312,7 +304,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     obtained after the migration: A CATPart by Geometric Set or A CATPart by Solid.
                 |     .
 
-        :return: str
         :rtype: str
         """
 
@@ -341,7 +332,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     specify what kind of projection mode you want to use for transparent views
                 |     during the migration: NHR, HLR or the same projection mode as the V4 model.
 
-        :return: str
         :rtype: str
         """
 
@@ -370,7 +360,6 @@ class MigrBatchSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.migr_batch_setting_att.GetAffiche_AttributInfo(admin_level, o_locked)
@@ -390,7 +379,6 @@ class MigrBatchSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.migr_batch_setting_att.GetMapping_File_Save_ModeInfo(admin_level, o_locked)
@@ -410,7 +398,6 @@ class MigrBatchSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.migr_batch_setting_att.GetMapping_Saving_FileInfo(admin_level, o_locked)
@@ -430,7 +417,6 @@ class MigrBatchSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.migr_batch_setting_att.GetMigration_FormatInfo(admin_level, o_locked)
@@ -450,7 +436,6 @@ class MigrBatchSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.migr_batch_setting_att.GetMigration_InterfaceInfo(admin_level, o_locked)
@@ -470,7 +455,6 @@ class MigrBatchSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.migr_batch_setting_att.GetMigration_TypeInfo(admin_level, o_locked)
@@ -488,7 +472,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Role: The "Mapping Files Location for Retrieving " mode enables you to
                 |     store a list of mapping tables.
 
-        :return: tuple
         :rtype: tuple
         """
         return self.migr_batch_setting_att.GetSearch_Mapping_List()
@@ -508,7 +491,6 @@ class MigrBatchSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.migr_batch_setting_att.GetStartUp_Model_For_DrawingInfo(admin_level, o_locked)
@@ -528,7 +510,6 @@ class MigrBatchSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.migr_batch_setting_att.GetV4_Part_DefinitionInfo(admin_level, o_locked)
@@ -548,7 +529,6 @@ class MigrBatchSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.migr_batch_setting_att.GetVisu_Mode_2DInfo(admin_level, o_locked)
@@ -567,7 +547,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     store a list of mapping tables.
 
         :param tuple i_rel_path:
-        :return: None
         :rtype: None
         """
         return self.migr_batch_setting_att.PutSearch_Mapping_List(i_rel_path)
@@ -600,7 +579,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.migr_batch_setting_att.SetAffiche_AttributLock(i_lock)
@@ -633,7 +611,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.migr_batch_setting_att.SetMapping_File_Save_ModeLock(i_lock)
@@ -666,7 +643,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.migr_batch_setting_att.SetMapping_Saving_FileLock(i_lock)
@@ -698,7 +674,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.migr_batch_setting_att.SetMigration_FormatLock(i_lock)
@@ -731,7 +706,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.migr_batch_setting_att.SetMigration_InterfaceLock(i_lock)
@@ -763,7 +737,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.migr_batch_setting_att.SetMigration_TypeLock(i_lock)
@@ -796,7 +769,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.migr_batch_setting_att.SetStartUp_Model_For_DrawingLock(i_lock)
@@ -829,7 +801,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.migr_batch_setting_att.SetV4_Part_DefinitionLock(i_lock)
@@ -862,7 +833,6 @@ class MigrBatchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.migr_batch_setting_att.SetVisu_Mode_2DLock(i_lock)

@@ -61,7 +61,6 @@ class Point(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = 'get_coordinates'
@@ -97,7 +96,6 @@ class Point(HybridShape):
                 |         HybridShapeFactory
 
         :param tuple o_coordinates:
-        :return: None
         :rtype: None
         """
         return self.point_.SetCoordinates(o_coordinates)

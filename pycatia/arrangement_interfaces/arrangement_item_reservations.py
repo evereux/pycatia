@@ -104,7 +104,6 @@ class ArrangementItemReservations(Collection):
         :param float i_x_max:
         :param float i_y_max:
         :param float i_z_max:
-        :return: ArrangementItemReservation
         :rtype: ArrangementItemReservation
         """
         return ArrangementItemReservation(
@@ -149,7 +148,6 @@ class ArrangementItemReservations(Collection):
                 |         The retrieved ArrangementItemReservation object.
 
         :param cat_variant i_index:
-        :return: ArrangementItemReservation
         :rtype: ArrangementItemReservation
         """
         return ArrangementItemReservation(self.arrangement_item_reservations.Item(i_index))
@@ -181,7 +179,6 @@ class ArrangementItemReservations(Collection):
                 |         AnyObject.Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.arrangement_item_reservations.Remove(i_index)

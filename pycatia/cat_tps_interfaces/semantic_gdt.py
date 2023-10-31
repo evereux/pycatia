@@ -62,7 +62,6 @@ class SemanticGDT(AnyObject):
                 |         oAssRefFra
                 |             The AssociatedRefFrame.
 
-        :return: AssociatedRefFrame
         :rtype: AssociatedRefFrame
         """
         return AssociatedRefFrame(self.semantic_gdt.AssociatedRefFrame())
@@ -82,7 +81,6 @@ class SemanticGDT(AnyObject):
                 |         oCompTol
                 |             The CompositeTolerance.
 
-        :return: CompositeTolerance
         :rtype: CompositeTolerance
         """
         return CompositeTolerance(self.semantic_gdt.CompositeTolerance())
@@ -102,7 +100,6 @@ class SemanticGDT(AnyObject):
                 |         oFreeState
                 |             The FreeState.
 
-        :return: FreeState
         :rtype: FreeState
         """
         return FreeState(self.semantic_gdt.FreeState())
@@ -124,7 +121,6 @@ class SemanticGDT(AnyObject):
                 |                 TRUE: There is a Free State
                 |                 FALSE: There is no Free State
 
-        :return: bool
         :rtype: bool
         """
         return self.semantic_gdt.HasAFreeState()
@@ -146,7 +142,6 @@ class SemanticGDT(AnyObject):
                 |                 TRUE: A Material Condition exits
                 |                 FALSE: There is no Material Condition
 
-        :return: bool
         :rtype: bool
         """
         return self.semantic_gdt.HasAMaterialCondition()
@@ -168,7 +163,6 @@ class SemanticGDT(AnyObject):
                 |                 TRUE: There is a Particuler Element
                 |                 FALSE: There is no Particuler Element
 
-        :return: bool
         :rtype: bool
         """
         return self.semantic_gdt.HasAParticularTolElem()
@@ -190,7 +184,6 @@ class SemanticGDT(AnyObject):
                 |                 TRUE: There has a Tangent Plane
                 |                 FALSE: There has not Tangent Plane
 
-        :return: bool
         :rtype: bool
         """
         return self.semantic_gdt.HasATangentPlane()
@@ -215,7 +208,6 @@ class SemanticGDT(AnyObject):
                 |                 FALSE: There is no Tolerance Per Unit Basis Restricted
                 |                 Value
 
-        :return: bool
         :rtype: bool
         """
         return self.semantic_gdt.HasATolerancePerUnitBasisRestrictiveValue()
@@ -237,7 +229,6 @@ class SemanticGDT(AnyObject):
                 |                 TRUE: There is a Composite Tolerance
                 |                 FALSE: There is no Composite Tolerance
 
-        :return: bool
         :rtype: bool
         """
         return self.semantic_gdt.IsACompositeTolerance()
@@ -259,7 +250,6 @@ class SemanticGDT(AnyObject):
                 |                 TRUE: There is a Projected Zone
                 |                 FALSE: There is no Projected Zone
 
-        :return: bool
         :rtype: bool
         """
         return self.semantic_gdt.IsAProjectedToleranceZone()
@@ -281,7 +271,6 @@ class SemanticGDT(AnyObject):
                 |                 TRUE: There is a Shifted Profile Tolerance
                 |                 FALSE: There is no Shifted Profile Tolerance
 
-        :return: bool
         :rtype: bool
         """
         return self.semantic_gdt.IsAShiftedProfileTolerance()
@@ -303,7 +292,6 @@ class SemanticGDT(AnyObject):
                 |                 TRUE: A Tolerance Zone exits
                 |                 FALSE: There is no Tolerance Zone
 
-        :return: bool
         :rtype: bool
         """
         return self.semantic_gdt.IsAToleranceUnitBasisValue()
@@ -325,7 +313,6 @@ class SemanticGDT(AnyObject):
                 |                 TRUE: A Tolerance Zone exits
                 |                 FALSE: There is no Tolerance Zone
 
-        :return: bool
         :rtype: bool
         """
         return self.semantic_gdt.IsAToleranceZone()
@@ -347,7 +334,6 @@ class SemanticGDT(AnyObject):
                 |                 TRUE: There is an Associated Reference Frame
                 |                 FALSE: There is no Associated Reference Frame
 
-        :return: bool
         :rtype: bool
         """
         return self.semantic_gdt.IsAnAssociatedRefFrame()
@@ -367,7 +353,6 @@ class SemanticGDT(AnyObject):
                 |         oMatCond
                 |             The Material Condition.
 
-        :return: MaterialCondition
         :rtype: MaterialCondition
         """
         return MaterialCondition(self.semantic_gdt.MaterialCondition())
@@ -387,7 +372,6 @@ class SemanticGDT(AnyObject):
                 |         oParTolElem
                 |             The ParticularTolElem.
 
-        :return: ParticularTolElem
         :rtype: ParticularTolElem
         """
         return ParticularTolElem(self.semantic_gdt.ParticularTolElem())
@@ -407,7 +391,6 @@ class SemanticGDT(AnyObject):
                 |         oProjTolZone
                 |             The ProjectedToleranceZone.
 
-        :return: ProjectedToleranceZone
         :rtype: ProjectedToleranceZone
         """
         return ProjectedToleranceZone(self.semantic_gdt.ProjectedToleranceZone())
@@ -427,7 +410,6 @@ class SemanticGDT(AnyObject):
                 |         oShiftProTol
                 |             The ShiftedProfileTolerance.
 
-        :return: ShiftedProfileTolerance
         :rtype: ShiftedProfileTolerance
         """
         return ShiftedProfileTolerance(self.semantic_gdt.ShiftedProfileTolerance())
@@ -442,7 +424,6 @@ class SemanticGDT(AnyObject):
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.
 
-        :return: TPSParallelOnScreen
         :rtype: TPSParallelOnScreen
         """
         return TPSParallelOnScreen(self.semantic_gdt.TPSParallelOnScreen())
@@ -462,7 +443,6 @@ class SemanticGDT(AnyObject):
                 |         oTangentPlane
                 |             The Tangent Plane.
 
-        :return: TangentPlane
         :rtype: TangentPlane
         """
         return TangentPlane(self.semantic_gdt.TangentPlane())
@@ -484,7 +464,6 @@ class SemanticGDT(AnyObject):
                 |         oTolRes
                 |             The TolerancePerUnitBasisRestrictiveValue.
 
-        :return: TolerancePerUnitBasisRestrictiveValue
         :rtype: TolerancePerUnitBasisRestrictiveValue
         """
         return TolerancePerUnitBasisRestrictiveValue(self.semantic_gdt.TolerancePerUnitBasisRestrictiveValue())
@@ -504,7 +483,6 @@ class SemanticGDT(AnyObject):
                 |         oTolUnitBas
                 |             The Tolerance Unit Basis Value.
 
-        :return: ToleranceUnitBasisValue
         :rtype: ToleranceUnitBasisValue
         """
         return ToleranceUnitBasisValue(self.semantic_gdt.ToleranceUnitBasisValue())
@@ -524,7 +502,6 @@ class SemanticGDT(AnyObject):
                 |         oTolZone
                 |             The Tolerance Zone.
 
-        :return: ToleranceZone
         :rtype: ToleranceZone
         """
         return ToleranceZone(self.semantic_gdt.ToleranceZone())

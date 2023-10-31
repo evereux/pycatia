@@ -61,7 +61,6 @@ class AnalysisCase(AnyObject):
                 |          Dim ListSets As AnalysisSets
                 |          Set ListSets = MyCase.AnalysisSets
 
-        :return: AnalysisSets
         :rtype: AnalysisSets
         """
 
@@ -94,7 +93,6 @@ class AnalysisCase(AnyObject):
                 |          Set Newsol = MyCase.AddSolution("StaticSet")
 
         :param str i_solution_type:
-        :return: AnalysisSet
         :rtype: AnalysisSet
         """
         return AnalysisSet(self.analysis_case.AddSolution(i_solution_type))
@@ -115,7 +113,6 @@ class AnalysisCase(AnyObject):
                 |      Dim MyCase As AnalysisCase
                 |      MyCase.Compute
 
-        :return: None
         :rtype: None
         """
         return self.analysis_case.Compute()
@@ -137,7 +134,6 @@ class AnalysisCase(AnyObject):
                 |      Dim MyCase As AnalysisCase
                 |      MyCase.ComputeMeshOnly
 
-        :return: None
         :rtype: None
         """
         return self.analysis_case.ComputeMeshOnly()

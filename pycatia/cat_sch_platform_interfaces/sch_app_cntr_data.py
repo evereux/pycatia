@@ -64,7 +64,6 @@ class SchAppCntrData(AnyObject):
 
         :param SchListOfBSTRs i_l_app_data:
         :param SchListOfBSTRs i_l_app_nls_data:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_data.AppGetApplicationData(i_l_app_data.com_object, i_l_app_nls_data.com_object)
@@ -115,7 +114,6 @@ class SchAppCntrData(AnyObject):
 
         :param SchListOfBSTRs i_l_app_data:
         :param SchListOfBSTRs i_l_app_nls_data:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_data.AppListPotentialData(i_l_app_data.com_object, i_l_app_nls_data.com_object)
@@ -160,7 +158,6 @@ class SchAppCntrData(AnyObject):
                 |          objThisIntf.AppSetApplicationDataobjArg1
 
         :param SchListOfBSTRs i_l_app_data:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_data.AppSetApplicationData(i_l_app_data.com_object)

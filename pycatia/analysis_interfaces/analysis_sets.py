@@ -70,8 +70,7 @@ class AnalysisSets(Collection):
                 |          Set ThisAnalysisSet = analysisSets.Add("LoadSet", 0)
 
         :param str i_type:
-        :param int i_set_type:
-        :return: AnalysisSet
+        :param int i_set_type: enum cat_analysis_set_type
         :rtype: AnalysisSet
         """
         return AnalysisSet(self.analysis_sets.Add(i_type, i_set_type))
@@ -107,8 +106,7 @@ class AnalysisSets(Collection):
                 |          analysisSets.AddExistingSet(ThisAnalysisSet, 0)
 
         :param AnalysisSet i_set:
-        :param int i_set_type:
-        :return: None
+        :param int i_set_type: enum cat_analysis_set_type
         :rtype: None
         """
         return self.analysis_sets.AddExistingSet(i_set.com_object, i_set_type)
@@ -128,7 +126,7 @@ class AnalysisSets(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def item(self, i_index: cat_variant, i_serach_type: int) -> AnalysisSet:
+    def item(self, i_index: cat_variant, i_search_type: int) -> AnalysisSet:
         """
         .. note::
             :class: toggle
@@ -171,11 +169,10 @@ class AnalysisSets(Collection):
                 |          Set ThatAnalysisSet = analysisCase.AnalysisSets.Item("MySet")
 
         :param cat_variant i_index:
-        :param int i_serach_type:
-        :return: AnalysisSet
+        :param int i_search_type: enum cat_analysis_set_search_type
         :rtype: AnalysisSet
         """
-        return AnalysisSet(self.analysis_sets.Item(i_index, i_serach_type))
+        return AnalysisSet(self.analysis_sets.Item(i_index, i_search_type))
 
     def item_by_type(self, i_type: str) -> AnalysisSet:
         """
@@ -204,7 +201,6 @@ class AnalysisSets(Collection):
                 |          Set ThisAnalysisSet = analysisCase.AnalysisSets.ItemByType("LoadSet")
 
         :param str i_type:
-        :return: AnalysisSet
         :rtype: AnalysisSet
         """
         return AnalysisSet(self.analysis_sets.ItemByType(i_type))
@@ -232,7 +228,6 @@ class AnalysisSets(Collection):
                 |         AnyObject.Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.analysis_sets.Remove(i_index)

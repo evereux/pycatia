@@ -57,7 +57,6 @@ class Shell(DressUpShape):
                 | 
                 |          Set extThick = firstShell.ExternalThickness
 
-        :return: Length
         :rtype: Length
         """
 
@@ -81,7 +80,6 @@ class Shell(DressUpShape):
                 | 
                 |          Set list = firstShell.FacesToRemove
 
-        :return: References
         :rtype: References
         """
 
@@ -104,7 +102,6 @@ class Shell(DressUpShape):
                 | 
                 |          Set intThick = firstShell.InternalThickness
 
-        :return: Length
         :rtype: Length
         """
 
@@ -136,7 +133,6 @@ class Shell(DressUpShape):
                 |      call firstShell.AddFaceToRemove(face)
 
         :param Reference i_face_to_remove:
-        :return: None
         :rtype: None
         """
         return self.shell.AddFaceToRemove(i_face_to_remove.com_object)
@@ -184,7 +180,6 @@ class Shell(DressUpShape):
                 |      call firstShell.AddFaceWithDifferentThickness(face)
 
         :param Reference i_face_to_thicken:
-        :return: None
         :rtype: None
         """
         return self.shell.AddFaceWithDifferentThickness(i_face_to_thicken.com_object)
@@ -232,7 +227,6 @@ class Shell(DressUpShape):
                 |      call firstShell.RemoveFaceWithDifferentThickness(face)
 
         :param Reference i_face_to_remove:
-        :return: None
         :rtype: None
         """
         return self.shell.RemoveFaceWithDifferentThickness(i_face_to_remove.com_object)
@@ -263,7 +257,6 @@ class Shell(DressUpShape):
                 |     Set the Support Volume of the faces to modify during Shell operation.
 
         :param Reference i_volume_support:
-        :return: None
         :rtype: None
         """
         return self.shell.SetVolumeSupport(i_volume_support.com_object)
@@ -309,7 +302,6 @@ class Shell(DressUpShape):
                 |      call firstShell.WithdrawFaceToRemove(face)
 
         :param Reference i_face_to_withdraw:
-        :return: None
         :rtype: None
         """
         return self.shell.WithdrawFaceToRemove(i_face_to_withdraw.com_object)

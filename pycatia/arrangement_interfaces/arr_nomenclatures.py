@@ -71,7 +71,6 @@ class ArrNomenclatures(Collection):
         :param str i_icon_name:
         :param str i_class_type:
         :param str i_super_type:
-        :return: ArrNomenclature
         :rtype: ArrNomenclature
         """
         return ArrNomenclature(
@@ -103,7 +102,6 @@ class ArrNomenclatures(Collection):
                 |         The retrieved member object.
 
         :param cat_variant i_index:
-        :return: ArrNomenclature
         :rtype: ArrNomenclature
         """
         return ArrNomenclature(self.arr_nomenclatures.Item(i_index))

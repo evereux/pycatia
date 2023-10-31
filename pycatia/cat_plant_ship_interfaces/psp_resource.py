@@ -62,7 +62,6 @@ class PSPResource(AnyObject):
                 |          strResourcePath = objThisIntf.GetResourcePath (iResourceName)
 
         :param str i_resource_name:
-        :return: str
         :rtype: str
         """
         return self.psp_resource.GetResourcePath(i_resource_name)
@@ -93,7 +92,6 @@ class PSPResource(AnyObject):
                 |          strResourceVal = objThisIntf.GetResourceValue (iResourceName)
 
         :param str i_resource_name:
-        :return: str
         :rtype: str
         """
         return self.psp_resource.GetResourceValue(i_resource_name)

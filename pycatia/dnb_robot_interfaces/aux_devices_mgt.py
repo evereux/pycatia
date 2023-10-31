@@ -63,8 +63,7 @@ class AuxDevicesMgt(AnyObject):
                 |             E_FAIL otherwise
 
         :param AnyObject i_aux_device_obj:
-        :param int i_aux_device_type:
-        :return: None
+        :param int i_aux_device_type: enum dnb_auxilliary_device_type
         :rtype: None
         """
         return self.aux_devices_mgt.DefineAuxDevices(i_aux_device_obj.com_object, i_aux_device_type)
@@ -92,7 +91,6 @@ class AuxDevicesMgt(AnyObject):
                 |             E_FAIL otherwise
 
         :param tuple o_aux_device_list:
-        :return: None
         :rtype: None
         """
         return self.aux_devices_mgt.GetAllAuxDevices(o_aux_device_list)
@@ -139,7 +137,6 @@ class AuxDevicesMgt(AnyObject):
                 |             E_FAIL otherwise
 
         :param int i_aux_device_num:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.aux_devices_mgt.GetAuxDevices(i_aux_device_num))
@@ -172,7 +169,7 @@ class AuxDevicesMgt(AnyObject):
                 |             E_FAIL otherwise
 
         :param int i_aux_device_num:
-        :return: int
+        :return: enum dnb_auxilliary_device_type
         :rtype: int
         """
         return self.aux_devices_mgt.GetAuxDevicesType(i_aux_device_num)
@@ -199,7 +196,6 @@ class AuxDevicesMgt(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :return: int
         :rtype: int
         """
         return self.aux_devices_mgt.GetNbAuxDevices()
@@ -221,7 +217,6 @@ class AuxDevicesMgt(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :return: None
         :rtype: None
         """
         return self.aux_devices_mgt.RemoveAll()
@@ -250,7 +245,6 @@ class AuxDevicesMgt(AnyObject):
                 |             E_FAIL otherwise
 
         :param int i_aux_device_num:
-        :return: None
         :rtype: None
         """
         return self.aux_devices_mgt.RemoveAuxDevicesByPosition(i_aux_device_num)

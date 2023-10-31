@@ -63,7 +63,6 @@ class SFMSuperPlate(SFMObject):
                 |          Dim LimitMode As Integer
                 |          Set LimitMode = SuperPlate.LimitMode
 
-        :return: int
         :rtype: int
         """
 
@@ -95,7 +94,6 @@ class SFMSuperPlate(SFMObject):
                 |          Dim MoldedSurface As Reference
                 |          Set MoldedSurface = SuperPlate.MoldedSurface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -119,7 +117,6 @@ class SFMSuperPlate(SFMObject):
                 |          Dim SplitPlates As References
                 |          Set SplitPlates = SuperPlate.SplitPlates
 
-        :return: References
         :rtype: References
         """
 
@@ -147,7 +144,6 @@ class SFMSuperPlate(SFMObject):
                 |          Dim SplitPlates As SplitPlatesObjects
                 |          Set SplitPlates = SuperPlate.SplitPlatesObjects
 
-        :return: SFMSplitPlates
         :rtype: SFMSplitPlates
         """
 
@@ -171,7 +167,6 @@ class SFMSuperPlate(SFMObject):
                 |          Dim Support As Reference
                 |          Set Support = SuperPlate.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -203,7 +198,6 @@ class SFMSuperPlate(SFMObject):
                 |          Dim Offset As Double
                 |          Set Offset = SuperPlate.SupportOffset
 
-        :return: float
         :rtype: float
         """
 
@@ -226,7 +220,6 @@ class SFMSuperPlate(SFMObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property SupportOffsetParam() As Length (Read Only)
 
-        :return: Length
         :rtype: Length
         """
 
@@ -250,7 +243,6 @@ class SFMSuperPlate(SFMObject):
                 |          Dim ThicknessValue As Double
                 |          Set ThicknessValue = SuperPlate.Thickness
 
-        :return: float
         :rtype: float
         """
 
@@ -310,7 +302,6 @@ class SFMSuperPlate(SFMObject):
 
         :param Reference i_limit:
         :param int i_orientation:
-        :return: None
         :rtype: None
         """
         return self.sfm_super_plate.AddLimit(i_limit.com_object, i_orientation)
@@ -348,7 +339,6 @@ class SFMSuperPlate(SFMObject):
                 |         Dim FreeEdges As References
                 |         Set FreeEdges = SuperPlate.GetFreeEdges
 
-        :return: References
         :rtype: References
         """
         return References(self.sfm_super_plate.GetFreeEdges())
@@ -377,7 +367,6 @@ class SFMSuperPlate(SFMObject):
                 |              Dim SlotsonPlate As SfmSlots
                 |              Set SlotsonPlate = PlateObj.GetSlotsOnPlate
 
-        :return: SFMSlots
         :rtype: SFMSlots
         """
         return SFMSlots(self.sfm_super_plate.GetSlotsOnPlate())
@@ -440,7 +429,6 @@ class SFMSuperPlate(SFMObject):
         :param float o_thickness:
         :param str o_material_name:
         :param str o_grade_name:
-        :return: None
         :rtype: None
         """
         return self.sfm_super_plate.GetSplitPlateAttributes(
@@ -467,7 +455,6 @@ class SFMSuperPlate(SFMObject):
                 |          StfConnection.RemoveObject 1
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.sfm_super_plate.InvertLimit(i_index)
@@ -505,7 +492,6 @@ class SFMSuperPlate(SFMObject):
                 |          SuperPlate.LimitOrientations Orientations
 
         :param tuple io_orientations:
-        :return: None
         :rtype: None
         """
         return self.sfm_super_plate.LimitOrientations(io_orientations)
@@ -542,7 +528,6 @@ class SFMSuperPlate(SFMObject):
                 |          Dim Limits As References
                 |          SuperPlate.Limits Limits, Orientations
 
-        :return: References
         :rtype: References
         """
         return References(self.sfm_super_plate.Limits())
@@ -565,7 +550,6 @@ class SFMSuperPlate(SFMObject):
                 |          StfConnection.RemoveObject 1
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.sfm_super_plate.RemoveLimit(i_index)
@@ -601,7 +585,6 @@ class SFMSuperPlate(SFMObject):
                 | 
                 |          SuperPlate.Run
 
-        :return: None
         :rtype: None
         """
         return self.sfm_super_plate.Run()
@@ -623,7 +606,6 @@ class SFMSuperPlate(SFMObject):
                 |          SuperPlate.SetAsLastLimit Index
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.sfm_super_plate.SetAsLastLimit(i_index)
@@ -697,7 +679,6 @@ class SFMSuperPlate(SFMObject):
         :param float i_thickness:
         :param str i_material_name:
         :param str i_grade_name:
-        :return: None
         :rtype: None
         """
         return self.sfm_super_plate.SetSplitPlateAttributes(

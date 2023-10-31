@@ -94,7 +94,6 @@ class FreeSpaces(Collection):
         :param str i_shape_name:
         :param int i_activated_shape:
         :param int i_default_shape:
-        :return: FreeSpace
         :rtype: FreeSpace
         """
         return FreeSpace(
@@ -159,7 +158,6 @@ class FreeSpaces(Collection):
         :param str i_shape_name:
         :param int i_type_free_space:
         :param tuple i_holes:
-        :return: FreeSpace
         :rtype: FreeSpace
         """
         return FreeSpace(
@@ -221,7 +219,6 @@ class FreeSpaces(Collection):
         :param int i_type_free_space:
         :param tuple i_holes:
         :param tuple i_reference_selection:
-        :return: FreeSpace
         :rtype: FreeSpace
         """
         return FreeSpace(
@@ -253,7 +250,6 @@ class FreeSpaces(Collection):
 
         :param str i_file_name:
         :param str i_shape_name:
-        :return: FreeSpace
         :rtype: FreeSpace
         """
         return FreeSpace(self.free_spaces.AddFromFile(i_file_name, i_shape_name))
@@ -271,7 +267,6 @@ class FreeSpaces(Collection):
 
         :param str i_file_name:
         :param str i_shape_name:
-        :return: FreeSpace
         :rtype: FreeSpace
         """
         return FreeSpace(self.free_spaces.AddInflatingFromFile(i_file_name, i_shape_name))
@@ -311,7 +306,6 @@ class FreeSpaces(Collection):
         :param float i_nz:
         :param str i_file_name:
         :param str i_shape_name:
-        :return: FreeSpace
         :rtype: FreeSpace
         """
         return FreeSpace(self.free_spaces.AddSplitFromFile(i_x, i_y, i_z, i_nx, i_ny, i_nz, i_file_name, i_shape_name))

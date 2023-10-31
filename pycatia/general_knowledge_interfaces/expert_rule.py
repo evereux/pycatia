@@ -67,7 +67,6 @@ class ExpertRule(ExpertRuleRuntime):
                 |     Returns or sets the string that defines the body of a Rule.
                 |     For instance: "if ( H\\Diameter > 20mm ) H\\Activity = FALSE"
 
-        :return: str
         :rtype: str
         """
 
@@ -92,7 +91,6 @@ class ExpertRule(ExpertRuleRuntime):
                 | 
                 |     Returns or sets the language of a rule.
 
-        :return: int
         :rtype: int
         """
 
@@ -118,7 +116,6 @@ class ExpertRule(ExpertRuleRuntime):
                 |     Returns or sets the variables scope of the a Rule. For instance: "H:Hole;
                 |     P: Pad"
 
-        :return: str
         :rtype: str
         """
 

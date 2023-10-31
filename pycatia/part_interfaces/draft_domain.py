@@ -16,7 +16,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DraftDomain(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -58,7 +57,6 @@ class DraftDomain(AnyObject):
                 | 
                 |          Set angle = firstDraftDomain.DraftAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -82,7 +80,6 @@ class DraftDomain(AnyObject):
                 | 
                 |          Set list = firstDraftDomain.FacesToDraft
 
-        :return: References
         :rtype: References
         """
 
@@ -114,7 +111,7 @@ class DraftDomain(AnyObject):
                 |                  Set MultiselMode = firstDraftDomain.MultiselectionMode
                 |                  firstDraftDomain.MultiselectionMode = CATMultiselectionByNeutralMode
 
-        :return: int
+        :return: enum cat_draft_multiselection_mode
         :rtype: int
         """
 
@@ -123,7 +120,7 @@ class DraftDomain(AnyObject):
     @multiselection_mode.setter
     def multiselection_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_draft_multiselection_mode
         """
 
         self.draft_domain.MultiselectionMode = value
@@ -149,7 +146,6 @@ class DraftDomain(AnyObject):
                 |          Set neutral = firstDraftDomain.NeutralElement
                 |          firstDraftDomain.NeutralElement = newNeutral
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -185,7 +181,7 @@ class DraftDomain(AnyObject):
                 |          Set propMode = firstDraftDomain.NeutralPropagationMode
                 |          firstDraftDomain.NeutralPropagationMode = CATSmoothDraftNeutralPropagationMode
 
-        :return: int
+        :return: enum cat_draft_neutral_propagation_mode
         :rtype: int
         """
 
@@ -194,7 +190,7 @@ class DraftDomain(AnyObject):
     @neutral_propagation_mode.setter
     def neutral_propagation_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_draft_neutral_propagation_mode
         """
 
         self.draft_domain.NeutralPropagationMode = value
@@ -220,7 +216,6 @@ class DraftDomain(AnyObject):
                 |          Set pullingdirection = firstDraftDomain.NeutralElement
                 |          firstDraftDomain.PullingDirectionElement = newPullingDirection
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -259,7 +254,6 @@ class DraftDomain(AnyObject):
                 |      CurrentDraftDomain.AddFaceToDraft(NewFaceToDraft)
 
         :param Reference i_face:
-        :return: None
         :rtype: None
         """
         return self.draft_domain.AddFaceToDraft(i_face.com_object)
@@ -305,7 +299,6 @@ class DraftDomain(AnyObject):
                 |          Set z = PullDir[2]
 
         :param tuple io_pulling_direction:
-        :return: None
         :rtype: None
         """
         return self.draft_domain.GetPullingDirection(io_pulling_direction)
@@ -350,7 +343,6 @@ class DraftDomain(AnyObject):
                 |      CurrentDraftDomain.RemoveFaceToDraft(FaceToRemove)
 
         :param Reference i_face:
-        :return: None
         :rtype: None
         """
         return self.draft_domain.RemoveFaceToDraft(i_face.com_object)
@@ -398,7 +390,6 @@ class DraftDomain(AnyObject):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: None
         :rtype: None
         """
         return self.draft_domain.SetPullingDirection(i_x, i_y, i_z)
@@ -418,7 +409,6 @@ class DraftDomain(AnyObject):
                 |         iVolumeSupport
 
         :param Reference i_volume_support:
-        :return: None
         :rtype: None
         """
         return self.draft_domain.SetVolumeSupport(i_volume_support.com_object)
@@ -439,4 +429,4 @@ class DraftDomain(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DraftDomain(name="{ self.name }")'
+        return f'DraftDomain(name="{self.name}")'

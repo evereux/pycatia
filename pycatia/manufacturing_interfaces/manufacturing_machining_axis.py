@@ -58,7 +58,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
                 |          Set myInstruction  = ... 
                 |          Set MyOrigin = myInstruction.Origin
 
-        :return: int
         :rtype: int
         """
 
@@ -91,7 +90,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
                 |          Set myInstruction  = ... 
                 |          Set myInstruction.OriginGroup = 3
 
-        :return: int
         :rtype: int
         """
 
@@ -124,7 +122,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
                 |          Set myInstruction  = ... 
                 |          Set myInstruction.OriginNumber = 3
 
-        :return: int
         :rtype: int
         """
 
@@ -161,7 +158,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
                 |          Dim ProductOrigin As Product
                 |          MfgAxisSystem.GetOriginPoint (PointOrigin)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_machining_axis.GetOriginPoint()
@@ -188,7 +184,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
                 |          Set MfgAxisSystem = ...
                 |          MfgAxisSystem.GetOriginXDirection (DblMathDirection)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_machining_axis.GetOriginXDirection()
@@ -215,7 +210,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
                 |          Set MfgAxisSystem = ...
                 |          MfgAxisSystem.GetOriginYDirection (DblMathDirection)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_machining_axis.GetOriginYDirection()
@@ -242,7 +236,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
                 |          Set MfgAxisSystem = ...
                 |          MfgAxisSystem.GetOriginZDirection (x,y,z)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_machining_axis.GetOriginZDirection()
@@ -272,7 +265,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
 
         :param AnyObject i_point:
         :param AnyObject i_product:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machining_axis.SetOriginPoint(i_point.com_object, i_product.com_object)
@@ -301,7 +293,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         :param float x:
         :param float y:
         :param float z:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machining_axis.SetOriginPointByCoordinates(x, y, z)
@@ -331,7 +322,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         :param float x:
         :param float y:
         :param float z:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machining_axis.SetOriginXDirection(x, y, z)
@@ -361,7 +351,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         :param float x:
         :param float y:
         :param float z:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machining_axis.SetOriginZDirection(x, y, z)
@@ -390,7 +379,6 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
 
         :param AnyObject i_pas:
         :param AnyObject i_product:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machining_axis.SetPartAxisSystem(i_pas.com_object, i_product.com_object)

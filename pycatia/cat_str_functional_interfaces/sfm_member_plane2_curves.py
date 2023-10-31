@@ -57,7 +57,6 @@ class SFMMemberPlane2Curves(SFMMember):
                 |          Dim Curve As Reference
                 |          Set Curve = SfmMemberPlane2Curves.FirstCurve
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -89,7 +88,6 @@ class SFMMemberPlane2Curves(SFMMember):
                 |          Dim Member1 As Reference
                 |          Set Member1 = SfmMemberPlane2Curves.FirstMember
 
-        :return: False
         :rtype: False
         """
 
@@ -121,7 +119,6 @@ class SFMMemberPlane2Curves(SFMMember):
                 |          Dim Plane As Reference
                 |          Set Plane = SfmMemberPlane2Curves.Plane
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -144,7 +141,6 @@ class SFMMemberPlane2Curves(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property SecondCurve() As Reference
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -176,7 +172,6 @@ class SFMMemberPlane2Curves(SFMMember):
                 |          Dim Member2 As Reference
                 |          Set Member2 = SfmMemberPlane2Curves.SecondMember
 
-        :return: False
         :rtype: False
         """
 

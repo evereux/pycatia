@@ -58,7 +58,6 @@ class HybridShapeSweep(HybridShape):
                 |     areas.
                 |     TRUE or FALSE.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -83,7 +82,6 @@ class HybridShapeSweep(HybridShape):
                 | 
                 |     Returns or sets the fill twisted areas mode.
 
-        :return: int
         :rtype: int
         """
 
@@ -108,7 +106,6 @@ class HybridShapeSweep(HybridShape):
                 | 
                 |     Returns or sets the setback value.
 
-        :return: float
         :rtype: float
         """
 
@@ -143,7 +140,6 @@ class HybridShapeSweep(HybridShape):
 
         :param Reference i_element1:
         :param Reference i_element2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep.AddCutPoints(i_element1.com_object, i_element2.com_object)
@@ -184,7 +180,6 @@ class HybridShapeSweep(HybridShape):
 
         :param Reference i_element1:
         :param Reference i_element2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep.AddFillPoints(i_element1.com_object, i_element2.com_object)
@@ -213,7 +208,6 @@ class HybridShapeSweep(HybridShape):
                 | o Func GetCutPoint(long iRank) As Reference
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_sweep.GetCutPoint(i_rank))
@@ -227,7 +221,6 @@ class HybridShapeSweep(HybridShape):
                 | o Func GetFillPoint(long iRank) As Reference
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_sweep.GetFillPoint(i_rank))
@@ -242,7 +235,6 @@ class HybridShapeSweep(HybridShape):
                 | 
                 |     Removes all cut points.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep.RemoveAllCutPoints()
@@ -257,7 +249,6 @@ class HybridShapeSweep(HybridShape):
                 | 
                 |     Removes all fill points.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep.RemoveAllFillPoints()

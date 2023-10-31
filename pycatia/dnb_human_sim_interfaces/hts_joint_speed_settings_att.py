@@ -54,7 +54,6 @@ class HtsJointSpeedSettingsAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -81,7 +80,6 @@ class HtsJointSpeedSettingsAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -126,7 +124,6 @@ class HtsJointSpeedSettingsAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_joint_speed_settings_att.GetAllJointsSpeedInfo(io_admin_level, io_locked)
@@ -163,7 +160,6 @@ class HtsJointSpeedSettingsAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_joint_speed_settings_att.GetRatingInfo(io_admin_level, io_locked)
@@ -190,7 +186,6 @@ class HtsJointSpeedSettingsAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_joint_speed_settings_att.SetAllJointsSpeedLock(i_locked)
@@ -232,7 +227,6 @@ class HtsJointSpeedSettingsAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_joint_speed_settings_att.SetRatingLock(i_locked)

@@ -55,7 +55,6 @@ class ABQTemperature(AnyObject):
                 |         A boolean specifying whether a user subroutine will be
                 |         applied.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -96,7 +95,7 @@ class ABQTemperature(AnyObject):
                 |          Dim abqTemperature As ABQTemperature
                 |          abqTemperature.Distribution = USERDEFINED
 
-        :return: int
+        :return: enum distribution_type
         :rtype: int
         """
 
@@ -131,7 +130,6 @@ class ABQTemperature(AnyObject):
                 |          Dim abqJob As ABQJob 
                 |          Set abqJob = abqTemperature.Job
 
-        :return: ABQJob
         :rtype: ABQJob
         """
 
@@ -159,7 +157,6 @@ class ABQTemperature(AnyObject):
                 |     Returns:
                 |         The magnitude of the temperature field.
 
-        :return: float
         :rtype: float
         """
 
@@ -187,7 +184,6 @@ class ABQTemperature(AnyObject):
                 |     Returns:
                 |         The type of the Temperature.
 
-        :return: str
         :rtype: str
         """
 
@@ -216,7 +212,6 @@ class ABQTemperature(AnyObject):
 
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_temperature.AddSupportFromProduct(i_product.com_object, i_support.com_object)
@@ -261,7 +256,6 @@ class ABQTemperature(AnyObject):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_temperature.AddSupportFromPublication(i_product.com_object, i_publication.com_object)

@@ -47,7 +47,6 @@ class Unit(AnyObject):
                 | 
                 |     Returns the magnitude associated to the unit.
 
-        :return: str
         :rtype: str
         """
 
@@ -64,7 +63,6 @@ class Unit(AnyObject):
                 | 
                 |     Returns the symbol associated to the unit.
 
-        :return: str
         :rtype: str
         """
 
@@ -89,7 +87,6 @@ class Unit(AnyObject):
                 |             The final value in the current unit.
 
         :param float i_value_in_mks:
-        :return: float
         :rtype: float
         """
         return self.unit.ConvertFromMKS(i_value_in_mks)
@@ -114,7 +111,6 @@ class Unit(AnyObject):
                 |             The final value in the current unit.
 
         :param float i_value_in_storage_unit:
-        :return: float
         :rtype: float
         """
         return self.unit.ConvertFromStorageUnit(i_value_in_storage_unit)
@@ -137,7 +133,6 @@ class Unit(AnyObject):
                 |             The final value in the corresponding MKS unit.
 
         :param float i_value_in_this_unit:
-        :return: float
         :rtype: float
         """
         return self.unit.ConvertToMKS(i_value_in_this_unit)
@@ -162,7 +157,6 @@ class Unit(AnyObject):
                 |             The final value in the corresponding storage unit.
 
         :param float i_value_in_this_unit:
-        :return: float
         :rtype: float
         """
         return self.unit.ConvertToStorageUnit(i_value_in_this_unit)

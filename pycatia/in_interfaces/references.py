@@ -71,7 +71,6 @@ class References(Collection):
                 |          Set LastRef = RefList.Item(RefList.Count)
 
         :param cat_variant i_index:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.references.Item(i_index))

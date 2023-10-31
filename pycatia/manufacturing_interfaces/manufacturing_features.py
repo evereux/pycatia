@@ -55,7 +55,6 @@ class ManufacturingFeatures(Collection):
                 |          Set Feature = Features.Add(Type)
 
         :param str i_type:
-        :return: ManufacturingFeature
         :rtype: ManufacturingFeature
         """
         return ManufacturingFeature(self.manufacturing_features.Add(i_type))
@@ -77,7 +76,6 @@ class ManufacturingFeatures(Collection):
                 |          Set Feature = Features.Item(Index)
 
         :param cat_variant i_index:
-        :return: ManufacturingFeature
         :rtype: ManufacturingFeature
         """
         return ManufacturingFeature(self.manufacturing_features.Item(i_index))

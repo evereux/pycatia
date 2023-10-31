@@ -70,7 +70,6 @@ class ABQSteps(Collection):
                 |          Set generalstaticstep =  abaqusSteps.Add("ABQGeneralStaticStep")
 
         :param str i_step_type:
-        :return: ABQStep
         :rtype: ABQStep
         """
         return ABQStep(self.abq_steps.Add(i_step_type))
@@ -112,7 +111,6 @@ class ABQSteps(Collection):
 
         :param str i_step_type:
         :param cat_variant i_index:
-        :return: ABQStep
         :rtype: ABQStep
         """
         return ABQStep(self.abq_steps.Insert(i_step_type, i_index))
@@ -153,7 +151,6 @@ class ABQSteps(Collection):
                 |          Set SecondStaticStep = StepColl.Item("MyStep")
 
         :param cat_variant i_index:
-        :return: ABQStep
         :rtype: ABQStep
         """
         return ABQStep(self.abq_steps.Item(i_index))
@@ -180,7 +177,6 @@ class ABQSteps(Collection):
                 |             CATIABase::Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_steps.Remove(i_index)

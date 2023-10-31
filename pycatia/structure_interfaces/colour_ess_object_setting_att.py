@@ -52,7 +52,6 @@ class ColourEssObjectSettingAtt(SettingController):
         :param int o_member_colour_r:
         :param int o_member_colour_g:
         :param int o_member_colour_b:
-        :return: None
         :rtype: None
         """
         return self.colour_ess_object_setting_att.GetMemberColor(o_member_colour_r, o_member_colour_g,
@@ -90,7 +89,6 @@ class ColourEssObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.colour_ess_object_setting_att.GetMemberColorInfo(io_admin_level, io_locked)
@@ -112,7 +110,6 @@ class ColourEssObjectSettingAtt(SettingController):
         :param int o_plate_colour_r:
         :param int o_plate_colour_g:
         :param int o_plate_colour_b:
-        :return: None
         :rtype: None
         """
         return self.colour_ess_object_setting_att.GetPlateColor(o_plate_colour_r, o_plate_colour_g, o_plate_colour_b)
@@ -149,7 +146,6 @@ class ColourEssObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.colour_ess_object_setting_att.GetPlateColorInfo(io_admin_level, io_locked)
@@ -167,7 +163,6 @@ class ColourEssObjectSettingAtt(SettingController):
         :param int i_member_colour_r:
         :param int i_member_colour_g:
         :param int i_member_colour_b:
-        :return: None
         :rtype: None
         """
         return self.colour_ess_object_setting_att.SetMemberColor(i_member_colour_r, i_member_colour_g,
@@ -195,7 +190,6 @@ class ColourEssObjectSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.colour_ess_object_setting_att.SetMemberColorLock(i_locked)
@@ -228,7 +222,6 @@ class ColourEssObjectSettingAtt(SettingController):
         :param int i_plate_colour_r:
         :param int i_plate_colour_g:
         :param int i_plate_colour_b:
-        :return: None
         :rtype: None
         """
         return self.colour_ess_object_setting_att.SetPlateColor(i_plate_colour_r, i_plate_colour_g, i_plate_colour_b)
@@ -255,7 +248,6 @@ class ColourEssObjectSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.colour_ess_object_setting_att.SetPlateColorLock(i_locked)

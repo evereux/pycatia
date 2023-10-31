@@ -67,7 +67,6 @@ class HybridShapeSpiral(HybridShape):
                 | 
                 |     Reads / Changes the Spiral axis (Reference direction).
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -92,7 +91,6 @@ class HybridShapeSpiral(HybridShape):
                 | 
                 |     Reads / Changes the center point of the Spiral.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -119,7 +117,6 @@ class HybridShapeSpiral(HybridShape):
                 |     FALSE means that revolutions are counter-clockwise.
                 |     TRUE means that revolutions are clockwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -144,7 +141,6 @@ class HybridShapeSpiral(HybridShape):
                 | 
                 |     Reads / Changes the Ending Angle of the Spiral.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -169,7 +165,6 @@ class HybridShapeSpiral(HybridShape):
                 | 
                 |     Reads / Changes the ending radius of the Spiral.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -197,7 +192,6 @@ class HybridShapeSpiral(HybridShape):
                 |     orientation).
                 |     TRUE to invert this orientation.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -222,7 +216,6 @@ class HybridShapeSpiral(HybridShape):
                 | 
                 |     Reads / Changes the pitch of the Spiral.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -247,7 +240,6 @@ class HybridShapeSpiral(HybridShape):
                 | 
                 |     Reads / Changes the revolution number of the Spiral.
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -272,7 +264,6 @@ class HybridShapeSpiral(HybridShape):
                 | 
                 |     Reads / Changes the starting radius of the Spiral.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -297,7 +288,6 @@ class HybridShapeSpiral(HybridShape):
                 | 
                 |     Reads / Changes the spiral plane support.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -322,7 +312,6 @@ class HybridShapeSpiral(HybridShape):
                 | 
                 |     Reads / Changes the spiral type.
 
-        :return: int
         :rtype: int
         """
 
@@ -351,7 +340,6 @@ class HybridShapeSpiral(HybridShape):
         :param float i_end_angle:
         :param float i_revol_number:
         :param float i_pitch:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spiral.SetAnglePitchParam(i_end_angle, i_revol_number, i_pitch)
@@ -371,7 +359,6 @@ class HybridShapeSpiral(HybridShape):
         :param float i_end_angle:
         :param float i_revol_number:
         :param float i_end_radius:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spiral.SetAngleRadiusParam(i_end_angle, i_revol_number, i_end_radius)
@@ -389,7 +376,6 @@ class HybridShapeSpiral(HybridShape):
 
         :param float i_end_radius:
         :param float i_pitch:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_spiral.SetRadiusPitchParam(i_end_radius, i_pitch)

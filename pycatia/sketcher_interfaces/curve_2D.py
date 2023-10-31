@@ -54,7 +54,6 @@ class Curve2D(Geometry2D):
                 |         oLevel
                 |             The maximum geometric continuity level
 
-        :return: int
         :rtype: int
         """
 
@@ -77,7 +76,6 @@ class Curve2D(Geometry2D):
                 |         oEndPoint
                 |             The end point of the curve
 
-        :return: Point2D
         :rtype: Point2D
         """
 
@@ -107,7 +105,6 @@ class Curve2D(Geometry2D):
                 |         oPeriod
                 |             The period of the curve.
 
-        :return: float
         :rtype: float
         """
 
@@ -131,7 +128,6 @@ class Curve2D(Geometry2D):
                 |         oStartPoint
                 |             The start point of the curve
 
-        :return: Point2D
         :rtype: Point2D
         """
 
@@ -168,7 +164,6 @@ class Curve2D(Geometry2D):
                 |             parameter.
 
         :param float i_param:
-        :return: tuple
         :rtype: tuple
         """
 
@@ -208,7 +203,6 @@ class Curve2D(Geometry2D):
                 |             Third degree derivative.
 
         :param float i_param:
-        :return: tuple
         :rtype: tuple
         """
 
@@ -247,7 +241,6 @@ class Curve2D(Geometry2D):
                 |         oEndPoints[3]
                 |             The y coordinate of the end point
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -288,7 +281,6 @@ class Curve2D(Geometry2D):
 
         :param float i_from_param:
         :param float i_to_param:
-        :return: float
         :rtype: float
         """
         return self.curve_2d.GetLengthAtParam(i_from_param, i_to_param)
@@ -321,7 +313,6 @@ class Curve2D(Geometry2D):
 
         :param float i_from_param:
         :param float i_length:
-        :return: float
         :rtype: float
         """
         return self.curve_2d.GetParamAtLength(i_from_param, i_length)
@@ -346,7 +337,6 @@ class Curve2D(Geometry2D):
                 |             The parameter associated with the end point of the
                 |             curve
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -383,7 +373,6 @@ class Curve2D(Geometry2D):
                 |             point.
 
         :param float i_param:
-        :return: tuple
         :rtype: tuple
         """
 
@@ -422,7 +411,6 @@ class Curve2D(Geometry2D):
                 |         oBoundPoint[3]
                 |             The maximum y point of the box
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -459,7 +447,6 @@ class Curve2D(Geometry2D):
                 |             parameter.
 
         :i_param: float
-        :return: None
         :rtype: None
         """
 
@@ -490,7 +477,6 @@ class Curve2D(Geometry2D):
                 |         oPeriodic
                 |             Returns true if the curve is periodic.
 
-        :return: bool
         :rtype: bool
         """
         return self.curve_2d.IsPeriodic()

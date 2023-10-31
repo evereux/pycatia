@@ -54,7 +54,6 @@ class Dimension3D(AnyObject):
                 |         oContRadius
                 |             The Controled Radius.
 
-        :return: ControledRadius
         :rtype: ControledRadius
         """
         return ControlledRadius(self.dimension_3d.ControlledRadius())
@@ -74,7 +73,6 @@ class Dimension3D(AnyObject):
                 |         oDimLim
                 |             The Dimension Limits.
 
-        :return: DimensionLimit
         :rtype: DimensionLimit
         """
         return DimensionLimit(self.dimension_3d.DimensionLimit())
@@ -94,7 +92,6 @@ class Dimension3D(AnyObject):
                 |         oDimPatt
                 |             The Dimension Pattern.
 
-        :return: DimensionPattern
         :rtype: DimensionPattern
         """
         return DimensionPattern(self.dimension_3d.DimensionPattern())
@@ -114,7 +111,6 @@ class Dimension3D(AnyObject):
                 |         oEnvCond
                 |             The Envelop Condition.
 
-        :return: EnvelopCondition
         :rtype: EnvelopCondition
         """
         return EnvelopeCondition(self.dimension_3d.EnvelopeCondition())
@@ -134,7 +130,6 @@ class Dimension3D(AnyObject):
                 |         oDim
                 |             The Drafting Dimension.
 
-        :return: DrawingDimension
         :rtype: DrawingDimension
         """
         return DrawingDimension(self.dimension_3d.Get2dAnnot())
@@ -157,7 +152,6 @@ class Dimension3D(AnyObject):
                 |                 FALSE: The dimension has not a Controled
                 |                 Radius
 
-        :return: bool
         :rtype: bool
         """
         return self.dimension_3d.HasAControledRadius()
@@ -180,7 +174,6 @@ class Dimension3D(AnyObject):
                 |                 FALSE: The dimension has not an Envelop
                 |                 Condition
 
-        :return: bool
         :rtype: bool
         """
         return self.dimension_3d.HasAnEnvelopCondition()
@@ -202,7 +195,6 @@ class Dimension3D(AnyObject):
                 |                 TRUE: Dimension Limit exists
                 |                 FALSE: Dimension Limit does not exist
 
-        :return: bool
         :rtype: bool
         """
         return self.dimension_3d.HasDimensionLimit()
@@ -225,7 +217,6 @@ class Dimension3D(AnyObject):
                 |                 FALSE: The dimension is not a Dimension
                 |                 Pattern
 
-        :return: bool
         :rtype: bool
         """
         return self.dimension_3d.IsADimensionPattern()
@@ -280,7 +271,6 @@ class Dimension3D(AnyObject):
         :param float y:
         :param int sub_part:
         :param int dim_angle_behavior:
-        :return: None
         :rtype: None
         """
         return self.dimension_3d.MoveValue(x, y, sub_part, dim_angle_behavior)

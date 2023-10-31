@@ -51,7 +51,6 @@ class SetOfEquation(Relation):
                 | 
                 |     Returns the maximum time of the model calculations.
 
-        :return: int
         :rtype: int
         """
         return self.set_of_equation.GetMaxCalculationTime()
@@ -66,7 +65,6 @@ class SetOfEquation(Relation):
                 | 
                 |     Returns the calculation precision.
 
-        :return: float
         :rtype: float
         """
         return self.set_of_equation.GetPrecision()
@@ -83,7 +81,6 @@ class SetOfEquation(Relation):
                 |     transformation.
                 |     TRUE if the Gauss method is used during the symbolic transformation.
 
-        :return: bool
         :rtype: bool
         """
         return self.set_of_equation.GetSymbolcTransformations()
@@ -100,7 +97,6 @@ class SetOfEquation(Relation):
                 |     calculations.
                 |     TRUE if the 'Stop Dialog' will be shown during calculations.
 
-        :return: bool
         :rtype: bool
         """
         return self.set_of_equation.IsStopDialog()
@@ -116,7 +112,6 @@ class SetOfEquation(Relation):
                 |     Sets a maximum time to the model calculations.
 
         :param int i_max_time:
-        :return: None
         :rtype: None
         """
         return self.set_of_equation.SetMaxCalculationTime(i_max_time)
@@ -139,7 +134,6 @@ class SetOfEquation(Relation):
                 |             SetOfEquationObject
 
         :param Parameter i_parameter:
-        :return: None
         :rtype: None
         """
         return self.set_of_equation.SetParameterAsInput(i_parameter.com_object)
@@ -177,7 +171,6 @@ class SetOfEquation(Relation):
                 |             SetOfEquationObject
 
         :param Parameter i_parameter:
-        :return: None
         :rtype: None
         """
         return self.set_of_equation.SetParameterAsOutput(i_parameter.com_object)
@@ -214,7 +207,6 @@ class SetOfEquation(Relation):
                 |             Legal values: 1e-10 ≤ iEps ≤ 0.1
 
         :param float i_eps:
-        :return: None
         :rtype: None
         """
         return self.set_of_equation.SetPrecision(i_eps)
@@ -232,7 +224,6 @@ class SetOfEquation(Relation):
                 |     TRUE to show the 'Stop Dialog' during calculations.
 
         :param bool i_used:
-        :return: None
         :rtype: None
         """
         return self.set_of_equation.UseStopDialog(i_used)
@@ -265,7 +256,6 @@ class SetOfEquation(Relation):
                 |     TRUE to use the Gauss method during the symbolic transformation.
 
         :param bool i_gauss:
-        :return: None
         :rtype: None
         """
         return self.set_of_equation.UseSymbolcTransformations(i_gauss)

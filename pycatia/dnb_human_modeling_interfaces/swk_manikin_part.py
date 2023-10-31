@@ -46,7 +46,6 @@ class SWKManikinPart(AnyObject):
                 | 
                 |     Returns or records miscellaneous user-added information about the part.
 
-        :return: str
         :rtype: str
         """
 

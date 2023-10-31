@@ -54,7 +54,6 @@ class AssemblyBoolean(AssemblyFeature):
                 |          Dim opBody As Body
                 |          Set opBody = assemblyBool.Body
 
-        :return: Body
         :rtype: Body
         """
 
@@ -79,7 +78,6 @@ class AssemblyBoolean(AssemblyFeature):
                 |          Dim opBodyComp As Product
                 |          Set opBodyComp = assemblyBool.BodyComponent
 
-        :return: Product
         :rtype: Product
         """
 

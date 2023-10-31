@@ -50,7 +50,6 @@ class ABQMassScalings(Collection):
                 |     Returns:
                 |         The created ABQMassScaling entry.
 
-        :return: ABQMassScaling
         :rtype: ABQMassScaling
         """
         return ABQMassScaling(self.abq_mass_scalings.Add())
@@ -75,7 +74,6 @@ class ABQMassScalings(Collection):
                 |             element.
 
         :param cat_variant i_index:
-        :return: ABQMassScaling
         :rtype: ABQMassScaling
         """
         return ABQMassScaling(self.abq_mass_scalings.Item(i_index))
@@ -99,7 +97,6 @@ class ABQMassScalings(Collection):
                 |             property) of the desired element.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_mass_scalings.Remove(i_index)

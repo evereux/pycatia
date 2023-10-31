@@ -58,7 +58,6 @@ class Shapes(Collection):
                 |         The retrieved boundary
 
         :param str i_label:
-        :return: Boundary
         :rtype: Boundary
         """
         return Boundary(self.shapes.GetBoundary(i_label))
@@ -95,7 +94,6 @@ class Shapes(Collection):
                 |          Set ThatShape = CATIA.ActiveDocument.Shapes.Item("MyShape")
 
         :param cat_variant i_index:
-        :return: Shape
         :rtype: Shape
         """
         return Shape(self.shapes.Item(i_index))

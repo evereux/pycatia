@@ -55,7 +55,6 @@ class Marker2D(AnyObject):
                 |             Dim status As Integer
                 |             status = NewMarker2D.Fill
 
-        :return: int
         :rtype: int
         """
 
@@ -90,7 +89,6 @@ class Marker2D(AnyObject):
                 |             Dim status As Integer
                 |             status = NewMarker2D.Frame
 
-        :return: int
         :rtype: int
         """
 
@@ -125,7 +123,6 @@ class Marker2D(AnyObject):
                 |             Dim path As String
                 |             path = NewMarker2D.Picture
 
-        :return: str
         :rtype: str
         """
 
@@ -159,7 +156,6 @@ class Marker2D(AnyObject):
                 |             Dim text As String
                 |             text = NewMarker2D.Text
 
-        :return: str
         :rtype: str
         """
 
@@ -193,7 +189,6 @@ class Marker2D(AnyObject):
                 |             Dim angle As Double
                 |             size = NewMarker2D.TextAngle
 
-        :return: float
         :rtype: float
         """
 
@@ -227,7 +222,6 @@ class Marker2D(AnyObject):
                 |             Dim font As String
                 |             font = NewMarker2D.TextFont
 
-        :return: str
         :rtype: str
         """
 
@@ -261,7 +255,7 @@ class Marker2D(AnyObject):
                 |             Dim orientation As CatMarkerTextOrientation
                 |             orientation = NewMarker2D.TextOrientation
 
-        :return: int
+        :return: enum cat_marker_text_orientation
         :rtype: int
         """
 
@@ -270,7 +264,7 @@ class Marker2D(AnyObject):
     @text_orientation.setter
     def text_orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_marker_text_orientation
         """
 
         self.marker_2d.TextOrientation = value
@@ -295,7 +289,6 @@ class Marker2D(AnyObject):
                 |             Dim size As Double
                 |             size = NewMarker2D.TextSize
 
-        :return: float
         :rtype: float
         """
 
@@ -329,7 +322,7 @@ class Marker2D(AnyObject):
                 |             Dim type As CatMarker2DType
                 |             type = NewMarker2D.Type
 
-        :return: int
+        :return: enum cat_marker_2d_type
         :rtype: int
         """
 
@@ -389,7 +382,6 @@ class Marker2D(AnyObject):
                 |             NewMarker2D.GetPositions Coordinates
 
         :param tuple o_coordinates:
-        :return: None
         :rtype: None
         """
         return self.marker_2d.GetPositions(o_coordinates)
@@ -462,7 +454,6 @@ class Marker2D(AnyObject):
                 |             NewMarker2D.SetPositions Coordinates
 
         :param tuple i_coordinates:
-        :return: None
         :rtype: None
         """
         return self.marker_2d.SetPositions(i_coordinates)

@@ -50,7 +50,6 @@ class AnalysisPostProSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -77,7 +76,6 @@ class AnalysisPostProSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -109,7 +107,6 @@ class AnalysisPostProSettingAtt(SettingController):
                 |             0 : Text stacking is Horizontal
                 |             1 : Text stacking is Vertical Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -143,7 +140,6 @@ class AnalysisPostProSettingAtt(SettingController):
                 |             with the C++ interface to which the work is
                 |             delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -170,7 +166,6 @@ class AnalysisPostProSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -216,7 +211,6 @@ class AnalysisPostProSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_post_pro_setting_att.GetAutoPreviewModeInfo(io_admin_level, io_locked)
@@ -253,7 +247,6 @@ class AnalysisPostProSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_post_pro_setting_att.GetImageTextSizeInfo(io_admin_level, io_locked)
@@ -290,7 +283,6 @@ class AnalysisPostProSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_post_pro_setting_att.GetImageTextStackingInfo(io_admin_level, io_locked)
@@ -327,7 +319,6 @@ class AnalysisPostProSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_post_pro_setting_att.GetModeImageTextSizeInfo(io_admin_level, io_locked)
@@ -365,7 +356,6 @@ class AnalysisPostProSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_post_pro_setting_att.GetSaveAsNewTemplateDirectoryInfo(io_admin_level, io_locked)
@@ -392,7 +382,6 @@ class AnalysisPostProSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_post_pro_setting_att.SetAutoPreviewModeLock(i_locked)
@@ -434,7 +423,6 @@ class AnalysisPostProSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_post_pro_setting_att.SetImageTextSizeLock(i_locked)
@@ -476,7 +464,6 @@ class AnalysisPostProSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_post_pro_setting_att.SetImageTextStackingLock(i_locked)
@@ -518,7 +505,6 @@ class AnalysisPostProSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_post_pro_setting_att.SetModeImageTextSizeLock(i_locked)
@@ -560,7 +546,6 @@ class AnalysisPostProSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_post_pro_setting_att.SetSaveAsNewTemplateDirectoryLock(i_locked)

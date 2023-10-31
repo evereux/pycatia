@@ -66,7 +66,6 @@ class SWKManikin(SWKManikinPart):
                 |     also be obtained by invoking method GetItem (from AnyObject) with the character
                 |     string "Anthro" as an argument.
 
-        :return: SWKAnthro
         :rtype: SWKAnthro
         """
 
@@ -85,7 +84,6 @@ class SWKManikin(SWKManikinPart):
                 |     invoking method GetItem (from AnyObject) with the character string "Body" as an
                 |     argument.
 
-        :return: SWKBody
         :rtype: SWKBody
         """
 
@@ -106,7 +104,6 @@ class SWKManikin(SWKManikinPart):
                 |     This body node can also be obtained by invoking method GetItem (from AnyObject)
                 |     with the character string "BodyNode" as an argument.
 
-        :return: SWKSegmentNode
         :rtype: SWKSegmentNode
         """
 
@@ -125,7 +122,6 @@ class SWKManikin(SWKManikinPart):
                 |     obtained by invoking method GetItem (from AnyObject) with the character string
                 |     "Ergo" as an argument.
 
-        :return: SWKErgo
         :rtype: SWKErgo
         """
 
@@ -144,7 +140,6 @@ class SWKManikin(SWKManikinPart):
                 |     manager can also be obtained by invoking method GetItem (from AnyObject) with
                 |     the character string "IKManager" as an argument.
 
-        :return: SWKIKManager
         :rtype: SWKIKManager
         """
         
@@ -165,7 +160,6 @@ class SWKManikin(SWKManikinPart):
                 |     node can also be obtained by invoking method GetItem (from AnyObject) with the
                 |     character string "LineOfSightNode" as an argument.
 
-        :return: SWKLineOfSightNode
         :rtype: SWKLineOfSightNode
         """
 
@@ -192,7 +186,6 @@ class SWKManikin(SWKManikinPart):
                 |          Dim myManikinMoveObject As Move
                 |          Set myManikinMoveObject = myManikin.Move
 
-        :return: Move
         :rtype: Move
         """
 
@@ -211,7 +204,6 @@ class SWKManikin(SWKManikinPart):
                 |     also be obtained by invoking method GetItem (from AnyObject) with the character
                 |     string "ProfilesNode" as an argument.
 
-        :return: SWKNode
         :rtype: SWKNode
         """
 
@@ -230,7 +222,6 @@ class SWKManikin(SWKManikinPart):
                 |     also be obtained by invoking method GetItem (from AnyObject) with the character
                 |     string "SettingsNode" as an argument.
 
-        :return: SWKNode
         :rtype: SWKNode
         """
 
@@ -249,7 +240,6 @@ class SWKManikin(SWKManikinPart):
                 |     by invoking method GetItem (from AnyObject) with the character string "Vision"
                 |     as an argument.
 
-        :return: SWKVision
         :rtype: SWKVision
         """
 

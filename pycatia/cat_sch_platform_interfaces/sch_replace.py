@@ -69,7 +69,6 @@ class SchReplace(AnyObject):
 
         :param SchGRRComp i_grr_to_be_placed:
         :param SchComponent i_sch_comp_to_be_removed:
-        :return: SchComponent
         :rtype: SchComponent
         """
         return SchComponent(

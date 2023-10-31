@@ -65,7 +65,6 @@ class Hyperlinks(Collection):
                 |             Set NewHyperlink = TheHyperlinks.Add(iObject)
 
         :param AnyObject i_object:
-        :return: Hyperlink
         :rtype: Hyperlink
         """
         return Hyperlink(self.hyperlinks.Add(i_object.com_object))
@@ -98,7 +97,6 @@ class Hyperlinks(Collection):
                 |             Set NewHyperlink = TheHyperlinks.GetHyperlink(iObject)
 
         :param AnyObject i_object:
-        :return: Hyperlink
         :rtype: Hyperlink
         """
         return Hyperlink(self.hyperlinks.GetHyperlink(i_object.com_object))
@@ -139,7 +137,6 @@ class Hyperlinks(Collection):
                 |             Set ThatHyperlink = TheHyperlinks.Item("Hyperlink3")
 
         :param cat_variant i_index:
-        :return: Hyperlink
         :rtype: Hyperlink
         """
         return Hyperlink(self.hyperlinks.Item(i_index))
@@ -174,7 +171,6 @@ class Hyperlinks(Collection):
                 |             TheHyperlinks.Remove("Hyperlink2")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.hyperlinks.Remove(i_index)

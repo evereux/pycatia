@@ -61,7 +61,7 @@ class PSPPartConnector(AnyObject):
                 |           ...
                 |          objArg1 = objThisIntf.AlignType
 
-        :return: int
+        :return: enum cat_psp_idl_part_connector_type
         :rtype: int
         """
 
@@ -86,7 +86,6 @@ class PSPPartConnector(AnyObject):
                 |           ...
                 |          Set ojArg1 = objThisIntf.AttributeNames
 
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
 
@@ -123,7 +122,7 @@ class PSPPartConnector(AnyObject):
                 |           ...
                 |          objArg1 = objThisIntf.ClockType
 
-        :return: int
+        :return: enum cat_psp_idl_part_connector_type
         :rtype: int
         """
 
@@ -157,7 +156,7 @@ class PSPPartConnector(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.FaceType
 
-        :return: int
+        :return: enum cat_psp_idl_part_connector_type
         :rtype: int
         """
 
@@ -185,7 +184,6 @@ class PSPPartConnector(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.GetAlignmentConnector
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.psp_part_connector.GetAlignmentConnector())
@@ -220,7 +218,6 @@ class PSPPartConnector(AnyObject):
                 |          Set objArg2 = objThisIntf.GetAlignmentVector (objArg1)
 
         :param Product i_rel_axis:
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_part_connector.GetAlignmentDirection(i_rel_axis.com_object))
@@ -253,7 +250,6 @@ class PSPPartConnector(AnyObject):
                 |          Set objArg2 = objThisIntf.GetConnectorMathPlane (objArg1)
 
         :param Product i_rel_axis:
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_part_connector.GetConnectorMathPlane(i_rel_axis.com_object))
@@ -280,7 +276,6 @@ class PSPPartConnector(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.GetDatumConnector
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.psp_part_connector.GetDatumConnector())
@@ -307,7 +302,6 @@ class PSPPartConnector(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.GetFaceConnector
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.psp_part_connector.GetFaceConnector())
@@ -334,7 +328,6 @@ class PSPPartConnector(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.GetOrientationConnector
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.psp_part_connector.GetOrientationConnector())
@@ -367,7 +360,6 @@ class PSPPartConnector(AnyObject):
                 |          Set objArg2 = objThisIntf.GetPosition (objArg1 )
 
         :param Product i_rel_axis:
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_part_connector.GetPosition(i_rel_axis.com_object))
@@ -399,7 +391,6 @@ class PSPPartConnector(AnyObject):
                 |          Set objArg2 = objThisIntf.GetUpDirection (objArg1)
 
         :param Product i_rel_axis:
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_part_connector.GetUpDirection(i_rel_axis.com_object))
@@ -431,8 +422,7 @@ class PSPPartConnector(AnyObject):
                 |          objThisIntf.SetFaceConnector objArg1, objArg2
 
         :param Reference i_align_cntr:
-        :param int ie_align_type:
-        :return: None
+        :param int ie_align_type: enum cat_psp_idl_part_connector_type
         :rtype: None
         """
         return self.psp_part_connector.SetAlignmentConnector(i_align_cntr.com_object, ie_align_type)
@@ -475,7 +465,6 @@ class PSPPartConnector(AnyObject):
                 |          objThisIntf.SetDatumConnector objArg1
 
         :param Reference i_datum_cntr:
-        :return: None
         :rtype: None
         """
         return self.psp_part_connector.SetDatumConnector(i_datum_cntr.com_object)
@@ -522,8 +511,7 @@ class PSPPartConnector(AnyObject):
                 |          objThisIntf.SetFaceConnector objArg1, objArg2
 
         :param Reference i_face_cntr:
-        :param int ie_face_type:
-        :return: None
+        :param int ie_face_type: enum cat_psp_idl_part_connector_type
         :rtype: None
         """
         return self.psp_part_connector.SetFaceConnector(i_face_cntr.com_object, ie_face_type)
@@ -570,8 +558,7 @@ class PSPPartConnector(AnyObject):
                 |          objThisIntf.SetOrientationConnector objArg1, objArg2
 
         :param Reference i_orient_cntr:
-        :param int ie_orientation:
-        :return: None
+        :param int ie_orientation: enum cat_psp_idl_part_connector_type
         :rtype: None
         """
         return self.psp_part_connector.SetOrientationConnector(i_orient_cntr.com_object, ie_orientation)

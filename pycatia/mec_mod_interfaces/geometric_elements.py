@@ -76,7 +76,6 @@ class GeometricElements(Collection):
                 |          Set lastCst = cstList.Item(cstList.Count)
 
         :param cat_variant i_index:
-        :return: GeometricElement
         :rtype: GeometricElement
         """
         return GeometricElement(self.geometric_elements.Item(i_index))

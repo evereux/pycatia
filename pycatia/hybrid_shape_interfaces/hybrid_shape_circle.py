@@ -75,7 +75,6 @@ class HybridShapeCircle(HybridShape):
                 |          Dim axisComp As Boolean
                 |          axisComp = hybShpCircle.AxisComputation
 
-        :return: bool
         :rtype: bool
         """
 
@@ -114,7 +113,6 @@ class HybridShapeCircle(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -146,7 +144,6 @@ class HybridShapeCircle(HybridShape):
                 |          Dim ShpCircleEndAngle As Angle
                 |          ShpCircleEndAngle = ShpCircle.EndAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -170,7 +167,6 @@ class HybridShapeCircle(HybridShape):
                 |          Dim ShpCircleStartAngle As Angle
                 |          ShpCircleStartAngle = ShpCircle.StartAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -205,7 +201,6 @@ class HybridShapeCircle(HybridShape):
 
         :param int i_position:
         :param Reference o_axis:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle.GetAxis(i_position, o_axis.com_object)
@@ -246,7 +241,6 @@ class HybridShapeCircle(HybridShape):
         :param float o_center_x:
         :param float o_center_y:
         :param float o_center_z:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle.GetCenter(o_center_x, o_center_y, o_center_z)
@@ -282,7 +276,6 @@ class HybridShapeCircle(HybridShape):
                 |             y is in HybShpCircleCenter(1)
                 |             z is in HybShpCircleCenter(2)
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = 'get_free_center'
@@ -319,7 +312,6 @@ class HybridShapeCircle(HybridShape):
                 |          double HybShpCircleRadius
                 |          ShpCircle.GetFreeRadius(HybShpCircleRadius)
 
-        :return: float
         :rtype: float
         """
         return self.hybrid_shape_circle.GetFreeRadius()
@@ -339,7 +331,6 @@ class HybridShapeCircle(HybridShape):
                 |         oLimit
                 |             (Angles = 0, Whole = 1, Trimmed = 2, Complementary = 3). circle limitation
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_circle.GetLimitation()
@@ -376,7 +367,6 @@ class HybridShapeCircle(HybridShape):
                 |          ShpCircle.SetLimitation 2
 
         :param int i_limitation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle.SetLimitation(i_limitation)

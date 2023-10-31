@@ -74,7 +74,6 @@ class Products(Collection):
                 |          Set SpareWheel = ToolKits.AddComponent(FrontRightWheel)
 
         :param Product i_reference_product:
-        :return: Product
         :rtype: Product
         """
         return Product(self.products.AddComponent(i_reference_product.com_object))
@@ -101,7 +100,6 @@ class Products(Collection):
 
         :param tuple i_files_list:
         :param str i_method:
-        :return: None
         :rtype: None
         """
         return self.products.AddComponentsFromFiles(i_files_list, i_method)
@@ -152,7 +150,6 @@ class Products(Collection):
                 |          Set GearBox = PowerTrains.AddExternalComponent(GearBoxDocument)
 
         :param Document i_product_document:
-        :return: Product
         :rtype: Product
         """
         return Product(self.products.AddExternalComponent(i_product_document.com_object))
@@ -222,7 +219,6 @@ class Products(Collection):
                 |          Set Engine = PowerTrains.AddNewProduct(V6Engine)
 
         :param str i_part_number:
-        :return: Product
         :rtype: Product
         """
         return Product(self.products.AddNewProduct(i_part_number))
@@ -265,7 +261,6 @@ class Products(Collection):
                 |          Set ThatProduct = CarParts.Item("Wheel")
 
         :param cat_variant i_index:
-        :return: Product
         :rtype: Product
         """
         return Product(self.products.Item(i_index))
@@ -302,7 +297,6 @@ class Products(Collection):
                 |          Brakes.Remove("LeftRearDisc")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.products.Remove(i_index)
@@ -353,7 +347,6 @@ class Products(Collection):
         :param Product i_old_component:
         :param str i_file_path:
         :param bool i_multi_instances:
-        :return: Product
         :rtype: Product
         """
         return Product(self.products.ReplaceComponent(i_old_component.com_object, i_file_path, i_multi_instances))
@@ -385,7 +378,6 @@ class Products(Collection):
         :param Product i_old_component:
         :param Product i_new_reference:
         :param bool i_multi_instances:
-        :return: Product
         :rtype: Product
         """
         return Product(

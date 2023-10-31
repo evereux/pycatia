@@ -58,7 +58,6 @@ class Window(AnyObject):
                 |          Dim ViewerToWorkIn As Viewer
                 |          Set ViewerToWorkIn = CADWindow.ActiveViewer
 
-        :return: Viewer
         :rtype: Viewer
         """
 
@@ -82,7 +81,6 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.Caption = "CAD 3D Window"
 
-        :return: str
         :rtype: str
         """
 
@@ -114,7 +112,6 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.Width = 300
 
-        :return: int
         :rtype: int
         """
 
@@ -147,7 +144,6 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.Left = 150
 
-        :return: int
         :rtype: int
         """
 
@@ -179,7 +175,6 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.PageSetup = A4PageSetup
 
-        :return: PageSetup
         :rtype: PageSetup
         """
 
@@ -212,7 +207,6 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.Top = 50
 
-        :return: int
         :rtype: int
         """
 
@@ -244,7 +238,6 @@ class Window(AnyObject):
                 |          Dim ViewerCollection As Viewers
                 |          Set ViewerCollection = CADWindow.Viewers
 
-        :return: Viewers
         :rtype: Viewers
         """
 
@@ -268,7 +261,6 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.Width = 450
 
-        :return: int
         :rtype: int
         """
 
@@ -299,7 +291,7 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.WindowState = catWindowStateMaximized
 
-        :return: int
+        :return: enum cat_window_state
         :rtype: int
         """
 
@@ -308,7 +300,7 @@ class Window(AnyObject):
     @window_state.setter
     def window_state(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_window_state
         """
 
         self.window.WindowState = value
@@ -329,7 +321,6 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.Activate()
 
-        :return: None
         :rtype: None
         """
         return self.window.Activate()
@@ -351,7 +342,6 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.ActivateNext()
 
-        :return: None
         :rtype: None
         """
         return self.window.ActivateNext()
@@ -373,7 +363,6 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.ActivatePrevious()
 
-        :return: None
         :rtype: None
         """
         return self.window.ActivatePrevious()
@@ -396,7 +385,6 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.Close()
 
-        :return: None
         :rtype: None
         """
         return self.window.Close()
@@ -420,7 +408,6 @@ class Window(AnyObject):
                 |          Dim CADNewWindow As Window
                 |          Set CADNewWindow = CADWindow.NewWindow()
 
-        :return: Window
         :rtype: Window
         """
         return Window(self.window.NewWindow())
@@ -442,7 +429,6 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.PrintOut()
 
-        :return: None
         :rtype: None
         """
         return self.window.PrintOut()
@@ -470,7 +456,6 @@ class Window(AnyObject):
                 |          CADWindow.PrintToFile("e:\\temp\\cadwin.prn")
 
         :param str file_name:
-        :return: None
         :rtype: None
         """
         return self.window.PrintToFile(file_name)

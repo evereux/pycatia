@@ -128,7 +128,6 @@ class CylindricalFace(Face):
                 |             The Z Coordinate of the axis origin
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
 

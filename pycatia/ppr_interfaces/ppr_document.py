@@ -66,7 +66,6 @@ class PPRDocument(Document):
                 |     Returns:
                 |         The list of Activities contained in the current document.
 
-        :return: Activities
         :rtype: Activities
         """
 
@@ -87,7 +86,6 @@ class PPRDocument(Document):
                 |     Returns:
                 |         The list of Products contained in the current document.
 
-        :return: PPRProducts
         :rtype: PPRProducts
         """
 
@@ -108,7 +106,6 @@ class PPRDocument(Document):
                 |     Returns:
                 |         The list of Resources contained in the current document.
 
-        :return: PPRProducts
         :rtype: PPRProducts
         """
 

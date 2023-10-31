@@ -46,7 +46,6 @@ class ToleranceZone(AnyObject):
                 | 
                 |     Retrieves tolerance zone form.
 
-        :return: str
         :rtype: str
         """
 
@@ -71,7 +70,6 @@ class ToleranceZone(AnyObject):
                 | 
                 |     Retrieves tolerance zone value (in millimeters).
 
-        :return: float
         :rtype: float
         """
 

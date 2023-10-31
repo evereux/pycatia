@@ -57,7 +57,6 @@ class DrawingTextRange(CATBaseDispatch):
                 | 
                 |          NbChar = MyTextRange.Length
 
-        :return: int
         :rtype: int
         """
 
@@ -81,7 +80,6 @@ class DrawingTextRange(CATBaseDispatch):
                 | 
                 |          StartCharPos = MyTextRange.Start
 
-        :return: int
         :rtype: int
         """
 
@@ -111,7 +109,6 @@ class DrawingTextRange(CATBaseDispatch):
                 |     See also:
                 |         DrawingTextProperties.Update
 
-        :return: str
         :rtype: str
         """
 
@@ -148,7 +145,6 @@ class DrawingTextRange(CATBaseDispatch):
                 |              Dim Prop As CATIADrawingTextProperties
                 |              Set Prop = MyTextRange.TextProperties(String)
 
-        :return: DrawingTextProperties
         :rtype: DrawingTextProperties
         """
 
@@ -188,7 +184,6 @@ class DrawingTextRange(CATBaseDispatch):
 
         :param int i_start:
         :param int i_end:
-        :return: DrawingTextRange
         :rtype: DrawingTextRange
         """
         return DrawingTextRange(self.drawing_text_range.GetTextRange(i_start, i_end))
@@ -223,7 +218,6 @@ class DrawingTextRange(CATBaseDispatch):
                 |     DrawingTextProperties.Update
 
         :param str i_string:
-        :return: None
         :rtype: None
         """
         return self.drawing_text_range.InsertAfter(i_string)

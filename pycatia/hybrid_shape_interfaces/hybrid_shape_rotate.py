@@ -64,7 +64,6 @@ class HybridShapeRotate(HybridShape):
                 | 
                 |     Returns the rotation angle.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -87,7 +86,6 @@ class HybridShapeRotate(HybridShape):
                 |      Dim AngleValue As double
                 |      Set AngleValue = Rotate.AngleValue
 
-        :return: float
         :rtype: float
         """
 
@@ -119,7 +117,6 @@ class HybridShapeRotate(HybridShape):
                 |      Dim RotationAxis As Reference
                 |      Set RotationAxis = Rotate.Axis
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -150,7 +147,6 @@ class HybridShapeRotate(HybridShape):
                 |      Dim Elem As Reference
                 |      Set Elem = Rotate.ElemToRotate
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -175,7 +171,6 @@ class HybridShapeRotate(HybridShape):
                 | 
                 |     Returns or sets the first element defining the rotation angle.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -200,7 +195,6 @@ class HybridShapeRotate(HybridShape):
                 | 
                 |     Returns or sets the first point defining the rotation.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -227,7 +221,6 @@ class HybridShapeRotate(HybridShape):
                 |     angle.
                 |     This applies in case of line or plane element.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -254,7 +247,6 @@ class HybridShapeRotate(HybridShape):
                 |     angle.
                 |     This applies in case of line or plane element.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -284,7 +276,6 @@ class HybridShapeRotate(HybridShape):
                 |         2= Three Points
                 |         3= Unknown type
 
-        :return: int
         :rtype: int
         """
 
@@ -309,7 +300,6 @@ class HybridShapeRotate(HybridShape):
                 | 
                 |     Returns or sets the second element defining the rotation angle.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -334,7 +324,6 @@ class HybridShapeRotate(HybridShape):
                 | 
                 |     Returns or sets the second point defining the rotation.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -359,7 +348,6 @@ class HybridShapeRotate(HybridShape):
                 | 
                 |     Returns or sets the third point defining the rotation.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -395,7 +383,6 @@ class HybridShapeRotate(HybridShape):
                 | 
                 |          hybShpRotate.VolumeResult = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -434,7 +421,6 @@ class HybridShapeRotate(HybridShape):
                 | 
                 |      oCreation = hybShpRotate.GetCreationMode
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_rotate.GetCreationMode()
@@ -460,7 +446,6 @@ class HybridShapeRotate(HybridShape):
                 |          hybShpRotate.SetCreationMode True
 
         :param bool i_creation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_rotate.SetCreationMode(i_creation)

@@ -75,7 +75,6 @@ class PSPBuildPart(AnyObject):
         :param Product i_ref_part:
         :param str iu_part_type:
         :param str u_part_number:
-        :return: Product
         :rtype: Product
         """
         return Product(self.psp_build_part.ChangePartType(i_ref_part.com_object, iu_part_type, u_part_number))
@@ -108,7 +107,6 @@ class PSPBuildPart(AnyObject):
                 |          Set oLAttributeNames = objThisIntf.ListPartParametricAttributes (iRefPart)
 
         :param Product i_ref_part:
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
         return PSPListOfBSTRs(self.psp_build_part.ListPartParametricAttributes(i_ref_part.com_object))
@@ -145,7 +143,6 @@ class PSPBuildPart(AnyObject):
 
         :param str iu_part_type:
         :param str u_part_number:
-        :return: Product
         :rtype: Product
         """
         return Product(self.psp_build_part.NewPart(iu_part_type, u_part_number))
@@ -179,7 +176,6 @@ class PSPBuildPart(AnyObject):
 
         :param Product i_ref_part:
         :param PSPListOfBSTRs i_l_attribute_names:
-        :return: None
         :rtype: None
         """
         return self.psp_build_part.SetPartParametricAttributes(i_ref_part.com_object, i_l_attribute_names.com_object)

@@ -56,7 +56,6 @@ class RenderingEnvironments(Collection):
                 |             3 - For cylindrical environment
 
         :param int i_environment_type:
-        :return: RenderingEnvironment
         :rtype: RenderingEnvironment
         """
         return RenderingEnvironment(self.rendering_environments.Add(i_environment_type))
@@ -90,7 +89,6 @@ class RenderingEnvironments(Collection):
                 |      Set MyEnvironment = RenderingEnvironments.Item(6)
 
         :param cat_variant i_index:
-        :return: RenderingEnvironment
         :rtype: RenderingEnvironment
         """
         return RenderingEnvironment(self.rendering_environments.Item(i_index))
@@ -106,7 +104,6 @@ class RenderingEnvironments(Collection):
                 |     Removes a environment from the environments collection.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.rendering_environments.Remove(i_index)
@@ -136,7 +133,6 @@ class RenderingEnvironments(Collection):
                 | 
                 |     Removes all environments.of the collection
 
-        :return: None
         :rtype: None
         """
         return self.rendering_environments.RemoveAll()

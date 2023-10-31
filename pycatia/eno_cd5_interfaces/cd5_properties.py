@@ -82,7 +82,6 @@ class CD5Properties(Collection):
                 |          Set objCD5Property = objCD5Properties.Item(1)
 
         :param cat_variant i_index:
-        :return: CD5Property
         :rtype: CD5Property
         """
         return CD5Property(self.cd5_properties.Item(i_index))

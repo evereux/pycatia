@@ -64,7 +64,6 @@ class Stiffener(SketchBasedShape):
                 |          Set FromTopFlag = firstStiffener.IsFromTop
                 |          firstStiffener.IsFromTop  = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -99,7 +98,6 @@ class Stiffener(SketchBasedShape):
                 |          Set symFlag = firstStiffener.IsSymmetric
                 |          firstStiffener.IsSymmetric  = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -131,7 +129,6 @@ class Stiffener(SketchBasedShape):
                 | 
                 |          Set thickness = firstStiffener.Thickness
 
-        :return: Length
         :rtype: Length
         """
 
@@ -155,7 +152,6 @@ class Stiffener(SketchBasedShape):
                 | 
                 |          Set thicknessfromtop = firstStiffener.ThicknessFromTop
 
-        :return: Length
         :rtype: Length
         """
 
@@ -178,7 +174,6 @@ class Stiffener(SketchBasedShape):
                 | 
                 |          firstStiffener.ReverseDepth
 
-        :return: None
         :rtype: None
         """
         return self.stiffener.ReverseDepth()
@@ -200,7 +195,6 @@ class Stiffener(SketchBasedShape):
                 | 
                 |          firstStiffener.ReverseThickness
 
-        :return: None
         :rtype: None
         """
         return self.stiffener.ReverseThickness()

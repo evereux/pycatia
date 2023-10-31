@@ -57,7 +57,6 @@ class SWKAnthro(SWKManikinPart):
                 |     thighs and knees are constructed to reflect the changes in those body
                 |     parts when a human changes from a standing to a sitting posture.
 
-        :return: str
         :rtype: str
         """
 
@@ -82,7 +81,6 @@ class SWKAnthro(SWKManikinPart):
                 | 
                 |     Returns or sets the gender of the manikin.
 
-        :return: str
         :rtype: str
         """
 
@@ -110,7 +108,6 @@ class SWKAnthro(SWKManikinPart):
                 |     that restricts the values entered by the user to a certain minimum and
                 |     maximum value. Valid values are "None" or "Multinormal".
 
-        :return: str
         :rtype: str
         """
 
@@ -143,7 +140,6 @@ class SWKAnthro(SWKManikinPart):
                 |     on the automatic variables will be. The value of this property must le
                 |     within the range [0.0, 4.0].
 
-        :return: float
         :rtype: float
         """
 
@@ -168,7 +164,6 @@ class SWKAnthro(SWKManikinPart):
                 | 
                 |     Returns the number of variables contained in this anthropometry.
 
-        :return: int
         :rtype: int
         """
 
@@ -189,7 +184,6 @@ class SWKAnthro(SWKManikinPart):
                 |     population defined by the user. Please note that no user-defined population
                 |     should bear the name of one of the default populations.
 
-        :return: str
         :rtype: str
         """
 
@@ -222,7 +216,6 @@ class SWKAnthro(SWKManikinPart):
                 |     on the automatic variables will be. The value of this property must le
                 |     within the range [0.0, 100.0].
 
-        :return: float
         :rtype: float
         """
 
@@ -252,7 +245,6 @@ class SWKAnthro(SWKManikinPart):
                 |             The index of the variable to retrieve.
 
         :param int pi_index:
-        :return: SWKAnthroVariable
         :rtype: SWKAnthroVariable
         """
         return SWKAnthroVariable(self.swk_anthro.GetVariableAtIndex(pi_index))
@@ -275,7 +267,6 @@ class SWKAnthro(SWKManikinPart):
                 |             100 for us100, etc).
 
         :param int pi_ref_number:
-        :return: SWKAnthroVariable
         :rtype: SWKAnthroVariable
         """
         return SWKAnthroVariable(self.swk_anthro.GetVariableFromUsNumber(pi_ref_number))
@@ -291,7 +282,6 @@ class SWKAnthro(SWKManikinPart):
                 |     Reset the anthtropometry. This method resets each variable back to the
                 |     automatic mode, and then updates the anthropometry.
 
-        :return: None
         :rtype: None
         """
         return self.swk_anthro.Reset()

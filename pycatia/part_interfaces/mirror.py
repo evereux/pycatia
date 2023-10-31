@@ -52,7 +52,6 @@ class Mirror(TransformationShape):
                 | 
                 |     Returns the mirroring Object.
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -81,7 +80,6 @@ class Mirror(TransformationShape):
                 |          Set MyRef = part.CreateReferenceFromGeometry (plane)
                 |          firstMirroring.MirroringPlane = MyRef
 
-        :return: Reference
         :rtype: Reference
         """
 

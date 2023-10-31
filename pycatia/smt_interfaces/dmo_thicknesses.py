@@ -75,7 +75,6 @@ class DMOThicknesses(Collection):
         :param str i_shape_name:
         :param int i_activated_shape:
         :param int i_default_shape:
-        :return: DMOThickness
         :rtype: DMOThickness
         """
         return DMOThickness(
@@ -135,7 +134,6 @@ class DMOThicknesses(Collection):
         :param float i_thickness2:
         :param int i_use_constraints:
         :param tuple i_constraints:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -198,7 +196,6 @@ class DMOThicknesses(Collection):
         :param float i_thickness2:
         :param int i_use_constraints:
         :param tuple i_constraints:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -255,7 +252,6 @@ class DMOThicknesses(Collection):
         :param float i_thickness2:
         :param int i_use_constraints:
         :param tuple i_constraints:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -318,7 +314,6 @@ class DMOThicknesses(Collection):
         :param float i_thickness2:
         :param int i_use_constraints:
         :param tuple i_constraints:
-        :return: Document
         :rtype: Document
         """
         return Document(self.dmo_thicknesses.ComputeThicknessWithReference(i_group_of_selected_products.com_object,
@@ -336,7 +331,6 @@ class DMOThicknesses(Collection):
                 | 
                 |     Returns the name of the associated shape.
 
-        :return: str
         :rtype: str
         """
         return self.dmo_thicknesses.ThicknessShapeName()

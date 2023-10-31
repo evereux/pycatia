@@ -73,8 +73,7 @@ class ABQOutputRequests(Collection):
                 |          Dim abqFieldOutputRequest As ABQFieldOutputRequest
                 |          Set abqFieldOutputRequest =  abaqusOutputRequests.Add("ABQFIELD")
 
-        :param int i_output_request_type:
-        :return: ABQOutputRequest
+        :param int i_output_request_type: enum abq_output_request_type
         :rtype: ABQOutputRequest
         """
         return ABQOutputRequest(self.abq_output_requests.Add(i_output_request_type))
@@ -116,8 +115,7 @@ class ABQOutputRequests(Collection):
                 |         The specified ABQOutputRequest.
 
         :param cat_variant i_index:
-        :param int i_output_request_type:
-        :return: ABQOutputRequest
+        :param int i_output_request_type: enum abq_output_request_type
         :rtype: ABQOutputRequest
         """
         return ABQOutputRequest(self.abq_output_requests.Item(i_index, i_output_request_type))
@@ -156,8 +154,7 @@ class ABQOutputRequests(Collection):
                 |             CATIACollection::Name property.
 
         :param cat_variant i_index:
-        :param int i_output_request_type:
-        :return: None
+        :param int i_output_request_type: enum abq_output_request_type
         :rtype: None
         """
         return self.abq_output_requests.Remove(i_index, i_output_request_type)

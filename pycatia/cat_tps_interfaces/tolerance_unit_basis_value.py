@@ -56,7 +56,6 @@ class ToleranceUnitBasisValue(AnyObject):
 
         :param float i_value1:
         :param float i_value2:
-        :return: None
         :rtype: None
         """
         return self.tolerance_unit_basis_value.SetValues(i_value1, i_value2)
@@ -81,7 +80,6 @@ class ToleranceUnitBasisValue(AnyObject):
 
         :param float o_value1:
         :param float o_value2:
-        :return: None
         :rtype: None
         """
         return self.tolerance_unit_basis_value.Values(o_value1, o_value2)

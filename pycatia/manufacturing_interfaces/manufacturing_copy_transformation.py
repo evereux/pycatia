@@ -59,7 +59,6 @@ class ManufacturingCopyTransformation(ManufacturingActivity):
                 |          call myOperation.AddOperation(CopyTransformation)
 
         :param ManufacturingActivity i_manufacturing_activity:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_copy_transformation.AddOperation(i_manufacturing_activity.com_object)
@@ -102,7 +101,6 @@ class ManufacturingCopyTransformation(ManufacturingActivity):
                 |          z = oEndPoint(2)
 
         :param tuple o_end_point:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_copy_transformation.GetTrajectoryEndPointCoord(o_end_point)
@@ -146,7 +144,6 @@ class ManufacturingCopyTransformation(ManufacturingActivity):
                 |          z = oStartPoint(2)
 
         :param tuple o_start_point:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_copy_transformation.GetTrajectoryStartPointCoord(o_start_point)
@@ -208,7 +205,6 @@ class ManufacturingCopyTransformation(ManufacturingActivity):
         :param int i_number_of_copies:
         :param str i_ordering:
         :param str i_transformation_type:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_copy_transformation.SetCopyTransformation(
@@ -265,7 +261,6 @@ class ManufacturingCopyTransformation(ManufacturingActivity):
         :param float i_distance_along_x:
         :param float i_distance_along_y:
         :param float i_distance_along_z:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_copy_transformation.SetCopyTransformationTranslationAttributes(

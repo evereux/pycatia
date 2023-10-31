@@ -49,7 +49,6 @@ class Fastener(AnyObject):
                 | Example:
                 |     Dim AllPartsLoaded AllPartsLoaded = MyFastener.AllPartsLoaded
 
-        :return: bool
         :rtype: bool
         """
         return self.fastener.AllPartsLoaded()
@@ -81,7 +80,6 @@ class Fastener(AnyObject):
                 |          DblAttrVal = MyFastener.GetDoubleUserAttribute ("PLATE SIZE")
 
         :param str i_attribute_label:
-        :return: float
         :rtype: float
         """
         return self.fastener.GetDoubleUserAttribute(i_attribute_label)
@@ -95,7 +93,6 @@ class Fastener(AnyObject):
                 | o Func GetIntUserAttribute(CATBSTR iAttributeLabel) As long
 
         :param str i_attribute_label:
-        :return: int
         :rtype: int
         """
         return self.fastener.GetIntUserAttribute(i_attribute_label)
@@ -123,7 +120,6 @@ class Fastener(AnyObject):
                 |          Set MyProduct = MyFastener.GetPart(1)
 
         :param int index:
-        :return: Product
         :rtype: Product
         """
         return Product(self.fastener.GetPart(index))
@@ -153,7 +149,6 @@ class Fastener(AnyObject):
                 |          MyFastener.GetParts(JoiningParts)
 
         :param tuple o_list_of_parts:
-        :return: None
         :rtype: None
         """
         return self.fastener.GetParts(o_list_of_parts)
@@ -196,7 +191,6 @@ class Fastener(AnyObject):
                 |          Set MyActivity = MyFastener.GetProcess(1)
 
         :param int index:
-        :return: Activity
         :rtype: Activity
         """
         return Activity(self.fastener.GetProcess(index))
@@ -229,7 +223,6 @@ class Fastener(AnyObject):
                 |          StrAttrVal = MyFastener.GetStringUserAttribute ("PLATE NAME")
 
         :param str i_attribute_label:
-        :return: str
         :rtype: str
         """
         return self.fastener.GetStringUserAttribute(i_attribute_label)
@@ -247,7 +240,6 @@ class Fastener(AnyObject):
                 | Example:
                 |     Dim Num Num = MyFastener.NumberOfAssignedProcesses
 
-        :return: int
         :rtype: int
         """
         return self.fastener.NumberOfAssignedProcesses()
@@ -273,7 +265,6 @@ class Fastener(AnyObject):
                 |          Dim NumberOfParts
                 |          NumberOfParts = MyFastener.NumberOfJoiningParts
 
-        :return: int
         :rtype: int
         """
         return self.fastener.NumberOfJoiningParts()
@@ -306,8 +297,7 @@ class Fastener(AnyObject):
                 |         RemoveStatus MsgBox RemoveStatus
 
         :param bool i_force_remove_if_assigned:
-        :param int e_status:
-        :return: None
+        :param int e_status: enum dnbppr_remove_status
         :rtype: None
         """
         return self.fastener.RemoveFromPPR(i_force_remove_if_assigned, e_status)
@@ -355,7 +345,6 @@ class Fastener(AnyObject):
 
         :param str i_attribute_label:
         :param float i_double_value:
-        :return: None
         :rtype: None
         """
         return self.fastener.SetDoubleUserAttribute(i_attribute_label, i_double_value)
@@ -371,7 +360,6 @@ class Fastener(AnyObject):
 
         :param str i_attribute_label:
         :param int i_int_value:
-        :return: None
         :rtype: None
         """
         return self.fastener.SetIntUserAttribute(i_attribute_label, i_int_value)
@@ -406,7 +394,6 @@ class Fastener(AnyObject):
 
         :param str i_attribute_label:
         :param str i_string_value:
-        :return: None
         :rtype: None
         """
         return self.fastener.SetStringUserAttribute(i_attribute_label, i_string_value)
@@ -430,7 +417,6 @@ class Fastener(AnyObject):
                 |     reserved.
 
         :param bool i_status:
-        :return: None
         :rtype: None
         """
         return self.fastener.SetTextIDVisibility(i_status)

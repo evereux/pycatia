@@ -66,7 +66,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Role: The OLP Translator setting parameter stores the name of currently
                 |     selected downloader, also known as the XSLT translator.
 
-        :return: str
         :rtype: str
         """
 
@@ -95,7 +94,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     path to directory where OLP downloaders, also known as XSLT translators, are
                 |     stored.
 
-        :return: str
         :rtype: str
         """
 
@@ -128,7 +126,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     1 Delete existing robot tasks only
                 |     0 Do not delete existing robot tasks
 
-        :return: int
         :rtype: int
         """
 
@@ -155,7 +152,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Role: The OLP Java Class Path setting parameter stores the full file path
                 |     to Java JAR files required to proper functioning of OLP download.
 
-        :return: str
         :rtype: str
         """
 
@@ -182,7 +178,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Role: The OLP Java Executable setting parameter stores the full file path
                 |     to java.exe file of Java JRE 1_4_1, or later.
 
-        :return: str
         :rtype: str
         """
 
@@ -210,7 +205,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Role: The NRL configuration file directory parameter stores the full file
                 |     path to directory where NRL configuration files are stored.
 
-        :return: str
         :rtype: str
         """
 
@@ -242,7 +236,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     1 NRL Teach dialog will be hidden
                 |     0 NRL Teach dialog will remain displayed
 
-        :return: int
         :rtype: int
         """
 
@@ -269,7 +262,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Role: The OLP Directory setting parameter stores the full file path to
                 |     directory where native robot language programs on upload should be stored.
 
-        :return: str
         :rtype: str
         """
 
@@ -296,7 +288,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Role: The OLP Parser setting parameter stores the name of currently
                 |     selected uploader, also known as the Java Parser.
 
-        :return: str
         :rtype: str
         """
 
@@ -323,7 +314,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Role: The OLP Parser Directory setting parameter stores the full file path
                 |     to directory where OLP uploaders, also known as Java Parsers, are stored.
 
-        :return: str
         :rtype: str
         """
 
@@ -351,7 +341,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     directory where XML file created during download, named simResult.xml, is
                 |     stored.
 
-        :return: str
         :rtype: str
         """
 
@@ -378,7 +367,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Role: The OLP XML Schema setting parameter stores the full file path to an
                 |     W3C XML Schema file, used for XML file validation on upload, is stored.
 
-        :return: str
         :rtype: str
         """
 
@@ -407,7 +395,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetDownloaderDirInfo(io_admin_level, io_locked)
@@ -427,7 +414,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetDownloaderInfo(io_admin_level, io_locked)
@@ -447,7 +433,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetExistingTaskTreatmentInfo(io_admin_level, io_locked)
@@ -467,7 +452,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetJavaClassPathInfo(io_admin_level, io_locked)
@@ -487,7 +471,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetJavaExeInfo(io_admin_level, io_locked)
@@ -507,7 +490,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetNRLDirInfo(io_admin_level, io_locked)
@@ -528,7 +510,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetNRLTeachDialogDisplayModeInfo(io_admin_level, io_locked)
@@ -548,7 +529,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetRobotProgramDirInfo(io_admin_level, io_locked)
@@ -568,7 +548,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetUploaderDirInfo(io_admin_level, io_locked)
@@ -588,7 +567,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetUploaderInfo(io_admin_level, io_locked)
@@ -608,7 +586,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetXMLDirInfo(io_admin_level, io_locked)
@@ -628,7 +605,6 @@ class IgpOlpSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.igp_olp_setting_att.GetXMLSchemaInfo(io_admin_level, io_locked)
@@ -646,7 +622,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetDownloaderDirLock(i_locked)
@@ -678,7 +653,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetDownloaderLock(i_locked)
@@ -711,7 +685,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetExistingTaskTreatmentLock(i_locked)
@@ -743,7 +716,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetJavaClassPathLock(i_locked)
@@ -775,7 +747,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetJavaExeLock(i_locked)
@@ -808,7 +779,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetNRLDirLock(i_locked)
@@ -840,7 +810,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetNRLTeachDialogDisplayModeLock(i_locked)
@@ -872,7 +841,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetRobotProgramDirLock(i_locked)
@@ -905,7 +873,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetUploaderDirLock(i_locked)
@@ -937,7 +904,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetUploaderLock(i_locked)
@@ -969,7 +935,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetXMLDirLock(i_locked)
@@ -1001,7 +966,6 @@ class IgpOlpSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.igp_olp_setting_att.SetXMLSchemaLock(i_locked)

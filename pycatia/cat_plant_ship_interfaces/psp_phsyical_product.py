@@ -56,7 +56,6 @@ class PSPPhsyicalProduct(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.Connectors
 
-        :return: PSPListOfObjects
         :rtype: PSPListOfObjects
         """
 
@@ -124,12 +123,11 @@ class PSPPhsyicalProduct(AnyObject):
 
         :param str i_class_filter:
         :param Reference i_face_cntr:
-        :param int ie_face_type:
+        :param int ie_face_type: enum cat_psp_idl_part_connector_type
         :param Reference i_alignment_cntr:
-        :param int ie_align_type:
+        :param int ie_align_type: enum cat_psp_idl_part_connector_type
         :param Reference i_clock_cntr:
-        :param int ie_clock_type:
-        :return: PSPPartConnector
+        :param int ie_clock_type: enum cat_psp_idl_part_connector_type
         :rtype: PSPPartConnector
         """
         return PSPPartConnector(
@@ -167,7 +165,6 @@ class PSPPhsyicalProduct(AnyObject):
                 |          objThisIntf.RemoveConnector objArg1
 
         :param PSPPartConnector i_cntr_to_remove:
-        :return: None
         :rtype: None
         """
         return self.psp_phsyical_product.RemoveConnector(i_cntr_to_remove.com_object)

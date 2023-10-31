@@ -60,7 +60,6 @@ class ABQSolutionCaseImages(Collection):
                 |         The specified AnalysisImage.
 
         :param cat_variant i_index:
-        :return: AnalysisImage
         :rtype: AnalysisImage
         """
         return AnalysisImage(self.abq_solution_case_images.Item(i_index))
@@ -87,7 +86,6 @@ class ABQSolutionCaseImages(Collection):
                 |             image using the CATIABase::Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_solution_case_images.Remove(i_index)

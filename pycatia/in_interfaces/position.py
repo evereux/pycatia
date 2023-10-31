@@ -68,7 +68,6 @@ class Position(Move):
                 |          Dim oAxisComponentsArray ( 11 )
                 |          MyObject.Position.GetComponents oAxisComponentsArray
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = 'get_components'
@@ -131,7 +130,6 @@ class Position(Move):
                 |          MyObject.Position.SetComponents iAxisComponentsArray
 
         :param tuple i_axis_components_array:
-        :return: None
         :rtype: None
         """
         return self.position.SetComponents(i_axis_components_array)

@@ -49,7 +49,6 @@ class RenderingEnvironment(AnyObject):
                 |     1: environment is activated
                 |     0: environment is deactivated
 
-        :return: int
         :rtype: int
         """
 
@@ -80,7 +79,6 @@ class RenderingEnvironment(AnyObject):
                 |     upper hemisphere and lower hemisphere.
                 |     N.B. This property is useless for cubical and cylindrical environments.
 
-        :return: int
         :rtype: int
         """
 
@@ -105,7 +103,6 @@ class RenderingEnvironment(AnyObject):
                 | 
                 |     Returns or sets the cubic or cylindrical environment height value.
 
-        :return: float
         :rtype: float
         """
 
@@ -130,7 +127,6 @@ class RenderingEnvironment(AnyObject):
                 | 
                 |     Returns or sets the cubic environment length value.
 
-        :return: float
         :rtype: float
         """
 
@@ -155,7 +151,6 @@ class RenderingEnvironment(AnyObject):
                 | 
                 |     Returns or sets the spherical or cylindrical environment radius value.
 
-        :return: float
         :rtype: float
         """
 
@@ -180,7 +175,6 @@ class RenderingEnvironment(AnyObject):
                 | 
                 |     Returns or sets the cubic environment width value.
 
-        :return: float
         :rtype: float
         """
 
@@ -206,7 +200,6 @@ class RenderingEnvironment(AnyObject):
                 |     These coordinates are set as an array of 3 Variants (double type).
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
         return self.rendering_environment.GetOrigin(o_origin)
@@ -241,7 +234,6 @@ class RenderingEnvironment(AnyObject):
                 |         2: Spherical environment
                 |         3: Cylindrical environment
 
-        :return: int
         :rtype: int
         """
         return self.rendering_environment.GetType()
@@ -259,7 +251,6 @@ class RenderingEnvironment(AnyObject):
                 |     These coordinates are set as an array of 3 Variants (double type).
 
         :param tuple o_axis:
-        :return: None
         :rtype: None
         """
         return self.rendering_environment.GetVerticalAxis(o_axis)
@@ -299,7 +290,6 @@ class RenderingEnvironment(AnyObject):
                 |     environments)
 
         :param int i_type:
-        :return: RenderingEnvironmentWall
         :rtype: RenderingEnvironmentWall
         """
         return RenderingEnvironmentWall(self.rendering_environment.GetWall(i_type))
@@ -323,7 +313,6 @@ class RenderingEnvironment(AnyObject):
                 |          MyEnvironment.PutOrigin Array(10, 25, 15)
 
         :param tuple i_origin:
-        :return: None
         :rtype: None
         """
         return self.rendering_environment.PutOrigin(i_origin)
@@ -356,7 +345,6 @@ class RenderingEnvironment(AnyObject):
                 |     These coordinates are set as an array of 3 Variants (double type).
 
         :param tuple i_axis:
-        :return: None
         :rtype: None
         """
         return self.rendering_environment.PutVerticalAxis(i_axis)

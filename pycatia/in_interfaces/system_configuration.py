@@ -53,7 +53,6 @@ class SystemConfiguration(AnyObject):
                 |         oOperatingSystem
                 |             The operating system identifier.
 
-        :return: str
         :rtype: str
         """
 
@@ -77,7 +76,6 @@ class SystemConfiguration(AnyObject):
                 |             The number of product names currently known to the
                 |             system.
 
-        :return: int
         :rtype: int
         """
 
@@ -99,7 +97,6 @@ class SystemConfiguration(AnyObject):
                 |         oVersion
                 |             The CATIA release number.
 
-        :return: int
         :rtype: int
         """
 
@@ -121,7 +118,6 @@ class SystemConfiguration(AnyObject):
                 |         oServicePack
                 |             The CATIA service pack number.
 
-        :return: int
         :rtype: int
         """
 
@@ -143,7 +139,6 @@ class SystemConfiguration(AnyObject):
                 |         oVersion
                 |             The CATIA version.
 
-        :return: int
         :rtype: int
         """
 
@@ -178,7 +173,6 @@ class SystemConfiguration(AnyObject):
                 |                  returns " & SystemConfiguration1.IsProductAuthorized(NameArray(0))
 
         :param tuple io_product_names:
-        :return: None
         :rtype: None
         """
         # return self.system_configuration.GetProductNames()
@@ -218,7 +212,6 @@ class SystemConfiguration(AnyObject):
                 |             authorized.
 
         :param str i_product_name:
-        :return: bool
         :rtype: bool
         """
         return self.system_configuration.IsProductAuthorized(i_product_name)

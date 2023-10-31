@@ -69,7 +69,6 @@ class Translate(Shape):
                 |           Set oHybridShape=oTranslate.HybridShape
                 |           oHybridShape.ElemToTranslate = reference1
 
-        :return: HybridShape
         :rtype: HybridShape
         """
 

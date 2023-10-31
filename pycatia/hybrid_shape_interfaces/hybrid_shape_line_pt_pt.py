@@ -70,7 +70,6 @@ class HybridShapeLinePtPt(Line):
                 |          Dim oStart As  CATIALength 
                 |          Set oStart = LinePtPt.BeginOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -95,7 +94,6 @@ class HybridShapeLinePtPt(Line):
                 |          Dim oEnd As  CATIALength 
                 |          Set oEnd = LinePtPt.EndOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -121,7 +119,6 @@ class HybridShapeLinePtPt(Line):
                 |          Dim oPtExtremity As Reference 
                 |          Set oPtExtremity = LinePtPt.PtExtremity
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -155,7 +152,6 @@ class HybridShapeLinePtPt(Line):
                 |          Dim oPtOrigine As Reference 
                 |          Set oPtOrigine = LinePtPt.PtOrigine
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -190,7 +186,6 @@ class HybridShapeLinePtPt(Line):
                 |          Dim oSurface As Reference 
                 |          Set oSurface = LinePtPt.Surface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -222,7 +217,6 @@ class HybridShapeLinePtPt(Line):
                 |             the side of the start point = 3 : infinite end point - the line is infinite on the side of
                 |             the end point
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_line_pt_pt.GetLengthType()
@@ -243,7 +237,6 @@ class HybridShapeLinePtPt(Line):
                 |         oSym
                 |             Symetry flag
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_line_pt_pt.GetSymmetricalExtension()
@@ -258,7 +251,6 @@ class HybridShapeLinePtPt(Line):
                 | 
                 |     Removes the support surface.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_pt_pt.RemoveSupport()
@@ -282,7 +274,6 @@ class HybridShapeLinePtPt(Line):
                 |             of the end point
 
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_pt_pt.SetLengthType(i_type)
@@ -303,7 +294,6 @@ class HybridShapeLinePtPt(Line):
                 |             Symetry flag
 
         :param bool i_sym:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_pt_pt.SetSymmetricalExtension(i_sym)

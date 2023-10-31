@@ -62,7 +62,6 @@ class PSPApplication(AnyObject):
                 |          ....
                 |          Set objPspApplnTub = objPspWorkbench.GetApplication(catPspIDLCATTubing)
 
-        :return: None
         :rtype: None
         """
         return self.psp_application.Initialization()

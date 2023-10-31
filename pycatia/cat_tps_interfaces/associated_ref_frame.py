@@ -53,7 +53,6 @@ class AssociatedRefFrame(AnyObject):
                 |     Retrieves the Datum Reference Frame associated to a TPS. Deprecated method:
                 |     ReferenceFrame method is replaced by ReferenceFrame2 has.
 
-        :return: Annotation
         :rtype: Annotation
         """
 
@@ -71,7 +70,6 @@ class AssociatedRefFrame(AnyObject):
                 | 
                 |     Retrieves the Datum Reference Frame associated to a TPS.
 
-        :return: Annotation2
         :rtype: Annotation2
         """
 

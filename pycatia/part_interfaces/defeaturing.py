@@ -65,7 +65,6 @@ class Defeaturing(DressUpShape):
                 | 
                 |              Set myDefeaturingFiltersCollection = firstDefeaturing.Filters
 
-        :return: DefeaturingFilters
         :rtype: DefeaturingFilters
         """
 

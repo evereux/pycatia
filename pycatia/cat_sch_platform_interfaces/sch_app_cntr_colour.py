@@ -60,7 +60,6 @@ class SchAppCntrColour(AnyObject):
                 |          objThisIntf.AppGetConnectorColorByTypeintVar1
 
         :param int o_colour:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_colour.AppGetConnectorColorByType(o_colour)

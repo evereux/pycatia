@@ -75,7 +75,6 @@ class GenericToolProfile(AnyObject):
         :param float cx:
         :param float cy:
         :param float cz:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.GetCentroid(cx, cy, cz)
@@ -103,7 +102,6 @@ class GenericToolProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param RobGenericController o_controller:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.GetController(o_controller.com_object)
@@ -166,7 +164,6 @@ class GenericToolProfile(AnyObject):
         :param float ixy:
         :param float iyz:
         :param float izx:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.GetInertia(ixx, iyy, izz, ixy, iyz, izx)
@@ -194,7 +191,6 @@ class GenericToolProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float mass:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.GetMass(mass)
@@ -222,7 +218,6 @@ class GenericToolProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param str o_name:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.GetName(o_name)
@@ -271,7 +266,6 @@ class GenericToolProfile(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.GetTCPOffset(x, y, z, roll, pitch, yaw)
@@ -301,7 +295,6 @@ class GenericToolProfile(AnyObject):
                 |             .
 
         :param bool o_mobile:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.GetToolMobility(o_mobile)
@@ -352,7 +345,6 @@ class GenericToolProfile(AnyObject):
         :param float cx:
         :param float cy:
         :param float cz:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.SetCentroid(cx, cy, cz)
@@ -400,7 +392,6 @@ class GenericToolProfile(AnyObject):
         :param float ixy:
         :param float iyz:
         :param float izx:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.SetInertia(ixx, iyy, izz, ixy, iyz, izx)
@@ -428,7 +419,6 @@ class GenericToolProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float mass:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.SetMass(mass)
@@ -456,7 +446,6 @@ class GenericToolProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param str i_name:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.SetName(i_name)
@@ -505,7 +494,6 @@ class GenericToolProfile(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.SetTCPOffset(x, y, z, roll, pitch, yaw)
@@ -533,7 +521,6 @@ class GenericToolProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param bool i_mobile:
-        :return: None
         :rtype: None
         """
         return self.generic_tool_profile.SetToolMobility(i_mobile)

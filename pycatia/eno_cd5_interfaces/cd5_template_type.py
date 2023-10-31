@@ -67,7 +67,6 @@ class CD5TemplateType(AnyObject):
                 |          Dim oPossibleTypes As Array
                 |          oPossibleTypes = oTemplateType.PossibleTypes
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -92,7 +91,6 @@ class CD5TemplateType(AnyObject):
                 |          Dim oName As CATBSTR
                 |          oName = oTemplateType.TemplateTypeName
 
-        :return: str
         :rtype: str
         """
 
@@ -116,7 +114,6 @@ class CD5TemplateType(AnyObject):
                 |          Dim oTemplates As ENOIACD5Templates
                 |          Set oTemplates = oTemplateType.Templates
 
-        :return: CD5Templates
         :rtype: CD5Templates
         """
 

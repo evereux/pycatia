@@ -62,7 +62,6 @@ class HybridShapeNear(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -101,7 +100,6 @@ class HybridShapeNear(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 

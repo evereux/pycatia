@@ -74,7 +74,9 @@ documents = application.documents
 # not hugely important but could mess up the view reframing at the end of the
 # script.
 if documents.count > 0:
+    print([document for document in documents])
     print("There are already documents open." "Please close all documents and re-run the script.")
+    print("If you continue to see this error restart CATIA and close all open documents.")
     exit()
 
 new_part = documents.add("Part")

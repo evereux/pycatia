@@ -15,7 +15,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Limit(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -52,7 +51,6 @@ class Limit(AnyObject):
                 |     Returns or sets the limit dimension. This property is valid for the offset
                 |     limit mode only, that is when CatLimitMode is set to catOffsetLimit .
 
-        :return: Length
         :rtype: Length
         """
 
@@ -69,7 +67,7 @@ class Limit(AnyObject):
                 | 
                 |     Returns or sets the limit mode.
 
-        :return: int
+        :return: enum cat_limit_mode
         :rtype: int
         """
 
@@ -78,7 +76,7 @@ class Limit(AnyObject):
     @limit_mode.setter
     def limit_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_limit_mode
         """
 
         self.limit.LimitMode = value
@@ -97,7 +95,6 @@ class Limit(AnyObject):
                 |     catUpToSurfaceLimit and catUpToPlaneLimit.
                 |     To set the property, you can use the following Boundary object: Face.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -112,4 +109,4 @@ class Limit(AnyObject):
         self.limit.LimitingElement = value.com_object
 
     def __repr__(self):
-        return f'Limit(name="{ self.name }")'
+        return f'Limit(name="{self.name}")'

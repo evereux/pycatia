@@ -45,7 +45,6 @@ class RenderingLights(Collection):
                 | 
                 |     Adds a new light to the lights collection.
 
-        :return: RenderingLight
         :rtype: RenderingLight
         """
         return RenderingLight(self.rendering_lights.Add())
@@ -79,7 +78,6 @@ class RenderingLights(Collection):
                 |      Set MyLight = RenderingLights.Item(6)
 
         :param cat_variant i_index:
-        :return: RenderingLight
         :rtype: RenderingLight
         """
         return RenderingLight(self.rendering_lights.Item(i_index))
@@ -95,7 +93,6 @@ class RenderingLights(Collection):
                 |     Removes a light from the lights collection.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.rendering_lights.Remove(i_index)
@@ -125,7 +122,6 @@ class RenderingLights(Collection):
                 | 
                 |     Removes all lights from the collection.
 
-        :return: None
         :rtype: None
         """
         return self.rendering_lights.RemoveAll()

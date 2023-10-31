@@ -50,7 +50,6 @@ class Captures(Collection):
                 |     Retrieve a Capture.
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.captures.Item(i_index))

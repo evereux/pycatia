@@ -58,7 +58,6 @@ class KinematicsWorkbench(Workbench):
                 |             Dim TheMechanismsList As Mechanisms
                 |             Set TheMechanismsList = TheKinWorkbench.Mechanisms
 
-        :return: Mechanisms
         :rtype: Mechanisms
         """
 

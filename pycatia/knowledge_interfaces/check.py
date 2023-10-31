@@ -64,7 +64,6 @@ class Check(Relation):
                 |     Returns the check diagnosis. True if the condition of the check is
                 |     verified. False otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -85,7 +84,6 @@ class Check(Relation):
                 |     Information (2)
                 |     Warning (3)
 
-        :return: int
         :rtype: int
         """
 

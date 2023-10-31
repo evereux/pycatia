@@ -73,7 +73,6 @@ class PSPWorkbench(AnyObject):
 
         :param Document i_document_to_export_from:
         :param str i_xml_output_file_name:
-        :return: None
         :rtype: None
         """
         return self.psp_workbench.ExportProperties(i_document_to_export_from.com_object, i_xml_output_file_name)
@@ -120,8 +119,7 @@ class PSPWorkbench(AnyObject):
                 |          objArg1 = catPspIDLCATPiping
                 |          Set objArg2 = objPspWorkbench.GetApplication (objArg1)
 
-        :param int i_application_id:
-        :return: PSPApplication
+        :param int i_application_id: enum cat_psp_idl_application_id
         :rtype: PSPApplication
         """
         return PSPApplication(self.psp_workbench.GetApplication(i_application_id))
@@ -164,7 +162,6 @@ class PSPWorkbench(AnyObject):
 
         :param str i_interface_name:
         :param AnyObject i_object:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.psp_workbench.GetInterface(i_interface_name, i_object.com_object))

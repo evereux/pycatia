@@ -43,14 +43,9 @@ class StiEngine(AnyObject):
                 | 
                 |       The following example indicates how to retrieve the SmarTeam Integration
                 |       Engine.
-                |      
                 | 
                 |      Dim oStiEngine As StiEngine
                 |      Set oStiEngine = CATIA.GetItem("CAIEngine")
-                |      
-                | 
-                | 
-                |      
                 | 
                 | See also:
                 |     StiDBItem
@@ -73,7 +68,6 @@ class StiEngine(AnyObject):
                 |     Returns the Engine Integration Type.
                 |     Warning: Do Not use this method. It is Not implemented.
 
-        :return: str
         :rtype: str
         """
 
@@ -119,7 +113,6 @@ class StiEngine(AnyObject):
                 |              oStiEngine.UseGraphicalUI = True
                 |          End If
 
-        :return: bool
         :rtype: bool
         """
 
@@ -177,7 +170,6 @@ class StiEngine(AnyObject):
 
         :param int iobject_id:
         :param int iclass_id:
-        :return: StiDBItem
         :rtype: StiDBItem
         """
         return StiDBItem(self.sti_engine.BuildDocDBItemFromSmarTeamID(iobject_id, iclass_id))
@@ -225,7 +217,6 @@ class StiEngine(AnyObject):
 
         :param int iobject_id:
         :param int iclass_id:
-        :return: StiDBItem
         :rtype: StiDBItem
         """
         return StiDBItem(self.sti_engine.BuildFileDBItemFromSmarTeamID(iobject_id, iclass_id))
@@ -301,7 +292,6 @@ class StiEngine(AnyObject):
 
         :param str i_user_login:
         :param str i_user_password:
-        :return: None
         :rtype: None
         """
         return self.sti_engine.Connect(i_user_login, i_user_password)
@@ -332,7 +322,6 @@ class StiEngine(AnyObject):
                 |          (...)
                 |          oStiEngine.Disconnect
 
-        :return: None
         :rtype: None
         """
         return self.sti_engine.Disconnect()
@@ -378,7 +367,6 @@ class StiEngine(AnyObject):
                 |          oClassId = oStiEngine.GetSMARTEAMClassID(iStiDBItem)
 
         :param StiDBItem i_sti_db_item:
-        :return: int
         :rtype: int
         """
         return self.sti_engine.GetSMARTEAMClassID(i_sti_db_item.com_object)
@@ -424,7 +412,6 @@ class StiEngine(AnyObject):
                 |          oObjectId = oStiEngine.GetSMARTEAMObjectID(iStiDBItem)
 
         :param StiDBItem i_sti_db_item:
-        :return: int
         :rtype: int
         """
         return self.sti_engine.GetSMARTEAMObjectID(i_sti_db_item.com_object)
@@ -469,7 +456,6 @@ class StiEngine(AnyObject):
                 |          Set oStiDBItem = oStiEngine.GetStiDBItemFromAnyObject(productDocument01)
 
         :param AnyObject i_any_object:
-        :return: StiDBItem
         :rtype: StiDBItem
         """
         return StiDBItem(self.sti_engine.GetStiDBItemFromAnyObject(i_any_object.com_object))
@@ -516,7 +502,6 @@ class StiEngine(AnyObject):
                 |          Set oStiDBItem = oStiEngine.GetStiDBItemFromCATBSTR(iFullPath)
 
         :param str i_full_path:
-        :return: StiDBItem
         :rtype: StiDBItem
         """
         return StiDBItem(self.sti_engine.GetStiDBItemFromCATBSTR(i_full_path))
@@ -531,10 +516,10 @@ class StiEngine(AnyObject):
                 | 
                 |     Returns the Team PDM URL of a CATIAStiDBItem.
                 |     Note that the Team PDM URL has the following syntax:
-                |     “TeamPDM://DBExtractor?CLASSID.EQ.www.
-                |     AND.OBJECTID.EQ.zzz.AND.Vers.EQ.1”
+                |     "TeamPDM://DBExtractor?CLASSID.EQ.www.
+                |     AND.OBJECTID.EQ.zzz.AND.Vers.EQ.1"
                 |     The only values which are modified from a SmarTeam object to an other are
-                |     the numbers corresponding to the document “Class ID” (www) and “Object ID”
+                |     the numbers corresponding to the document "Class ID" (www) and "Object ID"
                 |     (zzz).
                 |     Note that this method is always executed With GUI. Indeed it returns a
                 |     SmarTeam panel displaying the TEAM PDM URL. It is so totally independent of the
@@ -566,7 +551,6 @@ class StiEngine(AnyObject):
                 |          oTeamPDMURL = oStiEngine.GetTeamPDMURL iStiDBItem
 
         :param StiDBItem i_sti_db_item:
-        :return: str
         :rtype: str
         """
         return self.sti_engine.GetTeamPDMURL(i_sti_db_item.com_object)
@@ -601,7 +585,6 @@ class StiEngine(AnyObject):
                 |            oStiEngine.Connect
                 |          End If
 
-        :return: bool
         :rtype: bool
         """
         return self.sti_engine.IsConnected()
@@ -677,7 +660,6 @@ class StiEngine(AnyObject):
                 |          oStiEngine.LifeCycleCheckIn iStiDBItem
 
         :param StiDBItem i_sti_db_item:
-        :return: None
         :rtype: None
         """
         return self.sti_engine.LifeCycleCheckIn(i_sti_db_item.com_object)
@@ -765,7 +747,6 @@ class StiEngine(AnyObject):
                 |          oStiEngine.LifeCycleCheckOut iStiDBItem
 
         :param StiDBItem i_sti_db_item:
-        :return: None
         :rtype: None
         """
         return self.sti_engine.LifeCycleCheckOut(i_sti_db_item.com_object)
@@ -855,7 +836,6 @@ class StiEngine(AnyObject):
                 |          oStiEngine.LifeCycleCheckOutPropagated iStiDBItem
 
         :param StiDBItem i_sti_db_item:
-        :return: None
         :rtype: None
         """
         return self.sti_engine.LifeCycleCheckOutPropagated(i_sti_db_item.com_object)
@@ -948,7 +928,6 @@ class StiEngine(AnyObject):
                 |          oStiEngine.LifeCycleNewRelease iStiDBItem
 
         :param StiDBItem i_sti_db_item:
-        :return: None
         :rtype: None
         """
         return self.sti_engine.LifeCycleNewRelease(i_sti_db_item.com_object)
@@ -1039,7 +1018,6 @@ class StiEngine(AnyObject):
                 |          oStiEngine.LifeCycleNewReleasePropagated iStiDBItem
 
         :param StiDBItem i_sti_db_item:
-        :return: None
         :rtype: None
         """
         return self.sti_engine.LifeCycleNewReleasePropagated(i_sti_db_item.com_object)
@@ -1131,7 +1109,6 @@ class StiEngine(AnyObject):
                 |          oStiEngine.LifeCycleRelease iStiDBItem
 
         :param StiDBItem i_sti_db_item:
-        :return: None
         :rtype: None
         """
         return self.sti_engine.LifeCycleRelease(i_sti_db_item.com_object)
@@ -1234,7 +1211,6 @@ class StiEngine(AnyObject):
                 |          oStiEngine.LifeCycleUndoCheckOut iStiDBItem
 
         :param StiDBItem i_sti_db_item:
-        :return: None
         :rtype: None
         """
         return self.sti_engine.LifeCycleUndoCheckOut(i_sti_db_item.com_object)
@@ -1286,7 +1262,6 @@ class StiEngine(AnyObject):
                 |          Set oStiEngine = CATIA.GetItem("CAIEngine")
                 |          oStiEngine.RefreshInfo
 
-        :return: None
         :rtype: None
         """
         return self.sti_engine.RefreshInfo()
@@ -1370,7 +1345,6 @@ class StiEngine(AnyObject):
                 |          oStiEngine.Save iStiDBItem
 
         :param StiDBItem i_sti_db_item:
-        :return: None
         :rtype: None
         """
         return self.sti_engine.Save(i_sti_db_item.com_object)

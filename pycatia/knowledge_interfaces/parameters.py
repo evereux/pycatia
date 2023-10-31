@@ -75,7 +75,6 @@ class Parameters(Collection):
                 |     Returns the root parameter set of a document. If it doesn't exist, it is
                 |     created.
 
-        :return: ParameterSet
         :rtype: ParameterSet
         """
         from pycatia.knowledge_interfaces.parameter_set import ParameterSet
@@ -92,7 +91,6 @@ class Parameters(Collection):
                 | 
                 |     Returns the collection of units.
 
-        :return: Units
         :rtype: Units
         """
 
@@ -144,7 +142,6 @@ class Parameters(Collection):
 
         :param str i_name:
         :param bool i_value:
-        :return: BoolParam
         :rtype: BoolParam
         """
         return BoolParam(self.parameters.CreateBoolean(i_name, i_value))
@@ -192,7 +189,6 @@ class Parameters(Collection):
         :param str i_name:
         :param str i_magnitude:
         :param float i_value:
-        :return: Dimension
         :rtype: Dimension
         """
         return Dimension(self.parameters.CreateDimension(i_name, i_magnitude, i_value))
@@ -229,7 +225,6 @@ class Parameters(Collection):
 
         :param str i_name:
         :param int i_value:
-        :return: IntParam
         :rtype: IntParam
         """
         return IntParam(self.parameters.CreateInteger(i_name, i_value))
@@ -259,7 +254,6 @@ class Parameters(Collection):
                 |           Set list1 = part1.Part.Parameters.CreateList ("ListName")
 
         :param str i_name:
-        :return: ListParameter
         :rtype: ListParameter
         """
         return ListParameter(self.parameters.CreateList(i_name))
@@ -296,7 +290,6 @@ class Parameters(Collection):
 
         :param str i_name:
         :param float i_value:
-        :return: RealParam
         :rtype: RealParam
         """
         return RealParam(self.parameters.CreateReal(i_name, i_value))
@@ -312,7 +305,6 @@ class Parameters(Collection):
                 |     Creates a set of parameters and appends it to argument iFather.
 
         :param AnyObject i_father:
-        :return: None
         :rtype: None
         """
         return self.parameters.CreateSetOfParameters(i_father.com_object)
@@ -346,7 +338,6 @@ class Parameters(Collection):
 
         :param str i_name:
         :param str i_value:
-        :return: StrParam
         :rtype: StrParam
         """
         return StrParam(self.parameters.CreateString(i_name, i_value))
@@ -362,7 +353,6 @@ class Parameters(Collection):
                 |     Returns a correct name of a feature to use it in a relation.
 
         :param AnyObject i_object:
-        :return: str
         :rtype: str
         """
         return self.parameters.GetNameToUseInRelation(i_object.com_object)
@@ -379,13 +369,24 @@ class Parameters(Collection):
     def is_parameter(self, index: cat_variant):
         """
         :param cat_variant index: parameter name or parameter number
-        :return: bool
         :rtype: bool
         """
         try:
             if self.parameters.Item(index):
                 return True
         except com_error:
+            return False
+
+    def is_list_parameter(self, index: cat_variant):
+        """
+        :param cat_variant index: parameter name or parameter number
+        :return: bool
+        :rtype: bool
+        """
+        try:
+            if self.parameters.Item(index).ValueList:
+                return True
+        except AttributeError:
             return False
 
     def item(self, index: cat_variant) -> any_parameter:
@@ -420,7 +421,6 @@ class Parameters(Collection):
 
 
         :param cat_variant index:
-        :return: any_parameter
         :rtype: any_parameter
         """
 
@@ -429,21 +429,25 @@ class Parameters(Collection):
         if not self.is_parameter(index):
             raise CATIAApplicationException(f'Could not find parameter name "{index}".')
 
-        if isinstance(self.parameters.Item(index).value, bool):
-            p = BoolParam(self.parameters.Item(index))
+        if not self.is_list_parameter(index):
 
-        elif isinstance(self.parameters.Item(index).value, int):
-            p = IntParam(self.parameters.Item(index))
+            if isinstance(self.parameters.Item(index).value, bool):
+                p = BoolParam(self.parameters.Item(index))
 
-        elif isinstance(self.parameters.Item(index).value, str):
-            p = StrParam(self.parameters.Item(index))
+            elif isinstance(self.parameters.Item(index).value, int):
+                p = IntParam(self.parameters.Item(index))
 
-        elif isinstance(self.parameters.Item(index).value, float):
-            p = RealParam(self.parameters.Item(index))
+            elif isinstance(self.parameters.Item(index).value, str):
+                p = StrParam(self.parameters.Item(index))
+
+            elif isinstance(self.parameters.Item(index).value, float):
+                p = RealParam(self.parameters.Item(index))
+
+            else:
+                raise CATIAApplicationException(f'Could not assign parameter name "{index}".')
 
         else:
-
-            raise CATIAApplicationException(f'Could not assign parameter name "{index}".')
+            p = ListParameter(self.parameters.Item(index))
 
         return p
 
@@ -475,7 +479,6 @@ class Parameters(Collection):
                 |          parameters.Remove("depth")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.parameters.Remove(i_index)
@@ -517,7 +520,6 @@ class Parameters(Collection):
 
         :param AnyObject i_object:
         :param bool i_recursively:
-        :return: Parameters
         :rtype: Parameters
         """
         return Parameters(self.parameters.SubList(i_object.com_object, i_recursively))

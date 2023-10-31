@@ -146,7 +146,6 @@ class StrPlates(Collection):
                 |              Set ThatPlate = Assembly.Item("EndPlate_1")
 
         :param cat_variant i_index:
-        :return: StrPlate
         :rtype: StrPlate
         """
         return StrPlate(self.str_plates.Item(i_index))
@@ -181,7 +180,6 @@ class StrPlates(Collection):
                 |              Assembly_1.Remove("EndPlate_1")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.str_plates.Remove(i_index)

@@ -74,7 +74,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnalysisLevelInfo(io_admin_level, io_locked)
@@ -111,7 +110,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlAccelLimitInfo(io_admin_level, io_locked)
@@ -148,7 +146,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlCautionZoneInfo(io_admin_level, io_locked)
@@ -185,7 +182,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlIOAnalysisInfo(io_admin_level, io_locked)
@@ -222,7 +218,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlIntDistInfo(io_admin_level, io_locked)
@@ -259,7 +254,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlIntfInfo(io_admin_level, io_locked)
@@ -296,7 +290,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlLinAccelLimitInfo(io_admin_level, io_locked)
@@ -333,7 +326,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlLinSpeedLimitInfo(io_admin_level, io_locked)
@@ -370,7 +362,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlMeasureInfo(io_admin_level, io_locked)
@@ -407,7 +398,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlRotAccelLimitInfo(io_admin_level, io_locked)
@@ -444,7 +434,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlRotSpeedLimitInfo(io_admin_level, io_locked)
@@ -481,7 +470,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlTravelLimitInfo(io_admin_level, io_locked)
@@ -518,7 +506,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAnlVelocityLimitInfo(io_admin_level, io_locked)
@@ -555,7 +542,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetAskAnlModeInfo(io_admin_level, io_locked)
@@ -592,7 +578,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetBeepModeInfo(io_admin_level, io_locked)
@@ -629,7 +614,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetClashColorInfo(io_admin_level, io_locked)
@@ -666,7 +650,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetClearanceColorInfo(io_admin_level, io_locked)
@@ -703,7 +686,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetColorModeInfo(io_admin_level, io_locked)
@@ -740,7 +722,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetDisplayAnlStatusInfo(io_admin_level, io_locked)
@@ -777,7 +758,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetEnableAnlModeInfo(io_admin_level, io_locked)
@@ -814,7 +794,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetSyncAnlSpecsInfo(io_admin_level, io_locked)
@@ -851,7 +830,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetVisualizationModeInfo(io_admin_level, io_locked)
@@ -888,7 +866,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetVoxelStaticAnlInfo(io_admin_level, io_locked)
@@ -925,7 +902,6 @@ class AnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_setting_att.GetWhiteModeInfo(io_admin_level, io_locked)
@@ -952,7 +928,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnalysisLevelLock(i_locked)
@@ -994,7 +969,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlAccelLimitLock(i_locked)
@@ -1036,7 +1010,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlCautionZoneLock(i_locked)
@@ -1078,7 +1051,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlIOAnalysisLock(i_locked)
@@ -1120,7 +1092,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlIntDistLock(i_locked)
@@ -1162,7 +1133,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlIntfLock(i_locked)
@@ -1204,7 +1174,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlLinAccelLimitLock(i_locked)
@@ -1246,7 +1215,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlLinSpeedLimitLock(i_locked)
@@ -1288,7 +1256,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlMeasureLock(i_locked)
@@ -1330,7 +1297,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlRotAccelLimitLock(i_locked)
@@ -1372,7 +1338,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlRotSpeedLimitLock(i_locked)
@@ -1414,7 +1379,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlTravelLimitLock(i_locked)
@@ -1456,7 +1420,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAnlVelocityLimitLock(i_locked)
@@ -1498,7 +1461,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetAskAnlModeLock(i_locked)
@@ -1540,7 +1502,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetBeepModeLock(i_locked)
@@ -1582,7 +1543,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetClashColorLock(i_locked)
@@ -1624,7 +1584,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetClearanceColorLock(i_locked)
@@ -1666,7 +1625,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetColorModeLock(i_locked)
@@ -1708,7 +1666,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetDisplayAnlStatusLock(i_locked)
@@ -1750,7 +1707,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetEnableAnlModeLock(i_locked)
@@ -1792,7 +1748,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetSyncAnlSpecsLock(i_locked)
@@ -1834,7 +1789,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetVisualizationModeLock(i_locked)
@@ -1876,7 +1830,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetVoxelStaticAnlLock(i_locked)
@@ -1918,7 +1871,6 @@ class AnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_setting_att.SetWhiteModeLock(i_locked)

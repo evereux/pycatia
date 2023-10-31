@@ -65,7 +65,6 @@ class DMUReview(AnyObject):
                 |             Activation = oDMUReview.Activation
                 |             oDMUReview.Activation = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -99,7 +98,6 @@ class DMUReview(AnyObject):
                 | 
                 |             Set cDMUReviews = oDMUReview.DMUReviews(9)
 
-        :return: DMUReviews
         :rtype: DMUReviews
         """
         from pycatia.navigator_interfaces.dmu_reviews import DMUReviews

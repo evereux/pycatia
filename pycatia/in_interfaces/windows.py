@@ -60,8 +60,7 @@ class Windows(Collection):
                 | 
                 |          CATIA.Windows.Arrange(catArrangeCascade)
 
-        :param int i_style:
-        :return: None
+        :param int i_style: enum cat_arrange_style
         :rtype: None
         """
         return self.windows.Arrange(i_style)
@@ -99,7 +98,6 @@ class Windows(Collection):
                 |          Set ThatWindow = CATIA.Windows.Item("MyWindow")
 
         :param cat_variant i_index:
-        :return: Window
         :rtype: Window
         """
         return Window(self.windows.Item(i_index))

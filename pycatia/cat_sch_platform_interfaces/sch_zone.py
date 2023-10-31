@@ -56,7 +56,6 @@ class SchZone(AnyObject):
                 |           ...
                 |          objThisIntf.UpdateBoundedElements
 
-        :return: None
         :rtype: None
         """
         return self.sch_zone.UpdateBoundedElements()

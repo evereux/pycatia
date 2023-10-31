@@ -45,7 +45,6 @@ class RenderingShootings(Collection):
                 | 
                 |     Adds a new shooting to the shootings collection.
 
-        :return: RenderingShooting
         :rtype: RenderingShooting
         """
         return RenderingShooting(self.rendering_shootings.Add())
@@ -80,7 +79,6 @@ class RenderingShootings(Collection):
                 |      Set MyShooting = RenderingShootings.Item(6)
 
         :param cat_variant i_index:
-        :return: RenderingShooting
         :rtype: RenderingShooting
         """
         return RenderingShooting(self.rendering_shootings.Item(i_index))
@@ -96,7 +94,6 @@ class RenderingShootings(Collection):
                 |     Removes a shooting from the shootings collection.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.rendering_shootings.Remove(i_index)
@@ -126,7 +123,6 @@ class RenderingShootings(Collection):
                 | 
                 |     Removes all shootings from the collection.
 
-        :return: None
         :rtype: None
         """
         return self.rendering_shootings.RemoveAll()

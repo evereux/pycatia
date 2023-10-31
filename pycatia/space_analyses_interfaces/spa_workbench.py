@@ -70,7 +70,6 @@ class SPAWorkbench(Workbench):
                 |             Dim TheClashesList As Clashes
                 |             Set TheClashesList = TheSPAWorkbench.Clashes
 
-        :return: Clashes
         :rtype: Clashes
         """
 
@@ -102,7 +101,6 @@ class SPAWorkbench(Workbench):
                 |             Dim TheDistancesList As Distances
                 |             Set TheDistancesList = TheSPAWorkbench.Distances
 
-        :return: Distances
         :rtype: Distances
         """
 
@@ -134,7 +132,6 @@ class SPAWorkbench(Workbench):
                 |             Dim TheInertiasList As Inertias
                 |             Set TheInertiasList = TheSPAWorkbench.Inertias
 
-        :return: Inertias
         :rtype: Inertias
         """
 
@@ -166,7 +163,6 @@ class SPAWorkbench(Workbench):
                 |             Dim TheSectionsList As Sections
                 |             Set TheSectionsList = TheSPAWorkbench.Sections
 
-        :return: Sections
         :rtype: Sections
         """
 
@@ -196,7 +192,6 @@ class SPAWorkbench(Workbench):
                 |             Set TheMeasurable = TheSPAWorkbench.GetMeasurable(referenceObject)
 
         :param Reference i_measured_item:
-        :return: Measurable
         :rtype: Measurable
         """
         return Measurable(self.spa_workbench.GetMeasurable(i_measured_item.com_object))

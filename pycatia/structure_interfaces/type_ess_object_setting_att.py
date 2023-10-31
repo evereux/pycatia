@@ -49,7 +49,6 @@ class TypeEssObjectSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -76,7 +75,6 @@ class TypeEssObjectSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -122,7 +120,6 @@ class TypeEssObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.type_ess_object_setting_att.GetMemberTypesInfo(io_admin_level, io_locked)
@@ -159,7 +156,6 @@ class TypeEssObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.type_ess_object_setting_att.GetPlateTypesInfo(io_admin_level, io_locked)
@@ -186,7 +182,6 @@ class TypeEssObjectSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.type_ess_object_setting_att.SetMemberTypesLock(i_locked)
@@ -228,7 +223,6 @@ class TypeEssObjectSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.type_ess_object_setting_att.SetPlateTypesLock(i_locked)

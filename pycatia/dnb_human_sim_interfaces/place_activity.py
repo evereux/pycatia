@@ -51,7 +51,6 @@ class PlaceActivity(WorkerActivity):
 
         :param MfgAssembly p_picked_item:
         :param tuple vb_sav:
-        :return: None
         :rtype: None
         """
         return self.place_activity.AddPlacedMfgAssembly(p_picked_item.com_object, vb_sav)
@@ -84,7 +83,6 @@ class PlaceActivity(WorkerActivity):
 
         :param Product p_picked_item:
         :param tuple vb_sav:
-        :return: None
         :rtype: None
         """
         return self.place_activity.AddPlacedProduct(p_picked_item.com_object, vb_sav)
@@ -139,7 +137,6 @@ class PlaceActivity(WorkerActivity):
                 |             R3z:z-component of z axis
 
         :param tuple o_offset_trans_list:
-        :return: None
         :rtype: None
         """
         return self.place_activity.GetOffset(o_offset_trans_list)
@@ -170,7 +167,6 @@ class PlaceActivity(WorkerActivity):
                 |     Returns or Sets Placed Products
 
         :param tuple p_placed_prods:
-        :return: None
         :rtype: None
         """
         return self.place_activity.GetPlacedProducts(p_placed_prods)
@@ -201,7 +197,6 @@ class PlaceActivity(WorkerActivity):
                 |     Removes a Manufacturing Assembly from the list of placed items
 
         :param MfgAssembly p_picked_item:
-        :return: None
         :rtype: None
         """
         return self.place_activity.RemovePlacedMfgAssembly(p_picked_item.com_object)
@@ -232,7 +227,6 @@ class PlaceActivity(WorkerActivity):
                 |     Removes a product from the list of placed items
 
         :param Product p_picked_item:
-        :return: None
         :rtype: None
         """
         return self.place_activity.RemovePlacedProduct(p_picked_item.com_object)
@@ -313,7 +307,6 @@ class PlaceActivity(WorkerActivity):
                 |         oOffsetTransList( 11 )  = 0
 
         :param tuple o_offset_trans_list:
-        :return: None
         :rtype: None
         """
         return self.place_activity.SetOffset(o_offset_trans_list)
@@ -344,7 +337,6 @@ class PlaceActivity(WorkerActivity):
                 |     Sets or append a link to a Pick activity
 
         :param Activity pick_act:
-        :return: None
         :rtype: None
         """
         return self.place_activity.SetPickAct(pick_act.com_object)
@@ -373,7 +365,6 @@ class PlaceActivity(WorkerActivity):
                 | o Sub SetPlacedProducts(CATSafeArrayVariant pPlacedProds)
 
         :param tuple p_placed_prods:
-        :return: None
         :rtype: None
         """
         return self.place_activity.SetPlacedProducts(p_placed_prods)

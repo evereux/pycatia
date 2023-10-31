@@ -61,7 +61,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         OVERCLOSED
                 |         TOLERANCE
 
-        :return: int
+        :return: enum adjust_method_type
         :rtype: int
         """
 
@@ -70,7 +70,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
     @adjust_method.setter
     def adjust_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum adjust_method_type
         """
 
         self.abq_surface_to_surface_contact.AdjustMethod = value
@@ -89,7 +89,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |     Returns:
                 |         The tolerance value of the contact pair.
 
-        :return: float
         :rtype: float
         """
 
@@ -117,7 +116,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |     Returns:
                 |         The connection property.
 
-        :return: AnalysisEntity
         :rtype: AnalysisEntity
         """
 
@@ -150,7 +148,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         SURFACETOSURFACE
                 |         NODETOSURFACE
 
-        :return: int
+        :return: enum formulation_option_type
         :rtype: int
         """
 
@@ -159,7 +157,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
     @formulation_option.setter
     def formulation_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum formulation_option_type
         """
 
         self.abq_surface_to_surface_contact.FormulationOption = value
@@ -179,7 +177,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |     Returns:
                 |         The specified ABQMechConnBehavior.
 
-        :return: ABQProperty
         :rtype: ABQProperty
         """
 
@@ -211,7 +208,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         overclosure.
                 |         returns 0 if no interference fit is defined. Usage: Dim abqSurfCont As ABQSurfaceToSurfaceContact Dim clearance As double Set clearance = 2.5 abqSurfCont.InterferenceFit = clearance
 
-        :return: float
         :rtype: float
         """
 
@@ -243,7 +239,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         returns NULL if no interference fit is defined.
                 |         returns E_FAIL if unable to find amplitude object. Usage: Dim abqSurfCont As ABQSurfaceToSurfaceContact Dim clearance As double Set clearance = 2.5 abqSurfCont.InterferenceFit = clearance Dim Amp As ABQProperty ....(Get the amplitude property) abqSurfCont.InterferenceFitAmplitude = Amp;
 
-        :return: ABQProperty
         :rtype: ABQProperty
         """
 
@@ -276,7 +271,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         FINITE
                 |         SMALL
 
-        :return: int
+        :return: enum sliding_type
         :rtype: int
         """
 
@@ -285,7 +280,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
     @sliding.setter
     def sliding(self, value: int):
         """
-        :param int value:
+        :param int value: enum sliding_type
         """
 
         self.abq_surface_to_surface_contact.Sliding = value
@@ -306,7 +301,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         A boolean specifying whether the master surface surface is swapped as
                 |         slave.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -341,7 +335,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         TRUE
                 |         FALSE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -371,7 +364,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |     Returns:
                 |         boolean specifying whether user defined amplitude is active.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -393,7 +385,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         A boolean specifying whether the master surface is specified as the
                 |         negative side.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -423,7 +414,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         A boolean specifying whether the slave surface is specified as the
                 |         negative side.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -462,7 +452,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
 
         :param Product i_reference:
         :param Constraint i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_surface_to_surface_contact.AddSupportFromConstraint(
@@ -510,7 +499,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_surface_to_surface_contact.AddSupportFromReference(i_reference.com_object, i_support.com_object)
@@ -540,7 +528,6 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 | 
                 |     Removes interference fit from a contact pair feature.
 
-        :return: None
         :rtype: None
         """
         return self.abq_surface_to_surface_contact.RemoveInterferenceFit()

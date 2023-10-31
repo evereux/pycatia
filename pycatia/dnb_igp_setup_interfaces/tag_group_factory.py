@@ -78,7 +78,6 @@ class TagGroupFactory(AnyObject):
 
         :param TagGroup i_tag_group:
         :param TagGroup io_tag_group:
-        :return: TagGroup
         :rtype: TagGroup
         """
         return TagGroup(self.tag_group_factory.CopyTagGroup(i_tag_group.com_object, io_tag_group.com_object))
@@ -161,7 +160,6 @@ class TagGroupFactory(AnyObject):
         :param bool i_modify_reference:
         :param Product i_product:
         :param TagGroup o_tag_group:
-        :return: None
         :rtype: None
         """
         return self.tag_group_factory.CreateTagGroup(
@@ -230,7 +228,6 @@ class TagGroupFactory(AnyObject):
 
         :param str i_tag_group_name:
         :param TagGroup o_tag_group:
-        :return: None
         :rtype: None
         """
         return self.tag_group_factory.CreateTagGroupInDoc(i_tag_group_name, o_tag_group.com_object)
@@ -281,7 +278,6 @@ class TagGroupFactory(AnyObject):
                 |           objTagGroupFactory.DeleteTagGroup objTagGroup(1)
 
         :param TagGroup i_tag_group:
-        :return: TagGroup
         :rtype: TagGroup
         """
         return TagGroup(self.tag_group_factory.DeleteTagGroup(i_tag_group.com_object))
@@ -342,7 +338,6 @@ class TagGroupFactory(AnyObject):
         :param TagGroup i_tag_group:
         :param Product io_product:
         :param bool i_modify_reference:
-        :return: TagGroup
         :rtype: TagGroup
         """
         return TagGroup(

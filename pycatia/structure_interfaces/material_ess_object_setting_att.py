@@ -48,7 +48,6 @@ class MaterialEssObjectSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -75,7 +74,6 @@ class MaterialEssObjectSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -121,7 +119,6 @@ class MaterialEssObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.material_ess_object_setting_att.GetMemberMaterialInfo(io_admin_level, io_locked)
@@ -158,7 +155,6 @@ class MaterialEssObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.material_ess_object_setting_att.GetPlateMaterialInfo(io_admin_level, io_locked)
@@ -185,7 +181,6 @@ class MaterialEssObjectSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.material_ess_object_setting_att.SetMemberMaterialLock(i_locked)
@@ -227,7 +222,6 @@ class MaterialEssObjectSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.material_ess_object_setting_att.SetPlateMaterialLock(i_locked)

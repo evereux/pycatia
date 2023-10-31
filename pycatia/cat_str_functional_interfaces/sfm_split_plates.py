@@ -69,7 +69,6 @@ class SFMSplitPlates(Collection):
                 |              Next
 
         :param cat_variant i_index:
-        :return: SFMSplitPlate
         :rtype: SFMSplitPlate
         """
         return SFMSplitPlate(self.sfm_split_plates.Item(i_index))

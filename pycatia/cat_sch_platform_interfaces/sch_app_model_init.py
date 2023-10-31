@@ -59,7 +59,6 @@ class SchAppModelInit(AnyObject):
                 |          objThisIntf.AppInitobjArg1
 
         :param Document i_doc:
-        :return: None
         :rtype: None
         """
         return self.sch_app_model_init.AppInit(i_doc.com_object)

@@ -67,7 +67,6 @@ class OrderGenerator(AnyObject):
                 |         SOI response, which in-turn can be obtained using
                 |         OrderGenerator.GetErrorDescription
 
-        :return: int
         :rtype: int
         """
         return self.order_generator.CreateShopOrder()
@@ -90,7 +89,6 @@ class OrderGenerator(AnyObject):
                 |             intel_a/resources/xml/DPM_SOR/CreateSOI.xml
 
         :param str i_xml_input:
-        :return: None
         :rtype: None
         """
         return self.order_generator.CreateShopOrder2(i_xml_input)
@@ -115,7 +113,6 @@ class OrderGenerator(AnyObject):
                 |         oErrDescription Create Shop Order API return code description
 
         :param int error_code:
-        :return: str
         :rtype: str
         """
         return self.order_generator.GetErrorDescription(error_code)
@@ -140,7 +137,6 @@ class OrderGenerator(AnyObject):
 
         :param str i_dpe_login_id:
         :param str i_dpe_password:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_DPELoginInfo(i_dpe_login_id, i_dpe_password)
@@ -162,7 +158,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_Export3DXML(i_required)
@@ -199,7 +194,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_ExportImageCapture(i_required)
@@ -236,7 +230,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_ExportJobXML(i_required)
@@ -273,7 +266,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_ExportPrecXML(i_required)
@@ -310,7 +302,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_FTP(i_required)
@@ -366,7 +357,6 @@ class OrderGenerator(AnyObject):
         :param str iftp_login_name:
         :param str iftp_password:
         :param str iftp_outputlocation:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_FTPServerInformation(
@@ -603,7 +593,6 @@ class OrderGenerator(AnyObject):
                 |         method for additional information
 
         :param str ifilter_input_string:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_FilterInputString(ifilter_input_string)
@@ -625,7 +614,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_GeneratePackNGo(i_required)
@@ -662,7 +650,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_GenerateSMGMappingXML(i_required)
@@ -699,7 +686,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_GenerateSMGXML(i_required)
@@ -735,7 +721,6 @@ class OrderGenerator(AnyObject):
                 |             Path to the SMG Generator EXE
 
         :param str i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_GenerateSMGXmlExePath(i_required)
@@ -757,7 +742,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_LitePackNGo(i_required)
@@ -797,7 +781,6 @@ class OrderGenerator(AnyObject):
                 |                 User
 
         :param str i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_LoadContext(i_required)
@@ -821,7 +804,6 @@ class OrderGenerator(AnyObject):
                 |                 PublishedSimulation
 
         :param str i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_LoadPositions(i_required)
@@ -843,7 +825,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_ManufacturingContext(i_required)
@@ -879,7 +860,6 @@ class OrderGenerator(AnyObject):
                 |             Process Name to be set for PackNGo CATProcess
 
         :param str iprocess_name:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_ProcessName(iprocess_name)
@@ -904,7 +884,6 @@ class OrderGenerator(AnyObject):
                 |                 DPMMultiSOIGenerationAtCS
 
         :param str i_requset_type:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_RequestType(i_requset_type)
@@ -938,7 +917,6 @@ class OrderGenerator(AnyObject):
         :param str i_proj_id:
         :param str i_requested_node_id:
         :param str i_effectivity:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_RequestedNodeDetails(i_proj_id, i_requested_node_id, i_effectivity)
@@ -960,7 +938,6 @@ class OrderGenerator(AnyObject):
                 |             data
 
         :param bool i_encryptmode:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_SetEncryptionMode(i_encryptmode)
@@ -996,7 +973,6 @@ class OrderGenerator(AnyObject):
                 |             Transaction ID
 
         :param str i_transaction_id:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_TransactionID(i_transaction_id)
@@ -1018,7 +994,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_UpdatereleaseTable(i_required)
@@ -1055,7 +1030,6 @@ class OrderGenerator(AnyObject):
                 |             Legal values: TRUE/FALSE
 
         :param bool i_required:
-        :return: None
         :rtype: None
         """
         return self.order_generator.set_Zip(i_required)

@@ -62,7 +62,6 @@ class SchGRRFactory(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.CreateGRRCntr
 
-        :return: SchGRRCntr
         :rtype: SchGRRCntr
         """
         return SchGRRCntr(self.sch_grr_factory.CreateGRRCntr())
@@ -95,7 +94,6 @@ class SchGRRFactory(AnyObject):
                 |          Set objArg2 = objThisIntf.CreateGRRGroup(objArg1)
 
         :param SchListOfObjects i_l_primitive:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.sch_grr_factory.CreateGRRGroup(i_l_primitive.com_object))
@@ -129,7 +127,6 @@ class SchGRRFactory(AnyObject):
 
         :param tuple i_l_db_line_path:
         :param SchGRRRoute o_grr_route:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_factory.CreateGRRRoute(i_l_db_line_path, o_grr_route.com_object)
@@ -179,7 +176,6 @@ class SchGRRFactory(AnyObject):
 
         :param tuple i_db_xy_seed_pt:
         :param SchGRRRouteEllipse o_grr_route_ellipse:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_factory.CreateGRRRouteEllipse(i_db_xy_seed_pt, o_grr_route_ellipse.com_object)
@@ -227,7 +223,6 @@ class SchGRRFactory(AnyObject):
                 |          Set objArg2 = objThisIntf.CreateGRRZone(objArg1)
 
         :param SchListOfObjects i_l_primitive:
-        :return: SchGRRZone
         :rtype: SchGRRZone
         """
         return SchGRRZone(self.sch_grr_factory.CreateGRRZone(i_l_primitive.com_object))

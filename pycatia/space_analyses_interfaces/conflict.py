@@ -15,7 +15,6 @@ from pycatia.system_interfaces.system_service import SystemService
 
 
 class Conflict(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -70,7 +69,6 @@ class Conflict(AnyObject):
                 | 
                 |                 NewConflict.Comment = "OK : plastic part"
 
-        :return: str
         :rtype: str
         """
 
@@ -106,7 +104,7 @@ class Conflict(AnyObject):
                 |             Dim anInfo As CatConflictComparison
                 |             anInfo = NewConflict.ComparisonInfo
 
-        :return: int
+        :return: enum cat_conflict_comparison
         :rtype: int
         """
 
@@ -132,7 +130,6 @@ class Conflict(AnyObject):
                 |             Dim aProduct As Product
                 |             Set aProduct = NewConflict.FirstProduct
 
-        :return: Product
         :rtype: Product
         """
 
@@ -158,7 +155,6 @@ class Conflict(AnyObject):
                 |             Dim aProduct As Product
                 |             Set aProduct = NewConflict.SecondProduct
 
-        :return: Product
         :rtype: Product
         """
 
@@ -194,7 +190,7 @@ class Conflict(AnyObject):
                 | 
                 |                 NewConflict.Status = CatConflictStatusIrrelevant
 
-        :return: int
+        :return: enum cat_conflict_status
         :rtype: int
         """
 
@@ -203,7 +199,7 @@ class Conflict(AnyObject):
     @status.setter
     def status(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_conflict_status
         """
 
         self.conflict.Status = value
@@ -228,7 +224,7 @@ class Conflict(AnyObject):
                 |             Dim conflictType As CatConflictType
                 |             conflictType = NewConflict.Type
 
-        :return: int
+        :return: enum cat_conflict_type
         :rtype: int
         """
 
@@ -257,7 +253,6 @@ class Conflict(AnyObject):
                 |             Dim conflictValue As double
                 |             conflictValue = NewConflict.Value
 
-        :return: float
         :rtype: float
         """
 
@@ -293,7 +288,6 @@ class Conflict(AnyObject):
                 |             Dim Coordinates (2)
                 |             NewConflict.GetFirstPointCoordinates Coordinates
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -339,7 +333,6 @@ class Conflict(AnyObject):
                 |             Dim Coordinates (2)
                 |             NewConflict.GetSecondPointCoordinates Coordinates
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -356,4 +349,4 @@ class Conflict(AnyObject):
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Conflict(name="{ self.name }")'
+        return f'Conflict(name="{self.name}")'

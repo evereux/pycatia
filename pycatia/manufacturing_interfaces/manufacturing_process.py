@@ -51,7 +51,6 @@ class ManufacturingProcess(AnyObject):
                 | 
                 |          Set SetupsList = CurrentProcess.Setups
 
-        :return: MfgActivities
         :rtype: MfgActivities
         """
 

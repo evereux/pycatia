@@ -61,7 +61,6 @@ class ManufacturingSetup3(ManufacturingActivity):
         :param AnyObject i_geometry:
         :param AnyObject i_product:
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_setup3.AddFixture(i_geometry.com_object, i_product.com_object, i_position)

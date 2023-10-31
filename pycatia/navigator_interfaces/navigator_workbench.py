@@ -70,7 +70,6 @@ class NavigatorWorkbench(Workbench):
                 |             Dim TheAnnotatedViewsList As AnnotatedViews
                 |             Set TheAnnotatedViewsList = TheNavigatorWorkbench.AnnotatedViews
 
-        :return: AnnotatedViews
         :rtype: AnnotatedViews
         """
 
@@ -87,7 +86,6 @@ class NavigatorWorkbench(Workbench):
                 | 
                 |     Returns the DMU DataFlow object.
 
-        :return: DMUDataFlow
         :rtype: DMUDataFlow
         """
 
@@ -119,7 +117,6 @@ class NavigatorWorkbench(Workbench):
                 |             Dim TheGroupsList As Groups
                 |             Set TheGroupsList = TheNavigatorWorkbench.Groups
 
-        :return: Groups
         :rtype: Groups
         """
 
@@ -151,7 +148,6 @@ class NavigatorWorkbench(Workbench):
                 |             Dim HyperlinksList As Hyperlinks
                 |             Set HyperlinksList = TheNavigatorWorkbench.Hyperlinks
 
-        :return: Hyperlinks
         :rtype: Hyperlinks
         """
 
@@ -183,7 +179,6 @@ class NavigatorWorkbench(Workbench):
                 |             Dim TheMarker3DsList As AnnotatedViews
                 |             Set TheMarker3DsList = TheNavigatorWorkbench.Marker3Ds
 
-        :return: Marker3Ds
         :rtype: Marker3Ds
         """
 
@@ -223,7 +218,6 @@ class NavigatorWorkbench(Workbench):
 
         :param AnnotatedView i_annotated_view:
         :param int i_view_option:
-        :return: None
         :rtype: None
         """
         return self.navigator_workbench.AdvancedView(i_annotated_view.com_object, i_view_option)
@@ -277,7 +271,6 @@ class NavigatorWorkbench(Workbench):
                 |             iOrder = TheNavigatorWorkbench.GetOrder(NewAnnotatedView)
 
         :param AnyObject i_object:
-        :return: int
         :rtype: int
         """
         return self.navigator_workbench.GetOrder(i_object.com_object)
@@ -316,7 +309,6 @@ class NavigatorWorkbench(Workbench):
 
         :param AnyObject i_object:
         :param int i_new_rank:
-        :return: None
         :rtype: None
         """
         return self.navigator_workbench.SetOrder(i_object.com_object, i_new_rank)
@@ -345,7 +337,6 @@ class NavigatorWorkbench(Workbench):
                 |             TheNavigatorWorkbench.View(NewAnnotatedView)
 
         :param AnnotatedView i_annotated_view:
-        :return: None
         :rtype: None
         """
         return self.navigator_workbench.View(i_annotated_view.com_object)

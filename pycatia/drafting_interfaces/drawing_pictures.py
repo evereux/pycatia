@@ -84,7 +84,6 @@ class DrawingPictures(Collection):
         :param Path i_drawing_picture_path:
         :param float i_position_x:
         :param float i_position_y:
-        :return: DrawingPicture
         :rtype: DrawingPicture
         """
 
@@ -131,7 +130,6 @@ class DrawingPictures(Collection):
                 |      Set ThisDrawingPicture = MyView.Pictures.Item(2)
 
         :param cat_variant i_index:
-        :return: DrawingPicture
         :rtype: DrawingPicture
         """
         return DrawingPicture(self.drawing_pictures.Item(i_index))
@@ -169,7 +167,6 @@ class DrawingPictures(Collection):
                 |      MyView.Pictures.Remove(3)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.drawing_pictures.Remove(i_index)

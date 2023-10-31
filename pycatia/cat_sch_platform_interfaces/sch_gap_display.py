@@ -58,7 +58,6 @@ class SchGapDisplay(AnyObject):
                 |          objThisIntf.IsGapShownbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_gap_display.IsGapShown(o_b_yes)
@@ -105,7 +104,6 @@ class SchGapDisplay(AnyObject):
                 |          objThisIntf.SetGapobjArg1
 
         :param SchListOfObjects i_luk_routes:
-        :return: None
         :rtype: None
         """
         return self.sch_gap_display.SetGap(i_luk_routes.com_object)
@@ -145,7 +143,6 @@ class SchGapDisplay(AnyObject):
                 |          objThisIntf.UnsetGapobjArg1
 
         :param SchListOfObjects i_luk_routes:
-        :return: None
         :rtype: None
         """
         return self.sch_gap_display.UnsetGap(i_luk_routes.com_object)

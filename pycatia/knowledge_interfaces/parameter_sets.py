@@ -68,7 +68,6 @@ class ParameterSets(Collection):
                 |     corresponds to this collection.
 
         :param str i_name:
-        :return: ParameterSet
         :rtype: ParameterSet
         """
         return ParameterSet(self.parameter_sets.CreateSet(i_name))
@@ -102,7 +101,6 @@ class ParameterSets(Collection):
                 |          Set theSet = parameterSets.Item("Parameters.1")
 
         :param cat_variant i_index:
-        :return: ParameterSet
         :rtype: ParameterSet
         """
         return ParameterSet(self.parameter_sets.Item(i_index))

@@ -74,7 +74,6 @@ class Affinity(Shape):
                 |           Set oHybridShape=oAffinity.HybridShape
                 |           oHybridShape.ElemToAffinity = reference1
 
-        :return: HybridShape
         :rtype: HybridShape
         """
 

@@ -57,7 +57,6 @@ class HybridShapeConnect(HybridShape):
                 |     Returns or sets the base curve.
                 |     Do not use this property
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -94,7 +93,6 @@ class HybridShapeConnect(HybridShape):
                 | 
                 |          hybConnectCurve.Base Curve = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -120,7 +118,6 @@ class HybridShapeConnect(HybridShape):
                 |     Gets or Sets the continuity on first curve.
                 |     FirstContinuity = 0 : Point continuity = 1 : Tangency continuity = 2 : Curvature continuity
 
-        :return: int
         :rtype: int
         """
 
@@ -145,7 +142,6 @@ class HybridShapeConnect(HybridShape):
                 | 
                 |     Gets or Sets the first reference curve. new first reference curve
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -171,7 +167,6 @@ class HybridShapeConnect(HybridShape):
                 |     Gets or Sets the orientation of first curve
                 |     FirstOrientation = 1 : SameOrientation. = -1 : InvertOrientation. = 2 : KoOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -196,7 +191,6 @@ class HybridShapeConnect(HybridShape):
                 | 
                 |     Gets or Sets the first reference point. new first reference point
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -232,7 +226,6 @@ class HybridShapeConnect(HybridShape):
                 |          Dim firstCurveTension As CATIARealParam
                 |          firstCurveTension = hybConnect.FirstTension
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -250,7 +243,6 @@ class HybridShapeConnect(HybridShape):
                 |     Gets or Sets the continuity on second curve. SecondContinuity = 0 : Point continuity = 1 :
                 |     Tangency continuity = 2 : Curvature continuity
 
-        :return: int
         :rtype: int
         """
 
@@ -275,7 +267,6 @@ class HybridShapeConnect(HybridShape):
                 | 
                 |     Gets or Sets the second reference curve. new second reference curve
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -301,7 +292,6 @@ class HybridShapeConnect(HybridShape):
                 |     Gets or Sets the orientation of second curve SecondOrientation = 1 : SameOrientation. = -1 :
                 |     InvertOrientation. = 2 : KoOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -326,7 +316,6 @@ class HybridShapeConnect(HybridShape):
                 | 
                 |     Gets or Sets the second reference point. new second reference point
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -362,7 +351,6 @@ class HybridShapeConnect(HybridShape):
                 |          Dim secondCurveTension As CATIARealParam
                 |          secondCurveTension = hybConnect.SecondTension
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -380,7 +368,6 @@ class HybridShapeConnect(HybridShape):
                 |     Gets or Sets the trim mode. Trim = FALSE : Connected curves are not trimmed. = TRUE :
                 |     Connected curves are trimmed.
 
-        :return: bool
         :rtype: bool
         """
 

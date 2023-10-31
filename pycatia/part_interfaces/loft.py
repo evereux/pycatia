@@ -62,7 +62,6 @@ class Loft(Shape):
                 |           Set oHybridShape=oLoft.HybridShape
                 |           oHybridShape.SectionCoupling = 2
 
-        :return: HybridShape
         :rtype: HybridShape
         """
 

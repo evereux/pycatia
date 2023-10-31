@@ -57,7 +57,6 @@ class FixTogethers(Collection):
                 | 
                 |          Set newFixTogether = fixTogethers.Add
 
-        :return: FixTogether
         :rtype: FixTogether
         """
         return FixTogether(self.fix_togethers.Add())
@@ -96,7 +95,6 @@ class FixTogethers(Collection):
                 |          Set thatFixTogether = fixTogetherColl.Item("MyFixTogether")
 
         :param cat_variant i_index:
-        :return: FixTogether
         :rtype: FixTogether
         """
         return FixTogether(self.fix_togethers.Item(i_index))
@@ -130,7 +128,6 @@ class FixTogethers(Collection):
                 |      fixTogetherColl.Remove(fixTogetherColl.Count)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.fix_togethers.Remove(i_index)

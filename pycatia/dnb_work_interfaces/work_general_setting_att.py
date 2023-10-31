@@ -55,7 +55,6 @@ class WorkGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -82,7 +81,6 @@ class WorkGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -109,7 +107,6 @@ class WorkGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -136,7 +133,6 @@ class WorkGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -163,7 +159,6 @@ class WorkGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -190,7 +185,6 @@ class WorkGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -217,7 +211,6 @@ class WorkGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -263,7 +256,6 @@ class WorkGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.work_general_setting_att.GetAnnotationActivityInfo(io_admin_level, io_locked)
@@ -300,7 +292,6 @@ class WorkGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.work_general_setting_att.GetDNBWINumColumnListInfo(io_admin_level, io_locked)
@@ -337,7 +328,6 @@ class WorkGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.work_general_setting_att.GetMoveActivityInfo(io_admin_level, io_locked)
@@ -374,7 +364,6 @@ class WorkGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.work_general_setting_att.GetStyleSheetPathInfo(io_admin_level, io_locked)
@@ -411,7 +400,6 @@ class WorkGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.work_general_setting_att.GetTextActivityInfo(io_admin_level, io_locked)
@@ -448,7 +436,6 @@ class WorkGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.work_general_setting_att.GetViewPointActivityInfo(io_admin_level, io_locked)
@@ -485,7 +472,6 @@ class WorkGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.work_general_setting_att.GetVisibilityActivityInfo(io_admin_level, io_locked)
@@ -512,7 +498,6 @@ class WorkGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.work_general_setting_att.SetAnnotationActivityLock(i_locked)
@@ -541,7 +526,6 @@ class WorkGeneralSettingAtt(SettingController):
                 | o Sub SetDNBWINumColumnListLock(boolean iLocked)
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.work_general_setting_att.SetDNBWINumColumnListLock(i_locked)
@@ -583,7 +567,6 @@ class WorkGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.work_general_setting_att.SetMoveActivityLock(i_locked)
@@ -625,7 +608,6 @@ class WorkGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.work_general_setting_att.SetStyleSheetPathLock(i_locked)
@@ -667,7 +649,6 @@ class WorkGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.work_general_setting_att.SetTextActivityLock(i_locked)
@@ -709,7 +690,6 @@ class WorkGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.work_general_setting_att.SetViewPointActivityLock(i_locked)
@@ -751,7 +731,6 @@ class WorkGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.work_general_setting_att.SetVisibilityActivityLock(i_locked)

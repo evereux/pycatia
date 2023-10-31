@@ -50,7 +50,6 @@ class FTASettingAtt(SettingController):
                 |     Role: When set to True, the FTA 3D Annotation representations are saved in
                 |     CGR. Otherwise, they are not saved.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -75,7 +74,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Returns the AnalysisDisplayMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -102,7 +100,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -127,7 +124,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Returns the AnnotDimInvalid parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -152,7 +148,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Returns the AnnotDimOnDeletedGeom parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -177,7 +172,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Returns the AnnotDimOnUnloadedGeom parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -202,7 +196,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Returns the AnnotOnZeroZSetting parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -230,7 +223,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -255,7 +247,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Returns the CATFTAChamferGeneralTolClass parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -280,7 +271,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Returns the CATFTAEdgesLineType parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -305,7 +295,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Returns the CATFTAEdgesThickness parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -330,7 +319,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Returns the CATFTAUFAutoTolerancing parameter.
 
-        :return: str
         :rtype: str
         """
 
@@ -355,7 +343,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Returns the CATFTAUseLastTolerances parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -382,7 +369,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -410,7 +396,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -437,7 +422,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -465,7 +449,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -492,7 +475,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -520,7 +502,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -548,7 +529,7 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
+        :return: enum catfta_dim_configure_snapping
         :rtype: int
         """
 
@@ -557,7 +538,7 @@ class FTASettingAtt(SettingController):
     @dim_configure_snapping.setter
     def dim_configure_snapping(self, value: int):
         """
-        :param int value:
+        :param int value: enum catfta_dim_configure_snapping
         """
 
         self.fta_setting_att.DimConfigureSnapping = value
@@ -575,7 +556,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -602,7 +582,7 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
+        :return: enum catfta_dim_create_on
         :rtype: int
         """
 
@@ -630,7 +610,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -658,7 +637,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -686,7 +664,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -713,7 +690,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -740,7 +716,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -771,7 +746,6 @@ class FTASettingAtt(SettingController):
                 |             Output value of the DimLineUpOffsetBetDimAngle. If return code
                 |             E_FAIL oValue is not obtained. If return code S_OK oValue is obtained.
 
-        :return: float
         :rtype: float
         """
 
@@ -802,7 +776,6 @@ class FTASettingAtt(SettingController):
                 |             Output value of the DimLineUpOffsetBetDimLength. If return code
                 |             E_FAIL oValue is not obtained. If return code S_OK oValue is obtained.
 
-        :return: float
         :rtype: float
         """
 
@@ -833,7 +806,6 @@ class FTASettingAtt(SettingController):
                 |             Output value of the DimLineUpOffsetToRefAngle. If return code
                 |             E_FAIL oValue is not obtained. If return code S_OK oValue is obtained.
 
-        :return: float
         :rtype: float
         """
 
@@ -864,7 +836,6 @@ class FTASettingAtt(SettingController):
                 |             Output value of the DimLineUpOffsetToRefLength. If return code
                 |             E_FAIL oValue is not obtained. If return code S_OK oValue is obtained.
 
-        :return: float
         :rtype: float
         """
 
@@ -891,7 +862,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -918,7 +888,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -945,7 +914,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -973,7 +941,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1001,7 +968,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1029,7 +995,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1061,7 +1026,6 @@ class FTASettingAtt(SettingController):
                 |             return code E_FAIL oValue is not obtained. If return code S_OK oValue is
                 |             obtained.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1093,7 +1057,6 @@ class FTASettingAtt(SettingController):
                 |             If return code E_FAIL oValue is not obtained. If return code S_OK oValue is
                 |             obtained.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1120,7 +1083,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1148,7 +1110,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1176,7 +1137,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1203,7 +1163,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1231,7 +1190,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1259,7 +1217,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1286,7 +1243,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1313,7 +1269,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -1340,7 +1295,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1367,7 +1321,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1394,7 +1347,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1422,7 +1374,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1449,7 +1400,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1476,7 +1426,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1503,7 +1452,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1530,7 +1478,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1557,7 +1504,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -1584,7 +1530,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1613,7 +1558,6 @@ class FTASettingAtt(SettingController):
                 |     Role: When set to True, the FTA 3D Annotation representations are saved in
                 |     CGR. Otherwise, they are not saved.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1640,7 +1584,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1667,7 +1610,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1692,7 +1634,6 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Returns the TrueDimension parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1721,7 +1662,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetAlphabeticOrderInfo(admin_level, o_locked)
@@ -1758,7 +1698,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetAnalysisDisplayModeInfo(admin_level, o_locked)
@@ -1778,7 +1717,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetAngulaireGeneralTolClassInfo(admin_level, o_locked)
@@ -1798,7 +1736,6 @@ class FTASettingAtt(SettingController):
         :param int o_value_r:
         :param int o_value_g:
         :param int o_value_b:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetAnnotDimInvalidColor(o_value_r, o_value_g, o_value_b)
@@ -1837,7 +1774,6 @@ class FTASettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetAnnotDimInvalidColorInfo(io_admin_level, io_locked, o_modified)
@@ -1881,7 +1817,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetAnnotDimInvalidInfo(admin_level, o_locked)
@@ -1901,7 +1836,6 @@ class FTASettingAtt(SettingController):
         :param int o_value_r:
         :param int o_value_g:
         :param int o_value_b:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetAnnotDimOnDeletedGeomColor(o_value_r, o_value_g, o_value_b)
@@ -1941,7 +1875,6 @@ class FTASettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetAnnotDimOnDeletedGeomColorInfo(io_admin_level, io_locked, o_modified)
@@ -1993,7 +1926,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetAnnotDimOnDeletedGeomInfo(admin_level, o_locked)
@@ -2013,7 +1945,6 @@ class FTASettingAtt(SettingController):
         :param int o_value_r:
         :param int o_value_g:
         :param int o_value_b:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetAnnotDimOnUnloadedGeomColor(o_value_r, o_value_g, o_value_b)
@@ -2053,7 +1984,6 @@ class FTASettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetAnnotDimOnUnloadedGeomColorInfo(io_admin_level, io_locked, o_modified)
@@ -2105,7 +2035,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetAnnotDimOnUnloadedGeomInfo(admin_level, o_locked)
@@ -2142,7 +2071,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetAnnotOnZeroZSettingInfo(admin_level, o_locked)
@@ -2162,7 +2090,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetBodyHideInCaptureInfo(admin_level, o_locked)
@@ -2200,7 +2127,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetCATFTAChamferGeneralTolClassInfo(admin_level, o_locked)
@@ -2220,7 +2146,6 @@ class FTASettingAtt(SettingController):
         :param int o_value_r:
         :param int o_value_g:
         :param int o_value_b:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetCATFTAEdgesColor(o_value_r, o_value_g, o_value_b)
@@ -2259,7 +2184,6 @@ class FTASettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetCATFTAEdgesColorInfo(io_admin_level, io_locked, o_modified)
@@ -2313,7 +2237,6 @@ class FTASettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetCATFTAEdgesLineTypeInfo(io_admin_level, io_locked, o_modified)
@@ -2367,7 +2290,6 @@ class FTASettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetCATFTAEdgesThicknessInfo(io_admin_level, io_locked, o_modified)
@@ -2421,7 +2343,6 @@ class FTASettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetCATFTAUFAutoTolerancingInfo(io_admin_level, io_locked, o_modified)
@@ -2473,7 +2394,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetCATFTAUseLastTolerancesInfo(admin_level, o_locked)
@@ -2493,7 +2413,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimAfterCreInfo(admin_level, o_locked)
@@ -2513,7 +2432,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimAfterModInfo(admin_level, o_locked)
@@ -2533,7 +2451,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimBeforeCreInfo(admin_level, o_locked)
@@ -2553,7 +2470,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimBeforeModInfo(admin_level, o_locked)
@@ -2573,7 +2489,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimBlankingCreInfo(admin_level, o_locked)
@@ -2593,7 +2508,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimBlankingModInfo(admin_level, o_locked)
@@ -2613,7 +2527,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimConfigureSnappingInfo(admin_level, o_locked)
@@ -2633,7 +2546,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimConstantOffsetInfo(admin_level, o_locked)
@@ -2653,7 +2565,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimCreateOnInfo(admin_level, o_locked)
@@ -2673,7 +2584,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimLinePosValueInfo(admin_level, o_locked)
@@ -2693,7 +2603,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimLineUpBaseAngleInfo(admin_level, o_locked)
@@ -2713,7 +2622,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimLineUpBaseLengthInfo(admin_level, o_locked)
@@ -2733,7 +2641,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimLineUpCumulInfo(admin_level, o_locked)
@@ -2753,7 +2660,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimLineUpFunnelInfo(admin_level, o_locked)
@@ -2788,7 +2694,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimLineUpOffsetBetDimAngleInfo(admin_level, o_locked)
@@ -2824,7 +2729,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimLineUpOffsetBetDimLengthInfo(admin_level, o_locked)
@@ -2859,7 +2763,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimLineUpOffsetToRefAngleInfo(admin_level, o_locked)
@@ -2894,7 +2797,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimLineUpOffsetToRefLengthInfo(admin_level, o_locked)
@@ -2914,7 +2816,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimLineUpStackInfo(admin_level, o_locked)
@@ -2934,7 +2835,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimManualPositionningInfo(admin_level, o_locked)
@@ -2954,7 +2854,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimMove2dPartCreInfo(admin_level, o_locked)
@@ -2974,7 +2873,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimMove2dPartModInfo(admin_level, o_locked)
@@ -2994,7 +2892,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimMoveDimLineCreInfo(admin_level, o_locked)
@@ -3014,7 +2911,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimMoveDimLineModInfo(admin_level, o_locked)
@@ -3049,7 +2945,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimMoveLeaderCreInfo(admin_level, o_locked)
@@ -3084,7 +2979,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimMoveLeaderModInfo(admin_level, o_locked)
@@ -3104,7 +2998,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimMoveSubPartInfo(admin_level, o_locked)
@@ -3124,7 +3017,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimMoveValueCreInfo(admin_level, o_locked)
@@ -3144,7 +3036,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimMoveValueModInfo(admin_level, o_locked)
@@ -3164,7 +3055,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimORunCreInfo(admin_level, o_locked)
@@ -3184,7 +3074,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimORunModInfo(admin_level, o_locked)
@@ -3204,7 +3093,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimOriDefaultSymbInfo(admin_level, o_locked)
@@ -3224,7 +3112,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetDimSnappingInfo(admin_level, o_locked)
@@ -3244,7 +3131,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetGeneralTolClassInfo(admin_level, o_locked)
@@ -3264,7 +3150,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetHighlightDefAnnotInfo(admin_level, o_locked)
@@ -3284,7 +3169,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetNoaCreationInfo(admin_level, o_locked)
@@ -3305,7 +3189,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetNonSemanticAllwaysUpgradeGeneralTolInfo(admin_level, o_locked)
@@ -3325,7 +3208,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetNonSemanticAllwaysUpgradeInfo(admin_level, o_locked)
@@ -3345,7 +3227,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetNonSemanticDimAllowedInfo(admin_level, o_locked)
@@ -3365,7 +3246,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetNonSemanticMarkedInfo(admin_level, o_locked)
@@ -3385,7 +3265,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetNonSemanticTolAllowedInfo(admin_level, o_locked)
@@ -3405,7 +3284,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetParametersInTreeInfo(admin_level, o_locked)
@@ -3425,7 +3303,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetRotationSnapAngleInfo(admin_level, o_locked)
@@ -3445,7 +3322,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetRotationSnapAutoInfo(admin_level, o_locked)
@@ -3465,7 +3341,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetSectPatternInfo(admin_level, o_locked)
@@ -3485,7 +3360,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetSelectPublishedGeometryInfo(admin_level, o_locked)
@@ -3505,7 +3379,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetShiftedProfileInfo(admin_level, o_locked)
@@ -3525,7 +3398,6 @@ class FTASettingAtt(SettingController):
         :param int o_value_r:
         :param int o_value_g:
         :param int o_value_b:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetTrueDimensionColor(o_value_r, o_value_g, o_value_b)
@@ -3564,7 +3436,6 @@ class FTASettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.GetTrueDimensionColorInfo(io_admin_level, io_locked, o_modified)
@@ -3616,7 +3487,6 @@ class FTASettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_setting_att.GetTrueDimensionInfo(admin_level, o_locked)
@@ -3634,7 +3504,6 @@ class FTASettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAlphabeticOrderLock(i_locked)
@@ -3676,7 +3545,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAnalysisDisplayModeLock(i_locked)
@@ -3707,7 +3575,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension general class parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAngulaireGeneralTolClassLock(i_locked)
@@ -3742,7 +3609,6 @@ class FTASettingAtt(SettingController):
         :param int i_value_r:
         :param int i_value_g:
         :param int i_value_b:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAnnotDimInvalidColor(i_value_r, i_value_g, i_value_b)
@@ -3769,7 +3635,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAnnotDimInvalidColorLock(i_locked)
@@ -3819,7 +3684,6 @@ class FTASettingAtt(SettingController):
                 |         the administrated value.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAnnotDimInvalidLock(i_locked)
@@ -3854,7 +3718,6 @@ class FTASettingAtt(SettingController):
         :param int i_value_r:
         :param int i_value_g:
         :param int i_value_b:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAnnotDimOnDeletedGeomColor(i_value_r, i_value_g, i_value_b)
@@ -3881,7 +3744,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAnnotDimOnDeletedGeomColorLock(i_locked)
@@ -3923,7 +3785,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAnnotDimOnDeletedGeomLock(i_locked)
@@ -3958,7 +3819,6 @@ class FTASettingAtt(SettingController):
         :param int i_value_r:
         :param int i_value_g:
         :param int i_value_b:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAnnotDimOnUnloadedGeomColor(i_value_r, i_value_g, i_value_b)
@@ -3986,7 +3846,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAnnotDimOnUnloadedGeomColorLock(i_locked)
@@ -4028,7 +3887,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAnnotDimOnUnloadedGeomLock(i_locked)
@@ -4070,7 +3928,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetAnnotOnZeroZSettingLock(i_locked)
@@ -4101,7 +3958,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension general class parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetBodyHideInCaptureLock(i_locked)
@@ -4144,7 +4000,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetCATFTAChamferGeneralTolClassLock(i_locked)
@@ -4179,7 +4034,6 @@ class FTASettingAtt(SettingController):
         :param int i_value_r:
         :param int i_value_g:
         :param int i_value_b:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetCATFTAEdgesColor(i_value_r, i_value_g, i_value_b)
@@ -4206,7 +4060,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetCATFTAEdgesColorLock(i_locked)
@@ -4248,7 +4101,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetCATFTAEdgesLineTypeLock(i_locked)
@@ -4290,7 +4142,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetCATFTAEdgesThicknessLock(i_locked)
@@ -4332,7 +4183,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetCATFTAUFAutoTolerancingLock(i_locked)
@@ -4374,7 +4224,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetCATFTAUseLastTolerancesLock(i_locked)
@@ -4405,7 +4254,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension After Creaation parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimAfterCreLock(i_locked)
@@ -4436,7 +4284,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension After Modification parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimAfterModLock(i_locked)
@@ -4467,7 +4314,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Before Creation parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimBeforeCreLock(i_locked)
@@ -4498,7 +4344,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Before Modification parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimBeforeModLock(i_locked)
@@ -4529,7 +4374,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Blanking Creation parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimBlankingCreLock(i_locked)
@@ -4560,7 +4404,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Blanking Modification parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimBlankingModLock(i_locked)
@@ -4591,7 +4434,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the DimConfigureSnapping parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimConfigureSnappingLock(i_locked)
@@ -4622,7 +4464,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Constant Offset parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimConstantOffsetLock(i_locked)
@@ -4653,7 +4494,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the DimCreateOn parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimCreateOnLock(i_locked)
@@ -4684,7 +4524,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Line Position Value parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimLinePosValueLock(i_locked)
@@ -4715,7 +4554,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Line Up Base Angle parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimLineUpBaseAngleLock(i_locked)
@@ -4746,7 +4584,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Line Up Base Length parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimLineUpBaseLengthLock(i_locked)
@@ -4777,7 +4614,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Line Up Cululated parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimLineUpCumulLock(i_locked)
@@ -4808,7 +4644,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Line Up Funnel parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimLineUpFunnelLock(i_locked)
@@ -4846,7 +4681,6 @@ class FTASettingAtt(SettingController):
                 |             set.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimLineUpOffsetBetDimAngleLock(i_locked)
@@ -4885,7 +4719,6 @@ class FTASettingAtt(SettingController):
                 |             set.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimLineUpOffsetBetDimLengthLock(i_locked)
@@ -4923,7 +4756,6 @@ class FTASettingAtt(SettingController):
                 |             set.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimLineUpOffsetToRefAngleLock(i_locked)
@@ -4961,7 +4793,6 @@ class FTASettingAtt(SettingController):
                 |             set.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimLineUpOffsetToRefLengthLock(i_locked)
@@ -4992,7 +4823,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Line Up Stack parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimLineUpStackLock(i_locked)
@@ -5023,7 +4853,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Manual Positionning parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimManualPositionningLock(i_locked)
@@ -5054,7 +4883,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Move 2D Creation parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimMove2dPartCreLock(i_locked)
@@ -5085,7 +4913,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Move 2D Modification parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimMove2dPartModLock(i_locked)
@@ -5116,7 +4943,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Move Dimension Line Creation parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimMoveDimLineCreLock(i_locked)
@@ -5147,7 +4973,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Move Dimension Line Modification parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimMoveDimLineModLock(i_locked)
@@ -5185,7 +5010,6 @@ class FTASettingAtt(SettingController):
                 |             is set.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimMoveLeaderCreLock(i_locked)
@@ -5224,7 +5048,6 @@ class FTASettingAtt(SettingController):
                 |             iLocked is set.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimMoveLeaderModLock(i_locked)
@@ -5255,7 +5078,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the DimMoveSubPart parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimMoveSubPartLock(i_locked)
@@ -5286,7 +5108,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Move Value Creation parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimMoveValueCreLock(i_locked)
@@ -5317,7 +5138,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Move Value Modification parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimMoveValueModLock(i_locked)
@@ -5348,7 +5168,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Over Run Creation parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimORunCreLock(i_locked)
@@ -5379,7 +5198,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Over Run Modification parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimORunModLock(i_locked)
@@ -5410,7 +5228,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Orientation Default Symbol parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimOriDefaultSymbLock(i_locked)
@@ -5441,7 +5258,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension Snapping parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetDimSnappingLock(i_locked)
@@ -5472,7 +5288,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Dimension general class parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetGeneralTolClassLock(i_locked)
@@ -5503,7 +5318,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Highlight Def Annot parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetHighlightDefAnnotLock(i_locked)
@@ -5534,7 +5348,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Noa Creation parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetNoaCreationLock(i_locked)
@@ -5567,7 +5380,6 @@ class FTASettingAtt(SettingController):
                 |     parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetNonSemanticAllwaysUpgradeGeneralTolLock(i_locked)
@@ -5598,7 +5410,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Non Semantic Allways Upgrade parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetNonSemanticAllwaysUpgradeLock(i_locked)
@@ -5629,7 +5440,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Non Semantic Dim Allowed parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetNonSemanticDimAllowedLock(i_locked)
@@ -5660,7 +5470,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Non Semantic Marked parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetNonSemanticMarkedLock(i_locked)
@@ -5691,7 +5500,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Non Semantic Tol Allowed parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetNonSemanticTolAllowedLock(i_locked)
@@ -5722,7 +5530,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Parameters in tree parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetParametersInTreeLock(i_locked)
@@ -5753,7 +5560,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Rotation Snap Angle parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetRotationSnapAngleLock(i_locked)
@@ -5784,7 +5590,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Rotation Snap Auto parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetRotationSnapAutoLock(i_locked)
@@ -5817,7 +5622,6 @@ class FTASettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetSectPatternLock(i_locked)
@@ -5848,7 +5652,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Select Published Geometry parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetSelectPublishedGeometryLock(i_locked)
@@ -5879,7 +5682,6 @@ class FTASettingAtt(SettingController):
                 |     Locks or unlocks the Shifted Profile parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetShiftedProfileLock(i_locked)
@@ -5914,7 +5716,6 @@ class FTASettingAtt(SettingController):
         :param int i_value_r:
         :param int i_value_g:
         :param int i_value_b:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetTrueDimensionColor(i_value_r, i_value_g, i_value_b)
@@ -5941,7 +5742,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetTrueDimensionColorLock(i_locked)
@@ -5983,7 +5783,6 @@ class FTASettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_setting_att.SetTrueDimensionLock(i_locked)

@@ -59,7 +59,6 @@ class ABQSolutionStep(AnyObject):
                 |          Dim ListSolutionStepImages As ABQSolutionStepImages
                 |          Set ListSolutionStepImages = MySolutionStep.AnalysisImages
 
-        :return: ABQSolutionStepImages
         :rtype: ABQSolutionStepImages
         """
 
@@ -111,7 +110,6 @@ class ABQSolutionStep(AnyObject):
         :param str i_image_name:
         :param cat_variant i_hide_existing_images:
         :param cat_variant i_incr_or_mode_number:
-        :return: AnalysisImage
         :rtype: AnalysisImage
         """
         return AnalysisImage(
@@ -145,7 +143,6 @@ class ABQSolutionStep(AnyObject):
 
         :param cat_variant i_incr_or_mode_number:
         :param AnalysisImage i_image:
-        :return: None
         :rtype: None
         """
         return self.abq_solution_step.SetIncrementOrModeNumber(

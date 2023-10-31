@@ -54,7 +54,6 @@ class Items(Collection):
                 |         oitem The item
 
         :param Item i_product:
-        :return: Item
         :rtype: Item
         """
         return Item(self.items_.Add(i_product.com_object))
@@ -82,8 +81,7 @@ class Items(Collection):
                 |         oitem The item
 
         :param Item i_item:
-        :param int i_assignment_type:
-        :return: Item
+        :param int i_assignment_type: enum item_assignment_type
         :rtype: Item
         """
         return Item(self.items_.AddByAssignmentType(i_item.com_object, i_assignment_type))
@@ -110,8 +108,7 @@ class Items(Collection):
                 |         oNbItems No. of Items that are assigned to the activity with the given
                 |         assignment type.
 
-        :param int i_assignment_type:
-        :return: int
+        :param int i_assignment_type: enum item_assignment_type
         :rtype: int
         """
         return self.items_.CountByAssignmentType(i_assignment_type)
@@ -136,7 +133,6 @@ class Items(Collection):
                 |         oItem The idl item
 
         :param cat_variant i_index:
-        :return: Item
         :rtype: Item
         """
         return Item(self.items_.Item(i_index))
@@ -163,8 +159,7 @@ class Items(Collection):
                 |         oItem idl item to be returned
 
         :param cat_variant i_index:
-        :param int i_assignment_type:
-        :return: Item
+        :param int i_assignment_type: enum item_assignment_type
         :rtype: Item
         """
         return Item(self.items_.ItemByAssignmentType(i_index, i_assignment_type))
@@ -193,8 +188,7 @@ class Items(Collection):
                 |         oitem The item
 
         :param Item i_item:
-        :param int i_assignment_type:
-        :return: Item
+        :param int i_assignment_type: enum item_assignment_type
         :rtype: Item
         """
         return Item(self.items_.RemoveByAssignmentType(i_item.com_object, i_assignment_type))

@@ -46,7 +46,6 @@ class FreeSpace(AnyObject):
                 | 
                 |     Returns the volume.
 
-        :return: float
         :rtype: float
         """
 
@@ -64,7 +63,6 @@ class FreeSpace(AnyObject):
                 |     Returns the gravity center.
 
         :param tuple o_gravity_center_coordinates_array:
-        :return: None
         :rtype: None
         """
         return self.free_space.GetGravityCenter(o_gravity_center_coordinates_array)

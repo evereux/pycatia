@@ -63,7 +63,6 @@ class HybridShapePlane2Lines(Plane):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -89,7 +88,6 @@ class HybridShapePlane2Lines(Plane):
                 |     if ForbidNonCoplanarLines = TRUE, both lines have to be on the same plane.
                 |     if ForbidNonCoplanarLines = FALSE, both lines can be non coplanar.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -127,7 +125,6 @@ class HybridShapePlane2Lines(Plane):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 

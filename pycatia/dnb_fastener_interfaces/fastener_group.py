@@ -53,7 +53,6 @@ class FastenerGroup(AnyObject):
                 |          B=0)
                 |          MyFastenerGroup.Color = redCol
 
-        :return: int
         :rtype: int
         """
 
@@ -93,7 +92,6 @@ class FastenerGroup(AnyObject):
                 | 
                 |                  MyFastenerGroup.Style = "Sphere"
 
-        :return: str
         :rtype: str
         """
 
@@ -141,7 +139,6 @@ class FastenerGroup(AnyObject):
                 | 
                 |                  MyFastenerGroup.Symbol = "FULLSQUARE"
 
-        :return: str
         :rtype: str
         """
 
@@ -186,7 +183,6 @@ class FastenerGroup(AnyObject):
                 |          NumberOfGroups = MyFastenerGroup.GetCount("DELMIAFastenerGroup")
 
         :param str id_name:
-        :return: int
         :rtype: int
         """
         return self.fastener_group.GetCount(id_name)
@@ -217,7 +213,6 @@ class FastenerGroup(AnyObject):
 
         :param str id_name:
         :param tuple o_list_of_entities:
-        :return: None
         :rtype: None
         """
         return self.fastener_group.GetItems(id_name, o_list_of_entities)
@@ -262,7 +257,6 @@ class FastenerGroup(AnyObject):
                 |          MyFastenerGroup.GetJoinedPartNames(JoiningParts)
 
         :param tuple o_list_of_parts:
-        :return: None
         :rtype: None
         """
         return self.fastener_group.GetJoinedPartNames(o_list_of_parts)
@@ -305,7 +299,6 @@ class FastenerGroup(AnyObject):
                 |          Set MyProduct = MyFastenerGroup.GetPart(1)
 
         :param int index:
-        :return: Product
         :rtype: Product
         """
         return Product(self.fastener_group.GetPart(index))
@@ -325,7 +318,6 @@ class FastenerGroup(AnyObject):
                 | 
                 |      MyFastenerGroup.Hide
 
-        :return: None
         :rtype: None
         """
         return self.fastener_group.Hide()
@@ -351,7 +343,6 @@ class FastenerGroup(AnyObject):
                 |          Dim NumberOfParts
                 |          NumberOfParts = MyFastenerGroup.NumberOfJoiningParts
 
-        :return: int
         :rtype: int
         """
         return self.fastener_group.NumberOfJoiningParts()
@@ -371,7 +362,6 @@ class FastenerGroup(AnyObject):
                 | 
                 |      MyFastenerGroup.Show
 
-        :return: None
         :rtype: None
         """
         return self.fastener_group.Show()

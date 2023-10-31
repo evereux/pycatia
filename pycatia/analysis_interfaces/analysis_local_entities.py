@@ -70,7 +70,6 @@ class AnalysisLocalEntities(Collection):
                 |          Set ThisAnalysisEntity = analysisEntities.Add("SAMShellLocal")
 
         :param str i_type:
-        :return: AnalysisLocalEntity
         :rtype: AnalysisLocalEntity
         """
         return AnalysisLocalEntity(self.analysis_local_entities.Add(i_type))
@@ -102,7 +101,6 @@ class AnalysisLocalEntities(Collection):
                 |         The retrieved analysis entity
 
         :param cat_variant i_index:
-        :return: AnalysisLocalEntity
         :rtype: AnalysisLocalEntity
         """
         return AnalysisLocalEntity(self.analysis_local_entities.Item(i_index))
@@ -130,7 +128,6 @@ class AnalysisLocalEntities(Collection):
                 |         AnyObject.Name property or when creating it using the Add method.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.analysis_local_entities.Remove(i_index)

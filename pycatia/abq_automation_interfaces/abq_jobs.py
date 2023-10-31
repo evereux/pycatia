@@ -57,7 +57,6 @@ class ABQJobs(Collection):
                 |          Set abaqusJobs = abqCase.Jobs
                 |          Set abqJob =  abaqusJobs.Add()
 
-        :return: ABQJob
         :rtype: ABQJob
         """
         return ABQJob(self.abq_jobs.Add())
@@ -87,7 +86,6 @@ class ABQJobs(Collection):
                 |         oJob The specified ABQJob.
 
         :param cat_variant i_index:
-        :return: ABQJob
         :rtype: ABQJob
         """
         return ABQJob(self.abq_jobs.Item(i_index))
@@ -113,7 +111,6 @@ class ABQJobs(Collection):
                 |             CATIABase::Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_jobs.Remove(i_index)

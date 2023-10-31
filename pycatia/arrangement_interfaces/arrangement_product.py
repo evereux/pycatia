@@ -62,7 +62,6 @@ class ArrangementProduct(AnyObject):
                 |          Dim oArrAreas As ArrangementAreas
                 |          Set oArrAreas = objArrProd1.Areas
 
-        :return: ArrangementAreas
         :rtype: ArrangementAreas
         """
 
@@ -89,7 +88,6 @@ class ArrangementProduct(AnyObject):
                 |          Dim oArrBoundaries As ArrangementBoundaries
                 |          Set oArrBoundaries = objArrProd1.oArrObjType
 
-        :return: ArrangementBoundaries
         :rtype: ArrangementBoundaries
         """
 
@@ -117,7 +115,6 @@ class ArrangementProduct(AnyObject):
                 |          ArrangementItemReservations
                 |          Set oArrItemReservations = objArrProd1.ItemReservations
 
-        :return: ArrangementItemReservations
         :rtype: ArrangementItemReservations
         """
 
@@ -143,7 +140,6 @@ class ArrangementProduct(AnyObject):
                 |          Dim oArrPathways As ArrangementPathways
                 |          Set oArrPathways = objArrProd1.Pathways
 
-        :return: ArrangementPathways
         :rtype: ArrangementPathways
         """
 
@@ -170,7 +166,6 @@ class ArrangementProduct(AnyObject):
                 |          Dim oArrRectangles As ArrangementRectangles
                 |          Set oArrRectangles = objArrProd1.Rectangles
 
-        :return: ArrangementRectangles
         :rtype: ArrangementRectangles
         """
 
@@ -195,7 +190,6 @@ class ArrangementProduct(AnyObject):
                 |          Dim oArrRuns As ArrangementRuns
                 |          Set oArrRuns = objArrProd1.Runs
 
-        :return: ArrangementRuns
         :rtype: ArrangementRuns
         """
 
@@ -220,7 +214,6 @@ class ArrangementProduct(AnyObject):
                 |          Dim oArrObjType  As String
                 |          oArrObjType  = objArrProd1.Type
 
-        :return: str
         :rtype: str
         """
 
@@ -253,7 +246,6 @@ class ArrangementProduct(AnyObject):
                 |                  objProd  = objArrProd1.GetTechnologicalObject("Product")
 
         :param str i_application_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.arrangement_product.GetTechnologicalObject(i_application_type)
@@ -284,7 +276,6 @@ class ArrangementProduct(AnyObject):
                 |              objArrProd1.SetArrangementNomenclature = "Building"
 
         :param str i_nomenclature:
-        :return: None
         :rtype: None
         """
         return self.arrangement_product.SetArrangementNomenclature(i_nomenclature)
@@ -314,7 +305,6 @@ class ArrangementProduct(AnyObject):
                 | 
                 |              objArrProd1.SetAutoName
 
-        :return: None
         :rtype: None
         """
         return self.arrangement_product.SetAutoName()

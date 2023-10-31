@@ -56,7 +56,7 @@ class PCBObject(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: int
+        :return: enum cat_electronic_type
         :rtype: int
         """
 
@@ -78,7 +78,6 @@ class PCBObject(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: None
         :rtype: None
         """
         return self.pcb_object.RemoveElectronicBehaviour()

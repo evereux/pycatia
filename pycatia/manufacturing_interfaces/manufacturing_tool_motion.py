@@ -54,7 +54,6 @@ class ManufacturingToolMotion(AnyObject):
                 |          Set Diameter = firstToolmotion.GetAttribute(MfgDiameter)
 
         :param str i_attribute:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.manufacturing_tool_motion.GetAttribute(i_attribute))
@@ -94,7 +93,6 @@ class ManufacturingToolMotion(AnyObject):
                 |          FeedType=SubMotion1.GetFeedrate(FeedVal)
 
         :param float o_feedrate:
-        :return: str
         :rtype: str
         """
         return self.manufacturing_tool_motion.GetFeedrate(o_feedrate)
@@ -129,7 +127,6 @@ class ManufacturingToolMotion(AnyObject):
         :param float o_x:
         :param float o_y:
         :param float o_z:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_tool_motion.GetGotoPtPointCoordinates()
@@ -152,7 +149,6 @@ class ManufacturingToolMotion(AnyObject):
                 |          dim Message as CATBSTR
                 |          Message = firstToolmotion.GetPPWord
 
-        :return: str
         :rtype: str
         """
         return self.manufacturing_tool_motion.GetPPWord()
@@ -183,7 +179,6 @@ class ManufacturingToolMotion(AnyObject):
                 |          dim ThisType as CATBSTR
                 |          Set ThisType = firstToolMotion.GetType
 
-        :return: str
         :rtype: str
         """
         return self.manufacturing_tool_motion.GetType()
@@ -228,7 +223,6 @@ class ManufacturingToolMotion(AnyObject):
 
         :param float i_feedrate:
         :param str i_feedrate_type:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_tool_motion.SetFeedrate(i_feedrate, i_feedrate_type)
@@ -266,7 +260,6 @@ class ManufacturingToolMotion(AnyObject):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_tool_motion.SetGotoPtPointCoordinates(i_x, i_y, i_z)
@@ -289,7 +282,6 @@ class ManufacturingToolMotion(AnyObject):
                 |          firstToolmotion.SetPPWord("Message")
 
         :param str i_message:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_tool_motion.SetPPWord(i_message)

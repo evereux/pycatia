@@ -55,7 +55,6 @@ class PertNode(AnyObject):
 
         :param float xx:
         :param float yy:
-        :return: None
         :rtype: None
         """
         return self.pert_node.GetLocation(xx, yy)
@@ -76,7 +75,6 @@ class PertNode(AnyObject):
                 |             FileName of the Icon which includes full path
 
         :param str i_file_name:
-        :return: None
         :rtype: None
         """
         return self.pert_node.SetIcon(i_file_name)
@@ -102,7 +100,6 @@ class PertNode(AnyObject):
 
         :param float xx:
         :param float yy:
-        :return: None
         :rtype: None
         """
         return self.pert_node.SetLocation(xx, yy)

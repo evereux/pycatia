@@ -48,7 +48,6 @@ class ABQInitialTemperature(ABQTemperature):
                 | 
                 |     Sets or returns the step number from which to read the temperature data.
 
-        :return: int
         :rtype: int
         """
 

@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class SpecV4SettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -63,7 +62,7 @@ class SpecV4SettingAtt(SettingController):
                 |     Role: This setting parameter manages the activation of the mode of
                 |     migration for draft feature during a Copy/Paste As Spec.
 
-        :return: int
+        :return: enum catv4_iv4_v5_spec_draft_migration_enum
         :rtype: int
         """
 
@@ -72,7 +71,7 @@ class SpecV4SettingAtt(SettingController):
     @draft_feature_migration_mode.setter
     def draft_feature_migration_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum catv4_iv4_v5_spec_draft_migration_enum
         """
 
         self.spec_v4_setting_att.DraftFeatureMigrationMode = value
@@ -92,7 +91,6 @@ class SpecV4SettingAtt(SettingController):
                 |     activation of the step by step update and reroute during a Copy/Paste As Spec
                 |     when solids are involved.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -121,7 +119,6 @@ class SpecV4SettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.spec_v4_setting_att.GetDraftFeatureMigrationModeInfo(admin_level, o_locked)
@@ -141,7 +138,6 @@ class SpecV4SettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.spec_v4_setting_att.GetStepByStepUpdateAndRerouteInfo(admin_level, o_locked)
@@ -159,7 +155,6 @@ class SpecV4SettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.spec_v4_setting_att.SetDraftFeatureMigrationModeLock(i_lock)
@@ -192,7 +187,6 @@ class SpecV4SettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.spec_v4_setting_att.SetStepByStepUpdateAndRerouteLock(i_lock)
@@ -213,4 +207,4 @@ class SpecV4SettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'SpecV4SettingAtt(name="{ self.name }")'
+        return f'SpecV4SettingAtt(name="{self.name}")'

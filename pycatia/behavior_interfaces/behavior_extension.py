@@ -57,7 +57,6 @@ class BehaviorExtension(Behavior):
                 |     Returns the type of the technological object associated to this behavior
                 |     extension.
 
-        :return: str
         :rtype: str
         """
 
@@ -80,7 +79,6 @@ class BehaviorExtension(Behavior):
                 |             the name of the behavior.
 
         :param str behavior_name:
-        :return: Behavior
         :rtype: Behavior
         """
         return Behavior(self.behavior_extension.SelectBehavior(behavior_name))

@@ -58,7 +58,6 @@ class FastenerSet(Collection):
                 |             parameter.
 
         :param int index:
-        :return: Fastener
         :rtype: Fastener
         """
         return Fastener(self.fastener_set.GetFastener(index))

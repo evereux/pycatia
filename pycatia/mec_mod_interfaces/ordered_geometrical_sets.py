@@ -59,7 +59,6 @@ class OrderedGeometricalSets(Collection):
                 | 
                 |          Set NewPartBody = rootPart.OrderedGeometricalSets.Add()
 
-        :return: OrderedGeometricalSet
         :rtype: OrderedGeometricalSet
         """
         return OrderedGeometricalSet(self.ordered_geometrical_sets.Add())
@@ -99,7 +98,6 @@ class OrderedGeometricalSets(Collection):
                 |          Set ThatOrderedGeometricalSet = orderedGeometricalSetColl.Item("MyOrderedGeometricalSet")
 
         :param cat_variant i_index:
-        :return: OrderedGeometricalSet
         :rtype: OrderedGeometricalSet
         """
         return OrderedGeometricalSet(self.ordered_geometrical_sets.Item(i_index))

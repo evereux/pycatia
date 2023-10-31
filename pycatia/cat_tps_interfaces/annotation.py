@@ -80,7 +80,6 @@ class Annotation(AnyObject):
                 |             "FTA_Form" "FTA_Dimension" "FTA_Position" "FTA_Datum" "FTA_Orientation"
                 |             "FTA_RunOut"
 
-        :return: str
         :rtype: str
         """
 
@@ -102,7 +101,6 @@ class Annotation(AnyObject):
                 |         oStatus
                 |             The Status.
 
-        :return: str
         :rtype: str
         """
 
@@ -124,7 +122,6 @@ class Annotation(AnyObject):
                 |         oType
                 |             The Type. List of types available ordered by SuperType: SuperType = "FTA_NonSemantic" Type = "FTA_Text" Type = "FTA_FlagNote" Type = "FTA_Roughness" Type = "FTA_Weld" Type = "FTA_Noa" Type = "FTA_NonSemanticDatum" Type = "FTA_NonSemanticTarget" Type = "FTA_NonSemanticGDT" Type = "FTA_NonSemanticDimension" SuperType = "FTA_Form" Type = "FTA_Flatness" Type = "FTA_Straightness" Type = "FTA_Circularity" Type = "FTA_Cylindricity" Type = "FTA_ProfileOfAnyLine" Type = "FTA_ProfileOfASurface" Type = "FTA_PatternTruePos" SuperType = "FTA_Dimension" Type = "FTA_LinearDimension" Type = "FTA_AngularDimension" Type = "FTA_SecondLinearDimension" Type = "FTA_ChamferDimension" Type = "FTA_BasicDimension" SuperType = "FTA_Position" Type = "FTA_TruePosition" Type = "FTA_Concentricity" Type = "FTA_Symmetry" Type = "FTA_PositionOfAnyLine" Type = "FTA_PositionOfASurface" SuperType = "FTA_Datum" Type = "FTA_DatumSimple" Type = "FTA_DatumTarget" Type = "FTA_DatumSystem" Type = "FTA_ReferenceFrame" SuperType = "FTA_Orientation" Type = "FTA_Parallelism" Type = "FTA_Perpendicularity" Type = "FTA_Angularity" SuperType = "FTA_RunOut" Type = "FTA_TotalRunOut" Type = "FTA_CircularRunOut"
 
-        :return: str
         :rtype: str
         """
 
@@ -147,7 +144,6 @@ class Annotation(AnyObject):
                 |         iZ
                 |             The offset.
 
-        :return: float
         :rtype: float
         """
 
@@ -171,7 +167,6 @@ class Annotation(AnyObject):
                 | 
                 |     Add a leader.
 
-        :return: None
         :rtype: None
         """
         return self.annotation.AddLeader()
@@ -191,7 +186,6 @@ class Annotation(AnyObject):
         :param int i_releated_r:
         :param int i_releated_g:
         :param int i_releated_b:
-        :return: None
         :rtype: None
         """
         return self.annotation.ApplyReferencedGeomColor(i_releated_r, i_releated_g, i_releated_b)
@@ -206,7 +200,6 @@ class Annotation(AnyObject):
                 | 
                 |     Apply the initial color to referenced geometry.
 
-        :return: None
         :rtype: None
         """
         return self.annotation.ApplyReferencedInitColor()
@@ -221,7 +214,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the AssociatedRefFrame interface.
 
-        :return: AssociatedRefFrame
         :rtype: AssociatedRefFrame
         """
 
@@ -237,7 +229,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the CompositeTolerance interface.
 
-        :return: CompositeTolerance
         :rtype: CompositeTolerance
         """
 
@@ -253,7 +244,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the ControledRadius interface.
 
-        :return: ControledRadius
         :rtype: ControledRadius
         """
 
@@ -269,7 +259,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the DatumSimple interface.
 
-        :return: DatumSimple
         :rtype: DatumSimple
         """
 
@@ -285,7 +274,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the DatumTarget interface.
 
-        :return: DatumTarget
         :rtype: DatumTarget
         """
 
@@ -301,7 +289,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the DefaultAnnotation interface.
 
-        :return: DefaultAnnotation
         :rtype: DefaultAnnotation
         """
 
@@ -322,7 +309,6 @@ class Annotation(AnyObject):
                 |         oDim
                 |             The 3D Dimension.
 
-        :return: Dimension3D
         :rtype: Dimension3D
         """
 
@@ -338,7 +324,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the DimensionLimit interface.
 
-        :return: DimensionLimit
         :rtype: DimensionLimit
         """
 
@@ -354,7 +339,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the DimensionPattern interface.
 
-        :return: DimensionPattern
         :rtype: DimensionPattern
         """
 
@@ -370,7 +354,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the EnvelopCondition interface.
 
-        :return: EnvelopCondition
         :rtype: EnvelopCondition
         """
 
@@ -391,7 +374,6 @@ class Annotation(AnyObject):
                 |         oFlagNote
                 |             The annotation Flag Note.
 
-        :return: FlagNote
         :rtype: FlagNote
         """
 
@@ -407,7 +389,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the FreeState interface.
 
-        :return: FreeState
         :rtype: FreeState
         """
 
@@ -424,7 +405,6 @@ class Annotation(AnyObject):
                 |     Get the geometry on which the Annotation is applied to.
 
         :param tuple o_safe_array:
-        :return: tuple
         :rtype: tuple
         """
         return self.annotation.GetSurfaces(o_safe_array)
@@ -454,7 +434,6 @@ class Annotation(AnyObject):
                 | 
                 |     Count the geometry on which the Annotation is applied to.
 
-        :return: float
         :rtype: float
         """
         return self.annotation.GetSurfacesCount()
@@ -469,7 +448,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation has a Controled Radius.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.HasAControledRadius()
@@ -484,7 +462,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation has a Free State.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.HasAFreeState()
@@ -499,7 +476,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation has a Material Condition.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.HasAMaterialCondition()
@@ -514,7 +490,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation has a Particuler Element.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.HasAParticularTolElem()
@@ -529,7 +504,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation has a Tolerance Per Unit Basis Restricted Value.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.HasATolerancePerUnitBasisRestrictiveValue()
@@ -544,7 +518,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation has an Envelop Condition.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.HasAnEnvelopCondition()
@@ -559,7 +532,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation has a Dimension Limit.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.HasDimensionLimit()
@@ -574,7 +546,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation is a composite Tolerance.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.IsACompositeTolerance()
@@ -589,7 +560,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation is a Default Annotation.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.IsADefaultAnnotation()
@@ -604,7 +574,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation is a Dimension Pattern.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.IsADimensionPattern()
@@ -619,7 +588,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation is a Projected Zone.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.IsAProjectedToleranceZone()
@@ -634,7 +602,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation is a Shifted Profile Tolerance.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.IsAShiftedProfileTolerance()
@@ -649,7 +616,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation is a Tangent Plane.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.IsATangentPlane()
@@ -664,7 +630,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation is a Tolerance Unit Basis Value.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.IsAToleranceUnitBasisValue()
@@ -679,7 +644,6 @@ class Annotation(AnyObject):
                 | 
                 |     Is the a Tolerance Zone.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.IsAToleranceZone()
@@ -694,7 +658,6 @@ class Annotation(AnyObject):
                 | 
                 |     To know if the Annotation is an Associated Reference Frame.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation.IsAnAssociatedRefFrame()
@@ -709,7 +672,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the MaterialCondition interface.
 
-        :return: MaterialCondition
         :rtype: MaterialCondition
         """
 
@@ -725,7 +687,6 @@ class Annotation(AnyObject):
                 | 
                 |     To refresh the 3D visualization.
 
-        :return: None
         :rtype: None
         """
         return self.annotation.ModifyVisu()
@@ -740,7 +701,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the Noa interface.
 
-        :return: Noa
         :rtype: Noa
         """
 
@@ -756,7 +716,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the ParticularTolElem interface.
 
-        :return: ParticularTolElem
         :rtype: ParticularTolElem
         """
 
@@ -772,7 +731,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the ProjectedToleranceZone interface.
 
-        :return: ProjectedToleranceZone
         :rtype: ProjectedToleranceZone
         """
         return ProjectedToleranceZone(
@@ -788,7 +746,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the ReferenceFrame interface.
 
-        :return: ReferenceFrame
         :rtype: ReferenceFrame
         """
 
@@ -804,7 +761,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the Roughness interface.
 
-        :return: Roughness
         :rtype: Roughness
         """
 
@@ -831,7 +787,6 @@ class Annotation(AnyObject):
 
         :param float i_x:
         :param float i_y:
-        :return: None
         :rtype: None
         """
         return self.annotation.SetXY(i_x, i_y)
@@ -846,7 +801,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the ShiftedProfileTolerance interface.
 
-        :return: ShiftedProfileTolerance
         :rtype: ShiftedProfileTolerance
         """
 
@@ -862,7 +816,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the TangentPlane interface.
 
-        :return: TangentPlane
         :rtype: TangentPlane
         """
 
@@ -883,7 +836,6 @@ class Annotation(AnyObject):
                 |         oText
                 |             The annotation Text.
 
-        :return: Text
         :rtype: Text
         """
         return Text(self.annotation.Text())
@@ -899,7 +851,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the TolerancePerUnitBasisRestrictiveValue interface.
 
-        :return: TolerancePerUnitBasisRestrictiveValue
         :rtype: TolerancePerUnitBasisRestrictiveValue
         """
         return TolerancePerUnitBasisRestrictiveValue(self.annotation.TolerancePerUnitBasisRestrictiveValue())
@@ -914,7 +865,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the ToleranceUnitBasisValue interface.
 
-        :return: ToleranceUnitBasisValue
         :rtype: ToleranceUnitBasisValue
         """
         return ToleranceUnitBasisValue(self.annotation.ToleranceUnitBasisValue())
@@ -929,7 +879,6 @@ class Annotation(AnyObject):
                 | 
                 |     Get the annotation on the ToleranceZone interface.
 
-        :return: ToleranceZone
         :rtype: ToleranceZone
         """
 
@@ -951,7 +900,6 @@ class Annotation(AnyObject):
                 |             The destination view.
 
         :param TPSView i_view:
-        :return: None
         :rtype: None
         """
         return self.annotation.TransfertToView(i_view.com_object)

@@ -61,7 +61,6 @@ class ResourceCollection(Collection):
                 |         oResource The resource
 
         :param cat_variant i_index:
-        :return: Resource
         :rtype: Resource
         """
         return Resource(self.resource_collection.Item(i_index))

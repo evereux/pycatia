@@ -53,7 +53,6 @@ class SchAnnotationBreak(AnyObject):
                 |           ...
                 |          objThisIntf.FlipOverLine
 
-        :return: None
         :rtype: None
         """
         return self.sch_annotation_break.FlipOverLine()
@@ -78,7 +77,6 @@ class SchAnnotationBreak(AnyObject):
                 |           ...
                 |          objThisIntf.FlipOverOrthogonalLine
 
-        :return: None
         :rtype: None
         """
         return self.sch_annotation_break.FlipOverOrthogonalLine()
@@ -108,7 +106,6 @@ class SchAnnotationBreak(AnyObject):
                 |          objThisIntf.ScaledbVar1
 
         :param float i_db_scale_factor:
-        :return: None
         :rtype: None
         """
         return self.sch_annotation_break.Scale(i_db_scale_factor)

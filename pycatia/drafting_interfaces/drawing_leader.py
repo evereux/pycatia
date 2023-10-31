@@ -54,7 +54,6 @@ class DrawingLeader(AnyObject):
                 | 
                 |          oSymbol = MyLeader.AllAround
 
-        :return: bool
         :rtype: bool
         """
 
@@ -85,7 +84,6 @@ class DrawingLeader(AnyObject):
                 | 
                 |          oAnchorPoint = MyLeader.AnchorPoint
 
-        :return: int
         :rtype: int
         """
 
@@ -116,7 +114,6 @@ class DrawingLeader(AnyObject):
                 | 
                 |          oSymbol = MyLeader.HeadSymbol
 
-        :return: int
         :rtype: int
         """
 
@@ -147,7 +144,6 @@ class DrawingLeader(AnyObject):
                 | 
                 |          oTarget = MyLeader.HeadTarget
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -180,7 +176,6 @@ class DrawingLeader(AnyObject):
                 |          Dim LeaderCollection As DrawingLeaders
                 |          Set LeaderCollection = MyLeader.Leaders
 
-        :return: DrawingLeaders
         :rtype: DrawingLeaders
         """
         from pycatia.drafting_interfaces.drawing_leaders import DrawingLeaders
@@ -203,7 +198,6 @@ class DrawingLeader(AnyObject):
                 | 
                 |          oNbInterruption = MyLeader.NbInterruption
 
-        :return: int
         :rtype: int
         """
 
@@ -226,7 +220,6 @@ class DrawingLeader(AnyObject):
                 | 
                 |          oNbPoint = MyLeader.NbPoint
 
-        :return: int
         :rtype: int
         """
 
@@ -270,7 +263,6 @@ class DrawingLeader(AnyObject):
         :param float i_first_point_y:
         :param float i_second_point_x:
         :param float i_second_point_y:
-        :return: None
         :rtype: None
         """
         return self.drawing_leader.AddInterruption(i_first_point_x, i_first_point_y, i_second_point_x, i_second_point_y)
@@ -307,7 +299,6 @@ class DrawingLeader(AnyObject):
         :param int i_num:
         :param float i_x:
         :param float i_y:
-        :return: None
         :rtype: None
         """
         return self.drawing_leader.AddPoint(i_num, i_x, i_y)
@@ -337,7 +328,6 @@ class DrawingLeader(AnyObject):
                 |          oNbInterruptions = MyLeader.GetInterruptions(oInterruptions)
 
         :param tuple o_interruptions:
-        :return: int
         :rtype: int
         """
         return self.drawing_leader.GetInterruptions(o_interruptions)
@@ -371,7 +361,6 @@ class DrawingLeader(AnyObject):
         :param int i_num:
         :param float o_x:
         :param float o_y:
-        :return: None
         :rtype: None
         """
         return self.drawing_leader.GetPoint(i_num, o_x, o_y)
@@ -400,7 +389,6 @@ class DrawingLeader(AnyObject):
                 |          oNbPoints = MyLeader.GetPoints(oPoints)
 
         :param tuple o_points:
-        :return: int
         :rtype: int
         """
         return self.drawing_leader.GetPoints(o_points)
@@ -436,7 +424,6 @@ class DrawingLeader(AnyObject):
         :param int i_num:
         :param float i_x:
         :param float i_y:
-        :return: None
         :rtype: None
         """
         return self.drawing_leader.ModifyPoint(i_num, i_x, i_y)
@@ -465,7 +452,6 @@ class DrawingLeader(AnyObject):
                 |              MyLeader.RemoveInterruption iNum
 
         :param int i_num:
-        :return: None
         :rtype: None
         """
         return self.drawing_leader.RemoveInterruption(i_num)
@@ -491,7 +477,6 @@ class DrawingLeader(AnyObject):
                 |              MyLeader.RemovePoint iNum
 
         :param int i_num:
-        :return: None
         :rtype: None
         """
         return self.drawing_leader.RemovePoint(i_num)

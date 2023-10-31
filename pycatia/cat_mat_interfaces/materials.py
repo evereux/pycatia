@@ -48,7 +48,6 @@ class Materials(Collection):
                 |
                 |     Adds a new material to the material collection.
 
-        :return: Material
         :rtype: Material
         """
         return Material(self.materials.Add())
@@ -83,7 +82,6 @@ class Materials(Collection):
                 |      Set MyMaterial = Materials.Item(6)
 
         :param cat_variant i_index:
-        :return: Material
         :rtype: Material
         """
         return Material(self.materials.Item(i_index))
@@ -99,7 +97,6 @@ class Materials(Collection):
                 |     Removes a material from the materials collection.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         self.materials.Remove(i_index)
@@ -135,7 +132,6 @@ class Materials(Collection):
 
         :param cat_variant i_index:
         :param int i_mode:
-        :return: Material
         :rtype: Material
         """
         return Material(self.materials.SortedItem(i_index, i_mode))

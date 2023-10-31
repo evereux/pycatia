@@ -55,7 +55,6 @@ class PSPLightBend(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.GetBendData
 
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_light_bend.GetBendData())
@@ -83,7 +82,6 @@ class PSPLightBend(AnyObject):
                 |          objThisIntf.SetBendData objArg1
 
         :param tuple i_list_of_bend_radius:
-        :return: None
         :rtype: None
         """
         return self.psp_light_bend.SetBendData(i_list_of_bend_radius)

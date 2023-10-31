@@ -62,7 +62,6 @@ class StrMember(StrObject):
                 | 
                 |          angle = Member_1.Angle
 
-        :return: float
         :rtype: float
         """
 
@@ -95,7 +94,6 @@ class StrMember(StrObject):
                 |          Dim angle As Parameter
                 |          Set angle = Member_1.AngleParameter
 
-        :return: Parameter
         :rtype: Parameter
         """
 
@@ -119,7 +117,6 @@ class StrMember(StrObject):
                 | 
                 |          name = Member_1.CurrentAnchorPointName
 
-        :return: str
         :rtype: str
         """
 
@@ -151,7 +148,6 @@ class StrMember(StrObject):
                 |          Dim extremity As StrMemberExtremity
                 |          Set extremity = Member_1.EndExtremity
 
-        :return: StrMemberExtremity
         :rtype: StrMemberExtremity
         """
 
@@ -169,7 +165,6 @@ class StrMember(StrObject):
                 |     Retrieves the input support. The input support is the given support at the
                 |     creation of the member.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -193,7 +188,6 @@ class StrMember(StrObject):
                 |          Dim section As StrSection
                 |          Set section = Member_1.Section
 
-        :return: StrSection
         :rtype: StrSection
         """
 
@@ -217,7 +211,6 @@ class StrMember(StrObject):
                 |          Dim extremity As StrMemberExtremity
                 |          Set extremity = Member_1.StartExtremity
 
-        :return: StrMemberExtremity
         :rtype: StrMemberExtremity
         """
 
@@ -236,7 +229,6 @@ class StrMember(StrObject):
                 |     created using two points, the result support object will be the line joining
                 |     these two points.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -260,7 +252,6 @@ class StrMember(StrObject):
                 | 
                 |          myMember.SurfaceReference = Nothing
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -305,9 +296,8 @@ class StrMember(StrObject):
                 |          Set cutback = Member_1.CreateCutback(Member_2, catStrWeldedType, 0.05)
 
         :param StrMember i_member:
-        :param int i_cutback:
+        :param int i_cutback: enum cat_str_cutback_type
         :param float i_offset:
-        :return: StrCutback
         :rtype: StrCutback
         """
         return StrCutback(self.str_member.CreateCutback(i_member.com_object, i_cutback, i_offset))
@@ -329,7 +319,6 @@ class StrMember(StrObject):
                 | 
                 |          Member_1.Rotate(1,25)
 
-        :return: None
         :rtype: None
         """
         return self.str_member.Flip()
@@ -353,7 +342,6 @@ class StrMember(StrObject):
                 |          Set extremity = Member_1.StartExtremity
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.str_member.Rotate(i_angle)

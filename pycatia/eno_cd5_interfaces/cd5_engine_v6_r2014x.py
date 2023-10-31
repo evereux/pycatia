@@ -9,6 +9,7 @@
         
 """
 from pycatia.eno_cd5_interfaces.cd5_engine import CD5Engine
+from pycatia.eno_cd5_interfaces.cd5_save_operation import CD5SaveOperation
 
 
 class CD5EngineV6R2014x(CD5Engine):
@@ -49,7 +50,7 @@ class CD5EngineV6R2014x(CD5Engine):
         super().__init__(com_object)
         self.cd5_engine_v6_r2014x = com_object
 
-    def create_save_operation(self, i_scope: int) -> int:
+    def create_save_operation(self, i_scope: int) -> CD5SaveOperation:
         """
         .. note::
             :class: toggle
@@ -80,11 +81,10 @@ class CD5EngineV6R2014x(CD5Engine):
                 |          Dim SaveOperation As CD5SaveOperation
                 |          Set SaveOperation = oCD5Engine.CreateSaveOperation(CD5SaveOperation_Session)
 
-        :param int i_scope:
-        :return: enum cd5_save_operation
-        :rtype: enum cd5_save_operation
+        :param int i_scope: enum cd5_save_operation_scope
+        :rtype: CD5SaveOperation
         """
-        return self.cd5_engine_v6_r2014x.CreateSaveOperation(i_scope)
+        return CD5SaveOperation(self.cd5_engine_v6_r2014x.CreateSaveOperation(i_scope).com_object)
 
     def generate_autoname(self, i_autoname_series: str, i_count: int) -> tuple:
         """
@@ -122,7 +122,6 @@ class CD5EngineV6R2014x(CD5Engine):
 
         :param str i_autoname_series:
         :param int i_count:
-        :return: tuple
         :rtype: tuple
         """
         return self.cd5_engine_v6_r2014x.GenerateAutoname(i_autoname_series, i_count)
@@ -160,7 +159,6 @@ class CD5EngineV6R2014x(CD5Engine):
                 |          AutonameSeries = oCD5Engine.GetAutonameSeries("CATIA Embedded Component")
 
         :param str i_type:
-        :return: tuple
         :rtype: tuple
         """
         return self.cd5_engine_v6_r2014x.GetAutonameSeries(i_type)

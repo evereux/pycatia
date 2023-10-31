@@ -55,7 +55,6 @@ class CollisionFreeWalk(WalkActivity):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: float
         :rtype: float
         """
 
@@ -88,7 +87,7 @@ class CollisionFreeWalk(WalkActivity):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
+        :return: enum hts_search_intensity
         :rtype: int
         """
 
@@ -97,7 +96,7 @@ class CollisionFreeWalk(WalkActivity):
     @search_intensity.setter
     def search_intensity(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_search_intensity
         """
 
         self.collision_free_walk.SearchIntensity = value

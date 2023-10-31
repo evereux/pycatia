@@ -65,7 +65,6 @@ class Viewpoint3D(AnyObject):
                 | 
                 |          HalfAngle = NiceViewpoint.FieldOfView
 
-        :return: float
         :rtype: float
         """
 
@@ -99,7 +98,6 @@ class Viewpoint3D(AnyObject):
                 | 
                 |          NiceViewpoint.FocusDistance = 10
 
-        :return: float
         :rtype: float
         """
 
@@ -130,7 +128,7 @@ class Viewpoint3D(AnyObject):
                 | 
                 |          My3DViewer.Viewpoint3D.NavigationStyle = catProjectionConic
 
-        :return: int
+        :return: enum cat_projection_mode
         :rtype: int
         """
 
@@ -139,7 +137,7 @@ class Viewpoint3D(AnyObject):
     @projection_mode.setter
     def projection_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_projection_mode
         """
 
         self.viewpoint_3d.ProjectionMode = value
@@ -168,7 +166,6 @@ class Viewpoint3D(AnyObject):
                 |           NiceViewpoint.Zoom(ZoomFactor)
                 |          End If
 
-        :return: float
         :rtype: float
         """
 
@@ -200,7 +197,6 @@ class Viewpoint3D(AnyObject):
                 |          Dim origin(2)
                 |          NiceViewpoint.GetOrigin origin
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = 'get_origin'
@@ -234,7 +230,6 @@ class Viewpoint3D(AnyObject):
                 |          Dim sight(2)
                 |          NiceViewpoint.GetSightDirection sight
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = 'get_sight_direction'
@@ -266,7 +261,6 @@ class Viewpoint3D(AnyObject):
                 |          Dim up(2)
                 |          NiceViewpoint.GetUpDirection up
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -300,7 +294,6 @@ class Viewpoint3D(AnyObject):
                 |          NiceViewpoint.PutOrigin Array(10, 25, 15)
 
         :param tuple origin:
-        :return: None
         :rtype: None
         """
         return self.viewpoint_3d.PutOrigin(origin)
@@ -340,7 +333,6 @@ class Viewpoint3D(AnyObject):
                 |          0)
 
         :param tuple o_sight:
-        :return: None
         :rtype: None
         """
         return self.viewpoint_3d.PutSightDirection(o_sight)
@@ -377,7 +369,6 @@ class Viewpoint3D(AnyObject):
                 |          NiceViewpoint.PutUpDirection Array(0, 0, 1)
 
         :param tuple o_up:
-        :return: None
         :rtype: None
         """
         return self.viewpoint_3d.PutUpDirection(o_up)

@@ -50,7 +50,6 @@ class ABQTabularAmplitude(ABQProperty):
                 |     Returns:
                 |         The size of the time/amplitude table.
 
-        :return: int
         :rtype: int
         """
 
@@ -75,7 +74,7 @@ class ABQTabularAmplitude(ABQProperty):
                 |         STEP_TIME
                 |         TOTAL_TIME
 
-        :return: int
+        :return: enum time_span_type
         :rtype: int
         """
 
@@ -84,7 +83,7 @@ class ABQTabularAmplitude(ABQProperty):
     @time_span.setter
     def time_span(self, value: int):
         """
-        :param int value:
+        :param int value: enum time_span_type
         """
 
         self.abq_tabular_amplitude.TimeSpan = value
@@ -112,7 +111,6 @@ class ABQTabularAmplitude(ABQProperty):
 
         :param tuple i_time:
         :param tuple i_amplitude:
-        :return: None
         :rtype: None
         """
         return self.abq_tabular_amplitude.AddTimeAmplitudeTable(i_time, i_amplitude)
@@ -153,7 +151,6 @@ class ABQTabularAmplitude(ABQProperty):
 
         :param tuple o_time:
         :param tuple o_amplitude:
-        :return: None
         :rtype: None
         """
         return self.abq_tabular_amplitude.GetTimeAmplitudeTable(o_time, o_amplitude)

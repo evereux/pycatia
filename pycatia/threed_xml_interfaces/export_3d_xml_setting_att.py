@@ -58,7 +58,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |               
                 |               export3DXmlSettingAtt.AlternateView = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -89,7 +88,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |           
                 |           export3DXmlSettingAtt.Animation = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -123,7 +121,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |               
                 |               export3DXmlSettingAtt.AnnotatedView = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -154,7 +151,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |           
                 |           export3DXmlSettingAtt.Annotation3D = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -185,7 +181,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |           
                 |           export3DXmlSettingAtt.DesignReview = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -218,7 +213,7 @@ class Export3DXmlSettingAtt(SettingController):
                 |           
                 |           export3DXmlSettingAtt.GeometryRepresentationFormat = cat3DXmlExact
 
-        :return: int
+        :return: enum cat_3d_xml_geom_representation_type
         :rtype: int
         """
 
@@ -252,7 +247,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |               
                 |               export3DXmlSettingAtt.Measure = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -284,7 +278,7 @@ class Export3DXmlSettingAtt(SettingController):
                 |           
                 |           export3DXmlSettingAtt.PPRSaveConfig = cat3DXmlProductAndResourceList
 
-        :return: int
+        :return: enum cat_3d_xml_ppr_save_config
         :rtype: int
         """
 
@@ -293,7 +287,7 @@ class Export3DXmlSettingAtt(SettingController):
     @ppr_save_config.setter
     def ppr_save_config(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_3d_xml_ppr_save_config
         """
 
         self.export_3d_xml_setting_att.PPRSaveConfig = value
@@ -318,7 +312,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |               
                 |               export3DXmlSettingAtt.Presentation = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -352,7 +345,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |               
                 |               export3DXmlSettingAtt.Section = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -384,7 +376,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |           
                 |           export3DXmlSettingAtt.SurfaceAccuracy = 0.01
 
-        :return: float
         :rtype: float
         """
 
@@ -415,7 +406,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |           
                 |           export3DXmlSettingAtt.DesignReview = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -466,7 +456,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetAlternateViewInfo(io_admin_level, io_locked)
@@ -507,7 +496,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetAnimationInfo(io_admin_level, io_locked)
@@ -549,7 +537,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetAnnotatedViewInfo(io_admin_level, io_locked)
@@ -590,7 +577,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetAnnotation3DInfo(io_admin_level, io_locked)
@@ -631,7 +617,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetDesignReviewInfo(io_admin_level, io_locked)
@@ -673,7 +658,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetGeometryRepresentationFormatInfo(io_admin_level, io_locked)
@@ -715,7 +699,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetMeasureInfo(io_admin_level, io_locked)
@@ -756,7 +739,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetPPRSaveConfigInfo(io_admin_level, io_locked)
@@ -798,7 +780,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetPresentationInfo(io_admin_level, io_locked)
@@ -840,7 +821,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetSectionInfo(io_admin_level, io_locked)
@@ -881,7 +861,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetSurfaceAccuracyInfo(io_admin_level, io_locked)
@@ -922,7 +901,6 @@ class Export3DXmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.export_3d_xml_setting_att.GetWorkInstructionsInfo(io_admin_level, io_locked)
@@ -956,7 +934,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetAlternateViewLock(i_locked)
@@ -1003,7 +980,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetAnimationLock(i_locked)
@@ -1052,7 +1028,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetAnnotatedViewLock(i_locked)
@@ -1099,7 +1074,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetAnnotation3DLock(i_locked)
@@ -1146,7 +1120,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetDesignReviewLock(i_locked)
@@ -1193,7 +1166,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetGeometryRepresentationFormatLock(i_locked)
@@ -1242,7 +1214,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetMeasureLock(i_locked)
@@ -1289,7 +1260,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetPPRSaveConfigLock(i_locked)
@@ -1338,7 +1308,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetPresentationLock(i_locked)
@@ -1387,7 +1356,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetSectionLock(i_locked)
@@ -1434,7 +1402,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetSurfaceAccuracyLock(i_locked)
@@ -1481,7 +1448,6 @@ class Export3DXmlSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.export_3d_xml_setting_att.SetWorkInstructionsLock(i_locked)

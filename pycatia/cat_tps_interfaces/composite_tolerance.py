@@ -47,7 +47,6 @@ class CompositeTolerance(AnyObject):
                 | 
                 |     Retrieves datum count.
 
-        :return: float
         :rtype: float
         """
 
@@ -69,7 +68,6 @@ class CompositeTolerance(AnyObject):
                 |         oValue
                 |             Positive or equal to -1 which means not valuated.
 
-        :return: float
         :rtype: float
         """
 

@@ -70,7 +70,6 @@ class ReferenceFrame(AnyObject):
                 |            
                 |                  All objects of the collection
 
-        :return: Annotations
         :rtype: Annotations
         """
         from pycatia.cat_tps_interfaces.annotations import Annotations
@@ -99,7 +98,6 @@ class ReferenceFrame(AnyObject):
         :param str o_first_box:
         :param str o_second_box:
         :param str o_third_box:
-        :return: None
         :rtype: None
         """
         return self.reference_frame.Frame(o_first_box, o_second_box, o_third_box)
@@ -126,7 +124,6 @@ class ReferenceFrame(AnyObject):
                 |            E_FAIL or E_NOIMPL : Axis System cannot be retrieved.
 
         :param UserSurface op_axis_system_ttrs:
-        :return: None
         :rtype: None
         """
         return self.reference_frame.GetAxisSystemTTRS(op_axis_system_ttrs.com_object)
@@ -170,9 +167,9 @@ class ReferenceFrame(AnyObject):
                 |
                 |          oValue
                 |            
-                |                oValue begins with the symbol :”[“ and ends by the symbol
-                |                “]”.
-                |                and between these symbols “[..]”, value are a a combination
+                |                oValue begins with the symbol :"[" and ends by the symbol
+                |                "]".
+                |                and between these symbols "[..]", value are a a combination
                 |                of
                 |                following legal values:
                 |                x,
@@ -190,7 +187,6 @@ class ReferenceFrame(AnyObject):
 
         :param cat_variant in_box:
         :param str o_value:
-        :return: None
         :rtype: None
         """
         return self.reference_frame.GetDegreesOfFreedom(in_box, o_value)
@@ -234,7 +230,6 @@ class ReferenceFrame(AnyObject):
                 |            E_FAIL or E_NOIMPL : Axis System cannot be set.
 
         :param UserSurface ip_axis_system_ttrs:
-        :return: None
         :rtype: None
         """
         return self.reference_frame.SetAxisSystemTTRS(ip_axis_system_ttrs.com_object)
@@ -277,9 +272,9 @@ class ReferenceFrame(AnyObject):
                 |
                 |          iValue
                 |            
-                |                iValue must begin by the symbol :”[“ and must end by the symbol
-                |                “]”.
-                |                and between these symbols “[..]”, value must be a combination
+                |                iValue must begin by the symbol :"[" and must end by the symbol
+                |                "]".
+                |                and between these symbols "[..]", value must be a combination
                 |                of
                 |                following legal values:
                 |                x,
@@ -300,7 +295,6 @@ class ReferenceFrame(AnyObject):
 
         :param cat_variant in_box:
         :param str i_value:
-        :return: None
         :rtype: None
         """
         return self.reference_frame.SetDegreesOfFreedom(in_box, i_value)
@@ -343,7 +337,6 @@ class ReferenceFrame(AnyObject):
         :param str i_first_box:
         :param str i_second_box:
         :param str i_third_box:
-        :return: None
         :rtype: None
         """
         return self.reference_frame.SetFrame(i_first_box, i_second_box, i_third_box)

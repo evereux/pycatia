@@ -54,7 +54,6 @@ class DrawingDimLine(AnyObject):
                 | 
                 |          oColorDimLine = MyDimLine.Color
 
-        :return: int
         :rtype: int
         """
 
@@ -85,7 +84,7 @@ class DrawingDimLine(AnyObject):
                 | 
                 |          odimLineGraphRep = MyDimLine.DimLineGraphRep
 
-        :return: int
+        :return: enum cat_dim_line_graph_rep
         :rtype: int
         """
 
@@ -94,7 +93,7 @@ class DrawingDimLine(AnyObject):
     @dim_line_graph_rep.setter
     def dim_line_graph_rep(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_line_graph_rep
         """
 
         self.drawing_dim_line.DimLineGraphRep = value
@@ -116,7 +115,7 @@ class DrawingDimLine(AnyObject):
                 | 
                 |          odimLineOrient = MyDimLine.DimLineOrientation
 
-        :return: int
+        :return: enum cat_dim_orientation
         :rtype: int
         """
 
@@ -125,7 +124,7 @@ class DrawingDimLine(AnyObject):
     @dim_line_orientation.setter
     def dim_line_orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_orientation
         """
 
         self.drawing_dim_line.DimLineOrientation = value
@@ -147,7 +146,7 @@ class DrawingDimLine(AnyObject):
                 | 
                 |          odimLineRef = MyDimLine.DimLineReference
 
-        :return: int
+        :return: enum cat_dim_reference
         :rtype: int
         """
 
@@ -156,7 +155,7 @@ class DrawingDimLine(AnyObject):
     @dim_line_reference.setter
     def dim_line_reference(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_reference
         """
 
         self.drawing_dim_line.DimLineReference = value
@@ -178,7 +177,7 @@ class DrawingDimLine(AnyObject):
                 | 
                 |          odimLineRep = MyDimLine.DimLineRep
 
-        :return: int
+        :return: enum cat_dim_line_rep
         :rtype: int
         """
 
@@ -201,7 +200,6 @@ class DrawingDimLine(AnyObject):
                 | 
                 |          odimLineType = MyDimLine.DimLineType
 
-        :return: int
         :rtype: int
         """
 
@@ -224,7 +222,6 @@ class DrawingDimLine(AnyObject):
                 | 
                 |          oThickDimLine = MyDimLine.Thickness
 
-        :return: float
         :rtype: float
         """
 
@@ -263,7 +260,6 @@ class DrawingDimLine(AnyObject):
 
         :param float o_dir_x:
         :param float o_dir_y:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_line.GetDimLineDir(o_dir_x, o_dir_y)
@@ -289,7 +285,6 @@ class DrawingDimLine(AnyObject):
                 |              MyDimLine.GetGeomInfo(oGeomInfos)
 
         :param tuple o_geom_infos:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_line.GetGeomInfo(o_geom_infos)
@@ -331,7 +326,6 @@ class DrawingDimLine(AnyObject):
                 |              ColorSymb = MyDimLine.GetSymbColor(Index)
 
         :param int index:
-        :return: int
         :rtype: int
         """
         return self.drawing_dim_line.GetSymbColor(index)
@@ -359,7 +353,6 @@ class DrawingDimLine(AnyObject):
                 |              ThickSymb = MyDimLine.GetSymbThickness(Index)
 
         :param int index:
-        :return: float
         :rtype: float
         """
         return self.drawing_dim_line.GetSymbThickness(index)
@@ -415,7 +408,6 @@ class DrawingDimLine(AnyObject):
 
         :param int index:
         :param int i_color_symb:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_line.SetSymbColor(index, i_color_symb)
@@ -445,7 +437,6 @@ class DrawingDimLine(AnyObject):
 
         :param int index:
         :param float i_thick_symb:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_line.SetSymbThickness(index, i_thick_symb)
@@ -473,8 +464,7 @@ class DrawingDimLine(AnyObject):
                 |              MyDimLine.SetSymbType(Index, iSymbType)
 
         :param int index:
-        :param int i_symb_type:
-        :return: None
+        :param int i_symb_type: enum cat_dim_symbols
         :rtype: None
         """
         return self.drawing_dim_line.SetSymbType(index, i_symb_type)

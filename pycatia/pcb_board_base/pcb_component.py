@@ -50,7 +50,6 @@ class PCBComponent(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -82,7 +81,6 @@ class PCBComponent(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -113,7 +111,6 @@ class PCBComponent(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -144,7 +141,6 @@ class PCBComponent(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -175,7 +171,6 @@ class PCBComponent(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -207,7 +202,6 @@ class PCBComponent(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -239,7 +233,6 @@ class PCBComponent(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -271,7 +264,6 @@ class PCBComponent(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -302,7 +294,6 @@ class PCBComponent(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 

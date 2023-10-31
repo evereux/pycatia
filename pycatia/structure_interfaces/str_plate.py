@@ -52,7 +52,6 @@ class StrPlate(StrObject):
                 | 
                 |     Returns the offset between the given support and the support of the plate.
 
-        :return: Parameter
         :rtype: Parameter
         """
 
@@ -69,7 +68,6 @@ class StrPlate(StrObject):
                 | 
                 |     Returns the sketch object of the plate.
 
-        :return: Sketch
         :rtype: Sketch
         """
 
@@ -86,7 +84,6 @@ class StrPlate(StrObject):
                 | 
                 |     Returns the standard thickness following the support orientation.
 
-        :return: float
         :rtype: float
         """
 
@@ -111,7 +108,6 @@ class StrPlate(StrObject):
                 | 
                 |     Returns or sets the support of the plate.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -137,7 +133,6 @@ class StrPlate(StrObject):
                 | 
                 |      Plate_1.ReverseDirection
 
-        :return: None
         :rtype: None
         """
         return self.str_plate.ReverseDirection()
@@ -153,7 +148,6 @@ class StrPlate(StrObject):
 
         :param str i_material:
         :param str i_grade:
-        :return: None
         :rtype: None
         """
         return self.str_plate.SetMaterialAndGrade(i_material, i_grade)

@@ -53,7 +53,7 @@ class DrawingText(AnyObject):
                 | 
                 |          MyText.AnchorPosition = TopLeft
 
-        :return: int
+        :return: enum cat_text_anchor_position
         :rtype: int
         """
 
@@ -62,7 +62,7 @@ class DrawingText(AnyObject):
     @anchor_position.setter
     def anchor_position(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_text_anchor_position
         """
 
         self.drawing_text.AnchorPosition = value
@@ -89,7 +89,6 @@ class DrawingText(AnyObject):
                 |          Angle90Clockwise = -90
                 |          MyText.Angle = Angle90Clockwise
 
-        :return: float
         :rtype: float
         """
 
@@ -121,7 +120,6 @@ class DrawingText(AnyObject):
                 | 
                 |          MyText.AssociativeElement = line
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -152,7 +150,7 @@ class DrawingText(AnyObject):
                 | 
                 |          MyText.FrameType = catEllipse
 
-        :return: int
+        :return: enum cat_text_frame_type
         :rtype: int
         """
 
@@ -161,7 +159,7 @@ class DrawingText(AnyObject):
     @frame_type.setter
     def frame_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_text_frame_type
         """
 
         self.drawing_text.FrameType = value
@@ -184,7 +182,6 @@ class DrawingText(AnyObject):
                 |          Dim LeaderCollection As DrawingLeaders
                 |          Set LeaderCollection = MyText.Leaders
 
-        :return: DrawingLeaders
         :rtype: DrawingLeaders
         """
 
@@ -207,7 +204,6 @@ class DrawingText(AnyObject):
                 | 
                 |          CharString = MyText.Text
 
-        :return: str
         :rtype: str
         """
 
@@ -242,7 +238,6 @@ class DrawingText(AnyObject):
                 |          Dim TextProperties As DrawingTextProperties
                 |          Set TextProperties = MyText.TextProperties
 
-        :return: DrawingTextProperties
         :rtype: DrawingTextProperties
         """
 
@@ -265,7 +260,6 @@ class DrawingText(AnyObject):
                 | 
                 |          MyText.WrappingWidth = 50.
 
-        :return: float
         :rtype: float
         """
 
@@ -298,7 +292,6 @@ class DrawingText(AnyObject):
                 | 
                 |          X = MyText.x
 
-        :return: float
         :rtype: float
         """
 
@@ -333,7 +326,6 @@ class DrawingText(AnyObject):
                 |          NewYCoordinate = 5*25.4/1000
                 |          MyText.y =  NewYCoordinate
 
-        :return: float
         :rtype: float
         """
 
@@ -370,8 +362,7 @@ class DrawingText(AnyObject):
                 |          CatTextFrameType ityp = catNone
                 |          MyText.ActivateFrame(itype)
 
-        :param int itype:
-        :return: None
+        :param int itype: enum cat_text_frame_type
         :rtype: None
         """
         return self.drawing_text.ActivateFrame(itype)
@@ -420,7 +411,6 @@ class DrawingText(AnyObject):
 
         :param int i_first:
         :param int inb_character:
-        :return: str
         :rtype: str
         """
         return self.drawing_text.GetFontName(i_first, inb_character)
@@ -454,7 +444,6 @@ class DrawingText(AnyObject):
 
         :param int i_first:
         :param int inb_character:
-        :return: float
         :rtype: float
         """
         return self.drawing_text.GetFontSize(i_first, inb_character)
@@ -476,7 +465,6 @@ class DrawingText(AnyObject):
                 | 
                 |          IsModifiable = MyText.GetModifiableIn2DComponentInstances
 
-        :return: bool
         :rtype: bool
         """
         return self.drawing_text.GetModifiableIn2DComponentInstances()
@@ -515,10 +503,9 @@ class DrawingText(AnyObject):
                 |          inbCharacter = 0
                 |          oval = MyText.GetParameterOnsubString(iParam, iFirst, inbCharacter)
 
-        :param int i_param:
+        :param int i_param: enum cat_text_property
         :param int i_first:
         :param int inb_character:
-        :return: int
         :rtype: int
         """
         return self.drawing_text.GetParameterOnSubString(i_param, i_first, inb_character)
@@ -560,7 +547,6 @@ class DrawingText(AnyObject):
         :param int i_first:
         :param int inb_character:
         :param AnyObject ibase:
-        :return: None
         :rtype: None
         """
         return self.drawing_text.InsertVariable(i_first, inb_character, ibase.com_object)
@@ -597,7 +583,6 @@ class DrawingText(AnyObject):
         :param int i_first:
         :param int inb_character:
         :param str i_font_name:
-        :return: None
         :rtype: None
         """
         return self.drawing_text.SetFontName(i_first, inb_character, i_font_name)
@@ -633,7 +618,6 @@ class DrawingText(AnyObject):
         :param int i_first:
         :param int inb_character:
         :param float i_font_size:
-        :return: None
         :rtype: None
         """
         return self.drawing_text.SetFontSize(i_first, inb_character, i_font_size)
@@ -656,7 +640,6 @@ class DrawingText(AnyObject):
                 | 
                 |          MyText.SetModifiableIn2DComponentInstances
 
-        :return: None
         :rtype: None
         """
         return self.drawing_text.SetModifiableIn2DComponentInstances()
@@ -697,11 +680,10 @@ class DrawingText(AnyObject):
                 |              MyText.SetParameterOnsubString iParam, iFirst, inbCharacter,
                 |              ival
 
-        :param int i_param:
+        :param int i_param: enum cat_text_property
         :param int i_first:
         :param int inb_character:
         :param int i_val:
-        :return: None
         :rtype: None
         """
         return self.drawing_text.SetParameterOnSubString(i_param, i_first, inb_character, i_val)

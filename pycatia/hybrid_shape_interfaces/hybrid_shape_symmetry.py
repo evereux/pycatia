@@ -75,7 +75,6 @@ class HybridShapeSymmetry(HybridShape):
                 | 
                 |          hybShpSymmetry.CreationMode = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -107,7 +106,6 @@ class HybridShapeSymmetry(HybridShape):
                 |          Dim Elem As Reference
                 |          Set Elem = Symmetry.ElemToSymmetry
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -142,7 +140,6 @@ class HybridShapeSymmetry(HybridShape):
                 |          Dim Ref As Reference
                 |          Set Ref = Symmetry.Reference
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -178,7 +175,6 @@ class HybridShapeSymmetry(HybridShape):
                 | 
                 |          hybShpSymmetry.VolumeResult = True
 
-        :return: bool
         :rtype: bool
         """
 

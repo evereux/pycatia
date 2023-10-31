@@ -62,7 +62,6 @@ class Revolution(SketchBasedShape):
                 | 
                 |          Set firstAngle = MyRevolution.FirstAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -92,7 +91,6 @@ class Revolution(SketchBasedShape):
                 |              Set thinFlag = firstRevol.IsThin
                 |              firstRevol.IsThin = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -129,7 +127,6 @@ class Revolution(SketchBasedShape):
                 |              Set MergeEndFlag = firstRevol.IsMergeEnd
                 |              firstRevol.IsMergeEnd = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -168,7 +165,6 @@ class Revolution(SketchBasedShape):
                 |              Set NeutralFiberFlag = firstRevol.IsNeutralFiber
                 |              firstRevol.IsNeutralFiber = TRUE
 
-        :return: bool
         :rtype: bool
         """
 
@@ -199,7 +195,6 @@ class Revolution(SketchBasedShape):
                 |     Example: This example retrieves in RevoluteAxis the rotation axis for the Rotate axis of the
                 |     Revol feature Dim RevoluteAxis As Reference Set RevoluteAxis = Rotate.Axis
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -234,7 +229,6 @@ class Revolution(SketchBasedShape):
                 | 
                 |          Set secondAngle = MyRevolution.SecondAngle
 
-        :return: Angle
         :rtype: Angle
         """
 

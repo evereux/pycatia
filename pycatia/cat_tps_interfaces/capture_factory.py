@@ -53,7 +53,6 @@ class CaptureFactory(Factory):
                 |         oCapture
                 |             The new created Capture.
 
-        :return: Capture
         :rtype: Capture
         """
         return Capture(self.capture_factory.CreateCapture())

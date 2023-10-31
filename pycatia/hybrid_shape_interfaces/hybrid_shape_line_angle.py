@@ -58,7 +58,6 @@ class HybridShapeLineAngle(Line):
                 |         oAngle
                 |             angle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -80,7 +79,6 @@ class HybridShapeLineAngle(Line):
                 |         oStart
                 |             start length
 
-        :return: Length
         :rtype: Length
         """
 
@@ -102,7 +100,6 @@ class HybridShapeLineAngle(Line):
                 |         oCurve
                 |             reference curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -132,7 +129,6 @@ class HybridShapeLineAngle(Line):
                 |         oEnd
                 |             end length
 
-        :return: Length
         :rtype: Length
         """
 
@@ -156,7 +152,6 @@ class HybridShapeLineAngle(Line):
                 |         oGeod
                 |             Geodesic boolean
 
-        :return: bool
         :rtype: bool
         """
 
@@ -188,7 +183,6 @@ class HybridShapeLineAngle(Line):
                 |         oOrientation
                 |             orientation : can be 1 or -1
 
-        :return: int
         :rtype: int
         """
 
@@ -218,7 +212,6 @@ class HybridShapeLineAngle(Line):
                 |         oPoint
                 |             starting point.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -248,7 +241,6 @@ class HybridShapeLineAngle(Line):
                 |         oSurface
                 |             support surface.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -280,7 +272,6 @@ class HybridShapeLineAngle(Line):
                 |             on the side of the start point = 3 : infinite end point - the line is infinite on the
                 |             side of the end point
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_line_angle.GetLengthType()
@@ -301,7 +292,6 @@ class HybridShapeLineAngle(Line):
                 |         oSym
                 |             Symetry flag
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_line_angle.GetSymmetricalExtension()
@@ -325,7 +315,6 @@ class HybridShapeLineAngle(Line):
                 |             of the end point
 
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_angle.SetLengthType(i_type)
@@ -346,7 +335,6 @@ class HybridShapeLineAngle(Line):
                 |             Symetry flag
 
         :param bool i_sym:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_angle.SetSymmetricalExtension(i_sym)

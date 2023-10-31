@@ -54,7 +54,6 @@ class DrawingDimExtLine(AnyObject):
                 | 
                 |          oColorExtLine = MyExtLine.Color
 
-        :return: int
         :rtype: int
         """
 
@@ -85,7 +84,6 @@ class DrawingDimExtLine(AnyObject):
                 | 
                 |          oExtLineSlant = MyExtLine.ExtLineSlant
 
-        :return: float
         :rtype: float
         """
 
@@ -116,7 +114,6 @@ class DrawingDimExtLine(AnyObject):
                 | 
                 |          oExtLineType = MyExtLine.ExtLineType
 
-        :return: int
         :rtype: int
         """
 
@@ -139,7 +136,6 @@ class DrawingDimExtLine(AnyObject):
                 | 
                 |          oThickExtLine = MyExtLine.Thickness
 
-        :return: float
         :rtype: float
         """
 
@@ -178,7 +174,6 @@ class DrawingDimExtLine(AnyObject):
 
         :param int i_index:
         :param tuple i_two_points:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_ext_line.AddInterrupt(i_index, i_two_points)
@@ -236,7 +231,6 @@ class DrawingDimExtLine(AnyObject):
         :param float o_angle:
         :param float o_height:
         :param float o_width:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_ext_line.GetFunnel(i_index, o_mode, o_angle, o_height, o_width)
@@ -263,7 +257,6 @@ class DrawingDimExtLine(AnyObject):
                 |              Gap = MyExtLine.GetGap(iIndex)
 
         :param int i_index:
-        :return: float
         :rtype: float
         """
         return self.drawing_dim_ext_line.GetGap(i_index)
@@ -294,7 +287,6 @@ class DrawingDimExtLine(AnyObject):
 
         :param int i_index:
         :param tuple o_geom_infos:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_ext_line.GetGeomInfo(i_index, o_geom_infos)
@@ -338,7 +330,6 @@ class DrawingDimExtLine(AnyObject):
                 |              NbIntOnExtLine = MyExtLine.GetInterrupt(iIndex)
 
         :param int i_index:
-        :return: int
         :rtype: int
         """
         return self.drawing_dim_ext_line.GetInterrupt(i_index)
@@ -365,7 +356,6 @@ class DrawingDimExtLine(AnyObject):
                 |              Overrun = MyExtLine.GetOverrun(iIndex)
 
         :param int i_index:
-        :return: float
         :rtype: float
         """
         return self.drawing_dim_ext_line.GetOverrun(i_index)
@@ -392,7 +382,6 @@ class DrawingDimExtLine(AnyObject):
                 |              ExtlineVisibility = MyExtLine.GetVisibility(iIndex)
 
         :param int i_index:
-        :return: int
         :rtype: int
         """
         return self.drawing_dim_ext_line.GetVisibility(i_index)
@@ -418,7 +407,6 @@ class DrawingDimExtLine(AnyObject):
                 |              MyExtLine.RemoveInterrupt(iIndex)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_ext_line.RemoveInterrupt(i_index)
@@ -461,7 +449,6 @@ class DrawingDimExtLine(AnyObject):
         :param float i_angle:
         :param float i_height:
         :param float i_width:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_ext_line.SetFunnel(i_index, i_mode, i_angle, i_height, i_width)
@@ -490,7 +477,6 @@ class DrawingDimExtLine(AnyObject):
 
         :param int i_index:
         :param float i_gap:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_ext_line.SetGap(i_index, i_gap)
@@ -519,7 +505,6 @@ class DrawingDimExtLine(AnyObject):
 
         :param int i_index:
         :param float i_overrun:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_ext_line.SetOverrun(i_index, i_overrun)
@@ -549,7 +534,6 @@ class DrawingDimExtLine(AnyObject):
 
         :param int i_index:
         :param int i_extline_visibility:
-        :return: None
         :rtype: None
         """
         return self.drawing_dim_ext_line.SetVisibility(i_index, i_extline_visibility)

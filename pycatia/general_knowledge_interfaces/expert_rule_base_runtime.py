@@ -77,7 +77,7 @@ class ExpertRuleBaseRuntime(Relation):
                 |     1
                 |         LongText
 
-        :return: int
+        :return: enum cat_description_length_type
         :rtype: int
         """
 
@@ -86,7 +86,7 @@ class ExpertRuleBaseRuntime(Relation):
     @report_description_length.setter
     def report_description_length(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_description_length_type
         """
 
         self.expert_rule_base_runtime.ReportDescriptionLength = value
@@ -111,7 +111,7 @@ class ExpertRuleBaseRuntime(Relation):
                 |     3
                 |         Email
 
-        :return: int
+        :return: enum cat_out_put_format_type
         :rtype: int
         """
 
@@ -120,7 +120,7 @@ class ExpertRuleBaseRuntime(Relation):
     @report_output_format.setter
     def report_output_format(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_out_put_format_type
         """
 
         self.expert_rule_base_runtime.ReportOutPutFormat = value
@@ -136,7 +136,6 @@ class ExpertRuleBaseRuntime(Relation):
                 | 
                 |     Returns or sets the Report output path.
 
-        :return: str
         :rtype: str
         """
 
@@ -168,7 +167,7 @@ class ExpertRuleBaseRuntime(Relation):
                 |     2
                 |         ByState
 
-        :return: int
+        :return: enum cat_show_result_type
         :rtype: int
         """
 
@@ -177,7 +176,7 @@ class ExpertRuleBaseRuntime(Relation):
     @report_show_result.setter
     def report_show_result(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_show_result_type
         """
 
         self.expert_rule_base_runtime.ReportShowResult = value
@@ -203,10 +202,9 @@ class ExpertRuleBaseRuntime(Relation):
                 |        ' .. action on the editable rulebase
                 |      End if
 
-        :return: ExpertRuleBase
         :rtype: ExpertRuleBase
         """
-        
+
         from pycatia.general_knowledge_interfaces.expert_rule_base import ExpertRuleBase
         return ExpertRuleBase(self.expert_rule_base_runtime.RuleBaseEdition)
 
@@ -222,7 +220,6 @@ class ExpertRuleBaseRuntime(Relation):
                 |     Returns the Set linked to the RuleBase. This is the main RuleSet that
                 |     contains all the RuleBase components.
 
-        :return: ExpertRuleSet
         :rtype: ExpertRuleSet
         """
 
@@ -239,7 +236,7 @@ class ExpertRuleBaseRuntime(Relation):
                 | 
                 |     Returns or sets the solve option.
 
-        :return: int
+        :return: enum cat_solve_type
         :rtype: int
         """
 
@@ -248,7 +245,7 @@ class ExpertRuleBaseRuntime(Relation):
     @solve_type.setter
     def solve_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_solve_type
         """
 
         self.expert_rule_base_runtime.SolveType = value
@@ -271,7 +268,7 @@ class ExpertRuleBaseRuntime(Relation):
                 |     2
                 |         Both
 
-        :return: int
+        :return: enum cat_visualization_type
         :rtype: int
         """
 
@@ -280,7 +277,7 @@ class ExpertRuleBaseRuntime(Relation):
     @text_visualization.setter
     def text_visualization(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_visualization_type
         """
 
         self.expert_rule_base_runtime.TextVisualization = value
@@ -298,7 +295,6 @@ class ExpertRuleBaseRuntime(Relation):
                 |     Returns:
                 |         A string among ("ExpertRuleBase", "ExpertRuleBaseRuntime")
 
-        :return: str
         :rtype: str
         """
         return self.expert_rule_base_runtime.AccurateType()
@@ -328,7 +324,6 @@ class ExpertRuleBaseRuntime(Relation):
                 |           rulebase.AddFact (pad3)
 
         :param AnyObject i_fact:
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_runtime.AddFact(i_fact.com_object)
@@ -349,7 +344,6 @@ class ExpertRuleBaseRuntime(Relation):
                 |             root of facts to be added.
 
         :param AnyObject i_root_facts:
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_runtime.AddRootOfFacts(i_root_facts.com_object)
@@ -370,7 +364,6 @@ class ExpertRuleBaseRuntime(Relation):
                 |       Set rulebase = part.Relations.Item("RuleBase")
                 |       rulebase.Deduce ()
 
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_runtime.Deduce()
@@ -399,7 +392,6 @@ class ExpertRuleBaseRuntime(Relation):
                 |     Returns:
                 |         Fingerprint information
 
-        :return: bool
         :rtype: bool
         """
         return self.expert_rule_base_runtime.Fingerprint()
@@ -417,7 +409,6 @@ class ExpertRuleBaseRuntime(Relation):
                 |     Returns:
                 |         Number of roots of facts.
 
-        :return: int
         :rtype: int
         """
         return self.expert_rule_base_runtime.GetNumberOfRootsOfFacts()
@@ -438,7 +429,6 @@ class ExpertRuleBaseRuntime(Relation):
                 |             array of roots of facts.
 
         :param tuple o_roots_of_facts:
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_runtime.GetRootsOfFacts(o_roots_of_facts)
@@ -494,7 +484,6 @@ class ExpertRuleBaseRuntime(Relation):
 
         :param ExpertRuleSet i_rule_set:
         :param bool i_force:
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_runtime.Import(i_rule_set.com_object, i_force)
@@ -542,7 +531,6 @@ class ExpertRuleBaseRuntime(Relation):
 
         :param str i_path:
         :param bool i_force:
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_runtime.ImportFromFile(i_path, i_force)
@@ -590,7 +578,6 @@ class ExpertRuleBaseRuntime(Relation):
 
         :param AnyObject i_root:
         :param bool i_force:
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_runtime.ImportWithLink(i_root.com_object, i_force)
@@ -626,7 +613,6 @@ class ExpertRuleBaseRuntime(Relation):
                 |             root of facts to be removed.
 
         :param AnyObject i_root_facts:
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_runtime.RemoveRootOfFacts(i_root_facts.com_object)
@@ -651,7 +637,6 @@ class ExpertRuleBaseRuntime(Relation):
                 |           part.Relations.Item("RuleBase").Report (0)
 
         :param bool really_start_browser:
-        :return: None
         :rtype: None
         """
         return self.expert_rule_base_runtime.Report(really_start_browser)
@@ -692,7 +677,6 @@ class ExpertRuleBaseRuntime(Relation):
                 |     Returns:
                 |         Synchronize status
 
-        :return: bool
         :rtype: bool
         """
         return self.expert_rule_base_runtime.SynchronizeStatus()

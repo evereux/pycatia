@@ -56,7 +56,6 @@ class ArrBendableString(AnyObject):
                 |          Dim NumOfBendSegments
                 |          NumOfBendSegments = BendablePipe001.GetNumOfSegments
 
-        :return: int
         :rtype: int
         """
         return self.arr_bendable_string.GetNumOfSegments()
@@ -72,7 +71,6 @@ class ArrBendableString(AnyObject):
                 |     Returns the cumulative number of the straight/arc segments that make up the
                 |     Bendable object.
 
-        :return: int
         :rtype: int
         """
         return self.arr_bendable_string.GetNumOfSegmentsLocalAxis()
@@ -115,7 +113,6 @@ class ArrBendableString(AnyObject):
 
         :param int i_index:
         :param tuple o_segment_data:
-        :return: float
         :rtype: float
         """
         return self.arr_bendable_string.GetSegmentData(i_index, o_segment_data)
@@ -152,7 +149,6 @@ class ArrBendableString(AnyObject):
                 |          Dim _BendInstanceName
                 |          _BendInstanceName = BendablePipe001.InstanceName
 
-        :return: str
         :rtype: str
         """
         return self.arr_bendable_string.InstanceName()

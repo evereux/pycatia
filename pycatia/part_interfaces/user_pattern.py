@@ -57,7 +57,6 @@ class UserPattern(Pattern):
                 | 
                 |          Set anchor = firstPattern.AnchorPoint
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -89,7 +88,6 @@ class UserPattern(Pattern):
                 | 
                 |          Set list = firstPattern.FeatureToLocatePositions
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -118,7 +116,6 @@ class UserPattern(Pattern):
                 |          call firstPattern.AddFeatureToLocatePositions(object)
 
         :param AnyObject i_feature_to_locate_positions:
-        :return: None
         :rtype: None
         """
         return self.user_pattern.AddFeatureToLocatePositions(i_feature_to_locate_positions.com_object)

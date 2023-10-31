@@ -69,7 +69,6 @@ class Sketches(Collection):
                 |          Set newSketch = myPart.Sketches.Add(XYPlane)
 
         :param Reference i_plane:
-        :return: Sketch
         :rtype: Sketch
         """
         return Sketch(self.sketches.Add(i_plane.com_object))
@@ -94,7 +93,6 @@ class Sketches(Collection):
                 |         The retrieved boundary
 
         :param str i_label:
-        :return: Boundary
         :rtype: Boundary
         """
         return Boundary(self.sketches.GetBoundary(i_label))
@@ -129,7 +127,6 @@ class Sketches(Collection):
                 |          Set lastSketch = sketchList.Item(sketchList.Count)
 
         :param cat_variant i_index:
-        :return: Sketch
         :rtype: Sketch
         """
         return Sketch(self.sketches.Item(i_index))

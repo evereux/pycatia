@@ -50,7 +50,6 @@ class FunctionalElement(AnyObject):
                 | 
                 |     Returns the Document.
 
-        :return: FunctionalDocument
         :rtype: FunctionalDocument
         """
 
@@ -67,7 +66,6 @@ class FunctionalElement(AnyObject):
                 | 
                 |     Returns the parameters collection.
 
-        :return: Parameters
         :rtype: Parameters
         """
 

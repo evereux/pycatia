@@ -57,7 +57,6 @@ class AnalysisMeshParts(Collection):
                 |         The created meshpart
 
         :param str i_type:
-        :return: AnalysisMeshPart
         :rtype: AnalysisMeshPart
         """
         return AnalysisMeshPart(self.analysis_mesh_parts.Add(i_type))
@@ -87,7 +86,6 @@ class AnalysisMeshParts(Collection):
                 |         The retrieved meshpart.
 
         :param cat_variant i_index:
-        :return: AnalysisMeshPart
         :rtype: AnalysisMeshPart
         """
         return AnalysisMeshPart(self.analysis_mesh_parts.Item(i_index))
@@ -115,7 +113,6 @@ class AnalysisMeshParts(Collection):
                 |         AnyObject.Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.analysis_mesh_parts.Remove(i_index)

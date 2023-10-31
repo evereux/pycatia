@@ -59,7 +59,7 @@ class ProductScene(AnyObject):
                 |             Dim type As CatSceneType
                 |             type = NewSceneDelta.Type
 
-        :return: int
+        :return: enum cat_scene_type
         :rtype: int
         """
 
@@ -95,8 +95,7 @@ class ProductScene(AnyObject):
                 |             Dim CopyScene As ProductScene
                 |             CopyScene = Configuration1.Copy(type)
 
-        :param int i_type:
-        :return: ProductScene
+        :param int i_type: enum cat_scene_type
         :rtype: ProductScene
         """
         return ProductScene(self.product_scene.Copy(i_type))
@@ -130,7 +129,6 @@ class ProductScene(AnyObject):
                 |             ExistsInSc = Configuration1.ExistsInScene(Engine)
 
         :param Product i_product:
-        :return: bool
         :rtype: bool
         """
         return self.product_scene.ExistsInScene(i_product.com_object)
@@ -165,7 +163,6 @@ class ProductScene(AnyObject):
                 |             type = NewSceneDelta.GetSceneProductData(Engine)
 
         :param Product i_product:
-        :return: SceneProductData
         :rtype: SceneProductData
         """
         return SceneProductData(self.product_scene.GetSceneProductData(i_product.com_object))

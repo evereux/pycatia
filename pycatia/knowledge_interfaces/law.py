@@ -58,7 +58,6 @@ class Law(Relation):
 
         :param str i_name:
         :param str i_magnitude:
-        :return: None
         :rtype: None
         """
         return self.law.AddFormalParameter(i_name, i_magnitude)
@@ -79,7 +78,6 @@ class Law(Relation):
                 |             The name of the formal parameter.
 
         :param str i_name:
-        :return: None
         :rtype: None
         """
         return self.law.RemoveFormalParameter(i_name)

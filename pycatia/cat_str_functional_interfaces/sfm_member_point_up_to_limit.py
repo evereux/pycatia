@@ -58,7 +58,6 @@ class SFMMemberPointUpToLimit(SFMMember):
                 |          Dim Direction As Reference
                 |          Set Direction = SfmMemberPointUpToLimit.Direction
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -90,7 +89,6 @@ class SFMMemberPointUpToLimit(SFMMember):
                 |          Dim DirectionOrientation As Integer
                 |          Set DirectionOrientation = SfmMemberPointUpToLimit.DirectionOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -122,7 +120,6 @@ class SFMMemberPointUpToLimit(SFMMember):
                 |          Dim Limit As Reference
                 |          Set Limit = SfmMemberPointUpToLimit.Limit
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -155,7 +152,6 @@ class SFMMemberPointUpToLimit(SFMMember):
                 |          Dim Point As Reference
                 |          Set Point = SfmMemberPointUpToLimit.Point
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -185,7 +181,6 @@ class SFMMemberPointUpToLimit(SFMMember):
                 | 
                 |          SfmMemberPointUpToLimit.InvertDirection
 
-        :return: None
         :rtype: None
         """
         return self.sfm_member_point_up_to_limit.InvertDirection()

@@ -66,7 +66,6 @@ class DefeaturingFilters(Collection):
                 |              Set theIndex = firstDefeaturingFilters.Add(theFilterType)
 
         :param str i_filter_type_to_add:
-        :return: int
         :rtype: int
         """
         return self.defeaturing_filters.Add(i_filter_type_to_add)
@@ -100,7 +99,6 @@ class DefeaturingFilters(Collection):
                 |              Set myFilter = firstDefeaturingFilters.Item(theIndex)
 
         :param cat_variant i_filter_id:
-        :return: DefeaturingFilter
         :rtype: DefeaturingFilter
         """
         return DefeaturingFilter(self.defeaturing_filters.Item(i_filter_id))
@@ -131,7 +129,6 @@ class DefeaturingFilters(Collection):
                 |                  firstDefeaturingFilters.Remove theIndex
 
         :param cat_variant i_filter_id:
-        :return: None
         :rtype: None
         """
         return self.defeaturing_filters.Remove(i_filter_id)

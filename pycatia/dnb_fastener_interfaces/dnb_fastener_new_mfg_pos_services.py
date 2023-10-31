@@ -49,7 +49,6 @@ class DnbFastenerNewMfgPosServices(AnyObject):
                 |     myObject.GetFlaggedFasteners ArrayFastener
 
         :param tuple o_fastener_array:
-        :return: None
         :rtype: None
         """
         return self.dnb_fastener_new_mfg_pos_services.GetFlaggedFasteners(o_fastener_array)
@@ -83,7 +82,6 @@ class DnbFastenerNewMfgPosServices(AnyObject):
                 |     Set myObject = CATIA.GetItem("DNBFastenerNewMfgPosServices")
                 |     NbFastener = myObject.GetNumberOfFlaggedFasteners
 
-        :return: int
         :rtype: int
         """
         return self.dnb_fastener_new_mfg_pos_services.GetNumberOfFlaggedFasteners()
@@ -105,7 +103,6 @@ class DnbFastenerNewMfgPosServices(AnyObject):
                 |     For example the fastener is already flagged.
 
         :param Fastener i_fastener:
-        :return: None
         :rtype: None
         """
         return self.dnb_fastener_new_mfg_pos_services.SetFlag(i_fastener.com_object)
@@ -142,7 +139,6 @@ class DnbFastenerNewMfgPosServices(AnyObject):
                 |     For example the fasteners are already flagged.
 
         :param tuple i_fastener_array:
-        :return: None
         :rtype: None
         """
         return self.dnb_fastener_new_mfg_pos_services.SetFlagOnFasteners(i_fastener_array)
@@ -179,7 +175,6 @@ class DnbFastenerNewMfgPosServices(AnyObject):
                 |     For example the fastener is not flagged.
 
         :param Fastener i_fastener:
-        :return: None
         :rtype: None
         """
         return self.dnb_fastener_new_mfg_pos_services.UnsetFlag(i_fastener.com_object)
@@ -217,7 +212,6 @@ class DnbFastenerNewMfgPosServices(AnyObject):
                 |     successful. For example the fasteners are not flagged.
 
         :param tuple i_fastener_array:
-        :return: None
         :rtype: None
         """
         return self.dnb_fastener_new_mfg_pos_services.UnsetFlagOnFasteners(i_fastener_array)

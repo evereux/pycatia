@@ -73,7 +73,6 @@ class Distance(AnyObject):
                 | 
                 |                 NewDistance.Accuracy = 10.
 
-        :return: float
         :rtype: float
         """
 
@@ -107,7 +106,6 @@ class Distance(AnyObject):
                 |             Dim TheAnnotatedViewsList As AnnotatedViews
                 |             Set TheAnnotatedViewsList = NewDistance.AnnotatedViews
 
-        :return: AnnotatedViews
         :rtype: AnnotatedViews
         """
 
@@ -143,7 +141,6 @@ class Distance(AnyObject):
                 | 
                 |                 NewDistance.ComputationType = CatDistanceComputationTypeInsideOne
 
-        :return: int
         :rtype: int
         """
 
@@ -188,7 +185,6 @@ class Distance(AnyObject):
                 |                 Dim FirstGroup As Group
                 |                 NewDistance.FirstGroup = FirstGroup
 
-        :return: Group
         :rtype: Group
         """
 
@@ -223,7 +219,6 @@ class Distance(AnyObject):
                 |             Dim AProduct As Product
                 |             Set AProduct = NewDistance.FirstProduct
 
-        :return: Product
         :rtype: Product
         """
 
@@ -253,7 +248,6 @@ class Distance(AnyObject):
                 | 
                 |             If NewDistance.IsDefined = 1 Then
 
-        :return: int
         :rtype: int
         """
 
@@ -279,7 +273,6 @@ class Distance(AnyObject):
                 |             Dim TheMarker3DsList As Marker3Ds
                 |             Set TheMarker3DsList = NewDistance.Marker3Ds
 
-        :return: Marker3Ds
         :rtype: Marker3Ds
         """
 
@@ -318,7 +311,6 @@ class Distance(AnyObject):
                 | 
                 |                 NewDistance.MaximumDistance = 10.
 
-        :return: float
         :rtype: float
         """
 
@@ -346,24 +338,18 @@ class Distance(AnyObject):
                 | 
                 |     Example:
                 | 
-                |              The first example retrieves the type of NewDistance
-                |              Distance.
-                |             
-                | 
+                |             The first example retrieves the type of NewDistance
+                |             Distance.
+                |
                 |             Dim MeasureType As CatDistanceMeasureType
                 |             MeasureType = NewDistance.MeasureType
-                |             
-                | 
-                | 
-                |             
-                | 
-                |                 The second example sets the Type of NewDistance
-                |                 Distance.
-                |                 
-                | 
-                |                 NewDistance.MeasureType = CatDistanceMeasureTypeMinimum
+                |
+                |             The second example sets the Type of NewDistance
+                |             Distance.
+                |
+                |             NewDistance.MeasureType = CatDistanceMeasureTypeMinimum
 
-        :return: int
+        :return: enum cat_distance_measure_type
         :rtype: int
         """
 
@@ -372,7 +358,7 @@ class Distance(AnyObject):
     @measure_type.setter
     def measure_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_distance_measure_type
         """
 
         self.distance.MeasureType = value
@@ -410,7 +396,6 @@ class Distance(AnyObject):
                 | 
                 |                 NewDistance.MinimumDistance = 10.
 
-        :return: float
         :rtype: float
         """
 
@@ -455,7 +440,6 @@ class Distance(AnyObject):
                 |                 Dim SecondGroup As Group
                 |                 NewDistance.SecondGroup = SecondGroup
 
-        :return: Group
         :rtype: Group
         """
 
@@ -490,7 +474,6 @@ class Distance(AnyObject):
                 |             Dim AProduct As Product
                 |             Set AProduct = NewDistance.SecondProduct
 
-        :return: Product
         :rtype: Product
         """
 
@@ -516,7 +499,6 @@ class Distance(AnyObject):
                 |             Dim MinimumValue As double
                 |             MinimumValue = NewDistance.Value
 
-        :return: float
         :rtype: float
         """
 
@@ -540,7 +522,6 @@ class Distance(AnyObject):
                 | 
                 |             NewDistance.Compute
 
-        :return: None
         :rtype: None
         """
         return self.distance.Compute()
@@ -575,7 +556,6 @@ class Distance(AnyObject):
                 |             Dim Coordinates (2)
                 |             NewDistance.GetFirstPointCoordinates Coordinates
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -621,7 +601,6 @@ class Distance(AnyObject):
                 |             Dim Coordinates (2)
                 |             NewDistance.GetSecondPointCoordinates Coordinates
 
-        :return: None
         :rtype: None
         """
 

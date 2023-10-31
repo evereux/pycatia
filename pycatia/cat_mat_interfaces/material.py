@@ -48,7 +48,6 @@ class Material(AnyObject):
                 |     Returns the analysis material object from the current
                 |     material.
 
-        :return: AnalysisMaterial
         :rtype: AnalysisMaterial
         """
         return AnalysisMaterial(self.material.AnalysisMaterial)
@@ -66,7 +65,6 @@ class Material(AnyObject):
                 |     Returns the rendering material object from the current
                 |     material.
 
-        :return: RenderingMaterial
         :rtype: RenderingMaterial
         """
         return RenderingMaterial(self.material.RenderingMaterial)
@@ -84,7 +82,6 @@ class Material(AnyObject):
                 |     material.
 
         :param RenderingMaterial i_rendering_material:
-        :return: None
         :rtype: None
         """
         return self.material.CopyRenderingDataFrom(i_rendering_material.com_object)
@@ -102,7 +99,6 @@ class Material(AnyObject):
                 |     material.
 
         :param str i_label:
-        :return: AnalysisMaterial
         :rtype: AnalysisMaterial
         """
         return AnalysisMaterial(self.material.CreateAnalysisData(i_label))
@@ -118,7 +114,6 @@ class Material(AnyObject):
                 |     Create a default rendering material on the current
                 |     material.
 
-        :return: RenderingMaterial
         :rtype: RenderingMaterial
         """
         return RenderingMaterial(self.material.CreateRenderingData())
@@ -134,7 +129,6 @@ class Material(AnyObject):
                 |     Returns true if a analysis material exists on the current
                 |     material.
 
-        :return: int
         :rtype: int
         """
         return self.material.ExistAnalysisData()
@@ -150,7 +144,6 @@ class Material(AnyObject):
                 |     Returns true if a rendering material exists on the current
                 |     material.
 
-        :return: int
         :rtype: int
         """
         return self.material.ExistRenderingData()
@@ -168,7 +161,6 @@ class Material(AnyObject):
                 |     Ex : E:\\folder\\
 
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.material.GetIcon(i_path)
@@ -186,7 +178,6 @@ class Material(AnyObject):
                 |     read Ex : E:\\folder\\
 
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.material.PutIcon(i_path)

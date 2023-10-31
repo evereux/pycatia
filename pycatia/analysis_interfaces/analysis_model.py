@@ -63,7 +63,6 @@ class AnalysisModel(AnyObject):
                 |     Returns:
                 |         a CATIAAnalysisAdaptivityManager.
 
-        :return: AnalysisAdaptivityManager
         :rtype: AnalysisAdaptivityManager
         """
 
@@ -84,7 +83,6 @@ class AnalysisModel(AnyObject):
                 |     Returns:
                 |         oAnalysisCases Collection of cases.
 
-        :return: AnalysisCases
         :rtype: AnalysisCases
         """
 
@@ -105,7 +103,6 @@ class AnalysisModel(AnyObject):
                 |     Returns:
                 |         a collection of CATIAAnalysisSets.
 
-        :return: AnalysisSets
         :rtype: AnalysisSets
         """
 
@@ -125,7 +122,6 @@ class AnalysisModel(AnyObject):
                 |     Returns:
                 |         a CATIAAnalysisMeshManager.
 
-        :return: AnalysisMeshManager
         :rtype: AnalysisMeshManager
         """
 
@@ -146,7 +142,6 @@ class AnalysisModel(AnyObject):
                 |     Returns:
                 |         oPostManager the AnalysisPostManager Object.
 
-        :return: AnalysisPostManager
         :rtype: AnalysisPostManager
         """
 
@@ -168,7 +163,6 @@ class AnalysisModel(AnyObject):
                 |             name.
 
         :param str i_transition_name:
-        :return: None
         :rtype: None
         """
         return self.analysis_model.RunTransition(i_transition_name)

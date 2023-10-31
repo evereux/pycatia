@@ -69,7 +69,6 @@ class ArrangementAreas(Collection):
         :param Move i_rel_axis:
         :param tuple i_position:
         :param float i_height:
-        :return: ArrangementArea
         :rtype: ArrangementArea
         """
         return ArrangementArea(self.arrangement_areas.AddArea(i_rel_axis.com_object, i_position, i_height))
@@ -109,7 +108,6 @@ class ArrangementAreas(Collection):
                 |              Set objArea1= Areas.Item(1)
 
         :param cat_variant i_index:
-        :return: ArrangementArea
         :rtype: ArrangementArea
         """
         return ArrangementArea(self.arrangement_areas.Item(i_index))
@@ -147,7 +145,6 @@ class ArrangementAreas(Collection):
                 |              Areas.Remove(1)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.arrangement_areas.Remove(i_index)

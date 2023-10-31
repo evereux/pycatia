@@ -87,7 +87,6 @@ class TagFactory(AnyObject):
 
         :param str i_tag_name:
         :param Tag o_tag:
-        :return: None
         :rtype: None
         """
         return self.tag_factory.CreateTag(i_tag_name, o_tag.com_object)

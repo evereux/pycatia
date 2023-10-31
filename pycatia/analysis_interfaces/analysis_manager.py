@@ -66,7 +66,6 @@ class AnalysisManager(AnyObject):
                 |          Dim analysisModels As AnalysisModels
                 |          Set analysisModels = RootAnalysis.AnalysisModels
 
-        :return: AnalysisModels
         :rtype: AnalysisModels
         """
 
@@ -88,7 +87,6 @@ class AnalysisManager(AnyObject):
                 |     Returns:
                 |         a collection of CATIAAnalysisSets.
 
-        :return: AnalysisSets
         :rtype: AnalysisSets
         """
 
@@ -120,7 +118,6 @@ class AnalysisManager(AnyObject):
                 |          Dim Documents As AnalysisLinkedDocuments
                 |          Set Documents = RootAnalysis.LinkedDocuments
 
-        :return: AnalysisLinkedDocuments
         :rtype: AnalysisLinkedDocuments
         """
 
@@ -150,7 +147,6 @@ class AnalysisManager(AnyObject):
                 |          Dim params As CATIAParameters
                 |          Set params = RootAnalysis.Parameters
 
-        :return: Parameters
         :rtype: Parameters
         """
 
@@ -180,7 +176,6 @@ class AnalysisManager(AnyObject):
                 |          Dim relation As CATIARelations
                 |          Set relation = RootAnalysis.Relations
 
-        :return: Relations
         :rtype: Relations
         """
 
@@ -213,7 +208,6 @@ class AnalysisManager(AnyObject):
 
         :param Product i_product:
         :param Reference i_geometry:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.analysis_manager.CreateReferenceFromGeometry(i_product.com_object, i_geometry.com_object))
@@ -240,7 +234,6 @@ class AnalysisManager(AnyObject):
                 |         The reference to the object.
 
         :param AnyObject i_object:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.analysis_manager.CreateReferenceFromObject(i_object.com_object))
@@ -270,7 +263,6 @@ class AnalysisManager(AnyObject):
                 |          RootAnalysis.Import(PartDocument)
 
         :param Document i_document_to_import:
-        :return: None
         :rtype: None
         """
         return self.analysis_manager.Import(i_document_to_import.com_object)
@@ -322,7 +314,6 @@ class AnalysisManager(AnyObject):
         :param str i_document_path:
         :param str i_type_late:
         :param tuple i_values:
-        :return: None
         :rtype: None
         """
         return self.analysis_manager.ImportDefineFile(i_document_path, i_type_late, i_values)
@@ -368,7 +359,6 @@ class AnalysisManager(AnyObject):
                 |              RootAnalysis.ImportFile(FileToOpen)
 
         :param str i_document_path:
-        :return: None
         :rtype: None
         """
         return self.analysis_manager.ImportFile(i_document_path)

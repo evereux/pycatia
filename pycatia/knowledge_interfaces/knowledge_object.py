@@ -46,7 +46,6 @@ class KnowledgeObject(AnyObject):
                 | 
                 |     Returns or sets wether the relation is hidden or should be hidden. or not.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -71,7 +70,6 @@ class KnowledgeObject(AnyObject):
                 | 
                 |     Returns or sets wether the relation is Const or should be Const. or not.
 
-        :return: bool
         :rtype: bool
         """
 

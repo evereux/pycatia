@@ -58,7 +58,6 @@ class SchZoneGraphic(AnyObject):
                 |          objThisIntf.AddGraphicalRepresentationobjArg1
 
         :param SchGRRZone i_grr_to_add:
-        :return: None
         :rtype: None
         """
         return self.sch_zone_graphic.AddGraphicalRepresentation(i_grr_to_add.com_object)
@@ -101,7 +100,6 @@ class SchZoneGraphic(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListGraphicalRepresentations
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_zone_graphic.ListGraphicalRepresentations())
@@ -129,7 +127,6 @@ class SchZoneGraphic(AnyObject):
                 |          objThisIntf.RemoveGraphicalRepresentationobjArg1
 
         :param SchGRRZone i_grr_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_zone_graphic.RemoveGraphicalRepresentation(i_grr_to_remove.com_object)

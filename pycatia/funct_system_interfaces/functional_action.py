@@ -53,7 +53,6 @@ class FunctionalAction(FunctionalElement):
                 | 
                 |     Get the From object.
 
-        :return: FunctionalPosition
         :rtype: FunctionalPosition
         """
 
@@ -80,7 +79,6 @@ class FunctionalAction(FunctionalElement):
                 | 
                 |     Vary when adding/removing the action to/from a group.
 
-        :return: FunctActionsGroup
         :rtype: FunctActionsGroup
         """
 
@@ -101,7 +99,7 @@ class FunctionalAction(FunctionalElement):
                 |     See also:
                 |         CATFunctOrientationDirection
 
-        :return: int
+        :return: enum cat_funct_orientation_direction
         :rtype: int
         """
 
@@ -110,7 +108,7 @@ class FunctionalAction(FunctionalElement):
     @orientation_direction.setter
     def orientation_direction(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_funct_orientation_direction
         """
 
         self.functional_action.OrientationDirection = value
@@ -126,7 +124,6 @@ class FunctionalAction(FunctionalElement):
                 | 
                 |     Get the To object.
 
-        :return: FunctionalPosition
         :rtype: FunctionalPosition
         """
 
@@ -151,7 +148,6 @@ class FunctionalAction(FunctionalElement):
                 |     Returns the Facet.
 
         :param FunctionalFacetMgr i_fm:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_action.GetFacet(i_fm.com_object))
@@ -167,7 +163,6 @@ class FunctionalAction(FunctionalElement):
                 |     Returns the Facet.
 
         :param str i_fm:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_action.GetFacetByName(i_fm))
@@ -184,7 +179,6 @@ class FunctionalAction(FunctionalElement):
                 | 
                 |     Fails if the action is included in a group.
 
-        :return: None
         :rtype: None
         """
         return self.functional_action.InvertDirection()
@@ -202,7 +196,6 @@ class FunctionalAction(FunctionalElement):
 
         :param FunctionalFacetMgr i_fm:
         :param bool i_create_if_necessary:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_action.SearchFacet(i_fm.com_object, i_create_if_necessary))
@@ -220,7 +213,6 @@ class FunctionalAction(FunctionalElement):
 
         :param str i_fm:
         :param bool i_create_if_necessary:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_action.SearchFacetByName(i_fm, i_create_if_necessary))

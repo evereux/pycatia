@@ -46,7 +46,6 @@ class TangentPlane(AnyObject):
                 | 
                 |     Retrieves Tangent Plane modifier.
 
-        :return: str
         :rtype: str
         """
 
