@@ -173,7 +173,7 @@ class Viewer(AnyObject):
         """
         return self.viewer.CaptureToFile(i_format, i_file)
 
-    def get_background_color(self) -> None:
+    def get_background_color(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -192,8 +192,7 @@ class Viewer(AnyObject):
                 |          Dim color(2)
                 |          MyViewer.GetBackgroundColor color
 
-        :param tuple color:
-        :rtype: None
+        :rtype: tuple
         """
         vba_function_name = 'get_background_color'
         vba_code = """

@@ -12,7 +12,7 @@
 from pycatia.system_interfaces.any_object import AnyObject
 
 
-class Viewpoint3D(AnyObject):
+class ViewPoint3D(AnyObject):
     """
         .. note::
             :class: toggle
@@ -389,4 +389,4 @@ class Viewpoint3D(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Viewpoint3D(name="{self.name}")'
+        return f'ViewPoint3D(name="{self.name}")'

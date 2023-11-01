@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.4
+
+* corrected method name Camera3D.viewpoint_3d()
+* corrected class name ViewPoint3D().
+
 ## 0.6.3
 
 * renamed wrongly named enumeration_types where 2d or 3d are in name.
