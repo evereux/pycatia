@@ -17,7 +17,8 @@
     The views modes are then reset back to normal.
 
     Other examples in VB / CATScript I have seen online claim to save to PNG
-    but that doesn't seem possible using CATIA.
+    but that doesn't seem possible using CATIA. In this script the image library
+    Pillow is used to convert the BMP to PNG.
 
     Warning
     =======
