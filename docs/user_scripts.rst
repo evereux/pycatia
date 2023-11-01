@@ -8,9 +8,11 @@ Index
 
 :ref:`CREATE BOUNDING BOX<Create Bouding Box>`
 
-:ref:`CREATE PARAMETERS FROM YAML<Create Parameters From YAML>`
+:ref:`CREATE SCREENSHOTS OF PARTS AND PRODUCTS<Create Screenshots Of Parts and Products>
 
 :ref:`CREATE LINES NORMAL TO SURFACE<Create Lines Normal To Surface>`
+
+:ref:`CREATE PARAMETERS FROM YAML<Create Parameters From YAML>`
 
 :ref:`DRAWING TEMPLATE<Drawing Template>`
 
@@ -19,8 +21,8 @@ Index
 :ref:`WING SURFACE FROM NACA PROFILE<Wing Surface From Naca Profile>`
 
 
-CREATE BOUDING BOX
-------------------
+CREATE BOUNDING BOX
+-------------------
 
 Creates a bounding box around the selected Body using the selected AxisSystem
 to orientate the bounding box.
@@ -31,18 +33,14 @@ See script header for more information.
 
 
 
-CREATE PARAMETERS FROM YAML
----------------------------
+CREATE SCREENSHOTS OF PARTS AND PRODUCTS
+----------------------------------------
 
-Creates parameter sets and parameters based on the contents of a YAML file.
-
-Great for creating complex parameter structures.
+Creates screenshots of all parts and products within a given directory.
 
 See script header for more information.
 
-.. image:: images/parameters.png
-
-`Create parameters from YAML <https://github.com/evereux/pycatia/blob/master/user_scripts/create_parameters_from_yaml.py>`_
+`Create Screenshots Of Parts And Products <<https://github.com/evereux/pycatia/blob/master/user_scripts/create_screenshots_of_parts_and_products.py>`_
 
 
 
@@ -64,6 +62,24 @@ Image showing lines after script has been run.
 See script header for more information.
 
 `Create Lines Normal To Surface <https://github.com/evereux/pycatia/blob/master/user_scripts/create_lines_normal_to_surface.py>`_
+
+
+
+CREATE PARAMETERS FROM YAML
+---------------------------
+
+Creates parameter sets and parameters based on the contents of a YAML file.
+
+Great for creating complex parameter structures.
+
+See script header for more information.
+
+.. image:: images/parameters.png
+
+`Create parameters from YAML <https://github.com/evereux/pycatia/blob/master/user_scripts/create_parameters_from_yaml.py>`_
+
+
+
 
 
 
