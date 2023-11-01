@@ -28,7 +28,7 @@
     Requirements
     ============
     python >= 3.9
-    pycatia
+    pycatia >= 0.6.4
     pillow (used for compressing to png)
     CATIA V5 running
     A network accessible folder with your CATIA parts and products in.
