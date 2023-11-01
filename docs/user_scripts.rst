@@ -31,7 +31,7 @@ to orientate the bounding box.
 
 See script header for more information.
 
-`Create Bounding Box <https://github.com/evereux/pycatia/blob/master/user_scripts/create_bounding_box.py>`_
+`create_bounding_box.py <https://github.com/evereux/pycatia/blob/master/user_scripts/create_bounding_box.py>`_
 
 
 
@@ -42,7 +42,7 @@ Creates screenshots of all parts and products within a given directory.
 
 See script header for more information.
 
-`Create Screenshots Of Parts And Products <<https://github.com/evereux/pycatia/blob/master/user_scripts/create_screenshots_of_parts_and_products.py>`_
+`create_screenshots_of_parts_and_products.py <<https://github.com/evereux/pycatia/blob/master/user_scripts/create_screenshots_of_parts_and_products.py>`_
 
 
 
@@ -63,7 +63,7 @@ Image showing lines after script has been run.
 
 See script header for more information.
 
-`Create Lines Normal To Surface <https://github.com/evereux/pycatia/blob/master/user_scripts/create_lines_normal_to_surface.py>`_
+`create_lines_normal_to_surface.py <https://github.com/evereux/pycatia/blob/master/user_scripts/create_lines_normal_to_surface.py>`_
 
 
 
@@ -78,7 +78,7 @@ See script header for more information.
 
 .. image:: images/parameters.png
 
-`Create parameters from YAML <https://github.com/evereux/pycatia/blob/master/user_scripts/create_parameters_from_yaml.py>`_
+`create_parameters_from_yaml.py <https://github.com/evereux/pycatia/blob/master/user_scripts/create_parameters_from_yaml.py>`_
 
 
 
@@ -94,7 +94,7 @@ See script header for more information.
 
 .. image:: images/DrawingTemplate.png
 
-`Drawing Template <https://github.com/evereux/pycatia/blob/master/user_scripts/drawing_template.py>`_
+`drawing_template.py <https://github.com/evereux/pycatia/blob/master/user_scripts/drawing_template.py>`_
 
 
 
@@ -105,7 +105,7 @@ Sequentially renames the instances of products within a selected product.
 
 See script header for more information.
 
-`Rename Instance In Product <https://github.com/evereux/pycatia/blob/master/user_scripts/rename_instances_in_product.py>`_
+`rename_instances_in_product.py <https://github.com/evereux/pycatia/blob/master/user_scripts/rename_instances_in_product.py>`_
 
 
 
@@ -133,4 +133,4 @@ See script header for more information.
 
 .. image:: images/WingSurface.png
 
-`Wing Surface From Naca Profle <https://github.com/evereux/pycatia/blob/master/user_scripts/wing_surface_from_naca_profile.py>`_
+`wing_surface_from_naca_profile.py <https://github.com/evereux/pycatia/blob/master/user_scripts/wing_surface_from_naca_profile.py>`_
