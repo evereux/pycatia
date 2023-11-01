@@ -8,7 +8,7 @@ Index
 
 :ref:`CREATE BOUNDING BOX<Create Bouding Box>`
 
-:ref:`CREATE SCREENSHOTS OF PARTS AND PRODUCTS<Create Screenshots Of Parts and Products>
+:ref:`CREATE SCREENSHOTS OF PARTS AND PRODUCTS<Create Screenshots Of Parts and Products>`
 
 :ref:`CREATE LINES NORMAL TO SURFACE<Create Lines Normal To Surface>`
 
@@ -17,6 +17,8 @@ Index
 :ref:`DRAWING TEMPLATE<Drawing Template>`
 
 :ref:`RENAME INSTANCES IN PRODUCT<Rename Instances In Product>`
+
+:ref:`SAVE DRAWINGS TO PDF<Save Drawings To PDF>`
 
 :ref:`WING SURFACE FROM NACA PROFILE<Wing Surface From Naca Profile>`
 
@@ -105,6 +107,21 @@ See script header for more information.
 
 `Rename Instance In Product <https://github.com/evereux/pycatia/blob/master/user_scripts/rename_instances_in_product.py>`_
 
+
+
+SAVE DRAWINGS TO PDF
+--------------------
+
+Loops through all the files (.CATDrawing) of a given directory and saves to
+PDF.
+
+For CATDrawings the Document.export_data() method exports each sheet to a
+single PDF. This script uses pypdf to merge these single sheets into a
+single pdf for each drawing.
+
+See script header for more information.
+
+`save_drawings_to_pdf.py <https://github.com/evereux/pycatia/blob/master/user_scripts/save_drawings_to_pdf.py>`_
 
 
 WING SURFACE FROM NACA PROFILE
