@@ -4,6 +4,7 @@
 
 * corrected method name Camera3D.viewpoint_3d()
 * corrected class name ViewPoint3D().
+* fixed bug in Clash.first_group(). See issue #175. Thanks to @Raph-xyz.
 
 ## 0.6.3
 
