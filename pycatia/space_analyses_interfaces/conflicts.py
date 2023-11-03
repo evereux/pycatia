@@ -62,8 +62,7 @@ class Conflicts(Collection):
                 |              This example retrieves in ThisConflict the ninth
                 |              Conflict
                 |             from the TheConflicts collection. 
-                |             
-                | 
+                |
                 |             Dim ThisConflict As Conflict
                 |             Set ThisConflict = TheConflicts.Item(9)
 

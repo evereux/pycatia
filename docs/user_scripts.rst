@@ -8,41 +8,41 @@ Index
 
 :ref:`CREATE BOUNDING BOX<Create Bouding Box>`
 
-:ref:`CREATE PARAMETERS FROM YAML<Create Parameters From YAML>`
+:ref:`CREATE SCREENSHOTS OF PARTS AND PRODUCTS<Create Screenshots Of Parts and Products>`
 
 :ref:`CREATE LINES NORMAL TO SURFACE<Create Lines Normal To Surface>`
+
+:ref:`CREATE PARAMETERS FROM YAML<Create Parameters From YAML>`
 
 :ref:`DRAWING TEMPLATE<Drawing Template>`
 
 :ref:`RENAME INSTANCES IN PRODUCT<Rename Instances In Product>`
 
+:ref:`SAVE DRAWINGS TO PDF<Save Drawings To PDF>`
+
 :ref:`WING SURFACE FROM NACA PROFILE<Wing Surface From Naca Profile>`
 
 
-CREATE BOUDING BOX
-------------------
+CREATE BOUNDING BOX
+-------------------
 
 Creates a bounding box around the selected Body using the selected AxisSystem
 to orientate the bounding box.
 
 See script header for more information.
 
-`Create Bounding Box <https://github.com/evereux/pycatia/blob/master/user_scripts/create_bounding_box.py>`_
+`create_bounding_box.py <https://github.com/evereux/pycatia/blob/master/user_scripts/create_bounding_box.py>`_
 
 
 
-CREATE PARAMETERS FROM YAML
----------------------------
+CREATE SCREENSHOTS OF PARTS AND PRODUCTS
+----------------------------------------
 
-Creates parameter sets and parameters based on the contents of a YAML file.
-
-Great for creating complex parameter structures.
+Creates screenshots of all parts and products within a given directory.
 
 See script header for more information.
 
-.. image:: images/parameters.png
-
-`Create parameters from YAML <https://github.com/evereux/pycatia/blob/master/user_scripts/create_parameters_from_yaml.py>`_
+`create_screenshots_of_parts_and_products.py <<https://github.com/evereux/pycatia/blob/master/user_scripts/create_screenshots_of_parts_and_products.py>`_
 
 
 
@@ -63,7 +63,25 @@ Image showing lines after script has been run.
 
 See script header for more information.
 
-`Create Lines Normal To Surface <https://github.com/evereux/pycatia/blob/master/user_scripts/create_lines_normal_to_surface.py>`_
+`create_lines_normal_to_surface.py <https://github.com/evereux/pycatia/blob/master/user_scripts/create_lines_normal_to_surface.py>`_
+
+
+
+CREATE PARAMETERS FROM YAML
+---------------------------
+
+Creates parameter sets and parameters based on the contents of a YAML file.
+
+Great for creating complex parameter structures.
+
+See script header for more information.
+
+.. image:: images/parameters.png
+
+`create_parameters_from_yaml.py <https://github.com/evereux/pycatia/blob/master/user_scripts/create_parameters_from_yaml.py>`_
+
+
+
 
 
 
@@ -76,7 +94,7 @@ See script header for more information.
 
 .. image:: images/DrawingTemplate.png
 
-`Drawing Template <https://github.com/evereux/pycatia/blob/master/user_scripts/drawing_template.py>`_
+`drawing_template.py <https://github.com/evereux/pycatia/blob/master/user_scripts/drawing_template.py>`_
 
 
 
@@ -87,8 +105,23 @@ Sequentially renames the instances of products within a selected product.
 
 See script header for more information.
 
-`Rename Instance In Product <https://github.com/evereux/pycatia/blob/master/user_scripts/rename_instances_in_product.py>`_
+`rename_instances_in_product.py <https://github.com/evereux/pycatia/blob/master/user_scripts/rename_instances_in_product.py>`_
 
+
+
+SAVE DRAWINGS TO PDF
+--------------------
+
+Loops through all the files (.CATDrawing) of a given directory and saves to
+PDF.
+
+For CATDrawings the Document.export_data() method exports each sheet to a
+single PDF. This script uses pypdf to merge these single sheets into a
+single pdf for each drawing.
+
+See script header for more information.
+
+`save_drawings_to_pdf.py <https://github.com/evereux/pycatia/blob/master/user_scripts/save_drawings_to_pdf.py>`_
 
 
 WING SURFACE FROM NACA PROFILE
@@ -100,4 +133,4 @@ See script header for more information.
 
 .. image:: images/WingSurface.png
 
-`Wing Surface From Naca Profle <https://github.com/evereux/pycatia/blob/master/user_scripts/wing_surface_from_naca_profile.py>`_
+`wing_surface_from_naca_profile.py <https://github.com/evereux/pycatia/blob/master/user_scripts/wing_surface_from_naca_profile.py>`_

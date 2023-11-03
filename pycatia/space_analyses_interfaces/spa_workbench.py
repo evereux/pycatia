@@ -64,7 +64,6 @@ class SPAWorkbench(Workbench):
                 |              This example retrieves the Clashes collection of the active
                 |              document.
                 |
-                |
                 |             Dim TheSPAWorkbench As Workbench
                 |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
                 |             Dim TheClashesList As Clashes
@@ -94,7 +93,6 @@ class SPAWorkbench(Workbench):
                 |
                 |              This example retrieves the Distances collection of the active
                 |              document.
-                |
                 |
                 |             Dim TheSPAWorkbench As Workbench
                 |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
@@ -126,7 +124,6 @@ class SPAWorkbench(Workbench):
                 |              This example retrieves the Inertias collection of the active
                 |              document.
                 |
-                |
                 |             Dim TheSPAWorkbench As Workbench
                 |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
                 |             Dim TheInertiasList As Inertias
@@ -157,7 +154,6 @@ class SPAWorkbench(Workbench):
                 |              This example retrieves the Sections collection of the active
                 |              document.
                 |
-                |
                 |             Dim TheSPAWorkbench As Workbench
                 |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
                 |             Dim TheSectionsList As Sections
@@ -182,7 +178,6 @@ class SPAWorkbench(Workbench):
                 |
                 |              This example get the Measurable from the
                 |              SPAWorkBench.
-                |
                 |
                 |             Dim referenceObject As referenceObject
                 |             Set referenceObject = "GetReference"
