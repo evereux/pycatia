@@ -58,8 +58,7 @@ class Distances(Collection):
                 | 
                 |              This example creates a new Distance in the TheDistances
                 |              collection.
-                |             
-                | 
+                |
                 |             Dim NewDistance As Distance
                 |             Set NewDistance = TheDistances.Add
 
@@ -84,8 +83,7 @@ class Distances(Collection):
                 | 
                 |              This example creates a new Distance in the TheDistances
                 |              collection.
-                |             
-                | 
+                |
                 |             Dim NewDistance As Distance
                 |             Set NewDistance = TheDistances.AddFromSel
 
@@ -119,9 +117,7 @@ class Distances(Collection):
                 |              Distance,
                 |             and in ThatDistance the Distance named
                 |             Distance Of MyProduct from the TheDistances collection.
-                |             
-                |             
-                | 
+                |
                 |             Dim ThisDistance As Distance
                 |             Set ThisDistance = TheDistances.Item(9)
                 |             Dim ThatDistance As Distance
@@ -157,8 +153,7 @@ class Distances(Collection):
                 |              named
                 |             Distance Of MyProduct from the TheDistances
                 |             collection.
-                |             
-                | 
+                |
                 |             TheDistances.Remove(10)
                 |             TheDistances.Remove("Distance Of MyProduct")
 

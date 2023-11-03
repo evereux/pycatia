@@ -77,16 +77,14 @@ class Inertia(AnyObject):
                 |         0: the computation must use densities attached to each
                 |         object.
                 |         any positive value: the computation has to use this value.
-                |         
-                | 
+                |
                 |     The density value is returned as:
                 | 
                 |         1: a default value is used (there is no density attached to
                 |         objects).
                 |         -1: the density is not homogeneous for each object.
                 |         other positive values: the density attached to all objects.
-                |         
-                | 
+                |
                 |     Example:
                 | 
                 |              The first example gets the density of NewInertia
@@ -97,8 +95,7 @@ class Inertia(AnyObject):
                 |
                 |                 The second example sets the density of NewInertia
                 |                 inertia.
-                |                 
-                | 
+                |
                 |                 NewInertia.Density = 10.
 
         :rtype: float
@@ -138,24 +135,17 @@ class Inertia(AnyObject):
                 |         0: the computation had considered only main bodies.
                 |         1: the computation had not considered only main bodies.
                 |         
-                | 
                 |     Example:
                 | 
                 |              The first example gets the Granularity of NewInertia
                 |              inertia.
-                |             
-                | 
+                |
                 |             Dim AGranularityMode As Integer
                 |             AGranularityMode = NewInertia.GranularityMode
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the Granularity of NewInertia inertia
                 |                 to deselect the "only main bodies".
-                |                 
-                | 
+                |
                 |                 NewInertia.GranularityMode = 1
 
         :rtype: int
@@ -186,8 +176,7 @@ class Inertia(AnyObject):
                 | 
                 |              This example retrieves the mass of NewInertia
                 |              inertia.
-                |             
-                | 
+                |
                 |             Dim AMass As double
                 |             AMass = NewInertia.Mass
 
@@ -220,8 +209,7 @@ class Inertia(AnyObject):
                 | 
                 |              This example retrieves the position of the center of gravity of
                 |              NewInertia inertia.
-                |             
-                | 
+                |
                 |             Dim Coordinates (2)
                 |             NewInertia.GetCOGPosition Coordinates
 
@@ -269,8 +257,7 @@ class Inertia(AnyObject):
                 | 
                 |              This example retrieves the matrix of inertia of NewInertia
                 |              inertia.
-                |             
-                | 
+                |
                 |             Dim Matrix (8)
                 |             NewInertia.GetInertiaMatrix Matrix
 
@@ -297,7 +284,7 @@ class Inertia(AnyObject):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPrincipalAxes(CATSafeArrayVariant oComponents)
                 | 
-                |     Retrieves the the principal axes of inertia.
+                |     Retrieves the principal axes of inertia.
                 | 
                 |     Parameters:
                 | 
@@ -319,8 +306,7 @@ class Inertia(AnyObject):
                 | 
                 |              This example retrieves the principal axes of inertia of NewInertia
                 |              inertia.
-                |             
-                | 
+                |
                 |             Dim Components (8)
                 |             NewInertia.GetPrincipalAxes Components
 
@@ -364,8 +350,7 @@ class Inertia(AnyObject):
                 | 
                 |              This example retrieves principal moments of inertia of NewInertia
                 |              inertia.
-                |             
-                | 
+                |
                 |             Dim Values (2)
                 |             NewInertia.GetPrincipalMoments Values
 
