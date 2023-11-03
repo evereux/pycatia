@@ -11,7 +11,7 @@
 
 from pycatia.in_interfaces.light_sources import LightSources
 from pycatia.in_interfaces.viewer import Viewer
-from pycatia.in_interfaces.viewpoint_3d import Viewpoint3D
+from pycatia.in_interfaces.viewpoint_3d import ViewPoint3D
 
 
 class Viewer3D(Viewer):
@@ -350,7 +350,7 @@ class Viewer3D(Viewer):
         self.viewer_3d.RenderingMode = value
 
     @property
-    def viewpoint_3d(self) -> Viewpoint3D:
+    def viewpoint_3d(self) -> ViewPoint3D:
         """
         .. note::
             :class: toggle
@@ -367,15 +367,15 @@ class Viewer3D(Viewer):
                 |          Dim Nice3DViewpoint As Viewpoint3D
                 |          Set Nice3DViewpoint = My3DViewer.Viewpoint3D
 
-        :rtype: Viewpoint3D
+        :rtype: ViewPoint3D
         """
 
-        return Viewpoint3D(self.viewer_3d.Viewpoint3D)
+        return ViewPoint3D(self.viewer_3d.Viewpoint3D)
 
     @viewpoint_3d.setter
-    def viewpoint_3d(self, value: Viewpoint3D):
+    def viewpoint_3d(self, value: ViewPoint3D):
         """
-        :param Viewpoint3D value:
+        :param ViewPoint3D value:
         """
 
         self.viewer_3d.Viewpoint3D = value

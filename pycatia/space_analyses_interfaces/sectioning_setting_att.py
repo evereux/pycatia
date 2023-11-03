@@ -493,7 +493,8 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Returns or sets the ViewerLock2D parameter.
                 | 
-                |     Ensure consistency with the C++ interface to which the work is delegated.
+                |     Ensure consistency with the C++ interface to which the work
+                |     is delegated.
 
         :rtype: bool
         """

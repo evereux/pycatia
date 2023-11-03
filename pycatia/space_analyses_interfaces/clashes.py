@@ -58,8 +58,7 @@ class Clashes(Collection):
                 | 
                 |              This example creates a new Clash in the TheClashes
                 |              collection.
-                |             
-                | 
+                |
                 |             Dim NewClash As Clash
                 |             Set NewClash = TheClashes.Add
 
@@ -84,8 +83,7 @@ class Clashes(Collection):
                 | 
                 |              This example creates a new Clash in the TheClashes
                 |              collection.
-                |             
-                | 
+                |
                 |             Dim NewClash As Clash
                 |             Set NewClash = TheClashes.AddFromSel
 
@@ -119,9 +117,7 @@ class Clashes(Collection):
                 |              Clash,
                 |             and in ThatClash the Clash named
                 |             Clash Of MyProduct from the TheClashes collection.
-                |             
-                |             
-                | 
+                |
                 |             Dim ThisClash As Clash
                 |             Set ThisClash = TheClashes.Item(9)
                 |             Dim ThatClash As Clash
@@ -149,15 +145,13 @@ class Clashes(Collection):
                 |             Clashes. As a numerics, this index is the rank of the Clash in the collection.
                 |             The index of the first Clash in the collection is 1, and the index of the last
                 |             Clash is Count. As a string, it is the name you assigned to the Clash.
-                |             
-                | 
+                |
                 |     Example:
                 | 
                 |              The following example removes the tenth Clash and the Clash
                 |              named
                 |             Clash Of MyProduct from the TheClashes collection.
-                |             
-                | 
+                |
                 |             TheClashes.Remove(10)
                 |             TheClashes.Remove("Clash Of MyProduct")
 

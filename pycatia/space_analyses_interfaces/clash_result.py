@@ -51,8 +51,7 @@ class ClashResult(AnyObject):
                 | 
                 |              This example retrieves the conflicts of NewClashResult
                 |              ClashResult.
-                |             
-                | 
+                |
                 |             Dim NewConflicts As Conflicts
                 |             Set NewConflicts = NewClashResult.Conflicts
 
@@ -83,8 +82,7 @@ class ClashResult(AnyObject):
                 | 
                 |              This example exports the results of NewClashResult
                 |              ClashResult.
-                |             
-                | 
+                |
                 |             Dim ThePath As String
                 |             NewClashResult.Export CatClashExportTypeXMLResultOnly,
                 |             "c:\\tmp\\sample.xml"
