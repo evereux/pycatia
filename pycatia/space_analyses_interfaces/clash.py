@@ -54,8 +54,7 @@ class Clash(AnyObject):
                 | 
                 |              This example retrieves the AnnotatedViews collection of NewClash
                 |              Clash.
-                |             
-                | 
+                |
                 |             Dim TheAnnotatedViewsList As AnnotatedViews
                 |             Set TheAnnotatedViewsList = NewClash.AnnotatedViews
 
@@ -82,19 +81,13 @@ class Clash(AnyObject):
                 | 
                 |              The first example retrieves the clearance value of NewClash
                 |              Clash.
-                |             
-                | 
+                |
                 |             Dim Value As double
                 |             Value = NewClash.Clearance
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the clearance value of NewClash
                 |                 Clash.
-                |                 
-                | 
+                |
                 |                 NewClash.Clearance = 10.
 
         :rtype: float
@@ -163,8 +156,7 @@ class Clash(AnyObject):
                 | 
                 |              This example retrieves the conflicts of NewClash
                 |              Clash.
-                |             
-                | 
+                |
                 |             Dim NewConflicts As Conflicts
                 |             Set NewConflicts = NewClash.Conflicts
 
@@ -189,18 +181,12 @@ class Clash(AnyObject):
                 |              The first example retrieves the first group of NewClash
                 |              Clash.
                 |             
-                | 
                 |             Dim FirstGroup As Group
                 |             Set FirstGroup = NewClash.FirstGroup
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the first  group of NewClash
                 |                 Clash.
-                |                 
-                | 
+                |
                 |                 Dim FirstGroup As Group
                 |                 NewClash.FirstGroup = FirstGroup
 
@@ -210,12 +196,12 @@ class Clash(AnyObject):
         return Group(self.clash.FirstGroup)
 
     @first_group.setter
-    def first_group(self, value: Group):
+    def first_group(self, group: Group):
         """
-        :param Group value:
+        :param Group group:
         """
 
-        self.clash.FirstGroup = value
+        self.clash.FirstGroup = group.com_object
 
     @property
     def interference_type(self) -> int:
@@ -236,15 +222,10 @@ class Clash(AnyObject):
                 | 
                 |             Dim InterferenceType As CatClashInterferenceType
                 |             InterferenceType = NewClash.InterferenceType
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the interference Type of NewClash
                 |                 Clash.
-                |                 
-                | 
+                |
                 |                 NewClash.InterferenceType = CatClashInterferenceTypeContact
 
         :return: enum cat_clash_interference_type
@@ -276,8 +257,7 @@ class Clash(AnyObject):
                 | 
                 |              This example retrieves the Marker3Ds collection of NewClash
                 |              Clash.
-                |             
-                | 
+                |
                 |             Dim TheMarker3DsList As Marker3Ds
                 |             Set TheMarker3DsList = NewClash.Marker3Ds
 
@@ -301,19 +281,13 @@ class Clash(AnyObject):
                 | 
                 |              The first example retrieves the second group of NewClash
                 |              Clash.
-                |             
-                | 
+                |
                 |             Dim SecondGroup As Group
                 |             Set SecondGroup = NewClash.SecondGroup
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the second group of NewClash
                 |                 Clash.
-                |                 
-                | 
+                |
                 |                 Dim SecondGroup As Group
                 |                 NewClash.SecondGroup = SecondGroup
 
@@ -344,8 +318,7 @@ class Clash(AnyObject):
                 | 
                 |              This example computes the conflicts of NewClash
                 |              Clash.
-                |             
-                | 
+                |
                 |             NewClash.Compute
 
         :rtype: None
@@ -374,8 +347,7 @@ class Clash(AnyObject):
                 | 
                 |              This example exports the results of NewClash
                 |              Clash.
-                |             
-                | 
+                |
                 |             Dim ThePath As String
                 |             NewClash.Export CatClashExportTypeXMLResultOnly,
                 |             "c:\\tmp\\sample.xml"

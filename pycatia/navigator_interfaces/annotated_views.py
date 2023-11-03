@@ -10,7 +10,7 @@
 """
 from typing import Iterator
 
-from pycatia.in_interfaces.viewpoint_3d import Viewpoint3D
+from pycatia.in_interfaces.viewpoint_3d import ViewPoint3D
 from pycatia.navigator_interfaces.annotated_view import AnnotatedView
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import cat_variant
@@ -67,7 +67,7 @@ class AnnotatedViews(Collection):
         """
         return AnnotatedView(self.annotated_views.Add())
 
-    def add_from_viewpoint(self, i_viewpoint: Viewpoint3D) -> AnnotatedView:
+    def add_from_viewpoint(self, i_viewpoint: ViewPoint3D) -> AnnotatedView:
         """
         .. note::
             :class: toggle
@@ -96,7 +96,7 @@ class AnnotatedViews(Collection):
                 |             Dim NewAnnotatedView As AnnotatedView
                 |             Set NewAnnotatedView = TheAnnotatedViews.AddFromViewpoint(AViewpoint)
 
-        :param Viewpoint3D i_viewpoint:
+        :param ViewPoint3D i_viewpoint:
         :rtype: AnnotatedView
         """
         return AnnotatedView(self.annotated_views.AddFromViewpoint(i_viewpoint.com_object))

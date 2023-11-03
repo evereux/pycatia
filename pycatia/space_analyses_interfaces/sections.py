@@ -58,8 +58,7 @@ class Sections(Collection):
                 | 
                 |              This example creates a new Section in the TheSections
                 |              collection.
-                |             
-                | 
+                |
                 |             Dim NewSection As Section
                 |             Set NewSection = TheSections.Add
 
@@ -84,8 +83,7 @@ class Sections(Collection):
                 | 
                 |              This example creates a new Section in the TheSections
                 |              collection.
-                |             
-                | 
+                |
                 |             Dim NewSection As Section
                 |             Set NewSection = TheSections.AddFromSel
 
@@ -119,9 +117,7 @@ class Sections(Collection):
                 |              Section,
                 |             and in ThatSection the Section named
                 |             Section Of MyProduct from the TheSections collection.
-                |             
-                |             
-                | 
+                |
                 |             Dim ThisSection As Section
                 |             Set ThisSection = TheSections.Item(9)
                 |             Dim ThatSection As Section
@@ -157,8 +153,7 @@ class Sections(Collection):
                 |              named
                 |             Section Of MyProduct from the TheSections
                 |             collection.
-                |             
-                | 
+                |
                 |             TheSections.Remove(10)
                 |             TheSections.Remove("Section Of MyProduct")
 

@@ -66,8 +66,7 @@ class Inertias(Collection):
                 |              This example creates a new Inertia from a product
                 |              TheProduct
                 |             in the TheInertias collection.
-                |             
-                | 
+                |
                 |             Dim NewInertia As Inertia
                 |             Set NewInertia = TheInertias.Add(TheProduct)
 
@@ -102,9 +101,7 @@ class Inertias(Collection):
                 |              Inertia,
                 |             and in ThatInertia the Inertia named
                 |             Inertia Of MyProduct from the TheInertias collection.
-                |             
-                |             
-                | 
+                |
                 |             Dim ThisInertia As Inertia
                 |             Set ThisInertia = TheInertias.Item(9)
                 |             Dim ThatInertia As Inertia
@@ -140,8 +137,7 @@ class Inertias(Collection):
                 |              named
                 |             Inertia Of MyProduct from the TheInertias
                 |             collection.
-                |             
-                | 
+                |
                 |             TheInertias.Remove(10)
                 |             TheInertias.Remove("Inertia Of MyProduct")
 

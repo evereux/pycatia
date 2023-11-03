@@ -58,19 +58,13 @@ class Distance(AnyObject):
                 | 
                 |              The first example retrieves the accuracy value of NewDistance
                 |              Distance.
-                |             
-                | 
+                |
                 |             Dim AccuracyValue As double
                 |             AccuracyValue = NewDistance.Accuracy
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the accuracy value of NewDistance
                 |                 Distance.
-                |                 
-                | 
+                |
                 |                 NewDistance.Accuracy = 10.
 
         :rtype: float
@@ -101,8 +95,7 @@ class Distance(AnyObject):
                 | 
                 |              This example retrieves the AnnotatedViews collection of
                 |              NewDistance Distance.
-                |             
-                | 
+                |
                 |             Dim TheAnnotatedViewsList As AnnotatedViews
                 |             Set TheAnnotatedViewsList = NewDistance.AnnotatedViews
 
@@ -126,19 +119,13 @@ class Distance(AnyObject):
                 | 
                 |              The first example retrieves the computation type of NewDistance
                 |              Distance.
-                |             
-                | 
+                |
                 |             Dim ComputationType As CatDistanceComputationType
                 |             ComputationType = NewDistance.ComputationType
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the computation type of NewDistance
                 |                 Distance.
-                |                 
-                | 
+                |
                 |                 NewDistance.ComputationType = CatDistanceComputationTypeInsideOne
 
         :rtype: int
@@ -169,19 +156,13 @@ class Distance(AnyObject):
                 | 
                 |              The first example retrieves the first group of NewDistance
                 |              Distance.
-                |             
-                | 
+                |
                 |             Dim FirstGroup As Group
                 |             Set FirstGroup = NewDistance.FirstGroup
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the first  group of NewDistance
                 |                 Distance.
-                |                 
-                | 
+                |
                 |                 Dim FirstGroup As Group
                 |                 NewDistance.FirstGroup = FirstGroup
 
@@ -214,8 +195,7 @@ class Distance(AnyObject):
                 | 
                 |              This example retrieves the first product involved in the
                 |              NewDistance Distance.
-                |             
-                | 
+                |
                 |             Dim AProduct As Product
                 |             Set AProduct = NewDistance.FirstProduct
 
@@ -244,8 +224,7 @@ class Distance(AnyObject):
                 | 
                 |              This example retrieves the diagnosis on NewDistance
                 |              Distance.
-                |             
-                | 
+                |
                 |             If NewDistance.IsDefined = 1 Then
 
         :rtype: int
@@ -268,8 +247,7 @@ class Distance(AnyObject):
                 | 
                 |              This example retrieves the Marker3Ds collection of NewDistance
                 |              Distance.
-                |             
-                | 
+                |
                 |             Dim TheMarker3DsList As Marker3Ds
                 |             Set TheMarker3DsList = NewDistance.Marker3Ds
 
@@ -296,19 +274,13 @@ class Distance(AnyObject):
                 | 
                 |              The first example retrieves the maximum distance value of
                 |              NewDistance Distance.
-                |             
-                | 
+                |
                 |             Dim MaximumValue As double
                 |             MaximumValue = NewDistance.MaximumDistance
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the maximum distance value of
                 |                 NewDistance Distance.
-                |                 
-                | 
+                |
                 |                 NewDistance.MaximumDistance = 10.
 
         :rtype: float
@@ -381,19 +353,13 @@ class Distance(AnyObject):
                 | 
                 |              The first example retrieves the minimum distance value of
                 |              NewDistance Distance.
-                |             
-                | 
+                |
                 |             Dim MinimumValue As double
                 |             MinimumValue = NewDistance.MinimumDistance
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the minimum distance value of
                 |                 NewDistance Distance.
-                |                 
-                | 
+                |
                 |                 NewDistance.MinimumDistance = 10.
 
         :rtype: float
@@ -424,19 +390,13 @@ class Distance(AnyObject):
                 | 
                 |              The first example retrieves the second group of NewDistance
                 |              Distance.
-                |             
-                | 
+                |
                 |             Dim SecondGroup As Group
                 |             Set SecondGroup = NewDistance.SecondGroup
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the second group of NewDistance
                 |                 Distance.
-                |                 
-                | 
+                |
                 |                 Dim SecondGroup As Group
                 |                 NewDistance.SecondGroup = SecondGroup
 
@@ -469,8 +429,7 @@ class Distance(AnyObject):
                 | 
                 |              This example retrieves the coordinates in the NewDistance
                 |              Distance.
-                |             
-                | 
+                |
                 |             Dim AProduct As Product
                 |             Set AProduct = NewDistance.SecondProduct
 
@@ -494,8 +453,7 @@ class Distance(AnyObject):
                 | 
                 |              This example retrieves the value of NewDistance
                 |              Distance.
-                |             
-                | 
+                |
                 |             Dim MinimumValue As double
                 |             MinimumValue = NewDistance.Value
 
@@ -518,8 +476,7 @@ class Distance(AnyObject):
                 | 
                 |              This example computes the distance of NewDistance
                 |              Distance.
-                |             
-                | 
+                |
                 |             NewDistance.Compute
 
         :rtype: None
@@ -551,8 +508,7 @@ class Distance(AnyObject):
                 | 
                 |              This example retrieves the coordinates of the first point in
                 |              NewDistance Distance.
-                |             
-                | 
+                |
                 |             Dim Coordinates (2)
                 |             NewDistance.GetFirstPointCoordinates Coordinates
 
@@ -596,8 +552,7 @@ class Distance(AnyObject):
                 | 
                 |              This example retrieves the coordinates of the first point in
                 |              NewDistance Distance.
-                |             
-                | 
+                |
                 |             Dim Coordinates (2)
                 |             NewDistance.GetSecondPointCoordinates Coordinates
 
