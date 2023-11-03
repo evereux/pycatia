@@ -54,19 +54,13 @@ class Conflict(AnyObject):
                 | 
                 |              The first example gets the comment of NewConflict
                 |              Conflict.
-                |             
-                | 
+                |
                 |             Dim aComment As String
                 |             aComment = NewConflict.Comment
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets a comment on the NewConflict
                 |                 Conflict.
-                |                 
-                | 
+                |
                 |                 NewConflict.Comment = "OK : plastic part"
 
         :rtype: str
@@ -99,8 +93,7 @@ class Conflict(AnyObject):
                 | 
                 |              This example retrieves the comparison information of the
                 |              NewConflict Conflict.
-                |             
-                | 
+                |
                 |             Dim anInfo As CatConflictComparison
                 |             anInfo = NewConflict.ComparisonInfo
 
@@ -125,8 +118,7 @@ class Conflict(AnyObject):
                 | 
                 |              This example retrieves the first product involved in the
                 |              NewConflict Conflict.
-                |             
-                | 
+                |
                 |             Dim aProduct As Product
                 |             Set aProduct = NewConflict.FirstProduct
 
@@ -150,8 +142,7 @@ class Conflict(AnyObject):
                 | 
                 |              This example retrieves the second product involved in the
                 |              NewConflict Conflict.
-                |             
-                | 
+                |
                 |             Dim aProduct As Product
                 |             Set aProduct = NewConflict.SecondProduct
 
@@ -175,19 +166,13 @@ class Conflict(AnyObject):
                 | 
                 |              The first example gets the status of NewConflict
                 |              Conflict.
-                |             
-                | 
+                |
                 |             Dim aStatus As CatConflictStatus
                 |             aStatus = NewConflict.Status
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the status of NewConflict
                 |                 Conflict.
-                |                 
-                | 
+                |
                 |                 NewConflict.Status = CatConflictStatusIrrelevant
 
         :return: enum cat_conflict_status
@@ -219,8 +204,7 @@ class Conflict(AnyObject):
                 | 
                 |              This example retrieves the type of the NewConflict
                 |              Conflict.
-                |             
-                | 
+                |
                 |             Dim conflictType As CatConflictType
                 |             conflictType = NewConflict.Type
 
@@ -248,8 +232,7 @@ class Conflict(AnyObject):
                 | 
                 |              This example retrieves the value of the NewConflict
                 |              Conflict.
-                |             
-                | 
+                |
                 |             Dim conflictValue As double
                 |             conflictValue = NewConflict.Value
 
@@ -283,8 +266,7 @@ class Conflict(AnyObject):
                 | 
                 |              This example retrieves the first product involved in the
                 |              NewConflict Conflict.
-                |             
-                | 
+                |
                 |             Dim Coordinates (2)
                 |             NewConflict.GetFirstPointCoordinates Coordinates
 
@@ -328,8 +310,7 @@ class Conflict(AnyObject):
                 | 
                 |              This example retrieves the coordinates in the NewConflict
                 |              Conflict.
-                |             
-                | 
+                |
                 |             Dim Coordinates (2)
                 |             NewConflict.GetSecondPointCoordinates Coordinates
 

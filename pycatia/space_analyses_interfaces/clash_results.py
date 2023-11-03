@@ -69,8 +69,7 @@ class ClashResults(Collection):
                 | 
                 |              This example creates a new ClashResult in the TheClashResults
                 |              collection.
-                |             
-                | 
+                |
                 |             Dim NewClashResult As ClashResult
                 |             Set NewClashResult = TheClashResults.AddFromXML("c:\\tmp\\sample.xml",
                 |                                                              CatClashImportTypeClashOnly)
@@ -107,9 +106,7 @@ class ClashResults(Collection):
                 |              ClashResult,
                 |             and in ThatClashResult the ClashResult named
                 |             ClashResult Of MyProduct from the TheClashResults collection.
-                |             
-                |             
-                | 
+                |
                 |             Dim ThisClashResult As ClashResult
                 |             Set ThisClashResult = TheClashResults.Item(9)
                 |             Dim ThatClashResult As ClashResult
@@ -146,8 +143,7 @@ class ClashResults(Collection):
                 |              ClashResult named
                 |             ClashResult Of MyProduct from the TheClashResults
                 |             collection.
-                |             
-                | 
+                |
                 |             TheClashResults.Remove(10)
                 |             TheClashResults.Remove("ClashResult Of MyProduct")
 

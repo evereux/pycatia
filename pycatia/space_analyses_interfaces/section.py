@@ -60,8 +60,7 @@ class Section(AnyObject):
                 | 
                 |              This example retrieves the AnnotatedViews collection of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim TheAnnotatedViewsList As AnnotatedViews
                 |             Set TheAnnotatedViewsList = NewSection.AnnotatedViews
 
@@ -129,19 +128,13 @@ class Section(AnyObject):
                 | 
                 |              The first example retrieves the cutting mode of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim SectionMode As Integer
                 |             SectionMode = NewSection.CutMode
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the cutting mode of NewSection
                 |                 Section.
-                |                 
-                | 
+                |
                 |                 NewSection.CutMode = 1
 
         :rtype: int
@@ -214,19 +207,13 @@ class Section(AnyObject):
                 | 
                 |              The first example retrieves the height of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim SectionHeight As double
                 |             SectionHeight = NewSection.Height
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the height value of NewSection
                 |                 Section.
-                |                 
-                | 
+                |
                 |                 NewSection.Height = 100.
 
         :rtype: float
@@ -257,8 +244,7 @@ class Section(AnyObject):
                 | 
                 |              This example retrieves the Marker3Ds collection of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim TheMarker3DsList As Marker3Ds
                 |             Set TheMarker3DsList = NewSection.Marker3Ds
 
@@ -284,19 +270,13 @@ class Section(AnyObject):
                 | 
                 |              The first example retrieves the thickness of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim SectionThickness As double
                 |             SectionThickness = NewSection.Thickness
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the thickness value of NewSection
                 |                 Section.
-                |                 
-                | 
+                |
                 |                 NewSection.Thickness = 100.
 
         :rtype: float
@@ -369,19 +349,13 @@ class Section(AnyObject):
                 | 
                 |              The first example retrieves the width of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim SectionWidth As double
                 |             SectionWidth = NewSection.Width
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the width value of NewSection
                 |                 Section.
-                |                 
-                | 
+                |
                 |                 NewSection.Width = 100.
 
         :rtype: float
@@ -413,8 +387,7 @@ class Section(AnyObject):
                 | 
                 |              This example exports the section curves of NewSection Section in
                 |              PartDoc document.
-                |             
-                | 
+                |
                 |             Dim PartDoc As Document
                 |             PartDoc = NewSection.Export
 
@@ -472,8 +445,7 @@ class Section(AnyObject):
                 | 
                 |              This example retrieves the position of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim Components (11)
                 |             NewSection.GetPosition Components
 
@@ -509,8 +481,7 @@ class Section(AnyObject):
                 | 
                 |              This example retrieves the information on NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim Indicator
                 |             Indicator = NewSection.IsEmpty
 
@@ -557,14 +528,12 @@ class Section(AnyObject):
                 |                 iComponents(10) is the Y component of the
                 |                 origin
                 |                 iComponents(11) is the Z component of the origin
-                |                 
-                | 
+                |
                 |     Example:
                 | 
                 |              This example sets the position of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim MatrixPos (11) As Double
                 |             MatrixPos( 0) = 1.0
                 |             MatrixPos( 1) = 0.0
