@@ -22,6 +22,13 @@ from pycatia import catia
 
 sys.path.insert(0, os.path.abspath('..\\pycatia'))
 
+caa = catia()
+document = caa.active_document
+product = document.product
+part = document.part
+hybrid_bodies = part.hybrid_bodies
+spa_workbench = document.spa_workbench()
+
 def coords_relative_to_axis(axis_system, point):
 	a_origin = axis_system.get_origin()
 	a_xaxis = axis_system.get_x_axis()
@@ -58,19 +65,6 @@ def normalize_vector(vec):
 
 def dot_product(vec1, vec2):
 	return vec1[0] * vec2[0] + vec1[1] * vec2[1] + vec1[2] * vec2[2]
-
-global caa
-caa = catia()
-global document
-document = caa.active_document
-global product
-product = document.product
-global part
-part = document.part
-global hybrid_bodies
-hybrid_bodies = part.hybrid_bodies
-global spa_workbench
-spa_workbench = document.spa_workbench()
 
 # Get first axis system in collection
 axis_system = part.axis_systems.item(1)
