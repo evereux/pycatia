@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisPostManager:
 
 pycatia.analysis_interfaces.analysis_post_manager
 ==================================================

@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrAnchorPoints:
 
 pycatia.structure_interfaces.str_anchor_points
 ===============================================

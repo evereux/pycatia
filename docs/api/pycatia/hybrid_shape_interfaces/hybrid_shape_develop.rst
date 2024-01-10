@@ -1,4 +1,4 @@
-.. _Hybrid_shape_develop:
+.. _HybridShapeDevelop:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_develop
 ====================================================

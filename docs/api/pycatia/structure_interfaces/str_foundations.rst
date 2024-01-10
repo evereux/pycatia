@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrFoundations:
 
 pycatia.structure_interfaces.str_foundations
 =============================================

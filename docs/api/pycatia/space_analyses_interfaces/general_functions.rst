@@ -1,4 +1,4 @@
-.. _General_functions:
+.. _GeneralFunctions:
 
 pycatia.space_analyses_interfaces.general_functions
 ===================================================

@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _VibrationVolumes:
 
 pycatia.smt_interfaces.vibration_volumes
 =========================================

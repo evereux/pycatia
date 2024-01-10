@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQHistoryOutputRequests:
 
 pycatia.abq_automation_interfaces.abq_history_output_requests
 ==============================================================

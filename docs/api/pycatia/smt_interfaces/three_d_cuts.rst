@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _ThreeDCuts:
 
 pycatia.smt_interfaces.three_d_cuts
 ====================================

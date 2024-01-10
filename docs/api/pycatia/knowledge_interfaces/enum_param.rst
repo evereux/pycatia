@@ -1,4 +1,4 @@
-.. _Enum_param:
+.. _EnumParam:
 
 pycatia.knowledge_interfaces.enum_param
 =======================================

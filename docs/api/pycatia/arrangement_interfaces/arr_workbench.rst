@@ -1,4 +1,4 @@
-.. _Arrangement_interfaces:
+.. _ArrWorkbench:
 
 pycatia.arrangement_interfaces.arr_workbench
 =============================================

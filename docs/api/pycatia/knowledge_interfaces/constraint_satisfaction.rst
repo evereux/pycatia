@@ -1,4 +1,4 @@
-.. _Constraint_satisfaction:
+.. _ConstraintSatisfaction:
 
 pycatia.knowledge_interfaces.constraint_satisfaction
 ====================================================

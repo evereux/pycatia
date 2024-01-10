@@ -1,4 +1,4 @@
-.. _Manufacturing_interfaces:
+.. _ManufacturingPrecedence:
 
 pycatia.manufacturing_interfaces.manufacturing_precedence
 ==========================================================

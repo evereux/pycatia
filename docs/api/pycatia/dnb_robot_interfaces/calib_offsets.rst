@@ -1,4 +1,4 @@
-.. _Dnb_robot_interfaces:
+.. _CalibOffsets:
 
 pycatia.dnb_robot_interfaces.calib_offsets
 ===========================================

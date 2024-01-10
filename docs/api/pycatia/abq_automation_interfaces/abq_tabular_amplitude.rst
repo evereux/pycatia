@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQTabularAmplitude:
 
 pycatia.abq_automation_interfaces.abq_tabular_amplitude
 ========================================================

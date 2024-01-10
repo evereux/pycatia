@@ -1,4 +1,4 @@
-.. _Tolerance_sheet_setting_att:
+.. _ToleranceSheetSettingAtt:
 
 pycatia.knowledge_interfaces.tolerance_sheet_setting_att
 ========================================================

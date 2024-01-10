@@ -1,4 +1,4 @@
-.. _Cat_base_dispatch:
+.. _CATBaseDispatch:
 
 pycatia.system_interfaces.cat_base_dispatch
 ===========================================

@@ -1,4 +1,4 @@
-.. _Manufacturing_interfaces:
+.. _ManufacturingAptGenerator:
 
 pycatia.manufacturing_interfaces.manufacturing_apt_generator
 =============================================================

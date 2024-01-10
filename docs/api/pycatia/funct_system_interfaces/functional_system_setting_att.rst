@@ -1,4 +1,4 @@
-.. _Funct_system_interfaces:
+.. _FunctionalSystemSettingAtt:
 
 pycatia.funct_system_interfaces.functional_system_setting_att
 ==============================================================

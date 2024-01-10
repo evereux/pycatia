@@ -1,4 +1,4 @@
-.. _Exceptions:
+.. _ExceptionHandling:
 
 pycatia.exception_handling.exceptions
 =====================================

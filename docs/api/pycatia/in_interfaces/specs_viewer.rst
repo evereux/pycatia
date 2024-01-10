@@ -1,4 +1,4 @@
-.. _Specs_viewer:
+.. _SpecsViewer:
 
 pycatia.in_interfaces.specs_viewer
 ==================================

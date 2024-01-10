@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _AssemblyAnnotationSets:
 
 pycatia.cat_tps_interfaces.assembly_annotation_sets
 ====================================================

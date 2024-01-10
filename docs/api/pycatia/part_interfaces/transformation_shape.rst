@@ -1,4 +1,4 @@
-.. _Transformation_shape:
+.. _TransformationShape:
 
 pycatia.part_interfaces.transformation_shape
 ============================================

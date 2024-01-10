@@ -1,4 +1,4 @@
-.. _Dnb_robot_interfaces:
+.. _GenericObjFrameProfile:
 
 pycatia.dnb_robot_interfaces.generic_obj_frame_profile
 =======================================================

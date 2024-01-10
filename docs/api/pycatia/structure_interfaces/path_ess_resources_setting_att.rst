@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _PathEssResourcesSettingAtt:
 
 pycatia.structure_interfaces.path_ess_resources_setting_att
 ============================================================

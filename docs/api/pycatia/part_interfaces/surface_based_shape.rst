@@ -1,4 +1,4 @@
-.. _Surface_based_shape:
+.. _SurfaceBasedShape:
 
 pycatia.part_interfaces.surface_based_shape
 ===========================================

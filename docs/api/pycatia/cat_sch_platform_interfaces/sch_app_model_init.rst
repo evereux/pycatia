@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchAppModelInit:
 
 pycatia.cat_sch_platform_interfaces.sch_app_model_init
 =======================================================

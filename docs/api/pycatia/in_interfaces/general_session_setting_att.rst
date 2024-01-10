@@ -1,4 +1,4 @@
-.. _General_session_setting_att:
+.. _GeneralSessionSettingAtt:
 
 pycatia.in_interfaces.general_session_setting_att
 =================================================

@@ -1,4 +1,4 @@
-.. _Factory_2d:
+.. _Factory2D:
 
 pycatia.sketcher_interfaces.factory_2D
 ======================================

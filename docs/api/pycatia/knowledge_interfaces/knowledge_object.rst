@@ -1,4 +1,4 @@
-.. _Knowledge_object:
+.. _KnowledgeObject:
 
 pycatia.knowledge_interfaces.knowledge_object
 =============================================

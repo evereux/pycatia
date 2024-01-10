@@ -1,4 +1,4 @@
-.. _Pcb_board_base:
+.. _PCBObject:
 
 pycatia.pcb_board_base.pcb_object
 ==================================

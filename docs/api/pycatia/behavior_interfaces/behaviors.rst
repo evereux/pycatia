@@ -1,4 +1,4 @@
-.. _Behavior_interfaces:
+.. _Behaviors:
 
 pycatia.behavior_interfaces.behaviors
 ======================================

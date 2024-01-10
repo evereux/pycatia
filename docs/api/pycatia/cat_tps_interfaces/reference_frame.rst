@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _ReferenceFrame:
 
 pycatia.cat_tps_interfaces.reference_frame
 ===========================================

@@ -1,4 +1,4 @@
-.. _Dress_up_shape:
+.. _DressUpShape:
 
 pycatia.part_interfaces.dress_up_shape
 ======================================

@@ -1,4 +1,4 @@
-.. _Drawing_threads:
+.. _DrawingThreads:
 
 pycatia.drafting_interfaces.drawing_threads
 ===========================================

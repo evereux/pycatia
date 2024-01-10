@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _ProjectedToleranceZone:
 
 pycatia.cat_tps_interfaces.projected_tolerance_zone
 ====================================================

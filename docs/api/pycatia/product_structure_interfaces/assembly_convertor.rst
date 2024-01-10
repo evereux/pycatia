@@ -1,4 +1,4 @@
-.. _Assembly_convertor:
+.. _AssemblyConvertor:
 
 pycatia.product_structure_interfaces.assembly_convertor
 =======================================================

@@ -1,4 +1,4 @@
-.. _Tritangent_fillet:
+.. _TritangentFillet:
 
 pycatia.part_interfaces.tritangent_fillet
 =========================================

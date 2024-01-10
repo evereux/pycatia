@@ -1,4 +1,4 @@
-.. _Dnb_robot_interfaces:
+.. _GenericAccuracyProfile:
 
 pycatia.dnb_robot_interfaces.generic_accuracy_profile
 ======================================================

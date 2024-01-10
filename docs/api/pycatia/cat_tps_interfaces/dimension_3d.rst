@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _Dimension3D:
 
 pycatia.cat_tps_interfaces.dimension_3d
 ========================================

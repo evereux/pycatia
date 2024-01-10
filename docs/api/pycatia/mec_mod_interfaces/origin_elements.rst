@@ -1,4 +1,4 @@
-.. _Origin_elements:
+.. _OriginElements:
 
 pycatia.mec_mod_interfaces.origin_elements
 ==========================================

@@ -1,4 +1,4 @@
-.. _Hybrid_shape_mid_surface:
+.. _HybridShapeMidSurface:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_mid_surface
 ========================================================

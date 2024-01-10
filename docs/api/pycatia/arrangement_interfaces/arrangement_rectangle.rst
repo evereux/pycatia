@@ -1,4 +1,4 @@
-.. _Arrangement_interfaces:
+.. _ArrangementRectangle:
 
 pycatia.arrangement_interfaces.arrangement_rectangle
 =====================================================

@@ -1,4 +1,4 @@
-.. _Dnb_igp_setup_interfaces:
+.. _RobotMotion:
 
 pycatia.dnb_igp_setup_interfaces.robot_motion
 ==============================================

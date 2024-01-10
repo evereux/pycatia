@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQClampBC:
 
 pycatia.abq_automation_interfaces.abq_clamp_bc
 ===============================================

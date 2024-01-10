@@ -1,4 +1,4 @@
-.. _Hybrid_shape_fillet_bi_tangent:
+.. _HybridShapeFilletBiTangent:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_fillet_bi_tangent
 ==============================================================

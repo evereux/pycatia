@@ -1,4 +1,4 @@
-.. _Hybrid_shape_loft:
+.. _HybridShapeLoft:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_loft
 =================================================

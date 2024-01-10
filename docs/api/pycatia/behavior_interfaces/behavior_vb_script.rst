@@ -1,4 +1,4 @@
-.. _Behavior_interfaces:
+.. _BehaviorVBScript:
 
 pycatia.behavior_interfaces.behavior_vb_script
 ===============================================

@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQFastenedPair:
 
 pycatia.abq_automation_interfaces.abq_fastened_pair
 ====================================================

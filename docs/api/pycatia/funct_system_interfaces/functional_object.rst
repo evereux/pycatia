@@ -1,4 +1,4 @@
-.. _Funct_system_interfaces:
+.. _FunctionalObject:
 
 pycatia.funct_system_interfaces.functional_object
 ==================================================

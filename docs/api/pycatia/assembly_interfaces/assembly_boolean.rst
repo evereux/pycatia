@@ -1,4 +1,4 @@
-.. _Assembly_interfaces:
+.. _AssemblyBoolean:
 
 pycatia.assembly_interfaces.assembly_boolean
 =============================================

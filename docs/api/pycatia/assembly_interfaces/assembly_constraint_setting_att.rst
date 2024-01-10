@@ -1,4 +1,4 @@
-.. _Assembly_interfaces:
+.. _AssemblyConstraintSettingAtt:
 
 pycatia.assembly_interfaces.assembly_constraint_setting_att
 ============================================================

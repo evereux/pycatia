@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ProjectedToleranceZone(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -29,9 +28,8 @@ class ProjectedToleranceZone(AnyObject):
                 | 
                 | Interface for accessing projected tolerance zone informations of a
                 | TPS.
-                | ========| Position Length / |<----------->|<----------->| Toleranced | | |
-                | Surface - - - +-------> +=============+ \ |\ \ \ \ | Origin Direction Projected
-                | Tolerance Zone ========
+                | (note additional data removed by evereux due to it not making
+                | sense and breaking doc formatting)
     
     """
 
@@ -126,4 +124,4 @@ class ProjectedToleranceZone(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'ProjectedToleranceZone(name="{ self.name }")'
+        return f'ProjectedToleranceZone(name="{self.name}")'

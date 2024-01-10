@@ -1,4 +1,4 @@
-.. _Hybrid_shape_line_tangency:
+.. _HybridShapeLineTangency:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_line_tangency
 ==========================================================

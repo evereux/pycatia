@@ -1,4 +1,4 @@
-.. _Hybrid_shape_fillet_tri_tangent:
+.. _HybridShapeFilletTriTangent:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_fillet_tri_tangent
 ===============================================================

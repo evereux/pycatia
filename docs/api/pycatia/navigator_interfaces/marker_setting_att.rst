@@ -1,4 +1,4 @@
-.. _Marker_setting_att:
+.. _MarkerSettingAtt:
 
 pycatia.navigator_interfaces.marker_setting_att
 ===============================================

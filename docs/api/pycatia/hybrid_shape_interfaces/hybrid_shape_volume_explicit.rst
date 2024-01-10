@@ -1,4 +1,4 @@
-.. _Hybrid_shape_volume_explicit:
+.. _HybridShapeVolumeExplicit:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_volume_explicit
 ============================================================

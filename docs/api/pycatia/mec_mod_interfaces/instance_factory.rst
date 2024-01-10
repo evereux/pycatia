@@ -1,4 +1,4 @@
-.. _Instance_factory:
+.. _InstanceFactory:
 
 pycatia.mec_mod_interfaces.instance_factory
 ===========================================

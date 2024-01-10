@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisSet:
 
 pycatia.analysis_interfaces.analysis_set
 =========================================

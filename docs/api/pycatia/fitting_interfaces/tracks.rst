@@ -1,4 +1,4 @@
-.. _Fitting_interfaces:
+.. _Tracks:
 
 pycatia.fitting_interfaces.tracks
 ==================================

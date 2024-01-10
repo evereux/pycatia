@@ -1,4 +1,4 @@
-.. _Dnb_device_interfaces:
+.. _DofState:
 
 pycatia.dnb_device_interfaces.dof_state
 ========================================

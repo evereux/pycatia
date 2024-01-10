@@ -1,4 +1,4 @@
-.. _Hybrid_shape_affinity:
+.. _HybridShapeAffinity:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_affinity
 =====================================================

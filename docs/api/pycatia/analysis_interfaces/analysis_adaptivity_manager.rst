@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisAdaptivityManager:
 
 pycatia.analysis_interfaces.analysis_adaptivity_manager
 ========================================================

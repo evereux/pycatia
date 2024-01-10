@@ -1,4 +1,4 @@
-.. _Hybrid_shape_spline:
+.. _HybridShapeSpline:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_spline
 ===================================================

@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _FlagNote:
 
 pycatia.cat_tps_interfaces.flag_note
 =====================================

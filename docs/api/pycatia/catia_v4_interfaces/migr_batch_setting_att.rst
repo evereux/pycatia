@@ -1,4 +1,4 @@
-.. _Catia_v4_interfaces:
+.. _MigrBatchSettingAtt:
 
 pycatia.catia_v4_interfaces.migr_batch_setting_att
 ===================================================

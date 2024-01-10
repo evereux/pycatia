@@ -1,4 +1,4 @@
-.. _Hybrid_shape_spiral:
+.. _HybridShapeSpiral:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_spiral
 ===================================================

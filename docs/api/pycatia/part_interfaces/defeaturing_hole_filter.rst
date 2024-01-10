@@ -1,4 +1,4 @@
-.. _Defeaturing_hole_filter:
+.. _DefeaturingHoleFilter:
 
 pycatia.part_interfaces.defeaturing_hole_filter
 ===============================================

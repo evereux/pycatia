@@ -1,4 +1,4 @@
-.. _Light_source:
+.. _LightSource:
 
 pycatia.in_interfaces.light_source
 ==================================

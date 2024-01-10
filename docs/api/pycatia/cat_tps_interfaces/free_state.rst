@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _FreeState:
 
 pycatia.cat_tps_interfaces.free_state
 ======================================

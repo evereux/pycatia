@@ -1,4 +1,4 @@
-.. _Hybrid_shape_spine:
+.. _HybridShapeSpine:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_spine
 ==================================================

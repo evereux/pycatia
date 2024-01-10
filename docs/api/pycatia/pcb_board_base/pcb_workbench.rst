@@ -1,4 +1,4 @@
-.. _Pcb_board_base:
+.. _PCBWorkbench:
 
 pycatia.pcb_board_base.pcb_workbench
 =====================================

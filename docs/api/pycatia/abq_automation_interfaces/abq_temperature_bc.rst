@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQTemperatureBC:
 
 pycatia.abq_automation_interfaces.abq_temperature_bc
 =====================================================

@@ -1,4 +1,4 @@
-.. _Spline_2d:
+.. _Spline2D:
 
 pycatia.sketcher_interfaces.spline_2D
 =====================================

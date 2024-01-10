@@ -1,4 +1,4 @@
-.. _Surface_machining_interfaces:
+.. _ManufacturingSurfaceMachiningArea:
 
 pycatia.surface_machining_interfaces.manufacturing_surface_machining_area
 ==========================================================================

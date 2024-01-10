@@ -1,4 +1,4 @@
-.. _Dnb_device_interfaces:
+.. _DeviceJointRelations:
 
 pycatia.dnb_device_interfaces.device_joint_relations
 =====================================================

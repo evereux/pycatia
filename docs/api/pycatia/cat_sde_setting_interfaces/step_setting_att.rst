@@ -1,4 +1,4 @@
-.. _Cat_sde_setting_interfaces:
+.. _StepSettingAtt:
 
 pycatia.cat_sde_setting_interfaces.step_setting_att
 ====================================================

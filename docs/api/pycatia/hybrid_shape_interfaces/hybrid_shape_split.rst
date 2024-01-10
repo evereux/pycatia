@@ -1,4 +1,4 @@
-.. _Hybrid_shape_split:
+.. _HybridShapeSplit:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_split
 ==================================================

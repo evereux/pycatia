@@ -1,4 +1,4 @@
-.. _Arrangement_interfaces:
+.. _ArrangementItemReservation:
 
 pycatia.arrangement_interfaces.arrangement_item_reservation
 ============================================================

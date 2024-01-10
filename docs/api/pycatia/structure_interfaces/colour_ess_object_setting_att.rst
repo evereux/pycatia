@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _ColourEssObjectSettingAtt:
 
 pycatia.structure_interfaces.colour_ess_object_setting_att
 ===========================================================

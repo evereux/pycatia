@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _ShiftedProfileTolerance:
 
 pycatia.cat_tps_interfaces.shifted_profile_tolerance
 =====================================================

@@ -35,19 +35,19 @@ class ArrNomenclature(AnyObject):
                 | maintain the hierarchy of user type names and associated icons.
                 | CATIAArrNomenclatureTree
                 |
-                |_______ Area - (I_ArrArea)
+                | _______ Area - (I_ArrArea)
                 |
-                |_______ Building -
+                | _______ Building -
                 | (I_ArrBuilding)
                 |
-                |_______ Safety Zone - (I_ArrSafetyZone)
+                | _______ Safety Zone - (I_ArrSafetyZone)
                 |
-                |-------- Run -
+                | -------- Run -
                 | (I_ArrRun)
                 |
-                |_______ Conduit Run
-                |_______ Raceway Run In the diagram shown
-                | above, Area (along with its subtypes) and and Run (also along with it's
+                | _______ Conduit Run
+                | _______ Raceway Run In the diagram shown
+                | above, Area (along with its subtypes) and Run (also along with it's
                 | subtypes) are all UserNomenclature objects. Entries such as the Area and Run
                 | are called System or SuperClass objects that have to be defined first before
                 | the subclasses such as Building and Safety Zone are defined. SuperClasses will

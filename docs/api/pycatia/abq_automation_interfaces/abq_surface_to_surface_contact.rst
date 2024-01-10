@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQSurfaceToSurfaceContact:
 
 pycatia.abq_automation_interfaces.abq_surface_to_surface_contact
 =================================================================

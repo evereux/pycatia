@@ -1,4 +1,4 @@
-.. _Int_param:
+.. _IntParam:
 
 pycatia.knowledge_interfaces.int_param
 ======================================

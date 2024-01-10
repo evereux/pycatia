@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchAppMultiImage:
 
 pycatia.cat_sch_platform_interfaces.sch_app_multi_image
 ========================================================

@@ -1,4 +1,4 @@
-.. _Dnb_sor_interfaces:
+.. _OrderGenerator:
 
 pycatia.dnb_sor_interfaces.order_generator
 ===========================================

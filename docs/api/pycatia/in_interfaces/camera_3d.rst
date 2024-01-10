@@ -1,4 +1,4 @@
-.. _Camera_3d:
+.. _Camera3D:
 
 pycatia.in_interfaces.camera_3d
 ===============================

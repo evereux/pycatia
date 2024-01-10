@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchAppGapPriority:
 
 pycatia.cat_sch_platform_interfaces.sch_app_gap_priority
 =========================================================

@@ -1,4 +1,4 @@
-.. _Dnb_asy_activity_interfaces:
+.. _AsySimActivity:
 
 pycatia.dnb_asy_activity_interfaces.asy_sim_activity
 =====================================================

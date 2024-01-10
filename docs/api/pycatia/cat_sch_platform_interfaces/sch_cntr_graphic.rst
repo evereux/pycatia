@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchCntrGraphic:
 
 pycatia.cat_sch_platform_interfaces.sch_cntr_graphic
 =====================================================

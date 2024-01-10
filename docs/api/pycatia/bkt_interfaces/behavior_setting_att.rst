@@ -1,4 +1,4 @@
-.. _Bkt_interfaces:
+.. _BehaviorSettingAtt:
 
 pycatia.bkt_interfaces.behavior_setting_att
 ============================================

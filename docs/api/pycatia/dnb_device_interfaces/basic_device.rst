@@ -1,4 +1,4 @@
-.. _Dnb_device_interfaces:
+.. _BasicDevice:
 
 pycatia.dnb_device_interfaces.basic_device
 ===========================================

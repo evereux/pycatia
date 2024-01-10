@@ -1,4 +1,4 @@
-.. _Cat_plant_ship_interfaces:
+.. _PSPLightConnector:
 
 pycatia.cat_plant_ship_interfaces.psp_light_connector
 ======================================================

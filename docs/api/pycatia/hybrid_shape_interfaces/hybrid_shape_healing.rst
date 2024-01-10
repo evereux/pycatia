@@ -1,4 +1,4 @@
-.. _Hybrid_shape_healing:
+.. _HybridShapeHealing:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_healing
 ====================================================

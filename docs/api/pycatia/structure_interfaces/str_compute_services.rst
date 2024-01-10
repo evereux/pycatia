@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrComputeServices:
 
 pycatia.structure_interfaces.str_compute_services
 ==================================================
