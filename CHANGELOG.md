@@ -4,6 +4,7 @@
 
 * added ShapeFactory.add_new_rotate_2. This class method was missing in the
   CATIA V5 Basic Help file.
+* Documentation: expanded api tree and corrected name refs.
 
 ## 0.6.4
 
