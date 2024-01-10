@@ -56,9 +56,9 @@ def coords_relative_to_axis(axis_system, point):
     diff[1] = coordinates[1] - a_origin[1]
     diff[2] = coordinates[2] - a_origin[2]
 
-    x = dot_product(diff, a_xaxis)
-    y = dot_product(diff, a_yaxis)
-    z = dot_product(diff, a_zaxis)
+    x = dot_product(diff, n_x)
+    y = dot_product(diff, n_y)
+    z = dot_product(diff, n_z)
 
     return x, y, z
 
