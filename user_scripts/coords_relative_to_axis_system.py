@@ -14,7 +14,8 @@
     python >= 3.9
     pycatia
     CATIA V5 is running with an open part that includes an axis system and a
-    geometrical set named "Inputs" containing a point named "Point.1".
+    geometrical set named "Inputs" containing a point named "Point.1". The first
+    axis in the axis collection will be selected.
 """
 
 ##########################################################
