@@ -1772,6 +1772,22 @@ class ShapeFactory(Factory):
         """
         return Scaling(self.shape_factory.AddNewScaling(i_scaling_reference.com_object, i_factor))
 
+    def add_new_rotate2(self, i_axis: Reference, i_angle: float) -> AnyObject:
+        """
+            .. note::
+                :class: toggle
+
+                Microsoft Visual Basic Object Browser
+                    | Function AddNewRotate2(iAxis As Reference, iAngle As Double) As AnyObject
+                    |   Member of PARTITF.ShapeFactory
+
+        :param Reference i_axis:
+        :param float i_angle:
+        :rtype: AnyObject
+        """
+
+        return AnyObject(self.shape_factory.AddNewRotate2(i_axis.com_object, i_angle))
+
     def add_new_sew_surface(self, i_sewing_element: Reference, i_sewing_side: int) -> SewSurface:
         """
         .. note::
