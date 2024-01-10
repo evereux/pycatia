@@ -13,14 +13,20 @@
     ============
     python >= 3.9
     pycatia
-    CATIA V5 is running with an open part that includes an axis system and a geometrical set named "Inputs" containing a point named "Point.1".
+    CATIA V5 is running with an open part that includes an axis system and a
+    geometrical set named "Inputs" containing a point named "Point.1".
 """
 
+##########################################################
+# insert syspath to project folder so examples can be run.
+# for development purposes.
 import os
 import sys
-from pycatia import catia
 
 sys.path.insert(0, os.path.abspath('..\\pycatia'))
+##########################################################
+
+from pycatia import catia
 
 caa = catia()
 document = caa.active_document
@@ -28,6 +34,7 @@ product = document.product
 part = document.part
 hybrid_bodies = part.hybrid_bodies
 spa_workbench = document.spa_workbench()
+
 
 def coords_relative_to_axis(axis_system, point):
     a_origin = axis_system.get_origin()
