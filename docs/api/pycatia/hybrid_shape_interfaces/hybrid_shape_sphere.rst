@@ -1,4 +1,4 @@
-.. _Hybrid_shape_sphere:
+.. _HybridShapeSphere:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_sphere
 ===================================================

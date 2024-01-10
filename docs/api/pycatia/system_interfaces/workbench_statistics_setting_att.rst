@@ -1,4 +1,4 @@
-.. _Workbench_statistics_setting_att:
+.. _WorkbenchStatisticsSettingAtt:
 
 pycatia.system_interfaces.workbench_statistics_setting_att
 ==========================================================

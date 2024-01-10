@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQIAABQBaseMotionVB:
 
 pycatia.abq_automation_interfaces.abqiaabq_base_motion_vb
 ==========================================================

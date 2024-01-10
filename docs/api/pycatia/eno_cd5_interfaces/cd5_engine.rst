@@ -1,4 +1,4 @@
-.. _Eno_cd5_interfaces:
+.. _CD5Engine:
 
 pycatia.eno_cd5_interfaces.cd5_engine
 ======================================

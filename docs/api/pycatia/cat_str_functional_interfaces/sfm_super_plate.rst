@@ -1,4 +1,4 @@
-.. _Cat_str_functional_interfaces:
+.. _SFMSuperPlate:
 
 pycatia.cat_str_functional_interfaces.sfm_super_plate
 ======================================================

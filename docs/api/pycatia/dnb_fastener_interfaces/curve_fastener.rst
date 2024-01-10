@@ -1,4 +1,4 @@
-.. _Dnb_fastener_interfaces:
+.. _CurveFastener:
 
 pycatia.dnb_fastener_interfaces.curve_fastener
 ===============================================

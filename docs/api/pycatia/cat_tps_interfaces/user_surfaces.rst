@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _UserSurfaces:
 
 pycatia.cat_tps_interfaces.user_surfaces
 =========================================

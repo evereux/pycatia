@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _Merges:
 
 pycatia.smt_interfaces.merges
 ==============================

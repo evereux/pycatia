@@ -1,4 +1,4 @@
-.. _Simulation_interfaces:
+.. _Replay:
 
 pycatia.simulation_interfaces.replay
 =====================================

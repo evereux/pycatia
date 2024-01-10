@@ -19,25 +19,26 @@ if TYPE_CHECKING:
 
 class StiDBItem(AnyObject):
     """
-        .. note::
-            :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+    .. note::
+        :class: toggle
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StiDBItem
-                | 
-                | Represents the SmarTeam Integration Object, that is to say the Document coming
-                | from SmarTeam database.
-                | Role: It retrieves SmarTeam Document information. It is managed by
-                | StiEngine.
-                | 
-                | See also:
-                |     StiEngine
+        CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     StiDBItem
+            |
+            | Represents the SmarTeam Integration Object, that is to say the Document coming
+            | from SmarTeam database.
+            | Role: It retrieves SmarTeam Document information. It is managed by
+            | StiEngine.
+            |
+            | See also:
+            |     StiEngine
     
     """
 

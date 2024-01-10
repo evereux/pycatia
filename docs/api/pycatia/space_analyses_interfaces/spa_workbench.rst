@@ -1,4 +1,4 @@
-.. _Spa_workbench:
+.. _SpaWorkbench:
 
 pycatia.space_analyses_interfaces.spa_workbench
 ===============================================

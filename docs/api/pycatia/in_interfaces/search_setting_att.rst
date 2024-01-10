@@ -1,4 +1,4 @@
-.. _Search_setting_att:
+.. _SearchSettingAtt:
 
 pycatia.in_interfaces.search_setting_att
 ========================================

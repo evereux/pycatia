@@ -1,4 +1,4 @@
-.. _Print_area:
+.. _PrintArea:
 
 pycatia.drafting_interfaces.print_area
 ======================================

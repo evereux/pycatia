@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _ParticularTolElem:
 
 pycatia.cat_tps_interfaces.particular_tol_elem
 ===============================================

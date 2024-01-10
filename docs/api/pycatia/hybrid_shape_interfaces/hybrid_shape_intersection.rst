@@ -1,4 +1,4 @@
-.. _Hybrid_shape_intersection:
+.. _HybridShapeIntersection:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_intersection
 =========================================================

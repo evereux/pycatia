@@ -1,4 +1,4 @@
-.. _Hybrid_shape_extrapol:
+.. _HybridShapeExtrapol:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_extrapol
 =====================================================

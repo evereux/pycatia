@@ -1,4 +1,4 @@
-.. _Manufacturing_interfaces:
+.. _ManufacturingCopyTransformation:
 
 pycatia.manufacturing_interfaces.manufacturing_copy_transformation
 ===================================================================

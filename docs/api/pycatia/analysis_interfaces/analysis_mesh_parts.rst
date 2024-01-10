@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisMeshParts:
 
 pycatia.analysis_interfaces.analysis_mesh_parts
 ================================================

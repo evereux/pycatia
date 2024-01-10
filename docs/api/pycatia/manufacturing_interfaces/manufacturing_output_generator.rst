@@ -1,4 +1,4 @@
-.. _Manufacturing_interfaces:
+.. _ManufacturingOutputGenerator:
 
 pycatia.manufacturing_interfaces.manufacturing_output_generator
 ================================================================

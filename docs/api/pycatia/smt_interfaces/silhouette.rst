@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _Silhouette:
 
 pycatia.smt_interfaces.silhouette
 ==================================

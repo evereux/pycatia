@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _AnnotationSets:
 
 pycatia.cat_tps_interfaces.annotation_sets
 ===========================================

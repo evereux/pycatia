@@ -1,4 +1,4 @@
-.. _Base_application:
+.. _catia_application:
 
 pycatia.base_interfaces.base_application
 ========================================

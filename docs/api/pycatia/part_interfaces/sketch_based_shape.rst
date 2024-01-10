@@ -1,4 +1,4 @@
-.. _Sketch_based_shape:
+.. _SketchBasedShape:
 
 pycatia.part_interfaces.sketch_based_shape
 ==========================================

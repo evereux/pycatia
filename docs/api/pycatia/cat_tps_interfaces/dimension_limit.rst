@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _DimensionLimit:
 
 pycatia.cat_tps_interfaces.dimension_limit
 ===========================================

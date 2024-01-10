@@ -1,4 +1,4 @@
-.. _Manufacturing_interfaces:
+.. _ManufacturingMachiningAxis:
 
 pycatia.manufacturing_interfaces.manufacturing_machining_axis
 ==============================================================

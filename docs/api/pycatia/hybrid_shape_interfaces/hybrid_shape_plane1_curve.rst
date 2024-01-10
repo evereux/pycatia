@@ -1,4 +1,4 @@
-.. _Hybrid_shape_plane1_curve:
+.. _HybridShapePlane1Curve:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_plane1_curve
 =========================================================

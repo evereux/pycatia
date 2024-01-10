@@ -1,4 +1,4 @@
-.. _Arrangement_interfaces:
+.. _ArrangementRun:
 
 pycatia.arrangement_interfaces.arrangement_run
 ===============================================

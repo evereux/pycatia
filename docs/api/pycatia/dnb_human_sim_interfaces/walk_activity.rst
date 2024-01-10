@@ -1,7 +1,7 @@
-.. _Dnb_human_sim_interfaces:
+.. _WalkActivity:
 
 pycatia.dnb_human_sim_interfaces.walk_activity
-===============================================
+==============================================
 
 .. automodule:: pycatia.dnb_human_sim_interfaces.walk_activity
     :members:

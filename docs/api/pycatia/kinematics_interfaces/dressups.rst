@@ -1,4 +1,4 @@
-.. _Kinematics_interfaces:
+.. _Dressups:
 
 pycatia.kinematics_interfaces.dressups
 =======================================

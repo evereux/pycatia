@@ -1,4 +1,4 @@
-.. _Hybrid_shape_connect:
+.. _HybridShapeConnect:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_connect
 ====================================================

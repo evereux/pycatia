@@ -1,4 +1,4 @@
-.. _Funct_system_interfaces:
+.. _FunctNodeGraphLayout:
 
 pycatia.funct_system_interfaces.funct_node_graph_layout
 ========================================================

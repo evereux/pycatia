@@ -1,4 +1,4 @@
-.. _File_access_statistics_setting_att:
+.. _FileAccessStatisticsSettingAtt:
 
 pycatia.system_interfaces.file_access_statistics_setting_att
 ============================================================

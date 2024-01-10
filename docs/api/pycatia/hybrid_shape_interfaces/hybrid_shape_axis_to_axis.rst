@@ -1,4 +1,4 @@
-.. _Hybrid_shape_axis_to_axis:
+.. _HybridShapeAxisToAxis:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_axis_to_axis
 =========================================================

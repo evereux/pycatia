@@ -1,4 +1,4 @@
-.. _Session_statistics_setting_att:
+.. _SessionStatisticsSettingAtt:
 
 pycatia.system_interfaces.session_statistics_setting_att
 ========================================================

@@ -1,4 +1,4 @@
-.. _Drawing_view:
+.. _DrawingView:
 
 pycatia.drafting_interfaces.drawing_view
 ========================================

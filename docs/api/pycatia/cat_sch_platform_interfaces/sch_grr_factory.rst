@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchGRRFactory:
 
 pycatia.cat_sch_platform_interfaces.sch_grr_factory
 ====================================================

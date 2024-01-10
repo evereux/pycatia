@@ -1,4 +1,4 @@
-.. _Dnb_mhi_interfaces:
+.. _MHIOpenAccess:
 
 pycatia.dnb_mhi_interfaces.mhi_open_access
 ===========================================

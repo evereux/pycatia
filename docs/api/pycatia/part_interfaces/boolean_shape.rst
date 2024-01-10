@@ -1,4 +1,4 @@
-.. _Boolean_shape:
+.. _BooleanShape:
 
 pycatia.part_interfaces.boolean_shape
 =====================================

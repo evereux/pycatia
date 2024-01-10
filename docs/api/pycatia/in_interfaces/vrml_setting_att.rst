@@ -1,4 +1,4 @@
-.. _Vrml_setting_att:
+.. _VrmlSettingAtt:
 
 pycatia.in_interfaces.vrml_setting_att
 ======================================

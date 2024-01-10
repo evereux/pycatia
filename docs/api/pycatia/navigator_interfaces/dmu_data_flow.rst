@@ -1,4 +1,4 @@
-.. _Dmu_data_flow:
+.. _DMUDataFlow:
 
 pycatia.navigator_interfaces.dmu_data_flow
 ==========================================

@@ -1,4 +1,4 @@
-.. _Hybrid_shape_thickness:
+.. _HybridShapeThickness:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_thickness
 ======================================================

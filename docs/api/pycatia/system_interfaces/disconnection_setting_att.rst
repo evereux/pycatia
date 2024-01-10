@@ -1,4 +1,4 @@
-.. _Disconnection_setting_att:
+.. _DisconnectionSettingAtt:
 
 pycatia.system_interfaces.disconnection_setting_att
 ===================================================

@@ -1,4 +1,4 @@
-.. _Dnb_igp_setup_interfaces:
+.. _Tag:
 
 pycatia.dnb_igp_setup_interfaces.tag
 =====================================

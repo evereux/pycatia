@@ -1,4 +1,4 @@
-.. _Send_to_service:
+.. _SendToService:
 
 pycatia.in_interfaces.send_to_service
 =====================================

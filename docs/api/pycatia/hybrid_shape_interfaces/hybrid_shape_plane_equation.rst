@@ -1,4 +1,4 @@
-.. _Hybrid_shape_plane_equation:
+.. _HybridShapePlaneEquation:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_plane_equation
 ===========================================================

@@ -1,4 +1,4 @@
-.. _Dnb_work_interfaces:
+.. _WIChangeNotification:
 
 pycatia.dnb_work_interfaces.wi_change_notification
 ===================================================

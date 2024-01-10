@@ -1,4 +1,4 @@
-.. _Dmaps_interfaces:
+.. _ProcessDocument:
 
 pycatia.dmaps_interfaces.process_document
 ==========================================

@@ -1,4 +1,4 @@
-.. _Assembly_interfaces:
+.. _AssemblyGeneralSettingAtt:
 
 pycatia.assembly_interfaces.assembly_general_setting_att
 =========================================================

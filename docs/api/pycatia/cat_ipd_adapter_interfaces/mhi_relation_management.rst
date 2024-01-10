@@ -1,4 +1,4 @@
-.. _Cat_ipd_adapter_interfaces:
+.. _MhiRelationManagement:
 
 pycatia.cat_ipd_adapter_interfaces.mhi_relation_management
 ===========================================================

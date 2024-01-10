@@ -1,4 +1,4 @@
-.. _Circ_pattern:
+.. _CircPattern:
 
 pycatia.part_interfaces.circ_pattern
 ====================================

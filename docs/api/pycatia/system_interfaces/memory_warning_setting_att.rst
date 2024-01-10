@@ -1,4 +1,4 @@
-.. _Memory_warning_setting_att:
+.. _MemoryWarningSettingAtt:
 
 pycatia.system_interfaces.memory_warning_setting_att
 ====================================================

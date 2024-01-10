@@ -1,4 +1,4 @@
-.. _Linear_repartition:
+.. _LinearRepartition:
 
 pycatia.part_interfaces.linear_repartition
 ==========================================

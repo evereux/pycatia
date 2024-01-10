@@ -1,4 +1,4 @@
-.. _Dnb_work_interfaces:
+.. _WorkGeneralSettingAtt:
 
 pycatia.dnb_work_interfaces.work_general_setting_att
 =====================================================

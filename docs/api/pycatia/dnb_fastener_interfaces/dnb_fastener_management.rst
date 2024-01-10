@@ -1,4 +1,4 @@
-.. _Dnb_fastener_interfaces:
+.. _DnbFastenerManagement:
 
 pycatia.dnb_fastener_interfaces.dnb_fastener_management
 ========================================================

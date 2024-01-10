@@ -1,4 +1,4 @@
-.. _Dnb_simulation_interfaces:
+.. _SimulationSettingAtt:
 
 pycatia.dnb_simulation_interfaces.simulation_setting_att
 =========================================================

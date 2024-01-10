@@ -1,4 +1,4 @@
-.. _Hybrid_shape_point_coord:
+.. _HybridShapePointCoord:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord
 ========================================================

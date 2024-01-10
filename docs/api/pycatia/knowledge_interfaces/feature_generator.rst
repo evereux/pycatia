@@ -1,4 +1,4 @@
-.. _Feature_generator:
+.. _FeatureGenerator:
 
 pycatia.knowledge_interfaces.feature_generator
 ==============================================

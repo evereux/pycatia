@@ -1,4 +1,4 @@
-.. _Dnb_resource_program_interfaces:
+.. _ResourceProgramManager:
 
 pycatia.dnb_resource_program_interfaces.resource_program_manager
 =================================================================

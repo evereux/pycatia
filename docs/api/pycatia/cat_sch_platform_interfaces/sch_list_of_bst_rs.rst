@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchListOfBSTRs:
 
 pycatia.cat_sch_platform_interfaces.sch_list_of_bst_rs
 =======================================================

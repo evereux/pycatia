@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQTemperatureHistory:
 
 pycatia.abq_automation_interfaces.abq_temperature_history
 ==========================================================

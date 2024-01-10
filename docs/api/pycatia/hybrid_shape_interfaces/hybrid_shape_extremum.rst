@@ -1,4 +1,4 @@
-.. _Hybrid_shape_extremum:
+.. _HybridShapeExtremum:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_extremum
 =====================================================

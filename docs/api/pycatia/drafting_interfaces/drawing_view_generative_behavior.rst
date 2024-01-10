@@ -1,4 +1,4 @@
-.. _Drawing_view_generative_behavior:
+.. _DrawingViewGenerativeBehavior:
 
 pycatia.drafting_interfaces.drawing_view_generative_behavior
 ============================================================

@@ -1,4 +1,4 @@
-.. _Dnb_robot_interfaces:
+.. _GenericMotionProfile:
 
 pycatia.dnb_robot_interfaces.generic_motion_profile
 ====================================================

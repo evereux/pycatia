@@ -1,4 +1,4 @@
-.. _Marker_3ds:
+.. _Marker3Ds:
 
 pycatia.navigator_interfaces.marker_3Ds
 =======================================

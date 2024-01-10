@@ -1,4 +1,4 @@
-.. _Dyn_license_setting_att:
+.. _DynLicenseSettingAtt:
 
 pycatia.system_interfaces.dyn_license_setting_att
 =================================================
