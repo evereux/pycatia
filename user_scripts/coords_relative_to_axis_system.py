@@ -48,23 +48,26 @@ def coords_relative_to_axis(axis_system, point):
     diff[1] = coordinates[1] - a_origin[1]
     diff[2] = coordinates[2] - a_origin[2]
 
-    x = dot_product(diff, a_xaxis) 
+    x = dot_product(diff, a_xaxis)
     y = dot_product(diff, a_yaxis)
     z = dot_product(diff, a_zaxis)
 
-    return (x, y, z)
+    return x, y, z
+
 
 def normalize_vector(vec):
-    magnitude = (vec[0]**2 + vec[1]**2 + vec[2]**2)**0.5
+    magnitude = (vec[0] ** 2 + vec[1] ** 2 + vec[2] ** 2) ** 0.5
     if magnitude != 0:
         x = vec[0] / magnitude
-    	y = vec[1] / magnitude
-    	z = vec[2] / magnitude
+        y = vec[1] / magnitude
+        z = vec[2] / magnitude
 
-    	return (x, y, z)
+        return x, y, z
+
 
 def dot_product(vec1, vec2):
     return vec1[0] * vec2[0] + vec1[1] * vec2[1] + vec1[2] * vec2[2]
+
 
 # Get first axis system in collection
 axis_system = part.axis_systems.item(1)
