@@ -15,91 +15,92 @@ from pycatia.types.general import cat_variant
 
 class StiDBChildren(AnyObject):
     """
-        .. note::
-            :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+    .. note::
+        :class: toggle
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StiDBChildren
-                | 
-                | Represents all the Children of a CATIAStiDBItem.
-                | 
-                | For each Child, we are able to retrieve its associated CATIAStiDBItem and the
-                | Link Type (between itself and its father).
-                | It should be represented as the following Correspondance Table { Child Number /
-                | CATIAStiDBItem / Link Type}.
-                | 
-                | Example:
-                | 
-                |       The following example presents an Assembly structure and the associated
-                |       Correspondance Tables for each element.
-                |
-                |      +-----------+
-                |      |  Product  |<-----------------+
-                |      +-----------+                  |
-                |         |                           |
-                |         |                           |
-                |         |                           |
-                |         |                           |
-                |         |                           |
-                |         |   +-----------------+     |
-                |         +-->| Reference Part  |     |Contextual Link
-                |         |   +-----------------+     |
-                |         |            ^              |
-                |         |            |              |
-                |         |            | Design Link  |
-                |         |            |              |
-                |         |            |              |
-                |         |   +-----------------+     |
-                |         +-->| Contextual Part |-----+
-                |             +-----------------+ 
-                |
-                |      
-                |     CATIAStiDBChildren for Product Child Number 	CATIAStiDBItem 	Link
-                |     Type
-                |     Child n°1 	Reference Part 	Product Link
-                |     Child n°2 	Contextual Part 	Product Link
-                |
-                |     CATIAStiDBChildren for Contextual Part Child Number 	CATIAStiDBItem 	Link
-                |     Type
-                |     Child n°1 	Reference Part 	Design Link
-                |     Child n°2 	Product 	Contextual Link
-                |
-                |     CATIAStiDBChildren for Reference Part Child Number 	CATIAStiDBItem 	Link
-                |     Type
-                |
-                |     Here is the List of all CATIA Link Types :
-                |      
-                |     CATIA Link Behavior 	Description
-                |     CATIA Product Link 	Defines the basic Product Structure Link -i.e.: the
-                |     link between either a Product and its Sub-Products or a Product and its
-                |     Representation
-                |     CATIA Design Link 	Defines Design Link -i.e.: Part to Part Link created
-                |     with 'Copy/Paste ... with link' or as Contextual Link It can also be used for
-                |     Link to external Parameters
-                |     CATIA Design Table Link 	Defines the Link to a Design
-                |     Table
-                |     CATIA Rule Base Link 	Defines the Link to Document defining Rule
-                |     Base
-                |     CATIA Downstream Application Link 	Defines for instance the Link between a
-                |     Drawing or an Analysis Document and a Part Document
-                |     CATIA Contextual Link 	Defines the Link from a Part Document to its
-                |     Context
-                |     CATIA Result Link 	Defines the Link to "Result" document, like Analysis
-                |     Reports, ...
-                |     CATIA Is Composed Of Link 	Defines a simple "Composed Of" Link, like a
-                |     Catalog Document Composed Of Sub-Catalog Documents
-                |     CATIA Reference Link 	Defines any kind of Link that does not belong to one
-                |     type described above including for instance OLE links, Link from a Catalog
-                |     Document to a Part, Link to Material Document, ...
-                |
-                | See also:
-                |     StiDBItem
+        CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     StiDBChildren
+            |
+            | Represents all the Children of a CATIAStiDBItem.
+            |
+            | For each Child, we are able to retrieve its associated CATIAStiDBItem and the
+            | Link Type (between itself and its father).
+            | It should be represented as the following Correspondance Table { Child Number /
+            | CATIAStiDBItem / Link Type}.
+            |
+            | Example:
+            |
+            |       The following example presents an Assembly structure and the associated
+            |       Correspondance Tables for each element.
+            |
+            |      +-----------+
+            |      \|  Product  \|<-----------------+
+            |      +-----------+                  \|
+            |         \|                           \|
+            |         \|                           \|
+            |         \|                           \|
+            |        \|                           \|
+            |         \|                           \|
+            |         \|   +-----------------+     \|
+            |         +-->\| Reference Part  \|     \|Contextual Link
+            |         \|   +-----------------+     \|
+            |         \|            ^              \|
+            |         \|            \|              \|
+            |         \|            \| Design Link  \|
+            |         \|            \|              \|
+            |         \|            \|              \|
+            |         \|   +-----------------+     \|
+            |         +-->\| Contextual Part \|-----+
+            |             +-----------------+
+            |
+            |
+            |     CATIAStiDBChildren for Product Child Number 	CATIAStiDBItem 	Link
+            |     Type
+            |     Child n°1 	Reference Part 	Product Link
+            |     Child n°2 	Contextual Part 	Product Link
+            |
+            |     CATIAStiDBChildren for Contextual Part Child Number 	CATIAStiDBItem 	Link
+            |     Type
+            |     Child n°1 	Reference Part 	Design Link
+            |     Child n°2 	Product 	Contextual Link
+            |
+            |     CATIAStiDBChildren for Reference Part Child Number 	CATIAStiDBItem 	Link
+            |     Type
+            |
+            |     Here is the List of all CATIA Link Types :
+            |
+            |     CATIA Link Behavior 	Description
+            |     CATIA Product Link 	Defines the basic Product Structure Link -i.e.: the
+            |     link between either a Product and its Sub-Products or a Product and its
+            |     Representation
+            |     CATIA Design Link 	Defines Design Link -i.e.: Part to Part Link created
+            |     with 'Copy/Paste ... with link' or as Contextual Link It can also be used for
+            |     Link to external Parameters
+            |     CATIA Design Table Link 	Defines the Link to a Design
+            |     Table
+            |     CATIA Rule Base Link 	Defines the Link to Document defining Rule
+            |     Base
+            |     CATIA Downstream Application Link 	Defines for instance the Link between a
+            |     Drawing or an Analysis Document and a Part Document
+            |     CATIA Contextual Link 	Defines the Link from a Part Document to its
+            |     Context
+            |     CATIA Result Link 	Defines the Link to "Result" document, like Analysis
+            |     Reports, ...
+            |     CATIA Is Composed Of Link 	Defines a simple "Composed Of" Link, like a
+            |     Catalog Document Composed Of Sub-Catalog Documents
+            |     CATIA Reference Link 	Defines any kind of Link that does not belong to one
+            |     type described above including for instance OLE links, Link from a Catalog
+            |     Document to a Part, Link to Material Document, ...
+            |
+            | See also:
+            |     StiDBItem
     
     """
 

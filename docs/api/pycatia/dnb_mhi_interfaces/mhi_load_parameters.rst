@@ -1,4 +1,4 @@
-.. _Dnb_mhi_interfaces:
+.. _MHILoadParameters:
 
 pycatia.dnb_mhi_interfaces.mhi_load_parameters
 ===============================================

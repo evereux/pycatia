@@ -1,4 +1,4 @@
-.. _Replace_face:
+.. _ReplaceFace:
 
 pycatia.part_interfaces.replace_face
 ====================================

@@ -1,4 +1,4 @@
-.. _Cache_setting_att:
+.. _CacheSettingAtt:
 
 pycatia.system_interfaces.cache_setting_att
 ===========================================

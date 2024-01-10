@@ -1,4 +1,4 @@
-.. _Free_parameters:
+.. _FreeParameters:
 
 pycatia.knowledge_interfaces.free_parameters
 ============================================

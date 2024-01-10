@@ -1,4 +1,4 @@
-.. _Rectilinear_bi_dim_feat_edge:
+.. _RectilinearBiDimFeatEdge:
 
 pycatia.mec_mod_interfaces.rectilinear_bi_dim_feat_edge
 =======================================================

@@ -1,4 +1,4 @@
-.. _Dnb_robot_interfaces:
+.. _TCPTrace:
 
 pycatia.dnb_robot_interfaces.tcp_trace
 =======================================

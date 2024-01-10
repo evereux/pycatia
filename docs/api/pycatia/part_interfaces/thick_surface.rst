@@ -1,4 +1,4 @@
-.. _Thick_surface:
+.. _ThickSurface:
 
 pycatia.part_interfaces.thick_surface
 =====================================

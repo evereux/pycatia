@@ -1,4 +1,4 @@
-.. _Viewer_2d:
+.. _Viewer2D:
 
 pycatia.in_interfaces.viewer_2d
 ===============================

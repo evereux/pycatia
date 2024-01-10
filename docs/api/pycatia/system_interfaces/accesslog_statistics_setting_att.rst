@@ -1,4 +1,4 @@
-.. _Accesslog_statistics_setting_att:
+.. _AccesslogStatisticsSettingAtt:
 
 pycatia.system_interfaces.accesslog_statistics_setting_att
 ==========================================================

@@ -1,4 +1,4 @@
-.. _Cat_str_functional_interfaces:
+.. _SDDProduct:
 
 pycatia.cat_str_functional_interfaces.sdd_product
 ==================================================

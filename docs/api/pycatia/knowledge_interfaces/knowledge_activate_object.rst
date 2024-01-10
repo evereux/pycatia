@@ -1,4 +1,4 @@
-.. _Knowledge_activate_object:
+.. _KnowledgeActivateObject:
 
 pycatia.knowledge_interfaces.knowledge_activate_object
 ======================================================

@@ -1,4 +1,4 @@
-.. _Const_rad_edge_fillet:
+.. _ConstRadEdgeFillet:
 
 pycatia.part_interfaces.const_rad_edge_fillet
 =============================================

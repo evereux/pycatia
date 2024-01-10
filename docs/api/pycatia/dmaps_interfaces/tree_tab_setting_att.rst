@@ -1,4 +1,4 @@
-.. _Dmaps_interfaces:
+.. _TreeTabSettingAtt:
 
 pycatia.dmaps_interfaces.tree_tab_setting_att
 ==============================================

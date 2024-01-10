@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisExport:
 
 pycatia.analysis_interfaces.analysis_export
 ============================================

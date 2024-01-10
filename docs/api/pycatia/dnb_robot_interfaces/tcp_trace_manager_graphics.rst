@@ -1,4 +1,4 @@
-.. _Dnb_robot_interfaces:
+.. _TCPTraceManagerGraphics:
 
 pycatia.dnb_robot_interfaces.tcp_trace_manager_graphics
 ========================================================

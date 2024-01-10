@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchUpdateInstances:
 
 pycatia.cat_sch_platform_interfaces.sch_update_instances
 =========================================================

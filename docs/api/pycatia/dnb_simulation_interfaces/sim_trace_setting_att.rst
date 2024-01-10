@@ -1,4 +1,4 @@
-.. _Dnb_simulation_interfaces:
+.. _SimTraceSettingAtt:
 
 pycatia.dnb_simulation_interfaces.sim_trace_setting_att
 ========================================================

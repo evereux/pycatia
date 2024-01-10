@@ -1,4 +1,4 @@
-.. _Arrangement_interfaces:
+.. _ArrSystemLineProduct:
 
 pycatia.arrangement_interfaces.arr_system_line_product
 =======================================================

@@ -1,4 +1,4 @@
-.. _Hybrid_shapes:
+.. _HybridShapes:
 
 pycatia.mec_mod_interfaces.hybrid_shapes
 ========================================

@@ -1,4 +1,4 @@
-.. _Any_object:
+.. _AnyObject:
 
 pycatia.system_interfaces.any_object
 ====================================

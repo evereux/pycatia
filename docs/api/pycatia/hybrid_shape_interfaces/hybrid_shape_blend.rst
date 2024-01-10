@@ -1,4 +1,4 @@
-.. _Hybrid_shape_blend:
+.. _HybridShapeBlend:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_blend
 ==================================================

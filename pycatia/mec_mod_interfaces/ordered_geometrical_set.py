@@ -20,6 +20,7 @@ if TYPE_CHECKING:
     from pycatia.mec_mod_interfaces.ordered_geometrical_sets import OrderedGeometricalSets
     from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
+
 class OrderedGeometricalSet(AnyObject):
     """
         .. note::

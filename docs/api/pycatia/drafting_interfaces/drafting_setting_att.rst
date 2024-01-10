@@ -1,4 +1,4 @@
-.. _Drafting_setting_att:
+.. _DraftingSettingAtt:
 
 pycatia.drafting_interfaces.drafting_setting_att
 ================================================

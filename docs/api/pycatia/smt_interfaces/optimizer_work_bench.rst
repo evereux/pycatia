@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _OptimizerWorkBench:
 
 pycatia.smt_interfaces.optimizer_work_bench
 ============================================

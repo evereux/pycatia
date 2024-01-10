@@ -1,4 +1,4 @@
-.. _Pcb_board_base:
+.. _PCBArea:
 
 pycatia.pcb_board_base.pcb_area
 ================================

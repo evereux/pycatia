@@ -1,4 +1,4 @@
-.. _Dnb_device_interfaces:
+.. _HomePosition:
 
 pycatia.dnb_device_interfaces.home_position
 ============================================

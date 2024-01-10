@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQRigidBodyConstraint:
 
 pycatia.abq_automation_interfaces.abq_rigid_body_constraint
 ============================================================

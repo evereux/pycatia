@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrObjectExt:
 
 pycatia.structure_interfaces.str_object_ext
 ============================================

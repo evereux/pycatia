@@ -1,4 +1,4 @@
-.. _Assembly_interfaces:
+.. _AssemblyPocket:
 
 pycatia.assembly_interfaces.assembly_pocket
 ============================================

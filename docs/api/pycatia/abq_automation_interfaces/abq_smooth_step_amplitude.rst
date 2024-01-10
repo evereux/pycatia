@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQSmoothStepAmplitude:
 
 pycatia.abq_automation_interfaces.abq_smooth_step_amplitude
 ============================================================

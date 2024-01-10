@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQGeneralStaticStep:
 
 pycatia.abq_automation_interfaces.abq_general_static_step
 ==========================================================

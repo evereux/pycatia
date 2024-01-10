@@ -1,4 +1,4 @@
-.. _Cat_str_functional_interfaces:
+.. _SFMMember2Points:
 
 pycatia.cat_str_functional_interfaces.sfm_member2_points
 =========================================================

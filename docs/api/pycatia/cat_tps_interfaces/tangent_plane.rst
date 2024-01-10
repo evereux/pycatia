@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _TangentPlane:
 
 pycatia.cat_tps_interfaces.tangent_plane
 =========================================

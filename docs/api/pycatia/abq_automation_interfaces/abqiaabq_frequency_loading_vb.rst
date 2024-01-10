@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQIAABQFrequencyLoadingVB:
 
 pycatia.abq_automation_interfaces.abqiaabq_frequency_loading_vb
 ================================================================

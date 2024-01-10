@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _DMOThicknesses:
 
 pycatia.smt_interfaces.dmo_thicknesses
 =======================================

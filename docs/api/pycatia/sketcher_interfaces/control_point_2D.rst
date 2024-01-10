@@ -1,4 +1,4 @@
-.. _Control_point_2d:
+.. _ControlPoint2D:
 
 pycatia.sketcher_interfaces.control_point_2D
 ============================================

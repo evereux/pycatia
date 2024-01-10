@@ -1,4 +1,4 @@
-.. _Hybrid_shape_law_dist_proj:
+.. _HybridShapeLawDistProj:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_law_dist_proj
 ==========================================================

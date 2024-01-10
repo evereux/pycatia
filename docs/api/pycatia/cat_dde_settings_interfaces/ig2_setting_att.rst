@@ -1,4 +1,4 @@
-.. _Cat_dde_settings_interfaces:
+.. _Ig2SettingAtt:
 
 pycatia.cat_dde_settings_interfaces.ig2_setting_att
 ====================================================

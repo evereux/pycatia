@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQSpringConnectionProperty:
 
 pycatia.abq_automation_interfaces.abq_spring_connection_property
 =================================================================

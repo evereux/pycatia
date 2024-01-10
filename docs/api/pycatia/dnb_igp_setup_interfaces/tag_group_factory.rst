@@ -1,4 +1,4 @@
-.. _Dnb_igp_setup_interfaces:
+.. _TagGroupFactory:
 
 pycatia.dnb_igp_setup_interfaces.tag_group_factory
 ===================================================

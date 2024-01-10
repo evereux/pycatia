@@ -1,4 +1,4 @@
-.. _Drawing_texts:
+.. _DrawingTexts:
 
 pycatia.drafting_interfaces.drawing_texts
 =========================================

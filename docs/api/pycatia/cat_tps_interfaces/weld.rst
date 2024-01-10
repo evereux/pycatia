@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _Weld:
 
 pycatia.cat_tps_interfaces.weld
 ================================

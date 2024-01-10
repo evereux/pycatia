@@ -1,4 +1,4 @@
-.. _Drawing_dim_line:
+.. _DrawingDimLine:
 
 pycatia.drafting_interfaces.drawing_dim_line
 ============================================

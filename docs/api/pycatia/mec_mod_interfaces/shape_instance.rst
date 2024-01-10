@@ -1,4 +1,4 @@
-.. _Shape_instance:
+.. _ShapeInstance:
 
 pycatia.mec_mod_interfaces.shape_instance
 =========================================

@@ -1,4 +1,4 @@
-.. _Dnb_device_activity_interfaces:
+.. _MoveJointsAct:
 
 pycatia.dnb_device_activity_interfaces.move_joints_act
 =======================================================

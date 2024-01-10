@@ -1,4 +1,4 @@
-.. _Cat_str_functional_interfaces:
+.. _SFMSplitPlate:
 
 pycatia.cat_str_functional_interfaces.sfm_split_plate
 ======================================================

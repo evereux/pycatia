@@ -1,4 +1,4 @@
-.. _Dnb_sim_activity_interfaces:
+.. _GrabAct:
 
 pycatia.dnb_sim_activity_interfaces.grab_act
 =============================================

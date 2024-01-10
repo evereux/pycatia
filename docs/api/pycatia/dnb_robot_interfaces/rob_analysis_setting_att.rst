@@ -1,4 +1,4 @@
-.. _Dnb_robot_interfaces:
+.. _RobAnalysisSettingAtt:
 
 pycatia.dnb_robot_interfaces.rob_analysis_setting_att
 ======================================================

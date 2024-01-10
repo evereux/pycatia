@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _MaterialCondition:
 
 pycatia.cat_tps_interfaces.material_condition
 ==============================================

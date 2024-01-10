@@ -1,4 +1,4 @@
-.. _Cat_rsc_interfaces:
+.. _RenderingShootings:
 
 pycatia.cat_rsc_interfaces.rendering_shootings
 ===============================================

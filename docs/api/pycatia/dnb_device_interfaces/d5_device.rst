@@ -1,4 +1,4 @@
-.. _Dnb_device_interfaces:
+.. _D5Device:
 
 pycatia.dnb_device_interfaces.d5_device
 ========================================

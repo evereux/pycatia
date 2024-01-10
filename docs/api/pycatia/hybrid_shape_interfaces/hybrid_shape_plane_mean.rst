@@ -1,4 +1,4 @@
-.. _Hybrid_shape_plane_mean:
+.. _HybridShapePlaneMean:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_plane_mean
 =======================================================

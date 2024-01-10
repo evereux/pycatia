@@ -1,4 +1,4 @@
-.. _Axis_to_axis:
+.. _AxisToAxis:
 
 pycatia.part_interfaces.axis_to_axis
 ====================================

@@ -1,4 +1,4 @@
-.. _Shape_factory:
+.. _ShapeFactory:
 
 pycatia.part_interfaces.shape_factory
 =====================================

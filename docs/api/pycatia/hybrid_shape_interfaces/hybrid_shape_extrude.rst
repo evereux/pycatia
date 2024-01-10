@@ -1,4 +1,4 @@
-.. _Hybrid_shape_extrude:
+.. _HybridShapeExtrude:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_extrude
 ====================================================

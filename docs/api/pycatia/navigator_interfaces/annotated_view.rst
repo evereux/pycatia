@@ -1,4 +1,4 @@
-.. _Annotated_view:
+.. _AnnotatedView:
 
 pycatia.navigator_interfaces.annotated_view
 ===========================================

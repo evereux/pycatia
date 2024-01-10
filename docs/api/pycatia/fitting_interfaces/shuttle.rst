@@ -1,4 +1,4 @@
-.. _Fitting_interfaces:
+.. _Shuttle:
 
 pycatia.fitting_interfaces.shuttle
 ===================================

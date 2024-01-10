@@ -1,4 +1,4 @@
-.. _Dnb_robot_interfaces:
+.. _AuxDevicesMgt:
 
 pycatia.dnb_robot_interfaces.aux_devices_mgt
 =============================================

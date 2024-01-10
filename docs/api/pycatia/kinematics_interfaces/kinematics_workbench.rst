@@ -1,4 +1,4 @@
-.. _Kinematics_interfaces:
+.. _KinematicsWorkbench:
 
 pycatia.kinematics_interfaces.kinematics_workbench
 ===================================================

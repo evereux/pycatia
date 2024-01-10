@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisColorMap:
 
 pycatia.analysis_interfaces.analysis_color_map
 ===============================================

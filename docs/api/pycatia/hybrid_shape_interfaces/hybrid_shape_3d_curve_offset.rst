@@ -1,4 +1,4 @@
-.. _Hybrid_shape_3d_curve_offset:
+.. _HybridShape3DCurveOffset:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_3d_curve_offset
 ============================================================

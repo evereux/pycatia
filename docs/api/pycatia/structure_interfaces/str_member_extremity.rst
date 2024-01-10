@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrMemberExtremity:
 
 pycatia.structure_interfaces.str_member_extremity
 ==================================================

@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _BasicComponents:
 
 pycatia.analysis_interfaces.basic_components
 =============================================

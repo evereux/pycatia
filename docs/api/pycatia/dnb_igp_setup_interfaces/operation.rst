@@ -1,4 +1,4 @@
-.. _Dnb_igp_setup_interfaces:
+.. _Operation:
 
 pycatia.dnb_igp_setup_interfaces.operation
 ===========================================

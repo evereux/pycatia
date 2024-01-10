@@ -1,4 +1,4 @@
-.. _Funct_system_interfaces:
+.. _FunctScripts:
 
 pycatia.funct_system_interfaces.funct_scripts
 ==============================================

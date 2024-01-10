@@ -1,4 +1,4 @@
-.. _Fix_togethers:
+.. _FixTogethers:
 
 pycatia.mec_mod_interfaces.fix_togethers
 ========================================

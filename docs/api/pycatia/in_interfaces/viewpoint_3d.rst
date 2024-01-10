@@ -1,4 +1,4 @@
-.. _Viewpoint_3d:
+.. _ViewPoint3D:
 
 pycatia.in_interfaces.viewpoint_3d
 ==================================

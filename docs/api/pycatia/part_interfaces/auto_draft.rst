@@ -1,4 +1,4 @@
-.. _Auto_draft:
+.. _AutoDraft:
 
 pycatia.part_interfaces.auto_draft
 ==================================

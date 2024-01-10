@@ -1,4 +1,4 @@
-.. _Ppr_interfaces:
+.. _PPRDocument:
 
 pycatia.ppr_interfaces.ppr_document
 ====================================

@@ -1,4 +1,4 @@
-.. _Printers_setting_att:
+.. _PrintersSettingAtt:
 
 pycatia.in_interfaces.printers_setting_att
 ==========================================

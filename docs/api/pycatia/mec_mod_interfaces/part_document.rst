@@ -1,4 +1,4 @@
-.. _Part_document:
+.. _PartDocument:
 
 pycatia.mec_mod_interfaces.part_document
 ========================================

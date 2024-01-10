@@ -1,4 +1,4 @@
-.. _Product_document:
+.. _ProductDocument:
 
 pycatia.product_structure_interfaces.product_document
 =====================================================

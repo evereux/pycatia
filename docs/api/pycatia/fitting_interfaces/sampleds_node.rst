@@ -1,4 +1,4 @@
-.. _Fitting_interfaces:
+.. _SampledsNode:
 
 pycatia.fitting_interfaces.sampleds_node
 =========================================

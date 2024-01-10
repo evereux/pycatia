@@ -1,4 +1,4 @@
-.. _Drawing_text_range:
+.. _DrawingTextRange:
 
 pycatia.drafting_interfaces.drawing_text_range
 ==============================================

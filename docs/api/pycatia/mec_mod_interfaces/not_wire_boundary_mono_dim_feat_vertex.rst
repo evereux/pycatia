@@ -1,4 +1,4 @@
-.. _Not_wire_boundary_mono_dim_feat_vertex:
+.. _NotWireBoundaryMonoDimFeatVertex:
 
 pycatia.mec_mod_interfaces.not_wire_boundary_mono_dim_feat_vertex
 =================================================================

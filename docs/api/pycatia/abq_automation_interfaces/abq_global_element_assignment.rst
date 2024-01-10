@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQGlobalElementAssignment:
 
 pycatia.abq_automation_interfaces.abq_global_element_assignment
 ================================================================

@@ -1,4 +1,4 @@
-.. _Hybrid_shape_conic:
+.. _HybridShapeConic:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_conic
 ==================================================

@@ -1,4 +1,4 @@
-.. _Hybrid_shape_helix:
+.. _HybridShapeHelix:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_helix
 ==================================================

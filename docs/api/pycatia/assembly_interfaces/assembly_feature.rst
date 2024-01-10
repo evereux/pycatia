@@ -1,4 +1,4 @@
-.. _Assembly_interfaces:
+.. _AssemblyFeature:
 
 pycatia.assembly_interfaces.assembly_feature
 =============================================

@@ -1,4 +1,4 @@
-.. _Dnb_fastener_interfaces:
+.. _PointFastener:
 
 pycatia.dnb_fastener_interfaces.point_fastener
 ===============================================

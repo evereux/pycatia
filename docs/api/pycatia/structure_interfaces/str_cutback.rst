@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrCutback:
 
 pycatia.structure_interfaces.str_cutback
 =========================================

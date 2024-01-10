@@ -1,4 +1,4 @@
-.. _Hybrid_shape_near:
+.. _HybridShapeNear:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_near
 =================================================

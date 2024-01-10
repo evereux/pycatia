@@ -1,4 +1,4 @@
-.. _Vis_property_set:
+.. _VisPropertySet:
 
 pycatia.in_interfaces.vis_property_set
 ======================================

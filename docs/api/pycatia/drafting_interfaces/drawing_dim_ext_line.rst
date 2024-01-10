@@ -1,4 +1,4 @@
-.. _Drawing_dim_ext_line:
+.. _DrawingDimExtLine:
 
 pycatia.drafting_interfaces.drawing_dim_ext_line
 ================================================

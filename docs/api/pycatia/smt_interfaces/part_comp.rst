@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _PartComp:
 
 pycatia.smt_interfaces.part_comp
 =================================
