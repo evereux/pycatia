@@ -1,4 +1,4 @@
-.. _Curve_2d:
+.. _Curve2D:
 
 pycatia.sketcher_interfaces.curve_2D
 ====================================

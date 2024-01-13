@@ -1,4 +1,4 @@
-.. _Viewpoint_2d:
+.. _Viewpoint2D:
 
 pycatia.in_interfaces.viewpoint_2d
 ==================================

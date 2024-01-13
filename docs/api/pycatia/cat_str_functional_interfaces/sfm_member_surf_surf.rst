@@ -1,4 +1,4 @@
-.. _Cat_str_functional_interfaces:
+.. _SFMMemberSurfSurf:
 
 pycatia.cat_str_functional_interfaces.sfm_member_surf_surf
 ===========================================================

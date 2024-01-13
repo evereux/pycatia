@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _TPSViews:
 
 pycatia.cat_tps_interfaces.tps_views
 =====================================

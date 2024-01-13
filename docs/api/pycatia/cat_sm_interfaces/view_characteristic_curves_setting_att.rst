@@ -1,4 +1,4 @@
-.. _Cat_sm_interfaces:
+.. _ViewCharacteristicCurvesSettingAtt:
 
 pycatia.cat_sm_interfaces.view_characteristic_curves_setting_att
 =================================================================

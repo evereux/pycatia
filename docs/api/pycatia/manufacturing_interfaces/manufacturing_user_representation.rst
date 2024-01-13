@@ -1,4 +1,4 @@
-.. _Manufacturing_interfaces:
+.. _ManufacturingUserRepresentation:
 
 pycatia.manufacturing_interfaces.manufacturing_user_representation
 ===================================================================

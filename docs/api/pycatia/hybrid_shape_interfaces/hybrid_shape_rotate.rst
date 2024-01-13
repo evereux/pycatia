@@ -1,4 +1,4 @@
-.. _Hybrid_shape_rotate:
+.. _HybridShapeRotate:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_rotate
 ===================================================

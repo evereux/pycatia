@@ -1,4 +1,4 @@
-.. _Funct_system_interfaces:
+.. _FunctGenScriptMgr:
 
 pycatia.funct_system_interfaces.funct_gen_script_mgr
 =====================================================

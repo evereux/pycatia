@@ -1,4 +1,4 @@
-.. _Hybrid_bodies:
+.. _HybridBodies:
 
 pycatia.mec_mod_interfaces.hybrid_bodies
 ========================================

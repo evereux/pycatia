@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchTempListFactory:
 
 pycatia.cat_sch_platform_interfaces.sch_temp_list_factory
 ==========================================================

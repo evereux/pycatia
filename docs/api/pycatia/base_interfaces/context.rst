@@ -1,4 +1,4 @@
-.. _Context:
+.. _CATIADocHandler:
 
 pycatia.base_interfaces.context
 ===============================

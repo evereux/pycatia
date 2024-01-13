@@ -1,4 +1,4 @@
-.. _Arrangement_interfaces:
+.. _ArrBendableString:
 
 pycatia.arrangement_interfaces.arr_bendable_string
 ===================================================

@@ -1,4 +1,4 @@
-.. _Drawing_dim_value:
+.. _DrawingDimValue:
 
 pycatia.drafting_interfaces.drawing_dim_value
 =============================================

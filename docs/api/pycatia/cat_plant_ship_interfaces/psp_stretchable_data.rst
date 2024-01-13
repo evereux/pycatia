@@ -1,4 +1,4 @@
-.. _Cat_plant_ship_interfaces:
+.. _PSPStretchableData:
 
 pycatia.cat_plant_ship_interfaces.psp_stretchable_data
 =======================================================

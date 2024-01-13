@@ -1,4 +1,4 @@
-.. _Drawing_arrow:
+.. _DrawingArrow:
 
 pycatia.drafting_interfaces.drawing_arrow
 =========================================

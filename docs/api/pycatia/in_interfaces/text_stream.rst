@@ -1,4 +1,4 @@
-.. _Text_stream:
+.. _TextStream:
 
 pycatia.in_interfaces.text_stream
 =================================

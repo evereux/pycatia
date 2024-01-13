@@ -1,4 +1,4 @@
-.. _Hybrid_shape_line_pt_dir:
+.. _HybridShapeLinePtDir:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_line_pt_dir
 ========================================================

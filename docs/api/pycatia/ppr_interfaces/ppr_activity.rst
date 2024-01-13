@@ -1,4 +1,4 @@
-.. _Ppr_interfaces:
+.. _PPRActivity:
 
 pycatia.ppr_interfaces.ppr_activity
 ====================================

@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrMember:
 
 pycatia.structure_interfaces.str_member
 ========================================

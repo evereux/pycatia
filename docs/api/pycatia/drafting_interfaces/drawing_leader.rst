@@ -1,4 +1,4 @@
-.. _Drawing_leader:
+.. _DrawingLeader:
 
 pycatia.drafting_interfaces.drawing_leader
 ==========================================

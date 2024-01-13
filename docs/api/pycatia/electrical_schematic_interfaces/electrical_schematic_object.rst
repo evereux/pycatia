@@ -1,4 +1,4 @@
-.. _Electrical_schematic_interfaces:
+.. _ElectricalSchematicObject:
 
 pycatia.electrical_schematic_interfaces.electrical_schematic_object
 ====================================================================

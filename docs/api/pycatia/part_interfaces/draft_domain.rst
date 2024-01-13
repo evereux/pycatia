@@ -1,4 +1,4 @@
-.. _Draft_domain:
+.. _DraftDomain:
 
 pycatia.part_interfaces.draft_domain
 ====================================

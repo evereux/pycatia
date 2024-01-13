@@ -1,4 +1,4 @@
-.. _Prismatic_machining_interfaces:
+.. _ManufacturingPrismaticMachiningArea:
 
 pycatia.prismatic_machining_interfaces.manufacturing_prismatic_machining_area
 ==============================================================================

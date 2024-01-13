@@ -1,4 +1,4 @@
-.. _User_repartition:
+.. _UserRepartition:
 
 pycatia.part_interfaces.user_repartition
 ========================================

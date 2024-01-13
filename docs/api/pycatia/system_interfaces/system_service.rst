@@ -1,4 +1,4 @@
-.. _System_service:
+.. _SystemService:
 
 pycatia.system_interfaces.system_service
 ========================================

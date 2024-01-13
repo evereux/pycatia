@@ -1,4 +1,4 @@
-.. _Hybrid_shape_bump:
+.. _HybridShapeBump:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_bump
 =================================================

@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _Captures:
 
 pycatia.cat_tps_interfaces.captures
 ====================================

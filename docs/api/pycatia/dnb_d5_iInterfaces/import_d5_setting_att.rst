@@ -1,4 +1,4 @@
-.. _Dnb_d5_iinterfaces:
+.. _ImportD5SettingAtt:
 
 pycatia.dnb_d5_iInterfaces.import_d5_setting_att
 =================================================

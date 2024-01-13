@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrWorkbench:
 
 pycatia.structure_interfaces.str_workbench
 ===========================================

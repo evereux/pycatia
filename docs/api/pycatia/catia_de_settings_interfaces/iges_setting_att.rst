@@ -1,4 +1,4 @@
-.. _Catia_de_settings_interfaces:
+.. _IgesSettingAtt:
 
 pycatia.catia_de_settings_interfaces.iges_setting_att
 ======================================================

@@ -1,4 +1,4 @@
-.. _Reporter_interfaces:
+.. _RpmReport:
 
 pycatia.reporter_interfaces.rpm_report
 =======================================

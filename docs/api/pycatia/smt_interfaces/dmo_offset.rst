@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _DMOOffset:
 
 pycatia.smt_interfaces.dmo_offset
 ==================================

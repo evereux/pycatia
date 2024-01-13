@@ -1,4 +1,4 @@
-.. _Hybrid_shape_polyline:
+.. _HybridShapePolyline:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_polyline
 =====================================================

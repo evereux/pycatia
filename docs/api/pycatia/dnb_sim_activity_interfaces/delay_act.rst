@@ -1,4 +1,4 @@
-.. _Dnb_sim_activity_interfaces:
+.. _DelayAct:
 
 pycatia.dnb_sim_activity_interfaces.delay_act
 ==============================================

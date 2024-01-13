@@ -1,4 +1,4 @@
-.. _Dnb_igp_setup_interfaces:
+.. _MountManager:
 
 pycatia.dnb_igp_setup_interfaces.mount_manager
 ===============================================

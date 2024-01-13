@@ -1,4 +1,4 @@
-.. _Funct_system_interfaces:
+.. _FunctMultiRepMgr:
 
 pycatia.funct_system_interfaces.funct_multi_rep_mgr
 ====================================================

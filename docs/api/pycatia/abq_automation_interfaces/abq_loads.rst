@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQLoads:
 
 pycatia.abq_automation_interfaces.abq_loads
 ============================================

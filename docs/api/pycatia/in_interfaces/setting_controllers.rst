@@ -1,4 +1,4 @@
-.. _Setting_controllers:
+.. _SettingControllers:
 
 pycatia.in_interfaces.setting_controllers
 =========================================

@@ -1,4 +1,4 @@
-.. _Sew_surface:
+.. _SewSurface:
 
 pycatia.part_interfaces.sew_surface
 ===================================

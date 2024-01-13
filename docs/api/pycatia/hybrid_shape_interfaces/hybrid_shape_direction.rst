@@ -1,4 +1,4 @@
-.. _Hybrid_shape_direction:
+.. _HybridShapeDirection:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_direction
 ======================================================

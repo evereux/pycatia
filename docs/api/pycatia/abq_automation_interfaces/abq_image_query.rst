@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. ABQImageQuery:
 
 pycatia.abq_automation_interfaces.abq_image_query
 ==================================================

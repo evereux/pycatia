@@ -1,4 +1,4 @@
-.. _Dnb_igp_setup_interfaces:
+.. _UnmountActivity:
 
 pycatia.dnb_igp_setup_interfaces.unmount_activity
 ==================================================

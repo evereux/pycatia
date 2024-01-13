@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _FTASettingAtt:
 
 pycatia.cat_tps_interfaces.fta_setting_att
 ===========================================

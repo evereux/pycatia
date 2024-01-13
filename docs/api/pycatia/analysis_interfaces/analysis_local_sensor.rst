@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisLocalSensor:
 
 pycatia.analysis_interfaces.analysis_local_sensor
 ==================================================

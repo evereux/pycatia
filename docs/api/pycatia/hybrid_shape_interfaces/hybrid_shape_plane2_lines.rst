@@ -1,4 +1,4 @@
-.. _Hybrid_shape_plane2_lines:
+.. _HybridShapePlane2Lines:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_plane2_lines
 =========================================================

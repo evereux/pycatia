@@ -1,4 +1,4 @@
-.. _Cat_rma_interfaces:
+.. _RenderingMaterial:
 
 pycatia.cat_rma_interfaces.rendering_material
 ==============================================

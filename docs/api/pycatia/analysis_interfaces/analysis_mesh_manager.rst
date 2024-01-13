@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisMeshManager:
 
 pycatia.analysis_interfaces.analysis_mesh_manager
 ==================================================

@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _Wrapping:
 
 pycatia.smt_interfaces.wrapping
 ================================

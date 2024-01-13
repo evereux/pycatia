@@ -1,4 +1,4 @@
-.. _Cat_smarteam_integ_interfaces:
+.. _StiEngine:
 
 pycatia.cat_smarteam_integ_interfaces.sti_engine
 =================================================

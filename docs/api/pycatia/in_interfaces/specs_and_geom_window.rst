@@ -1,4 +1,4 @@
-.. _Specs_and_geom_window:
+.. _SpecsAndGeomWindow:
 
 pycatia.in_interfaces.specs_and_geom_window
 ===========================================

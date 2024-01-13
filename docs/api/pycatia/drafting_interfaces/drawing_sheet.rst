@@ -1,4 +1,4 @@
-.. _Drawing_sheet:
+.. _DrawingSheet:
 
 pycatia.drafting_interfaces.drawing_sheet
 =========================================

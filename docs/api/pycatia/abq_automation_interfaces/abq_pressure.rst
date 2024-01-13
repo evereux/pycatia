@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQPressure:
 
 pycatia.abq_automation_interfaces.abq_pressure
 ===============================================

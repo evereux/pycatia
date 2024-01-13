@@ -1,4 +1,4 @@
-.. _Selection_sets:
+.. _SelectionSets:
 
 pycatia.in_interfaces.selection_sets
 ====================================

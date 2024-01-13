@@ -1,4 +1,4 @@
-.. _Eno_cd5_interfaces:
+.. _CD5SaveItem:
 
 pycatia.eno_cd5_interfaces.cd5_save_item
 =========================================

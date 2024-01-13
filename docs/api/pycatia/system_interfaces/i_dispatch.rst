@@ -1,4 +1,4 @@
-.. _I_dispatch:
+.. _IDispatch:
 
 pycatia.system_interfaces.i_dispatch
 ====================================

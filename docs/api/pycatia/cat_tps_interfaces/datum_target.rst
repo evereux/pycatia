@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _DatumTarget:
 
 pycatia.cat_tps_interfaces.datum_target
 ========================================

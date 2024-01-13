@@ -1,4 +1,4 @@
-.. _Geometry_2d:
+.. _Geometry2D:
 
 pycatia.sketcher_interfaces.geometry_2D
 =======================================

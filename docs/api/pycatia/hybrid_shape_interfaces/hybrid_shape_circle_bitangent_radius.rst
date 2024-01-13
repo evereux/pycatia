@@ -1,4 +1,4 @@
-.. _Hybrid_shape_circle_bitangent_radius:
+.. _HybridShapeCircleBitangentRadius:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_circle_bitangent_radius
 ====================================================================

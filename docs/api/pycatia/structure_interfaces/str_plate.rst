@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrPlate:
 
 pycatia.structure_interfaces.str_plate
 =======================================

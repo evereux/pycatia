@@ -1,4 +1,4 @@
-.. _General_knowledge_interfaces:
+.. _ExpertCheck:
 
 pycatia.general_knowledge_interfaces.expert_check
 ==================================================

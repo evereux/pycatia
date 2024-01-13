@@ -1,4 +1,4 @@
-.. _System_configuration:
+.. _SystemConfiguration:
 
 pycatia.in_interfaces.system_configuration
 ==========================================

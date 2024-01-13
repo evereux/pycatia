@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _ToleranceUnitBasisValue:
 
 pycatia.cat_tps_interfaces.tolerance_unit_basis_value
 ======================================================

@@ -1,4 +1,4 @@
-.. _Close_surface:
+.. _CloseSurface:
 
 pycatia.part_interfaces.close_surface
 =====================================

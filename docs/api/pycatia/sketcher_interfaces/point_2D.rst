@@ -1,4 +1,4 @@
-.. _Point_2d:
+.. _Point2D:
 
 pycatia.sketcher_interfaces.point_2D
 ====================================

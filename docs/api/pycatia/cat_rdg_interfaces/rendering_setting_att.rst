@@ -1,4 +1,4 @@
-.. _Cat_rdg_interfaces:
+.. _RenderingSettingAtt:
 
 pycatia.cat_rdg_interfaces.rendering_setting_att
 =================================================

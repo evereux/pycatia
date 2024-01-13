@@ -1,4 +1,4 @@
-.. _Hybrid_shape_symmetry:
+.. _HybridShapeSymmetry:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_symmetry
 =====================================================

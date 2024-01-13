@@ -1,4 +1,4 @@
-.. _Rectilinear_mono_dim_feat_edge:
+.. _RectilinearMonoDimFeatEdge:
 
 pycatia.mec_mod_interfaces.rectilinear_mono_dim_feat_edge
 =========================================================

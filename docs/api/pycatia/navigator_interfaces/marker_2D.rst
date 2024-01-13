@@ -1,4 +1,4 @@
-.. _Marker_2d:
+.. _Marker2D:
 
 pycatia.navigator_interfaces.marker_2D
 ======================================

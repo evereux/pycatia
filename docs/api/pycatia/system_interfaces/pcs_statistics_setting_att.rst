@@ -1,4 +1,4 @@
-.. _Pcs_statistics_setting_att:
+.. _PcsStatisticsSettingAtt:
 
 pycatia.system_interfaces.pcs_statistics_setting_att
 ====================================================

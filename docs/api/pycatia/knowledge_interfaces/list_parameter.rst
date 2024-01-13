@@ -1,4 +1,4 @@
-.. _List_parameter:
+.. _ListParameter:
 
 pycatia.knowledge_interfaces.list_parameter
 ===========================================

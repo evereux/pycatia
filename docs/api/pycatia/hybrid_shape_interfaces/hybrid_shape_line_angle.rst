@@ -1,4 +1,4 @@
-.. _Hybrid_shape_line_angle:
+.. _HybridShapeLineAngle:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_line_angle
 =======================================================

@@ -1,4 +1,4 @@
-.. _Cat_rsc_interfaces:
+.. _RenderingLight:
 
 pycatia.cat_rsc_interfaces.rendering_light
 ===========================================

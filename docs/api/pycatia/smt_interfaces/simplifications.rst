@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _Simplifications:
 
 pycatia.smt_interfaces.simplifications
 =======================================

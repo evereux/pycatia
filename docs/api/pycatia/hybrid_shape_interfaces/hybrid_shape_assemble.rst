@@ -1,4 +1,4 @@
-.. _Hybrid_shape_assemble:
+.. _HybridShapeAssemble:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_assemble
 =====================================================

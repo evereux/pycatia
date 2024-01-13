@@ -1,4 +1,4 @@
-.. _Hybrid_shape_cylinder:
+.. _HybridShapeCylinder:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_cylinder
 =====================================================

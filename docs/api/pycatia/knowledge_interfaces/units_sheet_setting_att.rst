@@ -1,4 +1,4 @@
-.. _Units_sheet_setting_att:
+.. _UnitsSheetSettingAtt:
 
 pycatia.knowledge_interfaces.units_sheet_setting_att
 ====================================================

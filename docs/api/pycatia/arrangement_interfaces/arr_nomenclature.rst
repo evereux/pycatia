@@ -1,4 +1,4 @@
-.. _Arrangement_interfaces:
+.. _ArrNomenclature:
 
 pycatia.arrangement_interfaces.arr_nomenclature
 ================================================

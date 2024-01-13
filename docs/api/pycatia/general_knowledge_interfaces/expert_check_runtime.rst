@@ -1,4 +1,4 @@
-.. _General_knowledge_interfaces:
+.. _ExpertCheckRuntime:
 
 pycatia.general_knowledge_interfaces.expert_check_runtime
 ==========================================================

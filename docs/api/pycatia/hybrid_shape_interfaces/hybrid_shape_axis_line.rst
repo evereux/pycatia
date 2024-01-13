@@ -1,4 +1,4 @@
-.. _Hybrid_shape_axis_line:
+.. _HybridShapeAxisLine:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_axis_line
 ======================================================

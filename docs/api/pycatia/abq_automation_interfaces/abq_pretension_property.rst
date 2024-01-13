@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQPretensionProperty:
 
 pycatia.abq_automation_interfaces.abq_pretension_property
 ==========================================================

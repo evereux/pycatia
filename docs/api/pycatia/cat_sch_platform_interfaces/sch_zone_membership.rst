@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchZoneMembership:
 
 pycatia.cat_sch_platform_interfaces.sch_zone_membership
 ========================================================

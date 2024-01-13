@@ -1,4 +1,4 @@
-.. _Cat_rsc_interfaces:
+.. _RenderingEnvironmentWall:
 
 pycatia.cat_rsc_interfaces.rendering_environment_wall
 ======================================================

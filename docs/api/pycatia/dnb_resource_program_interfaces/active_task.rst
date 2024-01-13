@@ -1,4 +1,4 @@
-.. _Dnb_resource_program_interfaces:
+.. _ActiveTask:
 
 pycatia.dnb_resource_program_interfaces.active_task
 ====================================================
