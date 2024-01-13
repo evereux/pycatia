@@ -1,4 +1,4 @@
-.. _Dmaps_interfaces:
+.. _VerifyTabSettingAtt:
 
 pycatia.dmaps_interfaces.verif_tab_setting_att
 ===============================================

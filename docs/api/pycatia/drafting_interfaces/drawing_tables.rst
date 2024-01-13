@@ -1,4 +1,4 @@
-.. _Drawing_tables:
+.. _DrawingTables:
 
 pycatia.drafting_interfaces.drawing_tables
 ==========================================

@@ -1,4 +1,4 @@
-.. _Dnb_robot_interfaces:
+.. _RRSSettingAtt:
 
 pycatia.dnb_robot_interfaces.rrs_setting_att
 =============================================

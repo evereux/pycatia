@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _TPSParallelOnScreen:
 
 pycatia.cat_tps_interfaces.tps_parallel_on_screen
 ==================================================

@@ -1,4 +1,4 @@
-.. _Dnb_sim_activity_interfaces:
+.. _ReleaseAct:
 
 pycatia.dnb_sim_activity_interfaces.release_act
 ================================================

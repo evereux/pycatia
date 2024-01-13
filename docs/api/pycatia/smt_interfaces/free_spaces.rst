@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _FreeSpaces:
 
 pycatia.smt_interfaces.free_spaces
 ===================================

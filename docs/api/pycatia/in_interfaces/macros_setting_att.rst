@@ -1,4 +1,4 @@
-.. _Macros_setting_att:
+.. _MacrosSettingAtt:
 
 pycatia.in_interfaces.macros_setting_att
 ========================================

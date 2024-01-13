@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _DefaultAnnotation:
 
 pycatia.cat_tps_interfaces.default_annotation
 ==============================================

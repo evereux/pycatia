@@ -1,4 +1,4 @@
-.. _Dnb_igp_olp_ui:
+.. _OLPTranslator:
 
 pycatia.dnb_igp_olp_ui.olp_translator
 ======================================

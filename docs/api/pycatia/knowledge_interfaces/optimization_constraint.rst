@@ -1,4 +1,4 @@
-.. _Optimization_constraint:
+.. _OptimizationConstraint:
 
 pycatia.knowledge_interfaces.optimization_constraint
 ====================================================

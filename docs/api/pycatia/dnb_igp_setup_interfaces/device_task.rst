@@ -1,4 +1,4 @@
-.. _Dnb_igp_setup_interfaces:
+.. _DeviceTask:
 
 pycatia.dnb_igp_setup_interfaces.device_task
 =============================================

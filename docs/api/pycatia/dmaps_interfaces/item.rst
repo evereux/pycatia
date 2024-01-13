@@ -1,4 +1,4 @@
-.. _Dmaps_interfaces:
+.. _Item:
 
 pycatia.dmaps_interfaces.item
 ==============================

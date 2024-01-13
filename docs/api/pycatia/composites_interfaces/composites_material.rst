@@ -1,4 +1,4 @@
-.. _Composites_interfaces:
+.. _CompositesMaterial:
 
 pycatia.composites_interfaces.composites_material
 ==================================================

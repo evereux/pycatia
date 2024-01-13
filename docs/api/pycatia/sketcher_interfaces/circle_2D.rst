@@ -1,4 +1,4 @@
-.. _Circle_2d:
+.. _Circle2D:
 
 pycatia.sketcher_interfaces.circle_2D
 =====================================

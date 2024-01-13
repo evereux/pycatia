@@ -1,4 +1,4 @@
-.. _Assembly_interfaces:
+.. _AssemblySplit:
 
 pycatia.assembly_interfaces.assembly_split
 ===========================================

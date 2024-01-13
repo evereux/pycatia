@@ -1,4 +1,4 @@
-.. _Manufacturing_interfaces:
+.. _ManufacturingMachinableGeometry:
 
 pycatia.manufacturing_interfaces.manufacturing_machinable_geometry
 ===================================================================

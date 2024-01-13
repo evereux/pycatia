@@ -1,4 +1,4 @@
-.. _I_unknown:
+.. _IUnknown:
 
 pycatia.system_interfaces.i_unknown
 ===================================

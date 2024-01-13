@@ -1,4 +1,4 @@
-.. _Manufacturing_interfaces:
+.. _ManufacturingMachinableArea:
 
 pycatia.manufacturing_interfaces.manufacturing_machinable_area
 ===============================================================

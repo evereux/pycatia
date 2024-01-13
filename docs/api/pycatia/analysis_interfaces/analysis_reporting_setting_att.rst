@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisReportingSettingAtt:
 
 pycatia.analysis_interfaces.analysis_reporting_setting_att
 ===========================================================

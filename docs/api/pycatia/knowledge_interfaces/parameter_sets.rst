@@ -1,4 +1,4 @@
-.. _Parameter_sets:
+.. _ParameterSets:
 
 pycatia.knowledge_interfaces.parameter_sets
 ===========================================

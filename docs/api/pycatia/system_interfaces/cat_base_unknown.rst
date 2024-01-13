@@ -1,4 +1,4 @@
-.. _Cat_base_unknown:
+.. _CATBaseUnknown:
 
 pycatia.system_interfaces.cat_base_unknown
 ==========================================

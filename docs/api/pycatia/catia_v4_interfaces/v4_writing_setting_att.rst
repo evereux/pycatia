@@ -1,4 +1,4 @@
-.. _Catia_v4_interfaces:
+.. _V4WritingSettingAtt:
 
 pycatia.catia_v4_interfaces.v4_writing_setting_att
 ===================================================

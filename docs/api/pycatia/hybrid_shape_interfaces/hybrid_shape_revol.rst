@@ -1,4 +1,4 @@
-.. _Hybrid_shape_revol:
+.. _HybridShapeRevol:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_revol
 ==================================================

@@ -1,4 +1,4 @@
-.. _Ordered_geometrical_sets:
+.. _OrderedGeometricalSets:
 
 pycatia.mec_mod_interfaces.ordered_geometrical_sets
 ===================================================

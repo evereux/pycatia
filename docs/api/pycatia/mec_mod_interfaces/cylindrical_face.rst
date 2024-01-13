@@ -1,4 +1,4 @@
-.. _Cylindrical_face:
+.. _CylindricaFace:
 
 pycatia.mec_mod_interfaces.cylindrical_face
 ===========================================

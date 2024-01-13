@@ -1,4 +1,4 @@
-.. _Dnb_igp_setup_interfaces:
+.. _TCPTraceActivity:
 
 pycatia.dnb_igp_setup_interfaces.tcp_trace_activity
 ====================================================

@@ -101,6 +101,7 @@ Prior to running the tests please ensure CATIA V5 has the following
 configuration settings:
 
 * CGR cache system must be disabled.
+* Do not activate default shapes on open must be disabled.
 * Parameter names must not have back ticks enabled. Tools > Options > General > Parameters and Measure > Knowledge > Parameter Names > Surrounded by the \` symbol.
 
 On the first run, during the running of the tests, the test suite will create

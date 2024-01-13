@@ -1,4 +1,4 @@
-.. _Dmaps_interfaces:
+.. _Resource:
 
 pycatia.dmaps_interfaces.resource
 ==================================

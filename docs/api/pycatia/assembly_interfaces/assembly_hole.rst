@@ -1,4 +1,4 @@
-.. _Assembly_interfaces:
+.. _AssemblyHole:
 
 pycatia.assembly_interfaces.assembly_hole
 ==========================================

@@ -1,4 +1,4 @@
-.. _Hybrid_shape_circle2_points_rad:
+.. _HybridShapeCircle2PointsRad:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_circle2_points_rad
 ===============================================================

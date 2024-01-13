@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQDisplacementBC:
 
 pycatia.abq_automation_interfaces.abq_displacement_bc
 ======================================================

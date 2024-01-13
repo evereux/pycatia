@@ -1,4 +1,4 @@
-.. _Arrangement_interfaces:
+.. _ArrangementNode:
 
 pycatia.arrangement_interfaces.arrangement_node
 ================================================

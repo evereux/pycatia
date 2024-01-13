@@ -1,4 +1,4 @@
-.. _Components_catalogs_interfaces:
+.. _CatalogDocument:
 
 pycatia.components_catalogs_interfaces.catalog_document
 ========================================================

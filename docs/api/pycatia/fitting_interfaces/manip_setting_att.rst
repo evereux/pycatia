@@ -1,4 +1,4 @@
-.. _Fitting_interfaces:
+.. _ManipSettingAtt:
 
 pycatia.fitting_interfaces.manip_setting_att
 =============================================

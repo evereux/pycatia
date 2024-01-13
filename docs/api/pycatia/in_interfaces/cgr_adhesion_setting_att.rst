@@ -1,4 +1,4 @@
-.. _Cgr_adhesion_setting_att:
+.. CgrAdhesionSettingAtt:
 
 pycatia.in_interfaces.cgr_adhesion_setting_att
 ==============================================

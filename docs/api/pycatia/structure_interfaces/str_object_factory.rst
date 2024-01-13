@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrObjectFactory:
 
 pycatia.structure_interfaces.str_object_factory
 ================================================

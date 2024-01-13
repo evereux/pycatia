@@ -1,4 +1,4 @@
-.. _Hybrid_shape_scaling:
+.. _HybridShapeScaling:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_scaling
 ====================================================

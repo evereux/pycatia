@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQAnalysisModel:
 
 pycatia.abq_automation_interfaces.abq_analysis_model
 =====================================================

@@ -1,4 +1,4 @@
-.. _Drawing_page_setup:
+.. _DrawingPageSetup:
 
 pycatia.drafting_interfaces.drawing_page_setup
 ==============================================

@@ -1,4 +1,4 @@
-.. _User_pattern:
+.. _UserPattern:
 
 pycatia.part_interfaces.user_pattern
 ====================================

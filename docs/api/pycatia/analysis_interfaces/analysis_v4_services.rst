@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisV4Services:
 
 pycatia.analysis_interfaces.analysis_v4_services
 =================================================

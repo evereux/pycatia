@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisEntities:
 
 pycatia.analysis_interfaces.analysis_entities
 ==============================================

@@ -1,4 +1,4 @@
-.. _Manufacturing_interfaces:
+.. _ManufacturingHole:
 
 pycatia.manufacturing_interfaces.manufacturing_hole
 ====================================================

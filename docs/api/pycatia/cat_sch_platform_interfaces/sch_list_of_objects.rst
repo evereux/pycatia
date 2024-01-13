@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchListOfObjects:
 
 pycatia.cat_sch_platform_interfaces.sch_list_of_objects
 ========================================================

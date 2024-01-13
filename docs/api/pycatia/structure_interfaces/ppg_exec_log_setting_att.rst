@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _PpgExecLogSettingAtt:
 
 pycatia.structure_interfaces.ppg_exec_log_setting_att
 ======================================================

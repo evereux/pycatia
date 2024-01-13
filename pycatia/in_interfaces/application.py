@@ -1208,7 +1208,7 @@ class Application(AnyObject):
         """
         return self.com_object.Quit()
 
-    def setting_controllers(self):
+    def setting_controllers(self) -> SettingControllers:
         """
         Application.SettingControllers
         """

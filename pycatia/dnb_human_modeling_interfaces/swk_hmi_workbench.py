@@ -2,7 +2,6 @@ from pathlib import Path
 
 from pycatia.dnb_human_modeling_interfaces.swk_human_catalog import SWKHumanCatalog
 from pycatia.dnb_human_modeling_interfaces.swk_manikin import SWKManikin
-from pycatia.in_interfaces.application import Application
 from pycatia.system_interfaces.any_object import AnyObject
 
 

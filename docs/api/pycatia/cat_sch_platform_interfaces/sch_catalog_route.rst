@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchCatalogRoute:
 
 pycatia.cat_sch_platform_interfaces.sch_catalog_route
 ======================================================

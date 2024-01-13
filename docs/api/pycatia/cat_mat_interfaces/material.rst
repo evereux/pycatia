@@ -1,4 +1,4 @@
-.. _Cat_mat_interfaces:
+.. _Material:
 
 pycatia.cat_mat_interfaces.material
 ====================================

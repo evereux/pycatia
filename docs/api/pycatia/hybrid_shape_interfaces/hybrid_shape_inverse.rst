@@ -1,4 +1,4 @@
-.. _Hybrid_shape_inverse:
+.. _HybridShapeInverse:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_inverse
 ====================================================

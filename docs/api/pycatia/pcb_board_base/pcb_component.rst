@@ -1,4 +1,4 @@
-.. _Pcb_board_base:
+.. _PCBComponent:
 
 pycatia.pcb_board_base.pcb_component
 =====================================

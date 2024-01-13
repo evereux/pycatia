@@ -1,4 +1,4 @@
-.. _Knowledge_sheet_setting_att:
+.. _KnowledgeSheetSettingAtt:
 
 pycatia.knowledge_interfaces.knowledge_sheet_setting_att
 ========================================================

@@ -1,4 +1,4 @@
-.. _Dnb_graph_editor:
+.. _PertNode:
 
 pycatia.dnb_graph_editor.pert_node
 ===================================

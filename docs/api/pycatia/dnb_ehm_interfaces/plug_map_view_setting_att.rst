@@ -1,4 +1,4 @@
-.. _Dnb_ehm_interfaces:
+.. _PlugMapViewSettingAtt:
 
 pycatia.dnb_ehm_interfaces.plug_map_view_setting_att
 =====================================================

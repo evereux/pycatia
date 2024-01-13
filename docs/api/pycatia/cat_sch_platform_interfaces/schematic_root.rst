@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchematicRoot:
 
 pycatia.cat_sch_platform_interfaces.schematic_root
 ===================================================

@@ -1,4 +1,4 @@
-.. _Hybrid_shape_circle_tritangent:
+.. _HybridShapeCircleTritangent:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_circle_tritangent
 ==============================================================

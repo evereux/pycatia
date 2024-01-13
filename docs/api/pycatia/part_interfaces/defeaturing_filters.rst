@@ -1,4 +1,4 @@
-.. _Defeaturing_filters:
+.. _DefeaturingFilters:
 
 pycatia.part_interfaces.defeaturing_filters
 ===========================================

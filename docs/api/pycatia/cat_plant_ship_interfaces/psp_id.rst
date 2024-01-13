@@ -1,4 +1,4 @@
-.. _Cat_plant_ship_interfaces:
+.. _PSPId:
 
 pycatia.cat_plant_ship_interfaces.psp_id
 =========================================

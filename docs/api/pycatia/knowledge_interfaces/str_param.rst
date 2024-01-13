@@ -1,4 +1,4 @@
-.. _Str_param:
+.. _StrParam:
 
 pycatia.knowledge_interfaces.str_param
 ======================================

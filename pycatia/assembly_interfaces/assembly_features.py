@@ -250,10 +250,11 @@ class AssemblyFeatures(Collection):
                 |         positioningComp component.
                 | 
                 |          Dim removeBody As AssemblyBoolean
-                |          Set removeBody = assemblyFeats.AddAssemblyRemove(bodyToRemove,     _
+                |          Set removeBody = assemblyFeats.AddAssemblyRemove(bodyToRemove,
+                |                                                           _
                 |                                                           bodyToRemoveComp,
                 |                                                           _
-|                                                                           positioningComp)
+                |                                                           positioningComp)
 
         :param Body i_body:
         :param Product i_body_comp:

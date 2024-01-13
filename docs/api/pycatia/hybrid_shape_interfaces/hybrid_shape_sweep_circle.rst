@@ -1,4 +1,4 @@
-.. _Hybrid_shape_sweep_circle:
+.. _HybridShapeSweepCircle:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_sweep_circle
 =========================================================

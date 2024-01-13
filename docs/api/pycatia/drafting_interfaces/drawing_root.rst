@@ -1,4 +1,4 @@
-.. _Drawing_root:
+.. _DrawingRoot:
 
 pycatia.drafting_interfaces.drawing_root
 ========================================

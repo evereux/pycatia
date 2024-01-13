@@ -1,4 +1,4 @@
-.. _Planar_face:
+.. _PlanarFace:
 
 pycatia.mec_mod_interfaces.planar_face
 ======================================

@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrCutoutFeature:
 
 pycatia.structure_interfaces.str_cutout_feature
 ================================================

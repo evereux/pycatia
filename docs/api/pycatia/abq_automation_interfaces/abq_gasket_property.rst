@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQGasketProperty:
 
 pycatia.abq_automation_interfaces.abq_gasket_property
 ======================================================

@@ -1,4 +1,4 @@
-.. _Documentation_setting_att:
+.. _DocumentationSettingAtt:
 
 pycatia.in_interfaces.documentation_setting_att
 ===============================================

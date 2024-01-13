@@ -1,4 +1,4 @@
-.. _Rectilinear_tri_dim_feat_edge:
+.. _RectilinearTriDimFeatEdge:
 
 pycatia.mec_mod_interfaces.rectilinear_tri_dim_feat_edge
 ========================================================

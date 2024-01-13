@@ -1,4 +1,4 @@
-.. _Dnb_robot_interfaces:
+.. _ParameterProfiles:
 
 pycatia.dnb_robot_interfaces.parameter_profiles
 ================================================

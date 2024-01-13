@@ -1,4 +1,4 @@
-.. _Navigator_workbench:
+.. _NavigatorWorkbench:
 
 pycatia.navigator_interfaces.navigator_workbench
 ================================================

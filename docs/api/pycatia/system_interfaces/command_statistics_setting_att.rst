@@ -1,4 +1,4 @@
-.. _Command_statistics_setting_att:
+.. _CommandStatisticsSettingAtt:
 
 pycatia.system_interfaces.command_statistics_setting_att
 ========================================================

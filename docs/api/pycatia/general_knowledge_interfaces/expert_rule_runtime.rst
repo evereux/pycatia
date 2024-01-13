@@ -1,4 +1,4 @@
-.. _General_knowledge_interfaces:
+.. _ExpertRuleRuntime:
 
 pycatia.general_knowledge_interfaces.expert_rule_runtime
 =========================================================

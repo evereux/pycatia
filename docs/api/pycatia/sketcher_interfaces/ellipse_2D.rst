@@ -1,4 +1,4 @@
-.. _Ellipse_2d:
+.. _Ellipse2D:
 
 pycatia.sketcher_interfaces.ellipse_2D
 ======================================

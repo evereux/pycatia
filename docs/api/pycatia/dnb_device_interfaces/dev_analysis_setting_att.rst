@@ -1,4 +1,4 @@
-.. _Dnb_device_interfaces:
+.. _DevAnalysisSettingAtt:
 
 pycatia.dnb_device_interfaces.dev_analysis_setting_att
 =======================================================

@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchCompConnector:
 
 pycatia.cat_sch_platform_interfaces.sch_comp_connector
 =======================================================

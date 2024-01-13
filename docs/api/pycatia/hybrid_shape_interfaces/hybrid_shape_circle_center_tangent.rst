@@ -1,4 +1,4 @@
-.. _Hybrid_shape_circle_center_tangent:
+.. _HybridShapeCircleCenterTangent:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_circle_center_tangent
 ==================================================================

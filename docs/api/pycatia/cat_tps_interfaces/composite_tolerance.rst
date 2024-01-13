@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _CompositeTolerance:
 
 pycatia.cat_tps_interfaces.composite_tolerance
 ===============================================

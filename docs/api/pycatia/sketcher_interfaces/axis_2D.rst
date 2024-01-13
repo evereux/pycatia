@@ -1,4 +1,4 @@
-.. _Axis_2d:
+.. _Axis2D:
 
 pycatia.sketcher_interfaces.axis_2D
 ===================================

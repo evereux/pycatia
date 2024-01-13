@@ -1,4 +1,4 @@
-.. _Dnb_igp_arc_commands:
+.. _ARCTag:
 
 pycatia.dnb_igp_arc_commands.arc_tag
 =====================================

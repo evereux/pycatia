@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchCompGroupExt:
 
 pycatia.cat_sch_platform_interfaces.sch_comp_group_ext
 =======================================================

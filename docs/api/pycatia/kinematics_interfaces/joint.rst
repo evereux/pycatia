@@ -1,4 +1,4 @@
-.. _Kinematics_interfaces:
+.. _Joint:
 
 pycatia.kinematics_interfaces.joint
 ====================================

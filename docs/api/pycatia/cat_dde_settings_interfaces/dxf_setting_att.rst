@@ -1,4 +1,4 @@
-.. _Cat_dde_settings_interfaces:
+.. _DxfSettingAtt:
 
 pycatia.cat_dde_settings_interfaces.dxf_setting_att
 ====================================================

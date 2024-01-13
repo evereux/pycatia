@@ -1,4 +1,4 @@
-.. _Visualization_setting_att:
+.. _VisualizationSettingAtt:
 
 pycatia.in_interfaces.visualization_setting_att
 ===============================================

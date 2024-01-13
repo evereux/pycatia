@@ -1,4 +1,4 @@
-.. _Dnb_work_interfaces:
+.. _WITextAccessEi:
 
 pycatia.dnb_work_interfaces.wi_text_access_ei
 ==============================================
