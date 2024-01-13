@@ -1,4 +1,4 @@
-.. _Structure_interfaces:
+.. _StrNibblingFeature:
 
 pycatia.structure_interfaces.str_nibbling_feature
 ==================================================

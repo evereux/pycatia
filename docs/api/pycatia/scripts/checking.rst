@@ -1,4 +1,4 @@
-.. _Checking:
+.. check_type:
 
 pycatia.scripts.checking
 ========================

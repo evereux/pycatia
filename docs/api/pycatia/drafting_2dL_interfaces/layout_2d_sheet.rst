@@ -1,4 +1,4 @@
-.. _Drafting_2dl_interfaces:
+.. _Layout2DSheet:
 
 pycatia.drafting_2dL_interfaces.layout_2d_sheet
 ================================================

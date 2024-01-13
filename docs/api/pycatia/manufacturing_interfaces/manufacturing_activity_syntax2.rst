@@ -1,4 +1,4 @@
-.. _Manufacturing_interfaces:
+.. _ManufacturingActivitySyntax2:
 
 pycatia.manufacturing_interfaces.manufacturing_activity_syntax2
 ================================================================

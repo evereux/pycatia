@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchAppEnvironment:
 
 pycatia.cat_sch_platform_interfaces.sch_app_environment
 ========================================================

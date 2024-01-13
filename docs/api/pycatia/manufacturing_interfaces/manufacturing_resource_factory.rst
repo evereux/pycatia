@@ -1,4 +1,4 @@
-.. _Manufacturing_interfaces:
+.. _ManufacturingResourceFactory:
 
 pycatia.manufacturing_interfaces.manufacturing_resource_factory
 ================================================================

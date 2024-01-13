@@ -1,4 +1,4 @@
-.. _Hybrid_shape_rolling_offset:
+.. _HybridShapeRollingOffset:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_rolling_offset
 ===========================================================

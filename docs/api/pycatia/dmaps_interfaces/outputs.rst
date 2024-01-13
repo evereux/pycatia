@@ -1,4 +1,4 @@
-.. _Dmaps_interfaces:
+.. _Outputs:
 
 pycatia.dmaps_interfaces.outputs
 =================================

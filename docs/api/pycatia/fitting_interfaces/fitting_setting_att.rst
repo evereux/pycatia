@@ -1,4 +1,4 @@
-.. _Fitting_interfaces:
+.. _FittingSettingAtt:
 
 pycatia.fitting_interfaces.fitting_setting_att
 ===============================================

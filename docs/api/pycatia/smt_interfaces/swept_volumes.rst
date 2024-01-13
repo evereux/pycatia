@@ -1,4 +1,4 @@
-.. _Smt_interfaces:
+.. _SweptVolumes:
 
 pycatia.smt_interfaces.swept_volumes
 =====================================

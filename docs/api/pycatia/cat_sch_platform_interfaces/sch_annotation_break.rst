@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchAnnotationBreak:
 
 pycatia.cat_sch_platform_interfaces.sch_annotation_break
 =========================================================

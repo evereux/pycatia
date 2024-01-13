@@ -1,4 +1,4 @@
-.. _Hybrid_shape_corner:
+.. _HybridShapeCorner:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_corner
 ===================================================

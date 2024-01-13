@@ -1,4 +1,4 @@
-.. _Hybrid_shape_circle_center_axis:
+.. _HybridShapeCircleCenterAxis:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_circle_center_axis
 ===============================================================

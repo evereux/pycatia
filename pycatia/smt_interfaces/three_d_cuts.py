@@ -240,8 +240,7 @@ class ThreeDCuts(Collection):
                 |     In the relative referential, O is (0,0,0)
                 | 
                 |     This method sets the RELATIVE box : the rotation and translation matrix will then set the absolute position of O.
-                |     Remember where the center of the relative referential lies
-                |     !
+                |     Remember where the center of the relative referential lies!
                 |     Can have unexpected results if you don't use it properly.
                 | 
                 |     Parameters:

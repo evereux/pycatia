@@ -1,4 +1,4 @@
-.. _Arrangement_interfaces:
+.. _ArrangementContours:
 
 pycatia.arrangement_interfaces.arrangement_contours
 ====================================================

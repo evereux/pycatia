@@ -1,4 +1,4 @@
-.. _Real_param:
+.. _RealParam:
 
 pycatia.knowledge_interfaces.real_param
 =======================================

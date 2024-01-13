@@ -1,4 +1,4 @@
-.. _Face_fillet:
+.. _FaceFillet:
 
 pycatia.part_interfaces.face_fillet
 ===================================

@@ -1,4 +1,4 @@
-.. _Hybrid_shape_line_explicit:
+.. _HybridShapeLineExplicit:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_line_explicit
 ==========================================================

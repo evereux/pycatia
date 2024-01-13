@@ -1,4 +1,4 @@
-.. _Setting_repository:
+.. _SettingRepository:
 
 pycatia.system_interfaces.setting_repository
 ============================================

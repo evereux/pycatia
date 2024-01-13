@@ -1,4 +1,4 @@
-.. _Fitting_interfaces:
+.. _Shots:
 
 pycatia.fitting_interfaces.shots
 =================================

@@ -1,4 +1,4 @@
-.. _Analysis_interfaces:
+.. _AnalysisMeshLocalSpecification:
 
 pycatia.analysis_interfaces.analysis_mesh_local_specification
 ==============================================================

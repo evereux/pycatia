@@ -1,4 +1,4 @@
-.. _Server_statistics_setting_att:
+.. _ServerStatisticsSettingAtt:
 
 pycatia.system_interfaces.server_statistics_setting_att
 =======================================================

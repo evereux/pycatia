@@ -1,4 +1,4 @@
-.. _Osm_interfaces:
+.. _ProductScenes:
 
 pycatia.osm_interfaces.product_scenes
 ======================================

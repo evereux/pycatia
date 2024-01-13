@@ -1,4 +1,4 @@
-.. _Enumeration_types:
+.. _EnumerationTypes:
 
 pycatia.enumeration.enumeration_types
 =====================================

@@ -1,4 +1,4 @@
-.. _File_system:
+.. _FileSystem:
 
 pycatia.in_interfaces.file_system
 =================================

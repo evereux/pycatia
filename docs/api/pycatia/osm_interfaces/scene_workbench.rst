@@ -1,4 +1,4 @@
-.. _Osm_interfaces:
+.. _SceneWorkbench:
 
 pycatia.osm_interfaces.scene_workbench
 =======================================

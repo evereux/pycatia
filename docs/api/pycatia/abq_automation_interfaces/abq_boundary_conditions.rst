@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQBoundaryConditions:
 
 pycatia.abq_automation_interfaces.abq_boundary_conditions
 ==========================================================

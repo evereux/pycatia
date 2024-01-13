@@ -1,4 +1,4 @@
-.. _Cat_smarteam_integ_interfaces:
+.. _StiDBItem:
 
 pycatia.cat_smarteam_integ_interfaces.sti_db_item
 ==================================================

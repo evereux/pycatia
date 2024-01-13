@@ -1,4 +1,4 @@
-.. _Defeaturing_filter_with_range:
+.. _DefeaturingFilterWithRange:
 
 pycatia.part_interfaces.defeaturing_filter_with_range
 =====================================================

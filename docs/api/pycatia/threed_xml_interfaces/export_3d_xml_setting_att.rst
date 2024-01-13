@@ -1,4 +1,4 @@
-.. _Threed_xml_interfaces:
+.. _Export3DXmlSettingAtt:
 
 pycatia.threed_xml_interfaces.export_3d_xml_setting_att
 ========================================================

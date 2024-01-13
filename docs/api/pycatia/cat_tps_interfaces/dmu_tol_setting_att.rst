@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _DmuTolSettingAtt:
 
 pycatia.cat_tps_interfaces.dmu_tol_setting_att
 ===============================================

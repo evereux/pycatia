@@ -1,4 +1,4 @@
-.. _Cat_tps_interfaces:
+.. _SemanticGDT:
 
 pycatia.cat_tps_interfaces.semantic_gdt
 ========================================

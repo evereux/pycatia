@@ -1,4 +1,4 @@
-.. _Dnb_igp_setup_interfaces:
+.. _GenericActionFactory:
 
 pycatia.dnb_igp_setup_interfaces.generic_action_factory
 ========================================================

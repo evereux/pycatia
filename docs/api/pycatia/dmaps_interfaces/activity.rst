@@ -1,4 +1,4 @@
-.. _Dmaps_interfaces:
+.. _Activity:
 
 pycatia.dmaps_interfaces.activity
 ==================================

@@ -1,4 +1,4 @@
-.. _Dnb_dpm_interfaces:
+.. _MfgAssembly:
 
 pycatia.dnb_dpm_interfaces.mfg_assembly
 ========================================

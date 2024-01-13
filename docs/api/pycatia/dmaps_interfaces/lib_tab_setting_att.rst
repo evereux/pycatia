@@ -1,4 +1,4 @@
-.. _Dmaps_interfaces:
+.. _LibTabSettingAtt:
 
 pycatia.dmaps_interfaces.lib_tab_setting_att
 =============================================

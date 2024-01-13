@@ -1,4 +1,4 @@
-.. _Bool_param:
+.. _BoolParam:
 
 pycatia.knowledge_interfaces.bool_param
 =======================================

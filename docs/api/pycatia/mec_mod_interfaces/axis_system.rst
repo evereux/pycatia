@@ -1,4 +1,4 @@
-.. _Axis_system:
+.. _AxisSystem:
 
 pycatia.mec_mod_interfaces.axis_system
 ======================================

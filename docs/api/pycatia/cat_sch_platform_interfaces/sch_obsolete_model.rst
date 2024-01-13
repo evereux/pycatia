@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchObsoleteModel:
 
 pycatia.cat_sch_platform_interfaces.sch_obsolete_model
 =======================================================

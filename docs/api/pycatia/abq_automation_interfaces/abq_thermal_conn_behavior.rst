@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQThermalConnBehavior:
 
 pycatia.abq_automation_interfaces.abq_thermal_conn_behavior
 ============================================================

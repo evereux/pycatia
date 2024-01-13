@@ -1,4 +1,4 @@
-.. _Hybrid_shape_offset:
+.. _HybridShapeOffset:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_offset
 ===================================================

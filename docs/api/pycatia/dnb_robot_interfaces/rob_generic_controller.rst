@@ -1,4 +1,4 @@
-.. _Dnb_robot_interfaces:
+.. _RobGenericController:
 
 pycatia.dnb_robot_interfaces.rob_generic_controller
 ====================================================

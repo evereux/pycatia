@@ -1,4 +1,4 @@
-.. _Cat_sch_platform_interfaces:
+.. _SchBaseFactory:
 
 pycatia.cat_sch_platform_interfaces.sch_base_factory
 =====================================================

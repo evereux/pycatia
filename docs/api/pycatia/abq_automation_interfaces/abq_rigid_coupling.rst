@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQRigidCoupling:
 
 pycatia.abq_automation_interfaces.abq_rigid_coupling
 =====================================================

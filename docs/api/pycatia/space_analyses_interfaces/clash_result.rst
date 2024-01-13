@@ -1,4 +1,4 @@
-.. _Clash_result:
+.. _ClashResult:
 
 pycatia.space_analyses_interfaces.clash_result
 ==============================================

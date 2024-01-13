@@ -1,4 +1,4 @@
-.. _Hybrid_shape_point_on_surface:
+.. _HybridShapePointOnSurface:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_point_on_surface
 =============================================================

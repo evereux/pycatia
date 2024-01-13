@@ -1,4 +1,4 @@
-.. _Abq_automation_interfaces:
+.. _ABQDisplayGroup:
 
 pycatia.abq_automation_interfaces.abq_display_group
 ====================================================

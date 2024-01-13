@@ -1,4 +1,4 @@
-.. _Dnb_reporting_interfaces:
+.. _FasReportingSettingAtt:
 
 pycatia.dnb_reporting_interfaces.fas_reporting_setting_att
 ===========================================================

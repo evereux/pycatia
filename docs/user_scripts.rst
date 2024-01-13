@@ -6,7 +6,8 @@ User created scripts that are more advanced than the :ref:`examples`.
 Index
 -----
 
-:ref:`CREATE BOUNDING BOX<Create Bouding Box>`
+
+:ref:`CREATE BOUNDING BOX<Create Bounding Box>`
 
 :ref:`CREATE SCREENSHOTS OF PARTS AND PRODUCTS<Create Screenshots Of Parts and Products>`
 
@@ -16,11 +17,15 @@ Index
 
 :ref:`DRAWING TEMPLATE<Drawing Template>`
 
+:ref:`POINT COORDINATES RELATIVE TO AXIS SYSTEM<Point Coordinates Relative To Axis System>`
+
 :ref:`RENAME INSTANCES IN PRODUCT<Rename Instances In Product>`
 
 :ref:`SAVE DRAWINGS TO PDF<Save Drawings To PDF>`
 
 :ref:`WING SURFACE FROM NACA PROFILE<Wing Surface From Naca Profile>`
+
+
 
 
 CREATE BOUNDING BOX
@@ -82,9 +87,6 @@ See script header for more information.
 
 
 
-
-
-
 DRAWING TEMPLATE
 ----------------
 
@@ -95,6 +97,17 @@ See script header for more information.
 .. image:: images/DrawingTemplate.png
 
 `drawing_template.py <https://github.com/evereux/pycatia/blob/master/user_scripts/drawing_template.py>`_
+
+
+
+POINT COORDINATES RELATIVE TO AXIS SYSTEM
+-----------------------------------------
+
+Get the point coordinates relative to an axis system.
+
+See script header for more information.
+
+`coords_relative_to_axis_system.py <https://github.com/evereux/pycatia/blob/master/user_scripts/coords_relative_to_axis_system.py>`_
 
 
 

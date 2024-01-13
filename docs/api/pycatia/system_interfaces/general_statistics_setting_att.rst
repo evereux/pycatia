@@ -1,4 +1,4 @@
-.. _General_statistics_setting_att:
+.. _GeneralStatisticsSettingAtt:
 
 pycatia.system_interfaces.general_statistics_setting_att
 ========================================================

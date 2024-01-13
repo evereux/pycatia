@@ -1,4 +1,4 @@
-.. _Dnb_ehm_interfaces:
+.. _EhmInsertionActPlugMapViewData:
 
 pycatia.dnb_ehm_interfaces.ehm_insertion_act_plug_map_view_data
 ================================================================

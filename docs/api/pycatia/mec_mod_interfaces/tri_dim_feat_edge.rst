@@ -1,4 +1,4 @@
-.. _Tri_dim_feat_edge:
+.. _TriDimFeatEdge:
 
 pycatia.mec_mod_interfaces.tri_dim_feat_edge
 ============================================

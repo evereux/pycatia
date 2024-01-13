@@ -1,4 +1,4 @@
-.. _Hybrid_shape_circle3_points:
+.. _HybridShapeCircle3Points:
 
 pycatia.hybrid_shape_interfaces.hybrid_shape_circle3_points
 ===========================================================
