@@ -485,8 +485,13 @@ class Document(AnyObject):
 
         self.document.Application.DisplayFileAlerts = current_dfa_setting
 
-    def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
+    def indicate_2d(self, i_message: str) -> str:
         """
+
+        Returns a tuple in the format (Status, (x_2d, y_2d)
+        Status can be 'Normal', 'Cancel',
+
+
         .. note::
             :class: toggle
 
@@ -529,10 +534,8 @@ class Document(AnyObject):
                 |             The state of the indication command once Indicate2D returns. It can
                 |             be either "Normal" (the indication has succeeded), "Cancel" (the user wants to
                 |             cancel the VB command, which must exit immediately, see the oOutputState
-                |             parameter of the
-                |
-                |         Selection.SelectElement2 method), "Undo" or "Redo". About the use of
-                |         "Undo" and "Redo", see the example of the Selection.SelectElement2 method.
+                |             parameter of the Selection.SelectElement2 method), "Undo" or "Redo". About the use of
+                |             "Undo" and "Redo", see the example of the Selection.SelectElement2 method.
                 |
                 |     Example:
                 |
@@ -543,13 +546,14 @@ class Document(AnyObject):
                 |
                 |     DrawingText ) at the specified location:
                 |
-                |      Set Document = CATIA.ActiveDocument :
-                |      Set Selection = Document.Selection :
-                |       Set DrawingSheets  = Document.Sheets
-                |      Set DrawingSheet = DrawingSheets.ActiveSheet : Set DrawingViews = DrawingSheet.Views
-                |      Set DrawingView = DrawingViews.ActiveView : Set DrawingTexts = DrawingView.Texts
-                |      'We propose to the user that he specify a location in the drawing
-                |      window
+                |      Set Document = CATIA.ActiveDocument
+                |      Set Selection = Document.Selection
+                |      Set DrawingSheets = Document.Sheets
+                |      Set DrawingSheet = DrawingSheets.ActiveSheet
+                |      Set DrawingViews = DrawingSheet.Views
+                |      Set DrawingView = DrawingViews.ActiveView
+                |      Set DrawingTexts = DrawingView.Texts
+                |      'We propose to the user that he specify a location in the drawing window
                 |      Dim DrawingWindowLocation(1)
                 |      Status=Document.Indicate2D("select a location into the drawing
                 |      window",DrawingWindowLocation)
@@ -558,10 +562,30 @@ class Document(AnyObject):
                 |      world",DrawingWindowLocation(0),DrawingWindowLocation(1))
 
         :param str i_message:
-        :param tuple io_document_window_location:
-        :return: str
+        :return: tuple
         """
-        return self.document.Indicate2D(i_message, io_document_window_location)
+
+        vba_function_name = 'indicate_2d'
+        vba_code = f'''
+        Public Function {vba_function_name}(document, i_message)
+        Dim DrawingWindowLocation (1)
+        Dim o_output(1)
+        o_output(0) = document.Indicate2D(i_message, DrawingWindowLocation)
+        o_output(1) = DrawingWindowLocation
+        {vba_function_name} = o_output
+        End Function
+        '''
+
+        system_service = self.application.system_service
+        return system_service.evaluate(
+            vba_code,
+            0,
+            vba_function_name,
+            [
+                self.document,
+                i_message
+            ]
+        )
 
     def indicate_3d(self, i_planar_geometric_object: AnyObject, i_message: str, io_window_location2_d: tuple,
                     io_window_location3_d: tuple) -> str:
