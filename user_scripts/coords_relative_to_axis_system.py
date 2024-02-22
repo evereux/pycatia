@@ -37,7 +37,7 @@ hybrid_bodies = part.hybrid_bodies
 spa_workbench = document.spa_workbench()
 
 
-def coords_relative_to_axis(axis_system, point):
+def coords_relative_to_axis(axis_system, point, precision=6):
     a_origin = axis_system.get_origin()
     a_xaxis = axis_system.get_x_axis()
     a_yaxis = axis_system.get_y_axis()
@@ -56,9 +56,9 @@ def coords_relative_to_axis(axis_system, point):
     diff[1] = coordinates[1] - a_origin[1]
     diff[2] = coordinates[2] - a_origin[2]
 
-    x = dot_product(diff, n_x)
-    y = dot_product(diff, n_y)
-    z = dot_product(diff, n_z)
+    x = round(dot_product(diff, n_x), precision)
+    y = round(dot_product(diff, n_y), precision)
+    z = round(dot_product(diff, n_z), precision)
 
     return x, y, z
 
@@ -78,12 +78,12 @@ def dot_product(vec1, vec2):
 
 
 # Get first axis system in collection
-axis_system = part.axis_systems.item(1)
+axis_system = part.axis_systems.item(2)
 
 # Get point to measure
 hb = hybrid_bodies.item("Inputs")
 hs = hb.hybrid_shapes
-point = hs.item("Point.1")
+point = hs.item("Point.4")
 
 # Measure point to axis system and print
 coords = coords_relative_to_axis(axis_system, point)
