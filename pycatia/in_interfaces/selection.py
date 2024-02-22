@@ -914,19 +914,20 @@ class Selection(AnyObject):
         '''
 
         system_service = self.application.system_service
-        result = system_service.evaluate(vba_code,
-                                         0,
-                                         vba_function_name,
-                                         [
-                                             self.selection,
-                                             i_planar_geometric_object.com_object,
-                                             i_message, i_filter_type,
-                                             i_object_selection_before_command_use_possibility,
-                                             i_tooltip,
-                                             i_triggering_on_mouse_move
+        result = system_service.evaluate(
+            vba_code,
+            0,
+            vba_function_name,
+            [
+                self.selection,
+                i_planar_geometric_object.com_object,
+                i_message, i_filter_type,
+                i_object_selection_before_command_use_possibility,
+                i_tooltip,
+                i_triggering_on_mouse_move
 
-                                         ]
-                                         )
+            ]
+        )
 
         return result
 
