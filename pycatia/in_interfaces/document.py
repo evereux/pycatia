@@ -488,9 +488,8 @@ class Document(AnyObject):
     def indicate_2d(self, i_message: str) -> str:
         """
 
-        Returns a tuple in the format (Status, (x_2d, y_2d)
+        Returns a tuple in the format (status: str, (x_2d: float, y_2d: float))
         Status can be 'Normal', 'Cancel',
-
 
         .. note::
             :class: toggle
@@ -587,9 +586,16 @@ class Document(AnyObject):
             ]
         )
 
-    def indicate_3d(self, i_planar_geometric_object: AnyObject, i_message: str, io_window_location2_d: tuple,
-                    io_window_location3_d: tuple) -> str:
+    def indicate_3d(
+            self,
+            i_planar_geometric_object: AnyObject,
+            i_message: str,
+    ) -> str:
         """
+
+        Returns a tuple in the format (status: str, (x_2d: float, y_2d: float), (x_3d: float, y_3d: float, z_3d: float))
+        Status can be 'Normal', 'Cancel',
+
         .. note::
             :class: toggle
 
@@ -656,8 +662,8 @@ class Document(AnyObject):
                 |
                 |     HybridShapePointOnPlane at the specified location:
                 |
-                |      Set Document = CATIA.ActiveDocument :
-                |      Set Part  = Document.Part :
+                |      Set Document = CATIA.ActiveDocument
+                |      Set Part  = Document.Part
                 |      Set Selection = Document.Selection
                 |      Set HybridShapeFactory = Part.HybridShapeFactory
                 |      Set HybridShapePlane = Part.Bodies.Item("PartBody").HybridShapes.Item("Plane.1")
@@ -667,7 +673,7 @@ class Document(AnyObject):
                 |      ReDim WindowLocation2D(1),WindowLocation3D(2)
                 |      Status=Document.Indicate3D(HybridShapePlane,"select a location in the
                 |      document window", _
-                |    WindowLocation2D,WindowLocation3D)
+                |      WindowLocation2D,WindowLocation3D)
                 |      if (Status = "Cancel") then Exit Sub
                 |      Set HybridShapePointOnPlane = HybridShapeFactory.AddNewPointOnPlane( _
                 |      PlaneReference,WindowLocation2D(0),WindowLocation2D(1))
@@ -678,12 +684,32 @@ class Document(AnyObject):
 
         :param AnyObject i_planar_geometric_object:
         :param str i_message:
-        :param tuple io_window_location2_d:
-        :param tuple io_window_location3_d:
         :return: str
         """
-        return self.document.Indicate3D(i_planar_geometric_object.com_object, i_message, io_window_location2_d,
-                                        io_window_location3_d)
+        vba_function_name = 'indicate_3d'
+        vba_code = f'''
+        Public Function {vba_function_name}(document, i_planar_geometric_object, i_message)
+        Dim WindowLocation2D (1)
+        Dim WindowLocation3D (2)
+        Dim o_output(2)
+        o_output(0) = document.Indicate3D(i_planar_geometric_object, i_message, WindowLocation2D, WindowLocation3D)
+        o_output(1) = WindowLocation2D
+        o_output(2) = WindowLocation3D
+        {vba_function_name} = o_output
+        End Function
+        '''
+
+        system_service = self.application.system_service
+        return system_service.evaluate(
+            vba_code,
+            0,
+            vba_function_name,
+            [
+                self.document,
+                i_planar_geometric_object.com_object,
+                i_message
+            ]
+        )
 
     def new_window(self):
         """
