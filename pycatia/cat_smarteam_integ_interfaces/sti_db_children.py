@@ -175,7 +175,7 @@ class StiDBChildren(AnyObject):
                 |          Dim oStiEngine As StiEngine
                 |          Set oStiEngine = CATIA.GetItem("CAIEngine")
                 |          Dim oFatherStiDBItem As StiDBItem
-                |          Set oFatherStiDBItem = oStiEngine.GetStiDBItemFromCATBSTR("E:\CATIAFiles\Assembly.CATProduct")
+                |          Set oFatherStiDBItem = oStiEngine.GetStiDBItemFromCATBSTR("E:\\CATIAFiles\\Assembly.CATProduct")
                 |          Dim oStiDBChildren As StiDBChildren
                 |          Set oStiDBChildren = oFatherStiDBItem.GetChildren()
                 |          (...)
@@ -214,12 +214,11 @@ class StiDBChildren(AnyObject):
                 |           The following example returns in oLinkType the third Link Type
                 |           
                 |          gathered in oStiDBChildren.
-                |          
-                | 
+                |
                 |          Dim oStiEngine As StiEngine
                 |          Set oStiEngine = CATIA.GetItem("CAIEngine")
                 |          Dim oFatherStiDBItem As StiDBItem
-                |          Set oFatherStiDBItem = oStiEngine.GetStiDBItemFromCATBSTR("E:/CATIAFiles/Assembly.CATProduct")
+                |          Set oFatherStiDBItem = oStiEngine.GetStiDBItemFromCATBSTR("E:\\CATIAFiles\\Assembly.CATProduct")
                 |          Dim oStiDBChildren As StiDBChildren
                 |          Set oStiDBChildren = oFatherStiDBItem.GetChildren()
                 |          (...)

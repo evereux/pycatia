@@ -51,9 +51,9 @@ class ABQJob(AnyObject):
                 | 
                 |         Example:
                 |             This example sets the computation directory for the myJob job to
-                |             "D:\CompDir".
+                |             "D:\\CompDir".
                 | 
-                |              myJob.ComputationDir = "D:\CompDir"
+                |              myJob.ComputationDir = "D:\\CompDir"
 
         :rtype: str
         """
@@ -505,11 +505,11 @@ class ABQJob(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property RestartReadJob() As CATBSTR
                 | 
-                |     Sets or returns or the path to the original job (\*.odb)
+                |     Sets or returns or the path to the original job (\\*.odb)
                 |     file.
                 | 
                 |     Returns:
-                |         The path to the original job (\*.odb) file.
+                |         The path to the original job (\\*.odb) file.
                 |
                 |         Example:
                 |             This example sets the original job for the myJob job to
@@ -931,9 +931,9 @@ class ABQJob(AnyObject):
                 | 
                 |         Example:
                 |             This example sets the scratch directory for the myJob job to
-                |             "D:\Scratch".
+                |             "D:\\Scratch".
                 | 
-                |              myJob.Scratch = "D:\Scratch"
+                |              myJob.Scratch = "D:\\Scratch"
 
         :rtype: str
         """

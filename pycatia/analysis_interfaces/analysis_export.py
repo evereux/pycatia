@@ -53,7 +53,7 @@ class AnalysisExport(AnyObject):
                 |         iFullPath
                 |             The full path of the file.
                 |             (Example:
-                |             "E:\tmp\ExportedLoads/CATAnalysisExport").
+                |             "E:\\tmp\\ExportedLoads\\CATAnalysisExport").
                 |         iType
                 |             The type of data to be exported: "ComputedLoads" or
                 |             "Displacements".
@@ -62,8 +62,7 @@ class AnalysisExport(AnyObject):
                 |         iManager
                 |             The analysis model for which the data will be
                 |             exported.
-                |             (Only revelant for assembly of analysis.
-                |             )
+                |             (Only revelant for assembly of analysis.)
 
         :param str i_full_path:
         :param str i_type:

@@ -934,7 +934,7 @@ class OrderGenerator(AnyObject):
                 |     Parameters:
                 | 
                 |         iEncryptmode
-                |             Encryption to be done?(True\False) for encrypting the SOR Package
+                |             Encryption to be done?(True/False) for encrypting the SOR Package
                 |             data
 
         :param bool i_encryptmode:
