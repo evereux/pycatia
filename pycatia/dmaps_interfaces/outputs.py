@@ -59,7 +59,7 @@ class Outputs(Collection):
         """
         return Item(self.outputs.Add(i_output.com_object))
 
-    def count(self) -> int:
+    def count_(self) -> int:
         """
         .. note::
             :class: toggle
