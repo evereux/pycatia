@@ -19,6 +19,8 @@ pycatia.dnb_human_modeling_interfaces
    pycatia/dnb_human_modeling_interfaces/swk_ergo_lift_lower
    pycatia/dnb_human_modeling_interfaces/swk_ergo_push_pull
    pycatia/dnb_human_modeling_interfaces/swk_ergo_rula
+   pycatia/dnb_human_modeling_interfaces/swk_hmi_workbench
+   pycatia/dnb_human_modeling_interfaces/swk_human_catalog
    pycatia/dnb_human_modeling_interfaces/swk_line_of_sight
    pycatia/dnb_human_modeling_interfaces/swk_line_of_sight_node
    pycatia/dnb_human_modeling_interfaces/swk_manikin

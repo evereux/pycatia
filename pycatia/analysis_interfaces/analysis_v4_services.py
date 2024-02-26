@@ -74,7 +74,7 @@ class AnalysisV4Services(AnyObject):
                 |           Prefix = ""
                 |           Dim PathStorage As String 
                 |           Dim sDocPath As String 
-                |           sDocPath = "E:\mymodel.model"
+                |           sDocPath = "E:\\mymodel.model"
                 |           PathStorage = SAMV4Service.GetStorageInfo(sDocPath,Prefix)
                 |           CATIA.SystemService.Print "GetStorageInfo for Model: " &
                 |           sDocPath
@@ -115,15 +115,13 @@ class AnalysisV4Services(AnyObject):
                 |     Example:
                 | 
                 |           This example extract assembled sets information.
-                | 
-                |          
-                | 
+                |
                 |           Dim SAMV4Service As AnalysisV4Services 
                 |           Set SAMV4Service = CATIA.GetItem("SAMV4Service")
                 |           Dim sSession As String 
-                |           sSession = "E:\MYSESSION.session"
+                |           sSession = "E:\\MYSESSION.session"
                 |           Dim sSumpFile As String 
-                |           sSumpFile = "E:\MyFile.txt"
+                |           sSumpFile = "E:\\MyFile.txt"
                 |           SAMV4Service.PrintAssembledSetsInfo sSession,sSumpFile,120
 
         :param str i_session_path:
@@ -163,9 +161,9 @@ class AnalysisV4Services(AnyObject):
                 |           Dim SAMV4Service As AnalysisV4Services
                 |           Set SAMV4Service = CATIA.GetItem("SAMV4Service")
                 |           Dim sSession As String
-                |           sSession = "E:\MYSESSION.session"
+                |           sSession = "E:\\MYSESSION.session"
                 |           Dim sSumpFile As String
-                |           sSumpFile = "E:\MyCouplingAnalysisFile.txt"
+                |           sSumpFile = "E:\\MyCouplingAnalysisFile.txt"
                 |           SAMV4Service.PrintCouplingAnalysisInfo sSession,sSumpFile, 120
 
         :param str i_session_path:
@@ -202,9 +200,9 @@ class AnalysisV4Services(AnyObject):
                 |           Dim SAMV4Service As AnalysisV4Services 
                 |           Set SAMV4Service = CATIA.GetItem("SAMV4Service")
                 |           Dim sSession As String 
-                |           sSession = "E:\MYSESSION.session"
+                |           sSession = "E:\\MYSESSION.session"
                 |           Dim sSumpFile As String 
-                |           sSumpFile = "E:\MyFile.txt"
+                |           sSumpFile = "E:\\MyFile.txt"
                 |           SAMV4Service.PrintSessionInfo sSession,sSumpFile
 
         :param str i_session_path:
