@@ -5,6 +5,9 @@
 * fixed method document.indicate_2d()
 * fixed method document.indicate_3d()
 * fixed method selection.indicate_or_select_element_2d() @hitman061
+* renamed Outputs.count_ due to name clash with Collection.
+* fixes due to mypy checking. There are still errors report buted not sure how 
+  to fix at this time.
 
 ## 0.6.5
 
