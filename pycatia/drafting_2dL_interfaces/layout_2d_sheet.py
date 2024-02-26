@@ -475,7 +475,7 @@ class Layout2DSheet(AnyObject):
                 |         This example prints the Layout2DSheet1 in a file.
                 | 
                 |          Layout2DSheet1.PrintToFile
-                |          "e:\temp\sheet1.prn",catRenderShadingWithEdges
+                |          "e:\\temp\\sheet1.prn",catRenderShadingWithEdges
 
         :param str file_name:
         :param int i_rendering_mode: enum cat_rendering_mode
@@ -504,7 +504,7 @@ class Layout2DSheet(AnyObject):
                 |     Example:
                 |         This example prints the Layout2DSheet1 in a file.
                 | 
-                |          Layout2DSheet1.PrintToFile2 "e:\temp\sheet1.prn"
+                |          Layout2DSheet1.PrintToFile2 "e:\\temp\\sheet1.prn"
 
         :param str file_name:
         :rtype: None

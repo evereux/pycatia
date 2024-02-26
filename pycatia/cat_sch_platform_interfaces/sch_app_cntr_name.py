@@ -49,7 +49,7 @@ class SchAppCntrName(AnyObject):
                 |         oLConnectorNamesAllowed
                 |             A list of connector names allowed. The caller must allocate memory
                 |             for the first level pointer (i.e. oLConnectorNamesAllowed) and release the
-                |             second level pointer (i.e. \*oLConnectorNamesAllowed) after usage.
+                |             second level pointer (i.e. \\*oLConnectorNamesAllowed) after usage.
                 |
                 |     Example:
                 |
@@ -76,7 +76,7 @@ class SchAppCntrName(AnyObject):
                 | 
                 |         oName
                 |             The connector name. The caller must allocate memory for the first
-                |             level pointer (i.e. oName) and release the second level pointer (i.e. \*oName)
+                |             level pointer (i.e. oName) and release the second level pointer (i.e. \\*oName)
                 |             after usage. 
                 | 
                 |     Example:

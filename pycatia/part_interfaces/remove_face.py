@@ -38,8 +38,7 @@ class RemoveFace(DressUpShape):
         super().__init__(com_object)
         self.remove_face = com_object
 
-    @property
-    def keep_face(self):
+    def keep_face(self, reference: Reference):
         """
         .. note::
             :class: toggle
@@ -57,17 +56,10 @@ class RemoveFace(DressUpShape):
                 | 
                 |         Boundary object is supported: Face.
 
+        :param Reference reference:
         """
 
-        return self.remove_face.KeepFace
-
-    @keep_face.setter
-    def keep_face(self, reference_face: Reference):
-        """
-        :param Reference reference_face:
-        """
-
-        self.remove_face.KeepFace = reference_face.com_object
+        self.remove_face.KeepFace = reference.com_object
 
     @property
     def keep_faces(self) -> References:
@@ -101,8 +93,7 @@ class RemoveFace(DressUpShape):
 
         return References(self.remove_face.Propagation)
 
-    @property
-    def remove_face(self) -> Reference:
+    def remove_face(self, reference: Reference):
         """
         .. note::
             :class: toggle
@@ -120,17 +111,10 @@ class RemoveFace(DressUpShape):
                 | 
                 |         Boundary object is supported: Face.
 
+        :param Reference reference:
         """
 
-        return Reference(self.remove_face.RemoveFace.com_object)
-
-    @remove_face.setter
-    def remove_face(self, reference_face: Reference):
-        """
-        :param Reference reference_face:
-        """
-
-        self.remove_face.RemoveFace = reference_face.com_object
+        self.remove_face.RemoveFace = reference.com_object
 
     @property
     def remove_faces(self) -> References:

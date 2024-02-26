@@ -599,9 +599,7 @@ class Selection(AnyObject):
                                       i_filter_type: tuple,
                                       i_object_selection_before_command_use_possibility: bool,
                                       i_tooltip: bool,
-                                      i_triggering_on_mouse_move: bool,
-                                      o_object_selected: bool,
-                                      o_document_window_location: tuple) -> str:
+                                      i_triggering_on_mouse_move: bool) -> str:
         """
         .. note::
             :class: toggle
@@ -739,13 +737,35 @@ class Selection(AnyObject):
         :param tuple o_document_window_location:
         :rtype: str
         """
-        return self.selection.IndicateOrSelectElement2D(i_message,
-                                                        i_filter_type,
-                                                        i_object_selection_before_command_use_possibility,
-                                                        i_tooltip,
-                                                        i_triggering_on_mouse_move,
-                                                        o_object_selected,
-                                                        o_document_window_location)
+        vba_function_name = 'indicate_or_select_element_2d_2'
+        vba_code = f'''   
+                    Public Function {vba_function_name}(selection, i_message, i_filterType, i_object_selection_before_command_use_possibility, i_tooltip, i_triggering_on_mouse_move)
+                    Dim o_object_selected
+                    Dim o_document_window_location (1)
+                    Dim o_output_state (3)
+
+                    o_output_state (0) = selection.IndicateOrSelectElement2D(i_message, i_filterType, i_object_selection_before_command_use_possibility, i_tooltip, i_triggering_on_mouse_move, o_object_selected, o_document_window_location)
+                    o_output_state (1) = o_object_selected
+                    o_output_state (2) = o_document_window_location
+                    {vba_function_name} = o_output_state
+                    End Function
+                    '''
+
+        system_service = self.application.system_service
+        result = system_service.evaluate(vba_code,
+                                         0,
+                                         vba_function_name,
+                                         [
+                                             self.selection,
+                                             i_message,
+                                             i_filter_type,
+                                             i_object_selection_before_command_use_possibility,
+                                             i_tooltip,
+                                             i_triggering_on_mouse_move
+                                         ]
+                                         )
+
+        return result
 
     def indicate_or_select_element_3d(self,
                                       i_planar_geometric_object: AnyObject,
@@ -914,19 +934,20 @@ class Selection(AnyObject):
         '''
 
         system_service = self.application.system_service
-        result = system_service.evaluate(vba_code,
-                                         0,
-                                         vba_function_name,
-                                         [
-                                             self.selection,
-                                             i_planar_geometric_object.com_object,
-                                             i_message, i_filter_type,
-                                             i_object_selection_before_command_use_possibility,
-                                             i_tooltip,
-                                             i_triggering_on_mouse_move
+        result = system_service.evaluate(
+            vba_code,
+            0,
+            vba_function_name,
+            [
+                self.selection,
+                i_planar_geometric_object.com_object,
+                i_message, i_filter_type,
+                i_object_selection_before_command_use_possibility,
+                i_tooltip,
+                i_triggering_on_mouse_move
 
-                                         ]
-                                         )
+            ]
+        )
 
         return result
 

@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+from typing import Union
 
 from pycatia.hybrid_shape_interfaces.hybrid_shape_3d_curve_offset import HybridShape3DCurveOffset
 from pycatia.hybrid_shape_interfaces.hybrid_shape_affinity import HybridShapeAffinity
@@ -112,7 +113,7 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_wrap_curve import HybridShapeW
 from pycatia.hybrid_shape_interfaces.hybrid_shape_wrap_surface import HybridShapeWrapSurface
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.factory import Factory
-from pycatia.scripts.vba import vba_nothing
+from pycatia.scripts.vba import vba_nothing, VBANothing
 
 
 class HybridShapeFactory(Factory):
@@ -5511,7 +5512,7 @@ class HybridShapeFactory(Factory):
     def add_new_sphere(
             self,
             i_center: Reference,
-            i_axis: Reference or vba_nothing,
+            i_axis: Union[Reference, VBANothing],
             i_radius: float,
             i_begin_parallel_angle: float,
             i_end_parallel_angle: float,
@@ -5556,7 +5557,7 @@ class HybridShapeFactory(Factory):
                 |         Sphere result
 
         :param Reference i_center:
-        :param Reference or vba_nothing i_axis:
+        :param Reference or VBANothing i_axis:
         :param float i_radius:
         :param float i_begin_parallel_angle:
         :param float i_end_parallel_angle:
