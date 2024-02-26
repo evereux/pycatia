@@ -8,12 +8,14 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Union
+
 from pycatia.hybrid_shape_interfaces.hybrid_shape_direction import HybridShapeDirection
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.length import Length
 from pycatia.knowledge_interfaces.real_param import RealParam
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
-from pycatia.scripts.vba import vba_nothing
+from pycatia.scripts.vba import vba_nothing, VBANothing
 
 
 class HybridShapeSpline(HybridShape):
@@ -90,10 +92,10 @@ class HybridShapeSpline(HybridShape):
     def add_point_with_constraint_explicit(
             self,
             ip_ia_point: Reference,
-            ip_ia_dir_tangency: HybridShapeDirection or vba_nothing,
+            ip_ia_dir_tangency: Union[HybridShapeDirection, VBANothing],
             i_tangency_norm: float,
             i_inverse_tangency: int,
-            ip_ia_dir_curvature: HybridShapeDirection or vba_nothing,
+            ip_ia_dir_curvature: Union[HybridShapeDirection, VBANothing],
             i_curvature_radius: float
     ) -> None:
         """
@@ -127,10 +129,10 @@ class HybridShapeSpline(HybridShape):
                 |             Curvature radius value.
 
         :param Reference ip_ia_point:
-        :param HybridShapeDirection or vba_nothing ip_ia_dir_tangency:
+        :param HybridShapeDirection or VBANothing ip_ia_dir_tangency:
         :param float i_tangency_norm:
         :param int i_inverse_tangency:
-        :param HybridShapeDirection or vba_nothing ip_ia_dir_curvature:
+        :param HybridShapeDirection or VBANothing ip_ia_dir_curvature:
         :param float i_curvature_radius:
         :rtype: None
         """

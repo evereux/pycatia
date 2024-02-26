@@ -50,7 +50,7 @@ class AutoDraft(DressUpShape):
         :rtype: Reference
         """
 
-        return Reference
+        return Reference(self.auto_draft.FunctionalFace)
 
     @functional_face.setter
     def functional_face(self, reference: Reference):
@@ -58,7 +58,7 @@ class AutoDraft(DressUpShape):
         :param Reference reference:
         """
 
-        self.auto_draft.FunctionalFace = reference
+        self.auto_draft.FunctionalFace = reference.com_object
 
     @property
     def functional_faces(self) -> References:
