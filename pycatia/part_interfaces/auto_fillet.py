@@ -142,7 +142,7 @@ class AutoFillet(DressUpShape):
         :rtype: Reference
         """
 
-        self.functional_face.FunctionFace
+        return Reference(self.auto_fillet.FunctionalFace)
 
     @functional_face.setter
     def functional_face(self, reference: Reference):
