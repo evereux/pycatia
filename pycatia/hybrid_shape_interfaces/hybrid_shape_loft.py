@@ -9,10 +9,12 @@
         
 """
 
+from typing import Union
+
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.length import Length
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
-from pycatia.scripts.vba import vba_nothing
+from pycatia.scripts.vba import VBANothing, vba_nothing
 
 
 class HybridShapeLoft(HybridShape):
@@ -584,7 +586,7 @@ class HybridShapeLoft(HybridShape):
             self,
             i_crv: Reference,
             i_ori: int,
-            i_point: Reference or vba_nothing
+            i_point: Union[Reference, VBANothing]
     ) -> None:
         """
         .. note::
@@ -608,7 +610,7 @@ class HybridShapeLoft(HybridShape):
 
         :param Reference i_crv:
         :param int i_ori:
-        :param Reference or vba_nothing i_point:
+        :param Reference or VBANothing i_point:
         :rtype: None
         """
 
