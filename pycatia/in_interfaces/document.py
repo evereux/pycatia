@@ -485,8 +485,12 @@ class Document(AnyObject):
 
         self.document.Application.DisplayFileAlerts = current_dfa_setting
 
-    def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
+    def indicate_2d(self, i_message: str) -> str:
         """
+
+        Returns a tuple in the format (status: str, (x_2d: float, y_2d: float))
+        Status can be 'Normal', 'Cancel',
+
         .. note::
             :class: toggle
 
@@ -529,10 +533,8 @@ class Document(AnyObject):
                 |             The state of the indication command once Indicate2D returns. It can
                 |             be either "Normal" (the indication has succeeded), "Cancel" (the user wants to
                 |             cancel the VB command, which must exit immediately, see the oOutputState
-                |             parameter of the
-                |
-                |         Selection.SelectElement2 method), "Undo" or "Redo". About the use of
-                |         "Undo" and "Redo", see the example of the Selection.SelectElement2 method.
+                |             parameter of the Selection.SelectElement2 method), "Undo" or "Redo". About the use of
+                |             "Undo" and "Redo", see the example of the Selection.SelectElement2 method.
                 |
                 |     Example:
                 |
@@ -543,13 +545,14 @@ class Document(AnyObject):
                 |
                 |     DrawingText ) at the specified location:
                 |
-                |      Set Document = CATIA.ActiveDocument :
-                |      Set Selection = Document.Selection :
-                |       Set DrawingSheets  = Document.Sheets
-                |      Set DrawingSheet = DrawingSheets.ActiveSheet : Set DrawingViews = DrawingSheet.Views
-                |      Set DrawingView = DrawingViews.ActiveView : Set DrawingTexts = DrawingView.Texts
-                |      'We propose to the user that he specify a location in the drawing
-                |      window
+                |      Set Document = CATIA.ActiveDocument
+                |      Set Selection = Document.Selection
+                |      Set DrawingSheets = Document.Sheets
+                |      Set DrawingSheet = DrawingSheets.ActiveSheet
+                |      Set DrawingViews = DrawingSheet.Views
+                |      Set DrawingView = DrawingViews.ActiveView
+                |      Set DrawingTexts = DrawingView.Texts
+                |      'We propose to the user that he specify a location in the drawing window
                 |      Dim DrawingWindowLocation(1)
                 |      Status=Document.Indicate2D("select a location into the drawing
                 |      window",DrawingWindowLocation)
@@ -558,14 +561,41 @@ class Document(AnyObject):
                 |      world",DrawingWindowLocation(0),DrawingWindowLocation(1))
 
         :param str i_message:
-        :param tuple io_document_window_location:
-        :return: str
+        :return: tuple
         """
-        return self.document.Indicate2D(i_message, io_document_window_location)
 
-    def indicate_3d(self, i_planar_geometric_object: AnyObject, i_message: str, io_window_location2_d: tuple,
-                    io_window_location3_d: tuple) -> str:
+        vba_function_name = 'indicate_2d'
+        vba_code = f'''
+        Public Function {vba_function_name}(document, i_message)
+        Dim DrawingWindowLocation (1)
+        Dim o_output(1)
+        o_output(0) = document.Indicate2D(i_message, DrawingWindowLocation)
+        o_output(1) = DrawingWindowLocation
+        {vba_function_name} = o_output
+        End Function
+        '''
+
+        system_service = self.application.system_service
+        return system_service.evaluate(
+            vba_code,
+            0,
+            vba_function_name,
+            [
+                self.document,
+                i_message
+            ]
+        )
+
+    def indicate_3d(
+            self,
+            i_planar_geometric_object: AnyObject,
+            i_message: str,
+    ) -> str:
         """
+
+        Returns a tuple in the format (status: str, (x_2d: float, y_2d: float), (x_3d: float, y_3d: float, z_3d: float))
+        Status can be 'Normal', 'Cancel',
+
         .. note::
             :class: toggle
 
@@ -632,8 +662,8 @@ class Document(AnyObject):
                 |
                 |     HybridShapePointOnPlane at the specified location:
                 |
-                |      Set Document = CATIA.ActiveDocument :
-                |      Set Part  = Document.Part :
+                |      Set Document = CATIA.ActiveDocument
+                |      Set Part  = Document.Part
                 |      Set Selection = Document.Selection
                 |      Set HybridShapeFactory = Part.HybridShapeFactory
                 |      Set HybridShapePlane = Part.Bodies.Item("PartBody").HybridShapes.Item("Plane.1")
@@ -643,7 +673,7 @@ class Document(AnyObject):
                 |      ReDim WindowLocation2D(1),WindowLocation3D(2)
                 |      Status=Document.Indicate3D(HybridShapePlane,"select a location in the
                 |      document window", _
-                |    WindowLocation2D,WindowLocation3D)
+                |      WindowLocation2D,WindowLocation3D)
                 |      if (Status = "Cancel") then Exit Sub
                 |      Set HybridShapePointOnPlane = HybridShapeFactory.AddNewPointOnPlane( _
                 |      PlaneReference,WindowLocation2D(0),WindowLocation2D(1))
@@ -654,12 +684,32 @@ class Document(AnyObject):
 
         :param AnyObject i_planar_geometric_object:
         :param str i_message:
-        :param tuple io_window_location2_d:
-        :param tuple io_window_location3_d:
         :return: str
         """
-        return self.document.Indicate3D(i_planar_geometric_object.com_object, i_message, io_window_location2_d,
-                                        io_window_location3_d)
+        vba_function_name = 'indicate_3d'
+        vba_code = f'''
+        Public Function {vba_function_name}(document, i_planar_geometric_object, i_message)
+        Dim WindowLocation2D (1)
+        Dim WindowLocation3D (2)
+        Dim o_output(2)
+        o_output(0) = document.Indicate3D(i_planar_geometric_object, i_message, WindowLocation2D, WindowLocation3D)
+        o_output(1) = WindowLocation2D
+        o_output(2) = WindowLocation3D
+        {vba_function_name} = o_output
+        End Function
+        '''
+
+        system_service = self.application.system_service
+        return system_service.evaluate(
+            vba_code,
+            0,
+            vba_function_name,
+            [
+                self.document,
+                i_planar_geometric_object.com_object,
+                i_message
+            ]
+        )
 
     def new_window(self):
         """
