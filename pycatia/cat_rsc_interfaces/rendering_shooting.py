@@ -913,17 +913,17 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the file type used for saved image.
                 | 
                 |         Possible format types
-                |         1 TIFF True Color (\*.tif)
-                |         2 TIFF True Color Packbits (\*.tif)
-                |         3 SGI Format (\*.rgb)
-                |         4 Windows Bitmap (\*.bmp)
-                |         5 JPEG Fair Quality (\*.jpg)
-                |         6 JPEG Medium Quality (\*.jpg)
-                |         7 JPEG High Quality (\*.jpg)
-                |         8 Apple Macintosh Format (\*.pic)
-                |         9 Adobe Photoshop Format (\*.psd)
-                |         10 Portable Network Graphics (\*.png)
-                |         11 Truevision Targa (\*.tga)
+                |         1 TIFF True Color (\\*.tif)
+                |         2 TIFF True Color Packbits (\\*.tif)
+                |         3 SGI Format (\\*.rgb)
+                |         4 Windows Bitmap (\\*.bmp)
+                |         5 JPEG Fair Quality (\\*.jpg)
+                |         6 JPEG Medium Quality (\\*.jpg)
+                |         7 JPEG High Quality (\\*.jpg)
+                |         8 Apple Macintosh Format (\\*.pic)
+                |         9 Adobe Photoshop Format (\\*.psd)
+                |         10 Portable Network Graphics (\\*.png)
+                |         11 Truevision Targa (\\*.tga)
 
         :rtype: int
         """
