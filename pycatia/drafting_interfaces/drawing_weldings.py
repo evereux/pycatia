@@ -157,11 +157,11 @@ class DrawingWeldings(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return DrawingWelding(self.drawing_weldings.item(n + 1))
+        return DrawingWelding(self.drawing_weldings.Item(n + 1))
 
     def __iter__(self) -> Iterator[DrawingWelding]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'DrawingWeldings(name="{self.name}")'

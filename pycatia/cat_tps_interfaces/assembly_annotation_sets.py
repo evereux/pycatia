@@ -75,11 +75,11 @@ class AssemblyAnnotationSets(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return AnnotationSet(self.assembly_annotation_sets.item(n + 1))
+        return AnnotationSet(self.assembly_annotation_sets.Item(n + 1))
 
     def __iter__(self) -> Iterator[AnnotationSet]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'AssemblyAnnotationSets(name="{self.name}")'
