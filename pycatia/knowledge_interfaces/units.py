@@ -76,11 +76,11 @@ class Units(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return Unit(self.units.item(n + 1))
+        return Unit(self.units.Item(n + 1))
 
     def __iter__(self) -> Iterator[Unit]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Units(name="{self.name}")'
