@@ -511,7 +511,7 @@ class Factory2D(AnyObject):
         :param tuple i_poles:
         :rtype: Spline2D
         """
-        return Spline2D(self.factory_2d.CreateSpline(i_poles))
+        return Spline2D(self.factory_2d.CreateSpline(tuple(p2d.com_object for p2d in i_poles)))
 
     def __repr__(self):
         return f'Factory2D(name="{self.name}")'
