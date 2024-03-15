@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.7
+
+* fix type hinting issue with python 3.9. #194 @mokrueger
+* updated Factory_2D.create_spline() so that it will now accept a tuple of 
+  control_points instead of their com_objects. #199 @mokrueger
+
 ## 0.6.6
 
 * fixed method document.indicate_2d()
