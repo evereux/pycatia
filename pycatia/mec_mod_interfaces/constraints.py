@@ -288,11 +288,11 @@ class Constraints(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return Constraint(self.constraints.item(n + 1))
+        return Constraint(self.constraints.Item(n + 1))
 
     def __iter__(self) -> Iterator[Constraint]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Constraints(name="{self.name}")'
