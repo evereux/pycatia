@@ -1,4 +1,4 @@
-.. _Types:
+.. _types:
 
 types
 =====

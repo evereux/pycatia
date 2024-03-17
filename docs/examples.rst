@@ -1,3 +1,5 @@
+.. _examples:
+
 Examples
 ========
 
@@ -143,8 +145,6 @@ Close a catia file.
 DRAFTING EXAMPLES
 -----------------
 
-I have created a github repository with a more complex drafting example that creates a drawing format with title block.
-That can be found at here `pycatia-drawing-template <https://github.com/evereux/pycatia-drawing-template>`_
 
 Drafting - Example 1
 ~~~~~~~~~~~~~~~~~~~~
