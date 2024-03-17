@@ -2879,6 +2879,23 @@ class ShapeFactory(Factory):
         """
         return Thread(self.shape_factory.AddNewThreadWithRef(i_lateral_face.com_object, i_limit_face.com_object))
 
+    def add_new_translate2(self, i_distance: float) -> AnyObject:
+
+        """
+            .. note::
+                :class: toggle
+
+                Microsoft Visual Basic Object Browser
+                    | Function AddNewTranslate2(iDistance As Double) As AnyObject
+                    | Member of PARTITF.ShapeFactory
+
+
+        :param float i_distance:
+        :rtype: AnyObject
+        """
+
+        return AnyObject(self.shape_factory.AddNewTranslate2(i_distance))
+
     def add_new_trim(self, i_body_to_trim: Body) -> Trim:
         """
         .. note::
