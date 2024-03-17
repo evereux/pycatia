@@ -1,15 +1,19 @@
 # Changelog
 
+
 ## 0.6.7
 
 * fix type hinting issue with python 3.9. #194 @mokrueger
 * updated Factory_2D.create_spline() so that it will now accept a tuple of 
   control_points instead of their com_objects. #199 @mokrueger
 * updated iter methods to use .Item instead of .item. The resolves issues where
-  the pycatia user is using a modified com interface provided by dassault. 
+  the pycatia user is using a modified com interface provided by Dassault. 
   #195 @mokrueger.
-* * added missing method ShapeFactory.add_new_translate2() #202
+* added missing method ShapeFactory.add_new_translate2() #202 There is currently
+  a quirk with regard to its usage. See the GitHub issue #202 for further 
+  information.
 * improved Parameters handling. #197 @mokrueger
+
 
 ## 0.6.6
 
@@ -17,9 +21,8 @@
 * fixed method document.indicate_3d()
 * fixed method selection.indicate_or_select_element_2d() @hitman061
 * renamed Outputs.count_ due to name clash with Collection.
-* fixes due to mypy checking. There are still errors report buted not sure how 
+* fixes due to mypy checking. There are still errors report but not sure how 
   to fix at this time.
-
 
 
 ## 0.6.5
