@@ -59,19 +59,23 @@ def parse_to_parameter_subtype(com_object):
                 return ListParameter(com_object)
         except AttributeError:
             pass
+ 
+        try:
+          if isinstance(com_object.Value, bool):
+              return BoolParam(com_object)
 
-        if isinstance(com_object.Value, bool):
-            return BoolParam(com_object)
+          if isinstance(com_object.Value, int):
+              return IntParam(com_object)
 
-        if isinstance(com_object.Value, int):
-            return IntParam(com_object)
+          if isinstance(com_object.Value, str):
+              return StrParam(com_object)
 
-        if isinstance(com_object.Value, str):
-            return StrParam(com_object)
-
-        if isinstance(com_object.Value, float):
-            return RealParam(com_object)
-
+          if isinstance(com_object.Value, float):
+              return RealParam(com_object)
+        except AttributeError:
+            # Parameter has no Value either
+            pass
+        
         return Parameter(com_object)
 
 
@@ -213,9 +217,7 @@ class Parameters(Collection):
                 |                 "LENGTH": the unit is the meter.
                 |                 "ANGLE": the unit is the radian. 
                 | 
-                |             The 
-                | 
-                |         Dimension object provides the Dimension.ValuateFromString method with
+                |         The Dimension object provides the Dimension.ValuateFromString method with
                 |         which you may express the value in any unit for a given dimension (see the
                 |         example below). 
                 |     iValue
@@ -228,6 +230,13 @@ class Parameters(Collection):
                 |          Dim depth As Dimension
                 |          Set depth = parameters.CreateDimension("depth", "LENGTH", 20)
                 |          depth.ValuateFromString("300mm");
+
+        The documentation from the CHM file is incomplete here as many more
+        magnitude types are available. For example: TIME, MASS, VOLUME,
+        DENSITY, AREA ... If you need to find the magnitude value for the
+        dimension type you wish to create use the macro recorder and
+        manually create the parameter. The macro script generated will
+        reveal the magnitude value required.
 
         :param str i_name:
         :param str i_magnitude:
