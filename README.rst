@@ -142,7 +142,7 @@ A reminder for @evereux. I don't do this often and forget ...
 * Run the examples.
    * Fix any issues.
 
-* Build the docs. `cd docs` `make html`
+* Build the docs. `cd docs` `./make html`
    * Fix any issues.
 
 * Run mypy over module. `mypy pycatia`
