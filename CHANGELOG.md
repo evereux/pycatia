@@ -17,6 +17,7 @@
 * renamed Outputs.count_ due to name clash with Collection.
 * fixes due to mypy checking. There are still errors report buted not sure how 
   to fix at this time.
+* added missing method ShapeFactory.add_new_translate2() #202
 
 ## 0.6.5
 
