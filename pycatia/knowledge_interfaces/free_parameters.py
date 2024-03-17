@@ -113,11 +113,11 @@ class FreeParameters(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return FreeParameter(self.free_parameters.item(n + 1))
+        return FreeParameter(self.free_parameters.Item(n + 1))
 
     def __iter__(self) -> Iterator[FreeParameter]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'FreeParameters(name="{self.name}")'
