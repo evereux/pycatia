@@ -115,11 +115,11 @@ class OptimizationConstraints(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return OptimizationConstraint(self.optimization_constraints.item(n + 1))
+        return OptimizationConstraint(self.optimization_constraints.Item(n + 1))
 
     def __iter__(self) -> Iterator[OptimizationConstraint]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'OptimizationConstraints(name="{self.name}")'
