@@ -59,23 +59,23 @@ def parse_to_parameter_subtype(com_object):
                 return ListParameter(com_object)
         except AttributeError:
             pass
- 
+
         try:
-          if isinstance(com_object.Value, bool):
-              return BoolParam(com_object)
+            if isinstance(com_object.Value, bool):
+                return BoolParam(com_object)
 
-          if isinstance(com_object.Value, int):
-              return IntParam(com_object)
+            if isinstance(com_object.Value, int):
+                return IntParam(com_object)
 
-          if isinstance(com_object.Value, str):
-              return StrParam(com_object)
+            if isinstance(com_object.Value, str):
+                return StrParam(com_object)
 
-          if isinstance(com_object.Value, float):
-              return RealParam(com_object)
+            if isinstance(com_object.Value, float):
+                return RealParam(com_object)
         except AttributeError:
             # Parameter has no Value either
             pass
-        
+
         return Parameter(com_object)
 
 
