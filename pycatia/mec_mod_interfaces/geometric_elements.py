@@ -84,11 +84,11 @@ class GeometricElements(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return GeometricElement(self.geometric_elements.item(n + 1))
+        return GeometricElement(self.geometric_elements.Item(n + 1))
 
     def __iter__(self) -> Iterator[GeometricElement]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'GeometricElements(name="{self.name}")'

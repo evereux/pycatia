@@ -135,11 +135,11 @@ class Sketches(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return Sketch(self.sketches.item(n + 1))
+        return Sketch(self.sketches.Item(n + 1))
 
     def __iter__(self) -> Iterator[Sketch]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Sketches(name="{self.name}")'

@@ -164,11 +164,11 @@ class Clashes(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return Clash(self.clashes.item(n + 1))
+        return Clash(self.clashes.Item(n + 1))
 
     def __iter__(self) -> Iterator[Clash]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Clashes(name="{self.name}")'

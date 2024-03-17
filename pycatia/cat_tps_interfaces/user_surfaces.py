@@ -188,11 +188,11 @@ class UserSurfaces(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return UserSurface(self.user_surfaces.item(n + 1))
+        return UserSurface(self.user_surfaces.Item(n + 1))
 
     def __iter__(self) -> Iterator[UserSurface]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'UserSurfaces(name="{self.name}")'

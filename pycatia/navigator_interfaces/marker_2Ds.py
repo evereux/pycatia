@@ -427,11 +427,11 @@ class Marker2Ds(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return Marker2D(self.marker_2ds.item(n + 1))
+        return Marker2D(self.marker_2ds.Item(n + 1))
 
     def __iter__(self) -> Iterator[Marker2D]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Marker2Ds(name="{self.name}")'

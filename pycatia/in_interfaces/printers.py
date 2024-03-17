@@ -79,11 +79,11 @@ class Printers(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return Printer(self.printers.item(n + 1))
+        return Printer(self.printers.Item(n + 1))
 
     def __iter__(self) -> Iterator[Printer]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Printers(name="{self.name}")'

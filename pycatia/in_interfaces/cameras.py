@@ -139,11 +139,11 @@ class Cameras(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return Camera(self.cameras.item(n + 1))
+        return Camera(self.cameras.Item(n + 1))
 
     def __iter__(self) -> Iterator[Camera]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Cameras(name="{self.name}")'

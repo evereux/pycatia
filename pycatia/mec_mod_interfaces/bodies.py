@@ -103,11 +103,11 @@ class Bodies(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return Body(self.bodies.item(n + 1))
+        return Body(self.bodies.Item(n + 1))
 
     def __iter__(self) -> Iterator[Body]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Bodies(name="{self.name}")'

@@ -45,6 +45,7 @@ from pycatia.part_interfaces.stiffener import Stiffener
 from pycatia.part_interfaces.thick_surface import ThickSurface
 from pycatia.part_interfaces.thickness import Thickness
 from pycatia.part_interfaces.thread import Thread
+from pycatia.part_interfaces.translate import Translate
 from pycatia.part_interfaces.trim import Trim
 from pycatia.part_interfaces.tritangent_fillet import TritangentFillet
 from pycatia.part_interfaces.user_pattern import UserPattern
@@ -2878,6 +2879,23 @@ class ShapeFactory(Factory):
         :rtype: Thread
         """
         return Thread(self.shape_factory.AddNewThreadWithRef(i_lateral_face.com_object, i_limit_face.com_object))
+
+    def add_new_translate2(self, i_distance: float) -> Translate:
+
+        """
+            .. note::
+                :class: toggle
+
+                Microsoft Visual Basic Object Browser
+                    | Function AddNewTranslate2(iDistance As Double) As AnyObject
+                    | Member of PARTITF.ShapeFactory
+
+
+        :param float i_distance:
+        :rtype: AnyObject
+        """
+
+        return Translate(self.shape_factory.AddNewTranslate2(i_distance))
 
     def add_new_trim(self, i_body_to_trim: Body) -> Trim:
         """
