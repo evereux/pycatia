@@ -175,11 +175,11 @@ class DrawingPictures(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return DrawingPicture(self.drawing_pictures.item(n + 1))
+        return DrawingPicture(self.drawing_pictures.Item(n + 1))
 
     def __iter__(self) -> Iterator[DrawingPicture]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'DrawingPictures(name="{self.name}")'
