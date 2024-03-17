@@ -164,11 +164,11 @@ class List(Collection):
         if (n + 1) > self.count:
             raise StopIteration
 
-        return AnyObject(self.list.item(n + 1))
+        return AnyObject(self.list.Item(n + 1))
 
     def __iter__(self) -> Iterator[AnyObject]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'List(name="{self.name}")'
