@@ -7,7 +7,9 @@
   control_points instead of their com_objects. #199 @mokrueger
 * updated iter methods to use .Item instead of .item. The resolves issues where
   the pycatia user is using a modified com interface provided by dassault. 
-  #195 @mokrueger
+  #195 @mokrueger.
+* * added missing method ShapeFactory.add_new_translate2() #202
+* improved Parameters handling. #197 @mokrueger
 
 ## 0.6.6
 
@@ -17,7 +19,8 @@
 * renamed Outputs.count_ due to name clash with Collection.
 * fixes due to mypy checking. There are still errors report buted not sure how 
   to fix at this time.
-* added missing method ShapeFactory.add_new_translate2() #202
+
+
 
 ## 0.6.5
 
