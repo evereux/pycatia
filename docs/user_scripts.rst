@@ -1,3 +1,5 @@
+.. _user_scripts:
+
 User Scripts
 ============
 
@@ -47,7 +49,7 @@ Creates screenshots of all parts and products within a given directory.
 
 See script header for more information.
 
-`create_screenshots_of_parts_and_products.py <<https://github.com/evereux/pycatia/blob/master/user_scripts/create_screenshots_of_parts_and_products.py>`_
+`create_screenshots_of_parts_and_products.py <https://github.com/evereux/pycatia/blob/master/user_scripts/create_screenshots_of_parts_and_products.py>`_
 
 
 

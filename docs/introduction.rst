@@ -55,7 +55,7 @@ number of properties that can be accessed.
 Creating A Geometrical Set
 --------------------------
 
-A geometrical set created using the :ref:`HybridBodies<Hybrid_bodies>` collection. Your CATIA
+A geometrical set created using the :ref:`HybridBodies<HybridBodies>` collection. Your CATIA
 configuration may by default create a geometrical set in a new CATPart but we'll
 create one here anyway.
 
