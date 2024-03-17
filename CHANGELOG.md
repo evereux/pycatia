@@ -5,6 +5,9 @@
 * fix type hinting issue with python 3.9. #194 @mokrueger
 * updated Factory_2D.create_spline() so that it will now accept a tuple of 
   control_points instead of their com_objects. #199 @mokrueger
+* updated iter methods to use .Item instead of .item. The resolves issues where
+  the pycatia user is using a modified com interface provided by dassault. 
+  #195 @mokrueger
 
 ## 0.6.6
 
