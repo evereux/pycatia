@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.8
+
+* added option to initialise the Application object with pythoncom.CoInitialize().
+ This is required for when using pycatia in a threaded context. To use this 
+feature you would do `caa = catia(co_initialise=True)`.
+
 
 ## 0.6.7
 
