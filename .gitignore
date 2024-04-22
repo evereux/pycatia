@@ -148,4 +148,4 @@ test.py
 hasher.py
 
 # ignore my issues test scripts
-issue*.py
+issue*.*
