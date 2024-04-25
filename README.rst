@@ -4,6 +4,7 @@
 .. _examples: https://pycatia.readthedocs.io/en/latest/examples.html
 .. _user_scripts: https://pycatia.readthedocs.io/en/latest/user_scripts.html
 .. _pypi.org: https://pypi.org/project/pycatia/
+.. _pycatia-tools: https://github.com/evereux/pycatia-tools
 
 pycatia
 =======
@@ -80,6 +81,8 @@ Examples And Scripts
 --------------------
 
 See the documentation @ examples_ and user_scripts_.
+
+A GUI based application that uses pycatia - pycatia-tools_.
 
 
 Asking Questions
