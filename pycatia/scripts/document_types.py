@@ -6,7 +6,8 @@ allowed_document_types = {
     'drawing': 'Drawing',
     'functionalsystem': 'FunctionalSystem',
     'catmaterial': 'CATMaterial',
-    'catalogdocument': 'CatalogDocument'
+    'catalogdocument': 'CatalogDocument',
+    'catprocess': 'CATProcess'
 }
 
 
@@ -33,6 +34,7 @@ def get_document_type(dt: str) -> str:
     :return: str
     """
     if dt.lower() not in allowed_document_types:
+        print(dt.lower(), allowed_document_types)
         raise CATIAApplicationException(f'"{dt}" is not currently supported.')
 
     return allowed_document_types[dt.lower()]
