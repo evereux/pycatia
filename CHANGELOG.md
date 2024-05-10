@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.9
+
+* added CATProcess document type.
+
 ## 0.6.8
 
 * added option to initialise the Application object with pythoncom.CoInitialize().
