@@ -88,7 +88,9 @@ class Documents(Collection):
         """
 
         # document_types string must be one of these types:
-        # 'Part', 'Product', 'Drawing', 'FunctionalSystem', 'CATMaterial', 'CatalogDocument'
+        # 'Analysis', 'CatalogDocument', 'CATMaterial', 'CATProcess' 
+        # 'cgm', 'Drawing', 'FeatureDictionary', 'gl', 'gl2', 
+        # 'hpgl', 'FunctionalSystem', 'Part', 'Product', 'ProcessLibrary'
 
         dt = get_document_type(document_type)
 

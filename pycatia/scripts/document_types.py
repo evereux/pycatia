@@ -1,13 +1,23 @@
 from pycatia.exception_handling import CATIAApplicationException
 
 allowed_document_types = {
+    # 'catimmnavdoc': 'CATImmNavDoc', this wouldn't work for me
+    'analysis': 'Analysis',
+    'catalogdocument': 'CatalogDocument',
+    'catmaterial': 'CATMaterial',
+    'material': 'CATMaterial',
+    'catprocess': 'CATProcess',
+    'process': 'CATProcess',
+    'cgm': 'cgm',
+    'drawing': 'Drawing',
+    'featuredictionary': 'FeatureDictionary',
+    'gl': 'gl',
+    'gl2': 'gl2',
+    'hpgl': 'hpgl',
+    'functionalsystem': 'FunctionalSystem',
     'part': 'Part',
     'product': 'Product',
-    'drawing': 'Drawing',
-    'functionalsystem': 'FunctionalSystem',
-    'catmaterial': 'CATMaterial',
-    'catalogdocument': 'CatalogDocument',
-    'catprocess': 'CATProcess'
+    'processlibrary': 'ProcessLibrary',
 }
 
 
@@ -20,21 +30,12 @@ def get_document_type(dt: str) -> str:
 
         >>> from pycatia import catia
         >>> caa = catia()
-        >>> new_part = caa.documents.add('part')
-
-        # this would be the same as
-
-            :Example - Add new document:
-
-        >>> from pycatia import catia
-        >>> caa = catia()
         >>> new_part = caa.documents.add('Part')
 
     :param str dt:
     :return: str
     """
     if dt.lower() not in allowed_document_types:
-        print(dt.lower(), allowed_document_types)
         raise CATIAApplicationException(f'"{dt}" is not currently supported.')
 
     return allowed_document_types[dt.lower()]

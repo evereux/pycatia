@@ -2,7 +2,10 @@
 
 ## 0.6.9
 
-* added CATProcess document type.
+* added the following document types that can be created with Document.add(): 
+ 'Analysis', 'CatalogDocument', 'CATMaterial', 'CATProcess', 'cgm' 
+ 'FeatureDictionary', 'gl', 'gl2', 'hpgl', 'FunctionalSystem', 'ProcessLibrary'
+
 
 ## 0.6.8
 
