@@ -7,6 +7,7 @@
  'FeatureDictionary', 'gl', 'gl2', 'hpgl', 'FunctionalSystem', 'ProcessLibrary'
 * Rewrote how document types are detected and tested for. This makes adding 
  additional document types easier.
+* fixed HybridShapeExtrapol.support. @HyberCa
 
 
 ## 0.6.8
