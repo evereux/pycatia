@@ -5,6 +5,8 @@
 * added the following document types that can be created with Document.add(): 
  'Analysis', 'CatalogDocument', 'CATMaterial', 'CATProcess', 'cgm' 
  'FeatureDictionary', 'gl', 'gl2', 'hpgl', 'FunctionalSystem', 'ProcessLibrary'
+* Rewrote how document types are detected and tested for. This makes adding 
+ additional document types easier.
 
 
 ## 0.6.8
