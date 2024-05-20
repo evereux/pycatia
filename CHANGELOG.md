@@ -8,6 +8,7 @@
 * Rewrote how document types are detected and tested for. This makes adding 
  additional document types easier.
 * fixed HybridShapeExtrapol.support. @HyberCa
+* fixed HybridShapeAxisLine.element.
 
 
 ## 0.6.8
