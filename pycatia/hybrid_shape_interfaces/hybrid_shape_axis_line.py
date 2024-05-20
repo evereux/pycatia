@@ -158,7 +158,7 @@ class HybridShapeAxisLine(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_axis_line.Element = value
+        self.hybrid_shape_axis_line.Element = value.com_object
 
     def __repr__(self):
         return f'HybridShapeAxisLine(name="{ self.name }")'
