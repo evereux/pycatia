@@ -8,9 +8,8 @@ from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.document_types import document_type
+from pycatia.types.document import document_types
 from pycatia.types.general import cat_variant, list_str
-from pycatia.scripts.document_types import get_document_type
 
 
 class Documents(Collection):
@@ -87,14 +86,14 @@ class Documents(Collection):
         :rtype: Document
         """
 
-        # document_types string must be one of these types:
-        # 'Part', 'Product', 'Drawing', 'FunctionalSystem', 'CATMaterial', 'CatalogDocument'
+        # see pycatia.types.docs for supported Documents.
 
-        dt = get_document_type(document_type)
+        if document_type.lower() not in [t.lower() for t in document_types]:
+            raise CATIAApplicationException(f'Document type {document_type} not supported. Allowed types are {[t for t in document_types]}.')
 
-        self.logger.info(f'Creating a new "{dt}".')
+        document = document_types[document_type]['type']
 
-        return Document(self.documents.Add(dt))
+        return document(self.documents.Add(document_type))
 
     def count_types(self, file_type_list: list_str) -> int:
         """
@@ -307,7 +306,7 @@ class Documents(Collection):
 
         read_doc_com = self.documents.Read(file_name)
         doc_suffix = file_name.split('.')[-1]
-        return document_type[doc_suffix](read_doc_com)
+        return document_types[doc_suffix](read_doc_com)
 
     def __getitem__(self, n: int) -> Document:
         if (n + 1) > self.count:

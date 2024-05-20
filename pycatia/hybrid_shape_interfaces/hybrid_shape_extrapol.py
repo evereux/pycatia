@@ -372,7 +372,7 @@ class HybridShapeExtrapol(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_extrapol.Support = value
+        self.hybrid_shape_extrapol.Support = value.com_object
 
     def get_boundary(self, i_pos: int) -> Reference:
         """

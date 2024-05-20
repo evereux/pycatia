@@ -9,6 +9,7 @@ import pytest
 from pycatia.base_interfaces.context import CATIADocHandler
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product_document import ProductDocument
+from pycatia.types.document import document_types
 from tests.common_vars import caa
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
@@ -37,27 +38,42 @@ def test_activate_document():
     document_product.close()
 
 
-def test_add_documents():
-    with CATIADocHandler(new_document="Part") as caa:
+def test_add_document():
+
+    with CATIADocHandler(new_document='Analysis') as caa:
         document = caa.document
         assert document is not None
-        assert "CATPart" in document.name
+        assert document_types['Analysis']['extension'] in document.name
 
-    with CATIADocHandler(new_document="Part") as caa:
+    with CATIADocHandler(new_document='CatalogDocument') as caa:
         document = caa.document
         assert document is not None
-        assert "CATPart" in document.name
+        assert document_types['CatalogDocument']['extension'] in document.name
 
-    with CATIADocHandler(new_document="Part") as caa:
+    with CATIADocHandler(new_document='Drawing') as caa:
         document = caa.document
         assert document is not None
-        assert "CATPart" in document.name
+        assert document_types['Drawing']['extension'] in document.name
+    
+    with CATIADocHandler(new_document='CATProcess') as caa:
+        document = caa.document
+        assert document is not None
+        assert document_types['CATProcess']['extension'] in document.name
 
-    # commented out due to failing tests and I can't remember why this was added
-    # in the first place ...
-    # with pytest.raises(ValueError):
-    #     with CATIADocHandler(new_document='lala'):
-    #         pass
+    with CATIADocHandler(new_document='FeatureDictionary') as caa:
+        document = caa.document
+        assert document is not None
+        assert document_types['FeatureDictionary']['extension'] in document.name
+
+    with CATIADocHandler(new_document='Part') as caa:
+        document = caa.document
+        assert document is not None
+        assert document_types['Part']['extension'] in document.name
+
+    with CATIADocHandler(new_document='Product') as caa:
+        document = caa.document
+        assert document is not None
+        assert document_types['Product']['extension'] in document.name
 
 
 def test_count_types():
