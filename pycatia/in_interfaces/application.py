@@ -19,7 +19,7 @@ from pycatia.in_interfaces.windows import Windows
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
 from pycatia.in_interfaces.setting_controllers import SettingControllers
-from pycatia.types.document_types import document_type
+from pycatia.types.document import document_types
 
 
 class Application(AnyObject):
@@ -92,8 +92,12 @@ class Application(AnyObject):
         """
         try:
             active_doc_com = self.com_object.ActiveDocument
-            doc_suffix = active_doc_com.Name.split('.')[-1]
-            return document_type[doc_suffix](active_doc_com)
+            extension = active_doc_com.Name.split('.')[-1]
+            types = [document_types[k]['type'] for k in (document_types) if document_types[k]['extension'] == extension]
+            if len(types) > 1:
+                raise CATIAApplicationException('There was a problem determining the document type.')
+            document_type = types[0]
+            return document_type(active_doc_com)
         except com_error:
             raise CATIAApplicationException('Is there an active document?')
 
