@@ -153,7 +153,8 @@ class SWKHmiWorkbench(AnyObject):
 
     def new_human_catalog(self) -> SWKHumanCatalog:
         """
-            .. note::
+
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
