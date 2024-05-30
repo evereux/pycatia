@@ -55,6 +55,7 @@
   * StrCutoutFeature.reference_surface,
   * StrMember.surface_reference,
   * StrPlate.support
+* added missing type hints in Product().
 
 
 ## 0.6.9
