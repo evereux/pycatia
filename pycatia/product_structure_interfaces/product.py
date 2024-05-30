@@ -199,7 +199,7 @@ class Product(AnyObject):
         self.product.DescriptionRef = value
 
     @property
-    def file_name(self):
+    def file_name(self) -> str:
         """
         :return: str()
         """
@@ -207,7 +207,7 @@ class Product(AnyObject):
         return self.reference_product.parent.name
 
     @property
-    def full_name(self):
+    def full_name(self) -> str:
         """
         :return: str()
         """
@@ -215,7 +215,7 @@ class Product(AnyObject):
         return self.reference_product.parent.com_object.FullName
 
     @property
-    def move(self):
+    def move(self) -> Move:
         """
         .. note::
             :class: toggle
@@ -614,7 +614,7 @@ class Product(AnyObject):
         return self.product.ActivateShape(shape_name)
 
     @staticmethod
-    def activate_terminal_node(products):
+    def activate_terminal_node(products) -> None:
         """
         Method to 'Activate Terminal Node'.
         Loops through ALL products in product and activates_default_shape().
@@ -631,7 +631,7 @@ class Product(AnyObject):
 
         loop_d_loop(products)
 
-    def add_master_shape_representation(self, i_shape_path_name=None):
+    def add_master_shape_representation(self, i_shape_path_name=None) -> None:
         """
         .. note::
             :class: toggle
@@ -669,8 +669,13 @@ class Product(AnyObject):
         """
         return self.product.AddMasterShapeRepresentation(i_shape_path_name)
 
-    def add_shape_representation(self, i_shape_path_name: str, i_shape_name: str, i_rep_behavior: int,
-                                 i_context: bool) -> None:
+    def add_shape_representation(
+            self, 
+            i_shape_path_name: str, 
+            i_shape_name: str, 
+            i_rep_behavior: int,
+            i_context: bool
+        ) -> None:
         """
         .. note::
             :class: toggle
@@ -765,7 +770,7 @@ class Product(AnyObject):
         """
         return self.product.ApplyWorkMode(new_mode)
 
-    def attributes(self):
+    def attributes(self) -> str:
         """
         Returns a string describing the products attributes.
         :return: str
@@ -962,7 +967,7 @@ class Product(AnyObject):
 
         return Document(part)
 
-    def get_active_shape_name(self):
+    def get_active_shape_name(self) -> str:
         """
         .. note::
             :class: toggle
@@ -979,7 +984,7 @@ class Product(AnyObject):
         """
         return self.product.GetActiveShapeName()
 
-    def get_all_shapes_names(self, olistshape: tuple) -> None:
+    def get_all_shapes_names(self, olistshape: tuple) -> list:
         """
         .. note::
             :class: toggle
@@ -1013,13 +1018,13 @@ class Product(AnyObject):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_child(self, index):
+    def get_child(self, index) -> 'Product':
         """
         :return: Product()
         """
         return Product(self.product.Products.Item(index + 1))
 
-    def get_children(self):
+    def get_children(self) -> list:
         """
         :return: list(Product())
         """
@@ -1033,7 +1038,7 @@ class Product(AnyObject):
 
         return children
 
-    def get_default_shape_name(self):
+    def get_default_shape_name(self) -> str:
         """
         .. note::
             :class: toggle
@@ -1067,7 +1072,6 @@ class Product(AnyObject):
                 |             Parameter to set to True if the master shape representation should
                 |             be loaded to determine if it exists, or to False otherwise.
                 |
-                |
                 |     Example:
                 |
                 |           This example retrieves in MSRep the
@@ -1095,9 +1099,8 @@ class Product(AnyObject):
                 |
                 |     Example:
                 |
-                |           This example retrieves in MSRep the
+                |          This example retrieves in MSRep the
                 |          Engine product's master shape representation.
-                |
                 |
                 |          Set MSRepPath = Engine.GetMasterShapeRepresentationPathName
 
@@ -1122,7 +1125,7 @@ class Product(AnyObject):
         """
         return self.product.GetNumberOfShapes()
 
-    def get_shape_path_name(self, i_shape_name=None):
+    def get_shape_path_name(self, i_shape_name=None) -> str:
         """
         .. note::
             :class: toggle
@@ -1145,8 +1148,13 @@ class Product(AnyObject):
         """
         return self.product.GetShapePathName(i_shape_name)
 
-    def get_shape_representation(self, i_load_if_necessary: bool, i_shape_name: str, i_rep_behavior: int,
-                                 i_context: bool) -> AnyObject:
+    def get_shape_representation(
+            self, 
+            i_load_if_necessary: bool, 
+            i_shape_name: str, 
+            i_rep_behavior: int,
+            i_context: bool
+        ) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -1179,9 +1187,8 @@ class Product(AnyObject):
                 |
                 |     Example:
                 |
-                |           This example retrieves in MSRep the
+                |          This example retrieves in MSRep the
                 |          Engine product's  3D representation named "PART".
-                |
                 |
                 |          Dim MSRep As Object
                 |          Set MSRep = Engine.GetMasterShapeRepresentation(True,"PART",catRep3D,TRUE)
@@ -1245,9 +1252,8 @@ class Product(AnyObject):
                 |
                 |     Example:
                 |
-                |           This example retrieves in HasMSRep whether the
+                |          This example retrieves in HasMSRep whether the
                 |          Engine product has a master shape representation.
-                |
                 |
                 |          HasMSRep = Engine.HasAMasterShapeRepresentation()
 
@@ -1255,7 +1261,7 @@ class Product(AnyObject):
         """
         return self.product.HasAMasterShapeRepresentation()
 
-    def has_children(self):
+    def has_children(self) -> bool:
         """
         :return: bool
         """
@@ -1294,9 +1300,8 @@ class Product(AnyObject):
                 |
                 |     Example:
                 |
-                |           This example retrieves in HasRep whether the
+                |          This example retrieves in HasRep whether the
                 |          Engine product has a master shape representation.
-                |
                 |
                 |          HasRep = Engine.HasRepresentation("PART",catRep3D,TRUE)
 
@@ -1307,7 +1312,7 @@ class Product(AnyObject):
         """
         return self.product.HasShapeRepresentation(i_shape_name, i_rep_behavior, i_context)
 
-    def is_catproduct(self):
+    def is_catproduct(self) -> bool:
         """
         :rtype: bool
         """
@@ -1317,7 +1322,7 @@ class Product(AnyObject):
 
         return False
 
-    def is_catpart(self):
+    def is_catpart(self) -> bool:
         """
         :rtype: bool
         """
@@ -1327,7 +1332,7 @@ class Product(AnyObject):
 
         return False
 
-    def path(self):
+    def path(self) -> Path:
         """
 
         Returns the pathlib.Path() object of the document fullname.
@@ -1406,10 +1411,8 @@ class Product(AnyObject):
                 |
                 |     Example:
                 |
-                |           This example removes the 3D representation named "PART" of
-                |           the
+                |          This example removes the 3D representation named "PART" of the
                 |          Engine product.
-                |
                 |
                 |          Engine.RemoveMasterShapeRepresentation
                 |         ("PART",catRep3D,TRUE)
