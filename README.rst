@@ -31,26 +31,6 @@ All this said many bugs that exist should be for the most part be quite easy to
 fix using those methods that do work as a reference.
 
 
-Why was it made?
-----------------
-
-pycatia was initially created to access the CATIA Automation Measurable object
-and it's methods without the need of visual basic / CATScripts.
-
-Some of the methods can be accessed directly using the pywin32 module but there
-are a number that just simply won't work using python. There are several
-questions on stack overflow and the pywin32 mailing list regarding this. But,
-they failed to provide any working examples with the Measurable object in python.
-
-pycatia accesses these methods by running VBA scripts using the 
-`Dispatch('CATIA.Application').SystemService.Evaluate()` function and passing a
-public function to it. Otherwise, pycatia uses the VB method directly but
-exposes it within the same python class.
-
-There is now a lot more functionality available which can be seen by looking at
-the examples provided and reading the API at pycatia.readthedocs.io_.
-
-
 Requirements
 ------------
 
