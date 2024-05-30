@@ -164,7 +164,7 @@ class SFMStiffener(SFMProfile):
         :param Reference value:
         """
 
-        self.sfm_stiffener.WebSupport = value
+        self.sfm_stiffener.WebSupport = value.com_object
 
     @property
     def web_support_offset(self) -> float:

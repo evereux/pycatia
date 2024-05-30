@@ -206,7 +206,7 @@ class Revolution(SketchBasedShape):
         :param Reference value:
         """
 
-        self.revolution.RevoluteAxis = value
+        self.revolution.RevoluteAxis = value.com_object
 
     @property
     def second_angle(self) -> Angle:

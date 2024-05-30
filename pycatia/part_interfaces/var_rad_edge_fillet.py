@@ -123,7 +123,7 @@ class VarRadEdgeFillet(EdgeFillet):
         :param Reference value:
         """
 
-        self.var_rad_edge_fillet.FilletSpine = value
+        self.var_rad_edge_fillet.FilletSpine = value.com_object
 
     @property
     def fillet_variation(self) -> int:

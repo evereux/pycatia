@@ -128,7 +128,7 @@ class Rotate(Shape):
         :param Reference value:
         """
 
-        self.rotate.Axis = value
+        self.rotate.Axis = value.com_object
 
     @property
     def hybrid_shape(self) -> HybridShape:

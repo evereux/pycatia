@@ -83,7 +83,7 @@ class Scaling2(Shape):
         :param Reference value:
         """
 
-        self.scaling2.Center = value
+        self.scaling2.Center = value.com_object
 
     @property
     def ratio(self) -> RealParam:

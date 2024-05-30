@@ -114,7 +114,7 @@ class AutoDraft(DressUpShape):
         :param Reference value:
         """
 
-        self.auto_draft.MainDraftAngle = value
+        self.auto_draft.MainDraftAngle = value.com_object
 
     @property
     def mode(self) -> Reference:
@@ -145,7 +145,7 @@ class AutoDraft(DressUpShape):
         :param Reference value:
         """
 
-        self.auto_draft.Mode = value
+        self.auto_draft.Mode = value.com_object
 
     @property
     def parting_element(self) -> Reference:
@@ -177,7 +177,7 @@ class AutoDraft(DressUpShape):
         :param Reference value:
         """
 
-        self.auto_draft.PartingElement = value
+        self.auto_draft.PartingElement = value.com_object
 
     @property
     def pulling_direction(self) -> Reference:
@@ -209,7 +209,7 @@ class AutoDraft(DressUpShape):
         :param Reference value:
         """
 
-        self.auto_draft.PullingDirection = value
+        self.auto_draft.PullingDirection = value.com_object
 
     def __repr__(self):
         return f'AutoDraft(name="{self.name}")'

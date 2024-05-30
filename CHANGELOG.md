@@ -1,5 +1,62 @@
 # Changelog
 
+## 0.7.0
+* fixed the following Class methods so that the Reference.com_object is passed to 
+ the setter method instead of just the Reference:
+  * SFMMember2Points.end_point_on_crv_curve, 
+  * SFMMember2Points.end_point_spec,
+  * SFMMember2Points.start_point_on_crv_curve,
+  * SFMMember2Points.start_point_spec,
+  * SFMMemberCurve.curve,
+  * SFMMemberCurve.reference_surface,
+  * SFMMemberCurve.reference_surface,
+  * SFMMemberPlane2Curves.first_curve,
+  * SFMMemberPlane2Curves.plane,
+  * SFMMemberPlane2Curves.second_member,
+  * SFMMemberPointLength.direction,
+  * SFMMemberPointLength.point,
+  * SFMMemberPointUpToLimit.direction,
+  * SFMMemberPointUpToLimit.limit,
+  * SFMMemberPointUpToLimit.point,
+  * SFMMemberSurfSurf.first_surface,
+  * SFMMemberSurfSurf.second_surface,
+  * SFMStiffener.web_support, 
+  * SFMSuperPlate.support,
+  * AxisSystem.axis_rotation_reference,
+  * AutoDraft.main_draft_angle,
+  * AutoDraft.mode,
+  * AutoDraft.parting_element,
+  * AutoDraft.pulling_direction,
+  * Draft.parting_element,
+  * DraftDomain.neutral_element,
+  * DraftDomain.pulling_direction_element,
+  * FaceFillet.first_face,
+  * FaceFillet.second_face,
+  * Mirror.mirroring_plane,
+  * Revolution.revolute_axis,
+  * Rotate.axis,
+  * Scaling.scaling_reference,
+  * Scaling2.ratio_value,
+  * SolidCombine.first_component_direction,
+  * SolidCombine.first_component_profile,
+  * SolidCombine.second_component_direction,
+  * SolidCombine.second_component_profile,
+  * SurfaceBasedShape.surface,
+  * Sweep.center_curve_element,
+  * Sweep.pulling_dir_element,
+  * Sweep.reference_surface_element,
+  * Thread.lateral_face_element,
+  * Thread.limit_face_element,
+  * TritangentFillet.face_to_remove,
+  * TritangentFillet.first_face,
+  * TritangentFillet.second_face,
+  * VarRadEdgeFillet.fillet_spine,
+  * StrCutoutFeature.direction_element,
+  * StrCutoutFeature.reference_surface,
+  * StrMember.surface_reference,
+  * StrPlate.support
+
+
 ## 0.6.9
 
 * added the following document types that can be created with Document.add(): 

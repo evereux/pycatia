@@ -70,7 +70,7 @@ class SFMMemberCurve(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_curve.Curve = value
+        self.sfm_member_curve.Curve = value.com_object
 
     @property
     def reference_surface(self) -> Reference:
@@ -101,7 +101,7 @@ class SFMMemberCurve(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_curve.ReferenceSurface = value
+        self.sfm_member_curve.ReferenceSurface = value.com_object
 
     @property
     def reference_surface_orientation(self) -> int:

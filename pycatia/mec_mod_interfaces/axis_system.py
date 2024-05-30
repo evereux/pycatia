@@ -79,7 +79,7 @@ class AxisSystem(AnyObject):
         :param Reference value:
         """
 
-        self.axis_system.AxisRotationReference = value
+        self.axis_system.AxisRotationReference = value.com_object
 
     @property
     def is_current(self) -> bool:

@@ -173,7 +173,7 @@ class StrCutoutFeature(AnyObject):
         :param Reference value:
         """
 
-        self.str_cutout_feature.DirectionElement = value
+        self.str_cutout_feature.DirectionElement = value.com_object
 
     @property
     def reference_surface(self) -> Reference:
@@ -205,7 +205,7 @@ class StrCutoutFeature(AnyObject):
         :param Reference value:
         """
 
-        self.str_cutout_feature.ReferenceSurface = value
+        self.str_cutout_feature.ReferenceSurface = value.com_object
 
     def get_object(self) -> Product:
         """

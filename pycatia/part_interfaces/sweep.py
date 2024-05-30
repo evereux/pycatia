@@ -119,7 +119,7 @@ class Sweep(SketchBasedShape):
         :param Reference value:
         """
 
-        self.sweep.CenterCurveElement = value
+        self.sweep.CenterCurveElement = value.com_object
 
     @property
     def is_thin(self) -> bool:
@@ -348,7 +348,7 @@ class Sweep(SketchBasedShape):
         :param Reference value:
         """
 
-        self.sweep.PullingDirElement = value
+        self.sweep.PullingDirElement = value.com_object
 
     @property
     def reference_surface_element(self) -> Reference:
@@ -373,7 +373,7 @@ class Sweep(SketchBasedShape):
         :param Reference value:
         """
 
-        self.sweep.ReferenceSurfaceElement = value
+        self.sweep.ReferenceSurfaceElement = value.com_object
 
     def set_keep_angle_option(self) -> None:
         """

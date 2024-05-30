@@ -74,7 +74,7 @@ class FaceFillet(Fillet):
         :param Reference value:
         """
 
-        self.face_fillet.FirstFace = value
+        self.face_fillet.FirstFace = value.com_object
 
     @property
     def radius(self) -> Length:
@@ -130,7 +130,7 @@ class FaceFillet(Fillet):
         :param Reference value:
         """
 
-        self.face_fillet.SecondFace = value
+        self.face_fillet.SecondFace = value.com_object
 
     def __repr__(self):
         return f'FaceFillet(name="{ self.name }")'

@@ -70,7 +70,7 @@ class SFMMemberPointLength(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_point_length.Direction = value
+        self.sfm_member_point_length.Direction = value.com_object
 
     @property
     def direction_orientation(self) -> int:
@@ -178,7 +178,7 @@ class SFMMemberPointLength(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_point_length.Point = value
+        self.sfm_member_point_length.Point = value.com_object
 
     def invert_direction(self) -> None:
         """

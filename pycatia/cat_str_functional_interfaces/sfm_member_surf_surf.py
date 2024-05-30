@@ -70,7 +70,7 @@ class SFMMemberSurfSurf(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_surf_surf.FirstSurface = value
+        self.sfm_member_surf_surf.FirstSurface = value.com_object
 
     @property
     def first_surface_offset(self) -> float:
@@ -178,7 +178,7 @@ class SFMMemberSurfSurf(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_surf_surf.SecondSurface = value
+        self.sfm_member_surf_surf.SecondSurface = value.com_object
 
     @property
     def second_surface_offset(self) -> float:

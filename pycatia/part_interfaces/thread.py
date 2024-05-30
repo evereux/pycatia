@@ -128,7 +128,7 @@ class Thread(DressUpShape):
         :param Reference value:
         """
 
-        self.thread.LateralFaceElement = value
+        self.thread.LateralFaceElement = value.com_object
 
     @property
     def limit_face_element(self) -> Reference:
@@ -153,7 +153,7 @@ class Thread(DressUpShape):
         :param Reference value:
         """
 
-        self.thread.LimitFaceElement = value
+        self.thread.LimitFaceElement = value.com_object
 
     @property
     def pitch(self) -> float:

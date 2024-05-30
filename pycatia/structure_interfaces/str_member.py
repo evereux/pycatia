@@ -263,7 +263,7 @@ class StrMember(StrObject):
         :param Reference value:
         """
 
-        self.str_member.SurfaceReference = value
+        self.str_member.SurfaceReference = value.com_object
 
     def create_cutback(self, i_member: 'StrMember', i_cutback: int, i_offset: float) -> StrCutback:
         """
