@@ -119,7 +119,7 @@ class StrPlate(StrObject):
         :param Reference value:
         """
 
-        self.str_plate.Support = value
+        self.str_plate.Support = value.com_object
 
     def reverse_direction(self) -> None:
         """

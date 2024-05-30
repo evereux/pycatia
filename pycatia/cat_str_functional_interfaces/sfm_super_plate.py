@@ -178,7 +178,7 @@ class SFMSuperPlate(SFMObject):
         :param Reference value:
         """
 
-        self.sfm_super_plate.Support = value
+        self.sfm_super_plate.Support = value.com_object
 
     @property
     def support_offset(self) -> float:

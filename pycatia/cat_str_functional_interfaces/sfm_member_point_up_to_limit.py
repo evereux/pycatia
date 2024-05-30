@@ -69,7 +69,7 @@ class SFMMemberPointUpToLimit(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_point_up_to_limit.Direction = value
+        self.sfm_member_point_up_to_limit.Direction = value.com_object
 
     @property
     def direction_orientation(self) -> int:
@@ -131,7 +131,7 @@ class SFMMemberPointUpToLimit(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_point_up_to_limit.Limit = value
+        self.sfm_member_point_up_to_limit.Limit = value.com_object
 
     @property
     def point(self) -> Reference:
@@ -163,7 +163,7 @@ class SFMMemberPointUpToLimit(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_point_up_to_limit.Point = value
+        self.sfm_member_point_up_to_limit.Point = value.com_object
 
     def invert_direction(self) -> None:
         """

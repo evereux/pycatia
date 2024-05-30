@@ -68,7 +68,7 @@ class SFMMemberPlane2Curves(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_plane2_curves.FirstCurve = value
+        self.sfm_member_plane2_curves.FirstCurve = value.com_object
 
     @property
     def first_member(self) -> Reference:
@@ -130,7 +130,7 @@ class SFMMemberPlane2Curves(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_plane2_curves.Plane = value
+        self.sfm_member_plane2_curves.Plane = value.com_object
 
     @property
     def second_curve(self) -> Reference:
@@ -152,7 +152,7 @@ class SFMMemberPlane2Curves(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member_plane2_curves.SecondCurve = value
+        self.sfm_member_plane2_curves.SecondCurve = value.com_object
 
     @property
     def second_member(self) -> Reference:

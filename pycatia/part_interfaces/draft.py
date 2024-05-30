@@ -127,7 +127,7 @@ class Draft(DressUpShape):
         :param Reference value:
         """
 
-        self.draft.PartingElement = value
+        self.draft.PartingElement = value.com_object
 
     def __repr__(self):
         return f'Draft(name="{self.name}")'

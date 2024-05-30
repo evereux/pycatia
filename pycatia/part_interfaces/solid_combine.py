@@ -69,7 +69,7 @@ class SolidCombine(SketchBasedShape):
         :param Reference value:
         """
 
-        self.solid_combine.FirstComponentDirection = value
+        self.solid_combine.FirstComponentDirection = value.com_object
 
     @property
     def first_component_profile(self) -> Reference:
@@ -102,7 +102,7 @@ class SolidCombine(SketchBasedShape):
         :param Reference value:
         """
 
-        self.solid_combine.FirstComponentProfile = value
+        self.solid_combine.FirstComponentProfile = value.com_object
 
     @property
     def second_component_direction(self) -> Reference:
@@ -135,7 +135,7 @@ class SolidCombine(SketchBasedShape):
         :param Reference value:
         """
 
-        self.solid_combine.SecondComponentDirection = value
+        self.solid_combine.SecondComponentDirection = value.com_object
 
     @property
     def second_component_profile(self) -> Reference:
@@ -168,7 +168,7 @@ class SolidCombine(SketchBasedShape):
         :param Reference value:
         """
 
-        self.solid_combine.SecondComponentProfile = value
+        self.solid_combine.SecondComponentProfile = value.com_object
 
     def __repr__(self):
         return f'SolidCombine(name="{ self.name }")'

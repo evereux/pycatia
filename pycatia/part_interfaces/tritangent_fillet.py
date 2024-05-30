@@ -76,7 +76,7 @@ class TritangentFillet(Fillet):
         :param Reference value:
         """
 
-        self.tritangent_fillet.FaceToRemove = value
+        self.tritangent_fillet.FaceToRemove = value.com_object
 
     @property
     def first_face(self) -> Reference:
@@ -111,7 +111,7 @@ class TritangentFillet(Fillet):
         :param Reference value:
         """
 
-        self.tritangent_fillet.FirstFace = value
+        self.tritangent_fillet.FirstFace = value.com_object
 
     @property
     def second_face(self) -> Reference:
@@ -146,7 +146,7 @@ class TritangentFillet(Fillet):
         :param Reference value:
         """
 
-        self.tritangent_fillet.SecondFace = value
+        self.tritangent_fillet.SecondFace = value.com_object
 
     def __repr__(self):
         return f'TritangentFillet(name="{ self.name }")'

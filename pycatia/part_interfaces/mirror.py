@@ -91,7 +91,7 @@ class Mirror(TransformationShape):
         :param Reference value:
         """
 
-        self.mirror.MirroringPlane = value
+        self.mirror.MirroringPlane = value.com_object
 
     def __repr__(self):
         return f'Mirror(name="{ self.name }")'

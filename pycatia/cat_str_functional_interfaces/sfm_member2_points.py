@@ -61,7 +61,7 @@ class SFMMember2Points(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member2_points.EndPointOnCrvCurve = value
+        self.sfm_member2_points.EndPointOnCrvCurve = value.com_object
 
     @property
     def end_point_on_crv_mode(self) -> bool:
@@ -163,7 +163,7 @@ class SFMMember2Points(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member2_points.EndPointSpec = value
+        self.sfm_member2_points.EndPointSpec = value.com_object
 
     @property
     def start_point_on_crv_curve(self) -> Reference:
@@ -195,7 +195,7 @@ class SFMMember2Points(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member2_points.StartPointOnCrvCurve = value
+        self.sfm_member2_points.StartPointOnCrvCurve = value.com_object
 
     @property
     def start_point_on_crv_mode(self) -> bool:
@@ -307,7 +307,7 @@ class SFMMember2Points(SFMMember):
         :param Reference value:
         """
 
-        self.sfm_member2_points.StartPointSpec = value
+        self.sfm_member2_points.StartPointSpec = value.com_object
 
     def invert_end_point_on_crv_orientation(self) -> None:
         """

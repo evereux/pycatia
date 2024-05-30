@@ -64,7 +64,7 @@ class SurfaceBasedShape(Shape):
         :param Reference value:
         """
 
-        self.surface_based_shape.Surface = value
+        self.surface_based_shape.Surface = value.com_object
 
     def __repr__(self):
         return f'SurfaceBasedShape(name="{ self.name }")'

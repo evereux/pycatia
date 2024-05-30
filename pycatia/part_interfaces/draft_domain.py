@@ -157,7 +157,7 @@ class DraftDomain(AnyObject):
         :param Reference value:
         """
 
-        self.draft_domain.NeutralElement = value
+        self.draft_domain.NeutralElement = value.com_object
 
     @property
     def neutral_propagation_mode(self) -> int:
@@ -227,7 +227,7 @@ class DraftDomain(AnyObject):
         :param Reference value:
         """
 
-        self.draft_domain.PullingDirectionElement = value
+        self.draft_domain.PullingDirectionElement = value.com_object
 
     def add_face_to_draft(self, i_face: Reference) -> None:
         """
