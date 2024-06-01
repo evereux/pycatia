@@ -41,7 +41,7 @@ A brief overview of the pycatia Automation Objects and their relations.
  |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| :ref:`LightSources<LightSources>` |br|
  |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| :ref:`LightSource<LightSource>` |br|
  |nbsp| |nbsp| |nbsp| |nbsp| :ref:`PageSetup<PageSetup>` |br|
- |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| :ref:`DraftingPageSetup<DraftingPageSetup>` |br|
+ |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| |nbsp| :ref:`DrawingPageSetup<DrawingPageSetup>` |br|
  |nbsp| |nbsp| :ref:`Printers<Printers>` |br|
  |nbsp| |nbsp| |nbsp| |nbsp| :ref:`Printer<Printer>` |br|
  |nbsp| |nbsp| :ref:`FileSystem<FileSystem>` |br|
