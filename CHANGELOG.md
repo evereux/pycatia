@@ -9,6 +9,7 @@
 * updated the examples so they use explicit path objects.
 * updated the examples to show how to better initialise documents.
 * updated the user_scripts to show how to better initialise documents.
+* updated the introdutcion document to show how to get the PartDocument.
 
 
 ## 0.7.0

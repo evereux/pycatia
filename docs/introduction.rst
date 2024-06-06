@@ -19,6 +19,7 @@ You will almost always want to import the `catia`
 .. code-block:: python
 
     from pycatia import catia
+    from pycatia.mec_mod_interfaces.part_document import PartDocument
     # initialise the catia automation appliction. CATIA V5 should already be running.
     caa = catia()
     documents = caa.documents
@@ -28,27 +29,20 @@ class.
 
 .. code-block:: python
 
-    documents.add('Part')
+    part_document: PartDocument = documents.add('Part')
 
 the add method of the documents class expects the string 'Part', 'Product' or
 'Drawing'. ``documents.add('Part')`` adds a new CATPart to the documents
-collection.
-
-We want to work on this new document. Since this has just been added it's the
-active document.
-
-.. code-block:: python
-
-    document = caa.active_document
+collection and returns a `Document`` object. In this case it is a `PartDocument`.
 
 The document object :ref:`Document<Document>` has a
 number of properties that can be accessed.
 
 .. code-block:: python
 
-    document.name
+    part_document.name
     # returns the name of the new document.
-    document.path
+    part_document.path
     # returns the pathlib.Path object of the document.
 
 
@@ -61,14 +55,13 @@ create one here anyway.
 
 .. code-block:: python
 
-    part = document.part()
+    part = part_document.part
     hybrid_bodies = part.hybrid_bodies
     new_set = hybrid_bodies.add()
     new_set.name
     # returns the name of your new set.
     # to rename the set.
     new_set.name = 'Construction Geometry'
-
 
 
 
