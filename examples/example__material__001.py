@@ -24,6 +24,8 @@ import sys
 sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
+from pathlib import Path
+
 from pycatia import catia
 from pycatia.cat_mat_interfaces.material_document import MaterialDocument
 from pycatia.cat_mat_interfaces.material_manager import MaterialManager
@@ -35,8 +37,7 @@ caa = catia()
 ##########################################################
 # MATERIAL MANAGER ON MATERIAL CATALOGS
 ##########################################################
-material_documents = caa.documents.open(r"tests/cat_files/Catalog.CATMaterial")
-material_document = MaterialDocument(caa.active_document.com_object)
+material_document: MaterialDocument = caa.documents.open(Path(os.getcwd(), r"tests/cat_files/Catalog.CATMaterial"))
 material_families = material_document.families
 materials = material_families.item(1).materials
 

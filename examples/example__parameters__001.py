@@ -21,35 +21,27 @@ import sys
 
 sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
+from pathlib import Path
 
 from pycatia import catia
-from pycatia.mec_mod_interfaces.part import Part
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 # from pycatia.knowledge_interfaces import BoolParam
 
 caa = catia()
 documents = caa.documents
-documents.open(r"tests/cat_files/part_measurable.CATPart")
-
-document = PartDocument(caa.active_document.com_object)
-part = Part(document.part.com_object)
+part_document: PartDocument = documents.open(Path(os.getcwd(), r"tests/cat_files/part_measurable.CATPart"))
+part = part_document.part
 bodies = part.bodies
-# Note: It's not necessary to explicitly use the PartDocument or the Part class
-# with the com_object. It's perfectly fine to write it like this:
-#   document = caa.active_document
-#   part = document.part
-# But declaring 'document' and 'part' this way, your linter can't resolve the
-# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
 
 # gets part parameters
 part_parameters = part.parameters
 
 # create parameter to activate pocket
 part_parameters.create_boolean("Activate_Pocket", True)
+pocket_activity = part_parameters.item("Activate_Pocket")
 
 # find and assign parameters
-pocket_activity = part_parameters.item("Activate_Pocket")
 
 # gets RootParameterSet inside of parameters
 root_parameter_set = part_parameters.root_parameter_set

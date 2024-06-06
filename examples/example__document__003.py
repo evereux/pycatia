@@ -26,27 +26,26 @@ import os
 from pathlib import Path
 
 from pycatia import catia
-from pycatia.in_interfaces.document import Document
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 # path to file to open.
-file_name = r"tests\cat_files\part_measurable.CATPart"
+file_name = Path(os.getcwd(), r"tests\cat_files\part_measurable.CATPart")
 
 caa = catia()
 # open document
 documents = caa.documents
-documents.open(file_name)
+part_document: PartDocument = documents.open(file_name)
 
-document = caa.active_document
-assert isinstance(document, Document)
+assert isinstance(part_document, PartDocument)
 
 # _Full_ path of new file. This uses current working directory.
 new_file_name = Path(os.getcwd(), "new_part.CATPart")
 # save document as new name.
-document.save_as(new_file_name, overwrite=True)
+part_document.save_as(new_file_name, overwrite=True)
 
 # to export to another support file_format (license permitting).
 new_export_file_name = Path("c:\\temp\\new_export_part.stp")
-document.export_data(new_export_file_name, "stp", overwrite=True)
+part_document.export_data(new_export_file_name, "stp", overwrite=True)
 
 # close document
-document.close()
+part_document.close()

@@ -23,24 +23,16 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 
 from pycatia import catia
 from pycatia.knowledge_interfaces.length import Length
-from pycatia.mec_mod_interfaces.part import Part
 from pycatia.mec_mod_interfaces.part_document import PartDocument
-from pycatia.product_structure_interfaces.product import Product
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 # from pycatia.knowledge_interfaces import BoolParam
 
 caa = catia()
-documents = caa.documents
-
-document = PartDocument(caa.active_document.com_object)
-product = Product(document.product.com_object)
-part = Part(document.part.com_object)
-# Note: It's not necessary to explicitly use the PartDocument or the Part class
-# with the com_object. It's perfectly fine to write it like this:
-#   document = caa.active_document
-#   part = document.part
-# But declaring 'document' and 'part' this way, your linter can't resolve the
-# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
+part_document: PartDocument = caa.active_document
+part = part_document.part
+product_document: ProductDocument = ProductDocument(caa.active_document.com_object)
+product = product_document.product
 
 # gets the parameters collection
 parameters = part.parameters

@@ -25,19 +25,12 @@ from collections import Counter
 from datetime import datetime
 
 from pycatia import catia
-from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 caa = catia()
-document = ProductDocument(caa.active_document.com_object).product
-product = Product(document.com_object)
+product_document: ProductDocument = caa.active_document
+product = product_document.product
 products = product.products
-# Note: It's not necessary to explicitly use the ProductDocument or the Product class
-# with the com_object. It's perfectly fine to write it like this:
-#   document = caa.active_document
-#   product = document.product
-# But declaring 'document' and 'product' this way, your linter can't resolve the
-# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
 
 part_numbers = []
 prd_dict = {}

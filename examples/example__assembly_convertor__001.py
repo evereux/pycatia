@@ -33,21 +33,14 @@ from pathlib import Path
 
 from pycatia import catia
 from pycatia.product_structure_interfaces.assembly_convertor import AssemblyConvertor
-from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 # file_type can be "TXT", "HTML" or "XLS".
 file_type = "XLS"
 
 caa = catia()
-document = ProductDocument(caa.active_document.com_object)
-product = Product(document.product.com_object)
-# Note: It's not necessary to explicitly use the ProductDocument or the Product class
-# with the com_object. It's perfectly fine to write it like this:
-#   document = caa.active_document
-#   product = document.product
-# But declaring 'document' and 'product' this way, your linter can't resolve the
-# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
+product_document = ProductDocument(caa.active_document.com_object)
+product = product_document.product
 
 bom = product.get_item("BillOfMaterial")
 assembly_convertor = AssemblyConvertor(bom.com_object)
