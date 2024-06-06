@@ -74,19 +74,20 @@ import yaml
 from pycatia import catia
 from pycatia.knowledge_interfaces.parameter_set import ParameterSet
 from pycatia.knowledge_interfaces.parameters import Parameters
-from pycatia.mec_mod_interfaces.part import Part
-from pycatia.product_structure_interfaces.product import Product
+from pycatia.mec_mod_interfaces.part_document import PartDocument
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 f = Path(os.getcwd(), 'user_scripts', 'create_parameters_from_yaml_support', 'parameters.yaml')
 
 caa = catia()
 application = caa.application
 documents = application.documents
-new_part = documents.add('Part').com_object
-document = application.active_document
+part_document: PartDocument = documents.add('Part')
+active_document = application.active_document
 
-product = Product(document.product.com_object)
-part = Part(document.part.com_object)
+product_document = ProductDocument(active_document.com_object)
+product = product_document.product
+part = part_document.part
 
 
 def get_yaml_file(yaml_file: Path) -> dict:
