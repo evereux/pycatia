@@ -2,6 +2,10 @@
 
 ## 0.7.1
 * fixed Documents.read() method which was broken by changes made in 0.6.9.
+* updated Documents.open() so that filename should now be a Path object.
+* updated Documents.new_from() so that filename should now be a Path object.
+* updated Documents.open() so that filename should now be a Path object.
+
 
 ## 0.7.0
 * fixed the following Class methods so that the Reference.com_object is passed to 
