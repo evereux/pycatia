@@ -135,6 +135,7 @@ quick_n_dirty.py
 *.CATDrawing
 *.CATPart
 *.CATProduct
+*.CATMaterial
 
 pycatia-exe.build
 pycatia-exe.dist
