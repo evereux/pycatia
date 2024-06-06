@@ -25,9 +25,9 @@ from pycatia import catia
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 caa = catia()
-documents = caa.documents
-doc = PartDocument(caa.active_document.com_object)
-part = doc.part
+# if the active document is a CATPart this will return a PartDocument
+part_document: PartDocument = caa.active_document
+part = part_document.part
 part.in_work_object = part.main_body
 
 mirror_reference = part.create_reference_from_object(part.origin_elements.plane_zx)

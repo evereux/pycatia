@@ -36,14 +36,9 @@ a0_x = 1189
 a0_y = 841
 
 caa = catia()
-document = DrawingDocument(caa.active_document.com_object)
-drawing = DrawingRoot(document.drawing_root.com_object)
-# Note: It's not necessary to explicitly use the DrawingDocument or the DrawingRoot class
-# with the com_object. It's perfectly fine to write it like this:
-#   document = caa.active_document
-#   drawing = document.drawing_root
-# But declaring 'document' and 'drawing_root' this way, your linter can't resolve the
-# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
+# if the active document is a CATDrawing this will return a DrawingDocument
+drawing_document: DrawingDocument = caa.active_document
+drawing = DrawingRoot(drawing_document.drawing_root.com_object)
 
 sheets = drawing.sheets
 sheet = sheets.active_sheet

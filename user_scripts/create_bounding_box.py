@@ -49,19 +49,19 @@ from pycatia.cat_logger import create_logger
 from pycatia.enumeration.enumeration_types import cat_constraint_type, cat_vis_property_show, cat_constraint_mode
 from pycatia.knowledge_interfaces.length import Length
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
-from pycatia.mec_mod_interfaces.part import Part
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.sketcher_interfaces.geometry_2D import Geometry2D
 
 logger = create_logger()
 
 caa = catia()
 application = caa.application
-document = application.active_document
+part_document: PartDocument = application.active_document
 
-if '.CATPart' not in document.name:
+if '.CATPart' not in part_document.name:
     logger.critical('There must be an CATPart open and active.')
 
-part = Part(document.part.com_object)
+part = part_document.part
 shape_factory = part.shape_factory
 hybrid_shape_factory = part.hybrid_shape_factory
 bodies = part.bodies
@@ -76,7 +76,7 @@ if mb == 2:
     logger.info('Exiting script.')
     exit()
 
-selection = document.selection
+selection = part_document.selection
 selection.clear()
 filter_ = ('AxisSystem',)
 logger.info('Select the Axis system.')
