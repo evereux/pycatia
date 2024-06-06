@@ -10,7 +10,7 @@ def test_application():
 
 def test_refresh():
     documents = caa.documents
-    documents.open(str(cat_part_measurable))
+    documents.open(cat_part_measurable)
     document = caa.active_document
 
     caa.refresh_display = False
@@ -24,7 +24,7 @@ def test_refresh():
 
 def test_visible():
     documents = caa.documents
-    documents.open(str(cat_part_measurable))
+    documents.open(cat_part_measurable)
     document = caa.active_document
 
     caa.visible = False
