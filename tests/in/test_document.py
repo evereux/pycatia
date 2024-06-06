@@ -195,6 +195,12 @@ def test_open_document():
         assert document.name == cat_part_measurable.name
         assert f'PartDocument(name="{document.name}")' == document.__repr__()
 
+def test_read_document():
+
+    documents = caa.documents
+    document = documents.read(cat_part_measurable)
+
+    assert type(document) == PartDocument
 
 def test_part():
     with CATIADocHandler(cat_part_measurable) as caa:
