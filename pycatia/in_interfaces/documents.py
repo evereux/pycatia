@@ -155,7 +155,7 @@ class Documents(Collection):
             if not os.path.isfile(file_name):
                 raise FileNotFoundError(f'Could not find file {file_name}.')
         else:
-            if not file_name.is_file:
+            if not file_name.is_file():
                 raise FileNotFoundError(f'Could not find file {file_name}.')
 
 
@@ -266,7 +266,11 @@ class Documents(Collection):
 
         try:
             self.logger.info(f'Opening document "{file_name}".')
-            return Document(self.documents.Open(file_name))
+            open_doc_com = self.documents.Open(file_name)
+            extension = file_name.suffix[1:]
+            types = [document_types[k]['type'] for k in (document_types) if document_types[k]['extension'] == extension]
+            document_type = types[0]
+            return document_type(open_doc_com)
         except com_error:
             raise CATIAApplicationException(
                 f'Could not open document "{file_name}". '
