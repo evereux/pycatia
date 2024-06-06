@@ -305,8 +305,10 @@ class Documents(Collection):
         # return Document(self.documents.Read(file_name))
 
         read_doc_com = self.documents.Read(file_name)
-        doc_suffix = file_name.split('.')[-1]
-        return document_types[doc_suffix](read_doc_com)
+        extension = file_name.split('.')[-1]
+        types = [document_types[k]['type'] for k in (document_types) if document_types[k]['extension'] == extension]
+        document_type = types[0]
+        return document_type(read_doc_com)
 
     def __getitem__(self, n: int) -> Document:
         if (n + 1) > self.count:
