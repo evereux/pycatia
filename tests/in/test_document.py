@@ -21,9 +21,9 @@ os.makedirs(junk_folder, exist_ok=True)
 
 def test_activate_document():
     documents = caa.documents
-    documents.open(str(cat_part_measurable))
+    documents.open(cat_part_measurable)
     document_part = caa.active_document
-    documents.open(str(cat_product))
+    documents.open(cat_product)
     document_product = caa.active_document
 
     assert document_part.name == os.path.basename(cat_part_measurable)
@@ -160,7 +160,7 @@ def test_item():
 
 def test_new_from():
     documents = caa.documents
-    document = documents.new_from(str(cat_part_measurable))
+    document = documents.new_from(cat_part_measurable)
 
     assert document.name is not os.path.basename(cat_part_measurable)
 
@@ -195,6 +195,14 @@ def test_open_document():
         assert document.name == cat_part_measurable.name
         assert f'PartDocument(name="{document.name}")' == document.__repr__()
 
+def test_read_document():
+
+    documents = caa.documents
+    document = documents.read(cat_part_measurable)
+
+    assert type(document) == PartDocument
+
+    document.close
 
 def test_part():
     with CATIADocHandler(cat_part_measurable) as caa:

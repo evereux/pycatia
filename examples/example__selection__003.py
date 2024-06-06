@@ -22,7 +22,7 @@ import sys
 sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
-from pycatia.mec_mod_interfaces.part import Part
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_measurable_name
 from pycatia.enumeration.enumeration_types import cat_selection_filter
@@ -33,21 +33,16 @@ __status__ = 'alpha'
 
 caa = catia()
 documents = caa.documents
-document = caa.active_document
-part_document = Part(document.part.com_object)
-# Note: It's not necessary to explicitly use the ProductDocument or the Product class
-# with the com_object. It's perfectly fine to write it like this:
-#   document = caa.active_document
-#   product = document.product
-# But declaring 'document' and 'product' this way, your linter can't resolve the
-# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
+# if the active document is a CATPart this will return a PartDocument
+part_document: PartDocument = caa.active_document
+part = part_document.part
 
-selection = document.selection
+selection = part_document.selection
 selection.clear()
 
-hsf = part_document.hybrid_shape_factory
+hsf = part.hybrid_shape_factory
 
-spa = document.spa_workbench()
+spa = part_document.spa_workbench()
 
 # promt user select any object
 mb = caa.message_box('Select any HybridShape, or PartBody.\n'

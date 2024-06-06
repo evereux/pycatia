@@ -42,21 +42,21 @@ from pycatia.cat_logger import create_logger
 from pycatia.enumeration.enumeration_types import geometrical_feature_type
 from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
-from pycatia.mec_mod_interfaces.part import Part
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 LINE_LENGTH = 20
 
 logger = create_logger()
 
 caa = catia()
-document = caa.active_document
-part = Part(document.part.com_object)
+part_document: PartDocument = caa.active_document
+part = part_document.part
 hybrid_bodies = part.hybrid_bodies
 hsf = part.hybrid_shape_factory
 gs_lines = hybrid_bodies.add()
 gs_lines.name = ("Lines")
 
-selection = document.selection
+selection = part_document.selection
 selection.clear()
 
 mb = caa.message_box(

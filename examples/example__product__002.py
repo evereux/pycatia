@@ -21,6 +21,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
+from pathlib import Path
 
 from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_work_mode_type
@@ -29,16 +30,8 @@ from pycatia.product_structure_interfaces.product_document import ProductDocumen
 
 caa = catia()
 documents = caa.documents
-documents.open(r"tests\cat_files\product_top.CATProduct")
-
-document = ProductDocument(caa.active_document.com_object)
-product = Product(document.product.com_object)
-# Note: It's not necessary to explicitly use the ProductDocument or the Product class
-# with the com_object. It's perfectly fine to write it like this:
-#   document = caa.active_document
-#   product = document.product
-# But declaring 'document' and 'product' this way, your linter can't resolve the
-# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
+product_document: ProductDocument = documents.open(Path(os.getcwd(), r"tests\cat_files\product_top.CATProduct"))
+product = product_document.product
 
 # Change the work mode to Design Mode.
 # This is useful for CATIA configurations that work with a cache otherwise methods on children may fail

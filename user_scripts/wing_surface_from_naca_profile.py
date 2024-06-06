@@ -61,7 +61,7 @@ from wing_surface_from_naca_profile_support.points import add_points
 from wing_surface_from_naca_profile_support.read_dat_file import read_dat_file
 
 from pycatia import catia
-from pycatia.mec_mod_interfaces.part import Part
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.scripts.vba import vba_nothing
 
@@ -86,15 +86,14 @@ if documents.count > 0:
     print("If you continue to see this error restart CATIA and close all open documents.")
     exit()
 
-new_part = documents.add("Part")
-document = application.active_document
+part_document: PartDocument = documents.add("Part")
 
-selection = document.selection
+selection = part_document.selection
 
-product = Product(document.product.com_object)
+product = Product(part_document.product.com_object)
 product.part_number = part_number
 
-part = Part(document.part.com_object)
+part = part_document.part
 
 parameters = create_parameters(part, product)
 relations = part.relations

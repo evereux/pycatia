@@ -1,6 +1,7 @@
 #! /usr/bin/python3.9
 from typing import Iterator
 import os
+from pathlib import Path
 import warnings
 
 from pywintypes import com_error
@@ -116,7 +117,7 @@ class Documents(Collection):
 
         return len([True for name in items for typ in type_list if name.lower().find(typ) > 0])
 
-    def new_from(self, file_name: str) -> Document:
+    def new_from(self, file_name: Path) -> Document:
         """
         .. note::
             :class: toggle
@@ -145,15 +146,18 @@ class Documents(Collection):
                 |          Dim Doc As Document
                 |          Set Doc = Documents.NewFrom(FileToRead)
 
-        :param str file_name:
+        :param Path file_name:
         :rtype: Document
         """
 
-        if not os.path.isfile(file_name):
-            raise FileNotFoundError(f'Could not find file {file_name}.')
+        # legacy support for < 0.7.1 where file_name could be a string.
+        if isinstance(file_name, str):
+            if not os.path.isfile(file_name):
+                raise FileNotFoundError(f'Could not find file {file_name}.')
+        else:
+            if not file_name.is_file():
+                raise FileNotFoundError(f'Could not find file {file_name}.')
 
-        # get the full path to the file
-        file_name = os.path.abspath(file_name)
 
         return Document(self.documents.NewFrom(file_name))
 
@@ -221,7 +225,7 @@ class Documents(Collection):
         warnings.warn(warning_string)
         return self.documents.Count
 
-    def open(self, file_name: str) -> Document:
+    def open(self, file_name: Path) -> Document:
         """
         .. note::
             :class: toggle
@@ -249,25 +253,30 @@ class Documents(Collection):
                 |          Dim Doc As Document
                 |          Set Doc = Documents.Open(FileToOpen)
 
-        :param str file_name:
+        :param Path file_name:
         :rtype: Document
         """
-
-        if not os.path.isfile(file_name):
-            raise FileNotFoundError(f'Could not find file {file_name}.')
-
-        # get the full path to the file
-        file_name = os.path.abspath(file_name)
+        # legacy support for < 0.7.1 where file_name could be a string.
+        if isinstance(file_name, str):
+            if not os.path.isfile(file_name):
+                raise FileNotFoundError(f'Could not find file {file_name}.')
+        else:
+            if not file_name.is_file:
+                raise FileNotFoundError(f'Could not find file {file_name}.')
 
         try:
             self.logger.info(f'Opening document "{file_name}".')
-            return Document(self.documents.Open(file_name))
+            open_doc_com = self.documents.Open(file_name)
+            extension = file_name.suffix[1:]
+            types = [document_types[k]['type'] for k in (document_types) if document_types[k]['extension'] == extension]
+            document_type = types[0]
+            return document_type(open_doc_com)
         except com_error:
             raise CATIAApplicationException(
                 f'Could not open document "{file_name}". '
                 'Check file type and ensure the version of CATIA it was created with is compatible.')
 
-    def read(self, file_name: str) -> Document:
+    def read(self, file_name: Path) -> Document:
         """
         .. note::
             :class: toggle
@@ -305,7 +314,7 @@ class Documents(Collection):
         # return Document(self.documents.Read(file_name))
 
         read_doc_com = self.documents.Read(file_name)
-        extension = file_name.split('.')[-1]
+        extension = file_name.suffix[1:]
         types = [document_types[k]['type'] for k in (document_types) if document_types[k]['extension'] == extension]
         document_type = types[0]
         return document_type(read_doc_com)

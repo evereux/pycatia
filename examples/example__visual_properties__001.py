@@ -22,7 +22,6 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
-from pycatia.enumeration.enumeration_types import cat_vis_property_status
 
 caa = catia()
 document = caa.active_document
