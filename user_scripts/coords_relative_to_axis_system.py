@@ -28,13 +28,13 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
 from pycatia import catia
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 caa = catia()
-document = caa.active_document
-product = document.product
-part = document.part
+part_document: PartDocument = caa.active_document
+part = part_document.part
 hybrid_bodies = part.hybrid_bodies
-spa_workbench = document.spa_workbench()
+spa_workbench = part_document.spa_workbench()
 
 
 def coords_relative_to_axis(axis_system, point, precision=6):

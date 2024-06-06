@@ -1,10 +1,14 @@
 # Changelog
 
 ## 0.7.1
+
 * fixed Documents.read() method which was broken by changes made in 0.6.9.
 * updated Documents.open() so that filename should now be a Path object.
 * updated Documents.new_from() so that filename should now be a Path object.
 * updated Documents.open() so that filename should now be a Path object.
+* updated the examples so they use explicit path objects.
+* updated the examples to show how to better initialise documents.
+* updated the user_scripts to show how to better initialise documents.
 
 
 ## 0.7.0
