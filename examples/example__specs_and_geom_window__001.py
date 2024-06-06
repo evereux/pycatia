@@ -63,18 +63,12 @@ def save_file_path(prod_part_number, prod_revision, view_type):
 for cat_part in source_files:
     with CATIADocHandler(cat_part) as handler:
         caa = handler.catia
-        document = ProductDocument(caa.active_document.com_object)
-        product = Product(document.product.com_object)
-        # Note: It's not necessary to explicitly use the ProductDocument or the Product class
-        # with the com_object. It's perfectly fine to write it like this:
-        #   document = caa.active_document
-        #   product = document.product
-        # But declaring 'document' and 'product' this way, your linter can't resolve the
-        # product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
+        product_document: ProductDocument = caa.active_document
+        product = Product(product_document.product.com_object)
 
         active_window = caa.active_window
         active_viewer = active_window.active_viewer
-        cameras = document.cameras
+        cameras = product_document.cameras
 
         # get current background colour
         background_colour = active_viewer.get_background_color()

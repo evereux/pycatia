@@ -32,18 +32,12 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_line_pt_pt import HybridShapeL
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import (
     HybridShapePointCoord,
 )
-from pycatia.mec_mod_interfaces.part import Part
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 caa = catia()
-document = PartDocument(caa.active_document.com_object)
-part = Part(document.part.com_object)
-# Note: It's not necessary to explicitly use the PartDocument or the Part class
-# with the com_object. It's perfectly fine to write it like this:
-#   document = caa.active_document
-#   part = document.part
-# But declaring 'document' and 'part' this way, your linter can't resolve the
-# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
+# if the active document is a CATPart this will return a PartDocument
+part_document: PartDocument = caa.active_document
+part = part_document.part
 
 hbs = part.hybrid_bodies
 hb_construction_lines = hbs.item("construction_geometry")
@@ -53,11 +47,11 @@ for shape_index in range(1, hss.count + 1):
     hs = hss.item(shape_index)
 
     # clear the selection on each loop.
-    document.selection.clear()
+    part_document.selection.clear()
     # add the shape to the selection.
-    document.selection.add(hs)
+    part_document.selection.add(hs)
     # create the selected element by getting the first item in the document selection.
-    selected_elem = document.selection.item(1)
+    selected_elem = part_document.selection.item(1)
 
     # test part only has HybridShapeLinePtPt
     if selected_elem.type == "HybridShapeLinePtPt":

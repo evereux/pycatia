@@ -21,12 +21,12 @@ import sys
 
 sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
-
+from pathlib import Path
 import time
 
 from pycatia import CATIADocHandler
 
-catia_part = r"tests\cat_files\part_measurable.CATPart"
+catia_part = Path(os.getcwd(), r"tests\cat_files\part_measurable.CATPart")
 
 with CATIADocHandler(catia_part) as caa:
     document = caa.document

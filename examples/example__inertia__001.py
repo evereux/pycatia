@@ -28,7 +28,7 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
 from pycatia import catia
-from pycatia.mec_mod_interfaces.part import Part
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.space_analyses_interfaces.inertia import Inertia
 
 __author__ = '[ptm] by plm-forum.ru'
@@ -36,11 +36,9 @@ __status__ = 'alpha'
 
 # initialise the catia automation application
 caa = catia()
-documents = caa.documents
-
-# get the active document
-document = caa.active_document
-part = Part(document.part.com_object)
+# if the active document is a CATPart this will return a PartDocument
+part_document: PartDocument = caa.active_document
+part = part_document.part
 part.update()
 
 # get the Bodies() collection
@@ -52,7 +50,7 @@ body = part.main_body
 # body_by_name = bodies.get_item_by_name('AnotherPartBody')
 
 # initialise the spa workbench
-spa_workbench = document.spa_workbench()
+spa_workbench = part_document.spa_workbench()
 
 # create a reference to measure.
 reference = part.create_reference_from_object(part)

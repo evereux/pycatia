@@ -55,22 +55,16 @@ def close_inertia_window():
 
 
 caa = catia()
-document = ProductDocument(caa.active_document.com_object)
-product = Product(document.product.com_object)
-# Note: It's not necessary to explicitly use the ProductDocument or the Product class
-# with the com_object. It's perfectly fine to write it like this:
-#   document = caa.active_document
-#   product = document.product
-# But declaring 'document' and 'product' this way, your linter can't resolve the
-# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
+product_document: ProductDocument = caa.active_document
+product = product_document.product
 
-selection = document.selection
+selection = product_document.selection
 selection.clear()
 
 c = True
 while c is True:
     input("Selection product to measure.\nPress <ENTER> when selection made.")
-    selection = document.selection
+    selection = product_document.selection
 
     caa.start_command(inertia_cmd_name)
     parameters = product.parameters

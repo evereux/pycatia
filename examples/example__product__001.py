@@ -71,7 +71,6 @@ from pywinauto.controls.win32_controls import ButtonWrapper
 from pywinauto.controls.win32_controls import ListBoxWrapper
 
 from pycatia import catia
-from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 lang = 'EN'  # only EN and DE currently supported, more translations welcomed.
@@ -128,16 +127,10 @@ def get_window_text(window_text_translations: dict, lang):
 window_text = get_window_text(text_translations, lang)
 
 caa = catia()
-document = ProductDocument(caa.active_document.com_object)
-product = Product(document.product.com_object)
-# Note: It's not necessary to explicitly use the ProductDocument or the Product class
-# with the com_object. It's perfectly fine to write it like this:
-#   document = caa.active_document
-#   product = document.product
-# But declaring 'document' and 'product' this way, your linter can't resolve the
-# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
+product_document: ProductDocument = caa.active_document
+product = product_document.product
 
-selection = document.selection
+selection = product_document.selection
 selection.clear()
 selection.add(product)
 caa.start_command(window_text['graph_tree_cmd'])

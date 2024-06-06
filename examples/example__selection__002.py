@@ -23,18 +23,18 @@ import sys
 sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
-from pycatia.mec_mod_interfaces.part import Part
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia import catia
 
 caa = catia()
-documents = caa.documents
-document = caa.active_document
-part = Part(document.part.com_object)
+# if the active document is a CATPart this will return a PartDocument
+part_document: PartDocument = caa.active_document
+part = part_document.part
 hybrid_bodies = part.hybrid_bodies
 hsf = part.hybrid_shape_factory
 
 # create selection object
-selection = document.selection
+selection = part_document.selection
 
 filter_type = ("Vertex",)
 
