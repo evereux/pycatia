@@ -147,7 +147,7 @@ class Document(AnyObject):
         self.document.CurrentLayer = value
 
     @property
-    def is_part(self):
+    def is_part(self) -> bool:
         """
         Determine whether the active document is a CATPart.
 
@@ -160,7 +160,7 @@ class Document(AnyObject):
             return False
 
     @property
-    def is_product(self):
+    def is_product(self) -> bool:
         """
         Determine whether the active document is a CATProduct.
 
@@ -171,7 +171,7 @@ class Document(AnyObject):
         return False
 
     @property
-    def is_saved(self):
+    def is_saved(self) -> bool:
         """
         Returns true if document is saved.
 
@@ -197,7 +197,7 @@ class Document(AnyObject):
         return self.document.Saved
 
     @property
-    def full_name(self):
+    def full_name(self) -> str:
         """
 
         .. note::
@@ -246,7 +246,7 @@ class Document(AnyObject):
         return self.document.ReadOnly
 
     @property
-    def see_hidden_elements(self):
+    def see_hidden_elements(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -711,7 +711,7 @@ class Document(AnyObject):
             ]
         )
 
-    def new_window(self):
+    def new_window(self) -> Window:
         """
         .. note::
             :class: toggle
@@ -735,7 +735,7 @@ class Document(AnyObject):
         """
         return Window(self.document.NewWindow())
 
-    def path(self):
+    def path(self) -> Path:
         """
 
         Returns the pathlib.Path() object of the document fullname.
@@ -753,7 +753,7 @@ class Document(AnyObject):
 
         return Path(self.document.FullName)
 
-    def remove_filter(self, i_filter_name):
+    def remove_filter(self, i_filter_name) -> None:
         """
         .. note::
             :class: toggle
@@ -888,7 +888,7 @@ class Document(AnyObject):
 
         return selected
 
-    def spa_workbench(self):
+    def spa_workbench(self) -> SPAWorkbench:
         """
         :return:
         :rtype: SPAWorkbench
