@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.7.2
+* addded missing type hints to `Document()` methods.
+
 ## 0.7.1
 
 * fixed Documents.read() method which was broken by changes made in 0.6.9.
