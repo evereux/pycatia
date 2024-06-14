@@ -2,6 +2,9 @@
 
 ## 0.7.2
 * addded missing type hints to `Document()` methods.
+* fixed regression in Documents.open() Documents.read() and Documents.new_from() 
+ where strings are passed in lieu of Path objects. It was the intention for both 
+ strings and paths to work. Tests updated to test for both Path and str objects.
 
 ## 0.7.1
 
