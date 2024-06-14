@@ -150,14 +150,12 @@ class Documents(Collection):
         :rtype: Document
         """
 
-        # legacy support for < 0.7.1 where file_name could be a string.
-        if isinstance(file_name, str):
-            if not os.path.isfile(file_name):
-                raise FileNotFoundError(f'Could not find file {file_name}.')
-        else:
-            if not file_name.is_file():
-                raise FileNotFoundError(f'Could not find file {file_name}.')
+        # legacy support for strings.
+        if type(file_name) is str:
+            file_name = Path(file_name)
 
+        if not file_name.is_file:
+            raise FileNotFoundError(f'Could not find file {file_name}.')
 
         return Document(self.documents.NewFrom(file_name))
 
@@ -256,13 +254,13 @@ class Documents(Collection):
         :param Path file_name:
         :rtype: Document
         """
-        # legacy support for < 0.7.1 where file_name could be a string.
-        if isinstance(file_name, str):
-            if not os.path.isfile(file_name):
-                raise FileNotFoundError(f'Could not find file {file_name}.')
-        else:
-            if not file_name.is_file:
-                raise FileNotFoundError(f'Could not find file {file_name}.')
+        
+        # legacy support for strings.
+        if type(file_name) is str:
+            file_name = Path(file_name)
+
+        if not file_name.is_file:
+            raise FileNotFoundError(f'Could not find file {file_name}.')
 
         try:
             self.logger.info(f'Opening document "{file_name}".')
@@ -312,6 +310,14 @@ class Documents(Collection):
         :rtype: Document
         """
         # return Document(self.documents.Read(file_name))
+
+        # legacy support for strings.
+        if type(file_name) is str:
+            file_name = Path(file_name)
+        
+        if not file_name.is_file:
+            raise FileNotFoundError(f'Could not find file {file_name}.')
+
 
         read_doc_com = self.documents.Read(file_name)
         extension = file_name.suffix[1:]

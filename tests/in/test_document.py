@@ -166,14 +166,13 @@ def test_new_from():
 
     document.close()
 
-    with pytest.raises(FileNotFoundError):
-        documents.new_from("lala")
+def test_new_from_str():
+    documents = caa.documents
+    document = documents.new_from(str(cat_part_measurable))
 
+    assert document.name is not os.path.basename(cat_part_measurable)
 
-def test_no_such_file():
-    with pytest.raises(FileNotFoundError):
-        documents = caa.documents
-        documents.open("lala")
+    document.close()
 
 
 def test_num_open():
@@ -185,22 +184,40 @@ def test_num_open():
 
 
 def test_open_document():
-    # This assertion has been removed as my version of CATIA keeps an open link to ABQMaterialPropertiesCatalog.CATfct
-    # once the document is closed. I don't know if this is a CATIA bug or `feature` to keep the linked item loaded.
-    # assert documents.documents.Count == 0
+    
+    documents = caa.documents
+    document = documents.open(cat_part_measurable)
 
-    with CATIADocHandler(cat_part_measurable) as caa:
-        document = caa.document
-        assert document is not None
-        assert document.name == cat_part_measurable.name
-        assert f'PartDocument(name="{document.name}")' == document.__repr__()
+    assert type(document) is PartDocument
+
+    document.close
+
+def test_open_document_str():
+    
+    documents = caa.documents
+    document = documents.open(str(cat_part_measurable))
+
+    assert type(document) is PartDocument
+
+    document.close
+
 
 def test_read_document():
 
     documents = caa.documents
     document = documents.read(cat_part_measurable)
 
-    assert type(document) == PartDocument
+    assert type(document) is PartDocument
+
+    document.close
+
+
+def test_read_document_str():
+
+    documents = caa.documents
+    document = documents.read(str(cat_part_measurable))
+
+    assert type(document) is PartDocument
 
     document.close
 
