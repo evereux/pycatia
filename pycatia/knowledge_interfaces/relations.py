@@ -214,7 +214,13 @@ class Relations(Collection):
 
         return DesignTable(self.relations.CreateDesignTable(i_name, i_comment, i_copy_mode, i_sheet_path))
 
-    def create_formula(self, i_name, i_comment, i_output_parameter, i_formula_body):
+    def create_formula(
+            self,
+            i_name: str,
+            i_comment: str,
+            i_output_parameter: 'Parameter',
+            i_formula_body: str
+    ):
         """
         .. note::
             :class: toggle
