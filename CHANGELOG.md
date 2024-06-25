@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.3
+
+* added missing type hintes to `Relations.create_formula()`.
+
 ## 0.7.2
 * addded missing type hints to `Document()` methods.
 * fixed regression in Documents.open() Documents.read() and Documents.new_from() 
