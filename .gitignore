@@ -144,9 +144,10 @@ win_32/pycatia
 logo*
 *.cgr
 
-test.py
+test*.py
 
 hasher.py
 
 # ignore my issues test scripts
-issue*.*
+issue*.py
+issue*.vba
