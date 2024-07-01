@@ -16,7 +16,6 @@
  strings and paths to work. Tests updated to test for both Path and str objects.
 
 
-
 ## 0.7.1
 
 * fixed Documents.read() method which was broken by changes made in 0.6.9.
