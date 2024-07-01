@@ -6,7 +6,7 @@ Installation
 For the development of python scripts using pycatia it's recommended you follow
 the steps detailed below.
 
-To run pre-existing scripts windows builds are :ref:`available<windows_builds>`
+Pre-built binaries are available on the releases page: https://github.com/evereux/pycatia/releases
 
 The Short Version
 -----------------
