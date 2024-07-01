@@ -140,13 +140,14 @@ quick_n_dirty.py
 pycatia-exe.build
 pycatia-exe.dist
 zip_win32_dist.py
-win_32/pycatia
+win_32/*
 logo*
 *.cgr
 
-test.py
+test*.py
 
 hasher.py
 
 # ignore my issues test scripts
-issue*.*
+issue*.py
+issue*.vba
