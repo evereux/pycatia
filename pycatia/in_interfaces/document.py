@@ -458,7 +458,7 @@ class Document(AnyObject):
         :param bool overwrite: Files will not be overwritten unless is True.
         :return:
         """
-        current_dfa_setting = self.document.Application.DisplayFileAlerts
+        current_dfa_setting = self.application.display_file_alerts
         if not isinstance(file_name, Path):
             file_name = Path(file_name)
 
@@ -473,9 +473,12 @@ class Document(AnyObject):
         if not file_name.parent.is_dir():
             raise NotADirectoryError(f'Directory: {file_name.parent} is not a directory.')
 
-        if overwrite is False and file_name.is_file():
-            raise FileExistsError(f'File: {file_name} already exists. '
+        if overwrite is False:
+            if file_name.is_file():
+                raise FileExistsError(f'File: {file_name} already exists. '
                                   f'Set overwrite=True if you want to overwrite.')
+        else:
+            self.application.display_file_alerts = False
 
         # pycatia prefers full path names :-)
         if not file_name.is_absolute():
@@ -483,7 +486,7 @@ class Document(AnyObject):
 
         self.document.ExportData(file_name, file_type)
 
-        self.document.Application.DisplayFileAlerts = current_dfa_setting
+        self.application.display_file_alerts = current_dfa_setting
 
     def indicate_2d(self, i_message: str) -> str:
         """
@@ -829,7 +832,7 @@ class Document(AnyObject):
         :return: None.
         :rtype: None
         """
-        current_dfa_setting = self.document.Application.DisplayFileAlerts
+        current_dfa_setting = self.application.display_file_alerts
         path_file_name = Path(file_name)
 
         # pycatia prefers full path names :-)
@@ -841,13 +844,13 @@ class Document(AnyObject):
                 raise FileExistsError(f'File: {path_file_name} already exists. '
                                       f'Set overwrite=True if you want to overwrite.')
         else:
-            self.document.Application.DisplayFileAlerts = False
+            self.application.display_file_alerts = False
             # if path_file_name.is_file():
             #     self.logger.warning('File already exists. Click YES in CATIA V5.')
 
         self.document.SaveAs(path_file_name)
 
-        self.document.Application.DisplayFileAlerts = current_dfa_setting
+        self.application.display_file_alerts = current_dfa_setting
 
     def search_for_items(self, selection_objects):
         """
