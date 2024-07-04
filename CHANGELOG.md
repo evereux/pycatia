@@ -8,6 +8,8 @@
 * fixed `Document.export_data()` were file alerts were not suppresed if requested. #221 @Zcaic
 * updated `Document.export_data()` and `Document.save_as()` to use the pycatia 
  methods to get and set `display_file_alerts`.
+* updated `Product.activate_terminal_mode()`. Previously, if there was a broken 
+ link the method would fail.
 
 
 ## 0.7.2

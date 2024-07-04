@@ -621,15 +621,16 @@ class Product(AnyObject):
         :param list(Product) products:
         """
 
-        def loop_d_loop(products_):
+        def product_looper(_products: Products):
+            for current_product in _products:
+                try:
+                    current_product.activate_default_shape()
+                except CATIAApplicationException:
+                    current_product.logger.info(f'Could not activate default shape for {current_product.name}.')
 
-            for product in products_:
-                if product.is_catpart():
-                    product.activate_default_shape()
-                elif product.is_catproduct():
-                    loop_d_loop(product.products)
+                product_looper(current_product.products)
 
-        loop_d_loop(products)
+        product_looper(products)
 
     def add_master_shape_representation(self, i_shape_path_name=None) -> None:
         """
