@@ -10,6 +10,8 @@
  methods to get and set `display_file_alerts`.
 * updated `Product.activate_terminal_mode()`. Previously, if there was a broken 
  link the method would fail.
+* updated `Document.open()` and `Document.read()` to default to document type 
+ `Document` if filename extension isn't in `document_types`. 
 
 
 ## 0.7.2

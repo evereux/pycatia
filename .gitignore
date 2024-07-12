@@ -136,6 +136,17 @@ quick_n_dirty.py
 *.CATPart
 *.CATProduct
 *.CATMaterial
+*.3dmap
+*.3dxml
+*.NavRep
+*.hcg
+*.icem
+*.igs
+*.model
+*.stl
+*.stp
+*.vps
+*.wrl
 
 pycatia-exe.build
 pycatia-exe.dist

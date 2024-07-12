@@ -266,8 +266,11 @@ class Documents(Collection):
             self.logger.info(f'Opening document "{file_name}".')
             open_doc_com = self.documents.Open(file_name)
             extension = file_name.suffix[1:]
-            types = [document_types[k]['type'] for k in (document_types) if document_types[k]['extension'] == extension]
-            document_type = types[0]
+            types = [document_types[k]['type'] for k in document_types if document_types[k]['extension'] == extension]
+            if not types:
+                document_type = document_types['Default']['type']
+            else:
+                document_type = types[0]
             return document_type(open_doc_com)
         except com_error:
             raise CATIAApplicationException(
@@ -322,7 +325,10 @@ class Documents(Collection):
         read_doc_com = self.documents.Read(file_name)
         extension = file_name.suffix[1:]
         types = [document_types[k]['type'] for k in (document_types) if document_types[k]['extension'] == extension]
-        document_type = types[0]
+        if not types:
+            document_type = document_types['Default']['type']
+        else:
+            document_type = types[0]
         return document_type(read_doc_com)
 
     def __getitem__(self, n: int) -> Document:
