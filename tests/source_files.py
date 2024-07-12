@@ -17,3 +17,6 @@ cat_product = get_cat_product_top()
 
 cat_material = get_cat_material()
 cat_functional_system = get_cat_functional_system()
+
+igs_file = Path(os.getcwd(), r"tests/cat_files/part_measurable.igs")
+stp_file = Path(os.getcwd(), r"tests/cat_files/part_measurable.stp")
