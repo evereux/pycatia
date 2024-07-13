@@ -42,7 +42,6 @@ def test_activate_document():
 
 
 def test_add_document():
-
     with CATIADocHandler(new_document='Analysis') as caa_:
         document = caa_.document
         assert document is not None
@@ -57,7 +56,7 @@ def test_add_document():
         document = caa_.document
         assert document is not None
         assert document_types['Drawing']['extension'] in document.name
-    
+
     with CATIADocHandler(new_document='CATProcess') as caa_:
         document = caa_.document
         assert document is not None
@@ -169,6 +168,7 @@ def test_new_from():
 
     document.close()
 
+
 def test_new_from_str():
     documents = caa.documents
     document = documents.new_from(str(cat_part_measurable))
@@ -187,22 +187,19 @@ def test_num_open():
 
 
 def test_open_document():
-    
     documents = caa.documents
     document = documents.open(cat_part_measurable)
-
     assert type(document) is PartDocument
-
+    document.close()
+    document = documents.open(cat_product)
+    assert type(document) is ProductDocument
     document.close()
 
 
 def test_open_document_str():
-    
     documents = caa.documents
     document = documents.open(str(cat_part_measurable))
-
     assert type(document) is PartDocument
-
     document.close()
 
 
@@ -231,17 +228,16 @@ def test_open_document_stp():
 
 
 def test_read_document():
-
     documents = caa.documents
     document = documents.read(cat_part_measurable)
-
     assert type(document) is PartDocument
-
+    document.close()
+    document = documents.read(cat_product)
+    assert type(document) is ProductDocument
     document.close()
 
 
 def test_read_document_str():
-
     documents = caa.documents
     document = documents.read(str(cat_part_measurable))
 
