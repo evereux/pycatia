@@ -231,13 +231,7 @@ class Documents(Collection):
         # for i in range(0, self.documents.Count):
         #     print(self.documents.Item(i + 1).Name)
 
-        warning_string = (
-            'The COM object can return the incorrect number of documents open. //n'
-            'For example, after a CATPart document is closed CATIA can keep'
-            'the linked document `ABQMaterialPropertiesCatalog.CATfct` loaded in the session.'
-        )
-
-        warnings.warn(warning_string)
+        self.logger.warning('The Documents.num_open method is unreliable and will be deprecated in future versions.')
         return self.documents.Count
 
     def open(self, file_name: Path) -> Document:
