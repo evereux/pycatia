@@ -35,10 +35,8 @@ def test_line_point_point():
     co_ord_2 = (length, 0, 0)
 
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -57,7 +55,7 @@ def test_line_point_point():
         part.update()
 
         line_ref = part.create_reference_from_object(line)
-        spa_wb = document.spa_workbench()
+        spa_wb = part_document.spa_workbench()
         measurable = spa_wb.get_measurable(line_ref)
 
         assert measurable.length == length
