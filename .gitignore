@@ -136,17 +136,29 @@ quick_n_dirty.py
 *.CATPart
 *.CATProduct
 *.CATMaterial
+*.3dmap
+*.3dxml
+*.NavRep
+*.hcg
+*.icem
+*.igs
+*.model
+*.stl
+*.stp
+*.vps
+*.wrl
 
 pycatia-exe.build
 pycatia-exe.dist
 zip_win32_dist.py
-win_32/pycatia
+win_32/*
 logo*
 *.cgr
 
-test.py
+test*.py
 
 hasher.py
 
 # ignore my issues test scripts
-issue*.*
+issue*.py
+issue*.vba

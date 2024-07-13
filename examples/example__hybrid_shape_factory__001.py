@@ -26,7 +26,6 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
-from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 caa = catia()
@@ -52,7 +51,7 @@ hs_shapes = hb_points.hybrid_shapes
 points = []
 for i in range(1, hs_shapes.count + 1):
     hybrid_shape = hs_shapes.item(i)
-    hybrid_shape_reference = Reference(hybrid_shape.com_object)
+    hybrid_shape_reference = part.create_reference_from_object(hybrid_shape)
 
     # make sure the element is indeed a point.
     if hsf.get_geometrical_feature_type(hybrid_shape_reference) == 1:

@@ -29,7 +29,7 @@ from pycatia import catia
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 # path to file to open.
-file_name = Path(os.getcwd(), r"tests\cat_files\part_measurable.CATPart")
+file_name = Path(Path(os.getcwd()).parent, r"tests\cat_files\part_measurable.CATPart")
 
 caa = catia()
 # open document

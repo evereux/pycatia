@@ -13,10 +13,8 @@ from tests.source_files import cat_part_measurable
 
 def test_parameters_name():
     with CATIADocHandler(cat_part_measurable) as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         first_parameter = parameters.item(1)
@@ -29,10 +27,8 @@ def test_parameters_name():
 
 def test_all_parameters():
     with CATIADocHandler(cat_part_measurable) as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         all_parms = parameters.all_parameters()
@@ -45,10 +41,8 @@ def test_all_parameters():
 
 def test_create_boolean():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         new_boolean_parm = parameters.create_boolean("new_boolean", True)
@@ -59,10 +53,8 @@ def test_create_boolean():
 
 def test_create_dimension():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         new_dimension_parm = parameters.create_dimension("new_dimension", "length", 30.1)
@@ -73,10 +65,8 @@ def test_create_dimension():
 
 def test_create_int():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         new_int_parm = parameters.create_integer("new_int", 30)
@@ -87,10 +77,8 @@ def test_create_int():
 
 def test_create_list():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         new_list = parameters.create_list("new_list")
@@ -100,10 +88,8 @@ def test_create_list():
 
 def test_count_parameters():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         assert parameters.count == 5
@@ -111,10 +97,8 @@ def test_count_parameters():
 
 def test_create_real():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         new_list = parameters.create_real("new_real", 5.4)
@@ -125,10 +109,8 @@ def test_create_real():
 
 def test_create_parameters_set():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
         root_parameter_set = parameters.root_parameter_set
         parameters.create_set_of_parameters(root_parameter_set)
@@ -138,10 +120,8 @@ def test_create_parameters_set():
 
 def test_create_string():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         new_string = parameters.create_string("new_string", "this is a string")
@@ -152,10 +132,8 @@ def test_create_string():
 
 def test_get_name_to_use_in_relation():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         new_string = parameters.create_string("new_string", "this is a string")
@@ -166,10 +144,8 @@ def test_get_name_to_use_in_relation():
 
 def test_has_parameters():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         assert parameters.has_parameters() > 0
@@ -177,10 +153,8 @@ def test_has_parameters():
 
 def test_item():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
         bool_param = parameters.create_boolean("new_boolean", True)
         int_param = parameters.create_integer("new_integer", 10)
@@ -195,11 +169,8 @@ def test_item():
 
 def test_sub_list():
     with CATIADocHandler(cat_part_measurable) as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
-
+        part_document: PartDocument = caa.document
+        part = part_document.part
         body_item = part.main_body
         assert body_item is not None
 
@@ -219,10 +190,8 @@ def test_sub_list():
 
 def test_remove():
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         parameters = part.parameters
 
         bool_name = "new-boolean"

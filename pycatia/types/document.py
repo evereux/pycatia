@@ -65,5 +65,9 @@ document_types = {
     'ProcessLibrary': {
         'extension': 'act',
         'type': ProcessDocument,
+    },
+    'Default': {
+        'extension': None,
+        'type': Document
     }
 }

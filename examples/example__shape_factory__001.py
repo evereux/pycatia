@@ -24,7 +24,6 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
-from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
@@ -48,7 +47,7 @@ body_3.name = "Body.Empty"
 sketches_body_1 = body_1.sketches
 origin_elements = part.origin_elements
 reference_xy = origin_elements.plane_xy
-sketch_body_1 = sketches_body_1.add(Reference(reference_xy.com_object))
+sketch_body_1 = sketches_body_1.add(part.create_reference_from_object(reference_xy))
 
 part.in_work_object = sketch_body_1
 factory_2d = sketch_body_1.open_edition()
@@ -63,7 +62,7 @@ part.update()
 sketches_body_2 = body_2.sketches
 origin_elements = part.origin_elements
 reference_xy = origin_elements.plane_xy
-sketch_body_2 = sketches_body_2.add(Reference(reference_xy.com_object))
+sketch_body_2 = sketches_body_2.add(part.create_reference_from_object(reference_xy))
 
 part.in_work_object = sketch_body_2
 factory_2d = sketch_body_2.open_edition()

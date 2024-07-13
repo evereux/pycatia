@@ -7,7 +7,9 @@ from pycatia import CATIADocHandler
 from pycatia.cat_mat_interfaces.material_document import MaterialDocument
 from pycatia.cat_mat_interfaces.material_manager import MaterialManager
 from pycatia.mec_mod_interfaces.part import Part
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product import Product
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 from tests.common_vars import test_files
 from tests.source_files import cat_material
 from tests.source_files import cat_part_measurable
@@ -18,10 +20,8 @@ icon_folder = Path(os.getcwd(), test_files)
 
 def test_material_document():
     with CATIADocHandler(cat_material) as caa:
-        document = caa.document
-        assert document is not None
+        material_document: MaterialDocument = caa.document
 
-        material_document = MaterialDocument(document.com_object)
         material_families = material_document.families
         materials = material_families.item(1).materials
         assert material_families.count > 0
@@ -29,14 +29,15 @@ def test_material_document():
 
 
 def test_material_manager_part():
-    with CATIADocHandler(cat_material) as caam:
-        material_document = MaterialDocument(caam.document.com_object)  # type: ignore
+    with CATIADocHandler(cat_material) as caa:
+        material_document: MaterialDocument = caa.document
         material_families = material_document.families
         materials = material_families.item(1).materials
         material = materials.item(1)
 
         with CATIADocHandler(cat_part_measurable) as caap:
-            part = Part(caap.document.part.com_object)  # type: ignore
+            part_document: PartDocument = caap.document
+            part = part_document.part
             main_body = part.main_body
             hybrid_bodies = part.hybrid_bodies
             hybrid_body = hybrid_bodies.add()
@@ -63,13 +64,14 @@ def test_material_manager_part():
 
 def test_material_manager_product():
     with CATIADocHandler(cat_material) as caam:
-        material_document = MaterialDocument(caam.document.com_object)  # type: ignore
+        material_document: MaterialDocument = caam.document
         material_families = material_document.families
         materials = material_families.item(1).materials
         material = materials.item(1)
 
         with CATIADocHandler(cat_product) as caap:
-            product = Product(caap.document.product.com_object)  # type: ignore
+            product_document: ProductDocument = caap.document  #
+            product = product_document.product
             material_item = product.get_item("CATMatManagerVBExt")
             material_manager = MaterialManager(material_item.com_object)
 
@@ -82,10 +84,7 @@ def test_material_manager_product():
 
 def test_analysis_material():
     with CATIADocHandler(cat_material) as caa:
-        document = caa.document
-        assert document is not None
-
-        material_document = MaterialDocument(document.com_object)
+        material_document: MaterialDocument = caa.document
         material_families = material_document.families
         materials = material_families.item(1).materials
         material = materials.item(1)
@@ -95,10 +94,7 @@ def test_analysis_material():
 
 def test_material():
     with CATIADocHandler(cat_material) as caa:
-        document = caa.document
-        assert document is not None
-
-        material_document = MaterialDocument(document.com_object)
+        material_document: MaterialDocument = caa.document
         material_families = material_document.families
         materials = material_families.item(1).materials
         material = materials.item(1)

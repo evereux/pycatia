@@ -19,6 +19,8 @@
 import os
 import sys
 
+from pycatia.mec_mod_interfaces.part_document import PartDocument
+
 sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 from pathlib import Path
@@ -26,10 +28,10 @@ import time
 
 from pycatia import CATIADocHandler
 
-catia_part = Path(os.getcwd(), r"tests\cat_files\part_measurable.CATPart")
+catia_part = Path(Path(os.getcwd()).parent, r"tests\cat_files\part_measurable.CATPart")
 
 with CATIADocHandler(catia_part) as caa:
-    document = caa.document
+    part_document: PartDocument = caa.document
     # do some stuff.
     # save if you need to.
     time.sleep(5)  # don't do this, no need.

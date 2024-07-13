@@ -8,19 +8,21 @@ from pycatia.enumeration.enumeration_types import cat_paper_size
 from pycatia.enumeration.enumeration_types import cat_sheet_projection_method
 from tests.source_files import cat_drawing
 
+
 # todo: tests for parameters and relations
 
 
 def test_active_drawing():
     with CATIADocHandler(cat_drawing) as caa:
-        drawing_root = DrawingDocument(caa.catia.active_document.com_object).drawing_root
-
+        drawing_document = caa.document
+        drawing_root = drawing_document.drawing_root
         assert drawing_root.active_sheet.name in ["Sheet.1", "Blatt .1"]  # TODO: Add more languages
 
 
 def test_orientation():
     with CATIADocHandler(cat_drawing) as caa:
-        drawing_root = DrawingDocument(caa.catia.active_document.com_object).drawing_root
+        drawing_document = caa.document
+        drawing_root = drawing_document.drawing_root
         sheets = drawing_root.sheets
         sheet_1 = sheets.item(1)
         assert sheet_1.orientation == cat_paper_orientation.index("catPaperLandscape")
@@ -30,7 +32,8 @@ def test_orientation():
 
 def test_paper_size():
     with CATIADocHandler(cat_drawing) as caa:
-        drawing_root = DrawingDocument(caa.catia.active_document.com_object).drawing_root
+        drawing_document = caa.document
+        drawing_root = drawing_document.drawing_root
         sheets = drawing_root.sheets
         sheet_1 = sheets.item(1)
         assert sheet_1.paper_size == cat_paper_size.index("catPaperA0")
@@ -40,20 +43,23 @@ def test_paper_size():
 
 def test_sheets():
     with CATIADocHandler(cat_drawing) as caa:
-        drawing_root = DrawingDocument(caa.catia.active_document.com_object).drawing_root
+        drawing_document = caa.document
+        drawing_root = drawing_document.drawing_root
         sheets = drawing_root.sheets
         assert sheets.item(2).name == "Sheet.2"
 
 
 def test_standard():
     with CATIADocHandler(cat_drawing) as caa:
-        drawing_root = DrawingDocument(caa.catia.active_document.com_object).drawing_root
+        drawing_document = caa.document
+        drawing_root = drawing_document.drawing_root
         assert drawing_root.standard == cat_drawing_standard.index("catISO")
 
 
 def test_reorder():
     with CATIADocHandler(cat_drawing) as caa:
-        drawing_root = DrawingDocument(caa.catia.active_document.com_object).drawing_root
+        drawing_document = caa.document
+        drawing_root = drawing_document.drawing_root
         sheets = drawing_root.sheets
         sheet_1 = sheets.item(1)
         sheet_2 = sheets.item(2)
@@ -69,7 +75,8 @@ def test_reorder():
 
 def test_scale():
     with CATIADocHandler(cat_drawing) as caa:
-        drawing_root = DrawingDocument(caa.catia.active_document.com_object).drawing_root
+        drawing_document = caa.document
+        drawing_root = drawing_document.drawing_root
         sheets = drawing_root.sheets
         sheet_1 = sheets.item(1)
         assert sheet_1.scale == 1.0
@@ -79,7 +86,8 @@ def test_scale():
 
 def test_projection_method():
     with CATIADocHandler(cat_drawing) as caa:
-        drawing_root = DrawingDocument(caa.catia.active_document.com_object).drawing_root
+        drawing_document = caa.document
+        drawing_root = drawing_document.drawing_root
         sheets = drawing_root.sheets
         sheet_1 = sheets.item(1)
 

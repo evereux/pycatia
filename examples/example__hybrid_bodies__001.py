@@ -53,3 +53,5 @@ hybrid_shapes_cube_1 = body_cube_1.hybrid_shapes
 
 shape_factory = part.shape_factory
 shape_factory.add_new_add(body_cube_2)
+
+part.update()

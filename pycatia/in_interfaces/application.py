@@ -9,6 +9,7 @@ from pycatia.enumeration.enumeration_types import cat_script_language
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.documents import Documents
+from pycatia.in_interfaces.documents import get_document_object
 from pycatia.in_interfaces.file_system import FileSystem
 from pycatia.in_interfaces.printer import Printer
 from pycatia.in_interfaces.printers import Printers
@@ -92,12 +93,7 @@ class Application(AnyObject):
         """
         try:
             active_doc_com = self.com_object.ActiveDocument
-            extension = active_doc_com.Name.split('.')[-1]
-            types = [document_types[k]['type'] for k in (document_types) if document_types[k]['extension'] == extension]
-            if len(types) > 1:
-                raise CATIAApplicationException('There was a problem determining the document type.')
-            document_type = types[0]
-            return document_type(active_doc_com)
+            return get_document_object(active_doc_com)
         except com_error:
             raise CATIAApplicationException('Is there an active document?')
 

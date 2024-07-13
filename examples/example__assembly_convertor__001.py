@@ -39,7 +39,7 @@ from pycatia.product_structure_interfaces.product_document import ProductDocumen
 file_type = "XLS"
 
 caa = catia()
-product_document = ProductDocument(caa.active_document.com_object)
+product_document: ProductDocument = caa.active_document
 product = product_document.product
 
 bom = product.get_item("BillOfMaterial")
@@ -68,7 +68,6 @@ excel_path = Path(product.path().parent, product.name + ".xls")
 # !! this will delete excel file if it exists !!
 if excel_path.is_file():
     os.remove(excel_path)
-
 
 assembly_convertor.print(file_type, excel_path, product)
 # Important note:

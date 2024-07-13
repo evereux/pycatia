@@ -22,7 +22,6 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
-from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
@@ -50,15 +49,15 @@ hybrid_body_surface.name = "construction_surfaces"
 
 # create the hybrid shape 'points'
 point_1 = hybrid_shape_factory.add_new_point_coord(0, 0, 0)
-point_1_reference = Reference(point_1.com_object)
+point_1_reference = part.create_reference_from_object(point_1)
 point_2 = hybrid_shape_factory.add_new_point_coord(10, 5, 0)
-point_2_reference = Reference(point_2.com_object)
+point_2_reference = part.create_reference_from_object(point_2)
 point_3 = hybrid_shape_factory.add_new_point_coord(20, 0, 0)
-point_3_reference = Reference(point_3.com_object)
+point_3_reference = part.create_reference_from_object(point_3)
 point_4 = hybrid_shape_factory.add_new_point_coord(30, 5, 0)
-point_4_reference = Reference(point_4.com_object)
+point_4_reference = part.create_reference_from_object(point_4)
 point_5 = hybrid_shape_factory.add_new_point_coord(40, 0, 0)
-point_5_reference = Reference(point_5.com_object)
+point_5_reference = part.create_reference_from_object(point_5)
 
 # add the points to 'construction_points'
 hybrid_body_points.append_hybrid_shape(point_1)
@@ -74,20 +73,20 @@ spline.add_point(point_2_reference)
 spline.add_point(point_3_reference)
 spline.add_point(point_4_reference)
 spline.add_point(point_5_reference)
-spline_reference = Reference(spline.com_object)
+spline_reference = part.create_reference_from_object(spline)
 
 hybrid_body_splines.append_hybrid_shape(spline)
 
 # create the extrusion
 # plane used to define direction
 plane = part.origin_elements.plane_xy
-plane_reference = Reference(plane.com_object)
+plane_reference = part.create_reference_from_object(plane)
 # have to create a direction object for extrusion.
 direction = hybrid_shape_factory.add_new_direction(plane_reference)
 extrusion = hybrid_shape_factory.add_new_extrude(
     spline_reference, i_offset_debut=10, i_offset_fin=10, i_direction=direction
 )
-extrusion_reference = Reference(extrusion.com_object)
+extrusion_reference = part.create_reference_from_object(extrusion)
 hybrid_body_surface.append_hybrid_shape(extrusion)
 
 main_body = part.main_body

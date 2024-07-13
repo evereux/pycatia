@@ -11,10 +11,8 @@ def test_point_between():
     r = (50, 0, 0)
 
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -42,10 +40,8 @@ def test_point_center():
     center = (length / 2, 0, 0)
 
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -73,10 +69,8 @@ def test_point_coord():
     co_ord = (0, 10, 100)
 
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -95,10 +89,8 @@ def test_point_coord_reference():
     r = tuple([i + i for i in co_ord])
 
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -133,10 +125,8 @@ def test_point_on_curve():
     center = (length / 2, 0, 0)
 
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -187,10 +177,8 @@ def test_point_on_plane():
     co_ord_1 = (250.0, 100.0)
 
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -215,10 +203,8 @@ def test_point_on_plane_reference():
         co_ord_1[2],
     )
     with CATIADocHandler(new_document="Part") as caa:
-        document = caa.document
-        assert document is not None
-
-        part = PartDocument(document.com_object).part
+        part_document: PartDocument = caa.document
+        part = part_document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies

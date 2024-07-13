@@ -1,10 +1,27 @@
 # Changelog
 
+## 0.7.3
+
+* added missing type hints to `Relations.create_formula()`.
+* removed win_32 builds folder from repository to reduce repository size and
+  speed up cloning.
+* fixed `Document.export_data()` were file alerts were not suppresed if requested. #221 @Zcaic
+* updated `Document.export_data()` and `Document.save_as()` to use the pycatia
+  methods to get and set `display_file_alerts`.
+* updated `Product.activate_terminal_mode()`. Previously, if there was a broken
+  link the method would fail.
+* updated `Document.open()`, `Document.read()` and `Application.active_document`
+  to use a common method to determine document type.
+* updated the `Documents()` collection / iterator to now return a specific  
+  document type in lieu of the generic `Document`.
+* simplified `CATIADocHandler` document handling.
+
 ## 0.7.2
-* addded missing type hints to `Document()` methods.
-* fixed regression in Documents.open() Documents.read() and Documents.new_from() 
- where strings are passed in lieu of Path objects. It was the intention for both 
- strings and paths to work. Tests updated to test for both Path and str objects.
+
+* added missing type hints to `Document()` methods.
+* fixed regression in Documents.open() Documents.read() and Documents.new_from()
+  where strings are passed in lieu of Path objects. It was the intention for both
+  strings and paths to work. Tests updated to test for both Path and str objects.
 
 ## 0.7.1
 
@@ -17,97 +34,93 @@
 * updated the user_scripts to show how to better initialise documents.
 * updated the introdutcion document to show how to get the PartDocument.
 
-
 ## 0.7.0
-* fixed the following Class methods so that the Reference.com_object is passed to 
- the setter method instead of just the Reference:
-  * SFMMember2Points.end_point_on_crv_curve, 
-  * SFMMember2Points.end_point_spec,
-  * SFMMember2Points.start_point_on_crv_curve,
-  * SFMMember2Points.start_point_spec,
-  * SFMMemberCurve.curve,
-  * SFMMemberCurve.reference_surface,
-  * SFMMemberCurve.reference_surface,
-  * SFMMemberPlane2Curves.first_curve,
-  * SFMMemberPlane2Curves.plane,
-  * SFMMemberPlane2Curves.second_member,
-  * SFMMemberPointLength.direction,
-  * SFMMemberPointLength.point,
-  * SFMMemberPointUpToLimit.direction,
-  * SFMMemberPointUpToLimit.limit,
-  * SFMMemberPointUpToLimit.point,
-  * SFMMemberSurfSurf.first_surface,
-  * SFMMemberSurfSurf.second_surface,
-  * SFMStiffener.web_support, 
-  * SFMSuperPlate.support,
-  * AxisSystem.axis_rotation_reference,
-  * AutoDraft.main_draft_angle,
-  * AutoDraft.mode,
-  * AutoDraft.parting_element,
-  * AutoDraft.pulling_direction,
-  * Draft.parting_element,
-  * DraftDomain.neutral_element,
-  * DraftDomain.pulling_direction_element,
-  * FaceFillet.first_face,
-  * FaceFillet.second_face,
-  * Mirror.mirroring_plane,
-  * Revolution.revolute_axis,
-  * Rotate.axis,
-  * Scaling.scaling_reference,
-  * Scaling2.ratio_value,
-  * SolidCombine.first_component_direction,
-  * SolidCombine.first_component_profile,
-  * SolidCombine.second_component_direction,
-  * SolidCombine.second_component_profile,
-  * SurfaceBasedShape.surface,
-  * Sweep.center_curve_element,
-  * Sweep.pulling_dir_element,
-  * Sweep.reference_surface_element,
-  * Thread.lateral_face_element,
-  * Thread.limit_face_element,
-  * TritangentFillet.face_to_remove,
-  * TritangentFillet.first_face,
-  * TritangentFillet.second_face,
-  * VarRadEdgeFillet.fillet_spine,
-  * StrCutoutFeature.direction_element,
-  * StrCutoutFeature.reference_surface,
-  * StrMember.surface_reference,
-  * StrPlate.support
-* added missing type hints in Product().
 
+* fixed the following Class methods so that the Reference.com_object is passed to
+  the setter method instead of just the Reference:
+    * SFMMember2Points.end_point_on_crv_curve,
+    * SFMMember2Points.end_point_spec,
+    * SFMMember2Points.start_point_on_crv_curve,
+    * SFMMember2Points.start_point_spec,
+    * SFMMemberCurve.curve,
+    * SFMMemberCurve.reference_surface,
+    * SFMMemberCurve.reference_surface,
+    * SFMMemberPlane2Curves.first_curve,
+    * SFMMemberPlane2Curves.plane,
+    * SFMMemberPlane2Curves.second_member,
+    * SFMMemberPointLength.direction,
+    * SFMMemberPointLength.point,
+    * SFMMemberPointUpToLimit.direction,
+    * SFMMemberPointUpToLimit.limit,
+    * SFMMemberPointUpToLimit.point,
+    * SFMMemberSurfSurf.first_surface,
+    * SFMMemberSurfSurf.second_surface,
+    * SFMStiffener.web_support,
+    * SFMSuperPlate.support,
+    * AxisSystem.axis_rotation_reference,
+    * AutoDraft.main_draft_angle,
+    * AutoDraft.mode,
+    * AutoDraft.parting_element,
+    * AutoDraft.pulling_direction,
+    * Draft.parting_element,
+    * DraftDomain.neutral_element,
+    * DraftDomain.pulling_direction_element,
+    * FaceFillet.first_face,
+    * FaceFillet.second_face,
+    * Mirror.mirroring_plane,
+    * Revolution.revolute_axis,
+    * Rotate.axis,
+    * Scaling.scaling_reference,
+    * Scaling2.ratio_value,
+    * SolidCombine.first_component_direction,
+    * SolidCombine.first_component_profile,
+    * SolidCombine.second_component_direction,
+    * SolidCombine.second_component_profile,
+    * SurfaceBasedShape.surface,
+    * Sweep.center_curve_element,
+    * Sweep.pulling_dir_element,
+    * Sweep.reference_surface_element,
+    * Thread.lateral_face_element,
+    * Thread.limit_face_element,
+    * TritangentFillet.face_to_remove,
+    * TritangentFillet.first_face,
+    * TritangentFillet.second_face,
+    * VarRadEdgeFillet.fillet_spine,
+    * StrCutoutFeature.direction_element,
+    * StrCutoutFeature.reference_surface,
+    * StrMember.surface_reference,
+    * StrPlate.support
+* added missing type hints in Product().
 
 ## 0.6.9
 
-* added the following document types that can be created with Document.add(): 
- 'Analysis', 'CatalogDocument', 'CATMaterial', 'CATProcess', 'cgm' 
- 'FeatureDictionary', 'gl', 'gl2', 'hpgl', 'FunctionalSystem', 'ProcessLibrary'
-* Rewrote how document types are detected and tested for. This makes adding 
- additional document types easier.
+* added the following document types that can be created with Document.add():
+  'Analysis', 'CatalogDocument', 'CATMaterial', 'CATProcess', 'cgm'
+  'FeatureDictionary', 'gl', 'gl2', 'hpgl', 'FunctionalSystem', 'ProcessLibrary'
+* Rewrote how document types are detected and tested for. This makes adding
+  additional document types easier.
 * fixed HybridShapeExtrapol.support. @HyberCa
 * fixed HybridShapeAxisLine.element.
-
 
 ## 0.6.8
 
 * added option to initialise the Application object with pythoncom.CoInitialize().
- This is required for when using pycatia in a threaded context. To use this 
-feature you would do `caa = catia(co_initialise=True)`.
+  This is required for when using pycatia in a threaded context. To use this
+  feature you would do `caa = catia(co_initialise=True)`.
 * fixed name conflict in RemoveFace().
-
 
 ## 0.6.7
 
 * fix type hinting issue with python 3.9. #194 @mokrueger
-* updated Factory_2D.create_spline() so that it will now accept a tuple of 
+* updated Factory_2D.create_spline() so that it will now accept a tuple of
   control_points instead of their com_objects. #199 @mokrueger
 * updated iter methods to use .Item instead of .item. The resolves issues where
-  the pycatia user is using a modified com interface provided by Dassault. 
+  the pycatia user is using a modified com interface provided by Dassault.
   #195 @mokrueger.
 * added missing method ShapeFactory.add_new_translate2() #202 There is currently
-  a quirk with regard to its usage. See the GitHub issue #202 for further 
+  a quirk with regard to its usage. See the GitHub issue #202 for further
   information.
 * improved Parameters handling. #197 @mokrueger
-
 
 ## 0.6.6
 
@@ -115,9 +128,8 @@ feature you would do `caa = catia(co_initialise=True)`.
 * fixed method document.indicate_3d()
 * fixed method selection.indicate_or_select_element_2d() @hitman061
 * renamed Outputs.count_ due to name clash with Collection.
-* fixes due to mypy checking. There are still errors report but not sure how 
+* fixes due to mypy checking. There are still errors report but not sure how
   to fix at this time.
-
 
 ## 0.6.5
 

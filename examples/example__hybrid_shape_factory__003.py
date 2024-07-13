@@ -22,7 +22,6 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
-from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 caa = catia()
@@ -40,9 +39,10 @@ geom_set.name = "Construction_Geometry"
 co_ord_1 = (0, 0, 0)
 co_ord_2 = (100, 0, 0)
 point_1 = hsf.add_new_point_coord(co_ord_1[0], co_ord_1[1], co_ord_1[2])
-point_1_reference = Reference(point_1.com_object)
+point_1_reference = part.create_reference_from_object(point_1)
+
 point_2 = hsf.add_new_point_coord(co_ord_2[0], co_ord_2[1], co_ord_2[2])
-point_2_reference = Reference(point_2.com_object)
+point_2_reference = part.create_reference_from_object(point_2)
 
 geom_set.append_hybrid_shape(point_1)
 geom_set.append_hybrid_shape(point_2)

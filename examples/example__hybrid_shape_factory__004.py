@@ -9,7 +9,7 @@
         Once determined create an object from it and find it's parent(s).
 
     Requirements:
-        - An active part document open with a geometrical set called "construction_geometry" containing points
+        - An active part document open with a geometrical set called "ConstructionGeometry" containing points
           generated using HybridShapePtCoord and line generated using HybridShapeLinePtPt:
 
             Part
@@ -40,7 +40,7 @@ part_document: PartDocument = caa.active_document
 part = part_document.part
 
 hbs = part.hybrid_bodies
-hb_construction_lines = hbs.item("construction_geometry")
+hb_construction_lines = hbs.item("ConstructionGeometry")
 hss = hb_construction_lines.hybrid_shapes
 
 for shape_index in range(1, hss.count + 1):

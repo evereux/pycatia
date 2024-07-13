@@ -13,6 +13,21 @@ from pycatia.types.document import document_types
 from pycatia.types.general import cat_variant, list_str
 
 
+def get_document_object(doc_com):
+    """
+
+    """
+    full_name = Path(doc_com.FullName)
+    extension = full_name.suffix[1:]
+    types = [document_types[k]['type'] for k in document_types if document_types[k]['extension'] == extension]
+    if not types:
+        document_type = document_types['Default']['type']
+    else:
+        document_type = types[0]
+
+    return document_type(doc_com)
+
+
 class Documents(Collection):
     """
     The Documents object is used to access multiple open documents in the catia session.
@@ -90,7 +105,8 @@ class Documents(Collection):
         # see pycatia.types.docs for supported Documents.
 
         if document_type.lower() not in [t.lower() for t in document_types]:
-            raise CATIAApplicationException(f'Document type {document_type} not supported. Allowed types are {[t for t in document_types]}.')
+            raise CATIAApplicationException(
+                f'Document type {document_type} not supported. Allowed types are {[t for t in document_types]}.')
 
         document = document_types[document_type]['type']
 
@@ -195,9 +211,10 @@ class Documents(Collection):
         :rtype: Document
         """
         try:
-            return Document(self.documents.Item(index))
+            item_doc_com = self.documents.Item(index)
+            return get_document_object(item_doc_com)
         except com_error:
-            raise CATIAApplicationException(f'Could not get item "{index}".')
+            raise IndexError('list index out of range')
 
     def num_open(self) -> int:
         """
@@ -214,13 +231,7 @@ class Documents(Collection):
         # for i in range(0, self.documents.Count):
         #     print(self.documents.Item(i + 1).Name)
 
-        warning_string = (
-            'The COM object can return the incorrect number of documents open. //n'
-            'For example, after a CATPart document is closed CATIA can keep'
-            'the linked document `ABQMaterialPropertiesCatalog.CATfct` loaded in the session.'
-        )
-
-        warnings.warn(warning_string)
+        self.logger.warning('The Documents.num_open method is unreliable and will be deprecated in future versions.')
         return self.documents.Count
 
     def open(self, file_name: Path) -> Document:
@@ -254,7 +265,7 @@ class Documents(Collection):
         :param Path file_name:
         :rtype: Document
         """
-        
+
         # legacy support for strings.
         if type(file_name) is str:
             file_name = Path(file_name)
@@ -262,16 +273,13 @@ class Documents(Collection):
         if not file_name.is_file:
             raise FileNotFoundError(f'Could not find file {file_name}.')
 
+        self.logger.info(f'Opening document "{file_name}".')
         try:
-            self.logger.info(f'Opening document "{file_name}".')
             open_doc_com = self.documents.Open(file_name)
-            extension = file_name.suffix[1:]
-            types = [document_types[k]['type'] for k in (document_types) if document_types[k]['extension'] == extension]
-            document_type = types[0]
-            return document_type(open_doc_com)
+            return get_document_object(open_doc_com)
         except com_error:
             raise CATIAApplicationException(
-                f'Could not open document "{file_name}". '
+                f'Could not OPEN document "{file_name}". '
                 'Check file type and ensure the version of CATIA it was created with is compatible.')
 
     def read(self, file_name: Path) -> Document:
@@ -314,26 +322,28 @@ class Documents(Collection):
         # legacy support for strings.
         if type(file_name) is str:
             file_name = Path(file_name)
-        
+
         if not file_name.is_file:
             raise FileNotFoundError(f'Could not find file {file_name}.')
 
-
-        read_doc_com = self.documents.Read(file_name)
-        extension = file_name.suffix[1:]
-        types = [document_types[k]['type'] for k in (document_types) if document_types[k]['extension'] == extension]
-        document_type = types[0]
-        return document_type(read_doc_com)
+        self.logger.info(f'Reading document "{file_name}".')
+        try:
+            read_doc_com = self.documents.Read(file_name)
+            return get_document_object(read_doc_com)
+        except com_error:
+            raise CATIAApplicationException(
+                f'Could not READ document "{file_name}". '
+                'Check file type and ensure the version of CATIA it was created with is compatible.')
 
     def __getitem__(self, n: int) -> Document:
         if (n + 1) > self.count:
             raise StopIteration
 
-        return Document(self.documents.Item(n + 1))
+        return get_document_object(self.documents.Item(n + 1))
 
     def __iter__(self) -> Iterator[Document]:
         for i in range(self.count):
-            yield self.child_object(self.com_object.Item(i + 1))
+            yield get_document_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Documents(name="{self.name}")'
