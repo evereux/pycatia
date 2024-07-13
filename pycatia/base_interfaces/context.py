@@ -57,11 +57,15 @@ class CATIADocHandler:
         if self.file_name and not os.path.isfile(self.file_name):
             raise CATIAApplicationException(f'Could not find file: {file_name}')
         else:
-            self.file_name = Path(self.file_name)
+            if self.file_name:
+                self.file_name = Path(self.file_name)
 
     def __enter__(self):
         self.documents = self.catia.documents
         self.document = None
+
+        if self.file_name and self.new_document:
+            raise CATIAApplicationException('Only new_document or file_name arguments should be used. Not both.')
 
         if self.file_name:
             self.document = self.documents.open(self.file_name)
