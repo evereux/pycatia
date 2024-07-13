@@ -15,19 +15,15 @@ alpha software
 This is alpha software.
 
 All the test cases and examples work but there will be many issues outside of
-the test framework. The CATIA com interface is huge and I've predominantly
-only worked / tested on those I can figure out how to use.
+the test framework. The CATIA com interface is large and I've predominantly
+wrote tests for those areas I'm familiar. Any bugs that exist should be for the
+most part be quite easy to fix using those methods that do work as a reference.
 
-The entire framework is now in place for others to contribute so if you know
-CATIA and python (being already familiar with automation using the more
-traditional methods will help) please do contribute. Bonus points for adding
-tests too.
-
-I have limited access to CATIA licences / workbenches. Also, there's are many
+I have limited access to CATIA licences / workbenches. Also, there are many
 modules that I simply don't know what they do. Thus my ability to test and
 support can be limited.
 
-All this said many bugs that exist should be for the most part be quite easy to
+Any bugs that exist should be for the most part be quite easy to
 fix using those methods that do work as a reference.
 
 
