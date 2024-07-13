@@ -614,14 +614,14 @@ class Product(AnyObject):
         return self.product.ActivateShape(shape_name)
 
     @staticmethod
-    def activate_terminal_node(products) -> None:
+    def activate_terminal_node(products: 'Products') -> None:
         """
         Method to 'Activate Terminal Node'.
         Loops through ALL products in product and activates_default_shape().
         :param list(Product) products:
         """
 
-        def product_looper(_products: Products):
+        def product_looper(_products: 'Products'):
             for current_product in _products:
                 try:
                     current_product.activate_default_shape()
@@ -671,12 +671,12 @@ class Product(AnyObject):
         return self.product.AddMasterShapeRepresentation(i_shape_path_name)
 
     def add_shape_representation(
-            self, 
-            i_shape_path_name: str, 
-            i_shape_name: str, 
+            self,
+            i_shape_path_name: str,
+            i_shape_name: str,
             i_rep_behavior: int,
             i_context: bool
-        ) -> None:
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1150,12 +1150,12 @@ class Product(AnyObject):
         return self.product.GetShapePathName(i_shape_name)
 
     def get_shape_representation(
-            self, 
-            i_load_if_necessary: bool, 
-            i_shape_name: str, 
+            self,
+            i_load_if_necessary: bool,
+            i_shape_name: str,
             i_rep_behavior: int,
             i_context: bool
-        ) -> AnyObject:
+    ) -> AnyObject:
         """
         .. note::
             :class: toggle
