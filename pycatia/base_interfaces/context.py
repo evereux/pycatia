@@ -1,6 +1,7 @@
 #! /usr/bin/python3.9
 
 import os
+from pathlib import Path
 import warnings
 
 from pycatia.base_interfaces.base_application import catia_application as catia
@@ -55,17 +56,17 @@ class CATIADocHandler:
 
         if self.file_name and not os.path.isfile(self.file_name):
             raise CATIAApplicationException(f'Could not find file: {file_name}')
+        else:
+            self.file_name = Path(self.file_name)
 
     def __enter__(self):
         self.documents = self.catia.documents
         self.document = None
 
         if self.file_name:
-            self.documents.open(self.file_name)
-            self.document = self.catia.active_document
+            self.document = self.documents.open(self.file_name)
         elif self.new_document:
-            self.documents.add(self.new_document)
-            self.document = self.catia.active_document
+            self.document = self.documents.add(self.new_document)
 
         return self
 
