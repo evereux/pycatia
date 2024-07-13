@@ -93,7 +93,7 @@ class Application(AnyObject):
         """
         try:
             active_doc_com = self.com_object.ActiveDocument
-            get_document_object(active_doc_com)
+            return get_document_object(active_doc_com)
         except com_error:
             raise CATIAApplicationException('Is there an active document?')
 
