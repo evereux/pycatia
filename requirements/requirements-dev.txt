@@ -5,6 +5,6 @@ ordered-set==4.1.0
 pytest==7.0.1
 pytest-cov==3.0.0
 sphinx-togglebutton==0.3.2
-twine==4.0.2
+twine==5.1.1
 sphinx-rtd-theme==2.0.0
 sphinxcontrib-jquery==4.1
