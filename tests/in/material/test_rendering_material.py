@@ -17,9 +17,7 @@ icon_folder = Path(os.getcwd(), test_files)
 
 def test_ambient_color():
     with CATIADocHandler(cat_material) as caa:
-        document = caa.document
-        assert document is not None
-        material_document = MaterialDocument(document.com_object)
+        material_document: MaterialDocument = caa.document
         material_families = material_document.families
         materials = material_families.item(1).materials
         material = materials.item(1)
