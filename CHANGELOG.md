@@ -1,25 +1,27 @@
 # Changelog
 
-
 ## 0.7.3
+
 * added missing type hints to `Relations.create_formula()`.
 * removed win_32 builds folder from repository to reduce repository size and
   speed up cloning.
 * fixed `Document.export_data()` were file alerts were not suppresed if requested. #221 @Zcaic
-* updated `Document.export_data()` and `Document.save_as()` to use the pycatia 
- methods to get and set `display_file_alerts`.
-* updated `Product.activate_terminal_mode()`. Previously, if there was a broken 
- link the method would fail.
-* updated `Document.open()` and `Document.read()` to default to document type 
- `Document` if filename extension isn't in `document_types`. 
-
+* updated `Document.export_data()` and `Document.save_as()` to use the pycatia
+  methods to get and set `display_file_alerts`.
+* updated `Product.activate_terminal_mode()`. Previously, if there was a broken
+  link the method would fail.
+* updated `Document.open()`, `Document.read()` and `Application.active_document`
+  to use a common method to determine document type.
+* updated the `Documents()` collection / iterator to now return a specific  
+  document type in lieu of the generic `Document`.
+* simplified `CATIADocHandler` document handling.
 
 ## 0.7.2
-* added missing type hints to `Document()` methods.
-* fixed regression in Documents.open() Documents.read() and Documents.new_from() 
- where strings are passed in lieu of Path objects. It was the intention for both 
- strings and paths to work. Tests updated to test for both Path and str objects.
 
+* added missing type hints to `Document()` methods.
+* fixed regression in Documents.open() Documents.read() and Documents.new_from()
+  where strings are passed in lieu of Path objects. It was the intention for both
+  strings and paths to work. Tests updated to test for both Path and str objects.
 
 ## 0.7.1
 
