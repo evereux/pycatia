@@ -39,7 +39,7 @@ part_document: PartDocument = documents.add("Part")
 part = part_document.part
 
 # full path name to csv file.
-file = r"tests\Sample_Point_CSV_File1_small.csv"
+file = r"..\tests\Sample_Point_CSV_File1_small.csv"
 
 # create the points.
 create_points(part, file, units="mm", geometry_set_name="Points_Construction")
