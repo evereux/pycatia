@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.4
+
+* fixed DrawingDimensions.add().
+
 ## 0.7.3
 
 * added missing type hints to `Relations.create_formula()`.
