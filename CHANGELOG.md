@@ -3,6 +3,7 @@
 ## 0.7.4
 
 * fixed DrawingDimensions.add().
+* fixed DrawingDimensions.add2(). #229
 
 ## 0.7.3
 

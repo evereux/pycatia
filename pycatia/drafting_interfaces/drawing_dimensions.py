@@ -195,12 +195,15 @@ class DrawingDimensions(Collection):
         :param int i_ldc_ref_angle:
         :rtype: DrawingDimension
         """
+
+        i_geom_elem = [elem.com_object for elem in i_geom_elem]
+
         return DrawingDimension(
             self.drawing_dimensions.Add2(
                 i_type_dim,
                 i_geom_elem,
                 i_pt_coord_elem,
-                i_ldc_ref_elem,
+                i_ldc_ref_elem.com_object,
                 i_ldc_ref_angle)
         )
 
