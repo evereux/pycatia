@@ -109,6 +109,9 @@ class DrawingDimensions(Collection):
         :param int i_line_rep:
         :rtype: DrawingDimension
         """
+
+        i_geom_elem = [elem.com_object for elem in i_geom_elem]
+
         return DrawingDimension(
             self.drawing_dimensions.Add(
                 i_type_dim,
