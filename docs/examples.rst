@@ -154,6 +154,22 @@ Drafting: create a border template in the background view of the currently opene
 `Drafting - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__drafting__001.py>`_
 
 
+Drafting - Example 2
+~~~~~~~~~~~~~~~~~~~~
+
+Drafting: Create a dimension in the active view.
+
+`Drafting - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__drafting__002.py>`_
+
+
+Drafting - Example 3
+~~~~~~~~~~~~~~~~~~~~
+
+Drafting: Create a dimension in the active view.
+
+`Drafting - 003 <https://github.com/evereux/pycatia/blob/master/examples/example__drafting__003.py>`_
+
+
 
 .. _Example Human Modelling:
 
