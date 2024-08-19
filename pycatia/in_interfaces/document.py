@@ -154,7 +154,7 @@ class Document(AnyObject):
         :return: bool
         """
         try:
-            if self.part.part:
+            if self.part:
                 return True
         except AttributeError:
             return False
@@ -476,7 +476,7 @@ class Document(AnyObject):
         if overwrite is False:
             if file_name.is_file():
                 raise FileExistsError(f'File: {file_name} already exists. '
-                                  f'Set overwrite=True if you want to overwrite.')
+                                      f'Set overwrite=True if you want to overwrite.')
         else:
             self.application.display_file_alerts = False
 

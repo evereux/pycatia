@@ -170,7 +170,7 @@ class Documents(Collection):
         if type(file_name) is str:
             file_name = Path(file_name)
 
-        if not file_name.is_file:
+        if not file_name.is_file():
             raise FileNotFoundError(f'Could not find file {file_name}.')
 
         return Document(self.documents.NewFrom(file_name))
@@ -270,7 +270,7 @@ class Documents(Collection):
         if type(file_name) is str:
             file_name = Path(file_name)
 
-        if not file_name.is_file:
+        if not file_name.is_file():
             raise FileNotFoundError(f'Could not find file {file_name}.')
 
         self.logger.info(f'Opening document "{file_name}".')
@@ -323,7 +323,7 @@ class Documents(Collection):
         if type(file_name) is str:
             file_name = Path(file_name)
 
-        if not file_name.is_file:
+        if not file_name.is_file():
             raise FileNotFoundError(f'Could not find file {file_name}.')
 
         self.logger.info(f'Reading document "{file_name}".')
