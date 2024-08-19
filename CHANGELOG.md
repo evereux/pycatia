@@ -4,6 +4,7 @@
 
 * fixed DrawingDimensions.add().
 * fixed DrawingDimensions.add2(). #229
+* fixed is_file() call-ups in Documents().
 
 ## 0.7.3
 
