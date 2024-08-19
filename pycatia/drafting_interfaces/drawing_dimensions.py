@@ -8,11 +8,13 @@
         and thus help debugging in pycatia.
         
 """
-from typing import Iterator
+from typing import Iterator, Union
 
 from pycatia.drafting_interfaces.drawing_dimension import DrawingDimension
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import cat_variant
+from pycatia.scripts.vba import VBANothing
+from pycatia.scripts.vba import vba_nothing
 
 
 class DrawingDimensions(Collection):
@@ -124,7 +126,7 @@ class DrawingDimensions(Collection):
              i_type_dim: int,
              i_geom_elem: tuple,
              i_pt_coord_elem: tuple,
-             i_ldc_ref_elem: cat_variant,
+             i_ldc_ref_elem: Union[cat_variant, VBANothing],
              i_ldc_ref_angle: int) -> DrawingDimension:
         """
         .. note::
@@ -153,7 +155,6 @@ class DrawingDimensions(Collection):
                 |         iLDCRefElem
                 |             Reference geometrical element for the direction of the dimension
                 |             line .iLDCRefElem can be null: in this case, the view is the reference element
-                |             
                 |         iLDCRefAngle
                 |             Angle between the reference element and the direction of the
                 |             dimension line 
@@ -198,12 +199,17 @@ class DrawingDimensions(Collection):
 
         i_geom_elem = [elem.com_object for elem in i_geom_elem]
 
+        if i_ldc_ref_elem == vba_nothing:
+            i_ldc_ref_elem = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
+        else:
+            i_ldc_ref_elem = i_ldc_ref_elem.com_object
+
         return DrawingDimension(
             self.drawing_dimensions.Add2(
                 i_type_dim,
                 i_geom_elem,
                 i_pt_coord_elem,
-                i_ldc_ref_elem.com_object,
+                i_ldc_ref_elem,
                 i_ldc_ref_angle)
         )
 
