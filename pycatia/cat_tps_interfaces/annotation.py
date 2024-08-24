@@ -8,6 +8,9 @@
         and thus help debugging in pycatia.
         
 """
+
+from typing import TYPE_CHECKING
+
 from pycatia.cat_tps_interfaces.numerical_display_format import NumericalDisplayFormat
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.cat_tps_interfaces.associated_ref_frame import AssociatedRefFrame
@@ -34,7 +37,9 @@ from pycatia.cat_tps_interfaces.text import Text
 from pycatia.cat_tps_interfaces.tolerance_per_unit_basis_restrictive_value import TolerancePerUnitBasisRestrictiveValue
 from pycatia.cat_tps_interfaces.tolerance_unit_basis_value import ToleranceUnitBasisValue
 from pycatia.cat_tps_interfaces.tolerance_zone import ToleranceZone
-from pycatia.cat_tps_interfaces.tps_view import TPSView
+
+if TYPE_CHECKING:
+    from pycatia.cat_tps_interfaces.tps_view import TPSView
 
 
 class Annotation(AnyObject):
@@ -916,7 +921,7 @@ class Annotation(AnyObject):
 
         return ToleranceZone(self.annotation.ToleranceZone())
 
-    def transfert_to_view(self, i_view: TPSView) -> None:
+    def transfert_to_view(self, i_view: 'TPSView') -> None:
         """
         .. note::
             :class: toggle
