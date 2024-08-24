@@ -454,6 +454,11 @@ cat_cs_hole_mode = (
     "catCSModeAngleDiameter",
 )
 
+cat_cd_hole_mode = (
+    "catCDModeNoCountersunkDiameter",
+    "catCDModeCountersunkDiameter",
+)
+
 cat_dedicated_filter_type = (
     "catDisplayInBackground",
     "catMaskInBackground",

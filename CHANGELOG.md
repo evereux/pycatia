@@ -1,5 +1,40 @@
 # Changelog
 
+## 0.8.0
+
+* added the following new classes introduced in V5-6R2018.
+    * CoordDim()
+    * DrawingCoordDim
+    * DrawingCoordDims
+    * DrawingGDT
+    * DrawingGDTs
+* added the following new methods introduced in V5-6R2018.
+    * Annotation2.coordinate_dimension()
+    * AnnotationFactory2.create_coord_dimension()
+    * AnnotationFactory2.create_gdt()
+    * NonSemanticGDT.get_2d_annot()
+    * Layout2DView.coord_dims
+    * Layout2DView.gdts
+    * DrawingLeader.anchor_symbol
+    * DrawingView.coord_dims
+    * DrawingView.gdts
+    * DrawingText.nb_link
+    * DrawingText.get_parameter_link()
+    * DrawingArrow.scale_on_extremities()
+    * VisualizationSettingAtt.pre_sel_navigator_started_by_arrow_keys
+    * VisualizationSettingAtt.set_pre_sel_navigator_started_by_arrow_keys_lock
+    * VisualizationSettingAtt.get_pre_sel_navigator_started_by_arrow_keys_info()
+    * Hole.counter_drilled_mode
+    * VarRadEdgeFillet.sharp_edge_removal_mode
+    * VarRadEdgeFillet.switch_to_const_fillet_type()
+    * ConstRadEdgeFillet.switch_to_var_fillet_type()
+    * Measurable.get_angle_between_in_context()
+    * Measurable.GetMinimumDistanceInContext
+    * Measurable.GetMinimumDistancePointsInContext
+    * SPAWorkbench.get_measurable_in_context()
+* added the following enumeration types:
+    * cat_cd_hole_mode
+
 ## 0.7.4
 
 * fixed DrawingDimensions.add().

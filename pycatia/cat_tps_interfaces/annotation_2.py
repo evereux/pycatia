@@ -11,6 +11,7 @@
 
 from typing import TYPE_CHECKING
 
+from pycatia.cat_tps_interfaces.coord_dim import CoordDim
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.cat_tps_interfaces.datum_simple import DatumSimple
 from pycatia.cat_tps_interfaces.datum_target import DatumTarget
@@ -165,6 +166,22 @@ class Annotation2(AnyObject):
         :rtype: None
         """
         return self.annotation_2.AddLeader()
+
+    def coordinate_dimension(self) -> CoordDim:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+                | Func Coordinatedimension() As CoordDim
+                |     Retrieves the FTA co coordinate dimension.
+
+        :rtype: CoordDim
+        """
+        return CoordDim(self.annotation2.Coordinatedimension())
 
     def datum_simple(self) -> DatumSimple:
         """

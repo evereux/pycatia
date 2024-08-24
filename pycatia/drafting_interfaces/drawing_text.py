@@ -188,6 +188,30 @@ class DrawingText(AnyObject):
         return DrawingLeaders(self.drawing_text.Leaders)
 
     @property
+    def nb_link(self) -> int:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property NbLink() As long (Read Only)
+                |     Returns the number of attributes link
+                |
+                |     Example:
+                |         This example gets number of attributes link of MyText drawing
+                |         text.
+                |
+                |          nbLink = MyText.NbLink
+
+        :rtype: int
+        """
+
+        return self.drawing_text.NbLink
+
+    @property
     def text(self) -> str:
         """
         .. note::
@@ -468,6 +492,39 @@ class DrawingText(AnyObject):
         :rtype: bool
         """
         return self.drawing_text.GetModifiableIn2DComponentInstances()
+
+    def get_parameter_link(self, i_index: int) -> AnyObject:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+                | Func GetParameterLink(long iIndex) As CATBaseDispatch
+                |     Returns the pointed parameter link
+                |
+                |     Parameters:
+                |
+                |         iIndex
+                |             The index of the pointed parameter link. 1 <= iIndex <=
+                |             NbLink
+                |
+                |             Example:
+                |                 This example gets the first parameter link of MyText drawing
+                |                 text.
+                |
+                |                  Dim MyParm As Parameter
+                |                  MyParm = MyText.GetParameterLink(1)
+                |                  If MyParm.Value<>"Front view" Then
+                |                    'Do something
+                |                  End If
+
+        :param int i_index:
+        :rtype: AnyObject
+        """
+        return self.drawing_text.GetParameterLink(i_index)
 
     def get_parameter_on_sub_string(self, i_param: int, i_first: int, inb_character: int) -> int:
         """
