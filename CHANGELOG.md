@@ -427,14 +427,19 @@
   ProductDocument and DrawingDocument. Example:
 
 ```python
+from pathlib import Path
+
 from pycatia import catia
+from pycatia.mec_mod_interfaces.part_document import PartDocument
+
+source_document = Path(r'tests/cat_files/part_measurable.CATPart')
 
 caa = catia()
 documents = caa.documents
-documents.open(r'tests/cat_files/part_measurable.CATPart')
+documents.open(source_document)
 
 # get the active document
-document = caa.active_document
+document: PartDocument = caa.active_document
 # get the Part() object. NOTE THIS IS NOW A PROPERTY, NOT A METHOD.
 part = document.part
 ```
