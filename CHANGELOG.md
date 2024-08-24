@@ -101,7 +101,7 @@
     * DrawingView.gdts
     * DrawingText.nb_link
     * DrawingText.get_parameter_link()
-    * DrawingArrow.scale_on_extremities()
+    * DrawingArrow.scale_on_extremities() #230
     * VisualizationSettingAtt.pre_sel_navigator_started_by_arrow_keys
     * VisualizationSettingAtt.set_pre_sel_navigator_started_by_arrow_keys_lock
     * VisualizationSettingAtt.get_pre_sel_navigator_started_by_arrow_keys_info()
