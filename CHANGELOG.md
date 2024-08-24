@@ -88,6 +88,7 @@
     * DrawingCoordDims
     * DrawingGDT
     * DrawingGDTs
+
 * added the following new methods / properties introduced in V5-6R2018.
     * Annotation2.coordinate_dimension()
     * AnnotationFactory2.create_coord_dimension()
@@ -112,6 +113,7 @@
     * Measurable.GetMinimumDistanceInContext
     * Measurable.GetMinimumDistancePointsInContext
     * SPAWorkbench.get_measurable_in_context()
+
 * added the following enumeration types introduced in V5-6R2018:
     * cat_cd_hole_mode
 
