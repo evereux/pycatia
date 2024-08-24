@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.hybrid_shape_interfaces.hybrid_shape_direction import HybridShapeDirection
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
@@ -179,6 +179,46 @@ class HybridShapeUnfold(HybridShape):
         self.hybrid_shape_unfold.SurfaceType = value
 
     @property
+    def target_direction(self) -> HybridShapeDirection:
+        """
+
+        Introduced in V5-6R2020.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property TargetDirection() As HybridShapeDirection
+                |     Role: Retrieves target direction on the object.
+                |
+                |     Parameters:
+                |
+                |         oDir
+                |             return value for CATScript applications, with (IDLRETVAL) function
+                |             type
+                |
+                |     See also:
+                |         HybridShapeDirection
+                |     Returns:
+                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
+                |         Implementations
+                |     See also:
+                |         HybridShapeFactory
+
+        :rtype: HybridShapeDirection
+        """
+
+        return HybridShapeDirection(self.hybrid_shape_unfold.TargetDirection)
+
+    @target_direction.setter
+    def target_direction(self, value: HybridShapeDirection):
+        """
+        :param HybridShapeDirection value:
+        """
+
+        self.hybrid_shape_unfold.TargetDirection = value
+
+    @property
     def target_orientation_mode(self) -> int:
         """
         .. note::
@@ -211,6 +251,46 @@ class HybridShapeUnfold(HybridShape):
         """
 
         self.hybrid_shape_unfold.TargetOrientationMode = value
+
+    @property
+    def target_origin(self) -> Reference:
+        """
+
+        Introduced in V5-6R2020.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property TargetOrigin() As Reference
+                |     Role: Retrieves target origin on the object.
+                |
+                |     Parameters:
+                |
+                |         oElem
+                |             return value for CATScript applications, with (IDLRETVAL) function
+                |             type
+                |
+                |     See also:
+                |         Reference
+                |     Returns:
+                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
+                |         Implementations
+                |     See also:
+                |         HybridShapeFactory
+
+        :rtype: Reference
+        """
+
+        return Reference(self.hybrid_shape_unfold.TargetOrigin)
+
+    @target_origin.setter
+    def target_origin(self, value: Reference):
+        """
+        :param Reference value:
+        """
+
+        self.hybrid_shape_unfold.TargetOrigin = value
 
     @property
     def target_plane(self) -> Reference:

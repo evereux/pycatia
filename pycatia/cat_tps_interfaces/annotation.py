@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.cat_tps_interfaces.numerical_display_format import NumericalDisplayFormat
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.cat_tps_interfaces.associated_ref_frame import AssociatedRefFrame
 from pycatia.cat_tps_interfaces.composite_tolerance import CompositeTolerance
@@ -480,6 +480,22 @@ class Annotation(AnyObject):
         """
         return self.annotation.HasAMaterialCondition()
 
+    def has_a_numerical_display_format(self) -> bool:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+                | Func HasANumericalDisplayFormat() As boolean
+                |     Checks if the Annotation has a Numerical Display Format.
+
+        :rtype: bool
+        """
+        return self.annotation.HasANumericalDisplayFormat()
+
     def has_a_particular_tol_elem(self) -> bool:
         """
         .. note::
@@ -705,6 +721,22 @@ class Annotation(AnyObject):
         """
 
         return Noa(self.annotation.Noa())
+
+    def numerical_display_format(self) -> NumericalDisplayFormat:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+                | Func NumericalDisplayFormat() As NumericalDisplayFormat
+                |     Gets the annotation on the NumericalDisplayFormat interface.
+
+        :rtype: NumericalDisplayFormat
+        """
+        return NumericalDisplayFormat(self.annotation.NumericalDisplayFormat())
 
     def particular_tol_elem(self) -> ParticularTolElem:
         """

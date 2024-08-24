@@ -2,9 +2,7 @@
 
 ## 0.8.0
 
-* New Classes, methods, properties and enums added.
-
-### Introduced in V5-6R2021
+* TPSView methods / properties now complete.
 
 * added the following new classes introduced in V5-6R2021.
     * ManufacturingComputePMAParameters
@@ -18,7 +16,6 @@
     * DrawingTable.text_properties
     * DrawingText.orientation_reference
 
-### Introduced in V5-6R2020
 
 * added the following new classes introduced in V5-6R2020.
     * CompositesServices
@@ -37,7 +34,6 @@
 * added the following enumeration types introduced in V5-6R2020:
     * cat_composites_type
 
-### Introduced in V5-6R2019
 
 * added the following new classes introduced in V5-6R2019.
     * MedianFeature
@@ -80,7 +76,6 @@
     * Application.begin_ur_concatenation()
     * Application.stop_ur_concatenation()
 
-### Introduced in V5-6R2018
 
 * added the following new classes introduced in V5-6R2018.
     * CoordDim
@@ -659,4 +654,4 @@ Breaking changes.
 
 * Added ability to parse csv and create points in a CATIA part.
 * Added methods to open, save, save as and close CATIA files.
-* Test coverage now cover
+* Test coverage now covers

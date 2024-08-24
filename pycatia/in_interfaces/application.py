@@ -914,6 +914,24 @@ class Application(AnyObject):
 
         return Windows(self.com_object.Windows)
 
+    def begin_ur_concatenation(self) -> None:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+                | Sub BeginURConcatenation()
+                |     Start to concatenate the undo steps created during the following code.
+                |     Using this API will launch a dummy command in order to close all current model
+                |     transaction. This is to avoid to left the model in an unconsitent state.
+
+        :rtype: None
+        """
+        return self.application.BeginURConcatenation()
+
     def create_send_to(self) -> SendToService:
         """
         .. note::
@@ -1261,6 +1279,29 @@ class Application(AnyObject):
         :rtype: None
         """
         return self.com_object.StartWorkbench(iworkbench_id)
+
+    def stop_ur_concatenation(self, i_undo_step_name_bstr: str) -> None:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+                | Sub StopURConcatenation(CATBSTR iUndoStepNameBSTR)
+                |     Concatenate all the undo steps created since the start
+                |     call.
+                |
+                |     Parameters:
+                |
+                |         iUndoStepNameBSTR
+                |             Name of the undo step that will be created
+
+        :param str i_undo_step_name_bstr:
+        :rtype: None
+        """
+        return self.application.StopURConcatenation(i_undo_step_name_bstr)
 
     def __repr__(self):
         return f'Application(name="{self.name}")'

@@ -16,6 +16,7 @@ from pycatia.space_analyses_interfaces.distances import Distances
 from pycatia.space_analyses_interfaces.inertias import Inertias
 from pycatia.space_analyses_interfaces.measurable import Measurable
 from pycatia.space_analyses_interfaces.sections import Sections
+from pycatia.system_interfaces.any_object import AnyObject
 
 
 class SPAWorkbench(Workbench):
@@ -190,6 +191,41 @@ class SPAWorkbench(Workbench):
         :rtype: Measurable
         """
         return Measurable(self.spa_workbench.GetMeasurable(i_measured_item.com_object))
+
+    def get_measurable_in_context(self, i_measured_item: Reference, i_product_instance: AnyObject) -> Measurable:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+                | Func GetMeasurableInContext(Reference iMeasuredItem,AnyObject iProductInstance)
+                | As Measurable
+                |     Returns the Measurable object with respect to the provided context
+                |     (ProductInstance).
+                |
+                |     Example:
+                |
+                |             This example get the Measurable from the
+                |             SPAWorkBench.
+                |
+                |             Dim referenceObject As referenceObject
+                |             Set referenceObject = "GetReference"
+                |             Dim ProductInstances As VPMInstance
+                |             Set ProductInstances = "GetProductInstance"
+                |             Dim TheSPAWorkbench As Workbench
+                |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
+                |             Dim TheMeasurable As Measurable
+                |             Set TheMeasurable = TheSPAWorkbench.GetMeasurableInContext(referenceObject,ProductInstances)
+
+        :param Reference i_measured_item:
+        :param AnyObject i_product_instance:
+        :rtype: Measurable
+        """
+        return Measurable(
+            self.spa_workbench.GetMeasurableInContext(i_measured_item.com_object, i_product_instance.com_object))
 
     def __repr__(self):
         return f'SpaWorkbench(name="{self.name}")'

@@ -335,6 +335,17 @@ cat_clipping_mode = (
     "catClippingModeNearAndFar",
 )
 
+cat_composites_type = (
+    "Unknown",
+    "Stacking",
+    "PlyGroup",
+    "Sequence",
+    "CutPieceGroup",
+    "Ply",
+    "Core",
+    "CutPiece",
+)
+
 cat_conflict_comparison = (
     "catConflictComparisonNew",
     "catConflictComparisonOld",
@@ -452,6 +463,11 @@ cat_cs_hole_mode = (
     "catCSModeDepthAngle",
     "catCSModeDepthDiameter",
     "catCSModeAngleDiameter",
+)
+
+cat_cd_hole_mode = (
+    "catCDModeNoCountersunkDiameter",
+    "catCDModeCountersunkDiameter",
 )
 
 cat_dedicated_filter_type = (

@@ -14,7 +14,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeAssemble(HybridShape):
-
     """
         .. note::
             :class: toggle
@@ -400,6 +399,27 @@ class HybridShapeAssemble(HybridShape):
         """
         return self.hybrid_shape_assemble.GetFederationPropagation()
 
+    def get_healing_mode(self) -> bool:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+                | Func GetHealingMode() As boolean
+                |     Gets the healing mode for merged cells.
+                |
+                |     Parameters:
+                |
+                |         oHeal
+                |             True = merged cells are healed, False = merged cells are not healed.
+
+        :rtype: bool
+        """
+        return self.hybrid_shape_assemble.GetHealingMode()
+
     def get_manifold(self) -> bool:
         """
         .. note::
@@ -764,6 +784,28 @@ class HybridShapeAssemble(HybridShape):
         """
         return self.hybrid_shape_assemble.SetFederationPropagation(i_mode)
 
+    def set_healing_mode(self, i_heal: bool) -> None:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+                | Sub SetHealingMode(boolean iHeal)
+                |     Sets the healing mode for merged cells.
+                |
+                |     Parameters:
+                |
+                |         iHeal
+                |             True = merged cells are healed, False = merged cells are not healed.
+
+        :param bool i_heal:
+        :rtype: None
+        """
+        return self.hybrid_shape_assemble.SetHealingMode(i_heal)
+
     def set_manifold(self, i_manifold: bool) -> None:
         """
         .. note::
@@ -901,4 +943,4 @@ class HybridShapeAssemble(HybridShape):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'HybridShapeAssemble(name="{ self.name }")'
+        return f'HybridShapeAssemble(name="{self.name}")'

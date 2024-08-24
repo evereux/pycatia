@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.drafting_interfaces.drawing_gdt import DrawingGDT
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.cat_tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
 
@@ -33,6 +33,22 @@ class NonSemanticGDT(AnyObject):
     def __init__(self, com_object):
         super().__init__(com_object)
         self.non_semantic_gdt = com_object
+
+    def get_2d_annot(self) -> DrawingGDT:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+                | Func Get2dAnnot() As DrawingGDT
+                |     Retrieves Drafting GDT.
+
+        :rtype: DrawingGDT
+        """
+        return DrawingGDT(self.non_semantic_gdt.Get2dAnnot())
 
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
