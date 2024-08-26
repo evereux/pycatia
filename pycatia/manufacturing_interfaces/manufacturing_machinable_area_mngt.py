@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
 
 from pycatia.system_interfaces.any_object import AnyObject
 
