@@ -188,7 +188,7 @@ class Annotation2(AnyObject):
             28,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return CoordDim(self.annotation2.Coordinatedimension())
+        return CoordDim(self.annotation_2.Coordinatedimension())
 
     def datum_simple(self) -> DatumSimple:
         """
