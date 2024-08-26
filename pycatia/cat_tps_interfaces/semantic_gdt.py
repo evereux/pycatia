@@ -8,7 +8,11 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
+from pycatia.cat_tps_interfaces.median_feature import MedianFeature
+from pycatia.cat_tps_interfaces.semantic_gdt_frame_extension import SemanticGDTFrameExtension
+from pycatia.cat_tps_interfaces.semantic_gdt_nx_display import SemanticGDTNxDisplay
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.cat_tps_interfaces.associated_ref_frame import AssociatedRefFrame
 from pycatia.cat_tps_interfaces.composite_tolerance import CompositeTolerance
@@ -85,6 +89,41 @@ class SemanticGDT(AnyObject):
         """
         return CompositeTolerance(self.semantic_gdt.CompositeTolerance())
 
+    def frame_extensions(self, i_frame_extent_index: int) -> SemanticGDTFrameExtension:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func FrameExtensions(long iFrameExtentIndex) As
+                | SemanticGDTFrameExtension
+                |
+                |     Role: Gets the Auxiliary Features at given Index applied on
+                |     GDT.
+                |
+                |     Parameters:
+                |
+                |         iFrameExtentIndex
+                |             Index of the Frame Extension to retrieve.
+                |         oAuxiliaryFeatures
+                |             The list of Auxiliary Features specified on GDT (implies ISO
+                |             Standard applied).
+
+        :param int i_frame_extent_index:
+        :rtype: SemanticGDTFrameExtension
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return SemanticGDTFrameExtension(self.semantic_gdt.FrameExtensions(i_frame_extent_index))
+
     def free_state(self) -> FreeState:
         """
         .. note::
@@ -103,6 +142,77 @@ class SemanticGDT(AnyObject):
         :rtype: FreeState
         """
         return FreeState(self.semantic_gdt.FreeState())
+
+    def has_a_centered_element(self) -> bool:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func HasACenteredElement() As boolean
+                |
+                |     Role: Checks if the geometrical specification has a centered
+                |     element.
+                |     Precondition: Median Feature characteristics is valid only for ISO
+                |     standard
+                |
+                |     Parameters:
+                |
+                |         oHasCenterElt
+                |
+                |                 TRUE: The GDT has a center element
+                |                 FALSE: The GDT has not a center element or standard different
+                |                 from ISO.
+
+        :rtype: bool
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.semantic_gdt.HasACenteredElement()
+
+    def has_a_frame_extension(self) -> int:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func HasAFrameExtension() As long
+                |
+                |     Role: Checks if the geometrical specification wears a frame extension
+                |     specification.
+                |     Precondition: Intersection Plane, Orientation Plane, Collection Plane or
+                |     Direction Feature are only meaningful in ISO Standard.
+                |
+                |     Parameters:
+                |
+                |         oFrameExtentNumber
+                |
+                |                 Greater than 0: The GDT has oFrameExtentNumber frame
+                |                 extensions
+                |                 Equal or less than 0: The GDT has not a frame extension or
+                |                 standard different from ISO (value is -1).
+
+        :rtype: int
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.semantic_gdt.HasAFrameExtension()
 
     def has_a_free_state(self) -> bool:
         """
@@ -338,6 +448,38 @@ class SemanticGDT(AnyObject):
         """
         return self.semantic_gdt.IsAnAssociatedRefFrame()
 
+    def is_applied_on_multiple_entities(self) -> bool:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func IsAppliedOnMultipleEntities() As boolean
+                |
+                |     Role: Checks if the geometrical specification is applied onto multiple
+                |     geometries.
+                |
+                |     Parameters:
+                |
+                |       oIsAPattern
+                |
+                |         TRUE: The GDT is applied on Nx elements
+                |         FALSE: The GDT is applied on a unique surface.
+
+        :rtype: bool
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.semantic_gdt.IsAppliedOnMultipleEntities()
+
     def material_condition(self) -> MaterialCondition:
         """
         .. note::
@@ -356,6 +498,65 @@ class SemanticGDT(AnyObject):
         :rtype: MaterialCondition
         """
         return MaterialCondition(self.semantic_gdt.MaterialCondition())
+
+    def median_feature(self) -> MedianFeature:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func MedianFeature() As MedianFeature
+                |
+                |     Role: Gets the GDT on the Median Feature interface.
+                |
+                |     Parameters:
+                |
+                |         oMedianFeat
+                |             The Median Feature.
+
+        :rtype: MedianFeature
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return MedianFeature(self.semantic_gdt.MedianFeature())
+
+    def nx_display(self) -> SemanticGDTNxDisplay:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func NxDisplay() As SemanticGDTNxDisplay
+                |
+                |     Role: Gets the GDT on the handle to read Nx instance count, Collection or
+                |     Separate type of the geometrical specification.
+                |
+                |     Parameters:
+                |
+                |         oNxDisplay
+                |             Behavior to qualify Nx application context of this GDT.
+
+        :rtype: SemanticGDTNxDisplay
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return SemanticGDTNxDisplay(self.semantic_gdt.NxDisplay())
 
     def particular_tol_elem(self) -> ParticularTolElem:
         """

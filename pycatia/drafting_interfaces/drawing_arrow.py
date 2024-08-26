@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -138,6 +139,44 @@ class DrawingArrow(AnyObject):
         """
 
         return self.drawing_arrow.NbPoint
+
+    @property
+    def scale_on_extremities(self) -> bool:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 15:47:12.690381)
+                | Property ScaleOnExtremities() As boolean
+                |     Returns or sets the scale on extremities mode.
+                |
+                |     Example:
+                |         This example retrieves the target element of head side on MyArrow
+                |         drawing arrow.
+                |
+                |          oScaleOnExtremities = MyArrow.ScaleOnExtremities
+
+        :rtype: bool
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.drawing_arrow.ScaleOnExtremities
+
+    @scale_on_extremities.setter
+    def scale_on_extremities(self, value: bool):
+        """
+        :param bool value:
+        """
+
+        self.drawing_arrow.ScaleOnExtremities = value
 
     @property
     def tail_symbol(self) -> int:

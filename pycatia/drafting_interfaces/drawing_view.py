@@ -8,12 +8,14 @@
         and thus help debugging in pycatia.
         
 """
-
+import inspect
 from typing import TYPE_CHECKING, Tuple
 
 from pycatia.drafting_interfaces.drawing_arrows import DrawingArrows
 from pycatia.drafting_interfaces.drawing_components import DrawingComponents
+from pycatia.drafting_interfaces.drawing_coord_dims import DrawingCoordDims
 from pycatia.drafting_interfaces.drawing_dimensions import DrawingDimensions
+from pycatia.drafting_interfaces.drawing_gdts import DrawingGDTs
 from pycatia.drafting_interfaces.drawing_pictures import DrawingPictures
 from pycatia.drafting_interfaces.drawing_tables import DrawingTables
 from pycatia.drafting_interfaces.drawing_texts import DrawingTexts
@@ -147,6 +149,40 @@ class DrawingView(AnyObject):
         return DrawingComponents(self.drawing_view.Components)
 
     @property
+    def coord_dims(self) -> DrawingCoordDims:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property CoordDims() As DrawingCoordDims (Read Only)
+                |     Returns the drawing CoordDim collection of the drawing
+                |     view.
+                |     Warning: This method is not available with 2D Layout for 3D
+                |     Design.
+                |
+                |     Example:
+                |         This example retrieves in CoordDimCollection the collection of
+                |         CoordDims of the MyView drawing view.
+                |
+                |          Dim CoordDimCollection As DrawingCoordDims
+                |          Set CoordDimCollection = MyView.CoordDims
+
+        :rtype: DrawingCoordDims
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return DrawingCoordDims(self.drawing_view.CoordDims)
+
+    @property
     def dimensions(self) -> DrawingDimensions:
         """
         .. note::
@@ -236,6 +272,39 @@ class DrawingView(AnyObject):
         """
 
         self.drawing_view.FrameVisualization = value
+
+    @property
+    def gdts(self) -> DrawingGDTs:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property GDTs() As DrawingGDTs (Read Only)
+                |     Returns the drawing GDT collection of the drawing view.
+                |     Warning: This method is not available with 2D Layout for 3D
+                |     Design.
+                |
+                |     Example:
+                |         This example retrieves in GDTCollection the collection of GDTs of the
+                |         MyView drawing view.
+                |
+                |          Dim GDTCollection As DrawingGDTs
+                |          Set GDTCollection = MyView.GDTs
+
+        :rtype: DrawingGDTs
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return DrawingGDTs(self.drawing_view.GDTs)
 
     @property
     def generative_behavior(self) -> DrawingViewGenerativeBehavior:

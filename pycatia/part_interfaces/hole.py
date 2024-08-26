@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
+
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.knowledge_interfaces.length import Length
@@ -165,6 +167,50 @@ class Hole(SketchBasedShape):
         """
 
         self.hole.BottomType = value
+
+    @property
+    def counter_drilled_mode(self) -> int:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property CounterDrilledMode() As CatCDHoleMode
+                |     Returns the mode of a counterdrilled hole .
+                |
+                |     Returns:
+                |         CDMode Value of the counterdrilled mode (see CatCDHoleMode for list of
+                |         possible types)
+                |
+                |         Example:
+                |             The following example returns in CDMode the CDMode of hole
+                |             firsthole:
+                |
+                |              Set CDMode = firsthole.CounterDrilledMode
+
+        See enumeration type: cat_cd_hole_mode
+
+        :rtype: int
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.hole.CounterDrilledMode
+
+    @counter_drilled_mode.setter
+    def counter_drilled_mode(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.hole.CounterDrilledMode = value
 
     @property
     def counter_sunk_mode(self) -> int:

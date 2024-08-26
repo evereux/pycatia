@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.angle import Angle
@@ -113,6 +114,44 @@ class HybridShapeRevol(HybridShape):
         return Angle(self.hybrid_shape_revol.BeginAngle)
 
     @property
+    def begin_angle_offset(self) -> float:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property BeginAngleOffset() As double
+                |     Gets/Sets the first angle offset value of first upto
+                |     element.
+                |
+                |     Parameters:
+                |
+                |         oAng1
+                |             first angle offset value.
+
+        :rtype: float
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.hybrid_shape_revol.BeginAngleOffset
+
+    @begin_angle_offset.setter
+    def begin_angle_offset(self, value: float):
+        """
+        :param float value:
+        """
+
+        self.hybrid_shape_revol.BeginAngleOffset = value
+
+    @property
     def context(self) -> int:
         """
         .. note::
@@ -179,6 +218,44 @@ class HybridShapeRevol(HybridShape):
         """
 
         return Angle(self.hybrid_shape_revol.EndAngle)
+
+    @property
+    def end_angle_offset(self) -> float:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property EndAngleOffset() As double
+                |     Gets/Sets the second angle offset value of second upto
+                |     element.
+                |
+                |     Parameters:
+                |
+                |         oAng2
+                |             second angle offset value.
+
+        :rtype: float
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.hybrid_shape_revol.EndAngleOffset
+
+    @end_angle_offset.setter
+    def end_angle_offset(self, value: float):
+        """
+        :param float value:
+        """
+
+        self.hybrid_shape_revol.EndAngleOffset = value
 
     @property
     def first_limit_type(self) -> int:

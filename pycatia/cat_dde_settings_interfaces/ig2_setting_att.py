@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.system_interfaces.setting_controller import SettingController
 
@@ -94,6 +95,44 @@ class Ig2SettingAtt(SettingController):
         """
 
         return self.ig2_setting_att.ExportSheets
+
+    @property
+    def export_view_as_viewport(self) -> bool:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property ExportViewAsViewport() As boolean (Read Only)
+                |     Get the value of the Export Views as Viewports option. That value is only
+                |     taken into account when the export mode is set to
+                |     Semantic.
+                |
+                |     Parameters:
+                |
+                |         oViewsAsViewports
+                |             Legal values:
+                |             TRUE : Export Views as Viewports enable.
+                |             FALSE : Export Views as Viewports disable.
+                |
+                |     Returns:
+                |         Legal values:
+                |         S_OK : on Success
+                |         E_FAIL: on failure
+
+        :rtype: bool
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.ig2_setting_att.ExportViewAsViewport
 
     @property
     def import_destination_view(self) -> int:
@@ -313,6 +352,53 @@ class Ig2SettingAtt(SettingController):
         :rtype: bool
         """
         return self.ig2_setting_att.GetExportSheetsInfo(io_admin_level, io_locked)
+
+    def get_export_view_as_viewport_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func GetExportViewAsViewportInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
+                | boolean
+                |     Retrieves environment informations for the Export Views as Viewports
+                |     option.
+                |
+                |     Parameters:
+                |
+                |         ioAdminLevel
+                |
+                |             If the option is locked, AdminLevel gives the administration level
+                |             that imposes the value of the option.
+                |             If the option is not locked, AdminLevel gives the administration
+                |             level that will give the value of the option after a reset.
+                |
+                |         ioLocked
+                |             Indicates if the option has been locked.
+                |         oModified
+                |             Indicates if the option has been explicitly modified or remain to
+                |             the administrated value.
+                |
+                |     Returns:
+                |         Legal values:
+                |         S_OK : on Success
+                |         E_FAIL: on failure
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :rtype: bool
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.ig2_setting_att.GetExportViewAsViewportInfo(io_admin_level, io_locked)
 
     def get_import_destination_view_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -594,6 +680,45 @@ class Ig2SettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
+    def set_export_view_as_viewport_lock(self, i_locked: bool) -> None:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Sub SetExportViewAsViewportLock(boolean iLocked)
+                |     Locks or unlocks the Export Views as Viewports option if the operation is
+                |     allowed in the current administrated environment. In user mode this method will
+                |     always return E_FAIL.
+                |
+                |     Parameters:
+                |
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE: to lock the option.
+                |             FALSE: to unlock the option.
+                |
+                |     Returns:
+                |         Legal values:
+                |         S_OK : on Success
+                |         E_FAIL: on failure
+
+        :param bool i_locked:
+        :rtype: None
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.ig2_setting_att.SetExportViewAsViewportLock(i_locked)
+
     def set_import_destination_view_lock(self, i_locked: bool) -> None:
         """
         .. note::
@@ -870,6 +995,44 @@ class Ig2SettingAtt(SettingController):
         :rtype: None
         """
         return self.ig2_setting_att.set_ExportSheets(i_sheets)
+
+    def set_export_view_as_viewport(self, i_views_as_viewports: bool) -> None:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Sub set_ExportViewAsViewport(boolean iViewsAsViewports)
+                |     Set the value of the Export Views as Viewports option. That value is only
+                |     taken into account when the export mode is set to
+                |     Semantic.
+                |
+                |     Parameters:
+                |
+                |         iViewsAsViewports
+                |             Legal values:
+                |             TRUE : Enable the export of views as Viewports.
+                |             FALSE : Disable the export of views as Viewports.
+                |
+                |     Returns:
+                |         Legal values:
+                |         S_OK : on Success
+                |         E_FAIL: on failure
+
+        :param bool i_views_as_viewports:
+        :rtype: None
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.ig2_setting_att.set_ExportViewAsViewport(i_views_as_viewports)
 
     def set_import_destination_view(self, i_destination_view: int) -> None:
         """

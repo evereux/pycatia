@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.drafting_interfaces.drawing_dimension import DrawingDimension
 from pycatia.system_interfaces.any_object import AnyObject
@@ -198,6 +199,39 @@ class Dimension3D(AnyObject):
         :rtype: bool
         """
         return self.dimension_3d.HasDimensionLimit()
+
+    def is_a_continuous_feature_applied(self) -> bool:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func IsAContinuousFeatureApplied() As boolean
+                |     Checks if the Semantic Dimension is a applied on a Continuous Feature. CF
+                |     suffix size modifier is only valid for ASME Standard.
+                |
+                |     Parameters:
+                |
+                |         oIsACFDim
+                |
+                |                 TRUE: The dimension is a applied onto a Continuous
+                |                 Feature
+                |                 FALSE: The dimension is not applied onto a Continuous
+                |                 Feature
+
+        :rtype: bool
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.dimension3_d.IsAContinuousFeatureApplied()
 
     def is_a_dimension_pattern(self) -> bool:
         """

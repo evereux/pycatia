@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.mec_mod_interfaces.factory import Factory
 from pycatia.cat_tps_interfaces.annotation_2 import Annotation2
@@ -40,6 +41,37 @@ class AnnotationFactory2(Factory):
     def __init__(self, com_object):
         super().__init__(com_object)
         self.annotation_factory_2 = com_object
+
+    def create_coord_dimension(self, i_surf: UserSurface) -> Annotation2:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func CreateCoordDimension(UserSurface iSurf) As Annotation2
+                |     Create a Coordinate Dimension
+                |
+                |     Parameters:
+                |
+                |         iSurf
+                |             The user surface on which you apply the new Coordinate Dimension.
+                |
+                |         oCoorddimension
+                |             The new created Coordinate dimension Feature.
+
+        :param UserSurface i_surf:
+        :rtype: Annotation2
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+        return Annotation2(self.annotation_factory_2.CreateCoordDimension(i_surf.com_object))
 
     def create_datum(self, i_surf: UserSurface) -> Annotation2:
         """
@@ -106,8 +138,13 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.annotation_factory_2.CreateDatumTarget(i_surf.com_object, i_datum.com_object))
 
-    def create_ditto_noa(self, i_surf: UserSurface, i_noa_type: str, i_ditto: DrawingComponent,
-                         i_stick_to_geometry_option: bool) -> Annotation2:
+    def create_ditto_noa(
+            self,
+            i_surf: UserSurface,
+            i_noa_type: str,
+            i_ditto: DrawingComponent,
+            i_stick_to_geometry_option: bool
+    ) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -147,11 +184,23 @@ class AnnotationFactory2(Factory):
         :param bool i_stick_to_geometry_option:
         :rtype: Annotation2
         """
-        return Annotation2(self.annotation_factory_2.CreateDittoNOA(i_surf.com_object, i_noa_type, i_ditto.com_object,
-                                                                    i_stick_to_geometry_option))
+        return Annotation2(
+            self.annotation_factory_2.CreateDittoNOA(
+                i_surf.com_object,
+                i_noa_type,
+                i_ditto.com_object,
+                i_stick_to_geometry_option
+            )
+        )
 
-    def create_evaluate_datum(self, i_surf: 'UserSurface', i_x: float, i_y: float, i_z: float,
-                              i_with_leader: bool) -> Annotation2:
+    def create_evaluate_datum(
+            self,
+            i_surf: 'UserSurface',
+            i_x: float,
+            i_y: float,
+            i_z: float,
+            i_with_leader: bool
+    ) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -194,10 +243,23 @@ class AnnotationFactory2(Factory):
         :rtype: Annotation2
         """
         return Annotation2(
-            self.annotation_factory_2.CreateEvoluateDatum(i_surf.com_object, i_x, i_y, i_z, i_with_leader))
+            self.annotation_factory_2.CreateEvoluateDatum(
+                i_surf.com_object,
+                i_x,
+                i_y,
+                i_z,
+                i_with_leader
+            )
+        )
 
-    def create_evaluate_text(self, i_surf: 'UserSurface', i_x: float, i_y: float, i_z: float,
-                             i_with_leader: bool) -> Annotation2:
+    def create_evaluate_text(
+            self,
+            i_surf: 'UserSurface',
+            i_x: float,
+            i_y: float,
+            i_z: float,
+            i_with_leader: bool
+    ) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -239,7 +301,14 @@ class AnnotationFactory2(Factory):
         :rtype: Annotation2
         """
         return Annotation2(
-            self.annotation_factory_2.CreateEvoluateText(i_surf.com_object, i_x, i_y, i_z, i_with_leader))
+            self.annotation_factory_2.CreateEvoluateText(
+                i_surf.com_object,
+                i_x,
+                i_y,
+                i_z,
+                i_with_leader
+            )
+        )
 
     def create_flag_note(self, i_surf: 'UserSurface') -> Annotation2:
         """
@@ -261,10 +330,48 @@ class AnnotationFactory2(Factory):
         :param UserSurface i_surf:
         :rtype: Annotation2
         """
-        return Annotation2(self.annotation_factory_2.CreateFlagNote(i_surf.com_object))
+        return Annotation2(
+            self.annotation_factory_2.CreateFlagNote(
+                i_surf.com_object
+            )
+        )
 
-    def create_non_semantic_dimension(self, i_surf: 'UserSurface', i_type: cat_variant,
-                                      i_sub_type: cat_variant) -> Annotation2:
+    def create_gdt(self, i_surf: UserSurface) -> Annotation2:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func CreateGDT(UserSurface iSurf) As Annotation2
+                |     Create a GDT
+                |
+                |     Parameters:
+                |
+                |         iSurf
+                |             The user surface on which you apply the new GDT.
+                |         oGDT
+                |             The new created GDT Feature.
+
+        :param UserSurface i_surf:
+        :rtype: Annotation2
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+        return Annotation2(self.annotation_factory_2.CreateGDT(i_surf.com_object))
+
+    def create_non_semantic_dimension(
+            self,
+            i_surf: 'UserSurface',
+            i_type: cat_variant,
+            i_sub_type: cat_variant
+    ) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -292,10 +399,13 @@ class AnnotationFactory2(Factory):
         :param cat_variant i_sub_type:
         :rtype: Annotation2
         """
-        return Annotation2(self.annotation_factory_2.CreateNonSemanticDimension(
-            i_surf.com_object,
-            i_type,
-            i_sub_type))
+        return Annotation2(
+            self.annotation_factory_2.CreateNonSemanticDimension(
+                i_surf.com_object,
+                i_type,
+                i_sub_type
+            )
+        )
 
     def create_roughness(self, i_surf: UserSurface) -> Annotation2:
         """
@@ -319,8 +429,12 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.annotation_factory_2.CreateRoughness(i_surf.com_object))
 
-    def create_semantic_dimension(self, i_surf: UserSurface, i_type: cat_variant,
-                                  i_sub_type: cat_variant) -> Annotation2:
+    def create_semantic_dimension(
+            self,
+            i_surf: UserSurface,
+            i_type: cat_variant,
+            i_sub_type: cat_variant
+    ) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -342,8 +456,13 @@ class AnnotationFactory2(Factory):
         :param cat_variant i_sub_type:
         :rtype: Annotation2
         """
-        return Annotation2(self.annotation_factory_2.CreateSemanticDimension(i_surf.com_object, i_type,
-                                                                             i_sub_type))
+        return Annotation2(
+            self.annotation_factory_2.CreateSemanticDimension(
+                i_surf.com_object,
+                i_type,
+                i_sub_type
+            )
+        )
 
     def create_text(self, i_surf: UserSurface) -> Annotation2:
         """
@@ -462,7 +581,12 @@ class AnnotationFactory2(Factory):
         :rtype: Annotation2
         """
         return Annotation2(
-            self.annotation_factory_2.CreateToleranceWithDRF(i_index, i_surf.com_object, i_drf.com_object))
+            self.annotation_factory_2.CreateToleranceWithDRF(
+                i_index,
+                i_surf.com_object,
+                i_drf.com_object
+            )
+        )
 
     def create_tolerance_without_drf(self, i_index: cat_variant, i_surf: UserSurface) -> Annotation2:
         """

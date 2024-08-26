@@ -1,4 +1,5 @@
 #! /usr/bin/python3.9
+import inspect
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.any_object import AnyObject
@@ -219,6 +220,53 @@ class Measurable(AnyObject):
         """
 
         return self.measurable.GetAngleBetween(i_measured_item.com_object)
+
+    def get_angle_between_in_context(self, i_measured_item: Reference, i_product_instance: AnyObject) -> float:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func GetAngleBetweenInContext(Reference iMeasuredItem,AnyObject
+                | iProductInstance) As double
+                |     Compute the angle between the CATIAMeasurable and another with respect to
+                |     the provided context (ProductInstance). Instantiate Measurable with method
+                |     GetMeasurableInContext to get the correct result.
+                |
+                |     Example:
+                |
+                |        This example retrieves the angle between the reference1 and
+                |        reference2.
+                |        Dim reference1 As Reference
+                |        Set reference1 = part1.CreateReferenceFromObject(object1)
+                |        Dim ProductInstances As VPMInstance
+                |        Set ProductInstances = "GetTheProductInstance"
+                |        Dim reference2 As Reference
+                |        Set reference2 = part1.CreateReferenceFromObject(object1)
+                |        Dim ProductInstances2 As VPMInstance
+                |        Set ProductInstances2 = "GetTheProductInstance"
+                |        Dim TheSPAWorkbench As Workbench
+                |        Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
+                |        Dim TheMeasurable As Measurable
+                |        Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1,ProductInstances)
+                |        Dim AngleInContext As double
+                |        AngleInContext = TheMeasurable.GetAngleBetween(reference2,ProductInstances2)
+
+        :param Reference i_measured_item:
+        :param AnyObject i_product_instance:
+        :rtype: float
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.measurable.GetAngleBetweenInContext(i_measured_item.com_object, i_product_instance.com_object)
 
     def get_axis(self):
         """
@@ -456,6 +504,54 @@ class Measurable(AnyObject):
 
         return self.measurable.GetMinimumDistance(i_measured_item.com_object)
 
+    def get_minimum_distance_in_context(self, i_measured_item: Reference, i_product_instance: AnyObject) -> float:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func GetMinimumDistanceInContext(Reference iMeasuredItem,AnyObject
+                | iProductInstance) As double
+                |     Compute the minimum distance between the CATIAMeasurable and another Bodies
+                |     with respect to the provided context (ProductInstance) Instantiate Measurable
+                |     with method GetMeasurableInContext to get the correct
+                |     result.
+                |
+                |     Example:
+                |
+                |       This example retrieves the distance between the reference1 and
+                |       reference2.
+                |       Dim reference1 As Reference
+                |       Set reference1 = part1.CreateReferenceFromObject(object1)
+                |       Dim ProductInstances As VPMInstance
+                |       Set ProductInstances = "GetTheProductInstance"
+                |       Dim reference2 As Reference
+                |       Set reference2 = part1.CreateReferenceFromObject(object2)
+                |       Dim ProductInstances2 As VPMInstance
+                |       Set ProductInstances2 = "GetTheProductInstance"
+                |       Dim TheSPAWorkbench As Workbench
+                |       Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
+                |       Dim TheMeasurable As Measurable
+                |       Set TheMeasurable = TheSPAWorkbench.GetMeasurableInContext(reference1,ProductInstances)
+                |       Dim MinimumDistanceInContext As double
+                |       MinimumDistanceInContext = TheMeasurable.GetMinimumDistanceInContext(reference2,ProductInstances2)
+
+        :param Reference i_measured_item:
+        :param AnyObject i_product_instance:
+        :rtype: float
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.measurable.GetMinimumDistanceInContext(i_measured_item.com_object, i_product_instance.com_object)
+
     def get_minimum_distance_points(self, i_measured_item):
         """
         .. note::
@@ -495,6 +591,65 @@ class Measurable(AnyObject):
 
         system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.measurable, i_measured_item.com_object])
+
+    def get_minimum_distance_points_in_context(
+            self,
+            i_measured_item: Reference,
+            i_product_instance: AnyObject,
+            o_coordinates: tuple
+    ) -> None:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Sub GetMinimumDistancePointsInContext(Reference iMeasuredItem,AnyObject
+                | iProductInstance,CATSafeArrayVariant oCoordinates)
+                |     Compute the points corresponding to the minimum distance between the two
+                |     references with respect to the provided context (ProductInstance). Instantiate
+                |     Measurable with method GetMeasurableInContext to get the correct
+                |     result.
+                |
+                |     Example:
+                |
+                |             This example retrieves the points corresponding to the distance
+                |             between the reference1 and reference2.
+                |             Dim reference1 As Reference
+                |             Set reference1 = part1.CreateReferenceFromObject(object1)
+                |             Dim ProductInstances As VPMInstance
+                |             Set ProductInstances = "GetTheProductInstance"
+                |             Dim reference2 As Reference
+                |             Set reference2 = part1.CreateReferenceFromObject(object2)
+                |             Dim ProductInstances2 As VPMInstance
+                |             Set ProductInstances2 = "GetTheProductInstance"
+                |             Dim TheSPAWorkbench As Workbench
+                |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
+                |             Dim TheMeasurable As Measurable
+                |             Set TheMeasurable = TheSPAWorkbench.GetMeasurableInContext(reference1,ProductInstances)
+                |             Dim CoordinatesInContext (8)
+                |             TheMeasurable.GetMinimumDistancePointsInContext
+                |             reference2,ProductInstances2, CoordinatesInContext
+
+        :param Reference i_measured_item:
+        :param AnyObject i_product_instance:
+        :param tuple o_coordinates:
+        :rtype: None
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.measurable.GetMinimumDistancePointsInContext(
+            i_measured_item.com_object,
+            i_product_instance.com_object,
+            o_coordinates
+        )
 
     def get_plane(self):
         """

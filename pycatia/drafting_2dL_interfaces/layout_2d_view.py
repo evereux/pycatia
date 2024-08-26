@@ -8,10 +8,13 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.drafting_interfaces.drawing_arrows import DrawingArrows
 from pycatia.drafting_interfaces.drawing_components import DrawingComponents
+from pycatia.drafting_interfaces.drawing_coord_dims import DrawingCoordDims
 from pycatia.drafting_interfaces.drawing_dimensions import DrawingDimensions
+from pycatia.drafting_interfaces.drawing_gdts import DrawingGDTs
 from pycatia.drafting_interfaces.drawing_pictures import DrawingPictures
 from pycatia.drafting_interfaces.drawing_tables import DrawingTables
 from pycatia.drafting_interfaces.drawing_texts import DrawingTexts
@@ -128,6 +131,38 @@ class Layout2DView(AnyObject):
         return DrawingComponents(self.layout_2d_view.Components)
 
     @property
+    def coord_dims(self) -> DrawingCoordDims:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property CoordDims() As DrawingCoordDims (Read Only)
+                |     Returns the drawing CoordDim collection of the Layout2D
+                |     view.
+                |
+                |     Example:
+                |         This example retrieves in CoordDimCollection the collection of
+                |         CoordDims of the MyView Layout2D view.
+                |
+                |          Dim CoordDimCollection As DrawingCoordDims
+                |          Set CoordDimCollection = MyView.CoordDims
+
+        :rtype: DrawingCoordDims
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return DrawingCoordDims(self.layout_2d_view.CoordDims)
+
+    @property
     def dimensions(self) -> DrawingDimensions:
         """
         .. note::
@@ -211,6 +246,37 @@ class Layout2DView(AnyObject):
         """
 
         self.layout_2d_view.FrameVisualization = value
+
+    @property
+    def gdts(self) -> DrawingGDTs:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property GDTs() As DrawingGDTs (Read Only)
+                |     Returns the drawing GDT collection of the Layout2D view.
+                |
+                |     Example:
+                |         This example retrieves in GDTCollection the collection of GDTs of the
+                |         MyView Layout2D view.
+                |
+                |          Dim GDTCollection As DrawingGDTs
+                |          Set GDTCollection = MyView.GDTs
+
+        :rtype: DrawingGDTs
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return DrawingGDTs(self.layout_2d_view.GDTs)
 
     @property
     def geometric_elements(self) -> GeometricElements:

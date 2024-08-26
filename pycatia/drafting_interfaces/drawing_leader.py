@@ -8,12 +8,14 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 from typing import TYPE_CHECKING
 
 from pycatia.system_interfaces.any_object import AnyObject
 
 if TYPE_CHECKING:
     from pycatia.drafting_interfaces.drawing_leaders import DrawingLeaders
+
 
 class DrawingLeader(AnyObject):
     """
@@ -96,6 +98,38 @@ class DrawingLeader(AnyObject):
         """
 
         self.drawing_leader.AnchorPoint = value
+
+    @property
+    def anchor_symbol(self) -> int:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property AnchorSymbol() As long
+                |     Returns or sets the anchor symbol of the drawing leader. AnchorSymbol 0 : No anchor symbol 1 : All-Around style (circle) - For GDT, Text, Table 2 : All-Over (2 concentric circles) - For GDT, Text, Table 3 : AllAboutWithHorLine (square with an horizontal line) - For GDT, Text, Table 4 : AllAboutWithVerLine (square with a vertical line) - For GDT, Text, Table 5 : AllAroundPartial (half circle) - For GDT, Text, Table 6 : AllOverPartial (2 half concentric circles) - For GDT, Text, Table 7 : AllAboutWithHorLinePartial (half square with an horizontal line) - For GDT, Text, Table 8 : AllAboutWithVerLinePartial (half square with an vertical line) - For GDT, Text, Table 9 : Flag (Flag) - For welding annotation only 10 : FlagAndAllAround (Flag And AllAround) - For welding annotation only
+
+        :rtype: int
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.drawing_leader.AnchorSymbol
+
+    @anchor_symbol.setter
+    def anchor_symbol(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.drawing_leader.AnchorSymbol = value
 
     @property
     def head_symbol(self) -> int:

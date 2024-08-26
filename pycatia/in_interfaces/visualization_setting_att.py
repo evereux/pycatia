@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.system_interfaces.setting_controller import SettingController
 
@@ -1261,6 +1262,38 @@ class VisualizationSettingAtt(SettingController):
         """
 
         self.visualization_setting_att.PickingWindowSize = value
+
+    @property
+    def pre_sel_navigator_started_by_arrow_keys(self) -> bool:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property PreSelNavigatorStartedByArrowKeys() As boolean
+                |     Returns the PreSelNavigatorStartedByArrowKeys parameter.
+
+        :rtype: bool
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.visualization_setting_att.PreSelNavigatorStartedByArrowKeys
+
+    @pre_sel_navigator_started_by_arrow_keys.setter
+    def pre_sel_navigator_started_by_arrow_keys(self, value: bool):
+        """
+        :param bool value:
+        """
+
+        self.visualization_setting_att.PreSelNavigatorStartedByArrowKeys = value
 
     @property
     def pre_selection_mode(self) -> bool:
@@ -2851,6 +2884,34 @@ class VisualizationSettingAtt(SettingController):
         :rtype: bool
         """
         return self.visualization_setting_att.GetPickingWindowSizeInfo(io_admin_level, io_locked)
+
+    def get_pre_sel_navigator_started_by_arrow_keys_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func GetPreSelNavigatorStartedByArrowKeysInfo(CATBSTR ioAdminLevel,CATBSTR
+                | ioLocked) As boolean
+                |     Retrieves information about the PreSelNavigatorStartedByArrowKeys setting
+                |     parameter.
+                |     Refer to SettingController for a detailed description.
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :rtype: bool
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.visualization_setting_att.GetPreSelNavigatorStartedByArrowKeysInfo(io_admin_level, io_locked)
 
     def get_pre_selection_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -5234,6 +5295,32 @@ class VisualizationSettingAtt(SettingController):
 
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_pre_sel_navigator_started_by_arrow_keys_lock(self, i_locked: bool) -> None:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Sub SetPreSelNavigatorStartedByArrowKeysLock(boolean iLocked)
+                |     Locks or unlocks the PreSelNavigatorStartedByArrowKeys setting
+                |     parameter.
+                |     Refer to SettingController for a detailed description.
+
+        :param bool i_locked:
+        :rtype: None
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.visualization_setting_att.SetPreSelNavigatorStartedByArrowKeysLock(i_locked)
 
     def set_pre_selection_mode_lock(self, i_locked: bool) -> None:
         """

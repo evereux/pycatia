@@ -8,11 +8,16 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
+from typing import TYPE_CHECKING
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.in_interfaces.references import References
 from pycatia.knowledge_interfaces.length import Length
 from pycatia.part_interfaces.edge_fillet import EdgeFillet
+
+if TYPE_CHECKING:
+    from pycatia.part_interfaces.const_rad_edge_fillet import ConstRadEdgeFillet
 
 
 class VarRadEdgeFillet(EdgeFillet):
@@ -183,6 +188,44 @@ class VarRadEdgeFillet(EdgeFillet):
 
         return References(self.var_rad_edge_fillet.ImposedVertices)
 
+    @property
+    def sharp_edge_removal_mode(self) -> int:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property SharpEdgeRemovalMode() As short
+                |     Returns or set the sharp edge removal mode for variable edge
+                |     fillet.
+                |
+                |     Parameters:
+                |
+                |         iMode
+                |             The mode to be used for variable edge fillet
+
+        :rtype: int
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.var_rad_edge_fillet.SharpEdgeRemovalMode
+
+    @sharp_edge_removal_mode.setter
+    def sharp_edge_removal_mode(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.var_rad_edge_fillet.SharpEdgeRemovalMode = value
+
     def add_edge_to_fillet(self, i_edge: Reference, i_radius: float) -> None:
         """
         .. note::
@@ -308,6 +351,36 @@ class VarRadEdgeFillet(EdgeFillet):
         :rtype: Length
         """
         return Length(self.var_rad_edge_fillet.ImposedVertexRadius(i_imposed_vertex.com_object))
+
+    def switch_to_const_fillet_type(self) -> 'ConstRadEdgeFillet':
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func SwitchToConstFilletType() As ConstRadEdgeFillet
+                |     Changes the type of EdgeFillet to constant EdgeFillet and return
+                |     it.
+                |
+                |     Parameters:
+                |
+                |         opConstFillet
+                |             The opConstFillet is the variable edge fillet
+
+        :rtype: ConstRadEdgeFillet
+        """
+        from pycatia.part_interfaces.const_rad_edge_fillet import ConstRadEdgeFillet
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return ConstRadEdgeFillet(self.var_rad_edge_fillet.SwitchToConstFilletType())
 
     def withdraw_edge_to_fillet(self, i_edge: Reference) -> None:
         """

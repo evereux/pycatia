@@ -8,10 +8,13 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
+
 from pycatia.in_interfaces.reference import Reference
 from pycatia.in_interfaces.references import References
 from pycatia.knowledge_interfaces.length import Length
 from pycatia.part_interfaces.edge_fillet import EdgeFillet
+from pycatia.part_interfaces.var_rad_edge_fillet import VarRadEdgeFillet
 
 
 class ConstRadEdgeFillet(EdgeFillet):
@@ -132,6 +135,35 @@ class ConstRadEdgeFillet(EdgeFillet):
 
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def switch_to_var_fillet_type(self) -> VarRadEdgeFillet:
+        """
+
+        Introduced in V5-6R2018.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func SwitchToVarFilletType() As VarRadEdgeFillet
+                |     Changes the type of EdgeFillet to variable EdgeFillet and return
+                |     it.
+                |
+                |     Parameters:
+                |
+                |         opVarFillet
+                |             The opVarFillet is the variable edge fillet
+
+        :rtype: VarRadEdgeFillet
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return VarRadEdgeFillet(self.const_rad_edge_fillet.SwitchToVarFilletType())
 
     def withdraw_object_to_fillet(self, i_object_to_withdraw: Reference) -> None:
         """

@@ -8,9 +8,11 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.drafting_interfaces.drawing_leaders import DrawingLeaders
 from pycatia.drafting_interfaces.drawing_text import DrawingText
+from pycatia.drafting_interfaces.drawing_text_properties import DrawingTextProperties
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -204,6 +206,79 @@ class DrawingTable(AnyObject):
         """
 
         return self.drawing_table.NumberOfRows
+
+    @property
+    def orientation_reference(self) -> int:
+        """
+
+        Introduced in V5-6R2021.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property OrientationReference() As long
+                |     Returns or sets the orientation reference of the drawing
+                |     table.
+                |     0 : Sheet orientation
+                |     1 : View/Label/2Dcomponent orientation
+                |
+                |     Example:
+                |         This example sets the orientation reference of MyTable drawing table to
+                |         view orientation
+                |
+                |          MyTable.OrientationReference = 1
+
+        :rtype: int
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            31,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.drawing_table.OrientationReference
+
+    @orientation_reference.setter
+    def orientation_reference(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.drawing_table.OrientationReference = value
+
+    @property
+    def text_properties(self) -> DrawingTextProperties:
+        """
+
+        Introduced in V5-6R2021.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property TextProperties() As DrawingTextProperties (Read Only)
+                |     Returns the text properties of the drawing table. Allows to modify the
+                |     whole table properties.
+                |
+                |     Example:
+                |         This example retrieves in TextProperties the text properties of the
+                |         MyTable drawing table.
+                |
+                |          Dim TextProperties As DrawingTextProperties
+                |          Set TextProperties = MyTable.TextProperties
+
+        :rtype: DrawingTextProperties
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            31,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return DrawingTextProperties(self.drawing_table.TextProperties)
 
     @property
     def x(self) -> float:

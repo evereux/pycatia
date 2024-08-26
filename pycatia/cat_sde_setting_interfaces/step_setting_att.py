@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.system_interfaces.setting_controller import SettingController
 
@@ -164,6 +165,40 @@ class StepSettingAtt(SettingController):
         """
 
         self.step_setting_att.AttAnnotation = value
+
+    @property
+    def att_annotation_export(self) -> int:
+        """
+
+        Introduced in V5-6R2020.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Property AttAnnotationExport() As short
+                |     Returns or sets the AttAnnotationExport parameter.
+                |
+                |     Ensure consistency with the C++ interface to which the work is delegated.
+
+        :rtype: int
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.step_setting_att.AttAnnotationExport
+
+    @att_annotation_export.setter
+    def att_annotation_export(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.step_setting_att.AttAnnotationExport = value
 
     @property
     def att_composites(self) -> int:
@@ -958,6 +993,51 @@ class StepSettingAtt(SettingController):
         :rtype: bool
         """
         return self.step_setting_att.GetAttAngleDefFitingInfo(io_admin_level, io_locked)
+
+    def get_att_annotation_export_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+        .. note::
+
+        Introduced in V5-6R2020.
+
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func GetAttAnnotationExportInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
+                | boolean
+                |     Retrieves environment informations for the AttAnnotationExport
+                |     parameter.
+                |     Role:Retrieves the state of the AttAnnotationExport parameter in the
+                |     current environment.
+                |
+                |     Parameters:
+                |
+                |         ioAdminLevel
+                |
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
+                |
+                |         ioLocked
+                |             Indicates if the parameter has been locked.
+                |
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :rtype: bool
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.step_setting_att.GetAttAnnotationExportInfo(io_admin_level, io_locked)
 
     def get_att_annotation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -2058,6 +2138,41 @@ class StepSettingAtt(SettingController):
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_att_annotation_export_lock(self, i_locked: bool) -> None:
+        """
+
+        Introduced in V5-6R2020.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Sub SetAttAnnotationExportLock(boolean iLocked)
+                |     Locks or unlocks the AttAnnotationExport parameter.
+                |     Role:Locks or unlocks the AttAnnotationExport parameter if it is possible
+                |     in the current administrative context. In user mode this method will always
+                |     return E_FAIL.
+                |
+                |     Parameters:
+                |
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :rtype: None
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.step_setting_att.SetAttAnnotationExportLock(i_locked)
 
     def set_att_annotation_lock(self, i_locked: bool) -> None:
         """

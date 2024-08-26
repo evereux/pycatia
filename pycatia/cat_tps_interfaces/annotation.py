@@ -8,7 +8,10 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
+from typing import TYPE_CHECKING
 
+from pycatia.cat_tps_interfaces.numerical_display_format import NumericalDisplayFormat
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.cat_tps_interfaces.associated_ref_frame import AssociatedRefFrame
 from pycatia.cat_tps_interfaces.composite_tolerance import CompositeTolerance
@@ -34,7 +37,9 @@ from pycatia.cat_tps_interfaces.text import Text
 from pycatia.cat_tps_interfaces.tolerance_per_unit_basis_restrictive_value import TolerancePerUnitBasisRestrictiveValue
 from pycatia.cat_tps_interfaces.tolerance_unit_basis_value import ToleranceUnitBasisValue
 from pycatia.cat_tps_interfaces.tolerance_zone import ToleranceZone
-from pycatia.cat_tps_interfaces.tps_view import TPSView
+
+if TYPE_CHECKING:
+    from pycatia.cat_tps_interfaces.tps_view import TPSView
 
 
 class Annotation(AnyObject):
@@ -120,7 +125,48 @@ class Annotation(AnyObject):
                 |     Parameters:
                 | 
                 |         oType
-                |             The Type. List of types available ordered by SuperType: SuperType = "FTA_NonSemantic" Type = "FTA_Text" Type = "FTA_FlagNote" Type = "FTA_Roughness" Type = "FTA_Weld" Type = "FTA_Noa" Type = "FTA_NonSemanticDatum" Type = "FTA_NonSemanticTarget" Type = "FTA_NonSemanticGDT" Type = "FTA_NonSemanticDimension" SuperType = "FTA_Form" Type = "FTA_Flatness" Type = "FTA_Straightness" Type = "FTA_Circularity" Type = "FTA_Cylindricity" Type = "FTA_ProfileOfAnyLine" Type = "FTA_ProfileOfASurface" Type = "FTA_PatternTruePos" SuperType = "FTA_Dimension" Type = "FTA_LinearDimension" Type = "FTA_AngularDimension" Type = "FTA_SecondLinearDimension" Type = "FTA_ChamferDimension" Type = "FTA_BasicDimension" SuperType = "FTA_Position" Type = "FTA_TruePosition" Type = "FTA_Concentricity" Type = "FTA_Symmetry" Type = "FTA_PositionOfAnyLine" Type = "FTA_PositionOfASurface" SuperType = "FTA_Datum" Type = "FTA_DatumSimple" Type = "FTA_DatumTarget" Type = "FTA_DatumSystem" Type = "FTA_ReferenceFrame" SuperType = "FTA_Orientation" Type = "FTA_Parallelism" Type = "FTA_Perpendicularity" Type = "FTA_Angularity" SuperType = "FTA_RunOut" Type = "FTA_TotalRunOut" Type = "FTA_CircularRunOut"
+                |             The Type. List of types available ordered by SuperType:
+                |             SuperType = "FTA_NonSemantic"
+                |             Type = "FTA_Text"
+                |             Type = "FTA_FlagNote"
+                |             Type = "FTA_Roughness"
+                |             Type = "FTA_Weld" Type = "FTA_Noa"
+                |             Type = "FTA_NonSemanticDatum"
+                |             Type = "FTA_NonSemanticTarget"
+                |             Type = "FTA_NonSemanticGDT"
+                |             Type = "FTA_NonSemanticDimension"
+                |             SuperType = "FTA_Form"
+                |             Type = "FTA_Flatness"
+                |             Type = "FTA_Straightness"
+                |             Type = "FTA_Circularity"
+                |             Type = "FTA_Cylindricity"
+                |             Type = "FTA_ProfileOfAnyLine"
+                |             Type = "FTA_ProfileOfASurface"
+                |             Type = "FTA_PatternTruePos"
+                |             SuperType = "FTA_Dimension"
+                |             Type = "FTA_LinearDimension"
+                |             Type = "FTA_AngularDimension"
+                |             Type = "FTA_SecondLinearDimension"
+                |             Type = "FTA_ChamferDimension"
+                |             Type = "FTA_BasicDimension"
+                |             SuperType = "FTA_Position"
+                |             Type = "FTA_TruePosition"
+                |             Type = "FTA_Concentricity"
+                |             Type = "FTA_Symmetry"
+                |             Type = "FTA_PositionOfAnyLine"
+                |             Type = "FTA_PositionOfASurface"
+                |             SuperType = "FTA_Datum"
+                |             Type = "FTA_DatumSimple"
+                |             Type = "FTA_DatumTarget"
+                |             Type = "FTA_DatumSystem"
+                |             Type = "FTA_ReferenceFrame"
+                |             SuperType = "FTA_Orientation"
+                |             Type = "FTA_Parallelism"
+                |             Type = "FTA_Perpendicularity"
+                |             Type = "FTA_Angularity"
+                |             SuperType = "FTA_RunOut"
+                |             Type = "FTA_TotalRunOut"
+                |             Type = "FTA_CircularRunOut"
 
         :rtype: str
         """
@@ -480,6 +526,29 @@ class Annotation(AnyObject):
         """
         return self.annotation.HasAMaterialCondition()
 
+    def has_a_numerical_display_format(self) -> bool:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func HasANumericalDisplayFormat() As boolean
+                |     Checks if the Annotation has a Numerical Display Format.
+
+        :rtype: bool
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.annotation.HasANumericalDisplayFormat()
+
     def has_a_particular_tol_elem(self) -> bool:
         """
         .. note::
@@ -706,6 +775,29 @@ class Annotation(AnyObject):
 
         return Noa(self.annotation.Noa())
 
+    def numerical_display_format(self) -> NumericalDisplayFormat:
+        """
+
+        Introduced in V5-6R2019.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
+                | Func NumericalDisplayFormat() As NumericalDisplayFormat
+                |     Gets the annotation on the NumericalDisplayFormat interface.
+
+        :rtype: NumericalDisplayFormat
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return NumericalDisplayFormat(self.annotation.NumericalDisplayFormat())
+
     def particular_tol_elem(self) -> ParticularTolElem:
         """
         .. note::
@@ -884,7 +976,7 @@ class Annotation(AnyObject):
 
         return ToleranceZone(self.annotation.ToleranceZone())
 
-    def transfert_to_view(self, i_view: TPSView) -> None:
+    def transfert_to_view(self, i_view: 'TPSView') -> None:
         """
         .. note::
             :class: toggle

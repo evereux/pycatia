@@ -1,5 +1,122 @@
 # Changelog
 
+## 0.8.0
+
+* New Classes, methods, properties and enums added.
+
+### Introduced in V5-6R2021
+
+* added the following new classes introduced in V5-6R2021.
+    * ManufacturingComputePMAParameters
+    * ManufacturingFeatureFactory
+    * ManufacturingMachinableAreaMngt
+    * ManufacturingParameter
+    * PartServices
+
+* added the following new methods / properties introduced in V5-6R2021.
+    * DrawingTable.orientation_reference
+    * DrawingTable.text_properties
+    * DrawingText.orientation_reference
+
+### Introduced in V5-6R2020
+
+* added the following new classes introduced in V5-6R2020.
+    * CompositesServices
+    * CompositesMaterial
+    * CDMASettingAtt
+    * ManufacturingProgram2
+
+* added the following new methods / properties introduced in V5-6R2020.
+    * HybridShapeUnfold.target_direction
+    * HybridShapeUnfold.target_origin
+    * StepSettingAtt.att_annotation_export
+    * StepSettingAtt.get_att_annotation_export_info()
+    * StepSettingAtt.set_att_annotation_export_lock()
+    * Wrappings.compute_wrapping_with_convex_hull()
+
+* added the following enumeration types introduced in V5-6R2020:
+    * cat_composites_type
+
+### Introduced in V5-6R2019
+
+* added the following new classes introduced in V5-6R2019.
+    * MedianFeature
+    * NumericalDisplayFormat
+    * SemanticGDTCommonZone
+    * SemanticGDTFrameExtension
+    * SemanticGDTNxDisplay
+    * ManufacturingActivityToolPath
+* added the following new methods / properties introduced in V5-6R2019.
+    * DxfSettingAtt.export_view_as_viewport
+    * DxfSettingAtt.get_export_view_as_viewport_info()
+    * DxfSettingAtt.set_export_view_as_viewport_lock()
+    * DxfSettingAtt.set_export_view_as_viewport()
+    * Ig2SettingAtt.export_view_as_viewport
+    * Ig2SettingAtt.get_export_view_as_viewport_info()
+    * Ig2SettingAtt.set_export_view_as_viewport_lock()
+    * Ig2SettingAtt.set_export_view_as_viewport()
+    * HybridShapeAssemble.get_healing_mode()
+    * HybridShapeAssemble.set_healing_mode()
+    * HybridShapeRevol.begin_angle_offset
+    * HybridShapeRevol.end_angle_offset
+    * Annotation.has_a_numerical_display_format()
+    * Annotation.numerical_display_format
+    * Annotation2.is_a_consumable_annotation
+    * AnnotationSet.annotation_set_purpose
+    * AnnotationSet.apply_result_with_link_when_copy_set_to
+    * AnnotationSet.read_iso_default_properties
+    * TPSView.annotation_plane
+    * TPSView.annotation_sketch
+    * TPSView.annotations
+    * TPSView.display_ratio
+    * TPSView.view_type
+    * Dimension3D.is_a_continuous_feature_applied()
+    * SemanticGDT.frame_extensions()
+    * SemanticGDT.has_a_centered_element()
+    * SemanticGDT.has_a_frame_extension()
+    * SemanticGDT.is_applied_on_multiple_entities()
+    * SemanticGDT.median_feature()
+    * SemanticGDT.nx_display()
+    * Application.begin_ur_concatenation()
+    * Application.stop_ur_concatenation()
+
+### Introduced in V5-6R2018
+
+* added the following new classes introduced in V5-6R2018.
+    * CoordDim
+    * DrawingCoordDim
+    * DrawingCoordDims
+    * DrawingGDT
+    * DrawingGDTs
+
+* added the following new methods / properties introduced in V5-6R2018.
+    * Annotation2.coordinate_dimension()
+    * AnnotationFactory2.create_coord_dimension()
+    * AnnotationFactory2.create_gdt()
+    * NonSemanticGDT.get_2d_annot()
+    * Layout2DView.coord_dims
+    * Layout2DView.gdts
+    * DrawingLeader.anchor_symbol
+    * DrawingView.coord_dims
+    * DrawingView.gdts
+    * DrawingText.nb_link
+    * DrawingText.get_parameter_link()
+    * DrawingArrow.scale_on_extremities() #230
+    * VisualizationSettingAtt.pre_sel_navigator_started_by_arrow_keys
+    * VisualizationSettingAtt.set_pre_sel_navigator_started_by_arrow_keys_lock
+    * VisualizationSettingAtt.get_pre_sel_navigator_started_by_arrow_keys_info()
+    * Hole.counter_drilled_mode
+    * VarRadEdgeFillet.sharp_edge_removal_mode
+    * VarRadEdgeFillet.switch_to_const_fillet_type()
+    * ConstRadEdgeFillet.switch_to_var_fillet_type()
+    * Measurable.get_angle_between_in_context()
+    * Measurable.get_minimum_distance_in_context()
+    * Measurable.get_minimum_distance_points_in_context()
+    * SPAWorkbench.get_measurable_in_context()
+
+* added the following enumeration types introduced in V5-6R2018:
+    * cat_cd_hole_mode
+
 ## 0.7.4
 
 * fixed DrawingDimensions.add().
@@ -310,14 +427,19 @@
   ProductDocument and DrawingDocument. Example:
 
 ```python
+from pathlib import Path
+
 from pycatia import catia
+from pycatia.mec_mod_interfaces.part_document import PartDocument
+
+source_document = Path(r'tests/cat_files/part_measurable.CATPart')
 
 caa = catia()
 documents = caa.documents
-documents.open(r'tests/cat_files/part_measurable.CATPart')
+documents.open(source_document)
 
 # get the active document
-document = caa.active_document
+document: PartDocument = caa.active_document
 # get the Part() object. NOTE THIS IS NOW A PROPERTY, NOT A METHOD.
 part = document.part
 ```
@@ -544,4 +666,4 @@ Breaking changes.
 
 * Added ability to parse csv and create points in a CATIA part.
 * Added methods to open, save, save as and close CATIA files.
-* Test coverage now covers
+* Test coverage now cover
