@@ -39,7 +39,7 @@ class NumericalDisplayFormat(AnyObject):
         self.numerical_display_format = com_object
 
     @property
-    def avilable_display_factor(self) -> int:
+    def available_display_factor(self) -> int:
         """
         .. note::
             :class: toggle
