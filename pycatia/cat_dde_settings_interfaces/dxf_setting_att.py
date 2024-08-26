@@ -801,7 +801,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetExportViewAsViewportInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
                 | boolean
                 |     Retrieves environment informations for the Export Views as Viewports
@@ -1537,7 +1537,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetExportViewAsViewportLock(boolean iLocked)
                 |     Locks or unlocks the Export Views as Viewports option if the operation is
                 |     allowed in the current administrated environment. In user mode this method will
@@ -2264,7 +2264,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub set_ExportViewAsViewport(boolean iViewsAsViewports)
                 |     Set the value of the Export Views as Viewports option. That value is only
                 |     taken into account when the export mode is set to

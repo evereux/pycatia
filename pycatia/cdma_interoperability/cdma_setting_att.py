@@ -764,7 +764,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetAllowReplaceStructExposedDuringExtractSaveInfo(CATBSTR
                 | AdminLevel,CATBSTR Locked) As boolean
                 |     Retrieves environment informations for the enabling of forbidding
@@ -792,7 +792,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetAskBeforeOverwriteExistingPartsInfo(CATBSTR AdminLevel,CATBSTR Locked)
                 | As boolean
                 |     Retrieves environment informations for the enabling of asking before
@@ -820,7 +820,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetAutoHighInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the automatic highlight in PSN
@@ -848,7 +848,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetCheckExistInVPMBeforeFBDIInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the check of existence in VPM before
@@ -876,7 +876,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetDisableAppObjMgtInfo(CATBSTR AdminLevel,CATBSTR oLocked) As
                 | boolean
                 |     Retrieves informations about the disabling of applicative object
@@ -904,7 +904,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetDisableOverwriteReloadWarnMsgInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the the desabling of the
@@ -932,7 +932,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetDisableVPMSaveCommitPanelInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the disabling of VPM Save Commit
@@ -960,7 +960,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetDisableVPMSaveReportPanelInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the disabling of VPM Save Report
@@ -988,7 +988,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetEnableDirectV5VaultSaveInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the enabling of the direct V5 Vault
@@ -1016,7 +1016,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetForbidInconsistentSaveInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the enabling of forbidding
@@ -1044,7 +1044,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetGFBDIInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the enabling of generic
@@ -1072,7 +1072,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetLoadAllVPMPropertiesInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the Load Of All VPM Properties
@@ -1100,7 +1100,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetManualCacheCleaningInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the manual cache cleaning
@@ -1128,7 +1128,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetMappingFileInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the mapping file.
@@ -1155,7 +1155,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetMaxPercentCacheSizeInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the number of files to delete in VPM
@@ -1183,7 +1183,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetNbFilesForDeletionInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the number of files to delete in VPM
@@ -1211,7 +1211,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetNbFilesMaxInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the maximum number of files in VPM
@@ -1239,7 +1239,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetNeverOverwriteExistingPartsInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the enabling of forbidding
@@ -1267,7 +1267,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetNoDBConnectionInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the database connection
@@ -1295,7 +1295,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetVPMCachePathInfo(CATBSTR AdminLevel,CATBSTR Locked) As
                 | boolean
                 |     Retrieves environment informations for the VPM cache path.
@@ -1322,7 +1322,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetWorkWithVPMCacheModeInfo(CATBSTR AdminLevel,CATBSTR oLocked) As
                 | boolean
                 |     Retrieves informations about the VPM Cache activation
@@ -1350,7 +1350,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetAllowReplaceStructExposedDuringExtractSaveLock(boolean
                 | iLocked)
                 |     Locks or unlocks the enabling of forbidding overwriting existing
@@ -1377,7 +1377,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetAskBeforeOverwriteExistingPartsLock(boolean iLocked)
                 |     Locks or unlocks the enabling of asking before overwriting existing
                 |     part.
@@ -1403,7 +1403,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetAutoHighLock(boolean iLocked)
                 |     Locks or unlocks the automatic highlight in PSN status.
                 |     Refer to SettingController for a detailled description.
@@ -1428,7 +1428,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetCheckExistInVPMBeforeFBDILock(boolean iLocked)
                 |     Locks or unlocks the check of existence in VPM before
                 |     FBDI.
@@ -1454,7 +1454,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetDisableAppObjMgtLock(boolean iLocked)
                 |     Locks or unlocks the disabling of applicative object
                 |     management.
@@ -1480,7 +1480,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetDisableOverwriteReloadWarnMsgLock(boolean iLocked)
                 |     Locks or unlocks the desabling of the overwrite/reload
                 |     message.
@@ -1506,7 +1506,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetDisableVPMSaveCommitPanelLock(boolean iLocked)
                 |     Locks or unlocks the disabling of VPM Save Commit Panel.
                 |     Refer to SettingController for a detailled description.
@@ -1531,7 +1531,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetDisableVPMSaveReportPanelPanelLock(boolean iLocked)
                 |     Locks or unlocks the disabling of VPM Save Report Panel.
                 |     Refer to SettingController for a detailled description.
@@ -1556,7 +1556,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetEnableDirectV5VaultSaveLock(boolean iLocked)
                 |     Locks or unlocks the enabling of the direct V5 Vault save.
                 |     Refer to SettingController for a detailled description.
@@ -1581,7 +1581,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetForbidInconsistentSaveLock(boolean iLocked)
                 |     Locks or unlocks the enabling of forbidding inconsistent
                 |     save.
@@ -1607,7 +1607,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetGFBDILock(boolean iLocked)
                 |     Locks or unlocks the enabling of generic FBDI.
                 |     Refer to SettingController for a detailled description.
@@ -1625,7 +1625,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetLoadAllVPMPropertiesLock(boolean iLocked)
                 |     Locks or unlocks the Load Of All VPM Properties status.
                 |     Refer to SettingController for a detailled description.
@@ -1650,7 +1650,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetManualCacheCleaningLock(boolean iLocked)
                 |     Locks or unlocks the manual cache cleaning activation.
                 |     Refer to SettingController for a detailled description.
@@ -1675,7 +1675,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetMappingFileLock(boolean iLocked)
                 |     Locks or unlocks the mapping file.
                 |     Refer to SettingController for a detailled description.
@@ -1700,7 +1700,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetMaxPercentCacheSizeLock(long iLocked)
                 |     Locks or unlocks the maximum percentage cache size before automatic cache
                 |     cleaning.
@@ -1726,7 +1726,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetNbFilesForDeletionLock(long iLocked)
                 |     Locks or unlocks the number of files to delete in VPM cache during
                 |     automatic cache cleaning.
@@ -1752,7 +1752,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetNbFilesMaxLock(long iLocked)
                 |     Locks or unlocks the maximum number of files in VPM cache before automatic
                 |     cache cleaning.
@@ -1778,7 +1778,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetNeverOverwriteExistingPartsLock(boolean iLocked)
                 |     Locks or unlocks the enabling of forbidding overwriting existing
                 |     part.
@@ -1804,7 +1804,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetNoDBConnectionLock(boolean iLocked)
                 |     Locks or unlocks the database connection desabling.
                 |     Refer to SettingController for a detailled description.
@@ -1829,7 +1829,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetVPMCachePathLock(boolean iLocked)
                 |     Locks or unlocks the VPM cache path.
                 |     Refer to SettingController for a detailled description.
@@ -1854,7 +1854,7 @@ class CDMASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetWorkWithVPMCacheLock(boolean iLocked)
                 |     Locks or unlocks the VPM Cache Activation mode.
                 |     Refer to SettingController for a detailled description.

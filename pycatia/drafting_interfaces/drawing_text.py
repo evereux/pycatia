@@ -549,7 +549,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetParameterLink(long iIndex) As CATBaseDispatch
                 |     Returns the pointed parameter link
                 |

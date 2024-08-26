@@ -2893,7 +2893,7 @@ class VisualizationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetPreSelNavigatorStartedByArrowKeysInfo(CATBSTR ioAdminLevel,CATBSTR
                 | ioLocked) As boolean
                 |     Retrieves information about the PreSelNavigatorStartedByArrowKeys setting
@@ -5304,7 +5304,7 @@ class VisualizationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetPreSelNavigatorStartedByArrowKeysLock(boolean iLocked)
                 |     Locks or unlocks the PreSelNavigatorStartedByArrowKeys setting
                 |     parameter.

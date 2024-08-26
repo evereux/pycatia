@@ -48,7 +48,7 @@ class ManufacturingParameter(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub GetBoolValue(CATBSTR iName,boolean oValue)
                 |     Get boolean value of parameter
                 |
@@ -80,7 +80,7 @@ class ManufacturingParameter(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub GetDoubleValue(CATBSTR iName,double oValue,long iUnit)
                 |     Get double value of parameter
                 |
@@ -115,7 +115,7 @@ class ManufacturingParameter(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub GetLongValue(CATBSTR iName,long oValue)
                 |     Get integer value of parameter
                 |
@@ -147,7 +147,7 @@ class ManufacturingParameter(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub GetStringValue(CATBSTR iName,CATBSTR oValue)
                 |     Get string value of parameter
                 |
@@ -179,7 +179,7 @@ class ManufacturingParameter(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub GetValue(CATBSTR iName,Parameter oValue)
                 |     Get CATICkeParm value of parameter
                 |

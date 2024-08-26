@@ -56,7 +56,7 @@ class DrawingGDTs(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func Add(double iPositionLeaderX,double iPositionLeaderY,double
                 | iPositionX,double iPositionY,long iGDTSymbol,CATBSTR iText) As
                 | DrawingGDT
@@ -117,7 +117,7 @@ class DrawingGDTs(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func Item(long iIndex) As DrawingGDT
                 |     Returns a drawing GDT using its index from the drawing GDTs
                 |     collection.
@@ -163,7 +163,7 @@ class DrawingGDTs(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub Remove(long iIndex)
                 |     Removes a drawing GDT from the drawing GDTs collection.
                 |

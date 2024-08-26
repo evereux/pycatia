@@ -46,7 +46,7 @@ class ManufacturingActivityToolPath(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub ComputeAndSetToolPath()
                 |     Compute and set Tool Path for this operation
 

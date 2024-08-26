@@ -204,7 +204,7 @@ class DrawingCoordDim(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub GetCoordValues(long oType,double oX,double oY,double oZ)
                 |     Returns the value of the drawing coordinate dimension.
                 |

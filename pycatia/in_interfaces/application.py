@@ -923,7 +923,7 @@ class Application(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub BeginURConcatenation()
                 |     Start to concatenate the undo steps created during the following code.
                 |     Using this API will launch a dummy command in order to close all current model
@@ -1296,7 +1296,7 @@ class Application(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub StopURConcatenation(CATBSTR iUndoStepNameBSTR)
                 |     Concatenate all the undo steps created since the start
                 |     call.

@@ -48,7 +48,7 @@ class ManufacturingComputePmaParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub ComputeParameters()
                 |     This function computes the PMA parameters and stores for 2DMA
                 |     feature
@@ -75,7 +75,7 @@ class ManufacturingComputePmaParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetParameterDoubleValue(CATBSTR iName) As double
                 |     Get double parameter
                 |

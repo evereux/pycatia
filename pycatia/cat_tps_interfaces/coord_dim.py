@@ -46,7 +46,7 @@ class CoordDim(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func Get2dAnnot() As DrawingCoordDim
                 |     Retrieves Drafting Coordinate dimension.
 

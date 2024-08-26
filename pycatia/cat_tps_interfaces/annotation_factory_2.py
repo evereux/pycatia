@@ -50,7 +50,7 @@ class AnnotationFactory2(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func CreateCoordDimension(UserSurface iSurf) As Annotation2
                 |     Create a Coordinate Dimension
                 |
@@ -344,7 +344,7 @@ class AnnotationFactory2(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func CreateGDT(UserSurface iSurf) As Annotation2
                 |     Create a GDT
                 |

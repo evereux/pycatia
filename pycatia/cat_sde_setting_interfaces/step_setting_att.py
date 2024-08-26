@@ -1002,7 +1002,7 @@ class StepSettingAtt(SettingController):
 
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetAttAnnotationExportInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
                 | boolean
                 |     Retrieves environment informations for the AttAnnotationExport
@@ -2147,7 +2147,7 @@ class StepSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetAttAnnotationExportLock(boolean iLocked)
                 |     Locks or unlocks the AttAnnotationExport parameter.
                 |     Role:Locks or unlocks the AttAnnotationExport parameter if it is possible

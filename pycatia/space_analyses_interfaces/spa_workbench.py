@@ -201,7 +201,7 @@ class SPAWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetMeasurableInContext(Reference iMeasuredItem,AnyObject iProductInstance)
                 | As Measurable
                 |     Returns the Measurable object with respect to the provided context

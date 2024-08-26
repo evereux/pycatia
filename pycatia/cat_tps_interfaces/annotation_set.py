@@ -383,7 +383,7 @@ class AnnotationSet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub ApplyResultWithLinkWhenCopySetTo()
                 |     Register for next call to either GlobalCopySetTo and like
                 |     methods.
@@ -514,7 +514,7 @@ class AnnotationSet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func ReadISODefaultProperties(CATSafeArrayVariant oISODefaults) As
                 | long
                 |     Retrieves the ISO 14405 and ISO 1101 default specifications. This method is

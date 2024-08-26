@@ -48,7 +48,7 @@ class DrawingCoordDims(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func Item(long iIndex) As DrawingCoordDim
                 |     Returns a drawing CoordDim using its index from the drawing CoordDims
                 |     collection.
@@ -94,7 +94,7 @@ class DrawingCoordDims(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub Remove(long iIndex)
                 |     Removes a drawing CoordDim from the drawing CoordDims
                 |     collection.

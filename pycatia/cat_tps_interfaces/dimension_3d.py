@@ -208,7 +208,7 @@ class Dimension3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func IsAContinuousFeatureApplied() As boolean
                 |     Checks if the Semantic Dimension is a applied on a Continuous Feature. CF
                 |     suffix size modifier is only valid for ASME Standard.

@@ -269,7 +269,7 @@ class DrawingGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetReferenceNumber(long iRowNumber) As long
                 |     Returns the number of references in a row of the GDT.
                 |
@@ -307,7 +307,7 @@ class DrawingGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetTextRange(long iRowNumber,long iNumber) As
                 | DrawingTextRange
                 |     Returns the CATIADrawingTextRange of tolerance value and reference
@@ -355,7 +355,7 @@ class DrawingGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetToleranceType(long iRowNumber) As long
                 |     Returns the symbol used in the row of the GDT.
                 |
@@ -408,7 +408,7 @@ class DrawingGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetToleranceType(long iRowNumber,long iGDTSymbol)
                 |     Sets the symbol used in the row of the GDT.
                 |

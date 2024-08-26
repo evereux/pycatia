@@ -360,7 +360,7 @@ class VarRadEdgeFillet(EdgeFillet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func SwitchToConstFilletType() As ConstRadEdgeFillet
                 |     Changes the type of EdgeFillet to constant EdgeFillet and return
                 |     it.

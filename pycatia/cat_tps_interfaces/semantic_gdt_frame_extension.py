@@ -120,7 +120,7 @@ class SemanticGDTFrameExtension(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func DirectionReference() As DatumSimple
                 |     Returns the Datum Feature used as reference to specify auxiliary
                 |     feature.
@@ -149,7 +149,7 @@ class SemanticGDTFrameExtension(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func Orientation() As double
                 |     Retrieves orientation angle when DirectionSpecification is
                 |     "FTA_Angularity".

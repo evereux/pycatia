@@ -408,7 +408,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetHealingMode() As boolean
                 |     Gets the healing mode for merged cells.
                 |
@@ -800,7 +800,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub SetHealingMode(boolean iHeal)
                 |     Sets the healing mode for merged cells.
                 |

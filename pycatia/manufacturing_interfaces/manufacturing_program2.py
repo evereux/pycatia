@@ -51,7 +51,7 @@ class ManufacturingProgram2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func AppendOperationAfter(ManufacturingOperation
                 | iManufacturingOperation,CATBSTR type,short AutoSequence) As
                 | ManufacturingOperation
@@ -100,7 +100,7 @@ class ManufacturingProgram2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func AppendOperationBefore(ManufacturingOperation
                 | iManufacturingOperation,CATBSTR type,short AutoSequence) As
                 | ManufacturingOperation

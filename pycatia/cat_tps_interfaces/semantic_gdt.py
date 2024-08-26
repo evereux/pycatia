@@ -97,7 +97,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func FrameExtensions(long iFrameExtentIndex) As
                 | SemanticGDTFrameExtension
                 |
@@ -151,7 +151,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func HasACenteredElement() As boolean
                 |
                 |     Role: Checks if the geometrical specification has a centered
@@ -186,7 +186,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func HasAFrameExtension() As long
                 |
                 |     Role: Checks if the geometrical specification wears a frame extension
@@ -456,7 +456,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func IsAppliedOnMultipleEntities() As boolean
                 |
                 |     Role: Checks if the geometrical specification is applied onto multiple
@@ -507,7 +507,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func MedianFeature() As MedianFeature
                 |
                 |     Role: Gets the GDT on the Median Feature interface.
@@ -536,7 +536,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func NxDisplay() As SemanticGDTNxDisplay
                 |
                 |     Role: Gets the GDT on the handle to read Nx instance count, Collection or

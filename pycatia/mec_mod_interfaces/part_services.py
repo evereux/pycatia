@@ -59,7 +59,7 @@ class PartServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetNearSubElements(AnyObject iObject,long iSubElementDimension,AnyObject
                 | iNearObject) As References
                 |     Get the sub elements of a geometric object or a body that are the closest
@@ -119,7 +119,7 @@ class PartServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetSubElements(AnyObject iObject,long iSubElementDimension,boolean
                 | iDuplicates) As References
                 |     Get the sub elements of a geometric object or a body.
@@ -160,7 +160,7 @@ class PartServices(AnyObject):
             31,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        
+
         return References(self.part_services.GetSubElements(i_object.com_object, i_sub_element_dimension, i_duplicates))
 
     def __repr__(self):

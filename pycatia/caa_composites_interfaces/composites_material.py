@@ -304,7 +304,7 @@ class CompositesMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub CreateCompositesData()
                 |     Create a default composites properties on the current material.
 
@@ -327,7 +327,7 @@ class CompositesMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func ExistCompositesData() As short
                 |     Returns true if a composites properties exists on the current material.
 

@@ -229,7 +229,7 @@ class Measurable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetAngleBetweenInContext(Reference iMeasuredItem,AnyObject
                 | iProductInstance) As double
                 |     Compute the angle between the CATIAMeasurable and another with respect to
@@ -512,7 +512,7 @@ class Measurable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func GetMinimumDistanceInContext(Reference iMeasuredItem,AnyObject
                 | iProductInstance) As double
                 |     Compute the minimum distance between the CATIAMeasurable and another Bodies
@@ -605,7 +605,7 @@ class Measurable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Sub GetMinimumDistancePointsInContext(Reference iMeasuredItem,AnyObject
                 | iProductInstance,CATSafeArrayVariant oCoordinates)
                 |     Compute the points corresponding to the minimum distance between the two

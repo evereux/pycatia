@@ -238,7 +238,7 @@ class Wrappings(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func ComputeWrappingWithConvexHull(Group iGroupOfSelectedProducts,Product
                 | iReferenceProduct,double iAccuracy,boolean iPerformSimplification,double
                 | iAccuracyForSimplification) As Document

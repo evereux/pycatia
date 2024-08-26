@@ -72,7 +72,7 @@ class SemanticGDTNxDisplay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func CommonZone() As SemanticGDTCommonZone
                 |     Gets the GDT on the Common Zone interface to access CZ modifier
                 |     information. Method is only returning a valid object if ISO Standard is
@@ -102,7 +102,7 @@ class SemanticGDTNxDisplay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func IsACollection() As boolean
                 |     Checks if GDT is Collection of Features. In ISO Standard, GDT may have a CZ
                 |     modifier on tolerance value.
@@ -135,7 +135,7 @@ class SemanticGDTNxDisplay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445))
+            CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Func IsASeparate() As boolean
                 |     Checks if GDT is Separate Features. In ASME Standard this is indicated with
                 |     the "INDIVIDUALLY" text linked to the GDT.
