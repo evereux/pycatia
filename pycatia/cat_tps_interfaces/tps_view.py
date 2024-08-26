@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
+
 from pycatia.cat_tps_interfaces.annotations import Annotations
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -54,6 +56,12 @@ class TPSView(AnyObject):
         :rtype: tuple
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.tps_view.AnnotationPlane
 
     @property
@@ -77,6 +85,12 @@ class TPSView(AnyObject):
 
         :rtype: False
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return None
 
@@ -109,6 +123,12 @@ class TPSView(AnyObject):
         :rtype: Annotations
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return Annotations(self.tps_view.Annotations)
 
     @property
@@ -131,6 +151,12 @@ class TPSView(AnyObject):
 
         :rtype: False
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return None
 
@@ -167,6 +193,12 @@ class TPSView(AnyObject):
 
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.tps_view.ViewType
 

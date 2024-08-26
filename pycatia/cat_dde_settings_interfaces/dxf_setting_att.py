@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.system_interfaces.setting_controller import SettingController
 
@@ -244,6 +245,12 @@ class DxfSettingAtt(SettingController):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.dxf_setting_att.ExportViewAsViewport
 
@@ -791,7 +798,6 @@ class DxfSettingAtt(SettingController):
 
         Introduced in V5-6R2019.
 
-
         .. note::
             :class: toggle
 
@@ -825,6 +831,13 @@ class DxfSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.dxf_setting_att.GetExportViewAsViewportInfo(io_admin_level, io_locked)
 
     def get_export_views_as_viewports_info(self, io_admin_level: str, io_locked: str) -> bool:
@@ -1546,6 +1559,13 @@ class DxfSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.dxf_setting_att.SetExportViewAsViewportLock(i_locked)
 
     def set_export_views_as_viewports_lock(self, i_locked: bool) -> None:
@@ -2265,6 +2285,13 @@ class DxfSettingAtt(SettingController):
         :param bool i_views_as_viewports:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.dxf_setting_att.set_ExportViewAsViewport(i_views_as_viewports)
 
     def set_export_views_as_viewports(self, i_views_as_viewports: bool) -> None:

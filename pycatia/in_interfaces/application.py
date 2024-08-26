@@ -1,5 +1,6 @@
 #! /usr/bin/python3.9
 # module initially auto generated using V5Automation.chm from CATIA R25
+import inspect
 
 from pywintypes import com_error
 
@@ -930,6 +931,13 @@ class Application(AnyObject):
 
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.application.BeginURConcatenation()
 
     def create_send_to(self) -> SendToService:
@@ -1301,6 +1309,13 @@ class Application(AnyObject):
         :param str i_undo_step_name_bstr:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.application.StopURConcatenation(i_undo_step_name_bstr)
 
     def __repr__(self):

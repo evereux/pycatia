@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.system_interfaces.setting_controller import SettingController
 
@@ -124,6 +125,12 @@ class Ig2SettingAtt(SettingController):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.ig2_setting_att.ExportViewAsViewport
 
@@ -384,6 +391,13 @@ class Ig2SettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.ig2_setting_att.GetExportViewAsViewportInfo(io_admin_level, io_locked)
 
     def get_import_destination_view_info(self, io_admin_level: str, io_locked: str) -> bool:
@@ -696,6 +710,13 @@ class Ig2SettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.ig2_setting_att.SetExportViewAsViewportLock(i_locked)
 
     def set_import_destination_view_lock(self, i_locked: bool) -> None:
@@ -1004,6 +1025,13 @@ class Ig2SettingAtt(SettingController):
         :param bool i_views_as_viewports:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.ig2_setting_att.set_ExportViewAsViewport(i_views_as_viewports)
 
     def set_import_destination_view(self, i_destination_view: int) -> None:

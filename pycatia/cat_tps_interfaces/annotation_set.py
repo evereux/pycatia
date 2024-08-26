@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+import inspect
 from typing import TYPE_CHECKING
 
 from pycatia.system_interfaces.any_object import AnyObject
@@ -166,6 +166,12 @@ class AnnotationSet(AnyObject):
 
         :rtype: str
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.annotation_set.AnnotationSetPupose
 
@@ -408,6 +414,13 @@ class AnnotationSet(AnyObject):
 
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.annotation_set.ApplyResultWithLinkWhenCopySetTo()
 
     def apply_view_re_use_when_copy_set_to(self) -> None:
@@ -530,6 +543,13 @@ class AnnotationSet(AnyObject):
         :param tuple o_iso_defaults:
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.annotation_set.ReadISODefaultProperties(o_iso_defaults)
 
     def __repr__(self):

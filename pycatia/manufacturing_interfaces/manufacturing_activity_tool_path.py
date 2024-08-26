@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
 
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -51,6 +52,13 @@ class ManufacturingActivityToolPath(AnyObject):
 
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.manufacturing_activity_tool_path.ComputeAndSetToolPath()
 
     def __repr__(self):

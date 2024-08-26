@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
 
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -56,6 +57,12 @@ class NumericalDisplayFormat(AnyObject):
         :rtype: int
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.numerical_display_format.AvilableDisplayFactor
 
     @property
@@ -75,6 +82,12 @@ class NumericalDisplayFormat(AnyObject):
 
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.numerical_display_format.DisplayFactor
 
@@ -107,6 +120,12 @@ class NumericalDisplayFormat(AnyObject):
         :rtype: int
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.numerical_display_format.DisplayLeadingZero
 
     @display_leading_zero.setter
@@ -138,6 +157,12 @@ class NumericalDisplayFormat(AnyObject):
         :rtype: int
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.numerical_display_format.DisplayTrailingZero
 
     @display_trailing_zero.setter
@@ -166,6 +191,12 @@ class NumericalDisplayFormat(AnyObject):
         :rtype: str
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.numerical_display_format.FormatName
 
     @format_name.setter
@@ -193,6 +224,12 @@ class NumericalDisplayFormat(AnyObject):
 
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.numerical_display_format.Precision
 
@@ -241,6 +278,12 @@ class NumericalDisplayFormat(AnyObject):
 
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.numerical_display_format.Separator
 

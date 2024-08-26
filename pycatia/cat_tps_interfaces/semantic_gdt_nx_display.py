@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
+
 from pycatia.cat_tps_interfaces.semantic_gdt_common_zone import SemanticGDTCommonZone
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -51,9 +53,14 @@ class SemanticGDTNxDisplay(AnyObject):
                 | Property InstanceCount() As long (Read Only)
                 |     Gets count of instances.
 
-        :return: int
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.semantic_gdt_nx_display.InstanceCount
 
@@ -78,6 +85,13 @@ class SemanticGDTNxDisplay(AnyObject):
 
         :rtype: SemanticGDTCommonZone
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return SemanticGDTCommonZone(self.semantic_gdt_nx_display.CommonZone())
 
     def is_a_collection(self) -> bool:
@@ -104,6 +118,13 @@ class SemanticGDTNxDisplay(AnyObject):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.semantic_gdt_nx_display.IsACollection()
 
     def is_a_separate(self) -> bool:
@@ -130,6 +151,13 @@ class SemanticGDTNxDisplay(AnyObject):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.semantic_gdt_nx_display.IsASeparate()
 
     def __repr__(self):

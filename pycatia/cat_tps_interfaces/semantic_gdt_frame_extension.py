@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
+
 from pycatia.cat_tps_interfaces.datum_simple import DatumSimple
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -68,6 +70,12 @@ class SemanticGDTFrameExtension(AnyObject):
         :rtype: str
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.semantic_gdt_frame_extension.DirectionSpecification
 
     @property
@@ -96,6 +104,12 @@ class SemanticGDTFrameExtension(AnyObject):
         :rtype: str
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.semantic_gdt_frame_extension.Type
 
     def direction_reference(self) -> DatumSimple:
@@ -118,6 +132,13 @@ class SemanticGDTFrameExtension(AnyObject):
 
         :rtype: DatumSimple
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return DatumSimple(self.semantic_gdt_frame_extension.DirectionReference())
 
     def orientation(self) -> float:
@@ -141,6 +162,13 @@ class SemanticGDTFrameExtension(AnyObject):
 
         :rtype: float
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.semantic_gdt_frame_extension.Orientation()
 
     def __repr__(self):

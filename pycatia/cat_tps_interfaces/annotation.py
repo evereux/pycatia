@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+import inspect
 from typing import TYPE_CHECKING
 
 from pycatia.cat_tps_interfaces.numerical_display_format import NumericalDisplayFormat
@@ -540,6 +540,13 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.annotation.HasANumericalDisplayFormat()
 
     def has_a_particular_tol_elem(self) -> bool:
@@ -782,6 +789,13 @@ class Annotation(AnyObject):
 
         :rtype: NumericalDisplayFormat
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return NumericalDisplayFormat(self.annotation.NumericalDisplayFormat())
 
     def particular_tol_elem(self) -> ParticularTolElem:

@@ -347,6 +347,13 @@ class Annotation2(AnyObject):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.annotation_2.IsAConsumableAnnotation()
 
     def is_a_default_annotation(self) -> bool:

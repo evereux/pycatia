@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
@@ -418,6 +419,13 @@ class HybridShapeAssemble(HybridShape):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.hybrid_shape_assemble.GetHealingMode()
 
     def get_manifold(self) -> bool:
@@ -804,6 +812,13 @@ class HybridShapeAssemble(HybridShape):
         :param bool i_heal:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.hybrid_shape_assemble.SetHealingMode(i_heal)
 
     def set_manifold(self, i_manifold: bool) -> None:

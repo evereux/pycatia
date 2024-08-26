@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.angle import Angle
@@ -134,6 +135,12 @@ class HybridShapeRevol(HybridShape):
         :rtype: float
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.hybrid_shape_revol.BeginAngleOffset
 
     @begin_angle_offset.setter
@@ -233,6 +240,12 @@ class HybridShapeRevol(HybridShape):
 
         :rtype: float
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.hybrid_shape_revol.EndAngleOffset
 

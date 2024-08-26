@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
+
 from pycatia.cat_tps_interfaces.median_feature import MedianFeature
 from pycatia.cat_tps_interfaces.semantic_gdt_frame_extension import SemanticGDTFrameExtension
 from pycatia.cat_tps_interfaces.semantic_gdt_nx_display import SemanticGDTNxDisplay
@@ -113,6 +115,13 @@ class SemanticGDT(AnyObject):
         :param int i_frame_extent_index:
         :rtype: SemanticGDTFrameExtension
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return SemanticGDTFrameExtension(self.semantic_gdt.FrameExtensions(i_frame_extent_index))
 
     def free_state(self) -> FreeState:
@@ -160,6 +169,13 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.semantic_gdt.HasACenteredElement()
 
     def has_a_frame_extension(self) -> int:
@@ -189,6 +205,13 @@ class SemanticGDT(AnyObject):
 
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.semantic_gdt.HasAFrameExtension()
 
     def has_a_free_state(self) -> bool:
@@ -448,6 +471,13 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.semantic_gdt.IsAppliedOnMultipleEntities()
 
     def material_condition(self) -> MaterialCondition:
@@ -489,6 +519,13 @@ class SemanticGDT(AnyObject):
 
         :rtype: MedianFeature
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return MedianFeature(self.semantic_gdt.MedianFeature())
 
     def nx_display(self) -> SemanticGDTNxDisplay:
@@ -512,6 +549,13 @@ class SemanticGDT(AnyObject):
 
         :rtype: SemanticGDTNxDisplay
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            29,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return SemanticGDTNxDisplay(self.semantic_gdt.NxDisplay())
 
     def particular_tol_elem(self) -> ParticularTolElem:
