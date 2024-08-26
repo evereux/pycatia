@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
+
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.knowledge_interfaces.length import Length
@@ -193,6 +195,12 @@ class Hole(SketchBasedShape):
 
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.hole.CounterDrilledMode
 

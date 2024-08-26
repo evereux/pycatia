@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+import inspect
 from typing import TYPE_CHECKING
 
 from pycatia.in_interfaces.reference import Reference
@@ -210,6 +210,12 @@ class VarRadEdgeFillet(EdgeFillet):
         :rtype: int
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.var_rad_edge_fillet.SharpEdgeRemovalMode
 
     @sharp_edge_removal_mode.setter
@@ -367,6 +373,12 @@ class VarRadEdgeFillet(EdgeFillet):
         :rtype: ConstRadEdgeFillet
         """
         from pycatia.part_interfaces.const_rad_edge_fillet import ConstRadEdgeFillet
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return ConstRadEdgeFillet(self.var_rad_edge_fillet.SwitchToConstFilletType())
 

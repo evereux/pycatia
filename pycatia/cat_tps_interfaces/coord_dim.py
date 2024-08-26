@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
+
 from pycatia.drafting_interfaces.drawing_coord_dim import DrawingCoordDim
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -50,6 +52,12 @@ class CoordDim(AnyObject):
 
         :rtype: DrawingCoordDim
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return DrawingCoordDim(self.coord_dim.Get2dAnnot())
 
     def __repr__(self):

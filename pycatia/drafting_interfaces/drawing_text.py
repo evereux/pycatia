@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.drafting_interfaces.drawing_leaders import DrawingLeaders
 from pycatia.drafting_interfaces.drawing_text_properties import DrawingTextProperties
@@ -208,6 +209,12 @@ class DrawingText(AnyObject):
 
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.drawing_text.NbLink
 
@@ -559,6 +566,13 @@ class DrawingText(AnyObject):
         :param int i_index:
         :rtype: AnyObject
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.drawing_text.GetParameterLink(i_index)
 
     def get_parameter_on_sub_string(self, i_param: int, i_first: int, inb_character: int) -> int:

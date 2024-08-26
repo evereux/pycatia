@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+import inspect
 from typing import TYPE_CHECKING, Tuple
 
 from pycatia.drafting_interfaces.drawing_arrows import DrawingArrows
@@ -174,6 +174,12 @@ class DrawingView(AnyObject):
         :rtype: DrawingCoordDims
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return DrawingCoordDims(self.drawing_view.CoordDims)
 
     @property
@@ -291,6 +297,12 @@ class DrawingView(AnyObject):
 
         :rtype: DrawingGDTs
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return DrawingGDTs(self.drawing_view.GDTs)
 

@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
 
 from pycatia.drafting_interfaces.drawing_text_properties import DrawingTextProperties
 from pycatia.system_interfaces.any_object import AnyObject
@@ -65,6 +66,12 @@ class DrawingCoordDim(AnyObject):
         :rtype: float
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.drawing_coord_dim.Angle
 
     @angle.setter
@@ -99,6 +106,12 @@ class DrawingCoordDim(AnyObject):
         :rtype: DrawingTextProperties
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return DrawingTextProperties(self.drawing_coord_dim.TextProperties)
 
     @property
@@ -124,6 +137,12 @@ class DrawingCoordDim(AnyObject):
 
         :rtype: float
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.drawing_coord_dim.x
 
@@ -160,6 +179,12 @@ class DrawingCoordDim(AnyObject):
 
         :rtype: float
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.drawing_coord_dim.y
 
@@ -207,6 +232,13 @@ class DrawingCoordDim(AnyObject):
         :param float o_z:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.drawing_coord_dim.GetCoordValues(o_type, o_x, o_y, o_z)
 
     def __repr__(self):

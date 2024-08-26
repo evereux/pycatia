@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
+
 from pycatia.in_interfaces.reference import Reference
 from pycatia.in_interfaces.references import References
 from pycatia.knowledge_interfaces.length import Length
@@ -154,6 +156,13 @@ class ConstRadEdgeFillet(EdgeFillet):
 
         :rtype: VarRadEdgeFillet
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return VarRadEdgeFillet(self.const_rad_edge_fillet.SwitchToVarFilletType())
 
     def withdraw_object_to_fillet(self, i_object_to_withdraw: Reference) -> None:

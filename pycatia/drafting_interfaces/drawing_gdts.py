@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
+
 from pycatia.drafting_interfaces.drawing_gdt import DrawingGDT
 from pycatia.system_interfaces.collection import Collection
 
@@ -89,6 +91,13 @@ class DrawingGDTs(Collection):
         :param str i_text:
         :rtype: DrawingGDT
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return DrawingGDT(
             self.drawing_gd_ts.Add(
                 i_position_leader_x,
@@ -137,6 +146,13 @@ class DrawingGDTs(Collection):
         :param int i_index:
         :rtype: DrawingGDT
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return DrawingGDT(self.drawing_gd_ts.Item(i_index))
 
     def remove(self, i_index: int) -> None:
@@ -171,6 +187,13 @@ class DrawingGDTs(Collection):
         :param int i_index:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.drawing_gd_ts.Remove(i_index)
 
     def __repr__(self):

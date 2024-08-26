@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
+
 from pycatia.drafting_interfaces.drawing_coord_dim import DrawingCoordDim
 from pycatia.system_interfaces.collection import Collection
 
@@ -75,6 +77,13 @@ class DrawingCoordDims(Collection):
         :param int i_index:
         :rtype: DrawingCoordDim
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return DrawingCoordDim(self.drawing_coord_dims.Item(i_index))
 
     def remove(self, i_index: int) -> None:
@@ -111,6 +120,13 @@ class DrawingCoordDims(Collection):
         :param int i_index:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.drawing_coord_dims.Remove(i_index)
 
     def __repr__(self):

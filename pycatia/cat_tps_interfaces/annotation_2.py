@@ -9,6 +9,7 @@
         
 """
 
+import inspect
 from typing import TYPE_CHECKING
 
 from pycatia.cat_tps_interfaces.coord_dim import CoordDim
@@ -181,6 +182,12 @@ class Annotation2(AnyObject):
 
         :rtype: CoordDim
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return CoordDim(self.annotation2.Coordinatedimension())
 
     def datum_simple(self) -> DatumSimple:

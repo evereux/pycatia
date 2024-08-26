@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.mec_mod_interfaces.factory import Factory
 from pycatia.cat_tps_interfaces.annotation_2 import Annotation2
@@ -62,9 +63,14 @@ class AnnotationFactory2(Factory):
                 |             The new created Coordinate dimension Feature.
 
         :param UserSurface i_surf:
-        :return: Annotation2
         :rtype: Annotation2
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateCoordDimension(i_surf.com_object))
 
     def create_datum(self, i_surf: UserSurface) -> Annotation2:
@@ -350,9 +356,14 @@ class AnnotationFactory2(Factory):
                 |             The new created GDT Feature.
 
         :param UserSurface i_surf:
-        :return: Annotation2
         :rtype: Annotation2
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateGDT(i_surf.com_object))
 
     def create_non_semantic_dimension(

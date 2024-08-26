@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 from typing import TYPE_CHECKING
 
 from pycatia.system_interfaces.any_object import AnyObject
@@ -113,6 +114,12 @@ class DrawingLeader(AnyObject):
 
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.drawing_leader.AnchorSymbol
 

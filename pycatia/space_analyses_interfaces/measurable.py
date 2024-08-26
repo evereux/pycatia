@@ -1,4 +1,5 @@
 #! /usr/bin/python3.9
+import inspect
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.any_object import AnyObject
@@ -258,6 +259,13 @@ class Measurable(AnyObject):
         :param AnyObject i_product_instance:
         :rtype: float
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.measurable.GetAngleBetweenInContext(i_measured_item.com_object, i_product_instance.com_object)
 
     def get_axis(self):
@@ -535,6 +543,13 @@ class Measurable(AnyObject):
         :param AnyObject i_product_instance:
         :rtype: float
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.measurable.GetMinimumDistanceInContext(i_measured_item.com_object, i_product_instance.com_object)
 
     def get_minimum_distance_points(self, i_measured_item):
@@ -623,6 +638,13 @@ class Measurable(AnyObject):
         :param tuple o_coordinates:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.measurable.GetMinimumDistancePointsInContext(
             i_measured_item.com_object,
             i_product_instance.com_object,

@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.in_interfaces.workbench import Workbench
@@ -224,6 +225,13 @@ class SPAWorkbench(Workbench):
         :param AnyObject i_product_instance:
         :rtype: Measurable
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return Measurable(
             self.spa_workbench.GetMeasurableInContext(i_measured_item.com_object, i_product_instance.com_object))
 

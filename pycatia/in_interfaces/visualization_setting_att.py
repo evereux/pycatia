@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.system_interfaces.setting_controller import SettingController
 
@@ -1277,6 +1278,12 @@ class VisualizationSettingAtt(SettingController):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.visualization_setting_att.PreSelNavigatorStartedByArrowKeys
 
@@ -2897,6 +2904,13 @@ class VisualizationSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.visualization_setting_att.GetPreSelNavigatorStartedByArrowKeysInfo(io_admin_level, io_locked)
 
     def get_pre_selection_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
@@ -5299,6 +5313,13 @@ class VisualizationSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.visualization_setting_att.SetPreSelNavigatorStartedByArrowKeysLock(i_locked)
 
     def set_pre_selection_mode_lock(self, i_locked: bool) -> None:

@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.drafting_interfaces.drawing_arrows import DrawingArrows
 from pycatia.drafting_interfaces.drawing_components import DrawingComponents
@@ -153,6 +154,12 @@ class Layout2DView(AnyObject):
         :rtype: DrawingCoordDims
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return DrawingCoordDims(self.layout_2d_view.CoordDims)
 
     @property
@@ -262,6 +269,12 @@ class Layout2DView(AnyObject):
 
         :rtype: DrawingGDTs
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return DrawingGDTs(self.layout_2d_view.GDTs)
 

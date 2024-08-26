@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
 
 from pycatia.drafting_interfaces.drawing_leaders import DrawingLeaders
 from pycatia.drafting_interfaces.drawing_text_properties import DrawingTextProperties
@@ -67,6 +68,12 @@ class DrawingGDT(AnyObject):
         :rtype: float
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.drawing_gdt.Angle
 
     @angle.setter
@@ -100,6 +107,12 @@ class DrawingGDT(AnyObject):
         :rtype: DrawingLeaders
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return DrawingLeaders(self.drawing_gdt.Leaders)
 
     @property
@@ -127,6 +140,12 @@ class DrawingGDT(AnyObject):
         :rtype: int
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.drawing_gdt.RowNumber
 
     @property
@@ -151,6 +170,12 @@ class DrawingGDT(AnyObject):
 
         :rtype: DrawingTextProperties
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return DrawingTextProperties(self.drawing_gdt.TextProperties)
 
@@ -177,6 +202,12 @@ class DrawingGDT(AnyObject):
 
         :rtype: float
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.drawing_gdt.x
 
@@ -213,6 +244,12 @@ class DrawingGDT(AnyObject):
 
         :rtype: float
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.drawing_gdt.y
 
@@ -253,6 +290,13 @@ class DrawingGDT(AnyObject):
         :param int i_row_number:
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.drawing_gdt.GetReferenceNumber(i_row_number)
 
     def get_text_range(self, i_row_number: int, i_number: int) -> DrawingTextRange:
@@ -294,6 +338,13 @@ class DrawingGDT(AnyObject):
         :param int i_number:
         :rtype: DrawingTextRange
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return DrawingTextRange(self.drawing_gdt.GetTextRange(i_row_number, i_number))
 
     def get_tolerance_type(self, i_row_number: int) -> int:
@@ -340,6 +391,13 @@ class DrawingGDT(AnyObject):
         :param int i_row_number:
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.drawing_gdt.GetToleranceType(i_row_number)
 
     def set_tolerance_type(self, i_row_number: int, i_gdt_symbol: int) -> None:
@@ -373,6 +431,13 @@ class DrawingGDT(AnyObject):
         :param int i_gdt_symbol:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            28,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.drawing_gdt.SetToleranceType(i_row_number, i_gdt_symbol)
 
     def __repr__(self):
