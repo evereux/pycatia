@@ -110,7 +110,9 @@ class ManufacturingProgram2(AnyObject):
                 |     Program.
                 |
                 |     Example:
-                |         The following example creates, inserts and sequences in firstProgram the manufacturing operation ManufacturingOperation of type : type
+                |         The following example creates, inserts and sequences
+                |         in firstProgram the manufacturing operation ManufacturingOperation
+                |         of type : type
                 |
                 |          Set ManufacturingOperation = firstProgram.AppendOperationBefore(operation,Type,1)
 
