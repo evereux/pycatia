@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
+
 from pycatia.knowledge_interfaces.parameter import Parameter
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -61,6 +63,13 @@ class ManufacturingParameter(AnyObject):
         :param bool o_value:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            31,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.manufacturing_parameter.GetBoolValue(i_name, o_value)
 
     def get_double_value(self, i_name: str, o_value: float, i_unit: int) -> None:
@@ -89,6 +98,13 @@ class ManufacturingParameter(AnyObject):
         :param int i_unit:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            31,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.manufacturing_parameter.GetDoubleValue(i_name, o_value, i_unit)
 
     def get_long_value(self, i_name: str, o_value: int) -> None:
@@ -114,6 +130,13 @@ class ManufacturingParameter(AnyObject):
         :param int o_value:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            31,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.manufacturing_parameter.GetLongValue(i_name, o_value)
 
     def get_string_value(self, i_name: str, o_value: str) -> None:
@@ -139,6 +162,13 @@ class ManufacturingParameter(AnyObject):
         :param str o_value:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            31,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.manufacturing_parameter.GetStringValue(i_name, o_value)
 
     def get_value(self, i_name: str, o_value: Parameter) -> None:
@@ -164,6 +194,13 @@ class ManufacturingParameter(AnyObject):
         :param Parameter o_value:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            31,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.manufacturing_parameter.GetValue(i_name, o_value.com_object)
 
     def __repr__(self):

@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
 
 from pycatia.in_interfaces.references import References
 from pycatia.system_interfaces.any_object import AnyObject
@@ -95,6 +96,13 @@ class PartServices(AnyObject):
         :param AnyObject i_near_object:
         :rtype: References
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            31,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return References(
             self.part_services.GetNearSubElements(
                 i_object.com_object,
@@ -146,6 +154,13 @@ class PartServices(AnyObject):
         :param bool i_duplicates:
         :rtype: References
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            31,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+        
         return References(self.part_services.GetSubElements(i_object.com_object, i_sub_element_dimension, i_duplicates))
 
     def __repr__(self):

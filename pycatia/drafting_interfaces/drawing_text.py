@@ -243,6 +243,12 @@ class DrawingText(AnyObject):
         :rtype: int
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            31,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.drawing_text.OrientationReference
 
     @orientation_reference.setter
