@@ -36,7 +36,7 @@ class CoordDim(AnyObject):
         super().__init__(com_object)
         self.coord_dim = com_object
 
-    def get2d_annot(self) -> DrawingCoordDim:
+    def get_2d_annot(self) -> DrawingCoordDim:
         """
 
         Introduced in V5-6R2018.
