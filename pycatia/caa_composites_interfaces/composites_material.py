@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
 
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -53,6 +54,12 @@ class CompositesMaterial(AnyObject):
         :rtype: float
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.composites_material.CuredThickness
 
     @cured_thickness.setter
@@ -78,6 +85,12 @@ class CompositesMaterial(AnyObject):
 
         :rtype: float
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.composites_material.FabricWidth
 
@@ -105,6 +118,12 @@ class CompositesMaterial(AnyObject):
         :rtype: float
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.composites_material.LimitDeformation
 
     @limit_deformation.setter
@@ -130,6 +149,12 @@ class CompositesMaterial(AnyObject):
 
         :rtype: float
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.composites_material.MassCost
 
@@ -159,6 +184,12 @@ class CompositesMaterial(AnyObject):
         :rtype: int
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.composites_material.MaterialType
 
     @material_type.setter
@@ -184,6 +215,12 @@ class CompositesMaterial(AnyObject):
 
         :rtype: float
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.composites_material.MaxDeformation
 
@@ -211,6 +248,12 @@ class CompositesMaterial(AnyObject):
         :rtype: float
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.composites_material.SurfacicWeigth
 
     @surfacic_weigth.setter
@@ -237,6 +280,12 @@ class CompositesMaterial(AnyObject):
         :rtype: float
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.composites_material.UncuredThickness
 
     @uncured_thickness.setter
@@ -261,6 +310,13 @@ class CompositesMaterial(AnyObject):
 
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.composites_material.CreateCompositesData()
 
     def exist_composites_data(self) -> int:
@@ -277,6 +333,13 @@ class CompositesMaterial(AnyObject):
 
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.composites_material.ExistCompositesData()
 
     def __repr__(self):

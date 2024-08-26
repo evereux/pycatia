@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.in_interfaces.document import Document
 from pycatia.navigator_interfaces.group import Group
@@ -271,6 +272,13 @@ class Wrappings(Collection):
         :param float i_accuracy_for_simplification:
         :rtype: Document
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return Document(
             self.wrappings.ComputeWrappingWithConvexHull(
                 i_group_of_selected_products.com_object,

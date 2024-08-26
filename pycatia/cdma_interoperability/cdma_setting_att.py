@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
 
 from pycatia.system_interfaces.setting_controller import SettingController
 
@@ -59,6 +60,12 @@ class CDMASettingAtt(SettingController):
         :rtype: bool
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.AllowReplaceStructExposedDuringExtractSave
 
     @allow_replace_struct_exposed_during_extract_save.setter
@@ -87,6 +94,12 @@ class CDMASettingAtt(SettingController):
         :rtype: bool
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.AskBeforeOverwriteExistingParts
 
     @ask_before_overwrite_existing_parts.setter
@@ -113,6 +126,12 @@ class CDMASettingAtt(SettingController):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.cdma_setting_att.AutoHigh
 
@@ -141,6 +160,12 @@ class CDMASettingAtt(SettingController):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.cdma_setting_att.CheckExistInVPMBeforeFBDI
 
@@ -171,6 +196,12 @@ class CDMASettingAtt(SettingController):
         :rtype: bool
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.DisableAppObjMgt
 
     @disable_app_obj_mgt.setter
@@ -178,6 +209,12 @@ class CDMASettingAtt(SettingController):
         """
         :param bool value:
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         self.cdma_setting_att.DisableAppObjMgt = value
 
@@ -198,6 +235,12 @@ class CDMASettingAtt(SettingController):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.cdma_setting_att.DisableOverwriteReloadWarnMsg
 
@@ -226,6 +269,12 @@ class CDMASettingAtt(SettingController):
         :rtype: bool
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.DisableVPMSaveCommitPanel
 
     @disable_vpm_save_commit_panel.setter
@@ -252,6 +301,12 @@ class CDMASettingAtt(SettingController):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.cdma_setting_att.DisableVPMSaveReportPanel
 
@@ -281,6 +336,12 @@ class CDMASettingAtt(SettingController):
         :rtype: bool
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.EnableDirectV5VaultSave
 
     @enable_direct_v5_vault_save.setter
@@ -309,6 +370,12 @@ class CDMASettingAtt(SettingController):
         :rtype: bool
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.ForbidInconsistentSave
 
     @forbid_inconsistent_save.setter
@@ -335,6 +402,12 @@ class CDMASettingAtt(SettingController):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.cdma_setting_att.GFBDI
 
@@ -363,6 +436,12 @@ class CDMASettingAtt(SettingController):
         :rtype: bool
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.LoadAllVPMProperties
 
     @load_all_vpm_properties.setter
@@ -390,6 +469,12 @@ class CDMASettingAtt(SettingController):
         :rtype: bool
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.ManualCacheCleaning
 
     @manual_cache_cleaning.setter
@@ -416,6 +501,12 @@ class CDMASettingAtt(SettingController):
 
         :rtype: str
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.cdma_setting_att.MappingFile
 
@@ -446,6 +537,12 @@ class CDMASettingAtt(SettingController):
         :rtype: int
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.MaxPercentCacheSize
 
     @max_percent_cache_size.setter
@@ -474,6 +571,12 @@ class CDMASettingAtt(SettingController):
 
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.cdma_setting_att.NbFilesForDeletion
 
@@ -504,6 +607,12 @@ class CDMASettingAtt(SettingController):
         :rtype: int
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.NbFilesMax
 
     @nb_files_max.setter
@@ -532,6 +641,12 @@ class CDMASettingAtt(SettingController):
         :rtype: bool
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.NeverOverwriteExistingParts
 
     @never_overwrite_existing_parts.setter
@@ -558,6 +673,12 @@ class CDMASettingAtt(SettingController):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.cdma_setting_att.NoDBConnection
 
@@ -586,6 +707,12 @@ class CDMASettingAtt(SettingController):
         :rtype: str
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.VPMCachePath
 
     @vpm_cache_path.setter
@@ -612,6 +739,12 @@ class CDMASettingAtt(SettingController):
 
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.cdma_setting_att.WorkWithVPMCache
 
@@ -642,6 +775,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetAllowReplaceStructExposedDuringExtractSaveInfo(admin_level, locked)
 
     def get_ask_before_overwrite_existing_parts_info(self, admin_level: str, locked: str) -> bool:
@@ -663,6 +803,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetAskBeforeOverwriteExistingPartsInfo(admin_level, locked)
 
     def get_auto_high_info(self, admin_level: str, locked: str) -> bool:
@@ -684,6 +831,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetAutoHighInfo(admin_level, locked)
 
     def get_check_exist_in_vpm_before_fbdi_info(self, admin_level: str, locked: str) -> bool:
@@ -705,6 +859,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetCheckExistInVPMBeforeFBDIInfo(admin_level, locked)
 
     def get_disable_app_obj_mgt_info(self, admin_level: str, o_locked: str) -> bool:
@@ -726,6 +887,13 @@ class CDMASettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetDisableAppObjMgtInfo(admin_level, o_locked)
 
     def get_disable_overwrite_reload_warn_msg_info(self, admin_level: str, locked: str) -> bool:
@@ -747,6 +915,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetDisableOverwriteReloadWarnMsgInfo(admin_level, locked)
 
     def get_disable_vpm_save_commit_panel_info(self, admin_level: str, locked: str) -> bool:
@@ -768,6 +943,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetDisableVPMSaveCommitPanelInfo(admin_level, locked)
 
     def get_disable_vpm_save_report_panel_info(self, admin_level: str, locked: str) -> bool:
@@ -789,6 +971,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetDisableVPMSaveReportPanelInfo(admin_level, locked)
 
     def get_enable_direct_v5_vault_save_info(self, admin_level: str, locked: str) -> bool:
@@ -810,6 +999,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetEnableDirectV5VaultSaveInfo(admin_level, locked)
 
     def get_forbid_inconsistent_save_info(self, admin_level: str, locked: str) -> bool:
@@ -831,6 +1027,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetForbidInconsistentSaveInfo(admin_level, locked)
 
     def get_gfbdi_info(self, admin_level: str, locked: str) -> bool:
@@ -852,6 +1055,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetGFBDIInfo(admin_level, locked)
 
     def get_load_all_vpm_properties_info(self, admin_level: str, locked: str) -> bool:
@@ -873,6 +1083,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetLoadAllVPMPropertiesInfo(admin_level, locked)
 
     def get_manual_cache_cleaning_info(self, admin_level: str, locked: str) -> bool:
@@ -894,6 +1111,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetManualCacheCleaningInfo(admin_level, locked)
 
     def get_mapping_file_info(self, admin_level: str, locked: str) -> bool:
@@ -914,6 +1138,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetMappingFileInfo(admin_level, locked)
 
     def get_max_percent_cache_size_info(self, admin_level: str, locked: str) -> bool:
@@ -935,6 +1166,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetMaxPercentCacheSizeInfo(admin_level, locked)
 
     def get_nb_files_for_deletion_info(self, admin_level: str, locked: str) -> bool:
@@ -956,6 +1194,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetNbFilesForDeletionInfo(admin_level, locked)
 
     def get_nb_files_max_info(self, admin_level: str, locked: str) -> bool:
@@ -977,6 +1222,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetNbFilesMaxInfo(admin_level, locked)
 
     def get_never_overwrite_existing_parts_info(self, admin_level: str, locked: str) -> bool:
@@ -998,6 +1250,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetNeverOverwriteExistingPartsInfo(admin_level, locked)
 
     def get_no_db_connection_info(self, admin_level: str, locked: str) -> bool:
@@ -1019,6 +1278,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetNoDBConnectionInfo(admin_level, locked)
 
     def get_vpm_cache_path_info(self, admin_level: str, locked: str) -> bool:
@@ -1039,6 +1305,13 @@ class CDMASettingAtt(SettingController):
         :param str locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetVPMCachePathInfo(admin_level, locked)
 
     def get_work_with_vpm_cache_mode_info(self, admin_level: str, o_locked: str) -> bool:
@@ -1060,6 +1333,13 @@ class CDMASettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.GetWorkWithVPMCacheModeInfo(admin_level, o_locked)
 
     def set_allow_replace_struct_exposed_during_extract_save_lock(self, i_locked: bool) -> None:
@@ -1080,6 +1360,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetAllowReplaceStructExposedDuringExtractSaveLock(i_locked)
 
     def set_ask_before_overwrite_existing_parts_lock(self, i_locked: bool) -> None:
@@ -1099,6 +1386,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetAskBeforeOverwriteExistingPartsLock(i_locked)
 
     def set_auto_high_lock(self, i_locked: bool) -> None:
@@ -1117,6 +1411,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetAutoHighLock(i_locked)
 
     def set_check_exist_in_vpm_before_fbdi_lock(self, i_locked: bool) -> None:
@@ -1136,6 +1437,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetCheckExistInVPMBeforeFBDILock(i_locked)
 
     def set_disable_app_obj_mgt_lock(self, i_locked: bool) -> None:
@@ -1155,6 +1463,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetDisableAppObjMgtLock(i_locked)
 
     def set_disable_overwrite_reload_warn_msg_lock(self, i_locked: bool) -> None:
@@ -1174,6 +1489,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetDisableOverwriteReloadWarnMsgLock(i_locked)
 
     def set_disable_vpm_save_commit_panel_lock(self, i_locked: bool) -> None:
@@ -1192,6 +1514,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetDisableVPMSaveCommitPanelLock(i_locked)
 
     def set_disable_vpm_save_report_panel_panel_lock(self, i_locked: bool) -> None:
@@ -1210,6 +1539,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetDisableVPMSaveReportPanelPanelLock(i_locked)
 
     def set_enable_direct_v5_vault_save_lock(self, i_locked: bool) -> None:
@@ -1228,6 +1564,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetEnableDirectV5VaultSaveLock(i_locked)
 
     def set_forbid_inconsistent_save_lock(self, i_locked: bool) -> None:
@@ -1247,6 +1590,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetForbidInconsistentSaveLock(i_locked)
 
     def set_gfbdi_lock(self, i_locked: bool) -> None:
@@ -1283,6 +1633,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetLoadAllVPMPropertiesLock(i_locked)
 
     def set_manual_cache_cleaning_lock(self, i_locked: bool) -> None:
@@ -1301,6 +1658,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetManualCacheCleaningLock(i_locked)
 
     def set_mapping_file_lock(self, i_locked: bool) -> None:
@@ -1319,6 +1683,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetMappingFileLock(i_locked)
 
     def set_max_percent_cache_size_lock(self, i_locked: int) -> None:
@@ -1338,6 +1709,13 @@ class CDMASettingAtt(SettingController):
         :param int i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetMaxPercentCacheSizeLock(i_locked)
 
     def set_nb_files_for_deletion_lock(self, i_locked: int) -> None:
@@ -1357,6 +1735,13 @@ class CDMASettingAtt(SettingController):
         :param int i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetNbFilesForDeletionLock(i_locked)
 
     def set_nb_files_max_lock(self, i_locked: int) -> None:
@@ -1376,6 +1761,13 @@ class CDMASettingAtt(SettingController):
         :param int i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetNbFilesMaxLock(i_locked)
 
     def set_never_overwrite_existing_parts_lock(self, i_locked: bool) -> None:
@@ -1395,6 +1787,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetNeverOverwriteExistingPartsLock(i_locked)
 
     def set_no_db_connection_lock(self, i_locked: bool) -> None:
@@ -1413,6 +1812,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetNoDBConnectionLock(i_locked)
 
     def set_vpm_cache_path_lock(self, i_locked: bool) -> None:
@@ -1431,6 +1837,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetVPMCachePathLock(i_locked)
 
     def set_work_with_vpm_cache_lock(self, i_locked: bool) -> None:
@@ -1449,6 +1862,13 @@ class CDMASettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.cdma_setting_att.SetWorkWithVPMCacheLock(i_locked)
 
     def __repr__(self):

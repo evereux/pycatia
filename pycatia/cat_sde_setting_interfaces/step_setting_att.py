@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.system_interfaces.setting_controller import SettingController
 
@@ -182,6 +183,12 @@ class StepSettingAtt(SettingController):
 
         :rtype: int
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return self.step_setting_att.AttAnnotationExport
 
@@ -1023,6 +1030,13 @@ class StepSettingAtt(SettingController):
         :param str io_locked:
         :rtype: bool
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.step_setting_att.GetAttAnnotationExportInfo(io_admin_level, io_locked)
 
     def get_att_annotation_info(self, io_admin_level: str, io_locked: str) -> bool:
@@ -2151,6 +2165,13 @@ class StepSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.step_setting_att.SetAttAnnotationExportLock(i_locked)
 
     def set_att_annotation_lock(self, i_locked: bool) -> None:

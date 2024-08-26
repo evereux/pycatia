@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
+
 from pycatia.manufacturing_interfaces.manufacturing_operation import ManufacturingOperation
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -70,6 +72,13 @@ class ManufacturingProgram2(AnyObject):
         :param int auto_sequence:
         :rtype: ManufacturingOperation
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return ManufacturingOperation(
             self.manufacturing_program2.AppendOperationAfter(
                 i_manufacturing_operation.com_object,
@@ -110,6 +119,13 @@ class ManufacturingProgram2(AnyObject):
         :param int auto_sequence:
         :rtype: ManufacturingOperation
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return ManufacturingOperation(
             self.manufacturing_program2.AppendOperationBefore(
                 i_manufacturing_operation.com_object,

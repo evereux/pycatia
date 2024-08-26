@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
+
 from pycatia.hybrid_shape_interfaces.hybrid_shape_direction import HybridShapeDirection
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
@@ -208,6 +210,12 @@ class HybridShapeUnfold(HybridShape):
         :rtype: HybridShapeDirection
         """
 
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return HybridShapeDirection(self.hybrid_shape_unfold.TargetDirection)
 
     @target_direction.setter
@@ -281,6 +289,12 @@ class HybridShapeUnfold(HybridShape):
 
         :rtype: Reference
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
 
         return Reference(self.hybrid_shape_unfold.TargetOrigin)
 

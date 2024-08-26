@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.types.general import cat_variant
@@ -114,6 +115,13 @@ class CompositesServices(AnyObject):
         :param int i_composites_type: see enumeration type cat_composites_type
         :rtype: None
         """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            30,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         return self.composites_services.GetCompositesType(i_object.com_object, i_composites_type)
 
     def __repr__(self):
