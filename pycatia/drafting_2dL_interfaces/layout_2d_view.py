@@ -243,6 +243,9 @@ class Layout2DView(AnyObject):
     @property
     def gdts(self) -> DrawingGDTs:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 

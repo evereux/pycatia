@@ -43,6 +43,9 @@ class DrawingGDT(AnyObject):
     @property
     def angle(self) -> float:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -77,6 +80,9 @@ class DrawingGDT(AnyObject):
     @property
     def leaders(self) -> DrawingLeaders:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -99,6 +105,9 @@ class DrawingGDT(AnyObject):
     @property
     def row_number(self) -> int:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -123,6 +132,9 @@ class DrawingGDT(AnyObject):
     @property
     def text_properties(self) -> DrawingTextProperties:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -145,6 +157,9 @@ class DrawingGDT(AnyObject):
     @property
     def x(self) -> float:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -176,6 +191,9 @@ class DrawingGDT(AnyObject):
     @property
     def y(self) -> float:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -208,6 +226,9 @@ class DrawingGDT(AnyObject):
 
     def get_reference_number(self, i_row_number: int) -> int:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -236,6 +257,9 @@ class DrawingGDT(AnyObject):
 
     def get_text_range(self, i_row_number: int, i_number: int) -> DrawingTextRange:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -274,6 +298,9 @@ class DrawingGDT(AnyObject):
 
     def get_tolerance_type(self, i_row_number: int) -> int:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -317,6 +344,9 @@ class DrawingGDT(AnyObject):
 
     def set_tolerance_type(self, i_row_number: int, i_gdt_symbol: int) -> None:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 

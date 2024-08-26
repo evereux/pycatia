@@ -38,9 +38,19 @@ class DrawingGDTs(Collection):
         super().__init__(com_object)
         self.drawing_gd_ts = com_object
 
-    def add(self, i_position_leader_x: float, i_position_leader_y: float, i_position_x: float, i_position_y: float,
-            i_gdt_symbol: int, i_text: str) -> DrawingGDT:
+    def add(
+            self,
+            i_position_leader_x: float,
+            i_position_leader_y: float,
+            i_position_x: float,
+            i_position_y: float,
+            i_gdt_symbol: int,
+            i_text: str
+    ) -> DrawingGDT:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -80,11 +90,21 @@ class DrawingGDTs(Collection):
         :rtype: DrawingGDT
         """
         return DrawingGDT(
-            self.drawing_gd_ts.Add(i_position_leader_x, i_position_leader_y, i_position_x, i_position_y, i_gdt_symbol,
-                                   i_text))
+            self.drawing_gd_ts.Add(
+                i_position_leader_x,
+                i_position_leader_y,
+                i_position_x,
+                i_position_y,
+                i_gdt_symbol,
+                i_text
+            )
+        )
 
     def item(self, i_index: int) -> DrawingGDT:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -121,6 +141,9 @@ class DrawingGDTs(Collection):
 
     def remove(self, i_index: int) -> None:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 

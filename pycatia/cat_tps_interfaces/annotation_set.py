@@ -495,6 +495,9 @@ class AnnotationSet(AnyObject):
 
     def read_iso_default_properties(self, o_iso_defaults: tuple) -> int:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 

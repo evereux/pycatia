@@ -41,6 +41,9 @@ class SemanticGDTNxDisplay(AnyObject):
     @property
     def instance_count(self) -> int:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -56,6 +59,9 @@ class SemanticGDTNxDisplay(AnyObject):
 
     def common_zone(self) -> SemanticGDTCommonZone:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -76,6 +82,9 @@ class SemanticGDTNxDisplay(AnyObject):
 
     def is_a_collection(self) -> bool:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -99,6 +108,9 @@ class SemanticGDTNxDisplay(AnyObject):
 
     def is_a_separate(self) -> bool:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 

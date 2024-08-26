@@ -110,8 +110,8 @@
     * VarRadEdgeFillet.switch_to_const_fillet_type()
     * ConstRadEdgeFillet.switch_to_var_fillet_type()
     * Measurable.get_angle_between_in_context()
-    * Measurable.GetMinimumDistanceInContext
-    * Measurable.GetMinimumDistancePointsInContext
+    * Measurable.get_minimum_distance_in_context()
+    * Measurable.get_minimum_distance_points_in_context()
     * SPAWorkbench.get_measurable_in_context()
 
 * added the following enumeration types introduced in V5-6R2018:

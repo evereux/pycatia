@@ -142,6 +142,7 @@ class DrawingArrow(AnyObject):
     @property
     def scale_on_extremities(self) -> bool:
         """
+
         Introduced in V5-6R2018.
 
         .. note::

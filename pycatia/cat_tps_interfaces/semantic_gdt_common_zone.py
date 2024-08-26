@@ -41,6 +41,9 @@ class SemanticGDTCommonZone(AnyObject):
     @property
     def modifier(self) -> str:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 

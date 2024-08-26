@@ -43,6 +43,9 @@ class ManufacturingProgram2(AnyObject):
             type_: str,
             auto_sequence: int) -> ManufacturingOperation:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -82,6 +85,9 @@ class ManufacturingProgram2(AnyObject):
             auto_sequence: int
     ) -> ManufacturingOperation:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 

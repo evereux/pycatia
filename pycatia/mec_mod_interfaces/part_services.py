@@ -15,6 +15,9 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 class PartServices(AnyObject):
     """
+
+    Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 
@@ -49,6 +52,9 @@ class PartServices(AnyObject):
             i_near_object: AnyObject
     ) -> References:
         """
+
+        Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 
@@ -99,6 +105,9 @@ class PartServices(AnyObject):
 
     def get_sub_elements(self, i_object: AnyObject, i_sub_element_dimension: int, i_duplicates: bool) -> References:
         """
+
+        Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 

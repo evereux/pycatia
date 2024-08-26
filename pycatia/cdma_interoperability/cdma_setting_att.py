@@ -42,6 +42,9 @@ class CDMASettingAtt(SettingController):
     @property
     def allow_replace_struct_exposed_during_extract_save(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -69,6 +72,9 @@ class CDMASettingAtt(SettingController):
     @property
     def ask_before_overwrite_existing_parts(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -94,6 +100,9 @@ class CDMASettingAtt(SettingController):
     @property
     def auto_high(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -118,6 +127,9 @@ class CDMASettingAtt(SettingController):
     @property
     def check_exist_in_vpm_before_fbdi(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -143,6 +155,9 @@ class CDMASettingAtt(SettingController):
     @property
     def disable_app_obj_mgt(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -169,6 +184,9 @@ class CDMASettingAtt(SettingController):
     @property
     def disable_overwrite_reload_warn_msg(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -194,6 +212,9 @@ class CDMASettingAtt(SettingController):
     @property
     def disable_vpm_save_commit_panel(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -218,6 +239,9 @@ class CDMASettingAtt(SettingController):
     @property
     def disable_vpm_save_report_panel(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -242,6 +266,9 @@ class CDMASettingAtt(SettingController):
     @property
     def enable_direct_v5_vault_save(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -267,6 +294,9 @@ class CDMASettingAtt(SettingController):
     @property
     def forbid_inconsistent_save(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -292,6 +322,9 @@ class CDMASettingAtt(SettingController):
     @property
     def gfbdi(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -316,6 +349,9 @@ class CDMASettingAtt(SettingController):
     @property
     def load_all_vpm_properties(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -340,6 +376,9 @@ class CDMASettingAtt(SettingController):
     @property
     def manual_cache_cleaning(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -364,6 +403,9 @@ class CDMASettingAtt(SettingController):
     @property
     def mapping_file(self) -> str:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -388,6 +430,9 @@ class CDMASettingAtt(SettingController):
     @property
     def max_percent_cache_size(self) -> int:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -414,6 +459,9 @@ class CDMASettingAtt(SettingController):
     @property
     def nb_files_for_deletion(self) -> int:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -440,6 +488,9 @@ class CDMASettingAtt(SettingController):
     @property
     def nb_files_max(self) -> int:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -466,6 +517,9 @@ class CDMASettingAtt(SettingController):
     @property
     def never_overwrite_existing_parts(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -491,6 +545,9 @@ class CDMASettingAtt(SettingController):
     @property
     def no_db_connection(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -515,6 +572,9 @@ class CDMASettingAtt(SettingController):
     @property
     def vpm_cache_path(self) -> str:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -539,6 +599,9 @@ class CDMASettingAtt(SettingController):
     @property
     def work_with_vpm_cache(self) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -562,6 +625,9 @@ class CDMASettingAtt(SettingController):
 
     def get_allow_replace_struct_exposed_during_extract_save_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -580,6 +646,9 @@ class CDMASettingAtt(SettingController):
 
     def get_ask_before_overwrite_existing_parts_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -598,6 +667,9 @@ class CDMASettingAtt(SettingController):
 
     def get_auto_high_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -616,6 +688,9 @@ class CDMASettingAtt(SettingController):
 
     def get_check_exist_in_vpm_before_fbdi_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -634,6 +709,9 @@ class CDMASettingAtt(SettingController):
 
     def get_disable_app_obj_mgt_info(self, admin_level: str, o_locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -652,6 +730,9 @@ class CDMASettingAtt(SettingController):
 
     def get_disable_overwrite_reload_warn_msg_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -670,6 +751,9 @@ class CDMASettingAtt(SettingController):
 
     def get_disable_vpm_save_commit_panel_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -688,6 +772,9 @@ class CDMASettingAtt(SettingController):
 
     def get_disable_vpm_save_report_panel_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -706,6 +793,9 @@ class CDMASettingAtt(SettingController):
 
     def get_enable_direct_v5_vault_save_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -724,6 +814,9 @@ class CDMASettingAtt(SettingController):
 
     def get_forbid_inconsistent_save_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -742,6 +835,9 @@ class CDMASettingAtt(SettingController):
 
     def get_gfbdi_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -760,6 +856,9 @@ class CDMASettingAtt(SettingController):
 
     def get_load_all_vpm_properties_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -778,6 +877,9 @@ class CDMASettingAtt(SettingController):
 
     def get_manual_cache_cleaning_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -796,6 +898,9 @@ class CDMASettingAtt(SettingController):
 
     def get_mapping_file_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -813,6 +918,9 @@ class CDMASettingAtt(SettingController):
 
     def get_max_percent_cache_size_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -831,6 +939,9 @@ class CDMASettingAtt(SettingController):
 
     def get_nb_files_for_deletion_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -849,6 +960,9 @@ class CDMASettingAtt(SettingController):
 
     def get_nb_files_max_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -867,6 +981,9 @@ class CDMASettingAtt(SettingController):
 
     def get_never_overwrite_existing_parts_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -885,6 +1002,9 @@ class CDMASettingAtt(SettingController):
 
     def get_no_db_connection_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -903,6 +1023,9 @@ class CDMASettingAtt(SettingController):
 
     def get_vpm_cache_path_info(self, admin_level: str, locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -920,6 +1043,9 @@ class CDMASettingAtt(SettingController):
 
     def get_work_with_vpm_cache_mode_info(self, admin_level: str, o_locked: str) -> bool:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -938,6 +1064,9 @@ class CDMASettingAtt(SettingController):
 
     def set_allow_replace_struct_exposed_during_extract_save_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -955,6 +1084,9 @@ class CDMASettingAtt(SettingController):
 
     def set_ask_before_overwrite_existing_parts_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -971,6 +1103,9 @@ class CDMASettingAtt(SettingController):
 
     def set_auto_high_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -986,6 +1121,9 @@ class CDMASettingAtt(SettingController):
 
     def set_check_exist_in_vpm_before_fbdi_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1002,6 +1140,9 @@ class CDMASettingAtt(SettingController):
 
     def set_disable_app_obj_mgt_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1018,6 +1159,9 @@ class CDMASettingAtt(SettingController):
 
     def set_disable_overwrite_reload_warn_msg_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1034,6 +1178,9 @@ class CDMASettingAtt(SettingController):
 
     def set_disable_vpm_save_commit_panel_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1049,6 +1196,9 @@ class CDMASettingAtt(SettingController):
 
     def set_disable_vpm_save_report_panel_panel_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1064,6 +1214,9 @@ class CDMASettingAtt(SettingController):
 
     def set_enable_direct_v5_vault_save_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1079,6 +1232,9 @@ class CDMASettingAtt(SettingController):
 
     def set_forbid_inconsistent_save_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1095,6 +1251,9 @@ class CDMASettingAtt(SettingController):
 
     def set_gfbdi_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1110,6 +1269,9 @@ class CDMASettingAtt(SettingController):
 
     def set_load_all_vpm_properties_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1125,6 +1287,9 @@ class CDMASettingAtt(SettingController):
 
     def set_manual_cache_cleaning_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1140,6 +1305,9 @@ class CDMASettingAtt(SettingController):
 
     def set_mapping_file_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1155,6 +1323,9 @@ class CDMASettingAtt(SettingController):
 
     def set_max_percent_cache_size_lock(self, i_locked: int) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1171,6 +1342,9 @@ class CDMASettingAtt(SettingController):
 
     def set_nb_files_for_deletion_lock(self, i_locked: int) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1187,6 +1361,9 @@ class CDMASettingAtt(SettingController):
 
     def set_nb_files_max_lock(self, i_locked: int) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1203,6 +1380,9 @@ class CDMASettingAtt(SettingController):
 
     def set_never_overwrite_existing_parts_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1219,6 +1399,9 @@ class CDMASettingAtt(SettingController):
 
     def set_no_db_connection_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1234,6 +1417,9 @@ class CDMASettingAtt(SettingController):
 
     def set_vpm_cache_path_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -1249,6 +1435,9 @@ class CDMASettingAtt(SettingController):
 
     def set_work_with_vpm_cache_lock(self, i_locked: bool) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 

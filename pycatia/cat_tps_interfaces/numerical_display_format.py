@@ -41,6 +41,9 @@ class NumericalDisplayFormat(AnyObject):
     @property
     def available_display_factor(self) -> int:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -58,6 +61,9 @@ class NumericalDisplayFormat(AnyObject):
     @property
     def display_factor(self) -> int:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -83,6 +89,9 @@ class NumericalDisplayFormat(AnyObject):
     @property
     def display_leading_zero(self) -> int:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -111,6 +120,9 @@ class NumericalDisplayFormat(AnyObject):
     @property
     def display_trailing_zero(self) -> int:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -139,6 +151,9 @@ class NumericalDisplayFormat(AnyObject):
     @property
     def format_name(self) -> str:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -164,6 +179,9 @@ class NumericalDisplayFormat(AnyObject):
     @property
     def precision(self) -> int:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -189,6 +207,9 @@ class NumericalDisplayFormat(AnyObject):
     @property
     def separator(self) -> int:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 

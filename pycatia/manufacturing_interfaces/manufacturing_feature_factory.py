@@ -40,6 +40,9 @@ class ManufacturingFeatureFactory(AnyObject):
 
     def create_machining_feature(self, i_type: str) -> AnyObject:
         """
+
+        Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 

@@ -41,6 +41,9 @@ class ManufacturingComputePmaParameters(AnyObject):
 
     def compute_parameters(self) -> None:
         """
+
+        Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 
@@ -58,6 +61,9 @@ class ManufacturingComputePmaParameters(AnyObject):
 
     def get_parameter_double_value(self, i_name: str) -> float:
         """
+
+        Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 

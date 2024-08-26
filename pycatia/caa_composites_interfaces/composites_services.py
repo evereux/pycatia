@@ -89,6 +89,9 @@ class CompositesServices(AnyObject):
 
     def get_composites_type(self, i_object: cat_variant, i_composites_type: int) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 

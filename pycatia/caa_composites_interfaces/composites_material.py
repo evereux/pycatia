@@ -40,6 +40,9 @@ class CompositesMaterial(AnyObject):
     @property
     def cured_thickness(self) -> float:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -63,6 +66,9 @@ class CompositesMaterial(AnyObject):
     @property
     def fabric_width(self) -> float:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -86,6 +92,9 @@ class CompositesMaterial(AnyObject):
     @property
     def limit_deformation(self) -> float:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -109,6 +118,9 @@ class CompositesMaterial(AnyObject):
     @property
     def mass_cost(self) -> float:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -132,6 +144,9 @@ class CompositesMaterial(AnyObject):
     @property
     def material_type(self) -> int:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -157,6 +172,9 @@ class CompositesMaterial(AnyObject):
     @property
     def max_deformation(self) -> float:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -180,6 +198,9 @@ class CompositesMaterial(AnyObject):
     @property
     def surfacic_weigth(self) -> float:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -203,6 +224,9 @@ class CompositesMaterial(AnyObject):
     @property
     def uncured_thickness(self) -> float:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -225,6 +249,9 @@ class CompositesMaterial(AnyObject):
 
     def create_composites_data(self) -> None:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 
@@ -238,6 +265,9 @@ class CompositesMaterial(AnyObject):
 
     def exist_composites_data(self) -> int:
         """
+
+        Introduced in V5-6R2020.
+
         .. note::
             :class: toggle
 

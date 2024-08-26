@@ -39,6 +39,9 @@ class ManufacturingActivityToolPath(AnyObject):
 
     def compute_and_set_tool_path(self) -> None:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 

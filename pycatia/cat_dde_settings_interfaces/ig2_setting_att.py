@@ -977,6 +977,9 @@ class Ig2SettingAtt(SettingController):
 
     def set_export_view_as_viewport(self, i_views_as_viewports: bool) -> None:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 

@@ -41,6 +41,9 @@ class DrawingCoordDim(AnyObject):
     @property
     def angle(self) -> float:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -59,7 +62,6 @@ class DrawingCoordDim(AnyObject):
                 |          Angle90Clockwise = -90
                 |          MyCoordDim.Angle = Angle90Clockwise
 
-        :return: float
         :rtype: float
         """
 
@@ -76,6 +78,9 @@ class DrawingCoordDim(AnyObject):
     @property
     def text_properties(self) -> DrawingTextProperties:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -91,7 +96,6 @@ class DrawingCoordDim(AnyObject):
                 |          Dim TextProperties As DrawingTextProperties
                 |          Set TextProperties = MyCoordDim.TextProperties
 
-        :return: DrawingTextProperties
         :rtype: DrawingTextProperties
         """
 
@@ -100,6 +104,9 @@ class DrawingCoordDim(AnyObject):
     @property
     def x(self) -> float:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -115,7 +122,6 @@ class DrawingCoordDim(AnyObject):
                 |
                 |          X = MyCoordDim.x
 
-        :return: float
         :rtype: float
         """
 
@@ -132,6 +138,9 @@ class DrawingCoordDim(AnyObject):
     @property
     def y(self) -> float:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -149,7 +158,6 @@ class DrawingCoordDim(AnyObject):
                 |          NewYCoordinate = 5*25.4/1000
                 |          MyCoordDim.y = NewYCoordinate
 
-        :return: float
         :rtype: float
         """
 
@@ -165,6 +173,9 @@ class DrawingCoordDim(AnyObject):
 
     def get_coord_values(self, o_type: int, o_x: float, o_y: float, o_z: float) -> None:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -194,7 +205,6 @@ class DrawingCoordDim(AnyObject):
         :param float o_x:
         :param float o_y:
         :param float o_z:
-        :return: None
         :rtype: None
         """
         return self.drawing_coord_dim.GetCoordValues(o_type, o_x, o_y, o_z)

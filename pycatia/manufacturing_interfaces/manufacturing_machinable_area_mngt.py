@@ -41,6 +41,9 @@ class ManufacturingMachinableAreaMngt(AnyObject):
 
     def get_all_datas(self) -> tuple:
         """
+
+        Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 

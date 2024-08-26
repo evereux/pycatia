@@ -38,6 +38,9 @@ class CoordDim(AnyObject):
 
     def get2d_annot(self) -> DrawingCoordDim:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -45,7 +48,6 @@ class CoordDim(AnyObject):
                 | Func Get2dAnnot() As DrawingCoordDim
                 |     Retrieves Drafting Coordinate dimension.
 
-        :return: DrawingCoordDim
         :rtype: DrawingCoordDim
         """
         return DrawingCoordDim(self.coord_dim.Get2dAnnot())

@@ -40,6 +40,9 @@ class DrawingCoordDims(Collection):
 
     def item(self, i_index: int) -> DrawingCoordDim:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -70,13 +73,15 @@ class DrawingCoordDims(Collection):
                 |      Set ThisDrawingCoordDim = MyView.CoordDims.Item(2)
 
         :param int i_index:
-        :return: DrawingCoordDim
         :rtype: DrawingCoordDim
         """
         return DrawingCoordDim(self.drawing_coord_dims.Item(i_index))
 
     def remove(self, i_index: int) -> None:
         """
+
+        Introduced in V5-6R2018.
+
         .. note::
             :class: toggle
 
@@ -104,7 +109,6 @@ class DrawingCoordDims(Collection):
                 |          MyView.CoordDims.Remove(3)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.drawing_coord_dims.Remove(i_index)

@@ -40,6 +40,9 @@ class ManufacturingParameter(AnyObject):
 
     def get_bool_value(self, i_name: str, o_value: bool) -> None:
         """
+
+        Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 
@@ -62,6 +65,9 @@ class ManufacturingParameter(AnyObject):
 
     def get_double_value(self, i_name: str, o_value: float, i_unit: int) -> None:
         """
+
+        Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 
@@ -87,6 +93,9 @@ class ManufacturingParameter(AnyObject):
 
     def get_long_value(self, i_name: str, o_value: int) -> None:
         """
+
+        Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 
@@ -109,6 +118,9 @@ class ManufacturingParameter(AnyObject):
 
     def get_string_value(self, i_name: str, o_value: str) -> None:
         """
+
+        Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 
@@ -131,6 +143,9 @@ class ManufacturingParameter(AnyObject):
 
     def get_value(self, i_name: str, o_value: Parameter) -> None:
         """
+
+        Introduced in V5-6R2021.
+
         .. note::
             :class: toggle
 

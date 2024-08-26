@@ -335,6 +335,7 @@ cat_clipping_mode = (
     "catClippingModeNearAndFar",
 )
 
+# Introduced in V5-6R2020.
 cat_composites_type = (
     "Unknown",
     "Stacking",
@@ -465,6 +466,7 @@ cat_cs_hole_mode = (
     "catCSModeAngleDiameter",
 )
 
+# Introduced in V5-6R2018.
 cat_cd_hole_mode = (
     "catCDModeNoCountersunkDiameter",
     "catCDModeCountersunkDiameter",

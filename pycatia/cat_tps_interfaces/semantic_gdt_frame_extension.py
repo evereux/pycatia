@@ -43,6 +43,9 @@ class SemanticGDTFrameExtension(AnyObject):
     @property
     def direction_specification(self) -> str:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -70,6 +73,9 @@ class SemanticGDTFrameExtension(AnyObject):
     @property
     def type(self) -> str:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -94,6 +100,9 @@ class SemanticGDTFrameExtension(AnyObject):
 
     def direction_reference(self) -> DatumSimple:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
@@ -113,6 +122,9 @@ class SemanticGDTFrameExtension(AnyObject):
 
     def orientation(self) -> float:
         """
+
+        Introduced in V5-6R2019.
+
         .. note::
             :class: toggle
 
