@@ -44,17 +44,18 @@ materials = material_families.item(1).materials
 material_families_list = []
 material_list = []
 
-for i in range(1, material_families.count):
-    family = material_families.item(i)
+for i in range(len(material_families)):
+    index = i + 1
+    family = material_families.item(index)
     material_families_list.append(family)
 
-for i in range(1, materials.count):
-    material = materials.item(i)
+for i in range(len(materials)):
+    index = i + 1
+    material = materials.item(index)
     material_list.append(material)
 
 print(f"Found {material_families.count} material families: " f"{', '.join([n.name for n in material_families_list])}.")
 print(f"Found {materials.count} materials in the first family: " f"{', '.join([n.name for n in material_list])}.")
-
 
 ##########################################################
 # MATERIAL MANAGER ON PARTS
@@ -96,7 +97,6 @@ print(
     "Material applied to Hybrid Body:",
     "None" if material_3 is None else material_3.name,
 )
-
 
 ##########################################################
 # MATERIAL MANAGER ON PRODUCTS

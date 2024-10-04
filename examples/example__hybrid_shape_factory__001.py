@@ -49,13 +49,14 @@ hs_shapes = hb_points.hybrid_shapes
 
 # create a list of only points.
 points = []
-for i in range(1, hs_shapes.count + 1):
-    hybrid_shape = hs_shapes.item(i)
+for i in range(len(hs_shapes)):
+    index = i + 1
+    hybrid_shape = hs_shapes.item(index)
     hybrid_shape_reference = part.create_reference_from_object(hybrid_shape)
 
     # make sure the element is indeed a point.
     if hsf.get_geometrical_feature_type(hybrid_shape_reference) == 1:
-        points.append(hs_shapes.item(i))
+        points.append(hs_shapes.item(index))
 
 # sequentially rename the points starting from 1.
 point_post_fix = 1

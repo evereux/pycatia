@@ -5,7 +5,7 @@
     Example - Hybrid Shape Factory - 004
 
     Description:
-        Loops through the items in hybrid body "Lines" and determine the object type using selection.
+        Loops through the items in hybrid body "ConstructionGeometry" and determine the object type using selection.
         Once determined create an object from it and find it's parent(s).
 
     Requirements:
@@ -41,10 +41,13 @@ part = part_document.part
 
 hbs = part.hybrid_bodies
 hb_construction_lines = hbs.item("ConstructionGeometry")
-hss = hb_construction_lines.hybrid_shapes
+gs_construction_geometry = hb_construction_lines.hybrid_shapes
 
-for shape_index in range(1, hss.count + 1):
-    hs = hss.item(shape_index)
+for i in range(len(gs_construction_geometry)):
+
+    shape_index = i + 1
+
+    hs = gs_construction_geometry.item(shape_index)
 
     # clear the selection on each loop.
     part_document.selection.clear()
@@ -61,9 +64,9 @@ for shape_index in range(1, hss.count + 1):
         ref_start_point = hs_line_pt_pt.pt_origin
         ref_end_point = hs_line_pt_pt.pt_extremity
 
-        start_point = HybridShapePointCoord(hss.item(ref_start_point.display_name).com_object)
-        end_point = HybridShapePointCoord(hss.item(ref_end_point.display_name).com_object)
+        start_point = HybridShapePointCoord(gs_construction_geometry.item(ref_start_point.display_name).com_object)
+        end_point = HybridShapePointCoord(gs_construction_geometry.item(ref_end_point.display_name).com_object)
 
-        print(hs_line_pt_pt.name)
-        print(start_point.name, start_point.get_coordinates())
-        print(end_point.name, end_point.get_coordinates())
+        print(f'Line: {hs_line_pt_pt.name}')
+        print(f'\tStart point: {start_point.name, start_point.get_coordinates()}')
+        print(f'\tEnd point: end_point.name, end_point.get_coordinates()')

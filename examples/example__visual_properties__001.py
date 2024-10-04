@@ -33,7 +33,8 @@ caa.logger.info(f"Found {selection.count2} items.")
 
 # to loop through the items
 for i in range(selection.count2):
-    item = selection.item2(i + 1)
+    index = i + 1
+    item = selection.item2(i + index)
     type = item.type
     value = item.value
     reference = item.reference
