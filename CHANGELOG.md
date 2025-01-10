@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.1
+
+* updated Part.annotation_sets return type to be AnnotationSets in lieu of the
+  generic Collection object.
+
 ## 0.8.0
 
 * New Classes, methods, properties and enums added.
