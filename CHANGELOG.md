@@ -4,6 +4,7 @@
 
 * updated Part.annotation_sets return type to be AnnotationSets in lieu of the
   generic Collection object.
+* updated Annotations.item2 to return an Annotation2 object. Was AnyObject. Issue #236.
 
 ## 0.8.0
 
