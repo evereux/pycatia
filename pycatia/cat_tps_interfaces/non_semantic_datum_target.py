@@ -8,13 +8,16 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.system_interfaces.any_object import AnyObject
 
 
 class NonSemanticDatumTarget(AnyObject):
-
     """
+
+    Introduced in V5-6R2017.
+
         .. note::
             :class: toggle
 
@@ -32,6 +35,11 @@ class NonSemanticDatumTarget(AnyObject):
     """
 
     def __init__(self, com_object):
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         super().__init__(com_object)
         self.non_semantic_datum_target = com_object
 
@@ -113,4 +121,4 @@ class NonSemanticDatumTarget(AnyObject):
         self.non_semantic_datum_target.UpLabel = value
 
     def __repr__(self):
-        return f'NonSemanticDatumTarget(name="{ self.name }")'
+        return f'NonSemanticDatumTarget(name="{self.name}")'

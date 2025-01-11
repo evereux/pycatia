@@ -36,6 +36,9 @@ if TYPE_CHECKING:
 
 class Annotation2(AnyObject):
     """
+
+    Introduced in V5-6R2017.
+
         .. note::
             :class: toggle
 
@@ -56,6 +59,11 @@ class Annotation2(AnyObject):
     """
 
     def __init__(self, com_object):
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         super().__init__(com_object)
         self.annotation_2 = com_object
 

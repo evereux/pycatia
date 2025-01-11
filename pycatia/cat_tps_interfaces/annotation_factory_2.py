@@ -19,6 +19,9 @@ from pycatia.types.general import cat_variant
 
 class AnnotationFactory2(Factory):
     """
+
+    Introduced in V5-6R2017.
+
         .. note::
             :class: toggle
 
@@ -39,6 +42,12 @@ class AnnotationFactory2(Factory):
     """
 
     def __init__(self, com_object):
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
         super().__init__(com_object)
         self.annotation_factory_2 = com_object
 
