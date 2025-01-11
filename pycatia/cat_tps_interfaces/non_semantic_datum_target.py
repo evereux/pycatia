@@ -35,11 +35,6 @@ class NonSemanticDatumTarget(AnyObject):
     """
 
     def __init__(self, com_object):
-        self.release_check(
-            self.application.system_configuration.release,
-            27,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
-        )
         super().__init__(com_object)
         self.non_semantic_datum_target = com_object
 
@@ -56,7 +51,11 @@ class NonSemanticDatumTarget(AnyObject):
 
         :rtype: str
         """
-
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return self.non_semantic_datum_target.LowLabel
 
     @low_label.setter
@@ -85,7 +84,11 @@ class NonSemanticDatumTarget(AnyObject):
 
         :rtype: str
         """
-
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return self.non_semantic_datum_target.TypeSpecifier
 
     @type_specifier.setter
@@ -109,7 +112,11 @@ class NonSemanticDatumTarget(AnyObject):
 
         :rtype: str
         """
-
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return self.non_semantic_datum_target.UpLabel
 
     @up_label.setter

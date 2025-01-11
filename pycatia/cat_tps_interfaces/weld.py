@@ -36,11 +36,6 @@ class Weld(AnyObject):
     """
 
     def __init__(self, com_object):
-        self.release_check(
-            self.application.system_configuration.release,
-            27,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
-        )
         super().__init__(com_object)
         self.weld = com_object
 
@@ -56,6 +51,11 @@ class Weld(AnyObject):
 
         :rtype: DrawingWelding
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return DrawingWelding(self.weld.Get2dAnnot())
 
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
@@ -70,6 +70,11 @@ class Weld(AnyObject):
 
         :rtype: TPSParallelOnScreen
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return TPSParallelOnScreen(self.weld.TPSParallelOnScreen())
 
     def __repr__(self):

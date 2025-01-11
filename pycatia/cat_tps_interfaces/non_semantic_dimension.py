@@ -37,12 +37,6 @@ class NonSemanticDimension(AnyObject):
     """
 
     def __init__(self, com_object):
-        self.release_check(
-            self.application.system_configuration.release,
-            27,
-            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
-        )
-
         super().__init__(com_object)
         self.non_semantic_dimension = com_object
 
@@ -63,6 +57,11 @@ class NonSemanticDimension(AnyObject):
 
         :rtype: DimensionLimit
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return DimensionLimit(self.non_semantic_dimension.DimensionLimit())
 
     def get_2d_annot(self) -> DrawingDimension:
@@ -82,6 +81,11 @@ class NonSemanticDimension(AnyObject):
 
         :rtype: DrawingDimension
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return DrawingDimension(self.non_semantic_dimension.Get2dAnnot())
 
     def has_dimension_limit(self) -> bool:
@@ -103,6 +107,11 @@ class NonSemanticDimension(AnyObject):
 
         :rtype: bool
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return self.non_semantic_dimension.HasDimensionLimit()
 
     def __repr__(self):
