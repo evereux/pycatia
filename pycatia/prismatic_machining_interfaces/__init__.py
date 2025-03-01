@@ -1,0 +1,3 @@
+from .manufacturing_prismatic_machining_area import ManufacturingPrismaticMachiningArea
+
+__all__ = ['ManufacturingPrismaticMachiningArea']

@@ -1,1 +1,3 @@
-#! /usr/bin/python3.9
+from .vba import VBANothing
+
+__all__ = ['VBANothing']
