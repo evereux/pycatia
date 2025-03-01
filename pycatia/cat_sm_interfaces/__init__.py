@@ -1,0 +1,4 @@
+from .catalog_shm_object_setting_att import CatalogShmObjectSettingAtt
+from .view_characteristic_curves_setting_att import ViewCharacteristicCurvesSettingAtt
+
+__all__ = ['CatalogShmObjectSettingAtt', 'ViewCharacteristicCurvesSettingAtt']
