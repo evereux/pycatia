@@ -1,1 +1,44 @@
 #! /usr/bin/python3.9
+
+
+# Auto-generated imports
+from .drafting_setting_att import DraftingSettingAtt
+from .drawing_arrow import DrawingArrow
+from .drawing_arrows import DrawingArrows
+from .drawing_component import DrawingComponent
+from .drawing_components import DrawingComponents
+from .drawing_coord_dim import DrawingCoordDim
+from .drawing_coord_dims import DrawingCoordDims
+from .drawing_dim_ext_line import DrawingDimExtLine
+from .drawing_dim_line import DrawingDimLine
+from .drawing_dim_value import DrawingDimValue
+from .drawing_dimension import DrawingDimension
+from .drawing_dimensions import DrawingDimensions
+from .drawing_document import DrawingDocument
+from .drawing_gdt import DrawingGDT
+from .drawing_gdts import DrawingGDTs
+from .drawing_leader import DrawingLeader
+from .drawing_leaders import DrawingLeaders
+from .drawing_page_setup import DrawingPageSetup
+from .drawing_picture import DrawingPicture
+from .drawing_pictures import DrawingPictures
+from .drawing_root import DrawingRoot
+from .drawing_sheet import DrawingSheet
+from .drawing_sheets import DrawingSheets
+from .drawing_table import DrawingTable
+from .drawing_tables import DrawingTables
+from .drawing_text import DrawingText
+from .drawing_text_properties import DrawingTextProperties
+from .drawing_text_range import DrawingTextRange
+from .drawing_texts import DrawingTexts
+from .drawing_thread import DrawingThread
+from .drawing_threads import DrawingThreads
+from .drawing_view import DrawingView
+from .drawing_view_generative_behavior import DrawingViewGenerativeBehavior
+from .drawing_view_generative_links import DrawingViewGenerativeLinks
+from .drawing_views import DrawingViews
+from .drawing_welding import DrawingWelding
+from .drawing_weldings import DrawingWeldings
+from .print_area import PrintArea
+
+__all__ = ['DraftingSettingAtt', 'DrawingArrow', 'DrawingArrows', 'DrawingComponent', 'DrawingComponents', 'DrawingCoordDim', 'DrawingCoordDims', 'DrawingDimExtLine', 'DrawingDimLine', 'DrawingDimValue', 'DrawingDimension', 'DrawingDimensions', 'DrawingDocument', 'DrawingGDT', 'DrawingGDTs', 'DrawingLeader', 'DrawingLeaders', 'DrawingPageSetup', 'DrawingPicture', 'DrawingPictures', 'DrawingRoot', 'DrawingSheet', 'DrawingSheets', 'DrawingTable', 'DrawingTables', 'DrawingText', 'DrawingTextProperties', 'DrawingTextRange', 'DrawingTexts', 'DrawingThread', 'DrawingThreads', 'DrawingView', 'DrawingViewGenerativeBehavior', 'DrawingViewGenerativeLinks', 'DrawingViews', 'DrawingWelding', 'DrawingWeldings', 'PrintArea']
