@@ -101,7 +101,6 @@ html_theme_options = {
     'github_user': 'evereux',
     'github_repo': 'pycatia',
     'github_button': True,
-    'analytics_id': 'G-HZ9RD8KHJK'
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
