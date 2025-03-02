@@ -17,6 +17,9 @@ from pycatia.cat_tps_interfaces.tps_parallel_on_screen import TPSParallelOnScree
 
 class NonSemanticGDT(AnyObject):
     """
+
+    Introduced in V5-6R2014.
+
         .. note::
             :class: toggle
 
@@ -59,6 +62,9 @@ class NonSemanticGDT(AnyObject):
 
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
+
+        Introduced in V5-6R2017.
+
         .. note::
             :class: toggle
 
@@ -69,6 +75,11 @@ class NonSemanticGDT(AnyObject):
 
         :rtype: TPSParallelOnScreen
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return TPSParallelOnScreen(self.non_semantic_gdt.TPSParallelOnScreen())
 
     def __repr__(self):

@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.drafting_interfaces.drawing_dimension import DrawingDimension
 from pycatia.system_interfaces.any_object import AnyObject
@@ -16,6 +17,9 @@ from pycatia.cat_tps_interfaces.dimension_limit import DimensionLimit
 
 class NonSemanticDimension(AnyObject):
     """
+
+    Introduced in V5-6R2017.
+
         .. note::
             :class: toggle
 
@@ -53,6 +57,11 @@ class NonSemanticDimension(AnyObject):
 
         :rtype: DimensionLimit
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return DimensionLimit(self.non_semantic_dimension.DimensionLimit())
 
     def get_2d_annot(self) -> DrawingDimension:
@@ -72,6 +81,11 @@ class NonSemanticDimension(AnyObject):
 
         :rtype: DrawingDimension
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return DrawingDimension(self.non_semantic_dimension.Get2dAnnot())
 
     def has_dimension_limit(self) -> bool:
@@ -93,6 +107,11 @@ class NonSemanticDimension(AnyObject):
 
         :rtype: bool
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return self.non_semantic_dimension.HasDimensionLimit()
 
     def __repr__(self):

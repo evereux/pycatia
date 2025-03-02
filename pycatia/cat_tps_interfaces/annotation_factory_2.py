@@ -19,6 +19,9 @@ from pycatia.types.general import cat_variant
 
 class AnnotationFactory2(Factory):
     """
+
+    Introduced in V5-6R2017.
+
         .. note::
             :class: toggle
 
@@ -94,6 +97,11 @@ class AnnotationFactory2(Factory):
         :param UserSurface i_surf:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateDatum(i_surf.com_object))
 
     def create_datum_reference_frame(self) -> Annotation2:
@@ -108,6 +116,11 @@ class AnnotationFactory2(Factory):
 
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateDatumReferenceFrame())
 
     def create_datum_target(self, i_surf: UserSurface, i_datum: Annotation2) -> Annotation2:
@@ -136,6 +149,11 @@ class AnnotationFactory2(Factory):
         :param Annotation2 i_datum:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateDatumTarget(i_surf.com_object, i_datum.com_object))
 
     def create_ditto_noa(
@@ -184,6 +202,11 @@ class AnnotationFactory2(Factory):
         :param bool i_stick_to_geometry_option:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(
             self.annotation_factory_2.CreateDittoNOA(
                 i_surf.com_object,
@@ -242,6 +265,11 @@ class AnnotationFactory2(Factory):
         :param bool i_with_leader:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(
             self.annotation_factory_2.CreateEvoluateDatum(
                 i_surf.com_object,
@@ -300,6 +328,11 @@ class AnnotationFactory2(Factory):
         :param bool i_with_leader:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(
             self.annotation_factory_2.CreateEvoluateText(
                 i_surf.com_object,
@@ -330,6 +363,11 @@ class AnnotationFactory2(Factory):
         :param UserSurface i_surf:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(
             self.annotation_factory_2.CreateFlagNote(
                 i_surf.com_object
@@ -399,6 +437,11 @@ class AnnotationFactory2(Factory):
         :param cat_variant i_sub_type:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(
             self.annotation_factory_2.CreateNonSemanticDimension(
                 i_surf.com_object,
@@ -427,6 +470,11 @@ class AnnotationFactory2(Factory):
         :param UserSurface i_surf:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateRoughness(i_surf.com_object))
 
     def create_semantic_dimension(
@@ -456,6 +504,11 @@ class AnnotationFactory2(Factory):
         :param cat_variant i_sub_type:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(
             self.annotation_factory_2.CreateSemanticDimension(
                 i_surf.com_object,
@@ -484,6 +537,11 @@ class AnnotationFactory2(Factory):
         :param UserSurface i_surf:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateText(i_surf.com_object))
 
     def create_text_noa(self, i_surf: UserSurface) -> Annotation2:
@@ -507,6 +565,11 @@ class AnnotationFactory2(Factory):
         :param UserSurface i_surf:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateTextNOA(i_surf.com_object))
 
     def create_text_note_object_attribute(self, i_surf: UserSurface, i_noa_type: str) -> Annotation2:
@@ -535,6 +598,11 @@ class AnnotationFactory2(Factory):
         :param str i_noa_type:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateTextNoteObjectAttribute(i_surf.com_object, i_noa_type))
 
     def create_text_on_annot(self, i_text: str, i_annot: Annotation2) -> Annotation2:
@@ -561,6 +629,11 @@ class AnnotationFactory2(Factory):
         :param Annotation2 i_annot:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateTextOnAnnot(i_text, i_annot.com_object))
 
     def create_tolerance_with_drf(self, i_index: cat_variant, i_surf: UserSurface, i_drf: Annotation2) -> Annotation2:
@@ -580,6 +653,11 @@ class AnnotationFactory2(Factory):
         :param Annotation2 i_drf:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(
             self.annotation_factory_2.CreateToleranceWithDRF(
                 i_index,
@@ -603,6 +681,11 @@ class AnnotationFactory2(Factory):
         :param UserSurface i_surf:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateToleranceWithoutDRF(i_index, i_surf.com_object))
 
     def create_weld(self, i_surf: UserSurface) -> Annotation2:
@@ -625,6 +708,11 @@ class AnnotationFactory2(Factory):
         :param UserSurface i_surf:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.CreateWeld(i_surf.com_object))
 
     def instantiate_noa(self, i_noa: Annotation2, i_surf: UserSurface) -> Annotation2:
@@ -651,6 +739,11 @@ class AnnotationFactory2(Factory):
         :param UserSurface i_surf:
         :rtype: Annotation2
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return Annotation2(self.annotation_factory_2.InstanciateNOA(i_noa.com_object, i_surf.com_object))
 
     def __repr__(self):

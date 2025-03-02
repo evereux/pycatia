@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.8.1
+
+* updated Part.annotation_sets return type to be AnnotationSets in lieu of the
+  generic Collection object.
+* updated Annotations.item2 to return an Annotation2 object. Was AnyObject. Issue #236.
+* added CATIA version checks for several tps_interfaces.
+
 ## 0.8.0
 
 * New Classes, methods, properties and enums added.

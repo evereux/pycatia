@@ -85,7 +85,7 @@ class Annotations(Collection):
         """
         return Annotation(self.annotations.Item(i_index))
 
-    def item2(self, i_index: cat_variant) -> AnyObject:
+    def item2(self, i_index: cat_variant) -> 'Annotation2':
         """
         .. note::
             :class: toggle
@@ -96,9 +96,10 @@ class Annotations(Collection):
                 |     Retrieve an Annotation using interface CATIAAnnotation2
 
         :param cat_variant i_index:
-        :rtype: AnyObject
+        :rtype: Annotation2
         """
-        return AnyObject(self.annotations.Item2(i_index))
+        from pycatia.cat_tps_interfaces.annotation_2 import Annotation2
+        return Annotation2(self.annotations.Item2(i_index))
 
     def __getitem__(self, n: int) -> Annotation:
         if (n + 1) > self.count:

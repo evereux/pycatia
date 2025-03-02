@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.drafting_interfaces.drawing_welding import DrawingWelding
 from pycatia.system_interfaces.any_object import AnyObject
@@ -16,6 +17,9 @@ from pycatia.cat_tps_interfaces.tps_parallel_on_screen import TPSParallelOnScree
 
 class Weld(AnyObject):
     """
+
+    Introduced in V5-6R2017.
+
         .. note::
             :class: toggle
 
@@ -47,6 +51,11 @@ class Weld(AnyObject):
 
         :rtype: DrawingWelding
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return DrawingWelding(self.weld.Get2dAnnot())
 
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
@@ -61,6 +70,11 @@ class Weld(AnyObject):
 
         :rtype: TPSParallelOnScreen
         """
+        self.release_check(
+            self.application.system_configuration.release,
+            27,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
         return TPSParallelOnScreen(self.weld.TPSParallelOnScreen())
 
     def __repr__(self):

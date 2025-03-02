@@ -36,7 +36,7 @@ copyright = '2024, Paul Bourne'
 author = 'Paul Bourne'
 
 # The short X.Y version
-version = '0.8.0'
+version = '0.8.1'
 # The full version, including alpha/beta/rc tags
 release = version
 
@@ -101,7 +101,6 @@ html_theme_options = {
     'github_user': 'evereux',
     'github_repo': 'pycatia',
     'github_button': True,
-    'analytics_id': 'G-HZ9RD8KHJK'
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

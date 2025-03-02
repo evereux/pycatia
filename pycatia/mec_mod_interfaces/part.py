@@ -91,7 +91,7 @@ class Part(AnyObject):
         return Analyze(self.part.Analyze)
 
     @property
-    def annotation_sets(self) -> Collection:
+    def annotation_sets(self) -> AnnotationSets:
         """
         .. note::
             :class: toggle
