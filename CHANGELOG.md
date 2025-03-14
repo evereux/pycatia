@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.2
+
+* fixed Hole.get_direction() and Hole.get_origin().
+
 ## 0.8.1
 
 * updated Part.annotation_sets return type to be AnnotationSets in lieu of the
