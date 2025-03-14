@@ -4,7 +4,9 @@ Windows Builds
 ==============
 
 To run pre-existing scripts the pycatia.exe is available
-to download from `github <https://github.com/evereux/pycatia/tree/master/win_32>`_.
+to download from `github <https://github.com/evereux/pycatia/releases>`_.
+Download the latest `pycatia_X.X.zip` and extract the contents of the zip to a
+new folder.
 
 Usage
 -----
