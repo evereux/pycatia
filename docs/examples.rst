@@ -42,6 +42,8 @@ Index
 
 :ref:`PARAMETERS EXAMPLES<Example Parameters>`
 
+:ref:`PART EXAMPLES<Example Parts>`
+
 :ref:`PRODUCT EXAMPLES<Example Product>`
 
 :ref:`SELECTION EXAMPLES<Example Selection>`
@@ -399,6 +401,20 @@ Parameters - Example 2
 Change the Length value of parameter named Thickness.
 
 `Parameters - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__parameters__002.py>`_
+
+
+
+.. _Example Part:
+
+PART EXAMPLES
+----------------
+
+Part - Hole - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~
+
+For all the Hole(s) in a CATPart get the origin and direction of Hole.
+
+`Part - Hole - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__part_hole__001.py>`_
 
 
 
