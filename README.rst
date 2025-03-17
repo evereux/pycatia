@@ -23,9 +23,6 @@ I have limited access to CATIA licences / workbenches. Also, there are many
 modules that I simply don't know what they do. Thus my ability to test and
 support can be limited.
 
-Any bugs that exist should be for the most part be quite easy to
-fix using those methods that do work as a reference.
-
 
 Requirements
 ------------
