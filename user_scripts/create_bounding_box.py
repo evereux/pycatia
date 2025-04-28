@@ -32,6 +32,12 @@
     More examples and user scripts can be found at:
     https://github.com/evereux/pycatia/tree/master/examples
     https://github.com/evereux/pycatia/tree/master/user_scripts
+
+
+    Warning
+    =======
+    This will only work running CATIA V5 with the english localisation settings. I've commented the appropriate lines
+    with the French alternative.
 """
 
 ##########################################################
@@ -192,9 +198,12 @@ sketch_bbox_1 = sketches.add(ref_plane_xy)
 factory_2d_1 = sketch_bbox_1.open_edition()
 geometric_elements_1 = sketch_bbox_1.geometric_elements
 axis_2d = geometric_elements_1.item('AbsoluteAxis')
+# axis_2d = geometric_elements_1.item('Repère') # For French locales.
 line_hdirection = Geometry2D(axis_2d.get_item('HDirection').com_object)
+# line_hdirection = Geometry2D(axis_2d.get_item('Axe horizontal').com_object) # For French locales.
 line_hdirection.report_name = 1
 line_vdirection = Geometry2D(axis_2d.get_item('VDirection').com_object)
+# line_vdirection = Geometry2D(axis_2d.get_item('Axe vertical').com_object) # For French locales.
 line_vdirection.report_name = 2
 
 p = 20000
@@ -258,7 +267,9 @@ ref_plane_zx = part.create_reference_from_b_rep_name(
     axis_bbox)
 geometric_elements_zx = factory_2d_1.create_intersections(ref_plane_zx)
 geometry_zx = geometric_elements_zx.item('Mark.1')
+# geometry_zx = geometric_elements_zx.item('Empreinte.1')# For French locales.
 geometry_2d = Geometry2D(geometric_elements_zx.get_item('Mark.1').com_object)
+# geometry_2d = Geometry2D(geometric_elements_zx.get_item('Empreinte.1').com_object)# For French locales.
 geometry_2d.construction = True
 ref_geometry_zx = part.create_reference_from_object(geometry_zx)
 cst_parallel = cat_constraint_type.index('catCstTypeParallelism')
