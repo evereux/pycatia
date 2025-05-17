@@ -58,6 +58,8 @@ from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.sketcher_interfaces.geometry_2D import Geometry2D
 
+bbox_offset = 10
+
 logger = create_logger()
 
 caa = catia()
@@ -288,17 +290,17 @@ constraint_9.mode = cst_driving
 
 # create the parameters for bounding box offsets
 parameters = part.parameters
-parameter_bbox_bottom = parameters.create_dimension('BBoxOffset_Bottom', 'Length', 10)
-parameter_bbox_top = parameters.create_dimension('BBoxOffset_Top', 'Length', 10)
-parameter_bbox_left = parameters.create_dimension('BBoxOffset_Left', 'Length', 10)
-parameter_bbox_right = parameters.create_dimension('BBoxOffset_Right', 'Length', 10)
+parameter_bbox_bottom = parameters.create_dimension('BBoxOffset_Bottom', 'Length', bbox_offset)
+parameter_bbox_top = parameters.create_dimension('BBoxOffset_Top', 'Length', bbox_offset)
+parameter_bbox_sketch_periphery = parameters.create_dimension('BBoxOffset_SketchPeriphery', 'Length',
+                                                              bbox_offset)
 
 # link the parameters to the lines in sketch
 relations = part.relations
 relations.create_formula('Formula.Bottom', '', length_bottom, parameter_bbox_bottom.name.split('\\')[1])
 relations.create_formula('Formula.Top', '', length_top, parameter_bbox_top.name.split('\\')[1])
-relations.create_formula('Formula.Left', '', length_left, parameter_bbox_left.name.split('\\')[1])
-relations.create_formula('Formula.Right', '', length_right, parameter_bbox_right.name.split('\\')[1])
+relations.create_formula('Formula.Left', '', length_left, parameter_bbox_sketch_periphery.name.split('\\')[1])
+relations.create_formula('Formula.Right', '', length_right, parameter_bbox_sketch_periphery.name.split('\\')[1])
 
 sketch_bbox_1.close_edition()
 
@@ -308,17 +310,30 @@ part.update()
 ref_origin_line_1 = part.create_reference_from_object(line_hdirection)
 ref_origin_line_2 = part.create_reference_from_object(line_vdirection)
 
-plane_origin = hybrid_shape_factory.add_new_plane2_lines(ref_origin_line_1, ref_origin_line_2)
-ref_plane_origin = part.create_reference_from_object(plane_origin)
-plane_origin = hybrid_shape_factory.add_new_plane_offset_pt(ref_plane_origin, ref_point_6)
-ref_plane_origin = part.create_reference_from_object(plane_origin)
-gs_bbox.append_hybrid_shape(plane_origin)
+plane_part_axis_base = hybrid_shape_factory.add_new_plane2_lines(ref_origin_line_1, ref_origin_line_2)
+plane_part_axis_base.name = 'Plane.AxisBase'
+gs_bbox.append_hybrid_shape(plane_part_axis_base)
+ref_plane_part_axis_base = part.create_reference_from_object(plane_part_axis_base)
 
-plane_offset = hybrid_shape_factory.add_new_plane_offset_pt(ref_plane_origin, ref_point_5)
-gs_bbox.append_hybrid_shape(plane_offset)
+plane_part_bottom = hybrid_shape_factory.add_new_plane_offset_pt(ref_plane_part_axis_base, ref_point_6)
+plane_part_bottom.name = 'Plane.PartBottom'
+gs_bbox.append_hybrid_shape(plane_part_bottom)
+ref_plane_part_base = part.create_reference_from_object(plane_part_bottom)
+## bbox offset plane  - bottom
+plane_part_bottom_offset = hybrid_shape_factory.add_new_plane_offset(ref_plane_part_base, bbox_offset, True)
+plane_part_bottom_offset.name = 'Plane.PartBottom.Offset'
+gs_bbox.append_hybrid_shape(plane_part_bottom_offset)
+ref_plane_part_bottom_offset = part.create_reference_from_object(plane_part_bottom_offset)
 
-ref_plane_origin = part.create_reference_from_object(plane_origin)
-ref_plane_offset = part.create_reference_from_object(plane_offset)
+plane_part_top = hybrid_shape_factory.add_new_plane_offset_pt(ref_plane_part_base, ref_point_5)
+plane_part_top.name = 'Plane.PartTop'
+gs_bbox.append_hybrid_shape(plane_part_top)
+ref_plane_part_top = part.create_reference_from_object(plane_part_top)
+## bbox offset plane  - top
+plane_part_top_offset = hybrid_shape_factory.add_new_plane_offset(ref_plane_part_top, bbox_offset, False)
+plane_part_top_offset.name = 'Plane.PartTop.Offset'
+gs_bbox.append_hybrid_shape(plane_part_top_offset)
+ref_plane_part_top_offset = part.create_reference_from_object(plane_part_top_offset)
 
 part.update()
 
@@ -328,7 +343,7 @@ point_inf.name = 'Point.Inf'
 gs_bbox.append_hybrid_shape(point_inf)
 ref_point_inf = part.create_reference_from_object(point_inf)
 
-point_prj_inf = hybrid_shape_factory.add_new_project(ref_point_6, ref_plane_offset)
+point_prj_inf = hybrid_shape_factory.add_new_project(ref_point_6, ref_plane_part_top)
 point_prj_inf.name = 'Point.Prf.Inf'
 gs_bbox.append_hybrid_shape(point_prj_inf)
 ref_point_prj_inf = part.create_reference_from_object(point_prj_inf)
@@ -355,13 +370,23 @@ length_dz = Length(contraint_dz.dimension.com_object)
 part.update()
 
 reference_sketch = part.create_reference_from_object(sketch_bbox_1)
-sweep = hybrid_shape_factory.add_new_sweep_explicit(reference_sketch, ref_line_guide)
-gs_bbox.append_hybrid_shape(sweep)
-ref_sweep = part.create_reference_from_object(sweep)
+hs_direction = hybrid_shape_factory.add_new_direction(ref_plane_part_base)
+extrude = hybrid_shape_factory.add_new_extrude(
+    reference_sketch,
+    0,
+    100,
+    hs_direction
+)
+gs_bbox.append_hybrid_shape(extrude)
+extrude.first_limit_type = 2
+extrude.second_limit_type = 2
+extrude.first_upto_element = ref_plane_part_top_offset
+extrude.second_upto_element = ref_plane_part_bottom_offset
+ref_extrude = part.create_reference_from_object(extrude)
 
 part.update()
 
-sf_close_surface = shape_factory.add_new_close_surface(ref_sweep)
+sf_close_surface = shape_factory.add_new_close_surface(ref_extrude)
 sf_close_surface.name = "CloseSurface.BoundingBox"
 
 part.update()
