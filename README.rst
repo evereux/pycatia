@@ -78,11 +78,17 @@ configuration settings:
 
 * CGR cache system must be disabled.
 * Do not activate default shapes on open must be disabled.
-* Parameter names must not have back ticks enabled. Tools > Options > General > Parameters and Measure > Knowledge > Parameter Names > Surrounded by the \` symbol.
+* Parameter names must not have back ticks enabled. Tools > Options > General >
+Parameters and Measure > Knowledge > Parameter Names > Surrounded by the
+\` symbol.
 
 On the first run, during the running of the tests, the test suite will create
-the CATIA drawing, products and part it requires to run in the folder
-tests/cat_files.
+the CATIA drawing, products and part it requires to run and adds them to the
+folder tests/cat_files.
+
+If you have previously run the tests successfully and see into strange errors,
+it maybe that the source parts require re-creating. Try deleting the CATIA files
+in the folder tests/cat_files so that they are regenerated on the next test run.
 
 CATIA V5 should already be running and have NO documents already open.
 
