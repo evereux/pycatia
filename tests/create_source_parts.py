@@ -216,10 +216,24 @@ def create_cat_part_measurable(file_name):
     # ##############
 
     line_1 = hybrid_shape_factory.add_new_line_pt_pt(ref_point_1, ref_point_3)
+    line_1.name = "Line.1"
     hybrid_body_lines.append_hybrid_shape(line_1)
 
     line_2 = hybrid_shape_factory.add_new_line_pt_pt(ref_point_1, ref_point_4)
+    line_2.name = "Line.2"
     hybrid_body_lines.append_hybrid_shape(line_2)
+
+    direction = hybrid_shape_factory.add_new_direction(ref_xy_plane)
+
+    line_3 = hybrid_shape_factory.add_new_line_pt_dir(
+        ref_point_1,
+        direction,
+        -100,
+        100,
+        True
+    )
+    line_3.name = "Line.3"
+    hybrid_body_lines.append_hybrid_shape(line_3)
 
     # ###################################### #
     # create a surface by filling the sketch #
@@ -270,11 +284,21 @@ def create_cat_part_measurable(file_name):
 
     part.update()
 
-    # ############## #
-    # create a plane #
-    # ############## #
-    plane = hybrid_shape_factory.add_new_plane_offset(ref_xy_plane, 200, True)
-    hybrid_body_planes.append_hybrid_shape(plane)
+    # ################# #
+    # create the planes #
+    # ################# #
+    plane_offset = hybrid_shape_factory.add_new_plane_offset(ref_xy_plane, 200, True)
+    plane_offset.name = "Plane.Offset"
+    hybrid_body_planes.append_hybrid_shape(plane_offset)
+
+    ref_line_1 = part.create_reference_from_object(line_1)
+    ref_line_2 = part.create_reference_from_object(line_2)
+    plane_two_lines = hybrid_shape_factory.add_new_plane2_lines(
+        ref_line_1,
+        ref_line_2
+    )
+    plane_two_lines.name = "Plane.TwoLines"
+    hybrid_body_planes.append_hybrid_shape(plane_two_lines)
 
     part.update()
 
