@@ -2,6 +2,8 @@ CONTRIBUTORS
 
 bhulele
 
+CossackLucas
+
 deloarts
 
 hitman061
