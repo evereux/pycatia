@@ -78,9 +78,9 @@ configuration settings:
 
 * CGR cache system must be disabled.
 * Do not activate default shapes on open must be disabled.
-* Parameter names must not have back ticks enabled. Tools > Options > General >
-Parameters and Measure > Knowledge > Parameter Names > Surrounded by the
-\` symbol.
+* | Parameter names must not have back ticks enabled.
+  | Tools > Options > General > Parameters and Measure > Knowledge > Parameter Names > Surrounded by the \` symbol.
+
 
 On the first run, during the running of the tests, the test suite will create
 the CATIA drawing, products and part it requires to run and adds them to the
