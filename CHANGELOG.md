@@ -4,6 +4,7 @@
 
 * fixed methods for Plane.get_first_axis(), Plane.get_origin(),
   Plane.get_position(), Plane.get_second_axs(). @CossackLucas
+* fixed HyrbridShapeLoft.add_section_to_loft. #266
 
 ## 0.8.2
 
