@@ -10,6 +10,8 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
   get_symbol_type(), get_visible_color(), get_visible_line_type(),
   get_visible_opacity(), get_visible_width().
   Thanks to @HubertDomaros for pointing out the initial issue #269.
+* updated Selection.select_element4() type hints and the returned objects.
+  Thanks to @CossackLucas for reporting #263.
 
 ## 0.8.3
 
