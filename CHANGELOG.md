@@ -1,16 +1,5 @@
 # Changelog
 
-## 0.9.0
-
-Please note the change to VisPropertySet.get_show() will break existing scripts where this is used.
-
-* updated the following VisPropertySet() methods with fixed type hinting:
-  get_layer(), get_pick(), get_real_color(), get_real_inheritance(),
-  get_real_line_type(), get_real_opacity(), get_real_width(), get_show(),
-  get_symbol_type(), get_visible_color(), get_visible_line_type(),
-  get_visible_opacity(), get_visible_width().
-  Thanks to @HubertDomaros for pointing out the initial issue #269.
-
 ## 0.8.3
 
 * fixed methods for Plane.get_first_axis(), Plane.get_origin(),
