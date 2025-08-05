@@ -12,6 +12,7 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
   Thanks to @HubertDomaros for pointing out the initial issue #269.
 * updated Selection.select_element4() type hints and the returned objects.
   Thanks to @CossackLucas for reporting #263.
+* updated ParameterSet.all_parameters to return a Parameters collection object.
 
 ## 0.8.3
 
