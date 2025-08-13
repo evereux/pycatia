@@ -13,6 +13,7 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
 * updated Selection.select_element4() type hints and the returned objects.
   Thanks to @CossackLucas for reporting #263.
 * updated ParameterSet.all_parameters to return a Parameters collection object.
+* fixed DrawingDimension.get_boundary_box(). #275
 
 ## 0.8.3
 
