@@ -11,7 +11,7 @@
 import inspect
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class CompositesServices(AnyObject):
@@ -88,7 +88,7 @@ class CompositesServices(AnyObject):
         super().__init__(com_object)
         self.composites_services = com_object
 
-    def get_composites_type(self, i_object: cat_variant, i_composites_type: int) -> None:
+    def get_composites_type(self, i_object: CATVariant, i_composites_type: int) -> None:
         """
 
         Introduced in V5-6R2020.
@@ -111,7 +111,7 @@ class CompositesServices(AnyObject):
                 |     See also:
                 |         CATCompositesTypeEnum
 
-        :param cat_variant i_object:
+        :param CATVariant i_object:
         :param int i_composites_type: see enumeration type cat_composites_type
         :rtype: None
         """
@@ -122,7 +122,7 @@ class CompositesServices(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.composites_services.GetCompositesType(i_object.com_object, i_composites_type)
+        return self.composites_services.GetCompositesType(i_object, i_composites_type)
 
     def __repr__(self):
         return f'CompositesServices(name="{self.name}")'

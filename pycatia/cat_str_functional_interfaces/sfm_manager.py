@@ -12,7 +12,7 @@ from pycatia.cat_str_functional_interfaces.sfm_welds import SFMWelds
 from pycatia.in_interfaces.reference import Reference
 from pycatia.in_interfaces.references import References
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class SFMManager(AnyObject):
@@ -127,7 +127,7 @@ class SFMManager(AnyObject):
         """
         return References(self.sfm_manager.GetPlaneSystems())
 
-    def get_reference_plane(self, i_plane_system_index: cat_variant, i_plane_index: cat_variant) -> Reference:
+    def get_reference_plane(self, i_plane_system_index: CATVariant, i_plane_index: CATVariant) -> Reference:
         """
         .. note::
             :class: toggle
@@ -145,8 +145,8 @@ class SFMManager(AnyObject):
                 |          Dim RefPlane As Reference
                 |          SfmManager.GetReferencePlane 1, "CROSS.12", RefPlane
 
-        :param cat_variant i_plane_system_index:
-        :param cat_variant i_plane_index:
+        :param CATVariant i_plane_system_index:
+        :param CATVariant i_plane_index:
         :rtype: Reference
         """
         return Reference(

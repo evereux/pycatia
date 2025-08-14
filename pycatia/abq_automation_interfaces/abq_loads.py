@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_load import ABQLoad
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ABQLoads(Collection):
@@ -76,7 +76,7 @@ class ABQLoads(Collection):
         """
         return ABQLoad(self.abq_loads.Add(i_load_type))
 
-    def item(self, i_index: cat_variant) -> ABQLoad:
+    def item(self, i_index: CATVariant) -> ABQLoad:
         """
         .. note::
             :class: toggle
@@ -100,12 +100,12 @@ class ABQLoads(Collection):
                 |     Returns:
                 |         The specified ABQLoad.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ABQLoad
         """
         return ABQLoad(self.abq_loads.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -126,7 +126,7 @@ class ABQLoads(Collection):
                 |             string, it specifies the name you assigned to the load using the
                 |             CATIACollection::Name property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.abq_loads.Remove(i_index)

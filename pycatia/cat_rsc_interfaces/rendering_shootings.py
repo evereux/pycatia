@@ -10,7 +10,7 @@
 """
 from pycatia.cat_rsc_interfaces.rendering_shooting import RenderingShooting
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class RenderingShootings(Collection):
@@ -49,7 +49,7 @@ class RenderingShootings(Collection):
         """
         return RenderingShooting(self.rendering_shootings.Add())
 
-    def item(self, i_index: cat_variant) -> RenderingShooting:
+    def item(self, i_index: CATVariant) -> RenderingShooting:
         """
         .. note::
             :class: toggle
@@ -78,12 +78,12 @@ class RenderingShootings(Collection):
                 |      Dim MyShooting As RenderingShooting
                 |      Set MyShooting = RenderingShootings.Item(6)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: RenderingShooting
         """
         return RenderingShooting(self.rendering_shootings.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -93,7 +93,7 @@ class RenderingShootings(Collection):
                 | 
                 |     Removes a shooting from the shootings collection.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.rendering_shootings.Remove(i_index)

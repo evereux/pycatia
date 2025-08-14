@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_job import ABQJob
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ABQJobs(Collection):
@@ -61,7 +61,7 @@ class ABQJobs(Collection):
         """
         return ABQJob(self.abq_jobs.Add())
 
-    def item(self, i_index: cat_variant) -> ABQJob:
+    def item(self, i_index: CATVariant) -> ABQJob:
         """
         .. note::
             :class: toggle
@@ -85,12 +85,12 @@ class ABQJobs(Collection):
                 |     Returns:
                 |         oJob The specified ABQJob.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ABQJob
         """
         return ABQJob(self.abq_jobs.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -110,7 +110,7 @@ class ABQJobs(Collection):
                 |             Count. As a string, it is the name you assigned to the job using the
                 |             CATIABase::Name property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.abq_jobs.Remove(i_index)

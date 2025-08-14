@@ -10,7 +10,7 @@
 """
 from pycatia.funct_system_interfaces.funct_script import FunctScript
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class FunctScripts(Collection):
@@ -84,7 +84,7 @@ class FunctScripts(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def elem(self, i_index: cat_variant) -> FunctScript:
+    def elem(self, i_index: CATVariant) -> FunctScript:
         """
         .. note::
             :class: toggle
@@ -120,7 +120,7 @@ class FunctScripts(Collection):
                 |          Dim Assoc2 As FunctScript
                 |          Set Assoc2 = FacetGKW.Scripts.Elem("Producing the Skeleton 2D")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: FunctScript
         """
         return FunctScript(self.funct_scripts.Elem(i_index))

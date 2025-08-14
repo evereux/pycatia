@@ -10,7 +10,7 @@
 """
 from pycatia.behavior_interfaces.behavior import Behavior
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Behaviors(Collection):
@@ -45,7 +45,7 @@ class Behaviors(Collection):
         super().__init__(com_object, child_object=Behavior)
         self.behaviors = com_object
 
-    def item(self, i_index: cat_variant) -> Behavior:
+    def item(self, i_index: CATVariant) -> Behavior:
         """
         .. note::
             :class: toggle
@@ -77,7 +77,7 @@ class Behaviors(Collection):
                 |          Dim ThatBeh As Behavior
                 |          Set ThatBeh = listBehaviors.Item("MyBeh")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Behavior
         """
         return Behavior(self.behaviors.Item(i_index))

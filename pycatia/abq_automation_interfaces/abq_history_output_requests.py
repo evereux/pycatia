@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_history_output_request import ABQHistoryOutputRequest
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ABQHistoryOutputRequests(Collection):
@@ -67,7 +67,7 @@ class ABQHistoryOutputRequests(Collection):
         """
         return ABQHistoryOutputRequest(self.abq_history_output_requests.Add())
 
-    def item(self, i_index: cat_variant) -> ABQHistoryOutputRequest:
+    def item(self, i_index: CATVariant) -> ABQHistoryOutputRequest:
         """
         .. note::
             :class: toggle
@@ -92,12 +92,12 @@ class ABQHistoryOutputRequests(Collection):
                 |     Returns:
                 |         The specified ABQHistoryOutputRequest.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ABQHistoryOutputRequest
         """
         return ABQHistoryOutputRequest(self.abq_history_output_requests.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -119,7 +119,7 @@ class ABQHistoryOutputRequests(Collection):
                 |             the history output request using the CATIABase::Name
                 |             property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.abq_history_output_requests.Remove(i_index)

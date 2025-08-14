@@ -10,7 +10,7 @@
 """
 from pycatia.analysis_interfaces.analysis_local_entity import AnalysisLocalEntity
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class AnalysisLocalEntities(Collection):
@@ -74,7 +74,7 @@ class AnalysisLocalEntities(Collection):
         """
         return AnalysisLocalEntity(self.analysis_local_entities.Add(i_type))
 
-    def item(self, i_index: cat_variant) -> AnalysisLocalEntity:
+    def item(self, i_index: CATVariant) -> AnalysisLocalEntity:
         """
         .. note::
             :class: toggle
@@ -100,12 +100,12 @@ class AnalysisLocalEntities(Collection):
                 |     Returns:
                 |         The retrieved analysis entity
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: AnalysisLocalEntity
         """
         return AnalysisLocalEntity(self.analysis_local_entities.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -127,7 +127,7 @@ class AnalysisLocalEntities(Collection):
                 | 
                 |         AnyObject.Name property or when creating it using the Add method.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.analysis_local_entities.Remove(i_index)

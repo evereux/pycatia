@@ -46,7 +46,7 @@ class TPSView(AnyObject):
 
             CAA V5 Visual Basic Help (2024-08-20 16:04:57.203445)
                 | Property AnnotationPlane() As CATSafeArrayVariant (Read Only)
-                |     Reads view annoation plane.
+                |     Reads view annotation plane.
                 |
                 |     Parameters:
                 |
@@ -65,7 +65,7 @@ class TPSView(AnyObject):
         return self.tps_view.AnnotationPlane
 
     @property
-    def annotation_sketch(self) -> False:
+    def annotation_sketch(self) -> AnyObject:
         """
 
         Introduced in V5-6R2019.
@@ -83,7 +83,7 @@ class TPSView(AnyObject):
                 |         Layout2DLView
                 |             2D Layout View used by current View as annotation sketch
 
-        :rtype: False
+        :rtype: AnyObject
         """
 
         self.release_check(
@@ -92,12 +92,12 @@ class TPSView(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return None
+        return AnyObject(self.tps_view.AnnotationSketch)
 
     @annotation_sketch.setter
-    def annotation_sketch(self, value: False):
+    def annotation_sketch(self, value: AnyObject):
         """
-        :param False value:
+        :param AnyObject value:
         """
 
         self.tps_view.AnnotationSketch = value
@@ -132,7 +132,7 @@ class TPSView(AnyObject):
         return Annotations(self.tps_view.Annotations)
 
     @property
-    def display_ratio(self) -> False:
+    def display_ratio(self) -> int:
         """
 
         Introduced in V5-6R2019.
@@ -149,7 +149,7 @@ class TPSView(AnyObject):
                 |         RatioValue
                 |             Ratio applied to the View.
 
-        :rtype: False
+        :rtype: int
         """
 
         self.release_check(
@@ -158,10 +158,10 @@ class TPSView(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return None
+        return self.tps_view.DisplayRatio
 
     @display_ratio.setter
-    def display_ratio(self, value: False):
+    def display_ratio(self, value: int):
         """
         :param False value:
         """

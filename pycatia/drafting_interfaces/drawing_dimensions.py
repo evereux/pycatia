@@ -11,8 +11,9 @@
 from typing import Iterator, Union
 
 from pycatia.drafting_interfaces.drawing_dimension import DrawingDimension
+from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 from pycatia.scripts.vba import VBANothing
 from pycatia.scripts.vba import vba_nothing
 
@@ -40,7 +41,8 @@ class DrawingDimensions(Collection):
         super().__init__(com_object, child_object=DrawingDimension)
         self.drawing_dimensions = com_object
 
-    def add(self, i_type_dim: int, i_geom_elem: tuple, i_pt_coord_elem: tuple, i_line_rep: int) -> DrawingDimension:
+    def add(self, i_type_dim: int, i_geom_elem: tuple[AnyObject], i_pt_coord_elem: tuple,
+            i_line_rep: int) -> DrawingDimension:
         """
         .. note::
             :class: toggle
@@ -126,7 +128,7 @@ class DrawingDimensions(Collection):
              i_type_dim: int,
              i_geom_elem: tuple,
              i_pt_coord_elem: tuple,
-             i_ldc_ref_elem: Union[cat_variant, VBANothing],
+             i_ldc_ref_elem: Union[AnyObject, VBANothing],
              i_ldc_ref_angle: int) -> DrawingDimension:
         """
         .. note::
@@ -192,7 +194,7 @@ class DrawingDimensions(Collection):
         :param int i_type_dim: enum cat_dim_type
         :param tuple i_geom_elem:
         :param tuple i_pt_coord_elem:
-        :param cat_variant i_ldc_ref_elem:
+        :param AnyObject i_ldc_ref_elem:
         :param int i_ldc_ref_angle:
         :rtype: DrawingDimension
         """
@@ -213,7 +215,7 @@ class DrawingDimensions(Collection):
                 i_ldc_ref_angle)
         )
 
-    def item(self, i_index: cat_variant) -> DrawingDimension:
+    def item(self, i_index: CATVariant) -> DrawingDimension:
         """
         .. note::
             :class: toggle
@@ -255,12 +257,12 @@ class DrawingDimensions(Collection):
                 |          Dim ThatDrawingDimension As DrawingDimension
                 |          Set ThatDrawingDimension = MyView.Dimensions.Item("MyDimension")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: DrawingDimension
         """
         return DrawingDimension(self.drawing_dimensions.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -289,7 +291,7 @@ class DrawingDimensions(Collection):
                 |          Set MyView  = MySheet.Views.ActiveView
                 |          MyView.Dimensions.Remove(3)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.drawing_dimensions.Remove(i_index)

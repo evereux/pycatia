@@ -11,7 +11,7 @@
 
 from pycatia.system_interfaces.collection import Collection
 from pycatia.cat_mat_interfaces.material import Material
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Materials(Collection):
@@ -52,7 +52,7 @@ class Materials(Collection):
         """
         return Material(self.materials.Add())
 
-    def item(self, i_index: cat_variant) -> Material:
+    def item(self, i_index: CATVariant) -> Material:
         """
         .. note::
             :class: toggle
@@ -81,12 +81,12 @@ class Materials(Collection):
                 |      Dim MyMaterial As Material
                 |      Set MyMaterial = Materials.Item(6)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Material
         """
         return Material(self.materials.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -96,12 +96,12 @@ class Materials(Collection):
                 |
                 |     Removes a material from the materials collection.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         self.materials.Remove(i_index)
 
-    def sorted_item(self, i_index: cat_variant, i_mode: int) -> Material:
+    def sorted_item(self, i_index: CATVariant, i_mode: int) -> Material:
         """
         .. note::
             :class: toggle
@@ -130,7 +130,7 @@ class Materials(Collection):
                 |     Returns:
                 |         The retrieved material
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :param int i_mode:
         :rtype: Material
         """

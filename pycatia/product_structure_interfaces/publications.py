@@ -13,7 +13,7 @@ from typing import TYPE_CHECKING
 
 from pycatia.product_structure_interfaces.publication import Publication
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 if TYPE_CHECKING:
     from pycatia.in_interfaces.reference import Reference
@@ -73,7 +73,7 @@ class Publications(Collection):
         """
         return Publication(self.publications.Add(i_public_name))
 
-    def item(self, i_identifier: cat_variant) -> Publication:
+    def item(self, i_identifier: CATVariant) -> Publication:
         """
         .. note::
             :class: toggle
@@ -97,7 +97,7 @@ class Publications(Collection):
                 |              Dim Prod1 As Product
                 |              Set Pub1 = Prod1.Item(PubId)
 
-        :param cat_variant i_identifier:
+        :param CATVariant i_identifier:
         :rtype: Publication
         """
         return Publication(self.publications.Item(i_identifier))
@@ -128,7 +128,7 @@ class Publications(Collection):
         """
         return self.publications.Remove(i_identifier)
 
-    def set_direct(self, i_identifier: cat_variant, i_pointed: 'Reference') -> None:
+    def set_direct(self, i_identifier: CATVariant, i_pointed: 'Reference') -> None:
         """
         .. note::
             :class: toggle
@@ -157,7 +157,7 @@ class Publications(Collection):
                 |          Dim Prod1 As Product
                 |          Prod1.SetDirect(PubId,RefObject)
 
-        :param cat_variant i_identifier:
+        :param CATVariant i_identifier:
         :param Reference i_pointed:
         :rtype: None
         """
@@ -178,7 +178,7 @@ class Publications(Collection):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_relay(self, i_identifier: cat_variant, i_relayer: 'Publications', i_name_in_relay: cat_variant) -> None:
+    def set_relay(self, i_identifier: CATVariant, i_relayer: 'Publications', i_name_in_relay: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -208,9 +208,9 @@ class Publications(Collection):
                 |              Dim Prod1 As Product
                 |              Prod1.SetRelay(PubId1,Prod2,PubId2)
 
-        :param cat_variant i_identifier:
+        :param CATVariant i_identifier:
         :param Publications i_relayer:
-        :param cat_variant i_name_in_relay:
+        :param CATVariant i_name_in_relay:
         :rtype: None
         """
         return self.publications.SetRelay(i_identifier, i_relayer.com_object, i_name_in_relay)

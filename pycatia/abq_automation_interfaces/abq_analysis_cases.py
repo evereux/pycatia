@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_analysis_case import ABQAnalysisCase
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ABQAnalysisCases(Collection):
@@ -73,7 +73,7 @@ class ABQAnalysisCases(Collection):
         """
         return ABQAnalysisCase(self.abq_analysis_cases.Add(i_analysis_type))
 
-    def item(self, i_index: cat_variant) -> ABQAnalysisCase:
+    def item(self, i_index: CATVariant) -> ABQAnalysisCase:
         """
         .. note::
             :class: toggle
@@ -106,12 +106,12 @@ class ABQAnalysisCases(Collection):
                 |          Set ThisCase = CaseColl.Item(5)
                 |          Set ThatCase = CaseColl.Item("MyCase")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ABQAnalysisCase
         """
         return ABQAnalysisCase(self.abq_analysis_cases.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -134,7 +134,7 @@ class ABQAnalysisCases(Collection):
                 |             the analysis case using the CATIABase::Name
                 |             property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.abq_analysis_cases.Remove(i_index)

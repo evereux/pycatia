@@ -10,7 +10,7 @@
 """
 from pycatia.structure_interfaces.str_foundation import StrFoundation
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class StrFoundations(Collection):
@@ -49,7 +49,7 @@ class StrFoundations(Collection):
         super().__init__(com_object, child_object=StrFoundation)
         self.str_foundations = com_object
 
-    def item(self, i_index: cat_variant) -> StrFoundation:
+    def item(self, i_index: CATVariant) -> StrFoundation:
         """
         .. note::
             :class: toggle
@@ -87,7 +87,7 @@ class StrFoundations(Collection):
                 |          Dim ThatFoundation As Foundation
                 |          Set ThatFoundation = Assembly.Item("Column_1")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: StrFoundation
         """
         return StrFoundation(self.str_foundations.Item(i_index))

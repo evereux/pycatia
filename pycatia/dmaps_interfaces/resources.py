@@ -10,7 +10,7 @@
 """
 from pycatia.dmaps_interfaces.resource import Resource
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Resources(Collection):
@@ -89,7 +89,7 @@ class Resources(Collection):
         """
         return Resource(self.resources.AddByAssignmentType(i_resource.com_object, i_assignment_type))
 
-    def item(self, i_index: cat_variant) -> Resource:
+    def item(self, i_index: CATVariant) -> Resource:
         """
         .. note::
             :class: toggle
@@ -108,7 +108,7 @@ class Resources(Collection):
                 |     Returns:
                 |         oResource The idl resource
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Resource
         """
         return Resource(self.resources.Item(i_index))

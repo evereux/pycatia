@@ -11,7 +11,7 @@
 
 from pycatia.knowledge_interfaces.parameter import Parameter
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class SFMConnectionParameters(Collection):
@@ -41,7 +41,7 @@ class SFMConnectionParameters(Collection):
         super().__init__(com_object, child_object=Parameter)
         self.sfm_connection_parameters = com_object
 
-    def item(self, i_index: cat_variant) -> Parameter:
+    def item(self, i_index: CATVariant) -> Parameter:
         """
         .. note::
             :class: toggle
@@ -101,7 +101,7 @@ class SFMConnectionParameters(Collection):
                 |                  End If
                 |              Next
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Parameter
         """
         return Parameter(self.sfm_connection_parameters.Item(i_index))

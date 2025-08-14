@@ -15,7 +15,7 @@ from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.cat_tps_interfaces.annotation_set import AnnotationSet
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class AnnotationSets(Collection):
@@ -58,7 +58,7 @@ class AnnotationSets(Collection):
         """
         return AnnotationSet(self.annotation_sets.AddInAProduct(i_product.com_object, i_standard))
 
-    def item(self, i_index: cat_variant) -> AnnotationSet:
+    def item(self, i_index: CATVariant) -> AnnotationSet:
         """
         .. note::
             :class: toggle
@@ -68,7 +68,7 @@ class AnnotationSets(Collection):
                 | 
                 |     Retrieve a set.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: AnyObject
         """
         return AnnotationSet(self.annotation_sets.Item(i_index))

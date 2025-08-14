@@ -11,7 +11,7 @@
 from pycatia.arrangement_interfaces.arrangement_boundary import ArrangementBoundary
 from pycatia.in_interfaces.move import Move
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ArrangementBoundaries(Collection):
@@ -79,7 +79,7 @@ class ArrangementBoundaries(Collection):
                 i_listof_math_points,
                 i_math_direction))
 
-    def item(self, i_index: cat_variant) -> ArrangementBoundary:
+    def item(self, i_index: CATVariant) -> ArrangementBoundary:
         """
         .. note::
             :class: toggle
@@ -106,12 +106,12 @@ class ArrangementBoundaries(Collection):
                 |     Returns:
                 |         The retrieved ArrangementBoundary object.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ArrangementBoundary
         """
         return ArrangementBoundary(self.arrangement_boundaries.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -137,7 +137,7 @@ class ArrangementBoundaries(Collection):
                 | 
                 |         AnyObject.Name property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.arrangement_boundaries.Remove(i_index)

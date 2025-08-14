@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.mec_mod_interfaces.ordered_geometrical_set import OrderedGeometricalSet
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class OrderedGeometricalSets(Collection):
@@ -63,7 +63,7 @@ class OrderedGeometricalSets(Collection):
         """
         return OrderedGeometricalSet(self.ordered_geometrical_sets.Add())
 
-    def item(self, i_index: cat_variant) -> OrderedGeometricalSet:
+    def item(self, i_index: CATVariant) -> OrderedGeometricalSet:
         """
         .. note::
             :class: toggle
@@ -97,7 +97,7 @@ class OrderedGeometricalSets(Collection):
                 |          Set ThisOrderedGeometricalSet = orderedGeometricalSetColl.Item(5)
                 |          Set ThatOrderedGeometricalSet = orderedGeometricalSetColl.Item("MyOrderedGeometricalSet")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: OrderedGeometricalSet
         """
         return OrderedGeometricalSet(self.ordered_geometrical_sets.Item(i_index))

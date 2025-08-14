@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.space_analyses_interfaces.clash_result import ClashResult
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ClashResults(Collection):
@@ -80,7 +80,7 @@ class ClashResults(Collection):
         """
         return ClashResult(self.clash_results.AddFromXML(i_path, i_type))
 
-    def item(self, i_index: cat_variant) -> ClashResult:
+    def item(self, i_index: CATVariant) -> ClashResult:
         """
         .. note::
             :class: toggle
@@ -112,12 +112,12 @@ class ClashResults(Collection):
                 |             Dim ThatClashResult As ClashResult
                 |             Set ThatClashResult = TheClashResults.Item("ClashResult Of MyProduct")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ClashResult
         """
         return ClashResult(self.clash_results.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -147,7 +147,7 @@ class ClashResults(Collection):
                 |             TheClashResults.Remove(10)
                 |             TheClashResults.Remove("ClashResult Of MyProduct")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.clash_results.Remove(i_index)

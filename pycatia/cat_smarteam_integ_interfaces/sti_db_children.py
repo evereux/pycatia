@@ -10,7 +10,7 @@
 """
 from pycatia.cat_smarteam_integ_interfaces.sti_db_item import StiDBItem
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class StiDBChildren(AnyObject):
@@ -143,7 +143,7 @@ class StiDBChildren(AnyObject):
 
         return self.sti_db_children.Count
 
-    def item(self, i_index: cat_variant) -> StiDBItem:
+    def item(self, i_index: CATVariant) -> StiDBItem:
         """
         .. note::
             :class: toggle
@@ -182,12 +182,12 @@ class StiDBChildren(AnyObject):
                 |          Dim oStiDBItem As StiDBItem
                 |          Set oStiDBItem = oStiDBChildren.Item(3)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: StiDBItem
         """
         return StiDBItem(self.sti_db_children.Item(i_index))
 
-    def link_type(self, i_index: cat_variant) -> str:
+    def link_type(self, i_index: CATVariant) -> str:
         """
         .. note::
             :class: toggle
@@ -225,7 +225,7 @@ class StiDBChildren(AnyObject):
                 |          Dim oLinkType As CATBSTR
                 |          oLinkType = oStiDBChildren.LinkType(3)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: str
         """
         return self.sti_db_children.LinkType(i_index)

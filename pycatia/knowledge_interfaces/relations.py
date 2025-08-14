@@ -17,12 +17,13 @@ from pycatia.knowledge_interfaces.design_table import DesignTable
 from pycatia.knowledge_interfaces.formula import Formula
 from pycatia.knowledge_interfaces.law import Law
 from pycatia.knowledge_interfaces.optimizations import Optimizations
+from pycatia.knowledge_interfaces.parameter import Parameter
 from pycatia.knowledge_interfaces.relation import Relation
 from pycatia.knowledge_interfaces.rule import Rule
 from pycatia.knowledge_interfaces.set_of_equation import SetOfEquation
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Relations(Collection):
@@ -218,7 +219,7 @@ class Relations(Collection):
             self,
             i_name: str,
             i_comment: str,
-            i_output_parameter: 'Parameter',
+            i_output_parameter: Parameter,
             i_formula_body: str
     ):
         """
@@ -507,7 +508,7 @@ class Relations(Collection):
         """
         return self.relations.GenerateXMLReportForChecks(i_name)
 
-    def item(self, i_index: cat_variant) -> Relation:
+    def item(self, i_index: CATVariant) -> Relation:
         """
         .. note::
             :class: toggle
@@ -538,12 +539,12 @@ class Relations(Collection):
                 |          Dim lastRelation As Relation
                 |          Set lastRelation = relations.Item(relations.Count)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Relation
         """
         return Relation(self.relations.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -571,7 +572,7 @@ class Relations(Collection):
                 | 
                 |      relations.Remove("density")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.relations.Remove(i_index)

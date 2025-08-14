@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class References(Collection):
@@ -40,7 +40,7 @@ class References(Collection):
         super().__init__(com_object, child_object=Reference)
         self.references = com_object
 
-    def item(self, i_index: cat_variant) -> Reference:
+    def item(self, i_index: CATVariant) -> Reference:
         """
         .. note::
             :class: toggle
@@ -70,7 +70,7 @@ class References(Collection):
                 |          Dim LastRef As Reference
                 |          Set LastRef = RefList.Item(RefList.Count)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Reference
         """
         return Reference(self.references.Item(i_index))
