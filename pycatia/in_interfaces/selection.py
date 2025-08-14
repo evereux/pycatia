@@ -1979,10 +1979,13 @@ class Selection(AnyObject):
                 |     Example:
                 |
                 |           The following example supposes a part, containing a pad, and drawing
-                |           are currently edited, the drawing window being the current window.
-                |           It asks the end user to select a 2-D topological entity, such as a
-                |           Plane , in a part. Then it creates a front view in the drawing, projecting
-                |           the 3D geometry onto the selected 2-D topological entity.
+                |           are currently edited, the drawing
+                |          window beeing the current window. It asks the end user to select a 2-D
+                |          topological entity, such as a
+                |
+                |
+                |     Plane , in a part. Then it creates a front view in the drawing, projecting
+                |     the 3D geometry onto the selected 2-D topological entity.
                 |
                 |      Dim DrawingSelection,DrawingSheets,DrawingSheet,DrawingViews,DrawingFrontView
                 |      ReDim DrawingSelectionAtBeginning(1)
@@ -2043,15 +2046,13 @@ class Selection(AnyObject):
         """
 
         check_type(i_filter_type, tuple)
+        check_type(o_document, Document)
 
-        response, com_document = self.selection.SelectElement4(i_filter_type,
-                                                               i_active_document_message,
-                                                               i_non_active_document_message,
-                                                               i_tooltip)
-
-        document = Document(com_document)
-
-        return response, document
+        return self.selection.SelectElement4(i_filter_type,
+                                             i_active_document_message,
+                                             i_non_active_document_message,
+                                             i_tooltip,
+                                             o_document.com_object)
 
     def __len__(self):
 
