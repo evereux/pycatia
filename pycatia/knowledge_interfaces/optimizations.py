@@ -14,7 +14,7 @@ from pycatia.knowledge_interfaces.optimization import Optimization
 from pycatia.knowledge_interfaces.set_of_equation import SetOfEquation
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Optimizations(Collection):
@@ -86,7 +86,7 @@ class Optimizations(Collection):
         """
         return Optimization(self.optimizations.CreateOptimization())
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -119,7 +119,7 @@ class Optimizations(Collection):
                 | 
                 |          Set lastItem = optimizations.Item(optimizations.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AnyObject
         """
         return AnyObject(self.optimizations.Item(i_index))

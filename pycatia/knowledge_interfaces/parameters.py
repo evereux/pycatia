@@ -8,11 +8,13 @@
         and thus help debugging in pycatia.
         
 """
-from typing import Iterator, Union
+from typing import Iterator
 from typing import TYPE_CHECKING
+from typing import Optional
 
 from pywintypes import com_error
 
+from pycatia.exception_handling import CATIAApplicationException
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.knowledge_interfaces.bool_param import BoolParam
 from pycatia.knowledge_interfaces.dimension import Dimension
@@ -26,8 +28,8 @@ from pycatia.knowledge_interfaces.str_param import StrParam
 from pycatia.knowledge_interfaces.units import Units
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
-from pycatia.types.parameters import AnyParameter
+from pycatia.types.general import cat_variant
+from pycatia.types.general import any_parameter
 
 if TYPE_CHECKING:
     from pycatia.knowledge_interfaces.parameter_set import ParameterSet
@@ -46,7 +48,7 @@ NAME_TO_PYTHON_CLASS_MAPPING = {
 }
 
 
-def parse_to_parameter_subtype(com_object) -> AnyParameter:
+def parse_to_parameter_subtype(com_object):
     try:
         com_class_name = com_object._oleobj_.GetTypeInfo().GetDocumentation(-1)[0]
         return NAME_TO_PYTHON_CLASS_MAPPING[com_class_name](com_object)
@@ -70,7 +72,6 @@ def parse_to_parameter_subtype(com_object) -> AnyParameter:
 
             if isinstance(com_object.Value, float):
                 return RealParam(com_object)
-
         except AttributeError:
             # Parameter has no Value either
             pass
@@ -142,7 +143,7 @@ class Parameters(Collection):
 
         return Units(self.parameters.Units)
 
-    def all_parameters(self) -> list[AnyParameter]:
+    def all_parameters(self):
         """
         :return: list(Parameter())
         """
@@ -422,9 +423,9 @@ class Parameters(Collection):
 
         return False
 
-    def is_parameter(self, index: CATVariant):
+    def is_parameter(self, index: cat_variant):
         """
-        :param CATVariant index: parameter name or parameter number
+        :param cat_variant index: parameter name or parameter number
         :rtype: bool
         """
         try:
@@ -433,9 +434,9 @@ class Parameters(Collection):
         except com_error:
             return False
 
-    def is_list_parameter(self, index: CATVariant):
+    def is_list_parameter(self, index: cat_variant):
         """
-        :param CATVariant index: parameter name or parameter number
+        :param cat_variant index: parameter name or parameter number
         :return: bool
         :rtype: bool
         """
@@ -445,7 +446,7 @@ class Parameters(Collection):
         except AttributeError:
             return False
 
-    def item(self, index: CATVariant) -> AnyParameter:
+    def item(self, index: cat_variant) -> any_parameter:
         """
         .. note::
             :class: toggle
@@ -476,13 +477,16 @@ class Parameters(Collection):
                 | Set lastParameter = parameters.Item(parameters.Count)
 
 
-        :param CATVariant index:
-        :rtype: Parameter
+        :param cat_variant index:
+        :rtype: any_parameter
         """
+
+        if not self.is_parameter(index):
+            raise CATIAApplicationException(f'Could not find parameter name "{index}".')
 
         return parse_to_parameter_subtype(self.parameters.Item(index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -509,7 +513,7 @@ class Parameters(Collection):
                 | 
                 |          parameters.Remove("depth")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.parameters.Remove(i_index)
@@ -555,13 +559,13 @@ class Parameters(Collection):
         """
         return Parameters(self.parameters.SubList(i_object.com_object, i_recursively))
 
-    def __getitem__(self, n: int) -> AnyParameter:
+    def __getitem__(self, n: int) -> Parameter:
         if (n + 1) > self.count:
             raise StopIteration
 
         return parse_to_parameter_subtype(self.parameters.Item(n + 1))
 
-    def __iter__(self) -> Iterator[AnyParameter]:
+    def __iter__(self) -> Iterator[Parameter]:
         for i in range(self.count):
             yield parse_to_parameter_subtype(self.com_object.Item(i + 1))
 

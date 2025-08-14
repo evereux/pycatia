@@ -13,7 +13,7 @@ from typing import Iterator
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 from pycatia.cat_tps_interfaces.tps_view import TPSView
 
 
@@ -40,7 +40,7 @@ class TPSViews(Collection):
         self.tps_views = com_object
         child_object = TPSView
 
-    def item(self, i_index: CATVariant) -> TPSView:
+    def item(self, i_index: cat_variant) -> TPSView:
         """
         .. note::
             :class: toggle
@@ -50,7 +50,7 @@ class TPSViews(Collection):
                 | 
                 |     Retrieve a TPS View.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AnyObject
         """
         return TPSView(self.tps_views.Item(i_index))

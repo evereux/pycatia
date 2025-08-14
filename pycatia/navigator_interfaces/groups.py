@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.navigator_interfaces.group import Group
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Groups(Collection):
@@ -118,7 +118,7 @@ class Groups(Collection):
         """
         return Group(self.groups.AllLeaves())
 
-    def item(self, i_index: CATVariant) -> Group:
+    def item(self, i_index: cat_variant) -> Group:
         """
         .. note::
             :class: toggle
@@ -153,12 +153,12 @@ class Groups(Collection):
                 |             Dim ThatGroup As Group
                 |             Set ThatGroup = TheGroups.Item("Group3")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Group
         """
         return Group(self.groups.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -187,7 +187,7 @@ class Groups(Collection):
                 |             TheGroups.Remove(10)
                 |             TheGroups.Remove("Group2")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.groups.Remove(i_index)

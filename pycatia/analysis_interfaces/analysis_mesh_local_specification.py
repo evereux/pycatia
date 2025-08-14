@@ -12,7 +12,7 @@ from pycatia.in_interfaces.reference import Reference
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.publication import Publication
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class AnalysisMeshLocalSpecification(AnyObject):
@@ -159,7 +159,7 @@ class AnalysisMeshLocalSpecification(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_attribute(self, i_name: str, i_value: CATVariant) -> None:
+    def set_attribute(self, i_name: str, i_value: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -179,7 +179,7 @@ class AnalysisMeshLocalSpecification(AnyObject):
                 |             The value of the local specification.
 
         :param str i_name:
-        :param CATVariant i_value:
+        :param cat_variant i_value:
         :rtype: None
         """
         return self.analysis_mesh_local_specification.SetAttribute(i_name, i_value)

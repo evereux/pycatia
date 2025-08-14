@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.mec_mod_interfaces.fix_together import FixTogether
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class FixTogethers(Collection):
@@ -61,7 +61,7 @@ class FixTogethers(Collection):
         """
         return FixTogether(self.fix_togethers.Add())
 
-    def item(self, i_index: CATVariant) -> FixTogether:
+    def item(self, i_index: cat_variant) -> FixTogether:
         """
         .. note::
             :class: toggle
@@ -94,12 +94,12 @@ class FixTogethers(Collection):
                 |          Set thisFixTogether = fixTogetherColl.Item(5)
                 |          Set thatFixTogether = fixTogetherColl.Item("MyFixTogether")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: FixTogether
         """
         return FixTogether(self.fix_togethers.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -127,7 +127,7 @@ class FixTogethers(Collection):
                 | 
                 |      fixTogetherColl.Remove(fixTogetherColl.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.fix_togethers.Remove(i_index)

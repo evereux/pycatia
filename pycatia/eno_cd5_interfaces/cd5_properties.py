@@ -10,7 +10,7 @@
 """
 from pycatia.eno_cd5_interfaces.cd5_property import CD5Property
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class CD5Properties(Collection):
@@ -57,7 +57,7 @@ class CD5Properties(Collection):
         super().__init__(com_object, child_object=CD5Property)
         self.cd5_properties = com_object
 
-    def item(self, i_index: CATVariant) -> CD5Property:
+    def item(self, i_index: cat_variant) -> CD5Property:
         """
         .. note::
             :class: toggle
@@ -81,7 +81,7 @@ class CD5Properties(Collection):
                 |          Dim objCD5Property As CD5Property
                 |          Set objCD5Property = objCD5Properties.Item(1)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: CD5Property
         """
         return CD5Property(self.cd5_properties.Item(i_index))

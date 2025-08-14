@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_boundary_condition import ABQBoundaryCondition
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ABQBoundaryConditions(Collection):
@@ -76,7 +76,7 @@ class ABQBoundaryConditions(Collection):
         """
         return ABQBoundaryCondition(self.abq_boundary_conditions.Add(i_boundary_type))
 
-    def item(self, i_index: CATVariant) -> ABQBoundaryCondition:
+    def item(self, i_index: cat_variant) -> ABQBoundaryCondition:
         """
         .. note::
             :class: toggle
@@ -101,12 +101,12 @@ class ABQBoundaryConditions(Collection):
                 |     Returns:
                 |         The specified ABQBoundaryCondition.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ABQBoundaryCondition
         """
         return ABQBoundaryCondition(self.abq_boundary_conditions.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -128,7 +128,7 @@ class ABQBoundaryConditions(Collection):
                 |             specifies the name you assigned to the boundary condition using the
                 |             CATIACollection::Name property.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.abq_boundary_conditions.Remove(i_index)

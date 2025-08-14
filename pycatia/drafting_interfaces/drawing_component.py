@@ -12,7 +12,7 @@
 from typing import TYPE_CHECKING
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 if TYPE_CHECKING:
     from pycatia.drafting_interfaces.drawing_view import DrawingView
@@ -407,7 +407,7 @@ class DrawingComponent(AnyObject):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_modifiable_object(self, i_index: CATVariant) -> AnyObject:
+    def get_modifiable_object(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -424,7 +424,7 @@ class DrawingComponent(AnyObject):
                 | 
                 |          Object = MyComponent.GetModifiableObject(1)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AnyObject
         """
         return AnyObject(self.drawing_component.GetModifiableObject(i_index))

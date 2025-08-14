@@ -11,7 +11,7 @@
 
 from pycatia.cat_mat_interfaces.material_family import MaterialFamily
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class MaterialFamilies(Collection):
@@ -64,7 +64,7 @@ class MaterialFamilies(Collection):
         """
         return MaterialFamily(self.material_families.Add())
 
-    def item(self, i_index: CATVariant) -> MaterialFamily:
+    def item(self, i_index: cat_variant) -> MaterialFamily:
         """
         .. note::
             :class: toggle
@@ -94,12 +94,12 @@ class MaterialFamilies(Collection):
                 |      Dim MyMaterialFamily As MaterialFamily
                 |      Set MyMaterialFamily = MaterialFamilies.Item(6)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: MaterialFamily
         """
         return MaterialFamily(self.material_families.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -129,7 +129,7 @@ class MaterialFamilies(Collection):
                 |      Set MyDocument = Documents.Open(FileToOpen)
                 |      MyDocument.MaterialFamilies.Remove(2)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         self.material_families.Remove(i_index)

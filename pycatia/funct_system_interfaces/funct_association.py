@@ -10,7 +10,7 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class FunctAssociation(AnyObject):
@@ -86,7 +86,7 @@ class FunctAssociation(AnyObject):
         """
         return self.funct_association.LinkTo(i_linked.com_object, i_kind)
 
-    def retrieve_kind_of_linked(self, i_index: CATVariant) -> str:
+    def retrieve_kind_of_linked(self, i_index: cat_variant) -> str:
         """
         .. note::
             :class: toggle
@@ -96,12 +96,12 @@ class FunctAssociation(AnyObject):
                 | 
                 |     Retrieve the kind of linked object.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: str
         """
         return self.funct_association.RetrieveKindOfLinked(i_index)
 
-    def retrieve_linked(self, i_index: CATVariant) -> AnyObject:
+    def retrieve_linked(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -111,7 +111,7 @@ class FunctAssociation(AnyObject):
                 | 
                 |     Retrieve a linked object.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AnyObject
         """
         return AnyObject(self.funct_association.RetrieveLinked(i_index))

@@ -13,7 +13,7 @@ from typing import Iterator
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.constraint import Constraint
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Constraints(Collection):
@@ -216,7 +216,7 @@ class Constraints(Collection):
         return Constraint(self.constraints.AddTriEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object,
                                                         i_third_elem.com_object))
 
-    def item(self, i_index: CATVariant) -> Constraint:
+    def item(self, i_index: cat_variant) -> Constraint:
         """
         .. note::
             :class: toggle
@@ -247,12 +247,12 @@ class Constraints(Collection):
                 |          Set cst1 = cstList.Item(1)
                 |          Set cst2 = cstList.Item("Constraint.2")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Constraint
         """
         return Constraint(self.constraints.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -279,7 +279,7 @@ class Constraints(Collection):
                 | 
                 |      cstList.Remove(cstList.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.constraints.Remove(i_index)

@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.part_interfaces.draft_domain import DraftDomain
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class DraftDomains(Collection):
@@ -37,7 +37,7 @@ class DraftDomains(Collection):
         super().__init__(com_object)
         self.draft_domains = com_object
 
-    def item(self, i_index: CATVariant) -> DraftDomain:
+    def item(self, i_index: cat_variant) -> DraftDomain:
         """
         .. note::
             :class: toggle
@@ -67,7 +67,7 @@ class DraftDomains(Collection):
                 | 
                 |              Set domain = firstDraftDomains.Item(3)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: DraftDomain
         """
         return DraftDomain(self.draft_domains.Item(i_index))

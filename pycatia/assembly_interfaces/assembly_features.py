@@ -14,7 +14,7 @@ from pycatia.mec_mod_interfaces.body import Body
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.sketcher_interfaces.sketch import Sketch
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class AssemblyFeatures(Collection):
@@ -334,7 +334,7 @@ class AssemblyFeatures(Collection):
             )
         )
 
-    def item(self, i_index: CATVariant) -> AssemblyFeature:
+    def item(self, i_index: cat_variant) -> AssemblyFeature:
         """
         .. note::
             :class: toggle
@@ -365,12 +365,12 @@ class AssemblyFeatures(Collection):
                 |          Dim lastAssemblyFeat As AssemblyFeature
                 |          Set lastAssemblyFeat = assemblyFeats.Item(assemblyFeats.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AssemblyFeature
         """
         return AssemblyFeature(self.assembly_features.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -398,7 +398,7 @@ class AssemblyFeatures(Collection):
                 | 
                 |          assemblyFeats.Remove(assemblyFeats.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.assembly_features.Remove(i_index)

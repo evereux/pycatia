@@ -13,7 +13,7 @@ from typing import Iterator
 from pycatia.mec_mod_interfaces.boundary import Boundary
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class HybridShapes(Collection):
@@ -62,7 +62,7 @@ class HybridShapes(Collection):
         """
         return Boundary(self.hybrid_shapes.GetBoundary(i_label))
 
-    def item(self, i_index: CATVariant) -> HybridShape:
+    def item(self, i_index: cat_variant) -> HybridShape:
         """
         .. note::
             :class: toggle
@@ -95,7 +95,7 @@ class HybridShapes(Collection):
                 |          Set ThisHybridShape = CATIA.ActiveDocument.HybridShapes.Item(3)
                 |          Set ThatHybridShape = CATIA.ActiveDocument.HybridShapes.Item("MyHybridShape")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: HybridShape
         """
         return HybridShape(self.hybrid_shapes.Item(i_index))

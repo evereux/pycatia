@@ -10,7 +10,7 @@
 """
 from pycatia.structure_interfaces.str_anchor_point import StrAnchorPoint
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class StrAnchorPoints(Collection):
@@ -35,7 +35,7 @@ class StrAnchorPoints(Collection):
         super().__init__(com_object, child_object=StrAnchorPoint)
         self.str_anchor_points = com_object
 
-    def item(self, i_index: CATVariant) -> StrAnchorPoint:
+    def item(self, i_index: cat_variant) -> StrAnchorPoint:
         """
         .. note::
             :class: toggle
@@ -61,7 +61,7 @@ class StrAnchorPoints(Collection):
                 |     Returns:
                 |         The retrieved anchor point
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: StrAnchorPoint
         """
         return StrAnchorPoint(self.str_anchor_points.Item(i_index))

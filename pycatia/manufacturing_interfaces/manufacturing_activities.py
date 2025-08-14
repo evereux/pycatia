@@ -10,7 +10,7 @@
 """
 from pycatia.manufacturing_interfaces.manufacturing_activity import ManufacturingActivity
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ManufacturingActivities(Collection):
@@ -97,7 +97,7 @@ class ManufacturingActivities(Collection):
         """
         return ManufacturingActivity(self.mfg_activities.GetElement(i_index))
 
-    def item(self, i_index: CATVariant) -> ManufacturingActivity:
+    def item(self, i_index: cat_variant) -> ManufacturingActivity:
         """
         .. note::
             :class: toggle
@@ -115,7 +115,7 @@ class ManufacturingActivities(Collection):
                 | 
                 |          Set ThisActivity = ListActivities.Item(Numpos)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ManufacturingActivity
         """
         return ManufacturingActivity(self.mfg_activities.Item(i_index))

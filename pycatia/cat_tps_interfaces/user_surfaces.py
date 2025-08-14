@@ -15,7 +15,7 @@ from pycatia.in_interfaces.reference import Reference
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.collection import Collection
 from pycatia.cat_tps_interfaces.user_surface import UserSurface
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class UserSurfaces(Collection):
@@ -106,7 +106,7 @@ class UserSurfaces(Collection):
         return UserSurface(self.user_surfaces.GenerateInAProductCtx(i_product.com_object, i_prod_inst.com_object,
                                                                     i_support.com_object))
 
-    def item(self, i_index: CATVariant) -> UserSurface:
+    def item(self, i_index: cat_variant) -> UserSurface:
         """
         .. note::
             :class: toggle
@@ -125,7 +125,7 @@ class UserSurfaces(Collection):
                 |     Returns:
                 |         The user surface that is in the iIndex position in the collection
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: UserSurface
         """
         return UserSurface(self.user_surfaces.Item(i_index))

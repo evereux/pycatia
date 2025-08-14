@@ -15,7 +15,7 @@ from pycatia.dmaps_interfaces.outputs import Outputs
 from pycatia.knowledge_interfaces.parameters import Parameters
 from pycatia.knowledge_interfaces.relations import Relations
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 if TYPE_CHECKING:
     from pycatia.dmaps_interfaces.activities import Activities
@@ -611,7 +611,7 @@ class Activity(AnyObject):
         """
         return self.activity.AttrName(i_index)
 
-    def attr_value(self, i_index: CATVariant) -> CATVariant:
+    def attr_value(self, i_index: cat_variant) -> cat_variant:
         """
         .. note::
             :class: toggle
@@ -629,8 +629,8 @@ class Activity(AnyObject):
                 |     Returns:
                 |         oAttVal The attribute value
 
-        :param CATVariant i_index:
-        :rtype: CATVariant
+        :param cat_variant i_index:
+        :rtype: cat_variant
         """
         return self.activity.AttrValue(i_index)
 

@@ -11,7 +11,7 @@
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class SFMReferences(Collection):
@@ -108,7 +108,7 @@ class SFMReferences(Collection):
         """
         return self.sfm_references.ClearList()
 
-    def item(self, i_index: CATVariant) -> Reference:
+    def item(self, i_index: cat_variant) -> Reference:
         """
         .. note::
             :class: toggle
@@ -137,7 +137,7 @@ class SFMReferences(Collection):
                 |               Dim ListofRef As SfmReferences
                 |               Set Ref1 = ListofRef.Item(i)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Reference
         """
         return Reference(self.sfm_references.Item(i_index))

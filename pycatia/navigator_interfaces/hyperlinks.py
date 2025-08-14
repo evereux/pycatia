@@ -13,7 +13,7 @@ from typing import Iterator
 from pycatia.navigator_interfaces.hyperlink import Hyperlink
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Hyperlinks(Collection):
@@ -101,7 +101,7 @@ class Hyperlinks(Collection):
         """
         return Hyperlink(self.hyperlinks.GetHyperlink(i_object.com_object))
 
-    def item(self, i_index: CATVariant) -> Hyperlink:
+    def item(self, i_index: cat_variant) -> Hyperlink:
         """
         .. note::
             :class: toggle
@@ -136,12 +136,12 @@ class Hyperlinks(Collection):
                 |             Dim ThatHyperlink As Hyperlink
                 |             Set ThatHyperlink = TheHyperlinks.Item("Hyperlink3")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Hyperlink
         """
         return Hyperlink(self.hyperlinks.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -170,7 +170,7 @@ class Hyperlinks(Collection):
                 |             TheHyperlinks.Remove(10)
                 |             TheHyperlinks.Remove("Hyperlink2")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.hyperlinks.Remove(i_index)

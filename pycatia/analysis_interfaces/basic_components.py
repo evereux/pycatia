@@ -10,7 +10,7 @@
 """
 from pycatia.analysis_interfaces.basic_component import BasicComponent
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class BasicComponents(Collection):
@@ -38,7 +38,7 @@ class BasicComponents(Collection):
         super().__init__(com_object, child_object=BasicComponent)
         self.basic_components = com_object
 
-    def item(self, i_variant: CATVariant) -> BasicComponent:
+    def item(self, i_variant: cat_variant) -> BasicComponent:
         """
         .. note::
             :class: toggle
@@ -63,7 +63,7 @@ class BasicComponents(Collection):
                 |     Returns:
                 |         The retrieved Basic Component
 
-        :param CATVariant i_variant:
+        :param cat_variant i_variant:
         :rtype: BasicComponent
         """
         return BasicComponent(self.basic_components.Item(i_variant))

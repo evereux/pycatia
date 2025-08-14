@@ -1,5 +1,5 @@
 mypy==1.8.0
-nuitka==2.7.12
+nuitka==2.6.7
 Sphinx==7.2.6
 ordered-set==4.1.0
 pytest==7.0.1

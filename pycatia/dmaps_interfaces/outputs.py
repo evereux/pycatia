@@ -10,7 +10,7 @@
 """
 from pycatia.dmaps_interfaces.item import Item
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Outputs(Collection):
@@ -77,7 +77,7 @@ class Outputs(Collection):
         """
         return self.outputs.Count()
 
-    def item(self, i_index: CATVariant) -> Item:
+    def item(self, i_index: cat_variant) -> Item:
         """
         .. note::
             :class: toggle
@@ -97,7 +97,7 @@ class Outputs(Collection):
                 |     Returns:
                 |         oProduct The indexed product/MA that is assigned to the process.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Item
         """
         return Item(self.outputs.Item(i_index))

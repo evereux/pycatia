@@ -10,7 +10,7 @@
 """
 from pycatia.fitting_interfaces.shuttle import Shuttle
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Shuttles(Collection):
@@ -84,7 +84,7 @@ class Shuttles(Collection):
         """
         return Shuttle(self.shuttles.AddFromSel())
 
-    def item(self, i_index: CATVariant) -> Shuttle:
+    def item(self, i_index: cat_variant) -> Shuttle:
         """
         .. note::
             :class: toggle
@@ -92,7 +92,7 @@ class Shuttles(Collection):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func Item(CATVariant iIndex) As Shuttle
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Shuttle
         """
         return Shuttle(self.shuttles.Item(i_index))

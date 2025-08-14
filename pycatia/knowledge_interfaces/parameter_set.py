@@ -17,7 +17,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 if TYPE_CHECKING:
     from pycatia.knowledge_interfaces.parameter_sets import ParameterSets
 
-
 class ParameterSet(AnyObject):
     """
         .. note::
@@ -42,7 +41,7 @@ class ParameterSet(AnyObject):
         self.parameter_set = com_object
 
     @property
-    def all_parameters(self) -> Parameters:
+    def all_parameters(self) -> list:
         """
         .. note::
             :class: toggle
@@ -56,7 +55,11 @@ class ParameterSet(AnyObject):
 
         :rtype: Parameters
         """
-        return Parameters(self.parameter_set.AllParameters)
+        from .parameter import Parameter
+        items = []
+        for i in range(0, self.parameter_set.AllParameters.Count):
+            items.append(Parameter(self.parameter_set.AllParameters.Item(i + 1)))
+        return items
 
     @property
     def direct_parameters(self) -> Parameters:

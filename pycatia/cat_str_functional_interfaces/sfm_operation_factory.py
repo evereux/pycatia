@@ -12,7 +12,7 @@ from pycatia.cat_str_functional_interfaces.sfm_connection_parameters import SFMC
 from pycatia.cat_str_functional_interfaces.sfm_endcut_manager import SFMEndcutManager
 from pycatia.cat_str_functional_interfaces.sfm_profile import SFMProfile
 from pycatia.mec_mod_interfaces.factory import Factory
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class SFMOperationFactory(Factory):
@@ -118,7 +118,7 @@ class SFMOperationFactory(Factory):
             i_slot_name: str,
             o_list_slot_parameters: SFMConnectionParameters,
             o_list_slot_param_names: tuple
-    ) -> tuple:
+    ) -> cat_variant:
         """
         .. note::
             :class: toggle
@@ -171,7 +171,7 @@ class SFMOperationFactory(Factory):
         :param str i_slot_name:
         :param SFMConnectionParameters o_list_slot_parameters:
         :param tuple o_list_slot_param_names:
-        :rtype: tuple
+        :rtype: cat_variant
         """
         return self.sfm_operation_factory.GetSlotParameters(
             i_sfm_profile.com_object,

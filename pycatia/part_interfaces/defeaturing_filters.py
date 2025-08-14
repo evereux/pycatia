@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.part_interfaces.defeaturing_filter import DefeaturingFilter
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class DefeaturingFilters(Collection):
@@ -70,7 +70,7 @@ class DefeaturingFilters(Collection):
         """
         return self.defeaturing_filters.Add(i_filter_type_to_add)
 
-    def item(self, i_filter_id: CATVariant) -> DefeaturingFilter:
+    def item(self, i_filter_id: cat_variant) -> DefeaturingFilter:
         """
         .. note::
             :class: toggle
@@ -98,12 +98,12 @@ class DefeaturingFilters(Collection):
                 | 
                 |              Set myFilter = firstDefeaturingFilters.Item(theIndex)
 
-        :param CATVariant i_filter_id:
+        :param cat_variant i_filter_id:
         :rtype: DefeaturingFilter
         """
         return DefeaturingFilter(self.defeaturing_filters.Item(i_filter_id))
 
-    def remove(self, i_filter_id: CATVariant) -> None:
+    def remove(self, i_filter_id: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -128,7 +128,7 @@ class DefeaturingFilters(Collection):
                 |                  Call firstDefeaturingFilters.Remove(theIndex)
                 |                  firstDefeaturingFilters.Remove theIndex
 
-        :param CATVariant i_filter_id:
+        :param cat_variant i_filter_id:
         :rtype: None
         """
         return self.defeaturing_filters.Remove(i_filter_id)

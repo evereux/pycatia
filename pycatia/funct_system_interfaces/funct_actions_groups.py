@@ -10,7 +10,7 @@
 """
 from pycatia.funct_system_interfaces.funct_actions_group import FunctActionsGroup
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class FunctActionsGroups(Collection):
@@ -91,7 +91,7 @@ class FunctActionsGroups(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def elem(self, i_index: CATVariant) -> FunctActionsGroup:
+    def elem(self, i_index: cat_variant) -> FunctActionsGroup:
         """
         .. note::
             :class: toggle
@@ -125,7 +125,7 @@ class FunctActionsGroups(Collection):
                 |          Dim AG2 As FunctActionsGroup
                 |          Set AG2 = ActionsGroups.Elem("Transmission")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: FunctActionsGroup
         """
         return FunctActionsGroup(self.funct_actions_groups.Elem(i_index))

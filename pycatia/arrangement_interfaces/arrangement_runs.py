@@ -11,7 +11,7 @@
 from pycatia.arrangement_interfaces.arrangement_run import ArrangementRun
 from pycatia.in_interfaces.move import Move
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ArrangementRuns(Collection):
@@ -81,7 +81,7 @@ class ArrangementRuns(Collection):
             )
         )
 
-    def item(self, i_index: CATVariant) -> ArrangementRun:
+    def item(self, i_index: cat_variant) -> ArrangementRun:
         """
         .. note::
             :class: toggle
@@ -109,12 +109,12 @@ class ArrangementRuns(Collection):
                 |     Returns:
                 |         The retrieved ArrangementRun object.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ArrangementRun
         """
         return ArrangementRun(self.arrangement_runs.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -140,7 +140,7 @@ class ArrangementRuns(Collection):
                 | 
                 |         AnyObject.Name property.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.arrangement_runs.Remove(i_index)

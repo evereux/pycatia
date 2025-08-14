@@ -11,7 +11,7 @@
 
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class PPRProducts(Collection):
@@ -61,7 +61,7 @@ class PPRProducts(Collection):
         """
         return Product(self.ppr_products.Add(i_product.com_object))
 
-    def item(self, i_index: CATVariant) -> Product:
+    def item(self, i_index: cat_variant) -> Product:
         """
         .. note::
             :class: toggle
@@ -80,7 +80,7 @@ class PPRProducts(Collection):
                 |     Returns:
                 |         The retrieved Product corresponding to the specified index.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Product
         """
         return Product(self.ppr_products.Item(i_index))

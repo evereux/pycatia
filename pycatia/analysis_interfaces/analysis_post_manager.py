@@ -11,7 +11,7 @@
 from pycatia.analysis_interfaces.analysis_case import AnalysisCase
 from pycatia.in_interfaces.folder import Folder
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class AnalysisPostManager(AnyObject):
@@ -74,7 +74,7 @@ class AnalysisPostManager(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def build_report(self, i_folder: Folder, i_title: str, i_add_created_images: CATVariant) -> None:
+    def build_report(self, i_folder: Folder, i_title: str, i_add_created_images: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -100,7 +100,7 @@ class AnalysisPostManager(AnyObject):
 
         :param Folder i_folder:
         :param str i_title:
-        :param CATVariant i_add_created_images:
+        :param cat_variant i_add_created_images:
         :rtype: None
         """
         return self.analysis_post_manager.BuildReport(i_folder.com_object, i_title, i_add_created_images)

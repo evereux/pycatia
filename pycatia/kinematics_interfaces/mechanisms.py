@@ -10,7 +10,7 @@
 """
 from pycatia.kinematics_interfaces.mechanism import Mechanism
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Mechanisms(Collection):
@@ -60,7 +60,7 @@ class Mechanisms(Collection):
         """
         return Mechanism(self.mechanisms.Add())
 
-    def item(self, i_index: CATVariant) -> Mechanism:
+    def item(self, i_index: cat_variant) -> Mechanism:
         """
         .. note::
             :class: toggle
@@ -93,12 +93,12 @@ class Mechanisms(Collection):
                 |          Dim ThatMechanism As Mechanism
                 |          Set ThatMechanism = CATIA.Mechanisms.Item("MyMechanism")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Mechanism
         """
         return Mechanism(self.mechanisms.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -126,7 +126,7 @@ class Mechanisms(Collection):
                 |             TheMechanisms.Remove(10)
                 |             TheMechanisms.Remove("MechanismTwo")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.mechanisms.Remove(i_index)

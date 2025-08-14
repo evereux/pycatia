@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_step import ABQStep
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ABQSteps(Collection):
@@ -74,7 +74,7 @@ class ABQSteps(Collection):
         """
         return ABQStep(self.abq_steps.Add(i_step_type))
 
-    def insert(self, i_step_type: str, i_index: CATVariant) -> ABQStep:
+    def insert(self, i_step_type: str, i_index: cat_variant) -> ABQStep:
         """
         .. note::
             :class: toggle
@@ -110,12 +110,12 @@ class ABQSteps(Collection):
                 |          Set generalstaticstep =  abaqusSteps.Insert("ABQGeneralStaticStep", 1)
 
         :param str i_step_type:
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ABQStep
         """
         return ABQStep(self.abq_steps.Insert(i_step_type, i_index))
 
-    def item(self, i_index: CATVariant) -> ABQStep:
+    def item(self, i_index: cat_variant) -> ABQStep:
         """
         .. note::
             :class: toggle
@@ -150,12 +150,12 @@ class ABQSteps(Collection):
                 |          Set FirstStaticStep = StepColl.Item(5)
                 |          Set SecondStaticStep = StepColl.Item("MyStep")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ABQStep
         """
         return ABQStep(self.abq_steps.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -176,7 +176,7 @@ class ABQSteps(Collection):
                 |             string, it specifies the name you assigned to the step using the
                 |             CATIABase::Name property.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.abq_steps.Remove(i_index)

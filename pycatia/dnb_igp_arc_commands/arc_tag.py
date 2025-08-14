@@ -10,7 +10,7 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ARCTag(AnyObject):
@@ -42,7 +42,7 @@ class ARCTag(AnyObject):
         super().__init__(com_object)
         self.arc_tag = com_object
 
-    def get_arc_tag_group(self, o_arc_tag_group: CATVariant) -> None:
+    def get_arc_tag_group(self, o_arc_tag_group: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -65,7 +65,7 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise
                 |             .
 
-        :param CATVariant o_arc_tag_group:
+        :param cat_variant o_arc_tag_group:
         :rtype: None
         """
         return self.arc_tag.GetARCTagGroup(o_arc_tag_group)
@@ -203,7 +203,7 @@ class ARCTag(AnyObject):
         """
         return self.arc_tag.GetIndex(o_index)
 
-    def get_tag(self, o_tag: CATVariant) -> None:
+    def get_tag(self, o_tag: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -226,7 +226,7 @@ class ARCTag(AnyObject):
                 |             E_FAIL otherwise
                 |             .
 
-        :param CATVariant o_tag:
+        :param cat_variant o_tag:
         :rtype: None
         """
         return self.arc_tag.GetTag(o_tag)

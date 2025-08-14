@@ -10,7 +10,7 @@
 """
 from pycatia.dmaps_interfaces.item import Item
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Items(Collection):
@@ -113,7 +113,7 @@ class Items(Collection):
         """
         return self.items_.CountByAssignmentType(i_assignment_type)
 
-    def item(self, i_index: CATVariant) -> Item:
+    def item(self, i_index: cat_variant) -> Item:
         """
         .. note::
             :class: toggle
@@ -132,12 +132,12 @@ class Items(Collection):
                 |     Returns:
                 |         oItem The idl item
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Item
         """
         return Item(self.items_.Item(i_index))
 
-    def item_by_assignment_type(self, i_index: CATVariant, i_assignment_type: int) -> Item:
+    def item_by_assignment_type(self, i_index: cat_variant, i_assignment_type: int) -> Item:
         """
         .. note::
             :class: toggle
@@ -158,7 +158,7 @@ class Items(Collection):
                 |     Returns:
                 |         oItem idl item to be returned
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :param int i_assignment_type: enum item_assignment_type
         :rtype: Item
         """

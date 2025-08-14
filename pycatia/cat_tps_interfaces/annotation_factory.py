@@ -14,7 +14,7 @@ from typing import TYPE_CHECKING
 from pycatia.mec_mod_interfaces.factory import Factory
 from pycatia.cat_tps_interfaces.noa import Noa
 from pycatia.cat_tps_interfaces.user_surface import UserSurface
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 if TYPE_CHECKING:
     from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -227,8 +227,8 @@ class AnnotationFactory(Factory):
         from pycatia.cat_tps_interfaces.annotation import Annotation
         return Annotation(self.annotation_factory.CreateFlagNote(i_surf.com_object))
 
-    def create_non_semantic_dimension(self, i_surf: UserSurface, i_dimension_type: CATVariant,
-                                      i_linear_dim_sub_type: CATVariant) -> 'Annotation':
+    def create_non_semantic_dimension(self, i_surf: UserSurface, i_dimension_type: cat_variant,
+                                      i_linear_dim_sub_type: cat_variant) -> 'Annotation':
         """
         .. note::
             :class: toggle
@@ -252,8 +252,8 @@ class AnnotationFactory(Factory):
                 |             The new created Dimension.
 
         :param UserSurface i_surf:
-        :param CATVariant i_dimension_type:
-        :param CATVariant i_linear_dim_sub_type:
+        :param cat_variant i_dimension_type:
+        :param cat_variant i_linear_dim_sub_type:
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -284,8 +284,8 @@ class AnnotationFactory(Factory):
         from pycatia.cat_tps_interfaces.annotation import Annotation
         return Annotation(self.annotation_factory.CreateRoughness(i_surf.com_object))
 
-    def create_semantic_dimension(self, i_surf: UserSurface, i_type: CATVariant,
-                                  i_sub_type: CATVariant) -> 'Annotation':
+    def create_semantic_dimension(self, i_surf: UserSurface, i_type: cat_variant,
+                                  i_sub_type: cat_variant) -> 'Annotation':
         """
         .. note::
             :class: toggle
@@ -303,8 +303,8 @@ class AnnotationFactory(Factory):
                 |             The new created Dimension.
 
         :param UserSurface i_surf:
-        :param CATVariant i_type:
-        :param CATVariant i_sub_type:
+        :param cat_variant i_type:
+        :param cat_variant i_sub_type:
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -413,7 +413,7 @@ class AnnotationFactory(Factory):
         from pycatia.cat_tps_interfaces.annotation import Annotation
         return Annotation(self.annotation_factory.CreateTextOnAnnot(i_text, i_annot.com_object))
 
-    def create_tolerance_with_drf(self, i_index: CATVariant, i_surf: UserSurface, i_drf: 'Annotation') -> 'Annotation':
+    def create_tolerance_with_drf(self, i_index: cat_variant, i_surf: UserSurface, i_drf: 'Annotation') -> 'Annotation':
         """
         .. note::
             :class: toggle
@@ -425,7 +425,7 @@ class AnnotationFactory(Factory):
                 | 
                 |     Create a Tolerance With a Reference Frame DRF. iType = 1 : Angularity
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :param UserSurface i_surf:
         :param Annotation i_drf:
         :rtype: Annotation
@@ -434,7 +434,7 @@ class AnnotationFactory(Factory):
         return Annotation(
             self.annotation_factory.CreateToleranceWithDRF(i_index, i_surf.com_object, i_drf.com_object))
 
-    def create_tolerance_without_drf(self, i_index: CATVariant, i_surf: UserSurface) -> 'Annotation':
+    def create_tolerance_without_drf(self, i_index: cat_variant, i_surf: UserSurface) -> 'Annotation':
         """
         .. note::
             :class: toggle
@@ -445,7 +445,7 @@ class AnnotationFactory(Factory):
                 | 
                 |     Create a Tolerance Without a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :param UserSurface i_surf:
         :rtype: Annotation
         """

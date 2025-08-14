@@ -14,7 +14,7 @@ from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.boundary import Boundary
 from pycatia.sketcher_interfaces.sketch import Sketch
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Sketches(Collection):
@@ -97,7 +97,7 @@ class Sketches(Collection):
         """
         return Boundary(self.sketches.GetBoundary(i_label))
 
-    def item(self, i_index: CATVariant) -> Sketch:
+    def item(self, i_index: cat_variant) -> Sketch:
         """
         .. note::
             :class: toggle
@@ -126,7 +126,7 @@ class Sketches(Collection):
                 | 
                 |          Set lastSketch = sketchList.Item(sketchList.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Sketch
         """
         return Sketch(self.sketches.Item(i_index))

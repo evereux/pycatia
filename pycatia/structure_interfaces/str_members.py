@@ -10,7 +10,7 @@
 """
 from pycatia.structure_interfaces.str_member import StrMember
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class StrMembers(Collection):
@@ -115,7 +115,7 @@ class StrMembers(Collection):
         super().__init__(com_object, child_object=StrMember)
         self.str_members = com_object
 
-    def item(self, i_index: CATVariant) -> StrMember:
+    def item(self, i_index: cat_variant) -> StrMember:
         """
         .. note::
             :class: toggle
@@ -151,12 +151,12 @@ class StrMembers(Collection):
                 |          Dim ThatMember As Member
                 |          Set ThatMember = Assembly.Item("Column_1")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: StrMember
         """
         return StrMember(self.str_members.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -187,7 +187,7 @@ class StrMembers(Collection):
                 |          Assembly_1.Remove(6)
                 |          Assembly_1.Remove("Column_1")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.str_members.Remove(i_index)

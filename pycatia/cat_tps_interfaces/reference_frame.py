@@ -13,7 +13,7 @@ from typing import TYPE_CHECKING
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.cat_tps_interfaces.user_surface import UserSurface
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 if TYPE_CHECKING:
     from pycatia.cat_tps_interfaces.annotations import Annotations
@@ -143,7 +143,7 @@ class ReferenceFrame(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_degrees_of_freedom(self, in_box: CATVariant, o_value: str) -> None:
+    def get_degrees_of_freedom(self, in_box: cat_variant, o_value: str) -> None:
         """
         .. note::
             :class: toggle
@@ -185,7 +185,7 @@ class ReferenceFrame(AnyObject):
                 |           HRESULT    S_OK : the Degrees Of Freedom has been correctly retrieved.
                 |             E_FAIL or E_NOIMPL : the Degrees Of Freedom cannot be retrieved.
 
-        :param CATVariant in_box:
+        :param cat_variant in_box:
         :param str o_value:
         :rtype: None
         """
@@ -249,7 +249,7 @@ class ReferenceFrame(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_degrees_of_freedom(self, in_box: CATVariant, i_value: str) -> None:
+    def set_degrees_of_freedom(self, in_box: cat_variant, i_value: str) -> None:
         """
         .. note::
             :class: toggle
@@ -293,7 +293,7 @@ class ReferenceFrame(AnyObject):
                 |           HRESULT    S_OK : the Degrees Of Freedom has been correctly set.
                 |             E_FAIL or E_NOIMPL : the Degrees Of Freedom cannot be set.
 
-        :param CATVariant in_box:
+        :param cat_variant in_box:
         :param str i_value:
         :rtype: None
         """

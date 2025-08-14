@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.knowledge_interfaces.unit import Unit
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Units(Collection):
@@ -39,7 +39,7 @@ class Units(Collection):
         super().__init__(com_object, child_object=Unit)
         self.units = com_object
 
-    def item(self, i_index: CATVariant) -> Unit:
+    def item(self, i_index: cat_variant) -> Unit:
         """
         .. note::
             :class: toggle
@@ -67,7 +67,7 @@ class Units(Collection):
                 | 
                 |          Set unitmm = units.Item("mm")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Unit
         """
         return Unit(self.units.Item(i_index))

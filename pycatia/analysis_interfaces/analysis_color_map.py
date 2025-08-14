@@ -10,7 +10,7 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class AnalysisColorMap(AnyObject):
@@ -37,7 +37,7 @@ class AnalysisColorMap(AnyObject):
         self.analysis_color_map = com_object
 
     @property
-    def discrete_mode(self) -> int:
+    def discrete_mode(self) -> cat_variant:
         """
         .. note::
             :class: toggle
@@ -54,20 +54,19 @@ class AnalysisColorMap(AnyObject):
                 | 
                 |     Example:
                 | 
-                |          : analysisColorMap is the ColorMap Object
-                |          oDiscreteMode = analysisColorMap.DiscreteMode
+                |          : analysisColorMap is the ColorMap Object oDiscreteMode = analysisColorMap.DiscreteMode
                 |          In this example, oDiscreteMode is the output Discrete Mode for
                 |          analysisColorMap.
 
-        :rtype: enum int
+        :rtype: cat_variant
         """
 
         return self.analysis_color_map.DiscreteMode
 
     @discrete_mode.setter
-    def discrete_mode(self, value: int):
+    def discrete_mode(self, value: cat_variant):
         """
-        :param value:
+        :param cat_variant value:
         """
 
         self.analysis_color_map.DiscreteMode = value
@@ -182,7 +181,7 @@ class AnalysisColorMap(AnyObject):
         self.analysis_color_map.ImposedMinValue = value
 
     @property
-    def inverse_mode(self) -> int:
+    def inverse_mode(self) -> cat_variant:
         """
         .. note::
             :class: toggle
@@ -203,15 +202,15 @@ class AnalysisColorMap(AnyObject):
                 |          In this example, oInverseMode is the output Inverse Mode for
                 |          analysisColorMap.
 
-        :rtype: int
+        :rtype: cat_variant
         """
 
         return self.analysis_color_map.InverseMode
 
     @inverse_mode.setter
-    def inverse_mode(self, value: int):
+    def inverse_mode(self, value: cat_variant):
         """
-        :param int value:
+        :param cat_variant value:
         """
 
         self.analysis_color_map.InverseMode = value
@@ -254,7 +253,7 @@ class AnalysisColorMap(AnyObject):
         self.analysis_color_map.NbColors = value
 
     @property
-    def smooth_mode(self) -> int:
+    def smooth_mode(self) -> cat_variant:
         """
         .. note::
             :class: toggle
@@ -271,20 +270,19 @@ class AnalysisColorMap(AnyObject):
                 | 
                 |     Example:
                 | 
-                |          : analysisColorMap is the ColorMap Object
-                |          oSmoothMode = analysisColorMap.SmoothMode
+                |          : analysisColorMap is the ColorMap Object oSmoothMode = analysisColorMap.SmoothMode
                 |          In this example, oSmoothMode is the output Smooth Mode for
                 |          analysisColorMap.
 
-        :rtype: int
+        :rtype: cat_variant
         """
 
         return self.analysis_color_map.SmoothMode
 
     @smooth_mode.setter
-    def smooth_mode(self, value: int):
+    def smooth_mode(self, value: cat_variant):
         """
-        :param int value:
+        :param cat_variant value:
         """
 
         self.analysis_color_map.SmoothMode = value
@@ -320,7 +318,7 @@ class AnalysisColorMap(AnyObject):
         """
         return self.analysis_color_map.GetDistributionValue(index_value)
 
-    def set_distribution_value(self, index_value: int, i_mode_value: float, i_smoothening_flag: CATVariant) -> None:
+    def set_distribution_value(self, index_value: int, i_mode_value: float, i_smoothening_flag: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -374,7 +372,7 @@ class AnalysisColorMap(AnyObject):
 
         :param int index_value:
         :param float i_mode_value:
-        :param CATVariant i_smoothening_flag:
+        :param cat_variant i_smoothening_flag:
         :rtype: None
         """
         return self.analysis_color_map.SetDistributionValue(index_value, i_mode_value, i_smoothening_flag)

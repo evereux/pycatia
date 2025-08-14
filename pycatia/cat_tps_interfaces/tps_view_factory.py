@@ -12,7 +12,7 @@
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.cat_tps_interfaces.tps_view import TPSView
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class TPSViewFactory(AnyObject):
@@ -40,7 +40,7 @@ class TPSViewFactory(AnyObject):
         super().__init__(com_object)
         self.tps_view_factory = com_object
 
-    def create_view(self, i_plane: Reference, i_view_type: CATVariant) -> TPSView:
+    def create_view(self, i_plane: Reference, i_view_type: cat_variant) -> TPSView:
         """
         .. note::
             :class: toggle
@@ -64,7 +64,7 @@ class TPSViewFactory(AnyObject):
                 |                 3: Cut View
 
         :param Reference i_plane:
-        :param CATVariant i_view_type:
+        :param cat_variant i_view_type:
         :rtype: TPSView
         """
         return TPSView(self.tps_view_factory.CreateView(i_plane.com_object, i_view_type))

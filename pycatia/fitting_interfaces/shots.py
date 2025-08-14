@@ -11,7 +11,7 @@
 from pycatia.fitting_interfaces.shot import Shot
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Shots(Collection):
@@ -150,7 +150,7 @@ class Shots(Collection):
         """
         return self.shots.InsertAfter(i_index, i_shot.com_object)
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -177,12 +177,12 @@ class Shots(Collection):
                 |          Dim myShot
                 |          Set myShot = myShots.Item (2)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AnyObject
         """
         return self.shots.Item(i_index)
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -205,7 +205,7 @@ class Shots(Collection):
                 | 
                 |              Shots.Remove (3)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.shots.Remove(i_index)

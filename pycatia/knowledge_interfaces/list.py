@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class List(Collection):
@@ -54,7 +54,7 @@ class List(Collection):
         """
         return self.list.Add(i_item_value.com_object)
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -84,12 +84,12 @@ class List(Collection):
                 |          Dim lastFeature As CATIABase
                 |          Set lastFeature = Features.Item(Features.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AnyObject
         """
         return AnyObject(self.list.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -116,12 +116,12 @@ class List(Collection):
                 | 
                 |      Features.Remove("density")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.list.Remove(i_index)
 
-    def reorder(self, i_index_current: CATVariant, i_index_target: CATVariant) -> None:
+    def reorder(self, i_index_current: cat_variant, i_index_target: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -134,13 +134,13 @@ class List(Collection):
                 |     position. Doesn't change the list if either position is out of the list. Return
                 |     E_FAIL if cannot reorder.
 
-        :param CATVariant i_index_current:
-        :param CATVariant i_index_target:
+        :param cat_variant i_index_current:
+        :param cat_variant i_index_target:
         :rtype: None
         """
         return self.list.Reorder(i_index_current, i_index_target)
 
-    def replace(self, i_index: CATVariant, i_item_value: AnyObject) -> None:
+    def replace(self, i_index: cat_variant, i_item_value: AnyObject) -> None:
         """
         .. note::
             :class: toggle
@@ -154,7 +154,7 @@ class List(Collection):
                 |     E_FAIL if trying to set an already existing element while
                 |     IsDuplicateElementsAllowed is false.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :param AnyObject i_item_value:
         :rtype: None
         """

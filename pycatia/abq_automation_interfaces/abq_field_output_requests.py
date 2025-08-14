@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_field_output_request import ABQFieldOutputRequest
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ABQFieldOutputRequests(Collection):
@@ -65,7 +65,7 @@ class ABQFieldOutputRequests(Collection):
         """
         return ABQFieldOutputRequest(self.abq_field_output_requests.Add())
 
-    def item(self, i_index: CATVariant) -> ABQFieldOutputRequest:
+    def item(self, i_index: cat_variant) -> ABQFieldOutputRequest:
         """
         .. note::
             :class: toggle
@@ -90,12 +90,12 @@ class ABQFieldOutputRequests(Collection):
                 |     Returns:
                 |         The specified ABQFieldOutputRequest.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ABQFieldOutputRequest
         """
         return ABQFieldOutputRequest(self.abq_field_output_requests.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -116,7 +116,7 @@ class ABQFieldOutputRequests(Collection):
                 |             request is Count. As a string, it is the name you assigned to the field output
                 |             request using the CATIABase::Name property.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.abq_field_output_requests.Remove(i_index)

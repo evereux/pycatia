@@ -10,7 +10,7 @@
 """
 from pycatia.manufacturing_interfaces.manufacturing_feature import ManufacturingFeature
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ManufacturingFeatures(Collection):
@@ -59,7 +59,7 @@ class ManufacturingFeatures(Collection):
         """
         return ManufacturingFeature(self.manufacturing_features.Add(i_type))
 
-    def item(self, i_index: CATVariant) -> ManufacturingFeature:
+    def item(self, i_index: cat_variant) -> ManufacturingFeature:
         """
         .. note::
             :class: toggle
@@ -75,7 +75,7 @@ class ManufacturingFeatures(Collection):
                 | 
                 |          Set Feature = Features.Item(Index)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ManufacturingFeature
         """
         return ManufacturingFeature(self.manufacturing_features.Item(i_index))

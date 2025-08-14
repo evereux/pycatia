@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_temperature import ABQTemperature
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ABQFields(Collection):
@@ -84,7 +84,7 @@ class ABQFields(Collection):
         """
         return ABQTemperature(self.abq_fields.Add(i_field_type))
 
-    def item(self, i_index: CATVariant) -> ABQTemperature:
+    def item(self, i_index: cat_variant) -> ABQTemperature:
         """
         .. note::
             :class: toggle
@@ -108,12 +108,12 @@ class ABQFields(Collection):
                 |     Returns:
                 |         The specified ABQTemperature.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ABQTemperature
         """
         return ABQTemperature(self.abq_fields.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -134,7 +134,7 @@ class ABQFields(Collection):
                 |             string, it specifies the name you assigned to the field using the
                 |             CATIABase::Name property.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.abq_fields.Remove(i_index)

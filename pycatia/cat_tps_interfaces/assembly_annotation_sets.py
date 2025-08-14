@@ -14,7 +14,7 @@ from typing import Iterator
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.cat_tps_interfaces.annotation_set import AnnotationSet
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class AssemblyAnnotationSets(Collection):
@@ -39,7 +39,7 @@ class AssemblyAnnotationSets(Collection):
         super().__init__(com_object)
         self.assembly_annotation_sets = com_object
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -49,7 +49,7 @@ class AssemblyAnnotationSets(Collection):
                 | 
                 |     Retrieve a set.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AnyObject
         """
         return AnyObject(self.assembly_annotation_sets.Item(i_index))

@@ -10,7 +10,7 @@
 """
 from pycatia.eno_cd5_interfaces.cd5_save_item import CD5SaveItem
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class CD5SaveItems(Collection):
@@ -50,7 +50,7 @@ class CD5SaveItems(Collection):
         super().__init__(com_object, child_object=CD5SaveItem)
         self.cd5_save_items = com_object
 
-    def item(self, i_index: CATVariant) -> CD5SaveItem:
+    def item(self, i_index: cat_variant) -> CD5SaveItem:
         """
         .. note::
             :class: toggle
@@ -69,7 +69,7 @@ class CD5SaveItems(Collection):
                 |          Dim oSaveItem As CD5SaveItem
                 |          Set oSaveItem = oSaveItems.Item(1)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: CD5SaveItem
         """
         return CD5SaveItem(self.cd5_save_items.Item(i_index).com_object)

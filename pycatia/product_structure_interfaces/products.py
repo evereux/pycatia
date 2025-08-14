@@ -13,7 +13,7 @@ from typing import TYPE_CHECKING
 
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 if TYPE_CHECKING:
     from pycatia.in_interfaces.document import Document
@@ -223,7 +223,7 @@ class Products(Collection):
         """
         return Product(self.products.AddNewProduct(i_part_number))
 
-    def item(self, i_index: CATVariant) -> Product:
+    def item(self, i_index: cat_variant) -> Product:
         """
         .. note::
             :class: toggle
@@ -260,12 +260,12 @@ class Products(Collection):
                 |          Dim ThatProduct As Product
                 |          Set ThatProduct = CarParts.Item("Wheel")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Product
         """
         return Product(self.products.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -296,7 +296,7 @@ class Products(Collection):
                 |          Brakes.Remove(6)
                 |          Brakes.Remove("LeftRearDisc")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.products.Remove(i_index)

@@ -11,7 +11,7 @@
 from pycatia.cat_str_functional_interfaces.sfm_connection_parameters import SFMConnectionParameters
 from pycatia.cat_str_functional_interfaces.sfm_references import SFMReferences
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class SFMEndcut(AnyObject):
@@ -84,7 +84,7 @@ class SFMEndcut(AnyObject):
             o_list_of_endcut_contexts: SFMReferences,
             o_list_of_endcut_params: SFMConnectionParameters,
             o_list_of_end_cut_param_names: tuple
-    ) -> tuple:
+    ) -> cat_variant:
         """
         .. note::
             :class: toggle
@@ -136,7 +136,7 @@ class SFMEndcut(AnyObject):
         :param SFMReferences o_list_of_endcut_contexts:
         :param SFMConnectionParameters o_list_of_endcut_params:
         :param tuple o_list_of_end_cut_param_names:
-        :rtype: tuple
+        :rtype: cat_variant
         """
         return self.sfm_endcut.GetEndcutinfo(
             o_type_of_endcut,

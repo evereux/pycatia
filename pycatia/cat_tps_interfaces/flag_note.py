@@ -11,7 +11,7 @@
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.cat_tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class FlagNote(AnyObject):
@@ -114,7 +114,7 @@ class FlagNote(AnyObject):
         """
         return self.flag_note.AddURL(i_url)
 
-    def get_nbr_url(self, o_number_of_url: CATVariant) -> None:
+    def get_nbr_url(self, o_number_of_url: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -125,7 +125,7 @@ class FlagNote(AnyObject):
                 |     Deprecated:
                 |         V5-6R2017 This method is replaced by FlagNote.GetNbrURL2
 
-        :param CATVariant o_number_of_url:
+        :param cat_variant o_number_of_url:
         :rtype: None
         """
         return self.flag_note.GetNbrURL(o_number_of_url)
@@ -164,7 +164,7 @@ class FlagNote(AnyObject):
         """
         return self.flag_note.GetNbrURL2()
 
-    def modify_url(self, i_url: str, i_index: CATVariant) -> None:
+    def modify_url(self, i_url: str, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -183,7 +183,7 @@ class FlagNote(AnyObject):
                 |             index of the URL to modify.
 
         :param str i_url:
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.flag_note.ModifyURL(i_url, i_index)
@@ -203,7 +203,7 @@ class FlagNote(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_url(self, i_index: CATVariant) -> None:
+    def remove_url(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -218,7 +218,7 @@ class FlagNote(AnyObject):
                 |         iIndex
                 |             position of the URL to remove.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.flag_note.RemoveURL(i_index)
@@ -252,7 +252,7 @@ class FlagNote(AnyObject):
         """
         return TPSParallelOnScreen(self.flag_note.TPSParallelOnScreen())
 
-    def url(self, i_index: CATVariant) -> str:
+    def url(self, i_index: cat_variant) -> str:
         """
         .. note::
             :class: toggle
@@ -269,7 +269,7 @@ class FlagNote(AnyObject):
                 |         oUrl
                 |             URL
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: str
         """
         return self.flag_note.URL(i_index)

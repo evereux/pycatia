@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class AxisSystems(Collection):
@@ -63,7 +63,7 @@ class AxisSystems(Collection):
         """
         return AxisSystem(self.axis_systems.Add())
 
-    def item(self, i_index: CATVariant) -> AxisSystem:
+    def item(self, i_index: cat_variant) -> AxisSystem:
         """
         .. note::
             :class: toggle
@@ -96,7 +96,7 @@ class AxisSystems(Collection):
                 |          Set ThisAxisSystem = AxisSystemColl.Item(5)
                 |          Set ThatAxisSystem = AxisSystemColl.Item("MyAxisSystem")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AxisSystem
         """
         return AxisSystem(self.axis_systems.Item(i_index))

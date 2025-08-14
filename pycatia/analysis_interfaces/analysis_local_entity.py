@@ -17,7 +17,7 @@ from pycatia.mec_mod_interfaces.constraint import Constraint
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.publication import Publication
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 if TYPE_CHECKING:
     from pycatia.analysis_interfaces.basic_components import BasicComponents
@@ -381,7 +381,7 @@ class AnalysisLocalEntity(AnyObject):
             i_label: str,
             i_line_index: int,
             i_column_index: int,
-            i_layer_index: int) -> CATVariant:
+            i_layer_index: int) -> cat_variant:
         """
         .. note::
             :class: toggle
@@ -413,7 +413,7 @@ class AnalysisLocalEntity(AnyObject):
         :param int i_line_index:
         :param int i_column_index:
         :param int i_layer_index:
-        :rtype: CATVariant
+        :rtype: cat_variant
         """
         return self.analysis_local_entity.GetValue(i_component, i_label, i_line_index, i_column_index, i_layer_index)
 
@@ -493,7 +493,7 @@ class AnalysisLocalEntity(AnyObject):
             i_line_index: int,
             i_column_index: int,
             i_layer_index: int,
-            i_value: CATVariant) -> None:
+            i_value: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -546,7 +546,7 @@ class AnalysisLocalEntity(AnyObject):
         :param int i_line_index:
         :param int i_column_index:
         :param int i_layer_index:
-        :param CATVariant i_value:
+        :param cat_variant i_value:
         :rtype: None
         """
         return self.analysis_local_entity.SetValue(

@@ -13,7 +13,7 @@ from typing import TYPE_CHECKING
 from pycatia.funct_system_interfaces.functional_object import FunctionalObject
 from pycatia.funct_system_interfaces.functional_object_proxy import FunctionalObjectProxy
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 if TYPE_CHECKING:
     from pycatia.funct_system_interfaces.functional_description import FunctionalDescription
@@ -104,7 +104,7 @@ class FunctionalObjects(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def elem(self, i_index: CATVariant) -> FunctionalObject:
+    def elem(self, i_index: cat_variant) -> FunctionalObject:
         """
         .. note::
             :class: toggle
@@ -136,7 +136,7 @@ class FunctionalObjects(Collection):
                 |          Dim Obj2 As FunctionalObject
                 |          Set Obj2 = Desc.Object("Valve")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: FunctionalObject
         """
         return FunctionalObject(self.functional_objects.Elem(i_index))

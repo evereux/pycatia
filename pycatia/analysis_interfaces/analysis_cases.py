@@ -10,7 +10,7 @@
 """
 from pycatia.analysis_interfaces.analysis_case import AnalysisCase
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class AnalysisCases(Collection):
@@ -106,7 +106,7 @@ class AnalysisCases(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def item(self, i_index: CATVariant) -> AnalysisCase:
+    def item(self, i_index: cat_variant) -> AnalysisCase:
         """
         .. note::
             :class: toggle
@@ -138,7 +138,7 @@ class AnalysisCases(Collection):
                 |          Set ThisCase = CaseColl.Item(5)
                 |          Set ThatCase = CaseColl.Item("MyCase")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AnalysisCase
         """
         return AnalysisCase(self.analysis_cases.Item(i_index))
@@ -171,7 +171,7 @@ class AnalysisCases(Collection):
         """
         return AnalysisCase(self.analysis_cases.NewCase(i_type))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -197,7 +197,7 @@ class AnalysisCases(Collection):
                 | 
                 |          AnalysisModel.AnalysisCases.Remove (5)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.analysis_cases.Remove(i_index)

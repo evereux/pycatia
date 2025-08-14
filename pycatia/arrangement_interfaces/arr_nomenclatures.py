@@ -10,7 +10,7 @@
 """
 from pycatia.arrangement_interfaces.arr_nomenclature import ArrNomenclature
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ArrNomenclatures(Collection):
@@ -82,7 +82,7 @@ class ArrNomenclatures(Collection):
             )
         )
 
-    def item(self, i_index: CATVariant) -> ArrNomenclature:
+    def item(self, i_index: cat_variant) -> ArrNomenclature:
         """
         .. note::
             :class: toggle
@@ -101,7 +101,7 @@ class ArrNomenclatures(Collection):
                 |     Returns:
                 |         The retrieved member object.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ArrNomenclature
         """
         return ArrNomenclature(self.arr_nomenclatures.Item(i_index))

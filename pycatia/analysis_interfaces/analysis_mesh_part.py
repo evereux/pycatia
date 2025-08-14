@@ -13,7 +13,7 @@ from pycatia.analysis_interfaces.analysis_set import AnalysisSet
 from pycatia.in_interfaces.reference import Reference
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.publication import Publication
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class AnalysisMeshPart(AnalysisSet):
@@ -181,7 +181,7 @@ class AnalysisMeshPart(AnalysisSet):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_global_specification(self, i_name: str, i_value: CATVariant) -> None:
+    def set_global_specification(self, i_name: str, i_value: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -201,7 +201,7 @@ class AnalysisMeshPart(AnalysisSet):
                 |             The value of the global specification.
 
         :param str i_name:
-        :param CATVariant i_value:
+        :param cat_variant i_value:
         :rtype: None
         """
         return self.analysis_mesh_part.SetGlobalSpecification(i_name, i_value)

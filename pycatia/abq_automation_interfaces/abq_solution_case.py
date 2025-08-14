@@ -12,7 +12,7 @@ from pycatia.abq_automation_interfaces.abq_solution_case_images import ABQSoluti
 from pycatia.abq_automation_interfaces.abq_solution_steps import ABQSolutionSteps
 from pycatia.analysis_interfaces.analysis_image import AnalysisImage
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ABQSolutionCase(AnyObject):
@@ -95,9 +95,9 @@ class ABQSolutionCase(AnyObject):
     def create_image(
             self,
             i_image_name: str,
-            i_hide_existing_images: CATVariant,
-            i_step_number: CATVariant,
-            i_increment_number: CATVariant) -> AnalysisImage:
+            i_hide_existing_images: cat_variant,
+            i_step_number: cat_variant,
+            i_increment_number: cat_variant) -> AnalysisImage:
         """
         .. note::
             :class: toggle
@@ -136,9 +136,9 @@ class ABQSolutionCase(AnyObject):
                 |          Set ThisAnalysisImage = MySolutionCase.CreateImage("Mesh_Deformed", True, 1, 1)
 
         :param str i_image_name:
-        :param CATVariant i_hide_existing_images:
-        :param CATVariant i_step_number:
-        :param CATVariant i_increment_number:
+        :param cat_variant i_hide_existing_images:
+        :param cat_variant i_step_number:
+        :param cat_variant i_increment_number:
         :rtype: AnalysisImage
         """
         return AnalysisImage(
@@ -152,8 +152,8 @@ class ABQSolutionCase(AnyObject):
 
     def set_step_increment_number(
             self,
-            i_step_number: CATVariant,
-            i_increment_number: CATVariant,
+            i_step_number: cat_variant,
+            i_increment_number: cat_variant,
             i_image: AnalysisImage) -> None:
         """
         .. note::
@@ -174,8 +174,8 @@ class ABQSolutionCase(AnyObject):
                 |         iIncrementNumber
                 |             The increment number to select
 
-        :param CATVariant i_step_number:
-        :param CATVariant i_increment_number:
+        :param cat_variant i_step_number:
+        :param cat_variant i_increment_number:
         :param AnalysisImage i_image:
         :rtype: None
         """

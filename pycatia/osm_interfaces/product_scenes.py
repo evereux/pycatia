@@ -10,7 +10,7 @@
 """
 from pycatia.osm_interfaces.product_scene import ProductScene
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ProductScenes(Collection):
@@ -110,7 +110,7 @@ class ProductScenes(Collection):
         """
         return ProductScene(self.product_scenes.AddProductScenePartial(i_name, i_reference_products))
 
-    def item(self, i_index: CATVariant) -> ProductScene:
+    def item(self, i_index: cat_variant) -> ProductScene:
         """
         .. note::
             :class: toggle
@@ -144,7 +144,7 @@ class ProductScenes(Collection):
                 |             Dim ThatProductScene As ProductScene
                 |             Set ThatProductScene = TheProductScenes.Item("ProductScene3")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ProductScene
         """
         return ProductScene(self.product_scenes.Item(i_index))

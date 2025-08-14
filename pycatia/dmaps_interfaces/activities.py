@@ -10,7 +10,7 @@
 """
 from pycatia.dmaps_interfaces.activity import Activity
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Activities(Collection):
@@ -75,7 +75,7 @@ class Activities(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def item(self, i_index: CATVariant) -> Activity:
+    def item(self, i_index: cat_variant) -> Activity:
         """
         .. note::
             :class: toggle
@@ -94,12 +94,12 @@ class Activities(Collection):
                 |     Returns:
                 |         oActivity The activity
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Activity
         """
         return Activity(self.activities.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -115,7 +115,7 @@ class Activities(Collection):
                 |         iIndex
                 |             The activity identifier
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.activities.Remove(i_index)

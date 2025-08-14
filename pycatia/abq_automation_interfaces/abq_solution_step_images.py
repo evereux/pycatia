@@ -10,7 +10,7 @@
 """
 from pycatia.analysis_interfaces.analysis_image import AnalysisImage
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ABQSolutionStepImages(Collection):
@@ -35,7 +35,7 @@ class ABQSolutionStepImages(Collection):
         super().__init__(com_object)
         self.abq_solution_step_images = com_object
 
-    def item(self, i_index: CATVariant) -> AnalysisImage:
+    def item(self, i_index: cat_variant) -> AnalysisImage:
         """
         .. note::
             :class: toggle
@@ -59,12 +59,12 @@ class ABQSolutionStepImages(Collection):
                 |     Returns:
                 |         The specified AnalysisImage.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AnalysisImage
         """
         return AnalysisImage(self.abq_solution_step_images.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -85,7 +85,7 @@ class ABQSolutionStepImages(Collection):
                 |             index is a string, it specifies the name you assigned to the image using the
                 |             CATIABase::Name property.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.abq_solution_step_images.Remove(i_index)

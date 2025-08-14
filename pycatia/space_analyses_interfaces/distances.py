@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.space_analyses_interfaces.distance import Distance
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Distances(Collection):
@@ -91,7 +91,7 @@ class Distances(Collection):
         """
         return Distance(self.distances.AddFromSel())
 
-    def item(self, i_index: CATVariant) -> Distance:
+    def item(self, i_index: cat_variant) -> Distance:
         """
         .. note::
             :class: toggle
@@ -123,12 +123,12 @@ class Distances(Collection):
                 |             Dim ThatDistance As Distance
                 |             Set ThatDistance = TheDistances.Item("Distance Of MyProduct")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Distance
         """
         return Distance(self.distances.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -157,7 +157,7 @@ class Distances(Collection):
                 |             TheDistances.Remove(10)
                 |             TheDistances.Remove("Distance Of MyProduct")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.distances.Remove(i_index)

@@ -10,7 +10,7 @@
 """
 from pycatia.arrangement_interfaces.arrangement_node import ArrangementNode
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ArrangementNodes(Collection):
@@ -37,7 +37,7 @@ class ArrangementNodes(Collection):
         super().__init__(com_object, child_object=ArrangementNode)
         self.arrangement_nodes = com_object
 
-    def item(self, i_index: CATVariant) -> ArrangementNode:
+    def item(self, i_index: cat_variant) -> ArrangementNode:
         """
         .. note::
             :class: toggle
@@ -65,7 +65,7 @@ class ArrangementNodes(Collection):
                 |     Returns:
                 |         The retrieved ArrangementNode object.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ArrangementNode
         """
         return ArrangementNode(self.arrangement_nodes.Item(i_index))

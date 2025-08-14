@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.navigator_interfaces.marker_2D import Marker2D
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Marker2Ds(Collection):
@@ -356,7 +356,7 @@ class Marker2Ds(Collection):
         """
         return Marker2D(self.marker_2ds.Add2DText(i_coordinates, i_text))
 
-    def item(self, i_index: CATVariant) -> Marker2D:
+    def item(self, i_index: cat_variant) -> Marker2D:
         """
         .. note::
             :class: toggle
@@ -387,12 +387,12 @@ class Marker2Ds(Collection):
                 |             Dim ThisMarker2D As Marker2D
                 |             Set ThisMarker2D = TheMarker2Ds.Item(9)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Marker2D
         """
         return Marker2D(self.marker_2ds.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -418,7 +418,7 @@ class Marker2Ds(Collection):
                 | 
                 |             TheMarker2Ds.Remove(10)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.marker_2ds.Remove(i_index)

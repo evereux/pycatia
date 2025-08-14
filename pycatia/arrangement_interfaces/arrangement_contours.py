@@ -11,7 +11,7 @@
 from pycatia.arrangement_interfaces.arrangement_contour import ArrangementContour
 from pycatia.arrangement_interfaces.arrangement_rectangle import ArrangementRectangle
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ArrangementContours(Collection):
@@ -64,7 +64,7 @@ class ArrangementContours(Collection):
         """
         return ArrangementContour(self.arrangement_contours.AddRectangularContour(i_rectangle.com_object))
 
-    def item(self, i_index: CATVariant) -> ArrangementContour:
+    def item(self, i_index: cat_variant) -> ArrangementContour:
         """
         .. note::
             :class: toggle
@@ -92,12 +92,12 @@ class ArrangementContours(Collection):
                 |     Returns:
                 |         The retrieved ArrangementContour object.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ArrangementContour
         """
         return ArrangementContour(self.arrangement_contours.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -123,7 +123,7 @@ class ArrangementContours(Collection):
                 | 
                 |         AnyObject.Name property.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.arrangement_contours.Remove(i_index)

@@ -13,7 +13,7 @@ from typing import Iterator
 from pycatia.navigator_interfaces.marker_3D import Marker3D
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Marker3Ds(Collection):
@@ -105,7 +105,7 @@ class Marker3Ds(Collection):
         return Marker3D(
             self.marker_3ds.Add3DText(i_text_coordinates, i_text, i_object_coordinates, i_object.com_object))
 
-    def item(self, i_index: CATVariant) -> Marker3D:
+    def item(self, i_index: cat_variant) -> Marker3D:
         """
         .. note::
             :class: toggle
@@ -140,12 +140,12 @@ class Marker3Ds(Collection):
                 |             Dim ThatMarker3D As Marker3D
                 |             Set ThatMarker3D = TheMarker3Ds.Item("Marker3D3")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Marker3D
         """
         return Marker3D(self.marker_3ds.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -174,7 +174,7 @@ class Marker3Ds(Collection):
                 |             TheMarker3Ds.Remove(10)
                 |             TheMarker3Ds.Remove("Marker3D2")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.marker_3ds.Remove(i_index)

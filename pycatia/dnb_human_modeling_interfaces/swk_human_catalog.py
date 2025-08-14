@@ -2,7 +2,7 @@ from pathlib import Path
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class SWKHumanCatalog(AnyObject):
@@ -138,7 +138,7 @@ class SWKHumanCatalog(AnyObject):
 
         return self.com_object.Empty()
 
-    def get_attach_and_cst_infos(self) -> CATVariant:
+    def get_attach_and_cst_infos(self) -> cat_variant:
         """
         .. note::
             :class: toggle
@@ -147,7 +147,7 @@ class SWKHumanCatalog(AnyObject):
                 | Sub GetAttachAndCstInfos(piIndex As Long, piNbInfos As Long, poInfos() As Variant)
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
-        :rtype: CATVariant
+        :rtype: cat_variant
         """
 
         return self.com_object.GetAttachAndCstInfos()
@@ -162,7 +162,7 @@ class SWKHumanCatalog(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
         :param int pi_index:
-        :rtype: CATVariant
+        :rtype: cat_variant
         """
 
         return self.com_object.GetFamilyName(pi_index)

@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.in_interfaces.window import Window
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Windows(Collection):
@@ -65,7 +65,7 @@ class Windows(Collection):
         """
         return self.windows.Arrange(i_style)
 
-    def item(self, i_index: CATVariant) -> Window:
+    def item(self, i_index: cat_variant) -> Window:
         """
         .. note::
             :class: toggle
@@ -97,7 +97,7 @@ class Windows(Collection):
                 |          Dim ThatWindow As Window
                 |          Set ThatWindow = CATIA.Windows.Item("MyWindow")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Window
         """
         return Window(self.windows.Item(i_index))

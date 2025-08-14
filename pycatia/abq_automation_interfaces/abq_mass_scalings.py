@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_mass_scaling import ABQMassScaling
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ABQMassScalings(Collection):
@@ -54,7 +54,7 @@ class ABQMassScalings(Collection):
         """
         return ABQMassScaling(self.abq_mass_scalings.Add())
 
-    def item(self, i_index: CATVariant) -> ABQMassScaling:
+    def item(self, i_index: cat_variant) -> ABQMassScaling:
         """
         .. note::
             :class: toggle
@@ -73,12 +73,12 @@ class ABQMassScalings(Collection):
                 |             (MassScaling.Name property) of the desired
                 |             element.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ABQMassScaling
         """
         return ABQMassScaling(self.abq_mass_scalings.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -96,7 +96,7 @@ class ABQMassScalings(Collection):
                 |             starts at 1. If the index is a string, it specifies the name (MassScaling.Name
                 |             property) of the desired element.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.abq_mass_scalings.Remove(i_index)

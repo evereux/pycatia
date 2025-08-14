@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.space_analyses_interfaces.clash import Clash
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Clashes(Collection):
@@ -91,7 +91,7 @@ class Clashes(Collection):
         """
         return Clash(self.clashes.AddFromSel())
 
-    def item(self, i_index: CATVariant) -> Clash:
+    def item(self, i_index: cat_variant) -> Clash:
         """
         .. note::
             :class: toggle
@@ -123,12 +123,12 @@ class Clashes(Collection):
                 |             Dim ThatClash As Clash
                 |             Set ThatClash = TheClashes.Item("Clash Of MyProduct")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Clash
         """
         return Clash(self.clashes.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -155,7 +155,7 @@ class Clashes(Collection):
                 |             TheClashes.Remove(10)
                 |             TheClashes.Remove("Clash Of MyProduct")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.clashes.Remove(i_index)

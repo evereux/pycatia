@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Bodies(Collection):
@@ -62,7 +62,7 @@ class Bodies(Collection):
         """
         return Body(self.bodies.Add())
 
-    def item(self, i_index: CATVariant) -> Body:
+    def item(self, i_index: cat_variant) -> Body:
         """
         .. note::
             :class: toggle
@@ -94,7 +94,7 @@ class Bodies(Collection):
                 |          Set ThisBody = BodyColl.Item(5)
                 |          Set ThatBody = BodyColl.Item("MyBody")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Body
         """
         return Body(self.bodies.Item(i_index))

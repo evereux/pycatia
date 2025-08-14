@@ -10,7 +10,7 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class AnalysisMaterial(AnyObject):
@@ -51,7 +51,7 @@ class AnalysisMaterial(AnyObject):
         """
         return self.analysis_material.GetType()
 
-    def get_value(self, i_label: str) -> int:
+    def get_value(self, i_label: str) -> cat_variant:
         """
         .. note::
             :class: toggle
@@ -63,11 +63,11 @@ class AnalysisMaterial(AnyObject):
                 |     needed
 
         :param str i_label:
-        :rtype: enum int:
+        :rtype: cat_variant
         """
         return self.analysis_material.GetValue(i_label)
 
-    def put_value(self, i_label: str, i_value: int) -> None:
+    def put_value(self, i_label: str, i_value: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -80,7 +80,7 @@ class AnalysisMaterial(AnyObject):
                 |     parameter is needed
 
         :param str i_label:
-        :param CATVariant i_value:
+        :param cat_variant i_value:
         :rtype: None
         """
         return self.analysis_material.PutValue(i_label, i_value)

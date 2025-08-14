@@ -14,7 +14,7 @@ from pycatia.cat_str_functional_interfaces.sfm_split_plates import SFMSplitPlate
 from pycatia.in_interfaces.reference import Reference
 from pycatia.in_interfaces.references import References
 from pycatia.knowledge_interfaces.length import Length
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class SFMSuperPlate(SFMObject):
@@ -438,7 +438,7 @@ class SFMSuperPlate(SFMObject):
             o_grade_name
         )
 
-    def invert_limit(self, i_index: CATVariant) -> None:
+    def invert_limit(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -454,7 +454,7 @@ class SFMSuperPlate(SFMObject):
                 | 
                 |          StfConnection.RemoveObject 1
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.sfm_super_plate.InvertLimit(i_index)
@@ -532,7 +532,7 @@ class SFMSuperPlate(SFMObject):
         """
         return References(self.sfm_super_plate.Limits())
 
-    def remove_limit(self, i_index: CATVariant) -> None:
+    def remove_limit(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -549,7 +549,7 @@ class SFMSuperPlate(SFMObject):
                 | 
                 |          StfConnection.RemoveObject 1
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.sfm_super_plate.RemoveLimit(i_index)
@@ -589,7 +589,7 @@ class SFMSuperPlate(SFMObject):
         """
         return self.sfm_super_plate.Run()
 
-    def set_as_last_limit(self, i_index: CATVariant) -> None:
+    def set_as_last_limit(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -605,7 +605,7 @@ class SFMSuperPlate(SFMObject):
                 | 
                 |          SuperPlate.SetAsLastLimit Index
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.sfm_super_plate.SetAsLastLimit(i_index)

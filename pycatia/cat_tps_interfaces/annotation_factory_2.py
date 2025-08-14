@@ -14,7 +14,7 @@ from pycatia.mec_mod_interfaces.factory import Factory
 from pycatia.cat_tps_interfaces.annotation_2 import Annotation2
 from pycatia.drafting_interfaces.drawing_component import DrawingComponent
 from pycatia.cat_tps_interfaces.user_surface import UserSurface
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class AnnotationFactory2(Factory):
@@ -407,8 +407,8 @@ class AnnotationFactory2(Factory):
     def create_non_semantic_dimension(
             self,
             i_surf: 'UserSurface',
-            i_type: CATVariant,
-            i_sub_type: CATVariant
+            i_type: cat_variant,
+            i_sub_type: cat_variant
     ) -> Annotation2:
         """
         .. note::
@@ -433,8 +433,8 @@ class AnnotationFactory2(Factory):
                 |             The new created Dimension.
 
         :param UserSurface i_surf:
-        :param CATVariant i_type:
-        :param CATVariant i_sub_type:
+        :param cat_variant i_type:
+        :param cat_variant i_sub_type:
         :rtype: Annotation2
         """
         self.release_check(
@@ -480,8 +480,8 @@ class AnnotationFactory2(Factory):
     def create_semantic_dimension(
             self,
             i_surf: UserSurface,
-            i_type: CATVariant,
-            i_sub_type: CATVariant
+            i_type: cat_variant,
+            i_sub_type: cat_variant
     ) -> Annotation2:
         """
         .. note::
@@ -500,8 +500,8 @@ class AnnotationFactory2(Factory):
                 |             The new created Dimension.
 
         :param UserSurface i_surf:
-        :param CATVariant i_type:
-        :param CATVariant i_sub_type:
+        :param cat_variant i_type:
+        :param cat_variant i_sub_type:
         :rtype: Annotation2
         """
         self.release_check(
@@ -636,7 +636,7 @@ class AnnotationFactory2(Factory):
         )
         return Annotation2(self.annotation_factory_2.CreateTextOnAnnot(i_text, i_annot.com_object))
 
-    def create_tolerance_with_drf(self, i_index: CATVariant, i_surf: UserSurface, i_drf: Annotation2) -> Annotation2:
+    def create_tolerance_with_drf(self, i_index: cat_variant, i_surf: UserSurface, i_drf: Annotation2) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -648,7 +648,7 @@ class AnnotationFactory2(Factory):
                 | 
                 |     Create a Tolerance With a Reference Frame DRF. iType = 1 : Angularity
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :param UserSurface i_surf:
         :param Annotation2 i_drf:
         :rtype: Annotation2
@@ -666,7 +666,7 @@ class AnnotationFactory2(Factory):
             )
         )
 
-    def create_tolerance_without_drf(self, i_index: CATVariant, i_surf: UserSurface) -> Annotation2:
+    def create_tolerance_without_drf(self, i_index: cat_variant, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -677,7 +677,7 @@ class AnnotationFactory2(Factory):
                 | 
                 |     Create a Tolerance Without a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :param UserSurface i_surf:
         :rtype: Annotation2
         """

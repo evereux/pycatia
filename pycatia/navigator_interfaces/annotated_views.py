@@ -13,7 +13,7 @@ from typing import Iterator
 from pycatia.in_interfaces.viewpoint_3d import ViewPoint3D
 from pycatia.navigator_interfaces.annotated_view import AnnotatedView
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class AnnotatedViews(Collection):
@@ -101,7 +101,7 @@ class AnnotatedViews(Collection):
         """
         return AnnotatedView(self.annotated_views.AddFromViewpoint(i_viewpoint.com_object))
 
-    def item(self, i_index: CATVariant) -> AnnotatedView:
+    def item(self, i_index: cat_variant) -> AnnotatedView:
         """
         .. note::
             :class: toggle
@@ -137,12 +137,12 @@ class AnnotatedViews(Collection):
                 |             Dim ThatAnnotatedView As AnnotatedView
                 |             Set ThatAnnotatedView = TheAnnotatedViews.Item("AnnotatedView3")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: AnnotatedView
         """
         return AnnotatedView(self.annotated_views.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -173,7 +173,7 @@ class AnnotatedViews(Collection):
                 |             TheAnnotatedViews.Remove(10)
                 |             TheAnnotatedViews.Remove("AnnotatedView2")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.annotated_views.Remove(i_index)

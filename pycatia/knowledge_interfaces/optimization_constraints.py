@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.knowledge_interfaces.optimization_constraint import OptimizationConstraint
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class OptimizationConstraints(Collection):
@@ -53,7 +53,7 @@ class OptimizationConstraints(Collection):
         """
         return OptimizationConstraint(self.optimization_constraints.AddConstraint(constraint_expression))
 
-    def item(self, i_index: CATVariant) -> OptimizationConstraint:
+    def item(self, i_index: cat_variant) -> OptimizationConstraint:
         """
         .. note::
             :class: toggle
@@ -84,12 +84,12 @@ class OptimizationConstraints(Collection):
                 | 
                 |          Set lastConstraint = constraints.Item(constraints.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: OptimizationConstraint
         """
         return OptimizationConstraint(self.optimization_constraints.Item(i_index))
 
-    def remove_constraint(self, i_index: CATVariant) -> None:
+    def remove_constraint(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -106,7 +106,7 @@ class OptimizationConstraints(Collection):
                 |             the name of the constraint if argument is a string or the index of
                 |             the constraint if argument is an integer.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.optimization_constraints.RemoveConstraint(i_index)

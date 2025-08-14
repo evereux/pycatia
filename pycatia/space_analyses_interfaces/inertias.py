@@ -13,7 +13,7 @@ from typing import Iterator
 from pycatia.space_analyses_interfaces.inertia import Inertia
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Inertias(Collection):
@@ -75,7 +75,7 @@ class Inertias(Collection):
         """
         return Inertia(self.inertias.Add(i_object.com_object))
 
-    def item(self, i_index: CATVariant) -> Inertia:
+    def item(self, i_index: cat_variant) -> Inertia:
         """
         .. note::
             :class: toggle
@@ -107,12 +107,12 @@ class Inertias(Collection):
                 |             Dim ThatInertia As Inertia
                 |             Set ThatInertia = TheInertias.Item("Inertia Of MyProduct")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Inertia
         """
         return Inertia(self.inertias.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -141,7 +141,7 @@ class Inertias(Collection):
                 |             TheInertias.Remove(10)
                 |             TheInertias.Remove("Inertia Of MyProduct")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.inertias.Remove(i_index)

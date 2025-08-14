@@ -11,7 +11,7 @@
 from pycatia.arrangement_interfaces.arrangement_rectangle import ArrangementRectangle
 from pycatia.in_interfaces.move import Move
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ArrangementRectangles(Collection):
@@ -83,7 +83,7 @@ class ArrangementRectangles(Collection):
         return ArrangementRectangle(
             self.arrangement_rectangles.AddRectangle(i_rel_axis.com_object, i_position, i_width, i_length))
 
-    def item(self, i_index: CATVariant) -> ArrangementRectangle:
+    def item(self, i_index: cat_variant) -> ArrangementRectangle:
         """
         .. note::
             :class: toggle
@@ -111,12 +111,12 @@ class ArrangementRectangles(Collection):
                 |     Returns:
                 |         The retrieved ArrangementRectangle object.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ArrangementRectangle
         """
         return ArrangementRectangle(self.arrangement_rectangles.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -142,7 +142,7 @@ class ArrangementRectangles(Collection):
                 | 
                 |         AnyObject.Name property.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.arrangement_rectangles.Remove(i_index)

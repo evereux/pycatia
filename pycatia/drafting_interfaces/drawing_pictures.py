@@ -14,7 +14,7 @@ from typing import Iterator
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.drafting_interfaces.drawing_picture import DrawingPicture
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class DrawingPictures(Collection):
@@ -92,7 +92,7 @@ class DrawingPictures(Collection):
             raise CATIAApplicationException(f'Could not find image file: "{absolute_path}".')
         return DrawingPicture(self.drawing_pictures.Add(absolute_path, i_position_x, i_position_y))
 
-    def item(self, i_index: CATVariant) -> DrawingPicture:
+    def item(self, i_index: cat_variant) -> DrawingPicture:
         """
         .. note::
             :class: toggle
@@ -129,12 +129,12 @@ class DrawingPictures(Collection):
                 |      Dim ThisDrawingPicture As DrawingPicture
                 |      Set ThisDrawingPicture = MyView.Pictures.Item(2)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: DrawingPicture
         """
         return DrawingPicture(self.drawing_pictures.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -166,7 +166,7 @@ class DrawingPictures(Collection):
                 |      Set MyView  = MySheet.Views.ActiveView
                 |      MyView.Pictures.Remove(3)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.drawing_pictures.Remove(i_index)

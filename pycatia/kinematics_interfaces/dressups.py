@@ -12,7 +12,7 @@ from pycatia.kinematics_interfaces.dressup import Dressup
 from pycatia.kinematics_interfaces.mechanism import Mechanism
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Dressups(Collection):
@@ -72,7 +72,7 @@ class Dressups(Collection):
         """
         return Dressup(self.dressups.Add(i_mechanism.com_object, i_context.com_object))
 
-    def item(self, i_index: CATVariant) -> Dressup:
+    def item(self, i_index: cat_variant) -> Dressup:
         """
         .. note::
             :class: toggle
@@ -105,7 +105,7 @@ class Dressups(Collection):
                 |          Dim ThatDressup As Dressup
                 |          Set ThatDressup = CATIA.Dressups.Item("MyDressup")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Dressup
         """
         return Dressup(self.dressups.Item(i_index))
@@ -178,7 +178,7 @@ class Dressups(Collection):
         """
         return self.dressups.ListPossibleMechanisms()
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -206,7 +206,7 @@ class Dressups(Collection):
                 |             TheDressups.Remove(10)
                 |             TheDressups.Remove("DressupTwo")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.dressups.Remove(i_index)

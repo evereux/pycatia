@@ -10,7 +10,7 @@
 """
 from typing import Iterator
 
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 from pycatia.drafting_interfaces.drawing_view import DrawingView
 from pycatia.system_interfaces.collection import Collection
 
@@ -109,7 +109,7 @@ class DrawingViews(Collection):
         """
         return DrawingView(self.drawing_views.Add(i_drawing_view_name))
 
-    def item(self, i_index: CATVariant) -> DrawingView:
+    def item(self, i_index: cat_variant) -> DrawingView:
         """
         .. note::
             :class: toggle
@@ -154,12 +154,12 @@ class DrawingViews(Collection):
                 |          Dim ThatDrawingView As DrawingView
                 |          Set ThatDrawingView = MySheet.Views.ActiveView.Item("MyView")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: DrawingView
         """
         return DrawingView(self.drawing_views.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -195,7 +195,7 @@ class DrawingViews(Collection):
                 |      MySheet.ActiveViews.Remove(3)
                 |      MySheet.ActiveViews.Remove("TopView")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.drawing_views.Remove(i_index)

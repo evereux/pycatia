@@ -10,7 +10,7 @@
 """
 from pycatia.funct_system_interfaces.funct_association import FunctAssociation
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class FunctAssociations(Collection):
@@ -84,7 +84,7 @@ class FunctAssociations(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def elem(self, i_index: CATVariant) -> FunctAssociation:
+    def elem(self, i_index: cat_variant) -> FunctAssociation:
         """
         .. note::
             :class: toggle
@@ -121,7 +121,7 @@ class FunctAssociations(Collection):
                 |          Dim Assoc2 As FunctAssociation
                 |          Set Assoc2 = FacetMRM.Associations.Elem("Skeleton 2D")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: FunctAssociation
         """
         return FunctAssociation(self.funct_associations.Elem(i_index))

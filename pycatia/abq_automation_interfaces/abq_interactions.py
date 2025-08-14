@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_interaction import ABQInteraction
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ABQInteractions(Collection):
@@ -78,7 +78,7 @@ class ABQInteractions(Collection):
         """
         return ABQInteraction(self.abq_interactions.Add(i_interaction_type))
 
-    def item(self, i_index: CATVariant) -> ABQInteraction:
+    def item(self, i_index: cat_variant) -> ABQInteraction:
         """
         .. note::
             :class: toggle
@@ -103,12 +103,12 @@ class ABQInteractions(Collection):
                 |     Returns:
                 |         The specified ABQInteraction.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ABQInteraction
         """
         return ABQInteraction(self.abq_interactions.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -130,7 +130,7 @@ class ABQInteractions(Collection):
                 |             assigned to the interaction using the CATIABase::Name
                 |             property.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.abq_interactions.Remove(i_index)

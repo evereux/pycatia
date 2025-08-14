@@ -15,7 +15,7 @@ from pywintypes import com_error
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class HybridBodies(Collection):
@@ -65,7 +65,7 @@ class HybridBodies(Collection):
         """
         return HybridBody(self.hybrid_bodies.Add())
 
-    def item(self, i_index: CATVariant) -> HybridBody:
+    def item(self, i_index: cat_variant) -> HybridBody:
         """
         .. note::
             :class: toggle
@@ -98,7 +98,7 @@ class HybridBodies(Collection):
                 |          Set ThisHybridBody = hybridBodyColl.Item(5)
                 |          Set ThatHybridBody = hybridBodyColl.Item("MyHybridBody")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: HybridBody
         """
         try:

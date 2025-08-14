@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.in_interfaces.printer import Printer
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Printers(Collection):
@@ -38,7 +38,7 @@ class Printers(Collection):
         super().__init__(com_object, child_object=Printer)
         self.printers = com_object
 
-    def item(self, i_index: CATVariant) -> Printer:
+    def item(self, i_index: cat_variant) -> Printer:
         """
         .. note::
             :class: toggle
@@ -70,7 +70,7 @@ class Printers(Collection):
                 |          Dim ThatPrinter As Printer
                 |          Set ThatPrinter = CATIA.Printers.Item("LaserPrinter")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Printer
         """
         return Printer(self.printers.Item(i_index))

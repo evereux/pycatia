@@ -11,7 +11,7 @@
 from pycatia.arrangement_interfaces.arrangement_item_reservation import ArrangementItemReservation
 from pycatia.in_interfaces.move import Move
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class ArrangementItemReservations(Collection):
@@ -119,7 +119,7 @@ class ArrangementItemReservations(Collection):
             )
         )
 
-    def item(self, i_index: CATVariant) -> ArrangementItemReservation:
+    def item(self, i_index: cat_variant) -> ArrangementItemReservation:
         """
         .. note::
             :class: toggle
@@ -147,12 +147,12 @@ class ArrangementItemReservations(Collection):
                 |     Returns:
                 |         The retrieved ArrangementItemReservation object.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: ArrangementItemReservation
         """
         return ArrangementItemReservation(self.arrangement_item_reservations.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -178,7 +178,7 @@ class ArrangementItemReservations(Collection):
                 | 
                 |         AnyObject.Name property.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.arrangement_item_reservations.Remove(i_index)

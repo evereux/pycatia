@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.in_interfaces.camera import Camera
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import CATVariant
+from pycatia.types.general import cat_variant
 
 
 class Cameras(Collection):
@@ -62,7 +62,7 @@ class Cameras(Collection):
         super().__init__(com_object, child_object=Camera)
         self.cameras = com_object
 
-    def item(self, i_index: CATVariant) -> Camera:
+    def item(self, i_index: cat_variant) -> Camera:
         """
         .. note::
             :class: toggle
@@ -95,12 +95,12 @@ class Cameras(Collection):
                 |          Dim ThatCamera As Camera
                 |          Set ThatCamera = CATIA.ActiveDocument.Cameras.Item("MyCamera")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: Camera
         """
         return Camera(self.cameras.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -130,7 +130,7 @@ class Cameras(Collection):
                 |      CATIA.ActiveDocument.Cameras.Remove(10)
                 |      CATIA.ActiveDocument.Cameras.Remove("CameraToBeRemoved")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :rtype: None
         """
         return self.cameras.Remove(i_index)
