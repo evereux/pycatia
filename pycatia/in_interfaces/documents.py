@@ -10,7 +10,7 @@ from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.document import document_types
-from pycatia.types.general import cat_variant, list_str
+from pycatia.types.general import CATVariant, list_str
 
 
 def get_document_object(doc_com):
@@ -65,7 +65,7 @@ class Documents(Collection):
         self.documents = com_object
         self.child_object = Document
 
-    def add(self, document_type) -> Document:
+    def add(self, document_type: str) -> Document:
         """
         .. note::
             :class: toggle
@@ -102,7 +102,7 @@ class Documents(Collection):
         :rtype: Document
         """
 
-        # see pycatia.types.docs for supported Documents.
+        # see pycatia.types.document.py for supported Documents.
 
         if document_type.lower() not in [t.lower() for t in document_types]:
             raise CATIAApplicationException(
@@ -175,7 +175,7 @@ class Documents(Collection):
 
         return Document(self.documents.NewFrom(file_name))
 
-    def item(self, index: cat_variant) -> Document:
+    def item(self, index: CATVariant) -> Document:
         """
         .. note::
             :class: toggle
@@ -207,7 +207,7 @@ class Documents(Collection):
                 |          Dim ThatDoc As Document
                 |          Set ThatDoc = Documents.Item("MyDoc")
 
-        :param cat_variant index:
+        :param CATVariant index:
         :rtype: Document
         """
         try:

@@ -11,7 +11,7 @@
 
 from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class AnalysisLinkedDocuments(Collection):
@@ -36,7 +36,7 @@ class AnalysisLinkedDocuments(Collection):
         super().__init__(com_object)
         self.analysis_linked_documents = com_object
 
-    def item(self, i_index: cat_variant) -> Document:
+    def item(self, i_index: CATVariant) -> Document:
         """
         .. note::
             :class: toggle
@@ -61,7 +61,7 @@ class AnalysisLinkedDocuments(Collection):
                 |     Returns:
                 |         The retrieved linked Document
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Document
         """
         return Document(self.analysis_linked_documents.Item(i_index))

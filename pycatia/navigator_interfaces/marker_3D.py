@@ -10,7 +10,7 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Marker3D(AnyObject):
@@ -313,7 +313,7 @@ class Marker3D(AnyObject):
         """
         return self.marker_3d.CountObject()
 
-    def get_object_positions(self, i_index: cat_variant, o_coordinates: tuple) -> None:
+    def get_object_positions(self, i_index: CATVariant, o_coordinates: tuple) -> None:
         """
         .. note::
             :class: toggle
@@ -350,7 +350,7 @@ class Marker3D(AnyObject):
                 |             Dim Coordinates (3)
                 |             NewMarker3D.GetObjectPositions Coordinates
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :param tuple o_coordinates:
         :rtype: None
         """
@@ -407,7 +407,7 @@ class Marker3D(AnyObject):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def item_object(self, i_index: cat_variant) -> AnyObject:
+    def item_object(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -437,12 +437,12 @@ class Marker3D(AnyObject):
                 |             Dim ThisObject As Marker3D
                 |             Set ThisObject = NewMarker3D.ItemObject(9)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: AnyObject
         """
         return self.marker_3d.ItemObject(i_index)
 
-    def remove_object(self, i_index: cat_variant) -> None:
+    def remove_object(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -468,12 +468,12 @@ class Marker3D(AnyObject):
                 | 
                 |             NewMarker3D.RemoveObject(9)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.marker_3d.RemoveObject(i_index)
 
-    def set_object_positions(self, i_index: cat_variant, i_coordinates: tuple) -> None:
+    def set_object_positions(self, i_index: CATVariant, i_coordinates: tuple) -> None:
         """
         .. note::
             :class: toggle
@@ -510,7 +510,7 @@ class Marker3D(AnyObject):
                 |             Dim Coordinates (3)
                 |             NewMarker3D.SetObjectPositions Coordinates
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :param tuple i_coordinates:
         :rtype: None
         """

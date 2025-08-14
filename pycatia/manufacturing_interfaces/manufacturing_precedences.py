@@ -11,7 +11,7 @@
 from pycatia.manufacturing_interfaces.manufacturing_activity import ManufacturingActivity
 from pycatia.manufacturing_interfaces.manufacturing_precedence import ManufacturingPrecedence
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ManufacturingPrecedences(Collection):
@@ -72,7 +72,7 @@ class ManufacturingPrecedences(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def item(self, i_index: cat_variant) -> ManufacturingPrecedence:
+    def item(self, i_index: CATVariant) -> ManufacturingPrecedence:
         """
         .. note::
             :class: toggle
@@ -82,7 +82,7 @@ class ManufacturingPrecedences(Collection):
                 | 
                 |     Returns a precedence object from the precedence collection.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ManufacturingPrecedence
         """
         return ManufacturingPrecedence(self.manufacturing_precedences.Item(i_index))

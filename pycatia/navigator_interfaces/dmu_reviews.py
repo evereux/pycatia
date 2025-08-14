@@ -14,7 +14,7 @@ from pycatia.navigator_interfaces.dmu_review import DMUReview
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class DMUReviews(Collection):
@@ -127,7 +127,7 @@ class DMUReviews(Collection):
         """
         return DMUReview(self.dmu_reviews.ImportFrom(i_product.com_object))
 
-    def item(self, i_index: cat_variant) -> DMUReview:
+    def item(self, i_index: CATVariant) -> DMUReview:
         """
         .. note::
             :class: toggle
@@ -160,12 +160,12 @@ class DMUReviews(Collection):
                 |             Set oThisDMUReview = cDMUReviews.Item(9)
                 |             Set oThatDMUReview = cDMUReviews.Item("DMUReview3")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: DMUReview
         """
         return DMUReview(self.dmu_reviews.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -194,7 +194,7 @@ class DMUReviews(Collection):
                 |             cDMUReviews.Remove(10)
                 |             cDMUReviews.Remove("DMUReview2")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.dmu_reviews.Remove(i_index)

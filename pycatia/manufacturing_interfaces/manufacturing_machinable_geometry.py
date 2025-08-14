@@ -11,7 +11,7 @@
 from pycatia.manufacturing_interfaces.manufacturing_machinable_feature import ManufacturingMachinableFeature
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
@@ -78,7 +78,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
 
         self.manufacturing_machinable_geometry.Shared = value
 
-    def add_pointed_geometry(self, i_geometry: AnyObject, i_product: Product, i_shapes: tuple) -> cat_variant:
+    def add_pointed_geometry(self, i_geometry: AnyObject, i_product: Product, i_shapes: tuple) -> None:
         """
         .. note::
             :class: toggle
@@ -119,7 +119,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         :param AnyObject i_geometry:
         :param Product i_product:
         :param tuple i_shapes:
-        :rtype: cat_variant
+        :rtype: None
         """
         return self.manufacturing_machinable_geometry.AddPointedGeometry(
             i_geometry.com_object,
@@ -147,7 +147,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
             i_product: Product,
             i_shapes: tuple,
             i_notify: int
-    ) -> cat_variant:
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -198,7 +198,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         :param Product i_product:
         :param tuple i_shapes:
         :param int i_notify:
-        :rtype: cat_variant
+        :rtype: None
         """
         return self.manufacturing_machinable_geometry.AddPointedGeometryNotify(
             i_geometry.com_object,
@@ -227,7 +227,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
             i_geometry: AnyObject,
             i_product: Product,
             i_shapes: tuple
-    ) -> cat_variant:
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -270,7 +270,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         :param AnyObject i_geometry:
         :param Product i_product:
         :param tuple i_shapes:
-        :rtype: cat_variant
+        :rtype: None
         """
         return self.manufacturing_machinable_geometry.AddPointedGeometryWithNoDuplicatedCheck(i_geometry.com_object,
                                                                                               i_product.com_object,
@@ -297,7 +297,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
             i_product: Product,
             i_shapes: tuple,
             i_notify: int
-    ) -> cat_variant:
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -349,7 +349,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         :param Product i_product:
         :param tuple i_shapes:
         :param int i_notify:
-        :rtype: cat_variant
+        :rtype: None
         """
         return self.manufacturing_machinable_geometry.AddPointedGeometryWithNoDuplicatedCheckNotify(
             i_geometry.com_object,
@@ -373,7 +373,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_associated_tps(self, index_of_pointed_geom: int, o_annotations_list: tuple) -> cat_variant:
+    def get_associated_tps(self, index_of_pointed_geom: int, o_annotations_list: tuple) -> tuple:
         """
         .. note::
             :class: toggle
@@ -417,7 +417,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
 
         :param int index_of_pointed_geom:
         :param tuple o_annotations_list:
-        :rtype: Variant
+        :rtype: tuple
         """
         return self.manufacturing_machinable_geometry.GetAssociatedTPS(
             index_of_pointed_geom,
@@ -573,7 +573,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
             o_geometry: AnyObject,
             o_product: Product,
             o_nb_shapes: int
-    ) -> cat_variant:
+    ) -> tuple:
         """
         .. note::
             :class: toggle
@@ -601,9 +601,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
                 |         The following example retrieves the pointed geometry lists of the
                 |         manufacturing machinable geometry firstMachGeom in PointedGeometryList and in
                 |         PointedProductsList. The arrays must be previously initialized using the
-                |
-                |
-                |     PointedGeometryCount method.
+                |         PointedGeometryCount method.
                 |
                 |      Dim firstMachGeom As ManufacturingMachinableGeometry
                 |      Set firstMachGeom = ...
@@ -626,7 +624,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         :param AnyObject o_geometry:
         :param Product o_product:
         :param int o_nb_shapes:
-        :rtype: cat_variant
+        :rtype: tuple
         """
         return self.manufacturing_machinable_geometry.ListPointedGeometry(
             i_index,
@@ -650,7 +648,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def list_shapes_of_pointed_geometry(self, i_index: int, o_shapes: tuple) -> cat_variant:
+    def list_shapes_of_pointed_geometry(self, i_index: int, o_shapes: tuple) -> tuple:
         """
         .. note::
             :class: toggle
@@ -701,7 +699,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
 
         :param int i_index:
         :param tuple o_shapes:
-        :rtype: Variant
+        :rtype: tuple
         """
         return self.manufacturing_machinable_geometry.ListShapesOfPointedGeometry(i_index, o_shapes)
         # # # # Autogenerated comment:

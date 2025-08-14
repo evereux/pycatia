@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.space_analyses_interfaces.conflict import Conflict
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Conflicts(Collection):
@@ -38,7 +38,7 @@ class Conflicts(Collection):
         super().__init__(com_object)
         self.conflicts = com_object
 
-    def item(self, i_index: cat_variant) -> Conflict:
+    def item(self, i_index: CATVariant) -> Conflict:
         """
         .. note::
             :class: toggle
@@ -66,7 +66,7 @@ class Conflicts(Collection):
                 |             Dim ThisConflict As Conflict
                 |             Set ThisConflict = TheConflicts.Item(9)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Conflict
         """
         return Conflict(self.conflicts.Item(i_index))

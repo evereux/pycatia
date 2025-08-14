@@ -10,7 +10,7 @@
 """
 from pycatia.dmaps_interfaces.item import Item
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class MfgAssembly(AnyObject):
@@ -231,7 +231,7 @@ class MfgAssembly(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def item(self, i_index: cat_variant) -> Item:
+    def item(self, i_index: CATVariant) -> Item:
         """
         .. note::
             :class: toggle
@@ -262,7 +262,7 @@ class MfgAssembly(AnyObject):
                 |                ItemName = it.Name
                 |              Next
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Item
         """
         return Item(self.mfg_assembly.Item(i_index))

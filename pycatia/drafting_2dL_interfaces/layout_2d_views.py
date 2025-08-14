@@ -10,7 +10,7 @@
 """
 from pycatia.drafting_2dL_interfaces.layout_2d_view import Layout2DView
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Layout2DViews(Collection):
@@ -371,7 +371,7 @@ class Layout2DViews(Collection):
         """
         return Layout2DView(self.layout2_d_views.AddRelated(i_reference_view.com_object, i_side, i_x, i_y))
 
-    def item(self, i_index: cat_variant) -> Layout2DView:
+    def item(self, i_index: CATVariant) -> Layout2DView:
         """
         .. note::
             :class: toggle
@@ -414,12 +414,12 @@ class Layout2DViews(Collection):
                 |          Dim ThatLayout2DView As Layout2DView
                 |          Set ThatLayout2DView = MySheet.Views.ActiveView.Item("MyView")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Layout2DView
         """
         return Layout2DView(self.layout2_d_views.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -453,7 +453,7 @@ class Layout2DViews(Collection):
                 |      MySheet.ActiveViews.Remove(3)
                 |      MySheet.ActiveViews.Remove("TopView")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.layout2_d_views.Remove(i_index)

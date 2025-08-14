@@ -11,7 +11,7 @@
 from pycatia.cat_str_functional_interfaces.sfm_references import SFMReferences
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.cat_base_unknown import CATBaseUnknown
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class SFMStandardPosStrategyParameters(AnyObject):
@@ -59,7 +59,7 @@ class SFMStandardPosStrategyParameters(AnyObject):
 
         return self.sfm_standard_pos_strategy_parameters.Count
 
-    def item(self, i_index: cat_variant) -> CATBaseUnknown:
+    def item(self, i_index: CATVariant) -> CATBaseUnknown:
         """
         .. note::
             :class: toggle
@@ -67,7 +67,7 @@ class SFMStandardPosStrategyParameters(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func Item(CATVariant iIndex) As CATBaseUnknown
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: CATBaseUnknown
         """
         return self.sfm_standard_pos_strategy_parameters.Item(i_index)

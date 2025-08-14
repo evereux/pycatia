@@ -11,7 +11,7 @@
 
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class FixTogether(AnyObject):
@@ -159,7 +159,7 @@ class FixTogether(AnyObject):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_fix_together(self, i_index: cat_variant) -> 'FixTogether':
+    def get_fix_together(self, i_index: CATVariant) -> 'FixTogether':
         """
         .. note::
             :class: toggle
@@ -192,12 +192,12 @@ class FixTogether(AnyObject):
                 |          Dim thatFixTogether As FixTogether
                 |          Set thatFixTogether = myFixTogether.GetFixTogether("myFixTogether")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: FixTogether
         """
         return FixTogether(self.fix_together.GetFixTogether(i_index))
 
-    def get_product(self, i_index: cat_variant) -> Product:
+    def get_product(self, i_index: CATVariant) -> Product:
         """
         .. note::
             :class: toggle
@@ -230,12 +230,12 @@ class FixTogether(AnyObject):
                 |          Dim thatProduct As Product
                 |          Set thatProduct = myFixTogether.GetProduct("myProduct")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Product
         """
         return Product(self.fix_together.GetProduct(i_index))
 
-    def remove_fix_together(self, i_index: cat_variant) -> None:
+    def remove_fix_together(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -262,12 +262,12 @@ class FixTogether(AnyObject):
                 | 
                 |     fixTogether.RemoveFixTogether(fixTogether.FixTogethersCount)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.fix_together.RemoveFixTogether(i_index)
 
-    def remove_product(self, i_index: cat_variant) -> None:
+    def remove_product(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -293,7 +293,7 @@ class FixTogether(AnyObject):
                 | 
                 |      fixTogether.RemoveProduct(fixTogether.ProductsCount)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.fix_together.RemoveProduct(i_index)

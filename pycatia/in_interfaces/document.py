@@ -153,11 +153,13 @@ class Document(AnyObject):
 
         :return: bool
         """
+        self.logger.warning('The Document.is_part property will be deprecated in future versions.')
         try:
             if self.part:
                 return True
         except AttributeError:
             return False
+        return False
 
     @property
     def is_product(self) -> bool:
@@ -166,6 +168,7 @@ class Document(AnyObject):
 
         :return: bool
         """
+        self.logger.warning('The Document.is_product property will be deprecated in future versions.')
         if self.product.is_catproduct():
             return True
         return False

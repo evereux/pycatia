@@ -11,7 +11,7 @@
 from pycatia.arrangement_interfaces.arrangement_pathway import ArrangementPathway
 from pycatia.in_interfaces.move import Move
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ArrangementPathways(Collection):
@@ -77,7 +77,7 @@ class ArrangementPathways(Collection):
             )
         )
 
-    def item(self, i_index: cat_variant) -> ArrangementPathway:
+    def item(self, i_index: CATVariant) -> ArrangementPathway:
         """
         .. note::
             :class: toggle
@@ -105,12 +105,12 @@ class ArrangementPathways(Collection):
                 |     Returns:
                 |         The retrieved ArrangementPathway object.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ArrangementPathway
         """
         return ArrangementPathway(self.arrangement_pathways.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -136,7 +136,7 @@ class ArrangementPathways(Collection):
                 | 
                 |         AnyObject.Name property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.arrangement_pathways.Remove(i_index)

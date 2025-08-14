@@ -231,7 +231,7 @@ class Dimension3D(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.dimension3_d.IsAContinuousFeatureApplied()
+        return self.dimension_3d.IsAContinuousFeatureApplied()
 
     def is_a_dimension_pattern(self) -> bool:
         """

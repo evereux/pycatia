@@ -10,7 +10,7 @@
 """
 from pycatia.analysis_interfaces.analysis_mesh_local_specification import AnalysisMeshLocalSpecification
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class AnalysisMeshLocalSpecifications(Collection):
@@ -61,7 +61,7 @@ class AnalysisMeshLocalSpecifications(Collection):
         """
         return AnalysisMeshLocalSpecification(self.analysis_mesh_local_specifications.Add(i_type))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -84,7 +84,7 @@ class AnalysisMeshLocalSpecifications(Collection):
                 | 
                 |         AnyObject.Name property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.analysis_mesh_local_specifications.Remove(i_index)

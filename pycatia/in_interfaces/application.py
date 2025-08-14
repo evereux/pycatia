@@ -938,7 +938,7 @@ class Application(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.application.BeginURConcatenation()
+        return self.com_object.BeginURConcatenation()
 
     def create_send_to(self) -> SendToService:
         """
@@ -1316,7 +1316,7 @@ class Application(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.application.StopURConcatenation(i_undo_step_name_bstr)
+        return self.com_object.StopURConcatenation(i_undo_step_name_bstr)
 
     def __repr__(self):
         return f'Application(name="{self.name}")'

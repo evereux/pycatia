@@ -120,7 +120,7 @@ class VisPropertySet(AnyObject):
         super().__init__(com_object)
         self.vis_property_set = com_object
 
-    def get_layer(self) -> (int, int, int):
+    def get_layer(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -173,7 +173,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetLayer()
 
-    def get_pick(self) -> (int, int):
+    def get_pick(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -207,7 +207,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetPick()
 
-    def get_real_color(self) -> (int, int, int, int):
+    def get_real_color(self) -> tuple[int, int, int, int]:
         """
         .. note::
             :class: toggle
@@ -317,7 +317,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetRealInheritance()
 
-    def get_real_line_type(self) -> (int, int):
+    def get_real_line_type(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -367,7 +367,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetRealLineType()
 
-    def get_real_opacity(self) -> (int, int):
+    def get_real_opacity(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -415,7 +415,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetRealOpacity()
 
-    def get_real_width(self) -> (int, int):
+    def get_real_width(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -464,7 +464,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetRealWidth()
 
-    def get_show(self) -> (int, int):
+    def get_show(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -495,7 +495,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetShow()
 
-    def get_symbol_type(self) -> (int, int):
+    def get_symbol_type(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -543,7 +543,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetSymbolType()
 
-    def get_visible_color(self) -> (int, int, int, int):
+    def get_visible_color(self) -> tuple[int, int, int, int]:
         """
         .. note::
             :class: toggle
@@ -641,7 +641,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetVisibleInheritance()
 
-    def get_visible_line_type(self) -> (int, int):
+    def get_visible_line_type(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -690,7 +690,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetVisibleLineType()
 
-    def get_visible_opacity(self) -> (int, int):
+    def get_visible_opacity(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -741,7 +741,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetVisibleOpacity()
 
-    def get_visible_width(self) -> (int, int):
+    def get_visible_width(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle

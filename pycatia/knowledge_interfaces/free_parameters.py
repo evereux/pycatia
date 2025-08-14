@@ -14,7 +14,7 @@ from typing import TYPE_CHECKING
 
 from pycatia.knowledge_interfaces.free_parameter import FreeParameter
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 if TYPE_CHECKING:
     from pycatia.knowledge_interfaces.real_param import RealParam
@@ -58,7 +58,7 @@ class FreeParameters(Collection):
         """
         return FreeParameter(self.free_parameters.AddFreeParameter(parameter.com_object))
 
-    def item(self, i_index: cat_variant) -> FreeParameter:
+    def item(self, i_index: CATVariant) -> FreeParameter:
         """
         .. note::
             :class: toggle
@@ -89,12 +89,12 @@ class FreeParameters(Collection):
                 | 
                 |          Set lastFreeParameter = freeParameters.Item(freeParameters.Count)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: FreeParameter
         """
         return FreeParameter(self.free_parameters.Item(i_index))
 
-    def remove_free_parameter(self, i_index: cat_variant) -> None:
+    def remove_free_parameter(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -104,7 +104,7 @@ class FreeParameters(Collection):
                 | 
                 |     Removes a free parameter.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :return: None
         """
         return self.free_parameters.RemoveFreeParameter(i_index)

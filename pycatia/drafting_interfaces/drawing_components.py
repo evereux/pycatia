@@ -13,7 +13,7 @@ from typing import TYPE_CHECKING
 
 from pycatia.drafting_interfaces.drawing_component import DrawingComponent
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 if TYPE_CHECKING:
     from pycatia.drafting_interfaces.drawing_view import DrawingView
@@ -96,7 +96,7 @@ class DrawingComponents(Collection):
             )
         )
 
-    def item(self, i_index: cat_variant) -> DrawingComponent:
+    def item(self, i_index: CATVariant) -> DrawingComponent:
         """
         .. note::
             :class: toggle
@@ -134,12 +134,12 @@ class DrawingComponents(Collection):
                 |      Dim ThisDrawingComponent As DrawingComponent
                 |      Set ThisDrawingComponent = MyView.Components.Item(2)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: DrawingComponent
         """
         return DrawingComponent(self.drawing_components.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -171,7 +171,7 @@ class DrawingComponents(Collection):
                 |      Set MyView  = MySheet.Views.ActiveView
                 |      MyView.Components.Remove(3)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.drawing_components.Remove(i_index)
