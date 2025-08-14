@@ -10,7 +10,7 @@
 """
 from pycatia.eno_cd5_interfaces.cd5_id import CD5ID
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class CD5IDs(Collection):
@@ -48,7 +48,7 @@ class CD5IDs(Collection):
         super().__init__(com_object, child_object=CD5ID)
         self.cd5_i_ds = com_object
 
-    def item(self, i_index: cat_variant) -> CD5ID:
+    def item(self, i_index: CATVariant) -> CD5ID:
         """
         .. note::
             :class: toggle
@@ -66,7 +66,7 @@ class CD5IDs(Collection):
                 |          Dim oID As ENOIACD5ID
                 |          Set oID = CD5IDs.Item(1)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: CD5ID
         """
         return CD5ID(self.cd5_i_ds.Item(i_index))

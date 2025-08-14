@@ -10,7 +10,7 @@
 """
 from pycatia.funct_system_interfaces.functional_action import FunctionalAction
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class FunctActionsGroup(AnyObject):
@@ -175,7 +175,7 @@ class FunctActionsGroup(AnyObject):
         """
         return self.funct_actions_group.RemovePosition(i_position)
 
-    def retrieve(self, i_index: cat_variant) -> FunctionalAction:
+    def retrieve(self, i_index: CATVariant) -> FunctionalAction:
         """
         .. note::
             :class: toggle
@@ -207,7 +207,7 @@ class FunctActionsGroup(AnyObject):
                 |          Dim Act2 As FunctionalAction
                 |          Set Act2 = ActionsGrp.Retrieve("Reduces noise")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: FunctionalAction
         """
         return FunctionalAction(self.funct_actions_group.Retrieve(i_index))

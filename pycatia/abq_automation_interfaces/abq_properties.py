@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_property import ABQProperty
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ABQProperties(Collection):
@@ -78,7 +78,7 @@ class ABQProperties(Collection):
         """
         return ABQProperty(self.abq_properties.Add(i_property_type))
 
-    def item(self, i_index: cat_variant) -> ABQProperty:
+    def item(self, i_index: CATVariant) -> ABQProperty:
         """
         .. note::
             :class: toggle
@@ -102,12 +102,12 @@ class ABQProperties(Collection):
                 |     Returns:
                 |         The specified ABQProperty.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ABQProperty
         """
         return ABQProperty(self.abq_properties.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -128,7 +128,7 @@ class ABQProperties(Collection):
                 |             If the index is a string, it specifies the name you assigned to the property
                 |             using the CATIABase::Name property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.abq_properties.Remove(i_index)

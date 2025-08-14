@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_output_request import ABQOutputRequest
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ABQOutputRequests(Collection):
@@ -78,7 +78,7 @@ class ABQOutputRequests(Collection):
         """
         return ABQOutputRequest(self.abq_output_requests.Add(i_output_request_type))
 
-    def item(self, i_index: cat_variant, i_output_request_type: int) -> ABQOutputRequest:
+    def item(self, i_index: CATVariant, i_output_request_type: int) -> ABQOutputRequest:
         """
         .. note::
             :class: toggle
@@ -114,13 +114,13 @@ class ABQOutputRequests(Collection):
                 |     Returns:
                 |         The specified ABQOutputRequest.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :param int i_output_request_type: enum abq_output_request_type
         :rtype: ABQOutputRequest
         """
         return ABQOutputRequest(self.abq_output_requests.Item(i_index, i_output_request_type))
 
-    def remove(self, i_index: cat_variant, i_output_request_type: int) -> None:
+    def remove(self, i_index: CATVariant, i_output_request_type: int) -> None:
         """
         .. note::
             :class: toggle
@@ -153,7 +153,7 @@ class ABQOutputRequests(Collection):
                 |             specifies the name you assigned to the output request using the
                 |             CATIACollection::Name property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :param int i_output_request_type: enum abq_output_request_type
         :rtype: None
         """

@@ -1917,8 +1917,7 @@ class Selection(AnyObject):
                         i_filter_type: tuple,
                         i_active_document_message: str,
                         i_non_active_document_message: str,
-                        i_tooltip: bool,
-                        o_document: Document) -> str:
+                        i_tooltip: bool) -> tuple[str, Document]:
         """
         .. note::
             :class: toggle
@@ -2043,8 +2042,7 @@ class Selection(AnyObject):
         :param str i_active_document_message:
         :param str i_non_active_document_message:
         :param bool i_tooltip:
-        :param Document o_document:
-        :rtype: str
+        :rtype: tuple[str, Document]
         """
 
         check_type(i_filter_type, tuple)

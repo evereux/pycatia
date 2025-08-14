@@ -10,7 +10,7 @@
 """
 from pycatia.kinematics_interfaces.joint import Joint
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Joints(Collection):
@@ -59,7 +59,7 @@ class Joints(Collection):
         """
         return Joint(self.joints.Add())
 
-    def item(self, i_index: cat_variant) -> Joint:
+    def item(self, i_index: CATVariant) -> Joint:
         """
         .. note::
             :class: toggle
@@ -91,12 +91,12 @@ class Joints(Collection):
                 |          Dim ThatJoint As Joint
                 |          Set ThatJoint = CATIA.Joints.Item("MyJoint")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Joint
         """
         return Joint(self.joints.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -124,7 +124,7 @@ class Joints(Collection):
                 |             TheJoints.Remove(10)
                 |             TheJoints.Remove("JointTwo")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.joints.Remove(i_index)

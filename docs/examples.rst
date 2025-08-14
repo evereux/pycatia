@@ -5,7 +5,7 @@ Examples
 
 Simple examples that help you get started using pycatia.
 
-For more complex scripts see the section on :ref:`User Scripts`.
+For more complex scripts see the section on :ref:`User Scripts<User Scripts>`.
 
 Index
 -----
@@ -404,7 +404,7 @@ Change the Length value of parameter named Thickness.
 
 
 
-.. _Example Part:
+.. _Example Parts:
 
 PART EXAMPLES
 ----------------

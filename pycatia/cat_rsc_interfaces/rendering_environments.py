@@ -10,7 +10,7 @@
 """
 from pycatia.cat_rsc_interfaces.rendering_environment import RenderingEnvironment
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class RenderingEnvironments(Collection):
@@ -60,7 +60,7 @@ class RenderingEnvironments(Collection):
         """
         return RenderingEnvironment(self.rendering_environments.Add(i_environment_type))
 
-    def item(self, i_index: cat_variant) -> RenderingEnvironment:
+    def item(self, i_index: CATVariant) -> RenderingEnvironment:
         """
         .. note::
             :class: toggle
@@ -88,12 +88,12 @@ class RenderingEnvironments(Collection):
                 |      Dim MyEnvironment As RenderingEnvironment
                 |      Set MyEnvironment = RenderingEnvironments.Item(6)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: RenderingEnvironment
         """
         return RenderingEnvironment(self.rendering_environments.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -103,7 +103,7 @@ class RenderingEnvironments(Collection):
                 | 
                 |     Removes a environment from the environments collection.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.rendering_environments.Remove(i_index)

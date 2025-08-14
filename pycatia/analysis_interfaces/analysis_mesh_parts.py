@@ -10,7 +10,7 @@
 """
 from pycatia.analysis_interfaces.analysis_mesh_part import AnalysisMeshPart
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class AnalysisMeshParts(Collection):
@@ -61,7 +61,7 @@ class AnalysisMeshParts(Collection):
         """
         return AnalysisMeshPart(self.analysis_mesh_parts.Add(i_type))
 
-    def item(self, i_index: cat_variant) -> AnalysisMeshPart:
+    def item(self, i_index: CATVariant) -> AnalysisMeshPart:
         """
         .. note::
             :class: toggle
@@ -85,12 +85,12 @@ class AnalysisMeshParts(Collection):
                 |     Returns:
                 |         The retrieved meshpart.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: AnalysisMeshPart
         """
         return AnalysisMeshPart(self.analysis_mesh_parts.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -112,7 +112,7 @@ class AnalysisMeshParts(Collection):
                 | 
                 |         AnyObject.Name property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.analysis_mesh_parts.Remove(i_index)

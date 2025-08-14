@@ -10,7 +10,7 @@
 """
 from pycatia.analysis_interfaces.analysis_image import AnalysisImage
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class AnalysisImages(Collection):
@@ -38,9 +38,9 @@ class AnalysisImages(Collection):
     def add(
             self,
             i_image_name: str,
-            i_hide_existing_images: cat_variant,
-            i_show_mesh: cat_variant,
-            i_duplicate: cat_variant) -> AnalysisImage:
+            i_hide_existing_images: CATVariant,
+            i_show_mesh: CATVariant,
+            i_duplicate: CATVariant) -> AnalysisImage:
         """
         .. note::
             :class: toggle
@@ -83,9 +83,9 @@ class AnalysisImages(Collection):
                 |          Set ThisAnalysisImage = analysisImages.Add("Mesh_Deformed", True, False, False)
 
         :param str i_image_name:
-        :param cat_variant i_hide_existing_images:
-        :param cat_variant i_show_mesh:
-        :param cat_variant i_duplicate:
+        :param CATVariant i_hide_existing_images:
+        :param CATVariant i_show_mesh:
+        :param CATVariant i_duplicate:
         :rtype: AnalysisImage
         """
         return AnalysisImage(
@@ -97,7 +97,7 @@ class AnalysisImages(Collection):
             )
         )
 
-    def item(self, i_index: cat_variant) -> AnalysisImage:
+    def item(self, i_index: CATVariant) -> AnalysisImage:
         """
         .. note::
             :class: toggle
@@ -128,12 +128,12 @@ class AnalysisImages(Collection):
                 |          Dim ThisAnalysisImage As AnalysisImage
                 |          Set ThisAnalysisImage = analysisImages.Item(3)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: AnalysisImage
         """
         return AnalysisImage(self.analysis_images.Item(i_index))
 
-    def remove_image(self, i_image_identifier: cat_variant) -> None:
+    def remove_image(self, i_image_identifier: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -167,7 +167,7 @@ class AnalysisImages(Collection):
                 |          In this example 4 is the index of the Image to be deleted in Analysis
                 |          Set: analysisImages1
 
-        :param cat_variant i_image_identifier:
+        :param CATVariant i_image_identifier:
         :rtype: None
         """
         return self.analysis_images.RemoveImage(i_image_identifier)

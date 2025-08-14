@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_data_output_request import ABQDataOutputRequest
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ABQDataOutputRequests(Collection):
@@ -65,7 +65,7 @@ class ABQDataOutputRequests(Collection):
         """
         return ABQDataOutputRequest(self.abq_data_output_requests.Add())
 
-    def item(self, i_index: cat_variant) -> ABQDataOutputRequest:
+    def item(self, i_index: CATVariant) -> ABQDataOutputRequest:
         """
         .. note::
             :class: toggle
@@ -90,12 +90,12 @@ class ABQDataOutputRequests(Collection):
                 |     Returns:
                 |         The specified ABQDataOutputRequest.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ABQDataOutputRequest
         """
         return ABQDataOutputRequest(self.abq_data_output_requests.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -116,7 +116,7 @@ class ABQDataOutputRequests(Collection):
                 |             is Count. As a string, it is the name you assigned to the data output request
                 |             using the CATIABase::Name property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.abq_data_output_requests.Remove(i_index)

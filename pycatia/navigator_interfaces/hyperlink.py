@@ -10,7 +10,7 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Hyperlink(AnyObject):
@@ -87,7 +87,7 @@ class Hyperlink(AnyObject):
         """
         return self.hyperlink.CountObject()
 
-    def item_object(self, i_index: cat_variant) -> str:
+    def item_object(self, i_index: CATVariant) -> str:
         """
         .. note::
             :class: toggle
@@ -117,12 +117,12 @@ class Hyperlink(AnyObject):
                 |             Dim ThisUrl As String
                 |             Set ThisUrl = NewHyperlink.ItemObject(9)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: str
         """
         return self.hyperlink.ItemObject(i_index)
 
-    def remove_object(self, i_index: cat_variant) -> None:
+    def remove_object(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -148,7 +148,7 @@ class Hyperlink(AnyObject):
                 | 
                 |             NewHyperlink.RemoveObject(9)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.hyperlink.RemoveObject(i_index)

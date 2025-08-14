@@ -10,7 +10,7 @@
 """
 from pycatia.analysis_interfaces.analysis_model import AnalysisModel
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class AnalysisModels(Collection):
@@ -37,7 +37,7 @@ class AnalysisModels(Collection):
         super().__init__(com_object, child_object=AnalysisModel)
         self.analysis_models = com_object
 
-    def item(self, i_index: cat_variant) -> AnalysisModel:
+    def item(self, i_index: CATVariant) -> AnalysisModel:
         """
         .. note::
             :class: toggle
@@ -75,7 +75,7 @@ class AnalysisModels(Collection):
                 |          Dim analysisModel As AnalysisModel
                 |          Set AnalysisModel = analysisModel.Item(1)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: AnalysisModel
         """
         return AnalysisModel(self.analysis_models.Item(i_index))

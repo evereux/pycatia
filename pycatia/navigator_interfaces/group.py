@@ -11,7 +11,7 @@
 
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Group(AnyObject):
@@ -262,7 +262,7 @@ class Group(AnyObject):
         """
         return self.group.FillSelWithInvert()
 
-    def item_explicit(self, i_index: cat_variant) -> AnyObject:
+    def item_explicit(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -291,12 +291,12 @@ class Group(AnyObject):
                 |             Dim ThisProduct As Product
                 |             Set ThisProduct = NewGroup.ItemExplicit(9)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: AnyObject
         """
         return self.group.ItemExplicit(i_index)
 
-    def item_extract(self, i_index: cat_variant) -> Product:
+    def item_extract(self, i_index: CATVariant) -> Product:
         """
         .. note::
             :class: toggle
@@ -326,12 +326,12 @@ class Group(AnyObject):
                 |             Dim ThisProduct As Group
                 |             Set ThisProduct = NewGroup.ItemExtract(9)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Product
         """
         return Product(self.group.ItemExtract(i_index))
 
-    def item_invert(self, i_index: cat_variant) -> Product:
+    def item_invert(self, i_index: CATVariant) -> Product:
         """
         .. note::
             :class: toggle
@@ -361,12 +361,12 @@ class Group(AnyObject):
                 |             Dim ThisProduct As Group
                 |             Set ThisProduct = NewGroup.ItemInvert(9)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Product
         """
         return Product(self.group.ItemInvert(i_index))
 
-    def remove_explicit(self, i_index: cat_variant) -> None:
+    def remove_explicit(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -391,7 +391,7 @@ class Group(AnyObject):
                 | 
                 |             NewGroup.RemoveExplicit 10
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.group.RemoveExplicit(i_index)

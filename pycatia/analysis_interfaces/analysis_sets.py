@@ -10,7 +10,7 @@
 """
 from pycatia.analysis_interfaces.analysis_set import AnalysisSet
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class AnalysisSets(Collection):
@@ -126,7 +126,7 @@ class AnalysisSets(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def item(self, i_index: cat_variant, i_search_type: int) -> AnalysisSet:
+    def item(self, i_index: CATVariant, i_search_type: int) -> AnalysisSet:
         """
         .. note::
             :class: toggle
@@ -168,7 +168,7 @@ class AnalysisSets(Collection):
                 |          Dim ThatAnalysisSet As AnalysisSet
                 |          Set ThatAnalysisSet = analysisCase.AnalysisSets.Item("MySet")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :param int i_search_type: enum cat_analysis_set_search_type
         :rtype: AnalysisSet
         """
@@ -205,7 +205,7 @@ class AnalysisSets(Collection):
         """
         return AnalysisSet(self.analysis_sets.ItemByType(i_type))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -227,7 +227,7 @@ class AnalysisSets(Collection):
                 | 
                 |         AnyObject.Name property.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.analysis_sets.Remove(i_index)

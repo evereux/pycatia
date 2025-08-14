@@ -10,7 +10,7 @@
 """
 from pycatia.cat_rsc_interfaces.rendering_light import RenderingLight
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class RenderingLights(Collection):
@@ -49,7 +49,7 @@ class RenderingLights(Collection):
         """
         return RenderingLight(self.rendering_lights.Add())
 
-    def item(self, i_index: cat_variant) -> RenderingLight:
+    def item(self, i_index: CATVariant) -> RenderingLight:
         """
         .. note::
             :class: toggle
@@ -77,12 +77,12 @@ class RenderingLights(Collection):
                 |      Dim MyLight As RenderingLight
                 |      Set MyLight = RenderingLights.Item(6)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: RenderingLight
         """
         return RenderingLight(self.rendering_lights.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -92,7 +92,7 @@ class RenderingLights(Collection):
                 | 
                 |     Removes a light from the lights collection.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.rendering_lights.Remove(i_index)

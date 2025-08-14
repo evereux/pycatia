@@ -11,7 +11,7 @@
 
 from pycatia.drafting_2dL_interfaces.layout_2d_sheet import Layout2DSheet
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Layout2DSheets(Collection):
@@ -132,7 +132,7 @@ class Layout2DSheets(Collection):
         """
         return Layout2DSheet(self.layout_2d_sheets.AddDetail(i_layout_sheet_name))
 
-    def item(self, i_index: cat_variant) -> Layout2DSheet:
+    def item(self, i_index: CATVariant) -> Layout2DSheet:
         """
         .. note::
             :class: toggle
@@ -170,12 +170,12 @@ class Layout2DSheets(Collection):
                 |          Dim ThatLayoutSheet As Layout2DSheet
                 |          Set ThatLayoutSheet = ThisLayoutRoot.Sheets.Item("MySheet")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Layout2DSheet
         """
         return Layout2DSheet(self.layout_2d_sheets.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -205,10 +205,9 @@ class Layout2DSheets(Collection):
                 | 
                 |          Dim ThisLayoutRoot As Layout2DRoot
                 |          Set ThisLayoutRoot = CATIA.ActiveDocument.Part.GetItem("CATlayoutRoot")
-                |         
-ThisLayoutRoot.Layout2DSheets.Remove("SheetToBeRemoved")
+                |          ThisLayoutRoot.Layout2DSheets.Remove("SheetToBeRemoved")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.layout_2d_sheets.Remove(i_index)

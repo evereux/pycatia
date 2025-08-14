@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.sketcher_interfaces.geometric_element import GeometricElement
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class GeometricElements(Collection):
@@ -45,7 +45,7 @@ class GeometricElements(Collection):
         super().__init__(com_object, child_object=GeometricElement)
         self.geometric_elements = com_object
 
-    def item(self, i_index: cat_variant) -> GeometricElement:
+    def item(self, i_index: CATVariant) -> GeometricElement:
         """
         .. note::
             :class: toggle
@@ -75,7 +75,7 @@ class GeometricElements(Collection):
                 | 
                 |          Set lastCst = cstList.Item(cstList.Count)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: GeometricElement
         """
         return GeometricElement(self.geometric_elements.Item(i_index))
