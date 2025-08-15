@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.1
+
+* fixed DrawingDimValue.get_bault_text() and DrawingDimValue.get_ps_text().
+
 ## 0.9.0
 
 Please note the change to VisPropertySet.get_show() will break existing scripts where this is used.
