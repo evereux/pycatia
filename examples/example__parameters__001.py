@@ -28,8 +28,8 @@ from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 # from pycatia.knowledge_interfaces import BoolParam
 
-caa = catia()
-documents = caa.documents
+application = catia()
+documents = application.documents
 part_document: PartDocument = documents.open(Path(os.getcwd(), r"tests/cat_files/part_measurable.CATPart"))
 part = part_document.part
 bodies = part.bodies

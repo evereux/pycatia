@@ -34,9 +34,9 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import (
 )
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
-caa = catia()
+application = catia()
 # if the active document is a CATPart this will return a PartDocument
-part_document: PartDocument = caa.active_document
+part_document: PartDocument = application.active_document
 part = part_document.part
 
 hbs = part.hybrid_bodies

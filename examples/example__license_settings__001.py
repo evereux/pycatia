@@ -27,8 +27,8 @@ from pycatia.system_interfaces.license_setting_att import LicenseSettingAtt
 
 cat_lic = "AL3.prd"
 
-caa = catia()
-settings_controller = SettingControllers(caa)
+application = catia()
+settings_controller = SettingControllers(application)
 setting_controller = settings_controller.item("CATSysLicenseSettingCtrl")
 license_settings = LicenseSettingAtt(setting_controller)
 

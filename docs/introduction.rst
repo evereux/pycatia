@@ -21,8 +21,8 @@ You will almost always want to import the `catia`
     from pycatia import catia
     from pycatia.mec_mod_interfaces.part_document import PartDocument
     # initialise the catia automation appliction. CATIA V5 should already be running.
-    caa = catia()
-    documents = caa.documents
+    application = catia()
+    documents = application.documents
 
 documents is an instance of the :ref:`Documents<Documents>`
 class.

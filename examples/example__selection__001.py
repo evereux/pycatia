@@ -39,6 +39,8 @@ from pycatia.product_structure_interfaces.product_document import ProductDocumen
 inertia_cmd_name = "Measure Inertia"
 # inertia_cmd_name = "Trägheit messen"
 inertia_window_name = "Measure Inertia"
+
+
 # inertia_window_name = "Trägheit messen"
 
 
@@ -54,8 +56,8 @@ def close_inertia_window():
     win32gui.PostMessage(handle, win32con.WM_CLOSE, 0, 0)
 
 
-caa = catia()
-product_document: ProductDocument = caa.active_document
+application = catia()
+product_document: ProductDocument = application.active_document
 product = product_document.product
 
 selection = product_document.selection
@@ -66,7 +68,7 @@ while c is True:
     input("Selection product to measure.\nPress <ENTER> when selection made.")
     selection = product_document.selection
 
-    caa.start_command(inertia_cmd_name)
+    application.start_command(inertia_cmd_name)
     parameters = product.parameters
     print(f"BBOx = {parameters.item('BBOx').value_as_string()}.")
     print(f"BBOy = {parameters.item('BBOy').value_as_string()}.")

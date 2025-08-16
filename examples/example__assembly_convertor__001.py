@@ -38,8 +38,8 @@ from pycatia.product_structure_interfaces.product_document import ProductDocumen
 # file_type can be "TXT", "HTML" or "XLS".
 file_type = "XLS"
 
-caa = catia()
-product_document: ProductDocument = caa.active_document
+application = catia()
+product_document: ProductDocument = application.active_document
 product = product_document.product
 
 bom = product.get_item("BillOfMaterial")

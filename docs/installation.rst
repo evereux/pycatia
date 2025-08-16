@@ -129,11 +129,11 @@ Confirm Successful Install
 .. code-block:: python
 
     from pycatia import catia
-    caa = catia()
-    help(caa)
+    application = catia()
+    help(application)
     # q to quit help
     # open a new .CATPart
-    documents = caa.documents
+    documents = application.documents
     documents.add('Part')
 
 * To exit the python interpreter.

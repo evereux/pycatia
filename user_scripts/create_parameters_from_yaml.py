@@ -79,8 +79,7 @@ from pycatia.product_structure_interfaces.product_document import ProductDocumen
 
 f = Path(os.getcwd(), 'user_scripts', 'create_parameters_from_yaml_support', 'parameters.yaml')
 
-caa = catia()
-application = caa.application
+application = catia()
 documents = application.documents
 part_document: PartDocument = documents.add('Part')
 active_document = application.active_document

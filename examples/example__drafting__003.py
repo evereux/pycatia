@@ -24,8 +24,8 @@ from pycatia.enumeration.enumeration_types import cat_dim_type
 from pycatia.enumeration.enumeration_types import cat_dim_line_rep
 from pycatia.drafting_interfaces.drawing_document import DrawingDocument
 
-caa = catia()
-drawing_document: DrawingDocument = caa.active_document
+application = catia()
+drawing_document: DrawingDocument = application.active_document
 sheets = drawing_document.sheets
 sheet = sheets.active_sheet
 views = sheet.views

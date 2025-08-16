@@ -24,16 +24,15 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 from pycatia import catia
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
-caa = catia()
+application = catia()
 # if the active document is a CATPart this will return a PartDocument
-part_document: PartDocument = caa.active_document
+part_document: PartDocument = application.active_document
 part = part_document.part
 part.in_work_object = part.main_body
 
 mirror_reference = part.create_reference_from_object(part.origin_elements.plane_zx)
 shape_factory = part.shape_factory
 mirror_symmetry = shape_factory.add_new_symmetry_2(mirror_reference)
-mirror_symmetry.hybrid_shape
 
 part.in_work_object = part.main_body
 part.update_object(part.main_body)

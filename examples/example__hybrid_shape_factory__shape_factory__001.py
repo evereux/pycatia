@@ -23,14 +23,10 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 
 from pycatia import catia
 from pycatia.mec_mod_interfaces.part_document import PartDocument
-from pycatia.product_structure_interfaces.product_document import ProductDocument
 
-caa = catia()
-documents = caa.documents
+application = catia()
+documents = application.documents
 part_document: PartDocument = documents.add("Part")
-
-product_document = ProductDocument(caa.active_document.com_object)
-product = product_document.product
 
 part = part_document.part
 

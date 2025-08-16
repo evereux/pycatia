@@ -5,10 +5,10 @@
     The catia base object is from which most other functionality derives. See examples for more information.
 
     >>> from pycatia import catia
-    >>> caa = catia()
-    >>> documents = caa.documents
+    >>> application = catia()
+    >>> documents = application.documents
     >>> # documents represents the collection of currently open documents.
-    >>> document = caa.active_document
+    >>> document = application.active_document
     >>> # document is the currently active document.
     >>>
     >>> # open a new CATPart document

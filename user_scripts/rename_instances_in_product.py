@@ -78,7 +78,7 @@ def get_selected_item(_document: Document):
     selection = _document.selection
     selection.clear()
 
-    message_box(caa)
+    message_box(application)
 
     message = 'Please select a Product.'
     logger.info(message)
@@ -127,8 +127,8 @@ def rename_products(
 if __name__ == '__main__':
     logger = create_logger()
 
-    caa = catia()
-    document = caa.active_document
+    application = catia()
+    document = application.active_document
 
     selected_item = get_selected_item(document)
 

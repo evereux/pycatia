@@ -31,9 +31,9 @@ from pycatia.mec_mod_interfaces.part_document import PartDocument
 # path to file to open.
 file_name = Path(Path(os.getcwd()).parent, r"tests\cat_files\part_measurable.CATPart")
 
-caa = catia()
+application = catia()
 # open document
-documents = caa.documents
+documents = application.documents
 part_document: PartDocument = documents.open(file_name)
 
 assert isinstance(part_document, PartDocument)

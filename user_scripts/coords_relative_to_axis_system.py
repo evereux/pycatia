@@ -30,8 +30,8 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 from pycatia import catia
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
-caa = catia()
-part_document: PartDocument = caa.active_document
+application = catia()
+part_document: PartDocument = application.active_document
 part = part_document.part
 hybrid_bodies = part.hybrid_bodies
 spa_workbench = part_document.spa_workbench()

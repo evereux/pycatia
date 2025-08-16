@@ -1159,6 +1159,7 @@ class Application(AnyObject):
             This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
 
             >>> from pycatia import catia
+            >>> application = catia()
             >>> buttons = 2 + 32
             >>> result = application.message_box('Hello World!?', buttons=buttons, title='Asking a question.')
             >>> # result = 3 if the user presses Abort.

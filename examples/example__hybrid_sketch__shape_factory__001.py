@@ -26,8 +26,8 @@ from pycatia.enumeration.enumeration_types import cat_constraint_type
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.sketcher_interfaces.geometry_2D import Geometry2D
 
-caa = catia()
-documents = caa.documents
+application = catia()
+documents = application.documents
 part_document: PartDocument = documents.add("Part")
 part = part_document.part
 
@@ -92,9 +92,11 @@ constraints = sketch.constraints
 
 # create the length constraint.
 # left vertical line.
-constraint_length_1 = constraints.add_mono_elt_cst(cat_constraint_type.index("catCstTypeLength"), part.create_reference_from_object(line_1))
+constraint_length_1 = constraints.add_mono_elt_cst(cat_constraint_type.index("catCstTypeLength"),
+                                                   part.create_reference_from_object(line_1))
 # horizontal line.
-constraint_length_4 = constraints.add_mono_elt_cst(cat_constraint_type.index("catCstTypeLength"), part.create_reference_from_object(line_4))
+constraint_length_4 = constraints.add_mono_elt_cst(cat_constraint_type.index("catCstTypeLength"),
+                                                   part.create_reference_from_object(line_4))
 
 # make the constraint reference.
 # constraint_length_1.mode = cat_constraint_mode.index("catCstModeDrivenDimension")
@@ -105,21 +107,25 @@ constraint_length_4 = constraints.add_mono_elt_cst(cat_constraint_type.index("ca
 
 # constrain the bottom line to h_direction
 constraint_horizontal = constraints.add_bi_elt_cst(
-    cat_constraint_type.index("catCstTypeOn"), part.create_reference_from_object(line_4), part.create_reference_from_object(h_direction)
+    cat_constraint_type.index("catCstTypeOn"), part.create_reference_from_object(line_4),
+    part.create_reference_from_object(h_direction)
 )
 
 # constrain left vertical as angle to bottom line.
 constraint_angle = constraints.add_bi_elt_cst(
-    cat_constraint_type.index("catCstTypeAngle"), part.create_reference_from_object(line_1), part.create_reference_from_object(line_4)
+    cat_constraint_type.index("catCstTypeAngle"), part.create_reference_from_object(line_1),
+    part.create_reference_from_object(line_4)
 )
 
 # make the two horizontal lines parallel.
 constraint_p_h = constraints.add_bi_elt_cst(
-    cat_constraint_type.index("catCstTypeParallelism"), part.create_reference_from_object(line_1), part.create_reference_from_object(line_3)
+    cat_constraint_type.index("catCstTypeParallelism"), part.create_reference_from_object(line_1),
+    part.create_reference_from_object(line_3)
 )
 # make the two vertical lines parallel.
 constraint_p_v = constraints.add_bi_elt_cst(
-    cat_constraint_type.index("catCstTypeParallelism"), part.create_reference_from_object(line_2), part.create_reference_from_object(line_4)
+    cat_constraint_type.index("catCstTypeParallelism"), part.create_reference_from_object(line_2),
+    part.create_reference_from_object(line_4)
 )
 
 # create projection of 3D point used and constrain to 2d point.
@@ -128,7 +134,8 @@ projected_point = Geometry2D(geometric_elements1.item(1).com_object)
 projected_point.construction = True
 point_ref = part.create_reference_from_object(projected_point)
 
-constraint_mid = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), part.create_reference_from_object(point_1), point_ref)
+constraint_mid = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"),
+                                            part.create_reference_from_object(point_1), point_ref)
 
 sketch.close_edition()
 

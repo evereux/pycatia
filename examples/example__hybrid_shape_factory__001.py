@@ -28,9 +28,9 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 from pycatia import catia
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
-caa = catia()
+application = catia()
 # if the active document is a CATPart this will return a PartDocument
-part_document: PartDocument = caa.active_document
+part_document: PartDocument = application.active_document
 part = part_document.part
 bodies = part.bodies
 

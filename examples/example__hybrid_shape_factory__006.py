@@ -27,9 +27,9 @@ import pythoncom
 
 from pycatia.scripts.vba import vba_nothing
 
-caa = catia()
+application = catia()
 # if the active document is a CATPart this will return a PartDocument
-part_document: PartDocument = caa.active_document
+part_document: PartDocument = application.active_document
 part = part_document.part
 
 hybrid_bodies = part.hybrid_bodies

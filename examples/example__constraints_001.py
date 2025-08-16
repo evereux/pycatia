@@ -26,9 +26,9 @@ from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_constraint_type
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
-caa = catia()
+application = catia()
 # if the active document is a CATProduct this will return a ProductDocument
-product_document: ProductDocument = caa.active_document
+product_document: ProductDocument = application.active_document
 product = product_document.product
 
 products = product.products
