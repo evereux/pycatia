@@ -9,11 +9,11 @@ from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.document import document_types
+from pycatia.types.document import document_types, AnyDocument
 from pycatia.types.general import CATVariant, list_str
 
 
-def get_document_object(doc_com):
+def get_document_object(doc_com) -> AnyDocument:
     """
 
     """
@@ -65,7 +65,7 @@ class Documents(Collection):
         self.documents = com_object
         self.child_object = Document
 
-    def add(self, document_type: str) -> Document:
+    def add(self, document_type: str) -> AnyDocument:
         """
         .. note::
             :class: toggle
@@ -234,7 +234,7 @@ class Documents(Collection):
         self.logger.warning('The Documents.num_open method is unreliable and will be deprecated in future versions.')
         return self.documents.Count
 
-    def open(self, file_name: Path) -> Document:
+    def open(self, file_name: Path) -> AnyDocument:
         """
         .. note::
             :class: toggle

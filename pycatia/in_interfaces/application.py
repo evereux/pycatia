@@ -21,7 +21,7 @@ from pycatia.in_interfaces.windows import Windows
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
 from pycatia.in_interfaces.setting_controllers import SettingControllers
-from pycatia.types.document import document_types
+from pycatia.types.document import document_types, AnyDocument
 
 
 class Application(AnyObject):
@@ -71,7 +71,7 @@ class Application(AnyObject):
         self.com_object = com_object
 
     @property
-    def active_document(self) -> Document:
+    def active_document(self) -> AnyDocument:
         """
         .. note::
             :class: toggle
@@ -90,7 +90,7 @@ class Application(AnyObject):
             |          Dim ActiveDoc As Document
             |          Set ActiveDoc = CATIA.ActiveDocument
 
-        :rtype: Document
+        :rtype: AnyDocument
         """
         try:
             active_doc_com = self.com_object.ActiveDocument
@@ -1160,7 +1160,7 @@ class Application(AnyObject):
 
             >>> from pycatia import catia
             >>> buttons = 2 + 32
-            >>> result = catia.message_box('Hello World!?', buttons=buttons, title='Asking a question.')
+            >>> result = application.message_box('Hello World!?', buttons=buttons, title='Asking a question.')
             >>> # result = 3 if the user presses Abort.
 
 
