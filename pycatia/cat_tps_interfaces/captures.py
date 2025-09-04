@@ -14,7 +14,7 @@ from typing import Iterator
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.cat_tps_interfaces.capture import Capture
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Captures(Collection):
@@ -39,7 +39,7 @@ class Captures(Collection):
         super().__init__(com_object)
         self.captures = com_object
 
-    def item(self, i_index: cat_variant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -49,7 +49,7 @@ class Captures(Collection):
                 | 
                 |     Retrieve a Capture.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: AnyObject
         """
         return AnyObject(self.captures.Item(i_index))

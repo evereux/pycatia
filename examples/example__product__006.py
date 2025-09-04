@@ -26,8 +26,8 @@ from pycatia import catia
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 from pycatia.space_analyses_interfaces.inertia import Inertia
 
-caa = catia()
-product_document: ProductDocument = caa.active_document
+application = catia()
+product_document: ProductDocument = application.active_document
 product = product_document.product
 
 inertia_com = product.get_technological_object("Inertia")

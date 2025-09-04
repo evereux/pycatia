@@ -17,7 +17,7 @@ from pycatia.in_interfaces.reference import Reference
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.publication import Publication
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 if TYPE_CHECKING:
     from pycatia.analysis_interfaces.basic_components import BasicComponents
@@ -347,7 +347,7 @@ class BasicComponent(AnyObject):
         """
         return self.basic_component.GetLinesNumber(i_label)
 
-    def get_value(self, i_label: str, i_line_index: int, i_column_index: int, i_layer_index: int) -> cat_variant:
+    def get_value(self, i_label: str, i_line_index: int, i_column_index: int, i_layer_index: int) -> CATVariant:
         """
         .. note::
             :class: toggle
@@ -377,7 +377,7 @@ class BasicComponent(AnyObject):
         :param int i_line_index:
         :param int i_column_index:
         :param int i_layer_index:
-        :rtype: cat_variant
+        :rtype: CATVariant
         """
         return self.basic_component.GetValue(i_label, i_line_index, i_column_index, i_layer_index)
 
@@ -477,7 +477,7 @@ class BasicComponent(AnyObject):
             i_line_index: int,
             i_column_index: int,
             i_layer_index: int,
-            i_value: cat_variant) -> None:
+            i_value: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -508,7 +508,7 @@ class BasicComponent(AnyObject):
         :param int i_line_index:
         :param int i_column_index:
         :param int i_layer_index:
-        :param cat_variant i_value:
+        :param CATVariant i_value:
         :rtype: None
         """
         return self.basic_component.SetValue(

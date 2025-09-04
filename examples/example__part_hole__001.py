@@ -27,8 +27,7 @@ from pycatia import catia
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.part_interfaces.hole import Hole
 
-caa = catia()
-application = caa.application
+application = catia()
 part_document: PartDocument = application.active_document
 part = part_document.part
 selection = part_document.selection

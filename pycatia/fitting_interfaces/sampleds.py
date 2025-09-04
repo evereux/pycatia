@@ -10,7 +10,7 @@
 """
 from pycatia.fitting_interfaces.sampled import Sampled
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Sampleds(Collection):
@@ -83,7 +83,7 @@ class Sampleds(Collection):
         """
         return Sampled(self.sampleds.AddFromSel())
 
-    def item(self, i_index: cat_variant) -> Sampled:
+    def item(self, i_index: CATVariant) -> Sampled:
         """
         .. note::
             :class: toggle
@@ -111,12 +111,12 @@ class Sampleds(Collection):
                 |          Dim newSampled as Sampled
                 |          Set newSampled = Sampleds.Item (2)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Sampled
         """
         return Sampled(self.sampleds.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -140,7 +140,7 @@ class Sampleds(Collection):
                 | 
                 |              Sampleds.Remove (3)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.sampleds.Remove(i_index)

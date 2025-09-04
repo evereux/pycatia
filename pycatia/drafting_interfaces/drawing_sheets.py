@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.drafting_interfaces.drawing_sheet import DrawingSheet
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class DrawingSheets(Collection):
@@ -140,7 +140,7 @@ class DrawingSheets(Collection):
         """
         return DrawingSheet(self.drawing_sheets.AddDetail(i_drawing_sheet_name))
 
-    def item(self, i_index: cat_variant) -> DrawingSheet:
+    def item(self, i_index: CATVariant) -> DrawingSheet:
         """
         .. note::
             :class: toggle
@@ -178,12 +178,12 @@ class DrawingSheets(Collection):
                 |          Dim ThatDrawingSheet As DrawingSheet
                 |          Set ThatDrawingSheet = CATIA.ActiveDocument.Sheets.Item("MySheet")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: DrawingSheet
         """
         return DrawingSheet(self.drawing_sheets.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -215,7 +215,7 @@ class DrawingSheets(Collection):
                 |         CATIA.ActiveDocument.DrawingSheets.Remove(2)
                 |         CATIA.ActiveDocument.DrawingSheets.Remove("SheetToBeRemoved")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :return: None
         """
         return self.drawing_sheets.Remove(i_index)

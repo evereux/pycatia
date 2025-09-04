@@ -28,19 +28,18 @@ from pycatia.product_structure_interfaces.product_document import ProductDocumen
 
 # from pycatia.knowledge_interfaces import BoolParam
 
-caa = catia()
-part_document: PartDocument = caa.active_document
+application = catia()
+part_document: PartDocument = application.active_document
 part = part_document.part
-product_document: ProductDocument = ProductDocument(caa.active_document.com_object)
-product = product_document.product
+
+product = part_document.product
 
 # gets the parameters collection
 parameters = part.parameters
 
 # get parameter named Thickness
-thickness = parameters.get_item_by_name(f"{product.part_number}\\Thickness")
-# initialise the length parameter
-length = Length(thickness.com_object)
-
-length.value = 80
-part.update()
+thickness = parameters.item("Thickness")
+# check it's the expected parameter type
+if type(thickness) is Length:
+    thickness.value = 80
+    part.update()

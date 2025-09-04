@@ -12,7 +12,7 @@ from pycatia.cat_str_functional_interfaces.sfm_connection_parameters import SFMC
 from pycatia.cat_str_functional_interfaces.sfm_slot import SFMSlot
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class SFMSlots(Collection):
@@ -111,7 +111,7 @@ class SFMSlots(Collection):
             )
         )
 
-    def item(self, i_index: cat_variant) -> SFMSlot:
+    def item(self, i_index: CATVariant) -> SFMSlot:
         """
         .. note::
             :class: toggle
@@ -143,7 +143,7 @@ class SFMSlots(Collection):
                 |              Set SlotObj = SlotsonPlate.Item(i)
                 |              Next
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: SFMSlot
         """
         return SFMSlot(self.sfm_slots.Item(i_index))

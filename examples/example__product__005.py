@@ -27,8 +27,8 @@ from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_work_mode_type
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
-caa = catia()
-documents = caa.documents
+application = catia()
+documents = application.documents
 product_document: ProductDocument = documents.open(Path(os.getcwd(), r"tests/cat_files/product_top.CATProduct"))
 product = product_document.product
 # Change the work mode to Design Mode.

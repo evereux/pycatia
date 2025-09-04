@@ -27,13 +27,13 @@ from pycatia import catia
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.scripts.csv_tools import create_points
 
-caa = catia()
+application = catia()
 # # disable display refreshing to try tp speed up point generation.
 # catia.refresh_display = False
 # # hide catia window
 # catia.visible = False
 
-documents = caa.documents
+documents = application.documents
 # create a new part.
 part_document: PartDocument = documents.add("Part")
 part = part_document.part

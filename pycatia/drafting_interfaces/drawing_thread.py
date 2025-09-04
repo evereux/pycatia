@@ -10,7 +10,7 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class DrawingThread(AnyObject):

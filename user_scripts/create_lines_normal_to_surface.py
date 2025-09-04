@@ -48,8 +48,8 @@ LINE_LENGTH = 20
 
 logger = create_logger()
 
-caa = catia()
-part_document: PartDocument = caa.active_document
+application = catia()
+part_document: PartDocument = application.active_document
 part = part_document.part
 hybrid_bodies = part.hybrid_bodies
 hsf = part.hybrid_shape_factory
@@ -59,7 +59,7 @@ gs_lines.name = ("Lines")
 selection = part_document.selection
 selection.clear()
 
-mb = caa.message_box(
+mb = application.message_box(
     'Please select Surface then the Geometrical Set containing the Points.',
     buttons=1,
     title='Make your selection',

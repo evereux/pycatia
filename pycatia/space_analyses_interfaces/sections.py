@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.space_analyses_interfaces.section import Section
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Sections(Collection):
@@ -91,7 +91,7 @@ class Sections(Collection):
         """
         return Section(self.sections.AddFromSel())
 
-    def item(self, i_index: cat_variant) -> Section:
+    def item(self, i_index: CATVariant) -> Section:
         """
         .. note::
             :class: toggle
@@ -123,12 +123,12 @@ class Sections(Collection):
                 |             Dim ThatSection As Section
                 |             Set ThatSection = TheSections.Item("Section Of MyProduct")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Section
         """
         return Section(self.sections.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -157,7 +157,7 @@ class Sections(Collection):
                 |             TheSections.Remove(10)
                 |             TheSections.Remove("Section Of MyProduct")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.sections.Remove(i_index)

@@ -27,8 +27,8 @@ from pycatia import catia
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
-caa = catia()
-documents = caa.documents
+application = catia()
+documents = application.documents
 part_document: PartDocument = documents.add("Part")
 part = part_document.part
 

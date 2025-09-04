@@ -28,8 +28,8 @@ from pycatia import catia
 from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 
-caa = catia()
-documents = caa.documents
+application = catia()
+documents = application.documents
 # this should be the path to your file.
 # if the active document is a CATPart this will return a PartDocument
 part_document: PartDocument = documents.open(Path(os.getcwd(), r"tests\cat_files\part_measurable.CATPart"))

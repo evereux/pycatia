@@ -10,7 +10,7 @@
 """
 from pycatia.abq_automation_interfaces.abq_solution_step import ABQSolutionStep
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ABQSolutionSteps(Collection):
@@ -37,7 +37,7 @@ class ABQSolutionSteps(Collection):
         super().__init__(com_object, child_object=ABQSolutionStep)
         self.abq_solution_steps = com_object
 
-    def item(self, i_index: cat_variant) -> ABQSolutionStep:
+    def item(self, i_index: CATVariant) -> ABQSolutionStep:
         """
         .. note::
             :class: toggle
@@ -62,7 +62,7 @@ class ABQSolutionSteps(Collection):
                 |     Returns:
                 |         The specified ABQSolutionStep.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ABQSolutionStep
         """
         return ABQSolutionStep(self.abq_solution_steps.Item(i_index))

@@ -10,7 +10,7 @@
 """
 from pycatia.dnb_state_interfaces.dnb_3d_state import DNB3DState
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class DNB3DStates(Collection):
@@ -61,7 +61,7 @@ class DNB3DStates(Collection):
 
         return self.dnb3_d_states.StatesCount
 
-    def item(self, i_index: cat_variant) -> DNB3DState:
+    def item(self, i_index: CATVariant) -> DNB3DState:
         """
         .. note::
             :class: toggle
@@ -88,7 +88,7 @@ class DNB3DStates(Collection):
                 |              Dim my3DState As DNB3DState
                 |              Set my3DState = list3DStates.Item(1)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: DNB3DState
         """
         return DNB3DState(self.dnb3_d_states.Item(i_index))

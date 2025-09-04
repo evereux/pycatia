@@ -27,8 +27,8 @@ from datetime import datetime
 from pycatia import catia
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
-caa = catia()
-product_document: ProductDocument = caa.active_document
+application = catia()
+product_document: ProductDocument = application.active_document
 product = product_document.product
 products = product.products
 

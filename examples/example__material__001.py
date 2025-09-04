@@ -32,12 +32,13 @@ from pycatia.cat_mat_interfaces.material_manager import MaterialManager
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.product_structure_interfaces.product import Product
 
-caa = catia()
+application = catia()
 
 ##########################################################
 # MATERIAL MANAGER ON MATERIAL CATALOGS
 ##########################################################
-material_document: MaterialDocument = caa.documents.open(Path(os.getcwd(), r"tests/cat_files/Catalog.CATMaterial"))
+material_document: MaterialDocument = application.documents.open(
+    Path(os.getcwd(), r"tests/cat_files/Catalog.CATMaterial"))
 material_families = material_document.families
 materials = material_families.item(1).materials
 
@@ -60,8 +61,8 @@ print(f"Found {materials.count} materials in the first family: " f"{', '.join([n
 ##########################################################
 # MATERIAL MANAGER ON PARTS
 ##########################################################
-caa.documents.add("Part")
-part_document = caa.active_document
+application.documents.add("Part")
+part_document = application.active_document
 part = Part(part_document.part.com_object)  # type: ignore
 main_body = part.main_body
 hybrid_bodies = part.hybrid_bodies
@@ -101,8 +102,8 @@ print(
 ##########################################################
 # MATERIAL MANAGER ON PRODUCTS
 ##########################################################
-caa.documents.add("Product")
-product_document = caa.active_document
+application.documents.add("Product")
+product_document = application.active_document
 product = product_document.product  # type: ignore
 product = Product(product.com_object)
 material_item = product.get_item("CATMatManagerVBExt")

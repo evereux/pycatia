@@ -11,7 +11,7 @@
 from pycatia.abq_automation_interfaces.abq_solution_step_images import ABQSolutionStepImages
 from pycatia.analysis_interfaces.analysis_image import AnalysisImage
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ABQSolutionStep(AnyObject):
@@ -67,8 +67,8 @@ class ABQSolutionStep(AnyObject):
     def create_image(
             self,
             i_image_name: str,
-            i_hide_existing_images: cat_variant,
-            i_incr_or_mode_number: cat_variant) -> AnalysisImage:
+            i_hide_existing_images: CATVariant,
+            i_incr_or_mode_number: CATVariant) -> AnalysisImage:
         """
         .. note::
             :class: toggle
@@ -108,8 +108,8 @@ class ABQSolutionStep(AnyObject):
                 |          Set ThisAnalysisImage = MySolutionStep.CreateImage("Mesh_Deformed", True, 1)
 
         :param str i_image_name:
-        :param cat_variant i_hide_existing_images:
-        :param cat_variant i_incr_or_mode_number:
+        :param CATVariant i_hide_existing_images:
+        :param CATVariant i_incr_or_mode_number:
         :rtype: AnalysisImage
         """
         return AnalysisImage(
@@ -122,7 +122,7 @@ class ABQSolutionStep(AnyObject):
 
     def set_increment_or_mode_number(
             self,
-            i_incr_or_mode_number: cat_variant,
+            i_incr_or_mode_number: CATVariant,
             i_image: AnalysisImage) -> None:
         """
         .. note::
@@ -141,7 +141,7 @@ class ABQSolutionStep(AnyObject):
                 |             The increment or mode (for frequency step) number to
                 |             select
 
-        :param cat_variant i_incr_or_mode_number:
+        :param CATVariant i_incr_or_mode_number:
         :param AnalysisImage i_image:
         :rtype: None
         """

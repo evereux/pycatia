@@ -25,9 +25,9 @@ from pycatia.enumeration.enumeration_types import swk_posture_spec
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 from pycatia.dnb_human_modeling_interfaces.swk_hmi_workbench import SWKHmiWorkbench
 
-caa = catia()
+application = catia()
 # if the active document is a CATProduct this will return a ProductDocument
-product_document: ProductDocument = caa.active_document
+product_document: ProductDocument = application.active_document
 product = product_document.product
 
 human_work_bench = SWKHmiWorkbench(product.get_technological_object("HumanWorkbench"))

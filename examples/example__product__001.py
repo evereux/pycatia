@@ -128,14 +128,14 @@ def get_window_text(window_text_translations: dict, lang):
 
 window_text = get_window_text(text_translations, lang)
 
-caa = catia()
-product_document: ProductDocument = caa.active_document
+application = catia()
+product_document: ProductDocument = application.active_document
 product = product_document.product
 
 selection = product_document.selection
 selection.clear()
 selection.add(product)
-caa.start_command(window_text['graph_tree_cmd'])
+application.start_command(window_text['graph_tree_cmd'])
 # that's it for pycatia.
 
 time.sleep(sleep)

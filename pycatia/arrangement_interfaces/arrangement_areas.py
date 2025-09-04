@@ -11,7 +11,7 @@
 from pycatia.arrangement_interfaces.arrangement_area import ArrangementArea
 from pycatia.in_interfaces.move import Move
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ArrangementAreas(Collection):
@@ -73,7 +73,7 @@ class ArrangementAreas(Collection):
         """
         return ArrangementArea(self.arrangement_areas.AddArea(i_rel_axis.com_object, i_position, i_height))
 
-    def item(self, i_index: cat_variant) -> ArrangementArea:
+    def item(self, i_index: CATVariant) -> ArrangementArea:
         """
         .. note::
             :class: toggle
@@ -107,12 +107,12 @@ class ArrangementAreas(Collection):
                 |              Dim objArea1 As ArrangementArea
                 |              Set objArea1= Areas.Item(1)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ArrangementArea
         """
         return ArrangementArea(self.arrangement_areas.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -144,7 +144,7 @@ class ArrangementAreas(Collection):
                 | 
                 |              Areas.Remove(1)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.arrangement_areas.Remove(i_index)

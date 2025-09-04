@@ -10,7 +10,7 @@
 """
 from pycatia.cat_str_functional_interfaces.sfm_weld import SFMWeld
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class SFMWelds(Collection):
@@ -37,7 +37,7 @@ class SFMWelds(Collection):
         super().__init__(com_object, child_object=SFMWeld)
         self.sfm_welds = com_object
 
-    def item(self, i_index: cat_variant) -> SFMWeld:
+    def item(self, i_index: CATVariant) -> SFMWeld:
         """
         .. note::
             :class: toggle
@@ -68,7 +68,7 @@ class SFMWelds(Collection):
                 |              Set EachWeld = Welds.Item(j)
                 |              Next
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: SFMWeld
         """
         return SFMWeld(self.sfm_welds.Item(i_index))

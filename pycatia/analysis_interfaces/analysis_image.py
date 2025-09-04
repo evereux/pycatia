@@ -16,7 +16,7 @@ from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 if TYPE_CHECKING:
     from pycatia.analysis_interfaces.analysis_images import AnalysisImages
@@ -581,7 +581,7 @@ class AnalysisImage(AnyObject):
         """
         return self.analysis_image.ResetSelection()
 
-    def set_activation_status(self, i_activation_status: cat_variant) -> None:
+    def set_activation_status(self, i_activation_status: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -597,7 +597,7 @@ class AnalysisImage(AnyObject):
                 |         iActivationStatus
                 |             To activate or not the current image.
 
-        :param cat_variant i_activation_status:
+        :param CATVariant i_activation_status:
         :rtype: None
         """
         return self.analysis_image.SetActivationStatus(i_activation_status)
@@ -617,7 +617,7 @@ class AnalysisImage(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_current_occurrence(self, i_occurrence_number: cat_variant) -> None:
+    def set_current_occurrence(self, i_occurrence_number: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -634,7 +634,7 @@ class AnalysisImage(AnyObject):
                 |             The number to select
                 |             Legal value: 1 ≤ iOccurrenceNumber ≤ nbOccurrence
 
-        :param cat_variant i_occurrence_number:
+        :param CATVariant i_occurrence_number:
         :rtype: None
         """
         return self.analysis_image.SetCurrentOccurrence(i_occurrence_number)
@@ -654,7 +654,7 @@ class AnalysisImage(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_selection(self, i_reference: Reference, i_replace_mode: cat_variant) -> None:
+    def set_selection(self, i_reference: Reference, i_replace_mode: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -674,7 +674,7 @@ class AnalysisImage(AnyObject):
                 |             To replace or not the current selections.
 
         :param Reference i_reference:
-        :param cat_variant i_replace_mode:
+        :param CATVariant i_replace_mode:
         :rtype: None
         """
         return self.analysis_image.SetSelection(i_reference.com_object, i_replace_mode)

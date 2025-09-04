@@ -10,7 +10,7 @@
 """
 from pycatia.cat_str_functional_interfaces.sfm_split_plate import SFMSplitPlate
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class SFMSplitPlates(Collection):
@@ -38,7 +38,7 @@ class SFMSplitPlates(Collection):
         super().__init__(com_object, child_object=SFMSplitPlate)
         self.sfm_split_plates = com_object
 
-    def item(self, i_index: cat_variant) -> SFMSplitPlate:
+    def item(self, i_index: CATVariant) -> SFMSplitPlate:
         """
         .. note::
             :class: toggle
@@ -68,7 +68,7 @@ class SFMSplitPlates(Collection):
                 |              Set Split_Plate = ListSplitPlates.Item(i)
                 |              Next
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: SFMSplitPlate
         """
         return SFMSplitPlate(self.sfm_split_plates.Item(i_index))

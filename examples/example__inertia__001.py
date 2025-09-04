@@ -35,9 +35,9 @@ __author__ = '[ptm] by plm-forum.ru'
 __status__ = 'alpha'
 
 # initialise the catia automation application
-caa = catia()
+application = catia()
 # if the active document is a CATPart this will return a PartDocument
-part_document: PartDocument = caa.active_document
+part_document: PartDocument = application.active_document
 part = part_document.part
 part.update()
 

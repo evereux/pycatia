@@ -10,7 +10,7 @@
 """
 from pycatia.general_knowledge_interfaces.expert_report_object import ExpertReportObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ExpertReportObjects(Collection):
@@ -85,7 +85,7 @@ class ExpertReportObjects(Collection):
 
         return self.expert_report_objects.CountSucceed
 
-    def fail_item(self, i_index: cat_variant) -> ExpertReportObject:
+    def fail_item(self, i_index: CATVariant) -> ExpertReportObject:
         """
         .. note::
             :class: toggle
@@ -113,12 +113,12 @@ class ExpertReportObjects(Collection):
                 |     Returns:
                 |         The retrieved Report component
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ExpertReportObject
         """
         return ExpertReportObject(self.expert_report_objects.FailItem(i_index))
 
-    def item(self, i_index: cat_variant) -> ExpertReportObject:
+    def item(self, i_index: CATVariant) -> ExpertReportObject:
         """
         .. note::
             :class: toggle
@@ -146,12 +146,12 @@ class ExpertReportObjects(Collection):
                 |     Returns:
                 |         The retrieved Report component
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ExpertReportObject
         """
         return ExpertReportObject(self.expert_report_objects.Item(i_index))
 
-    def succeed_item(self, i_index: cat_variant) -> ExpertReportObject:
+    def succeed_item(self, i_index: CATVariant) -> ExpertReportObject:
         """
         .. note::
             :class: toggle
@@ -177,7 +177,7 @@ class ExpertReportObjects(Collection):
                 |     Returns:
                 |         The retrieved Report component
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ExpertReportObject
         """
         return ExpertReportObject(self.expert_report_objects.SucceedItem(i_index))

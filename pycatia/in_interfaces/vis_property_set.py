@@ -120,7 +120,7 @@ class VisPropertySet(AnyObject):
         super().__init__(com_object)
         self.vis_property_set = com_object
 
-    def get_layer(self) -> (int, int, int):
+    def get_layer(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -163,17 +163,12 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "layer =" & layer
                 |          End If
 
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] unknown
-            item[2] is the layer.
-
         :return:
-        :rtype: (int: cat_vis_property_status, int, int: value)
+        :rtype: tuple
         """
         return self.vis_property_set.GetLayer()
 
-    def get_pick(self) -> (int, int):
+    def get_pick(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -196,18 +191,12 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetPick pickstate
                 |          MsgBox "pick = " & pickstate
 
-
-
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] is the pick state.
-
-        :return:
-        :rtype: (int: cat_vis_property_status, int: value)
+        :return: enum cat_vis_property_status
+        :rtype: int
         """
         return self.vis_property_set.GetPick()
 
-    def get_real_color(self) -> (int, int, int, int):
+    def get_real_color(self) -> tuple[int, int, int, int]:
         """
         .. note::
             :class: toggle
@@ -249,19 +238,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealColor r, g, b 
                 |          MsgBox "r = " & r & " g = " & g & " b = " & b
 
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] is oRed.
-            item[2] is oGreen.
-            item[3] is oBlue.
-
-        :return:
-        :rtype: (int: cat_vis_property_status, int: r, int: g, int: b)
+        :rtype: tuple
         """
         return self.vis_property_set.GetRealColor()
 
     def get_real_inheritance(self) -> tuple:
-        # todo: this isn't working?
         """
         .. note::
             :class: toggle
@@ -317,7 +298,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetRealInheritance()
 
-    def get_real_line_type(self) -> (int, int):
+    def get_real_line_type(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -359,15 +340,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealLineType linetype
                 |          MsgBox "linetype = " & linetype
 
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] is the line type.
-
-        :rtype: (int: cat_vis_property_status, int: value)
+        :rtype: int
         """
         return self.vis_property_set.GetRealLineType()
 
-    def get_real_opacity(self) -> (int, int):
+    def get_real_opacity(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -407,15 +384,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealOpacity op 
                 |          MsgBox "opacity = " & op
 
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] is the opacity.
-
-        :rtype: (int: cat_vis_property_status, int: value)
+        :rtype: int
         """
         return self.vis_property_set.GetRealOpacity()
 
-    def get_real_width(self) -> (int, int):
+    def get_real_width(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -456,15 +429,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealWidth width
                 |          MsgBox "width = " & width
 
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] is the line width.
-
-        :rtype: (int: cat_vis_property_status, int: value)
+        :rtype: int
         """
         return self.vis_property_set.GetRealWidth()
 
-    def get_show(self) -> (int, int):
+    def get_show(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -487,15 +456,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetShow showstate
                 |          MsgBox "show = " & showstate
 
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] is the show state.
-
-        :rtype: (int: cat_vis_property_status, int: value)
+        :rtype: int
         """
-        return self.vis_property_set.GetShow()
+        return self.vis_property_set.GetShow()[1]
 
-    def get_symbol_type(self) -> (int, int):
+    def get_symbol_type(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -535,15 +500,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetSymbolType symbol
                 |          MsgBox "Symbol = " & symbol
 
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] is the symbol type.
-
-        :rtype: (int: cat_vis_property_status, int: value)
+        :rtype: int
         """
         return self.vis_property_set.GetSymbolType()
 
-    def get_visible_color(self) -> (int, int, int, int):
+    def get_visible_color(self) -> tuple[int, int, int, int]:
         """
         .. note::
             :class: toggle
@@ -589,19 +550,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleColor r, g, b 
                 |          MsgBox "r = " & r & " g = " & g & " b = " & b
 
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] is oRed.
-            item[2] is oGreen.
-            item[3] is oBlue.
-
-        :return:
-        :rtype: (int: cat_vis_property_status, int: r, int: g, int: b)
+        :rtype: int
         """
         return self.vis_property_set.GetVisibleColor()
 
     def get_visible_inheritance(self) -> int:
-        # todo: this isn't working?
         """
         .. note::
             :class: toggle
@@ -641,7 +594,7 @@ class VisPropertySet(AnyObject):
         """
         return self.vis_property_set.GetVisibleInheritance()
 
-    def get_visible_line_type(self) -> (int, int):
+    def get_visible_line_type(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -682,15 +635,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleLineType linetype
                 |          MsgBox "linetype = " & linetype
 
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] is the line type.
-
-        :rtype: (int: cat_vis_property_status, int: value)
+        :rtype: int
         """
         return self.vis_property_set.GetVisibleLineType()
 
-    def get_visible_opacity(self) -> (int, int):
+    def get_visible_opacity(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -733,15 +682,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleOpacity op 
                 |          MsgBox "opacity = " & op
 
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] is the opacity.
-
-        :rtype: (int: cat_vis_property_status, int: value)
+        :rtype: int
         """
         return self.vis_property_set.GetVisibleOpacity()
 
-    def get_visible_width(self) -> (int, int):
+    def get_visible_width(self) -> tuple[int, int]:
         """
         .. note::
             :class: toggle
@@ -782,11 +727,7 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "width = " & width
 
 
-        Returns a tuple where:
-            item[0] is enum cat_vis_property_status
-            item[1] is the line width.
-
-        :rtype: (int: cat_vis_property_status, int: value)
+        :rtype: int
         """
         return self.vis_property_set.GetVisibleWidth()
 

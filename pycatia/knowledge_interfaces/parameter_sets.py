@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.knowledge_interfaces.parameter_set import ParameterSet
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ParameterSets(Collection):
@@ -72,7 +72,7 @@ class ParameterSets(Collection):
         """
         return ParameterSet(self.parameter_sets.CreateSet(i_name))
 
-    def item(self, i_index: cat_variant) -> ParameterSet:
+    def item(self, i_index: CATVariant) -> ParameterSet:
         """
         .. note::
             :class: toggle
@@ -100,7 +100,7 @@ class ParameterSets(Collection):
                 | 
                 |          Set theSet = parameterSets.Item("Parameters.1")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ParameterSet
         """
         return ParameterSet(self.parameter_sets.Item(i_index))

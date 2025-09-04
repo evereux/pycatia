@@ -10,10 +10,14 @@
 """
 from typing import Iterator
 
-from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.cat_tps_interfaces.annotation import Annotation
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
+
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from pycatia.cat_tps_interfaces.annotation_2 import Annotation2
 
 
 class Annotations(Collection):
@@ -69,7 +73,7 @@ class Annotations(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def item(self, i_index: cat_variant) -> Annotation:
+    def item(self, i_index: CATVariant) -> Annotation:
         """
         .. note::
             :class: toggle
@@ -80,12 +84,12 @@ class Annotations(Collection):
                 |     Retrieves an Annotation managing by CATIAAnnotation. Deprecated method:
                 |     Item method is replaced by Item2 has.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Annotation
         """
         return Annotation(self.annotations.Item(i_index))
 
-    def item2(self, i_index: cat_variant) -> 'Annotation2':
+    def item2(self, i_index: CATVariant) -> 'Annotation2':
         """
         .. note::
             :class: toggle
@@ -95,7 +99,7 @@ class Annotations(Collection):
                 | 
                 |     Retrieve an Annotation using interface CATIAAnnotation2
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: Annotation2
         """
         from pycatia.cat_tps_interfaces.annotation_2 import Annotation2

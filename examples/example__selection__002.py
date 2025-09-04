@@ -26,9 +26,9 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia import catia
 
-caa = catia()
+application = catia()
 # if the active document is a CATPart this will return a PartDocument
-part_document: PartDocument = caa.active_document
+part_document: PartDocument = application.active_document
 part = part_document.part
 hybrid_bodies = part.hybrid_bodies
 hsf = part.hybrid_shape_factory
@@ -43,14 +43,14 @@ status = selection.select_element2(filter_type, "Select the first vertex", True)
 
 # status==Normal is vertex selected
 if status == "Cancel":
-    caa.message_box("Canceled", 16)
+    application.message_box("Canceled", 16)
     exit()
 first_vertex = selection.item(1).reference
 selection.clear()
 
 status = selection.select_element2(filter_type, "Select the second vertex", True)
 if status == "Cancel":
-    caa.message_box("Cancelled", 16)
+    application.message_box("Cancelled", 16)
     exit()
 second_vertex = selection.item(1).reference
 selection.clear()
@@ -58,7 +58,7 @@ selection.clear()
 filter_type = ("HybridBody",)
 status = selection.select_element2(filter_type, "Select Geometrical set", True)
 if status == "Cancel":
-    caa.message_box("Cancelled", 16)
+    application.message_box("Cancelled", 16)
     exit()
 
 # set pointer to selected geometrical set
@@ -68,4 +68,4 @@ hb_construction_geometry = hybrid_bodies.get_item_by_name(selection.item(1).valu
 line = hsf.add_new_line_pt_pt(first_vertex, second_vertex)
 hb_construction_geometry.append_hybrid_shape(line)
 part.update()
-caa.message_box("Line is created!", 0, "Congratulations!")
+application.message_box("Line is created!", 0, "Congratulations!")

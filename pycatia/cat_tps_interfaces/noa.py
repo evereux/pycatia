@@ -12,7 +12,7 @@
 from pycatia.drafting_interfaces.drawing_component import DrawingComponent
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.cat_tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class Noa(AnyObject):
@@ -129,7 +129,7 @@ class Noa(AnyObject):
         """
         return DrawingComponent(self.noa.GetDitto())
 
-    def get_modifiable_text(self, i_index: cat_variant) -> AnyObject:
+    def get_modifiable_text(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -147,7 +147,7 @@ class Noa(AnyObject):
                 |         oText
                 |             returns a CATIADrawingText
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: AnyObject
         """
         return AnyObject(self.noa.GetModifiableText(i_index))
@@ -173,7 +173,7 @@ class Noa(AnyObject):
         """
         return self.noa.GetModifiableTextsCount()
 
-    def get_nbr_url(self, o_number_of_url: cat_variant) -> None:
+    def get_nbr_url(self, o_number_of_url: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -184,7 +184,7 @@ class Noa(AnyObject):
                 |     Deprecated:
                 |         V5-6R2017 This method is replaced by Noa.GetNbrURL2
 
-        :param cat_variant o_number_of_url:
+        :param CATVariant o_number_of_url:
         :rtype: None
         """
         return self.noa.GetNbrURL(o_number_of_url)
@@ -223,7 +223,7 @@ class Noa(AnyObject):
         """
         return self.noa.GetNbrURL2()
 
-    def modify_url(self, i_url: str, i_index: cat_variant) -> None:
+    def modify_url(self, i_url: str, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -242,7 +242,7 @@ class Noa(AnyObject):
                 |             index of the URL to modify.
 
         :param str i_url:
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.noa.ModifyURL(i_url, i_index)
@@ -262,7 +262,7 @@ class Noa(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_url(self, i_index: cat_variant) -> None:
+    def remove_url(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -277,7 +277,7 @@ class Noa(AnyObject):
                 |         iIndex
                 |             position of the URL to remove.
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.noa.RemoveURL(i_index)
@@ -312,7 +312,7 @@ class Noa(AnyObject):
 
         return TPSParallelOnScreen(self.noa.TPSParallelOnScreen())
 
-    def url(self, i_index: cat_variant) -> str:
+    def url(self, i_index: CATVariant) -> str:
         """
         .. note::
             :class: toggle
@@ -329,7 +329,7 @@ class Noa(AnyObject):
                 |         oUrl
                 |             URL
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: str
         """
         return self.noa.URL(i_index)

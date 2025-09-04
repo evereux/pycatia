@@ -73,8 +73,7 @@ naca_dat_file = Path(os.getcwd(), "user_scripts", "wing_surface_from_naca_profil
 
 upper_coordinates, lower_coordinates = read_dat_file(naca_dat_file, constants.CHORD_LENGTH_ROOT)
 
-caa = catia()
-application = caa.application
+application = catia()
 documents = application.documents
 
 # check there are no existing documents open.

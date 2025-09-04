@@ -10,7 +10,7 @@
 """
 from pycatia.general_knowledge_interfaces.expert_rule_base_component_runtime import ExpertRuleBaseComponentRuntime
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class ExpertRuleBaseComponentRuntimes(Collection):
@@ -43,7 +43,7 @@ class ExpertRuleBaseComponentRuntimes(Collection):
         super().__init__(com_object, child_object=ExpertRuleBaseComponentRuntime)
         self.expert_rule_base_component_runtimes = com_object
 
-    def item(self, i_index: cat_variant) -> ExpertRuleBaseComponentRuntime:
+    def item(self, i_index: CATVariant) -> ExpertRuleBaseComponentRuntime:
         """
         .. note::
             :class: toggle
@@ -80,12 +80,12 @@ class ExpertRuleBaseComponentRuntimes(Collection):
                 |       ExpertRuleBaseComponentRuntime
                 |       Set lastRuleBaseComponent = RuleSet.Item(RuleCollection.Count)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ExpertRuleBaseComponentRuntime
         """
         return ExpertRuleBaseComponentRuntime(self.expert_rule_base_component_runtimes.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -124,7 +124,7 @@ class ExpertRuleBaseComponentRuntimes(Collection):
                 |      Set part      = partdoc.Part
                 |      Set massCheck    = part.Relations.Item("RuleBase").RuleSet.ExpertRuleBaseComponentRuntimes.Remove("density")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.expert_rule_base_component_runtimes.Remove(i_index)
@@ -165,7 +165,7 @@ class ExpertRuleBaseComponentRuntimes(Collection):
         """
         return self.expert_rule_base_component_runtimes.ShallowCount()
 
-    def shallow_item(self, i_index: cat_variant) -> ExpertRuleBaseComponentRuntime:
+    def shallow_item(self, i_index: CATVariant) -> ExpertRuleBaseComponentRuntime:
         """
         .. note::
             :class: toggle
@@ -200,12 +200,12 @@ class ExpertRuleBaseComponentRuntimes(Collection):
                 |       ExpertRuleBaseComponentRuntime
                 |       Set lastRuleBaseComponent = RuleSet.ShallowItem(RuleCollection.ShallowCount)
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: ExpertRuleBaseComponentRuntime
         """
         return ExpertRuleBaseComponentRuntime(self.expert_rule_base_component_runtimes.ShallowItem(i_index))
 
-    def shallow_remove(self, i_index: cat_variant) -> None:
+    def shallow_remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -241,7 +241,7 @@ class ExpertRuleBaseComponentRuntimes(Collection):
                 |      Set part      = partdoc.Part
                 |      Set massCheck    = part.Relations.Item("RuleBase").RuleSet.ExpertRuleBaseComponentRuntimes.ShallowRemove("density")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.expert_rule_base_component_runtimes.ShallowRemove(i_index)

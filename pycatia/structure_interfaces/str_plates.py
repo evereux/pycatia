@@ -10,7 +10,7 @@
 """
 from pycatia.structure_interfaces.str_plate import StrPlate
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.general import cat_variant
+from pycatia.types.general import CATVariant
 
 
 class StrPlates(Collection):
@@ -111,7 +111,7 @@ class StrPlates(Collection):
         super().__init__(com_object, child_object=StrPlate)
         self.str_plates = com_object
 
-    def item(self, i_index: cat_variant) -> StrPlate:
+    def item(self, i_index: CATVariant) -> StrPlate:
         """
         .. note::
             :class: toggle
@@ -145,12 +145,12 @@ class StrPlates(Collection):
                 |              Dim ThatPlate As Plate
                 |              Set ThatPlate = Assembly.Item("EndPlate_1")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: StrPlate
         """
         return StrPlate(self.str_plates.Item(i_index))
 
-    def remove(self, i_index: cat_variant) -> None:
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -179,7 +179,7 @@ class StrPlates(Collection):
                 |              Assembly_1.Remove(6)
                 |              Assembly_1.Remove("EndPlate_1")
 
-        :param cat_variant i_index:
+        :param CATVariant i_index:
         :rtype: None
         """
         return self.str_plates.Remove(i_index)

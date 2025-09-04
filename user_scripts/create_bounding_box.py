@@ -62,8 +62,7 @@ bbox_offset = 10
 
 logger = create_logger()
 
-caa = catia()
-application = caa.application
+application = catia()
 part_document: PartDocument = application.active_document
 
 if '.CATPart' not in part_document.name:
@@ -75,7 +74,7 @@ hybrid_shape_factory = part.hybrid_shape_factory
 bodies = part.bodies
 part.update()
 
-mb = caa.message_box(
+mb = application.message_box(
     'You will be prompted to select a reference Axis System and face of the item to be bounded.',
     buttons=1,
     title='Information.'
@@ -88,7 +87,7 @@ selection = part_document.selection
 selection.clear()
 filter_ = ('AxisSystem',)
 logger.info('Select the Axis system.')
-caa.message_box('Please select the Bounding Box Axis System.', buttons=0, title='Selection Prompt')
+application.message_box('Please select the Bounding Box Axis System.', buttons=0, title='Selection Prompt')
 output = selection.select_element2(filter_, 'Select bounding box AxisSystem.', False)
 if output == 'Cancel':
     logger.info('Exiting script.')
@@ -120,7 +119,8 @@ gs_bbox.name = 'points'
 selection.clear()
 filter_ = ('Face',)
 logger.info('Select a face of the body.')
-caa.message_box('Please select a face belonging to the body to be bounded.', buttons=0, title='Selection Prompt')
+application.message_box('Please select a face belonging to the body to be bounded.', buttons=0,
+                        title='Selection Prompt')
 output = selection.select_element2(filter_, 'Select a face of the body to be bounded.', False)
 if output == 'Cancel':
     logger.info('Existing Script.')

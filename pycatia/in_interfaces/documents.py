@@ -9,11 +9,11 @@ from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types.document import document_types
-from pycatia.types.general import cat_variant, list_str
+from pycatia.types.document import document_types, AnyDocument
+from pycatia.types.general import CATVariant, list_str
 
 
-def get_document_object(doc_com):
+def get_document_object(doc_com) -> AnyDocument:
     """
 
     """
@@ -35,8 +35,8 @@ class Documents(Collection):
     Usage::
 
         >>> from pycatia import catia
-        >>> caa = catia()
-        >>> documents = caa.documents
+        >>> application = catia()
+        >>> documents = application.documents
 
         .. note::
             :class: toggle
@@ -65,7 +65,7 @@ class Documents(Collection):
         self.documents = com_object
         self.child_object = Document
 
-    def add(self, document_type) -> Document:
+    def add(self, document_type: str) -> AnyDocument:
         """
         .. note::
             :class: toggle
@@ -102,7 +102,7 @@ class Documents(Collection):
         :rtype: Document
         """
 
-        # see pycatia.types.docs for supported Documents.
+        # see pycatia.types.document.py for supported Documents.
 
         if document_type.lower() not in [t.lower() for t in document_types]:
             raise CATIAApplicationException(
@@ -175,7 +175,7 @@ class Documents(Collection):
 
         return Document(self.documents.NewFrom(file_name))
 
-    def item(self, index: cat_variant) -> Document:
+    def item(self, index: CATVariant) -> Document:
         """
         .. note::
             :class: toggle
@@ -207,7 +207,7 @@ class Documents(Collection):
                 |          Dim ThatDoc As Document
                 |          Set ThatDoc = Documents.Item("MyDoc")
 
-        :param cat_variant index:
+        :param CATVariant index:
         :rtype: Document
         """
         try:
@@ -234,7 +234,7 @@ class Documents(Collection):
         self.logger.warning('The Documents.num_open method is unreliable and will be deprecated in future versions.')
         return self.documents.Count
 
-    def open(self, file_name: Path) -> Document:
+    def open(self, file_name: Path) -> AnyDocument:
         """
         .. note::
             :class: toggle
