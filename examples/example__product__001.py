@@ -43,6 +43,7 @@
 
     Requirements:
         - pywinauto installed (pip install pywinauto).
+        - natsort installed (pip install natsort).
         - An open product document with children that need sorting.
         
     Warnings:
@@ -69,6 +70,7 @@ from typing import Optional
 from pywinauto import Desktop
 from pywinauto.controls.win32_controls import ButtonWrapper
 from pywinauto.controls.win32_controls import ListBoxWrapper
+from natsort import natsorted
 
 from pycatia import catia
 from pycatia.product_structure_interfaces.product_document import ProductDocument
@@ -176,7 +178,7 @@ if not any(btn_list):
 tree_items = []
 for text in list_box.item_texts():  # type: ignore
     tree_items.append(text)
-tree_items.sort()
+tree_items = natsorted(tree_items)
 
 # reorder the items in the tree
 for i, value in enumerate(tree_items):
