@@ -65,7 +65,7 @@ for cat_part in source_files:
         product_document: ProductDocument = caa.document
         product = Product(product_document.product.com_object)
 
-        active_window = caa.catia.active_window
+        active_window = caa.application.active_window
         active_viewer = active_window.active_viewer
         cameras = product_document.cameras
 

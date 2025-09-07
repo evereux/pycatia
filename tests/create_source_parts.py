@@ -6,8 +6,8 @@ from pycatia.enumeration.enumeration_types import cat_constraint_type
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product_document import ProductDocument
-from tests.common_vars import caa
 from tests.common_vars import test_files
+from tests.conftest import application
 
 source_cat_part_measurable = Path(os.getcwd(), test_files, "part_measurable.CATPart")
 
@@ -22,10 +22,10 @@ geom_set_surfaces = "construction_surfaces"
 
 
 def create_cat_part_measurable(file_name):
-    documents = caa.documents
+    documents = application.documents
     documents.add("Part")
 
-    document = caa.active_document
+    document = application.active_document
     document.save_as(file_name)
     product = ProductDocument(document.com_object).product
     product.part_number = "cat_part_measurable"
@@ -317,6 +317,6 @@ def create_cat_part_measurable(file_name):
 
 def get_cat_part_measurable():
     if not source_cat_part_measurable.exists():
-        caa.logger.info(f"Creating {source_cat_part_measurable}")
+        application.logger.info(f"Creating {source_cat_part_measurable}")
         create_cat_part_measurable(source_cat_part_measurable)
     return source_cat_part_measurable

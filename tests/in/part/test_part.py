@@ -2,37 +2,37 @@
 
 import pytest
 
-from pycatia import CATIADocHandler
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product_document import ProductDocument
+from tests.conftest import application
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
 
 
-def test_activation():
-    with CATIADocHandler(cat_part_measurable) as caa:
-        part_document: PartDocument = caa.document
-        part = part_document.part
+@pytest.mark.parametrize('file_name', [cat_part_measurable])
+def test_activation(document_close_all_open):
+    part_document: PartDocument = application.active_document
+    part = part_document.part
 
-        item = part.find_object_by_name("Point.1")
+    item = part.find_object_by_name("Point.1")
 
-        assert not part.is_inactive(item)
+    assert not part.is_inactive(item)
 
-        part.deactivate(item)
+    part.deactivate(item)
 
-        assert part.is_inactive(item)
+    assert part.is_inactive(item)
 
 
-def test_axis_systems():
-    with CATIADocHandler(cat_part_measurable) as caa:
-        part_document: PartDocument = caa.document
-        part = part_document.part
+@pytest.mark.parametrize('file_name', [cat_part_measurable])
+def test_axis_systems(document_open):
+    part_document: PartDocument = application.active_document
+    part = part_document.part
 
-        axis_systems = part.axis_systems
+    axis_systems = part.axis_systems
 
-        assert axis_systems.com_object.Item(1).name == "Axis.1"
+    assert axis_systems.com_object.Item(1).name == "Axis.1"
 
 
 # todo: look into automation this.
@@ -46,119 +46,120 @@ def test_axis_systems():
 #
 #         assert annotation_sets.com_object.Item(1).name == 'Annotation Set.1'
 
+@pytest.mark.parametrize('file_name', [cat_part_measurable])
+def test_bodies(document_open):
+    part_document: PartDocument = application.active_document
+    part = part_document.part
 
-def test_bodies():
-    with CATIADocHandler(cat_part_measurable) as caa:
-        part_document: PartDocument = caa.document
-        part = part_document.part
+    bodies = part.bodies
 
-        bodies = part.bodies
-
-        assert bodies.com_object.Item(1).Name in ["PartBody", "Hauptkörper"]
-
-
-def test_create_geometrical_set():
-    with CATIADocHandler(cat_part_measurable) as caa:
-        part_document: PartDocument = caa.document
-        part = part_document.part
-        hybrid_bodies = part.hybrid_bodies
-        geometrical_set = hybrid_bodies.add()
-        geometrical_set.name = "lala"
-
-        assert geometrical_set.name == "lala"
+    assert bodies.com_object.Item(1).Name in ["PartBody", "Hauptkörper"]
 
 
-def test_density_of_part():
-    with CATIADocHandler(cat_part_measurable) as caa:
-        part_document: PartDocument = caa.document
-        part = part_document.part
+@pytest.mark.parametrize('file_name', [cat_part_measurable])
+def test_create_geometrical_set(document_open):
+    part_document: PartDocument = application.active_document
+    part = part_document.part
+    hybrid_bodies = part.hybrid_bodies
+    geometrical_set = hybrid_bodies.add()
+    geometrical_set.name = "lala"
 
-        assert part.density == 1000.0
-
-
-def test_file_name():
-    with CATIADocHandler(cat_product) as caa:
-        product_document: ProductDocument = caa.document
-        product = product_document.product
-
-        for current_product in product.products:
-            if current_product.is_catpart():
-                part = Part(current_product.product)
-                assert part.file_name == cat_part_measurable.name
+    assert geometrical_set.name == "lala"
 
 
-def test_full_name():
-    with CATIADocHandler(cat_product) as caa:
-        product_document: ProductDocument = caa.document
-        product = product_document.product
+@pytest.mark.parametrize('file_name', [cat_part_measurable])
+def test_density_of_part(document_open):
+    part_document: PartDocument = application.active_document
+    part = part_document.part
 
-        for current_product in product.products:
-            if product.is_catpart():
-                part = Part(current_product.product)
-                assert part.full_name == str(cat_part_measurable)
+    assert part.density == 1000.0
 
 
-def test_find_object_by_name():
-    with CATIADocHandler(cat_part_measurable) as caa:
-        part_document: PartDocument = caa.document
-        part = part_document.part
-        part.main_body.name = "test_main_body_name"
+@pytest.mark.parametrize('file_name', [cat_product])
+def test_file_name(document_open):
+    product_document: ProductDocument = application.active_document
+    product = product_document.product
 
-        body = part.find_object_by_name("test_main_body_name")
-        assert body.name == "test_main_body_name"
-
-        with pytest.raises(CATIAApplicationException):
-            part.find_object_by_name("lala")
-            pass
+    for current_product in product.products:
+        if current_product.is_catpart():
+            part = Part(current_product.product)
+            assert part.file_name == cat_part_measurable.name
 
 
-def test_in_work_object():
-    with CATIADocHandler(cat_part_measurable) as caa:
-        part_document: PartDocument = caa.document
-        part = part_document.part
+@pytest.mark.parametrize('file_name', [cat_product])
+def test_full_name(document_open):
+    product_document: ProductDocument = application.active_document
+    product = product_document.product
 
-        bodies = part.bodies
-        body = bodies.get_item_by_name("PartBody") or bodies.get_item_by_name("Hauptkörper")
-
-        assert body is not None
-        part.in_work_object = body
-
-        assert part.in_work_object.name in ["PartBody", "Hauptkörper"]
+    for current_product in product.products:
+        if product.is_catpart():
+            part = Part(current_product.product)
+            assert part.full_name == str(cat_part_measurable)
 
 
-def test_is_up_to_date():
-    with CATIADocHandler(cat_part_measurable) as caa:
-        part_document: PartDocument = caa.document
-        part = part_document.part
+@pytest.mark.parametrize('file_name', [cat_part_measurable])
+def test_find_object_by_name(document_close_all_open_test_close):
+    part_document: PartDocument = application.active_document
+    part = part_document.part
+    part.main_body.name = "test_main_body_name"
 
-        assert part.is_up_to_date(part)
+    body = part.find_object_by_name("test_main_body_name")
+    assert body.name == "test_main_body_name"
 
-    with CATIADocHandler(new_document="Part") as caa:
-        part_document: PartDocument = caa.document
-        part = part_document.part
-        hsf = part.hybrid_shape_factory
-        hbs = part.hybrid_bodies
-        hb = hbs.add()
-        point = hsf.add_new_point_coord(0, 0, 0)
-        hb.append_hybrid_shape(point)
-
-        assert not part.is_up_to_date(part)
+    with pytest.raises(CATIAApplicationException):
+        part.find_object_by_name("lala")
+        pass
 
 
-def test_path():
-    with CATIADocHandler(cat_product) as caa:
-        product_document: ProductDocument = caa.document
-        product = product_document.product
+@pytest.mark.parametrize('file_name', [cat_part_measurable])
+def test_in_work_object(document_open):
+    part_document: PartDocument = application.active_document
+    part = part_document.part
 
-        for current_product in product.products:
-            if current_product.is_catpart():
-                part = Part(current_product.product)
-                assert part.path() == cat_part_measurable
+    bodies = part.bodies
+    body = bodies.get_item_by_name("PartBody") or bodies.get_item_by_name("Hauptkörper")
+
+    assert body is not None
+    part.in_work_object = body
+
+    assert part.in_work_object.name in ["PartBody", "Hauptkörper"]
 
 
-def test_repr():
-    with CATIADocHandler(cat_part_measurable) as caa:
-        part_document: PartDocument = caa.document
-        part = part_document.part
+@pytest.mark.parametrize('file_name', [cat_part_measurable])
+def test_is_up_to_date_1(document_open):
+    part_document: PartDocument = application.active_document
+    part = part_document.part
 
-        assert 'Part(name="cat_part_measurable")' == part.__repr__()
+    assert part.is_up_to_date(part)
+
+
+@pytest.mark.parametrize('file_name', [cat_part_measurable])
+def test_is_up_to_date_2(document_open_test_close):
+    part_document: PartDocument = application.active_document
+    part = part_document.part
+    hsf = part.hybrid_shape_factory
+    hbs = part.hybrid_bodies
+    hb = hbs.add()
+    point = hsf.add_new_point_coord(0, 0, 0)
+    hb.append_hybrid_shape(point)
+
+    assert not part.is_up_to_date(part)
+
+
+@pytest.mark.parametrize('file_name', [cat_product])
+def test_path(document_open):
+    product_document: ProductDocument = application.active_document
+    product = product_document.product
+
+    for current_product in product.products:
+        if current_product.is_catpart():
+            part = Part(current_product.product)
+            assert part.path() == cat_part_measurable
+
+
+@pytest.mark.parametrize('file_name', [cat_part_measurable])
+def test_repr(document_open_test_close_all):
+    part_document: PartDocument = application.active_document
+    part = part_document.part
+
+    assert 'Part(name="cat_part_measurable")' == part.__repr__()

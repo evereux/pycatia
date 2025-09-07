@@ -54,7 +54,7 @@ drawing_file_names = []
 
 for f in source_cat_drawings.glob('*.CATDrawing'):
     with CATIADocHandler(file_name=f) as handler:
-        caa = handler.catia
+        caa = handler.application
         part_document = handler.document
         drawing = DrawingDocument(part_document.com_object)
         pdf_name = Path(save_path, drawing.name).with_suffix('.pdf')

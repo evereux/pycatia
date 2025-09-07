@@ -2,14 +2,14 @@ import os
 from pathlib import Path
 
 from pycatia.funct_system_interfaces.functional_document import FunctionalDocument
-from tests.common_vars import caa
 from tests.common_vars import test_files
+from tests.conftest import application
 
 source_functional_document = Path(os.getcwd(), test_files, "FunctionalSystem1.CATSystem")
 
 
 def create_cat_functional_system():
-    documents = caa.documents
+    documents = application.documents
     functional_document = documents.add("FunctionalSystem")
     functional_document = FunctionalDocument(functional_document.com_object)
 
@@ -20,6 +20,6 @@ def create_cat_functional_system():
 
 def get_cat_functional_system():
     if not source_functional_document.exists():
-        caa.logger.info(f"Creating {source_functional_document}.")
+        application.logger.info(f"Creating {source_functional_document}.")
         create_cat_functional_system()
     return source_functional_document

@@ -948,6 +948,8 @@ class Product(AnyObject):
        :return: int()
        """
 
+        self.logger.warning('This feature will be removed in a future release.')
+
         return self.product.Products.Count
 
     @staticmethod

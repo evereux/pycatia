@@ -80,7 +80,7 @@ for f in files:
     with CATIADocHandler(file_name=f) as handler:
 
         time.sleep(0.1)
-        caah = handler.catia
+        caah = handler.application
         caah.display_file_alerts = False
         document = handler.document
         product = Product(document.product.com_object)

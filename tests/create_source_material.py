@@ -1,10 +1,10 @@
 from pathlib import Path
 
-from tests.common_vars import caa
+from tests.conftest import application
 
 
 def get_cat_material():
-    env_startup_path = caa.application.system_service.environ("CATStartupPath")
+    env_startup_path = application.system_service.environ("CATStartupPath")
     cat_material_filename = "Catalog.CATMaterial"
 
     cat_startup_paths = []

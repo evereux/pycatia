@@ -5,8 +5,8 @@ from pywintypes import com_error
 
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product_document import ProductDocument
-from tests.common_vars import caa
 from tests.common_vars import test_files
+from tests.conftest import application
 from tests.create_source_parts import get_cat_part_measurable
 
 source_cat_product = Path(os.getcwd(), test_files, "product_top.CATProduct")
@@ -15,7 +15,7 @@ source_cat_sub_2 = Path(os.getcwd(), test_files, "product_sub_2.CATProduct")
 
 
 def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
-    documents = caa.documents
+    documents = application.documents
 
     # ####################### #
     # close all the documents #
@@ -33,7 +33,7 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     # ############################ #
 
     documents.add("Product")
-    doc_root_prod = caa.active_document
+    doc_root_prod = application.active_document
     doc_root_prod.save_as(file_name_top)
     product_top = ProductDocument(doc_root_prod.com_object).product
     product_top.part_number = "cat_product_1"
@@ -48,7 +48,7 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     # ######################## #
 
     documents.add("Product")
-    doc_sub_1 = caa.active_document
+    doc_sub_1 = application.active_document
     doc_sub_1.save_as(file_name_sub_1)
     product_sub_1 = ProductDocument(doc_sub_1.com_object).product
     product_sub_1.part_number = "cat_product_sub_1"
@@ -58,7 +58,7 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     products_sub_1 = product_sub_1.products
     cat_part_measurable = get_cat_part_measurable()
     documents.open(str(cat_part_measurable))
-    doc_cat_part = PartDocument(caa.active_document.com_object)
+    doc_cat_part = PartDocument(application.active_document.com_object)
     products_sub_1.add_component(doc_cat_part.product)
 
     doc_sub_1.save()
@@ -68,7 +68,7 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     # ######################## #
 
     documents.add("Product")
-    doc_sub_2 = caa.active_document
+    doc_sub_2 = application.active_document
     doc_sub_2.save_as(file_name_sub_2)
     product_sub_2 = ProductDocument(doc_sub_2.com_object).product
     product_sub_2.part_number = "cat_product_sub_2"
@@ -114,6 +114,6 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
 
 def get_cat_product_top():
     if not source_cat_product.exists():
-        caa.logger.info(f"Creating {source_cat_product}")
+        application.logger.info(f"Creating {source_cat_product}")
         create_cat_products(source_cat_product, source_cat_sub_1, source_cat_sub_2)
     return source_cat_product

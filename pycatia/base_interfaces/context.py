@@ -28,7 +28,7 @@ class CATIADocHandler:
         >>>     # create the document object.
         >>>     document = handler.document
         >>>     # do some stuff
-        >>>     # save document!
+        >>>     # save document if you need to
         >>>     document.save()
 
     :Example - Create a new CATPart:
@@ -36,7 +36,7 @@ class CATIADocHandler:
         >>> from pycatia.base_interfaces.context import CATIADocHandler
         >>> with CATIADocHandler(new_document='Part') as handler:
         >>>     # create the CATIA() object.
-        >>>     catia = handler.catia
+        >>>     catia = handler.application
         >>>     # create the documents object.
         >>>     documents = handler.documents
         >>>     # create the document object.
@@ -48,9 +48,14 @@ class CATIADocHandler:
     :param str new_document: (optional) 'Part', 'Product' or 'Drawing'.
     """
 
-    def __init__(self, file_name=None, new_document=None):
-        self.catia = catia()
-        self.documents = self.catia.documents
+    def __init__(self, file_name: Path = None, new_document: str = False):
+        """
+        :param Path file_name: (optional) path filename to file
+        :param new_document: (optional) for example 'Part', 'Product' or 'Drawing'.
+        :param bool close: (optional) if True, the document is closed.
+        """
+        self.application = catia()
+        self.documents = self.application.documents
         self.file_name = file_name
         self.new_document = new_document
 
@@ -61,7 +66,23 @@ class CATIADocHandler:
                 self.file_name = Path(self.file_name)
 
     def __enter__(self):
-        self.documents = self.catia.documents
+        self.documents = self.application.documents
+        _document_names = [d.name for d in self.documents]
+        _file_name = None
+        if type(self.file_name) is Path:
+            _file_name = self.file_name.name
+
+        # if the document is already open, switch to that window.
+        if _file_name in _document_names:
+            window = self.application.windows.item(self.file_name.name)
+            window.activate()
+
+            self.document = self.application.active_document
+
+            self.application.logger.info(f'Document {_file_name} already exists')
+
+            return self
+
         self.document = None
 
         if self.file_name and self.new_document:
@@ -76,7 +97,4 @@ class CATIADocHandler:
 
     def __exit__(self, *args):
 
-        if self.document:
-            self.document.close()
-        else:
-            warnings.warn('The document handler could not detect a document to close.')
+        self.document.close()

@@ -8,7 +8,6 @@ from pathlib import Path
 
 from pycatia.enumeration.enumeration_types import cat_script_language
 from pycatia.exception_handling.exceptions import CATIAApplicationException
-from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.documents import Documents
 from pycatia.in_interfaces.documents import get_document_object
 from pycatia.in_interfaces.file_system import FileSystem
@@ -21,7 +20,7 @@ from pycatia.in_interfaces.windows import Windows
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
 from pycatia.in_interfaces.setting_controllers import SettingControllers
-from pycatia.types.document import document_types, AnyDocument
+from pycatia.types.document import AnyDocument
 
 
 class Application(AnyObject):

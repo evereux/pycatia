@@ -1,5 +1,3 @@
-#! /usr/bin/python3.6
-
 import os
 from pathlib import Path
 
