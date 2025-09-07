@@ -2046,13 +2046,12 @@ class Selection(AnyObject):
         """
 
         check_type(i_filter_type, tuple)
-        check_type(o_document, Document)
 
         return self.selection.SelectElement4(i_filter_type,
                                              i_active_document_message,
                                              i_non_active_document_message,
                                              i_tooltip,
-                                             o_document.com_object)
+                                             )
 
     def __len__(self):
 
