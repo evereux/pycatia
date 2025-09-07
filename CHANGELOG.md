@@ -5,6 +5,7 @@
 * fixed DrawingDimValue.get_bault_text() and DrawingDimValue.get_ps_text().
 * introduced fixtures for pytest testing. tests now run much quicker due to not
   opening and closing a document for each test.
+* Selection.select_element4() fixed. Removed broken o_document call up.
 
 ## 0.9.0
 
