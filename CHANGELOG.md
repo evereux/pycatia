@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.2
+
+* fixed ThreeDCuts methods. #285
+
 ## 0.9.1
 
 * fixed DrawingDimValue.get_bault_text() and DrawingDimValue.get_ps_text().
