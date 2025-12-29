@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.3
+
+* updated PageSetup() to add missing (all) class methods.
+
 ## 0.9.2
 
 * fixed ThreeDCuts methods. #285
