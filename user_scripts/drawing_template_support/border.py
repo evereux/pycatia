@@ -1,7 +1,5 @@
-#! /usr/bin/python3.8
-
+from pycatia import CatTextAnchorPosition
 from pycatia.drafting_interfaces.drawing_sheet import DrawingSheet
-from pycatia.enumeration.enumeration_types import cat_text_anchor_position
 
 from .background_view import get_background_view_and_factory
 from .settings import border_offset
@@ -52,7 +50,7 @@ def create_border(sheet: DrawingSheet, size_info: dict):
         factory_2d.create_line(sheet_x, y_offset * i, sheet_x - offset, y_offset * i)
 
     # add text for grid references
-    anchor_position = cat_text_anchor_position.index('catMiddleCenter')
+    anchor_position = CatTextAnchorPosition.catMiddleCenter.value
     texts = background_view.texts
 
     # horizontal numerical texts

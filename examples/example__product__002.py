@@ -1,5 +1,3 @@
-#! /usr/bin/python3.9
-
 """
 
     Example - Product - 002
@@ -24,7 +22,7 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 from pathlib import Path
 
 from pycatia import catia
-from pycatia.enumeration.enumeration_types import cat_work_mode_type
+from pycatia import CatWorkModeType
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
@@ -36,7 +34,7 @@ product = product_document.product
 # Change the work mode to Design Mode.
 # This is useful for CATIA configurations that work with a cache otherwise methods on children may fail
 # due to the document not being loaded.
-product.apply_work_mode(cat_work_mode_type.index("DESIGN_MODE"))
+product.apply_work_mode(CatWorkModeType.DESIGN_MODE.value)
 
 # Transformation matrix (45 degrees-rotation around the x axis and a translation).
 transformation = (1.000, 0, 0, 0, 0.707, 0.707, 0, -0.707, 0.707, 10.000, 20.000, 30.000)

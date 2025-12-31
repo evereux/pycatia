@@ -1,4 +1,3 @@
-#! /usr/bin/python3.9
 # author: evereux
 # contact: evereux@gmail.com
 

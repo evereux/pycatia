@@ -1,5 +1,3 @@
-#! /usr/bin/python3.8
-
 from pywintypes import com_error
 
 from pycatia.drafting_interfaces.drawing_document import DrawingDocument
@@ -23,7 +21,7 @@ def create_parameters(drawing: DrawingDocument) -> Parameters:
         # if the method get_item fails, capture the exception and add the parameter.
         try:
             # see if the parameter already exists
-            if drawing_parameters.get_item(f'Drawing\{param}'):
+            if drawing_parameters.get_item(f'Drawing\\{param}'):
                 pass
                 # print(f'Parameter {param} already exists.')
         except com_error:

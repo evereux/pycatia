@@ -1,9 +1,7 @@
-#! /usr/bin/python3.8
-
+from pycatia import CatTextAnchorPosition
 from pycatia.drafting_interfaces.drawing_sheet import DrawingSheet
 from pycatia.drafting_interfaces.drawing_text import DrawingText
 from pycatia.drafting_interfaces.drawing_texts import DrawingTexts
-from pycatia.enumeration.enumeration_types import cat_text_anchor_position
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.knowledge_interfaces.parameters import Parameters
 
@@ -33,7 +31,7 @@ def add_title_block_text(texts: DrawingTexts,
     :return:
     """
     add_text = texts.add(text, text_x, text_y)
-    anchor_position = cat_text_anchor_position.index('catBottomLeft')
+    anchor_position = CatTextAnchorPosition.catBottomLeft.value
     add_text.anchor_position = anchor_position
     set_text_properties(add_text, size=size, font=font)
 
@@ -61,7 +59,7 @@ def add_param_text(texts: DrawingTexts,
     :return:
     """
 
-    p_ticket = parameters.get_item(f'Drawing\{param_variable}')
+    p_ticket = parameters.get_item(f'Drawing\\{param_variable}')
     param_text = add_title_block_text(texts, text, x, y, size=size)
     param_text.insert_variable(0, 0, p_ticket)
     # change text colour to blue
@@ -355,7 +353,7 @@ def create_title_block(sheet: DrawingSheet,
     # title
     title_x = (v3_1["x"] + v4['x']) / 2
     title_text = add_param_text(texts, parameters, "TITLE", title_x, h3['y'] + text_y_offset, size=4)
-    anchor_position = cat_text_anchor_position.index('catBottomCenter')
+    anchor_position = CatTextAnchorPosition.catBottomCenter.value
     title_text.anchor_position = anchor_position
     # sheet size
     add_param_text(texts, parameters, "SIZE", v3['x'] + text_x_offset + 1.5, h2['y'] + text_y_offset, size=4)

@@ -1,5 +1,3 @@
-#! /usr/bin/python3.8
- 
 from pycatia import catia
 from pycatia.in_interfaces.application import Application
 from pycatia.in_interfaces.documents import Documents

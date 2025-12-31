@@ -20,8 +20,9 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
-from pycatia.enumeration.enumeration_types import cat_dim_type
-from pycatia.enumeration.enumeration_types import cat_dim_line_rep
+from pycatia import CatDimType
+from pycatia import CatDimLineRep
+
 from pycatia.drafting_interfaces.drawing_document import DrawingDocument
 
 application = catia()
@@ -38,16 +39,16 @@ elipse = factory_2d.create_ellipse(-40, 100, 120, 180, 120, 90, 0, 3)
 point_1 = factory_2d.create_point(-10, 190)
 point_2 = factory_2d.create_point(-120, 190)
 
-catDimAngle = cat_dim_type.index('catDimAngle')
-catDimAuto = cat_dim_line_rep.index('catDimAuto')
+catDimAngle = CatDimType.catDimAngle.value
+catDimAuto = CatDimLineRep.catDimAuto.value
 
 line_elements = (line_1, line_2)
 selection_points_1 = (150, 10, 120, 100)
 
 active_view.dimensions.add(catDimAngle, line_elements, selection_points_1, catDimAuto)
 
-catDimLengthCurvilinear = cat_dim_type.index('catDimLengthCurvilinear')
-catDimOffset = cat_dim_line_rep.index('catDimOffset')
+catDimLengthCurvilinear = CatDimType.catDimLengthCurvilinear.value
+catDimOffset = CatDimLineRep.catDimOffset.value
 
 var_elements = (point_1, point_2, elipse)
 selection_points_2 = (0, 0, 0, 0)

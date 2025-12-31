@@ -1,7 +1,5 @@
-#! /usr/bin/python3.8
-
+from pycatia import CatTextProperty
 from pycatia.drafting_interfaces.drawing_text import DrawingText
-from pycatia.enumeration.enumeration_types import cat_text_property
 
 
 def set_text_properties(text: DrawingText,
@@ -25,8 +23,8 @@ def set_text_properties(text: DrawingText,
 
     # drwText.SetParameterOnsubString catCharSpacing,0,0,25
     # drwText.SetParameterOnsubString catCharRatio,0,0,55
-    char_spacing = cat_text_property.index('catCharSpacing')
-    char_test = cat_text_property.index('catParagraph')
+    char_spacing = CatTextProperty.catCharSpacing.value
+    char_test = CatTextProperty.catParagraph.value
     text.set_parameter_on_sub_string(char_spacing, 0, 0, 20)
     text.set_parameter_on_sub_string(char_test, 0, 0, 0)
 

@@ -1,5 +1,3 @@
-#! /usr/bin/python3.9
-
 """
     
     Example - Drafting - 001
@@ -22,12 +20,12 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
+from pycatia import CatPaperOrientation
+from pycatia import CatPaperSize
+from pycatia import CatTextAnchorPosition
 from pycatia.drafting_interfaces.drawing_document import DrawingDocument
 from pycatia.drafting_interfaces.drawing_root import DrawingRoot
 from pycatia.drafting_interfaces.drawing_view import DrawingView
-from pycatia.enumeration.enumeration_types import cat_paper_orientation
-from pycatia.enumeration.enumeration_types import cat_paper_size
-from pycatia.enumeration.enumeration_types import cat_text_anchor_position
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -43,10 +41,10 @@ drawing = DrawingRoot(drawing_document.drawing_root.com_object)
 sheets = drawing.sheets
 sheet = sheets.active_sheet
 
-if cat_paper_orientation[sheet.orientation] != "catPaperLandscape":
+if CatPaperOrientation(sheet.orientation).name != "catPaperLandscape":
     raise CATIAApplicationException("Sheet orientation is not landscape.")
 
-if cat_paper_size[sheet.paper_size] != "catPaperA0":
+if CatPaperSize(sheet.paper_size).name != "catPaperA0":
     raise CATIAApplicationException("Sheet size is not A0.")
 
 views = sheet.views
@@ -101,7 +99,7 @@ v_split_6 = factory_2d.create_line(a0_x, v_offset * 2, a0_x - offset, v_offset *
 
 # add some text to the border
 
-anchor_position = cat_text_anchor_position.index("catMiddleCenter")
+anchor_position = CatTextAnchorPosition.catMiddleCenter.value
 
 texts = background_view.texts
 

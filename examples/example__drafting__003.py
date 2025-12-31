@@ -20,8 +20,7 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
-from pycatia.enumeration.enumeration_types import cat_dim_type
-from pycatia.enumeration.enumeration_types import cat_dim_line_rep
+from pycatia import CatDimType
 from pycatia.drafting_interfaces.drawing_document import DrawingDocument
 
 application = catia()
@@ -36,7 +35,7 @@ point_1 = factory_2d.create_point(40, 230)
 point_2 = factory_2d.create_point(80, 210)
 line_1 = factory_2d.create_line(50, 10, 150, 10)
 
-catDimDistance = cat_dim_type.index('catDimDistance')
+catDimDistance = CatDimType.catDimDistance.value
 
 point_elements = (point_1, point_2)
 selection_points = (0, 0, 0, 0)

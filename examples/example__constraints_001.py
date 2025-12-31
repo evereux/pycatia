@@ -1,5 +1,3 @@
-#! /usr/bin/python3.9
-
 """
 
     Example - Constraints - 001
@@ -23,8 +21,7 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
-from pycatia.enumeration.enumeration_types import cat_constraint_type
-from pycatia.enumeration.types import CatConstraintType
+from pycatia import CatConstraintType
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 application = catia()
@@ -40,5 +37,4 @@ ref_sub_prod_1 = sub_prod_1.reference_product
 sub_prod_1_name = f"{product.name}/{sub_prod_1.name}/!{product.name}/{sub_prod_1.name}/"
 reference = product.create_reference_from_name(sub_prod_1_name)
 
-# constraints.add_mono_elt_cst(cat_constraint_type.index("catCstTypeReference"), reference)
 constraints.add_mono_elt_cst(CatConstraintType.catCstTypeReference.value, reference)

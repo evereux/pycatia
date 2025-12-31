@@ -1,4 +1,3 @@
-#! /usr/bin/python3.9
 # author: evereux
 # contact: evereux@gmail.com
 
@@ -38,8 +37,8 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
+from pycatia import GeometricalFeatureType
 from pycatia.cat_logger import create_logger
-from pycatia.enumeration.enumeration_types import geometrical_feature_type
 from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 from pycatia.mec_mod_interfaces.part_document import PartDocument
@@ -89,7 +88,7 @@ hybrid_shapes = ref_hybrid_body.hybrid_shapes
 for shape in hybrid_shapes:
     ref_shape = part.create_reference_from_object(shape)
     type_: int = hsf.get_geometrical_feature_type(ref_shape)
-    type_: str = geometrical_feature_type[type_]
+    type_: str = GeometricalFeatureType(type_).name
     if type_ == 'Point':
         new_line = hsf.add_new_line_normal(ref_surface, ref_shape, -LINE_LENGTH, LINE_LENGTH, False)
         gs_lines.append_hybrid_shape(new_line)
