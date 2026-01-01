@@ -41,7 +41,7 @@ class SchComponentGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddMember(SchAppConnectable iCntblToAdd)
                 | 
                 |     Add a member to the component group.
@@ -83,7 +83,7 @@ class SchComponentGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListMembers() As SchListOfObjects
                 | 
                 |     List all connectable members in the group.
@@ -109,7 +109,7 @@ class SchComponentGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveMember(SchAppConnectable iCntblToRemove)
                 | 
                 |     Remove a member to the component group.

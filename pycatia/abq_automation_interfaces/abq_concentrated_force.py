@@ -357,7 +357,7 @@ class ABQConcentratedForce(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetHandler(Reference oProduct,
                 | Reference oRef)
                 | 
@@ -396,7 +396,7 @@ class ABQConcentratedForce(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetLocalCsysFromPublication(Product oProduct,
                 | AxisSystem oPubAxisSystem)
                 | 
@@ -440,7 +440,7 @@ class ABQConcentratedForce(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUseCoordinateSystemType() As ABQLocalCsysType
                 |
                 |     Get the user coordinate system type.
@@ -461,7 +461,7 @@ class ABQConcentratedForce(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHandler(Reference iProduct,
                 | Reference iRef)
                 |
@@ -501,7 +501,7 @@ class ABQConcentratedForce(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLocalCsysFromPublication(Product iProduct,
                 | Publication iPubAxisSystem)
                 |
@@ -547,7 +547,7 @@ class ABQConcentratedForce(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUseCoordinateSystemType(ABQLocalCsysType
                 | iCsystemType)
                 |

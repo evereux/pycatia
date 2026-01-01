@@ -51,7 +51,7 @@ class StiDBItem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetChildren() As StiDBChildren
                 | 
                 |     Returns both all the Children of the CATIA Document -associated to the
@@ -93,7 +93,7 @@ class StiDBItem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDocument() As Document
                 | 
                 |     Returns the CATIA Document associated to the CATIAStiDBItem -the SmarTeam
@@ -124,7 +124,7 @@ class StiDBItem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDocumentFullPath() As CATBSTR
                 | 
                 |     Returns the Full Path of the CATIA Document associated to the
@@ -152,7 +152,7 @@ class StiDBItem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsCFOType() As boolean
                 | 
                 |     Returns if the CATIA Document -associated to the CATIAStiDBItem- is a
@@ -182,7 +182,7 @@ class StiDBItem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsRoot() As boolean
                 | 
                 |     Returns if the CATIA Document -associated to the CATIAStiDBItem- is a Root.

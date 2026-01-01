@@ -415,7 +415,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyPosition(CATSafeArrayVariant piPositionIncrement)
                 | 
                 |     Sets a new relative manikin position.
@@ -480,7 +480,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSegment(long piIndex) As SWKSegment
                 | 
                 |     Returns a specific segment of the body, based on an index.
@@ -503,7 +503,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsBalanced() As boolean
                 | 
                 |     Returns:
@@ -521,7 +521,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LockPosture(long piDOFId)
                 | 
                 |     Lock the body in the given dof
@@ -536,7 +536,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetAngularLimitations(long piDOFId,
                 | long piReset)
                 | 
@@ -556,7 +556,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetAttaches()
                 | 
                 |     Reset the attaches of the body.
@@ -570,7 +570,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetIKOffsets()
                 | 
                 |     Reset the offsets of the body.
@@ -584,7 +584,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetPosture()
                 | 
                 |     Set the manikin to the default (standing) posture.
@@ -598,7 +598,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetPrefAngles(long piDOFId)
                 | 
                 |     Reset the pref angles of the body.
@@ -613,7 +613,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetConeTypeBoundedCone()
 
         :rtype: None
@@ -625,7 +625,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetConeTypeBoundings()
 
         :rtype: None
@@ -637,7 +637,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetConeTypeFlat()
 
         :rtype: None
@@ -649,7 +649,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetConeTypeSpherical()
 
         :rtype: None
@@ -661,7 +661,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPosition(CATSafeArrayVariant piNewPosition)
                 | 
                 |     Sets a new absolute manikin position.
@@ -725,7 +725,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPosture(SWKPostureSpec piPostureSpec,
                 | boolean piKeepReferential)
                 | 
@@ -767,7 +767,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetToBestPosture()
                 | 
                 |     Set the manikin to the posture that will provide it its maximum score.
@@ -783,7 +783,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SwapAngularLimitations(long piDOFId)
                 | 
                 |     Swap the angular limitations of the body.
@@ -798,7 +798,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SwapPosture()
                 | 
                 |     Swap the posture with the equivalent segment, on the other side of the
@@ -814,7 +814,7 @@ class SWKBody(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SwapPrefAngles(long piDOFId)
                 | 
                 |     Swap the preferred angles of the body.

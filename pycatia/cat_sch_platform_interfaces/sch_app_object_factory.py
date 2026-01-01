@@ -39,7 +39,7 @@ class SchAppObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateCompRef(CATBSTR iAppCompClassType,
                 | AnyObject oAppComp)
                 | 
@@ -75,7 +75,7 @@ class SchAppObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateConnection(CATBSTR iAppCntnClassType,
                 | AnyObject oAppConnection)
                 | 
@@ -110,7 +110,7 @@ class SchAppObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateGroup(CATBSTR iAppGroupClassType,
                 | AnyObject oAppGroup)
                 | 
@@ -145,7 +145,7 @@ class SchAppObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateRoute(CATBSTR iAppRouteClassType,
                 | AnyObject oAppRoute,
                 | CATBSTR iLogLineID)
@@ -191,7 +191,7 @@ class SchAppObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateRouteFromRef(SchAppRoute iRouteReference,
                 | AnyObject oAppRoute,
                 | CATBSTR iLogLineID)
@@ -252,7 +252,7 @@ class SchAppObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateZone(CATBSTR iAppZoneClassType,
                 | AnyObject oAppZone)
                 | 

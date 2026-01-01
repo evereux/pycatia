@@ -186,7 +186,7 @@ class AnalysisManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateReferenceFromGeometry(Product iProduct,
                 | Reference iGeometry) As Reference
                 | 
@@ -217,7 +217,7 @@ class AnalysisManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateReferenceFromObject(AnyObject iObject) As
                 | Reference
                 | 
@@ -243,7 +243,7 @@ class AnalysisManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Import(Document iDocumentToImport)
                 | 
                 |     Import an existing document in an analysis document . This document can of
@@ -287,7 +287,7 @@ class AnalysisManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ImportDefineFile(CATBSTR iDocumentPath,
                 | CATBSTR iTypeLate,
                 | CATSafeArrayVariant iValues)
@@ -338,7 +338,7 @@ class AnalysisManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ImportFile(CATBSTR iDocumentPath)
                 | 
                 |     Import an existing document in an analysis document.

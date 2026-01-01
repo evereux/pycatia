@@ -58,7 +58,7 @@ class ExpertRuleSet(ExpertRuleSetRuntime):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateCheck(CATBSTR iName,
                 | CATBSTR iCheckVariables,
                 | CATBSTR iCheckBody,
@@ -123,7 +123,7 @@ class ExpertRuleSet(ExpertRuleSetRuntime):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateRule(CATBSTR iName,
                 | CATBSTR iRuleVariables,
                 | CATBSTR iRuleBody,
@@ -190,7 +190,7 @@ class ExpertRuleSet(ExpertRuleSetRuntime):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateRuleSet(CATBSTR iName,
                 | CATBSTR iRuleSet) As ExpertRuleSet
                 | 

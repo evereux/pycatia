@@ -45,7 +45,7 @@ class Dimension3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ControledRadius() As ControledRadius
                 | 
                 |     Get the Dimension on the Controled Radius interface.
@@ -64,7 +64,7 @@ class Dimension3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DimensionLimit() As DimensionLimit
                 | 
                 |     Gets the Dimension on the DimensionLimit interface.
@@ -83,7 +83,7 @@ class Dimension3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DimensionPattern() As DimensionPattern
                 | 
                 |     Gets the Dimension on the DimensionPattern interface.
@@ -102,7 +102,7 @@ class Dimension3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func EnvelopCondition() As EnvelopCondition
                 | 
                 |     Gets the Dimension on the EnvelopCondition interface.
@@ -121,7 +121,7 @@ class Dimension3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Get2dAnnot() As DrawingDimension
                 | 
                 |     Retrieves Drafting Dimension.
@@ -140,7 +140,7 @@ class Dimension3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAControledRadius() As boolean
                 | 
                 |     Checks if the Dimension has a Controled Radius.
@@ -162,7 +162,7 @@ class Dimension3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAnEnvelopCondition() As boolean
                 | 
                 |     Checks if the Annotation has an Envelop Condition.
@@ -184,7 +184,7 @@ class Dimension3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasDimensionLimit() As boolean
                 | 
                 |     Checks if the Dimension has a Dimension Limit.
@@ -238,7 +238,7 @@ class Dimension3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsADimensionPattern() As boolean
                 | 
                 |     Checks if the Semantic Dimension is a Dimension Pattern.
@@ -260,7 +260,7 @@ class Dimension3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub MoveValue(double X,
                 | double Y,
                 | long SubPart,

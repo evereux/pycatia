@@ -190,7 +190,7 @@ class MfgAssembly(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPart(Item iItem)
                 | 
                 |     Assignes a part (Product, Resource or other MA/MK) to the Manufacturing
@@ -236,7 +236,7 @@ class MfgAssembly(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Item
                 | 
                 |     Returns one assigned Part (Product, Resource or other MA/MK) of the
@@ -272,7 +272,7 @@ class MfgAssembly(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePart(Item iItem)
                 | 
                 |     Removes a part (Product, Resource or other MA/MK) from the Manufacturing

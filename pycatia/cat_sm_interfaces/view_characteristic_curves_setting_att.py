@@ -1483,7 +1483,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDBeadBTLFeatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1502,7 +1502,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDCircStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1522,7 +1522,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDCurveStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1542,7 +1542,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDFlgCutBTLFeatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1561,7 +1561,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDFlgCutIMLInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1580,7 +1580,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDFlgCutOMLInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1599,7 +1599,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDFlgHoleBTLFeatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1618,7 +1618,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDFlgHoleIMLInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1637,7 +1637,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDFlgHoleOMLInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1656,7 +1656,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDOtherStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1676,7 +1676,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDStiffStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1696,7 +1696,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDSurfFlgBTLFeatBFInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1716,7 +1716,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDSurfFlgBTLFeatHFInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1736,7 +1736,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDSurfFlgBTLSuppBFInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1756,7 +1756,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDSurfFlgBTLSuppHFInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1776,7 +1776,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDSurfFlgIMLBFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1795,7 +1795,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDSurfFlgIMLHFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1814,7 +1814,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDSurfFlgOMLBFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1833,7 +1833,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDSurfFlgOMLHFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1852,7 +1852,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDSurfStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1872,7 +1872,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFDUserStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1892,7 +1892,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPBeadBTLFeatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1911,7 +1911,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPCircStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1931,7 +1931,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPCurveStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1951,7 +1951,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPFlgCutBTLFeatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1970,7 +1970,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPFlgCutIMLInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1989,7 +1989,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPFlgCutOMLInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2008,7 +2008,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPFlgHoleBTLFeatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2027,7 +2027,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPFlgHoleIMLInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2046,7 +2046,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPFlgHoleOMLInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2065,7 +2065,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPOtherStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2085,7 +2085,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPStiffStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2105,7 +2105,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgBTLFeatBFInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2125,7 +2125,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgBTLFeatHFInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2145,7 +2145,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgBTLSuppBFInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2165,7 +2165,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgBTLSuppHFInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2185,7 +2185,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgCLBBFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2204,7 +2204,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgCLBHFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2223,7 +2223,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgIMLBFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2242,7 +2242,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgIMLHFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2261,7 +2261,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgOML2BFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2280,7 +2280,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgOML2HFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2299,7 +2299,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgOMLBFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2318,7 +2318,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfFlgOMLHFInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2337,7 +2337,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPSurfStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2357,7 +2357,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSHMViewFPUserStampBTLFeatInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2377,7 +2377,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDBeadBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDBeadBTLFeat setting
@@ -2409,7 +2409,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDCircStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDCircStampBTLFeat setting
@@ -2441,7 +2441,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDCurveStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDCurveStampBTLFeat setting
@@ -2473,7 +2473,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDFlgCutBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDFlgCutBTLFeat setting
@@ -2505,7 +2505,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDFlgCutIMLLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDFlgCutIML setting parameter.
@@ -2536,7 +2536,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDFlgCutOMLLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDFlgCutOML setting parameter.
@@ -2567,7 +2567,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDFlgHoleBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDFlgHoleBTLFeat setting
@@ -2599,7 +2599,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDFlgHoleIMLLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDFlgHoleIML setting
@@ -2631,7 +2631,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDFlgHoleOMLLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDFlgHoleOML setting
@@ -2663,7 +2663,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDOtherStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDOtherStampBTLFeat setting
@@ -2695,7 +2695,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDStiffStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDStiffStampBTLFeat setting
@@ -2727,7 +2727,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDSurfFlgBTLFeatBFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDSurfFlgBTLFeatBF setting
@@ -2759,7 +2759,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDSurfFlgBTLFeatHFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDSurfFlgBTLFeatHF setting
@@ -2791,7 +2791,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDSurfFlgBTLSuppBFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDSurfFlgBTLSuppBF setting
@@ -2823,7 +2823,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDSurfFlgBTLSuppHFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDSurfFlgBTLSuppHF setting
@@ -2855,7 +2855,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDSurfFlgIMLBFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDSurfFlgIMLBF setting
@@ -2887,7 +2887,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDSurfFlgIMLHFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDSurfFlgIMLHF setting
@@ -2919,7 +2919,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDSurfFlgOMLBFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDSurfFlgOMLBF setting
@@ -2951,7 +2951,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDSurfFlgOMLHFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDSurfFlgOMLHF setting
@@ -2983,7 +2983,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDSurfStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDSurfStampBTLFeat setting
@@ -3015,7 +3015,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFDUserStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFDUserStampBTLFeat setting
@@ -3047,7 +3047,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPBeadBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPBeadBTLFeat setting
@@ -3079,7 +3079,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPCircStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPCircStampBTLFeat setting
@@ -3111,7 +3111,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPCurveStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPCurveStampBTLFeat setting
@@ -3143,7 +3143,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPFlgCutBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPFlgCutBTLFeat setting
@@ -3175,7 +3175,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPFlgCutIMLLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPFlgCutIML setting parameter.
@@ -3206,7 +3206,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPFlgCutOMLLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPFlgCutOML setting parameter.
@@ -3237,7 +3237,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPFlgHoleBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPFlgHoleBTLFeat setting
@@ -3269,7 +3269,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPFlgHoleIMLLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPFlgHoleIML setting
@@ -3301,7 +3301,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPFlgHoleOMLLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPFlgHoleOML setting
@@ -3333,7 +3333,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPOtherStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPOtherStampBTLFeat setting
@@ -3365,7 +3365,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPStiffStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPStiffStampBTLFeat setting
@@ -3397,7 +3397,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgBTLFeatBFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgBTLFeatBF setting
@@ -3429,7 +3429,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgBTLFeatHFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgBTLFeatHF setting
@@ -3461,7 +3461,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgBTLSuppBFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgBTLSuppBF setting
@@ -3493,7 +3493,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgBTLSuppHFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgBTLSuppHF setting
@@ -3525,7 +3525,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgCLBBFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgCLBBF setting
@@ -3557,7 +3557,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgCLBHFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgCLBHF setting
@@ -3589,7 +3589,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgIMLBFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgIMLBF setting
@@ -3621,7 +3621,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgIMLHFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgIMLHF setting
@@ -3653,7 +3653,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgOML2BFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgOML2BF setting
@@ -3685,7 +3685,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgOML2HFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgOML2HF setting
@@ -3717,7 +3717,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgOMLBFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgOMLBF setting
@@ -3749,7 +3749,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfFlgOMLHFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfFlgOMLHF setting
@@ -3781,7 +3781,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPSurfStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPSurfStampBTLFeat setting
@@ -3813,7 +3813,7 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSHMViewFPUserStampBTLFeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SHMViewFPUserStampBTLFeat setting

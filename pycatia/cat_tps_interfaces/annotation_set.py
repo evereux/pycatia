@@ -428,7 +428,7 @@ class AnnotationSet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyViewReUseWhenCopySetTo()
                 | 
                 |     Register for next call to either GlobalCopySetTo and like
@@ -451,7 +451,7 @@ class AnnotationSet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GlobalCopySetTo(Part iDestinationPart) As CATBSTR
                 | 
                 |     Copies the entire or a subpart of a part level Annotation Set into a
@@ -475,7 +475,7 @@ class AnnotationSet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GlobalCopySetToWithTransformation(Part
                 | iDestinationPart,
                 | CATSafeArrayVariant iTransfo) As CATBSTR

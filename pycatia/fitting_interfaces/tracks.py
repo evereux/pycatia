@@ -40,7 +40,7 @@ class Tracks(Sampleds):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddFromFile(CATBSTR iFileName)
                 | 
                 |     Creates a track in the collection, from information from an external

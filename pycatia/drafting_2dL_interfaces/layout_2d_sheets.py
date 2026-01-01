@@ -68,7 +68,7 @@ class Layout2DSheets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iLayoutSheetName) As Layout2DSheet
                 | 
                 |     Creates a Layout sheet and adds it to the Layout2DSheets collection. This
@@ -102,7 +102,7 @@ class Layout2DSheets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddDetail(CATBSTR iLayoutSheetName) As Layout2DSheet
                 | 
                 |     Creates a detail Layout sheet 2DL and adds it to the LayoutSheets2DL
@@ -137,7 +137,7 @@ class Layout2DSheets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Layout2DSheet
                 | 
                 |     Returns a Layout sheet using its index or its name from the Layout2DSheets
@@ -180,7 +180,7 @@ class Layout2DSheets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a Layout2Dsheet from the Layout2DSheets

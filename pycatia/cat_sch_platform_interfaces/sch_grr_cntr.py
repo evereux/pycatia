@@ -39,7 +39,7 @@ class SchGRRCntr(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSymbol(SchGRR oGRR,
                 | CatSchIDLCntrSymbolType oESymbolType)
                 | 
@@ -88,7 +88,7 @@ class SchGRRCntr(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveSymbol()
                 | 
                 |     Remove the graphical primitive used as the connector's symbol. The default
@@ -111,7 +111,7 @@ class SchGRRCntr(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSymbol(SchGRR iGRRSymbol,
                 | CatSchIDLCntrSymbolType iESymbolType)
                 | 

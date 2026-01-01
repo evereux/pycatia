@@ -102,7 +102,7 @@ class Track(Sampled):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMatrixAll(CATSafeArrayVariant oMatrixAll)
                 | 
                 |     GetMatrixAll Gets the base location of the track. The sum of several
@@ -142,7 +142,7 @@ class Track(Sampled):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Mirror(CATSafeArrayVariant iPoint,
                 | CATSafeArrayVariant iNormal)
                 | 
@@ -188,7 +188,7 @@ class Track(Sampled):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Move(CATSafeArrayVariant iTransfo)
                 | 
                 |     Moves the track a certain position.

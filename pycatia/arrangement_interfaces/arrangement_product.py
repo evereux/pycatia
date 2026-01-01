@@ -224,7 +224,7 @@ class ArrangementProduct(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTechnologicalObject(CATBSTR iApplicationType) As
                 | CATBaseDispatch
                 | 
@@ -255,7 +255,7 @@ class ArrangementProduct(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetArrangementNomenclature(CATBSTR iNomenclature)
                 | 
                 |     Sets the nomenclature of the ArrangementProduct.
@@ -285,7 +285,7 @@ class ArrangementProduct(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAutoName()
                 | 
                 |     Causes the name of the ArrangementProduct automatically.

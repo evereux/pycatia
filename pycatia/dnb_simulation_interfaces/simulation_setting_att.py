@@ -48,7 +48,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetASNavigationModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -84,7 +84,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetASStepSizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -120,7 +120,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAthAnnotationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -156,7 +156,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAthDisableSimInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -192,7 +192,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAthEndConditionInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -228,7 +228,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAthHyperlinkInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -264,7 +264,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAthSelAgentDlgInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -300,7 +300,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAthStateMgtInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -336,7 +336,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAthTextMsgInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -372,7 +372,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAthViewpointInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -408,7 +408,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPSCycleTimeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -444,7 +444,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPSDynClashModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -480,7 +480,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPSGraphicSimStepInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -516,7 +516,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPSGraphicUpdateInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -552,7 +552,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPVEndConditionInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -588,7 +588,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPVStateMgtInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -624,7 +624,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunAnnotBehaviorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -660,7 +660,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunAnnotationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -696,7 +696,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunEndConditionInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -732,7 +732,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunHlnkBehaviorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -768,7 +768,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunHyperlinkInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -804,7 +804,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunPauseInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -840,7 +840,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunStateMgtInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -876,7 +876,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunStepSizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -912,7 +912,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunTextBehaviorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -948,7 +948,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunTextMsgInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -984,7 +984,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunViewpointInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1020,7 +1020,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRunVisBehaviorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1056,7 +1056,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetASNavigationModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ASNavigationMode parameter.
@@ -1097,7 +1097,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetASStepSizeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ASStepSize parameter.
@@ -1138,7 +1138,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAthAnnotationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AthAnnotation parameter.
@@ -1179,7 +1179,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAthDisableSimLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AthDisableSim parameter.
@@ -1220,7 +1220,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAthEndConditionLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AthEndCondition parameter.
@@ -1261,7 +1261,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAthHyperlinkLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AthHyperlink parameter.
@@ -1302,7 +1302,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAthSelAgentDlgLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AthSelAgentDlg parameter.
@@ -1343,7 +1343,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAthStateMgtLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AthStateMgt parameter.
@@ -1384,7 +1384,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAthTextMsgLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AthTextMsg parameter.
@@ -1425,7 +1425,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAthViewpointLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AthViewpoint parameter.
@@ -1466,7 +1466,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPSCycleTimeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PSCycleTime parameter.
@@ -1507,7 +1507,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPSDynClashModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PSDynClashMode parameter.
@@ -1548,7 +1548,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPSGraphicSimStepLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PSGraphicSimStep parameter.
@@ -1589,7 +1589,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPSGraphicUpdateLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PSGraphicUpdate parameter.
@@ -1630,7 +1630,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPVEndConditionLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PVEndCondition parameter.
@@ -1671,7 +1671,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPVStateMgtLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PVStateMgt parameter.
@@ -1712,7 +1712,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunAnnotBehaviorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunAnnotBehavior parameter.
@@ -1753,7 +1753,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunAnnotationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunAnnotation parameter.
@@ -1794,7 +1794,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunEndConditionLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunEndCondition parameter.
@@ -1835,7 +1835,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunHlnkBehaviorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunHlnkBehavior parameter.
@@ -1876,7 +1876,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunHyperlinkLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunHyperlink parameter.
@@ -1917,7 +1917,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunPauseLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunPause parameter.
@@ -1958,7 +1958,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunStateMgtLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunStateMgt parameter.
@@ -1999,7 +1999,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunStepSizeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunStepSize parameter.
@@ -2040,7 +2040,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunTextBehaviorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunTextBehavior parameter.
@@ -2081,7 +2081,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunTextMsgLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunTextMsg parameter.
@@ -2122,7 +2122,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunViewpointLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunViewpoint parameter.
@@ -2163,7 +2163,7 @@ class SimulationSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRunVisBehaviorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RunVisBehavior parameter.

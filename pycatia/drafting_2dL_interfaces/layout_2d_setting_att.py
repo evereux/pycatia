@@ -703,7 +703,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetActivate2DModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -756,7 +756,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetBackClippingPlaneInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -809,7 +809,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetBoundaries2DLColor(long oValueR,
                 | long oValueG,
                 | long oValueB)
@@ -828,7 +828,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetBoundaries2DLColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -881,7 +881,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetBoundaries2DLDisplayInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -934,7 +934,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetBoundaries2DLLineTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -987,7 +987,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetBoundaries2DLThicknessInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -1040,7 +1040,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCalloutCreationDialogBoxInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -1093,7 +1093,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCalloutCreationInActiveViewInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
@@ -1147,7 +1147,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetClippingFrameInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -1200,7 +1200,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetClippingFrameReframeOnModeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1237,7 +1237,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetClippingViewOutlineColor(long oValueR,
                 | long oValueG,
                 | long oValueB)
@@ -1256,7 +1256,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetClippingViewOutlineColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -1309,7 +1309,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetClippingViewOutlineLinetypeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
@@ -1363,7 +1363,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetClippingViewOutlineThicknessInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
@@ -1417,7 +1417,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCreateAssociativeUseEdgesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -1470,7 +1470,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDedicatedFilterTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1506,7 +1506,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDisplayBackAndCuttingPlaneInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
@@ -1560,7 +1560,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDisplayClippingOutlineInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -1613,7 +1613,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetEditDedicatedFilterDialogBoxInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
@@ -1667,7 +1667,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetFitAllInSheetFormatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -1720,7 +1720,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetHideIn3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -1773,7 +1773,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetInsureFilterNamesUniquenessInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
@@ -1827,7 +1827,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetInsureSheetNamesUniquenessInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
@@ -1881,7 +1881,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetInsureViewNamesUniquenessInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -1934,7 +1934,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetInsureViewNamesUniquenessScopeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1971,7 +1971,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetLayoutDefaultRenderStyleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -2024,7 +2024,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPropagateHighlightInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -2077,7 +2077,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetProtectedElementsColor(long oValueR,
                 | long oValueG,
                 | long oValueB)
@@ -2096,7 +2096,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetProtectedElementsColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -2149,7 +2149,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTileLayoutWindowInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -2202,7 +2202,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetViewBackgroundModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2238,7 +2238,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetViewFilterCreationModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2274,7 +2274,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetActivate2DModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Activate2DMode parameter.
@@ -2315,7 +2315,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBackClippingPlaneLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the BackClippingPlane parameter.
@@ -2356,7 +2356,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBoundaries2DLColor(long iValueR,
                 | long iValueG,
                 | long iValueB)
@@ -2375,7 +2375,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBoundaries2DLColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Boundaries2DLColor parameter.
@@ -2416,7 +2416,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBoundaries2DLDisplayLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Boundaries2DLDisplay parameter.
@@ -2457,7 +2457,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBoundaries2DLLineTypeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Boundaries2DLLineType parameter.
@@ -2498,7 +2498,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBoundaries2DLThicknessLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Boundaries2DLThickness parameter.
@@ -2539,7 +2539,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCalloutCreationDialogBoxLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CalloutCreationDialogBox parameter.
@@ -2580,7 +2580,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCalloutCreationInActiveViewLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CalloutCreationInActiveView
@@ -2622,7 +2622,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetClippingFrameLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ClippingFrame parameter.
@@ -2663,7 +2663,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetClippingFrameReframeOnModeLock(boolean iLocked)
                 | 
                 |     Deprecated:
@@ -2705,7 +2705,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetClippingViewOutlineColor(long iValueR,
                 | long iValueG,
                 | long iValueB)
@@ -2724,7 +2724,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetClippingViewOutlineColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ClippingViewOutlineColor parameter.
@@ -2765,7 +2765,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetClippingViewOutlineLinetypeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ClippingViewOutlineLinetype
@@ -2807,7 +2807,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetClippingViewOutlineThicknessLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ClippingViewOutlineThickness
@@ -2849,7 +2849,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCreateAssociativeUseEdgesLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CreateAssociativeUseEdges parameter.
@@ -2890,7 +2890,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDedicatedFilterTypeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DedicatedFilterType parameter.
@@ -2931,7 +2931,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDisplayBackAndCuttingPlaneLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DisplayBackAndCuttingPlane parameter.
@@ -2972,7 +2972,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDisplayClippingOutlineLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DisplayClippingOutline parameter.
@@ -3013,7 +3013,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetEditDedicatedFilterDialogBoxLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the EditDedicatedFilterDialogBox
@@ -3055,7 +3055,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFitAllInSheetFormatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the FitAllInSheetFormat parameter.
@@ -3096,7 +3096,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHideIn3DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the HideIn3D parameter.
@@ -3137,7 +3137,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetInsureFilterNamesUniquenessLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the InsureFilterNamesUniqueness
@@ -3179,7 +3179,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetInsureSheetNamesUniquenessLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the InsureSheetNamesUniqueness parameter.
@@ -3220,7 +3220,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetInsureViewNamesUniquenessLock(boolean iLocked)
                 | 
                 |     Locks or unlocks InsureViewNamesUniqueness parameter.
@@ -3261,7 +3261,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetInsureViewNamesUniquenessScopeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the InsureViewNamesUniquenessScope
@@ -3303,7 +3303,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLayoutDefaultRenderStyleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the default render style parameter.
@@ -3344,7 +3344,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPropagateHighlightLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PropagateHighlight parameter.
@@ -3385,7 +3385,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetProtectedElementsColor(long iValueR,
                 | long iValueG,
                 | long iValueB)
@@ -3404,7 +3404,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetProtectedElementsColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ProtectedElementsColor parameter.
@@ -3445,7 +3445,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTileLayoutWindowLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the tile of Layout window parameter.
@@ -3486,7 +3486,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetViewBackgroundModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ViewBackgroundMode parameter.
@@ -3527,7 +3527,7 @@ class Layout2DSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetViewFilterCreationModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ViewFilterCreationMode parameter.

@@ -46,7 +46,7 @@ class CD5Structure(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRoot() As CD5ID
                 | 
                 |     Returns the root ENOVIA V6 Identifier of the CD5Structure.
@@ -75,7 +75,7 @@ class CD5Structure(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Include(CD5ID iID)
                 | 
                 |     Includes an sub component (identified by its ENOVIA V6 Identifier) for a

@@ -62,7 +62,7 @@ class CD5Properties(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As CD5Property
                 | 
                 |     Returns ENOVIA V6 object property specified by 1 based index. That is, 1th

@@ -41,7 +41,7 @@ class PSPBuildPart(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ChangePartType(Product iRefPart,
                 | CATBSTR iuPartType,
                 | CATBSTR uPartNumber) As Product
@@ -84,7 +84,7 @@ class PSPBuildPart(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListPartParametricAttributes(Product iRefPart) As
                 | PspListOfBSTRs
                 | 
@@ -116,7 +116,7 @@ class PSPBuildPart(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func NewPart(CATBSTR iuPartType,
                 | CATBSTR uPartNumber) As Product
                 | 
@@ -152,7 +152,7 @@ class PSPBuildPart(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPartParametricAttributes(Product iRefPart,
                 | PspListOfBSTRs iLAttributeNames)
                 | 

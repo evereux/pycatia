@@ -42,7 +42,7 @@ class StrComputeServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCenterOfGravity(Product iProduct,
                 | double oX,
                 | double oY,
@@ -89,7 +89,7 @@ class StrComputeServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLength(Product iProduct) As double
                 | 
                 |     Returns the length to cut for a member object.
@@ -109,7 +109,7 @@ class StrComputeServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMass(Product iProduct) As double
                 | 
                 |     Returns the mass for a structure object.
@@ -129,7 +129,7 @@ class StrComputeServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMaterialName(Product iProduct) As CATBSTR
                 | 
                 |     Returns the material name for a structure object.
@@ -151,7 +151,7 @@ class StrComputeServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSurface(Product iProduct) As double
                 | 
                 |     Returns the surface for a structure object.
@@ -171,7 +171,7 @@ class StrComputeServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetVolume(Product iProduct) As double
                 | 
                 |     Returns the volume for a structure object.
@@ -191,7 +191,7 @@ class StrComputeServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetWetArea(Product iProduct) As double
                 | 
                 |     Returns the wet area for a structure object.

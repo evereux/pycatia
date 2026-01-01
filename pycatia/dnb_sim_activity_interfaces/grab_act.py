@@ -81,7 +81,7 @@ class GrabAct(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetGrabbedObjects(CATSafeArrayVariant oGrabbedObjects)
                 | 
                 |     Sets and retrieves the grabbed objects
@@ -118,7 +118,7 @@ class GrabAct(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutGrabbedObjects(CATSafeArrayVariant iGrabbedObjects)
 
         :param tuple i_grabbed_objects:

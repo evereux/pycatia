@@ -385,7 +385,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDownloaderDirInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -404,7 +404,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDownloaderInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -423,7 +423,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExistingTaskTreatmentInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -442,7 +442,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetJavaClassPathInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -461,7 +461,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetJavaExeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -480,7 +480,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNRLDirInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -499,7 +499,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNRLTeachDialogDisplayModeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -519,7 +519,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRobotProgramDirInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -538,7 +538,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUploaderDirInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -557,7 +557,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUploaderInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -576,7 +576,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetXMLDirInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -595,7 +595,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetXMLSchemaInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -614,7 +614,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDownloaderDirLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OLP Translator Directory setting
@@ -646,7 +646,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDownloaderLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OLP Translator setting parameter.
@@ -677,7 +677,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExistingTaskTreatmentLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OLP Existing Task Treatment On Upload
@@ -709,7 +709,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetJavaClassPathLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OLP Java Class Path parameter.
@@ -740,7 +740,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetJavaExeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OLP Java Executable parameter.
@@ -771,7 +771,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNRLDirLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the NRL configuration file directory setting
@@ -803,7 +803,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNRLTeachDialogDisplayModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OLPNRLTeachDialogDisplay parameter.
@@ -834,7 +834,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRobotProgramDirLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OLP Directory setting parameter.
@@ -865,7 +865,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUploaderDirLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OLP Parser Directory setting
@@ -897,7 +897,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUploaderLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OLP Parser setting parameter.
@@ -928,7 +928,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetXMLDirLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OLP XML Directory setting parameter.
@@ -959,7 +959,7 @@ class IgpOlpSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetXMLSchemaLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OLP XML Schema setting parameter.

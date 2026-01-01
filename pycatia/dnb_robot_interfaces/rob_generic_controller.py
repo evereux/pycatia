@@ -48,7 +48,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddAccuracyProfile(GenericAccuracyProfile profile)
                 | 
                 |     Add a new Accuracy Profile into controller.
@@ -91,7 +91,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddMotionProfile(GenericMotionProfile profile)
                 | 
                 |     Add a new Motion Profile into controller.
@@ -133,7 +133,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddObjFrameProfile(GenericObjFrameProfile profile)
                 | 
                 |     Add a new ObjFrame Profile into controller.
@@ -175,7 +175,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddToolProfile(GenericToolProfile iProfile)
                 | 
                 |     Add a new Tool Profile into controller.
@@ -217,7 +217,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAccuracyProfile(CATBSTR name,
                 | GenericAccuracyProfile profile)
                 | 
@@ -265,7 +265,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAccuracyProfileCount(long count)
                 | 
                 |     Get number of Accuracy profiles in controller.
@@ -293,7 +293,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAccuracyProfiles(CATSafeArrayVariant profiles)
                 | 
                 |     Get Accuracy profiles list in controller.
@@ -337,7 +337,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCurrentAccuracyProfile(CATBSTR profile)
                 | 
                 |     Get current Accuracy profile name used in controller.
@@ -365,7 +365,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCurrentMotionProfile(CATBSTR profile)
                 | 
                 |     Get current Motion profile name used in controller.
@@ -393,7 +393,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCurrentObjFrameProfile(CATBSTR profile)
                 | 
                 |     Get current ObjFrame profile name used in controller.
@@ -421,7 +421,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCurrentToolProfile(CATBSTR profile)
                 | 
                 |     Get current tool profile name used in controller.
@@ -448,7 +448,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMotionProfile(CATBSTR name,
                 | GenericMotionProfile profile)
                 | 
@@ -496,7 +496,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMotionProfileCount(long count)
                 | 
                 |     Get number of Motion profiles in controller.
@@ -523,7 +523,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMotionProfiles(CATSafeArrayVariant profiles)
                 | 
                 |     Get Motion profiles list in controller.
@@ -565,7 +565,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetName(CATBSTR oName)
                 | 
                 |     Retreives name of the generic controller.
@@ -592,7 +592,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetObjFrameProfile(CATBSTR name,
                 | GenericObjFrameProfile profile)
                 | 
@@ -640,7 +640,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetObjFrameProfileCount(long count)
                 | 
                 |     Get number of ObjFrame profiles in controller.
@@ -667,7 +667,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetObjFrameProfiles(CATSafeArrayVariant profiles)
                 | 
                 |     Get ObjFrame profiles list in controller.
@@ -709,7 +709,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetToolProfile(CATBSTR name,
                 | GenericToolProfile profile)
                 | 
@@ -755,7 +755,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetToolProfileCount(long count)
                 | 
                 |     Get number of tool profiles in controller.
@@ -782,7 +782,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetToolProfiles(CATSafeArrayVariant profiles)
                 | 
                 |     Get tool profiles list in controller.
@@ -824,7 +824,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub HasAccuracyProfile(CATBSTR name,
                 | boolean flag)
                 | 
@@ -871,7 +871,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub HasMotionProfile(CATBSTR name,
                 | boolean flag)
                 | 
@@ -918,7 +918,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub HasObjFrameProfile(CATBSTR name,
                 | boolean flag)
                 | 
@@ -965,7 +965,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub HasToolProfile(CATBSTR name,
                 | boolean flag)
                 | 
@@ -1011,7 +1011,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAccuracyProfile(CATBSTR name)
                 | 
                 |     Remove Accuracy profile given name in controller.
@@ -1038,7 +1038,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveMotionProfile(CATBSTR name)
                 | 
                 |     Remove Motion profile given name in controller.
@@ -1065,7 +1065,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveObjFrameProfile(CATBSTR name)
                 | 
                 |     Remove ObjFrame profile given name in controller.
@@ -1092,7 +1092,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveToolProfile(CATBSTR name)
                 | 
                 |     Remove tool profile given name in controller.
@@ -1119,7 +1119,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCurrentAccuracyProfile(CATBSTR profile)
                 | 
                 |     Make Accuracy profile with given name as current tool profile being used by
@@ -1147,7 +1147,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCurrentMotionProfile(CATBSTR profile)
                 | 
                 |     Make Motion profile with given name as current tool profile being used by
@@ -1175,7 +1175,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCurrentObjFrameProfile(CATBSTR profile)
                 | 
                 |     Make ObjFrame profile with given name as current ObjFrame profile being
@@ -1203,7 +1203,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCurrentToolProfile(CATBSTR profile)
                 | 
                 |     Make tool profile with given name as current tool profile being used by
@@ -1231,7 +1231,7 @@ class RobGenericController(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetName(CATBSTR name)
                 | 
                 |     Set name of the generic controller.

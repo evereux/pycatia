@@ -40,7 +40,7 @@ class ColourEssObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMemberColor(long oMemberColorR,
                 | long oMemberColorG,
                 | long oMemberColorB)
@@ -62,7 +62,7 @@ class ColourEssObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMemberColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -98,7 +98,7 @@ class ColourEssObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPlateColor(long oPlateColorR,
                 | long oPlateColorG,
                 | long oPlateColorB)
@@ -119,7 +119,7 @@ class ColourEssObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPlateColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -155,7 +155,7 @@ class ColourEssObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMemberColor(long iMemberColorR,
                 | long iMemberColorG,
                 | long iMemberColorB)
@@ -173,7 +173,7 @@ class ColourEssObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMemberColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MemberColor parameter.
@@ -214,7 +214,7 @@ class ColourEssObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPlateColor(long iPlateColorR,
                 | long iPlateColorG,
                 | long iPlateColorB)
@@ -231,7 +231,7 @@ class ColourEssObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPlateColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PlateColor parameter.

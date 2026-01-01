@@ -67,7 +67,7 @@ class ABQAnalyticalRigidSurface(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromPublication(Product iProduct,
                 | Publication iPublication)
                 | 
@@ -112,7 +112,7 @@ class ABQAnalyticalRigidSurface(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromReference(Product iProduct,
                 | Reference iRef)
                 | 
@@ -156,7 +156,7 @@ class ABQAnalyticalRigidSurface(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHandler(Product iProduct,
                 | Reference iRef)
                 | 
@@ -197,7 +197,7 @@ class ABQAnalyticalRigidSurface(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHandlerFromPublication(Product iProduct,
                 | Publication iPublication)
                 | 

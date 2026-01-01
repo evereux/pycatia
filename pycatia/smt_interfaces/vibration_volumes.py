@@ -43,7 +43,7 @@ class VibrationVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CleanUp()
                 | 
                 |     Cleans up.
@@ -63,7 +63,7 @@ class VibrationVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeVibrationVolume(Group GroupOfSelectedProducts,
                 | CATBSTR PositionsFilePath,
                 | double iAccuracy,
@@ -112,7 +112,7 @@ class VibrationVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeVibrationVolumeFromTrack(Group
                 | GroupOfSelectedProducts,
                 | CATBaseDispatch iSweptAble,
@@ -163,7 +163,7 @@ class VibrationVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeVibrationVolumeFromTrackWithAReference(Group
                 | GroupOfSelectedProducts,
                 | Product iReferenceProduct,
@@ -220,7 +220,7 @@ class VibrationVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeVibrationVolumeWithAReference(Group
                 | iGroupOfSelectedProducts,
                 | Product iReferenceProduct,
@@ -270,7 +270,7 @@ class VibrationVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func VibrationVolumeShapeName() As CATBSTR
                 | 
                 |     Returns the name of the associated shape.

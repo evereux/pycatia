@@ -39,7 +39,7 @@ class SchAnnotationBreak(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub FlipOverLine()
                 | 
                 |     Mirror the symbol over the route segment line that ends in the connector on
@@ -62,7 +62,7 @@ class SchAnnotationBreak(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub FlipOverOrthogonalLine()
                 | 
                 |     Mirror the symbol over the line orthogonal to the route segment line that
@@ -86,7 +86,7 @@ class SchAnnotationBreak(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Scale(double iDbScaleFactor)
                 | 
                 |     Scale the symbol.

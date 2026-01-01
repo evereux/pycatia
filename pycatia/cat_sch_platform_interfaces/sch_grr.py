@@ -42,7 +42,7 @@ class SchGRR(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetGRRName(CATBSTR oGRRName)
                 | 
                 |     Get current name of the GRR.
@@ -72,7 +72,7 @@ class SchGRR(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSchCntrOwners(SchAppConnector oCntrOwner,
                 | SchGRR oGRROwner)
                 | 
@@ -122,7 +122,7 @@ class SchGRR(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSchObjOwner() As SchAppConnectable
                 | 
                 |     Get the schematic object that owns this graphic
@@ -157,7 +157,7 @@ class SchGRR(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListConnectedGRRs(SchAppConnectable iGRROwner,
                 | SchListOfBSTRs iLCntbleClassFilter,
                 | SchListOfObjects oLCntbleGRRs,
@@ -242,7 +242,7 @@ class SchGRR(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGRRName(CATBSTR iGRRName)
                 | 
                 |     Set current name of the GRR.

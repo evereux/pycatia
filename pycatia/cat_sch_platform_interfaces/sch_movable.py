@@ -39,7 +39,7 @@ class SchMovable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Rotate(double iDb1RotationAngleInRadian)
                 | 
                 |     Rotate a schematic object with an angle in radian.
@@ -66,7 +66,7 @@ class SchMovable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Scale(double iDb1ScaleFactor)
                 | 
                 |     Scale a schematic object with a scale factor.
@@ -93,7 +93,7 @@ class SchMovable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ScaleSelectedObjects(SchListOfObjects iLCntblToScale,
                 | double iDb1ScaleFactor)
                 | 
@@ -140,7 +140,7 @@ class SchMovable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Transform(CATSafeArrayVariant iDb6TransMatrix)
                 | 
                 |     Transform a schematic object with a transformation matrix.
@@ -184,7 +184,7 @@ class SchMovable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Translate(CATSafeArrayVariant iDb2Vector)
                 | 
                 |     Translate a schematic object with a vector.

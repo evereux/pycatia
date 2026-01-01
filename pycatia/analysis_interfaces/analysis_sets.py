@@ -40,7 +40,7 @@ class AnalysisSets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iType,
                 | CATAnalysisSetType iSetType) As AnalysisSet
                 | 
@@ -80,7 +80,7 @@ class AnalysisSets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddExistingSet(AnalysisSet iSet,
                 | CATAnalysisSetType iSetType)
                 | 
@@ -131,7 +131,7 @@ class AnalysisSets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex,
                 | CATAnalysisSetSearchType iSerachType) As AnalysisSet
                 | 
@@ -179,7 +179,7 @@ class AnalysisSets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ItemByType(CATBSTR iType) As AnalysisSet
                 | 
                 |     Returns an analysis set using its type from the analysis sets
@@ -210,7 +210,7 @@ class AnalysisSets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a set using its index or its name from the set

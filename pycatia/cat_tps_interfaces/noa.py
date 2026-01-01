@@ -100,7 +100,7 @@ class Noa(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddURL(CATBSTR iUrl)
                 | 
                 |     Sets an URL.
@@ -120,7 +120,7 @@ class Noa(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDitto() As DrawingComponent
                 | 
                 |     Gets the ditto as a DrawingComponent of the Noa entity.
@@ -134,7 +134,7 @@ class Noa(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetModifiableText(CATVariant iIndex) As AnyObject
                 | 
                 |     Gets by index a modifiable Text included in the ditto which represents this
@@ -157,7 +157,7 @@ class Noa(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetModifiableTextsCount() As long
                 | 
                 |     Gets the number of modifiable texts included in the ditto which represents
@@ -178,7 +178,7 @@ class Noa(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetNbrURL(CATVariant oNumberOfURL)
                 | 
                 |     Deprecated:
@@ -209,7 +209,7 @@ class Noa(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNbrURL2() As long
                 | 
                 |     Gets the number of URL.
@@ -228,7 +228,7 @@ class Noa(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ModifyURL(CATBSTR iUrl,
                 | CATVariant iIndex)
                 | 
@@ -267,7 +267,7 @@ class Noa(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveURL(CATVariant iIndex)
                 | 
                 |     Removes an URL.
@@ -302,7 +302,7 @@ class Noa(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TPSParallelOnScreen() As TPSParallelOnScreen
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.
@@ -317,7 +317,7 @@ class Noa(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func URL(CATVariant iIndex) As CATBSTR
                 | 
                 |     Retrieves URL.

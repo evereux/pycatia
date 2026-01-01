@@ -52,7 +52,7 @@ class SimulationInitState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RestoreInitialState(DNBSimInitStateAttr iAttrMask)
                 | 
                 |     Restores initial state attributes for all objects in the current document
@@ -82,7 +82,7 @@ class SimulationInitState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RestoreInitialStateList(CATSafeArrayVariant
                 | iProductLists,
                 | DNBSimInitStateAttr iAttrMask)
@@ -133,7 +133,7 @@ class SimulationInitState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SaveInitialState(DNBSimInitStateAttr iAttrMask)
                 | 
                 |     Saves initial state attributes for all objects in the current
@@ -163,7 +163,7 @@ class SimulationInitState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SaveInitialStateList(CATSafeArrayVariant
                 | iProductLists,
                 | DNBSimInitStateAttr iAttrMask)

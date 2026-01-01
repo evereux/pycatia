@@ -58,7 +58,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateShopOrder() As short
                 | 
                 |     Create Shop Order method
@@ -76,7 +76,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateShopOrder2(CATBSTR iXMLInput)
                 | 
                 |     Create Shop Order using XML as SOI input.
@@ -98,7 +98,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetErrorDescription(short ErrorCode) As CATBSTR
                 | 
                 |     Get Error Description. It deciphers return ERROR code of Create Shop Order
@@ -122,7 +122,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_DPELoginInfo(CATBSTR iDPELoginId,
                 | CATBSTR iDPEPassword)
                 | 
@@ -146,7 +146,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_Export3DXML(boolean iRequired)
                 | 
                 |     Set Export 3D XML Flag.
@@ -182,7 +182,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportImageCapture(boolean iRequired)
                 | 
                 |     Set Export Image Capture Flag.
@@ -218,7 +218,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportJobXML(boolean iRequired)
                 | 
                 |     Set Export Job XML Flag.
@@ -254,7 +254,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportPrecXML(boolean iRequired)
                 | 
                 |     Set Export Precedence XML Flag.
@@ -290,7 +290,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_FTP(boolean iRequired)
                 | 
                 |     Set FTP Flag.
@@ -332,7 +332,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_FTPServerInformation(CATBSTR iftpHostName,
                 | CATBSTR iftpLoginName,
                 | CATBSTR iftpPassword,
@@ -371,7 +371,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_FilterInputString(CATBSTR ifilterInputString)
                 | 
                 |     Specifies the filters to be applied while loading the project. The filters
@@ -602,7 +602,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_GeneratePackNGo(boolean iRequired)
                 | 
                 |     Set Generate PackNGo Flag.
@@ -638,7 +638,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_GenerateSMGMappingXML(boolean iRequired)
                 | 
                 |     Set Generate SMG Mapping XML Flag.
@@ -674,7 +674,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_GenerateSMGXML(boolean iRequired)
                 | 
                 |     Set Generate SMG XML Flag.
@@ -710,7 +710,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_GenerateSMGXmlExePath(CATBSTR iRequired)
                 | 
                 |     Set Generate SMG XML EXE Path.
@@ -730,7 +730,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_LitePackNGo(boolean iRequired)
                 | 
                 |     Set Lite PackNGo Flag.
@@ -766,7 +766,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_LoadContext(CATBSTR iRequired)
                 | 
                 |     Set Load Context Type.
@@ -790,7 +790,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_LoadPositions(CATBSTR iRequired)
                 | 
                 |     Set Load Positions Type.
@@ -813,7 +813,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ManufacturingContext(boolean iRequired)
                 | 
                 |     Set Manufacturing Context Flag.
@@ -849,7 +849,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ProcessName(CATBSTR iprocessName)
                 | 
                 |     Set Process Name.
@@ -869,7 +869,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_RequestType(CATBSTR iRequsetType)
                 | 
                 |     Set Request Type.
@@ -893,7 +893,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_RequestedNodeDetails(CATBSTR iProjID,
                 | CATBSTR iRequestedNodeID,
                 | CATBSTR iEffectivity)
@@ -926,7 +926,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_SetEncryptionMode(boolean iEncryptmode)
                 | 
                 |     Set Encryption Mode.
@@ -962,7 +962,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_TransactionID(CATBSTR iTransactionID)
                 | 
                 |     Set Transaction Type.
@@ -982,7 +982,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_UpdatereleaseTable(boolean iRequired)
                 | 
                 |     Set Update Release Table Flag.
@@ -1018,7 +1018,7 @@ class OrderGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_Zip(boolean iRequired)
                 | 
                 |     Set Zip Flag.

@@ -57,7 +57,7 @@ class FunctActionsGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Add(FunctionalAction iAction)
                 | 
                 |     Adds an action to the actions' group.
@@ -102,7 +102,7 @@ class FunctActionsGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetExtremities(double oInputX,
                 | double oInputY,
                 | double oOutputX,
@@ -123,7 +123,7 @@ class FunctActionsGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(FunctionalAction iAction)
                 | 
                 |     Removes an action from the actions' group.
@@ -159,7 +159,7 @@ class FunctActionsGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePosition(long iPosition)
                 | 
                 |     Removes an action from the actions' group.
@@ -180,7 +180,7 @@ class FunctActionsGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Retrieve(CATVariant iIndex) As FunctionalAction
                 | 
                 |     Returns an action using its index or its name from the actions
@@ -217,7 +217,7 @@ class FunctActionsGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExtremities(double iInputX,
                 | double iInputY,
                 | double iOutputX,

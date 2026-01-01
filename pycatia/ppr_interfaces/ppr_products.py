@@ -42,7 +42,7 @@ class PPRProducts(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(Product iProduct) As Product
                 | 
                 |     Adds the specified Product to the current list of
@@ -66,7 +66,7 @@ class PPRProducts(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Product
                 | 
                 |     Retrieves the Product corresponding to the specified index in the list of

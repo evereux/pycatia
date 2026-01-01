@@ -50,7 +50,7 @@ class SchCompatible(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetBestCntrForRoute(CATSafeArrayVariant
                 | iDb2PlacementPt,
                 | SchGRR iGRR,
@@ -132,7 +132,7 @@ class SchCompatible(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetBestFitInsertInfo(CATSafeArrayVariant
                 | iDb2PlacementPt,
                 | AnyObject iInsertCompatInfo,
@@ -230,7 +230,7 @@ class SchCompatible(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetBestFitPlaceInfo(CATSafeArrayVariant
                 | iDb2PlacementPt,
                 | AnyObject iPlaceCompatInfo,
@@ -318,7 +318,7 @@ class SchCompatible(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IsTargetOKForInsert(AnyObject iCompInfo,
                 | AnyObject oInsertCompatInfo,
                 | boolean oBYes)
@@ -381,7 +381,7 @@ class SchCompatible(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IsTargetOKForPlace(SchGRRComp iGRRTarget,
                 | AnyObject iCompInfo,
                 | AnyObject oPlaceCompatInfo,
@@ -455,7 +455,7 @@ class SchCompatible(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IsTargetOKForRoute(CATBSTR iRouteCntrClassType,
                 | SchGRR iGRRTarget,
                 | SchListOfObjects oLOKCntrs,

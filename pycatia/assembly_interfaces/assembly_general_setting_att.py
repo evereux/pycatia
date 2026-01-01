@@ -216,7 +216,7 @@ class AssemblyGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAutoSwitchToDesignModeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -235,7 +235,7 @@ class AssemblyGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAutoUpdateModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -254,7 +254,7 @@ class AssemblyGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMoveWithFixTExtendModeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -273,7 +273,7 @@ class AssemblyGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUpdateStatusModeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -292,7 +292,7 @@ class AssemblyGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAutoSwitchToDesignModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the implicit switch from visualization mode to design mode
@@ -324,7 +324,7 @@ class AssemblyGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAutoUpdateModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the automatic update setting parameter.
@@ -355,7 +355,7 @@ class AssemblyGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMoveWithFixTExtendModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the setting parameter managing the extension of a move to
@@ -387,7 +387,7 @@ class AssemblyGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUpdateStatusModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the update status computation setting

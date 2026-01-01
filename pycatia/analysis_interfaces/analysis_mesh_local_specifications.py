@@ -40,7 +40,7 @@ class AnalysisMeshLocalSpecifications(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iType) As AnalysisMeshLocalSpecification
                 | 
                 |     Creates a new local specification and adds it to the local specification
@@ -66,7 +66,7 @@ class AnalysisMeshLocalSpecifications(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a local specification using its index or its name from the local

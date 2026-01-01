@@ -899,7 +899,7 @@ class RenderingLight(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetColor(CATSafeArrayVariant oColor)
                 | 
                 |     Returns the color of a light.
@@ -938,7 +938,7 @@ class RenderingLight(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Returns the coordinates of the origin of the light.
@@ -969,7 +969,7 @@ class RenderingLight(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetShadowColor(CATSafeArrayVariant oShadowColor)
                 | 
                 |     Returns the color of a shadow.
@@ -1008,7 +1008,7 @@ class RenderingLight(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTarget(CATSafeArrayVariant oTarget)
                 | 
                 |     Returns the coordinates of the target point of the light.
@@ -1039,7 +1039,7 @@ class RenderingLight(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutColor(CATSafeArrayVariant iColor)
                 | 
                 |     Sets the color of a light.
@@ -1071,7 +1071,7 @@ class RenderingLight(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutOrigin(CATSafeArrayVariant iOrigin)
                 | 
                 |     Sets the coordinates of the origin of the light.
@@ -1109,7 +1109,7 @@ class RenderingLight(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutShadowColor(CATSafeArrayVariant iShadowColor)
                 | 
                 |     Sets the color of a shadow.
@@ -1141,7 +1141,7 @@ class RenderingLight(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutTarget(CATSafeArrayVariant iTarget)
                 | 
                 |     Sets the coordinates of the target point of the light.

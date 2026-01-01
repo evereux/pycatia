@@ -87,7 +87,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ActivatePoint(short iPointNumber)
                 | 
                 |     Activates a point of a Manufacturing Pattern.
@@ -113,7 +113,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPartSurface(AnyObject iPartSurface,
                 | Product iProduct,
                 | short iNotify)
@@ -170,7 +170,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPosition(AnyObject iPosition,
                 | Product iProduct,
                 | short iNotify)
@@ -239,7 +239,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DeactivatePoint(short iPointNumber)
                 | 
                 |     Deactivates a point of a Manufacturing Pattern.
@@ -265,7 +265,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAnAttribute(CATBSTR iAttribut) As Parameter
                 | 
                 |     Retreive the attribute of Manufacturing Pattern from its
@@ -298,7 +298,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetLocalToolAxis(short iPointNumber,
                 | double oX,
                 | double oY,
@@ -334,7 +334,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetNumbers(CATSafeArrayVariant oNumbers)
                 | 
                 |     Retrieve the number of the points of a Manufacturing
@@ -376,7 +376,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePartSurfaces()
                 | 
                 |     Remove the Part Surfaces of the Manufacturing Pattern.
@@ -396,7 +396,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Reverse()
                 | 
                 |     Reverses the numbering of a Manufacturing Pattern.
@@ -416,7 +416,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetItemToCopy(AnyObject iItem)
                 | 
                 |     Sets the feature to be copied.
@@ -450,7 +450,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLocalToolAxis(short iPointNumber,
                 | double iX,
                 | double iY,
@@ -490,7 +490,7 @@ class ManufacturingPattern(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub StartPoint(short iPointNumber)
                 | 
                 |     Sets a point of a Manufacturing Pattern as the start

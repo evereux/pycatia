@@ -45,7 +45,7 @@ class AttachmentCont(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAttachmentFactory(CATBaseDispatch oAttachFactory)
                 | 
                 |     Get the AttachmentFactory for the current document
@@ -69,7 +69,7 @@ class AttachmentCont(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListofAttachments(CATSafeArrayVariant oAttachList)
                 | 
                 |     Get list of attachments from the Attachment Container

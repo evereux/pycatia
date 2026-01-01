@@ -140,7 +140,7 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOriginPoint(double x,
                 | double y,
                 | double z)
@@ -167,7 +167,7 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOriginXDirection(double x,
                 | double y,
                 | double z)
@@ -193,7 +193,7 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOriginYDirection(double x,
                 | double y,
                 | double z)
@@ -219,7 +219,7 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOriginZDirection(double x,
                 | double y,
                 | double z)
@@ -245,7 +245,7 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOriginPoint(AnyObject iPoint,
                 | AnyObject iProduct)
                 | 
@@ -274,7 +274,7 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOriginPointByCoordinates(double x,
                 | double y,
                 | double z)
@@ -302,7 +302,7 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOriginXDirection(double x,
                 | double y,
                 | double z)
@@ -331,7 +331,7 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOriginZDirection(double x,
                 | double y,
                 | double z)
@@ -360,7 +360,7 @@ class ManufacturingMachiningAxis(ManufacturingFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPartAxisSystem(AnyObject iPAS,
                 | AnyObject iProduct)
                 | 

@@ -242,7 +242,7 @@ class AssemblyPocket(AssemblyFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDirection(CATSafeArrayVariant ioDirection)
                 | 
                 |     Retrieves the pocket direction vector components.
@@ -291,7 +291,7 @@ class AssemblyPocket(AssemblyFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ReverseInnerSide()
                 | 
                 |     Reverses the pocket inner side when the profile is open.
@@ -312,7 +312,7 @@ class AssemblyPocket(AssemblyFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDirection(Reference iLine,
                 | Product iLineComp)
                 | 

@@ -47,7 +47,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetBranchIDs() As CATSafeArrayVariant
                 | 
                 |     Gets the "subcompitem" IDs (oid) of the Branch. Branch is a list of parents
@@ -89,7 +89,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDetailingID() As CATBSTR
                 | 
                 |     Gets the ID (oid) of the loaded detailing
@@ -111,7 +111,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetProcessTreeID() As CATBSTR
                 | 
                 |     Gets the "subcompitem" ID (oid) of the process tree selected for the load
@@ -135,7 +135,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetProductBOMID() As CATBSTR
                 | 
                 |     Gets the "subcompitem" ID (oid) of the product BOM selected for the load
@@ -159,7 +159,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetResourceTreeID() As CATBSTR
                 | 
                 |     Gets the "subcompitem" ID (oid) of the resource tree selected for the load
@@ -183,7 +183,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSelectedObjectID() As CATBSTR
                 | 
                 |     Gets the "ergocompbase" ID (oid) of the selected object (object used to
@@ -206,7 +206,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBranchIDs(CATSafeArrayVariant iListBranchIDs)
                 | 
                 |     Sets the "subcompitem" IDs (oid) of the Branch. Branch is a list of parents
@@ -263,7 +263,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDetailingID(CATBSTR iDetailingID)
                 | 
                 |     Sets the ID (oid) of detailing to be loaded
@@ -286,7 +286,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFilters(CATBSTR iFilters)
                 | 
                 |     Specifies the filters to be applied while loading the project. The filters
@@ -510,7 +510,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetProcessTreeID(CATBSTR iProcessTreeID)
                 | 
                 |     Sets the "subcompitem" ID (oid) of process tree selected for the load For
@@ -535,7 +535,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetProductBOMID(CATBSTR iProductBOMID)
                 | 
                 |     Sets the "subcompitem" ID (oid) of product BOM selected for the load For
@@ -560,7 +560,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetResourceTreeID(CATBSTR iResourceTreeID)
                 | 
                 |     Sets the "subcompitem" ID (oid) of resource tree selected for the load For
@@ -585,7 +585,7 @@ class MHILoadParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSelectedObjectID(CATBSTR iSelectedObjectID)
                 | 
                 |     Sets the "ergocompbase" ID (oid) of selected object (object use to start

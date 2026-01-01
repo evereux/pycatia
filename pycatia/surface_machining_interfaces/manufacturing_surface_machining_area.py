@@ -44,7 +44,7 @@ class ManufacturingSurfaceMachiningArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveNCGeometry(CATBSTR iGeometryType)
                 | 
                 |     Removes all the NCGeometry of a specified type linked to a Manufacturing
@@ -78,7 +78,7 @@ class ManufacturingSurfaceMachiningArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNCGeometry(CATBSTR iGeometryType,
                 | AnyObject iNCGeometry)
                 | 

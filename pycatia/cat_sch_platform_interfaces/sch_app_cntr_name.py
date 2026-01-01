@@ -39,7 +39,7 @@ class SchAppCntrName(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppListNames() As SchListOfBSTRs
                 | 
                 |     List connector names allowed.
@@ -67,7 +67,7 @@ class SchAppCntrName(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetName(CATBSTR oName)
                 | 
                 |     Get the application connector name.
@@ -96,7 +96,7 @@ class SchAppCntrName(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetName(CATBSTR iName)
                 | 
                 |     Set the application connector name.

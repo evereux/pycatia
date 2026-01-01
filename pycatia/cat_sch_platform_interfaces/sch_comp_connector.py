@@ -46,7 +46,7 @@ class SchCompConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddConnector(CATBSTR iClassType,
                 | SchGRRComp iGRR,
                 | CATSafeArrayVariant iDb2CntrPosition,
@@ -118,7 +118,7 @@ class SchCompConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddDynamicConnector(CATBSTR iClassType,
                 | SchGRRComp iGRR,
                 | CATSafeArrayVariant iDb2CntrPosition,
@@ -183,7 +183,7 @@ class SchCompConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveConnector(SchGRRComp iGRR,
                 | SchAppConnector iCntrToRemove)
                 | 

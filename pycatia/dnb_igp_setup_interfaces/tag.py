@@ -47,7 +47,7 @@ class Tag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetName(CATBSTR oTagName)
                 | 
                 |     Retreives name of the Tag.
@@ -84,7 +84,7 @@ class Tag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetType(CATBSTR oFrameName)
                 | 
                 |     Get Frame Type of the Tag by Name.
@@ -128,7 +128,7 @@ class Tag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetXYZ(CATSafeArrayVariant ioXYZ)
                 | 
                 |     Gets the Position(X, Y, Z) of the Tag.
@@ -180,7 +180,7 @@ class Tag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetYPR(CATSafeArrayVariant ioYPR)
                 | 
                 |     Gets the Orientation (Y, P, R) of the Tag.
@@ -232,7 +232,7 @@ class Tag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetName(CATBSTR iTagName)
                 | 
                 |     Sets name of the Tag.
@@ -268,7 +268,7 @@ class Tag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetType(CATBSTR iFrameName)
                 | 
                 |     Sets Frame Type of the Tag by Name.
@@ -311,7 +311,7 @@ class Tag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetXYZ(double iX,
                 | double iY,
                 | double iZ)
@@ -355,7 +355,7 @@ class Tag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetYPR(double iY,
                 | double iP,
                 | double iR)

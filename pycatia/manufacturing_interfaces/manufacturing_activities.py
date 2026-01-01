@@ -41,7 +41,7 @@ class ManufacturingActivities(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Add(ManufacturingActivity iRealObj)
                 | 
                 |     This method adds the specified CATIAManufacturingActivity in the current
@@ -79,7 +79,7 @@ class ManufacturingActivities(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetElement(long iIndex) As ManufacturingActivity
                 | 
                 |     This method return the specified CATIAManufacturingActivity in the current
@@ -102,7 +102,7 @@ class ManufacturingActivities(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ManufacturingActivity
                 | 
                 |     This method return the specified CATIAManufacturingActivity in the current

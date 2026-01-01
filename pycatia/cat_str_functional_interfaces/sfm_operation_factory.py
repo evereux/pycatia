@@ -50,7 +50,7 @@ class SFMOperationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAvailableSlotsFromCatalog(SfmProfile iSfmProfile) As
                 | CATSafeArrayVariant
                 | 
@@ -86,7 +86,7 @@ class SFMOperationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetEndcutManager() As SfmEndcutManager
                 | 
                 |     Gets the Endcut Manager.
@@ -123,7 +123,7 @@ class SFMOperationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSlotParameters(SfmProfile iSfmProfile,
                 | CATBSTR iSlotName,
                 | SfmConnectionParameters oListSlotParameters,

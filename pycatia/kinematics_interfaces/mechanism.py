@@ -205,7 +205,7 @@ class Mechanism(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddCommand(CATBSTR iCmdType,
                 | Joint iJoint) As MechanismCommand
                 | 
@@ -231,7 +231,7 @@ class Mechanism(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddJoint(CATBSTR iJointType,
                 | CATSafeArrayVariant iListElem) As Joint
                 | 
@@ -258,7 +258,7 @@ class Mechanism(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCommandValues(CATSafeArrayVariant ioCmdValues)
                 | 
                 |     Allows to retrieve current state of the mechanism.
@@ -293,7 +293,7 @@ class Mechanism(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetProduct(long iIndex) As Product
                 | 
                 |     Returns an item from the list of the products involved in the
@@ -319,7 +319,7 @@ class Mechanism(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetProductMotion(Product iProduct,
                 | CATSafeArrayVariant ioMotion)
                 | 
@@ -363,7 +363,7 @@ class Mechanism(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutCommandValues(CATSafeArrayVariant iCmdValues)
                 | 
                 |     Triggers immediate mechanism solving (motion is NOT applied to the
@@ -399,7 +399,7 @@ class Mechanism(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutCommandValuesWithMultiSteps(CATSafeArrayVariant
                 | iCmdValues,
                 | long iNbSteps,
@@ -450,7 +450,7 @@ class Mechanism(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetCmdValueToZero(MechanismCommand iCommand)
                 | 
                 |     Sets the command value to zero for the given command without disturbing
@@ -486,7 +486,7 @@ class Mechanism(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Update()
                 | 
                 |     Reassembles the mechanism after dimension changes in the parts.

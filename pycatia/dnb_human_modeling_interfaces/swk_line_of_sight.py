@@ -76,7 +76,7 @@ class SWKLineOfSight(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyPosition(CATSafeArrayVariant piPositionIncrement)
                 | 
                 |     Applies a new relative position for the line of sight.
@@ -142,7 +142,7 @@ class SWKLineOfSight(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDOF(long piDOFNumber) As SWKDOF
                 | 
                 |     Returns a specific degree of freedom of the line of sight. A line of sight
@@ -165,7 +165,7 @@ class SWKLineOfSight(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPosition(CATSafeArrayVariant piNewPosition)
                 | 
                 |     Sets a new absolute position for the line of sight.

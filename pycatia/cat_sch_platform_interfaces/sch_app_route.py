@@ -40,7 +40,7 @@ class SchAppRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppBreak() As AnyObject
                 | 
                 |     Break the application route into 2 routes.
@@ -66,7 +66,7 @@ class SchAppRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppCreateLocalReference(Document iDocumentToPutCopyIn) As
                 | SchAppRoute
                 | 
@@ -100,7 +100,7 @@ class SchAppRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToBranch(CATBSTR iBranchClassType,
                 | boolean oBYes)
                 | 
@@ -147,7 +147,7 @@ class SchAppRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToBreak(boolean oBYes)
                 | 
                 |     Query whether it is OK to break.
@@ -192,7 +192,7 @@ class SchAppRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToConcatenate(boolean oBYes)
                 | 
                 |     Query whether it is OK to concatenate.
@@ -235,7 +235,7 @@ class SchAppRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToModifyPoints(boolean oBYes)
                 | 
                 |     Query whether it is OK to modify (add or remove) the
@@ -279,7 +279,7 @@ class SchAppRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppPostBreakProcess(SchRoute iOldAppRoute,
                 | SchRoute iNewAppRoute)
                 | 
@@ -327,7 +327,7 @@ class SchAppRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppPostConcatenateProcess(SchRoute iSchRoute2)
                 | 
                 |     Post process after concatenate 2 application routes into

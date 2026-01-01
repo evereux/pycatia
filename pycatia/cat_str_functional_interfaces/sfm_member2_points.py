@@ -314,7 +314,7 @@ class SFMMember2Points(SFMMember):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub InvertEndPointOnCrvOrientation()
 
         :rtype: None
@@ -326,7 +326,7 @@ class SFMMember2Points(SFMMember):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub InvertStartPointOnCrvOrientation()
                 | 
                 |     Inverts the orientation of the offset for an extremity

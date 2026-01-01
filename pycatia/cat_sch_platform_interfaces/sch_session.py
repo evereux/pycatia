@@ -40,7 +40,7 @@ class SchSession(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateDocument(CATBSTR iDocType,
                 | boolean iBInteractive,
                 | Document oNewDoc)
@@ -94,7 +94,7 @@ class SchSession(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCurrentApplicationID(CATBSTR oApplicationID)
                 | 
                 |     Get the current application ID.
@@ -121,7 +121,7 @@ class SchSession(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCurrentDocument() As Document
                 | 
                 |     Get the current document.
@@ -147,7 +147,7 @@ class SchSession(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSchExtContainer(Document iDoc) As AnyObject
                 | 
                 |     Get the schematic container (e.g. for CATISchBaseFactory
@@ -179,7 +179,7 @@ class SchSession(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCurrentApplicationID(CATBSTR iApplicationID)
                 | 
                 |     Set the current application ID.
@@ -206,7 +206,7 @@ class SchSession(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCurrentDocument(Document iCurDoc)
                 | 
                 |     Set the current document.

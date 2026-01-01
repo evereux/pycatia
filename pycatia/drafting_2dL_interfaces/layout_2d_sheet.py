@@ -362,7 +362,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Activate()
                 | 
                 |     Activates the Layout2D sheet. Activating a Layout2D sheet means that this
@@ -384,7 +384,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsDetail() As boolean
                 | 
                 |     Checks whether the sheet is a detail sheet.
@@ -404,7 +404,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PrintOut(CatRenderingMode iRenderingMode)
                 | 
                 |     Prints the Layout2D sheet according to its page setup on the default
@@ -433,7 +433,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PrintOut2()
                 | 
                 |     Prints the Layout2D sheet according to its page setup on the default
@@ -456,7 +456,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PrintToFile(CATBSTR fileName,
                 | CatRenderingMode iRenderingMode)
                 | 
@@ -488,7 +488,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PrintToFile2(CATBSTR fileName)
                 | 
                 |     Prints the Layout2D sheet according its page setup in a file instead of
@@ -516,7 +516,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub reorder_Views(CATSafeArrayVariant iOrderedViews)
                 | 
                 |     Changes the positions of the views in this sheet according to the given

@@ -45,7 +45,7 @@ class AnalysisImages(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iImageName,
                 | CATVariant iHideExistingImages,
                 | CATVariant iShowMesh,
@@ -102,7 +102,7 @@ class AnalysisImages(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As AnalysisImage
                 | 
                 |     Returns an analysis image using its index or its name from the analysis
@@ -138,7 +138,7 @@ class AnalysisImages(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveImage(CATVariant iImageIdentifier)
                 | 
                 |     Deletes the Analysis Image from the analysis images collection of the

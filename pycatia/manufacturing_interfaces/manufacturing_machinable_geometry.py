@@ -83,7 +83,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPointedGeometry(AnyObject iGeometry,
                 | Product iProduct,
                 | CATSafeArrayVariant iShapes)
@@ -152,7 +152,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPointedGeometryNotify(AnyObject iGeometry,
                 | Product iProduct,
                 | CATSafeArrayVariant iShapes,
@@ -232,7 +232,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPointedGeometryWithNoDuplicatedCheck(AnyObject
                 | iGeometry,
                 | Product iProduct,
@@ -302,7 +302,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPointedGeometryWithNoDuplicatedCheckNotify(AnyObject
                 | iGeometry,
                 | Product iProduct,
@@ -378,7 +378,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAssociatedTPS(long IndexOfPointedGeom,
                 | CATSafeArrayVariant oAnnotationsList)
                 |
@@ -444,7 +444,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAssociatedTPSCount(long IndexOfPointedGeom) As
                 | long
                 |
@@ -482,7 +482,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDirection(double oX,
                 | double oY,
                 | double oZ,
@@ -529,7 +529,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOrigin(double oX,
                 | double oY,
                 | double oZ,
@@ -578,7 +578,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListPointedGeometry(long iIndex,
                 | AnyObject oGeometry,
                 | Product oProduct,
@@ -653,7 +653,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListShapesOfPointedGeometry(long iIndex,
                 | CATSafeArrayVariant oShapes)
                 |
@@ -723,7 +723,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func PointedGeometryCount() As long
                 |
                 |     Returns the pointed geometry list count.
@@ -747,7 +747,7 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePointedGeometry(long iIndex)
                 |
                 |     Removes a geometry from the pointed geometry list.

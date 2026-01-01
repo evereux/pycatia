@@ -42,7 +42,7 @@ class SWKLineOfSightNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LockPosture(long piDOFId)
                 | 
                 |     Lock the posture of the line of sight for the dof piDOFId.
@@ -57,7 +57,7 @@ class SWKLineOfSightNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Optimize(long piDOFId)
                 | 
                 |     Sets the limits to match the best PrefAngle for the DOF piDOFId
@@ -72,7 +72,7 @@ class SWKLineOfSightNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetAngularLimitations(long piDOFId,
                 | long piReset)
                 | 
@@ -92,7 +92,7 @@ class SWKLineOfSightNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetPosture(long piDOFId)
                 | 
                 |     Reset the posture of the line of sight for the dof piDOFId.
@@ -107,7 +107,7 @@ class SWKLineOfSightNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetPrefAngles(long piDOFId)
                 | 
                 |     Reset the preferred angles of the line of sight for the dof piDOFId.
@@ -122,7 +122,7 @@ class SWKLineOfSightNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPercentage(double piPercentage,
                 | long piDOFId)
                 | 

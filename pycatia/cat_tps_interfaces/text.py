@@ -65,7 +65,7 @@ class Text(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Get2dAnnot() As DrawingText
                 | 
                 |     Retrieves Drafting text.
@@ -79,7 +79,7 @@ class Text(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TPSParallelOnScreen() As TPSParallelOnScreen
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.

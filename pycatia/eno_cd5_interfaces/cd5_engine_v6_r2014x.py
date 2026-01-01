@@ -55,7 +55,7 @@ class CD5EngineV6R2014x(CD5Engine):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateSaveOperation(CD5SaveOperation_Scope iScope) As
                 | CD5SaveOperation
                 |
@@ -91,7 +91,7 @@ class CD5EngineV6R2014x(CD5Engine):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GenerateAutoname(CATBSTR iAutonameSeries,
                 | short iCount) As CATSafeArrayVariant
                 |
@@ -131,7 +131,7 @@ class CD5EngineV6R2014x(CD5Engine):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAutonameSeries(CATBSTR iType) As
                 | CATSafeArrayVariant
                 |

@@ -39,7 +39,7 @@ class SchAppCntrFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppGetFlowCapability(CatSchIDLCntrFlowCapability
                 | oEFlowCapability)
                 | 
@@ -70,7 +70,7 @@ class SchAppCntrFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppGetFlowReality(CatSchIDLCntrFlowReality
                 | oEFlowReality)
                 | 
@@ -99,7 +99,7 @@ class SchAppCntrFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppSetFlowCapability(CatSchIDLCntrFlowCapability
                 | iEFlowCapability)
                 | 
@@ -130,7 +130,7 @@ class SchAppCntrFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppSetFlowReality(CatSchIDLCntrFlowReality
                 | iEFlowReality)
                 | 

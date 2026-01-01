@@ -47,7 +47,7 @@ class SchDropOffView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddDropOffView(DrawingView iView,
                 | DrawingView oView,
                 | CATSafeArrayVariant iDb2PosXY,
@@ -116,7 +116,7 @@ class SchDropOffView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListDropOffViews() As SchListOfObjects
                 | 
                 |     Lists drafting views in this schematics diagram.
@@ -142,7 +142,7 @@ class SchDropOffView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveDropOffView(DrawingView iViewToRemove)
                 | 
                 |     Removes a drafting view from the schematics diagram.

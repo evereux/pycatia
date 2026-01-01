@@ -41,7 +41,7 @@ class PSPLightPart(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDefinition(Product iRelAxis) As PspListOfDoubles
                 | 
                 |     Retrieves the points defining the object.
@@ -75,7 +75,7 @@ class PSPLightPart(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDefinition(Product iRelAxis,
                 | CATSafeArrayVariant iListPoints)
                 | 

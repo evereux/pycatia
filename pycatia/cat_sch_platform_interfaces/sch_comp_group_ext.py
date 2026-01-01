@@ -40,7 +40,7 @@ class SchCompGroupExt(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPlacementAxis(SchListOfDoubles oDb6PlaceMatrix)
                 | 
                 |     Get the placement axis for the component group.
@@ -84,7 +84,7 @@ class SchCompGroupExt(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPlacementAxis(CATSafeArrayVariant oDb6PlaceMatrix)
                 | 
                 |     Set the placement axis for the component group.

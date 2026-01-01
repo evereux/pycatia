@@ -45,7 +45,7 @@ class SFMSlot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCntnDetailName() As CATBSTR
                 | 
                 |     Gets the name of the UDF used for creating the slot.
@@ -82,7 +82,7 @@ class SFMSlot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCntnDetailParameters(SfmConnectionParameters
                 | oListOfSlotParameters,
                 | CATSafeArrayVariant oListOfParameterNames)
@@ -144,7 +144,7 @@ class SFMSlot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetConnectionCoordinate() As CATSafeArrayVariant
                 | 
                 |     Gets thelocation of existing slot.
@@ -181,7 +181,7 @@ class SFMSlot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMasterObject() As Reference
                 | 
                 |     Gets the Penetrating Element used in the creation of the
@@ -214,7 +214,7 @@ class SFMSlot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSlaveObject() As Reference
                 | 
                 |     Gets the Penetrated Element used in the creation of the
@@ -247,7 +247,7 @@ class SFMSlot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSlaveObject(Reference iSlaveObject)
                 | 
                 |     Sets/Replaces the Penetrated Element used in the creation of the
@@ -297,7 +297,7 @@ class SFMSlot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UpdateConnectionsSet()
                 | 
                 |     Updates the Connection Set.

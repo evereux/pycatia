@@ -100,7 +100,7 @@ class SWKIKManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddConstraint(CATBSTR piEndEffector) As
                 | SWKIKConstraint
                 | 
@@ -124,7 +124,7 @@ class SWKIKManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddConstraintFrom(SWKIKConstraint piConstraintFrom,
                 | SWKIKConstraint poCreatedConstraint)
                 | 
@@ -163,7 +163,7 @@ class SWKIKManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetConstraint(long piIndex) As SWKIKConstraint
                 | 
                 |     Returns the constraint at index piIndex. First element is at index 0.
@@ -178,7 +178,7 @@ class SWKIKManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAllConstraints()
                 | 
                 |     Remove all existing constraints on the manikin.
@@ -192,7 +192,7 @@ class SWKIKManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveConstraint(SWKIKConstraint piConstraintToRemove)
                 | 
                 |     Remove the given constraint.
@@ -227,7 +227,7 @@ class SWKIKManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Resolve()
                 | 
                 |     Launch the IK solver to minimize the potential functions

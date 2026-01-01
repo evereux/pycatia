@@ -41,7 +41,7 @@ class PSPLightConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAlignmentVector(Product iRelAxis) As
                 | PspListOfDoubles
                 | 
@@ -74,7 +74,7 @@ class PSPLightConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetOrientationVector(Product iRelAxis) As
                 | PspListOfDoubles
                 | 
@@ -107,7 +107,7 @@ class PSPLightConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetOrigin(Product iRelAxis) As PspListOfDoubles
                 | 
                 |     Returns the position of the connector.
@@ -138,7 +138,7 @@ class PSPLightConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAlignmentVector(Product iRelAxis,
                 | CATSafeArrayVariant iAlignmentDirection)
                 | 
@@ -187,7 +187,7 @@ class PSPLightConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOrientationVector(Product iRelAxis,
                 | CATSafeArrayVariant iOrientationDirection)
                 | 
@@ -236,7 +236,7 @@ class PSPLightConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOrigin(Product iRelAxis,
                 | CATSafeArrayVariant iDb3Position)
                 | 

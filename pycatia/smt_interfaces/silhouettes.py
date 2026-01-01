@@ -51,7 +51,7 @@ class Silhouettes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(Product iProductToSilhouette,
                 | double iAccuracy,
                 | CATSafeArrayVariant iAzimuts,
@@ -94,7 +94,7 @@ class Silhouettes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CleanUp()
                 | 
                 |     Performs some clean-up.
@@ -114,7 +114,7 @@ class Silhouettes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeASilhouette(Group GroupOfSelectedProducts,
                 | CATSafeArrayVariant iViewPoints,
                 | double iAccuracy,
@@ -166,7 +166,7 @@ class Silhouettes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeASilhouetteWithAReference(Group
                 | iGroupOfSelectedProducts,
                 | Product iReferenceProduct,
@@ -218,7 +218,7 @@ class Silhouettes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func SilhouetteShapeName() As CATBSTR
                 | 
                 |     Returns the name of the associated shape.

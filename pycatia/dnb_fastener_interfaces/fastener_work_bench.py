@@ -41,7 +41,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CurveFasteners(CATSafeArrayVariant
                 | oCurveFastenerArray)
 
@@ -70,7 +70,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub FastenerGroups(CATSafeArrayVariant
                 | oFastenerGroupArray)
 
@@ -99,7 +99,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfCurveFasteners() As long
 
         :rtype: int
@@ -111,7 +111,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfFastenerGroups() As long
 
         :rtype: int
@@ -123,7 +123,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfPointFasteners() As long
 
         :rtype: int
@@ -135,7 +135,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PointFasteners(CATSafeArrayVariant
                 | oPointFastenerArray)
 

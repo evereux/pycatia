@@ -192,7 +192,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateMachine(CATBSTR iTypeMachine) As
                 | ManufacturingMachine
                 | 
@@ -216,7 +216,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DesignGeometriesCount() As long
                 | 
                 |     Returns the number of design geometries from a Manufacturing
@@ -245,7 +245,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ExportCATSetting(CATBSTR dirPath)
                 | 
                 |     ExportCATSetting. Export All Machining CATSetting file to a location in xml format.
@@ -262,7 +262,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func FixtureGeometriesCount() As long
                 | 
                 |     Returns the number of fixture geometries from a Manufacturing
@@ -291,7 +291,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMachiningAxisSystemName() As CATBSTR
                 | 
                 |     Retrieves the Name of the Machining Axis system from a Manufacturing
@@ -313,7 +313,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetManufacturingView() As ManufacturingView
                 | 
                 |     Retrieves the Manufacturing View from a Manufacturing
@@ -334,7 +334,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPartName() As CATBSTR
                 | 
                 |     Retrieves the Name of the Design Part from a Manufacturing
@@ -355,7 +355,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetProductInstance() As Product
                 | 
                 |     Give the Product of the ProductList linked to a Manufacturing
@@ -376,7 +376,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSafetyPlane() As CATSafeArrayVariant
                 | 
                 |     Retrieves the Safety Plane from a Manufacturing Setup.
@@ -397,7 +397,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetStockFromSetup(CATBSTR oStockPath)
                 | 
                 |     Retrieves the path of the Stock file from a Manufacturing
@@ -419,7 +419,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetToolChangePoint(double oX,
                 | double oY,
                 | double oZ)
@@ -443,7 +443,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ImportCATSetting(CATBSTR XMLFilePath)
                 | 
                 |     ImportCATSetting. Import the CATSetting in xml format from a specified location.
@@ -460,7 +460,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func InProcessModelBodiesCount() As long
                 | 
                 |     Returns the number of In Process Model Bodies from a Manufacturing
@@ -490,7 +490,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListDesignGeometries(CATSafeArrayVariant
                 | oListOfDesignGeometries)
                 | 
@@ -546,7 +546,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListDesignGeometriesProducts(CATSafeArrayVariant
                 | oListOfDesignGeometriesProducts)
                 | 
@@ -602,7 +602,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListFixtureGeometries(CATSafeArrayVariant
                 | oListOfFixtureGeometries)
                 | 
@@ -658,7 +658,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListFixtureGeometriesProducts(CATSafeArrayVariant
                 | oListOfFixtureGeometriesProducts)
                 | 
@@ -715,7 +715,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListInProcessModelBodies(CATSafeArrayVariant
                 | oListOfIPMBodies)
                 | 
@@ -768,7 +768,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListStockGeometries(CATSafeArrayVariant
                 | oListOfStockGeometries)
                 | 
@@ -822,7 +822,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListStockGeometriesProducts(CATSafeArrayVariant
                 | oListOfStockGeometriesProducts)
                 | 
@@ -877,7 +877,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ReadMfgData(CATBSTR iFileName,
                 | CATSafeArrayVariant iNCMILLSET)
                 | 
@@ -913,7 +913,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDesignPart(AnyObject iPart,
                 | Product iProduct)
                 | 
@@ -954,7 +954,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetProductAndReconciliate(Product iProduct)
                 | 
                 |     Associate the Product to a Manufacturing Setup and reconciliate
@@ -991,7 +991,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSafetyPlane(AnyObject iSafetyPlane,
                 | Product iProduct)
                 | 
@@ -1031,7 +1031,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetStock(AnyObject iStock,
                 | Product iProduct)
                 | 
@@ -1072,7 +1072,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetToolChangePoint(double iX,
                 | double iY,
                 | double iZ)
@@ -1099,7 +1099,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetToolChangePointByName(CATBSTR iPointName)
                 | 
                 |     Initialise the ToolChange point of the machine linked to a Manufacturing
@@ -1121,7 +1121,7 @@ class ManufacturingSetup(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func StockGeometriesCount() As long
                 | 
                 |     Returns the number of stock geometries from a Manufacturing

@@ -44,7 +44,7 @@ class BehaviorVBScript(Behavior):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Cancel()
                 | 
                 |     Inform Client VB has Failed & Has Not operated.
@@ -63,7 +63,7 @@ class BehaviorVBScript(Behavior):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Done()
                 | 
                 |     Inform Client VB has Successfully Finished.
@@ -82,7 +82,7 @@ class BehaviorVBScript(Behavior):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetInternal(CATBSTR pName) As AnyObject
                 | 
                 |     Returns one available io of the behavior. The behavior has to be in
@@ -106,7 +106,7 @@ class BehaviorVBScript(Behavior):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutInternal(CATBSTR pName,
                 | AnyObject oValue)
                 | 
@@ -132,7 +132,7 @@ class BehaviorVBScript(Behavior):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Start()
                 | 
                 |     Inform Client VB has Started.
@@ -151,7 +151,7 @@ class BehaviorVBScript(Behavior):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Suspend()
                 | 
                 |     Inform Client VB has not completly finished the task and has to be called
@@ -171,7 +171,7 @@ class BehaviorVBScript(Behavior):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TestInternal(CATBSTR pName) As long
                 | 
                 |     Test for one available output of the behavior. The behavior has to be in

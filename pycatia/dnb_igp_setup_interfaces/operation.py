@@ -65,7 +65,7 @@ class Operation(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateRobotMotion(AnyObject iRefAct,
                 | boolean iBefore,
                 | RobotMotion oTargetMotion)
@@ -132,7 +132,7 @@ class Operation(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetActions(CATSafeArrayVariant oChildrenList)
                 | 
                 |     Retrieves all the Basic Actions under the operation.
@@ -184,7 +184,7 @@ class Operation(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetRobotMotion(RobotMotion oRobotTargetMotion)
                 | 
                 |     Retrieves the RobotMotion.
@@ -236,7 +236,7 @@ class Operation(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetViaMode(short index)
                 | 
                 |     Retrieves the via mode of the operation.
@@ -274,7 +274,7 @@ class Operation(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetViaMode(short index)
                 | 
                 |     Sets the Via Mode of the Operation.

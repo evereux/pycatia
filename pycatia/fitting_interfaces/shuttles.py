@@ -43,7 +43,7 @@ class Shuttles(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add() As Shuttle
                 | 
                 |     Creates a new Shuttle and adds it to the Shuttles
@@ -66,7 +66,7 @@ class Shuttles(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddFromSel() As Shuttle
                 | 
                 |     Creates a new Shuttle from the selection and adds it to the Shuttles
@@ -89,7 +89,7 @@ class Shuttles(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Shuttle
 
         :param CATVariant i_index:
@@ -102,7 +102,7 @@ class Shuttles(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(Shuttle iShuttle)
 
         :param Shuttle i_shuttle:

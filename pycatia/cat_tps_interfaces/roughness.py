@@ -90,7 +90,7 @@ class Roughness(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Field(short iIndex) As CATBSTR
                 | 
                 |     Retrieves roughness field.
@@ -125,7 +125,7 @@ class Roughness(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetField(short iIndex,
                 | CATBSTR iField)
                 | 
@@ -162,7 +162,7 @@ class Roughness(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TPSParallelOnScreen() As TPSParallelOnScreen
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.

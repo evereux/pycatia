@@ -244,7 +244,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromPublication(Product iProduct,
                 | Publication iPublication)
                 | 
@@ -289,7 +289,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromReference(Reference iReference,
                 | Reference iSupport)
                 | 
@@ -330,7 +330,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ClearExclusionRegions()
                 | 
                 |     Clears the exclusion regions list.
@@ -344,7 +344,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ClearHandler()
                 | 
                 |     Clears the handler.
@@ -358,7 +358,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetExclusionRegions(CATSafeArrayVariant oProducts,
                 | CATSafeArrayVariant oRegions)
                 | 
@@ -399,7 +399,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetHandler(Reference oProduct,
                 | Reference oRef)
                 | 
@@ -438,7 +438,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetLocalCsysFromPublication(Product oProduct,
                 | AxisSystem oPubAxisSystem)
                 | 
@@ -481,7 +481,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSupports(CATSafeArrayVariant oProducts,
                 | CATSafeArrayVariant oSupports)
                 | 
@@ -522,7 +522,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExclusionRegions(CATSafeArrayVariant iProducts,
                 | CATSafeArrayVariant iRegions)
                 | 
@@ -567,7 +567,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHandler(Reference iProduct,
                 | Reference iRef)
                 | 
@@ -607,7 +607,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHandlerFromPublication(Product iProduct,
                 | Publication iPublication)
                 | 
@@ -649,7 +649,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLocalCsysFromPublication(Product iProduct,
                 | Publication iPubAxisSystem)
                 | 
@@ -692,7 +692,7 @@ class ABQRigidCoupling(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSupports(CATSafeArrayVariant iProducts,
                 | CATSafeArrayVariant iRegions)
                 | 

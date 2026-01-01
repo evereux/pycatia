@@ -43,7 +43,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateComponentInst(SchGRRComp iGRR,
                 | CATSafeArrayVariant iDb6Axis,
                 | SchComponent oNewComponent)
@@ -101,7 +101,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateLocalReference(Document iDocumentToPutCopyIn) As
                 | SchComponent
                 | 
@@ -135,7 +135,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub FlipConnected(SchGRRComp iGRR)
                 | 
                 |     For component that is connected to another component or is inserted into a
@@ -183,7 +183,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub FlipHorizontal(SchGRRComp iGRR)
                 | 
                 |     Mirror transform a component's image about the horizontal-axis centered at
@@ -228,7 +228,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub FlipOnLine(SchGRRComp iGRR)
                 | 
                 |     Mirror the graphical object of this component. Ths mirror line is the
@@ -275,7 +275,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub FlipVertical(SchGRRComp iGRR)
                 | 
                 |     Mirror transform a component's image about the vertical-axis centered at
@@ -325,7 +325,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub InsertIntoRouteWithInfo(AnyObject iInsertInfo,
                 | SchComponent oNewComponent,
                 | SchRoute oNewRoute)
@@ -387,7 +387,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IsAReference(boolean oBYes)
                 | 
                 |     Query whether the component is a reference (as opposed to an
@@ -430,7 +430,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IsInserted(SchGRRComp iGRR,
                 | boolean oBYes)
                 | 
@@ -478,7 +478,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToFlipConnected(SchGRRComp iGRR,
                 | boolean oBYes)
                 | 
@@ -527,7 +527,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToFlipHorizontal(SchGRRComp iGRR,
                 | boolean oBYes)
                 | 
@@ -582,7 +582,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToFlipOnLine(SchGRRComp iGRR,
                 | boolean oBYes,
                 | SchListOfDoubles oDb2LinePt,
@@ -647,7 +647,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToFlipVertical(SchGRRComp iGRR,
                 | boolean oBYes)
                 | 
@@ -696,7 +696,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToPlaceInSpace(SchGRRComp iGRR,
                 | boolean oBYes)
                 | 
@@ -744,7 +744,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToScale(SchGRRComp iGRR,
                 | boolean oBYes)
                 | 
@@ -792,7 +792,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToSlide(SchGRRComp iGRR,
                 | boolean oBYes)
                 | 
@@ -840,7 +840,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToUninsert(SchGRRComp iGRR,
                 | boolean oBYes)
                 | 
@@ -888,7 +888,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PlaceInSpace(SchGRRComp iGRR,
                 | CATSafeArrayVariant iDb6Axis,
                 | SchComponent oNewComponent)
@@ -947,7 +947,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func PlaceOnComponentWithInfo(AnyObject iPlaceInfo) As
                 | SchComponent
                 | 
@@ -988,7 +988,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PlaceOnObject(SchGRRComp iGRR,
                 | CATSafeArrayVariant iDb6Axis,
                 | SchAppConnectable iObjectToConnect,
@@ -1056,7 +1056,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func QueryConnectAbility(SchGRRComp iGRR) As AnyObject
                 | 
                 |     Find the Schematic component information for placement.
@@ -1089,7 +1089,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Slide(SchGRRComp iGRR,
                 | CATSafeArrayVariant iDb2PtToSlideTo)
                 | 
@@ -1138,7 +1138,7 @@ class SchComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Uninsert(SchGRRComp iGRR)
                 | 
                 |     Remove all connections of a component with a route. (applicable to inserted

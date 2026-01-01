@@ -136,7 +136,7 @@ class StrMemberExtremity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddOffset(double iOffset)
                 | 
                 |     Adds an offset on the extremity. This method has to be used when the
@@ -152,7 +152,7 @@ class StrMemberExtremity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCoordinates(CATSafeArrayVariant oCoordinates)
                 | 
                 |     Retrieves the coordinates of the extremity.
@@ -187,7 +187,7 @@ class StrMemberExtremity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetCutback()
                 | 
                 |     Resets the defined cutback object.
@@ -201,7 +201,7 @@ class StrMemberExtremity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExtremityFromCoordinates(CATSafeArrayVariant
                 | iCoordinates)
                 | 

@@ -93,7 +93,7 @@ class ManufacturingHole(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDirection(double oX,
                 | double oY,
                 | double oZ)
@@ -121,7 +121,7 @@ class ManufacturingHole(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOrigin(double oX,
                 | double oY,
                 | double oZ)

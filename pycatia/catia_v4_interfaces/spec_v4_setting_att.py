@@ -109,7 +109,7 @@ class SpecV4SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDraftFeatureMigrationModeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -128,7 +128,7 @@ class SpecV4SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetStepByStepUpdateAndRerouteInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -147,7 +147,7 @@ class SpecV4SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDraftFeatureMigrationModeLock(boolean iLock)
                 | 
                 |     Locks or unlocks the DraftFeatureMigrationMode setting
@@ -179,7 +179,7 @@ class SpecV4SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetStepByStepUpdateAndRerouteLock(boolean iLock)
                 | 
                 |     Locks or unlocks the StepByStepUpdateAndReroute setting

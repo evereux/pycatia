@@ -43,7 +43,7 @@ class ArrangementAreas(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddArea(Move iRelAxis,
                 | CATSafeArrayVariant iPosition,
                 | double iHeight) As ArrangementArea
@@ -78,7 +78,7 @@ class ArrangementAreas(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ArrangementArea
                 | 
                 |     Returns the specified item of the collection.
@@ -117,7 +117,7 @@ class ArrangementAreas(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes the specified ArrangementArea object from the

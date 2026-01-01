@@ -74,7 +74,7 @@ class Material(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CopyRenderingDataFrom(RenderingMaterial
                 | iRenderingMaterial)
                 |
@@ -91,7 +91,7 @@ class Material(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateAnalysisData(CATBSTR iLabel) As
                 | AnalysisMaterial
                 |
@@ -108,7 +108,7 @@ class Material(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateRenderingData() As RenderingMaterial
                 |
                 |     Create a default rendering material on the current
@@ -123,7 +123,7 @@ class Material(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ExistAnalysisData() As short
                 |
                 |     Returns true if a analysis material exists on the current
@@ -138,7 +138,7 @@ class Material(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ExistRenderingData() As short
                 |
                 |     Returns true if a rendering material exists on the current
@@ -153,7 +153,7 @@ class Material(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetIcon(CATBSTR iPath)
                 | 
                 |     Write the icon of a material to disc. The parameter is the
@@ -170,7 +170,7 @@ class Material(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutIcon(CATBSTR iPath)
                 | 
                 |     Read the icon of a material from JPEG file. The parameter

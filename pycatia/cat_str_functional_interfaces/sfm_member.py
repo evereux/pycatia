@@ -46,7 +46,7 @@ class SFMMember(SFMProfile):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Flip()
                 | 
                 |     Flip the member's section according to X axis.
@@ -66,7 +66,7 @@ class SFMMember(SFMProfile):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMemberType() As CATBSTR
                 | 
                 |     Returns the Type of Member (SfmMemberPointLength, SfmMemberPointLimit, SfmMember2Points,
@@ -87,7 +87,7 @@ class SFMMember(SFMProfile):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetWelds(Reference iOperatingEle) As SfmWelds
                 | 
                 |     Returns the weld features on the Existing Member.
@@ -113,7 +113,7 @@ class SFMMember(SFMProfile):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsFlip() As boolean
                 | 
                 |     Get the flip status of the member's section.

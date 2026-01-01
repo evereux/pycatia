@@ -42,7 +42,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPoints(CATSafeArrayVariant iLDb2PtPathToAdd,
                 | long iAfterWhichPtNum)
                 | 
@@ -91,7 +91,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Break(CATSafeArrayVariant iDb2Pt1,
                 | CATSafeArrayVariant iDb2Pt2,
                 | SchGRRRoute oNewGRRRoute)
@@ -152,7 +152,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Compress()
                 | 
                 |     Compress a the defining points of a route graphic, removing coincident
@@ -175,7 +175,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Compress2(CatSchIDLRouteUnsetGapsMode iUnsetGaps)
                 | 
                 |     Compress the defining points of a route graphic, removing coincident
@@ -205,7 +205,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Concatenate(long iWhichEnd1,
                 | SchGRRRoute iGRRRoute2,
                 | long iWhichEnd2)
@@ -260,7 +260,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ConcatenateKeepGRR2(long iWhichEnd1,
                 | SchGRRRoute iGRRRoute2,
                 | long iWhichEnd2)
@@ -322,7 +322,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateRouteSymbol(long iSegNum,
                 | double iSegParm,
                 | SchGRR iGRRSymbol,
@@ -386,7 +386,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetEndPoint(SchListOfDoubles oDb2EndPt)
                 | 
                 |     Get the end point of the route graphic.
@@ -428,7 +428,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPath(SchListOfDoubles oLDb2PtPath)
                 | 
                 |     Get the defining points of a route graphic.
@@ -471,7 +471,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetStartPoint(SchListOfDoubles oDb2StartPt)
                 | 
                 |     Get the start point of the route graphic.
@@ -513,7 +513,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListRouteSymbols() As SchListOfObjects
                 | 
                 |     List route symbols on the route.
@@ -539,7 +539,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePoints(long iNumOfPtsToRemove,
                 | long iAfterWhichPtNum)
                 | 
@@ -571,7 +571,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetEndPoint(CATSafeArrayVariant iDb2EndPt)
                 | 
                 |     Set the end point of the route graphic.
@@ -614,7 +614,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPath(CATSafeArrayVariant iLDb2PtPath,
                 | CatSchIDLRouteCompressMode iCompress)
                 | 
@@ -663,7 +663,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPath2(CATSafeArrayVariant iLDb2PtPath,
                 | CatSchIDLRouteCompressMode iCompress,
                 | CatSchIDLRouteUnsetGapsMode iUnsetGaps)
@@ -718,7 +718,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPath3(CATSafeArrayVariant iLDb2PtPath,
                 | CatSchIDLRouteCompressMode iCompress,
                 | CatSchIDLRouteUnsetGapsMode iUnsetGaps,
@@ -778,7 +778,7 @@ class SchGRRRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetStartPoint(CATSafeArrayVariant iDb2StartPt)
                 | 
                 |     Set the start point of the route graphic.

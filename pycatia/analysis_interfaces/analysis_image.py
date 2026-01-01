@@ -82,7 +82,7 @@ class AnalysisImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ExportData(Folder iFolder,
                 | CATBSTR iFileName,
                 | CATBSTR iExtensionType)
@@ -149,7 +149,7 @@ class AnalysisImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ExportDataInAnyUserAxis(Folder iFolder,
                 | CATBSTR iFileName,
                 | CATBSTR iExtensionType,
@@ -243,7 +243,7 @@ class AnalysisImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ExportDataInGlobalAxis(Folder iFolder,
                 | CATBSTR iFileName,
                 | CATBSTR iExtensionType,
@@ -324,7 +324,7 @@ class AnalysisImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ExportDataInManualAxis(Folder iFolder,
                 | CATBSTR iFileName,
                 | CATBSTR iExtensionType,
@@ -426,7 +426,7 @@ class AnalysisImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ExportDataInUserAxis(Folder iFolder,
                 | CATBSTR iFileName,
                 | CATBSTR iExtensionType,
@@ -511,7 +511,7 @@ class AnalysisImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ExportDataWithMeshPartId(Folder iFolder,
                 | CATBSTR iFileName,
                 | CATBSTR iExtensionType)
@@ -571,7 +571,7 @@ class AnalysisImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetSelection()
                 | 
                 |     Resets all selections in an image.
@@ -586,7 +586,7 @@ class AnalysisImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetActivationStatus(CATVariant iActivationStatus)
                 | 
                 |     Activates oe deactivates an image.
@@ -622,7 +622,7 @@ class AnalysisImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCurrentOccurrence(CATVariant iOccurrenceNumber)
                 | 
                 |     Sets occurrence number for an image.
@@ -659,7 +659,7 @@ class AnalysisImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSelection(Reference iReference,
                 | CATVariant iReplaceMode)
                 | 
@@ -699,7 +699,7 @@ class AnalysisImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Update()
                 | 
                 |     Updates an image.

@@ -39,7 +39,7 @@ class SchGRRComp(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPosition(SchListOfDoubles oDb2Position)
                 | 
                 |     Get the current position of the component.
@@ -81,7 +81,7 @@ class SchGRRComp(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetRotationAngle(double oDb1RotationAngleInRad)
                 | 
                 |     Get the current rotation angle (from x-axis in radian) of the
@@ -109,7 +109,7 @@ class SchGRRComp(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetScale(double oDb1ScaleFactor)
                 | 
                 |     Get the current scale factor of the component.
@@ -136,7 +136,7 @@ class SchGRRComp(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTransformation2D(SchListOfDoubles oDb6TransMatrix)
                 | 
                 |     Get the local coordinate reference frame (with respect to absolute
@@ -187,7 +187,7 @@ class SchGRRComp(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPosition(CATSafeArrayVariant oDb2Position)
                 | 
                 |     Set the current position of the component.
@@ -229,7 +229,7 @@ class SchGRRComp(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRotationAngle(double iDb1RotationAngleInRad)
                 | 
                 |     Set the current rotation angle (from x-axis in radian) of the
@@ -258,7 +258,7 @@ class SchGRRComp(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetScale(double iDb1ScaleFactor)
                 | 
                 |     Set the current scale factor of the component.
@@ -286,7 +286,7 @@ class SchGRRComp(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTransformation2D(CATSafeArrayVariant
                 | iDb6TransMatrix)
                 | 

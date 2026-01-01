@@ -41,7 +41,7 @@ class AnalysisImport(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupport(AnalysisManager iManager,
                 | Product iProductSupport,
                 | AnyObject iSupport)
@@ -89,7 +89,7 @@ class AnalysisImport(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ImportDisp(AnalysisCase iFatherCase,
                 | CATBSTR iFullPath,
                 | AnalysisManager iManager,
@@ -143,7 +143,7 @@ class AnalysisImport(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ImportForce(AnalysisCase iFatherCase,
                 | CATBSTR iFullPath,
                 | AnalysisManager iManager,

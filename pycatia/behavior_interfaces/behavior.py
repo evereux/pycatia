@@ -73,7 +73,7 @@ class Behavior(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Activate()
                 | 
                 |     Activates a behavior.
@@ -92,7 +92,7 @@ class Behavior(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Deactivate()
                 | 
                 |     Deactivates a behavior.
@@ -111,7 +111,7 @@ class Behavior(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetInput(CATBSTR pName) As AnyObject
                 | 
                 |     Returns the value of one available input of the behavior.
@@ -139,7 +139,7 @@ class Behavior(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetOutput(CATBSTR pName) As AnyObject
                 | 
                 |     Returns the value of one available output of the behavior.
@@ -166,7 +166,7 @@ class Behavior(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutOutput(CATBSTR pName,
                 | AnyObject oValue)
                 | 
@@ -201,7 +201,7 @@ class Behavior(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TestInput(CATBSTR pName) As long
                 | 
                 |     Tests if the behavior's input is set or not.
@@ -228,7 +228,7 @@ class Behavior(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TestOutput(CATBSTR pName) As long
                 | 
                 |     Tests if the behavior's output is set or not.

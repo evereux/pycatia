@@ -42,7 +42,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPoints(SchGRRRoute iGRR,
                 | CATSafeArrayVariant iLDb2PtPathToAdd,
                 | long iAfterWhichPtNum)
@@ -105,7 +105,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Branch(SchGRRRoute iGRRMain,
                 | SchRoute iSchBranchRoute,
                 | SchAppConnector iSchBranchRouteCntr,
@@ -181,7 +181,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Break(SchGRRRoute iGRR,
                 | CATSafeArrayVariant iDb2Pt1,
                 | CATSafeArrayVariant iDb2Pt2,
@@ -245,7 +245,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Compress()
                 | 
                 |     Compress a the defining points of a route, removing coincident
@@ -271,7 +271,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Concatenate(SchAppConnector iSchRoute1Cntr,
                 | SchRoute iSchRoute2,
                 | SchAppConnector iSchRoute2Cntr)
@@ -336,7 +336,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ConcatenateKeepRoute2(SchAppConnector iSchRoute1Cntr,
                 | SchRoute iSchRoute2,
                 | SchAppConnector iSchRoute2Cntr)
@@ -401,7 +401,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetExtremityCntrs(SchGRRRoute iGRR,
                 | SchAppConnector oRouteCntr1,
                 | SchAppConnector oRouteCntr2)
@@ -454,7 +454,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPath(SchGRRRoute iGRR,
                 | SchListOfDoubles oLDb2PtPath)
                 | 
@@ -502,7 +502,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToBranch(SchGRRRoute iGRR,
                 | CATBSTR iBranchClassType,
                 | boolean oBYes)
@@ -555,7 +555,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToBreak(SchGRRRoute iGRR,
                 | boolean oBYes)
                 | 
@@ -603,7 +603,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToConcatenate(SchGRRRoute iGRR,
                 | boolean oBYes)
                 | 
@@ -651,7 +651,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToModifyPoints(SchGRRRoute iGRR,
                 | boolean oBYes)
                 | 
@@ -700,7 +700,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePoints(SchGRRRoute iGRR,
                 | long iNumOfPtsToRemove,
                 | long iAfterWhichPtNum)
@@ -755,7 +755,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ReshapeExtremity(SchGRRRoute iGRR,
                 | SchAppConnector iRouteCntr,
                 | CATSafeArrayVariant iDb2DeltaXY)
@@ -815,7 +815,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ReshapeExtremity2(CatSchIDLRouteMode iERouteMode,
                 | SchGRRRoute iGRR,
                 | SchAppConnector iRouteCntr,
@@ -880,7 +880,7 @@ class SchRoute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPath(SchGRRRoute iGRR,
                 | CATSafeArrayVariant iLDb2PtPath)
                 | 

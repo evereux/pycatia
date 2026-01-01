@@ -337,7 +337,7 @@ class ManufacturingActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttribute(CATBSTR iAttribut) As Parameter
                 | 
                 |     Retreive the Attribute of a Manufacturing Activity.
@@ -358,7 +358,7 @@ class ManufacturingActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttributeNLSName(CATBSTR iAttributName) As CATBSTR
                 | 
                 |     Retrieve the NLS name from the attribute name of a Manufacturing
@@ -374,7 +374,7 @@ class ManufacturingActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfFeedrateAttributes(CATSafeArrayVariant
                 | oListOfAttributes)
                 | 
@@ -414,7 +414,7 @@ class ManufacturingActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfGeomAttributes(CATSafeArrayVariant
                 | oListOfAttributes)
                 | 
@@ -455,7 +455,7 @@ class ManufacturingActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfStrategyAttributes(CATSafeArrayVariant
                 | oListOfAttributes)
                 | 
@@ -495,7 +495,7 @@ class ManufacturingActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMachiningDirection(double oXAxis,
                 | double oYAxis,
                 | double oZAxis)
@@ -515,7 +515,7 @@ class ManufacturingActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetToolAxis(double oXAxis,
                 | double oYAxis,
                 | double oZAxis)
@@ -535,7 +535,7 @@ class ManufacturingActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMachiningDirection(double iXAxis,
                 | double iYAxis,
                 | double iZAxis)
@@ -555,7 +555,7 @@ class ManufacturingActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetToolAxis(double iXAxis,
                 | double iYAxis,
                 | double iZAxis)

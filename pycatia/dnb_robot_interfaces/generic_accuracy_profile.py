@@ -43,7 +43,7 @@ class GenericAccuracyProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAccuracyType(AccuracyType accuracy)
                 | 
                 |     Get the accuracy type for the profile.
@@ -71,7 +71,7 @@ class GenericAccuracyProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAccuracyValue(double value)
                 | 
                 |     Retrieves accuracy value of the profile.
@@ -97,7 +97,7 @@ class GenericAccuracyProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetController(RobGenericController oController)
                 | 
                 |     Retrieves controller owning the profile.
@@ -138,7 +138,7 @@ class GenericAccuracyProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetFlyByMode(boolean oMode)
                 | 
                 |     Gets On/Off status of Flyby mode.
@@ -179,7 +179,7 @@ class GenericAccuracyProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetName(CATBSTR oName)
                 | 
                 |     Gets name of the Accuracy Profile.
@@ -205,7 +205,7 @@ class GenericAccuracyProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAccuracyType(AccuracyType accuracy)
                 | 
                 |     Set the accuracy type for the profile.
@@ -233,7 +233,7 @@ class GenericAccuracyProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAccuracyValue(double value)
                 | 
                 |     Set accuracy value of the profile.
@@ -261,7 +261,7 @@ class GenericAccuracyProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFlyByMode(boolean iMode)
                 | 
                 |     Switch On/Off Flyby mode.
@@ -303,7 +303,7 @@ class GenericAccuracyProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetName(CATBSTR iName)
                 | 
                 |     Set name of the Accuracy Profile.

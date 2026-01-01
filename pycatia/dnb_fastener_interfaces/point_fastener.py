@@ -45,7 +45,7 @@ class PointFastener(Fastener):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDesignXYZYPR(CATSafeArrayVariant ioXYZYPR)
                 | 
                 |     Returns Design data of the fastener. YPR values are in Degree.
@@ -79,7 +79,7 @@ class PointFastener(Fastener):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTag() As CATBaseDispatch
                 | 
                 |     Returns a DELMIATag object from fastener 
@@ -96,7 +96,7 @@ class PointFastener(Fastener):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetPosition(boolean iVal)
                 | 
                 |     Sets the position of point fastener to design position or DPE Saved Manufacturing Position Valid Param : 0,1 

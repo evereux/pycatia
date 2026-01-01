@@ -52,7 +52,7 @@ class DMOOffsets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(Product iProductToOffset,
                 | double iOffset1,
                 | long iUseConstraints,
@@ -106,7 +106,7 @@ class DMOOffsets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddOffsetFromVectors(Product iProductToOffset,
                 | CATSafeArrayVariant iOffsetVectors,
                 | CATSafeArrayVariant iOffsetValues,
@@ -149,7 +149,7 @@ class DMOOffsets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CleanUp()
                 | 
                 |     Cleans up.
@@ -169,7 +169,7 @@ class DMOOffsets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeAnOffset(Group GroupOfSelectedProducts,
                 | double iOffset,
                 | long iUseConstraints,
@@ -217,7 +217,7 @@ class DMOOffsets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeAnOffsetFromVectors(Group
                 | GroupOfSelectedProducts,
                 | CATSafeArrayVariant iOffsetVectors,
@@ -263,7 +263,7 @@ class DMOOffsets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeAnOffsetFromVectorsWithAReference(Group
                 | iGroupOfSelectedProducts,
                 | Product iReferenceProduct,
@@ -315,7 +315,7 @@ class DMOOffsets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeAnOffsetWithAReference(Group
                 | iGroupOfSelectedProducts,
                 | Product iReferenceProduct,
@@ -365,7 +365,7 @@ class DMOOffsets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func OffsetShapeName() As CATBSTR
                 | 
                 |     Returns the name of the associated shape.

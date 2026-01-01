@@ -43,7 +43,7 @@ class ABQBoundaryConditions(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iBoundaryType) As ABQBoundaryCondition
                 | 
                 |     Creates a new Abaqus boundary condition and adds it to the collection of
@@ -81,7 +81,7 @@ class ABQBoundaryConditions(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ABQBoundaryCondition
                 | 
                 |     Returns an Abaqus boundary condition using its index or its name from the
@@ -111,7 +111,7 @@ class ABQBoundaryConditions(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an Abaqus boundary condition using its index or its name from the

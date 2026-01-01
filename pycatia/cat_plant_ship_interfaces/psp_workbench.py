@@ -44,7 +44,7 @@ class PSPWorkbench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ExportProperties(Document iDocumentToExportFrom,
                 | CATBSTR iXMLOutputFileName)
                 | 
@@ -97,7 +97,7 @@ class PSPWorkbench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetApplication(CatPspIDLApplicationID iApplicationID) As
                 | PspApplication
                 | 
@@ -129,7 +129,7 @@ class PSPWorkbench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetInterface(CATBSTR iInterfaceName,
                 | AnyObject iObject) As AnyObject
                 | 

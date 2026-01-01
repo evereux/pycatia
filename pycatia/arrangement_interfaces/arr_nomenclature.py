@@ -186,7 +186,7 @@ class ArrNomenclature(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsSystemNomenclature() As boolean
                 | 
                 |     Returns TRUE if the nomenclature happens to be a system nomenclature.

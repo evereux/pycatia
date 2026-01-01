@@ -193,7 +193,7 @@ class RenderingEnvironment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Returns the coordinates of the origin of the environment.
@@ -224,7 +224,7 @@ class RenderingEnvironment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetType() As short
                 | 
                 |     Returns the environment type.
@@ -243,7 +243,7 @@ class RenderingEnvironment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetVerticalAxis(CATSafeArrayVariant oAxis)
                 | 
                 |     Returns the coordinates of the vertical axis vector of the
@@ -275,7 +275,7 @@ class RenderingEnvironment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetWall(short iType) As RenderingEnvironmentWall
                 | 
                 |     Returns the environment walls.
@@ -299,7 +299,7 @@ class RenderingEnvironment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutOrigin(CATSafeArrayVariant iOrigin)
                 | 
                 |     Sets the coordinates of the origin of the environment.
@@ -337,7 +337,7 @@ class RenderingEnvironment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutVerticalAxis(CATSafeArrayVariant iAxis)
                 | 
                 |     Sets the coordinates of the vertical axis vector of the

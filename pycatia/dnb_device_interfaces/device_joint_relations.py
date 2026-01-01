@@ -41,7 +41,7 @@ class DeviceJointRelations(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetJointRelationExpression(Joint joint,
                 | CATBSTR expr)
                 | 
@@ -89,7 +89,7 @@ class DeviceJointRelations(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetJointRelationExpression(Joint joint,
                 | CATBSTR expr)
                 | 
@@ -138,7 +138,7 @@ class DeviceJointRelations(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUserVariableExpr(CATBSTR user_expr)
                 | 
                 |     Add the user-variable expression to the mechanism

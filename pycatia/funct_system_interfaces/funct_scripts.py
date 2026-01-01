@@ -44,7 +44,7 @@ class FunctScripts(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Create(CATBSTR iName) As FunctScript
                 | 
                 |     Create a FunctScript.
@@ -59,7 +59,7 @@ class FunctScripts(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Delete(FunctScript iScript)
                 | 
                 |     Delete a FunctScript.
@@ -89,7 +89,7 @@ class FunctScripts(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Elem(CATVariant iIndex) As FunctScript
                 | 
                 |     Returns an association using its index or its name from the Scripts

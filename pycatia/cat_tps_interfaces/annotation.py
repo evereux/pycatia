@@ -208,7 +208,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddLeader()
                 | 
                 |     Add a leader.
@@ -222,7 +222,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyReferencedGeomColor(long iReleatedR,
                 | long iReleatedG,
                 | long iReleatedB)
@@ -241,7 +241,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyReferencedInitColor()
                 | 
                 |     Apply the initial color to referenced geometry.
@@ -255,7 +255,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AssociatedRefFrame() As AssociatedRefFrame
                 | 
                 |     Get the annotation on the AssociatedRefFrame interface.
@@ -270,7 +270,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CompositeTolerance() As CompositeTolerance
                 | 
                 |     Get the annotation on the CompositeTolerance interface.
@@ -285,7 +285,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ControledRadius() As ControledRadius
                 | 
                 |     Get the annotation on the ControledRadius interface.
@@ -300,7 +300,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DatumSimple() As DatumSimple
                 | 
                 |     Get the annotation on the DatumSimple interface.
@@ -315,7 +315,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DatumTarget() As DatumTarget
                 | 
                 |     Get the annotation on the DatumTarget interface.
@@ -330,7 +330,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DefaultAnnotation() As DefaultAnnotation
                 | 
                 |     Get the annotation on the DefaultAnnotation interface.
@@ -345,7 +345,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Dimension3D() As Dimension3D
                 | 
                 |     Get the 3D Dimension on the 3D Dimension interface.
@@ -365,7 +365,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DimensionLimit() As DimensionLimit
                 | 
                 |     Get the annotation on the DimensionLimit interface.
@@ -380,7 +380,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DimensionPattern() As DimensionPattern
                 | 
                 |     Get the annotation on the DimensionPattern interface.
@@ -395,7 +395,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func EnvelopCondition() As EnvelopCondition
                 | 
                 |     Get the annotation on the EnvelopCondition interface.
@@ -410,7 +410,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func FlagNote() As FlagNote
                 | 
                 |     Get the annotation on the FlagNote interface.
@@ -430,7 +430,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func FreeState() As FreeState
                 | 
                 |     Get the annotation on the FreeState interface.
@@ -445,7 +445,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSurfaces(CATSafeArrayVariant oSafeArray)
                 | 
                 |     Get the geometry on which the Annotation is applied to.
@@ -475,7 +475,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSurfacesCount() As double
                 | 
                 |     Count the geometry on which the Annotation is applied to.
@@ -489,7 +489,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAControledRadius() As boolean
                 | 
                 |     To know if the Annotation has a Controled Radius.
@@ -503,7 +503,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAFreeState() As boolean
                 | 
                 |     To know if the Annotation has a Free State.
@@ -517,7 +517,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAMaterialCondition() As boolean
                 | 
                 |     To know if the Annotation has a Material Condition.
@@ -554,7 +554,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAParticularTolElem() As boolean
                 | 
                 |     To know if the Annotation has a Particuler Element.
@@ -568,7 +568,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasATolerancePerUnitBasisRestrictiveValue() As boolean
                 | 
                 |     To know if the Annotation has a Tolerance Per Unit Basis Restricted Value.
@@ -582,7 +582,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAnEnvelopCondition() As boolean
                 | 
                 |     To know if the Annotation has an Envelop Condition.
@@ -596,7 +596,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasDimensionLimit() As boolean
                 | 
                 |     To know if the Annotation has a Dimension Limit.
@@ -610,7 +610,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsACompositeTolerance() As boolean
                 | 
                 |     To know if the Annotation is a composite Tolerance.
@@ -624,7 +624,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsADefaultAnnotation() As boolean
                 | 
                 |     To know if the Annotation is a Default Annotation.
@@ -638,7 +638,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsADimensionPattern() As boolean
                 | 
                 |     To know if the Annotation is a Dimension Pattern.
@@ -652,7 +652,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAProjectedToleranceZone() As boolean
                 | 
                 |     To know if the Annotation is a Projected Zone.
@@ -666,7 +666,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAShiftedProfileTolerance() As boolean
                 | 
                 |     To know if the Annotation is a Shifted Profile Tolerance.
@@ -680,7 +680,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsATangentPlane() As boolean
                 | 
                 |     To know if the Annotation is a Tangent Plane.
@@ -694,7 +694,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAToleranceUnitBasisValue() As boolean
                 | 
                 |     To know if the Annotation is a Tolerance Unit Basis Value.
@@ -708,7 +708,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAToleranceZone() As boolean
                 | 
                 |     Is the a Tolerance Zone.
@@ -722,7 +722,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAnAssociatedRefFrame() As boolean
                 | 
                 |     To know if the Annotation is an Associated Reference Frame.
@@ -736,7 +736,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func MaterialCondition() As MaterialCondition
                 | 
                 |     Get the annotation on the MaterialCondition interface.
@@ -751,7 +751,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ModifyVisu()
                 | 
                 |     To refresh the 3D visualization.
@@ -765,7 +765,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Noa() As Noa
                 | 
                 |     Get the annotation on the Noa interface.
@@ -803,7 +803,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ParticularTolElem() As ParticularTolElem
                 | 
                 |     Get the annotation on the ParticularTolElem interface.
@@ -818,7 +818,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ProjectedToleranceZone() As ProjectedToleranceZone
                 | 
                 |     Get the annotation on the ProjectedToleranceZone interface.
@@ -833,7 +833,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ReferenceFrame() As ReferenceFrame
                 | 
                 |     Get the annotation on the ReferenceFrame interface.
@@ -848,7 +848,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Roughness() As Roughness
                 | 
                 |     Get the annotation on the Roughness interface.
@@ -863,7 +863,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetXY(double iX,
                 | double iY)
                 | 
@@ -888,7 +888,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ShiftedProfileTolerance() As ShiftedProfileTolerance
                 | 
                 |     Get the annotation on the ShiftedProfileTolerance interface.
@@ -903,7 +903,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TangentPlane() As TangentPlane
                 | 
                 |     Get the annotation on the TangentPlane interface.
@@ -918,7 +918,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Text() As Text
                 | 
                 |     Get the annotation on the Text interface.
@@ -937,7 +937,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TolerancePerUnitBasisRestrictiveValue() As
                 | TolerancePerUnitBasisRestrictiveValue
                 | 
@@ -952,7 +952,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ToleranceUnitBasisValue() As ToleranceUnitBasisValue
                 | 
                 |     Get the annotation on the ToleranceUnitBasisValue interface.
@@ -966,7 +966,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ToleranceZone() As ToleranceZone
                 | 
                 |     Get the annotation on the ToleranceZone interface.
@@ -981,7 +981,7 @@ class Annotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub TransfertToView(TPSView iView)
                 | 
                 |     Move the annotation in another view.

@@ -41,7 +41,7 @@ class AnnotationSetTransformIntoAssemblySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Transform(CATBSTR iAssemblyannotationSetName)
                 | 
                 |     Transforms annotation set into an assembly annotation set.

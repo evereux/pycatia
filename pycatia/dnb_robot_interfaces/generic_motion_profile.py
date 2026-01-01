@@ -43,7 +43,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAccelerationValue(double value)
                 | 
                 |     Retrieves acceleration value of the Profile.
@@ -71,7 +71,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAngularAccelerationValue(double value)
                 | 
                 |     Get Angular acceleration value of the Profile.
@@ -99,7 +99,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAngularSpeedValue(double value)
                 | 
                 |     Retrieves Angular Speed value of the Profile.
@@ -127,7 +127,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetController(RobGenericController oController)
                 | 
                 |     Retrieves controller owning the profile.
@@ -169,7 +169,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMotionBasis(MotionBasis basis)
                 | 
                 |     Retrieves motion basis of the Profile.
@@ -197,7 +197,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetName(CATBSTR oName)
                 | 
                 |     Gets name of the Motion Profile.
@@ -224,7 +224,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSpeedValue(double value)
                 | 
                 |     Retrieves speed value of the Profile.
@@ -251,7 +251,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAccelerationValue(double value)
                 | 
                 |     Set acceleration value of the Profile.
@@ -281,7 +281,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAngularAccelerationValue(double value)
                 | 
                 |     Set Angular acceleration value of the Profile.
@@ -309,7 +309,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAngularSpeedValue(double value)
                 | 
                 |     Set Angular Speed value of the Profile.
@@ -337,7 +337,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMotionBasis(MotionBasis basis)
                 | 
                 |     Set motion basis of the Profile.
@@ -365,7 +365,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetName(CATBSTR iName)
                 | 
                 |     Set name of the Motion Profile.
@@ -392,7 +392,7 @@ class GenericMotionProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSpeedValue(double value)
                 | 
                 |     Set speed value of the Profile.

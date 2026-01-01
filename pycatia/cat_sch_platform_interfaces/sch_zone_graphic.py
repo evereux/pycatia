@@ -40,7 +40,7 @@ class SchZoneGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddGraphicalRepresentation(SchGRRZone iGRRToAdd)
                 | 
                 |     Add a graphical representation to a zone.
@@ -82,7 +82,7 @@ class SchZoneGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListGraphicalRepresentations() As SchListOfObjects
                 | 
                 |     List all graphical representations of a zone.
@@ -109,7 +109,7 @@ class SchZoneGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveGraphicalRepresentation(SchGRRZone iGRRToRemove)
                 | 
                 |     Remove a graphical representation from a zone.

@@ -64,7 +64,7 @@ class SFMStandardPosStrategyParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As CATBaseUnknown
 
         :param CATVariant i_index:
@@ -85,7 +85,7 @@ class SFMStandardPosStrategyParameters(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPosParamData(CATBSTR iPosStrategyName,
                 | double iRotationAngle,
                 | SfmReferences iUrefElem,

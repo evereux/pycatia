@@ -41,7 +41,7 @@ class PCBWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateBoard(CATBaseDispatch iRoot) As CATBaseDispatch
                 | 
                 |     Allows to create a Board.
@@ -75,7 +75,7 @@ class PCBWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateComponent(CATBaseDispatch iRoot,
                 | CATBSTR iElecPackageNumber,
                 | CATBSTR iElecPartNumber,
@@ -122,7 +122,7 @@ class PCBWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreatePanel(CATBaseDispatch iRoot) As CATBaseDispatch
                 | 
                 |     Allows to create a panel.
@@ -150,7 +150,7 @@ class PCBWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRootProduct(Document doc) As CATBaseDispatch
                 | 
                 |     Allows to get the root product of a document.

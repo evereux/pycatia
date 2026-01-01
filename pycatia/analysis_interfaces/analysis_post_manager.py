@@ -43,7 +43,7 @@ class AnalysisPostManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddExistingCaseForReport(AnalysisCase iCase)
                 | 
                 |     Adds an existing analysis case to manager. To declare Case which will be
@@ -79,7 +79,7 @@ class AnalysisPostManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub BuildReport(Folder iFolder,
                 | CATBSTR iTitle,
                 | CATVariant iAddCreatedImages)
@@ -125,7 +125,7 @@ class AnalysisPostManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ExtractHTMLReport(Folder iFolder,
                 | CATBSTR iTitle)
                 | 

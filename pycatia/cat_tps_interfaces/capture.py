@@ -307,7 +307,7 @@ class Capture(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DisplayCapture()
                 | 
                 |     Displays the Capture.
@@ -321,7 +321,7 @@ class Capture(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DisplayCapture2(boolean ibApplyMirror)
                 | 
                 |     Displays the Capture with mirroring annotations
@@ -359,7 +359,7 @@ class Capture(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TPSParallelOnScreen() As TPSParallelOnScreen
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.

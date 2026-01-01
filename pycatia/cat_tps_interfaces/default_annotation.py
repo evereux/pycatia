@@ -86,7 +86,7 @@ class DefaultAnnotation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsInAutomaticSearchMode() As boolean
                 | 
                 |     Get the type of search algo Return E_FAIL if the annotation is not a

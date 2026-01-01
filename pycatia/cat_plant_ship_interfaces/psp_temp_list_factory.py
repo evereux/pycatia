@@ -44,7 +44,7 @@ class PSPTempListFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateListOfBSTRs() As PspListOfBSTRs
                 | 
                 |     Returns a new empty list of strings.
@@ -70,7 +70,7 @@ class PSPTempListFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateListOfDoubles() As PspListOfDoubles
                 | 
                 |     Returns a new empty list of doubles.
@@ -96,7 +96,7 @@ class PSPTempListFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateListOfLongs() As PspListOfLongs
                 | 
                 |     Returns a new empty list of long integers.
@@ -122,7 +122,7 @@ class PSPTempListFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateListOfObjects() As PspListOfObjects
                 | 
                 |     Returns a new empty list of objects.

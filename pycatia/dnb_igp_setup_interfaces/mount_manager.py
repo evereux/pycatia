@@ -51,7 +51,7 @@ class MountManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMountedDevices(CATSafeArrayVariant oDeviceList)
                 | 
                 |     Retrieves the list of mounted devices on the Robot
@@ -106,7 +106,7 @@ class MountManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IsDeviceMounted(Product iDevice,
                 | boolean iIsMounted)
                 | 
@@ -174,7 +174,7 @@ class MountManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub MountDevice(Product iDevice,
                 | CATBSTR iToolProfileName,
                 | CATSafeArrayVariant iMountOffset,
@@ -273,7 +273,7 @@ class MountManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ReMountDevice(Product iDevice)
                 | 
                 |     Remounts the device on the Robot
@@ -326,7 +326,7 @@ class MountManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnMountDevice(Product iDevice)
                 | 
                 |     Unmounts the device from the Robot
@@ -380,7 +380,7 @@ class MountManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnSetDevice(Product iDevice)
                 | 
                 |     Unsets the device from the Robot

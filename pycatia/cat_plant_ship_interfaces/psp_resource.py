@@ -40,7 +40,7 @@ class PSPResource(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetResourcePath(CATBSTR iResourceName) As CATBSTR
                 | 
                 |     Returns the path value defined for a resource.
@@ -71,7 +71,7 @@ class PSPResource(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetResourceValue(CATBSTR iResourceName) As CATBSTR
                 | 
                 |     Returns the value defined for a resource.

@@ -170,7 +170,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDesignModeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -189,7 +189,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPrevAreaInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -208,7 +208,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetRelatedColors(long oRelatedR,
                 | long oRelatedG,
                 | long oRelatedB)
@@ -241,7 +241,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRelatedColorsInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -260,7 +260,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSaveCGRInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -279,7 +279,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSectPatternInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -298,7 +298,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDesignModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Design Mode setting parameter value.
@@ -329,7 +329,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPrevAreaLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Preview Area setting parameter value.
@@ -360,7 +360,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRelatedColors(long iRelatedR,
                 | long iRelatedG,
                 | long iRelatedB)
@@ -392,7 +392,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRelatedColorsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Related Surface Color setting parameter
@@ -424,7 +424,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSaveCGRLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Save in CGR setting parameter value.
@@ -455,7 +455,7 @@ class DmuTolSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSectPatternLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Pattern of Visu setting parameter

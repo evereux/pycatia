@@ -40,7 +40,7 @@ class Items(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(Item iProduct) As Item
                 | 
                 |     This method adds the specified item in the current list
@@ -63,7 +63,7 @@ class Items(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddByAssignmentType(Item iItem,
                 | ItemAssignmentType iAssignmentType) As Item
                 | 
@@ -91,7 +91,7 @@ class Items(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CountByAssignmentType(ItemAssignmentType iAssignmentType) As
                 | long
                 | 
@@ -118,7 +118,7 @@ class Items(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Item
                 | 
                 |     This method returns the idl object Item for the specified item
@@ -142,7 +142,7 @@ class Items(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ItemByAssignmentType(CATVariant iIndex,
                 | ItemAssignmentType iAssignmentType) As Item
                 | 
@@ -169,7 +169,7 @@ class Items(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func RemoveByAssignmentType(Item iItem,
                 | ItemAssignmentType iAssignmentType) As Item
                 | 

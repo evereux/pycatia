@@ -704,7 +704,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Activate()
                 | 
                 |     Activates the Layout2D view. Activating a Layout2D view means that this
@@ -725,7 +725,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AlignedWithReferenceView()
                 | 
                 |     Activates the alignment with the reference view. Activating the alignment
@@ -747,7 +747,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetViewName(CATBSTR iViewNamePrefix,
                 | CATBSTR iViewNameIdent,
                 | CATBSTR iViewNameSuffix)
@@ -778,7 +778,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SaveEdition()
                 | 
                 |     Saves the Sketch Edition. Once you have finished working with the Layout2D
@@ -803,7 +803,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetViewName(CATBSTR iViewNamePrefix,
                 | CATBSTR iViewNameIdent,
                 | CATBSTR iViewNameSuffix)
@@ -836,7 +836,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Size(CATSafeArrayVariant oValues)
                 | 
                 |     Returns the bounding box of the Layout2D view.
@@ -888,7 +888,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnAlignedWithReferenceView()
                 | 
                 |     Deactivates the alignment with the reference view. Deactivating the

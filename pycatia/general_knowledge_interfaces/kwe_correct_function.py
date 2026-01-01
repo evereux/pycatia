@@ -39,7 +39,7 @@ class KweCorrectFunction(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Check() As CATBaseDispatch
                 | 
                 |     Retrieves the check associtade to this correct function.
@@ -56,7 +56,7 @@ class KweCorrectFunction(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfListFailedElements() As long
                 | 
                 |     Retrieves the number of roots of facts of the rule base.
@@ -73,7 +73,7 @@ class KweCorrectFunction(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListFailedElements(CATSafeArrayVariant
                 | oListElementsOfTupleFailed)
                 | 

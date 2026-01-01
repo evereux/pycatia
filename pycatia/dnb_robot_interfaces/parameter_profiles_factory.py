@@ -86,7 +86,7 @@ class ParameterProfilesFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateProfileInstance(CATBSTR iProfileType,
                 | CATBSTR iInstanceName,
                 | ParameterProfiles oAppParameterProfile)
@@ -162,7 +162,7 @@ class ParameterProfilesFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DeleteProfileInstance(ParameterProfiles
                 | ioParameterProfile)
                 | 
@@ -211,7 +211,7 @@ class ParameterProfilesFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAllProfileInstances(CATSafeArrayVariant
                 | oAllInstancesOnProduct)
                 | 
@@ -265,7 +265,7 @@ class ParameterProfilesFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetProfileInstance(CATBSTR iInstanceName,
                 | ParameterProfiles oProfileInstance)
                 | 
@@ -321,7 +321,7 @@ class ParameterProfilesFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetProfileInstances(CATBSTR iProfileType,
                 | CATSafeArrayVariant oProfiles)
                 | 

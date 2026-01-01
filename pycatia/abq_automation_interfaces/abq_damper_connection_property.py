@@ -138,7 +138,7 @@ class ABQDamperConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromReference(Reference iReference,
                 | Reference iSupport)
                 | 
@@ -181,7 +181,7 @@ class ABQDamperConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLinearDamping(SpringDof_Type iDof) As double
                 | 
                 |     Gets the linear damping value of the Damper given the degree of
@@ -215,7 +215,7 @@ class ABQDamperConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetNonLinearDamping(SpringDof_Type iDof,
                 | CATSafeArrayVariant oForceArray,
                 | CATSafeArrayVariant oVelocityArray)
@@ -272,7 +272,7 @@ class ABQDamperConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ReadDampingDataFromFile(SpringDof_Type iDof,
                 | CATBSTR iFileName)
                 | 
@@ -310,7 +310,7 @@ class ABQDamperConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAxisSystem()
 
         :rtype: None
@@ -322,7 +322,7 @@ class ABQDamperConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveDof(SpringDof_Type iDof)
                 | 
                 |     Unsets the linear damping value of the Damper for given degree of
@@ -353,7 +353,7 @@ class ABQDamperConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLinearDamping(SpringDof_Type iDof,
                 | double iDampingValue)
                 | 
@@ -389,7 +389,7 @@ class ABQDamperConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNonLinearDamping(SpringDof_Type iDof,
                 | CATSafeArrayVariant iForceArray,
                 | CATSafeArrayVariant iVelocityArray)

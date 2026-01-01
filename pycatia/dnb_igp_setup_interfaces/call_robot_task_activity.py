@@ -49,7 +49,7 @@ class CallRobotTaskActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPointedTaskName(CATBSTR oRobotTaskName)
                 | 
                 |     Gets the name of the Pointed RobotTask.
@@ -90,7 +90,7 @@ class CallRobotTaskActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTask(Activity oRobotTask)
                 | 
                 |     Gets the Pointed RobotTask.
@@ -144,7 +144,7 @@ class CallRobotTaskActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTask(Activity iTargetRobotTask,
                 | CATSafeArrayVariant oListOfPointingTasks)
                 | 

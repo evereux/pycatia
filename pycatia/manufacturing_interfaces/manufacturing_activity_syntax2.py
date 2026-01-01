@@ -39,7 +39,7 @@ class ManufacturingActivitySyntax2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPPWORDSyntax() As CATBSTR
                 | 
                 |     Retrieves the PP words syntax.

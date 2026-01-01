@@ -292,7 +292,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCollWalkClearanceInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
 
@@ -307,7 +307,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCollisionSearchIntensityInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
 
@@ -322,7 +322,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetConstraintsSimulInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -358,7 +358,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDefaultWalkSpeedInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -394,7 +394,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSideStepAngleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -430,7 +430,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSyncTimeAndSpeedInSimulationInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -467,7 +467,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUpdateAnalysisInSimulationInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -504,7 +504,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUserWalkSpeedStatusInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -540,7 +540,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetWalkForwardAngleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -576,7 +576,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetWalkForwardDistanceInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -612,7 +612,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCollWalkClearanceLock(boolean iLocked)
 
         :param bool i_locked:
@@ -640,7 +640,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCollisionSearchIntensityLock(boolean iLocked)
 
         :param bool i_locked:
@@ -668,7 +668,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetConstraintsSimulLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ConstraintsSimul parameter.
@@ -709,7 +709,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDefaultWalkSpeedLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DefaultWalkSpeed parameter.
@@ -750,7 +750,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSideStepAngleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SideStepAngle parameter.
@@ -791,7 +791,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSyncTimeAndSpeedInSimulationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SyncTimeAndSpeed parameter.
@@ -832,7 +832,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUpdateAnalysisInSimulationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the UpdateAnalysisInSimulation parameter.
@@ -873,7 +873,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUserWalkSpeedStatusLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the UserWalkSpeedStatus parameter.
@@ -914,7 +914,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetWalkForwardAngleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the WalkForwardAngle parameter.
@@ -955,7 +955,7 @@ class HtsGeneralSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetWalkForwardDistanceLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the WalkForwardDistance parameter.

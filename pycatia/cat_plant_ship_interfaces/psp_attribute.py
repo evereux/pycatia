@@ -44,7 +44,7 @@ class PSPAttribute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMultiStringAttributeValues(CATBSTR iAttributeName) As
                 | PspListOfBSTRs
                 | 
@@ -76,7 +76,7 @@ class PSPAttribute(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetParameter(CATBSTR iAttributeName) As Parameter
                 | 
                 |     Retrieve parameter for the input attribute name.
@@ -106,7 +106,7 @@ class PSPAttribute(AnyObject):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetType(CATBSTR iAttributeName) As
                 | CatPspIDLAttrDataType
                 |
@@ -141,7 +141,7 @@ class PSPAttribute(AnyObject):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsDerived(CATBSTR iAttributeName) As boolean
                 |
                 |     Retrieve Derived status for the input attribute.
@@ -172,7 +172,7 @@ class PSPAttribute(AnyObject):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsDiscrete(CATBSTR iAttributeName,
                 | boolean obStatus) As short
                 |
@@ -208,7 +208,7 @@ class PSPAttribute(AnyObject):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListAttributes(CatPspIDLDomainID iDomainID) As
                 | PspListOfBSTRs
                 |
@@ -242,7 +242,7 @@ class PSPAttribute(AnyObject):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListDoubleDiscreteValues(CATBSTR iAttributeName) As
                 | PspListOfDoubles
                 |
@@ -279,7 +279,7 @@ class PSPAttribute(AnyObject):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListEncodedDecodedDiscreteValues(CATBSTR
                 | iAttributeName,
                 | PspListOfBSTRs oLDiscreteEncodedValues,
@@ -338,7 +338,7 @@ class PSPAttribute(AnyObject):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListIntegerDiscreteValues(CATBSTR iAttributeName) As
                 | PspListOfLongs
                 |
@@ -371,7 +371,7 @@ class PSPAttribute(AnyObject):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListStringDiscreteValues(CATBSTR iAttributeName) As
                 | PspListOfBSTRs
                 |
@@ -403,7 +403,7 @@ class PSPAttribute(AnyObject):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetDerivedAttr(CATBSTR iAttributeName)
                 |
                 |     Reset derived status of the attribute to not-derived.

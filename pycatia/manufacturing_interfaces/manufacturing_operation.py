@@ -77,7 +77,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddClearance(CATBSTR iTypeMacro,
                 | double iA,
                 | double iB,
@@ -113,7 +113,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddDistanceAlongAlineMotion(CATBSTR iType,
                 | double iDistance,
                 | AnyObject iLine,
@@ -171,7 +171,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddDistanceAlongAlineMotionFeed(CATBSTR iType,
                 | double iDistance,
                 | AnyObject iLine,
@@ -243,7 +243,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddDistanceAlongAxis(CATBSTR iType,
                 | double iDistance)
                 | 
@@ -274,7 +274,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddDistanceAlongAxisFeed(CATBSTR iType,
                 | double iDistance,
                 | CATBSTR iFeedrateType,
@@ -324,7 +324,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddGotoHorizontal(CATBSTR iTypeMacro,
                 | double iDistance,
                 | double iAngle1,
@@ -352,7 +352,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddMotionGoToAPoint(CATBSTR iTypeMacro,
                 | AnyObject iPoint,
                 | Product iProduct)
@@ -400,7 +400,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddMotionGoToAPointFeed(CATBSTR iTypeMacro,
                 | AnyObject iPoint,
                 | Product iProduct,
@@ -468,7 +468,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddMotionToAPlane(CATBSTR iTypeMacro,
                 | short iMode,
                 | AnyObject iPlane,
@@ -524,7 +524,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPPWords(CATBSTR iTypeMacro,
                 | CATBSTR iPPWords)
                 | 
@@ -548,7 +548,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAGeometricAttribute(CATBSTR iAttribut) As
                 | Parameter
                 | 
@@ -571,7 +571,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAnAttribute(CATBSTR iAttribut) As Parameter
                 | 
                 |     Retrieve the Attribute of a Manufacturing Operation.
@@ -592,7 +592,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetFeature() As AnyObject
                 | 
                 |     Retrieve the Machinable Feature asociated to a Manufacturing
@@ -613,7 +613,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetFeedSpeedAutoUpdate(CATBSTR iType) As boolean
                 | 
                 |     Returns the Auto Update status for Feed Rate or Spindle
@@ -647,7 +647,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetListOfToolMotions() As MfgToolMotions
                 | 
                 |     Give a list of Manufacturing ToolMotion contained by a sequential
@@ -676,7 +676,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetManufacturingFeature() As ManufacturingFeature
                 | 
                 |     Retrieve the Manufacturing Feature asociated to a Manufacturing
@@ -697,7 +697,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMfgAparamTopPln() As double
                 | 
                 |     Retrieve the Equation of the Top Plane of a Pocket
@@ -719,7 +719,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMfgAxialFeatureDiameter() As double
                 | 
                 |     Retrieve the diameter of an axial manufacturing feature.
@@ -741,7 +741,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMfgBparamTopPln() As double
                 | 
                 |     Retrieve the Equation of the Top Plane of a Pocket
@@ -763,7 +763,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMfgCparamTopPln() As double
                 | 
                 |     Retrieve the Equation of the Top Plane of a Pocket
@@ -785,7 +785,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMfgDparamTopPln() As double
                 | 
                 |     Retrieve the Equation of the Top Plane of a Pocket
@@ -807,7 +807,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMfgFeaturePosition(CATSafeArrayVariant ioPosition)
                 | 
                 |     Retrieve the Coordinate of the Reference Point of a Drill
@@ -861,7 +861,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMfgFeatureXPosition() As double
                 | 
                 |     Retrieve the Coordinate of the Reference Point of a Drill
@@ -883,7 +883,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMfgFeatureYPosition() As double
                 | 
                 |     Retrieve the Coordinate of the Reference Point of a Drill
@@ -905,7 +905,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMfgFeatureZPosition() As double
                 | 
                 |     Retrieve the Coordinate of the Reference Point of a Drill
@@ -927,7 +927,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMfgTopPlane(double oA,
                 | double oB,
                 | double oC,
@@ -955,7 +955,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPattern() As AnyObject
                 | 
                 |     Retrieve the Machining Pattern asociated to a Manufacturing
@@ -976,7 +976,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRadiusOnMacro(CATBSTR iMacroType) As double
                 | 
                 |     Retrieves radius attribute on the circular elementary macro motion on
@@ -1027,7 +1027,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetRelimitingGeometry(CATBSTR iGeometryType,
                 | AnyObject oReference,
                 | AnyObject oProduct,
@@ -1094,7 +1094,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetStartPointGeometry(CATBSTR oGeometryPosition,
                 | AnyObject oReference,
                 | AnyObject oProduct,
@@ -1146,7 +1146,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetToolGage(double oMinToolLength,
                 | double oMinToolGage)
                 | 
@@ -1170,7 +1170,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTrajectoryEndPointCoord(CATSafeArrayVariant
                 | oEndPoint)
                 | 
@@ -1210,7 +1210,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTrajectoryStartPointCoord(CATSafeArrayVariant
                 | oStartPoint)
                 | 
@@ -1251,7 +1251,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ImportNCOutput(CATBSTR iType,
                 | CATBSTR iNCOutputFile,
                 | CATBSTR iPPName)
@@ -1278,7 +1278,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func InsertToolMotion(CATBSTR iType,
                 | short iPosition) As ManufacturingToolMotion
                 | 
@@ -1332,7 +1332,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsGeometricallyAccessibleOnSetup(AnyObject iManufacturingSetup) As
                 | boolean
                 | 
@@ -1364,7 +1364,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LockActivty()
                 | 
                 |     Method is used for Locking and Unloking specific activity Call on
@@ -1379,7 +1379,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveRelimitingGeometry(CATBSTR iGeometryType)
                 | 
                 |     Removes the geometry on relimiting element PROFILE CONTOURING operation
@@ -1412,7 +1412,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveStartPointGeometry()
                 | 
                 |     Removes the start point element on POCKETING operation
@@ -1433,7 +1433,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFeature(AnyObject iMachinableFeature)
                 | 
                 |     Associate a Machinable Feature to a Manufacturing
@@ -1455,7 +1455,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFeedSpeedAutoUpdate(CATBSTR iType,
                 | boolean iAutoUpdate)
                 | 
@@ -1508,7 +1508,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFeedrateMagnitude(CATBSTR iMagnitudeName)
                 | 
                 |     Defines the magnitude of the feedrate values.
@@ -1537,7 +1537,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGeometry(CATBSTR iGeometryType,
                 | AnyObject iReference,
                 | AnyObject iProduct,
@@ -1597,7 +1597,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPattern(AnyObject iPattern)
                 | 
                 |     Associate a Machining Pattern to a Manufacturing
@@ -1619,7 +1619,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRadiusOnMacro(CATBSTR iMacroType,
                 | double iRadius)
                 | 
@@ -1674,7 +1674,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRelimitingGeometry(CATBSTR iGeometryType,
                 | AnyObject iReference,
                 | AnyObject iProduct,
@@ -1738,7 +1738,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSpindleMagnitude(CATBSTR iMagnitudeName)
                 | 
                 |     Defines the magnitude of the spindle values.
@@ -1770,7 +1770,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetStartPointGeometry(CATBSTR iGeometryPosition,
                 | AnyObject iReference,
                 | AnyObject iProduct,
@@ -1823,7 +1823,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTool(CATBSTR iToolName)
                 | 
                 |     Assign an already created tool to a Manufacturing
@@ -1851,7 +1851,7 @@ class ManufacturingOperation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnlockActivty()
 
         :rtype: None

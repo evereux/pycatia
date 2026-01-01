@@ -669,7 +669,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAllowDistortionsInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -688,7 +688,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetGridDisplayInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -707,7 +707,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetGridPrimarySpacingInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -726,7 +726,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetGridSecondaryStepInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -745,7 +745,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetGridSnapPointInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -764,7 +764,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetGridVPrimarySpacingInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -783,7 +783,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetGridVSecondaryStepInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -802,7 +802,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLeaderAssociativityInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -821,7 +821,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetManRefSizInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -840,7 +840,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetManZooCapInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -859,7 +859,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMoveAfterCreationInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -878,7 +878,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSaveInCGRInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -897,7 +897,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetStandardInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -916,7 +916,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUnderFeatureInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -935,7 +935,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUnderSetInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -954,7 +954,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUnderViewInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -973,7 +973,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetViewAssociativityInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -992,7 +992,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetViewProfileInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -1011,7 +1011,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetViewReferentialInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -1030,7 +1030,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetViewReferentialZoomableInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -1049,7 +1049,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAllowDistortionsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Allow Distorsions setting parameter
@@ -1081,7 +1081,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGridDisplayLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Grid Display setting parameter value.
@@ -1112,7 +1112,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGridPrimarySpacingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Grid Primary Spacing setting parameter
@@ -1144,7 +1144,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGridSecondaryStepLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Grid Secondary Step setting parameter
@@ -1176,7 +1176,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGridSnapPointLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Grid Snap Point setting parameter
@@ -1208,7 +1208,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGridVPrimarySpacingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridV Primary Spacing setting parameter
@@ -1240,7 +1240,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGridVSecondaryStepLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridV Secondary Step setting parameter
@@ -1272,7 +1272,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLeaderAssociativityLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Leader Associativity setting parameter
@@ -1304,7 +1304,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetManRefSizLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Manipulator Reference Size setting parameter
@@ -1336,7 +1336,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetManZooCapLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Manipulator Zoom Capability setting parameter
@@ -1368,7 +1368,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMoveAfterCreationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Move After Creation setting parameter
@@ -1400,7 +1400,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSaveInCGRLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Save In CGR setting parameter value.
@@ -1431,7 +1431,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetStandardLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Tolerancing Standard setting parameter
@@ -1463,7 +1463,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUnderFeatureLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Under Geometric Feature Nodes setting parameter
@@ -1495,7 +1495,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUnderSetLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Under Annotation Set Node setting parameter
@@ -1527,7 +1527,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUnderViewLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Under View/Annotation Plane Nodes setting parameter
@@ -1559,7 +1559,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetViewAssociativityLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the View Associativity setting parameter
@@ -1591,7 +1591,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetViewProfileLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the View Profile setting parameter value.
@@ -1622,7 +1622,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetViewReferentialLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the View Referential setting parameter
@@ -1654,7 +1654,7 @@ class FtaInfraSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetViewReferentialZoomableLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the View Referential Zoomable setting parameter

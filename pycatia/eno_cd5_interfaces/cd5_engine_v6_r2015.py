@@ -85,7 +85,7 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetIDFromPhysicalID(CATBSTR iPhysicalID) As CD5ID
                 | 
                 |     Returns CD5ID of the object for the given PhysicalID.
@@ -121,7 +121,7 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetIDsFromPhysicalIDs(CATSafeArrayVariant iPhysicalIDs) As
                 | CD5IDs
                 | 
@@ -158,7 +158,7 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetProperties(CD5ID iENOIACD5ID) As CD5Properties
                 | 
                 |     Returns a collection of all the ENOVIA V6 properties for a given Object
@@ -199,7 +199,7 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPropertiesOfDocument(Document iCATIADocument) As
                 | CD5Properties
                 | 
@@ -244,7 +244,7 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPropertiesOfEmbeddedComponent(Document
                 | iCATIADocument,
                 | CATBSTR iEmbeddedComponentName) As CD5Properties
@@ -296,7 +296,7 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func NewFrom(CD5Template iCD5Template,
                 | CATBSTR iName,
                 | CATBSTR iType) As Document

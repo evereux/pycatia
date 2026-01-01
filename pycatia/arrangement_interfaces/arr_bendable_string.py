@@ -43,7 +43,7 @@ class ArrBendableString(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumOfSegments() As long
                 | 
                 |     Returns the cumulative number of the straight/arc segments that make up the
@@ -65,7 +65,7 @@ class ArrBendableString(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumOfSegmentsLocalAxis() As long
                 | 
                 |     Returns the cumulative number of the straight/arc segments that make up the
@@ -80,7 +80,7 @@ class ArrBendableString(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSegmentData(long iIndex,
                 | CATSafeArrayVariant oSegmentData)
                 | 
@@ -137,7 +137,7 @@ class ArrBendableString(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func InstanceName() As CATBSTR
                 | 
                 |     Returns the Bendable's Instance Name.

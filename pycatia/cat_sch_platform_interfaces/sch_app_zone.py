@@ -40,7 +40,7 @@ class SchAppZone(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppAddZoneMember(SchAppConnectable iAppCntblToAdd)
                 | 
                 |     Add an application connectable object to the zone as
@@ -83,7 +83,7 @@ class SchAppZone(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppListZoneMembers() As SchListOfObjects
                 | 
                 |     List all members of an application zone.
@@ -109,7 +109,7 @@ class SchAppZone(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppRemoveZoneMember(SchAppConnectable
                 | iAppCntblToRemove)
                 | 

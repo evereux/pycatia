@@ -42,7 +42,7 @@ class Shots(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Append(CATBaseDispatch iShot)
                 | 
                 |     Adds a shot to the end of the shots collection.
@@ -67,7 +67,7 @@ class Shots(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateShot() As CATBaseDispatch
                 | 
                 |     Creates a new shot and adds it to the Shots collection.
@@ -90,7 +90,7 @@ class Shots(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateSpecificShot(CATBSTR iType) As CATBaseDispatch
                 | 
                 |     Creates a new shot of a specific type and adds it to the Shots
@@ -122,7 +122,7 @@ class Shots(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub InsertAfter(short iIndex,
                 | CATBaseDispatch iShot)
                 | 
@@ -155,7 +155,7 @@ class Shots(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As CATBaseDispatch
                 | 
                 |     Returns a shot using its index from the colection.
@@ -187,7 +187,7 @@ class Shots(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a shot from the collection.

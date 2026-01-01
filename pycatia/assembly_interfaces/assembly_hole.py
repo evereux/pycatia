@@ -347,7 +347,7 @@ class AssemblyHole(AssemblyFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDirection(CATSafeArrayVariant ioDirection)
                 | 
                 |     Retrieves the hole direction vector components.
@@ -396,7 +396,7 @@ class AssemblyHole(AssemblyFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOrigin(CATSafeArrayVariant ioOrigin)
                 | 
                 |     Retrieves the origin point to which the hole is anchored.
@@ -446,7 +446,7 @@ class AssemblyHole(AssemblyFeature):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDirection(Reference iLine,
                 | Product iLineComp)
                 | 

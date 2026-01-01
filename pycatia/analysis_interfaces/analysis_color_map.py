@@ -294,7 +294,7 @@ class AnalysisColorMap(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDistributionValue(long indexValue) As double
                 | 
                 |     Gets the Value for the Distribution of Color Map
@@ -325,7 +325,7 @@ class AnalysisColorMap(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDistributionValue(long indexValue,
                 | double iModeValue,
                 | CATVariant iSmootheningFlag)
@@ -399,7 +399,7 @@ class AnalysisColorMap(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Update()
                 | 
                 |     Updates the visualization of the color map. This method should be called

@@ -61,7 +61,7 @@ class SchListOfDoubles(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Append(double iDouble)
                 | 
                 |     Adds a double to the end of the list.
@@ -90,7 +90,7 @@ class SchListOfDoubles(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(long iIndex) As double
                 | 
                 |     Returns a double from its index in the list.
@@ -122,7 +122,7 @@ class SchListOfDoubles(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveByIndex(long iIndex)
                 | 
                 |     Remove a double from the list by specifying its position in the

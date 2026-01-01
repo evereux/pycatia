@@ -44,7 +44,7 @@ class DnbAttachmentFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Attach(CATBaseDispatch iParent,
                 | CATBaseDispatch iChild,
                 | CATBaseDispatch oAttachment)
@@ -77,7 +77,7 @@ class DnbAttachmentFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATBaseDispatch iAttachment)
                 | 
                 |     Remove an attachment.

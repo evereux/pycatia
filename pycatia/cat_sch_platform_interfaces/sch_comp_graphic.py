@@ -40,7 +40,7 @@ class SchCompGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Activate(CATBSTR iGRRName,
                 | CATSafeArrayVariant iDb2WhereAt,
                 | SchGRRComp oGRR)
@@ -94,7 +94,7 @@ class SchCompGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddGraphicalRepresentation(SchGRRComp iGRRToAdd)
                 | 
                 |     Add a graphical representation to a component.
@@ -136,7 +136,7 @@ class SchCompGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Deactivate(SchGRRComp iGRR)
                 | 
                 |     To remove an image to an existing object.
@@ -184,7 +184,7 @@ class SchCompGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListGraphicalImages() As SchListOfObjects
                 | 
                 |     List all graphical images (instances of the rep) of a
@@ -212,7 +212,7 @@ class SchCompGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListGraphicalRepresentations() As SchListOfObjects
                 | 
                 |     List all graphical representation of a component.
@@ -239,7 +239,7 @@ class SchCompGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveGraphicalRepresentation(SchGRRComp iGRRToRemove)
                 | 
                 |     Remove a graphical representation from a component.
@@ -281,7 +281,7 @@ class SchCompGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Switch(SchGRRComp iGRR,
                 | CATBSTR iGRRName,
                 | SchGRRComp oGRR)
@@ -333,7 +333,7 @@ class SchCompGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SwitchAll(CATBSTR iGRRName)
                 | 
                 |     Replace all occurances of the images of this component with those of the

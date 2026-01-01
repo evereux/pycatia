@@ -58,7 +58,7 @@ class E5Property(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetBooleanAttribute(CATBSTR iAttrName) As boolean
                 | 
                 |     This gets an CATBoolean Attribute value of an input Object
@@ -80,7 +80,7 @@ class E5Property(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDoubleAttribute(CATBSTR iAttrName) As double
                 | 
                 |     This gets a Double Attribute value of an input Object
@@ -102,7 +102,7 @@ class E5Property(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLongAttribute(CATBSTR iAttrName) As long
                 | 
                 |     This gets a Long Attribute value of an input Object
@@ -124,7 +124,7 @@ class E5Property(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetStringAttribute(CATBSTR iAttrName) As CATBSTR
                 | 
                 |     This gets a String Attribute value of an input Object
@@ -147,7 +147,7 @@ class E5Property(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBooleanAttribute(CATBSTR iAttrName,
                 | boolean iAttrValue)
                 | 
@@ -189,7 +189,7 @@ class E5Property(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDoubleAttribute(CATBSTR iAttrName,
                 | double iAttrValue)
                 | 
@@ -216,7 +216,7 @@ class E5Property(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLongAttribute(CATBSTR iAttrName,
                 | long iAttrValue)
                 | 
@@ -241,7 +241,7 @@ class E5Property(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetStringAttribute(CATBSTR iAttrName,
                 | CATBSTR iAttrValue)
                 | 

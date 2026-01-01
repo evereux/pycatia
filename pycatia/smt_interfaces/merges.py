@@ -41,7 +41,7 @@ class Merges(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CleanUp()
                 | 
                 |     Performs some clean-up.
@@ -61,7 +61,7 @@ class Merges(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeMerge(Group GroupOfSelectedProducts,
                 | double iAccuracyForSimplification,
                 | long iKeepEdges,
@@ -105,7 +105,7 @@ class Merges(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func MergeShapeName() As CATBSTR
                 | 
                 |     Returns the name of the associated shape.

@@ -60,7 +60,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateAutoWalk(Activity oPrevAct) As AutoWalkActivity
                 | 
                 |     Returns newly created AutoWalkActivity.
@@ -114,7 +114,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateCollisionFreeWalkBwdOnArrArea(Activity
                 | iPrevAct,
                 | Product iArrArea,
@@ -236,7 +236,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateCollisionFreeWalkBwdOnPlane(Activity iPrevAct,
                 | Product iPlaneProd,
                 | CATSafeArrayVariant iPlaneDef,
@@ -371,7 +371,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateCollisionFreeWalkFwdOnArrArea(Activity
                 | iPrevAct,
                 | Product iArrArea,
@@ -497,7 +497,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateCollisionFreeWalkFwdOnPlane(Activity iPrevAct,
                 | Product iPlaneProd,
                 | CATSafeArrayVariant iPlaneDef,
@@ -617,7 +617,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateHumanActivityGroup(Activity iPrevAct) As
                 | HumanActivityGroup
                 | 
@@ -659,7 +659,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateHumanCallTask(Activity iPreviousActivity,
                 | HumanTask iCalledTask) As HumanCallTask
                 | 
@@ -710,7 +710,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateMoveToPosture(Activity iPrevAct) As
                 | MoveToPostureActivity
                 | 
@@ -762,7 +762,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreatePick(Activity iPrevAct,
                 | HTSPickType iPickType,
                 | boolean bCreateCstWithPickingHand,
@@ -838,7 +838,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreatePlace(Activity iPrevAct,
                 | CATSafeArrayVariant iPlacedProducts,
                 | CATSafeArrayVariant iOffset) As PlaceActivity
@@ -937,7 +937,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateSideStepOnArrArea(Activity iPrevAct,
                 | Product iArrArea,
                 | CATSafeArrayVariant iStartPt,
@@ -1025,7 +1025,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateSideStepOnPlane(Activity iPrevAct,
                 | Product iPlaneProd,
                 | CATSafeArrayVariant iPlaneDef,
@@ -1136,7 +1136,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateWalkBwdOnArrArea(Activity iPrevAct,
                 | Product iArrArea,
                 | long iNumPoints,
@@ -1236,7 +1236,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateWalkBwdOnPlane(Activity iPrevAct,
                 | Product iPlaneProd,
                 | CATSafeArrayVariant iPlaneDef,
@@ -1349,7 +1349,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateWalkFwdOnArrArea(Activity iPrevAct,
                 | Product iArrArea,
                 | long iNumPoints,
@@ -1448,7 +1448,7 @@ class HumanActsFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateWalkFwdOnPlane(Activity iPrevAct,
                 | Product iProd,
                 | CATSafeArrayVariant iPlaneDef,

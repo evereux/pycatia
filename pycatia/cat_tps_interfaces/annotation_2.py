@@ -178,7 +178,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddLeader()
                 | 
                 |     Add a leader.
@@ -219,7 +219,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DatumSimple() As DatumSimple
                 | 
                 |     Gets the annotation on the DatumSimple interface.
@@ -238,7 +238,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DatumTarget() As DatumTarget
                 | 
                 |     Gets the annotation on the DatumTarget interface.
@@ -257,7 +257,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DefaultAnnotation() As DefaultAnnotation
                 | 
                 |     Gets the annotation on the DefaultAnnotation interface.
@@ -276,7 +276,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Dimension3D() As Dimension3D
                 | 
                 |     Gets the 3D Dimension on the 3D Dimension interface.
@@ -300,7 +300,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func FlagNote() As FlagNote
                 | 
                 |     Gets the annotation on the FlagNote interface.
@@ -324,7 +324,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSurfaces(CATSafeArrayVariant oSafeArray)
                 | 
                 |     Gets the geometry on which the Annotation is applied to.
@@ -359,7 +359,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSurfacesCount() As long
                 | 
                 |     Counts the geometry on which the Annotation is applied to.
@@ -378,7 +378,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAVisualizationDimension() As boolean
                 | 
                 |     Checks if the Annotation uses a visualization dimension for its attachment
@@ -420,7 +420,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsADefaultAnnotation() As boolean
                 | 
                 |     To know if the Annotation is a Default Annotation.
@@ -439,7 +439,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ModifyVisu()
                 | 
                 |     To refresh the 3D visualization.
@@ -458,7 +458,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Noa() As Noa
                 | 
                 |     Gets the annotation on the Noa interface.
@@ -477,7 +477,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func NonSemanticDatum() As NonSemanticDatum
                 | 
                 |     Gets the annotation on the DatumSimple interface.
@@ -496,7 +496,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func NonSemanticDatumTarget() As NonSemanticDatumTarget
                 | 
                 |     Gets the annotation on the DatumSimple interface.
@@ -515,7 +515,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func NonSemanticDimension() As NonSemanticDimension
                 | 
                 |     Gets the annotation on the DatumSimple interface.
@@ -534,7 +534,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func NonSemanticGDT() As NonSemanticGDT
                 | 
                 |     Gets the annotation on the DatumSimple interface.
@@ -553,7 +553,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ReferenceFrame() As ReferenceFrame
                 | 
                 |     Gets the annotation on the ReferenceFrame interface.
@@ -573,7 +573,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Roughness() As Roughness
                 | 
                 |     Gets the annotation on the Roughness interface.
@@ -592,7 +592,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func SemanticGDT() As SemanticGDT
                 | 
                 |     Gets the annotation on the DatumSimple interface.
@@ -611,7 +611,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetXY(double iX,
                 | double iY)
                 | 
@@ -641,7 +641,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Text() As Text
                 | 
                 |     Gets the annotation on the Text interface.
@@ -665,7 +665,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub TransfertToView(TPSView iView)
                 | 
                 |     Move the annotation in another view.
@@ -705,7 +705,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func VisualizationDimension() As Dimension3D
                 | 
                 |     Gets the dimension visualization associated with the
@@ -731,7 +731,7 @@ class Annotation2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Weld() As Weld
                 | 
                 |     Gets the annotation on the Weld interface.

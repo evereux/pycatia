@@ -40,7 +40,7 @@ class SchCompFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddInternalFlow(SchListOfObjects iLFlowCntrs) As
                 | SchInternalFlow
                 | 
@@ -77,7 +77,7 @@ class SchCompFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddInternalFlowSpecifyGRR(SchListOfObjects
                 | iLFlowCntrs,
                 | SchListOfObjects iLOwnerGRR) As SchInternalFlow
@@ -121,7 +121,7 @@ class SchCompFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListInternalFlows() As SchListOfObjects
                 | 
                 |     List all internal flow objects of a component.
@@ -148,7 +148,7 @@ class SchCompFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveInternalFlow(SchInternalFlow
                 | iInternalFlowToRemove)
                 | 

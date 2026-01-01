@@ -131,7 +131,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func BuildDocDBItemFromSmarTeamID(long iobjectId,
                 | short iclassId) As StiDBItem
                 | 
@@ -179,7 +179,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func BuildFileDBItemFromSmarTeamID(long iobjectId,
                 | short iclassId) As StiDBItem
                 | 
@@ -226,7 +226,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Connect(CATBSTR iUserLogin,
                 | CATBSTR iUserPassword)
                 | 
@@ -301,7 +301,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Disconnect()
                 | 
                 |     Disconnects to SmarTeam Integration.
@@ -331,7 +331,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSMARTEAMClassID(StiDBItem iStiDBItem) As short
                 | 
                 |     Returns the Class Identifier of a SmarTeam Integration Object
@@ -376,7 +376,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSMARTEAMObjectID(StiDBItem iStiDBItem) As long
                 | 
                 |     Returns the Object Identifier of a SmarTeam Integration Object
@@ -421,7 +421,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetStiDBItemFromAnyObject(AnyObject iAnyObject) As
                 | StiDBItem
                 | 
@@ -465,7 +465,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetStiDBItemFromCATBSTR(CATBSTR iFullPath) As
                 | StiDBItem
                 | 
@@ -511,7 +511,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTeamPDMURL(StiDBItem iStiDBItem) As CATBSTR
                 | 
                 |     Returns the Team PDM URL of a CATIAStiDBItem.
@@ -560,7 +560,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsConnected() As boolean
                 | 
                 |     Returns if end user Is Connected to SmarTeam Integration (True) or not
@@ -594,7 +594,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LifeCycleCheckIn(StiDBItem iStiDBItem)
                 | 
                 |     Checks the CATIAStiDBItem Into SmarTeam Check-In Vault.
@@ -684,7 +684,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LifeCycleCheckOut(StiDBItem iStiDBItem)
                 | 
                 |     Checks Out Without Propagation the CATIAStiDBItem in
@@ -771,7 +771,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LifeCycleCheckOutPropagated(StiDBItem iStiDBItem)
                 | 
                 |     Checks Out With Propagation the CATIAStiDBItem in
@@ -860,7 +860,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LifeCycleNewRelease(StiDBItem iStiDBItem)
                 | 
                 |     Enables a New Release Without Propagation for the CATIAStiDBItem in
@@ -952,7 +952,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LifeCycleNewReleasePropagated(StiDBItem iStiDBItem)
                 | 
                 |     Enables a NewRelease action With Propagation for the CATIAStiDBItem in
@@ -1042,7 +1042,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LifeCycleRelease(StiDBItem iStiDBItem)
                 | 
                 |     Releases the CATIAStiDBItem in SmarTeam Release Vault.
@@ -1133,7 +1133,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LifeCycleUndoCheckOut(StiDBItem iStiDBItem)
                 | 
                 |     Cancels Check-Out operation on the CATIAStiDBItem in SmarTeam. So the
@@ -1235,7 +1235,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RefreshInfo()
                 | 
                 |     Refreshes Information concerning all CATIA Documents in
@@ -1271,7 +1271,7 @@ class StiEngine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Save(StiDBItem iStiDBItem)
                 | 
                 |     Saves the CATIAStiDBItem in SmarTeam.

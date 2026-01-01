@@ -43,7 +43,7 @@ class ManufacturingSurfaceGeomArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAllGeometry()
                 | 
                 |     Removes all the geometry linked to a Manufacturing Surface NCGeometry
@@ -64,7 +64,7 @@ class ManufacturingSurfaceGeomArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGeometry(AnyObject iReference,
                 | AnyObject iProduct)
                 | 

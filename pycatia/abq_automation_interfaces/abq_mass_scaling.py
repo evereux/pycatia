@@ -305,7 +305,7 @@ class ABQMassScaling(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportForBody(Product iProduct,
                 | Body iBody)
                 | 
@@ -346,7 +346,7 @@ class ABQMassScaling(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromProduct(Product iProduct,
                 | Reference iSupport)
                 | 
@@ -387,7 +387,7 @@ class ABQMassScaling(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromPublication(Product iProduct,
                 | Publication iPublication)
                 | 
@@ -431,7 +431,7 @@ class ABQMassScaling(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ClearSupports()
                 | 
                 |     Clear the list of supports.
@@ -445,7 +445,7 @@ class ABQMassScaling(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSupports(CATSafeArrayVariant oProducts,
                 | CATSafeArrayVariant oSupports)
                 | 
@@ -487,7 +487,7 @@ class ABQMassScaling(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSupports(CATSafeArrayVariant iProducts,
                 | CATSafeArrayVariant iSupports)
                 | 

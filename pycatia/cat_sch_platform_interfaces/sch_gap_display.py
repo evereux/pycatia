@@ -39,7 +39,7 @@ class SchGapDisplay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IsGapShown(boolean oBYes)
                 | 
                 |     Query whether gaps are shown (gap attributes exist).
@@ -82,7 +82,7 @@ class SchGapDisplay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGap(SchListOfObjects iLUKRoutes)
                 | 
                 |     Add gap display attributes on the route.
@@ -128,7 +128,7 @@ class SchGapDisplay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnsetGap(SchListOfObjects iLUKRoutes)
                 | 
                 |     Remove gap display attributes on the route. A list of routes to be

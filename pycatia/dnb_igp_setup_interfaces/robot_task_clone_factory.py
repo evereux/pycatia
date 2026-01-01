@@ -55,7 +55,7 @@ class RobotTaskCloneFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CloneTaskInAnotherRobot(RobotTask iSrcRobotTask,
                 | AnyObject iDestRobot,
                 | CATBSTR iTargetTaskName,
@@ -138,7 +138,7 @@ class RobotTaskCloneFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CloneTaskInSameRobot(RobotTask iSrcRobotTask,
                 | CATBSTR iTargetTaskName,
                 | CATSafeArrayVariant iTransOnTarget,

@@ -48,7 +48,7 @@ class SchAppCntrDocLink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppGetLink(SchListOfObjects oLCntrs,
                 | SchListOfBSTRs oLDocumentNames,
                 | CATBSTR oPublicationName)
@@ -118,7 +118,7 @@ class SchAppCntrDocLink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppGetLinkedDocs(CATBSTR oPublicationName,
                 | SchListOfBSTRs oLDocumentName,
                 | SchListOfBSTRs oLDocumentUuid,
@@ -195,7 +195,7 @@ class SchAppCntrDocLink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppIsLinkable(SchAppConnector iSchConnector,
                 | boolean oBYes)
                 | 
@@ -245,7 +245,7 @@ class SchAppCntrDocLink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppLink(SchAppConnector iSchConnector)
                 | 
                 |     Create an external link to another connector.
@@ -289,7 +289,7 @@ class SchAppCntrDocLink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppLinkInit(CATBSTR iPublicationName)
                 | 
                 |     Publish this connector to make it available for linking.
@@ -318,7 +318,7 @@ class SchAppCntrDocLink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOpenLinkedDoc(CATBSTR iDocumentName,
                 | CATBSTR iDocumentUuid,
                 | Document oDocument)
@@ -374,7 +374,7 @@ class SchAppCntrDocLink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppUnLink(long iUnpublish)
                 | 
                 |     Remove external link to another connector.

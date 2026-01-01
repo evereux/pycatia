@@ -1177,7 +1177,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Get3DTextureColor(short iColorIndex,
                 | CATSafeArrayVariant o3DTextureColor)
                 |
@@ -1218,7 +1218,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Get3DTextureColorCoefficient(short iColorIndex,
                 | double o3DTextureColorCoefficient)
                 |
@@ -1259,7 +1259,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Get3DTextureOrientation(CATSafeArrayVariant
                 | o3DTextureOrientation)
                 |
@@ -1291,7 +1291,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Get3DTexturePosition(CATSafeArrayVariant
                 | o3DTexturePosition)
                 |
@@ -1323,7 +1323,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Get3DTextureScale(CATSafeArrayVariant o3DTextureScale)
                 |
                 |     Returns the scale of a texture. The scale is expressed with 3 coefficients
@@ -1354,7 +1354,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAmbientColor(CATSafeArrayVariant oAmbientColor)
                 |
                 |     Returns the ambient color of a material. The color is expressed with r, g,
@@ -1384,7 +1384,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDiffuseColor(CATSafeArrayVariant oDiffuseColor)
                 |
                 |     Returns the diffuse color of a material. The color is expressed with r, g,
@@ -1414,7 +1414,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSpecularColor(CATSafeArrayVariant oSpecularColor)
                 |
                 |     Returns the specular color of a material. The color is expressed with r, g,
@@ -1444,7 +1444,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTransparencyColor(CATSafeArrayVariant
                 | oTransparencyColor)
                 |
@@ -1477,7 +1477,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Put3DTextureColor(short iColorIndex,
                 | CATSafeArrayVariant i3DTextureColor)
                 |
@@ -1507,7 +1507,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Put3DTextureColorCoefficient(short iColorIndex,
                 | double i3DTextureColorCoefficient)
                 |
@@ -1538,7 +1538,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Put3DTextureOrientation(CATSafeArrayVariant
                 | i3DTextureOrientation)
                 |
@@ -1564,7 +1564,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Put3DTexturePosition(CATSafeArrayVariant
                 | i3DTexturePosition)
                 |
@@ -1590,7 +1590,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Put3DTextureScale(CATSafeArrayVariant i3DTextureScale)
                 |
                 |     Sets the scale of a texture. The scale is expressed with 3 coefficients
@@ -1615,7 +1615,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutAmbientColor(CATSafeArrayVariant iAmbientColor)
                 |
                 |     Sets the ambient color of a material. The color is expressed with r, g, and
@@ -1639,7 +1639,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutDiffuseColor(CATSafeArrayVariant iDiffuseColor)
                 |
                 |     Sets the diffuse color of a material. The color is expressed with r, g, and
@@ -1663,7 +1663,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutSpecularColor(CATSafeArrayVariant iSpecularColor)
                 |
                 |     Sets the specular color of a material. The color is expressed with r, g,
@@ -1687,7 +1687,7 @@ class RenderingMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutTransparencyColor(CATSafeArrayVariant
                 | iTransparencyColor)
                 |

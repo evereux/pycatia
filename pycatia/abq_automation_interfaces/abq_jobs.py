@@ -40,7 +40,7 @@ class ABQJobs(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add() As ABQJob
                 | 
                 |     Creates a new Abaqus job and adds it to the collection of Abaqus
@@ -66,7 +66,7 @@ class ABQJobs(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ABQJob
                 | 
                 |     Returns an Abaqus job using its index or its name from the ABQJobs
@@ -95,7 +95,7 @@ class ABQJobs(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an Abaqus Job using its index or its name from the job

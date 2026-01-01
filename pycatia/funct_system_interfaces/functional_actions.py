@@ -42,7 +42,7 @@ class FunctionalActions(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Create(CATBSTR iName,
                 | FunctionalPosition iFrom,
                 | FunctionalPosition iTo) As FunctionalAction
@@ -61,7 +61,7 @@ class FunctionalActions(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Delete(FunctionalAction iAction)
                 | 
                 |     Delete a FunctionalAction.
@@ -91,7 +91,7 @@ class FunctionalActions(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Elem(CATVariant iIndex) As FunctionalAction
                 | 
                 |     Returns an action using its index or its name from the actions

@@ -41,7 +41,7 @@ class EkpServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AssignER(CATBaseDispatch iGeometricFeature,
                 | CATBaseDispatch iFTA,
                 | Activity iOperation,
@@ -99,7 +99,7 @@ class EkpServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AssignERWithFTA(CATBaseDispatch iFTA,
                 | Activity iOperation,
                 | ItemAssignmentType iType)
@@ -143,7 +143,7 @@ class EkpServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAssignedER(Activity iOperation,
                 | ItemAssignmentType iType,
                 | CATSafeArrayVariant oItemList)
@@ -196,7 +196,7 @@ class EkpServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveERAssignment(CATBaseDispatch iGeometricFeature,
                 | CATBaseDispatch iFTA,
                 | Activity iOperation,
@@ -252,7 +252,7 @@ class EkpServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveERWithFTA(CATBaseDispatch iFTA,
                 | Activity iOperation,
                 | ItemAssignmentType iType)

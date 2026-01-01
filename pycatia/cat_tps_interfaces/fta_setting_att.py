@@ -1652,7 +1652,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAlphabeticOrderInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -1671,7 +1671,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAnalysisDisplayModeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -1707,7 +1707,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAngulaireGeneralTolClassInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -1726,7 +1726,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAnnotDimInvalidColor(long oValueR,
                 | long oValueG,
                 | long oValueB)
@@ -1745,7 +1745,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAnnotDimInvalidColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -1798,7 +1798,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAnnotDimInvalidInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -1826,7 +1826,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAnnotDimOnDeletedGeomColor(long oValueR,
                 | long oValueG,
                 | long oValueB)
@@ -1845,7 +1845,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAnnotDimOnDeletedGeomColorInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
@@ -1899,7 +1899,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAnnotDimOnDeletedGeomInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -1935,7 +1935,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAnnotDimOnUnloadedGeomColor(long oValueR,
                 | long oValueG,
                 | long oValueB)
@@ -1954,7 +1954,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAnnotDimOnUnloadedGeomColorInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked,
@@ -2008,7 +2008,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAnnotDimOnUnloadedGeomInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2044,7 +2044,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAnnotOnZeroZSettingInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2080,7 +2080,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetBodyHideInCaptureInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2099,7 +2099,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCATFTAChamferGeneralTolClassInfo(CATBSTR
                 | AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -2136,7 +2136,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCATFTAEdgesColor(long oValueR,
                 | long oValueG,
                 | long oValueB)
@@ -2155,7 +2155,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCATFTAEdgesColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -2208,7 +2208,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCATFTAEdgesLineTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -2261,7 +2261,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCATFTAEdgesThicknessInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -2314,7 +2314,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCATFTAUFAutoTolerancingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -2367,7 +2367,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCATFTAUseLastTolerancesInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2403,7 +2403,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimAfterCreInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2422,7 +2422,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimAfterModInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2441,7 +2441,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimBeforeCreInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2460,7 +2460,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimBeforeModInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2479,7 +2479,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimBlankingCreInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2498,7 +2498,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimBlankingModInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2517,7 +2517,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimConfigureSnappingInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2536,7 +2536,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimConstantOffsetInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2555,7 +2555,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimCreateOnInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2574,7 +2574,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimLinePosValueInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2593,7 +2593,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimLineUpBaseAngleInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2612,7 +2612,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimLineUpBaseLengthInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2631,7 +2631,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimLineUpCumulInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2650,7 +2650,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimLineUpFunnelInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2669,7 +2669,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimLineUpOffsetBetDimAngleInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2703,7 +2703,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimLineUpOffsetBetDimLengthInfo(CATBSTR
                 | AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -2738,7 +2738,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimLineUpOffsetToRefAngleInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2772,7 +2772,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimLineUpOffsetToRefLengthInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2806,7 +2806,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimLineUpStackInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2825,7 +2825,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimManualPositionningInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2844,7 +2844,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimMove2dPartCreInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2863,7 +2863,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimMove2dPartModInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2882,7 +2882,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimMoveDimLineCreInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2901,7 +2901,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimMoveDimLineModInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2920,7 +2920,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimMoveLeaderCreInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2954,7 +2954,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimMoveLeaderModInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -2988,7 +2988,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimMoveSubPartInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3007,7 +3007,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimMoveValueCreInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3026,7 +3026,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimMoveValueModInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3045,7 +3045,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimORunCreInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3064,7 +3064,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimORunModInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3083,7 +3083,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimOriDefaultSymbInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3102,7 +3102,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDimSnappingInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3121,7 +3121,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetGeneralTolClassInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3140,7 +3140,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetHighlightDefAnnotInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3159,7 +3159,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNoaCreationInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3178,7 +3178,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNonSemanticAllwaysUpgradeGeneralTolInfo(CATBSTR
                 | AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -3198,7 +3198,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNonSemanticAllwaysUpgradeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3217,7 +3217,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNonSemanticDimAllowedInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3236,7 +3236,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNonSemanticMarkedInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3255,7 +3255,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNonSemanticTolAllowedInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3274,7 +3274,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetParametersInTreeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3293,7 +3293,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRotationSnapAngleInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3312,7 +3312,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRotationSnapAutoInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3331,7 +3331,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSectPatternInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3350,7 +3350,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSelectPublishedGeometryInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3369,7 +3369,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetShiftedProfileInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3388,7 +3388,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTrueDimensionColor(long oValueR,
                 | long oValueG,
                 | long oValueB)
@@ -3407,7 +3407,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTrueDimensionColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -3460,7 +3460,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTrueDimensionInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -3496,7 +3496,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAlphabeticOrderLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AlphabeticOrder setting parameter
@@ -3528,7 +3528,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAnalysisDisplayModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AnalysisDisplayMode parameter.
@@ -3569,7 +3569,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAngulaireGeneralTolClassLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension general class parameter.
@@ -3599,7 +3599,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAnnotDimInvalidColor(long iValueR,
                 | long iValueG,
                 | long iValueB)
@@ -3618,7 +3618,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAnnotDimInvalidColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AnnotDimInvalidColor parameter.
@@ -3659,7 +3659,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAnnotDimInvalidLock(boolean iLocked)
                 | 
                 |     Retrieves environment informations for the AnnotDimInvalid
@@ -3708,7 +3708,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAnnotDimOnDeletedGeomColor(long iValueR,
                 | long iValueG,
                 | long iValueB)
@@ -3727,7 +3727,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAnnotDimOnDeletedGeomColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AnnotDimOnDeletedGeomColor parameter.
@@ -3768,7 +3768,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAnnotDimOnDeletedGeomLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AnnotDimOnDeletedGeom parameter.
@@ -3809,7 +3809,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAnnotDimOnUnloadedGeomColor(long iValueR,
                 | long iValueG,
                 | long iValueB)
@@ -3828,7 +3828,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAnnotDimOnUnloadedGeomColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AnnotDimOnUnloadedGeomColor
@@ -3870,7 +3870,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAnnotDimOnUnloadedGeomLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AnnotDimOnUnloadedGeom parameter.
@@ -3911,7 +3911,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAnnotOnZeroZSettingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AnnotOnZeroZSetting parameter.
@@ -3952,7 +3952,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBodyHideInCaptureLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension general class parameter.
@@ -3982,7 +3982,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCATFTAChamferGeneralTolClassLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CATFTAChamferGeneralTolClass
@@ -4024,7 +4024,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCATFTAEdgesColor(long iValueR,
                 | long iValueG,
                 | long iValueB)
@@ -4043,7 +4043,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCATFTAEdgesColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GetCATFTAEdgesColor parameter.
@@ -4084,7 +4084,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCATFTAEdgesLineTypeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CATFTAEdgesLineType parameter.
@@ -4125,7 +4125,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCATFTAEdgesThicknessLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CATFTAEdgesThickness parameter.
@@ -4166,7 +4166,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCATFTAUFAutoTolerancingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CATFTAUFAutoTolerancing parameter.
@@ -4207,7 +4207,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCATFTAUseLastTolerancesLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CATFTAUseLastTolerances parameter.
@@ -4248,7 +4248,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimAfterCreLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension After Creaation parameter.
@@ -4278,7 +4278,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimAfterModLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension After Modification parameter.
@@ -4308,7 +4308,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimBeforeCreLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Before Creation parameter.
@@ -4338,7 +4338,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimBeforeModLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Before Modification parameter.
@@ -4368,7 +4368,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimBlankingCreLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Blanking Creation parameter.
@@ -4398,7 +4398,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimBlankingModLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Blanking Modification parameter.
@@ -4428,7 +4428,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimConfigureSnappingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DimConfigureSnapping parameter.
@@ -4458,7 +4458,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimConstantOffsetLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Constant Offset parameter.
@@ -4488,7 +4488,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimCreateOnLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DimCreateOn parameter.
@@ -4518,7 +4518,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimLinePosValueLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Line Position Value parameter.
@@ -4548,7 +4548,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimLineUpBaseAngleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Line Up Base Angle parameter.
@@ -4578,7 +4578,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimLineUpBaseLengthLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Line Up Base Length parameter.
@@ -4608,7 +4608,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimLineUpCumulLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Line Up Cululated parameter.
@@ -4638,7 +4638,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimLineUpFunnelLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Line Up Funnel parameter.
@@ -4668,7 +4668,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimLineUpOffsetBetDimAngleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DimLineUpOffsetBetDimAngle parameter.
@@ -4705,7 +4705,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimLineUpOffsetBetDimLengthLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DimLineUpOffsetBetDimLength
@@ -4743,7 +4743,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimLineUpOffsetToRefAngleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DimLineUpOffsetToRefAngle parameter.
@@ -4780,7 +4780,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimLineUpOffsetToRefLengthLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DimLineUpOffsetToRefLength parameter.
@@ -4817,7 +4817,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimLineUpStackLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Line Up Stack parameter.
@@ -4847,7 +4847,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimManualPositionningLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Manual Positionning parameter.
@@ -4877,7 +4877,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimMove2dPartCreLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Move 2D Creation parameter.
@@ -4907,7 +4907,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimMove2dPartModLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Move 2D Modification parameter.
@@ -4937,7 +4937,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimMoveDimLineCreLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Move Dimension Line Creation parameter.
@@ -4967,7 +4967,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimMoveDimLineModLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Move Dimension Line Modification parameter.
@@ -4997,7 +4997,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimMoveLeaderCreLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension leader Creation parameter.
@@ -5034,7 +5034,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimMoveLeaderModLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension leader modification
@@ -5072,7 +5072,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimMoveSubPartLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DimMoveSubPart parameter.
@@ -5102,7 +5102,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimMoveValueCreLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Move Value Creation parameter.
@@ -5132,7 +5132,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimMoveValueModLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Move Value Modification parameter.
@@ -5162,7 +5162,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimORunCreLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Over Run Creation parameter.
@@ -5192,7 +5192,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimORunModLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Over Run Modification parameter.
@@ -5222,7 +5222,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimOriDefaultSymbLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Orientation Default Symbol parameter.
@@ -5252,7 +5252,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimSnappingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension Snapping parameter.
@@ -5282,7 +5282,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGeneralTolClassLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Dimension general class parameter.
@@ -5312,7 +5312,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHighlightDefAnnotLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Highlight Def Annot parameter.
@@ -5342,7 +5342,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNoaCreationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Noa Creation parameter.
@@ -5372,7 +5372,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNonSemanticAllwaysUpgradeGeneralTolLock(boolean
                 | iLocked)
                 | 
@@ -5404,7 +5404,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNonSemanticAllwaysUpgradeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Non Semantic Allways Upgrade parameter.
@@ -5434,7 +5434,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNonSemanticDimAllowedLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Non Semantic Dim Allowed parameter.
@@ -5464,7 +5464,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNonSemanticMarkedLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Non Semantic Marked parameter.
@@ -5494,7 +5494,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNonSemanticTolAllowedLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Non Semantic Tol Allowed parameter.
@@ -5524,7 +5524,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetParametersInTreeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Parameters in tree parameter.
@@ -5554,7 +5554,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRotationSnapAngleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Rotation Snap Angle parameter.
@@ -5584,7 +5584,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRotationSnapAutoLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Rotation Snap Auto parameter.
@@ -5614,7 +5614,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSectPatternLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Pattern of Visu setting parameter
@@ -5646,7 +5646,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSelectPublishedGeometryLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Select Published Geometry parameter.
@@ -5676,7 +5676,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetShiftedProfileLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Shifted Profile parameter.
@@ -5706,7 +5706,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTrueDimensionColor(long iValueR,
                 | long iValueG,
                 | long iValueB)
@@ -5725,7 +5725,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTrueDimensionColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the TrueDimensionColor parameter.
@@ -5766,7 +5766,7 @@ class FTASettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTrueDimensionLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the TrueDimension parameter.

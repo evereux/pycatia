@@ -155,7 +155,7 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddCompositeDampingDataTable(CATSafeArrayVariant
                 | iColumn1,
                 | CATSafeArrayVariant iColumn2)
@@ -203,7 +203,7 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddDirectDampingDataTable(CATBSTR iDampingRange,
                 | CATSafeArrayVariant iColumn1,
                 | CATSafeArrayVariant iColumn2,
@@ -274,7 +274,7 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddRayleighDampingDataTable(CATBSTR iDampingRange,
                 | CATSafeArrayVariant iColumn1,
                 | CATSafeArrayVariant iColumn2,
@@ -349,7 +349,7 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddStructuralDampingDataTable(CATBSTR iDampingRange,
                 | CATSafeArrayVariant iColumn1,
                 | CATSafeArrayVariant iColumn2,

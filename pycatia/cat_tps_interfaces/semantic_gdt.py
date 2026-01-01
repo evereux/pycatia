@@ -63,7 +63,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AssociatedRefFrame() As AssociatedRefFrame
                 | 
                 |     Returns the annotation on the AssociatedRefFrame
@@ -83,7 +83,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CompositeTolerance() As CompositeTolerance
                 | 
                 |     Returns the CompositeTolerance interface.
@@ -137,7 +137,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func FreeState() As FreeState
                 | 
                 |     Returns the FreeState interface.
@@ -227,7 +227,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAFreeState() As boolean
                 | 
                 |     Checks if the GDT has a Free State.
@@ -248,7 +248,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAMaterialCondition() As boolean
                 | 
                 |     Checks if the GDT has a Material Condition.
@@ -269,7 +269,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAParticularTolElem() As boolean
                 | 
                 |     Checks if the GDT has a Particuler Element.
@@ -290,7 +290,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasATangentPlane() As boolean
                 | 
                 |     Checks if the GDT has a Tangent Plane Modifier.
@@ -311,7 +311,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasATolerancePerUnitBasisRestrictiveValue() As boolean
                 | 
                 |     Checks if the GDT has a Tolerance Per Unit Basis Restricted
@@ -335,7 +335,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsACompositeTolerance() As boolean
                 | 
                 |     Checks if the GDT is a Composite Tolerance.
@@ -356,7 +356,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAProjectedToleranceZone() As boolean
                 | 
                 |     Checks if the GDT is a Projected Zone.
@@ -377,7 +377,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAShiftedProfileTolerance() As boolean
                 | 
                 |     Checks if the GDT is a Shifted Profile Tolerance.
@@ -398,7 +398,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAToleranceUnitBasisValue() As boolean
                 | 
                 |     Checks if the GDT is a Tolerance Unit Basis Value.
@@ -419,7 +419,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAToleranceZone() As boolean
                 | 
                 |     Checks if a Tolerance Zone exists.
@@ -440,7 +440,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAnAssociatedRefFrame() As boolean
                 | 
                 |     Checks if the GDT is an Associated Reference Frame.
@@ -493,7 +493,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func MaterialCondition() As MaterialCondition
                 | 
                 |     Returns the MaterialCondition interface.
@@ -571,7 +571,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ParticularTolElem() As ParticularTolElem
                 | 
                 |     Returns the ParticularTolElem interface.
@@ -590,7 +590,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ProjectedToleranceZone() As ProjectedToleranceZone
                 | 
                 |     Returrns the ProjectedToleranceZone interface.
@@ -609,7 +609,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ShiftedProfileTolerance() As ShiftedProfileTolerance
                 | 
                 |     Returns the ShiftedProfileTolerance interface.
@@ -628,7 +628,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TPSParallelOnScreen() As TPSParallelOnScreen
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.
@@ -642,7 +642,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TangentPlane() As TangentPlane
                 | 
                 |     Returns the Tangent Plane interface.
@@ -661,7 +661,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func TolerancePerUnitBasisRestrictiveValue() As
                 | TolerancePerUnitBasisRestrictiveValue
                 | 
@@ -682,7 +682,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ToleranceUnitBasisValue() As ToleranceUnitBasisValue
                 | 
                 |     Returns the ToleranceUnitBasisValue interface.
@@ -701,7 +701,7 @@ class SemanticGDT(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ToleranceZone() As ToleranceZone
                 | 
                 |     Returns the ToleranceZone interface.

@@ -59,7 +59,7 @@ class FunctAssociation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DetachFrom(AnyObject iLinked)
                 | 
                 |     Delete a link to a linked object.
@@ -74,7 +74,7 @@ class FunctAssociation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LinkTo(AnyObject iLinked,
                 | CATBSTR iKind)
                 | 
@@ -91,7 +91,7 @@ class FunctAssociation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func RetrieveKindOfLinked(CATVariant iIndex) As CATBSTR
                 | 
                 |     Retrieve the kind of linked object.
@@ -106,7 +106,7 @@ class FunctAssociation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func RetrieveLinked(CATVariant iIndex) As AnyObject
                 | 
                 |     Retrieve a linked object.

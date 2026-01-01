@@ -41,7 +41,7 @@ class AuxDevicesMgt(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DefineAuxDevices(AnyObject iAuxDeviceObj,
                 | DNBAuxilliaryDeviceType iAuxDeviceType)
                 | 
@@ -73,7 +73,7 @@ class AuxDevicesMgt(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAllAuxDevices(CATSafeArrayVariant oAuxDeviceList)
                 | 
                 |     Get all aux devices defined for the robot.
@@ -115,7 +115,7 @@ class AuxDevicesMgt(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAuxDevices(long iAuxDeviceNum) As AnyObject
                 | 
                 |     Get the aux device given the the index.
@@ -146,7 +146,7 @@ class AuxDevicesMgt(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAuxDevicesType(long iAuxDeviceNum) As
                 | DNBAuxilliaryDeviceType
                 | 
@@ -179,7 +179,7 @@ class AuxDevicesMgt(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNbAuxDevices() As long
                 | 
                 |     Get the number of aux devices for the robot.
@@ -205,7 +205,7 @@ class AuxDevicesMgt(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAll()
                 | 
                 |     Remove all the aux devices defined for the robot.
@@ -226,7 +226,7 @@ class AuxDevicesMgt(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAuxDevicesByPosition(long iAuxDeviceNum)
                 | 
                 |     Remove the aux device at the given index.

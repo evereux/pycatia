@@ -44,7 +44,7 @@ class ManufacturingPrecedences(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddOperation(ManufacturingActivity iObject,
                 | CatManufacturingPrecedenceType iType)
                 | 
@@ -77,7 +77,7 @@ class ManufacturingPrecedences(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ManufacturingPrecedence
                 | 
                 |     Returns a precedence object from the precedence collection.
@@ -92,7 +92,7 @@ class ManufacturingPrecedences(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(long iIndex)
                 | 
                 |     Removes an object from the precedences collection. The removed precedence
@@ -108,7 +108,7 @@ class ManufacturingPrecedences(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAll()
                 | 
                 |     Removes all objects from the precedences collection.

@@ -63,7 +63,7 @@ class ArrWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddNomenclatureTree() As ArrNomenclatureTree
                 | 
                 |     This method allows the user to add a nomenclature tree if the
@@ -80,7 +80,7 @@ class ArrWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ConvertArrangementProductToProduct(ArrangementProduct iArrProduct) As
                 | Product
                 | 
@@ -107,7 +107,7 @@ class ArrWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ConvertProductToArrangementProduct(Product iProduct) As
                 | ArrangementProduct
                 | 
@@ -133,7 +133,7 @@ class ArrWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func FindInterface(CATBSTR iInterfaceName,
                 | CATBaseDispatch iObject) As CATBaseDispatch
                 | 

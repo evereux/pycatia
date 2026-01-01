@@ -47,7 +47,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ComputeDistanceAlongSeam(short iFirstTagIdx,
                 | short iSecondTagIdx,
                 | double oDistance)
@@ -83,7 +83,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetARCTagsList(CATSafeArrayVariant oARCTagList)
                 | 
                 |     Function to get all the ARC tags grouped by the
@@ -126,7 +126,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetNumARCTags(short oSize)
                 | 
                 |     Function to get the total number of ARC tags grouped by the
@@ -154,7 +154,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTagGroup(CATVariant oTagGroup)
                 | 
                 |     Function to get the underlying basic TagGroup.
@@ -196,7 +196,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTagParam(short iIdx,
                 | CATBSTR iParamName,
                 | double oVal)
@@ -235,7 +235,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RotateTag(short iIdx,
                 | double iAngle,
                 | CATSafeArrayVariant iDirVector)
@@ -287,7 +287,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RotateXTag(short iIdx,
                 | double iAngle)
                 | 
@@ -320,7 +320,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RotateYTag(short iIdx,
                 | double iAngle)
                 | 
@@ -353,7 +353,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RotateZTag(short iIdx,
                 | double iAngle)
                 | 
@@ -386,7 +386,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTagParam(short iIdx,
                 | CATBSTR iParamName,
                 | double iVal)
@@ -425,7 +425,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub TranslateTag(short iIdx,
                 | double iDistance,
                 | CATSafeArrayVariant iDirVector)
@@ -477,7 +477,7 @@ class ARCTagGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub TranslateTagAlongSeam(short iIdx,
                 | double iDistance)
                 | 

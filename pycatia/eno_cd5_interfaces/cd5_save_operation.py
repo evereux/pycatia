@@ -212,7 +212,7 @@ class CD5SaveOperation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Run()
                 | 
                 |     Runs the Save as per the cusomization done so far.
@@ -233,7 +233,7 @@ class CD5SaveOperation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ShowPanel()
                 | 
                 |     Shows the Save dialog as per the cusomization done so far.

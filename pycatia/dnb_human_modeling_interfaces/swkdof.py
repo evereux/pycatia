@@ -469,7 +469,7 @@ class SWKDOF(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetValue()
                 | 
                 |     Sets the value of the DOF to its default value.
@@ -483,7 +483,7 @@ class SWKDOF(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLimitsToMatchBestPrefAngle()
                 | 
                 |     Set the angular limitations to match with the best pref angle. The purpose

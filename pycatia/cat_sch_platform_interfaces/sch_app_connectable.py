@@ -42,7 +42,7 @@ class SchAppConnectable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppAddConnector(CATBSTR iClassType,
                 | SchAppConnector oNewAppCntr)
                 | 
@@ -91,7 +91,7 @@ class SchAppConnectable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppGetReferenceName(CATBSTR oReferenceName)
                 | 
                 |     Get the reference name of a connectable. It will be displayed in
@@ -127,7 +127,7 @@ class SchAppConnectable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppListConnectables(SchListOfBSTRs
                 | iLCntbleClassFilter,
                 | SchListOfObjects oLCntbles,
@@ -200,7 +200,7 @@ class SchAppConnectable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppListConnectors(SchListOfBSTRs iLCntrClassFilter) As
                 | SchListOfObjects
                 | 
@@ -235,7 +235,7 @@ class SchAppConnectable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppListValidCntrTypes() As SchListOfBSTRs
                 | 
                 |     List the valid application connector types allowed to be
@@ -264,7 +264,7 @@ class SchAppConnectable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppRemoveConnector(SchAppConnector iCntrToRemove)
                 | 
                 |     Remove a connector.
@@ -308,7 +308,7 @@ class SchAppConnectable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppSetReferenceName(CATBSTR iReferenceName)
                 | 
                 |     Set the reference name of a connectable. It will be displayed in

@@ -53,7 +53,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddAdvSuperPlate(CATBSTR iCategory,
                 | Reference iSupport,
                 | Reference iDestination) As SfmSuperPlate
@@ -103,7 +103,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberBeamsAndPlane(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | SfmMember iMember1,
@@ -165,7 +165,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberCrv(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | Reference iCurve,
@@ -221,7 +221,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberCrvOnRef(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | Reference iCurve,
@@ -285,7 +285,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberPtLength(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | Reference iPoint,
@@ -354,7 +354,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberPtOnCrvPt(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | Reference iCurve1,
@@ -429,7 +429,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberPtOnCrvPtOnCrv(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | Reference iCurve1,
@@ -512,7 +512,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberPtPt(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | Reference iPoint1,
@@ -573,7 +573,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberPtPtOnCrv(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | Reference iPoint1,
@@ -646,7 +646,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberPtUpToLimit(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | Reference iPoint,
@@ -714,7 +714,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberSurfSurf(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | Reference iSurface1,
@@ -767,7 +767,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddSuperPlate(CATBSTR iCategory,
                 | Reference iSupport,
                 | Reference iDestination) As SfmSuperPlate
@@ -805,7 +805,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddSuperStiffener(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | SfmSuperPlate iSuperPlate,
@@ -857,7 +857,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddSuperStiffenerOnFreeEdge(CATBSTR iCategory,
                 | CATBSTR iSectionName,
                 | SfmSuperPlate iSuperPlate,
@@ -905,7 +905,7 @@ class SFMFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetManager() As SfmManager
                 | 
                 |     Retrieved the services manager.

@@ -40,7 +40,7 @@ class SchAppObjectFactory2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateCompRef(CATBSTR iAppCompClassType,
                 | Document iDoc,
                 | AnyObject oAppComp)
@@ -102,7 +102,7 @@ class SchAppObjectFactory2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateConnection(CATBSTR iAppCntnClassType,
                 | Document iDoc,
                 | AnyObject oAppConnection)
@@ -164,7 +164,7 @@ class SchAppObjectFactory2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateGroup(CATBSTR iAppGroupClassType,
                 | Document iDoc,
                 | AnyObject oAppGroup)
@@ -231,7 +231,7 @@ class SchAppObjectFactory2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateRoute(CATBSTR iAppRouteClassType,
                 | Document iDoc,
                 | CATBSTR iLogLineID,
@@ -305,7 +305,7 @@ class SchAppObjectFactory2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateRouteFromRef(SchAppRoute iRouteReference,
                 | Document iDoc,
                 | CATBSTR iLogLineID,
@@ -377,7 +377,7 @@ class SchAppObjectFactory2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateRouteWithInfo(CATBSTR iAppRouteClassType,
                 | AnyObject iAppInfo,
                 | AnyObject oAppRoute)
@@ -427,7 +427,7 @@ class SchAppObjectFactory2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCreateZone(CATBSTR iAppZoneClassType,
                 | Document iDoc,
                 | AnyObject oAppZone)

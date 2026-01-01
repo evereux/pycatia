@@ -90,7 +90,7 @@ class ExpertReportObjects(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func FailItem(CATVariant iIndex) As ExpertReportObject
                 | 
                 |     Retrieves a report failed component from a failed tuples collection, using
@@ -123,7 +123,7 @@ class ExpertReportObjects(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ExpertReportObject
                 | 
                 |     Retrieves a Report component using its index or its name from the Check
@@ -156,7 +156,7 @@ class ExpertReportObjects(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func SucceedItem(CATVariant iIndex) As ExpertReportObject
                 | 
                 |     Retrieves a report component from a succeeded tuples collection, using its

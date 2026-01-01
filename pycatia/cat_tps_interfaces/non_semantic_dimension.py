@@ -45,7 +45,7 @@ class NonSemanticDimension(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DimensionLimit() As DimensionLimit
                 | 
                 |     Gets the Dimension on the DimensionLimit interface.
@@ -69,7 +69,7 @@ class NonSemanticDimension(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Get2dAnnot() As DrawingDimension
                 | 
                 |     Retrieves Drafting Dimension.
@@ -93,7 +93,7 @@ class NonSemanticDimension(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasDimensionLimit() As boolean
                 | 
                 |     Checks if the Dimension has a Dimension Limit.

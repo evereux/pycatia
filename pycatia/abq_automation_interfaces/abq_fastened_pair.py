@@ -278,7 +278,7 @@ class ABQFastenedPair(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromAnalysisEntity(Product iProduct,
                 | AnalysisEntity iEntity)
                 | 
@@ -320,7 +320,7 @@ class ABQFastenedPair(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromConstraint(Product iProduct,
                 | Constraint iConstraint)
                 | 

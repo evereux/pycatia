@@ -161,7 +161,7 @@ class Sampled(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Append(CATSafeArrayVariant iTracks) As Sampled
                 | 
                 |     Returns or sets the Sampled object.
@@ -176,7 +176,7 @@ class Sampled(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub BindAnalysis(CATBaseDispatch iObject,
                 | CatSampledAnalysisMode iAnalysisMode,
                 | boolean iMonitorMode)
@@ -222,7 +222,7 @@ class Sampled(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub BreakInheritance()
                 | 
                 |     Returns or sets the Sampled object.
@@ -236,7 +236,7 @@ class Sampled(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetKnownInterpolaters(CATSafeArrayVariant
                 | oInterpolaters)
                 | 
@@ -267,7 +267,7 @@ class Sampled(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTotalDuration() As double
                 | 
                 |     Returns the total duration
@@ -281,7 +281,7 @@ class Sampled(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAnalyses()
                 | 
                 |     Returns or sets the Sampled object.
@@ -295,7 +295,7 @@ class Sampled(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ReverseTime()
                 | 
                 |     Returns or sets the Sampled object.
@@ -309,7 +309,7 @@ class Sampled(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetObjectKeepingPosition(CATBaseDispatch iObject)
                 | 
                 |     Sets the object in the sampled. Role: Stores the object that will be used
@@ -326,7 +326,7 @@ class Sampled(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Split(CatSampledSplitType iType,
                 | short iIndice)
                 | 

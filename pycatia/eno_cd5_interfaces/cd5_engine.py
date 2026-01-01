@@ -166,7 +166,7 @@ class CD5Engine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Connect(CATBSTR iUserName,
                 | CATBSTR iUserPassword,
                 | CATBSTR iSecurityContext)
@@ -218,7 +218,7 @@ class CD5Engine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Disconnect()
                 | 
                 |     Disconnects from ENOVIA V6. It is equivalent to launch in CATIA the command
@@ -240,7 +240,7 @@ class CD5Engine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetIDFromTNR(CATBSTR iType,
                 | CATBSTR iName,
                 | CATBSTR iRevision) As CD5ID
@@ -280,7 +280,7 @@ class CD5Engine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetIDFromTNRV(CATBSTR iType,
                 | CATBSTR iName,
                 | CATBSTR iRevision,
@@ -324,7 +324,7 @@ class CD5Engine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetStructure(CD5ID iCD5ID) As CD5Structure
                 | 
                 |     Creates a Structure from a ENOVIA V6 Object identified by its CD5ID, in the
@@ -357,7 +357,7 @@ class CD5Engine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub InteractiveOpen(CD5ID iCD5ID)
                 | 
                 |     Launches the Interactive ENOVIA V6 Open Command and performs the search
@@ -411,7 +411,7 @@ class CD5Engine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsConnected() As boolean
                 | 
                 |     Returns if end user is connected to ENOVIA V6 (True) or not
@@ -441,7 +441,7 @@ class CD5Engine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Open(CD5ID iCD5ID) As Document
                 | 
                 |     Opens a ENOVIA V6 Object in CATIA thanks to its previously created CD5ID,
@@ -479,7 +479,7 @@ class CD5Engine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func PartialOpen(CD5Structure iCD5Structure) As Document
                 | 
                 |     Opens partially a ENOVIA V6 Object in CATIA thanks to its previously

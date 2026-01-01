@@ -226,7 +226,7 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetContourSide(long iContourNumber) As short
                 | 
                 |     Gets the side of one contour of a Manufacturing Prismatic Machining
@@ -259,7 +259,7 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetGeometriesAquisitionMode(CATBSTR iGeometryType,
                 | long iGeometryNumber) As short
                 | 
@@ -322,7 +322,7 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsContourClosed(long iContourNumber) As short
                 | 
                 |     Return the status of one contour of a Manufacturing Prismatic Machining Area : closed or open.
@@ -359,7 +359,7 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAllGeometry(CATBSTR iGeometryType)
                 | 
                 |     Removes all the geometry of a specified type linked to a Manufacturing
@@ -396,7 +396,7 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetClosedContourSide(long iContourNumber,
                 | CATBSTR iSide)
                 | 
@@ -438,7 +438,7 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetContourSide(long iContourNumber,
                 | short iSide)
                 | 
@@ -488,7 +488,7 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGeometries(CATBSTR iGeometryType,
                 | short iMode,
                 | long iGeometryNumber,
@@ -582,7 +582,7 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGeometry(CATBSTR iGeometryType,
                 | AnyObject iReference,
                 | AnyObject iProduct,
@@ -634,7 +634,7 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOpenContourSide(long iContourNumber,
                 | AnyObject iPoint)
                 | 

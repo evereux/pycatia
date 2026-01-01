@@ -39,7 +39,7 @@ class SchObsoleteModel(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func FindObsoleteClasses() As SchListOfObjects
                 | 
                 |     Find obsolete base classes. This method will internally call
@@ -68,7 +68,7 @@ class SchObsoleteModel(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub HasObsoleteClass(boolean oBYes)
                 | 
                 |     Is there any obsolete class in the application model.

@@ -42,7 +42,7 @@ class ABQLoads(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iLoadType) As ABQLoad
                 | 
                 |     Creates a new Abaqus load and adds it to the collection of Abaqus
@@ -81,7 +81,7 @@ class ABQLoads(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ABQLoad
                 | 
                 |     Returns an Abaqus load using its index or its name from the ABQLoads
@@ -110,7 +110,7 @@ class ABQLoads(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a Abaqus load using its index or its name from the collection od

@@ -48,7 +48,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDefinition(Product iProduct) As CATBSTR
                 | 
                 |     Returns the product's definition.
@@ -80,7 +80,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDescription(Product iProduct) As CATBSTR
                 | 
                 |     Returns the product's description.
@@ -111,7 +111,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMasterShapeRepresentation(Product iProduct,
                 | boolean iLoadIfNecessary) As CATBaseDispatch
                 | 
@@ -147,7 +147,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMove(Product iProduct) As Move
                 | 
                 |     Returns the product's move object. The move object is aggregated by the
@@ -181,7 +181,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNomenclature(Product iProduct) As CATBSTR
                 | 
                 |     Returns the product's nomenclature.
@@ -212,7 +212,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPartNumber(Product iProduct) As CATBSTR
                 | 
                 |     Returns the product's part number.
@@ -243,7 +243,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPosition(Product iProduct) As Position
                 | 
                 |     Returns the product's position object in the scene. The position object is
@@ -276,7 +276,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRevision(Product iProduct) As CATBSTR
                 | 
                 |     Returns the product's revision number.
@@ -307,7 +307,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSource(Product iProduct) As CatProductSource
                 | 
                 |     Returns the product's source.
@@ -339,7 +339,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasAMasterShapeRepresentation(Product iProduct) As
                 | boolean
                 | 
@@ -372,7 +372,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func UpgradeToFull() As ProductScene
                 | 
                 |     Create a ProductScene in Full mode from the current Scene.
@@ -396,7 +396,7 @@ class Scene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func UpgradeToPartial() As ProductScene
                 | 
                 |     Create a ProductScene in Partial mode from the current

@@ -43,7 +43,7 @@ class PlaceActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPlacedMfgAssembly(MfgAssembly pPickedItem,
                 | CATSafeArrayVariant vbSAV)
                 | 
@@ -75,7 +75,7 @@ class PlaceActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPlacedProduct(Product pPickedItem,
                 | CATSafeArrayVariant vbSAV)
                 | 
@@ -107,7 +107,7 @@ class PlaceActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOffset(CATSafeArrayVariant oOffsetTransList)
                 | 
                 |     This method gets the relative offset List for placing the
@@ -161,7 +161,7 @@ class PlaceActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPlacedProducts(CATSafeArrayVariant pPlacedProds)
                 | 
                 |     Returns or Sets Placed Products
@@ -191,7 +191,7 @@ class PlaceActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePlacedMfgAssembly(MfgAssembly pPickedItem)
                 | 
                 |     Removes a Manufacturing Assembly from the list of placed items
@@ -221,7 +221,7 @@ class PlaceActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePlacedProduct(Product pPickedItem)
                 | 
                 |     Removes a product from the list of placed items
@@ -251,7 +251,7 @@ class PlaceActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOffset(CATSafeArrayVariant oOffsetTransList)
                 | 
                 |     This method sets the relative offsets for placing the
@@ -331,7 +331,7 @@ class PlaceActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPickAct(Activity pickAct)
                 | 
                 |     Sets or append a link to a Pick activity
@@ -361,7 +361,7 @@ class PlaceActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPlacedProducts(CATSafeArrayVariant pPlacedProds)
 
         :param tuple p_placed_prods:

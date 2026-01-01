@@ -141,7 +141,7 @@ class TCPTraceManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttachedOwner() As AnyObject
                 | 
                 |     Retrieves the default attached owner of the trace. By default, the owner of
@@ -165,7 +165,7 @@ class TCPTraceManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNbPath() As long
                 | 
                 |     Get the number of TCP trace.
@@ -184,7 +184,7 @@ class TCPTraceManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPath(long iIndex) As TCPTrace
                 | 
                 |     Get the iIndex path(trace)(starting at 1).
@@ -207,7 +207,7 @@ class TCPTraceManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAllPath()
                 | 
                 |     Remove all traces from the current resource. All traces associated with the
@@ -222,7 +222,7 @@ class TCPTraceManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePathByIndex(long iIndex)
                 | 
                 |     Remove a specific path based on its position in the list. The trace will be
@@ -244,7 +244,7 @@ class TCPTraceManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePathByObject(TCPTrace TCPPath)
                 | 
                 |     Remove a specific trace based on the object. The trace will be removed from
@@ -280,7 +280,7 @@ class TCPTraceManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetAttachedOwner()
                 | 
                 |     Resets the attached owner of the trace to the world. When a new trace will
@@ -296,7 +296,7 @@ class TCPTraceManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAttachedOwner(AnyObject iOwner)
                 | 
                 |     Sets the default attached owner of the trace. By default, the owner of the

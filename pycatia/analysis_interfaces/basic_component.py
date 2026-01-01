@@ -154,7 +154,7 @@ class BasicComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromProduct(Product iProduct,
                 | Reference iSupport)
                 | 
@@ -199,7 +199,7 @@ class BasicComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromPublication(Product iProduct,
                 | Publication iPublication)
                 | 
@@ -244,7 +244,7 @@ class BasicComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromReference(Reference iReference,
                 | Reference iSupport)
                 | 
@@ -289,7 +289,7 @@ class BasicComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetColumnsNumber(CATBSTR iLabel) As long
                 | 
                 |     Return one of the dimensions information of the Basic Component
@@ -310,7 +310,7 @@ class BasicComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLayersNumber(CATBSTR iLabel) As long
                 | 
                 |     Return one of the dimensions information of the Basic Component
@@ -331,7 +331,7 @@ class BasicComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLinesNumber(CATBSTR iLabel) As long
                 | 
                 |     Return one of the dimensions information of the Basic Component
@@ -352,7 +352,7 @@ class BasicComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetValue(CATBSTR iLabel,
                 | long iLineIndex,
                 | long iColumnIndex,
@@ -386,7 +386,7 @@ class BasicComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimensions(long iLineCount,
                 | long iColumnCount,
                 | long iLayerCount)
@@ -420,7 +420,7 @@ class BasicComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetReference(CATBSTR iLabel,
                 | long iLineIndex,
                 | long iColumnIndex,
@@ -482,7 +482,7 @@ class BasicComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetValue(CATBSTR iLabel,
                 | long iLineIndex,
                 | long iColumnIndex,

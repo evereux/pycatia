@@ -90,7 +90,7 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Status() As long
                 | 
                 |     Returns the Status of the ruleset: 1=OK, 0=KO.

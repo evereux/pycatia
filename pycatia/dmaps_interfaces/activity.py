@@ -502,7 +502,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddActivityConstraint(Activity iActivity,
                 | SPPProcessConstraintType iConstraintType)
                 | 
@@ -549,7 +549,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddAttr(CATBSTR iAttributeName,
                 | SPPProcessAttributeType AttrType,
                 | CATBSTR iAttributePromptName)
@@ -594,7 +594,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AttrName(long iIndex) As CATBSTR
                 | 
                 |     This method returns the name for the specified attribute.
@@ -616,7 +616,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AttrValue(CATVariant iIndex) As CATVariant
                 | 
                 |     This method returns the value for the specified attribute.
@@ -639,7 +639,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateChild(CATBSTR iTypeOfChild) As Activity
                 | 
                 |     This method creates a new child activity of the requested
@@ -662,7 +662,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateLink(Activity iSecondActivity)
                 | 
                 |     This method creates a link from the current activity to another
@@ -699,7 +699,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetActivityConstraints(SPPProcessConstraintType
                 | iConstraintType,
                 | Activities oConstrtList)
@@ -755,7 +755,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTechnologicalObject(CATBSTR iApplicationType) As
                 | CATBaseDispatch
                 | 
@@ -788,7 +788,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsSubTypeOf(CATBSTR iName) As boolean
                 | 
                 |     This method allows to test the type of a specific
@@ -812,7 +812,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveActivityConstraint(Activity iActivity,
                 | SPPProcessConstraintType iConstraintType)
                 | 
@@ -860,7 +860,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAttr(CATBSTR iAttributeName)
                 | 
                 |     Removes attributes to an Activity type.
@@ -880,7 +880,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveLink(Activity iSecondActivity)
                 | 
                 |     This method removes a link existing on the current
@@ -916,7 +916,7 @@ class Activity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetProcessID(CATBSTR iProcessID,
                 | boolean iCheckUnique)
                 | 

@@ -47,7 +47,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetARCTagGroup(CATVariant oARCTagGroup)
                 | 
                 |     Function to get the parent ARC TagGroup of the ARC tag.
@@ -90,7 +90,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAuxAxesValues(CATSafeArrayVariant
                 | ioAuxAxesValuesList)
                 | 
@@ -135,7 +135,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetBaseSurfaceNormal(CATSafeArrayVariant oBaseVec)
                 | 
                 |     Function to get the Base Surface Normal associated with the ARC
@@ -179,7 +179,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetIndex(short oIndex)
                 | 
                 |     Function to get the index of the ARC tag in it's parent ARC
@@ -208,7 +208,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTag(CATVariant oTag)
                 | 
                 |     Function to get the underlying basic Tag.
@@ -251,7 +251,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTagParam(CATBSTR iParamName,
                 | double oVal)
                 | 
@@ -286,7 +286,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetWallSurfaceNormal(CATSafeArrayVariant oWallVec)
                 | 
                 |     Function to get the Wall Surface Normal associated with the ARC
@@ -330,7 +330,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetWeldGeometry(short bStatus)
                 | 
                 |     Function to find whether wall/base normals are available for the ARC
@@ -359,7 +359,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Rotate(double iAngle,
                 | CATSafeArrayVariant iDirVector)
                 | 
@@ -409,7 +409,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RotateX(double iAngle)
                 | 
                 |     Function to rotate the ARC tag about it's x-axis.
@@ -437,7 +437,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RotateY(double iAngle)
                 | 
                 |     Function to rotate the ARC tag about it's y-axis.
@@ -465,7 +465,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RotateZ(double iAngle)
                 | 
                 |     Function to rotate the ARC tag about it's z-axis.
@@ -493,7 +493,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBaseSurfaceNormal(CATSafeArrayVariant iBaseVec)
                 | 
                 |     Function to set the Base Surface Normal associated with the ARC
@@ -537,7 +537,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTagParam(CATBSTR iParamName,
                 | double iVal)
                 | 
@@ -571,7 +571,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetWallSurfaceNormal(CATSafeArrayVariant iWallVec)
                 | 
                 |     Function to set the Wall Surface Normal associated with the ARC
@@ -615,7 +615,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetWeldGeometry(short bStatus)
                 | 
                 |     Function to set the flag for the availability of wall/base normals for the
@@ -644,7 +644,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Translate(double iDistance,
                 | CATSafeArrayVariant iDirVector)
                 | 
@@ -693,7 +693,7 @@ class ARCTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub TranslateAlongSeam(double iDistance)
                 | 
                 |     Function to translate the ARC tag along the seam.

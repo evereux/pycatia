@@ -70,7 +70,7 @@ class DeviceTask(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateDelayActivity(AnyObject ispFather,
                 | short position,
                 | double delay_time,
@@ -143,7 +143,7 @@ class DeviceTask(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateMoveHomeActivity(AnyObject ispFather,
                 | short position,
                 | Activity oMoveHomeActy)
@@ -207,7 +207,7 @@ class DeviceTask(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateMoveJointsActivity(AnyObject ispFather,
                 | short position,
                 | Activity oMoveJointsActy)

@@ -263,7 +263,7 @@ class ABQDisplacementBC(ABQBoundaryCondition):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDOFActivation(long iDOF,
                 | boolean oFlag)
                 | 
@@ -302,7 +302,7 @@ class ABQDisplacementBC(ABQBoundaryCondition):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetLocalCsysFromPublication(Product oProduct,
                 | AxisSystem oPubAxisSystem)
                 | 
@@ -345,7 +345,7 @@ class ABQDisplacementBC(ABQBoundaryCondition):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUseCoordinateSystemType() As ABQLocalCsysType
                 |
                 |     Get the user coordinate system type.
@@ -367,7 +367,7 @@ class ABQDisplacementBC(ABQBoundaryCondition):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDOFActivation(long iDOF,
                 | boolean iFlag)
                 |
@@ -406,7 +406,7 @@ class ABQDisplacementBC(ABQBoundaryCondition):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLocalCsysFromPublication(Product iProduct,
                 | Publication iPubAxisSystem)
                 |
@@ -451,7 +451,7 @@ class ABQDisplacementBC(ABQBoundaryCondition):
         .. note::
             :class: toggle
     
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUseCoordinateSystemType(ABQLocalCsysType
                 | iCsystemType)
                 |

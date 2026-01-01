@@ -44,7 +44,7 @@ class DnbAttachment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetChild(Product oChild)
                 | 
                 |     Get the Child Product of the Attachment.
@@ -82,7 +82,7 @@ class DnbAttachment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetChildMA(CATBaseDispatch oChildMA)
                 | 
                 |     Get the Child Manufacturing Assembly of the Attachment
@@ -107,7 +107,7 @@ class DnbAttachment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetParent(Product oParent)
                 | 
                 |     Get the Parent Product of the Attachment.
@@ -146,7 +146,7 @@ class DnbAttachment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetParentMA(CATBaseDispatch oParentMA)
                 | 
                 |     Get the Parent Manufacturing Assembly of the Attachment.
@@ -174,7 +174,7 @@ class DnbAttachment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IsChildMA(boolean iChildMA)
                 | 
                 |     Get whether the Child is a Manufacturing Assembly
@@ -213,7 +213,7 @@ class DnbAttachment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IsParentMA(boolean iParentMA)
                 | 
                 |     Get whether the Parent is a Manufacturing Assembly

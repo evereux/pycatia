@@ -173,7 +173,7 @@ class ABQFilmCondition(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddTempDependentFilmCoeffTable(CATSafeArrayVariant
                 | iFilmCoeff,
                 | CATSafeArrayVariant iTemperature)
@@ -216,7 +216,7 @@ class ABQFilmCondition(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetNameOfFilmCoeffAmplitude(CATBSTR ofilmAmplitude)
                 | 
                 |     Returns the name of the amplitude that contains the variation of the the
@@ -238,7 +238,7 @@ class ABQFilmCondition(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetNameOfSinkAmplitude(CATBSTR osinkAmplitude)
                 | 
                 |     Returns the name of the amplitude that contains the variation of the sink
@@ -260,7 +260,7 @@ class ABQFilmCondition(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTempDependentFilmCoeffTable(CATSafeArrayVariant
                 | oFilmCoeff,
                 | CATSafeArrayVariant oTemperature)
@@ -301,7 +301,7 @@ class ABQFilmCondition(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNamedFilmCoeffAmplitude(CATBSTR ifilmAmplitude)
                 | 
                 |     Sets the name of the amplitude that gives the variation of the the film
@@ -323,7 +323,7 @@ class ABQFilmCondition(ABQLoad):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNamedSinkAmplitude(CATBSTR isinkAmplitude)
                 | 
                 |     Sets the name of the amplitude that contains the variation of the sink

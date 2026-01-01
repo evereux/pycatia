@@ -43,7 +43,7 @@ class Shot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppendAbsDatas(CATSafeArrayVariant iPosition)
                 | 
                 |     Appends to the data related to the shot. Role: In certain cases, a shot
@@ -83,7 +83,7 @@ class Shot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppendDatas(CATSafeArrayVariant iPosition)
                 | 
                 |     Appends to the data related to the shot. Role: In certain cases, a shot
@@ -123,7 +123,7 @@ class Shot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAbsDatas(short iIndex,
                 | CATSafeArrayVariant oPosition)
                 | 
@@ -170,7 +170,7 @@ class Shot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDatas(short iIndex,
                 | CATSafeArrayVariant oPosition)
                 | 
@@ -217,7 +217,7 @@ class Shot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDuration() As double
                 | 
                 |     Retrieves the duration (in terms of distance) associated to a shot. The
@@ -245,7 +245,7 @@ class Shot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTechnologicalDatas(CATSafeArrayVariant oDatas)
                 | 
                 |     Retrieves all the data associated to the part.
@@ -275,7 +275,7 @@ class Shot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAbsDatas(CATSafeArrayVariant iPosition)
                 | 
                 |     Set the data related to the shot. Role: To set the numerical information
@@ -315,7 +315,7 @@ class Shot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDatas(CATSafeArrayVariant iPosition)
                 | 
                 |     Set the data related to the shot. Role: To set the numerical information
@@ -355,7 +355,7 @@ class Shot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDuration(double iDuration)
                 | 
                 |     Sets the duration (in terms of distance) associated to a shot. The duration
@@ -384,7 +384,7 @@ class Shot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTechnologicalDatas(CATSafeArrayVariant iDatas)
                 | 
                 |     Sets all the data associated to the part.

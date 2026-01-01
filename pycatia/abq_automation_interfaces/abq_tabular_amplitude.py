@@ -93,7 +93,7 @@ class ABQTabularAmplitude(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddTimeAmplitudeTable(CATSafeArrayVariant iTime,
                 | CATSafeArrayVariant iAmplitude)
                 | 
@@ -135,7 +135,7 @@ class ABQTabularAmplitude(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTimeAmplitudeTable(CATSafeArrayVariant oTime,
                 | CATSafeArrayVariant oAmplitude)
                 | 

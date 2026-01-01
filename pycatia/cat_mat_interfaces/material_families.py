@@ -43,7 +43,7 @@ class MaterialFamilies(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add() As MaterialFamily
                 |
                 |     Adds a new material family to the MaterialFamilies collection.
@@ -69,7 +69,7 @@ class MaterialFamilies(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As MaterialFamily
                 |
                 |     Returns a material family from its index in the
@@ -104,7 +104,7 @@ class MaterialFamilies(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 |
                 |     Removes a material family from the MaterialFamilies

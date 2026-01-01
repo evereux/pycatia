@@ -42,7 +42,7 @@ class Replay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddProductMotion(Product iProduct) As long
                 | 
                 |     Adds a product to be taken into account in the Replay
@@ -65,7 +65,7 @@ class Replay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSample(long iChannel,
                 | double iCurrentTime,
                 | CATSafeArrayVariant iPosition)
@@ -110,7 +110,7 @@ class Replay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNbProductMotion() As long
                 | 
                 |     Get the number of channel related to products.
@@ -129,7 +129,7 @@ class Replay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNbSample(long iChannel) As long
                 | 
                 |     Get the number of samples for a channel number.
@@ -151,7 +151,7 @@ class Replay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetProduct(long iChannel) As Product
                 | 
                 |     Get the product for a channel.
@@ -173,7 +173,7 @@ class Replay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSamplePosition(long iChannel,
                 | long iSample,
                 | CATSafeArrayVariant oPosition)
@@ -216,7 +216,7 @@ class Replay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSampleTime(long iChannel,
                 | long iSample) As double
                 | 
@@ -242,7 +242,7 @@ class Replay(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveSample(long iChannel,
                 | long iSample)
                 | 

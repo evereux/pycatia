@@ -41,7 +41,7 @@ class ABQAnalysisCases(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iAnalysisType) As ABQAnalysisCase
                 | 
                 |     Creates a new Abaqus analysis case and adds it to the collection of Abaqus
@@ -78,7 +78,7 @@ class ABQAnalysisCases(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ABQAnalysisCase
                 | 
                 |     Returns an Abaqus analysis case using its index or its name from the
@@ -116,7 +116,7 @@ class ABQAnalysisCases(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an Abaqus analysis case using its index or its name from the

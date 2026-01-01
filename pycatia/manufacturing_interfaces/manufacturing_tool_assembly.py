@@ -190,7 +190,7 @@ class ManufacturingToolAssembly(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttribute(CATBSTR iAttribute) As Parameter
                 | 
                 |     Returns an attribute of a tool assembly.
@@ -223,7 +223,7 @@ class ManufacturingToolAssembly(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttributeNLSName(CATBSTR iAttributeName) As
                 | CATBSTR
                 | 
@@ -255,7 +255,7 @@ class ManufacturingToolAssembly(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfAttributeUnits(CATSafeArrayVariant
                 | ioListOfAttributeUnits)
                 | 
@@ -304,7 +304,7 @@ class ManufacturingToolAssembly(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfAttributes(CATSafeArrayVariant
                 | ioListOfAttributes)
                 | 

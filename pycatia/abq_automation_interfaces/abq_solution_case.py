@@ -102,7 +102,7 @@ class ABQSolutionCase(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateImage(CATBSTR iImageName,
                 | CATVariant iHideExistingImages,
                 | CATVariant iStepNumber,
@@ -159,7 +159,7 @@ class ABQSolutionCase(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetStepIncrementNumber(CATVariant iStepNumber,
                 | CATVariant iIncrementNumber,
                 | AnalysisImage iImage)
