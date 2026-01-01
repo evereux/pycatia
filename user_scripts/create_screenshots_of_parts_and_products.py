@@ -103,7 +103,7 @@ for f in files:
         # turn off the specification tree
         specs_window = SpecsAndGeomWindow(active_window.com_object)
 
-        specs_window.layout = CatSpecsAndGeomWindowLayout.catWindowGeomOnly.value
+        specs_window.layout = CatSpecsAndGeomWindowLayout.catWindowGeomOnly
 
         # toggle off the compass (if already off will turn it back on).
         caah.start_command('Compass')
@@ -128,13 +128,13 @@ for f in files:
         if img_save_name.is_file():
             logger.warning(f'Image file: "{img_save_name}" already exists! Image will be replaced.')
             existing_files_warning.append(img_save_name)
-        viewer_3d.capture_to_file(CatCaptureFormat.catCaptureFormatBMP.value, str(img_save_name))
+        viewer_3d.capture_to_file(CatCaptureFormat.catCaptureFormatBMP, str(img_save_name))
         img_files.append(img_save_name)
 
         # reset the catia view window settings
         viewer_3d.full_screen = False
         viewer_3d.put_background_color(default_background_colour)
-        specs_window.layout = CatSpecsAndGeomWindowLayout.catWindowSpecsAndGeom.value
+        specs_window.layout = CatSpecsAndGeomWindowLayout.catWindowSpecsAndGeom
         caah.start_command('Compass')
 
 duplicates = [item for item, count in collections.Counter(img_files).items() if count > 1]

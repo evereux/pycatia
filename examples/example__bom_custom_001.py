@@ -32,7 +32,7 @@ product = product_document.product
 products = product.products
 
 # if the product isn't already in design mode you'll need to activate it, otherwise script will fail.
-product.apply_work_mode(CatWorkModeType.DESIGN_MODE.value)
+product.apply_work_mode(CatWorkModeType.DESIGN_MODE)
 
 part_numbers = []
 prd_dict = {}

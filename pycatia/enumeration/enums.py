@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class AbqConcForceLoad_Type(Enum):
+class AbqConcForceLoad_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_concentrated_force.ABQConcentratedForce.load_type
     """
@@ -10,7 +10,7 @@ class AbqConcForceLoad_Type(Enum):
     LOADDENSITY = 2
 
 
-class AbqDatOutputVarType(Enum):
+class AbqDatOutputVarType(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_data_output_request.ABQDataOutputRequest.set_specified_output_variables
     pycatia.abq_automation_interfaces.abq_data_output_request.ABQDataOutputRequest.unset_output_type
@@ -21,7 +21,7 @@ class AbqDatOutputVarType(Enum):
     ABQDATOUTPUTTYPE_ENERGY = 3
 
 
-class AbqEntityType(Enum):
+class AbqEntityType(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_image_query.ABQImageQuery.export_group_image_data
     pycatia.abq_automation_interfaces.abq_image_query.ABQImageQuery.export_image_data
@@ -31,7 +31,7 @@ class AbqEntityType(Enum):
     ABQ_ELEMENT = 2
 
 
-class AbqLocalCsysType(Enum):
+class AbqLocalCsysType(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_concentrated_force.ABQConcentratedForce.load_type
     pycatia.abq_automation_interfaces.abq_concentrated_force.ABQConcentratedForce.set_use_coordinate_system_type
@@ -44,7 +44,7 @@ class AbqLocalCsysType(Enum):
     ABQ_DEFAULTAXIS = 3
 
 
-class AbqMsFrequencyType(Enum):
+class AbqMsFrequencyType(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_mass_scaling.ABQMassScaling.frequency_type
     """
@@ -52,7 +52,7 @@ class AbqMsFrequencyType(Enum):
     ABQ_INCREMENT = 1
 
 
-class AbqMsTargetMethod(Enum):
+class AbqMsTargetMethod(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_mass_scaling.ABQMassScaling.target_method
     """
@@ -61,7 +61,7 @@ class AbqMsTargetMethod(Enum):
     ABQ_SET_EQUAL = 2
 
 
-class AbqOutputAtSecPts(Enum):
+class AbqOutputAtSecPts(IntEnum):
     """
     pycatia.abq_automation_interfaces.abqfh_output_request.ABQFHOutputRequest.output_at_def_or_all_sec_pts
     """
@@ -69,7 +69,7 @@ class AbqOutputAtSecPts(Enum):
     ABQALLSECPTS = 1
 
 
-class AbqOutputRequestType(Enum):
+class AbqOutputRequestType(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_output_requests.ABQOutputRequests.add
     pycatia.abq_automation_interfaces.abq_output_requests.ABQOutputRequests.item
@@ -80,7 +80,7 @@ class AbqOutputRequestType(Enum):
     ABQDATA = 2
 
 
-class AbqOutputVariableType(Enum):
+class AbqOutputVariableType(IntEnum):
     """
     pycatia.abq_automation_interfaces.abqfh_output_request.ABQFHOutputRequest.pre_select_default_or_all
     """
@@ -88,7 +88,7 @@ class AbqOutputVariableType(Enum):
     ABQALLVAR = 1
 
 
-class AbqRequestedModesOption(Enum):
+class AbqRequestedModesOption(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_frequency_step.ABQFrequencyStep.requested_modes_option
     """
@@ -96,7 +96,7 @@ class AbqRequestedModesOption(Enum):
     ABQ_VALUE = 1
 
 
-class AbqRestartOption(Enum):
+class AbqRestartOption(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_job.ABQJob.restart_request_option
     """
@@ -107,7 +107,7 @@ class AbqRestartOption(Enum):
     ABQ_RESTART_LASTINC = 4
 
 
-class AbqRestartReadOption(Enum):
+class AbqRestartReadOption(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_job.ABQJob.restart_read_option
     pycatia.abq_automation_interfaces.abq_job.ABQJob.restart_read_step_selection_option
@@ -116,7 +116,7 @@ class AbqRestartReadOption(Enum):
     ABQ_RESTART_INTERVAL = 1
 
 
-class AbqRestartReadStepSelOption(Enum):
+class AbqRestartReadStepSelOption(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_job.ABQJob.restart_read_step_selection_option
     """
@@ -124,7 +124,7 @@ class AbqRestartReadStepSelOption(Enum):
     ABQ_STEP_NUMBER = 1
 
 
-class AccuracyType(Enum):
+class AccuracyType(IntEnum):
     """
     pycatia.dnb_robot_interfaces.generic_accuracy_profile.GenericAccuracyProfile.get_accuracy_type
     pycatia.dnb_robot_interfaces.generic_accuracy_profile.GenericAccuracyProfile.set_accuracy_type
@@ -133,7 +133,7 @@ class AccuracyType(Enum):
     ACCURACY_TYPE_SPEED = 1
 
 
-class AdjustMethod_Type(Enum):
+class AdjustMethod_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_surface_to_surface_contact.ABQSurfaceToSurfaceContact.adjust_method
     """
@@ -142,7 +142,7 @@ class AdjustMethod_Type(Enum):
     TOLERANCE = 2
 
 
-class AutoTimeIncrementMethod(Enum):
+class AutoTimeIncrementMethod(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_explicit_dynamics_step.ABQExplicitDynamicsStep.auto_time_increment_method
     """
@@ -150,7 +150,7 @@ class AutoTimeIncrementMethod(Enum):
     ABQ_ATI_ELEMENT_BY_ELEMENT = 1
 
 
-class Cat3DColorInheritanceMode(Enum):
+class Cat3DColorInheritanceMode(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_view_generative_behavior.DrawingViewGenerativeBehavior.color_inheritance_mode
     """
@@ -158,7 +158,7 @@ class Cat3DColorInheritanceMode(Enum):
     cat3DColorInheritanceModeOn = 1
 
 
-class Cat3DXmlGeomRepresentationType(Enum):
+class Cat3DXmlGeomRepresentationType(IntEnum):
     """
     pycatia.threed_xml_interfaces.export_3d_xml_setting_att.Export3DXmlSettingAtt.geometry_representation_format
     """
@@ -170,7 +170,7 @@ class Cat3DXmlGeomRepresentationType(Enum):
     cat3DXmlXmlTessellation = 5
 
 
-class Cat3DXmlPprSaveConfig(Enum):
+class Cat3DXmlPprSaveConfig(IntEnum):
     """
     pycatia.threed_xml_interfaces.export_3d_xml_setting_att.Export3DXmlSettingAtt.ppr_save_config
     """
@@ -179,7 +179,7 @@ class Cat3DXmlPprSaveConfig(Enum):
     cat3DXmlResourceList = 2
 
 
-class CatAlgorithmType(Enum):
+class CatAlgorithmType(IntEnum):
     """
     pycatia.knowledge_interfaces.optimization.Optimization.algorithm_type
     """
@@ -189,7 +189,7 @@ class CatAlgorithmType(Enum):
     catLocalForConstraints = 3
 
 
-class CatAnalysisSetSearchType(Enum):
+class CatAnalysisSetSearchType(IntEnum):
     """
     pycatia.analysis_interfaces.analysis_sets.AnalysisSets.item
     """
@@ -199,7 +199,7 @@ class CatAnalysisSetSearchType(Enum):
     catAnalysisSetSearchAll = 3
 
 
-class CatAnalysisSetType(Enum):
+class CatAnalysisSetType(IntEnum):
     """
     pycatia.analysis_interfaces.analysis_sets.AnalysisSets.add
     pycatia.analysis_interfaces.analysis_sets.AnalysisSets.add_existing_set
@@ -210,7 +210,7 @@ class CatAnalysisSetType(Enum):
     catAnalysisSetNeutral = 2
 
 
-class CatAnnotatedViewBehavior(Enum):
+class CatAnnotatedViewBehavior(IntEnum):
     """
     pycatia.navigator_interfaces.annotated_view.AnnotatedView.behavior_mode
     """
@@ -218,7 +218,7 @@ class CatAnnotatedViewBehavior(Enum):
     CatAnnotatedViewBehaviorUnlink = 1
 
 
-class CatAnnotationSetType(Enum):
+class CatAnnotationSetType(IntEnum):
     """
     pycatia.cat_tps_interfaces.annotation_set.AnnotationSet.annotation_set_type
     """
@@ -227,7 +227,7 @@ class CatAnnotationSetType(Enum):
     catAnnotationSetResult = 2
 
 
-class CatArrangeStyle(Enum):
+class CatArrangeStyle(IntEnum):
     """
     pycatia.in_interfaces.windows.Windows.arrange
     """
@@ -236,7 +236,7 @@ class CatArrangeStyle(Enum):
     catArrangeTiledVertical = 2
 
 
-class CatArrangementAreaVisuMode(Enum):
+class CatArrangementAreaVisuMode(IntEnum):
     """
     pycatia.arrangement_interfaces.arrangement_area.ArrangementArea.visu_mode
     """
@@ -244,7 +244,7 @@ class CatArrangementAreaVisuMode(Enum):
     CatArrangementAreaVisuModeSolid = 1
 
 
-class CatArrangementItemResVisuMode(Enum):
+class CatArrangementItemResVisuMode(IntEnum):
     """
     pycatia.arrangement_interfaces.arrangement_item_reservation.ArrangementItemReservation.visu_mode
     """
@@ -253,7 +253,7 @@ class CatArrangementItemResVisuMode(Enum):
     CatArrangementItemReservationVisuModeSolid = 2
 
 
-class CatArrangementRouteSection(Enum):
+class CatArrangementRouteSection(IntEnum):
     """
     pycatia.arrangement_interfaces.arrangement_boundary.ArrangementBoundary.section_type
     pycatia.arrangement_interfaces.arrangement_pathway.ArrangementPathway.section_type
@@ -267,7 +267,7 @@ class CatArrangementRouteSection(Enum):
     CatArrangementRouteSectionDoubleRidge = 5
 
 
-class CatArrangementRouteVisuMode(Enum):
+class CatArrangementRouteVisuMode(IntEnum):
     """
     pycatia.arrangement_interfaces.arrangement_pathway.ArrangementPathway.visu_mode
     pycatia.arrangement_interfaces.arrangement_boundary.ArrangementBoundary.visu_mode
@@ -278,7 +278,7 @@ class CatArrangementRouteVisuMode(Enum):
     CatArrangementRouteVisuModeSolid = 2
 
 
-class CatAsmAutoSwitchToDesignMode(Enum):
+class CatAsmAutoSwitchToDesignMode(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_general_setting_att.AssemblyGeneralSettingAtt.auto_switch_to_design_mode
     """
@@ -286,7 +286,7 @@ class CatAsmAutoSwitchToDesignMode(Enum):
     catAutoSwitchUnavailable = 1
 
 
-class CatAsmConstraintCreationMode(Enum):
+class CatAsmConstraintCreationMode(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_constraint_setting_att.AssemblyConstraintSettingAtt.constraint_creation_mode
     """
@@ -295,7 +295,7 @@ class CatAsmConstraintCreationMode(Enum):
     catUsePublishedGeometryAnyLevel = 2
 
 
-class CatAsmExtendMoveToFixT(Enum):
+class CatAsmExtendMoveToFixT(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_general_setting_att.AssemblyGeneralSettingAtt.move_with_fix_t_extend_mode
     """
@@ -304,7 +304,7 @@ class CatAsmExtendMoveToFixT(Enum):
     catAlwaysExtendMoveToFixT = 2
 
 
-class CatAsmPasteComponentMode(Enum):
+class CatAsmPasteComponentMode(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_constraint_setting_att.AssemblyConstraintSettingAtt.paste_component_mode
     """
@@ -314,7 +314,7 @@ class CatAsmPasteComponentMode(Enum):
     catPasteWithCstOnCopyAndCut = 3
 
 
-class CatAsmQuickConstraintMode(Enum):
+class CatAsmQuickConstraintMode(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_constraint_setting_att.AssemblyConstraintSettingAtt.quick_constraint_mode
     """
@@ -322,7 +322,7 @@ class CatAsmQuickConstraintMode(Enum):
     catVerifiedConstraintFirst = 1
 
 
-class CatAsmRedundancyMode(Enum):
+class CatAsmRedundancyMode(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_constraint_setting_att.AssemblyConstraintSettingAtt.redundancy_mode
     """
@@ -330,7 +330,7 @@ class CatAsmRedundancyMode(Enum):
     catChecked = 1
 
 
-class CatAsmUpdateMode(Enum):
+class CatAsmUpdateMode(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_general_setting_att.AssemblyGeneralSettingAtt.auto_update_mode
     """
@@ -338,7 +338,7 @@ class CatAsmUpdateMode(Enum):
     catAutomaticUpdate = 1
 
 
-class CatAsmUpdateStatusComputeMode(Enum):
+class CatAsmUpdateStatusComputeMode(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_general_setting_att.AssemblyGeneralSettingAtt.update_status_mode
     """
@@ -346,7 +346,7 @@ class CatAsmUpdateStatusComputeMode(Enum):
     catAutomaticCompute = 1
 
 
-class CatAxisOrientationType(Enum):
+class CatAxisOrientationType(IntEnum):
     """
     pycatia.analysis_interfaces.analysis_image.AnalysisImage.export_data_in_any_user_axis
     pycatia.analysis_interfaces.analysis_image.AnalysisImage.export_data_in_global_axis
@@ -359,7 +359,7 @@ class CatAxisOrientationType(Enum):
     catSamCoordinateSystem_Undefined = 3
 
 
-class CatAxisSystemAxisType(Enum):
+class CatAxisSystemAxisType(IntEnum):
     """
     pycatia.mec_mod_interfaces.axis_system.AxisSystem.x_axis_type
     pycatia.mec_mod_interfaces.axis_system.AxisSystem.y_axis_type
@@ -370,7 +370,7 @@ class CatAxisSystemAxisType(Enum):
     catAxisSystemAxisOppositeDirection = 2
 
 
-class CatAxisSystemMainType(Enum):
+class CatAxisSystemMainType(IntEnum):
     """
     pycatia.mec_mod_interfaces.axis_system.AxisSystem.type
     """
@@ -380,7 +380,7 @@ class CatAxisSystemMainType(Enum):
     catAxisSystemExplicit = 3
 
 
-class CatAxisSystemOriginType(Enum):
+class CatAxisSystemOriginType(IntEnum):
     """
     pycatia.mec_mod_interfaces.axis_system.AxisSystem.origin_type
     """
@@ -388,7 +388,7 @@ class CatAxisSystemOriginType(Enum):
     catAxisSystemOriginByCoordinates = 1
 
 
-class CatBackFaceCullingMode(Enum):
+class CatBackFaceCullingMode(IntEnum):
     """
     pycatia.in_interfaces.visualization_setting_att.VisualizationSettingAtt.get_back_face_culling_mode
     pycatia.in_interfaces.visualization_setting_att.VisualizationSettingAtt.put_back_face_culling_mode
@@ -399,7 +399,7 @@ class CatBackFaceCullingMode(Enum):
     CATBackFaceCullingOnNoFaces = 3
 
 
-class CatBannerPosition(Enum):
+class CatBannerPosition(IntEnum):
     """
     pycatia.in_interfaces.page_setup.PageSetup.banner_position
     """
@@ -410,7 +410,7 @@ class CatBannerPosition(Enum):
     catBannerPositionRight = 4
 
 
-class CatBlankingMode(Enum):
+class CatBlankingMode(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_text_properties.DrawingTextProperties.blanking
     """
@@ -419,7 +419,7 @@ class CatBlankingMode(Enum):
     catBlankingOnGeom = 2
 
 
-class CatCameraType(Enum):
+class CatCameraType(IntEnum):
     """
     pycatia.in_interfaces.camera.Camera.type
     """
@@ -427,7 +427,7 @@ class CatCameraType(Enum):
     catCamera3D = 1
 
 
-class CatCaptureFormat(Enum):
+class CatCaptureFormat(IntEnum):
     """
     pycatia.in_interfaces.viewer.Viewer.capture_to_file
     """
@@ -439,7 +439,7 @@ class CatCaptureFormat(Enum):
     catCaptureFormatJPEG = 5
 
 
-class CatCdHoleMode(Enum):
+class CatCdHoleMode(IntEnum):
     """
     pycatia.part_interfaces.hole.Hole.counter_drilled_mode
     """
@@ -447,7 +447,7 @@ class CatCdHoleMode(Enum):
     catCDModeCountersunkDiameter = 1
 
 
-class CatChamferMode(Enum):
+class CatChamferMode(IntEnum):
     """
     pycatia.part_interfaces.chamfer.Chamfer.angle
     pycatia.part_interfaces.chamfer.Chamfer.length2
@@ -457,7 +457,7 @@ class CatChamferMode(Enum):
     catLengthAngleChamfer = 1
 
 
-class CatChamferOrientation(Enum):
+class CatChamferOrientation(IntEnum):
     """
     pycatia.part_interfaces.shape_factory.ShapeFactory.add_new_chamfer
     pycatia.part_interfaces.chamfer.Chamfer.orientation
@@ -466,7 +466,7 @@ class CatChamferOrientation(Enum):
     catReverseChamfer = 1
 
 
-class CatChamferPropagation(Enum):
+class CatChamferPropagation(IntEnum):
     """
     pycatia.part_interfaces.chamfer.Chamfer.propagation
     pycatia.part_interfaces.shape_factory.ShapeFactory.add_new_chamfer
@@ -475,7 +475,7 @@ class CatChamferPropagation(Enum):
     catMinimalChamfer = 1
 
 
-class CatCircularPatternParameters(Enum):
+class CatCircularPatternParameters(IntEnum):
     """
     pycatia.part_interfaces.circ_pattern.CircPattern.circular_pattern_parameters
     pycatia.part_interfaces.close_surface.CloseSurface.circular_pattern_parameters
@@ -485,7 +485,7 @@ class CatCircularPatternParameters(Enum):
     catUnequalAngularSpacing = 2
 
 
-class CatClashComputationType(Enum):
+class CatClashComputationType(IntEnum):
     """
     pycatia.space_analyses_interfaces.clash.Clash.computation_type
     """
@@ -495,7 +495,7 @@ class CatClashComputationType(Enum):
     catClashComputationTypeBetweenTwo = 3
 
 
-class CatClashExportType(Enum):
+class CatClashExportType(IntEnum):
     """
     pycatia.space_analyses_interfaces.clash.Clash.export
     pycatia.space_analyses_interfaces.clash_result.ClashResult.export
@@ -503,7 +503,7 @@ class CatClashExportType(Enum):
     CatClashExportTypeXMLResultOnly = 0
 
 
-class CatClashImportType(Enum):
+class CatClashImportType(IntEnum):
     """
     pycatia.space_analyses_interfaces.clash_results.ClashResults.add_from_xml
     """
@@ -511,7 +511,7 @@ class CatClashImportType(Enum):
     CatClashImportTypeStructureAndClash = 1
 
 
-class CatClashInterferenceType(Enum):
+class CatClashInterferenceType(IntEnum):
     """
     pycatia.space_analyses_interfaces.clash.Clash.interference_type
     """
@@ -521,7 +521,7 @@ class CatClashInterferenceType(Enum):
     catClashInterferenceCaseRule = 3
 
 
-class CatClippingFrameReframeOnMode(Enum):
+class CatClippingFrameReframeOnMode(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_setting_att.Layout2DSettingAtt.clipping_frame_reframe_on_mode
     """
@@ -529,7 +529,7 @@ class CatClippingFrameReframeOnMode(Enum):
     catOnViewBackground = 1
 
 
-class CatClippingMode(Enum):
+class CatClippingMode(IntEnum):
     """
     pycatia.in_interfaces.viewer_3d.Viewer3D.clipping_mode
     pycatia.in_interfaces.viewer_3d.Viewer3D.far_limit
@@ -541,7 +541,7 @@ class CatClippingMode(Enum):
     catClippingModeNearAndFar = 3
 
 
-class CatCompositesType(Enum):
+class CatCompositesType(IntEnum):
     """
     pycatia.caa_composites_interfaces.composites_services.CompositesServices.get_composites_type
     """
@@ -555,7 +555,7 @@ class CatCompositesType(Enum):
     CutPiece = 7
 
 
-class CatConflictComparison(Enum):
+class CatConflictComparison(IntEnum):
     """
     pycatia.space_analyses_interfaces.conflict.Conflict.comparison_info
     """
@@ -564,7 +564,7 @@ class CatConflictComparison(Enum):
     catConflictComparisonNo = 2
 
 
-class CatConflictStatus(Enum):
+class CatConflictStatus(IntEnum):
     """
     pycatia.space_analyses_interfaces.conflict.Conflict.status
     """
@@ -574,7 +574,7 @@ class CatConflictStatus(Enum):
     catConflictStatusSolved = 3
 
 
-class CatConflictType(Enum):
+class CatConflictType(IntEnum):
     """
     pycatia.space_analyses_interfaces.conflict.Conflict.type
 
@@ -584,7 +584,7 @@ class CatConflictType(Enum):
     catConflictTypeClearance = 2
 
 
-class CatConstraintAngleSector(Enum):
+class CatConstraintAngleSector(IntEnum):
     """
     pycatia.mec_mod_interfaces.constraint.Constraint.angle_sector
     """
@@ -594,7 +594,7 @@ class CatConstraintAngleSector(Enum):
     catCstAngleSector3 = 3
 
 
-class CatConstraintDistConfig(Enum):
+class CatConstraintDistConfig(IntEnum):
     """
     pycatia.mec_mod_interfaces.constraint.Constraint.distance_config
     """
@@ -604,7 +604,7 @@ class CatConstraintDistConfig(Enum):
     catCstDCParallelOppOrient = 3
 
 
-class CatConstraintDistDirection(Enum):
+class CatConstraintDistDirection(IntEnum):
     """
     pycatia.mec_mod_interfaces.constraint.Constraint.distance_direction
     """
@@ -614,7 +614,7 @@ class CatConstraintDistDirection(Enum):
     catCstDistDirection3 = 3
 
 
-class CatConstraintMode(Enum):
+class CatConstraintMode(IntEnum):
     """
     pycatia.mec_mod_interfaces.constraint.Constraint.mode
     """
@@ -622,7 +622,7 @@ class CatConstraintMode(Enum):
     catCstModeDrivenDimension = 1
 
 
-class CatConstraintOrientation(Enum):
+class CatConstraintOrientation(IntEnum):
     """
     pycatia.mec_mod_interfaces.constraint.Constraint.orientation
     """
@@ -631,7 +631,7 @@ class CatConstraintOrientation(Enum):
     catCstOrientUndefined = 2
 
 
-class CatConstraintRefAxis(Enum):
+class CatConstraintRefAxis(IntEnum):
     """
     pycatia.mec_mod_interfaces.constraint.Constraint.reference_axis
     """
@@ -640,7 +640,7 @@ class CatConstraintRefAxis(Enum):
     catCstRefAxisZ = 2
 
 
-class CatConstraintRefType(Enum):
+class CatConstraintRefType(IntEnum):
     """
     pycatia.mec_mod_interfaces.constraint.Constraint.reference_type
     """
@@ -648,7 +648,7 @@ class CatConstraintRefType(Enum):
     catCstRefTypeFixInSpace = 1
 
 
-class CatConstraintSide(Enum):
+class CatConstraintSide(IntEnum):
     """
     pycatia.mec_mod_interfaces.constraint.Constraint.side
     """
@@ -659,7 +659,7 @@ class CatConstraintSide(Enum):
     catCstSideUndefined = 4
 
 
-class CatConstraintStatus(Enum):
+class CatConstraintStatus(IntEnum):
     """
     pycatia.mec_mod_interfaces.constraint.Constraint.status
     """
@@ -671,7 +671,7 @@ class CatConstraintStatus(Enum):
     catCstStatusKOBroken = 5
 
 
-class CatConstraintType(Enum):
+class CatConstraintType(IntEnum):
     """
     pycatia.mec_mod_interfaces.constraint.Constraint.type
     pycatia.mec_mod_interfaces.constraints.Constraints.add_bi_elt_cst
@@ -711,7 +711,7 @@ class CatConstraintType(Enum):
     catCstTypeSdShape = 30
 
 
-class CatCsHoleMode(Enum):
+class CatCsHoleMode(IntEnum):
     """
     pycatia.part_interfaces.hole.Hole.counter_sunk_mode
     """
@@ -720,7 +720,7 @@ class CatCsHoleMode(Enum):
     catCSModeAngleDiameter = 2
 
 
-class CatDedicatedFilterType(Enum):
+class CatDedicatedFilterType(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_setting_att.Layout2DSettingAtt.dedicated_filter_type
     """
@@ -728,7 +728,7 @@ class CatDedicatedFilterType(Enum):
     catMaskInBackground = 1
 
 
-class CatDescriptionLengthType(Enum):
+class CatDescriptionLengthType(IntEnum):
     """
     pycatia.general_knowledge_interfaces.expert_rule_base_runtime.ExpertRuleBaseRuntime.report_description_length
     """
@@ -736,7 +736,7 @@ class CatDescriptionLengthType(Enum):
     LongText = 1
 
 
-class CatDftWeldFinishSymbol(Enum):
+class CatDftWeldFinishSymbol(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.get_finish_symbol
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.set_finish_symbol
@@ -751,7 +751,7 @@ class CatDftWeldFinishSymbol(Enum):
     catDftLetterUWelding = 7
 
 
-class CatDftWeldingTail(Enum):
+class CatDftWeldingTail(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.welding_tail
     """
@@ -759,7 +759,7 @@ class CatDftWeldingTail(Enum):
     catDftWeldingTailYES = 1
 
 
-class CatDimAnalyse(Enum):
+class CatDimAnalyse(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dimension.DrawingDimension.dim_status
     """
@@ -777,7 +777,7 @@ class CatDimAnalyse(Enum):
     cat3DFeatureDim = 11
 
 
-class CatDimDualDisplay(Enum):
+class CatDimDualDisplay(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dimension.DrawingDimension.dual_value
     """
@@ -787,7 +787,7 @@ class CatDimDualDisplay(Enum):
     catDualSideBySide = 3
 
 
-class CatDimFake(Enum):
+class CatDimFake(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dim_value.DrawingDimValue.fake_dim_type
     """
@@ -796,7 +796,7 @@ class CatDimFake(Enum):
     catDimFakeText = 2
 
 
-class CatDimFrame(Enum):
+class CatDimFrame(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dim_value.DrawingDimValue.value_framed_element
     pycatia.drafting_interfaces.drawing_dim_value.DrawingDimValue.value_framed_group
@@ -813,7 +813,7 @@ class CatDimFrame(Enum):
     catFraRightTriangle = 8
 
 
-class CatDimFramedElement(Enum):
+class CatDimFramedElement(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dim_value.DrawingDimValue.value_framed_element
     """
@@ -822,7 +822,7 @@ class CatDimFramedElement(Enum):
     catFraValueTolText = 2
 
 
-class CatDimFramedGroup(Enum):
+class CatDimFramedGroup(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dim_value.DrawingDimValue.value_framed_group
     """
@@ -832,7 +832,7 @@ class CatDimFramedGroup(Enum):
     catFraBoth = 3
 
 
-class CatDimLineGraphRep(Enum):
+class CatDimLineGraphRep(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dim_line.DrawingDimLine.dim_line_graph_rep
     """
@@ -842,7 +842,7 @@ class CatDimLineGraphRep(Enum):
     catDimLineLeader2Part = 3
 
 
-class CatDimLineRep(Enum):
+class CatDimLineRep(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dim_line.DrawingDimLine.dim_line_rep
     pycatia.drafting_interfaces.drawing_dimensions.DrawingDimensions.add
@@ -858,7 +858,7 @@ class CatDimLineRep(Enum):
     catDimOffset = 7
 
 
-class CatDimMode(Enum):
+class CatDimMode(IntEnum):
     """
 
     """
@@ -871,7 +871,7 @@ class CatDimMode(Enum):
     catDimHalfDimSystem = 6
 
 
-class CatDimOrientation(Enum):
+class CatDimOrientation(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dim_line.DrawingDimLine.dim_line_orientation
     pycatia.drafting_interfaces.drawing_dimension.DrawingDimension.value_orientation
@@ -883,7 +883,7 @@ class CatDimOrientation(Enum):
     catAngle = 4
 
 
-class CatDimReference(Enum):
+class CatDimReference(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dim_line.DrawingDimLine.dim_line_reference
     pycatia.drafting_interfaces.drawing_dimension.DrawingDimension.value_reference
@@ -893,7 +893,7 @@ class CatDimReference(Enum):
     catDimLine = 2
 
 
-class CatDimScore(Enum):
+class CatDimScore(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dim_value.DrawingDimValue.scoring_mode
 
@@ -904,7 +904,7 @@ class CatDimScore(Enum):
     catCATDrwDimOverScored = 3
 
 
-class CatDimSymbols(Enum):
+class CatDimSymbols(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dim_line.DrawingDimLine.get_symb_type
     pycatia.drafting_interfaces.drawing_dim_line.DrawingDimLine.set_symb_type
@@ -925,7 +925,7 @@ class CatDimSymbols(Enum):
     catDimSymbXCross = 13
 
 
-class CatDimType(Enum):
+class CatDimType(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_dimension.DrawingDimension.dim_type
     pycatia.drafting_interfaces.drawing_dimensions.DrawingDimensions.add
@@ -954,7 +954,7 @@ class CatDimType(Enum):
     catDimDistanceMin = 20
 
 
-class CatDistanceComputationType(Enum):
+class CatDistanceComputationType(IntEnum):
     """
     pycatia.space_analyses_interfaces.distance.Distance.computation_type
     """
@@ -963,7 +963,7 @@ class CatDistanceComputationType(Enum):
     catDistanceComputationTypeBetweenTwo = 2
 
 
-class CatDistanceMeasureType(Enum):
+class CatDistanceMeasureType(IntEnum):
     """
     pycatia.space_analyses_interfaces.distance.Distance.measure_type
     """
@@ -974,7 +974,7 @@ class CatDistanceMeasureType(Enum):
     catDistanceMeasureTypeBand = 4
 
 
-class CatDmuGroupPreviewHiddenObjectsDisplayMode(Enum):
+class CatDmuGroupPreviewHiddenObjectsDisplayMode(IntEnum):
     """
     pycatia.navigator_interfaces.n_4D_navigator_setting_att.N4DNavigatorSettingAtt.dmu_group_preview_hidden_objects_display_mode
     """
@@ -982,7 +982,7 @@ class CatDmuGroupPreviewHiddenObjectsDisplayMode(Enum):
     CatDMUGroupPreviewShowHiddenCustom = 1
 
 
-class CatDocContextualPriority(Enum):
+class CatDocContextualPriority(IntEnum):
     """
     pycatia.in_interfaces.documentation_setting_att.DocumentationSettingAtt.priority
     """
@@ -990,7 +990,7 @@ class CatDocContextualPriority(Enum):
     CATDocContextualUserComp = 1
 
 
-class CatDraftMode(Enum):
+class CatDraftMode(IntEnum):
     """
     pycatia.part_interfaces.draft.Draft.mode
     pycatia.part_interfaces.shape_factory.ShapeFactory.add_new_draft
@@ -1001,7 +1001,7 @@ class CatDraftMode(Enum):
     catReflectKeepEdgeDraftMode = 2
 
 
-class CatDraftMultiselectionMode(Enum):
+class CatDraftMultiselectionMode(IntEnum):
     """
     pycatia.part_interfaces.shape_factory.ShapeFactory.add_new_draft
     pycatia.part_interfaces.shape_factory.ShapeFactory.add_new_volumic_draft
@@ -1011,7 +1011,7 @@ class CatDraftMultiselectionMode(Enum):
     catDraftMultiselectionByNeutralMode = 1
 
 
-class CatDraftNeutralPropagationMode(Enum):
+class CatDraftNeutralPropagationMode(IntEnum):
     """
     pycatia.part_interfaces.shape_factory.ShapeFactory.add_new_draft
     pycatia.part_interfaces.shape_factory.ShapeFactory.add_new_volumic_draft
@@ -1021,7 +1021,7 @@ class CatDraftNeutralPropagationMode(Enum):
     catSmoothDraftNeutralPropagationMode = 1
 
 
-class CatDrawingStandard(Enum):
+class CatDrawingStandard(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_root.Layout2DRoot.standard
     pycatia.cat_sch_platform_interfaces.schematic_root.SchematicRoot.get_drawing_standard
@@ -1033,7 +1033,7 @@ class CatDrawingStandard(Enum):
     catJIS = 2
 
 
-class CatDrawingViewType(Enum):
+class CatDrawingViewType(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_view.DrawingView.view_type
     """
@@ -1055,7 +1055,7 @@ class CatDrawingViewType(Enum):
     catViewUnfolded = 15
 
 
-class CatDrwNewSheetFrom(Enum):
+class CatDrwNewSheetFrom(IntEnum):
     """
     pycatia.drafting_interfaces.drafting_setting_att.DraftingSettingAtt.create_new_sheet_from
     """
@@ -1063,7 +1063,7 @@ class CatDrwNewSheetFrom(Enum):
     catDrwStyle = 1
 
 
-class CatDxfExportBlocksEnum(Enum):
+class CatDxfExportBlocksEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.export_blocks
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.set_export_blocks
@@ -1073,7 +1073,7 @@ class CatDxfExportBlocksEnum(Enum):
     catDxfExportBlocksEnumFull = 2
 
 
-class CatDxfExportModeEnum(Enum):
+class CatDxfExportModeEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.export_mode
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.set_export_mode
@@ -1082,7 +1082,7 @@ class CatDxfExportModeEnum(Enum):
     catDxfExportModeEnumGraphic = 1
 
 
-class CatDxfExportSheetsEnum(Enum):
+class CatDxfExportSheetsEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.export_sheets
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.set_export_sheets
@@ -1091,7 +1091,7 @@ class CatDxfExportSheetsEnum(Enum):
     catDxfExportSheetsEnumOnlyCurrent = 1
 
 
-class CatDxfExportVersionEnum(Enum):
+class CatDxfExportVersionEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.export_version
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.set_export_version
@@ -1106,7 +1106,7 @@ class CatDxfExportVersionEnum(Enum):
     catDxfExportVersionEnum2013 = 7
 
 
-class CatDxfImportCreateEndPointsEnum(Enum):
+class CatDxfImportCreateEndPointsEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.import_end_points
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.set_import_end_points
@@ -1116,7 +1116,7 @@ class CatDxfImportCreateEndPointsEnum(Enum):
     catDxfImportCreateEndPointsEnumAlways = 2
 
 
-class CatDxfImportDimensionsEnum(Enum):
+class CatDxfImportDimensionsEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.import_dimensions
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.set_import_dimensions
@@ -1126,7 +1126,7 @@ class CatDxfImportDimensionsEnum(Enum):
     catDxfImportDimensionsEnumGeometry = 2
 
 
-class CatDxfImportUnitEnum(Enum):
+class CatDxfImportUnitEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.import_unit
     pycatia.cat_dde_settings_interfaces.dxf_setting_att.DxfSettingAtt.set_import_unit
@@ -1140,7 +1140,7 @@ class CatDxfImportUnitEnum(Enum):
     catDxfImportUnitEnumAutomatic = 6
 
 
-class CatElectronicType(Enum):
+class CatElectronicType(IntEnum):
     """
     pycatia.pcb_board_base.pcb_object.PCBObject.electronic_type
     """
@@ -1153,7 +1153,7 @@ class CatElectronicType(Enum):
     NOPCBBEHAVIOUR = 6
 
 
-class CatFileSelectionMode(Enum):
+class CatFileSelectionMode(IntEnum):
     """
     pycatia.in_interfaces.application.Application.file_selection_box
     """
@@ -1161,7 +1161,7 @@ class CatFileSelectionMode(Enum):
     CatFileSelectionModeSave = 1
 
 
-class CatFileType(Enum):
+class CatFileType(IntEnum):
     """
     pycatia.product_structure_interfaces.product.Product.extract_bom
     """
@@ -1170,7 +1170,7 @@ class CatFileType(Enum):
     catFileTypeHTML = 2
 
 
-class CatFilletBitangencyType(Enum):
+class CatFilletBitangencyType(IntEnum):
     """
     pycatia.part_interfaces.var_rad_edge_fillet.VarRadEdgeFillet.bitangency_type
     """
@@ -1178,7 +1178,7 @@ class CatFilletBitangencyType(Enum):
     catCircleBitangencyType = 1
 
 
-class CatFilletBoundaryRelimitation(Enum):
+class CatFilletBoundaryRelimitation(IntEnum):
     """
     pycatia.part_interfaces.fillet.Fillet.fillet_boundary_relimitation
     """
@@ -1189,7 +1189,7 @@ class CatFilletBoundaryRelimitation(Enum):
     catMaximumFilletBoundaryRelimitation = 4
 
 
-class CatFilletEdgePropagation(Enum):
+class CatFilletEdgePropagation(IntEnum):
     """
     pycatia.part_interfaces.edge_fillet.EdgeFillet.edge_propagation
     pycatia.part_interfaces.shape_factory.ShapeFactory.add_new_edge_fillet_with_constant_radius
@@ -1203,7 +1203,7 @@ class CatFilletEdgePropagation(Enum):
     catTangencyFilletEdgePropagation = 1
 
 
-class CatFilletRepresentation(Enum):
+class CatFilletRepresentation(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_view_generative_behavior.DrawingViewGenerativeBehavior.fillet_representation
     """
@@ -1214,7 +1214,7 @@ class CatFilletRepresentation(Enum):
     catFilletRepProjectedOriginalEdge = 4
 
 
-class CatFilletTrimSupport(Enum):
+class CatFilletTrimSupport(IntEnum):
     """
     pycatia.part_interfaces.fillet.Fillet.fillet_trim_support
     """
@@ -1222,7 +1222,7 @@ class CatFilletTrimSupport(Enum):
     catNoTrimFilletSupport = 1
 
 
-class CatFilletVariation(Enum):
+class CatFilletVariation(IntEnum):
     """
     pycatia.part_interfaces.var_rad_edge_fillet.VarRadEdgeFillet.fillet_variation
     pycatia.part_interfaces.shape_factory.ShapeFactory.add_new_edge_fillet_with_varying_radius
@@ -1233,7 +1233,7 @@ class CatFilletVariation(Enum):
     catCubicFilletVariation = 1
 
 
-class CatFittingShuttleVector(Enum):
+class CatFittingShuttleVector(IntEnum):
     """
     ?
     """
@@ -1242,7 +1242,7 @@ class CatFittingShuttleVector(Enum):
     CATFittingShuttleVectorZ = 2
 
 
-class CatFullSceneAntiAliasingMode(Enum):
+class CatFullSceneAntiAliasingMode(IntEnum):
     """
     pycatia.in_interfaces.visualization_setting_att.VisualizationSettingAtt.full_scene_anti_aliasing_mode
     """
@@ -1253,7 +1253,7 @@ class CatFullSceneAntiAliasingMode(Enum):
     CATFSAAMode_16xSuperSampling = 4
 
 
-class CatFunctOrientationDirection(Enum):
+class CatFunctOrientationDirection(IntEnum):
     """
     pycatia.funct_system_interfaces.functional_action.FunctionalAction.orientation_direction
     """
@@ -1262,7 +1262,7 @@ class CatFunctOrientationDirection(Enum):
     CATFunctOrientedBidirectional = 2
 
 
-class CatGenConferencing(Enum):
+class CatGenConferencing(IntEnum):
     """
     pycatia.in_interfaces.general_session_setting_att.GeneralSessionSettingAtt.conferencing
     """
@@ -1270,7 +1270,7 @@ class CatGenConferencing(Enum):
     Backbone = 1
 
 
-class CatGenDataSave(Enum):
+class CatGenDataSave(IntEnum):
     """
     pycatia.in_interfaces.general_session_setting_att.GeneralSessionSettingAtt.auto_save
     """
@@ -1279,7 +1279,7 @@ class CatGenDataSave(Enum):
     IncrBackup = 2
 
 
-class CatGenUiStyle(Enum):
+class CatGenUiStyle(IntEnum):
     """
     pycatia.in_interfaces.general_session_setting_att.GeneralSessionSettingAtt.ui_style
     """
@@ -1288,7 +1288,7 @@ class CatGenUiStyle(Enum):
     UIStyleP3 = 2
 
 
-class CatGeometricType(Enum):
+class CatGeometricType(IntEnum):
     """
     pycatia.sketcher_interfaces.geometric_element.GeometricElement.geometric_type
     """
@@ -1307,7 +1307,7 @@ class CatGeometricType(Enum):
     catGeoTypePlane = 12
 
 
-class CatGridPositionMode(Enum):
+class CatGridPositionMode(IntEnum):
     """
     pycatia.space_analyses_interfaces.sectioning_setting_att.SectioningSettingAtt.grid_position_mode
     """
@@ -1315,7 +1315,7 @@ class CatGridPositionMode(Enum):
     catGridPositionMode_Relative = 1
 
 
-class CatHiddenLineMode(Enum):
+class CatHiddenLineMode(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_view_generative_behavior.DrawingViewGenerativeBehavior.hidden_line_mode
     """
@@ -1323,7 +1323,7 @@ class CatHiddenLineMode(Enum):
     catHlrModeOn = 1
 
 
-class CatHoleAnchorMode(Enum):
+class CatHoleAnchorMode(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_hole.AssemblyHole.anchor_mode
     pycatia.part_interfaces.hole.Hole.anchor_mode
@@ -1332,7 +1332,7 @@ class CatHoleAnchorMode(Enum):
     catMiddlePointHoleAnchor = 1
 
 
-class CatHoleBottomType(Enum):
+class CatHoleBottomType(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_hole.AssemblyHole.bottom_type
     pycatia.part_interfaces.hole.Hole.bottom_type
@@ -1342,7 +1342,7 @@ class CatHoleBottomType(Enum):
     catTrimmedHoleBottom = 2
 
 
-class CatHoleThreadSide(Enum):
+class CatHoleThreadSide(IntEnum):
     """
     pycatia.part_interfaces.hole.Hole.thread_side
     """
@@ -1350,7 +1350,7 @@ class CatHoleThreadSide(Enum):
     catLeftThreadSide = 1
 
 
-class CatHoleThreadStandard(Enum):
+class CatHoleThreadStandard(IntEnum):
     """
     pycatia.part_interfaces.hole.Hole.create_standard_thread_design_table
     """
@@ -1358,7 +1358,7 @@ class CatHoleThreadStandard(Enum):
     catHoleMetricThickPitch = 1
 
 
-class CatHoleThreadingMode(Enum):
+class CatHoleThreadingMode(IntEnum):
     """
     pycatia.part_interfaces.hole.Hole.threading_mode
     """
@@ -1366,7 +1366,7 @@ class CatHoleThreadingMode(Enum):
     catSmoothHoleThreading = 1
 
 
-class CatHoleType(Enum):
+class CatHoleType(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_hole.AssemblyHole.type
     pycatia.part_interfaces.hole.Hole.type
@@ -1378,7 +1378,7 @@ class CatHoleType(Enum):
     catCounterdrilledHole = 4
 
 
-class CatIg2ExportModeEnum(Enum):
+class CatIg2ExportModeEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.export_mode
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.set_export_mode
@@ -1388,7 +1388,7 @@ class CatIg2ExportModeEnum(Enum):
     catIg2ExportModeEnumGraphic = 2
 
 
-class CatIg2ExportSheetsEnum(Enum):
+class CatIg2ExportSheetsEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.export_sheets
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.set_export_sheets
@@ -1397,7 +1397,7 @@ class CatIg2ExportSheetsEnum(Enum):
     catIg2ExportSheetsEnumOnlyCurrent = 1
 
 
-class CatIg2ImportCreateEndPointsEnum(Enum):
+class CatIg2ImportCreateEndPointsEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.import_end_points
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.set_import_end_points
@@ -1407,7 +1407,7 @@ class CatIg2ImportCreateEndPointsEnum(Enum):
     catIg2ImportCreateEndPointsEnumAlways = 2
 
 
-class CatIg2ImportDestinationViewEnum(Enum):
+class CatIg2ImportDestinationViewEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.import_destination_view
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.set_import_destination_view
@@ -1416,7 +1416,7 @@ class CatIg2ImportDestinationViewEnum(Enum):
     catIg2ImportDestinationViewEnumBackground = 1
 
 
-class CatIg2ImportDimensionsEnum(Enum):
+class CatIg2ImportDimensionsEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.import_dimensions
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.set_import_dimensions
@@ -1426,7 +1426,7 @@ class CatIg2ImportDimensionsEnum(Enum):
     catIg2ImportDimensionsEnumGeometry = 2
 
 
-class CatIg2ImportUnitEnum(Enum):
+class CatIg2ImportUnitEnum(IntEnum):
     """
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.import_unit
     pycatia.cat_dde_settings_interfaces.ig2_setting_att.Ig2SettingAtt.set_import_unit
@@ -1439,7 +1439,7 @@ class CatIg2ImportUnitEnum(Enum):
     catIg2ImportUnitEnumAutomatic = 5
 
 
-class CatImageRotation(Enum):
+class CatImageRotation(IntEnum):
     """
     pycatia.in_interfaces.page_setup.PageSetup.rotation
     """
@@ -1450,7 +1450,7 @@ class CatImageRotation(Enum):
     catImageBestRotation = 4
 
 
-class CatImageViewMode(Enum):
+class CatImageViewMode(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_view_generative_behavior.DrawingViewGenerativeBehavior.image_view_mode
     """
@@ -1458,7 +1458,7 @@ class CatImageViewMode(Enum):
     catImageModeHRD = 1
 
 
-class CatInsureViewNamesUniquenessScope(Enum):
+class CatInsureViewNamesUniquenessScope(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_setting_att.Layout2DSettingAtt.insure_view_names_uniqueness_scope
     """
@@ -1466,7 +1466,7 @@ class CatInsureViewNamesUniquenessScope(Enum):
     catInLayout = 1
 
 
-class CatJustification(Enum):
+class CatJustification(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_text_properties.DrawingTextProperties.justification
     """
@@ -1475,7 +1475,7 @@ class CatJustification(Enum):
     catRight = 2
 
 
-class CatLightingMode(Enum):
+class CatLightingMode(IntEnum):
     """
     pycatia.in_interfaces.viewer_3d.Viewer3D.lighting_mode
     """
@@ -1483,7 +1483,7 @@ class CatLightingMode(Enum):
     catNeonLightSource = 1
 
 
-class CatLimitMode(Enum):
+class CatLimitMode(IntEnum):
     """
     pycatia.part_interfaces.limit.Limit.limit_mode
     """
@@ -1495,7 +1495,7 @@ class CatLimitMode(Enum):
     catUpThruNextLimit = 5
 
 
-class CatManipAutoInsertMode(Enum):
+class CatManipAutoInsertMode(IntEnum):
     """
     ?
     """
@@ -1503,7 +1503,7 @@ class CatManipAutoInsertMode(Enum):
     CATWhileMouseMoving = 1
 
 
-class CatManipClashMode(Enum):
+class CatManipClashMode(IntEnum):
     """
     ?
     """
@@ -1512,7 +1512,7 @@ class CatManipClashMode(Enum):
     CATManipClashModeStop = 2
 
 
-class CatManufacturingPrecedenceType(Enum):
+class CatManufacturingPrecedenceType(IntEnum):
     """
     pycatia.manufacturing_interfaces.manufacturing_precedences.ManufacturingPrecedences.add_operation
     pycatia.manufacturing_interfaces.manufacturing_precedence.ManufacturingPrecedence.precedence_type
@@ -1521,7 +1521,7 @@ class CatManufacturingPrecedenceType(Enum):
     catPrecedenceTypeBefore = 1
 
 
-class CatMarker2DType(Enum):
+class CatMarker2DType(IntEnum):
     """
     pycatia.navigator_interfaces.marker_2D.Marker2D.type
     """
@@ -1534,14 +1534,14 @@ class CatMarker2DType(Enum):
     catMarker2DTypePicture = 6
 
 
-class CatMarker3DType(Enum):
+class CatMarker3DType(IntEnum):
     """
     pycatia.navigator_interfaces.marker_3D.Marker3D.type
     """
     catMarker3DTypeText = 0
 
 
-class CatMarkerTextOrientation(Enum):
+class CatMarkerTextOrientation(IntEnum):
     """
     pycatia.navigator_interfaces.marker_2D.Marker2D.text_orientation
     pycatia.navigator_interfaces.marker_3D.Marker3D.text_orientation
@@ -1552,7 +1552,7 @@ class CatMarkerTextOrientation(Enum):
     CatMarkerTextOrientationDown = 3
 
 
-class CatMeasurableName(Enum):
+class CatMeasurableName(IntEnum):
     """
     pycatia.space_analyses_interfaces.measurable.Measurable.geometry_name
     """
@@ -1571,7 +1571,7 @@ class CatMeasurableName(Enum):
     CatMeasurableAxisSystem = 12
 
 
-class CatMergeMode(Enum):
+class CatMergeMode(IntEnum):
     """
     pycatia.part_interfaces.sweep.Sweep.merge_mode
     """
@@ -1579,7 +1579,7 @@ class CatMergeMode(Enum):
     catMergeOn = 1
 
 
-class CatMultiSelectionMode(Enum):
+class CatMultiSelectionMode(IntEnum):
     """
     pycatia.in_interfaces.selection.Selection.select_element3
     """
@@ -1588,7 +1588,7 @@ class CatMultiSelectionMode(Enum):
     CATMultiSelTriggWhenUserValidatesSelection = 2
 
 
-class CatNavigationStyle(Enum):
+class CatNavigationStyle(IntEnum):
     """
     pycatia.in_interfaces.viewer_3d.Viewer3D.navigation_style
     """
@@ -1597,7 +1597,7 @@ class CatNavigationStyle(Enum):
     catNavigationFly = 2
 
 
-class CatOptimizationType(Enum):
+class CatOptimizationType(IntEnum):
     """
     pycatia.knowledge_interfaces.optimization.Optimization.optimization_type
     """
@@ -1609,7 +1609,7 @@ class CatOptimizationType(Enum):
     catCstOnly = 5
 
 
-class CatOutPutFormatType(Enum):
+class CatOutPutFormatType(IntEnum):
     """
     pycatia.general_knowledge_interfaces.expert_rule_base_runtime.ExpertRuleBaseRuntime.report_output_format
     """
@@ -1619,7 +1619,7 @@ class CatOutPutFormatType(Enum):
     KWEEmail = 3
 
 
-class CatPaperOrientation(Enum):
+class CatPaperOrientation(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_sheet.Layout2DSheet.orientation
     pycatia.drafting_interfaces.drawing_sheet.DrawingSheet.orientation
@@ -1631,7 +1631,7 @@ class CatPaperOrientation(Enum):
     catPaperBestFit = 2
 
 
-class CatPaperSize(Enum):
+class CatPaperSize(IntEnum):
     """
     pycatia.in_interfaces.printer.Printer.paper_size
     pycatia.drafting_2dL_interfaces.layout_2d_sheet.Layout2DSheet.paper_size
@@ -1654,7 +1654,7 @@ class CatPaperSize(Enum):
     catPaperUser = 13
 
 
-class CatPartElementsNamingMode(Enum):
+class CatPartElementsNamingMode(IntEnum):
     """
     pycatia.mec_mod_interfaces.part_infrastructure_setting_att.PartInfrastructureSettingAtt.naming_mode
     """
@@ -1663,7 +1663,7 @@ class CatPartElementsNamingMode(Enum):
     catNamingCheckWithinUIActiveObject = 2
 
 
-class CatPartSurfaceElementsLocation(Enum):
+class CatPartSurfaceElementsLocation(IntEnum):
     """
     pycatia.mec_mod_interfaces.part_infrastructure_setting_att.PartInfrastructureSettingAtt.surface_elements_location
     """
@@ -1671,7 +1671,7 @@ class CatPartSurfaceElementsLocation(Enum):
     catXGSLocation = 1
 
 
-class CatPartUpdateMode(Enum):
+class CatPartUpdateMode(IntEnum):
     """
     pycatia.mec_mod_interfaces.part_infrastructure_setting_att.PartInfrastructureSettingAtt.update_mode
     """
@@ -1679,7 +1679,7 @@ class CatPartUpdateMode(Enum):
     catAutomaticUpdate = 1
 
 
-class CatPictureFormat(Enum):
+class CatPictureFormat(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_picture.DrawingPicture.format
     """
@@ -1689,7 +1689,7 @@ class CatPictureFormat(Enum):
     catPictureCCITTG3 = 3
 
 
-class CatPointsProjectionMode(Enum):
+class CatPointsProjectionMode(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_view_generative_behavior.DrawingViewGenerativeBehavior.points_projection_mode
     """
@@ -1697,7 +1697,7 @@ class CatPointsProjectionMode(Enum):
     catPointsProjectionModeOn = 1
 
 
-class CatPrintColor(Enum):
+class CatPrintColor(IntEnum):
     """
     pycatia.in_interfaces.page_setup.PageSetup.color
     """
@@ -1706,7 +1706,7 @@ class CatPrintColor(Enum):
     catColorMonochrome = 2
 
 
-class CatPrintLineCap(Enum):
+class CatPrintLineCap(IntEnum):
     """
     pycatia.in_interfaces.page_setup.PageSetup.line_cap
     """
@@ -1715,7 +1715,7 @@ class CatPrintLineCap(Enum):
     catPrintRound = 2
 
 
-class CatPrintLineSpecification(Enum):
+class CatPrintLineSpecification(IntEnum):
     """
     pycatia.in_interfaces.page_setup.PageSetup.line_type_specification
     pycatia.in_interfaces.page_setup.PageSetup.line_width_specification
@@ -1725,7 +1725,7 @@ class CatPrintLineSpecification(Enum):
     catPrintNoThickness = 2
 
 
-class CatPrintQuality(Enum):
+class CatPrintQuality(IntEnum):
     """
     pycatia.in_interfaces.page_setup.PageSetup.quality
     """
@@ -1736,7 +1736,7 @@ class CatPrintQuality(Enum):
     catPrintQualityCustom = 4
 
 
-class CatPrintRenderingMode(Enum):
+class CatPrintRenderingMode(IntEnum):
     """
     pycatia.in_interfaces.page_setup.PageSetup.print_rendering_mode
     """
@@ -1748,7 +1748,7 @@ class CatPrintRenderingMode(Enum):
     catPrintRenderingModeOnScreen = 5
 
 
-class CatPrinterDirState(Enum):
+class CatPrinterDirState(IntEnum):
     """
     pycatia.in_interfaces.printers_setting_att.PrintersSettingAtt.add_printer_directory
     pycatia.in_interfaces.printers_setting_att.PrintersSettingAtt.get_printer_directory_state
@@ -1758,7 +1758,7 @@ class CatPrinterDirState(Enum):
     CatPrinterDirProtect = 1
 
 
-class CatPrismExtrusionDirection(Enum):
+class CatPrismExtrusionDirection(IntEnum):
     """
     pycatia.part_interfaces.prism.Prism.direction_type
     pycatia.assembly_interfaces.assembly_pocket.AssemblyPocket.direction_type
@@ -1767,7 +1767,7 @@ class CatPrismExtrusionDirection(Enum):
     catNotNormalToSketchDirection = 1
 
 
-class CatPrismOrientation(Enum):
+class CatPrismOrientation(IntEnum):
     """
     pycatia.assembly_interfaces.assembly_pocket.AssemblyPocket.direction_orientation
     pycatia.part_interfaces.prism.Prism.direction_orientation
@@ -1776,7 +1776,7 @@ class CatPrismOrientation(Enum):
     catInverseOrientation = 1
 
 
-class CatProductSource(Enum):
+class CatProductSource(IntEnum):
     """
     pycatia.product_structure_interfaces.product.Product.source
     pycatia.osm_interfaces.scene.Scene.get_source
@@ -1786,7 +1786,7 @@ class CatProductSource(Enum):
     catProductBought = 2
 
 
-class CatProjViewType(Enum):
+class CatProjViewType(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_view_generative_behavior.DrawingViewGenerativeBehavior.define_projection_view
     """
@@ -1797,7 +1797,7 @@ class CatProjViewType(Enum):
     catRearView = 4
 
 
-class CatProjectionMode(Enum):
+class CatProjectionMode(IntEnum):
     """
     pycatia.in_interfaces.viewpoint_3d.ViewPoint3D.projection_mode
     pycatia.navigator_interfaces.annotated_view.AnnotatedView.projection_mode
@@ -1807,7 +1807,7 @@ class CatProjectionMode(Enum):
     catProjectionUndefined = 2
 
 
-class CatPspIdlApplicationId(Enum):
+class CatPspIdlApplicationId(IntEnum):
     """
     pycatia.cat_plant_ship_interfaces.psp_object.PSPObject.application_id
     pycatia.cat_plant_ship_interfaces.psp_workbench.PSPWorkbench.get_application
@@ -1829,7 +1829,7 @@ class CatPspIdlApplicationId(Enum):
     catPspIDLCATElectricalDiagram = 14
 
 
-class CatPspIdlAttrDataType(Enum):
+class CatPspIdlAttrDataType(IntEnum):
     """
     pycatia.cat_plant_ship_interfaces.psp_attribute.PSPAttribute.get_type
     """
@@ -1840,7 +1840,7 @@ class CatPspIdlAttrDataType(Enum):
     catPspIDLBoolean = 4
 
 
-class CatPspIdlDomainId(Enum):
+class CatPspIdlDomainId(IntEnum):
     """
     pycatia.cat_plant_ship_interfaces.psp_connectable.PSPConnectable.connectors
     pycatia.cat_plant_ship_interfaces.psp_app_factory.PSPAppFactory.list_physicals
@@ -1862,7 +1862,7 @@ class CatPspIdlDomainId(Enum):
     catPspIDLCATELE = 12
 
 
-class CatPspIdlFlowCapability(Enum):
+class CatPspIdlFlowCapability(IntEnum):
     """
     pycatia.cat_plant_ship_interfaces.psp_cntr_flow.PSPCntrFlow.flow_capability
     """
@@ -1872,7 +1872,7 @@ class CatPspIdlFlowCapability(Enum):
     catPspIDLFlowCapability_InOutDirection = 3
 
 
-class CatPspIdlFlowReality(Enum):
+class CatPspIdlFlowReality(IntEnum):
     """
     pycatia.cat_plant_ship_interfaces.psp_cntr_flow.PSPCntrFlow.flow_reality
     """
@@ -1882,7 +1882,7 @@ class CatPspIdlFlowReality(Enum):
     catPspIDLFlowReality_InOutDirection = 3
 
 
-class CatPspIdlFunctionStatus(Enum):
+class CatPspIdlFunctionStatus(IntEnum):
     """
     pycatia.cat_plant_ship_interfaces.psp_functional.PSPFunctional.function_status
     """
@@ -1894,7 +1894,7 @@ class CatPspIdlFunctionStatus(Enum):
     catPspIDLFuncNetPhys = 5
 
 
-class CatPspIdlPartConnectorType(Enum):
+class CatPspIdlPartConnectorType(IntEnum):
     """
     pycatia.cat_plant_ship_interfaces.psp_phsyical_product.PSPPhsyicalProduct.add_connector
     pycatia.cat_plant_ship_interfaces.psp_part_connector.PSPPartConnector.align_type
@@ -1921,7 +1921,7 @@ class CatPspIdlPartConnectorType(Enum):
     catPspIDLPartCtrTypeUpOnly = 14
 
 
-class CatRectangularPatternParameters(Enum):
+class CatRectangularPatternParameters(IntEnum):
     """
     pycatia.part_interfaces.rect_pattern.RectPattern.first_rectangular_pattern_parameters
     pycatia.part_interfaces.rect_pattern.RectPattern.second_rectangular_pattern_parameters
@@ -1930,7 +1930,7 @@ class CatRectangularPatternParameters(Enum):
     catUnequalSpacing = 1
 
 
-class CatRenderingMode(Enum):
+class CatRenderingMode(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_sheet.Layout2DSheet.print_out
     pycatia.drafting_2dL_interfaces.layout_2d_sheet.Layout2DSheet.print_to_file
@@ -1962,7 +1962,7 @@ class CatRenderingMode(Enum):
     catRenderShadingWithEdgesWithHalfSmoothEdge = 22
 
 
-class CatRepType(Enum):
+class CatRepType(IntEnum):
     """
     pycatia.product_structure_interfaces.product.Product.add_shape_representation
     pycatia.product_structure_interfaces.product.Product.get_shape_representation
@@ -1974,7 +1974,7 @@ class CatRepType(Enum):
     catRepText = 2
 
 
-class CatRepresentationMode(Enum):
+class CatRepresentationMode(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_view_generative_behavior.DrawingViewGenerativeBehavior.representation_mode
     """
@@ -1983,7 +1983,7 @@ class CatRepresentationMode(Enum):
     catVisualMode = 2
 
 
-class CatSacSettingsEnum(Enum):
+class CatSacSettingsEnum(IntEnum):
     """
     pycatia.navigator_interfaces.n_4D_navigator_setting_att.N4DNavigatorSettingAtt.insert_mode
     """
@@ -1992,7 +1992,7 @@ class CatSacSettingsEnum(Enum):
     CatSacSettingsEnumUserPrompt = 2
 
 
-class CatSampledAnalysisMode(Enum):
+class CatSampledAnalysisMode(IntEnum):
     """
     pycatia.fitting_interfaces.sampled.Sampled.bind_analysis
     """
@@ -2002,7 +2002,7 @@ class CatSampledAnalysisMode(Enum):
     CatSampledAnalysisVerbose = 3
 
 
-class CatSampledSplitType(Enum):
+class CatSampledSplitType(IntEnum):
     """
     pycatia.fitting_interfaces.sampled.Sampled.split
     """
@@ -2010,7 +2010,7 @@ class CatSampledSplitType(Enum):
     CatSampledSplitOnShot = 1
 
 
-class CatSceneType(Enum):
+class CatSceneType(IntEnum):
     """
     pycatia.osm_interfaces.product_scene.ProductScene.type
     """
@@ -2018,7 +2018,7 @@ class CatSceneType(Enum):
     CatSceneTypeFull = 1
 
 
-class CatSchIdlApplicationId(Enum):
+class CatSchIdlApplicationId(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.schematic_root.SchematicRoot.get_application_object_factory
     """
@@ -2029,7 +2029,7 @@ class CatSchIdlApplicationId(Enum):
     catSchIDLCATElectricalDiagram = 4
 
 
-class CatSchIdlArrowFrequency(Enum):
+class CatSchIdlArrowFrequency(IntEnum):
     """
     ?
     """
@@ -2039,7 +2039,7 @@ class CatSchIdlArrowFrequency(Enum):
     catSchIDLArrowMiddleSeg = 3
 
 
-class CatSchIdlArrowPosition(Enum):
+class CatSchIdlArrowPosition(IntEnum):
     """
     ?
     """
@@ -2047,7 +2047,7 @@ class CatSchIdlArrowPosition(Enum):
     catSchIDLEndSegArrow = 1
 
 
-class CatSchIdlArrowStyle(Enum):
+class CatSchIdlArrowStyle(IntEnum):
     """
     ?
     """
@@ -2056,7 +2056,7 @@ class CatSchIdlArrowStyle(Enum):
     catSchIDLStandardArrow = 2
 
 
-class CatSchIdlCntrFlowCapability(Enum):
+class CatSchIdlCntrFlowCapability(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_app_cntr_flow.SchAppCntrFlow.app_get_flow_capability
     pycatia.cat_sch_platform_interfaces.sch_app_cntr_flow.SchAppCntrFlow.app_set_flow_capability
@@ -2067,7 +2067,7 @@ class CatSchIdlCntrFlowCapability(Enum):
     catSchIDLCntrFlowCapability_InOutDirection = 3
 
 
-class CatSchIdlCntrFlowReality(Enum):
+class CatSchIdlCntrFlowReality(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_app_cntr_flow.SchAppCntrFlow.app_get_flow_reality
     pycatia.cat_sch_platform_interfaces.sch_app_cntr_flow.SchAppCntrFlow.app_set_flow_capability
@@ -2079,7 +2079,7 @@ class CatSchIdlCntrFlowReality(Enum):
     catSchIDLCntrFlowReality_InOutDirection = 3
 
 
-class CatSchIdlCntrSymbolType(Enum):
+class CatSchIdlCntrSymbolType(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_grr_cntr.SchGRRCntr.get_symbol
     pycatia.cat_sch_platform_interfaces.sch_grr_cntr.SchGRRCntr.set_symbol
@@ -2091,7 +2091,7 @@ class CatSchIdlCntrSymbolType(Enum):
     catSchIDLCntrSymbol_LineBoundary = 4
 
 
-class CatSchIdlDisplayMode(Enum):
+class CatSchIdlDisplayMode(IntEnum):
     """
     ?
     """
@@ -2099,7 +2099,7 @@ class CatSchIdlDisplayMode(Enum):
     catSchIDLDisplayMode_Alternate = 1
 
 
-class CatSchIdlExtensionType(Enum):
+class CatSchIdlExtensionType(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.schematic_extension.SchematicExtension.add_extension
     pycatia.cat_sch_platform_interfaces.schematic_extension.SchematicExtension.remove_extension
@@ -2111,7 +2111,7 @@ class CatSchIdlExtensionType(Enum):
     catSchIDLZone_Extension = 4
 
 
-class CatSchIdlGapPriority(Enum):
+class CatSchIdlGapPriority(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_app_gap_priority.SchAppGapPriority.app_choose_gap_priority
     """
@@ -2122,7 +2122,7 @@ class CatSchIdlGapPriority(Enum):
     catSchIDLGapVerticalSeg = 4
 
 
-class CatSchIdlGapStyle(Enum):
+class CatSchIdlGapStyle(IntEnum):
     """
     ?
     """
@@ -2131,7 +2131,7 @@ class CatSchIdlGapStyle(Enum):
     catSchIDLWavyGap = 2
 
 
-class CatSchIdlInternalFlowStatus(Enum):
+class CatSchIdlInternalFlowStatus(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_internal_flow.SchInternalFlow.get_status
     pycatia.cat_sch_platform_interfaces.sch_internal_flow.SchInternalFlow.set_status
@@ -2141,7 +2141,7 @@ class CatSchIdlInternalFlowStatus(Enum):
     catSchIDLInternFlowStatus_Close = 2
 
 
-class CatSchIdlInternalFlowType(Enum):
+class CatSchIdlInternalFlowType(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_internal_flow.SchInternalFlow.get_insertion_type
     """
@@ -2150,7 +2150,7 @@ class CatSchIdlInternalFlowType(Enum):
     catSchIDLInternFlowType_Linear = 2
 
 
-class CatSchIdlMultiImageStatus(Enum):
+class CatSchIdlMultiImageStatus(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_app_multi_image.SchAppMultiImage.app_is_up_to_date
     """
@@ -2161,7 +2161,7 @@ class CatSchIdlMultiImageStatus(Enum):
     catSchIDLImage_AttrsNotUpToDate = 4
 
 
-class CatSchIdlRouteAlternateGraphicStyle(Enum):
+class CatSchIdlRouteAlternateGraphicStyle(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_route_alternate_graphic.SchRouteAlternateGraphic.remove_all_alternate_graphics_of_style
     pycatia.cat_sch_platform_interfaces.sch_grr_route_alternate.SchGRRRouteAlternate.get_alternate_style
@@ -2169,7 +2169,7 @@ class CatSchIdlRouteAlternateGraphicStyle(Enum):
     catSchIDLRouteAlternateGraphicStyle_ellipse = 0
 
 
-class CatSchIdlRouteCompressMode(Enum):
+class CatSchIdlRouteCompressMode(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_grr_route.SchGRRRoute.set_path
     pycatia.cat_sch_platform_interfaces.sch_grr_route.SchGRRRoute.set_path2
@@ -2179,7 +2179,7 @@ class CatSchIdlRouteCompressMode(Enum):
     catSchIDLCompressOn = 1
 
 
-class CatSchIdlRouteMode(Enum):
+class CatSchIdlRouteMode(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_base_factory.SchBaseFactory.create_route_and_connect_to_objects
     pycatia.cat_sch_platform_interfaces.sch_route.SchRoute.reshape_extremity2
@@ -2191,7 +2191,7 @@ class CatSchIdlRouteMode(Enum):
     catSchIDLRouteMode_AroundObject = 4
 
 
-class CatSchIdlRouteSymbolUpdateMode(Enum):
+class CatSchIdlRouteSymbolUpdateMode(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_grr_route.SchGRRRoute.set_path3
     """
@@ -2199,7 +2199,7 @@ class CatSchIdlRouteSymbolUpdateMode(Enum):
     catSchIDLSymbolUpdateOn = 1
 
 
-class CatSchIdlRouteUnsetGapsMode(Enum):
+class CatSchIdlRouteUnsetGapsMode(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_grr_route.SchGRRRoute.compress2
     pycatia.cat_sch_platform_interfaces.sch_grr_route.SchGRRRoute.set_path2
@@ -2209,7 +2209,7 @@ class CatSchIdlRouteUnsetGapsMode(Enum):
     catSchIDLUnsetGapsOn = 1
 
 
-class CatSchIdlgrrRouteReshapeMode(Enum):
+class CatSchIdlgrrRouteReshapeMode(IntEnum):
     """
     pycatia.cat_sch_platform_interfaces.sch_grr_route2.SchGRRRoute2.get_reshape_mode
     pycatia.cat_sch_platform_interfaces.sch_grr_route2.SchGRRRoute2.set_reshape_mode
@@ -2218,7 +2218,7 @@ class CatSchIdlgrrRouteReshapeMode(Enum):
     catSchIDLFixedShapeOn = 1
 
 
-class CatScriptLanguage(Enum):
+class CatScriptLanguage(IntEnum):
     """
     pycatia.system_interfaces.system_service.SystemService.evaluate
     pycatia.in_interfaces.macros_setting_att.MacrosSettingAtt.get_language_editor
@@ -2231,7 +2231,7 @@ class CatScriptLanguage(Enum):
     CATJScriptLanguage = 4
 
 
-class CatScriptLibraryType(Enum):
+class CatScriptLibraryType(IntEnum):
     """
     pycatia.system_interfaces.system_service.SystemService.execute_script
     """
@@ -2240,7 +2240,7 @@ class CatScriptLibraryType(Enum):
     catScriptLibraryTypeVBAProject = 2
 
 
-class CatSearchContextScope(Enum):
+class CatSearchContextScope(IntEnum):
     """
     pycatia.in_interfaces.search_setting_att.SearchSettingAtt.default_power_input_context_scope
     """
@@ -2251,7 +2251,7 @@ class CatSearchContextScope(Enum):
     VisibleOnScreen = 4
 
 
-class CatSecWindowOpenMode(Enum):
+class CatSecWindowOpenMode(IntEnum):
     """
     pycatia.in_interfaces.search_setting_att.SearchSettingAtt.default_power_input_context_scope
     """
@@ -2259,7 +2259,7 @@ class CatSecWindowOpenMode(Enum):
     catSecWindow_TileVertically = 1
 
 
-class CatSectionBehavior(Enum):
+class CatSectionBehavior(IntEnum):
     """
     pycatia.space_analyses_interfaces.section.Section.behavior
     """
@@ -2268,7 +2268,7 @@ class CatSectionBehavior(Enum):
     catSectionBehaviorFreeze = 2
 
 
-class CatSectionClippingMode(Enum):
+class CatSectionClippingMode(IntEnum):
     """
     pycatia.space_analyses_interfaces.sectioning_setting_att.SectioningSettingAtt.clipping_mode
     """
@@ -2276,7 +2276,7 @@ class CatSectionClippingMode(Enum):
     catSection_OpenGL = 1
 
 
-class CatSectionGridStyle(Enum):
+class CatSectionGridStyle(IntEnum):
     """
     pycatia.space_analyses_interfaces.sectioning_setting_att.SectioningSettingAtt.grid_style
     """
@@ -2284,7 +2284,7 @@ class CatSectionGridStyle(Enum):
     catSectionGridStyle_Crosses = 1
 
 
-class CatSectionPlaneNormal(Enum):
+class CatSectionPlaneNormal(IntEnum):
     """
     pycatia.space_analyses_interfaces.sectioning_setting_att.SectioningSettingAtt.plane_normal
     """
@@ -2293,7 +2293,7 @@ class CatSectionPlaneNormal(Enum):
     catSectionNormal_Z = 2
 
 
-class CatSectionPlaneOrigin(Enum):
+class CatSectionPlaneOrigin(IntEnum):
     """
     pycatia.space_analyses_interfaces.sectioning_setting_att.SectioningSettingAtt.plane_origin
     """
@@ -2301,7 +2301,7 @@ class CatSectionPlaneOrigin(Enum):
     catSectionOrigin_Selection = 1
 
 
-class CatSectionType(Enum):
+class CatSectionType(IntEnum):
     """
     pycatia.space_analyses_interfaces.section.Section.type
     """
@@ -2310,7 +2310,7 @@ class CatSectionType(Enum):
     catSectionTypeBox = 2
 
 
-class CatSelectionFilter(Enum):
+class CatSelectionFilter(IntEnum):
     """
     pycatia.in_interfaces.selected_element.SelectedElement.type
     pycatia.in_interfaces.selection.Selection.select_element2
@@ -2328,7 +2328,7 @@ class CatSelectionFilter(Enum):
     TriDim = 10
 
 
-class CatSewingIntersectionMode(Enum):
+class CatSewingIntersectionMode(IntEnum):
     """
     pycatia.part_interfaces.sew_surface.SewSurface.sewing_intersection_mode
     """
@@ -2336,7 +2336,7 @@ class CatSewingIntersectionMode(Enum):
     catSewingIntersect = 1
 
 
-class CatSheetGenViewsPosMode(Enum):
+class CatSheetGenViewsPosMode(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_sheet.DrawingSheet.gen_views_pos_mode
     """
@@ -2344,7 +2344,7 @@ class CatSheetGenViewsPosMode(Enum):
     catFixedAxis = 1
 
 
-class CatSheetProjectionMethod(Enum):
+class CatSheetProjectionMethod(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_sheet.Layout2DSheet.projection_method
     pycatia.drafting_interfaces.drawing_sheet.DrawingSheet.projection_method
@@ -2353,7 +2353,7 @@ class CatSheetProjectionMethod(Enum):
     catThirdAngle = 1
 
 
-class CatShowResultType(Enum):
+class CatShowResultType(IntEnum):
     """
     pycatia.general_knowledge_interfaces.expert_rule_base_runtime.ExpertRuleBaseRuntime.report_show_result
     """
@@ -2362,7 +2362,7 @@ class CatShowResultType(Enum):
     ByState = 2
 
 
-class CatShuttleMoveMode(Enum):
+class CatShuttleMoveMode(IntEnum):
     """
     pycatia.fitting_interfaces.shuttle.Shuttle.move_mode
     """
@@ -2370,7 +2370,7 @@ class CatShuttleMoveMode(Enum):
     CatAxis = 1
 
 
-class CatShuttleVector(Enum):
+class CatShuttleVector(IntEnum):
     """
     pycatia.fitting_interfaces.shuttle.Shuttle.vector
     """
@@ -2379,7 +2379,7 @@ class CatShuttleVector(Enum):
     CatShuttleVectorZ = 2
 
 
-class CatSolveType(Enum):
+class CatSolveType(IntEnum):
     """
     pycatia.general_knowledge_interfaces.expert_rule_base_runtime.ExpertRuleBaseRuntime.solve_type
     """
@@ -2388,7 +2388,7 @@ class CatSolveType(Enum):
     AutomaticCompleteSolveType = 2
 
 
-class CatSpecsAndGeomWindowLayout(Enum):
+class CatSpecsAndGeomWindowLayout(IntEnum):
     """
     pycatia.in_interfaces.specs_and_geom_window.SpecsAndGeomWindow.layout
     """
@@ -2397,7 +2397,7 @@ class CatSpecsAndGeomWindowLayout(Enum):
     catWindowSpecsAndGeom = 2
 
 
-class CatSpecsLayout(Enum):
+class CatSpecsLayout(IntEnum):
     """
     pycatia.in_interfaces.specs_viewer.SpecsViewer.layout
     """
@@ -2409,7 +2409,7 @@ class CatSpecsLayout(Enum):
     catSpecsViewerVerticalRelational = 5
 
 
-class CatSplitSide(Enum):
+class CatSplitSide(IntEnum):
     """
     pycatia.part_interfaces.replace_face.ReplaceFace.splitting_side
     pycatia.assembly_interfaces.assembly_features.AssemblyFeatures.add_assembly_split
@@ -2425,7 +2425,7 @@ class CatSplitSide(Enum):
     catNegativeSide = 1
 
 
-class CatStrCreationMode(Enum):
+class CatStrCreationMode(IntEnum):
     """
     ?
     """
@@ -2433,7 +2433,7 @@ class CatStrCreationMode(Enum):
     catStrSheetMetalMode = 1
 
 
-class CatStrCutbackType(Enum):
+class CatStrCutbackType(IntEnum):
     """
     pycatia.structure_interfaces.str_cutback.StrCutback.type
     pycatia.structure_interfaces.str_member.StrMember.create_cutback
@@ -2445,7 +2445,7 @@ class CatStrCutbackType(Enum):
     catStrNotchingType = 4
 
 
-class CatStrLinkMode(Enum):
+class CatStrLinkMode(IntEnum):
     """
     ?
     """
@@ -2455,7 +2455,7 @@ class CatStrLinkMode(Enum):
     catStrRefRefNoLinkMode = 3
 
 
-class CatStrMaterialOrientation(Enum):
+class CatStrMaterialOrientation(IntEnum):
     """
     pycatia.structure_interfaces.str_object_factory.StrObjectFactory.add_dim_member_with_support
     pycatia.structure_interfaces.str_object_factory.StrObjectFactory.add_plate
@@ -2466,7 +2466,7 @@ class CatStrMaterialOrientation(Enum):
     catStrReverseOrientation = 1
 
 
-class CatStrMemberExtremity(Enum):
+class CatStrMemberExtremity(IntEnum):
     """
     pycatia.structure_interfaces.str_object_factory.StrObjectFactory.add_def_ext_on_member
     pycatia.structure_interfaces.str_object_factory.StrObjectFactory.add_rectangular_end_plate
@@ -2476,7 +2476,7 @@ class CatStrMemberExtremity(Enum):
     catBothExtremity = 2
 
 
-class CatStrPlacementPoint(Enum):
+class CatStrPlacementPoint(IntEnum):
     """
     ?
     """
@@ -2498,7 +2498,7 @@ class CatStrPlacementPoint(Enum):
     catStrUserPoint = 15
 
 
-class CatStrPlaneMode(Enum):
+class CatStrPlaneMode(IntEnum):
     """
     pycatia.structure_interfaces.str_object_factory.StrObjectFactory.add_dim_member_on_plane
     pycatia.structure_interfaces.str_object_factory.StrObjectFactory.add_dim_member_with_support
@@ -2510,7 +2510,7 @@ class CatStrPlaneMode(Enum):
     catStrParallelToPlane = 2
 
 
-class CatStrSectionProperties(Enum):
+class CatStrSectionProperties(IntEnum):
     """
     pycatia.structure_interfaces.str_section.StrSection.get_property
     """
@@ -2523,7 +2523,7 @@ class CatStrSectionProperties(Enum):
     CatStrGirationModuleY = 6
 
 
-class CatSymbolType(Enum):
+class CatSymbolType(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_arrow.DrawingArrow.head_symbol
     pycatia.drafting_interfaces.drawing_arrow.DrawingArrow.tail_symbol
@@ -2563,7 +2563,7 @@ class CatSymbolType(Enum):
     catWave = 31
 
 
-class CatTableBorderType(Enum):
+class CatTableBorderType(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_table.DrawingTable.get_cell_border_type
     """
@@ -2581,7 +2581,7 @@ class CatTableBorderType(Enum):
     CatTableCross = 11
 
 
-class CatTableComputeMode(Enum):
+class CatTableComputeMode(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_table.DrawingTable.compute_mode
     """
@@ -2589,7 +2589,7 @@ class CatTableComputeMode(Enum):
     CatTableComputeON = 1
 
 
-class CatTableInvertMode(Enum):
+class CatTableInvertMode(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_table.DrawingTable.invert_mode
     """
@@ -2598,7 +2598,7 @@ class CatTableInvertMode(Enum):
     CatInvertAll = 2
 
 
-class CatTablePosition(Enum):
+class CatTablePosition(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_table.DrawingTable.anchor_point
     pycatia.drafting_interfaces.drawing_table.DrawingTable.get_cell_alignment
@@ -2615,7 +2615,7 @@ class CatTablePosition(Enum):
     CatTableBottomRight = 8
 
 
-class CatTextAnchorPosition(Enum):
+class CatTextAnchorPosition(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_text.DrawingText.anchor_position
     pycatia.drafting_interfaces.drawing_text_properties.DrawingTextProperties.anchor_point
@@ -2642,7 +2642,7 @@ class CatTextAnchorPosition(Enum):
     catBaseRight = 19
 
 
-class CatTextFlipMode(Enum):
+class CatTextFlipMode(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_text_properties.DrawingTextProperties.mirror
     """
@@ -2653,7 +2653,7 @@ class CatTextFlipMode(Enum):
     catTextAutoFlip = 4
 
 
-class CatTextFrameType(Enum):
+class CatTextFrameType(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_text_properties.DrawingTextProperties.frame_type
     pycatia.drafting_interfaces.drawing_text_properties.DrawingTextProperties.activate_frame
@@ -2675,7 +2675,7 @@ class CatTextFrameType(Enum):
     catCustom = 12
 
 
-class CatTextProperty(Enum):
+class CatTextProperty(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_text.DrawingText.get_parameter_on_sub_string
     pycatia.drafting_interfaces.drawing_text.DrawingText.set_parameter_on_sub_string
@@ -2699,7 +2699,7 @@ class CatTextProperty(Enum):
     catKerning = 16
 
 
-class CatThreadLinkedTo(Enum):
+class CatThreadLinkedTo(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_thread.DrawingThread.type
     pycatia.drafting_interfaces.drawing_thread.DrawingThread.is_linked_to
@@ -2713,7 +2713,7 @@ class CatThreadLinkedTo(Enum):
     cat3DThread = 6
 
 
-class CatThreadPolarity(Enum):
+class CatThreadPolarity(IntEnum):
     """
     pycatia.part_interfaces.thread.Thread.set_explicit_polarity
     """
@@ -2721,7 +2721,7 @@ class CatThreadPolarity(Enum):
     catTap = 1
 
 
-class CatThreadSide(Enum):
+class CatThreadSide(IntEnum):
     """
     pycatia.part_interfaces.thread.Thread.side
     """
@@ -2729,7 +2729,7 @@ class CatThreadSide(Enum):
     catLeftSide = 1
 
 
-class CatThreadStandard(Enum):
+class CatThreadStandard(IntEnum):
     """
     pycatia.part_interfaces.thread.Thread.create_standard_thread_design_table
     """
@@ -2737,7 +2737,7 @@ class CatThreadStandard(Enum):
     catMetricThickPitch = 1
 
 
-class CatThreadType(Enum):
+class CatThreadType(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_thread.DrawingThread.type
     """
@@ -2745,7 +2745,7 @@ class CatThreadType(Enum):
     catTaped = 1
 
 
-class CatTreeOrientationEnum(Enum):
+class CatTreeOrientationEnum(IntEnum):
     """
     pycatia.in_interfaces.tree_viz_manip_setting_att.TreeVizManipSettingAtt.orientation
     """
@@ -2753,7 +2753,7 @@ class CatTreeOrientationEnum(Enum):
     catTreeOrientationHorizontal = 1
 
 
-class CatTreeSizeTypeEnum(Enum):
+class CatTreeSizeTypeEnum(IntEnum):
     """
     pycatia.in_interfaces.tree_viz_manip_setting_att.TreeVizManipSettingAtt.size_type
     """
@@ -2761,7 +2761,7 @@ class CatTreeSizeTypeEnum(Enum):
     catTreeSizeTypeTextDependentSize = 1
 
 
-class CatTreeTypeEnum(Enum):
+class CatTreeTypeEnum(IntEnum):
     """
     pycatia.in_interfaces.tree_viz_manip_setting_att.TreeVizManipSettingAtt.type
     """
@@ -2771,7 +2771,7 @@ class CatTreeTypeEnum(Enum):
     catTreeTypeRelational = 3
 
 
-class CatView2DModeVisu(Enum):
+class CatView2DModeVisu(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_view.Layout2DView.visu_2d_mode
     """
@@ -2779,7 +2779,7 @@ class CatView2DModeVisu(Enum):
     catView2DModeNoShow = 1
 
 
-class CatViewBackgroundMode(Enum):
+class CatViewBackgroundMode(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_setting_att.Layout2DSettingAtt.view_background_mode
     """
@@ -2790,7 +2790,7 @@ class CatViewBackgroundMode(Enum):
     catUnpickableLowIntensity = 4
 
 
-class CatViewFilterCreationMode(Enum):
+class CatViewFilterCreationMode(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_setting_att.Layout2DSettingAtt.view_filter_creation_mode
     """
@@ -2799,7 +2799,7 @@ class CatViewFilterCreationMode(Enum):
     catDedicatedFilter = 2
 
 
-class CatViewSide(Enum):
+class CatViewSide(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_views.Layout2DViews.add_related
     """
@@ -2813,7 +2813,7 @@ class CatViewSide(Enum):
     catBRCorner = 7
 
 
-class CatViewType(Enum):
+class CatViewType(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_views.Layout2DViews.add_auxiliary
     pycatia.drafting_2dL_interfaces.layout_2d_views.Layout2DViews.add_from_3d_plane
@@ -2823,7 +2823,7 @@ class CatViewType(Enum):
     catSectionCutView = 2
 
 
-class CatVisLayerType(Enum):
+class CatVisLayerType(IntEnum):
     """
     pycatia.in_interfaces.vis_property_set.VisPropertySet.get_layer
     pycatia.in_interfaces.vis_property_set.VisPropertySet.set_layer
@@ -2832,7 +2832,7 @@ class CatVisLayerType(Enum):
     catVisLayerNone = 1
 
 
-class CatVisPropertyPick(Enum):
+class CatVisPropertyPick(IntEnum):
     """
     pycatia.in_interfaces.vis_property_set.VisPropertySet.get_pick
     pycatia.in_interfaces.vis_property_set.VisPropertySet.set_pick
@@ -2841,7 +2841,7 @@ class CatVisPropertyPick(Enum):
     catVisPropertyNoPickAttr = 1
 
 
-class CatVisPropertyShow(Enum):
+class CatVisPropertyShow(IntEnum):
     """
     pycatia.in_interfaces.vis_property_set.VisPropertySet.get_show
     pycatia.in_interfaces.vis_property_set.VisPropertySet.set_show
@@ -2850,7 +2850,7 @@ class CatVisPropertyShow(Enum):
     catVisPropertyNoShowAttr = 1
 
 
-class CatVisPropertyStatus(Enum):
+class CatVisPropertyStatus(IntEnum):
     """
     pycatia.in_interfaces.vis_property_set.VisPropertySet.get_layer
     pycatia.in_interfaces.vis_property_set.VisPropertySet.get_pick
@@ -2871,7 +2871,7 @@ class CatVisPropertyStatus(Enum):
     catVisPropertyUnDefined = 1
 
 
-class CatVisPropertyType(Enum):
+class CatVisPropertyType(IntEnum):
     """
     pycatia.in_interfaces.vis_property_set.VisPropertySet.get_real_inheritance
     pycatia.in_interfaces.vis_property_set.VisPropertySet.get_visible_inheritance
@@ -2882,7 +2882,7 @@ class CatVisPropertyType(Enum):
     catVisPropertyOpacity = 3
 
 
-class CatVisuBackgroundMode(Enum):
+class CatVisuBackgroundMode(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_view.Layout2DView.visu_background
     """
@@ -2893,7 +2893,7 @@ class CatVisuBackgroundMode(Enum):
     catLowIntNoPick = 4
 
 
-class CatVisuIn3DMode(Enum):
+class CatVisuIn3DMode(IntEnum):
     """
     pycatia.drafting_2dL_interfaces.layout_2d_sheet.Layout2DSheet.visu_in_3d
     pycatia.drafting_2dL_interfaces.layout_2d_root.Layout2DRoot.visu_in_3d
@@ -2903,7 +2903,7 @@ class CatVisuIn3DMode(Enum):
     catHideAll = 1
 
 
-class CatVisualizationType(Enum):
+class CatVisualizationType(IntEnum):
     """
     pycatia.general_knowledge_interfaces.expert_rule_base_runtime.ExpertRuleBaseRuntime.text_visualization
     """
@@ -2912,7 +2912,7 @@ class CatVisualizationType(Enum):
     Both = 2
 
 
-class CatWeldAdditionalSymbol(Enum):
+class CatWeldAdditionalSymbol(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.get_additional_symbol
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.set_additional_symbol
@@ -2925,7 +2925,7 @@ class CatWeldAdditionalSymbol(Enum):
     catSmoothWelding = 5
 
 
-class CatWelding(Enum):
+class CatWelding(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.get_additional_symbol
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.get_finish_symbol
@@ -2939,7 +2939,7 @@ class CatWelding(Enum):
     catSecondWelding = 2
 
 
-class CatWeldingField(Enum):
+class CatWeldingField(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.get_finish_symbol
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.get_symbol
@@ -2957,7 +2957,7 @@ class CatWeldingField(Enum):
     catWeldingFieldSeven = 7
 
 
-class CatWeldingSide(Enum):
+class CatWeldingSide(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.identification_line_side
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.welding_side
@@ -2966,7 +2966,7 @@ class CatWeldingSide(Enum):
     catWeldingDown = 1
 
 
-class CatWeldingSymbol(Enum):
+class CatWeldingSymbol(IntEnum):
     """
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.get_symbol
     pycatia.drafting_interfaces.drawing_welding.DrawingWelding.set_symbol
@@ -3004,7 +3004,7 @@ class CatWeldingSymbol(Enum):
     catInclinedJointWelding = 29
 
 
-class CatWindowState(Enum):
+class CatWindowState(IntEnum):
     """
     pycatia.in_interfaces.window.Window.window_state
     """
@@ -3013,7 +3013,7 @@ class CatWindowState(Enum):
     catWindowStateNormal = 2
 
 
-class CatWorkModeType(Enum):
+class CatWorkModeType(IntEnum):
     """
     pycatia.product_structure_interfaces.product.Product.apply_work_mode
     """
@@ -3022,7 +3022,7 @@ class CatWorkModeType(Enum):
     DESIGN_MODE = 2
 
 
-class CatftaDimConfigureSnapping(Enum):
+class CatftaDimConfigureSnapping(IntEnum):
     """
     pycatia.cat_tps_interfaces.fta_setting_att.FTASettingAtt.dim_configure_snapping
     """
@@ -3032,7 +3032,7 @@ class CatftaDimConfigureSnapping(Enum):
     CATFTADimSnappingBoth = 3
 
 
-class CatftaDimCreateOn(Enum):
+class CatftaDimCreateOn(IntEnum):
     """
     pycatia.cat_tps_interfaces.fta_setting_att.FTASettingAtt.dim_create_on
     """
@@ -3041,7 +3041,7 @@ class CatftaDimCreateOn(Enum):
     CATFTADimCreateOnEdge = 2
 
 
-class CatftaLeaderAssociativity(Enum):
+class CatftaLeaderAssociativity(IntEnum):
     """
     pycatia.cat_tps_interfaces.fta_infra_setting_att.FtaInfraSettingAtt.leader_associativity
     """
@@ -3050,7 +3050,7 @@ class CatftaLeaderAssociativity(Enum):
     CATFTALeaderAssociativityPerpendicular = 2
 
 
-class Catv4Iv4V5SpecDraftMigrationEnum(Enum):
+class Catv4Iv4V5SpecDraftMigrationEnum(IntEnum):
     """
     pycatia.catia_v4_interfaces.spec_v4_setting_att.SpecV4SettingAtt.draft_feature_migration_mode
     """
@@ -3058,7 +3058,7 @@ class Catv4Iv4V5SpecDraftMigrationEnum(Enum):
     coneMode = 1
 
 
-class Catv4Iv5V4AssociativityModeEnum(Enum):
+class Catv4Iv5V4AssociativityModeEnum(IntEnum):
     """
     pycatia.catia_v4_interfaces.v4_writing_setting_att.V4WritingSettingAtt.asso_mode
     """
@@ -3067,7 +3067,7 @@ class Catv4Iv5V4AssociativityModeEnum(Enum):
     NonAssociativityModeAndNoSolidCreation = 2
 
 
-class Catv4Iv5V4ErrorFeatureCreationEnum(Enum):
+class Catv4Iv5V4ErrorFeatureCreationEnum(IntEnum):
     """
     pycatia.catia_v4_interfaces.v4_writing_setting_att.V4WritingSettingAtt.mode_error_display
     """
@@ -3076,7 +3076,7 @@ class Catv4Iv5V4ErrorFeatureCreationEnum(Enum):
     AlwaysCreateErrorFeatures = 2
 
 
-class Catv4Iv5V4InternalCurveCreationEnum(Enum):
+class Catv4Iv5V4InternalCurveCreationEnum(IntEnum):
     """
     pycatia.catia_v4_interfaces.v4_writing_setting_att.V4WritingSettingAtt.mode_create_display
     """
@@ -3085,7 +3085,7 @@ class Catv4Iv5V4InternalCurveCreationEnum(Enum):
     NoInternalCurveIsCreated = 2
 
 
-class Cd5SaveItem_Status(Enum):
+class Cd5SaveItem_Status(IntEnum):
     """
     pycatia.eno_cd5_interfaces.cd5_save_item.CD5SaveItem.status
 
@@ -3100,7 +3100,7 @@ class Cd5SaveItem_Status(Enum):
     CD5SaveItem_NotFound = 7
 
 
-class Cd5SaveOperation_Scope(Enum):
+class Cd5SaveOperation_Scope(IntEnum):
     """
     pycatia.eno_cd5_interfaces.cd5_engine_v6_r2014x.CD5EngineV6R2014x.create_save_operation
     """
@@ -3109,7 +3109,7 @@ class Cd5SaveOperation_Scope(Enum):
     CD5SaveOperation_Session = 2
 
 
-class ContactStiffness_Type(Enum):
+class ContactStiffness_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_mech_conn_behavior.ABQMechConnBehavior.contact_stiffness
     """
@@ -3117,7 +3117,7 @@ class ContactStiffness_Type(Enum):
     STIFF_VALUE = 1
 
 
-class DistributionType(Enum):
+class DistributionType(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_temperature.ABQTemperature.distribution
     pycatia.abq_automation_interfaces.abq_temperature.ABQTemperature.distribution
@@ -3128,7 +3128,7 @@ class DistributionType(Enum):
     JOB_USERDEFINED = 3
 
 
-class DmuTrackMoveMode(Enum):
+class DmuTrackMoveMode(IntEnum):
     """
     pycatia.fitting_interfaces.track.Track.move_mode
     """
@@ -3136,7 +3136,7 @@ class DmuTrackMoveMode(Enum):
     DMUTrackTimeMode = 1
 
 
-class DnbActBehaviorType(Enum):
+class DnbActBehaviorType(IntEnum):
     """
     ?
     """
@@ -3144,7 +3144,7 @@ class DnbActBehaviorType(Enum):
     DNBBehaviorParent = 1
 
 
-class DnbAnalysisLevel(Enum):
+class DnbAnalysisLevel(IntEnum):
     """
     ?
     """
@@ -3154,7 +3154,7 @@ class DnbAnalysisLevel(Enum):
     DNBAnalysisLevelInterrupt = 3
 
 
-class DnbAssignStatus(Enum):
+class DnbAssignStatus(IntEnum):
     """
     pycatia.dnb_fastener_interfaces.dnb_fastener_item_services.DnbFastenerItemServices.assign_fastener_to_process
     pycatia.dnb_fastener_interfaces.dnb_fastener_item_services.DnbFastenerItemServices.assign_fastener_to_resource
@@ -3167,7 +3167,7 @@ class DnbAssignStatus(Enum):
     DNBPartsNotLoaded = 5
 
 
-class DnbAuxilliaryDeviceType(Enum):
+class DnbAuxilliaryDeviceType(IntEnum):
     """
     pycatia.dnb_robot_interfaces.aux_devices_mgt.AuxDevicesMgt.define_aux_devices
     pycatia.dnb_robot_interfaces.aux_devices_mgt.AuxDevicesMgt.get_aux_devices_type
@@ -3178,7 +3178,7 @@ class DnbAuxilliaryDeviceType(Enum):
     AuxilliaryDeviceType_Conveyor = 3
 
 
-class DnbHlnkBehaviorType(Enum):
+class DnbHlnkBehaviorType(IntEnum):
     """
     ?
     """
@@ -3186,7 +3186,7 @@ class DnbHlnkBehaviorType(Enum):
     DNBBehaviorPause = 1
 
 
-class DnbSimGraphUpdateMode(Enum):
+class DnbSimGraphUpdateMode(IntEnum):
     """
     ?
     """
@@ -3194,7 +3194,7 @@ class DnbSimGraphUpdateMode(Enum):
     DNBSimGraphUpdateEnabled = 1
 
 
-class DnbSimInitStateAttr(Enum):
+class DnbSimInitStateAttr(IntEnum):
     """
     pycatia.dnb_simulation_interfaces.simulation_init_state.SimulationInitState.restore_initial_state
     pycatia.dnb_simulation_interfaces.simulation_init_state.SimulationInitState.restore_initial_state_list
@@ -3218,7 +3218,7 @@ class DnbSimInitStateAttr(Enum):
     DNBAllInitStateAttr = 14
 
 
-class DnbSimNavigationMode(Enum):
+class DnbSimNavigationMode(IntEnum):
     """
     ?
     """
@@ -3226,7 +3226,7 @@ class DnbSimNavigationMode(Enum):
     DNBSimNavigationModeAnimate = 1
 
 
-class DnbVisualizationMode(Enum):
+class DnbVisualizationMode(IntEnum):
     """
     ?
     """
@@ -3234,7 +3234,7 @@ class DnbVisualizationMode(Enum):
     DNBVisualizationModeCurves = 1
 
 
-class DNBIAMfgAssemblyType(Enum):
+class DNBIAMfgAssemblyType(IntEnum):
     """
     pycatia.dnb_dpm_interfaces.mfg_assembly.MfgAssembly.ma_type
     pycatia.dnb_dpm_interfaces.mfg_assembly_factory.MfgAssemblyFactory.create_mfg_assembly
@@ -3248,7 +3248,7 @@ class DNBIAMfgAssemblyType(Enum):
     notSpecified = 4
 
 
-class DNBPPRRemoveStatus(Enum):
+class DNBPPRRemoveStatus(IntEnum):
     """
     pycatia.dnb_fastener_interfaces.fastener.Fastener.remove_from_ppr
     """
@@ -3257,7 +3257,7 @@ class DNBPPRRemoveStatus(Enum):
     DNBFastenerSuccessStatus = 2
 
 
-class DNBTCPTraceLegends(Enum):
+class DNBTCPTraceLegends(IntEnum):
     """
     pycatia.dnb_robot_interfaces.tcp_trace.TCPTrace.get_legends_visibility
     pycatia.dnb_robot_interfaces.tcp_trace.TCPTrace.set_legends_visibility
@@ -3275,7 +3275,7 @@ class DNBTCPTraceLegends(Enum):
     DNBTCPTraceLegendAlwaysVisible = 10
 
 
-class DNBTCPTraceReps(Enum):
+class DNBTCPTraceReps(IntEnum):
     """
     pycatia.dnb_robot_interfaces.tcp_trace.TCPTrace.get_colour
     pycatia.dnb_robot_interfaces.tcp_trace.TCPTrace.get_legends_visibility
@@ -3297,7 +3297,7 @@ class DNBTCPTraceReps(Enum):
     DNBTCPTraceRepAxis = 3
 
 
-class ElemBehavEnum(Enum):
+class ElemBehavEnum(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_global_element_assignment.ABQGlobalElementAssignment.get_element_properties
     pycatia.abq_automation_interfaces.abq_global_element_assignment.ABQGlobalElementAssignment.set_element_properties
@@ -3311,7 +3311,7 @@ class ElemBehavEnum(Enum):
     GASKET = 6
 
 
-class ElemIdEnum(Enum):
+class ElemIdEnum(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_global_element_assignment.ABQGlobalElementAssignment.get_element_properties
     pycatia.abq_automation_interfaces.abq_global_element_assignment.ABQGlobalElementAssignment.set_element_properties
@@ -3330,7 +3330,7 @@ class ElemIdEnum(Enum):
     LINE_PARABOLIC = 11
 
 
-class FixedTimeIncrementMethod(Enum):
+class FixedTimeIncrementMethod(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_explicit_dynamics_step.ABQExplicitDynamicsStep.fixed_time_increment_method
     pycatia.abq_automation_interfaces.abq_explicit_dynamics_step.ABQExplicitDynamicsStep.user_defined_time_increment_value
@@ -3339,7 +3339,7 @@ class FixedTimeIncrementMethod(Enum):
     ABQ_FTI_USER_DEFINED = 1
 
 
-class FormulationOption_Type(Enum):
+class FormulationOption_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_surface_to_surface_contact.ABQSurfaceToSurfaceContact.formulation_option
     pycatia.abq_automation_interfaces.abq_fastened_connection_enhancement.ABQFastenedConnectionEnhancement.formulation_option
@@ -3350,7 +3350,7 @@ class FormulationOption_Type(Enum):
     NODETOSURFACE = 2
 
 
-class Formulation_Type(Enum):
+class Formulation_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_mech_conn_behavior.ABQMechConnBehavior.formulation
     """
@@ -3358,7 +3358,7 @@ class Formulation_Type(Enum):
     PENALTY = 1
 
 
-class FrameVisibility(Enum):
+class FrameVisibility(IntEnum):
     """
     ?
     dnb_d5_interfaces.?
@@ -3368,7 +3368,7 @@ class FrameVisibility(Enum):
     VisRetain = 2
 
 
-class GeometricalFeatureType(Enum):
+class GeometricalFeatureType(IntEnum):
     """
     pycatia.hybrid_shape_interfaces.hybrid_shape_factory.HybridShapeFactory.get_geometrical_feature_type
     """
@@ -3382,7 +3382,7 @@ class GeometricalFeatureType(Enum):
     Solid_Volume = 7
 
 
-class HTSActivityGroupMotionBasis(Enum):
+class HTSActivityGroupMotionBasis(IntEnum):
     """
     pycatia.dnb_human_sim_interfaces.human_activity_group.HumanActivityGroup.motion_basis
     """
@@ -3391,7 +3391,7 @@ class HTSActivityGroupMotionBasis(Enum):
     HAGMOTBASIS_USERTIME = 2
 
 
-class HTSBodyPoseOptions(Enum):
+class HTSBodyPoseOptions(IntEnum):
     """
     pycatia.dnb_human_sim_interfaces.walk_activity.WalkActivity.body_pose
     """
@@ -3399,7 +3399,7 @@ class HTSBodyPoseOptions(Enum):
     BODYPOSE_RESET = 1
 
 
-class HTSEndEffector(Enum):
+class HTSEndEffector(IntEnum):
     """
     pycatia.dnb_human_sim_interfaces.move_to_posture_activity.MoveToPostureActivity.get_part_relation
     pycatia.dnb_human_sim_interfaces.move_to_posture_activity.MoveToPostureActivity.set_part_relation
@@ -3414,7 +3414,7 @@ class HTSEndEffector(Enum):
     EE_NECK = 6
 
 
-class HTSHand(Enum):
+class HTSHand(IntEnum):
     """
     pycatia.dnb_human_sim_interfaces.pick_activity.PickActivity.picking_hand
     pycatia.dnb_human_sim_interfaces.human_activity_group_factory.HumanActivityGroupFactory.create_pick
@@ -3424,7 +3424,7 @@ class HTSHand(Enum):
     HAND_LEFT = 1
 
 
-class HTSManikinReferential(Enum):
+class HTSManikinReferential(IntEnum):
     """
     pycatia.dnb_human_sim_interfaces.move_to_posture_activity.MoveToPostureActivity.referential
     """
@@ -3440,7 +3440,7 @@ class HTSManikinReferential(Enum):
     REF_HPOINTPROJECTION = 9
 
 
-class HTSMotionBasis(Enum):
+class HTSMotionBasis(IntEnum):
     """
     pycatia.dnb_human_sim_interfaces.move_to_posture_activity.MoveToPostureActivity.motion_basis
     """
@@ -3448,7 +3448,7 @@ class HTSMotionBasis(Enum):
     MOTBASIS_TIME = 1
 
 
-class HTSPickType(Enum):
+class HTSPickType(IntEnum):
     """
     pycatia.dnb_human_sim_interfaces.pick_activity.PickActivity.pick_type
     pycatia.dnb_human_sim_interfaces.human_activity_group_factory.HumanActivityGroupFactory.create_pick
@@ -3458,7 +3458,7 @@ class HTSPickType(Enum):
     BOTH_HANDS = 1
 
 
-class HTSSearchIntensity(Enum):
+class HTSSearchIntensity(IntEnum):
     """
     pycatia.dnb_human_sim_interfaces.collision_free_walk.CollisionFreeWalk.search_intensity
     pycatia.dnb_human_sim_interfaces.human_activity_group_factory.HumanActivityGroupFactory.create_collision_free_walk_bwd_on_arr_area
@@ -3475,7 +3475,7 @@ class HTSSearchIntensity(Enum):
     COARSESEARCH = 2
 
 
-class HTSStrideOptions(Enum):
+class HTSStrideOptions(IntEnum):
     """
     pycatia.dnb_human_sim_interfaces.walk_activity.WalkActivity.stride
     """
@@ -3484,7 +3484,7 @@ class HTSStrideOptions(Enum):
     STRIDE_LONG = 2
 
 
-class HTSSwingOptions(Enum):
+class HTSSwingOptions(IntEnum):
     """
     pycatia.dnb_human_sim_interfaces.walk_activity.WalkActivity.swing
     """
@@ -3494,7 +3494,7 @@ class HTSSwingOptions(Enum):
     SWING_CURRENT = 3
 
 
-class HTSWalkMotionBasis(Enum):
+class HTSWalkMotionBasis(IntEnum):
     """
     pycatia.dnb_human_sim_interfaces.walk_activity.WalkActivity.motion_basis
     """
@@ -3503,7 +3503,7 @@ class HTSWalkMotionBasis(Enum):
     WALKMOTBASIS_USERTIME = 2
 
 
-class Incrementation_Type(Enum):
+class Incrementation_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_general_static_step.ABQGeneralStaticStep.time_incrementation_method
     pycatia.abq_automation_interfaces.abq_explicit_dynamics_step.ABQExplicitDynamicsStep.time_incrementation_method
@@ -3513,7 +3513,7 @@ class Incrementation_Type(Enum):
     FIXED_INCREMENT = 1
 
 
-class InitialThickness_Type(Enum):
+class InitialThickness_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_gasket_property.ABQGasketProperty.initial_thickness_type
     """
@@ -3521,7 +3521,7 @@ class InitialThickness_Type(Enum):
     INITIAL_THICKNESS_SPECIFY = 1
 
 
-class ItemAssignmentType(Enum):
+class ItemAssignmentType(IntEnum):
     """
     pycatia.dnb_work_interfaces.wi_text_access_ei.WITextAccessEi.get_geom_referred_by_annotation
     pycatia.dmaps_interfaces.items.Items.add_by_assignment_type
@@ -3544,7 +3544,7 @@ class ItemAssignmentType(Enum):
     productvisualization = 6
 
 
-class Job_Type(Enum):
+class Job_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_job.ABQJob.type
     
@@ -3557,7 +3557,7 @@ class Job_Type(Enum):
     RESTART = 5
 
 
-class MaxStiffness_Type(Enum):
+class MaxStiffness_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_mech_conn_behavior.ABQMechConnBehavior.max_stiffness
     """
@@ -3565,7 +3565,7 @@ class MaxStiffness_Type(Enum):
     MAX_STIFF_VALUE = 1
 
 
-class MemoryUnit_Type(Enum):
+class MemoryUnit_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_job.ABQJob.memory_unit
     """
@@ -3573,7 +3573,7 @@ class MemoryUnit_Type(Enum):
     PERCENT = 1
 
 
-class MotionBasis(Enum):
+class MotionBasis(IntEnum):
     """
     pycatia.dnb_robot_interfaces.generic_motion_profile.GenericMotionProfile.get_motion_basis
     pycatia.dnb_robot_interfaces.generic_motion_profile.GenericMotionProfile.set_motion_basis
@@ -3588,7 +3588,7 @@ class MotionBasis(Enum):
     MOTION_TIME = 2
 
 
-class ParallelMethodStdType(Enum):
+class ParallelMethodStdType(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_job.ABQJob.parallelization_method_standard
     """
@@ -3596,7 +3596,7 @@ class ParallelMethodStdType(Enum):
     SUPERNODE = 1
 
 
-class PositionToleranceType(Enum):
+class PositionToleranceType(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_fastened_pair.ABQFastenedPair.position_tolerance
     pycatia.abq_automation_interfaces.abq_fastened_connection_enhancement.ABQFastenedConnectionEnhancement.position_tolerance
@@ -3605,7 +3605,7 @@ class PositionToleranceType(Enum):
     SPECIFIED = 1
 
 
-class PressureOverclosure_Type(Enum):
+class PressureOverclosure_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_mech_conn_behavior.ABQMechConnBehavior.pressure_overclosure
     """
@@ -3615,7 +3615,7 @@ class PressureOverclosure_Type(Enum):
     TABULAR = 3
 
 
-class RasterLevelOfDetail(Enum):
+class RasterLevelOfDetail(IntEnum):
     """
     ?
     Precision for views generated as raster (DPI).
@@ -3626,7 +3626,7 @@ class RasterLevelOfDetail(Enum):
     Customize = 3
 
 
-class ResponseType(Enum):
+class ResponseType(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_heat_transfer_step.ABQHeatTransferStep.response
     """
@@ -3634,7 +3634,7 @@ class ResponseType(Enum):
     TRANSIENT = 1
 
 
-class Sliding_Type(Enum):
+class Sliding_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_surface_to_surface_contact.ABQSurfaceToSurfaceContact.sliding
     """
@@ -3642,7 +3642,7 @@ class Sliding_Type(Enum):
     SMALL = 1
 
 
-class SPMDistributionMode(Enum):
+class SPMDistributionMode(IntEnum):
     """
     pycatia.analysis_interfaces.analysis_color_map.AnalysisColorMap.distribution_mode
     """
@@ -3651,7 +3651,7 @@ class SPMDistributionMode(Enum):
     SPM_LOG = 2
 
 
-class SpringDef_Type(Enum):
+class SpringDef_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_spring_connection_property.ABQSpringConnectionProperty.spring_definition
     pycatia.abq_automation_interfaces.abq_damper_connection_property.ABQDamperConnectionProperty.damper_def
@@ -3660,7 +3660,7 @@ class SpringDef_Type(Enum):
     ABQ_NON_LINEAR = 1
 
 
-class SpringDof_Type(Enum):
+class SpringDof_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_spring_connection_property.ABQSpringConnectionProperty.get_linear_stiffness
     pycatia.abq_automation_interfaces.abq_spring_connection_property.ABQSpringConnectionProperty.get_non_linear_stiffness
@@ -3683,7 +3683,7 @@ class SpringDof_Type(Enum):
     UR3_DOF = 5
 
 
-class SpringTypeType(Enum):
+class SpringTypeType(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_spring_connection_property.ABQSpringConnectionProperty.spring_type
     """
@@ -3691,7 +3691,7 @@ class SpringTypeType(Enum):
     GENERAL = 1
 
 
-class StabilizationStiffness_Type(Enum):
+class StabilizationStiffness_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_gasket_property.ABQGasketProperty.stabilization_stiffness_type
     """
@@ -3699,7 +3699,7 @@ class StabilizationStiffness_Type(Enum):
     STABILIZATION_SPECIFY = 1
 
 
-class Stabilization_Type(Enum):
+class Stabilization_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_general_static_step.ABQGeneralStaticStep.stabilization_method
     """
@@ -3708,7 +3708,7 @@ class Stabilization_Type(Enum):
     FACTOR = 2
 
 
-class SWKAnthroSex(Enum):
+class SWKAnthroSex(IntEnum):
     """
     pycatia.dnb_human_modeling_interfaces.swk_hmi_workbench.SWKHmiWorkbench.create_left_forearm
     pycatia.dnb_human_modeling_interfaces.swk_hmi_workbench.SWKHmiWorkbench.create_manikin
@@ -3718,7 +3718,7 @@ class SWKAnthroSex(Enum):
     Female = 1
 
 
-class SWKPostureSpec(Enum):
+class SWKPostureSpec(IntEnum):
     """
     pycatia.dnb_human_modeling_interfaces.swk_body.SWKBody.set_posture
     """
@@ -3732,7 +3732,7 @@ class SWKPostureSpec(Enum):
     SWKPostureSpecInitial = 7
 
 
-class TimeSpan_Type(Enum):
+class TimeSpan_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_smooth_step_amplitude.ABQSmoothStepAmplitude.time_span
     pycatia.abq_automation_interfaces.abq_tabular_amplitude.ABQTabularAmplitude.time_span

@@ -75,7 +75,7 @@ for cat_part in source_files:
 
         # lets turn off the specification tree.
         specs_and_geom = SpecsAndGeomWindow(active_window.com_object)
-        specs_and_geom.layout = CatSpecsAndGeomWindowLayout.catWindowGeomOnly.value
+        specs_and_geom.layout = CatSpecsAndGeomWindowLayout.catWindowGeomOnly
 
         view_point_3D = active_viewer.create_viewer_3d().viewpoint_3d
 
@@ -87,9 +87,9 @@ for cat_part in source_files:
             active_viewer.reframe()
             active_viewer.zoom_in()
             file_name = save_file_path(product.part_number, product.revision, view)
-            active_viewer.capture_to_file(CatCaptureFormat.catCaptureFormatJPEG.value, str(file_name))
+            active_viewer.capture_to_file(CatCaptureFormat.catCaptureFormatJPEG, str(file_name))
 
         # reset background colour.
         active_viewer.put_background_color(background_colour)  # type: ignore
         # bring back the specification tree.
-        specs_and_geom.layout = CatSpecsAndGeomWindowLayout.catWindowSpecsAndGeom.value
+        specs_and_geom.layout = CatSpecsAndGeomWindowLayout.catWindowSpecsAndGeom

@@ -3,7 +3,7 @@
 ## 0.9.3
 
 * updated PageSetup() to add missing (all) class methods.
-* added `pycatia.enumeration.enums.py` - These are python Enum classes that can be
+* added `pycatia.enumeration.enums.py` - These are python IntEnum classes that can be
   used in lieu of the tuples defined in `pycatia.enumeration.enumeration_types.py`.
   To use these new Enum classes see the examples which have been updated. There
   are no plans to remove `pycatia.enumeration.enumeration_types.py` so existing

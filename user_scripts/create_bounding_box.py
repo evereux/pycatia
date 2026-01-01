@@ -251,7 +251,7 @@ ref_line_2d_left = part.create_reference_from_object(line_2d_left)
 
 constraints_sketch = sketch_bbox_1.constraints
 
-cst_distance = CatConstraintType.catCstTypeDistance.value
+cst_distance = CatConstraintType.catCstTypeDistance
 constraint_btm = constraints_sketch.add_bi_elt_cst(cst_distance, ref_line_2d_btm, ref_point_4)
 constraint_top = constraints_sketch.add_bi_elt_cst(cst_distance, ref_point_3, ref_line_2d_top)
 constraint_left = constraints_sketch.add_bi_elt_cst(cst_distance, ref_line_2d_left, ref_point_2)
@@ -273,15 +273,15 @@ geometry_2d = Geometry2D(geometric_elements_zx.get_item('Mark.1').com_object)
 # geometry_2d = Geometry2D(geometric_elements_zx.get_item('Empreinte.1').com_object)# For French locales.
 geometry_2d.construction = True
 ref_geometry_zx = part.create_reference_from_object(geometry_zx)
-cst_parallel = CatConstraintType.catCstTypeParallelism.value
+cst_parallel = CatConstraintType.catCstTypeParallelism
 constraint_6 = constraints_sketch.add_bi_elt_cst(cst_parallel, ref_line_2d_btm, ref_geometry_zx)
-cst_driving = CatConstraintMode.catCstModeDrivingDimension.value
+cst_driving = CatConstraintMode.catCstModeDrivingDimension
 constraint_6.mode = cst_driving
 # make the top line parallel with the bottom line.
 constraint_7 = constraints_sketch.add_bi_elt_cst(cst_parallel, ref_line_2d_btm, ref_line_2d_top)
 constraint_7.mode = cst_driving
 # make the left and right lines normal to the bottom line.
-cst_normal = CatConstraintType.catCstTypePerpendicularity.value
+cst_normal = CatConstraintType.catCstTypePerpendicularity
 constraint_8 = constraints_sketch.add_bi_elt_cst(cst_normal, ref_line_2d_btm, ref_line_2d_left)
 constraint_8.mode = cst_driving
 constraint_9 = constraints_sketch.add_bi_elt_cst(cst_normal, ref_line_2d_btm, ref_line_2d_right)
@@ -362,7 +362,7 @@ line_guide_end = Length(line_guide.end_offset.com_object)
 line_guide_end.value = 1
 
 contraints_part = part.constraints
-cat_cst_type_length = CatConstraintType.catCstTypeLength.value
+cat_cst_type_length = CatConstraintType.catCstTypeLength
 contraint_dz = contraints_part.add_mono_elt_cst(cat_cst_type_length, ref_line_guide)
 length_dz = Length(contraint_dz.dimension.com_object)
 
@@ -392,7 +392,7 @@ part.update()
 
 selection.clear()
 selection.add(gs_bbox)
-no_show = CatVisPropertyShow.catVisPropertyNoShowAttr.value
+no_show = CatVisPropertyShow.catVisPropertyNoShowAttr
 selection.vis_properties.set_show(no_show)
 selection.clear()
 selection.add(body_bbox)

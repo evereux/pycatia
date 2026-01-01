@@ -13,20 +13,20 @@ def create_drawing(sheet_size: str):
     drawing_document = DrawingDocument(document.com_object)
 
     # apply the catISO drawing standard.
-    drawing_document.standard = CatDrawingStandard.catISO.value
+    drawing_document.standard = CatDrawingStandard.catISO
     sheets = drawing_document.sheets
     sheet_1 = sheets.item(sheet_names[0])
-    sheet_1.paper_size = getattr(CatPaperSize, 'catPaperA0').value
+    sheet_1.paper_size = getattr(CatPaperSize, 'catPaperA0')
     sheet_1.scale = 1
-    sheet_1.Orientation = CatPaperOrientation.catPaperLandscape.value
+    sheet_1.Orientation = CatPaperOrientation.catPaperLandscape
 
     resize_active_view()
 
     # create new sheet 2
     sheet_2 = sheets.add(sheet_names[1])
-    sheet_2.paper_size = getattr(CatPaperSize, 'catPaperA0').value
+    sheet_2.paper_size = getattr(CatPaperSize, 'catPaperA0')
     sheet_2.scale = 1
-    sheet_1.Orientation = CatPaperOrientation.catPaperLandscape.value
+    sheet_1.Orientation = CatPaperOrientation.catPaperLandscape
 
     resize_active_view()
 

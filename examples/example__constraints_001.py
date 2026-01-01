@@ -37,4 +37,4 @@ ref_sub_prod_1 = sub_prod_1.reference_product
 sub_prod_1_name = f"{product.name}/{sub_prod_1.name}/!{product.name}/{sub_prod_1.name}/"
 reference = product.create_reference_from_name(sub_prod_1_name)
 
-constraints.add_mono_elt_cst(CatConstraintType.catCstTypeReference.value, reference)
+constraints.add_mono_elt_cst(CatConstraintType.catCstTypeReference, reference)

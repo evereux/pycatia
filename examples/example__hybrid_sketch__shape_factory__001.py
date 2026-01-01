@@ -90,10 +90,10 @@ constraints = sketch.constraints
 
 # create the length constraint.
 # left vertical line.
-constraint_length_1 = constraints.add_mono_elt_cst(CatConstraintType.catCstTypeLength.value,
+constraint_length_1 = constraints.add_mono_elt_cst(CatConstraintType.catCstTypeLength,
                                                    part.create_reference_from_object(line_1))
 # horizontal line.
-constraint_length_4 = constraints.add_mono_elt_cst(CatConstraintType.catCstTypeLength.value,
+constraint_length_4 = constraints.add_mono_elt_cst(CatConstraintType.catCstTypeLength,
                                                    part.create_reference_from_object(line_4))
 
 # make the constraint reference.
@@ -105,24 +105,24 @@ constraint_length_4 = constraints.add_mono_elt_cst(CatConstraintType.catCstTypeL
 
 # constrain the bottom line to h_direction
 constraint_horizontal = constraints.add_bi_elt_cst(
-    CatConstraintType.catCstTypeLength.value, part.create_reference_from_object(line_4),
+    CatConstraintType.catCstTypeLength, part.create_reference_from_object(line_4),
     part.create_reference_from_object(h_direction)
 )
 
 # constrain left vertical as angle to bottom line.
 constraint_angle = constraints.add_bi_elt_cst(
-    CatConstraintType.catCstTypeLength.value, part.create_reference_from_object(line_1),
+    CatConstraintType.catCstTypeLength, part.create_reference_from_object(line_1),
     part.create_reference_from_object(line_4)
 )
 
 # make the two horizontal lines parallel.
 constraint_p_h = constraints.add_bi_elt_cst(
-    CatConstraintType.catCstTypeLength.value, part.create_reference_from_object(line_1),
+    CatConstraintType.catCstTypeLength, part.create_reference_from_object(line_1),
     part.create_reference_from_object(line_3)
 )
 # make the two vertical lines parallel.
 constraint_p_v = constraints.add_bi_elt_cst(
-    CatConstraintType.catCstTypeLength.value, part.create_reference_from_object(line_2),
+    CatConstraintType.catCstTypeLength, part.create_reference_from_object(line_2),
     part.create_reference_from_object(line_4)
 )
 
@@ -132,7 +132,7 @@ projected_point = Geometry2D(geometric_elements1.item(1).com_object)
 projected_point.construction = True
 point_ref = part.create_reference_from_object(projected_point)
 
-constraint_mid = constraints.add_bi_elt_cst(CatConstraintType.catCstTypeLength.value,
+constraint_mid = constraints.add_bi_elt_cst(CatConstraintType.catCstTypeLength,
                                             part.create_reference_from_object(point_1), point_ref)
 
 sketch.close_edition()

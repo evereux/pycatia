@@ -32,7 +32,7 @@ product = product_document.product
 # Change the work mode to Design Mode.
 # This is useful for CATIA configurations that work with a cache otherwise
 # methods on children may fail due to the document not being loaded.
-product.apply_work_mode(CatWorkModeType.DESIGN_MODE.value)
+product.apply_work_mode(CatWorkModeType.DESIGN_MODE)
 
 products = product.products
 

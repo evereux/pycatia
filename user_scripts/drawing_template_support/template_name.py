@@ -27,6 +27,6 @@ def create_template_name(sheet: DrawingSheet, size_info: dict):
     background_view, factory_2d, _ = get_background_view_and_factory(sheet)
     texts = background_view.texts
     new_text = texts.add(template_name, bottom_right_x, bottom_right_y)
-    anchor_position = CatTextAnchorPosition.catBottomRight.value
+    anchor_position = CatTextAnchorPosition.catBottomRight
     new_text.anchor_position = anchor_position
     set_text_properties(new_text, size=2.5)

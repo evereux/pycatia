@@ -50,7 +50,7 @@ def create_border(sheet: DrawingSheet, size_info: dict):
         factory_2d.create_line(sheet_x, y_offset * i, sheet_x - offset, y_offset * i)
 
     # add text for grid references
-    anchor_position = CatTextAnchorPosition.catMiddleCenter.value
+    anchor_position = CatTextAnchorPosition.catMiddleCenter
     texts = background_view.texts
 
     # horizontal numerical texts

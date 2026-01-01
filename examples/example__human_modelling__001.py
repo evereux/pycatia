@@ -29,9 +29,9 @@ product_document: ProductDocument = application.active_document
 product = product_document.product
 
 human_work_bench = SWKHmiWorkbench(product.get_technological_object("HumanWorkbench"))
-gender = SWKAnthroSex.Female.value
+gender = SWKAnthroSex.Female
 manikin = human_work_bench.create_manikin("Manikin1", gender, 50, 1)
-sit = SWKPostureSpec.SWKPostureSpecSit.value
+sit = SWKPostureSpec.SWKPostureSpecSit
 manikin.body.set_posture(sit, True)
 
 print(manikin.anthro.gender)

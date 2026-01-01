@@ -31,7 +31,7 @@ def add_title_block_text(texts: DrawingTexts,
     :return:
     """
     add_text = texts.add(text, text_x, text_y)
-    anchor_position = CatTextAnchorPosition.catBottomLeft.value
+    anchor_position = CatTextAnchorPosition.catBottomLeft
     add_text.anchor_position = anchor_position
     set_text_properties(add_text, size=size, font=font)
 
@@ -353,7 +353,7 @@ def create_title_block(sheet: DrawingSheet,
     # title
     title_x = (v3_1["x"] + v4['x']) / 2
     title_text = add_param_text(texts, parameters, "TITLE", title_x, h3['y'] + text_y_offset, size=4)
-    anchor_position = CatTextAnchorPosition.catBottomCenter.value
+    anchor_position = CatTextAnchorPosition.catBottomCenter
     title_text.anchor_position = anchor_position
     # sheet size
     add_param_text(texts, parameters, "SIZE", v3['x'] + text_x_offset + 1.5, h2['y'] + text_y_offset, size=4)

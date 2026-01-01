@@ -35,7 +35,7 @@ point_1 = factory_2d.create_point(40, 230)
 point_2 = factory_2d.create_point(80, 210)
 line_1 = factory_2d.create_line(50, 10, 150, 10)
 
-catDimDistance = CatDimType.catDimDistance.value
+catDimDistance = CatDimType.catDimDistance
 
 point_elements = (point_1, point_2)
 selection_points = (0, 0, 0, 0)

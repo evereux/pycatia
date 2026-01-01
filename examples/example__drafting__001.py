@@ -99,7 +99,7 @@ v_split_6 = factory_2d.create_line(a0_x, v_offset * 2, a0_x - offset, v_offset *
 
 # add some text to the border
 
-anchor_position = CatTextAnchorPosition.catMiddleCenter.value
+anchor_position = CatTextAnchorPosition.catMiddleCenter
 
 texts = background_view.texts
 

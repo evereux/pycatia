@@ -51,7 +51,7 @@ def create_copyright_box(sheet: DrawingSheet, parameters: Parameters):
 
     for text in reversed(text_list):
         add_text = texts.add(text, text_x, text_y)
-        anchor_position = CatTextAnchorPosition.catBottomLeft.value
+        anchor_position = CatTextAnchorPosition.catBottomLeft
         add_text.anchor_position = anchor_position
         set_text_properties(add_text, size=2)
         text_y = text_y + 3.27
@@ -71,5 +71,5 @@ def create_copyright_box(sheet: DrawingSheet, parameters: Parameters):
     p_year = parameters.get_item(f'Drawing\\YEAR')
     bottom_line = copyright_texts[0]
     bottom_line.insert_variable(32, 0, p_year)
-    property_colour = CatTextProperty.catColor.value
+    property_colour = CatTextProperty.catColor
     bottom_line.set_parameter_on_sub_string(property_colour, 32, 8, 65535)

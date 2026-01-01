@@ -34,7 +34,7 @@ product = product_document.product
 # Change the work mode to Design Mode.
 # This is useful for CATIA configurations that work with a cache otherwise methods on children may fail
 # due to the document not being loaded.
-product.apply_work_mode(CatWorkModeType.DESIGN_MODE.value)
+product.apply_work_mode(CatWorkModeType.DESIGN_MODE)
 
 # Transformation matrix (45 degrees-rotation around the x axis and a translation).
 transformation = (1.000, 0, 0, 0, 0.707, 0.707, 0, -0.707, 0.707, 10.000, 20.000, 30.000)
