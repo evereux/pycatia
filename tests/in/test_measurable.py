@@ -6,8 +6,7 @@
 """
 import pytest
 
-from pycatia import CATIADocHandler
-from pycatia.enumeration.enumeration_types import cat_measurable_name
+from pycatia import CatMeasurableName
 from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from tests.create_source_parts import geom_set_arcs
@@ -65,7 +64,7 @@ def test_geometry_name(document_open):
     reference = part.create_reference_from_object(body)
     measurable = spa_workbench.get_measurable(reference)
 
-    assert measurable.geometry_name == cat_measurable_name.index("CatMeasurableVolume")
+    assert measurable.geometry_name == CatMeasurableName.CatMeasurableVolume
 
 
 @pytest.mark.parametrize('file_name', [cat_part_measurable])

@@ -1,11 +1,11 @@
 #! /usr/bin/python3.9
 import pytest
 
+from pycatia import CatDrawingStandard
+from pycatia import CatPaperOrientation
+from pycatia import CatPaperSize
+from pycatia import CatSheetProjectionMethod
 from pycatia.drafting_interfaces.drawing_document import DrawingDocument
-from pycatia.enumeration.enumeration_types import cat_drawing_standard
-from pycatia.enumeration.enumeration_types import cat_paper_orientation
-from pycatia.enumeration.enumeration_types import cat_paper_size
-from pycatia.enumeration.enumeration_types import cat_sheet_projection_method
 from tests.conftest import application
 from tests.source_files import cat_drawing
 
@@ -30,9 +30,9 @@ def test_orientation(document_open):
     drawing_document: DrawingDocument = application.active_document
     sheets = drawing_document.sheets
     sheet_1 = sheets.item(1)
-    assert sheet_1.orientation == cat_paper_orientation.index("catPaperLandscape")
+    assert sheet_1.orientation == CatPaperOrientation.catPaperLandscape
     sheet_1.orientation = 0
-    assert sheet_1.orientation == cat_paper_orientation.index("catPaperPortrait")
+    assert sheet_1.orientation == CatPaperOrientation.catPaperPortrait
 
 
 @pytest.mark.parametrize('file_name', [cat_drawing])
@@ -40,9 +40,9 @@ def test_paper_size(document_open):
     drawing_document: DrawingDocument = application.active_document
     sheets = drawing_document.sheets
     sheet_1 = sheets.item(1)
-    assert sheet_1.paper_size == cat_paper_size.index("catPaperA0")
-    sheet_1.paper_size = cat_paper_size.index("catPaperA1")
-    assert sheet_1.paper_size == cat_paper_size.index("catPaperA1")
+    assert sheet_1.paper_size == CatPaperSize.catPaperA0
+    sheet_1.paper_size = CatPaperSize.catPaperA1
+    assert sheet_1.paper_size == CatPaperSize.catPaperA1
 
 
 @pytest.mark.parametrize('file_name', [cat_drawing])
@@ -56,7 +56,7 @@ def test_sheets(document_open):
 def test_standard(document_open):
     drawing_document: DrawingDocument = application.active_document
     standard = drawing_document.standard
-    assert standard == cat_drawing_standard.index("catISO")
+    assert standard == CatDrawingStandard.catISO
 
 
 @pytest.mark.parametrize('file_name', [cat_drawing])
@@ -93,4 +93,4 @@ def test_projection_method(document_open_test_close_all):
     sheets = drawing_root.sheets
     sheet_1 = sheets.item(1)
 
-    assert sheet_1.projection_method == cat_sheet_projection_method.index("catFirstAngle")
+    assert sheet_1.projection_method == CatSheetProjectionMethod.catFirstAngle
