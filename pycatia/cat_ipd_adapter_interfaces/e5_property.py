@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class E5Property(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -261,4 +260,4 @@ class E5Property(AnyObject):
         return self.e5_property.SetStringAttribute(i_attr_name, i_attr_value)
 
     def __repr__(self):
-        return f'E5Property(name="{ self.name }")'
+        return f'E5Property(name="{self.name}")'

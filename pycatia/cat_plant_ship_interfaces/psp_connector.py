@@ -214,7 +214,7 @@ class PSPConnector(AnyObject):
 
         :rtype: PSPConnectable
         """
-        
+
         from pycatia.cat_plant_ship_interfaces.psp_connectable import PSPConnectable
         return PSPConnectable(self.psp_connector.GetAssociatedConnectable())
 

@@ -111,7 +111,7 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
 
         :rtype: ExpertCheck
         """
-        
+
         from pycatia.general_knowledge_interfaces.expert_check import ExpertCheck
         return ExpertCheck(self.expert_check_runtime.CheckEdition)
 

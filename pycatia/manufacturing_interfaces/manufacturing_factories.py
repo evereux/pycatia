@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ManufacturingFactories(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -59,4 +58,4 @@ class ManufacturingFactories(AnyObject):
         return AnyObject(self.manufacturing_factories.GetManufacturingResourceFactory())
 
     def __repr__(self):
-        return f'ManufacturingFactories(name="{ self.name }")'
+        return f'ManufacturingFactories(name="{self.name}")'

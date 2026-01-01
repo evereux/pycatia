@@ -13,7 +13,6 @@ from pycatia.in_interfaces.document import Document
 
 
 class CatalogDocument(Document):
-
     """
         .. note::
             :class: toggle
@@ -185,4 +184,4 @@ class CatalogDocument(Document):
         return self.catalog_document.CreateChapterFromDesignTable(i_chapter_name, i_document_containing_dt)
 
     def __repr__(self):
-        return f'CatalogDocument(name="{ self.name }")'
+        return f'CatalogDocument(name="{self.name}")'

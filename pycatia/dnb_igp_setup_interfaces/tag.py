@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Tag(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -395,4 +394,4 @@ class Tag(AnyObject):
         return self.tag.SetYPR(i_y, i_p, i_r)
 
     def __repr__(self):
-        return f'Tag(name="{ self.name }")'
+        return f'Tag(name="{self.name}")'

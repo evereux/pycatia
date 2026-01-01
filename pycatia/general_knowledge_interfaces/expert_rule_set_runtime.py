@@ -81,7 +81,7 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
 
         :rtype: ExpertRuleSet
         """
-        
+
         from pycatia.general_knowledge_interfaces.expert_rule_set import ExpertRuleSet
         return ExpertRuleSet(self.expert_rule_set_runtime.RuleSetEdition)
 

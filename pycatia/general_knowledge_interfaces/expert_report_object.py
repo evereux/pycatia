@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ExpertReportObject(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -140,4 +139,4 @@ class ExpertReportObject(AnyObject):
         return self.expert_report_object.getTupleSize()
 
     def __repr__(self):
-        return f'ExpertReportObject(name="{ self.name }")'
+        return f'ExpertReportObject(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ManufacturingHole(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -145,4 +144,4 @@ class ManufacturingHole(AnyObject):
         return self.manufacturing_hole.GetOrigin(o_x, o_y, o_z)
 
     def __repr__(self):
-        return f'ManufacturingHole(name="{ self.name }")'
+        return f'ManufacturingHole(name="{self.name}")'

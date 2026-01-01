@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class IpdTemplateProperty(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -146,4 +145,4 @@ class IpdTemplateProperty(AnyObject):
         return self.ipd_template_property.GetTemplateStringAttribute(i_attr_name)
 
     def __repr__(self):
-        return f'IpdTemplateProperty(name="{ self.name }")'
+        return f'IpdTemplateProperty(name="{self.name}")'

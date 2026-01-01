@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Joint(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -135,4 +134,4 @@ class Joint(AnyObject):
         return self.joint.UnsetUpperLimit2()
 
     def __repr__(self):
-        return f'Joint(name="{ self.name }")'
+        return f'Joint(name="{self.name}")'

@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class TreeTabSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -1498,4 +1497,4 @@ class TreeTabSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'TreeTabSettingAtt(name="{ self.name }")'
+        return f'TreeTabSettingAtt(name="{self.name}")'

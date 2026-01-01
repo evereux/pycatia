@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ShiftedProfileTolerance(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -157,4 +156,4 @@ class ShiftedProfileTolerance(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'ShiftedProfileTolerance(name="{ self.name }")'
+        return f'ShiftedProfileTolerance(name="{self.name}")'

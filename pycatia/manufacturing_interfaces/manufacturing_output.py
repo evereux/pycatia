@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ManufacturingOutput(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -239,4 +238,4 @@ class ManufacturingOutput(AnyObject):
         return self.manufacturing_output.write_Long(i_val)
 
     def __repr__(self):
-        return f'ManufacturingOutput(name="{ self.name }")'
+        return f'ManufacturingOutput(name="{self.name}")'

@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class RenderingEnvironmentWall(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -381,4 +380,4 @@ class RenderingEnvironmentWall(AnyObject):
         return self.rendering_environment_wall.FitAllInWall()
 
     def __repr__(self):
-        return f'RenderingEnvironmentWall(name="{ self.name }")'
+        return f'RenderingEnvironmentWall(name="{self.name}")'

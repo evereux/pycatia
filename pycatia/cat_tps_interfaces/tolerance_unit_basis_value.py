@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ToleranceUnitBasisValue(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -85,4 +84,4 @@ class ToleranceUnitBasisValue(AnyObject):
         return self.tolerance_unit_basis_value.Values(o_value1, o_value2)
 
     def __repr__(self):
-        return f'ToleranceUnitBasisValue(name="{ self.name }")'
+        return f'ToleranceUnitBasisValue(name="{self.name}")'

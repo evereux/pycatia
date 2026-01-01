@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ManufacturingUserRepresentation(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -59,4 +58,4 @@ class ManufacturingUserRepresentation(AnyObject):
         return self.manufacturing_user_representation.SetRepresentation(i_path_name)
 
     def __repr__(self):
-        return f'ManufacturingUserRepresentation(name="{ self.name }")'
+        return f'ManufacturingUserRepresentation(name="{self.name}")'

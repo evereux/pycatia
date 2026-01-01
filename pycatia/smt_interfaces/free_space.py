@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class FreeSpace(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -83,4 +82,4 @@ class FreeSpace(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'FreeSpace(name="{ self.name }")'
+        return f'FreeSpace(name="{self.name}")'

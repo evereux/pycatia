@@ -79,7 +79,7 @@ class SWKBodyElement(AnyObject):
 
         :rtype: SWKManikin
         """
-        
+
         from pycatia.dnb_human_modeling_interfaces.swk_manikin import SWKManikin
         return SWKManikin(self.swk_body_element.Manikin)
 

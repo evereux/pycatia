@@ -213,7 +213,7 @@ class ManufacturingActivity(Activity):
 
         :rtype: ManufacturingPrecedences
         """
-        
+
         from pycatia.manufacturing_interfaces.manufacturing_precedences import ManufacturingPrecedences
         return ManufacturingPrecedences(self.manufacturing_activity.Precedences)
 

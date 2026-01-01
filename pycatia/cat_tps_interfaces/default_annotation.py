@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DefaultAnnotation(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -102,4 +101,4 @@ class DefaultAnnotation(AnyObject):
         return self.default_annotation.IsInAutomaticSearchMode()
 
     def __repr__(self):
-        return f'DefaultAnnotation(name="{ self.name }")'
+        return f'DefaultAnnotation(name="{self.name}")'

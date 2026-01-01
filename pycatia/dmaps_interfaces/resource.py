@@ -129,7 +129,7 @@ class Resource(AnyObject):
 
         :rtype: ResourceCollection
         """
-        
+
         from pycatia.dmaps_interfaces.resource_collection import ResourceCollection
         return ResourceCollection(self.resource.PreviousResources)
 

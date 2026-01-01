@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ArrBendableString(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -154,4 +153,4 @@ class ArrBendableString(AnyObject):
         return self.arr_bendable_string.InstanceName()
 
     def __repr__(self):
-        return f'ArrBendableString(name="{ self.name }")'
+        return f'ArrBendableString(name="{self.name}")'

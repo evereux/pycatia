@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class FasReportingSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -755,4 +754,4 @@ class FasReportingSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'FasReportingSettingAtt(name="{ self.name }")'
+        return f'FasReportingSettingAtt(name="{self.name}")'
