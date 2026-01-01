@@ -50,7 +50,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetApplObjFactFromVirtualType(CATBSTR iApplicationID) As
                 | SchAppObjectFactory
                 | 
@@ -81,7 +81,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetApplicationObjectFactory(CatSchIDLApplicationID iApplicationID) As
                 | SchAppObjectFactory
                 | 
@@ -110,7 +110,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCompGroupFromCatalog(CATBSTR iCatalogEntryName,
                 | Document iCtlgDoc) As SchComponent
                 | 
@@ -142,7 +142,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCompSymbolFromCatalog(CATBSTR iCatalogEntryName,
                 | Document iCtlgDoc) As SchGRR
                 | 
@@ -174,7 +174,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetComponents() As SchListOfObjects
                 | 
                 |     Returns a list of schematic component instances under the
@@ -198,7 +198,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDrawing() As DrawingRoot
                 | 
                 |     Retrieves the drawing root in the schematic document.
@@ -224,7 +224,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDrawingStandard() As CatDrawingStandard
                 |
                 |     Get the drawing standard.
@@ -251,7 +251,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetInterface(CATBSTR iInterfaceName,
                 | AnyObject iObject) As AnyObject
                 |
@@ -281,7 +281,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRefComponents() As SchListOfObjects
                 |
                 |     Returns a list of schematic component references under the
@@ -306,7 +306,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRoutes() As SchListOfObjects
                 |
                 |     Returns a list of schematic routes under the root.
@@ -329,7 +329,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSchBaseFactory() As SchBaseFactory
                 |
                 |     Returns schematic base object factory.
@@ -355,7 +355,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSchematicSession() As SchSession
                 |
                 |     Returns the schematic session the document containing the root is
@@ -382,7 +382,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTemporaryListFactory() As SchTempListFactory
                 |
                 |     Returns the factory to create lists of various types. These lists will not
@@ -409,7 +409,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUnassociatedSymbols() As SchListOfObjects
                 |
                 |     Returns a list of unassociated symbol.
@@ -435,7 +435,7 @@ class SchematicRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDrawingStandard(CatDrawingStandard iDrwStd)
                 |
                 |     Set the drawing standard.

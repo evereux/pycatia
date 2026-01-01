@@ -569,7 +569,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExportBlocksInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -607,7 +607,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExportDimensionsAsDimensionsInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -646,7 +646,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExportLayerNameInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -684,7 +684,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExportModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -722,7 +722,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExportSheetsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -760,7 +760,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExportVersionInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -845,7 +845,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExportViewsAsViewportsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -883,7 +883,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportDftStandardInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -921,7 +921,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportDimensionsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -959,7 +959,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportDxfStandardInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -997,7 +997,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportEndPointsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1035,7 +1035,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportKeepModelSpaceInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1073,7 +1073,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportMapLayerOn2DLInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1111,7 +1111,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportPaperSpacesInBackgroundInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1150,7 +1150,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportScaleDenominatorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1188,7 +1188,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportScaleNumeratorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1226,7 +1226,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportUnitInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1264,7 +1264,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExportBlocksLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Export Blocks option if the operation is allowed in
@@ -1309,7 +1309,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExportDimensionsAsDimensionsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Export Dimensions As Dimensions option if the
@@ -1354,7 +1354,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExportLayerNameLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Export Layer Name option if the operation is allowed
@@ -1399,7 +1399,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExportModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Export Mode option if the operation is allowed in the
@@ -1444,7 +1444,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExportSheetsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Exported Sheets option if the operation is allowed in
@@ -1489,7 +1489,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExportVersionLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Export Version option if the operation is allowed in
@@ -1573,7 +1573,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExportViewsAsViewportsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Export Views as Viewports option if the operation is
@@ -1618,7 +1618,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportDftStandardLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Drafting standard option if the operation is allowed
@@ -1663,7 +1663,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportDimensionsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Import dimensions option if the operation is allowed
@@ -1708,7 +1708,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportDxfStandardLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DXF standard option if the operation is allowed in the
@@ -1753,7 +1753,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportEndPointsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Create End Points option if the operation is allowed
@@ -1798,7 +1798,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportKeepModelSpaceLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Keep Model Space option if the operation is allowed in
@@ -1843,7 +1843,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportMapLayerOn2DLLock(boolean iLocked)
                 | 
                 |     Locks or unlocks Map on Layer2DL option if the operation is allowed in the
@@ -1888,7 +1888,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportPaperSpacesInBackgroundLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Paper Spaces in Background option if the operation is
@@ -1933,7 +1933,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportScaleDenominatorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the scale factor's denominator value option if the
@@ -1978,7 +1978,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportScaleNumeratorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the scale factor's numerator value option if the operation
@@ -2023,7 +2023,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportUnitLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the import unit option if the operation is allowed in the
@@ -2068,7 +2068,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportBlocks(CatDxfExportBlocksEnum iExportBlocks)
                 | 
                 |     Set the value of the Export Layer Name option. That value is only taken
@@ -2095,7 +2095,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportDimensionsAsDimensions(boolean
                 | iExportDimension)
                 | 
@@ -2140,7 +2140,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportLayerName(boolean iExportLayerName)
                 | 
                 |     Set the value of the Export Layer Name option. That value is only taken
@@ -2183,7 +2183,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportMode(CatDxfExportModeEnum iMode)
                 | 
                 |     Set the Export Mode option value.
@@ -2209,7 +2209,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportSheets(CatDxfExportSheetsEnum iSheets)
                 | 
                 |     set the Exported Sheets option value.
@@ -2235,7 +2235,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportVersion(CatDxfExportVersionEnum iVersion)
                 | 
                 |     Set the Export Version option value.
@@ -2299,7 +2299,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportViewsAsViewports(boolean iViewsAsViewports)
                 | 
                 |     Set the value of the Export Views as Viewports option. That value is only
@@ -2343,7 +2343,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportDftStandard(CATBSTR iDftStandard)
                 | 
                 |     Set the name of the Drafting standard, which define the standard of the
@@ -2370,7 +2370,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportDimensions(CatDxfImportDimensionsEnum
                 | iDimensions)
                 | 
@@ -2397,7 +2397,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportDxfStandard(CATBSTR iDxfStandard)
                 | 
                 |     Set the name of the Dxf standard, which define the different mapping used
@@ -2423,7 +2423,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportEndPoints(CatDxfImportCreateEndPointsEnum
                 | iEndPoints)
                 | 
@@ -2450,7 +2450,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportKeepModelSpace(boolean iKeepModelSpace)
                 | 
                 |     Set the value of the Keep Model Space option.
@@ -2492,7 +2492,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportMapLayerOn2DL(boolean iMapLayerOn2DL)
                 | 
                 |     Set the value of Map Layer On 2DL sheet option.
@@ -2534,7 +2534,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportPaperSpacesInBackground(boolean
                 | iPaperSpacesInBackground)
                 | 
@@ -2577,7 +2577,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportScaleDenominator(double iScaleDen)
                 | 
                 |     Get the denominator value of the scale factor. That value is only taken
@@ -2604,7 +2604,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportScaleNumerator(double iScaleNum)
                 | 
                 |     Set the numerator value of the scale factor. That value is only taken into
@@ -2630,7 +2630,7 @@ class DxfSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportUnit(CatDxfImportUnitEnum iUnit)
                 | 
                 |     Set the import unit.

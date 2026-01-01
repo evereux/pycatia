@@ -44,7 +44,7 @@ class FunctAssociations(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Create(CATBSTR iName) As FunctAssociation
                 | 
                 |     Create a FunctAssociation.
@@ -59,7 +59,7 @@ class FunctAssociations(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Delete(FunctAssociation iAssociation)
                 | 
                 |     Delete a FunctAssociation.
@@ -89,7 +89,7 @@ class FunctAssociations(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Elem(CATVariant iIndex) As FunctAssociation
                 | 
                 |     Returns an association using its index or its name from the associations

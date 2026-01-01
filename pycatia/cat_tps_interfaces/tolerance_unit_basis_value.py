@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ToleranceUnitBasisValue(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class ToleranceUnitBasisValue(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetValues(double iValue1,
                 | double iValue2)
                 | 
@@ -65,7 +64,7 @@ class ToleranceUnitBasisValue(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Values(double oValue1,
                 | double oValue2)
                 | 
@@ -85,4 +84,4 @@ class ToleranceUnitBasisValue(AnyObject):
         return self.tolerance_unit_basis_value.Values(o_value1, o_value2)
 
     def __repr__(self):
-        return f'ToleranceUnitBasisValue(name="{ self.name }")'
+        return f'ToleranceUnitBasisValue(name="{self.name}")'

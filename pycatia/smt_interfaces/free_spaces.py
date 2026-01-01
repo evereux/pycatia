@@ -58,7 +58,7 @@ class FreeSpaces(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(Product iProductForFreeSpace,
                 | double iAccuracy,
                 | double iXmin,
@@ -134,7 +134,7 @@ class FreeSpaces(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddAroundAny(double iAccuracy,
                 | double iXmin,
                 | double iXmax,
@@ -193,7 +193,7 @@ class FreeSpaces(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddAroundProducts(double iAccuracy,
                 | double iXmin,
                 | double iXmax,
@@ -242,7 +242,7 @@ class FreeSpaces(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddFromFile(CATBSTR iFileName,
                 | CATBSTR iShapeName) As FreeSpace
                 | 
@@ -259,7 +259,7 @@ class FreeSpaces(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddInflatingFromFile(CATBSTR iFileName,
                 | CATBSTR iShapeName) As FreeSpace
                 | 
@@ -286,7 +286,7 @@ class FreeSpaces(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddSplitFromFile(double iX,
                 | double iY,
                 | double iZ,

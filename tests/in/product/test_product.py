@@ -5,8 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from pycatia import CATIADocHandler
-from pycatia.enumeration.enumeration_types import cat_work_mode_type
+from pycatia import CatWorkModeType
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 from tests.conftest import application
@@ -19,7 +18,7 @@ def test_analyze(document_close_all_open):
     product_document: ProductDocument = application.active_document
     product = product_document.product
     product.activate_terminal_node(product.products)
-    product.apply_work_mode(cat_work_mode_type.index("DESIGN_MODE"))
+    product.apply_work_mode(CatWorkModeType.DESIGN_MODE)
 
     assert 1.5 == product.analyze.mass
     assert 1500000.0 == product.analyze.volume
@@ -173,7 +172,7 @@ def test_move(document_open):
     product = product_document.product
 
     product.activate_terminal_node(product.products)
-    product.apply_work_mode(cat_work_mode_type.index("DESIGN_MODE"))
+    product.apply_work_mode(CatWorkModeType.DESIGN_MODE)
 
     # move the first child in parent.
     product = product.products[0]

@@ -41,7 +41,7 @@ class Mechanisms(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add() As Mechanism
                 | 
                 |     Creates a new Mechanism and adds it to the Mechanisms
@@ -65,7 +65,7 @@ class Mechanisms(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Mechanism
                 | 
                 |     Returns a Mechanism using its index or its name from the Mechanisms
@@ -103,7 +103,7 @@ class Mechanisms(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a Mechanism from the Mechanisms collection.

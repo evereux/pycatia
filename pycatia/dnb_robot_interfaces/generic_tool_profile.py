@@ -46,7 +46,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCentroid(double cx,
                 | double cy,
                 | double cz)
@@ -84,7 +84,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetController(RobGenericController oController)
                 | 
                 |     Retrieves controller owning the profile.
@@ -126,7 +126,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetInertia(double Ixx,
                 | double Iyy,
                 | double Izz,
@@ -173,7 +173,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMass(double mass)
                 | 
                 |     Retrieves the mass of the tool.
@@ -200,7 +200,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetName(CATBSTR oName)
                 | 
                 |     Gets name of the Tool Profile.
@@ -227,7 +227,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTCPOffset(double x,
                 | double y,
                 | double z,
@@ -275,7 +275,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetToolMobility(boolean oMobile)
                 | 
                 |     Retrieves tool mobility.
@@ -319,7 +319,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCentroid(double cx,
                 | double cy,
                 | double cz)
@@ -354,7 +354,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetInertia(double Ixx,
                 | double Iyy,
                 | double Izz,
@@ -401,7 +401,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMass(double mass)
                 | 
                 |     Set tool mass.
@@ -428,7 +428,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetName(CATBSTR iName)
                 | 
                 |     Set name of the Tool Profile.
@@ -455,7 +455,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTCPOffset(double x,
                 | double y,
                 | double z,
@@ -503,7 +503,7 @@ class GenericToolProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetToolMobility(boolean iMobile)
                 | 
                 |     Set tool mobility.

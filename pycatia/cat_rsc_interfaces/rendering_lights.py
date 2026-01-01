@@ -40,7 +40,7 @@ class RenderingLights(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add() As RenderingLight
                 | 
                 |     Adds a new light to the lights collection.
@@ -54,7 +54,7 @@ class RenderingLights(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As RenderingLight
                 | 
                 |     Returns a rendering light index in the rendering light
@@ -87,7 +87,7 @@ class RenderingLights(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a light from the lights collection.
@@ -117,7 +117,7 @@ class RenderingLights(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAll()
                 | 
                 |     Removes all lights from the collection.

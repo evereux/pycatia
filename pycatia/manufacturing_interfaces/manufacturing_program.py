@@ -96,7 +96,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddGotoPoint(CATBSTR iPointName) As
                 | ManufacturingActivity
                 | 
@@ -119,7 +119,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddGotoPointfromCoordinates(double iX,
                 | double iY,
                 | double iZ) As ManufacturingActivity
@@ -150,7 +150,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddPPInstruction(CATBSTR iPPInstruction) As
                 | ManufacturingActivity
                 | 
@@ -172,7 +172,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddRotabl(CATBSTR iRotabl,
                 | CATBSTR iSens,
                 | double ival) As ManufacturingActivity
@@ -205,7 +205,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddToolChange(CATBSTR iToolName,
                 | CATBSTR iToolType,
                 | CATBSTR iToolCatalog,
@@ -247,7 +247,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddToolChangeMultipleFeeds(CATBSTR iToolName,
                 | CATBSTR iToolType,
                 | CATBSTR iToolCatalog,
@@ -285,7 +285,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppendOperation(CATBSTR type,
                 | short AutoSequence) As ManufacturingOperation
                 | 
@@ -310,7 +310,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AssociateOutputCode(CATBSTR iFileName)
                 | 
                 |     Method is used for associate APT file to V4 program iFileName = path for APT file.... Call on V4 ManufacturingProgram
@@ -330,7 +330,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CompletewithPolarStrategy(MfgActivities
                 | iListeMfgActivity,
                 | CATBSTR iAxeRef,
@@ -376,7 +376,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateMOfromReport(ExpertReportObjects
                 | iReportSucceed,
                 | CATBSTR iTypeMo) As MfgActivities
@@ -403,7 +403,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNCOutputFile() As CATBSTR
                 | 
                 |     Get the output file (APT or ISO) associated to the program (if associated
@@ -418,7 +418,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTableCurrentAbsolutePosition(ManufacturingActivity iActivityRef) As
                 | double
                 | 
@@ -441,7 +441,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ImportNCOutputOnProgram(CATBSTR iType,
                 | CATBSTR iNCOutputFile,
                 | CATBSTR iPPName)
@@ -471,7 +471,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub InsertOperation(ManufacturingOperation
                 | iReferenceOperation,
                 | ManufacturingOperation iManufacturingOperation)
@@ -514,7 +514,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LockActivitesWithinProgram()
                 | 
                 |     Method is used for Locking and Unloking all activity in program Call on
@@ -533,7 +533,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub MoveOperation(ManufacturingActivity
                 | iReferenceOperation,
                 | ManufacturingActivity iManufacturingOperation)
@@ -584,7 +584,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func OrderAndCreateMOfromReport(ExpertReportObjects
                 | iReportSucceed,
                 | CATBSTR iTypeMo,
@@ -621,7 +621,7 @@ class ManufacturingProgram(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnlockActivitesWithinProgram()
 
         :rtype: None

@@ -170,7 +170,7 @@ class ArrangementItemReservation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDimension(CATSafeArrayVariant ioItemResDimensions)
                 | 
                 |     Returns the Dimensions of the ArrangementItemReservation.
@@ -215,7 +215,7 @@ class ArrangementItemReservation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTechnologicalObject(CATBSTR iApplicationType) As
                 | CATBaseDispatch
                 | 
@@ -246,7 +246,7 @@ class ArrangementItemReservation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDimension(CATSafeArrayVariant iItemResDimensions)
                 | 
                 |     Sets the Dimensions of the ArrangementItemReservation.

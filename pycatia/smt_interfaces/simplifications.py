@@ -42,7 +42,7 @@ class Simplifications(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeSimplification(Group GroupOfSelectedProducts,
                 | double iAccuracy) As Document
                 | 
@@ -75,7 +75,7 @@ class Simplifications(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeSimplificationWithAReference(Group
                 | iGroupOfSelectedProducts,
                 | Product iReferenceProduct,
@@ -115,7 +115,7 @@ class Simplifications(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func SimplificationShapeName() As CATBSTR
                 | 
                 |     Returns the name of the associated shape.

@@ -89,7 +89,7 @@ class SFMFunctionFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateOpening(CATBSTR iCategory,
                 | long iMode,
                 | Reference iIntersectingElement,
@@ -157,7 +157,7 @@ class SFMFunctionFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateStandardOpening(CATBSTR iCategory,
                 | CATBSTR iContourName,
                 | SfmStandardContourParameters iListContourParams,
@@ -236,7 +236,7 @@ class SFMFunctionFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetOpeningMgr(Part iPrtPart,
                 | CATBSTR iMgrName) As CATBaseDispatch
                 | 

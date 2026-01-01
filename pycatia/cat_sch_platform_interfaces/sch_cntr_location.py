@@ -40,7 +40,7 @@ class SchCntrLocation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAlignVector(SchGRR iGRR,
                 | SchListOfDoubles oDb2AlignVector)
                 | 
@@ -89,7 +89,7 @@ class SchCntrLocation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPosition(SchGRR iGRR,
                 | SchListOfDoubles oDb2Position)
                 | 
@@ -139,7 +139,7 @@ class SchCntrLocation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetRelativePosition(SchListOfDoubles
                 | oDb2RelativePosition)
                 | 
@@ -186,7 +186,7 @@ class SchCntrLocation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAlignVector(SchGRR iGRR,
                 | CATSafeArrayVariant iDb2AlignVector)
                 | 
@@ -236,7 +236,7 @@ class SchCntrLocation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPosition(SchGRR iGRR,
                 | CATSafeArrayVariant iDb2Position)
                 | 
@@ -288,7 +288,7 @@ class SchCntrLocation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRelativePosition(CATSafeArrayVariant
                 | iDb2RelativePosition)
                 | 

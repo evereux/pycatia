@@ -1,5 +1,3 @@
-#! /usr/bin/python3.9
-
 """
 
     Example - Product - 003
@@ -25,7 +23,7 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 from pathlib import Path
 
 from pycatia import catia
-from pycatia.enumeration.enumeration_types import cat_work_mode_type
+from pycatia import CatWorkModeType
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
@@ -37,7 +35,7 @@ product = product_document.product
 # Change the work mode to Design Mode.
 # This is useful for CATIA configurations that work with a cache otherwise methods on children may fail
 # due to the document not being loaded.
-product.apply_work_mode(cat_work_mode_type.index("DESIGN_MODE"))
+product.apply_work_mode(CatWorkModeType.DESIGN_MODE)
 
 
 def print_properties(obj: Product):

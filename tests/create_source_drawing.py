@@ -2,8 +2,8 @@ import os
 from pathlib import Path
 
 from tests.conftest import application
+from pycatia import CatPaperSize
 from pycatia.drafting_interfaces.drawing_document import DrawingDocument
-from pycatia.enumeration.enumeration_types import cat_paper_size
 from tests.common_vars import test_files
 from tests.create_source_parts import get_cat_part_measurable
 
@@ -27,7 +27,7 @@ def create_cat_drawing():
     # ################## #
 
     sheet_2 = sheets.add("Sheet.2")
-    sheet_2.paper_size = cat_paper_size.index("catPaperA1")
+    sheet_2.paper_size = CatPaperSize.catPaperA1
 
     # ############################## #
     # Create a front view on sheet 1 #

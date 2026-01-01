@@ -44,7 +44,7 @@ class MHISaveAccess(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDetailingNames(CATBSTR oCurrentlyLoadedDetailing) As
                 | CATSafeArrayVariant
                 | 
@@ -74,7 +74,7 @@ class MHISaveAccess(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLoadParameters() As MHILoadParameters
                 | 
                 |     Gets the interface to the Load Parameters object that contains all the
@@ -97,7 +97,7 @@ class MHISaveAccess(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func SaveToPPRHub(CATBSTR iDetailingName,
                 | boolean iOverwriteDetailing) As CATSafeArrayVariant
                 | 

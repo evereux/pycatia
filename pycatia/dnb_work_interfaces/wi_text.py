@@ -113,7 +113,7 @@ class WIText(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttribute(CATBSTR iAttrName) As CATBSTR
                 | 
                 |     This gets the value of the Attribute.
@@ -135,7 +135,7 @@ class WIText(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetGeomAssociatedToAnnotation(ItemAssignmentType
                 | iAssignmentType,
                 | CATBaseDispatch ioPointGeom)
@@ -168,7 +168,7 @@ class WIText(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetHyperLinks() As CATSafeArrayVariant
                 | 
                 |     Retrieves the List of Hyperlinks associated to this
@@ -195,7 +195,7 @@ class WIText(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAttribute(CATBSTR iAttrName,
                 | CATBSTR iAttrValue)
                 | 
@@ -219,7 +219,7 @@ class WIText(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHyperLinks(CATSafeArrayVariant iHyperlinks)
                 | 
                 |     Sets a List of Hyperlinks to this activity

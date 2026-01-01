@@ -1,8 +1,8 @@
 import os
 from pathlib import Path
 
-from pycatia.enumeration.enumeration_types import cat_constraint_mode
-from pycatia.enumeration.enumeration_types import cat_constraint_type
+from pycatia import CatConstraintMode
+from pycatia import CatConstraintType
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product_document import ProductDocument
@@ -149,56 +149,56 @@ def create_cat_part_measurable(file_name):
     constraints = sketch.constraints
 
     con_line_1_start = constraints.add_bi_elt_cst(
-        cat_constraint_type.index("catCstTypeOn"),
+        CatConstraintType.catCstTypeOn,
         Reference(line_1_2d.start_point.com_object),
         ref_point_1,
     )
-    con_line_1_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
+    con_line_1_start.mode = CatConstraintMode.catCstModeDrivingDimension
     con_line_1_end = constraints.add_bi_elt_cst(
-        cat_constraint_type.index("catCstTypeOn"),
+        CatConstraintType.catCstTypeOn,
         Reference(line_1_2d.end_point.com_object),
         ref_point_2,
     )
-    con_line_1_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
+    con_line_1_end.mode = CatConstraintMode.catCstModeDrivingDimension
 
     con_line_2_start = constraints.add_bi_elt_cst(
-        cat_constraint_type.index("catCstTypeOn"),
+        CatConstraintType.catCstTypeOn,
         Reference(line_2_2d.start_point.com_object),
         ref_point_2,
     )
-    con_line_2_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
+    con_line_2_start.mode = CatConstraintMode.catCstModeDrivingDimension
     con_line_2_end = constraints.add_bi_elt_cst(
-        cat_constraint_type.index("catCstTypeOn"),
+        CatConstraintType.catCstTypeOn,
         Reference(line_2_2d.end_point.com_object),
         ref_point_3,
     )
-    con_line_2_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
+    con_line_2_end.mode = CatConstraintMode.catCstModeDrivingDimension
 
     con_line_3_start = constraints.add_bi_elt_cst(
-        cat_constraint_type.index("catCstTypeOn"),
+        CatConstraintType.catCstTypeOn,
         Reference(line_3_2d.start_point.com_object),
         ref_point_3,
     )
-    con_line_3_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
+    con_line_3_start.mode = CatConstraintMode.catCstModeDrivingDimension
     con_line_3_end = constraints.add_bi_elt_cst(
-        cat_constraint_type.index("catCstTypeOn"),
+        CatConstraintType.catCstTypeOn,
         Reference(line_3_2d.end_point.com_object),
         ref_point_4,
     )
-    con_line_3_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
+    con_line_3_end.mode = CatConstraintMode.catCstModeDrivingDimension
 
     con_line_4_start = constraints.add_bi_elt_cst(
-        cat_constraint_type.index("catCstTypeOn"),
+        CatConstraintType.catCstTypeOn,
         Reference(line_4_2d.start_point.com_object),
         ref_point_4,
     )
-    con_line_4_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
+    con_line_4_start.mode = CatConstraintMode.catCstModeDrivingDimension
     con_line_4_end = constraints.add_bi_elt_cst(
-        cat_constraint_type.index("catCstTypeOn"),
+        CatConstraintType.catCstTypeOn,
         Reference(line_4_2d.end_point.com_object),
         ref_point_1,
     )
-    con_line_4_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
+    con_line_4_end.mode = CatConstraintMode.catCstModeDrivingDimension
 
     sketch.close_edition()
 

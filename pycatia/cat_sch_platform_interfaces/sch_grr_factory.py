@@ -44,7 +44,7 @@ class SchGRRFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateGRRCntr() As SchGRRCntr
                 | 
                 |     Create the graphical representation of a Schematic
@@ -71,7 +71,7 @@ class SchGRRFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateGRRGroup(SchListOfObjects iLPrimitive) As
                 | AnyObject
                 | 
@@ -103,7 +103,7 @@ class SchGRRFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateGRRRoute(CATSafeArrayVariant iLDbLinePath,
                 | SchGRRRoute oGRRRoute)
                 | 
@@ -151,7 +151,7 @@ class SchGRRFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateGRRRouteEllipse(CATSafeArrayVariant iDbXYSeedPt,
                 | SchGRRRouteEllipse oGRRRouteEllipse)
                 | 
@@ -200,7 +200,7 @@ class SchGRRFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateGRRZone(SchListOfObjects iLPrimitive) As
                 | SchGRRZone
                 | 

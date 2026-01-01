@@ -51,7 +51,7 @@ class CD5Templates(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As CD5Template
                 | 
                 |     Returns (gets) an item from the list of items.

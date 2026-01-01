@@ -54,7 +54,7 @@ class DMOThicknesses(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(Product iProductToThickness,
                 | double iThickness1,
                 | double iThickness2,
@@ -102,7 +102,7 @@ class DMOThicknesses(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeAThickness(Group GroupOfSelectedProducts,
                 | double iThickness1,
                 | double iThickness2,
@@ -159,7 +159,7 @@ class DMOThicknesses(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeAThicknessWithAReference(Group
                 | iGroupOfSelectedProducts,
                 | Product iReferenceProduct,
@@ -221,7 +221,7 @@ class DMOThicknesses(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeThickness(Group GroupOfSelectedProducts,
                 | double iThickness1,
                 | double iThickness2,
@@ -277,7 +277,7 @@ class DMOThicknesses(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeThicknessWithReference(Group
                 | iGroupOfSelectedProducts,
                 | Product iReferenceProduct,
@@ -326,7 +326,7 @@ class DMOThicknesses(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ThicknessShapeName() As CATBSTR
                 | 
                 |     Returns the name of the associated shape.

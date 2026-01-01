@@ -39,7 +39,7 @@ class AssemblyFeature(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddAffectedComponent(Product iComponent)
                 | 
                 |     Adds a component to the affected component list. An update of the
@@ -82,7 +82,7 @@ class AssemblyFeature(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AffectedComponentsCount() As long
                 | 
                 |     Returns the affected component list count.
@@ -102,7 +102,7 @@ class AssemblyFeature(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListAffectedComponents(CATSafeArrayVariant
                 | oListOfComponents)
                 | 
@@ -150,7 +150,7 @@ class AssemblyFeature(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAffectedComponent(Product iComponent)
                 | 
                 |     Removes a component from the affected component list. An update of the

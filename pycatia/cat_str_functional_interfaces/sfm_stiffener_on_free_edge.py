@@ -168,7 +168,7 @@ class SFMStiffenerOnFreeEdge(SFMProfile):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetFreeEdge() As Reference
                 | 
                 |     Returns the Free Edge.
@@ -197,7 +197,7 @@ class SFMStiffenerOnFreeEdge(SFMProfile):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetMoldedSurface() As Reference
                 | 
                 |     Returns the molded surface.
@@ -226,7 +226,7 @@ class SFMStiffenerOnFreeEdge(SFMProfile):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetWelds(Reference iOperatingEle) As SfmWelds
                 | 
                 |     Gets Welds feature on operated SFE.
@@ -257,7 +257,7 @@ class SFMStiffenerOnFreeEdge(SFMProfile):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFreeEdge(Reference iFreeEdge)
                 | 
                 |     Sets the Free Edge.

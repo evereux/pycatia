@@ -199,7 +199,7 @@ class StrFeatureFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddCutoutWithAfterFormingMode(Reference iContour,
                 | Reference iDirection) As StrCutoutFeature
                 | 
@@ -260,7 +260,7 @@ class StrFeatureFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddCutoutWithBeforeFormingMode(Reference iContour,
                 | Reference iSurface) As StrCutoutFeature
                 | 
@@ -319,7 +319,7 @@ class StrFeatureFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddNibbling(CATSafeArrayVariant
                 | iListOfLimitingElements,
                 | CATBSTR iNibblingType) As StrNibblingFeature

@@ -83,7 +83,7 @@ class ProcessDocument(Document):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddLibrary(CATBSTR iFileName)
                 | 
                 |     Adds a new library to the current Process document.

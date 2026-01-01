@@ -63,7 +63,7 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AccurateType() As CATBSTR
                 | 
                 |     Returns as a string the type of component. Returns a string among
@@ -82,7 +82,7 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Activate()
                 | 
                 |     Activates the RuleBaseComponent.
@@ -107,7 +107,7 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Deactivate()
                 | 
                 |     Desactivates the RuleBaseComponent.
@@ -133,7 +133,7 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsUseOnly() As boolean
                 | 
                 |     Retrieves the use-only status of the component.
@@ -150,7 +150,7 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Isactivate() As boolean
                 | 
                 |     Tells if the RuleBaseComponent is active.
@@ -180,7 +180,7 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Parse() As CATBSTR
                 | 
                 |     Syntactically analyses (ie parses) the component.
@@ -197,7 +197,7 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetUseOnly()
                 | 
                 |     Prevents any access to the component for reading or deleting.

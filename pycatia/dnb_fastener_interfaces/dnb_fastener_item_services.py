@@ -41,7 +41,7 @@ class DnbFastenerItemServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AssignFastenerToProcess(Fastener iFastener,
                 | Activity iProcess,
                 | DNBAssignStatus eStatus)
@@ -81,7 +81,7 @@ class DnbFastenerItemServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AssignFastenerToResource(Fastener iFastener,
                 | Resource iResource,
                 | DNBAssignStatus eStatus)
@@ -123,7 +123,7 @@ class DnbFastenerItemServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetFasteners(CATSafeArrayVariant iProducts,
                 | boolean bJoiningFasteners,
                 | CATSafeArrayVariant oFastenerArray)
@@ -171,7 +171,7 @@ class DnbFastenerItemServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetFastenersFromProcess(Activity iOperation,
                 | FastenerSet iFasteners)
                 | 
@@ -208,7 +208,7 @@ class DnbFastenerItemServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetFastenersFromResource(Resource iResource,
                 | FastenerSet iFasteners)
                 | 
@@ -245,7 +245,7 @@ class DnbFastenerItemServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfFasteners(CATSafeArrayVariant iProducts,
                 | boolean bJoiningFasteners) As long
                 | 
@@ -274,7 +274,7 @@ class DnbFastenerItemServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveFastenerFromProcess(Fastener iFastener,
                 | Activity iProcess)
                 | 
@@ -311,7 +311,7 @@ class DnbFastenerItemServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveFastenerFromResource(Fastener iFastener,
                 | Resource iResource)
                 | 

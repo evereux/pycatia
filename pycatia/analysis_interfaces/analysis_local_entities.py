@@ -40,7 +40,7 @@ class AnalysisLocalEntities(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iType) As AnalysisLocalEntity
                 | 
                 |     Creates a new analysis local entity and adds it to the analysis entities
@@ -79,7 +79,7 @@ class AnalysisLocalEntities(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As AnalysisLocalEntity
                 | 
                 |     Returns an analysis entity using its index or its name from the analysis
@@ -110,7 +110,7 @@ class AnalysisLocalEntities(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Returns an analysis local entity.

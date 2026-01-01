@@ -148,7 +148,7 @@ class StiDBChildren(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As StiDBItem
                 | 
                 |     Returns the CATIAStiDBItem from its index in the
@@ -192,7 +192,7 @@ class StiDBChildren(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func LinkType(CATVariant iIndex) As CATBSTR
                 | 
                 |     Returns the Link Type from its index in the

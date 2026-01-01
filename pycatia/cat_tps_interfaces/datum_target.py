@@ -81,7 +81,7 @@ class DatumTarget(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAreaForm(CATBSTR oAreaForm)
                 | 
                 |     Gets the form of the target area.
@@ -105,7 +105,7 @@ class DatumTarget(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCircularAreaSize(double oAreaSize)
                 | 
                 |     Gets the size of the circular area.
@@ -128,7 +128,7 @@ class DatumTarget(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMovableDirectionTTRS(UserSurface opDirectionTTRS)
                 | 
                 |     Gets the movable Direction TTRS.
@@ -166,7 +166,7 @@ class DatumTarget(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetRectangularAreaSize(double oLength,
                 | double oWidth)
                 | 
@@ -193,7 +193,7 @@ class DatumTarget(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAreaForm(CATBSTR iAreaForm)
                 | 
                 |     Sets the form of the target area.
@@ -217,7 +217,7 @@ class DatumTarget(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCircularAreaSize(double iAreaSize)
                 | 
                 |     Sets the size of the circular area.
@@ -240,7 +240,7 @@ class DatumTarget(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMovableDirectionTTRS(UserSurface ipDirectionTTRS)
                 | 
                 |     Sets the movable Direction TTRS.
@@ -279,7 +279,7 @@ class DatumTarget(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRectangularAreaSize(double iLength,
                 | double iWidth)
                 | 

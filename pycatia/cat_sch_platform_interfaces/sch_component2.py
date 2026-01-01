@@ -48,7 +48,7 @@ class SchComponent2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PlaceInSpace(SchGRRComp iGRR,
                 | CATSafeArrayVariant iDb6Axis,
                 | Document iDoc,
@@ -126,7 +126,7 @@ class SchComponent2(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PlaceOnObject(SchGRRComp iGRR,
                 | CATSafeArrayVariant iDb6Axis,
                 | SchAppConnectable iObjectToConnect,

@@ -47,7 +47,7 @@ class TagGroup(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateTag(Tag ioTag)
                 | 
                 |     Creates a Tag
@@ -96,7 +96,7 @@ class TagGroup(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DeleteTag(Tag iTag)
                 | 
                 |     Deletes a Tag
@@ -145,7 +145,7 @@ class TagGroup(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOwner(CATBSTR ioParentProduct)
                 | 
                 |     Retrieves the name of the owner of this TagGroup.
@@ -179,7 +179,7 @@ class TagGroup(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTag(short index) As Tag
                 | 
                 |     Returns a Tag by Index.
@@ -217,7 +217,7 @@ class TagGroup(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTagList(CATSafeArrayVariant ioTagList)
                 | 
                 |     Gets the List of names of Tags

@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class PpgExecLogSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -89,7 +88,7 @@ class PpgExecLogSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExecLogPathInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -124,7 +123,7 @@ class PpgExecLogSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetGenExecLogInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
 
@@ -139,7 +138,7 @@ class PpgExecLogSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExecLogPathLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Xxx parameter.
@@ -180,7 +179,7 @@ class PpgExecLogSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGenExecLogLock(boolean iLocked)
 
         :param bool i_locked:
@@ -204,4 +203,4 @@ class PpgExecLogSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'PpgExecLogSettingAtt(name="{ self.name }")'
+        return f'PpgExecLogSettingAtt(name="{self.name}")'

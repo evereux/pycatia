@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class StrNibblingFeature(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -112,7 +111,7 @@ class StrNibblingFeature(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOffsetForExtrapolate(CATBSTR iOffsetForExtrapolate)
                 | 
                 |     Sets the Extrapolation offset value on Current Nibbling
@@ -144,4 +143,4 @@ class StrNibblingFeature(AnyObject):
         return self.str_nibbling_feature.GetOffsetForExtrapolate(i_offset_for_extrapolate)
 
     def __repr__(self):
-        return f'StrNibblingFeature(name="{ self.name }")'
+        return f'StrNibblingFeature(name="{self.name}")'

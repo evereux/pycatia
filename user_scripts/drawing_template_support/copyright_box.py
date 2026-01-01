@@ -1,14 +1,9 @@
-#! /usr/bin/python3.6
-
 import datetime
 
+from pycatia import CatTextAnchorPosition
+from pycatia import CatTextProperty
 from pycatia.drafting_interfaces.drawing_sheet import DrawingSheet
-from pycatia.drafting_interfaces.drawing_texts import DrawingTexts
-from pycatia.enumeration.enumeration_types import cat_text_anchor_position
-from pycatia.enumeration.enumeration_types import cat_text_frame_type
-from pycatia.enumeration.enumeration_types import cat_text_property
 from pycatia.knowledge_interfaces.parameters import Parameters
-from pycatia.sketcher_interfaces.factory_2D import Factory2D
 
 from .background_view import get_background_view_and_factory
 from .settings import border_offset
@@ -56,7 +51,7 @@ def create_copyright_box(sheet: DrawingSheet, parameters: Parameters):
 
     for text in reversed(text_list):
         add_text = texts.add(text, text_x, text_y)
-        anchor_position = cat_text_anchor_position.index('catBottomLeft')
+        anchor_position = CatTextAnchorPosition.catBottomLeft
         add_text.anchor_position = anchor_position
         set_text_properties(add_text, size=2)
         text_y = text_y + 3.27
@@ -73,8 +68,8 @@ def create_copyright_box(sheet: DrawingSheet, parameters: Parameters):
     # set_text_properties(add_text, size=2)
 
     # link year to parameters
-    p_year = parameters.get_item(f'Drawing\YEAR')
+    p_year = parameters.get_item(f'Drawing\\YEAR')
     bottom_line = copyright_texts[0]
     bottom_line.insert_variable(32, 0, p_year)
-    property_colour = cat_text_property.index('catColor')
+    property_colour = CatTextProperty.catColor
     bottom_line.set_parameter_on_sub_string(property_colour, 32, 8, 65535)

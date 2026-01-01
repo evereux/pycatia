@@ -1223,7 +1223,7 @@ class RenderingShooting(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddActiveLight(RenderingLight iActiveLight)
                 | 
                 |     Adds a new active light to the shooting active lights list.
@@ -1253,7 +1253,7 @@ class RenderingShooting(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CountActiveLights() As short
                 | 
                 |     Returns the number of active light for the shooting.
@@ -1267,7 +1267,7 @@ class RenderingShooting(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetActiveLight(short iIndex) As RenderingLight
                 | 
                 |     Returns the active light of the shooting using its index.
@@ -1282,7 +1282,7 @@ class RenderingShooting(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveActiveLight(short iIndex)
                 | 
                 |     Removes a light from the shootings active lights list.
@@ -1297,7 +1297,7 @@ class RenderingShooting(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Render()
                 | 
                 |     Render the shooting

@@ -208,7 +208,7 @@ class PSPFunctional(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCompatiblePartTypes(CATBSTR iuStandard) As
                 | PspListOfBSTRs
                 | 
@@ -242,7 +242,7 @@ class PSPFunctional(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsOKToIntegrate() As boolean
                 | 
                 |     Check it is OK to integrate (realize) this function with a physical
@@ -267,7 +267,7 @@ class PSPFunctional(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsRealized() As boolean
                 | 
                 |     Checks if the Function object is realized or not.
@@ -291,7 +291,7 @@ class PSPFunctional(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsSpecDriven() As boolean
                 | 
                 |     Checks if the functional object is specification driven or
@@ -323,7 +323,7 @@ class PSPFunctional(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListCompatiblePartNumbers(CATBSTR iuPartType,
                 | CATBSTR iuStandard,
                 | CATBSTR iuCatalogName,

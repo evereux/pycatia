@@ -41,7 +41,7 @@ class SchAppConnection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppAddConnector(SchAppConnector iCntrToAdd)
                 | 
                 |     Add a connector.
@@ -91,7 +91,7 @@ class SchAppConnection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppListConnectables(SchListOfBSTRs
                 | iLCntbleClassFilter,
                 | SchListOfObjects oLCntbles,
@@ -157,7 +157,7 @@ class SchAppConnection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppListConnectors(SchListOfBSTRs iLCntrClassFilter) As
                 | SchListOfObjects
                 | 
@@ -192,7 +192,7 @@ class SchAppConnection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppRemoveConnector(SchAppConnector iCntrToRemove)
                 | 
                 |     Remove a connector.

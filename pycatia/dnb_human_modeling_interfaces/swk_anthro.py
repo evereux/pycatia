@@ -234,7 +234,7 @@ class SWKAnthro(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetVariableAtIndex(long piIndex) As SWKAnthroVariable
                 | 
                 |     Returns the variable at the specified index.
@@ -254,7 +254,7 @@ class SWKAnthro(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetVariableFromUsNumber(long piRefNumber) As
                 | SWKAnthroVariable
                 | 
@@ -276,7 +276,7 @@ class SWKAnthro(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Reset()
                 | 
                 |     Reset the anthtropometry. This method resets each variable back to the

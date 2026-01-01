@@ -79,7 +79,7 @@ class ManufacturingInsert(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttribute(CATBSTR iAttribut) As Parameter
                 | 
                 |     Retrieve by is name the attribute of an insert object. Each attribute is a
@@ -98,7 +98,7 @@ class ManufacturingInsert(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttributeNLSName(CATBSTR iAttributName) As CATBSTR
                 | 
                 |     Gives the NLS value of an insert object
@@ -118,7 +118,7 @@ class ManufacturingInsert(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfAttributeUnits(CATSafeArrayVariant
                 | oListOfAttributeUnits)
                 | 
@@ -154,7 +154,7 @@ class ManufacturingInsert(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfAttributes(CATSafeArrayVariant
                 | oListOfAttributes)
                 | 

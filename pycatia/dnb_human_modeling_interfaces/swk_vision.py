@@ -386,7 +386,7 @@ class SWKVision(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CloseVisionWindows()
                 | 
                 |     Closes all open vision windows relating to the manikin on which the
@@ -401,7 +401,7 @@ class SWKVision(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LookAt(double piFocalDistance,
                 | double piVAngle,
                 | double piHAngle)
@@ -441,7 +441,7 @@ class SWKVision(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LookAtPoint(double piX,
                 | double piY,
                 | double piZ)
@@ -466,7 +466,7 @@ class SWKVision(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Reset()
                 | 
                 |     Resets all attributes of the vision to their default values. This method

@@ -43,7 +43,7 @@ class SchTempListFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateListOfBSTRs() As SchListOfBSTRs
                 | 
                 |     This method returns a new empty list of strings.
@@ -68,7 +68,7 @@ class SchTempListFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateListOfDoubles() As SchListOfDoubles
                 | 
                 |     This method returns a new empty list of doubles.
@@ -94,7 +94,7 @@ class SchTempListFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateListOfLongs() As SchListOfLongs
                 | 
                 |     This method returns a new empty list of long integers.
@@ -119,7 +119,7 @@ class SchTempListFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateListOfObjects() As SchListOfObjects
                 | 
                 |     This method returns a new empty list of objects.

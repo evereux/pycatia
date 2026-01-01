@@ -146,7 +146,7 @@ class AnalysisLocalEntity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromConstraint(Product iConstraintProduct,
                 | Constraint iConstraint)
                 | 
@@ -193,7 +193,7 @@ class AnalysisLocalEntity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromProduct(Product iProduct,
                 | Reference iSupport)
                 | 
@@ -238,7 +238,7 @@ class AnalysisLocalEntity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromPublication(Product iProduct,
                 | Publication iPublication)
                 | 
@@ -283,7 +283,7 @@ class AnalysisLocalEntity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromReference(Reference iReference,
                 | Reference iSupport)
                 | 
@@ -335,7 +335,7 @@ class AnalysisLocalEntity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetReference(CATBSTR iComponent,
                 | CATBSTR iLabel,
                 | long iLineIndex,
@@ -386,7 +386,7 @@ class AnalysisLocalEntity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetValue(CATBSTR iComponent,
                 | CATBSTR iLabel,
                 | long iLineIndex,
@@ -429,7 +429,7 @@ class AnalysisLocalEntity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetReference(CATBSTR iComponent,
                 | CATBSTR iLabel,
                 | long iLineIndex,
@@ -498,7 +498,7 @@ class AnalysisLocalEntity(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetValue(CATBSTR iComponent,
                 | CATBSTR iLabel,
                 | long iLineIndex,

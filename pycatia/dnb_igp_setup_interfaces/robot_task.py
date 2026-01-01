@@ -63,7 +63,7 @@ class RobotTask(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateAfterOperation(Operation iAfterOperation,
                 | Operation oCreatedOperation)
                 | 
@@ -128,7 +128,7 @@ class RobotTask(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateCallTask(RobotTask iRobotTask,
                 | Operation iAfterOperation,
                 | boolean iWhere,
@@ -206,7 +206,7 @@ class RobotTask(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateOperation(Operation iReferenceOperation,
                 | Operation iAfterOperation,
                 | Operation oCreatedOperation)
@@ -278,7 +278,7 @@ class RobotTask(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DeleteOperations(CATSafeArrayVariant iOperationList)
                 | 
                 |     Deletes the required list of Operations.
@@ -330,7 +330,7 @@ class RobotTask(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAllOperations(CATSafeArrayVariant oOperationList)
                 | 
                 |     Retrieves the List of Operations of Robot Task.

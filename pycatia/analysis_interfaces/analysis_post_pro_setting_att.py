@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class AnalysisPostProSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -184,7 +183,7 @@ class AnalysisPostProSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAutoPreviewModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -220,7 +219,7 @@ class AnalysisPostProSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImageTextSizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -256,7 +255,7 @@ class AnalysisPostProSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImageTextStackingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -292,7 +291,7 @@ class AnalysisPostProSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetModeImageTextSizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -328,7 +327,7 @@ class AnalysisPostProSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSaveAsNewTemplateDirectoryInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -365,7 +364,7 @@ class AnalysisPostProSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAutoPreviewModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AutoPreviewMode parameter.
@@ -406,7 +405,7 @@ class AnalysisPostProSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImageTextSizeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ImageTextSize parameter.
@@ -447,7 +446,7 @@ class AnalysisPostProSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImageTextStackingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ImageTextStacking parameter.
@@ -488,7 +487,7 @@ class AnalysisPostProSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetModeImageTextSizeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ModeImageTextSize parameter.
@@ -529,7 +528,7 @@ class AnalysisPostProSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSaveAsNewTemplateDirectoryLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SaveAsNewTemplateDirectory parameter.
@@ -566,4 +565,4 @@ class AnalysisPostProSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'AnalysisPostProSettingAtt(name="{ self.name }")'
+        return f'AnalysisPostProSettingAtt(name="{self.name}")'

@@ -40,7 +40,7 @@ class SchRouteGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddGraphicalPrimitive(SchGRRRoute iGRRToAdd)
                 | 
                 |     Add a graphical primitive to a route.
@@ -82,7 +82,7 @@ class SchRouteGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListGraphicalPrimitives() As SchListOfObjects
                 | 
                 |     List all graphical primitives of a route.
@@ -109,7 +109,7 @@ class SchRouteGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAllGraphicalPrimitives()
                 | 
                 |     Remove all graphical primitives of a route, including alternate graphical
@@ -130,7 +130,7 @@ class SchRouteGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveGraphicalPrimitive(SchGRRRoute iGRRToRemove)
                 | 
                 |     Remove a graphical primitive from a route.

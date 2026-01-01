@@ -294,7 +294,7 @@ class ManufacturingMachine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func DefaultName() As CATBSTR
                 | 
                 |     Return the string the Type of a Machine.
@@ -314,7 +314,7 @@ class ManufacturingMachine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttribute(CATBSTR iAttribut) As Parameter
                 | 
                 |     Retrieve the Attribute of a Manufacturing Machine.
@@ -335,7 +335,7 @@ class ManufacturingMachine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttributeNLSName(CATBSTR iAttributName) As CATBSTR
                 | 
                 |     Retrieve the NLS name from the attribute name of a Manufacturing
@@ -351,7 +351,7 @@ class ManufacturingMachine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfAttributeUnits(CATSafeArrayVariant
                 | oListOfAttributeUnits)
                 | 
@@ -394,7 +394,7 @@ class ManufacturingMachine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfAttributes(CATSafeArrayVariant
                 | oListOfAttributes)
                 | 
@@ -434,7 +434,7 @@ class ManufacturingMachine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfNumericalControlAttributes(CATSafeArrayVariant
                 | oListOfAttributes)
                 | 
@@ -474,7 +474,7 @@ class ManufacturingMachine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfRotaryTableAttributes(CATSafeArrayVariant
                 | oListOfAttributes)
                 | 
@@ -514,7 +514,7 @@ class ManufacturingMachine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfSpindleAttributes(CATSafeArrayVariant
                 | oListOfAttributes)
                 | 
@@ -554,7 +554,7 @@ class ManufacturingMachine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfToolChangeAttributes(CATSafeArrayVariant
                 | oListOfAttributes)
                 | 
@@ -594,7 +594,7 @@ class ManufacturingMachine(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_DefaultValues()
                 | 
                 |     Initialise the Manufacturing Machine parameters.

@@ -1,4 +1,3 @@
-#! /usr/bin/python3.9
 # author: Mithro86
 # contact: mikael@rslnd.se
 

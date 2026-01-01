@@ -48,7 +48,7 @@ class ArrangementRuns(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddRun(Move iRelAxis,
                 | CATSafeArrayVariant iListofMathPoints,
                 | CATSafeArrayVariant iMathDirection) As ArrangementRun
@@ -86,7 +86,7 @@ class ArrangementRuns(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ArrangementRun
                 | 
                 |     Returns the specified ArrangementRun item of the collection
@@ -119,7 +119,7 @@ class ArrangementRuns(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes the specified ArrangementRun object from the

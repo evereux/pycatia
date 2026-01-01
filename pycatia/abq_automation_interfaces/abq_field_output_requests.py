@@ -43,7 +43,7 @@ class ABQFieldOutputRequests(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add() As ABQFieldOutputRequest
                 | 
                 |     Creates a new Abaqus field output request and adds it to the collection of
@@ -70,7 +70,7 @@ class ABQFieldOutputRequests(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ABQFieldOutputRequest
                 | 
                 |     Returns an Abaqus field output request using its index or its name from the
@@ -100,7 +100,7 @@ class ABQFieldOutputRequests(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an Abaqus field output request using its index or its name from the

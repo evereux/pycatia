@@ -39,7 +39,7 @@ class SchAppScalingRule(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppGetScalingPriority(long oPriority)
                 | 
                 |     Get a priority number to indicate the adjustment (moving) priority of this

@@ -87,7 +87,7 @@ class MachiningProcess(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetActivities() As MfgActivities
                 | 
                 |     This method gets the Manufacturing Activities referenced by the Machining
@@ -108,7 +108,7 @@ class MachiningProcess(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func InsertActivity(CATBSTR iActivityType,
                 | ManufacturingActivity iReferencedActivity) As
                 | ManufacturingActivity
@@ -157,7 +157,7 @@ class MachiningProcess(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Instantiate(AnyObject iFeature)
                 | 
                 |     This method enables to apply a Machining Process to an any feature. This
@@ -190,7 +190,7 @@ class MachiningProcess(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub InstantiateInProductContext(AnyObject iFeature,
                 | Product iProduct)
                 | 

@@ -71,7 +71,7 @@ class TCPTraceManagerGraphics(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNextThickness(DNBTCPTraceReps iRep,
                 | long iThickness)
                 | 
@@ -103,7 +103,7 @@ class TCPTraceManagerGraphics(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNextType(DNBTCPTraceReps iRep,
                 | long iType)
                 | 
@@ -150,7 +150,7 @@ class TCPTraceManagerGraphics(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTraceNextColor(DNBTCPTraceReps iRep,
                 | long iR,
                 | long iG,

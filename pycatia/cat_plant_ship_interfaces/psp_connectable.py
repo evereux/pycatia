@@ -92,7 +92,7 @@ class PSPConnectable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetConnectorByName(CATBSTR iuConnectorName) As
                 | PspConnector
                 | 
@@ -130,7 +130,7 @@ class PSPConnectable(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListConnectables(PspListOfBSTRs iuClassFilter,
                 | PspListOfObjects oLCntbles,
                 | PspListOfObjects oLCntrsOnThisObj,

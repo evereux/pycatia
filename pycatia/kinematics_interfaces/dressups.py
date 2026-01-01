@@ -43,7 +43,7 @@ class Dressups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(Mechanism iMechanism,
                 | Product iContext) As Dressup
                 | 
@@ -77,7 +77,7 @@ class Dressups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Dressup
                 | 
                 |     Returns a Dressup using its index or its name from the Dressups
@@ -115,7 +115,7 @@ class Dressups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListMechanismsContext() As CATSafeArrayVariant
                 | 
                 |     Each mechanism of the list given by ListPossibleMechanisms has a context
@@ -149,7 +149,7 @@ class Dressups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListPossibleMechanisms() As CATSafeArrayVariant
                 | 
                 |     Returns information about all possible mechanisms on which a dressup can be
@@ -183,7 +183,7 @@ class Dressups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a Dressup from the Dressups collection.

@@ -169,7 +169,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddConstraint(SWKIKConstraint piConstraint)
                 | 
                 |     Adds the given constraint to MoveToPosture activity
@@ -206,7 +206,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyPostureToManikin()
                 | 
                 |     Set the MoveToPosture(MTP) Activity's DegreeOfFreedom(DOF) values onto
@@ -221,7 +221,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetConstraint(long iIndex) As SWKIKConstraint
                 | 
                 |     Returns the constraint at given index
@@ -245,7 +245,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetJointValues(CATSafeArrayVariant oJointVals)
                 | 
                 |     Gets the Manikin's Position and Posture values in 137 doubles. (Array
@@ -282,7 +282,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfConstraints() As long
                 | 
                 |     Returns the number of constraints on the MoveToPosture
@@ -300,7 +300,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPartRelation(HTSEndEffector eEE,
                 | Product oProduct,
                 | CATSafeArrayVariant oOffsetTrans) As boolean
@@ -319,7 +319,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPosition(CATSafeArrayVariant oTransMatrix)
                 | 
                 |     This gets the position value in 12 doubles
@@ -356,7 +356,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPostureValues(CATSafeArrayVariant oPosVals)
                 | 
                 |     Gets the Manikin's Posture values in 131 doubles. (This array excludes
@@ -392,7 +392,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSegmentValues(CATBSTR inSegName,
                 | CATSafeArrayVariant oDofVals)
                 | 
@@ -432,7 +432,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasPartRelation() As boolean
                 | 
                 |     DEPRECATED. DO NOT USE
@@ -446,7 +446,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveConstraint(SWKIKConstraint piConstraint)
                 | 
                 |     Removes the given constraint from MoveToPosture activity
@@ -483,7 +483,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCurrentConstraintSet()
                 | 
                 |     Set the current Constraints existing on Manikin onto MoveToPosture activity
@@ -497,7 +497,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetJointValues(CATSafeArrayVariant oJointVals)
                 | 
                 |     Sets the Manikin's Position and Posture values with 137 doubles. (Array
@@ -534,7 +534,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPartRelation(HTSEndEffector eEE,
                 | Product oProduct)
                 | 
@@ -566,7 +566,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPartRelationWithOffset(HTSEndEffector eEE,
                 | Product oProduct,
                 | CATSafeArrayVariant oOffsetTrans)
@@ -600,7 +600,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPosition(CATSafeArrayVariant oTransMatrix)
                 | 
                 |     Sets the Manikin's position value in the MoveToPosture Activity. ( Pos.
@@ -665,7 +665,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPostureValues(CATSafeArrayVariant oPosVals)
                 | 
                 |     Sets the Manikin's Posture values with 131 values
@@ -700,7 +700,7 @@ class MoveToPostureActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSegmentValues(CATBSTR inSegName,
                 | CATSafeArrayVariant oDofVals)
                 | 

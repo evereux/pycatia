@@ -61,7 +61,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAccuracyProfile(AnyObject oAccuracyProfile)
                 | 
                 |     Retrieves Accuracy profile.
@@ -99,7 +99,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAuxillaryAxisHome(AnyObject iDevice,
                 | CATBSTR iAuxillaryAxis,
                 | CATBSTR oHomeName)
@@ -155,7 +155,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAuxillaryAxisValues(AnyObject iDevice,
                 | CATBSTR iAuxillaryAxis,
                 | CATSafeArrayVariant oAuxillaryAxisValues)
@@ -222,7 +222,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCartesianTarget(CATSafeArrayVariant
                 | oCartesianTarget)
                 | 
@@ -277,7 +277,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetConfig(short oConfigNumber)
                 | 
                 |     Retreives the Configuration.
@@ -314,7 +314,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetJointTarget(CATSafeArrayVariant oJointTarget)
                 | 
                 |     Retrieves the Robot Joint target.
@@ -366,7 +366,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMotionProfile(AnyObject oMotionProfile)
                 | 
                 |     Retrieves Motion profile.
@@ -403,7 +403,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMotionType(short index)
                 | 
                 |     Retrieves the type of Motion.
@@ -447,7 +447,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetObjectProfile(AnyObject oObjProfile)
                 | 
                 |     Retrieves Object profile.
@@ -484,7 +484,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOrientationMode(short index)
                 | 
                 |     Retrieves the TCP Orientation Mode.
@@ -522,7 +522,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTagTarget(Tag oTag)
                 | 
                 |     Retrieves the underlying Tag Target.
@@ -574,7 +574,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTargetType(short index)
                 | 
                 |     Retrieves the Target Type.
@@ -612,7 +612,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetToolProfile(AnyObject oToolProfile)
                 | 
                 |     Retrieves tool profile.
@@ -649,7 +649,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTurnNumbers(CATSafeArrayVariant oTurnNumbers)
                 | 
                 |     Retrieves the Turn Numbers(or Turn signs) of the robot
@@ -703,7 +703,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAccuracyProfile(AnyObject iAccuracyProfile)
                 | 
                 |     Sets the Accuracy profile.
@@ -739,7 +739,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAuxillaryAxisHome(AnyObject iDevice,
                 | CATBSTR iAuxillaryAxis,
                 | CATBSTR iHomeName)
@@ -794,7 +794,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAuxillaryAxisValues(AnyObject iDevice,
                 | CATBSTR iAuxillaryAxis,
                 | CATSafeArrayVariant iAuxillaryAxisValues)
@@ -861,7 +861,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCartesianTarget(CATSafeArrayVariant
                 | iCartesianTarget)
                 | 
@@ -922,7 +922,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetConfig(short iConfigNumber)
                 | 
                 |     Sets the Configuration for the robot motion.
@@ -958,7 +958,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetJointTarget(CATSafeArrayVariant iJointTarget)
                 | 
                 |     Sets the Robot Joint target.
@@ -1016,7 +1016,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMotionProfile(AnyObject iMotionProfile)
                 | 
                 |     Sets the Motion profile.
@@ -1052,7 +1052,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMotionType(short index)
                 | 
                 |     Sets the type of Motion.
@@ -1094,7 +1094,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetObjectProfile(AnyObject iObjProfile)
                 | 
                 |     Sets the Object profile.
@@ -1131,7 +1131,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOrientationMode(short index)
                 | 
                 |     Sets the TCP Orientation Mode.
@@ -1167,7 +1167,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTagTarget(Tag iTag)
                 | 
                 |     Sets the Robot Tag target.
@@ -1220,7 +1220,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetToolProfile(AnyObject iToolProfile)
                 | 
                 |     Sets the Tool profile.
@@ -1256,7 +1256,7 @@ class RobotMotion(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTurnNumbers(CATSafeArrayVariant iTurnNumbers)
                 | 
                 |     Sets Turn Numbers or Turn signs for the robot motion.

@@ -43,7 +43,7 @@ class ArrangementContours(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddRectangularContour(ArrangementRectangle iRectangle) As
                 | ArrangementContour
                 | 
@@ -69,7 +69,7 @@ class ArrangementContours(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ArrangementContour
                 | 
                 |     Returns the specified ArrangementContour item of the
@@ -102,7 +102,7 @@ class ArrangementContours(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes the specified ArrangementContour object from the

@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class SampledsNode(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -43,7 +42,7 @@ class SampledsNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSampleds(CATBSTR iCollectionName) As
                 | CATBaseDispatch
                 | 
@@ -69,4 +68,4 @@ class SampledsNode(AnyObject):
         return self.sampleds_node.GetSampleds(i_collection_name)
 
     def __repr__(self):
-        return f'SampledsNode(name="{ self.name }")'
+        return f'SampledsNode(name="{self.name}")'

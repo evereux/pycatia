@@ -41,7 +41,7 @@ class ProductScenes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddProductSceneFull(CATBSTR iName,
                 | CATSafeArrayVariant iReferenceProducts) As ProductScene
                 | 
@@ -78,7 +78,7 @@ class ProductScenes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddProductScenePartial(CATBSTR iName,
                 | CATSafeArrayVariant iReferenceProducts) As ProductScene
                 | 
@@ -115,7 +115,7 @@ class ProductScenes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ProductScene
                 | 
                 |     Returns a scene using its index or its name from the ProductScenes
@@ -154,7 +154,7 @@ class ProductScenes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(ProductScene iProductScene)
                 | 
                 |     Removes a product-scene from the ProductScenes collection.

@@ -77,7 +77,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Add3DPosition(DNBIA3DStatePosition iPosition)
                 | 
                 |     Adds the specified 3D Position to the given 3D state as a child. This input
@@ -123,7 +123,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Add3DState(DNB3DState iState)
                 | 
                 |     Adds the specified 3D state to the given 3D state as a child. This input
@@ -169,7 +169,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Assign3DState(Activity iProcess,
                 | CATBSTR iCondition)
                 | 
@@ -222,7 +222,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetChildren(CATBSTR iType,
                 | CATSafeArrayVariant oChildrenArray)
                 | 
@@ -276,7 +276,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetConditionName(Activity iRelatedActivity) As
                 | CATBSTR
                 | 
@@ -315,7 +315,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfChildren(CATBSTR iType) As long
                 | 
                 |     Returns the number of 3D states or 3D positions or both, managed by the
@@ -350,7 +350,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberofRelatedActivities(CATBSTR iConditionType) As
                 | long
                 | 
@@ -388,7 +388,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetParent() As CATBaseDispatch
                 | 
                 |     Returns the parent for the 3D State
@@ -414,7 +414,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetRelatedActivities(CATBSTR iConditionType,
                 | CATSafeArrayVariant oActivitiesArray)
                 | 
@@ -470,7 +470,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRelatedObject() As CATBaseDispatch
                 | 
                 |     Returns the product/resource/MA/ASTMA on which the given state is being
@@ -497,7 +497,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove3DPosition(DNBIA3DStatePosition iPosition)
                 | 
                 |     Removes the specified 3D position from the given 3D state’s definition
@@ -542,7 +542,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove3DState(DNB3DState iState)
                 | 
                 |     Removes the specified 3D state from the given 3D state’s definition
@@ -587,7 +587,7 @@ class DNB3DState(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Unassign3DState(Activity iProcess)
                 | 
                 |     Unassigns the 3D state from a specified process.

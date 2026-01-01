@@ -45,7 +45,7 @@ class SchBaseFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateNetwork(SchListOfObjects iLCntbls,
                 | SchListOfObjects iLGRRs) As SchListOfObjects
                 | 
@@ -96,7 +96,7 @@ class SchBaseFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateRouteAndConnectToObjects(AnyObject iAppRoute,
                 | SchAppConnector iCntrCompFrom,
                 | SchAppConnector iCntrCompTo,
@@ -196,7 +196,7 @@ class SchBaseFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateSchCompGroup(AnyObject iAppGroup,
                 | SchListOfObjects iLGRR,
                 | SchListOfObjects iLMember) As SchCompGroupExt
@@ -252,7 +252,7 @@ class SchBaseFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateSchComponent(AnyObject iAppComponentRef,
                 | SchListOfObjects iLGRR) As SchComponent
                 | 
@@ -288,7 +288,7 @@ class SchBaseFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateSchRouteByPoints(AnyObject iAppRoute,
                 | CATSafeArrayVariant iLDbPt,
                 | SchRoute oSchRoute)
@@ -341,7 +341,7 @@ class SchBaseFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateSchRouteByPrim(AnyObject iAppRoute,
                 | SchListOfObjects iLGRR) As SchRoute
                 | 
@@ -376,7 +376,7 @@ class SchBaseFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateSchZone(AnyObject iAppZone,
                 | SchListOfObjects iLGRR) As SchZone
                 | 
@@ -413,7 +413,7 @@ class SchBaseFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DeleteObject(AnyObject iObject)
                 | 
                 |     Delete a schematic object.

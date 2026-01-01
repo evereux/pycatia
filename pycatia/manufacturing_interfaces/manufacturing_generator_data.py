@@ -42,7 +42,7 @@ class ManufacturingGeneratorData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddObjectToGenerate(CATBaseUnknown iObject)
                 | 
                 |     Adds an object to the output stream.
@@ -82,7 +82,7 @@ class ManufacturingGeneratorData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddObjectToGenerateFromBuffer(CATBaseUnknown iObject)
                 | 
                 |     Adds an object to the output stream from the buffer.
@@ -117,7 +117,7 @@ class ManufacturingGeneratorData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddObjectToGenerateWithBuffer(CATBaseUnknown iObject)
                 | 
                 |     Adds an object to the output stream within the buffer.
@@ -152,7 +152,7 @@ class ManufacturingGeneratorData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddObjectToGenerateWithOutBuffer(CATBaseUnknown
                 | iObject)
                 | 
@@ -188,7 +188,7 @@ class ManufacturingGeneratorData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddObjectToModalValues(CATBaseUnknown iObject)
                 | 
                 |     Adds an object to the modal values manager only.
@@ -223,7 +223,7 @@ class ManufacturingGeneratorData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetFT06Stream(ManufacturingOutput oStream)
                 | 
                 |     Retrieves the FT06 stream.
@@ -258,7 +258,7 @@ class ManufacturingGeneratorData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetLastObjectToGenerate(CATBaseUnknown oObject)
                 | 
                 |     Retrieves the last object to generate.
@@ -293,7 +293,7 @@ class ManufacturingGeneratorData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOutputStream(ManufacturingOutput oStream)
                 | 
                 |     Retrieves the output stream.
@@ -328,7 +328,7 @@ class ManufacturingGeneratorData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetAllModalValues()
                 | 
                 |     Resets all modal values.
@@ -342,7 +342,7 @@ class ManufacturingGeneratorData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLastObjectToGenerate(CATBaseUnknown iObject)
                 | 
                 |     Sets the last Activity to generate.

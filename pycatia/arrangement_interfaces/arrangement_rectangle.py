@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ArrangementRectangle(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -107,7 +106,7 @@ class ArrangementRectangle(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTechnologicalObject(CATBSTR iApplicationType) As
                 | CATBaseDispatch
                 | 
@@ -134,4 +133,4 @@ class ArrangementRectangle(AnyObject):
         return self.arrangement_rectangle.GetTechnologicalObject(i_application_type)
 
     def __repr__(self):
-        return f'ArrangementRectangle(name="{ self.name }")'
+        return f'ArrangementRectangle(name="{self.name}")'

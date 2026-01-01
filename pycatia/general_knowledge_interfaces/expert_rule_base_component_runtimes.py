@@ -48,7 +48,7 @@ class ExpertRuleBaseComponentRuntimes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As
                 | ExpertRuleBaseComponentRuntime
                 | 
@@ -90,7 +90,7 @@ class ExpertRuleBaseComponentRuntimes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an Expert component from the Rule Base collection. If the expert
@@ -149,7 +149,7 @@ class ExpertRuleBaseComponentRuntimes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ShallowCount() As long
                 | 
                 |     Returns the number of first-level-depth objects in the collection. This is
@@ -170,7 +170,7 @@ class ExpertRuleBaseComponentRuntimes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ShallowItem(CATVariant iIndex) As
                 | ExpertRuleBaseComponentRuntime
                 | 
@@ -210,7 +210,7 @@ class ExpertRuleBaseComponentRuntimes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ShallowRemove(CATVariant iIndex)
                 | 
                 |     Removes an first-level-depth Expert component from the Rule Base

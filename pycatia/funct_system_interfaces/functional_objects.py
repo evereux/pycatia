@@ -47,7 +47,7 @@ class FunctionalObjects(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Create(CATBSTR iName) As FunctionalObject
                 | 
                 |     Creates a FunctionalObject.
@@ -62,7 +62,7 @@ class FunctionalObjects(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateProxy(CATBSTR iName,
                 | FunctionalDescription iDesc) As FunctionalObjectProxy
                 | 
@@ -79,7 +79,7 @@ class FunctionalObjects(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Delete(FunctionalObject iObject)
                 | 
                 |     Deletes a FunctionalObject.
@@ -109,7 +109,7 @@ class FunctionalObjects(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Elem(CATVariant iIndex) As FunctionalObject
                 | 
                 |     Returns an action using its index or its name from the actions

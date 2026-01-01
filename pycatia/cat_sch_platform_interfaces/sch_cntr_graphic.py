@@ -40,7 +40,7 @@ class SchCntrGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddGraphicalPrimitive(SchGRR iGRRToAdd,
                 | SchGRR iGRR)
                 | 
@@ -89,7 +89,7 @@ class SchCntrGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListGraphicalPrimitives() As SchListOfObjects
                 | 
                 |     List all graphical primitives of a connector.
@@ -116,7 +116,7 @@ class SchCntrGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveGraphicalPrimitive(SchGRR iGRRToRemove)
                 | 
                 |     Remove a graphical primitive from a connector.

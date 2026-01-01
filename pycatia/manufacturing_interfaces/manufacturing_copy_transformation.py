@@ -45,7 +45,7 @@ class ManufacturingCopyTransformation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddOperation(ManufacturingActivity
                 | iManufacturingActivity)
                 | 
@@ -83,7 +83,7 @@ class ManufacturingCopyTransformation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTrajectoryEndPointCoord(CATSafeArrayVariant
                 | oEndPoint)
                 | 
@@ -125,7 +125,7 @@ class ManufacturingCopyTransformation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTrajectoryStartPointCoord(CATSafeArrayVariant
                 | oStartPoint)
                 | 
@@ -168,7 +168,7 @@ class ManufacturingCopyTransformation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCopyTransformation(long iNumberOfCopies,
                 | CATBSTR iOrdering,
                 | CATBSTR iTransformationType)
@@ -224,7 +224,7 @@ class ManufacturingCopyTransformation(ManufacturingActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCopyTransformationTranslationAttributes(CATBSTR
                 | iTranslationType,
                 | double iDistanceAlongX,

@@ -43,7 +43,7 @@ class ManufacturingFeatures(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iType) As ManufacturingFeature
                 | 
                 |     Create and Add a Manufacturing Feature of a specified type to the
@@ -64,7 +64,7 @@ class ManufacturingFeatures(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ManufacturingFeature
                 | 
                 |     Retrieve the Manufacturing Feature of a the specified index from the

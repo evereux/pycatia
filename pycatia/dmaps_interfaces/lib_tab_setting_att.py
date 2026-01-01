@@ -39,7 +39,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetIDUniqueSetting(long oIsUnique)
                 | 
                 |     Retrieves the option which enables to check ID uniqueness amongst sibling
@@ -68,7 +68,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetIDUniqueSettingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -104,7 +104,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetListOfLibraryFilePath() As CATSafeArrayVariant
                 | 
                 |     Retrieves the List of Libraries that are used in the Process
@@ -132,7 +132,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetListOfLibraryFilePathInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -168,7 +168,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetProcessIDScript(CATBSTR oPath)
                 | 
                 |     Retrieves the path of custom VB script to generate process
@@ -196,7 +196,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetProcessIDScriptInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -232,7 +232,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutListOfLibraryFilePath(CATSafeArrayVariant iPath)
                 | 
                 |     Sets a List of Libraries that are used in the Process
@@ -275,7 +275,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetIDUniqueSetting(long isUnique)
                 | 
                 |     Sets the option which enables to check ID uniqueness amongst sibling
@@ -303,7 +303,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetIDUniqueSettingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "Unique Check" parameter.
@@ -349,7 +349,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetListOfLibraryFilePathLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the list of libraries to be used
@@ -390,7 +390,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetProcessIDScript(CATBSTR iPath)
                 | 
                 |     Sets the path of custom VB script to generate process ID
@@ -417,7 +417,7 @@ class LibTabSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetProcessIDScriptLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "Custom VB Script" parameter.

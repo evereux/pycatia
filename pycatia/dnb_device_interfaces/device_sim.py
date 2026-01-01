@@ -48,7 +48,7 @@ class DeviceSim(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Finalize()
                 | 
                 |     Cleans the WDM world. Please note that no reference counting will be
@@ -75,7 +75,7 @@ class DeviceSim(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDOFValues(CATBaseDispatch iMechanism) As
                 | CATSafeArrayVariant
                 | 
@@ -126,7 +126,7 @@ class DeviceSim(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Initialize()
                 | 
                 |     Initializes the WDM world. Required for calls to
@@ -150,7 +150,7 @@ class DeviceSim(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDOFValues(CATBaseDispatch iMechanism,
                 | CATSafeArrayVariant iValues,
                 | boolean iIsRelative)

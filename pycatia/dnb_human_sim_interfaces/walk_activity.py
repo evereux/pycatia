@@ -207,7 +207,7 @@ class WalkActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetWalkCurveDefPoints(long iNumPoints,
                 | CATSafeArrayVariant adPoints)
                 | 
@@ -249,7 +249,7 @@ class WalkActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func HasPartRelation() As boolean
                 | 
                 |     Returns if there is any PartRelation
@@ -266,7 +266,7 @@ class WalkActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetWalkCurveDefPoints(long iNumPoints,
                 | CATSafeArrayVariant adPoints)
                 | 
@@ -307,7 +307,7 @@ class WalkActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Update()
                 | 
                 |     This method is the key-method to create children-MoveToPostures for a

@@ -71,7 +71,7 @@ class FunctNodeGraphLayout(FunctionalFacet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHeightAndWidth(double iHeight,
                 | double iWidth)
                 | 

@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class RpmReport(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -34,12 +33,13 @@ class RpmReport(AnyObject):
         super().__init__(com_object)
         self.rpm_report = com_object
 
-    def generate_report(self, i_xml_file_name: str, i_report_file_name: str, i_report_type: str, i_out_dtd_file_name: str) -> None:
+    def generate_report(self, i_xml_file_name: str, i_report_file_name: str, i_report_type: str,
+                        i_out_dtd_file_name: str) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GenerateReport(CATBSTR iXMLFileName,
                 | CATBSTR iReportFileName,
                 | CATBSTR iReportType,
@@ -72,4 +72,4 @@ class RpmReport(AnyObject):
         return self.rpm_report.GenerateReport(i_xml_file_name, i_report_file_name, i_report_type, i_out_dtd_file_name)
 
     def __repr__(self):
-        return f'RpmReport(name="{ self.name }")'
+        return f'RpmReport(name="{self.name}")'

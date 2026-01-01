@@ -44,7 +44,7 @@ class UserSurfaces(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Generate(Reference iSupport) As UserSurface
                 | 
                 |     Use this method in a Part. Creates a new user surface and adds it to the
@@ -76,7 +76,7 @@ class UserSurfaces(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GenerateInAProductCtx(Product iProduct,
                 | Product iProdInst,
                 | Reference iSupport) As UserSurface
@@ -111,7 +111,7 @@ class UserSurfaces(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As UserSurface
                 | 
                 |     Find a user surface inside the collection.
@@ -135,7 +135,7 @@ class UserSurfaces(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func MakeUserSurfaceNode(UserSurface iFirstUserSurf,
                 | UserSurface iSecondUserSurf) As UserSurface
                 | 
@@ -164,7 +164,7 @@ class UserSurfaces(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func MakeUserSurfaceNode2(CATSafeArrayVariant iListOfUserSurfaces) As
                 | UserSurface
                 | 

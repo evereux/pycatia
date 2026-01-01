@@ -282,7 +282,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExportModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -320,7 +320,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExportSheetsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -405,7 +405,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportDestinationViewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -443,7 +443,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportDftStandardInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -481,7 +481,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportDimensionsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -519,7 +519,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportEndPointsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -557,7 +557,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImportUnitInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -595,7 +595,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExportModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Export Mode option if the operation is allowed in the
@@ -640,7 +640,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExportSheetsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Exported Sheets option if the operation is allowed in
@@ -724,7 +724,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportDestinationViewLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the import destination view if the operation is allowed in
@@ -769,7 +769,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportDftStandardLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Drafting standard option if the operation is allowed
@@ -814,7 +814,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportDimensionsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Import dimensions option if the operation is allowed
@@ -859,7 +859,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportEndPointsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Create End Points option if the operation is allowed
@@ -904,7 +904,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImportUnitLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the import unit option if the operation is allowed in the
@@ -949,7 +949,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportMode(CatIg2ExportModeEnum iMode)
                 | 
                 |     Set the Export Mode option value.
@@ -975,7 +975,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ExportSheets(CatIg2ExportSheetsEnum iSheets)
                 | 
                 |     set the Exported Sheets option value.
@@ -1039,7 +1039,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportDestinationView(CatIg2ImportDestinationViewEnum
                 | iDestinationView)
                 | 
@@ -1066,7 +1066,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportDftStandard(CATBSTR iDftStandard)
                 | 
                 |     Set the name of the Drafting standard, which define the standard of the
@@ -1093,7 +1093,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportDimensions(CatIg2ImportDimensionsEnum
                 | iDimensions)
                 | 
@@ -1120,7 +1120,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportEndPoints(CatIg2ImportCreateEndPointsEnum
                 | iEndPoints)
                 | 
@@ -1147,7 +1147,7 @@ class Ig2SettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub set_ImportUnit(CatIg2ImportUnitEnum iUnit)
                 | 
                 |     Set the import unit.

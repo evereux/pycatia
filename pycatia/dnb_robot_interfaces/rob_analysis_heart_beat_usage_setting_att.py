@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class RobAnalysisHeartBeatUsageSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -84,7 +83,7 @@ class RobAnalysisHeartBeatUsageSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetEnableHeartBeatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -120,7 +119,7 @@ class RobAnalysisHeartBeatUsageSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetEnableHeartBeatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SingularColor parameter.
@@ -157,4 +156,4 @@ class RobAnalysisHeartBeatUsageSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'RobAnalysisHeartBeatUsageSettingAtt(name="{ self.name }")'
+        return f'RobAnalysisHeartBeatUsageSettingAtt(name="{self.name}")'

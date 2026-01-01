@@ -44,7 +44,7 @@ class AssemblyAnnotationSets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As AnyObject
                 | 
                 |     Retrieve a set.
@@ -59,7 +59,7 @@ class AssemblyAnnotationSets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LoadAnnotationSetsList()
                 | 
                 |     Loads the Annotation Sets list. This method is very useful when a cgr

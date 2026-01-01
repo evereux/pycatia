@@ -39,7 +39,7 @@ class ManufacturingActivitySyntax(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetPPWORDSyntax()
                 | 
                 |     Resets the PP words syntax.
@@ -56,7 +56,7 @@ class ManufacturingActivitySyntax(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPPWORDSyntax(CATBSTR iPPWORDs)
                 | 
                 |     Sets the PP words syntax.

@@ -48,7 +48,7 @@ class AnalysisV4Services(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetStorageInfo(CATBSTR iModelPath,
                 | CATBSTR oPrefix) As CATBSTR
                 | 
@@ -92,7 +92,7 @@ class AnalysisV4Services(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PrintAssembledSetsInfo(CATBSTR iSessionPath,
                 | CATBSTR iPrintPath,
                 | long iSubmesh)
@@ -136,7 +136,7 @@ class AnalysisV4Services(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PrintCouplingAnalysisInfo(CATBSTR iSessionPath,
                 | CATBSTR iPrintPath,
                 | long iSubmesh)
@@ -178,7 +178,7 @@ class AnalysisV4Services(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PrintSessionInfo(CATBSTR iSessionPath,
                 | CATBSTR iPrintPath)
                 | 

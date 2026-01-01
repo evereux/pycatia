@@ -50,7 +50,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateDatum(UserSurface iSurf) As Annotation
                 | 
                 |     Create a Datum Feature.
@@ -74,7 +74,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateDatumReferenceFrame() As Annotation
                 | 
                 |     Create a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
@@ -89,7 +89,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateDatumTarget(UserSurface iSurf,
                 | Annotation iDatum) As Annotation
                 | 
@@ -119,7 +119,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateEvoluateDatum(UserSurface iSurf,
                 | double iX,
                 | double iY,
@@ -165,7 +165,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateEvoluateText(UserSurface iSurf,
                 | double iX,
                 | double iY,
@@ -209,7 +209,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateFlagNote(UserSurface iSurf) As Annotation
                 | 
                 |     Create a FlagNote.
@@ -233,7 +233,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateNonSemanticDimension(UserSurface iSurf,
                 | CATVariant iDimensionType,
                 | CATVariant iLinearDimSubType) As Annotation
@@ -266,7 +266,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateRoughness(UserSurface iSurf) As Annotation
                 | 
                 |     Create a Roughness.
@@ -290,7 +290,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateSemanticDimension(UserSurface iSurf,
                 | CATVariant iType,
                 | CATVariant iSubType) As Annotation
@@ -316,7 +316,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateText(UserSurface iSurf) As Annotation
                 | 
                 |     Create a Text.
@@ -340,7 +340,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateTextNOA(UserSurface iSurf) As Noa
                 | 
                 |     Create a "Text" NOA
@@ -363,7 +363,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateTextNoteObjectAttribute(UserSurface iSurf,
                 | CATBSTR iNOAType) As Noa
                 | 
@@ -391,7 +391,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateTextOnAnnot(CATBSTR iText,
                 | Annotation iAnnot) As Annotation
                 | 
@@ -418,7 +418,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateToleranceWithDRF(CATVariant iIndex,
                 | UserSurface iSurf,
                 | Annotation iDRF) As Annotation
@@ -439,7 +439,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateToleranceWithoutDRF(CATVariant iIndex,
                 | UserSurface iSurf) As Annotation
                 | 
@@ -457,7 +457,7 @@ class AnnotationFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func InstanciateNOA(Noa iNoa,
                 | UserSurface iSurf) As Annotation
                 | 

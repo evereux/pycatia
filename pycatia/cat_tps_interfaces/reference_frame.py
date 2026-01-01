@@ -80,7 +80,7 @@ class ReferenceFrame(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Frame(CATBSTR oFirstBox,
                 | CATBSTR oSecondBox,
                 | CATBSTR oThirdBox)
@@ -107,7 +107,7 @@ class ReferenceFrame(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAxisSystemTTRS(UserSurface opAxisSystemTTRS)
                 |
                 |      Gets the AxisSystem TTRS.
@@ -148,7 +148,7 @@ class ReferenceFrame(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDegreesOfFreedom(CATVariant inBox,
                 | CATBSTR oValue)
                 |
@@ -211,7 +211,7 @@ class ReferenceFrame(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAxisSystemTTRS(UserSurface ipAxisSystemTTRS)
                 |
                 |      Sets the AxisSystem TTRS.
@@ -254,7 +254,7 @@ class ReferenceFrame(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDegreesOfFreedom(CATVariant inBox,
                 | CATBSTR iValue)
                 |
@@ -319,7 +319,7 @@ class ReferenceFrame(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFrame(CATBSTR iFirstBox,
                 | CATBSTR iSecondBox,
                 | CATBSTR iThirdBox)

@@ -49,7 +49,7 @@ class RobotTaskFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateRobotTask(CATBSTR iName,
                 | RobotTask oRobotTask)
                 | 
@@ -107,7 +107,7 @@ class RobotTaskFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DeleteRobotTask(RobotTask iRobotTask)
                 | 
                 |     Removes the required Robot Task.
@@ -161,7 +161,7 @@ class RobotTaskFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAllRobotTasks(CATSafeArrayVariant oRobotTaskList)
                 | 
                 |     Retrieves the list of Robot Tasks owned by a Robot.

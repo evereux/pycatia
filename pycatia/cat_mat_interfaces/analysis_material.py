@@ -42,7 +42,7 @@ class AnalysisMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetType() As CATBSTR
                 |
                 |     Returns the analysis type (Ex: MATERIAL_ORTHOTROPIC, MATERIAL_ISOTROPIC).
@@ -56,7 +56,7 @@ class AnalysisMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetValue(CATBSTR iLabel) As CATVariant
                 |
                 |     Returns an analysis value of the material. The name of the parameter is
@@ -72,7 +72,7 @@ class AnalysisMaterial(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PutValue(CATBSTR iLabel,
                 | CATVariant iValue)
                 |

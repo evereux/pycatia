@@ -13,7 +13,6 @@ from pycatia.in_interfaces.document import Document
 
 
 class CatalogDocument(Document):
-
     """
         .. note::
             :class: toggle
@@ -58,7 +57,7 @@ class CatalogDocument(Document):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateCatalogFromLibrary(CATBSTR iLibraryPath,
                 | CATBSTR iProjectPath,
                 | CATBSTR iCatalogPath,
@@ -112,7 +111,7 @@ class CatalogDocument(Document):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateCatalogFromcsv(CATBSTR iInitData,
                 | CATBSTR iNewCatalog)
                 | 
@@ -150,7 +149,7 @@ class CatalogDocument(Document):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateChapterFromDesignTable(CATBSTR iChapterName,
                 | CATBSTR iDocumentContainingDT)
                 | 
@@ -185,4 +184,4 @@ class CatalogDocument(Document):
         return self.catalog_document.CreateChapterFromDesignTable(i_chapter_name, i_document_containing_dt)
 
     def __repr__(self):
-        return f'CatalogDocument(name="{ self.name }")'
+        return f'CatalogDocument(name="{self.name}")'

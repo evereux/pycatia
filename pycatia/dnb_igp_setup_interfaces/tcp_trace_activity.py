@@ -42,7 +42,7 @@ class TCPTraceActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetLineColor(long oR,
                 | long oG,
                 | long oB)
@@ -67,7 +67,7 @@ class TCPTraceActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLineThickness() As long
                 | 
                 |     Indicates the line thickness property of trace.
@@ -87,7 +87,7 @@ class TCPTraceActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLineType() As long
                 | 
                 |     Indicates the line type property of trace.
@@ -107,7 +107,7 @@ class TCPTraceActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTCPTraceMode() As boolean
                 | 
                 |     Indicates if the tracing capability is active or not.
@@ -130,7 +130,7 @@ class TCPTraceActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLineColor(long iR,
                 | long iG,
                 | long iB)
@@ -155,7 +155,7 @@ class TCPTraceActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLineThickness(long iThickness)
                 | 
                 |     Indicates the line thickness property of trace.
@@ -176,7 +176,7 @@ class TCPTraceActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLineType(long iType)
                 | 
                 |     Indicates the line type property of trace.
@@ -196,7 +196,7 @@ class TCPTraceActivity(Activity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTCPTraceMode(boolean iTCPTraceMode)
                 | 
                 |     Set the tracing capability as active or not.

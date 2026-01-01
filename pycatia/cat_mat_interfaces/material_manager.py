@@ -48,7 +48,7 @@ class MaterialManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyMaterialOnBody(Body iBody,
                 | Material iMaterial,
                 | short iLinkMode)
@@ -77,7 +77,7 @@ class MaterialManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyMaterialOnHybridBody(HybridBody iHybridBody,
                 | Material iMaterial,
                 | short iLinkMode)
@@ -103,7 +103,7 @@ class MaterialManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyMaterialOnPart(Part iPart,
                 | Material iMaterial,
                 | short iLinkMode)
@@ -132,7 +132,7 @@ class MaterialManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyMaterialOnProduct(Product iProduct,
                 | Material iMaterial,
                 | short iLinkMode)
@@ -161,7 +161,7 @@ class MaterialManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyMaterialOnUserMaterial(AnyObject iUserMaterial,
                 | Material iMaterial,
                 | short iLinkMode)
@@ -188,7 +188,7 @@ class MaterialManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMaterialOnBody(Body iBody,
                 | Material oMaterial)
                 |
@@ -219,7 +219,7 @@ class MaterialManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMaterialOnHybridBody(HybridBody iHybridBody,
                 | Material oMaterial)
                 |
@@ -253,7 +253,7 @@ class MaterialManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMaterialOnPart(Part iPart,
                 | Material oMaterial)
                 |
@@ -284,7 +284,7 @@ class MaterialManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMaterialOnProduct(Product iProduct,
                 | Material oMaterial)
                 |
@@ -315,7 +315,7 @@ class MaterialManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetMaterialOnUserMaterial(AnyObject iUserMaterial,
                 | Material oMaterial)
                 |
@@ -353,7 +353,7 @@ class MaterialManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ReplaceMaterialLinks(Material iMaterial1,
                 | Material iMaterial2)
                 |

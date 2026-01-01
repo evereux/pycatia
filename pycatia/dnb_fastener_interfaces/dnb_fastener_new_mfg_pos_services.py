@@ -38,7 +38,7 @@ class DnbFastenerNewMfgPosServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetFlaggedFasteners(CATSafeArrayVariant
                 | oFastenerArray)
                 | 
@@ -73,7 +73,7 @@ class DnbFastenerNewMfgPosServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfFlaggedFasteners() As long
                 | 
                 |     Gets number of flagged DELMIAFasteners. * 
@@ -91,7 +91,7 @@ class DnbFastenerNewMfgPosServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFlag(Fastener iFastener)
                 | 
                 |     flags a specified DELMIAFastener to create a new manufacturing fastener in
@@ -127,7 +127,7 @@ class DnbFastenerNewMfgPosServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFlagOnFasteners(CATSafeArrayVariant iFastenerArray)
                 | 
                 |     flags a list of DELMIAFasteners to create new manufacturing fasteners in
@@ -163,7 +163,7 @@ class DnbFastenerNewMfgPosServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnsetFlag(Fastener iFastener)
                 | 
                 |     unflags a flagged DELMIAFastener to create a new manufacturing fastener in
@@ -199,7 +199,7 @@ class DnbFastenerNewMfgPosServices(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnsetFlagOnFasteners(CATSafeArrayVariant
                 | iFastenerArray)
                 | 

@@ -625,7 +625,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddDefExtFromCoordinates(CATSafeArrayVariant iCoord,
                 | double iOffset) As AnyObject
                 | 
@@ -650,7 +650,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddDefExtFromReference(Reference iReference,
                 | double iOffset) As AnyObject
                 | 
@@ -675,7 +675,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddDefExtOnMember(StrMember iMember,
                 | CatStrMemberExtremity iSide,
                 | double iDistance,
@@ -716,7 +716,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddDimMember(StrSection iSection,
                 | CATBSTR iAnchorName,
                 | double iAngle,
@@ -782,7 +782,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddDimMemberOnPlane(StrSection iSection,
                 | CATBSTR iAnchorName,
                 | double iAngle,
@@ -861,7 +861,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddDimMemberPtPt(StrSection iSection,
                 | CATBSTR iAnchorName,
                 | double iAngle,
@@ -929,7 +929,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddDimMemberWithSupport(StrSection iSection,
                 | CATBSTR iAnchorName,
                 | double iAngle,
@@ -1010,7 +1010,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMember(StrSection iSection,
                 | CATBSTR iAnchorName,
                 | double iAngle,
@@ -1071,7 +1071,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberFromDir(StrSection iSection,
                 | CATBSTR iAnchorName,
                 | double iAngle,
@@ -1144,7 +1144,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberFromMathDir(StrSection iSection,
                 | CATBSTR iAnchorName,
                 | double iAngle,
@@ -1210,7 +1210,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberFromMathPlane(StrSection iSection,
                 | CATBSTR iAnchorName,
                 | double iAngle,
@@ -1282,7 +1282,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberOnSupport(StrSection iSection,
                 | CATBSTR iAnchorName,
                 | double iAngle,
@@ -1349,7 +1349,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddMemberOnSupportWithRef(StrSection iSection,
                 | CATBSTR iAnchorName,
                 | Reference iSurfRef,
@@ -1423,7 +1423,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddPlate(Reference iSupport,
                 | double iThickness,
                 | CatStrMaterialOrientation iOrientation,
@@ -1481,7 +1481,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddPlateOnSurface(double iThickness,
                 | CatStrMaterialOrientation iOrientation,
                 | Reference iSurface,
@@ -1536,7 +1536,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddRectangularEndPlate(StrMember iMember,
                 | CatStrMemberExtremity iSide,
                 | double iThickness,
@@ -1593,7 +1593,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddSection(Document iPart) As StrSection
                 | 
                 |     Creates a section object from part document. This part must aggregate a
@@ -1621,7 +1621,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddSectionFromCatalog(Document iPart,
                 | CATBSTR iCatalogName,
                 | CATBSTR iFamilyName,
@@ -1665,7 +1665,7 @@ class StrObjectFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ExtendProductAsFoundation(CATBSTR iClass) As
                 | StrFoundation
                 | 

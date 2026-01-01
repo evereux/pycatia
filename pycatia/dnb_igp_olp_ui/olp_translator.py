@@ -52,7 +52,7 @@ class OLPTranslator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ConvertNRLToXML(CATBSTR iNRLFileName,
                 | CATBSTR iParserName,
                 | CATBSTR oXMLFileName)
@@ -85,7 +85,7 @@ class OLPTranslator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ConvertXMLToNRL(CATBSTR iXMLFileName,
                 | CATBSTR iXSLTFileName,
                 | CATBSTR oNRLTargetFolder)
@@ -121,7 +121,7 @@ class OLPTranslator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DownloadAsXML(RobotTask iRobotTask,
                 | CATBSTR oXMLFileName,
                 | boolean iIsPartCoordinates,
@@ -190,7 +190,7 @@ class OLPTranslator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DownloadTasks(CATSafeArrayVariant lListOfTasks,
                 | CATBSTR sPathToXSLTTranslator,
                 | CATBSTR sContext,
@@ -315,7 +315,7 @@ class OLPTranslator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRobotProgramDirectory() As CATBSTR
                 | 
                 |     Retrieves the OLP Directory setting parameter value.
@@ -335,7 +335,7 @@ class OLPTranslator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetXMLFileDirectory() As CATBSTR
                 | 
                 |     Retrieves the XML Directory setting parameter value.
@@ -361,7 +361,7 @@ class OLPTranslator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UploadFromXML(RobotTask iRobotTask,
                 | CATBSTR iXMLFileName,
                 | boolean iIsPartCoordinates,
@@ -422,7 +422,7 @@ class OLPTranslator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UploadRobotProgram(Product spISelectedRobot,
                 | CATBSTR sPathToRobotProgramFile,
                 | CATBSTR sPathToUploaderFile,

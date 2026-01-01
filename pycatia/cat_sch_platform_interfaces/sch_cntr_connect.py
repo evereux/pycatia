@@ -40,7 +40,7 @@ class SchCntrConnect(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTransformMatrix(SchGRRCntr iGRRCntr,
                 | SchListOfDoubles oDb6Matrix)
                 | 
@@ -91,7 +91,7 @@ class SchCntrConnect(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub OKToConnect(SchGRRCntr iGRRCntr,
                 | boolean oBYes)
                 | 

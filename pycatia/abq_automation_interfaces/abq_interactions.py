@@ -42,7 +42,7 @@ class ABQInteractions(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iInteractionType) As ABQInteraction
                 | 
                 |     Creates a new Abaqus interaction and adds it to the collection of Abaqus
@@ -83,7 +83,7 @@ class ABQInteractions(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ABQInteraction
                 | 
                 |     Returns an Abaqus interaction using its index or its name from the
@@ -113,7 +113,7 @@ class ABQInteractions(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an Abaqus interaction using its index or its name from the

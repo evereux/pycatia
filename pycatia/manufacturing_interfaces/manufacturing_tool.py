@@ -174,7 +174,7 @@ class ManufacturingTool(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddCorrector() As ManufacturingToolCorrector
                 | 
                 |     Adds a corrector to a Manufacturing tool.
@@ -194,7 +194,7 @@ class ManufacturingTool(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttribute(CATBSTR iAttribut) As Parameter
                 | 
                 |     Retrieve by is name the attribute of a Manufacturing Tool.
@@ -216,7 +216,7 @@ class ManufacturingTool(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttributeNLSName(CATBSTR iAttributName) As CATBSTR
                 | 
                 |     Retrieve the NLS name from the attribute name of a Manufacturing
@@ -232,7 +232,7 @@ class ManufacturingTool(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCorrector(short index) As
                 | ManufacturingToolCorrector
                 | 
@@ -254,7 +254,7 @@ class ManufacturingTool(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfAptParameters(CATSafeArrayVariant
                 | oListOfAptParameters)
                 | 
@@ -287,7 +287,7 @@ class ManufacturingTool(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfAttributeUnits(CATSafeArrayVariant
                 | oListOfAttributeUnits)
                 | 
@@ -330,7 +330,7 @@ class ManufacturingTool(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfAttributes(CATSafeArrayVariant
                 | oListOfAttributes)
                 | 
@@ -368,7 +368,7 @@ class ManufacturingTool(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetListOfGeomAttributes(CATSafeArrayVariant
                 | oListOfAttributes)
                 | 

@@ -44,7 +44,7 @@ class MHIOpenAccess(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ConnectToPPRHub(CATBSTR iUsername,
                 | CATBSTR iPassword)
                 | 
@@ -72,7 +72,7 @@ class MHIOpenAccess(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateLoadParameters() As MHILoadParameters
                 | 
                 |     This method creates an object which will contain all the necessary
@@ -102,7 +102,7 @@ class MHIOpenAccess(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func LoadFromPPRHub(MHILoadParameters iLoadParameters,
                 | boolean iCreateDefaultWindow,
                 | boolean iIsReadOnly,
@@ -163,7 +163,7 @@ class MHIOpenAccess(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetEnvironmentForVBSLaunch(CATBSTR iObjId,
                 | CATBSTR iFilter,
                 | CATBSTR iParentId,

@@ -46,7 +46,7 @@ class ArrNomenclatures(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddUserNomenclature(CATBSTR iName,
                 | CATBSTR iIconName,
                 | CATBSTR iClassType,
@@ -87,7 +87,7 @@ class ArrNomenclatures(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ArrNomenclature
                 | 
                 |     Returns the specified item of the collection

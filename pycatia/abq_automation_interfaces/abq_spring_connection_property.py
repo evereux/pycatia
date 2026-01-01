@@ -135,7 +135,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromReference(Reference iReference,
                 | Reference iSupport)
                 | 
@@ -178,7 +178,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLinearStiffness(SpringDof_Type iDof) As double
                 | 
                 |     Gets the linear stiffness of the spring given the degree of
@@ -213,7 +213,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetNonLinearStiffness(SpringDof_Type iDof,
                 | CATSafeArrayVariant oForceArray,
                 | CATSafeArrayVariant oDispArray)
@@ -271,7 +271,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ReadStiffnessDataFromFile(SpringDof_Type iDof,
                 | CATBSTR iFileName)
                 | 
@@ -307,7 +307,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAxisSystem()
 
         :rtype: None
@@ -319,7 +319,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveDof(SpringDof_Type iDof)
                 | 
                 |     Unsets the stiffness of the spring for given degree of
@@ -348,7 +348,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLinearStiffness(SpringDof_Type iDof,
                 | double iStiffnessValue)
                 | 
@@ -382,7 +382,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNonLinearStiffness(SpringDof_Type iDof,
                 | CATSafeArrayVariant iForceArray,
                 | CATSafeArrayVariant iDispArray)

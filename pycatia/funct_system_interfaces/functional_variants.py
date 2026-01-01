@@ -41,7 +41,7 @@ class FunctionalVariants(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Create(CATBSTR iName) As FunctionalVariant
                 | 
                 |     Create a FunctionalVariant.
@@ -56,7 +56,7 @@ class FunctionalVariants(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Delete(FunctionalVariant iVariant)
                 | 
                 |     Delete a FunctionalVariant.
@@ -86,7 +86,7 @@ class FunctionalVariants(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Elem(CATVariant iIndex) As FunctionalVariant
                 | 
                 |     Returns a Variant using its index or its name from the Variants

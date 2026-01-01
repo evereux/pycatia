@@ -270,7 +270,7 @@ class StrMember(StrObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateCutback(StrMember iMember,
                 | CatStrCutbackType iCutback,
                 | double iOffset) As StrCutback
@@ -307,7 +307,7 @@ class StrMember(StrObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Flip()
                 | 
                 |     Flips the section. Useful for asymetric section as the angle section, or
@@ -328,7 +328,7 @@ class StrMember(StrObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Rotate(double iAngle)
                 | 
                 |     Rotates the section on its support object. The given angle is applied using

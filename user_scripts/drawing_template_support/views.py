@@ -1,5 +1,3 @@
-#! /usr/bin/python3.8
-
 from .caa import caa
 
 

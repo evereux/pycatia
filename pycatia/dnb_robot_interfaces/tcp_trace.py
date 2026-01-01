@@ -156,7 +156,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Export(CATBSTR iName) As long
                 | 
                 |     Export the TCP trace data in a file. The file format is indicated by the
@@ -186,7 +186,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttachedOwner() As AnyObject
                 | 
                 |     Retrieves the default attached owner of the trace. By default, the owner of
@@ -210,7 +210,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetColor(DNBTCPTraceReps iRep,
                 | long oR,
                 | long oG,
@@ -247,7 +247,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLegendsVisibility(DNBTCPTraceLegends iType) As
                 | boolean
                 | 
@@ -274,7 +274,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetThickness(DNBTCPTraceReps iRep) As long
                 | 
                 |     Get the TCP trace component (DNBTCPTraceReps) thickness(for line,
@@ -300,7 +300,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetType(DNBTCPTraceReps iRep) As long
                 | 
                 |     Get the TCP trace component (DNBTCPTraceReps) type. For points, legal
@@ -337,7 +337,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetVisibility(DNBTCPTraceReps iRep) As boolean
                 | 
                 |     Get the TCP trace component (DNBTCPTraceReps) visibility
@@ -361,7 +361,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RefreshDisplay()
                 | 
                 |     Refresh display. Need to call this method whenever the graphic properties
@@ -378,7 +378,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetAttachedOwner()
                 | 
                 |     Resets the attached owner of the trace to the world. When a new trace will
@@ -394,7 +394,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetGraphics(boolean bSetting)
                 | 
                 |     Reset the current appearance regarding the current general settings (not
@@ -432,7 +432,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAttachedOwner(AnyObject iOwner)
                 | 
                 |     Sets the default attached owner of the trace. By default, the owner of the
@@ -456,7 +456,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetColor(DNBTCPTraceReps iRep,
                 | long iR,
                 | long iG,
@@ -497,7 +497,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLegendsVisibility(DNBTCPTraceLegends iType,
                 | boolean ibVisible)
                 | 
@@ -540,7 +540,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetThickness(DNBTCPTraceReps iRep,
                 | long iThickness)
                 | 
@@ -568,7 +568,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetType(DNBTCPTraceReps iRep,
                 | long iType)
                 | 
@@ -612,7 +612,7 @@ class TCPTrace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetVisibility(DNBTCPTraceReps iRep,
                 | boolean ibVisible)
                 | 

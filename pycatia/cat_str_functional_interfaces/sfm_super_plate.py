@@ -261,7 +261,7 @@ class SFMSuperPlate(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddLimit(Reference iLimit,
                 | long iOrientation)
                 | 
@@ -326,7 +326,7 @@ class SFMSuperPlate(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetFreeEdges() As References
                 | 
                 |     Returns the Free Edges of Super Plate.
@@ -348,7 +348,7 @@ class SFMSuperPlate(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSlotsOnPlate() As SfmSlots
                 | 
                 |     Retrieves Slots on Plate.
@@ -382,7 +382,7 @@ class SFMSuperPlate(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSplitPlateAttributes(long iSplitPlateNumber,
                 | double oThickness,
                 | CATBSTR oMaterialName,
@@ -443,7 +443,7 @@ class SFMSuperPlate(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub InvertLimit(CATVariant iIndex)
                 | 
                 |     Invert a limit orientation by its index or its name.
@@ -479,7 +479,7 @@ class SFMSuperPlate(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LimitOrientations(CATSafeArrayVariant ioOrientations)
                 | 
                 |     Returns the orientation of the limits.
@@ -516,7 +516,7 @@ class SFMSuperPlate(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Limits() As References
                 | 
                 |     Returns the limits.
@@ -537,7 +537,7 @@ class SFMSuperPlate(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveLimit(CATVariant iIndex)
                 | 
                 |     Removes one object from the list of limits by its index or its
@@ -574,7 +574,7 @@ class SFMSuperPlate(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Run()
                 | 
                 |     Build the SplitPlates.
@@ -594,7 +594,7 @@ class SFMSuperPlate(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAsLastLimit(CATVariant iIndex)
                 | 
                 |     Adds one limit at the end of the list.
@@ -636,7 +636,7 @@ class SFMSuperPlate(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSplitPlateAttributes(long iSplitPlateNumber,
                 | double iThickness,
                 | CATBSTR iMaterialName,

@@ -42,7 +42,7 @@ class ABQMassScalings(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add() As ABQMassScaling
                 | 
                 |     Adds a new ABQMassScaling to the collection.
@@ -59,7 +59,7 @@ class ABQMassScalings(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ABQMassScaling
                 | 
                 |     Returns the ABQMassScaling entry for the specified index.
@@ -83,7 +83,7 @@ class ABQMassScalings(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes the specified entry.

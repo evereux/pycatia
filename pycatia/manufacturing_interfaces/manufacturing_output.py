@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ManufacturingOutput(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -61,7 +60,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CloseStream()
                 | 
                 |     Close the Stream.
@@ -75,7 +74,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DecrementTabulation(long iTab)
                 | 
                 |     Decrement the tabulation of the current block of text by the specified
@@ -91,7 +90,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub EndBlock()
                 | 
                 |     Specify that the Block is ended.
@@ -105,7 +104,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub EndLine()
                 | 
                 |     Specify that the line is ended.
@@ -119,7 +118,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Flush()
                 | 
                 |     Flush all Data in the Stream.
@@ -133,7 +132,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IncrementTabulation(long iTab)
                 | 
                 |     Increment the tabulation of the current block of text by the specified
@@ -149,7 +148,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub NewBlock()
                 | 
                 |     Create a New Block in the underlying output stream.
@@ -163,7 +162,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub NewLine()
                 | 
                 |     Create a New Line in the underlying output stream.
@@ -177,7 +176,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBufferLength(long iLines)
                 | 
                 |     Set the number of lines of the buffer before it will be flushed (default is
@@ -198,7 +197,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub write_Chars(CATBSTR iText)
                 | 
                 |     Write the specified string to the underlying output stream.
@@ -213,7 +212,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub write_Double(double iVal)
                 | 
                 |     Write the specified double to the underlying output stream.
@@ -228,7 +227,7 @@ class ManufacturingOutput(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub write_Long(long iVal)
                 | 
                 |     Write the specified long to the underlying output stream.
@@ -239,4 +238,4 @@ class ManufacturingOutput(AnyObject):
         return self.manufacturing_output.write_Long(i_val)
 
     def __repr__(self):
-        return f'ManufacturingOutput(name="{ self.name }")'
+        return f'ManufacturingOutput(name="{self.name}")'

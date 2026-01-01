@@ -14,7 +14,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ManufacturingHole(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -93,7 +92,7 @@ class ManufacturingHole(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDirection(double oX,
                 | double oY,
                 | double oZ)
@@ -121,7 +120,7 @@ class ManufacturingHole(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOrigin(double oX,
                 | double oY,
                 | double oZ)
@@ -145,4 +144,4 @@ class ManufacturingHole(AnyObject):
         return self.manufacturing_hole.GetOrigin(o_x, o_y, o_z)
 
     def __repr__(self):
-        return f'ManufacturingHole(name="{ self.name }")'
+        return f'ManufacturingHole(name="{self.name}")'

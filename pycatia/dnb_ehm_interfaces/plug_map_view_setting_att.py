@@ -100,7 +100,7 @@ class PlugMapViewSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddtoLogicalDataAttrList(CATBSTR iparameterName,
                 | CATBSTR iRefparamName)
                 | 
@@ -117,7 +117,7 @@ class PlugMapViewSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddtoTerminationAttrList(CATBSTR iparameterName,
                 | CATBSTR iRefparamName)
                 | 
@@ -134,7 +134,7 @@ class PlugMapViewSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLogicalDataAttrListInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -170,7 +170,7 @@ class PlugMapViewSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTerminationAttrListInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -206,7 +206,7 @@ class PlugMapViewSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovefromLogicalDataAttrList(CATBSTR iparameterName)
                 | 
                 |     Method to Remove a parameter fron the LogicalDataAttrList.
@@ -221,7 +221,7 @@ class PlugMapViewSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovefromTerminationAttrList(CATBSTR iparameterName)
                 | 
                 |     Method to Remove a parameter fron the TerminationAttrList.
@@ -236,7 +236,7 @@ class PlugMapViewSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLogicalDataAttrListLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the LogicalDataAttrList parameter.
@@ -277,7 +277,7 @@ class PlugMapViewSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTerminationAttrListLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the TerminationAttrList parameter.

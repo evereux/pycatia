@@ -46,7 +46,7 @@ class SchAppConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppConnect(SchAppConnector iCntrToConnect) As
                 | SchAppConnection
                 | 
@@ -81,7 +81,7 @@ class SchAppConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppConnectBranch(SchAppConnector iCntrToConnect) As
                 | SchAppConnection
                 | 
@@ -114,7 +114,7 @@ class SchAppConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppDisconnect(SchAppConnector iCntrToDisConnect)
                 | 
                 |     Disconnect from an input connector.
@@ -158,7 +158,7 @@ class SchAppConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppGetAssociatedConnectable() As SchAppConnectable
                 | 
                 |     Find the application object that owns this connector.
@@ -189,7 +189,7 @@ class SchAppConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppIsCntrConnected(boolean oBYes)
                 | 
                 |     Query whether the connector has been connected.
@@ -233,7 +233,7 @@ class SchAppConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppListCompatibleTypes() As SchListOfBSTRs
                 | 
                 |     Find all the class types of connector that are compatible with this
@@ -263,7 +263,7 @@ class SchAppConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppListConnections(SchListOfBSTRs iLCntnClassFilter) As
                 | SchListOfObjects
                 | 
@@ -298,7 +298,7 @@ class SchAppConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToNoShowConnectedCntr(boolean oBYes)
                 | 
                 |     Query whether it is OK to no show the connector after it is

@@ -61,7 +61,7 @@ class AnalysisMeshLocalSpecification(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromPublication(CATBSTR iName,
                 | Product iProduct,
                 | Publication iSupport)
@@ -113,7 +113,7 @@ class AnalysisMeshLocalSpecification(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromReference(CATBSTR iName,
                 | Product iProduct,
                 | Reference iSupport)
@@ -164,7 +164,7 @@ class AnalysisMeshLocalSpecification(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAttribute(CATBSTR iName,
                 | CATVariant iValue)
                 | 

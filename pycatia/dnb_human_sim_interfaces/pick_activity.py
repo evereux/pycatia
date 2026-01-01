@@ -94,7 +94,7 @@ class PickActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPickedMfgAssembly(MfgAssembly pPickedItem)
                 | 
                 |     Adds a Manufacturing Assembly to the List of Picked Items (see MfgAssembly
@@ -125,7 +125,7 @@ class PickActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddPickedProduct(Product pPickedItem)
                 | 
                 |     Adds a product to the List of Picked Items
@@ -155,7 +155,7 @@ class PickActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPickedProducts(CATSafeArrayVariant pPickedProds)
                 | 
                 |     Returns or Sets Picked Products
@@ -185,7 +185,7 @@ class PickActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePickedMfgAssembly(MfgAssembly pPickedItem)
                 | 
                 |     Removes a Manufacturing Assembly from the list of Picked items (see
@@ -216,7 +216,7 @@ class PickActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemovePickedProduct(Product pPickedItem)
                 | 
                 |     Removes a product from the list of Picked items (see Product for list of
@@ -247,7 +247,7 @@ class PickActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPickedProducts(CATSafeArrayVariant pPickedProds)
 
         :param tuple p_picked_prods:
@@ -275,7 +275,7 @@ class PickActivity(WorkerActivity):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPlaceAct(Activity placeAct)
                 | 
                 |     Sets or append a link to a Place activity (see Activity for list of

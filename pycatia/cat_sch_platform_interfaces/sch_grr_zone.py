@@ -40,7 +40,7 @@ class SchGRRZone(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddBoundaryElement(SchBoundaryElem iZoneBndyToAdd)
                 | 
                 |     Add a boundary element to the zone.
@@ -82,7 +82,7 @@ class SchGRRZone(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IsBoundaryValid(boolean BIsValid)
                 | 
                 |     Check whether the boundary of this zone graphical representation is
@@ -125,7 +125,7 @@ class SchGRRZone(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListBoundaryElements() As SchListOfObjects
                 | 
                 |     List all boundary elements of this zone graphical
@@ -155,7 +155,7 @@ class SchGRRZone(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveBoundaryElement(SchBoundaryElem
                 | iZoneBndyToRemove)
                 | 

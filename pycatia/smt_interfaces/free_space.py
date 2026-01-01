@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class FreeSpace(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -56,7 +55,7 @@ class FreeSpace(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetGravityCenter(CATSafeArrayVariant
                 | oGravityCenterCoordinatesArray)
                 | 
@@ -83,4 +82,4 @@ class FreeSpace(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'FreeSpace(name="{ self.name }")'
+        return f'FreeSpace(name="{self.name}")'

@@ -39,7 +39,7 @@ class SchFrameInfo(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetLabelCode(CATBSTR oLabel,
                 | boolean iBHoriz)
                 | 
@@ -87,7 +87,7 @@ class SchFrameInfo(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOriginCornerCode(CATBSTR oOriginCorner)
                 | 
                 |     Get the frame origin corner code.
@@ -114,7 +114,7 @@ class SchFrameInfo(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSpacingCode(CATBSTR oSpacing,
                 | boolean iBHoriz)
                 | 
@@ -162,7 +162,7 @@ class SchFrameInfo(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLabelCode(CATBSTR iLabel,
                 | boolean iBHoriz)
                 | 
@@ -210,7 +210,7 @@ class SchFrameInfo(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOriginCornerCode(CATBSTR iOriginCorner)
                 | 
                 |     Set the frame origin corner code.
@@ -237,7 +237,7 @@ class SchFrameInfo(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSpacingCode(CATBSTR iSpacing,
                 | boolean iBHoriz)
                 | 

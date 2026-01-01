@@ -111,7 +111,7 @@ class PSPConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Connect(PspConnector iCntrToConnect)
                 | 
                 |     Connect the connector to another connector.
@@ -153,7 +153,7 @@ class PSPConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Disconnect(PspConnector iCntrToDisconnect)
                 | 
                 |     DisConnect the connector from another connector.
@@ -195,7 +195,7 @@ class PSPConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAssociatedConnectable() As PspConnectable
                 | 
                 |     Get the connectable-owner of this connector.
@@ -214,7 +214,7 @@ class PSPConnector(AnyObject):
 
         :rtype: PSPConnectable
         """
-        
+
         from pycatia.cat_plant_ship_interfaces.psp_connectable import PSPConnectable
         return PSPConnectable(self.psp_connector.GetAssociatedConnectable())
 
@@ -223,7 +223,7 @@ class PSPConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsCntrConnected() As boolean
                 | 
                 |     Query whether the connector has been connected.

@@ -52,7 +52,7 @@ class MfgAssemblyFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateMfgAssembly(CATBSTR iNameBSTR,
                 | CATBSTR iPartNumberBSTR,
                 | DNBIAMfgAssemblyType iType) As Item
@@ -99,7 +99,7 @@ class MfgAssemblyFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfMfgAssemblies() As long
                 | 
                 |     Get the number of Manufacturing Assemblies in MA Applicative
@@ -128,7 +128,7 @@ class MfgAssemblyFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetNumberofALLMfgAssy(DNBIAMfgAssemblyType iType,
                 | long oNumOfMfgAssemblies)
                 | 
@@ -165,7 +165,7 @@ class MfgAssemblyFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveMfgAssembly(Item iMfgAssembly)
                 | 
                 |     Removes a given Manufacturing Assembly from the MA Applicative Container.
@@ -214,7 +214,7 @@ class MfgAssemblyFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RetrieveMfgAssembly(CATBSTR iNameBSTR,
                 | CATSafeArrayVariant oMfgAssemblies,
                 | long oNumOfMfgAssemblies)
@@ -282,7 +282,7 @@ class MfgAssemblyFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func RetrieveMfgAssemblyAtIndex(CATVariant iIndex) As Item
                 | 
                 |     Retrieves a Manufacturing Assembly at the given index from the MA
@@ -316,7 +316,7 @@ class MfgAssemblyFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RetriveALLMfgAssy(DNBIAMfgAssemblyType iType,
                 | CATSafeArrayVariant oAllMAs,
                 | long oNumOfMfgAssemblies)

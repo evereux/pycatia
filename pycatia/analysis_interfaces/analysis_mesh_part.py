@@ -96,7 +96,7 @@ class AnalysisMeshPart(AnalysisSet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromPublication(Product iProduct,
                 | Publication iSupport)
                 | 
@@ -141,7 +141,7 @@ class AnalysisMeshPart(AnalysisSet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromReference(Product iProduct,
                 | Reference iSupport)
                 | 
@@ -186,7 +186,7 @@ class AnalysisMeshPart(AnalysisSet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGlobalSpecification(CATBSTR iName,
                 | CATVariant iValue)
                 | 
@@ -226,7 +226,7 @@ class AnalysisMeshPart(AnalysisSet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMeshPartsToCapture(CATSafeArrayVariant iMeshParts)
                 | 
                 |     Set the list of candidate Mesh Parts for capture.
@@ -275,7 +275,7 @@ class AnalysisMeshPart(AnalysisSet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSpecificationFromPublication(CATBSTR iName,
                 | Product iProduct,
                 | Publication iSupport,
@@ -347,7 +347,7 @@ class AnalysisMeshPart(AnalysisSet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSpecificationFromReference(CATBSTR iName,
                 | Product iProduct,
                 | Reference iSupport,

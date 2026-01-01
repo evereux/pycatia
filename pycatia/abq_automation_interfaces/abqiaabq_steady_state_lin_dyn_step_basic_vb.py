@@ -203,7 +203,7 @@ class ABQIAABQSteadyStateLinDynStepBasicVB(ABQStep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddFrequencyDataTable(CATSafeArrayVariant
                 | iLwrFrequency,
                 | CATSafeArrayVariant iUprFrequency,
@@ -258,7 +258,7 @@ class ABQIAABQSteadyStateLinDynStepBasicVB(ABQStep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddGlobalDamping(double iAlpha,
                 | double iBeta,
                 | double iStructural)

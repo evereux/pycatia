@@ -42,7 +42,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyCorrectedBaseOffset()
                 | 
                 |     Applies corrected base offset.
@@ -63,7 +63,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyCorrectedToolOffset()
                 | 
                 |     Applies corrected tool offset.
@@ -84,7 +84,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyNominalBaseOffset()
                 | 
                 |     Applies the nominal base offset.
@@ -105,7 +105,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyNominalToolOffset()
                 | 
                 |     Applies nominal tool offset.
@@ -126,7 +126,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCalibReferenceFile(CATBSTR oCalibReferenceFile)
                 | 
                 |     Retrieve the reference calibration file.
@@ -161,7 +161,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCorrectedBaseOffset(double x,
                 | double y,
                 | double z,
@@ -215,7 +215,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCorrectedToolOffset(double x,
                 | double y,
                 | double z,
@@ -263,7 +263,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetNominalBaseOffset(double x,
                 | double y,
                 | double z,
@@ -317,7 +317,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetNominalToolOffset(double x,
                 | double y,
                 | double z,
@@ -365,7 +365,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetReferenceBasePosition(double x,
                 | double y,
                 | double z,
@@ -417,7 +417,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCalibReferenceFile(CATBSTR iCalibReferenceFile)
                 | 
                 |     Set the reference calibration file.
@@ -444,7 +444,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCorrectedBaseOffset(double x,
                 | double y,
                 | double z,
@@ -498,7 +498,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCorrectedToolOffset(double x,
                 | double y,
                 | double z,
@@ -546,7 +546,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNominalBaseOffset(double x,
                 | double y,
                 | double z,
@@ -600,7 +600,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetNominalToolOffset(double x,
                 | double y,
                 | double z,
@@ -648,7 +648,7 @@ class CalibOffsets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetReferenceBasePosition(double x,
                 | double y,
                 | double z,

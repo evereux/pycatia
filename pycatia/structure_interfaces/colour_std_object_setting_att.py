@@ -40,7 +40,7 @@ class ColourStdObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPlateColor(long oPlateColorR,
                 | long oPlateColorG,
                 | long oPlateColorB)
@@ -61,7 +61,7 @@ class ColourStdObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPlateColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -97,7 +97,7 @@ class ColourStdObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetShapeColor(long oShapeColorR,
                 | long oShapeColorG,
                 | long oShapeColorB)
@@ -118,7 +118,7 @@ class ColourStdObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetShapeColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -154,7 +154,7 @@ class ColourStdObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPlateColor(long iPlateColorR,
                 | long iPlateColorG,
                 | long iPlateColorB)
@@ -171,7 +171,7 @@ class ColourStdObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPlateColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PlateColor parameter.
@@ -212,7 +212,7 @@ class ColourStdObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetShapeColor(long iShapeColorR,
                 | long iShapeColorG,
                 | long iShapeColorB)
@@ -229,7 +229,7 @@ class ColourStdObjectSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetShapeColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ShapeColor parameter.

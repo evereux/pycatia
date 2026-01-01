@@ -40,7 +40,7 @@ class RenderingShootings(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add() As RenderingShooting
                 | 
                 |     Adds a new shooting to the shootings collection.
@@ -54,7 +54,7 @@ class RenderingShootings(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As RenderingShooting
                 | 
                 |     Returns a renderingshooting index in the renderingshootings
@@ -88,7 +88,7 @@ class RenderingShootings(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a shooting from the shootings collection.
@@ -118,7 +118,7 @@ class RenderingShootings(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAll()
                 | 
                 |     Removes all shootings from the collection.

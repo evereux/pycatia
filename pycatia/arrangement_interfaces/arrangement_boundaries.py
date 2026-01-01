@@ -48,7 +48,7 @@ class ArrangementBoundaries(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddBoundary(Move iRelAxis,
                 | CATSafeArrayVariant iListofMathPoints,
                 | CATSafeArrayVariant iMathDirection) As ArrangementBoundary
@@ -84,7 +84,7 @@ class ArrangementBoundaries(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ArrangementBoundary
                 | 
                 |     Returns the specified ArrangementBoundary item of the
@@ -116,7 +116,7 @@ class ArrangementBoundaries(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes the specified ArrangementBoundary object from the

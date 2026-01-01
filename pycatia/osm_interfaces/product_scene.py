@@ -70,7 +70,7 @@ class ProductScene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Copy(CatSceneType iType) As ProductScene
                 | 
                 |     Creates another Product-Scene from the current one with the possibility to
@@ -105,7 +105,7 @@ class ProductScene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ExistsInScene(Product iProduct) As boolean
                 | 
                 |     Returns whether the product has overloaded attributes in the
@@ -138,7 +138,7 @@ class ProductScene(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSceneProductData(Product iProduct) As
                 | SceneProductData
                 | 

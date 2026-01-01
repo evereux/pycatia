@@ -43,7 +43,7 @@ class SchRouteSymbol(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub FlipOverLine()
                 | 
                 |     Mirror the symbol over the route segment line on which the symbol is
@@ -64,7 +64,7 @@ class SchRouteSymbol(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub FlipOverOrthogonalLine()
                 | 
                 |     Mirror the symbol over the line orthogonal to the route segment line on
@@ -86,7 +86,7 @@ class SchRouteSymbol(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetGRRRoute() As SchGRRRoute
                 | 
                 |     Get the graphical representation of a schematic route that owns this
@@ -115,7 +115,7 @@ class SchRouteSymbol(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPosition(long oSegNum,
                 | double oSegParm)
                 | 
@@ -147,7 +147,7 @@ class SchRouteSymbol(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Scale(double iDbScaleFactor)
                 | 
                 |     Scale the symbol.
@@ -174,7 +174,7 @@ class SchRouteSymbol(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPosition(long iSegNum,
                 | double iSegParm)
                 | 

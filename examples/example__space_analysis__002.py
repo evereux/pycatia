@@ -1,5 +1,3 @@
-#! /usr/bin/python3.9
-
 """
 
     Example - Space Analysis - 002

@@ -62,7 +62,7 @@ class PSPListOfObjects(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Append(AnyObject iObject)
                 | 
                 |     Adds an object to the end of the list.
@@ -90,7 +90,7 @@ class PSPListOfObjects(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(long iIndex,
                 | CATBSTR iInterfaceName) As AnyObject
                 | 
@@ -126,7 +126,7 @@ class PSPListOfObjects(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveByIndex(long iIndex)
                 | 
                 |     Remove an object from the list by specifying its position in the

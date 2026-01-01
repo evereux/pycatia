@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ArrSystemLineProduct(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -43,7 +42,7 @@ class ArrSystemLineProduct(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSubItem(long iIndex) As AnyObject
                 | 
                 |     Allows the user to get the item at a specific index location.
@@ -58,7 +57,7 @@ class ArrSystemLineProduct(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSubProductsCount(CATBSTR iIntfId) As long
                 | 
                 |     Returns the count of the sub-products that make up the System-Line
@@ -71,4 +70,4 @@ class ArrSystemLineProduct(AnyObject):
         return self.arr_system_line_product.GetSubProductsCount(i_intf_id)
 
     def __repr__(self):
-        return f'ArrSystemLineProduct(name="{ self.name }")'
+        return f'ArrSystemLineProduct(name="{self.name}")'

@@ -40,7 +40,7 @@ class SFMStandardOpening(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetContour(CATBSTR oContourName,
                 | SfmStandardContourParameters oListContourParams)
                 | 
@@ -102,7 +102,7 @@ class SFMStandardOpening(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPositioningStrategy(CATBSTR oPosStrategyName,
                 | SfmStandardPosStrategyParameters oListPosParams)
                 | 
@@ -158,7 +158,7 @@ class SFMStandardOpening(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetContour(CATBSTR iContourName,
                 | SfmStandardContourParameters iListContourParams)
                 | 
@@ -242,7 +242,7 @@ class SFMStandardOpening(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPositioningStrategy(CATBSTR iPosStrategyName,
                 | SfmStandardPosStrategyParameters iListPosParams)
                 | 

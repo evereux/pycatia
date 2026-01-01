@@ -66,7 +66,7 @@ class HomePosition(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAssociatedToolTip(CATSafeArrayVariant oTipList)
                 | 
                 |     Get the tooltips associated with the home position.
@@ -122,7 +122,7 @@ class HomePosition(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDOFValues(CATSafeArrayVariant oValues)
                 | 
                 |     Get the DOF values for the home position.
@@ -179,7 +179,7 @@ class HomePosition(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAssociatedToolTip(CATSafeArrayVariant iTipList)
                 | 
                 |     Set the tool tip associated with the home position.
@@ -233,7 +233,7 @@ class HomePosition(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDOFValues(CATSafeArrayVariant iValues)
                 | 
                 |     Set the DOF values for the home position.

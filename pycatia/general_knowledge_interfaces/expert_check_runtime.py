@@ -111,7 +111,7 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
 
         :rtype: ExpertCheck
         """
-        
+
         from pycatia.general_knowledge_interfaces.expert_check import ExpertCheck
         return ExpertCheck(self.expert_check_runtime.CheckEdition)
 
@@ -308,7 +308,7 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Correct()
                 | 
                 |     Applies the "correction" function on failed elements.
@@ -322,7 +322,7 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Highlight()
                 | 
                 |     Highlights the Failures on the check.
@@ -336,7 +336,7 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Status() As long
                 | 
                 |     Returns the Status of the check.

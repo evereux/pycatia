@@ -67,7 +67,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddAuxiliary(Layout2DView iReferenceView,
                 | CATSafeArrayVariant iBCSegment,
                 | double iXorient,
@@ -164,7 +164,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddDetail(CATBSTR iDetailName) As Layout2DView
                 | 
                 |     Creates a detail view and adds it to the layout view collection. This
@@ -213,7 +213,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddFrom3DPlane(CATSafeArrayVariant iPlane,
                 | CatViewType iViewType,
                 | double iX,
@@ -275,7 +275,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddPrimary(double iX,
                 | double iY) As Layout2DView
                 | 
@@ -317,7 +317,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddRelated(Layout2DView iReferenceView,
                 | CatViewSide iSide,
                 | double iX,
@@ -376,7 +376,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Layout2DView
                 | 
                 |     Returns a Layout2D view using its index or its name from the Layout2DViews
@@ -424,7 +424,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a layout2D view from the Layout2DViews collection.

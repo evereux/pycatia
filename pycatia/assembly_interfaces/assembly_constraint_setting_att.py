@@ -208,7 +208,7 @@ class AssemblyConstraintSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetConstraintCreationModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -227,7 +227,7 @@ class AssemblyConstraintSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPasteComponentModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -246,7 +246,7 @@ class AssemblyConstraintSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetQuickConstraintModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -265,7 +265,7 @@ class AssemblyConstraintSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetQuickConstraintOrderedList() As CATSafeArrayVariant
                 | 
                 |     Returns the quick constraint ordered list setting
@@ -295,7 +295,7 @@ class AssemblyConstraintSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetConstraintCreationModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the constraint creation setting
@@ -327,7 +327,7 @@ class AssemblyConstraintSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPasteComponentModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the component paste setting parameter.
@@ -358,7 +358,7 @@ class AssemblyConstraintSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetQuickConstraintModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the quick constraint setting parameter.
@@ -389,7 +389,7 @@ class AssemblyConstraintSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetQuickConstraintOrderedList(CATSafeArrayVariant
                 | iList)
                 | 

@@ -39,7 +39,7 @@ class SchGRRRouteEllipse(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSeedPoint(SchListOfDoubles oDb2XY)
                 | 
                 |     Get the seed point of the route graphic ellipse.
@@ -82,7 +82,7 @@ class SchGRRRouteEllipse(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub HasSeedPoint(boolean oBYes)
                 | 
                 |     Check to see if the Seed point has been set.
@@ -124,7 +124,7 @@ class SchGRRRouteEllipse(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSeedPoint(CATSafeArrayVariant iDb2XY)
                 | 
                 |     Set the seed point of the route graphic ellipse.

@@ -39,7 +39,7 @@ class SchCntrDocLink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetLink(SchAppConnector oSchConnector,
                 | CATBSTR oDocumentName)
                 | 
@@ -86,7 +86,7 @@ class SchCntrDocLink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Link(SchAppConnector iSchConnector)
                 | 
                 |     Create an external link to another connector.
@@ -128,7 +128,7 @@ class SchCntrDocLink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnLink()
                 | 
                 |     Remove external link to another connector.

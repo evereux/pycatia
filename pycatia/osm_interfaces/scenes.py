@@ -40,7 +40,7 @@ class Scenes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddCopyScene(CATBSTR iName,
                 | Scene iReferenceScene) As Scene
                 | 
@@ -76,7 +76,7 @@ class Scenes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddNewScene(CATBSTR iName,
                 | Product iReferenceProduct) As Scene
                 | 
@@ -113,7 +113,7 @@ class Scenes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(Scene iScene)
                 | 
                 |     Removes a scene from the Scenes collection.

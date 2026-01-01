@@ -40,7 +40,7 @@ class AnalysisCases(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add() As AnalysisCase
                 | 
                 |     Creates a new case and adds it to the case collection. This case will be
@@ -67,7 +67,7 @@ class AnalysisCases(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddExistingCase(AnalysisCase iCase)
                 | 
                 |     Adds an existing analysis case to the analysis cases
@@ -111,7 +111,7 @@ class AnalysisCases(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As AnalysisCase
                 | 
                 |     Returns a case using its index or its name from the case
@@ -148,7 +148,7 @@ class AnalysisCases(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func NewCase(CATBSTR iType) As AnalysisCase
                 | 
                 |     Creates a new case and adds it to the case collection. This case will be
@@ -176,7 +176,7 @@ class AnalysisCases(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a case using its index or its name from the case

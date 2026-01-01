@@ -40,7 +40,7 @@ class RenderingEnvironments(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(short iEnvironmentType) As RenderingEnvironment
                 | 
                 |     Adds a new environment to the environments collection.
@@ -65,7 +65,7 @@ class RenderingEnvironments(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As RenderingEnvironment
                 | 
                 |     Returns an environment index in the environments
@@ -98,7 +98,7 @@ class RenderingEnvironments(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a environment from the environments collection.
@@ -128,7 +128,7 @@ class RenderingEnvironments(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAll()
                 | 
                 |     Removes all environments.of the collection

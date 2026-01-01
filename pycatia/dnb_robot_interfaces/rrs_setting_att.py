@@ -47,7 +47,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddNewRRS2ControllerIdentifier(CATBSTR
                 | iControllerIdentifier)
                 | 
@@ -77,7 +77,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRCSDataLibDirInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -113,7 +113,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2ConnectDownloadersInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -149,7 +149,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2ConsistencyCmdDownloadersInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -196,7 +196,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetRRS2ControllerIdentifierAttributes(CATBSTR
                 | iControllerIdentifier,
                 | CATBSTR oRRS2ConnectDownloader,
@@ -266,7 +266,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2ControllerIdentifiersInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -303,7 +303,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2DeleteAutoDownloadFilesAfterXferInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -340,7 +340,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2DfltControllerIdentifierInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -377,7 +377,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2DownloadDuringConnectInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -414,7 +414,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2DownloadDuringSimRunInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -450,7 +450,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2DownloadInPartCoordinatesInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -487,7 +487,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2DownloadLogFileNameInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -523,7 +523,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2FreePlaySimStepSizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -559,7 +559,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2MainTaskProcessingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -595,7 +595,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2MotionPlannerActiveDuringTeachOLPInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -632,7 +632,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2SimRunDownloadersInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -668,7 +668,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2StopVRCWhenSimStopsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -704,7 +704,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2UpdateProgramOnDownloadInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -741,7 +741,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2UseVRCInverseKinematicsInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -778,7 +778,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRS2UseVRCTurnLimitsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -814,7 +814,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRSLibDirInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -850,7 +850,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRRSServerFileInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -886,7 +886,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRCSDataLibDirLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RCSDATA$LIB" parameter.
@@ -932,7 +932,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2ConnectDownloadersLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2ConnectDownloaders" parameter.
@@ -978,7 +978,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2ConsistencyCmdDownloadersLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2ConsistencyCmdDownloaders"
@@ -1025,7 +1025,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2ControllerIdentifiersLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2ControllerIdentifiers"
@@ -1072,7 +1072,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2DeleteAutoDownloadFilesAfterXferLock(boolean
                 | iLocked)
                 | 
@@ -1120,7 +1120,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2DfltControllerIdentifierLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2DfltControllerIdentifier"
@@ -1167,7 +1167,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2DownloadDuringConnectLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2DownloadDuringConnect"
@@ -1214,7 +1214,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2DownloadDuringSimRunLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2DownloadDuringSimRun" parameter.
@@ -1260,7 +1260,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2DownloadInPartCoordinatesLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2DownloadInPartCoordinates"
@@ -1307,7 +1307,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2DownloadLogFileNameLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2DownloadLogFileName" parameter.
@@ -1353,7 +1353,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2FreePlaySimStepSizeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2FreePlaySimStepSize" parameter.
@@ -1399,7 +1399,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2MainTaskProcessingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2MainTaskProcessing" parameter.
@@ -1445,7 +1445,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2MotionPlannerActiveDuringTeachOLPLock(boolean
                 | iLocked)
                 | 
@@ -1493,7 +1493,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2SimRunDownloadersLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2SimRunDownloaders" parameter.
@@ -1539,7 +1539,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2StopVRCWhenSimStopsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2StopVRCWhenSimStops" parameter.
@@ -1585,7 +1585,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2UpdateProgramOnDownloadLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2UpdateProgramOnDownload"
@@ -1632,7 +1632,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2UseVRCInverseKinematicsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2UseVRCInverseKinematics"
@@ -1679,7 +1679,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRS2UseVRCTurnLimitsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS2UseVRCTurnLimits" parameter.
@@ -1725,7 +1725,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRSLibDirLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RRS$LIB" parameter.
@@ -1766,7 +1766,7 @@ class RRSSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRRSServerFileLock(boolean iLocked)
                 | 
                 |     Sets value of "RRS Servers File" parameter.

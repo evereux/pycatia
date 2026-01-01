@@ -40,7 +40,7 @@ class Outputs(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(Item iOutput) As Item
                 | 
                 |     This method can be used to assign a given product as an
@@ -64,7 +64,7 @@ class Outputs(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Count() As long
                 | 
                 |     This method returns the no. of products / features that are assigned to a
@@ -82,7 +82,7 @@ class Outputs(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Item
                 | 
                 |     This method can be used to get the associated output
@@ -107,7 +107,7 @@ class Outputs(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Remove(Item iOutput) As Item
                 | 
                 |     This method can be used to unassign an output product from a

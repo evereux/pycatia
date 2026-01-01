@@ -40,7 +40,7 @@ class SchNetworkAnalysis(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func FindPaths(SchAppConnectable iFromObject,
                 | SchAppConnectable iToObject) As SchListOfObjects
                 | 
@@ -78,7 +78,7 @@ class SchNetworkAnalysis(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListExtremityObjects() As SchListOfObjects
                 | 
                 |     List the extremity objects of the network.
@@ -105,7 +105,7 @@ class SchNetworkAnalysis(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListNetworkObjects() As SchListOfObjects
                 | 
                 |     List the connected objects in the network.

@@ -432,7 +432,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromConstraint(Product iReference,
                 | Constraint iSupport)
                 | 
@@ -479,7 +479,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromReference(Reference iReference,
                 | Reference iSupport)
                 | 
@@ -523,7 +523,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveInterferenceFit()
                 | 
                 |     Removes interference fit from a contact pair feature.

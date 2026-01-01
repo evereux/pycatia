@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ArrBendableString(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -43,7 +42,7 @@ class ArrBendableString(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumOfSegments() As long
                 | 
                 |     Returns the cumulative number of the straight/arc segments that make up the
@@ -65,7 +64,7 @@ class ArrBendableString(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumOfSegmentsLocalAxis() As long
                 | 
                 |     Returns the cumulative number of the straight/arc segments that make up the
@@ -80,7 +79,7 @@ class ArrBendableString(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSegmentData(long iIndex,
                 | CATSafeArrayVariant oSegmentData)
                 | 
@@ -137,7 +136,7 @@ class ArrBendableString(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func InstanceName() As CATBSTR
                 | 
                 |     Returns the Bendable's Instance Name.
@@ -154,4 +153,4 @@ class ArrBendableString(AnyObject):
         return self.arr_bendable_string.InstanceName()
 
     def __repr__(self):
-        return f'ArrBendableString(name="{ self.name }")'
+        return f'ArrBendableString(name="{self.name}")'

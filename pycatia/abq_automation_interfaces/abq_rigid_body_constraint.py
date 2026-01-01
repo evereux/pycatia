@@ -101,7 +101,7 @@ class ABQRigidBodyConstraint(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromBody(Product iProduct,
                 | Body iBody)
                 | 
@@ -145,7 +145,7 @@ class ABQRigidBodyConstraint(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromPart(Product iProduct,
                 | Part iPart)
                 | 
@@ -189,7 +189,7 @@ class ABQRigidBodyConstraint(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddSupportFromPublication(Product iProduct,
                 | Publication iPublication)
                 | 
@@ -233,7 +233,7 @@ class ABQRigidBodyConstraint(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ClearPinSupports()
                 | 
                 |     Clears the pin point supports for the rigid body.
@@ -247,7 +247,7 @@ class ABQRigidBodyConstraint(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ClearTieSupports()
                 | 
                 |     Clears the tie point supports for the rigid body.
@@ -261,7 +261,7 @@ class ABQRigidBodyConstraint(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPinSupports(CATSafeArrayVariant iProducts,
                 | CATSafeArrayVariant iRegions)
                 | 
@@ -303,7 +303,7 @@ class ABQRigidBodyConstraint(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTieSupports(CATSafeArrayVariant iProducts,
                 | CATSafeArrayVariant iRegions)
                 | 
@@ -345,7 +345,7 @@ class ABQRigidBodyConstraint(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHandler(Product iProduct,
                 | Reference iRef)
                 | 
@@ -386,7 +386,7 @@ class ABQRigidBodyConstraint(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHandlerFromPublication(Product iProduct,
                 | Publication iPublication)
                 | 
@@ -428,7 +428,7 @@ class ABQRigidBodyConstraint(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPinSupports(CATSafeArrayVariant iProducts,
                 | CATSafeArrayVariant iRegions)
                 | 
@@ -472,7 +472,7 @@ class ABQRigidBodyConstraint(ABQInteraction):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTieSupports(CATSafeArrayVariant iProducts,
                 | CATSafeArrayVariant iRegions)
                 | 

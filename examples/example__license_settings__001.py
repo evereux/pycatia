@@ -1,5 +1,3 @@
-#! /usr/bin/python3.9
-
 """
 
     Example - License Settings - 001

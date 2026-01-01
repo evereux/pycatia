@@ -76,7 +76,7 @@ class SWKSegmentNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSegment(long piIndex) As SWKSegment
                 | 
                 |     Returns a specific child of the segment node, based on an
@@ -100,7 +100,7 @@ class SWKSegmentNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSegmentNode(long piIndex) As SWKSegmentNode
                 | 
                 |     Returns a specific child of the segment node, based on an
@@ -124,7 +124,7 @@ class SWKSegmentNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub MirrorCopyPosture()
                 | 
                 |     Copy the posture on the equivalent segment node, on the other side of the
@@ -140,7 +140,7 @@ class SWKSegmentNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetPosture()
                 | 
                 |     Set the posture of all segment under this node back to their default
@@ -155,7 +155,7 @@ class SWKSegmentNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SwapPosture()
                 | 
                 |     Swap the posture with the equivalent segment node, on the other side of the

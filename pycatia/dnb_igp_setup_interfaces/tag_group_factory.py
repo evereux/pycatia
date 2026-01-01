@@ -47,7 +47,7 @@ class TagGroupFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CopyTagGroup(TagGroup iTagGroup,
                 | TagGroup ioTagGroup)
                 | 
@@ -108,7 +108,7 @@ class TagGroupFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateTagGroup(CATBSTR iTagGroupName,
                 | boolean iModifyReference,
                 | Product iProduct,
@@ -189,7 +189,7 @@ class TagGroupFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateTagGroupInDoc(CATBSTR iTagGroupName,
                 | TagGroup oTagGroup)
                 | 
@@ -252,7 +252,7 @@ class TagGroupFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DeleteTagGroup(TagGroup iTagGroup)
                 | 
                 |     Deletes a TagGroup
@@ -302,7 +302,7 @@ class TagGroupFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ReparentTagGroup(TagGroup iTagGroup,
                 | Product ioProduct,
                 | boolean iModifyReference)

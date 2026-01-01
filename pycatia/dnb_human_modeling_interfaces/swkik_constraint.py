@@ -360,7 +360,7 @@ class SWKIKConstraint(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetConstraintElement() As CATBaseDispatch
                 | 
                 |     Returns a reference to the target object of the constraint (if any).
@@ -374,7 +374,7 @@ class SWKIKConstraint(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetEndEffector() As SWKBodyElement
                 | 
                 |     Returns the end effector of the IK chain of the constraint.
@@ -388,7 +388,7 @@ class SWKIKConstraint(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetStartSegment() As SWKSegment
                 | 
                 |     Returns the start segment of the IK chain of the constraint.
@@ -402,7 +402,7 @@ class SWKIKConstraint(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTargetLine(CATSafeArrayVariant poTargetLineCoord)
                 | 
                 |     Get the target points coordinates of a line This method
@@ -440,7 +440,7 @@ class SWKIKConstraint(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTargetPlane(CATSafeArrayVariant poTargetPlaneCoord)
                 | 
                 |     Get the target points coordinates of a line This method retrieves the
@@ -479,7 +479,7 @@ class SWKIKConstraint(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTargetPoint(CATSafeArrayVariant poTargetPtCoord)
                 | 
                 |     Get the target point coordinates. This method retrieves the target point
@@ -516,7 +516,7 @@ class SWKIKConstraint(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetTarget()
                 | 
                 |     Reset the offset of the target object (i.e. set the offset
@@ -531,7 +531,7 @@ class SWKIKConstraint(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetConstraintElement(CATBaseDispatch
                 | piConstraintElement,
                 | CATBSTR piConstraintType)
@@ -577,7 +577,7 @@ class SWKIKConstraint(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTargetLine(Reference piObject,
                 | double piStartPointX,
                 | double piStartPointY,
@@ -671,7 +671,7 @@ class SWKIKConstraint(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTargetPlane(Reference piObject,
                 | double piOriginX,
                 | double piOriginY,
@@ -756,7 +756,7 @@ class SWKIKConstraint(SWKManikinPart):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTargetPoint(Reference piObject,
                 | double piCoordX,
                 | double piCoordY,

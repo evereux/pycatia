@@ -52,7 +52,7 @@ class SFMSlots(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddSlot(Reference iPenetratedElement,
                 | Reference iPenetratingObject,
                 | CATBSTR iSlotName,
@@ -116,7 +116,7 @@ class SFMSlots(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As SfmSlot
                 | 
                 |     Gets existing Slot.
@@ -153,7 +153,7 @@ class SFMSlots(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveSlot(SfmSlot iSfmSlot)
                 | 
                 |     Removes Existing Slot.

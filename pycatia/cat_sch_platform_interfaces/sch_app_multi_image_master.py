@@ -43,7 +43,7 @@ class SchAppMultiImageMaster(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppAddImage(SchAppConnectable iImage)
                 | 
                 |     Add an image for this master object.
@@ -93,7 +93,7 @@ class SchAppMultiImageMaster(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppIsOKToCreateImage(Document iImageDoc,
                 | boolean oBYes,
                 | CATBSTR oNLSFileName,
@@ -160,7 +160,7 @@ class SchAppMultiImageMaster(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppListImages(SchListOfBSTRs iLFilter,
                 | SchListOfObjects oLImages)
                 | 

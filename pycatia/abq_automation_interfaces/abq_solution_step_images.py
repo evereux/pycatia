@@ -40,7 +40,7 @@ class ABQSolutionStepImages(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As AnalysisImage
                 | 
                 |     Returns an analysis image using its index or its name from the
@@ -69,7 +69,7 @@ class ABQSolutionStepImages(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an analysis image using its index or its name from the solution

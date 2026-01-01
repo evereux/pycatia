@@ -168,7 +168,7 @@ class OptimizerWorkBench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Check(CATBSTR iContext,
                 | CATBSTR iInstanceID,
                 | CATBSTR iLatestShape) As long
@@ -193,7 +193,7 @@ class OptimizerWorkBench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func QueryNeighbours(double iAccuracy,
                 | double iClearance,
                 | CATSafeArrayVariant iReferenceSelection,

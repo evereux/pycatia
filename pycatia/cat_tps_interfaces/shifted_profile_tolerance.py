@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ShiftedProfileTolerance(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -68,7 +67,7 @@ class ShiftedProfileTolerance(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetShiftDirection(CATSafeArrayVariant opDirection)
                 | 
                 |     Retrieves the shift direction by two points.
@@ -115,7 +114,7 @@ class ShiftedProfileTolerance(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetShiftSide(CATSafeArrayVariant opPoint)
                 | 
                 |     Retrieves shift side.
@@ -157,4 +156,4 @@ class ShiftedProfileTolerance(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'ShiftedProfileTolerance(name="{ self.name }")'
+        return f'ShiftedProfileTolerance(name="{self.name}")'

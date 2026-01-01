@@ -602,7 +602,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddFrozenCurveSegment(Reference iCurve)
                 |
                 |     Adds a frozen curve to the hybrid shape curve smooth feature
@@ -645,7 +645,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddFrozenPoint(Reference iPoint)
                 |
                 |     Adds a frozen points to the hybrid shape curve smooth feature
@@ -688,7 +688,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetFrozenCurveSegment(long iPos) As Reference
                 |
                 |     Retrieves the Frozen Curve Segment at specified position in the hybrid
@@ -717,7 +717,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetFrozenCurveSegmentsSize() As long
                 |
                 |     Returns the number of frozen curve segments in the curve smooth
@@ -746,7 +746,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetFrozenPoint(long iPos) As Reference
                 |
                 |     Retrieves the Frozen Point at specified position in the hybrid shape curve
@@ -774,7 +774,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetFrozenPointsSize() As long
                 |
                 |     Returns the number of Frozen Points in the curve smooth
@@ -801,7 +801,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAllFrozenCurveSegments()
                 |
                 |     Removes all Frozen Curve Segment of the hybrid shape curve smooth object.
@@ -822,7 +822,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAllFrozenPoints()
                 |
                 |     Removes all Frozen Points of the hybrid shape curve smooth object.
@@ -843,7 +843,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveFrozenCurveSegment(Reference iCurve)
                 |
                 |     Removes Frozen Curve Segment from the list of Forzen curves in hybrid shape
@@ -885,7 +885,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveFrozenPoint(Reference iPoint)
                 |
                 |     Removes Frozen Point from the list of frozen points in hybrid shape curve
@@ -927,7 +927,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMaximumDeviation(double iMaxDeviation)
                 |
                 |     Sets the maximum deviation.
@@ -947,7 +947,7 @@ class HybridShapeCurveSmooth(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTangencyThreshold(double iTangencyThreshold)
                 |
                 |     Sets the tangency threshold.

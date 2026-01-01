@@ -46,7 +46,7 @@ class ABQFields(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iFieldType) As ABQTemperature
                 | 
                 |     Creates a new Abaqus field and adds it to the collection of Abaqus fields.
@@ -89,7 +89,7 @@ class ABQFields(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ABQTemperature
                 | 
                 |     Returns an Abaqus field using its index or its name from the ABQFields
@@ -118,7 +118,7 @@ class ABQFields(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an Abaqus field using its index or its name from the field

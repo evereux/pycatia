@@ -44,7 +44,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppCreateComponentInst() As AnyObject
                 | 
                 |     Create a component instance.
@@ -73,7 +73,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppCreateLocalReference(Document iDocToCopyTo) As
                 | AnyObject
                 | 
@@ -108,7 +108,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppGetDefaultGRRName(CATBSTR oGRRDefaultName)
                 | 
                 |     Get the default graphical representation names of an application
@@ -139,7 +139,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppListGRRNames() As SchListOfBSTRs
                 | 
                 |     Find all the valid graphical representation names of an application
@@ -169,7 +169,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToFlipConnected(boolean oBYes)
                 | 
                 |     Query whether it is OK to reconnect a component to a different compatible
@@ -212,7 +212,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToFlipHorizontal(boolean oBYes)
                 | 
                 |     Query whether it is OK to flip the application component about
@@ -257,7 +257,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToFlipOnLine(boolean oBYes)
                 | 
                 |     Query whether it is OK to flip a component about its inserted
@@ -302,7 +302,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToFlipVertical(boolean oBYes)
                 | 
                 |     Query whether it is OK to flip the application component about
@@ -347,7 +347,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToPlaceInSpace(boolean oBYes)
                 | 
                 |     Query whether the application component can be placed in free
@@ -392,7 +392,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToScale(boolean oBYes)
                 | 
                 |     Query whether it is OK to scale the application component.
@@ -436,7 +436,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToSlide(boolean oBYes)
                 | 
                 |     Query whether the application component can be slided.
@@ -480,7 +480,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppOKToUninsert(boolean oBYes)
                 | 
                 |     Query whether it is OK to uninsert the application
@@ -525,7 +525,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppPostFlipConnectedProcess()
                 | 
                 |     Post process after reconnecting a component to a different compatible
@@ -548,7 +548,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppPostFlipHorizontalProcess()
                 | 
                 |     Post process after flipping a component in "x".
@@ -570,7 +570,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppPostFlipOnLineProcess()
                 | 
                 |     Post process after flipping an inserted component about the inserted line
@@ -593,7 +593,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppPostFlipVerticalProcess()
                 | 
                 |     Post process after flipping a component in "y".
@@ -619,7 +619,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppPostPlaceProcess(SchComponent iNewCompInst,
                 | SchAppConnectable iCntblConnectedTo)
                 | 
@@ -671,7 +671,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppPostSlideProcess()
                 | 
                 |     Post process after sliding a component.
@@ -693,7 +693,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppPostSwitchGraphicProcess(SchGRR iGRR)
                 | 
                 |     Post process after switching a component's graphic
@@ -738,7 +738,7 @@ class SchAppComponent(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppPostUninsertProcess(SchRoute iOldAppRoute1,
                 | SchRoute iOldAppRoute2,
                 | SchRoute iNewAppRoute)

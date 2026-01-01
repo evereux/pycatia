@@ -39,7 +39,7 @@ class SchAppEnvironment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppCleanUpWhenApplicationEnds()
                 | 
                 |     Initialize environment when schematic application ends.
@@ -61,7 +61,7 @@ class SchAppEnvironment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppInitWhenApplicationStarts()
                 | 
                 |     Initialize environment when schematic application starts.
@@ -83,7 +83,7 @@ class SchAppEnvironment(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppLoadFeatFiles()
                 | 
                 |     Load all the necessary feat files.

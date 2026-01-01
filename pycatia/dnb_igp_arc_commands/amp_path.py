@@ -56,7 +56,7 @@ class AMPPath(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateTag(CATSafeArrayVariant iLocation,
                 | AMPTag oTag)
                 | 
@@ -104,7 +104,7 @@ class AMPPath(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateTagWithReference(AMPTag iRefTag,
                 | CATSafeArrayVariant iLocation,
                 | AMPTag oTag)
@@ -157,7 +157,7 @@ class AMPPath(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAllTags(CATSafeArrayVariant ioTagList)
                 | 
                 |     Function to get the list of AMPTags by name.
@@ -200,7 +200,7 @@ class AMPPath(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetNumTags(short otagListSize)
                 | 
                 |     Function to get the number of AMPTags in the given
@@ -239,7 +239,7 @@ class AMPPath(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetScriptVarValue(CATBSTR oValue)
                 | 
                 |     Function to get the value of system variable, "ScriptVar".
@@ -269,7 +269,7 @@ class AMPPath(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTargetDevice(AnyObject oDevice)
                 | 
                 |     Function to get the target device of the AMPPath.
@@ -297,7 +297,7 @@ class AMPPath(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub InsertAt(short iIndex,
                 | AMPTag iTag)
                 | 
@@ -345,7 +345,7 @@ class AMPPath(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveFrom(short iIndex)
                 | 
                 |     Function to remove an AMPTag at a given index of the

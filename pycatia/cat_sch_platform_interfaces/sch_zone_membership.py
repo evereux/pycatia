@@ -39,7 +39,7 @@ class SchZoneMembership(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UpdateZoneMembership()
                 | 
                 |     Check all zones geometric boundaries and put this element into the correct

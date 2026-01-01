@@ -42,7 +42,7 @@ class SFMReferences(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Add(Reference iReference)
                 | 
                 |     Adds a reference in the collection.
@@ -88,7 +88,7 @@ class SFMReferences(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ClearList()
                 | 
                 |     Clears the contents of existing list of SfmReferences.
@@ -113,7 +113,7 @@ class SFMReferences(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Reference
                 | 
                 |     Retrieves a Reference from the collection of

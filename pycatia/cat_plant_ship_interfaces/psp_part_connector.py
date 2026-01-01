@@ -167,7 +167,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAlignmentConnector() As Reference
                 | 
                 |     Returns the Alignmnet connector.
@@ -193,7 +193,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAlignmentDirection(Product iRelAxis) As
                 | PspListOfDoubles
                 | 
@@ -227,7 +227,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetConnectorMathPlane(Product iRelAxis) As
                 | PspListOfDoubles
                 | 
@@ -259,7 +259,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDatumConnector() As Reference
                 | 
                 |     Returns the Datum connector.
@@ -285,7 +285,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetFaceConnector() As Reference
                 | 
                 |     Returns the face connector.
@@ -311,7 +311,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetOrientationConnector() As Reference
                 | 
                 |     Get Orientation connector.
@@ -337,7 +337,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPosition(Product iRelAxis) As PspListOfDoubles
                 | 
                 |     Returns the Position of the connector.
@@ -369,7 +369,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetUpDirection(Product iRelAxis) As PspListOfDoubles
                 | 
                 |     Returns the UP direction of the connector.
@@ -400,7 +400,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAlignmentConnector(Reference iAlignCntr,
                 | CatPspIDLPartConnectorType ieAlignType)
                 | 
@@ -447,7 +447,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDatumConnector(Reference iDatumCntr)
                 | 
                 |     Sets the Datum connector.
@@ -489,7 +489,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFaceConnector(Reference iFaceCntr,
                 | CatPspIDLPartConnectorType ieFaceType)
                 | 
@@ -536,7 +536,7 @@ class PSPPartConnector(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOrientationConnector(Reference iOrientCntr,
                 | CatPspIDLPartConnectorType ieOrientation)
                 | 

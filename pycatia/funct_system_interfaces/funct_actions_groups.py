@@ -43,7 +43,7 @@ class FunctActionsGroups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Create(CATBSTR iName,
                 | double iInputX,
                 | double iInputY,
@@ -66,7 +66,7 @@ class FunctActionsGroups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Delete(FunctActionsGroup iActGrp)
                 | 
                 |     Delete a Group of Actions.
@@ -96,7 +96,7 @@ class FunctActionsGroups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Elem(CATVariant iIndex) As FunctActionsGroup
                 | 
                 |     Returns an actions' group using its index or its name from the actions'

@@ -48,7 +48,7 @@ class BasicDevice(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetDOFValues(CATSafeArrayVariant oValues)
                 | 
                 |     Get the DOF values for the device.
@@ -94,7 +94,7 @@ class BasicDevice(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetHomePositions(CATSafeArrayVariant oHomePosList)
                 | 
                 |     Get list of home positions of the device.
@@ -132,7 +132,7 @@ class BasicDevice(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetHomePosition(CATBSTR iName,
                 | CATSafeArrayVariant idbTrans)
                 | 

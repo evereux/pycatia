@@ -47,7 +47,7 @@ class AssemblyFeatures(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddAssemblyAdd(Body iBody,
                 | Product iBodyComp,
                 | Product iComponent) As AssemblyFeature
@@ -102,7 +102,7 @@ class AssemblyFeatures(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddAssemblyHole(Sketch iSketch,
                 | Product iSketchComp,
                 | double iDepth,
@@ -167,7 +167,7 @@ class AssemblyFeatures(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddAssemblyPocket(Sketch iSketch,
                 | Product iSketchComp,
                 | double iDepth,
@@ -223,7 +223,7 @@ class AssemblyFeatures(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddAssemblyRemove(Body iBody,
                 | Product iBodyComp,
                 | Product iComponent) As AssemblyFeature
@@ -279,7 +279,7 @@ class AssemblyFeatures(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddAssemblySplit(Reference iSplittingElement,
                 | Product iSplittingElemComp,
                 | CatSplitSide iSplitSide,
@@ -339,7 +339,7 @@ class AssemblyFeatures(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As AssemblyFeature
                 | 
                 |     Returns an AssemblyFeature object using its index or its name from the
@@ -375,7 +375,7 @@ class AssemblyFeatures(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an AssemblyFeature object from the AssemblyFeatures

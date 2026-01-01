@@ -428,7 +428,7 @@ class ABQFrequencyStep(ABQStep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddResidualModeRegion(Product iProduct,
                 | Reference iSupport)
                 | 
@@ -469,7 +469,7 @@ class ABQFrequencyStep(ABQStep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddResidualModeRegionDOF(short iDOF,
                 | short iIndex)
                 | 

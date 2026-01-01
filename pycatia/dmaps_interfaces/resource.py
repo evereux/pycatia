@@ -129,7 +129,7 @@ class Resource(AnyObject):
 
         :rtype: ResourceCollection
         """
-        
+
         from pycatia.dmaps_interfaces.resource_collection import ResourceCollection
         return ResourceCollection(self.resource.PreviousResources)
 
@@ -138,7 +138,7 @@ class Resource(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetObject(CATBSTR iInterfaceName) As AnyObject
                 | 
                 |     This method returns the IDL Interface for the specified interface

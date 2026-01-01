@@ -286,7 +286,7 @@ class Parameter(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Rename(CATBSTR iName)
                 |
                 |     Renames the parameter.
@@ -314,7 +314,7 @@ class Parameter(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ValuateFromString(CATBSTR iValue)
                 |
                 |     Valuates a parameter using a string as input. The string depends on
@@ -347,7 +347,7 @@ class Parameter(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ValueAsString() As CATBSTR
                 |
                 |     Returns the value of the parameter as a string.

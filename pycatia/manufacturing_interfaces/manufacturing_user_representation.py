@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ManufacturingUserRepresentation(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -42,7 +41,7 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRepresentation(CATBSTR iPathName)
                 | 
                 |     Sets the User Representation Associated to the Object.
@@ -59,4 +58,4 @@ class ManufacturingUserRepresentation(AnyObject):
         return self.manufacturing_user_representation.SetRepresentation(i_path_name)
 
     def __repr__(self):
-        return f'ManufacturingUserRepresentation(name="{ self.name }")'
+        return f'ManufacturingUserRepresentation(name="{self.name}")'

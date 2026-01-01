@@ -39,7 +39,7 @@ class PertNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetLocation(double xx,
                 | double yy)
                 | 
@@ -64,7 +64,7 @@ class PertNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetIcon(CATBSTR iFileName)
                 | 
                 |     This method sets Icon for the PertNode in the PERT Chart
@@ -84,7 +84,7 @@ class PertNode(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetLocation(double xx,
                 | double yy)
                 | 

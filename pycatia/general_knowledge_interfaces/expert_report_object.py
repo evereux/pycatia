@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ExpertReportObject(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -59,7 +58,7 @@ class ExpertReportObject(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub getTuple(CATSafeArrayVariant oSafeArray)
                 | 
                 |     Returns a tuple (a collection of objects) concerned by this report
@@ -126,7 +125,7 @@ class ExpertReportObject(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func getTupleSize() As long
                 | 
                 |     Returns the size of the tuple concerned by this report
@@ -140,4 +139,4 @@ class ExpertReportObject(AnyObject):
         return self.expert_report_object.getTupleSize()
 
     def __repr__(self):
-        return f'ExpertReportObject(name="{ self.name }")'
+        return f'ExpertReportObject(name="{self.name}")'

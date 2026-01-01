@@ -71,7 +71,7 @@ class AnalysisCase(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddSolution(CATBSTR iSolutionType) As AnalysisSet
                 | 
                 |     Creates a Solution set defined by its type in the Case.
@@ -102,7 +102,7 @@ class AnalysisCase(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Compute()
                 | 
                 |     Launch the computation (Update) of an analysis case. This step corresponds
@@ -122,7 +122,7 @@ class AnalysisCase(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ComputeMeshOnly()
                 | 
                 |     Launch the computation (Update) of an analysis case. This method

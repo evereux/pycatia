@@ -40,7 +40,7 @@ class UserSurface(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddReference(Reference iSupport)
                 | 
                 |     Add a surface in a User Surface Support
@@ -76,7 +76,7 @@ class UserSurface(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddReferenceInAProductCtx(Product iProdInst,
                 | Reference iSupport)
                 | 
@@ -116,7 +116,7 @@ class UserSurface(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddUserSurface(UserSurface iUserSurf)
                 | 
                 |     Add a User Surface Support in a User Surface Node

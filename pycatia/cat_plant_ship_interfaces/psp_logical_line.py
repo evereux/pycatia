@@ -47,7 +47,7 @@ class PSPLogicalLine(PSPGroup):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetFromTo(PspListOfObjects oListFromMajor,
                 | PspListOfObjects oListFromMinor,
                 | PspListOfObjects oListToMajor,
@@ -112,7 +112,7 @@ class PSPLogicalLine(PSPGroup):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetFromToInfoArrayMaxSize() As long
                 | 
                 |     Returns the maximum possible size of the from-to
@@ -144,7 +144,7 @@ class PSPLogicalLine(PSPGroup):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetFromToInformation(CATSafeArrayVariant oFromToLabel,
                 | CATSafeArrayVariant oFTMajor,
                 | CATSafeArrayVariant oFTMinor,

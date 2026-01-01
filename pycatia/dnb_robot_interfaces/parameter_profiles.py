@@ -77,7 +77,7 @@ class ParameterProfiles(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAttributeValue(CATBSTR iAttributeName,
                 | CATBSTR oEncapsulatedAttributeValue)
                 | 
@@ -120,7 +120,7 @@ class ParameterProfiles(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetName(CATBSTR oInstanceName)
                 | 
                 |     Gets the new name for the Profile instance
@@ -154,7 +154,7 @@ class ParameterProfiles(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAttributeValue(CATBSTR iAttributeName,
                 | CATBSTR iEncapsulatedAttributeValue)
                 | 
@@ -198,7 +198,7 @@ class ParameterProfiles(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetName(CATBSTR iNewInstanceName)
                 | 
                 |     Sets a new name for the Profile instance

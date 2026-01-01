@@ -43,7 +43,7 @@ class ABQDataOutputRequests(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add() As ABQDataOutputRequest
                 | 
                 |     Creates a new Abaqus data output request and adds it to the collection of
@@ -70,7 +70,7 @@ class ABQDataOutputRequests(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ABQDataOutputRequest
                 | 
                 |     Returns an Abaqus data output request using its index or its name from the
@@ -100,7 +100,7 @@ class ABQDataOutputRequests(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an Abaqus data output request using its index or its name from the

@@ -1,5 +1,3 @@
-#! /usr/bin/python3.9
-
 """
 
     Example - Specs And Geometry Window - 001
@@ -28,13 +26,13 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 from pathlib import Path
 
 from pycatia import CATIADocHandler
-from pycatia.enumeration.enumeration_types import cat_capture_format
-from pycatia.enumeration.enumeration_types import cat_specs_and_geom_window_layout
+from pycatia import CatCaptureFormat
+from pycatia import CatSpecsAndGeomWindowLayout
 from pycatia.in_interfaces.specs_and_geom_window import SpecsAndGeomWindow
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
-source_folder = Path(Path(os.getcwd()).parent, "tests/cat_files")
+source_folder = Path(Path(os.getcwd()), "tests/cat_files")
 source_files = source_folder.glob("*.CATPart")
 
 # create a dictionary of views to create.
@@ -77,7 +75,7 @@ for cat_part in source_files:
 
         # lets turn off the specification tree.
         specs_and_geom = SpecsAndGeomWindow(active_window.com_object)
-        specs_and_geom.layout = cat_specs_and_geom_window_layout.index("catWindowGeomOnly")
+        specs_and_geom.layout = CatSpecsAndGeomWindowLayout.catWindowGeomOnly
 
         view_point_3D = active_viewer.create_viewer_3d().viewpoint_3d
 
@@ -89,9 +87,9 @@ for cat_part in source_files:
             active_viewer.reframe()
             active_viewer.zoom_in()
             file_name = save_file_path(product.part_number, product.revision, view)
-            active_viewer.capture_to_file(cat_capture_format.index("catCaptureFormatJPEG"), str(file_name))
+            active_viewer.capture_to_file(CatCaptureFormat.catCaptureFormatJPEG, str(file_name))
 
         # reset background colour.
         active_viewer.put_background_color(background_colour)  # type: ignore
         # bring back the specification tree.
-        specs_and_geom.layout = cat_specs_and_geom_window_layout.index("catWindowSpecsAndGeom")
+        specs_and_geom.layout = CatSpecsAndGeomWindowLayout.catWindowSpecsAndGeom

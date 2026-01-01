@@ -40,7 +40,7 @@ class ManufacturingToolMotion(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttribute(CATBSTR iAttribut) As Parameter
                 | 
                 |     Retrieve by is name the attribute of a Manufacturing
@@ -63,7 +63,7 @@ class ManufacturingToolMotion(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetFeedrate(double oFeedrate) As CATBSTR
                 | 
                 |     Retrieves the Feedrate of a Manufacturing Point to point
@@ -102,7 +102,7 @@ class ManufacturingToolMotion(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetGotoPtPointCoordinates(double oX,
                 | double oY,
                 | double oZ)
@@ -136,7 +136,7 @@ class ManufacturingToolMotion(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPPWord() As CATBSTR
                 | 
                 |     Retrieves the content of a Manufacturing PP Word
@@ -158,7 +158,7 @@ class ManufacturingToolMotion(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetType() As CATBSTR
                 | 
                 |     Retrieves the type of a Manufacturing ToolMotion.
@@ -188,7 +188,7 @@ class ManufacturingToolMotion(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetFeedrate(double iFeedrate,
                 | CATBSTR iFeedrateType)
                 | 
@@ -232,7 +232,7 @@ class ManufacturingToolMotion(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetGotoPtPointCoordinates(double iX,
                 | double iY,
                 | double iZ)
@@ -269,7 +269,7 @@ class ManufacturingToolMotion(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPPWord(CATBSTR iMessage)
                 | 
                 |     Adds a line containing iMessage to a Manufacturing PP Word

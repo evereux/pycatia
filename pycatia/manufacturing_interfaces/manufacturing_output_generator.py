@@ -39,7 +39,7 @@ class ManufacturingOutputGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddMeToBuffer(long oAddMe)
                 | 
                 |     Management of specific buffer for aligned points elimination.
@@ -54,7 +54,7 @@ class ManufacturingOutputGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GenerateOutputCode(ManufacturingGeneratorData iData)
                 | 
                 |     Return the Output Code for an object in the right CNC Machine.
@@ -84,7 +84,7 @@ class ManufacturingOutputGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAPTCode(ManufacturingGeneratorData iData,
                 | CATBSTR oCode)
                 | 
@@ -116,7 +116,7 @@ class ManufacturingOutputGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetCurrentObject(long oCurrentObject)
                 | 
                 |     Get current object from buffer.
@@ -131,7 +131,7 @@ class ManufacturingOutputGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub HasToResetModalValues(long oIsModal)
                 | 
                 |     Return the characteristic of an object : Reset or not Modal Values.
@@ -146,7 +146,7 @@ class ManufacturingOutputGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub InitFileGenerator(CATBSTR iFormat,
                 | CATBSTR iFileName,
                 | ManufacturingGeneratorData oData)
@@ -192,7 +192,7 @@ class ManufacturingOutputGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub IsModal(long oIsModal)
                 | 
                 |     Return the characteristic of an object : Modal or Not Modal.
@@ -207,7 +207,7 @@ class ManufacturingOutputGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsSimilarTo(ManufacturingOutputGenerator iObject) As
                 | long
                 | 
@@ -224,7 +224,7 @@ class ManufacturingOutputGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RunFileGenerator(ManufacturingGeneratorData iData)
                 | 
                 |     Runs the Output Generator on the datas used for generation. Generation of
@@ -262,7 +262,7 @@ class ManufacturingOutputGenerator(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCurrentObject(long iCurrentObject)
                 | 
                 |     Set current object to buffer.

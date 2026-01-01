@@ -47,7 +47,7 @@ class GenericObjFrameProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetController(RobGenericController oController)
                 | 
                 |     Retrieves controller owning the profile.
@@ -89,7 +89,7 @@ class GenericObjFrameProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetName(CATBSTR oName)
                 | 
                 |     Gets name of the Object frame Profile.
@@ -116,7 +116,7 @@ class GenericObjFrameProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetObjectFrame(double x,
                 | double y,
                 | double z,
@@ -164,7 +164,7 @@ class GenericObjFrameProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetName(CATBSTR iName)
                 | 
                 |     Set name of the Object frame Profile.
@@ -191,7 +191,7 @@ class GenericObjFrameProfile(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetObjectFrame(double x,
                 | double y,
                 | double z,

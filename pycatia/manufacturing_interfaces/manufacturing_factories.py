@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ManufacturingFactories(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -43,7 +42,7 @@ class ManufacturingFactories(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetManufacturingResourceFactory() As AnyObject
                 | 
                 |     Retrieves the manufacturing resource factory from the given
@@ -59,4 +58,4 @@ class ManufacturingFactories(AnyObject):
         return AnyObject(self.manufacturing_factories.GetManufacturingResourceFactory())
 
     def __repr__(self):
-        return f'ManufacturingFactories(name="{ self.name }")'
+        return f'ManufacturingFactories(name="{self.name}")'

@@ -42,7 +42,7 @@ class PSPId(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GenAndPutID() As CATBSTR
                 | 
                 |     Returns the Generated ID with the sequence number and is stored on the
@@ -67,7 +67,7 @@ class PSPId(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GenAndPutIDNoGenSeqNum() As CATBSTR
                 | 
                 |     Generates ID without the sequence number and is stored on the
@@ -92,7 +92,7 @@ class PSPId(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GenIDNoGenSeqNum() As CATBSTR
                 | 
                 |     Generates ID without the sequence number( if not set previously) and is not
@@ -119,7 +119,7 @@ class PSPId(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetID() As CATBSTR
                 | 
                 |     Gets ID for the object.
@@ -142,7 +142,7 @@ class PSPId(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLocalID() As CATBSTR
                 | 
                 |     Retrieves local ID of the object.
@@ -166,7 +166,7 @@ class PSPId(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsIDGenerated() As boolean
                 | 
                 |     Checks if the ID on the object is generated( based on the ID
@@ -193,7 +193,7 @@ class PSPId(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetID(CATBSTR iID)
                 | 
                 |     Sets ID for the object.

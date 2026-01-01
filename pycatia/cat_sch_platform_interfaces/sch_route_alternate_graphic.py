@@ -40,7 +40,7 @@ class SchRouteAlternateGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddAlternateGraphic(CATSafeArrayVariant
                 | iInitialXYPosition,
                 | SchGRR oAddedGRR)
@@ -94,7 +94,7 @@ class SchRouteAlternateGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListAlternateGraphics() As SchListOfObjects
                 | 
                 |     Lists the alternate graphics of a route. The list contains all objects of
@@ -123,7 +123,7 @@ class SchRouteAlternateGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAllAlternateGraphics()
                 | 
                 |     Removes all alternate graphical primitives.
@@ -143,7 +143,7 @@ class SchRouteAlternateGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAllAlternateGraphicsOfStyle(CatSchIDLRouteAlternateGraphicStyle
                 | iStyle)
                 | 
@@ -172,7 +172,7 @@ class SchRouteAlternateGraphic(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAlternateGraphic(SchGRR iGRRToBeRemoved)
                 | 
                 |     Remove an alternate graphical primitive from a route.

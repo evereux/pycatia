@@ -41,7 +41,7 @@ class SchAppMultiImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppGetMasterDocument(Document oDocument,
                 | CATBSTR oDocumentName,
                 | CATBSTR oSymbolicLinkName)
@@ -101,7 +101,7 @@ class SchAppMultiImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppGetMasterObject() As SchAppMultiImageMaster
                 | 
                 |     Get the master object of this image.
@@ -129,7 +129,7 @@ class SchAppMultiImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppIsUpToDate(CatSchIDLMultiImageStatus oStatus)
                 | 
                 |     Check if the image object is up-to-date.
@@ -158,7 +158,7 @@ class SchAppMultiImage(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppUpdate(SchAppMultiImageMaster iMasterImage,
                 | SchAppMultiImage oImage)
                 | 

@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class FastenerWorkBench(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CurveFasteners(CATSafeArrayVariant
                 | oCurveFastenerArray)
 
@@ -70,7 +69,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub FastenerGroups(CATSafeArrayVariant
                 | oFastenerGroupArray)
 
@@ -99,7 +98,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfCurveFasteners() As long
 
         :rtype: int
@@ -111,7 +110,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfFastenerGroups() As long
 
         :rtype: int
@@ -123,7 +122,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfPointFasteners() As long
 
         :rtype: int
@@ -135,7 +134,7 @@ class FastenerWorkBench(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub PointFasteners(CATSafeArrayVariant
                 | oPointFastenerArray)
 
@@ -160,4 +159,4 @@ class FastenerWorkBench(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'FastenerWorkBench(name="{ self.name }")'
+        return f'FastenerWorkBench(name="{self.name}")'

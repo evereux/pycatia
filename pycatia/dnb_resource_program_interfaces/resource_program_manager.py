@@ -49,7 +49,7 @@ class ResourceProgramManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAllTasks(CATSafeArrayVariant oTaskList)
                 | 
                 |     Retrieves all the Tasks corresponding to this Resource.
@@ -103,7 +103,7 @@ class ResourceProgramManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetTask(CATBSTR iTaskName,
                 | Task oTask)
                 | 

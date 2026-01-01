@@ -45,7 +45,7 @@ class DNB3DStateManagement(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Create3DState(CATBSTR iStateName,
                 | CATBaseDispatch iObject,
                 | CATSafeArrayVariant iListDefn) As DNB3DState
@@ -88,7 +88,7 @@ class DNB3DStateManagement(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Delete3DState(DNB3DState iState)
                 | 
                 |     Deletes the specified state object
@@ -130,7 +130,7 @@ class DNB3DStateManagement(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Get3DState(CATBaseDispatch iObject,
                 | CATBSTR iStateName) As DNB3DState
                 | 
@@ -166,7 +166,7 @@ class DNB3DStateManagement(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOf3DStates() As long
                 | 
                 |     Returns the number of 3D State objects in the process
@@ -189,7 +189,7 @@ class DNB3DStateManagement(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOf3DStatesOnObject(CATBaseDispatch iObj) As
                 | long
                 | 
@@ -219,7 +219,7 @@ class DNB3DStateManagement(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberof3DStatesInActivity(Activity iProcess,
                 | CATBSTR iConditionType) As long
                 | 
@@ -256,7 +256,7 @@ class DNB3DStateManagement(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub List3DStatesInActivity(Activity iProcess,
                 | CATBSTR iConditionType,
                 | CATSafeArrayVariant oStates)
@@ -314,7 +314,7 @@ class DNB3DStateManagement(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListAll3DStates() As DNB3DStates
                 | 
                 |     Returns the list of all 3D State objects in the process
@@ -339,7 +339,7 @@ class DNB3DStateManagement(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ListAll3DStatesOnObject(CATBaseDispatch iObj,
                 | CATSafeArrayVariant oListStates)
                 | 

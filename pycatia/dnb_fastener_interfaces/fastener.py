@@ -39,7 +39,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AllPartsLoaded() As boolean
                 | 
                 |     Gets the loading status of the joining parts of the fastener If all the joining parts are
@@ -58,7 +58,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDoubleUserAttribute(CATBSTR iAttributeLabel) As
                 | double
                 | 
@@ -89,7 +89,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetIntUserAttribute(CATBSTR iAttributeLabel) As long
 
         :param str i_attribute_label:
@@ -102,7 +102,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPart(short index) As Product
                 | 
                 |     Returns the product at the specified index from list of parts joined by
@@ -129,7 +129,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetParts(CATSafeArrayVariant oListOfParts)
                 | 
                 |     Returns the list of parts joined by fastener.
@@ -173,7 +173,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetProcess(short index) As Activity
                 | 
                 |     Returns the activity, at the specified index, on which the fastener is
@@ -200,7 +200,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetStringUserAttribute(CATBSTR iAttributeLabel) As
                 | CATBSTR
                 | 
@@ -232,7 +232,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func NumberOfAssignedProcesses() As long
                 | 
                 |     Returns Number of processes assigned with the fastener 
@@ -249,7 +249,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func NumberOfJoiningParts() As long
                 | 
                 |     Returns the number of parts joined by fastener.
@@ -274,7 +274,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveFromPPR(boolean iForceRemoveIfAssigned,
                 | DNBPPRRemoveStatus eStatus)
                 | 
@@ -322,7 +322,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDoubleUserAttribute(CATBSTR iAttributeLabel,
                 | double iDoubleValue)
                 | 
@@ -354,7 +354,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetIntUserAttribute(CATBSTR iAttributeLabel,
                 | long iIntValue)
 
@@ -369,7 +369,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetStringUserAttribute(CATBSTR iAttributeLabel,
                 | CATBSTR iStringValue)
                 | 
@@ -403,7 +403,7 @@ class Fastener(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTextIDVisibility(boolean iStatus)
                 | 
                 |     Sets the Hide/Show status of the text ID of the fastener in the 3D window Valid Param : 1,0 

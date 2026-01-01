@@ -272,7 +272,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ApplyPosition(CATSafeArrayVariant piPositionIncrement,
                 | CATBSTR piStartSegment)
                 | 
@@ -347,7 +347,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Attach(AnyObject piObjectToAttach)
                 | 
                 |     Attach a geometry to the segment.
@@ -369,7 +369,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CreateReachEnvelope()
                 | 
                 |     This method creates and displayed the reach envelope on the current
@@ -387,7 +387,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DestroyReachEnvelope()
                 | 
                 |     This method destroys the reach envelope previously created for this
@@ -402,7 +402,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Detach(AnyObject piObjectToDetach)
                 | 
                 |     Detach a geometry previously attached to the segment.
@@ -423,7 +423,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DetachAll()
                 | 
                 |     Detach all objects attached so far to the segment.
@@ -437,7 +437,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAttachedObject(long piIndex) As AnyObject
                 | 
                 |     Retrieve one object currently attached to the segment.
@@ -458,7 +458,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDOF(long piDOFNumber) As SWKDOF
                 | 
                 |     Returns a specific degree of freedom of the segment.
@@ -492,7 +492,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetIKOffset(CATSafeArrayVariant poOffset)
                 | 
                 |     Returns:
@@ -523,7 +523,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetIKPosition(CATSafeArrayVariant poIKPosition)
                 | 
                 |     Returns:
@@ -554,7 +554,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAttached(AnyObject piObject) As boolean
                 | 
                 |     Returns:
@@ -571,7 +571,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsObjectReachable(AnyObject piObject) As boolean
                 | 
                 |     Reachability check.
@@ -590,7 +590,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsReachable(double piX,
                 | double piY,
                 | double piZ) As boolean
@@ -613,7 +613,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub LockPosture(long piDOFId)
                 | 
                 |     Lock the posture of the segment.
@@ -628,7 +628,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub MirrorCopyAngularLimitations(long piDOFId)
                 | 
                 |     Mirror copy the angular limitations of the segment.
@@ -643,7 +643,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub MirrorCopyPosture()
                 | 
                 |     Copy the posture on the equivalent segment, on the other side of the
@@ -659,7 +659,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub MirrorCopyPrefAngles(long piDOFId)
                 | 
                 |     Mirror copy the preferred angles of the segment.
@@ -674,7 +674,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Optimize(long piDOFId)
                 | 
                 |     Sets the limits to match the best PrefAngle for the DOF piDOFId
@@ -689,7 +689,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveLimits(long piDOFId)
                 | 
                 |     Removes the angular limitations of the segment.
@@ -704,7 +704,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetAngularLimitations(long piDOFId,
                 | long piReset)
                 | 
@@ -724,7 +724,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetPosture()
                 | 
                 |     Set the segment's posture back to its default position.
@@ -738,7 +738,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ResetPrefAngles(long piDOFId)
                 | 
                 |     Reset the preferred angles of the segment.
@@ -753,7 +753,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPercentage(double piPercentage,
                 | long piDOFId)
                 | 
@@ -770,7 +770,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPosition(CATSafeArrayVariant piNewPosition,
                 | CATBSTR piStartSegment)
                 | 
@@ -843,7 +843,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SwapAngularLimitations(long piDOFId)
                 | 
                 |     Swap the angular limitations of the segment.
@@ -858,7 +858,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SwapPosture()
                 | 
                 |     Swap the posture with the equivalent segment, on the other side of the
@@ -874,7 +874,7 @@ class SWKSegment(SWKBodyElement):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SwapPrefAngles(long piDOFId)
                 | 
                 |     Swap the preferred angles of the segment.

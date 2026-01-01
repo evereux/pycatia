@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class V4V5SpaceSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -326,7 +325,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDetailsModeExplodeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -345,7 +344,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDetailsModeUsualInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -364,7 +363,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDetailsModeWireframeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -383,7 +382,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExternalMaxDeformationInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -402,7 +401,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetExternalTypeDeformationInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -421,7 +420,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetInternalMaxDeformationInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -440,7 +439,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetInternalTypeDeformationInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -459,7 +458,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetKeepSegmentationInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -478,7 +477,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSolidMUInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -497,7 +496,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTextMigrationInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -516,7 +515,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDetailsModeExplodeLock(boolean iLock)
                 | 
                 |     Locks or unlocks the Details Migration Mode setting
@@ -548,7 +547,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDetailsModeUsualLock(boolean iLock)
                 | 
                 |     Locks or unlocks the Details Migration Mode setting
@@ -580,7 +579,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetDetailsModeWireframeLock(boolean iLock)
                 | 
                 |     Locks or unlocks the Details Migration Mode setting
@@ -612,7 +611,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExternalMaxDeformationLock(boolean iLock)
                 | 
                 |     Locks or unlocks the "External Control Point Maximum Deformation" setting
@@ -644,7 +643,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetExternalTypeDeformationLock(boolean iLock)
                 | 
                 |     Locks or unlocks the activation mode with external deformation (Gap
@@ -678,7 +677,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetInternalMaxDeformationLock(boolean iLock)
                 | 
                 |     Locks or unlocks the "Internal Control Point Maximum Deformation" setting
@@ -710,7 +709,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetInternalTypeDeformationLock(boolean iLock)
                 | 
                 |     Locks or unlocks the activation mode with internal deformation (Curve
@@ -744,7 +743,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetKeepSegmentationLock(boolean iLock)
                 | 
                 |     Locks or unlocks the KeepSegmentation setting parameter.
@@ -775,7 +774,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSolidMULock(boolean iLock)
                 | 
                 |     Locks or unlocks the Solid Mock-Up Migration Mode setting
@@ -807,7 +806,7 @@ class V4V5SpaceSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTextMigrationLock(boolean iLock)
                 | 
                 |     Locks or unlocks the 3D Text Migration setting parameter.
@@ -834,4 +833,4 @@ class V4V5SpaceSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'V4V5SpaceSettingAtt(name="{ self.name }")'
+        return f'V4V5SpaceSettingAtt(name="{self.name}")'

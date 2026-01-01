@@ -54,7 +54,7 @@ class SweptVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(Replay replay,
                 | CATSafeArrayVariant iProductsToSwept,
                 | Product iProductReference,
@@ -113,7 +113,7 @@ class SweptVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddFromSweptAble(CATBaseDispatch iSweptAble,
                 | CATSafeArrayVariant iProductsToSwept,
                 | Product iProductReference,
@@ -157,7 +157,7 @@ class SweptVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub CleanUp()
                 | 
                 |     Cleans up.
@@ -182,7 +182,7 @@ class SweptVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeASweptVolume(Replay iReplay,
                 | CATBaseDispatch iSweptAble,
                 | CATSafeArrayVariant iProductsToSwept,
@@ -238,7 +238,7 @@ class SweptVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeASweptVolumeFromReplay(Replay iReplay,
                 | CATSafeArrayVariant iProductsToSwept,
                 | Product iProductReference,
@@ -291,7 +291,7 @@ class SweptVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ComputeASweptVolumeFromSweptable(CATBaseDispatch
                 | iSweptAble,
                 | CATSafeArrayVariant iProductsToSwept,
@@ -349,7 +349,7 @@ class SweptVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ComputeSweptVolumes(Replay iReplay,
                 | CATBaseDispatch iSweptAble,
                 | CATSafeArrayVariant iProductsToSwept,
@@ -457,7 +457,7 @@ class SweptVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ComputeSweptVolumesFromReplay(Replay iReplay,
                 | CATSafeArrayVariant iProductsToSwept,
                 | Product iProductReference,
@@ -558,7 +558,7 @@ class SweptVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ComputeSweptVolumesFromSweptable(CATBaseDispatch
                 | iSweptAble,
                 | CATSafeArrayVariant iProductsToSwept,
@@ -648,7 +648,7 @@ class SweptVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSilhouette(long OnOff)
                 | 
                 |     Adds the possibility to make a silhouette before the swept volume
@@ -663,7 +663,7 @@ class SweptVolumes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetSpatialSplit(long OnOff)
                 | 
                 |     Adds the possibility to parallelize swept&wrapping after a spatial split.

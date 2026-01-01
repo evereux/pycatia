@@ -39,7 +39,7 @@ class SchInternalFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetInsertionType(CatSchIDLInternalFlowType
                 | oEInternalFlowType)
                 | 
@@ -67,7 +67,7 @@ class SchInternalFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetStatus(CatSchIDLInternalFlowStatus
                 | oEInternalFlowStatus)
                 | 
@@ -95,7 +95,7 @@ class SchInternalFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListSchConnectors() As SchListOfObjects
                 | 
                 |     List all schematic connectors associated with an internal
@@ -123,7 +123,7 @@ class SchInternalFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetStatus(CatSchIDLInternalFlowStatus
                 | iEInternalFlowStatus)
                 | 

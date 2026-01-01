@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Joint(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -57,7 +56,7 @@ class Joint(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnsetLowerLimit1()
                 | 
                 |     Unsets the lower limit of the joint, for the first
@@ -79,7 +78,7 @@ class Joint(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnsetLowerLimit2()
                 | 
                 |     Unsets the lower limit of the joint, for the second
@@ -99,7 +98,7 @@ class Joint(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnsetUpperLimit1()
                 | 
                 |     Unsets the upper limit of the joint, for the first
@@ -119,7 +118,7 @@ class Joint(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UnsetUpperLimit2()
                 | 
                 |     Unsets the upper limit of the joint, for the second
@@ -135,4 +134,4 @@ class Joint(AnyObject):
         return self.joint.UnsetUpperLimit2()
 
     def __repr__(self):
-        return f'Joint(name="{ self.name }")'
+        return f'Joint(name="{self.name}")'

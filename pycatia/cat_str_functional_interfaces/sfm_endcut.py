@@ -46,7 +46,7 @@ class SFMEndcut(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetConnectionCoordinate() As CATSafeArrayVariant
                 | 
                 |     Gets thelocation of existing endcut.
@@ -89,7 +89,7 @@ class SFMEndcut(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetEndcutinfo(CATBSTR oTypeOfEndcut,
                 | CATBSTR oNameOfEndcut,
                 | SfmReferences oListOfEndcutContexts,
@@ -166,7 +166,7 @@ class SFMEndcut(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub UpdateConnectionsSet()
                 | 
                 |     Updates the Connection Set.

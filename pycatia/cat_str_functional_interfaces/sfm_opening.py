@@ -189,7 +189,7 @@ class SFMOpening(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetDirection() As CATSafeArrayVariant
                 | 
                 |     Gets the Direction for Opening in the form of Vector.
@@ -221,7 +221,7 @@ class SFMOpening(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func IsAPlateOpening() As long
                 | 
                 |     Determines if it is a Plate Opening or a Profile one.
@@ -260,7 +260,7 @@ class SFMOpening(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetMasterMode()
                 | 
                 |     Sets Master mode on Copy Pasted Opening. It breaks the dependency by

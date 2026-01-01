@@ -47,7 +47,7 @@ class MhiRelationManagement(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetRelationObject(CATBSTR iRelationName,
                 | CATBaseDispatch iAssignedObject) As CATBaseDispatch
                 | 
@@ -82,7 +82,7 @@ class MhiRelationManagement(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSupportedRelations() As CATSafeArrayVariant
                 | 
                 |     This method lists all the possible values that can passed as the relation

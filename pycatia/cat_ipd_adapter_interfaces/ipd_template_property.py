@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class IpdTemplateProperty(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -47,7 +46,7 @@ class IpdTemplateProperty(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTemplateBooleanAttribute(CATBSTR iAttrName) As
                 | boolean
                 | 
@@ -73,7 +72,7 @@ class IpdTemplateProperty(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTemplateDoubleAttribute(CATBSTR iAttrName) As
                 | double
                 | 
@@ -99,7 +98,7 @@ class IpdTemplateProperty(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTemplateLongAttribute(CATBSTR iAttrName) As long
                 | 
                 |     This gets a String Attribute value of an input Object
@@ -124,7 +123,7 @@ class IpdTemplateProperty(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTemplateStringAttribute(CATBSTR iAttrName) As
                 | CATBSTR
                 | 
@@ -146,4 +145,4 @@ class IpdTemplateProperty(AnyObject):
         return self.ipd_template_property.GetTemplateStringAttribute(i_attr_name)
 
     def __repr__(self):
-        return f'IpdTemplateProperty(name="{ self.name }")'
+        return f'IpdTemplateProperty(name="{self.name}")'

@@ -262,7 +262,7 @@ class Layout2DRoot(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub reorder_Sheets(CATSafeArrayVariant iOrderedSheets)
                 | 
                 |     Changes the positions of the sheets in this drawing according to the given

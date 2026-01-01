@@ -287,7 +287,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AccurateType() As CATBSTR
                 | 
                 |     Returns as a string the type of component.
@@ -304,7 +304,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddFact(AnyObject iFact)
                 | 
                 |     Adds new fact to the rule base resolution.
@@ -333,7 +333,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddRootOfFacts(AnyObject iRootFacts)
                 | 
                 |     Adds a new root of facts to the rule base.
@@ -353,7 +353,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Deduce()
                 | 
                 |     Launch a Forward chaining Solve on the current RuleBase. 
@@ -373,7 +373,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Fingerprint() As boolean
                 | 
                 |     Returns the Fingerprint information. The fingerprint indicates
@@ -401,7 +401,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNumberOfRootsOfFacts() As long
                 | 
                 |     Retrieves the number of roots of facts of the rule base.
@@ -418,7 +418,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetRootsOfFacts(CATSafeArrayVariant oRootsOfFacts)
                 | 
                 |     Retrieves all the roots of facts from the rule base.
@@ -453,7 +453,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Import(ExpertRuleSet iRuleSet,
                 | boolean iForce)
                 | 
@@ -508,7 +508,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ImportFromFile(CATBSTR iPath,
                 | boolean iForce)
                 | 
@@ -555,7 +555,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub ImportWithLink(AnyObject iRoot,
                 | boolean iForce)
                 | 
@@ -602,7 +602,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveRootOfFacts(AnyObject iRootFacts)
                 | 
                 |     Removes a root of facts from the rule base.
@@ -622,7 +622,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Report(boolean reallyStartBrowser)
                 | 
                 |     Launch a Report. The default output format is HTML
@@ -661,7 +661,7 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func SynchronizeStatus() As boolean
                 | 
                 |     Returns the Synchronize information. The synchronize status indicates

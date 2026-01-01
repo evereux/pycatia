@@ -170,7 +170,7 @@ class SFMProfile(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddEndcut(long iExtremityIndex,
                 | CATBSTR iEndcutType,
                 | CATBSTR iEndcutName,
@@ -275,7 +275,7 @@ class SFMProfile(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetEndCoord(CATSafeArrayVariant oCoord)
                 | 
                 |     Retrieves the coordinates of the member's end extremity.
@@ -312,7 +312,7 @@ class SFMProfile(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetEndcut(long iExtremityIndex) As SfmEndcut
                 | 
                 |     Retrieves Existing Endcut on Profile.
@@ -343,7 +343,7 @@ class SFMProfile(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetProfileLimit(long iExtremityIndex) As Reference
                 | 
                 |     Returns the limit at an Extremity of a Profile.
@@ -382,7 +382,7 @@ class SFMProfile(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetSectionAxis(double iAbside,
                 | CATSafeArrayVariant iOrigin,
                 | CATSafeArrayVariant ioVector1,
@@ -435,7 +435,7 @@ class SFMProfile(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSlotsOnProfile() As SfmSlots
                 | 
                 |     Retrieves Slots on Profile.
@@ -463,7 +463,7 @@ class SFMProfile(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetStartCoord(CATSafeArrayVariant oCoord)
                 | 
                 |     Retrieves the coordinates of the member's start extremity.
@@ -500,7 +500,7 @@ class SFMProfile(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveEndcut(long iExtremityIndex)
                 | 
                 |     Removes Existing Endcut on Profile.
@@ -529,7 +529,7 @@ class SFMProfile(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Run()
                 | 
                 |     Compute the member's result.
@@ -549,7 +549,7 @@ class SFMProfile(SFMObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetProfileLimit(long iExtremityIndex,
                 | Reference iLimit)
                 | 

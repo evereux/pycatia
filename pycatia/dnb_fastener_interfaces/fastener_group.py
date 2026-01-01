@@ -157,7 +157,7 @@ class FastenerGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCount(CATBSTR IDName) As long
                 | 
                 |     Returns the number of entities in the fastener group of the
@@ -192,7 +192,7 @@ class FastenerGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetItems(CATBSTR IDName,
                 | CATSafeArrayVariant oListOfEntities)
                 | 
@@ -237,7 +237,7 @@ class FastenerGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetJoinedPartNames(CATSafeArrayVariant oListOfParts)
                 | 
                 |     Returns the list of part names joined by fastener.
@@ -281,7 +281,7 @@ class FastenerGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPart(short index) As Product
                 | 
                 |     Returns the product at the specified index from the list of parts joined by
@@ -308,7 +308,7 @@ class FastenerGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Hide()
                 | 
                 |     Hides all the entities in the fastener group. 
@@ -327,7 +327,7 @@ class FastenerGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func NumberOfJoiningParts() As long
                 | 
                 |     Returns the number of parts joined by the fastener group.
@@ -352,7 +352,7 @@ class FastenerGroup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Show()
                 | 
                 |     Shows all the entities in the fastener group. 

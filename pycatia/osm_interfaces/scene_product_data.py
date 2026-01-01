@@ -160,7 +160,7 @@ class SceneProductData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetRealColor(long oRed,
                 | long oGreen,
                 | long oBlue,
@@ -205,7 +205,7 @@ class SceneProductData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetRealTransparency(long oTransparency,
                 | long oInheritance)
                 | 
@@ -242,7 +242,7 @@ class SceneProductData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRealColor(long iRed,
                 | long iGreen,
                 | long iBlue,
@@ -286,7 +286,7 @@ class SceneProductData(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetRealTransparency(long iTransparency,
                 | long iInheritance)
                 | 

@@ -40,7 +40,7 @@ class SchBoundaryElem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetBoundaryPoints(SchListOfDoubles oLDbPts)
                 | 
                 |     Get the definition points (segments end points) of one side of the
@@ -84,7 +84,7 @@ class SchBoundaryElem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetEndPoints(SchListOfDoubles oLDb4Pts)
                 | 
                 |     Get the end points (segments end points) of one side of the
@@ -127,7 +127,7 @@ class SchBoundaryElem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListGRRZoneOwners() As SchListOfObjects
                 | 
                 |     Get the list of owners of this zone.

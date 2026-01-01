@@ -91,7 +91,7 @@ class Dressup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Attach(Product iLink,
                 | Product iAttachedProd)
                 | 
@@ -146,7 +146,7 @@ class Dressup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Detach(Product iAttachedProd)
                 | 
                 |     Detaches an attached product from its link.
@@ -193,7 +193,7 @@ class Dressup(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListAttached(Product iLink) As CATSafeArrayVariant
                 | 
                 |     Returns the list of products attached to a given link.

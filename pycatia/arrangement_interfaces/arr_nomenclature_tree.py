@@ -64,7 +64,7 @@ class ArrNomenclatureTree(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetNomenclature(CATBSTR iTypeName) As ArrNomenclature
                 | 
                 |     Finds a UserNomenclature by Name from this UserDictionary.

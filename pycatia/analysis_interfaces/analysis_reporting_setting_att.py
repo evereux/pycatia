@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class AnalysisReportingSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -224,7 +223,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetBackgroundImageModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -260,7 +259,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCustomBackgroundImageInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -296,7 +295,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCustomImageFormatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -332,7 +331,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCustomImageHeightInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -368,7 +367,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCustomImageWidthInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -404,7 +403,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetImageQualityModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -440,7 +439,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetTempOutputDirectoryInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -476,7 +475,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetBackgroundImageModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the BackgroundImageMode parameter.
@@ -517,7 +516,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCustomBackgroundImageLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CustomBackgroundImage parameter.
@@ -558,7 +557,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCustomImageFormatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CustomImageFormat parameter.
@@ -599,7 +598,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCustomImageHeightLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CustomImageHeight parameter.
@@ -640,7 +639,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetCustomImageWidthLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ImageWidth parameter.
@@ -681,7 +680,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetImageQualityModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ImageQualityMode parameter.
@@ -722,7 +721,7 @@ class AnalysisReportingSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetTempOutputDirectoryLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the TempOutputDirectory parameter.
@@ -759,4 +758,4 @@ class AnalysisReportingSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'AnalysisReportingSettingAtt(name="{ self.name }")'
+        return f'AnalysisReportingSettingAtt(name="{self.name}")'

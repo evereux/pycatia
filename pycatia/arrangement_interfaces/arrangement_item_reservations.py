@@ -53,7 +53,7 @@ class ArrangementItemReservations(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddItemReservation(Move iRelAxis,
                 | CATSafeArrayVariant iPosition,
                 | double iXMin,
@@ -124,7 +124,7 @@ class ArrangementItemReservations(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As ArrangementItemReservation
                 | 
                 |     Returns the specified ArrangementItemReservation item of the
@@ -157,7 +157,7 @@ class ArrangementItemReservations(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes the specified ArrangementItemReservation object from the

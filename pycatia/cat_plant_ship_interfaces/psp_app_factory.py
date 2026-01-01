@@ -44,7 +44,7 @@ class PSPAppFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateGroup(Product iCurrentProduct,
                 | CATBSTR iGroupType,
                 | CATBSTR iGroupID) As PspGroup
@@ -85,7 +85,7 @@ class PSPAppFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DeleteCompartment(PspGroup iCompartment)
                 | 
                 |     Delete a compartment instance.
@@ -127,7 +127,7 @@ class PSPAppFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DeleteGroup(PspGroup iGroup)
                 | 
                 |     Delete a group.
@@ -169,7 +169,7 @@ class PSPAppFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DeleteLogicalLine(PspLogicalLine iLogicalLine)
                 | 
                 |     Delete a logical line instance.
@@ -211,7 +211,7 @@ class PSPAppFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub DeletePart(Product iPart)
                 | 
                 |     Delete a part.
@@ -253,7 +253,7 @@ class PSPAppFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetCompartment(Product iCurrentProduct,
                 | CATBSTR iCompartmentID) As PspGroup
                 | 
@@ -291,7 +291,7 @@ class PSPAppFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetLogicalLine(Product iCurrentProduct,
                 | CATBSTR iLogicalLineID) As PspLogicalLine
                 | 
@@ -327,7 +327,7 @@ class PSPAppFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListCompartments(Product iCurrentProduct) As
                 | PspListOfObjects
                 | 
@@ -361,7 +361,7 @@ class PSPAppFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListGroups(Product iCurrentProduct) As
                 | PspListOfObjects
                 | 
@@ -393,7 +393,7 @@ class PSPAppFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListLogicalLines(Product iCurrentProduct) As
                 | PspListOfObjects
                 | 
@@ -426,7 +426,7 @@ class PSPAppFactory(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func ListPhysicals(Product iCurrentProduct,
                 | CatPspIDLDomainID iDomainID) As PspListOfObjects
                 | 

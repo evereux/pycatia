@@ -40,7 +40,7 @@ class AnalysisEntities(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(CATBSTR iType) As AnalysisEntity
                 | 
                 |     Creates a new analysis entity and adds it to the analysis entities
@@ -79,7 +79,7 @@ class AnalysisEntities(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As AnalysisEntity
                 | 
                 |     Returns an analysis entity using its index or its name from the analysis
@@ -110,7 +110,7 @@ class AnalysisEntities(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a entity using its index or its name from the entity

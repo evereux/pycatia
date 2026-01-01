@@ -64,7 +64,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddAttributeReal(CATBSTR Name,
                 | double Value)
                 | 
@@ -96,7 +96,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddAttributeString(CATBSTR Name,
                 | CATBSTR Value)
                 | 
@@ -128,7 +128,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddAuxAttribute(CATBSTR iName,
                 | CATBSTR iValue)
                 | 
@@ -160,7 +160,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAttributeValueReal(CATBSTR Name,
                 | double oValue)
                 | 
@@ -193,7 +193,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAttributeValueString(CATBSTR Name,
                 | CATBSTR Value)
                 | 
@@ -226,7 +226,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAuxAttribute(short iIndex,
                 | CATBSTR oName,
                 | CATBSTR oValue)
@@ -262,7 +262,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAuxAttributeNum(short oNum)
                 | 
                 |     Function to get the number of auxilliary attributes of the given
@@ -291,7 +291,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetAuxAxesValues(CATSafeArrayVariant
                 | oAuxillaryAxisValues)
                 | 
@@ -335,7 +335,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetConfig(short oconfig)
                 | 
                 |     Function to get the config value of the given AMPTag.
@@ -362,7 +362,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetOpType(short oOpType)
                 | 
                 |     Function to get the operation type of the given AMPTag.
@@ -389,7 +389,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetPosition(CATSafeArrayVariant oTransform)
                 | 
                 |     Function to get the position( array of doubles; X, Y, Z, Yaw, Roll, Pitch
@@ -433,7 +433,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetType(CATBSTR oTagType)
                 | 
                 |     Function to get the type of the given AMPTag.
@@ -460,7 +460,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetVia(short oViaStatus)
                 | 
                 |     Function to get the via status of the given AMPTag.
@@ -487,7 +487,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub GetWeldSpeed(double oSpeed)
                 | 
                 |     Function to get the weld speed of the given AMPTag.
@@ -514,7 +514,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAttribute(CATBSTR Name)
                 | 
                 |     Function to remove an existing attribute on the given
@@ -542,7 +542,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub RemoveAuxAttribute(short iIndex)
                 | 
                 |     Function to remove an auxilliary attribute of the given
@@ -570,7 +570,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAttributeValueReal(CATBSTR Name,
                 | double Value)
                 | 
@@ -602,7 +602,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAttributeValueString(CATBSTR Name,
                 | CATBSTR Value)
                 | 
@@ -634,7 +634,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetAuxAxesValues(CATSafeArrayVariant
                 | iAuxillaryAxisValues)
                 | 
@@ -678,7 +678,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetConfig(short iconfig)
                 | 
                 |     Function to set the config value of the given AMPTag.
@@ -705,7 +705,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetOpType(short iOpType)
                 | 
                 |     Function to set the operation type of the given AMPTag.
@@ -733,7 +733,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetPosition(CATSafeArrayVariant iTransform)
                 | 
                 |     Function to set the position( array of doubles; X, Y, Z, Yaw, Roll, Pitch
@@ -777,7 +777,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetType(CATBSTR iTagType)
                 | 
                 |     Function to set the type of the given AMPTag.
@@ -804,7 +804,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetVia(short iViaStatus)
                 | 
                 |     Function to set the via status of the given AMPTag.
@@ -831,7 +831,7 @@ class AMPTag(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SetWeldSpeed(double iSpeed)
                 | 
                 |     Function to set the weld speed of the given AMPTag.

@@ -39,7 +39,7 @@ class SchAppClass(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppGetComponentBaseClass() As SchListOfBSTRs
                 | 
                 |     Provide the application class names for the base component
@@ -69,7 +69,7 @@ class SchAppClass(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppGetGroupBaseClass(CATBSTR oGroupClassName)
                 | 
                 |     Provide the application class name for Schematic Group
@@ -99,7 +99,7 @@ class SchAppClass(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppGetRouteBaseClass(CATBSTR oRouteClassName)
                 | 
                 |     Provide the application class name for Schematic Route
@@ -129,7 +129,7 @@ class SchAppClass(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AppGetZoneBaseClass(CATBSTR oZoneClassName)
                 | 
                 |     Provide the application class name for Schematic Zone
@@ -159,7 +159,7 @@ class SchAppClass(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AppListValidRouteTypes() As SchListOfBSTRs
                 | 
                 |     List the valid application route types allowed to be

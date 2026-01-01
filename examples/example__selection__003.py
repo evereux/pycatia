@@ -1,6 +1,3 @@
-#! /usr/bin/python3.6
-# -*- coding: utf-8 -*-
-
 """
     Example - Selection - 003
 
@@ -22,11 +19,11 @@ import sys
 sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
-from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia import catia
-from pycatia.enumeration.enumeration_types import cat_measurable_name
-from pycatia.enumeration.enumeration_types import cat_selection_filter
-from pycatia.enumeration.enumeration_types import geometrical_feature_type
+from pycatia import CatMeasurableName
+from pycatia import CatSelectionFilter
+from pycatia import GeometricalFeatureType
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 __author__ = '[ptm] by plm-forum.ru'
 __status__ = 'alpha'
@@ -52,7 +49,8 @@ mb = application.message_box('Select any HybridShape, or PartBody.\n'
 if mb == 2:
     sys.exit('HybridShape or PartBody not selected.')
 
-selected = selection.select_element2(cat_selection_filter, 'Select a HybridShape or PartBody.', True)
+selected = selection.select_element2(tuple([csf.value for csf in CatSelectionFilter]),
+                                     'Select a HybridShape or PartBody.', True)
 
 sel_name = selection.item2(1).value.name
 parent_name = selection.item2(1).value.parent.name
@@ -64,17 +62,17 @@ ref_hb = selection.item2(1).reference
 # CATIA will not report an int? :evereux
 try:
     geom_add_type: int = spa.get_measurable(ref_hb).geometry_name
-    add_geom_type: str = cat_measurable_name[geom_add_type]
+    add_geom_type: str = CatMeasurableName(geom_add_type).name
 except:
-    add_geom_type = cat_measurable_name[0]
+    add_geom_type: str = CatMeasurableName(0).name
 
 # I'm not sure this try / except clause is neccessary? Are there cases where
 # CATIA will not report an int? :evereux
 try:
     geom_base_type: int = hsf.get_geometrical_feature_type(ref_hb)
-    base_geom_type: str = geometrical_feature_type(geom_base_type)
+    base_geom_type: str = GeometricalFeatureType(geom_base_type).name
 except:
-    base_geom_type = geometrical_feature_type[0]
+    base_geom_type = GeometricalFeatureType(0).name
 
 text = f'selection_name={sel_name}\n' \
        f'parent={parent_name}\n' \

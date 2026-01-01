@@ -40,7 +40,7 @@ class Resources(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add(Resource iResource) As Resource
                 | 
                 |     This method add the specified item in the current list
@@ -63,7 +63,7 @@ class Resources(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddByAssignmentType(Resource iResource,
                 | DNBResourceAssignmentType iAssignmentType) As Resource
                 | 
@@ -94,7 +94,7 @@ class Resources(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Resource
                 | 
                 |     This method returns the idl object Resource for the specified resource
@@ -118,7 +118,7 @@ class Resources(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func RemoveByAssignmentType(Resource iResource,
                 | DNBResourceAssignmentType iAssignmentType) As Resource
                 | 

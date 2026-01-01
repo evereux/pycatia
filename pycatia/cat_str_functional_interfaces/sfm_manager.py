@@ -44,7 +44,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub AddHull()
                 | 
                 |     Add the Hull feature according to the PRM resources.
@@ -63,7 +63,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetAllUC1Welds() As SfmWelds
                 | 
                 |     Gets all UC1 Weld features in Part.
@@ -91,7 +91,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetHull() As Reference
                 | 
                 |     Returns the Hull feature in the part.
@@ -111,7 +111,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetPlaneSystems() As References
                 | 
                 |     Returns the list of PlaneSystems in the part.
@@ -132,7 +132,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetReferencePlane(CATVariant iPlaneSystemIndex,
                 | CATVariant iPlaneIndex) As Reference
                 | 
@@ -161,7 +161,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSuperMembers() As References
                 | 
                 |     Returns the list of SuperMembers in the part.
@@ -182,7 +182,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSuperPlates() As References
                 | 
                 |     Returns the list of SuperPlates in the part.
@@ -203,7 +203,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSuperStiffeners() As References
                 | 
                 |     Returns the list of SuperStiffeners in the part.
@@ -224,7 +224,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func GetSuperStiffenersOnFreeEdge() As References
                 | 
                 |     Returns the list of SuperStiffenersOnFreeEdge in the part.
@@ -246,7 +246,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub InitResources()
                 | 
                 |     Initialize environment (PRM resources).
@@ -264,7 +264,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SynchronizeHull()
                 | 
                 |     Synchronize PlaneSystems according with the PRM resources.
@@ -283,7 +283,7 @@ class SFMManager(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub SynchronizePlanes()
                 | 
                 |     Synchronize PlaneSystems according with the PRM resources.

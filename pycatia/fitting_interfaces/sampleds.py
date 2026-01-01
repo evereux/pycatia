@@ -42,7 +42,7 @@ class Sampleds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Add() As Sampled
                 | 
                 |     Creates a new Sampled object and adds it to the Sampleds
@@ -65,7 +65,7 @@ class Sampleds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func AddFromSel() As Sampled
                 | 
                 |     Creates a new Sampled from the selection and adds it to the Sampleds
@@ -88,7 +88,7 @@ class Sampleds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func Item(CATVariant iIndex) As Sampled
                 | 
                 |     Returns a CATIASampled object using its index from the CATIASampled
@@ -121,7 +121,7 @@ class Sampleds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a CATIASampled object from the CATIASampled
