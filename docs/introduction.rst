@@ -1,3 +1,5 @@
+.. _introduction:
+
 Getting Started
 ===============
 
@@ -20,7 +22,7 @@ You will almost always want to import the `catia`
 
     from pycatia import catia
     from pycatia.mec_mod_interfaces.part_document import PartDocument
-    # initialise the catia automation appliction. CATIA V5 should already be running.
+    # initialise the catia automation application. CATIA V5 should already be running.
     application = catia()
     documents = application.documents
 
@@ -64,10 +66,13 @@ create one here anyway.
     new_set.name = 'Construction Geometry'
 
 
+To learn how to run a script see :ref:`create_and_run_a_script`.
 
 For more detailed examples on how to interact with pycatia see the
 :ref:`examples` page. There contain several scripts that can be run in the
 terminal.
+
+
 
 Footnotes
 ---------

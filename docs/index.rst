@@ -10,6 +10,7 @@ pycatia is a python module for interfacing with the CATIA V5 Automation COM obje
 
    installation
    introduction
+   create_and_run_a_script
    windows_builds
    examples
    user_scripts
