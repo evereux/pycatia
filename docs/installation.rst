@@ -25,7 +25,7 @@ To install from `pypi <https://pypi.org/>`_::
 
     pip install pycatia
 
- To upgrade your current installed version::
+To upgrade your current installed version::
 
     pip install pycatia --upgrade
 
@@ -56,14 +56,14 @@ permissions to install python and the virtualenv module.
 Installing Python
 ~~~~~~~~~~~~~~~~~
 
-* Download python 3 (3.9 or later) from `python.org <https://www.python.org/downloads/>`_.
+Download python 3 (3.9 or later) from `python.org <https://www.python.org/downloads/>`_.
 
-* Install python. Ensure to check the box to add python to environment variables.
+Install python. Ensure to check the box to add python to environment variables.
 
 .. image:: images/2019-03-03_14_35_49-Window.png
 
-* Install virtualenv for python. From the administrator command prompt run the
-  following::
+Install virtualenv for python. From the administrator command prompt run the
+following::
 
     python -m pip install virtualenv
 
@@ -77,26 +77,26 @@ environment away from the python installation itself.
 * Create a new directory where you'll be creating your pycatia scripts. For
   this example this will be `c:\\Users\\<username>\\python\\pycatia-scripts`
 
-* Change directory into this folder::
+* Change directory into this folder.::
 
     cd c:\Users\<username>\python\pycatia-scripts
 
 
-* Create the virtual environment::
+* Create the virtual environment.::
 
     python -m virtualenv env
 
 
-* Activate the virtual environment::
+* Activate the virtual environment.::
 
     env\Scripts\activate
 
 
-You should see the command prompt change to something like this::
+* You should see the command prompt change to something similar to this::
 
     (env) c:\Users\<username>\python\pycatia-scripts>
 
-* Install pycatia::
+* Install pycatia.::
 
     python -m pip install pycatia
 
@@ -172,3 +172,5 @@ with the appropriate values::
 
     cnext.exe /regserver -env <env_file> -direnv <path_to_env_file>
 
+
+Now for an :ref:`introduction` to pycatia.
