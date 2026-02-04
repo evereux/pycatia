@@ -454,7 +454,7 @@ Loop through a CATProduct and analyse children if CATPart.
 
 Only goes two levels deep.
 
-`Product - 003 <https://github.com/evereux/pycatia/blob/master/examples/example_010.py>`_
+`Product - 003 <https://github.com/evereux/pycatia/blob/master/examples/example__product__003.py>`_
 
 Product - Example 4
 ~~~~~~~~~~~~~~~~~~~
