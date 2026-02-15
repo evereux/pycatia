@@ -158,6 +158,6 @@ SAVE SUBPART TO NEUTRAL FILES
 
 Read script description
 
-:any: Save_SubPart_to_neutral_files\Readme.rst
+`Save_SubPart_to_neutral_files <https://github.com/ptm-tm/pycatia/tree/Update_user_scipt(convert2sep_stp)/user_scripts/Save_SubPart_to_neutral_files>`_
 
 
