@@ -6,7 +6,8 @@ This script convert all parts from product and sub product to step file.
 You must change static variable to point place and file format.
 
 
-.. image:: images/Static var.PNG
+.. image:: images/static_var.png
+
 
 
 Configuration
