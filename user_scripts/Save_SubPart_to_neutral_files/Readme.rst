@@ -14,7 +14,6 @@ Configuration
 ~~~~~~~~~~~~~
 
 .. table:: Variable to cofiguration
-
 ==================  ======================
 Variable            Description
 ==================  ======================
@@ -23,6 +22,7 @@ EXPORT_DIR          Directory to export
 EXPORT_FILE_EXT     Extension for new file
 
 EXPORT_FILE_FORMAT  File format to export
+==================  ======================
 
 By default, the script exports all unique catpart to step files
 in the directory c:\temp.Directory must be exist!
