@@ -27,6 +27,8 @@ Index
 
 :ref:`WING SURFACE FROM NACA PROFILE<Wing Surface From Naca Profile>`
 
+:ref:`SAVE SUBPART TO NEUTRAL FILES<Save Subpart to neutral file>`
+
 
 
 
@@ -149,3 +151,13 @@ See script header for more information.
 .. image:: images/WingSurface.png
 
 `wing_surface_from_naca_profile.py <https://github.com/evereux/pycatia/blob/master/user_scripts/wing_surface_from_naca_profile.py>`_
+
+
+SAVE SUBPART TO NEUTRAL FILES
+-----------------------------
+
+Read script description
+
+:any: Save_SubPart_to_neutral_files\Readme.rst
+
+
