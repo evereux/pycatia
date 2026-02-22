@@ -27,7 +27,7 @@ Index
 
 :ref:`WING SURFACE FROM NACA PROFILE<Wing Surface From Naca Profile>`
 
-:ref:`SAVE SUBPART TO NEUTRAL FILES<Save Subpart to neutral file>`
+:ref:`SAVE CHILD PARTS TO STP<Save Child Parts To STP>`
 
 
 
@@ -153,11 +153,11 @@ See script header for more information.
 `wing_surface_from_naca_profile.py <https://github.com/evereux/pycatia/blob/master/user_scripts/wing_surface_from_naca_profile.py>`_
 
 
-SAVE SUBPART TO NEUTRAL FILES
------------------------------
+SAVE CHILD PARTS TO STP
+-----------------------
 
-Read script description
+Saves all CATParts in CATProduct to STP
 
-`Save_SubPart_to_neutral_files <https://github.com/ptm-tm/pycatia/tree/Update_user_scipt(convert2sep_stp)/user_scripts/Save_SubPart_to_neutral_files>`_
+`save_child_parts_to_stp.py <https://github.com/ptm-tm/pycatia/blob/master/user_scripts/save_child_parts_to_stp.py>`_
 
 

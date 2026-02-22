@@ -435,6 +435,47 @@ class StepSettingAtt(SettingController):
         self.step_setting_att.AttGVPVA = value
 
     @property
+    def att_geo_set(self) -> int:
+        """
+
+        Introduced in V5-6R2022.
+
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:26:49.309967)
+                | Property AttGeoSet() As short
+                |     Returns or sets the AttGeoSet parameter.
+                |
+                |     Ensure consistency with the C++ interface to which the work is delegated.
+
+        :rtype: int
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.step_setting_att.AttGeoSet
+
+    @att_geo_set.setter
+    def att_geo_set(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        self.step_setting_att.AttGeoSet = value
+
+    @property
     def att_group_mode(self) -> int:
         """
         .. note::
@@ -1398,6 +1439,51 @@ class StepSettingAtt(SettingController):
         :rtype: bool
         """
         return self.step_setting_att.GetAttGVPVAInfo(io_admin_level, io_locked)
+
+    def get_att_geo_set_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+
+        Introduced in V5-6R2022.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:26:49.309967)
+                | Func GetAttGeoSetInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
+                | boolean
+                |     Retrieves environment informations for the AttGeoSet
+                |     parameter.
+                |     Role:Retrieves the state of the AttGeoSet parameter in the current
+                |     environment.
+                |
+                |     Parameters:
+                |
+                |         ioAdminLevel
+                |
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
+                |
+                |         ioLocked
+                |             Indicates if the parameter has been locked.
+                |
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :rtype: bool
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.step_setting_att.GetAttGeoSetInfo(io_admin_level, io_locked)
 
     def get_att_group_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -2583,6 +2669,41 @@ class StepSettingAtt(SettingController):
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_att_geo_set_lock(self, i_locked: bool) -> None:
+        """
+
+        Introduced in V5-6R2022.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:26:49.309967)
+                | Sub SetAttGeoSetLock(boolean iLocked)
+                |     Locks or unlocks the AttGeoSet parameter.
+                |     Role:Locks or unlocks the AttGeoSet parameter if it is possible in the
+                |     current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                |
+                |     Parameters:
+                |
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :rtype: None
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.step_setting_att.SetAttGeoSetLock(i_locked)
 
     def set_att_group_mode_lock(self, i_locked: bool) -> None:
         """

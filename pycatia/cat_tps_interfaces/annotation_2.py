@@ -60,7 +60,7 @@ class Annotation2(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.annotation_2 = com_object
+        self.com_object = com_object
 
     @property
     def super_type(self) -> str:
@@ -87,7 +87,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.SuperType
+        return self.com_object.SuperType
 
     @property
     def tps_status(self) -> str:
@@ -112,7 +112,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.TPSStatus
+        return self.com_object.TPSStatus
 
     @property
     def type(self) -> str:
@@ -137,7 +137,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.Type
+        return self.com_object.Type
 
     @property
     def z(self) -> float:
@@ -163,7 +163,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.Z
+        return self.com_object.Z
 
     @z.setter
     def z(self, value: float):
@@ -171,7 +171,7 @@ class Annotation2(AnyObject):
         :param False value:
         """
 
-        self.annotation_2.Z = value
+        self.com_object.Z = value
 
     def add_leader(self) -> None:
         """
@@ -190,7 +190,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.AddLeader()
+        return self.com_object.AddLeader()
 
     def coordinate_dimension(self) -> CoordDim:
         """
@@ -212,7 +212,7 @@ class Annotation2(AnyObject):
             28,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return CoordDim(self.annotation_2.Coordinatedimension())
+        return CoordDim(self.com_object.Coordinatedimension())
 
     def datum_simple(self) -> DatumSimple:
         """
@@ -231,7 +231,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return DatumSimple(self.annotation_2.DatumSimple())
+        return DatumSimple(self.com_object.DatumSimple())
 
     def datum_target(self) -> DatumTarget:
         """
@@ -250,7 +250,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return DatumTarget(self.annotation_2.DatumTarget())
+        return DatumTarget(self.com_object.DatumTarget())
 
     def default_annotation(self) -> DefaultAnnotation:
         """
@@ -269,7 +269,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return DefaultAnnotation(self.annotation_2.DefaultAnnotation())
+        return DefaultAnnotation(self.com_object.DefaultAnnotation())
 
     def dimension_3d(self) -> Dimension3D:
         """
@@ -293,7 +293,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Dimension3D(self.annotation_2.Dimension3D())
+        return Dimension3D(self.com_object.Dimension3D())
 
     def flag_note(self) -> FlagNote:
         """
@@ -317,7 +317,77 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return FlagNote(self.annotation_2.FlagNote())
+        return FlagNote(self.com_object.FlagNote())
+
+    def get_geometrical_component_name(self, i_index: int) -> str:
+        """
+
+        Introduced in V5-6R2022.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:26:49.309967)
+                | Func GetGeometricalComponentName(short iIndex) As CATBSTR
+                |     Gets the Geometrical Component name at given index.
+                |
+                |     Parameters:
+                |
+                |         iIndex
+                |             The index of the geometrical component; this value is greater or
+                |             equal to 1 and lower or equal to the value returned by
+                |             GetNbrOfGeometricalComponent.
+                |         oComponentName
+                |             The name of the geometrical component.
+
+        :param int i_index:
+        :rtype: str
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.com_object.GetGeometricalComponentName(i_index)
+
+    def get_nbr_of_geometrical_component(self) -> int:
+        """
+
+        Introduced in V5-6R2022.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:26:49.309967)
+                | Func GetNbrOfGeometricalComponent() As short
+                |     Gets the number of geometrical components.
+                |
+                |     Parameters:
+                |
+                |         oGeomLinkNbr
+                |             The number of links to the geometry employed by this
+                |             annotation.
+                |             The returned value is comprise in between 1 and N (N is at most the
+                |             total of geometrical links existing under the
+                |             annotation).
+                |             The amount of Geometrical Component sent back may be different from
+                |             the annotation total links to the geometry because
+                |             sometimes
+                |             the Group of Surfaces may point to the same geometrical component
+                |             participating to the definition of several User Surfaces.
+
+        :rtype: int
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.com_object.GetNbrOfGeometricalComponent()
 
     def get_surfaces(self, o_safe_array: tuple) -> None:
         """
@@ -337,7 +407,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.GetSurfaces(o_safe_array)
+        return self.com_object.GetSurfaces(o_safe_array)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -371,7 +441,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.GetSurfacesCount()
+        return self.com_object.GetSurfacesCount()
 
     def has_a_visualization_dimension(self) -> bool:
         """
@@ -391,7 +461,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.HasAVisualizationDimension()
+        return self.com_object.HasAVisualizationDimension()
 
     def is_a_consumable_annotation(self) -> bool:
         """
@@ -413,7 +483,7 @@ class Annotation2(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.annotation_2.IsAConsumableAnnotation()
+        return self.com_object.IsAConsumableAnnotation()
 
     def is_a_default_annotation(self) -> bool:
         """
@@ -432,7 +502,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.IsADefaultAnnotation()
+        return self.com_object.IsADefaultAnnotation()
 
     def modify_visu(self) -> None:
         """
@@ -451,7 +521,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.ModifyVisu()
+        return self.com_object.ModifyVisu()
 
     def noa(self) -> Noa:
         """
@@ -470,7 +540,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Noa(self.annotation_2.Noa())
+        return Noa(self.com_object.Noa())
 
     def non_semantic_datum(self) -> NonSemanticDatum:
         """
@@ -489,7 +559,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return NonSemanticDatum(self.annotation_2.NonSemanticDatum())
+        return NonSemanticDatum(self.com_object.NonSemanticDatum())
 
     def non_semantic_datum_target(self) -> NonSemanticDatumTarget:
         """
@@ -508,7 +578,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return NonSemanticDatumTarget(self.annotation_2.NonSemanticDatumTarget())
+        return NonSemanticDatumTarget(self.com_object.NonSemanticDatumTarget())
 
     def non_semantic_dimension(self) -> NonSemanticDimension:
         """
@@ -527,7 +597,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return NonSemanticDimension(self.annotation_2.NonSemanticDimension())
+        return NonSemanticDimension(self.com_object.NonSemanticDimension())
 
     def non_semantic_gdt(self) -> NonSemanticGDT:
         """
@@ -546,7 +616,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return NonSemanticGDT(self.annotation_2.NonSemanticGDT())
+        return NonSemanticGDT(self.com_object.NonSemanticGDT())
 
     def reference_frame(self) -> 'ReferenceFrame':
         """
@@ -566,7 +636,7 @@ class Annotation2(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
         from pycatia.cat_tps_interfaces.reference_frame import ReferenceFrame
-        return ReferenceFrame(self.annotation_2.ReferenceFrame())
+        return ReferenceFrame(self.com_object.ReferenceFrame())
 
     def roughness(self) -> Roughness:
         """
@@ -585,7 +655,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Roughness(self.annotation_2.Roughness())
+        return Roughness(self.com_object.Roughness())
 
     def semantic_gdt(self) -> SemanticGDT:
         """
@@ -604,7 +674,60 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return SemanticGDT(self.annotation_2.SemanticGDT())
+        return SemanticGDT(self.com_object.SemanticGDT())
+
+    def set_geometrical_component_name(self, i_index: int, i_new_name: str, i_check_name_unicity_option: bool) -> None:
+        """
+
+        Introduced in V5-6R2022.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:26:49.309967)
+                | Sub SetGeometricalComponentName(short iIndex,CATBSTR iNewName,boolean
+                | iCheckNameUnicityOption)
+                |     Sets the Geometrical Component name at given index.
+                |
+                |     Parameters:
+                |
+                |         iIndex
+                |             The index of the geometrical component; this value is greater or
+                |             equal to 1 and lower or equal to the value returned by
+                |             GetNbrOfGeometricalComponent.
+                |             The user is allowed to pass a 0 value as index; in this case, an
+                |             automatic renaming is triggered.
+                |             In this case the usual path of a geometrical component (for
+                |             instance Face/Name of the feature/Body.1) is used to extract the logical name
+                |             to apply "Name of the feature".
+                |             Pay attention that geometrical component name must be unique; this
+                |             method is exiting in error whenever the unicity is of geometrical component is
+                |             broken.
+                |             The renaming processing is given up without any change when an
+                |             already existing name is passed to this method or when automatic processing
+                |             faces naming ambiguity.
+                |         iNewName
+                |             The string used to rename the geometrical component.
+                |
+                |         iCheckNameUnicityOption
+                |             Option to trigger an addition verification during renaming to
+                |             guarantee that the entire set of Geometrical Components in the
+                |             representation
+                |             have a different name.
+
+        :param int i_index:
+        :param str i_new_name:
+        :param bool i_check_name_unicity_option:
+        :rtype: None
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.com_object.SetGeometricalComponentName(i_index, i_new_name, i_check_name_unicity_option)
 
     def set_xy(self, i_x: float, i_y: float) -> None:
         """
@@ -634,7 +757,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.SetXY(i_x, i_y)
+        return self.com_object.SetXY(i_x, i_y)
 
     def text(self) -> Text:
         """
@@ -658,7 +781,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Text(self.annotation_2.Text())
+        return Text(self.com_object.Text())
 
     def transfert_to_view(self, i_view: TPSView) -> None:
         """
@@ -683,7 +806,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.annotation_2.TransfertToView(i_view.com_object)
+        return self.com_object.TransfertToView(i_view.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -724,7 +847,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Dimension3D(self.annotation_2.VisualizationDimension())
+        return Dimension3D(self.com_object.VisualizationDimension())
 
     def weld(self) -> Weld:
         """
@@ -743,7 +866,7 @@ class Annotation2(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Weld(self.annotation_2.Weld())
+        return Weld(self.com_object.Weld())
 
     def __repr__(self):
         return f'Annotation2(name="{self.name}")'
