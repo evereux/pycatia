@@ -319,6 +319,76 @@ class Annotation2(AnyObject):
         )
         return FlagNote(self.annotation_2.FlagNote())
 
+    def get_geometrical_component_name(self, i_index: int) -> str:
+        """
+
+        Introduced in V5-6R2022.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:26:49.309967)
+                | Func GetGeometricalComponentName(short iIndex) As CATBSTR
+                |     Gets the Geometrical Component name at given index.
+                |
+                |     Parameters:
+                |
+                |         iIndex
+                |             The index of the geometrical component; this value is greater or
+                |             equal to 1 and lower or equal to the value returned by
+                |             GetNbrOfGeometricalComponent.
+                |         oComponentName
+                |             The name of the geometrical component.
+
+        :param int i_index:
+        :rtype: str
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.annotation2.GetGeometricalComponentName(i_index)
+
+    def get_nbr_of_geometrical_component(self) -> int:
+        """
+
+        Introduced in V5-6R2022.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:26:49.309967)
+                | Func GetNbrOfGeometricalComponent() As short
+                |     Gets the number of geometrical components.
+                |
+                |     Parameters:
+                |
+                |         oGeomLinkNbr
+                |             The number of links to the geometry employed by this
+                |             annotation.
+                |             The returned value is comprise in between 1 and N (N is at most the
+                |             total of geometrical links existing under the
+                |             annotation).
+                |             The amount of Geometrical Component sent back may be different from
+                |             the annotation total links to the geometry because
+                |             sometimes
+                |             the Group of Surfaces may point to the same geometrical component
+                |             participating to the definition of several User Surfaces.
+
+        :rtype: int
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.annotation2.GetNbrOfGeometricalComponent()
+
     def get_surfaces(self, o_safe_array: tuple) -> None:
         """
         .. note::
@@ -605,6 +675,59 @@ class Annotation2(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
         return SemanticGDT(self.annotation_2.SemanticGDT())
+
+    def set_geometrical_component_name(self, i_index: int, i_new_name: str, i_check_name_unicity_option: bool) -> None:
+        """
+
+        Introduced in V5-6R2022.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:26:49.309967)
+                | Sub SetGeometricalComponentName(short iIndex,CATBSTR iNewName,boolean
+                | iCheckNameUnicityOption)
+                |     Sets the Geometrical Component name at given index.
+                |
+                |     Parameters:
+                |
+                |         iIndex
+                |             The index of the geometrical component; this value is greater or
+                |             equal to 1 and lower or equal to the value returned by
+                |             GetNbrOfGeometricalComponent.
+                |             The user is allowed to pass a 0 value as index; in this case, an
+                |             automatic renaming is triggered.
+                |             In this case the usual path of a geometrical component (for
+                |             instance Face/Name of the feature/Body.1) is used to extract the logical name
+                |             to apply "Name of the feature".
+                |             Pay attention that geometrical component name must be unique; this
+                |             method is exiting in error whenever the unicity is of geometrical component is
+                |             broken.
+                |             The renaming processing is given up without any change when an
+                |             already existing name is passed to this method or when automatic processing
+                |             faces naming ambiguity.
+                |         iNewName
+                |             The string used to rename the geometrical component.
+                |
+                |         iCheckNameUnicityOption
+                |             Option to trigger an addition verification during renaming to
+                |             guarantee that the entire set of Geometrical Components in the
+                |             representation
+                |             have a different name.
+
+        :param int i_index:
+        :param str i_new_name:
+        :param bool i_check_name_unicity_option:
+        :rtype: None
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.annotation2.SetGeometricalComponentName(i_index, i_new_name, i_check_name_unicity_option)
 
     def set_xy(self, i_x: float, i_y: float) -> None:
         """

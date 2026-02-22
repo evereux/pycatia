@@ -70,6 +70,7 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_plane1_line1_pt import HybridS
 from pycatia.hybrid_shape_interfaces.hybrid_shape_plane2_lines import HybridShapePlane2Lines
 from pycatia.hybrid_shape_interfaces.hybrid_shape_plane3_points import HybridShapePlane3Points
 from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_angle import HybridShapePlaneAngle
+from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_between import HybridShapePlaneBetween
 from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_equation import HybridShapePlaneEquation
 from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_explicit import HybridShapePlaneExplicit
 from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_mean import HybridShapePlaneMean
@@ -4193,6 +4194,65 @@ class HybridShapeFactory(Factory):
                 i_plane.com_object,
                 i_revol_axis.com_object,
                 i_angle,
+                i_orientation
+            )
+        )
+
+    def add_new_plane_between(
+            self,
+            i_plane1: Reference,
+            i_plane2: Reference,
+            i_ratio: float,
+            i_orientation: int
+    ) -> HybridShapePlaneBetween:
+        """
+
+        Introduced in V5-6R2022.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:16:52.506116))
+                | Func AddNewPlaneBetween(Reference iPlane1,Reference iPlane2,double iRatio,long
+                | iOrientation) As HybridShapePlaneBetween
+                |     Creates a new PlaneBetween within the current body.
+                |
+                |     Parameters:
+                |
+                |         iPlane1
+                |             Reference plane to compute the barycenter.
+                |             Sub-element(s) supported (see Boundary object): see
+                |             Vertex.
+                |         iPlane2
+                |             Second plane.
+                |             Sub-element(s) supported (see Boundary object): see
+                |             Vertex.
+                |         iRatio
+                |             barycenter parameter
+                |         iOrientation
+                |             To compute the barycenter of the segment [Pl1 -
+                |             Pl2]
+                |         oPlane
+                |             PlaneBetween if succeeded
+
+        :param Reference i_plane1:
+        :param Reference i_plane2:
+        :param float i_ratio:
+        :param int i_orientation:
+        :rtype: HybridShapePlaneBetween
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return HybridShapePlaneBetween(
+            self.hybrid_shape_factory.AddNewPlaneBetween(
+                i_plane1.com_object,
+                i_plane2.com_object,
+                i_ratio,
                 i_orientation
             )
         )

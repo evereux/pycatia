@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.9.4
+
+* added the following new classes introduced in V5-6R2022.
+    * HybridShapePlaneBetween
+    * ShapeDesignWorkbench
+    * AnnotationSetTmpNoaIsolating
+
+* added the following new methods / properties introduced in V5-6R2022.
+    * HybridShapeFactory.add_new_plane_between
+    * StepSettingAtt.att_geo_set
+    * StepSettingAtt.get_att_geo_set_info
+    * StepSettingAtt.set_att_geo_set_lock
+    * Annotation.get_geometrical_component_name
+    * Annotation.get_nbr_of_geometrical_component
+    * Annotation.set_geometrical_component_name
+    * Annotation2.get_geometrical_component_name
+    * Annotation2.get_nbr_of_geometrical_component
+    * Annotation2.set_geometrical_component_name
+    * Capture.get_nbr_of_part_inst_and_body
+    * Capture.get_nbr_of_geometrical_component
+    * Capture.set_part_inst_and_body
+    * Thread.support_depth
+    * Thread.support_diameter
+
 ## 0.9.3
 
 * updated PageSetup() to add missing (all) class methods.

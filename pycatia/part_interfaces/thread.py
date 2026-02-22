@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+import inspect
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.str_param import StrParam
@@ -222,6 +223,73 @@ class Thread(DressUpShape):
         """
 
         self.thread.Side = value
+
+    @property
+    def support_depth(self) -> float:
+        """
+
+        Introduced in V5-6R2022.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:26:49.309967)
+                | Property SupportDepth() As double (Read Only)
+                |     Returns the depth of thread/tap support.
+                |
+                |     Returns:
+                |         oSupportDepth Value of the depth of thread/tap support
+                |
+                |         Example:
+                |             The following example returns in SupportDepth the support depth of
+                |             thread firstthread:
+                |
+                |              Set SupportDepth = firstthread.SupportDepth
+
+        :return: float
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.thread.SupportDepth
+
+    @property
+    def support_diameter(self) -> float:
+        """
+
+        Introduced in V5-6R2022.
+
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2026-02-21 15:26:49.309967)
+                | Property SupportDiameter() As double (Read Only)
+                |     Returns the diameter of thread/tap support.
+                |
+                |     Returns:
+                |         oSupportDiameter Value of the diameter of thread/tap
+                |         support
+                |
+                |         Example:
+                |             The following example returns in SupportDiameter the support
+                |             diameter of thread firstthread:
+                |
+                |              Set SupportDiameter = firstthread.SupportDiameter
+
+        :rtype: float
+        """
+
+        self.release_check(
+            self.application.system_configuration.release,
+            32,
+            f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
+        )
+
+        return self.thread.SupportDiameter
 
     @property
     def thread_description(self) -> StrParam:
