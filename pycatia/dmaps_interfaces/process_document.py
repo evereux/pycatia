@@ -10,6 +10,7 @@
 """
 
 from pycatia.in_interfaces.document import Document
+from pycatia.ppr_interfaces.ppr_document import PPRDocument
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -60,7 +61,7 @@ class ProcessDocument(Document):
         return AnyObject(self.process_document.DNB3DStatePositionManagement)
 
     @property
-    def ppr_document(self) -> AnyObject:
+    def ppr_document(self) -> PPRDocument:
         """
         .. note::
             :class: toggle
@@ -73,10 +74,10 @@ class ProcessDocument(Document):
                 |     Returns:
                 |         The PPRDocument corresponding to the current Process document.
 
-        :rtype: AnyObject
+        :rtype: PPRDocument
         """
 
-        return AnyObject(self.process_document.PPRDocument)
+        return PPRDocument(self.process_document.PPRDocument)
 
     def add_library(self, i_file_name: str) -> None:
         """

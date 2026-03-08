@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.5
+
+* fixed ProcessDocument.ppr_document so that it now returns a PPRDocument and not AnyObject().
+
 ## 0.9.4
 
 * added the following new classes introduced in V5-6R2022.
