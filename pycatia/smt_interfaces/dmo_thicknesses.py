@@ -36,7 +36,7 @@ class DMOThicknesses(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DMOThickness)
         self.dmo_thicknesses = com_object
 
     def add(

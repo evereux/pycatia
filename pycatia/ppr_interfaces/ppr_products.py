@@ -34,7 +34,7 @@ class PPRProducts(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Product)
         self.ppr_products = com_object
 
     def add(self, i_product: Product) -> Product:

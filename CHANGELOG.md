@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.6
+
+* Added child_object to inherited Collections() where missing.
+
 ## 0.9.5
 
 * fixed ProcessDocument.ppr_document so that it now returns a PPRDocument and not AnyObject().

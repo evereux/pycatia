@@ -36,7 +36,7 @@ class UserSurfaces(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=UserSurface)
         self.user_surfaces = com_object
 
     def generate(self, i_support: Reference) -> UserSurface:

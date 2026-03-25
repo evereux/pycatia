@@ -38,7 +38,7 @@ class ResourceCollection(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Resource)
         self.resource_collection = com_object
 
     def item(self, i_index: CATVariant) -> Resource:

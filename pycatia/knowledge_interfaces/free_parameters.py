@@ -39,7 +39,7 @@ class FreeParameters(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=FreeParameter)
         self.free_parameters = com_object
 
     def add_free_parameter(self, parameter: 'RealParam') -> FreeParameter:

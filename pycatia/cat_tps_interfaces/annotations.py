@@ -39,9 +39,8 @@ class Annotations(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Annotation)
         self.annotations = com_object
-        self.child_object = Annotation
 
     def add(self, i_annot: Annotation) -> None:
         """

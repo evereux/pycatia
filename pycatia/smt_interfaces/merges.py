@@ -33,7 +33,7 @@ class Merges(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Document)
         self.merges = com_object
 
     def clean_up(self) -> None:

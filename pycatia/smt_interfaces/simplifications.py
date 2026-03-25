@@ -34,7 +34,7 @@ class Simplifications(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Document)
         self.simplifications = com_object
 
     def compute_simplification(self, group_of_selected_products: Group, i_accuracy: float) -> Document:

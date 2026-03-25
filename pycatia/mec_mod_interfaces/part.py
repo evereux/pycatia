@@ -11,6 +11,7 @@
 
 from pathlib import Path
 
+from pycatia.cat_tps_interfaces.user_surfaces import UserSurfaces
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.hybrid_shape_interfaces.hybrid_shape_factory import HybridShapeFactory
 from pycatia.in_interfaces.reference import Reference
@@ -28,7 +29,6 @@ from pycatia.mec_mod_interfaces.origin_elements import OriginElements
 from pycatia.part_interfaces.shape_factory import ShapeFactory
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.product_structure_interfaces.analyze import Analyze
-from pycatia.system_interfaces.collection import Collection
 from pycatia.cat_tps_interfaces.annotation_sets import AnnotationSets
 
 
@@ -111,7 +111,7 @@ class Part(AnyObject):
                 |          Dim annotationSets As AnnotationSets
                 |          Set annotationSets = partRoot.AnnotationSets
 
-        :return: Collection
+        :return: AnnotationSets
         """
 
         return AnnotationSets(self.part.AnnotationSets)
@@ -559,7 +559,7 @@ class Part(AnyObject):
         return AnyObject(self.part.SheetMetalParameters)
 
     @property
-    def user_surfaces(self) -> Collection:
+    def user_surfaces(self) -> UserSurfaces:
         """
         .. note::
             :class: toggle
@@ -579,10 +579,10 @@ class Part(AnyObject):
                 |          Dim userSurfaces As UserSurfaces
                 |          Set userSurfaces = partRoot.UserSurfaces
 
-        :rtype: Collection
+        :rtype: UserSurfaces
         """
 
-        return Collection(self.part.UserSurfaces)
+        return UserSurfaces(self.part.UserSurfaces)
 
     def activate(self, i_object: AnyObject) -> None:
         """

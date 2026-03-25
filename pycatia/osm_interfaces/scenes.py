@@ -32,7 +32,7 @@ class Scenes(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Scene)
         self.scenes = com_object
 
     def add_copy_scene(self, i_name: str, i_reference_scene: Scene) -> Scene:
