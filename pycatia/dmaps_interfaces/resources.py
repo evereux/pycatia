@@ -32,7 +32,7 @@ class Resources(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Resource)
         self.resources = com_object
 
     def add(self, i_resource: Resource) -> Resource:

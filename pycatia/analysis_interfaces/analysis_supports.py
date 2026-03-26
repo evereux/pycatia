@@ -31,6 +31,7 @@ class AnalysisSupports(Collection):
     """
 
     def __init__(self, com_object):
+        # todo: what is the child_object for Collection?
         super().__init__(com_object)
         self.analysis_supports = com_object
 

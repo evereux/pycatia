@@ -37,7 +37,7 @@ class DrawingGDTs(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingGDT)
         self.drawing_gd_ts = com_object
 
     def add(

@@ -36,10 +36,10 @@ class Captures(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Capture)
         self.captures = com_object
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> Capture:
         """
         .. note::
             :class: toggle
@@ -52,7 +52,7 @@ class Captures(Collection):
         :param CATVariant i_index:
         :rtype: AnyObject
         """
-        return AnyObject(self.captures.Item(i_index))
+        return Capture(self.captures.Item(i_index))
 
     def __getitem__(self, n: int) -> Capture:
         if (n + 1) > self.count:

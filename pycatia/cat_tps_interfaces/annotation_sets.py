@@ -37,7 +37,7 @@ class AnnotationSets(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=AnnotationSet)
         self.annotation_sets = com_object
         self.child_object = AnnotationSet
 

@@ -34,7 +34,7 @@ class DraftDomains(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DraftDomain)
         self.draft_domains = com_object
 
     def item(self, i_index: CATVariant) -> DraftDomain:

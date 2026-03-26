@@ -34,7 +34,7 @@ class ThreeDCuts(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Document)
         self.three_d_cuts = com_object
 
     def compute_3d_cut(self, group_of_selected_products: Group) -> Document:

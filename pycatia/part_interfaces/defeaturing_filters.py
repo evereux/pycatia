@@ -34,7 +34,7 @@ class DefeaturingFilters(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DefeaturingFilter)
         self.defeaturing_filters = com_object
 
     def add(self, i_filter_type_to_add: str) -> int:
