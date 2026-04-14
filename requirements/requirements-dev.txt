@@ -2,7 +2,7 @@ mypy==1.19.1
 nuitka==4.0.3
 Sphinx==9.1.0
 ordered-set==4.1.0
-pytest==9.0.2
+pytest==9.0.3
 pytest-cov==7.0.0
 sphinx-togglebutton==0.4.4
 twine==6.2.0
