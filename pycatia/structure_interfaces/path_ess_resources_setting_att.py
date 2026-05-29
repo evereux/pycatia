@@ -346,3 +346,13 @@ class PathEssResourcesSettingAtt(SettingController):
 
     def __repr__(self):
         return f'PathEssResourcesSettingAtt(name="{self.name}")'
+
+
+class PathESSRessourcesSettingAtt(PathEssResourcesSettingAtt):
+    """
+    V5Automation exposes this interface as ``PathESSRessourcesSettingAtt``.
+    pycatia also keeps the existing ``PathEssResourcesSettingAtt`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PathESSRessourcesSettingAtt(name="{self.name}")'
