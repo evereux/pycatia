@@ -52,3 +52,13 @@ class EnvelopeCondition(AnyObject):
 
     def __repr__(self):
         return f'EnvelopCondition(name="{self.name}")'
+
+
+class EnvelopCondition(EnvelopeCondition):
+    """
+    V5Automation exposes this interface as ``EnvelopCondition``.
+    pycatia also keeps the existing ``EnvelopeCondition`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'EnvelopCondition(name="{self.name}")'
