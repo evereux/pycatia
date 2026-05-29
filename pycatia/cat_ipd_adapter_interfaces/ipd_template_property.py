@@ -146,3 +146,12 @@ class IpdTemplateProperty(AnyObject):
 
     def __repr__(self):
         return f'IpdTemplateProperty(name="{self.name}")'
+
+class IPDTemplateProperty(IpdTemplateProperty):
+    """
+    V5Automation exposes this interface as ``IPDTemplateProperty``.
+    pycatia also keeps the existing ``IpdTemplateProperty`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'IPDTemplateProperty(name="{self.name}")'

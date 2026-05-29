@@ -156,3 +156,12 @@ class SFMPositioningStrategyManager(AnyObject):
 
     def __repr__(self):
         return f'SFMPositioningStrategyManager(name="{self.name}")'
+
+class SfmPositioningStrategyManager(SFMPositioningStrategyManager):
+    """
+    V5Automation exposes this interface as ``SfmPositioningStrategyManager``.
+    pycatia also keeps the existing ``SFMPositioningStrategyManager`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'SfmPositioningStrategyManager(name="{self.name}")'

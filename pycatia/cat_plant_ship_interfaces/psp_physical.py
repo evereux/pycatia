@@ -87,3 +87,12 @@ class PSPPhysical(AnyObject):
 
     def __repr__(self):
         return f'PSPPhysical(name="{self.name}")'
+
+class PspPhysical(PSPPhysical):
+    """
+    V5Automation exposes this interface as ``PspPhysical``.
+    pycatia also keeps the existing ``PSPPhysical`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspPhysical(name="{self.name}")'

@@ -411,3 +411,12 @@ class CgrAdhesionSettingAtt(SettingController):
 
     def __repr__(self):
         return f'CgrAdhesionSettingAtt(name="{ self.name }")'
+
+class CGRAdhesionSettingAtt(CgrAdhesionSettingAtt):
+    """
+    V5Automation exposes this interface as ``CGRAdhesionSettingAtt``.
+    pycatia also keeps the existing ``CgrAdhesionSettingAtt`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'CGRAdhesionSettingAtt(name="{self.name}")'

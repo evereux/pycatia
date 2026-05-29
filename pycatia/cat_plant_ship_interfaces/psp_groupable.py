@@ -63,3 +63,12 @@ class PSPGroupable(AnyObject):
 
     def __repr__(self):
         return f'PSPGroupable(name="{self.name}")'
+
+class PspGroupable(PSPGroupable):
+    """
+    V5Automation exposes this interface as ``PspGroupable``.
+    pycatia also keeps the existing ``PSPGroupable`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspGroupable(name="{self.name}")'

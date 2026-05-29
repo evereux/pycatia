@@ -755,3 +755,12 @@ class FasReportingSettingAtt(SettingController):
 
     def __repr__(self):
         return f'FasReportingSettingAtt(name="{self.name}")'
+
+class FASReportingSettingAtt(FasReportingSettingAtt):
+    """
+    V5Automation exposes this interface as ``FASReportingSettingAtt``.
+    pycatia also keeps the existing ``FasReportingSettingAtt`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'FASReportingSettingAtt(name="{self.name}")'

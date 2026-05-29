@@ -109,3 +109,12 @@ class PSPObject(AnyObject):
 
     def __repr__(self):
         return f'PSPObject(name="{self.name}")'
+
+class PspObject(PSPObject):
+    """
+    V5Automation exposes this interface as ``PspObject``.
+    pycatia also keeps the existing ``PSPObject`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspObject(name="{self.name}")'

@@ -144,3 +144,12 @@ class SFMReferences(Collection):
 
     def __repr__(self):
         return f'SFMReferences(name="{self.name}")'
+
+class SfmReferences(SFMReferences):
+    """
+    V5Automation exposes this interface as ``SfmReferences``.
+    pycatia also keeps the existing ``SFMReferences`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'SfmReferences(name="{self.name}")'

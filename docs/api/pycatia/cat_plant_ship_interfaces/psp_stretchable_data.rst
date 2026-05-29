@@ -1,3 +1,4 @@
+.. _PspStretchableData:
 .. _PSPStretchableData:
 
 pycatia.cat_plant_ship_interfaces.psp_stretchable_data

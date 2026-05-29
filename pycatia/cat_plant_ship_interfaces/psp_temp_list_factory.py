@@ -145,3 +145,12 @@ class PSPTempListFactory(AnyObject):
 
     def __repr__(self):
         return f'PSPTempListFactory(name="{self.name}")'
+
+class PspTempListFactory(PSPTempListFactory):
+    """
+    V5Automation exposes this interface as ``PspTempListFactory``.
+    pycatia also keeps the existing ``PSPTempListFactory`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspTempListFactory(name="{self.name}")'

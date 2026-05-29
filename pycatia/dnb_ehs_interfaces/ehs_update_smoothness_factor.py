@@ -70,3 +70,12 @@ class EhsUpdateSmoothnessFactor(AnyObject):
 
     def __repr__(self):
         return f'EhsUpdateSmoothnessFactor(name="{self.name}")'
+
+class EHSUpdateSmoothnessFactor(EhsUpdateSmoothnessFactor):
+    """
+    V5Automation exposes this interface as ``EHSUpdateSmoothnessFactor``.
+    pycatia also keeps the existing ``EhsUpdateSmoothnessFactor`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'EHSUpdateSmoothnessFactor(name="{self.name}")'

@@ -1,3 +1,4 @@
+.. _PspApplication:
 .. _PSPApplication:
 
 pycatia.cat_plant_ship_interfaces.psp_application

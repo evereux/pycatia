@@ -1,3 +1,4 @@
+.. _ArrBOMReport:
 .. _ArrBomReport:
 
 pycatia.arrangement_interfaces.arr_bom_report

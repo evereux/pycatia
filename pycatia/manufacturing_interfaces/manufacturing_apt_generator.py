@@ -39,3 +39,12 @@ class ManufacturingAptGenerator(ManufacturingOutputGenerator):
 
     def __repr__(self):
         return f'ManufacturingAptGenerator(name="{self.name}")'
+
+class ManufacturingAPTGenerator(ManufacturingAptGenerator):
+    """
+    V5Automation exposes this interface as ``ManufacturingAPTGenerator``.
+    pycatia also keeps the existing ``ManufacturingAptGenerator`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'ManufacturingAPTGenerator(name="{self.name}")'

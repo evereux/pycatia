@@ -69,3 +69,12 @@ class ArrBomReport(AnyObject):
 
     def __repr__(self):
         return f'ArrBomReport(name="{self.name}")'
+
+class ArrBOMReport(ArrBomReport):
+    """
+    V5Automation exposes this interface as ``ArrBOMReport``.
+    pycatia also keeps the existing ``ArrBomReport`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'ArrBOMReport(name="{self.name}")'

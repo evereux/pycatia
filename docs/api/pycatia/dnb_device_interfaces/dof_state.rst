@@ -1,3 +1,4 @@
+.. _DOFState:
 .. _DofState:
 
 pycatia.dnb_device_interfaces.dof_state

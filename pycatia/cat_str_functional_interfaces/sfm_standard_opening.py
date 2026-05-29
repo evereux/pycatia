@@ -318,3 +318,12 @@ class SFMStandardOpening(AnyObject):
 
     def __repr__(self):
         return f'SFMStandardOpening(name="{self.name}")'
+
+class SfmStandardOpening(SFMStandardOpening):
+    """
+    V5Automation exposes this interface as ``SfmStandardOpening``.
+    pycatia also keeps the existing ``SFMStandardOpening`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'SfmStandardOpening(name="{self.name}")'

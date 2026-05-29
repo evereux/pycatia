@@ -1,3 +1,4 @@
+.. _PspPhsyicalProduct:
 .. _PSPPhsyicalProduct:
 
 pycatia.cat_plant_ship_interfaces.psp_phsyical_product

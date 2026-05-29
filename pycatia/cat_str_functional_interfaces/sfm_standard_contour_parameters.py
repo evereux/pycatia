@@ -101,3 +101,12 @@ class SFMStandardContourParameters(Collection):
 
     def __repr__(self):
         return f'SFMStandardContourParameters(name="{self.name}")'
+
+class SfmStandardContourParameters(SFMStandardContourParameters):
+    """
+    V5Automation exposes this interface as ``SfmStandardContourParameters``.
+    pycatia also keeps the existing ``SFMStandardContourParameters`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'SfmStandardContourParameters(name="{self.name}")'

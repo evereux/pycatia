@@ -1,3 +1,4 @@
+.. _PspLightPart:
 .. _PSPLightPart:
 
 pycatia.cat_plant_ship_interfaces.psp_light_part

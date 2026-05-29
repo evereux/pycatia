@@ -151,3 +151,12 @@ class PSPListOfDoubles(AnyObject):
 
     def __repr__(self):
         return f'PSPListOfDoubles(name="{self.name}")'
+
+class PspListOfDoubles(PSPListOfDoubles):
+    """
+    V5Automation exposes this interface as ``PspListOfDoubles``.
+    pycatia also keeps the existing ``PSPListOfDoubles`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspListOfDoubles(name="{self.name}")'

@@ -484,3 +484,36 @@ class DmuTolSettingAtt(SettingController):
 
     def __repr__(self):
         return f'DmuTolSettingAtt(name="{self.name}")'
+
+class DMUTolSettingAtt(DmuTolSettingAtt):
+    """
+    V5Automation exposes this interface as ``DMUTolSettingAtt``.
+    pycatia also keeps the existing ``DmuTolSettingAtt`` wrapper.
+    """
+
+    def get_related_colors(self, o_related_r: int, o_related_g: int, o_related_b: int) -> None:
+        """
+        Alias for :meth:`get_related_colours`.
+        """
+        return self.get_related_colours(o_related_r, o_related_g, o_related_b)
+
+    def get_related_colors_info(self, admin_level: str, o_locked: str) -> bool:
+        """
+        Alias for :meth:`get_related_colours_info`.
+        """
+        return self.get_related_colours_info(admin_level, o_locked)
+
+    def set_related_colors(self, i_related_r: int, i_related_g: int, i_related_b: int) -> None:
+        """
+        Alias for :meth:`set_related_colours`.
+        """
+        return self.set_related_colours(i_related_r, i_related_g, i_related_b)
+
+    def set_related_colors_lock(self, i_locked: bool) -> None:
+        """
+        Alias for :meth:`set_related_colours_lock`.
+        """
+        return self.set_related_colours_lock(i_locked)
+
+    def __repr__(self):
+        return f'DMUTolSettingAtt(name="{self.name}")'

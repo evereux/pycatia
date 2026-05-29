@@ -578,3 +578,12 @@ class DlNameSettingAtt(SettingController):
 
     def __repr__(self):
         return f'DlNameSettingAtt(name="{self.name}")'
+
+class DLNameSettingAtt(DlNameSettingAtt):
+    """
+    V5Automation exposes this interface as ``DLNameSettingAtt``.
+    pycatia also keeps the existing ``DlNameSettingAtt`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'DLNameSettingAtt(name="{self.name}")'

@@ -145,3 +145,12 @@ class PSPGroup(AnyObject):
 
     def __repr__(self):
         return f'PSPGroup(name="{self.name}")'
+
+class PspGroup(PSPGroup):
+    """
+    V5Automation exposes this interface as ``PspGroup``.
+    pycatia also keeps the existing ``PSPGroup`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspGroup(name="{self.name}")'

@@ -392,3 +392,12 @@ class PSPFunctional(AnyObject):
 
     def __repr__(self):
         return f'PSPFunctional(name="{self.name}")'
+
+class PspFunctional(PSPFunctional):
+    """
+    V5Automation exposes this interface as ``PspFunctional``.
+    pycatia also keeps the existing ``PSPFunctional`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspFunctional(name="{self.name}")'

@@ -1,3 +1,4 @@
+.. _EKPServices:
 .. _EkpServices:
 
 pycatia.dnb_ekp_interfaces.ekp_services

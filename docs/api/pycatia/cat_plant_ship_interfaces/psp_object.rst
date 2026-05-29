@@ -1,3 +1,4 @@
+.. _PspObject:
 .. _PSPObject:
 
 pycatia.cat_plant_ship_interfaces.psp_object

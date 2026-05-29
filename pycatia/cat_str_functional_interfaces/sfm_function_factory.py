@@ -282,3 +282,12 @@ class SFMFunctionFactory(Factory):
 
     def __repr__(self):
         return f'SFMFunctionFactory(name="{self.name}")'
+
+class SfmFunctionFactory(SFMFunctionFactory):
+    """
+    V5Automation exposes this interface as ``SfmFunctionFactory``.
+    pycatia also keeps the existing ``SFMFunctionFactory`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'SfmFunctionFactory(name="{self.name}")'

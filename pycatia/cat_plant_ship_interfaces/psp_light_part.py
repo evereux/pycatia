@@ -121,3 +121,12 @@ class PSPLightPart(AnyObject):
 
     def __repr__(self):
         return f'PSPLightPart(name="{self.name}")'
+
+class PspLightPart(PSPLightPart):
+    """
+    V5Automation exposes this interface as ``PspLightPart``.
+    pycatia also keeps the existing ``PSPLightPart`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspLightPart(name="{self.name}")'

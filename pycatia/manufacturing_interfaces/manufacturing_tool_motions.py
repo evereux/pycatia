@@ -97,3 +97,12 @@ class MFGToolMotions(Collection):
 
     def __repr__(self):
         return f'MfgToolMotions(name="{self.name}")'
+
+class MfgToolMotions(MFGToolMotions):
+    """
+    V5Automation exposes this interface as ``MfgToolMotions``.
+    pycatia also keeps the existing ``MFGToolMotions`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'MfgToolMotions(name="{self.name}")'

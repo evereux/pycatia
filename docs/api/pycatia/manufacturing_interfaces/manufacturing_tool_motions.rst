@@ -1,3 +1,4 @@
+.. _MfgToolMotions:
 .. _MFGToolMotions:
 
 pycatia.manufacturing_interfaces.manufacturing_tool_motions

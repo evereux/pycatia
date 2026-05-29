@@ -1,3 +1,4 @@
+.. _SfmFunctionFactory:
 .. _SFMFunctionFactory:
 
 pycatia.cat_str_functional_interfaces.sfm_function_factory

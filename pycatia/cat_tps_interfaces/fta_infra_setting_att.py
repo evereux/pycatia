@@ -1683,3 +1683,24 @@ class FtaInfraSettingAtt(SettingController):
 
     def __repr__(self):
         return f'FtaInfraSettingAtt(name="{self.name}")'
+
+class FTAInfraSettingAtt(FtaInfraSettingAtt):
+    """
+    V5Automation exposes this interface as ``FTAInfraSettingAtt``.
+    pycatia also keeps the existing ``FtaInfraSettingAtt`` wrapper.
+    """
+
+    def get_man_ref_siz_info(self, admin_level: str, o_locked: str) -> bool:
+        """
+        Alias for :meth:`get_man_ref_size_info`.
+        """
+        return self.get_man_ref_size_info(admin_level, o_locked)
+
+    def set_man_ref_siz_lock(self, i_locked: bool) -> None:
+        """
+        Alias for :meth:`set_man_ref_size_lock`.
+        """
+        return self.set_man_ref_size_lock(i_locked)
+
+    def __repr__(self):
+        return f'FTAInfraSettingAtt(name="{self.name}")'

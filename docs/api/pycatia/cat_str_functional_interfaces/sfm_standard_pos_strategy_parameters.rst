@@ -1,3 +1,4 @@
+.. _SfmStandardPosStrategyParameters:
 .. _SFMStandardPosStrategyParameters:
 
 pycatia.cat_str_functional_interfaces.sfm_standard_pos_strategy_parameters

@@ -196,3 +196,12 @@ class PSPConnectable(AnyObject):
 
     def __repr__(self):
         return f'PSPConnectable(name="{self.name}")'
+
+class PspConnectable(PSPConnectable):
+    """
+    V5Automation exposes this interface as ``PspConnectable``.
+    pycatia also keeps the existing ``PSPConnectable`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspConnectable(name="{self.name}")'

@@ -1,3 +1,4 @@
+.. _PspAppFactory:
 .. _PSPAppFactory:
 
 pycatia.cat_plant_ship_interfaces.psp_app_factory

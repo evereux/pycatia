@@ -1,3 +1,4 @@
+.. _PspPartConnector:
 .. _PSPPartConnector:
 
 pycatia.cat_plant_ship_interfaces.psp_part_connector

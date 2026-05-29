@@ -1,3 +1,4 @@
+.. _ManufacturingAPTGenerator:
 .. _ManufacturingAptGenerator:
 
 pycatia.manufacturing_interfaces.manufacturing_apt_generator

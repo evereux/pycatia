@@ -1,3 +1,4 @@
+.. _MaterialESSObjectSettingAtt:
 .. _MaterialEssObjectSettingAtt:
 
 pycatia.structure_interfaces.material_ess_object_setting_att

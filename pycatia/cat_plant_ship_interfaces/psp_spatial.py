@@ -116,3 +116,12 @@ class PSPSpatial(AnyObject):
 
     def __repr__(self):
         return f'PSPSpatial(name="{self.name}")'
+
+class PspSpatial(PSPSpatial):
+    """
+    V5Automation exposes this interface as ``PspSpatial``.
+    pycatia also keeps the existing ``PSPSpatial`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspSpatial(name="{self.name}")'

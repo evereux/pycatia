@@ -87,3 +87,29 @@ class WITextAccessEi(AnyObject):
 
     def __repr__(self):
         return f'WITextAccessEi(name="{self.name}")'
+
+class WITextAccessEI(WITextAccessEi):
+    """
+    V5Automation exposes this interface as ``WITextAccessEI``.
+    pycatia also keeps the existing ``WITextAccessEi`` wrapper.
+    """
+
+    def get_geom_refered_by_annotation(
+            self,
+            i_opor_act: int,
+            i_assigned_ei_index: int,
+            i_assignment_type: int,
+            io_point_geom: AnyObject
+    ) -> None:
+        """
+        Alias for :meth:`get_geom_referred_by_annotation`.
+        """
+        return self.get_geom_referred_by_annotation(
+            i_opor_act,
+            i_assigned_ei_index,
+            i_assignment_type,
+            io_point_geom
+        )
+
+    def __repr__(self):
+        return f'WITextAccessEI(name="{self.name}")'

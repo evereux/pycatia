@@ -68,3 +68,12 @@ class PSPApplication(AnyObject):
 
     def __repr__(self):
         return f'PSPApplication(name="{self.name}")'
+
+class PspApplication(PSPApplication):
+    """
+    V5Automation exposes this interface as ``PspApplication``.
+    pycatia also keeps the existing ``PSPApplication`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspApplication(name="{self.name}")'

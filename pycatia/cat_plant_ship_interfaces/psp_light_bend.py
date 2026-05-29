@@ -103,3 +103,12 @@ class PSPLightBend(AnyObject):
 
     def __repr__(self):
         return f'PSPLightBend(name="{self.name}")'
+
+class PspLightBend(PSPLightBend):
+    """
+    V5Automation exposes this interface as ``PspLightBend``.
+    pycatia also keeps the existing ``PSPLightBend`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspLightBend(name="{self.name}")'

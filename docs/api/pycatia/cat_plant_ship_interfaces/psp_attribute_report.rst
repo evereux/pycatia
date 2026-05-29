@@ -1,3 +1,4 @@
+.. _PspAttributeReport:
 .. _PSPAttributeReport:
 
 pycatia.cat_plant_ship_interfaces.psp_attribute_report

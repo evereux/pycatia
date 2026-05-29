@@ -460,3 +460,12 @@ class PSPAppFactory(AnyObject):
 
     def __repr__(self):
         return f'PSPAppFactory(name="{self.name}")'
+
+class PspAppFactory(PSPAppFactory):
+    """
+    V5Automation exposes this interface as ``PspAppFactory``.
+    pycatia also keeps the existing ``PSPAppFactory`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspAppFactory(name="{self.name}")'

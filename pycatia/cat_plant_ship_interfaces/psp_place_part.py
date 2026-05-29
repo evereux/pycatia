@@ -252,3 +252,12 @@ class PSPPlacePart(AnyObject):
 
     def __repr__(self):
         return f'PSPPlacePart(name="{self.name}")'
+
+class PspPlacePart(PSPPlacePart):
+    """
+    V5Automation exposes this interface as ``PspPlacePart``.
+    pycatia also keeps the existing ``PSPPlacePart`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspPlacePart(name="{self.name}")'

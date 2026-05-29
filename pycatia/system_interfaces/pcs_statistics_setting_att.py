@@ -77,3 +77,12 @@ class PcsStatisticsSettingAtt(GeneralStatisticsSettingAtt):
 
     def __repr__(self):
         return f'PcsStatisticsSettingAtt(name="{ self.name }")'
+
+class PCSStatisticsSettingAtt(PcsStatisticsSettingAtt):
+    """
+    V5Automation exposes this interface as ``PCSStatisticsSettingAtt``.
+    pycatia also keeps the existing ``PcsStatisticsSettingAtt`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PCSStatisticsSettingAtt(name="{self.name}")'

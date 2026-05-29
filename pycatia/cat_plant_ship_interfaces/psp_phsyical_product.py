@@ -186,3 +186,12 @@ class PSPPhsyicalProduct(AnyObject):
 
     def __repr__(self):
         return f'PSPPhsyicalProduct(name="{self.name}")'
+
+class PspPhsyicalProduct(PSPPhsyicalProduct):
+    """
+    V5Automation exposes this interface as ``PspPhsyicalProduct``.
+    pycatia also keeps the existing ``PSPPhsyicalProduct`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspPhsyicalProduct(name="{self.name}")'

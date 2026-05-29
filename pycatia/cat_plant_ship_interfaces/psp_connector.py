@@ -244,3 +244,12 @@ class PSPConnector(AnyObject):
 
     def __repr__(self):
         return f'PSPConnector(name="{self.name}")'
+
+class PspConnector(PSPConnector):
+    """
+    V5Automation exposes this interface as ``PspConnector``.
+    pycatia also keeps the existing ``PSPConnector`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspConnector(name="{self.name}")'

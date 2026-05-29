@@ -99,3 +99,12 @@ class PSPAttributeReport(AnyObject):
 
     def __repr__(self):
         return f'PSPAttributeReport(name="{self.name}")'
+
+class PspAttributeReport(PSPAttributeReport):
+    """
+    V5Automation exposes this interface as ``PspAttributeReport``.
+    pycatia also keeps the existing ``PSPAttributeReport`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspAttributeReport(name="{self.name}")'

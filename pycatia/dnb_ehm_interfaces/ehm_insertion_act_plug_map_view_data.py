@@ -920,3 +920,19 @@ class EhmInsertionActPlugMapViewData(Activity):
 
     def __repr__(self):
         return f'EhmInsertionActPlugMapViewData(name="{self.name}")'
+
+class EHMInsertionActPlugMapViewData(EhmInsertionActPlugMapViewData):
+    """
+    V5Automation exposes this interface as ``EHMInsertionActPlugMapViewData``.
+    pycatia also keeps the existing ``EhmInsertionActPlugMapViewData`` wrapper.
+    """
+
+    @property
+    def wire_color(self) -> str:
+        """
+        Alias for :attr:`wire_colour`.
+        """
+        return self.wire_colour
+
+    def __repr__(self):
+        return f'EHMInsertionActPlugMapViewData(name="{self.name}")'

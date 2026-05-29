@@ -92,3 +92,12 @@ class DofState(AnyObject):
 
     def __repr__(self):
         return f'DofState(name="{self.name}")'
+
+class DOFState(DofState):
+    """
+    V5Automation exposes this interface as ``DOFState``.
+    pycatia also keeps the existing ``DofState`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'DOFState(name="{self.name}")'

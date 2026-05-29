@@ -282,3 +282,12 @@ class PSPLightConnector(AnyObject):
 
     def __repr__(self):
         return f'PSPLightConnector(name="{self.name}")'
+
+class PspLightConnector(PSPLightConnector):
+    """
+    V5Automation exposes this interface as ``PspLightConnector``.
+    pycatia also keeps the existing ``PSPLightConnector`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspLightConnector(name="{self.name}")'

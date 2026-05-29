@@ -427,3 +427,12 @@ class PSPAttribute(AnyObject):
 
     def __repr__(self):
         return f'PSPAttribute(name="{self.name}")'
+
+class PspAttribute(PSPAttribute):
+    """
+    V5Automation exposes this interface as ``PspAttribute``.
+    pycatia also keeps the existing ``PSPAttribute`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspAttribute(name="{self.name}")'

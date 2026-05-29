@@ -1,3 +1,4 @@
+.. _SfmStandardOpening:
 .. _SFMStandardOpening:
 
 pycatia.cat_str_functional_interfaces.sfm_standard_opening

@@ -151,3 +151,12 @@ class PSPListOfLongs(AnyObject):
 
     def __repr__(self):
         return f'PSPListOfLongs(name="{self.name}")'
+
+class PspListOfLongs(PSPListOfLongs):
+    """
+    V5Automation exposes this interface as ``PspListOfLongs``.
+    pycatia also keeps the existing ``PSPListOfLongs`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspListOfLongs(name="{self.name}")'

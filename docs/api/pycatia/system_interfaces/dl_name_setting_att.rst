@@ -1,3 +1,4 @@
+.. _DLNameSettingAtt:
 .. _DlNameSettingAtt:
 
 pycatia.system_interfaces.dl_name_setting_att

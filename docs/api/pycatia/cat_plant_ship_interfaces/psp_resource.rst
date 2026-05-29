@@ -1,3 +1,4 @@
+.. _PspResource:
 .. _PSPResource:
 
 pycatia.cat_plant_ship_interfaces.psp_resource

@@ -101,3 +101,12 @@ class PSPCntrFlow(AnyObject):
 
     def __repr__(self):
         return f'PSPCntrFlow(name="{self.name}")'
+
+class PspCntrFlow(PSPCntrFlow):
+    """
+    V5Automation exposes this interface as ``PspCntrFlow``.
+    pycatia also keeps the existing ``PSPCntrFlow`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspCntrFlow(name="{self.name}")'

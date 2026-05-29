@@ -390,3 +390,12 @@ class ViewPoint3D(AnyObject):
 
     def __repr__(self):
         return f'ViewPoint3D(name="{self.name}")'
+
+class Viewpoint3D(ViewPoint3D):
+    """
+    V5Automation exposes this interface as ``Viewpoint3D``.
+    pycatia also keeps the existing ``ViewPoint3D`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'Viewpoint3D(name="{self.name}")'

@@ -197,3 +197,12 @@ class PSPBuildPart(AnyObject):
 
     def __repr__(self):
         return f'PSPBuildPart(name="{self.name}")'
+
+class PspBuildPart(PSPBuildPart):
+    """
+    V5Automation exposes this interface as ``PspBuildPart``.
+    pycatia also keeps the existing ``PSPBuildPart`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspBuildPart(name="{self.name}")'

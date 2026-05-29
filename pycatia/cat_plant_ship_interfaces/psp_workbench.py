@@ -168,3 +168,12 @@ class PSPWorkbench(AnyObject):
 
     def __repr__(self):
         return f'PSPWorkbench(name="{self.name}")'
+
+class PspWorkbench(PSPWorkbench):
+    """
+    V5Automation exposes this interface as ``PspWorkbench``.
+    pycatia also keeps the existing ``PSPWorkbench`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspWorkbench(name="{self.name}")'

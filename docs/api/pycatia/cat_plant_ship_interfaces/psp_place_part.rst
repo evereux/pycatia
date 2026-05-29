@@ -1,3 +1,4 @@
+.. _PspPlacePart:
 .. _PSPPlacePart:
 
 pycatia.cat_plant_ship_interfaces.psp_place_part

@@ -1,3 +1,4 @@
+.. _FTAInfraSettingAtt:
 .. _FtaInfraSettingAtt:
 
 pycatia.cat_tps_interfaces.fta_infra_setting_att

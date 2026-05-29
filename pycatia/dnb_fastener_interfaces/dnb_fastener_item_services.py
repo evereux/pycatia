@@ -345,3 +345,12 @@ class DnbFastenerItemServices(AnyObject):
 
     def __repr__(self):
         return f'DnbFastenerItemServices(name="{self.name}")'
+
+class DNBFastenerItemServices(DnbFastenerItemServices):
+    """
+    V5Automation exposes this interface as ``DNBFastenerItemServices``.
+    pycatia also keeps the existing ``DnbFastenerItemServices`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'DNBFastenerItemServices(name="{self.name}")'

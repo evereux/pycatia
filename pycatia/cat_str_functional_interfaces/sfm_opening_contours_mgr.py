@@ -174,3 +174,12 @@ class SFMOpeningContoursMgr(AnyObject):
 
     def __repr__(self):
         return f'SFMOpeningContoursMgr(name="{self.name}")'
+
+class SfmOpeningContoursMgr(SFMOpeningContoursMgr):
+    """
+    V5Automation exposes this interface as ``SfmOpeningContoursMgr``.
+    pycatia also keeps the existing ``SFMOpeningContoursMgr`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'SfmOpeningContoursMgr(name="{self.name}")'

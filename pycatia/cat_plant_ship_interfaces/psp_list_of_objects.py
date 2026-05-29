@@ -152,3 +152,12 @@ class PSPListOfObjects(AnyObject):
 
     def __repr__(self):
         return f'PSPListOfObjects(name="{self.name}")'
+
+class PspListOfObjects(PSPListOfObjects):
+    """
+    V5Automation exposes this interface as ``PspListOfObjects``.
+    pycatia also keeps the existing ``PSPListOfObjects`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspListOfObjects(name="{self.name}")'

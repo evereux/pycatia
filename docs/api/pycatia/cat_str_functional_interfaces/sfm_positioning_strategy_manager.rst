@@ -1,3 +1,4 @@
+.. _SfmPositioningStrategyManager:
 .. _SFMPositioningStrategyManager:
 
 pycatia.cat_str_functional_interfaces.sfm_positioning_strategy_manager

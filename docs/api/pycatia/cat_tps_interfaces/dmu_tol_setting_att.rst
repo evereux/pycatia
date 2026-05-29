@@ -1,3 +1,4 @@
+.. _DMUTolSettingAtt:
 .. _DmuTolSettingAtt:
 
 pycatia.cat_tps_interfaces.dmu_tol_setting_att

@@ -249,3 +249,12 @@ class DnbAttachment(AnyObject):
 
     def __repr__(self):
         return f'DnbAttachment(name="{self.name}")'
+
+class DNBAttachment(DnbAttachment):
+    """
+    V5Automation exposes this interface as ``DNBAttachment``.
+    pycatia also keeps the existing ``DnbAttachment`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'DNBAttachment(name="{self.name}")'

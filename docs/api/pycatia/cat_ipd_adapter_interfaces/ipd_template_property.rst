@@ -1,3 +1,4 @@
+.. _IPDTemplateProperty:
 .. _IpdTemplateProperty:
 
 pycatia.cat_ipd_adapter_interfaces.ipd_template_property

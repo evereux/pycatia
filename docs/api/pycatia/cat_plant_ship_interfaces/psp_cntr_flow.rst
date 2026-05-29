@@ -1,3 +1,4 @@
+.. _PspCntrFlow:
 .. _PSPCntrFlow:
 
 pycatia.cat_plant_ship_interfaces.psp_cntr_flow

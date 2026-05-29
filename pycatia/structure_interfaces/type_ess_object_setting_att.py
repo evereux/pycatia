@@ -243,3 +243,12 @@ class TypeEssObjectSettingAtt(SettingController):
 
     def __repr__(self):
         return f'TypeEssObjectSettingAtt(name="{self.name}")'
+
+class TypeESSObjectSettingAtt(TypeEssObjectSettingAtt):
+    """
+    V5Automation exposes this interface as ``TypeESSObjectSettingAtt``.
+    pycatia also keeps the existing ``TypeEssObjectSettingAtt`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'TypeESSObjectSettingAtt(name="{self.name}")'

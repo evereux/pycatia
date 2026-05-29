@@ -1,3 +1,4 @@
+.. _SfmReferences:
 .. _SFMReferences:
 
 pycatia.cat_str_functional_interfaces.sfm_references

@@ -134,3 +134,12 @@ class CatalogShmObjectSettingAtt(SettingController):
 
     def __repr__(self):
         return f'CatalogShmObjectSettingAtt(name="{self.name}")'
+
+class CatalogSHMObjectSettingAtt(CatalogShmObjectSettingAtt):
+    """
+    V5Automation exposes this interface as ``CatalogSHMObjectSettingAtt``.
+    pycatia also keeps the existing ``CatalogShmObjectSettingAtt`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'CatalogSHMObjectSettingAtt(name="{self.name}")'

@@ -98,3 +98,12 @@ class PSPResource(AnyObject):
 
     def __repr__(self):
         return f'PSPResource(name="{self.name}")'
+
+class PspResource(PSPResource):
+    """
+    V5Automation exposes this interface as ``PspResource``.
+    pycatia also keeps the existing ``PSPResource`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspResource(name="{self.name}")'

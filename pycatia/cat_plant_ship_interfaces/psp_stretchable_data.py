@@ -96,3 +96,12 @@ class PSPStretchableData(AnyObject):
 
     def __repr__(self):
         return f'PSPStretchableData(name="{self.name}")'
+
+class PspStretchableData(PSPStretchableData):
+    """
+    V5Automation exposes this interface as ``PspStretchableData``.
+    pycatia also keeps the existing ``PSPStretchableData`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspStretchableData(name="{self.name}")'

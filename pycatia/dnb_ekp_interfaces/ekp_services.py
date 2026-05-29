@@ -293,3 +293,12 @@ class EkpServices(AnyObject):
 
     def __repr__(self):
         return f'EkpServices(name="{self.name}")'
+
+class EKPServices(EkpServices):
+    """
+    V5Automation exposes this interface as ``EKPServices``.
+    pycatia also keeps the existing ``EkpServices`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'EKPServices(name="{self.name}")'

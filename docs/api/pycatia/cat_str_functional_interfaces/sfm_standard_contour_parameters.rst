@@ -1,3 +1,4 @@
+.. _SfmStandardContourParameters:
 .. _SFMStandardContourParameters:
 
 pycatia.cat_str_functional_interfaces.sfm_standard_contour_parameters

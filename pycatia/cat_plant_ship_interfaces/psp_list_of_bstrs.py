@@ -149,3 +149,12 @@ class PSPListOfBSTRs(AnyObject):
 
     def __repr__(self):
         return f'PSPListOfBstRs(name="{self.name}")'
+
+class PspListOfBSTRs(PSPListOfBSTRs):
+    """
+    V5Automation exposes this interface as ``PspListOfBSTRs``.
+    pycatia also keeps the existing ``PSPListOfBSTRs`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspListOfBSTRs(name="{self.name}")'

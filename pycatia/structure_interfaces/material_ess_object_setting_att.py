@@ -243,3 +243,12 @@ class MaterialEssObjectSettingAtt(SettingController):
 
     def __repr__(self):
         return f'MaterialEssObjectSettingAtt(name="{self.name}")'
+
+class MaterialESSObjectSettingAtt(MaterialEssObjectSettingAtt):
+    """
+    V5Automation exposes this interface as ``MaterialESSObjectSettingAtt``.
+    pycatia also keeps the existing ``MaterialEssObjectSettingAtt`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'MaterialESSObjectSettingAtt(name="{self.name}")'

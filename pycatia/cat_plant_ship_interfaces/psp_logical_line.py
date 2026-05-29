@@ -211,3 +211,12 @@ class PSPLogicalLine(PSPGroup):
 
     def __repr__(self):
         return f'PSPLogicalLine(name="{self.name}")'
+
+class PspLogicalLine(PSPLogicalLine):
+    """
+    V5Automation exposes this interface as ``PspLogicalLine``.
+    pycatia also keeps the existing ``PSPLogicalLine`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspLogicalLine(name="{self.name}")'

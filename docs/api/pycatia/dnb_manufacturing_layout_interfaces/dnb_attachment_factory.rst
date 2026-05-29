@@ -1,3 +1,4 @@
+.. _DNBAttachmentFactory:
 .. _DnbAttachmentFactory:
 
 pycatia.dnb_manufacturing_layout_interfaces.dnb_attachment_factory

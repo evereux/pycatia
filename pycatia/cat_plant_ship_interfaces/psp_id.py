@@ -217,3 +217,12 @@ class PSPId(AnyObject):
 
     def __repr__(self):
         return f'PSPId(name="{self.name}")'
+
+class PspID(PSPId):
+    """
+    V5Automation exposes this interface as ``PspID``.
+    pycatia also keeps the existing ``PSPId`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'PspID(name="{self.name}")'

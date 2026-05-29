@@ -296,3 +296,12 @@ class SFMStandardPosStrategyParameters(AnyObject):
 
     def __repr__(self):
         return f'SFMStandardPosStrategyParameters(name="{self.name}")'
+
+class SfmStandardPosStrategyParameters(SFMStandardPosStrategyParameters):
+    """
+    V5Automation exposes this interface as ``SfmStandardPosStrategyParameters``.
+    pycatia also keeps the existing ``SFMStandardPosStrategyParameters`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'SfmStandardPosStrategyParameters(name="{self.name}")'

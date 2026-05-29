@@ -104,3 +104,12 @@ class MhiRelationManagement(AnyObject):
 
     def __repr__(self):
         return f'MhiRelationManagement(name="{self.name}")'
+
+class MHIRelationManagement(MhiRelationManagement):
+    """
+    V5Automation exposes this interface as ``MHIRelationManagement``.
+    pycatia also keeps the existing ``MhiRelationManagement`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'MHIRelationManagement(name="{self.name}")'
