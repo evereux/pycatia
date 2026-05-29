@@ -54,3 +54,13 @@ class ControlledRadius(AnyObject):
 
     def __repr__(self):
         return f'ControlledRadius(name="{self.name}")'
+
+
+class ControledRadius(ControlledRadius):
+    """
+    V5Automation exposes this interface as ``ControledRadius``.
+    pycatia also keeps the existing ``ControlledRadius`` wrapper.
+    """
+
+    def __repr__(self):
+        return f'ControledRadius(name="{self.name}")'

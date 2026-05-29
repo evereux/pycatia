@@ -1,3 +1,4 @@
+.. _ControledRadius:
 .. _ControlledRadius:
 
 pycatia.cat_tps_interfaces.controlled_radius
