@@ -66,3 +66,19 @@ class SchAppCntrColour(AnyObject):
 
     def __repr__(self):
         return f'SchAppCntrColour(name="{self.name}")'
+
+
+class SchAppCntrColor(SchAppCntrColour):
+    """
+    V5Automation exposes this interface as ``SchAppCntrColor``.
+    pycatia also keeps the existing ``SchAppCntrColour`` wrapper.
+    """
+
+    def app_get_connector_color_by_type(self, o_color: int) -> None:
+        """
+        Alias for :meth:`app_get_connector_colour_by_type`.
+        """
+        return self.app_get_connector_colour_by_type(o_color)
+
+    def __repr__(self):
+        return f'SchAppCntrColor(name="{self.name}")'
