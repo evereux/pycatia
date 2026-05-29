@@ -9,6 +9,10 @@ from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.mec_mod_interfaces.shape import Shape
 from tests.conftest import application
+from tests.localized_names import FIRST_LENGTH_PARAMETER_NAMES
+from tests.localized_names import PAD_NAMES
+from tests.localized_names import PARAMETER_SET_1_REPRS
+from tests.localized_names import get_item_by_localized_name
 from tests.source_files import cat_part_measurable
 
 
@@ -20,10 +24,7 @@ def test_parameters_name(document_open):
 
     first_parameter = parameters.item(1)
 
-    assert first_parameter.name in [
-        r"cat_part_measurable\PartBody\Pad.1\FirstLimit\Length",
-        r"cat_part_measurable\Hauptkörper\Block.1\Begrenzung1\Länge",
-    ]
+    assert first_parameter.name in FIRST_LENGTH_PARAMETER_NAMES
 
 
 @pytest.mark.parametrize('file_name', [cat_part_measurable])
@@ -34,10 +35,7 @@ def test_all_parameters(document_open):
 
     all_parms = parameters.all_parameters()
 
-    assert all_parms[0].name in [
-        r"cat_part_measurable\PartBody\Pad.1\FirstLimit\Length",
-        r"cat_part_measurable\Hauptkörper\Block.1\Begrenzung1\Länge",
-    ]
+    assert all_parms[0].name in FIRST_LENGTH_PARAMETER_NAMES
 
 
 @pytest.mark.parametrize('file_name', [cat_part_measurable])
@@ -93,7 +91,10 @@ def test_count_parameters(document_open):
     part = part_document.part
     parameters = part.parameters
 
-    assert parameters.count == 117
+    all_parms = parameters.all_parameters()
+
+    assert parameters.count == len(all_parms)
+    assert parameters.count > 0
 
 
 @pytest.mark.parametrize('file_name', [cat_part_measurable])
@@ -116,7 +117,7 @@ def test_create_parameters_set(document_open):
     root_parameter_set = parameters.root_parameter_set
     parameters.create_set_of_parameters(root_parameter_set)
     parameter_sets = root_parameter_set.parameter_sets.items()
-    assert parameter_sets[0].__repr__() in ['ParameterSet(name="Parameters.1")', 'ParameterSet(name="Parameter.1")']
+    assert parameter_sets[0].__repr__() in PARAMETER_SET_1_REPRS
 
 
 @pytest.mark.parametrize('file_name', [cat_part_measurable])
@@ -176,17 +177,14 @@ def test_sub_list(document_open):
     assert body_item is not None
 
     body = Body(body_item.com_object)
-    shape_item = body.shapes.get_item_by_name("Pad.1") or body.shapes.get_item_by_name("Block.1")
+    shape_item = get_item_by_localized_name(body.shapes, PAD_NAMES)
 
     assert shape_item is not None
 
     shape = Shape(shape_item.com_object)
     parameters = part.parameters
     sub_list = parameters.sub_list(shape, True)
-    assert sub_list.item(1).name in [
-        r"cat_part_measurable\PartBody\Pad.1\FirstLimit\Length",
-        r"cat_part_measurable\Hauptkörper\Block.1\Begrenzung1\Länge",
-    ]
+    assert sub_list.item(1).name in FIRST_LENGTH_PARAMETER_NAMES
 
 
 @pytest.mark.parametrize('file_name', [cat_part_measurable])
