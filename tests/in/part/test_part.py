@@ -7,6 +7,9 @@ from pycatia.mec_mod_interfaces.part import Part
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 from tests.conftest import application
+from tests.localized_names import PAD_NAMES
+from tests.localized_names import PART_BODY_NAMES
+from tests.localized_names import get_item_by_localized_name
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
 
@@ -16,13 +19,20 @@ def test_activation(document_close_all_open):
     part_document: PartDocument = application.active_document
     part = part_document.part
 
-    item = part.find_object_by_name("Point.1")
+    body = get_item_by_localized_name(part.bodies, PART_BODY_NAMES)
+    assert body is not None
 
+    item = get_item_by_localized_name(body.shapes, PAD_NAMES)
+    assert item is not None
     assert not part.is_inactive(item)
 
     part.deactivate(item)
 
     assert part.is_inactive(item)
+
+    part.activate(item)
+
+    assert not part.is_inactive(item)
 
 
 @pytest.mark.parametrize('file_name', [cat_part_measurable])
@@ -53,7 +63,7 @@ def test_bodies(document_open):
 
     bodies = part.bodies
 
-    assert bodies.com_object.Item(1).Name in ["PartBody", "Hauptkörper"]
+    assert bodies.com_object.Item(1).Name in PART_BODY_NAMES
 
 
 @pytest.mark.parametrize('file_name', [cat_part_measurable])
@@ -117,12 +127,12 @@ def test_in_work_object(document_open):
     part = part_document.part
 
     bodies = part.bodies
-    body = bodies.get_item_by_name("PartBody") or bodies.get_item_by_name("Hauptkörper")
+    body = get_item_by_localized_name(bodies, PART_BODY_NAMES)
 
     assert body is not None
     part.in_work_object = body
 
-    assert part.in_work_object.name in ["PartBody", "Hauptkörper"]
+    assert part.in_work_object.name in PART_BODY_NAMES
 
 
 @pytest.mark.parametrize('file_name', [cat_part_measurable])

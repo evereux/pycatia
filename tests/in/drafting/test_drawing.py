@@ -7,6 +7,8 @@ from pycatia import CatPaperSize
 from pycatia import CatSheetProjectionMethod
 from pycatia.drafting_interfaces.drawing_document import DrawingDocument
 from tests.conftest import application
+from tests.localized_names import SHEET_1_NAMES
+from tests.localized_names import SHEET_2_NAMES
 from tests.source_files import cat_drawing
 
 
@@ -22,7 +24,7 @@ def test_drawing_doc_type(document_close_all_open):
 def test_active_drawing(document_open):
     drawing_document: DrawingDocument = application.active_document
     drawing_root = drawing_document.drawing_root
-    assert drawing_root.active_sheet.name in ["Sheet.1", "Blatt.1"]  # TODO: Add more languages
+    assert drawing_root.active_sheet.name in SHEET_1_NAMES
 
 
 @pytest.mark.parametrize('file_name', [cat_drawing])
@@ -49,7 +51,7 @@ def test_paper_size(document_open):
 def test_sheets(document_open):
     drawing_document = application.active_document
     sheets = drawing_document.sheets
-    assert sheets.item(2).name == "Sheet.2"
+    assert sheets.item(2).name in SHEET_2_NAMES
 
 
 @pytest.mark.parametrize('file_name', [cat_drawing])
@@ -72,8 +74,8 @@ def test_reorder(document_open_test_close_all):
 
     sheets = drawing_document.sheets
 
-    assert not sheets.item(1).name == "Sheet.1"
-    assert sheets.item(1).name == "Sheet.2"
+    assert sheets.item(1).name not in SHEET_1_NAMES
+    assert sheets.item(1).name in SHEET_2_NAMES
 
 
 @pytest.mark.parametrize('file_name', [cat_drawing])
