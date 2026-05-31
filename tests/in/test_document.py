@@ -21,6 +21,15 @@ junk_folder = os.path.join(os.getcwd(), "__junk__/")
 now_string = datetime.now().strftime("%Y%m%d-%H%M%S")
 os.makedirs(junk_folder, exist_ok=True)
 
+igs_file_param = pytest.param(
+    igs_file,
+    marks=pytest.mark.skipif(not igs_file.is_file(), reason="part_measurable.igs is not available")
+)
+stp_file_param = pytest.param(
+    stp_file,
+    marks=pytest.mark.skipif(not stp_file.is_file(), reason="part_measurable.stp is not available")
+)
+
 
 @pytest.mark.parametrize('file_name', [cat_part_measurable])
 def test_activate_document(document_close_all_open):
@@ -157,18 +166,14 @@ def test_open_document_str(document_open_test_close):
     assert type(part_document) is PartDocument
 
 
-@pytest.mark.parametrize('file_name', [igs_file])
+@pytest.mark.parametrize('file_name', [igs_file_param])
 def test_open_document_igs(document_open_test_close):
-    # todo: igs file currently needs to be created manually.
     document = application.active_document
     assert type(document) is PartDocument
 
 
-@pytest.mark.parametrize('file_name', [stp_file])
+@pytest.mark.parametrize('file_name', [stp_file_param])
 def test_open_document_stp(document_open_test_close):
-    # stp file will need to be created manually.
-    if not stp_file.is_file():
-        assert False
     document = application.active_document
     assert type(document) is PartDocument
 
@@ -185,20 +190,14 @@ def test_read_document_strget_application(document_open_test_close):
     assert type(document) is PartDocument
 
 
-@pytest.mark.parametrize('file_name', [igs_file])
+@pytest.mark.parametrize('file_name', [igs_file_param])
 def test_read_document_igs(document_open_test_close):
-    # igs file will need to be created manually.
-    if not igs_file.is_file():
-        assert False
     document = application.active_document
     assert type(document) is PartDocument
 
 
-@pytest.mark.parametrize('file_name', [stp_file])
+@pytest.mark.parametrize('file_name', [stp_file_param])
 def test_read_document_stp(document_open_test_close):
-    # stp file will need to be created manually.
-    if not stp_file.is_file():
-        assert False
     document = application.active_document
     assert type(document) is PartDocument
 
