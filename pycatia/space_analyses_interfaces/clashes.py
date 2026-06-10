@@ -38,7 +38,7 @@ class Clashes(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Clash)
         self.clashes = com_object
 
     def add(self) -> Clash:
