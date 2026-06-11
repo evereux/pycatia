@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatSplitSide, CatSewingIntersectionMode
 from pycatia.in_interfaces.reference import Reference
 from pycatia.part_interfaces.surface_based_shape import SurfaceBasedShape
 
@@ -115,7 +116,7 @@ class SewSurface(SurfaceBasedShape):
         self.sew_surface.DeviationMode = value
 
     @property
-    def sewing_intersection_mode(self) -> int:
+    def sewing_intersection_mode(self) -> CatSewingIntersectionMode:
         """
         .. note::
             :class: toggle
@@ -135,8 +136,7 @@ class SewSurface(SurfaceBasedShape):
                 |          Set sptSide = mySew.SewingSide
                 |          mySew.SewingSide = catPositiveSide
 
-        :return: enum cat_sewing_intersection_mode
-        :rtype: int
+        :return: CatSewingIntersectionMode
         """
 
         return self.sew_surface.SewingIntersectionMode
@@ -150,7 +150,7 @@ class SewSurface(SurfaceBasedShape):
         self.sew_surface.SewingIntersectionMode = value
 
     @property
-    def sewing_side(self) -> int:
+    def sewing_side(self) -> CatSplitSide:
         """
         .. note::
             :class: toggle
@@ -169,16 +169,15 @@ class SewSurface(SurfaceBasedShape):
                 |          Set sptSide = mySew.SewingSide
                 |          mySew.SewingSide = catPositiveSide
 
-        :return: enum cat_split_side
-        :rtype: int
+        :return: CatSplitSide
         """
 
         return self.sew_surface.SewingSide
 
     @sewing_side.setter
-    def sewing_side(self, value: int):
+    def sewing_side(self, value: CatSplitSide):
         """
-        :param int value: enum cat_split_side
+        :param CatSplitSide value:
         """
 
         self.sew_surface.SewingSide = value

@@ -11,6 +11,7 @@
 
 from typing import TYPE_CHECKING
 
+from pycatia import CatSectionType, CatSectionBehavior
 from pycatia.navigator_interfaces.annotated_views import AnnotatedViews
 from pycatia.navigator_interfaces.group import Group
 from pycatia.navigator_interfaces.marker_3Ds import Marker3Ds
@@ -70,7 +71,7 @@ class Section(AnyObject):
         return AnnotatedViews(self.section.AnnotatedViews)
 
     @property
-    def behavior(self) -> int:
+    def behavior(self) -> CatSectionBehavior:
         """
         .. note::
             :class: toggle
@@ -96,16 +97,15 @@ class Section(AnyObject):
                 |
                 |                 NewSection.Behavior = catSectionBehaviorAutomatic
 
-        :return: enum cat_section_behavior
-        :rtype: int
+        :return: CatSectionBehavior
         """
 
         return self.section.Behavior
 
     @behavior.setter
-    def behavior(self, value: int):
+    def behavior(self, value: CatSectionBehavior):
         """
-        :param int value: enum cat_section_behavior
+        :param CatSectionBehavior value:
         """
 
         self.section.Behavior = value
@@ -293,7 +293,7 @@ class Section(AnyObject):
         self.section.Thickness = value
 
     @property
-    def type(self) -> int:
+    def type(self) -> CatSectionType:
         """
         .. note::
             :class: toggle
@@ -318,16 +318,15 @@ class Section(AnyObject):
                 |
                 |                 NewSection.Type = catSectionTypeSlice
 
-        :return: enum cat_section_type
-        :rtype: int
+        :return: CatSectionType
         """
 
         return self.section.Type
 
     @type.setter
-    def type(self, value: int):
+    def type(self, value: CatSectionType):
         """
-        :param int value: enum cat_section_type
+        :param CatSectionType value:
         """
 
         self.section.Type = value

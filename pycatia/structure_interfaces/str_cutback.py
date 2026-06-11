@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatStrCutbackType
 from pycatia.assembly_interfaces.assembly_feature import AssemblyFeature
 from pycatia.knowledge_interfaces.parameter import Parameter
 
@@ -54,7 +55,7 @@ class StrCutback(AssemblyFeature):
         return Parameter(self.str_cutback.Offset)
 
     @property
-    def type(self) -> int:
+    def type(self) -> CatStrCutbackType:
         """
         .. note::
             :class: toggle
@@ -71,7 +72,7 @@ class StrCutback(AssemblyFeature):
                 |          Type = Member.Type
 
         :return: enum cat_str_cutback_type
-        :rtype: int
+        :rtype: CatStrCutbackType
         """
 
         return self.str_cutback.Type

@@ -8,7 +8,8 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatSecWindowOpenMode, CatSectionPlaneOrigin, CatSectionPlaneNormal, CatSectionGridStyle, \
+    CatGridPositionMode, CatSectionClippingMode
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -36,7 +37,7 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att = com_object
 
     @property
-    def clipping_mode(self) -> int:
+    def clipping_mode(self) -> CatSectionClippingMode:
         """
         .. note::
             :class: toggle
@@ -48,8 +49,7 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_clipping_mode
-        :rtype: int
+        :return: CatSectionClippingMode
         """
 
         return self.sectioning_setting_att.ClippingMode
@@ -167,7 +167,7 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.GridHeightStep = value
 
     @property
-    def grid_position_mode(self) -> int:
+    def grid_position_mode(self) -> CatGridPositionMode:
         """
         .. note::
             :class: toggle
@@ -179,22 +179,21 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_grid_position_mode
-        :rtype: int
+        :return: CatGridPositionMode
         """
 
         return self.sectioning_setting_att.GridPositionMode
 
     @grid_position_mode.setter
-    def grid_position_mode(self, value: int):
+    def grid_position_mode(self, value: CatGridPositionMode):
         """
-        :param int value: enum cat_grid_position_mode
+        :param CatGridPositionMode value:
         """
 
         self.sectioning_setting_att.GridPositionMode = value
 
     @property
-    def grid_style(self) -> int:
+    def grid_style(self) -> CatSectionGridStyle:
         """
         .. note::
             :class: toggle
@@ -206,16 +205,15 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_grid_style
-        :rtype: int
+        :return: CatSectionGridStyle
         """
 
         return self.sectioning_setting_att.GridStyle
 
     @grid_style.setter
-    def grid_style(self, value: int):
+    def grid_style(self, value: CatSectionGridStyle):
         """
-        :param int value: enum cat_section_grid_style
+        :param CatSectionGridStyle value:
         """
 
         self.sectioning_setting_att.GridStyle = value
@@ -299,7 +297,7 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.HideResult = value
 
     @property
-    def plane_normal(self) -> int:
+    def plane_normal(self) -> CatSectionPlaneNormal:
         """
         .. note::
             :class: toggle
@@ -311,22 +309,21 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_plane_normal
-        :rtype: int
+        :return: CatSectionPlaneNormal
         """
 
         return self.sectioning_setting_att.PlaneNormal
 
     @plane_normal.setter
-    def plane_normal(self, value: int):
+    def plane_normal(self, value: CatSectionPlaneNormal):
         """
-        :param int value: enum cat_section_plane_normal
+        :param CatSectionPlaneNormal value:
         """
 
         self.sectioning_setting_att.PlaneNormal = value
 
     @property
-    def plane_origin(self) -> int:
+    def plane_origin(self) -> CatSectionPlaneOrigin:
         """
         .. note::
             :class: toggle
@@ -338,16 +335,15 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_plane_origin
-        :rtype: int
+        :return: CatSectionPlaneOrigin
         """
 
         return self.sectioning_setting_att.PlaneOrigin
 
     @plane_origin.setter
-    def plane_origin(self, value: int):
+    def plane_origin(self, value: CatSectionPlaneOrigin):
         """
-        :param int value: enum cat_section_plane_origin
+        :param CatSectionPlaneOrigin value:
         """
 
         self.sectioning_setting_att.PlaneOrigin = value
@@ -578,7 +574,7 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.WindowDefaultWidth = value
 
     @property
-    def window_open_mode(self) -> int:
+    def window_open_mode(self) -> CatSecWindowOpenMode:
         """
         .. note::
             :class: toggle
@@ -602,8 +598,7 @@ class SectioningSettingAtt(SettingController):
                 |         S_OK Successfully retieved the window open mode E_FAIL Failed to
                 |         retrieved the window open mode
 
-        :return: enum cat_sec_window_open_mode
-        :rtype: int
+        :return: CatSecWindowOpenMode
         """
 
         return self.sectioning_setting_att.WindowOpenMode

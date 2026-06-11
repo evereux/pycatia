@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatStrCutbackType
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.parameter import Parameter
 from pycatia.structure_interfaces.str_cutback import StrCutback
@@ -265,7 +265,7 @@ class StrMember(StrObject):
 
         self.str_member.SurfaceReference = value.com_object
 
-    def create_cutback(self, i_member: 'StrMember', i_cutback: int, i_offset: float) -> StrCutback:
+    def create_cutback(self, i_member: 'StrMember', i_cutback: CatStrCutbackType, i_offset: float) -> StrCutback:
         """
         .. note::
             :class: toggle
@@ -296,7 +296,7 @@ class StrMember(StrObject):
                 |          Set cutback = Member_1.CreateCutback(Member_2, catStrWeldedType, 0.05)
 
         :param StrMember i_member:
-        :param int i_cutback: enum cat_str_cutback_type
+        :param CatStrCutbackType i_cutback:
         :param float i_offset:
         :rtype: StrCutback
         """

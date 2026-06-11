@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatDistanceMeasureType, CatDistanceComputationType
 from pycatia.navigator_interfaces.annotated_views import AnnotatedViews
 from pycatia.navigator_interfaces.group import Group
 from pycatia.navigator_interfaces.marker_3Ds import Marker3Ds
@@ -105,7 +105,7 @@ class Distance(AnyObject):
         return AnnotatedViews(self.distance.AnnotatedViews)
 
     @property
-    def computation_type(self) -> int:
+    def computation_type(self) -> CatDistanceComputationType:
         """
         .. note::
             :class: toggle
@@ -128,7 +128,7 @@ class Distance(AnyObject):
                 |
                 |                 NewDistance.ComputationType = CatDistanceComputationTypeInsideOne
 
-        :rtype: int
+        :rtype: CatDistanceComputationType
         """
 
         return self.distance.ComputationType
@@ -297,7 +297,7 @@ class Distance(AnyObject):
         self.distance.MaximumDistance = value
 
     @property
-    def measure_type(self) -> int:
+    def measure_type(self) -> CatDistanceMeasureType:
         """
         .. note::
             :class: toggle
@@ -321,8 +321,7 @@ class Distance(AnyObject):
                 |
                 |             NewDistance.MeasureType = CatDistanceMeasureTypeMinimum
 
-        :return: enum cat_distance_measure_type
-        :rtype: int
+        :return: CatDistanceMeasureType
         """
 
         return self.distance.MeasureType

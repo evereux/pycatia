@@ -18,10 +18,11 @@
 
 import os
 
+from pycatia.enumeration.enums import *
+
 from pycatia.base_interfaces.base_application import catia_application as catia
 from pycatia.base_interfaces.context import CATIADocHandler
 from .version import version
-from pycatia.enumeration.enums import *
 
 __author__ = 'Paul Bourne'
 __author_email = 'evereux@gmail.com'

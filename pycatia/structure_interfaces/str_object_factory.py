@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatStrMaterialOrientation, CatStrMemberExtremity, CatStrPlaneMode
 from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.reference import Reference
 from pycatia.structure_interfaces.str_foundation import StrFoundation
@@ -921,8 +922,8 @@ class StrObjectFactory(AnyObject):
             i_def_extr1: AnyObject,
             i_def_extr2: AnyObject,
             i_direction: Reference,
-            i_mode: int,
-            i_orientation: int,
+            i_mode: CatStrPlaneMode,
+            i_orientation: CatStrMaterialOrientation,
             i_length: float,
             i_type: str) -> StrMember:
         """
@@ -977,8 +978,8 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param Reference i_direction:
-        :param int i_mode: enum cat_str_plane_mode
-        :param int i_orientation: enum cat_str_material_orientation
+        :param CatStrPlaneMode i_mode:
+        :param CatStrPlaneMode i_orientation:
         :param float i_length:
         :param str i_type:
         :rtype: StrMember
@@ -1065,7 +1066,7 @@ class StrObjectFactory(AnyObject):
             i_def_extr1: AnyObject,
             i_def_extr2: AnyObject,
             i_direction: Reference,
-            i_mode: int,
+            i_mode: CatStrPlaneMode,
             i_type: str) -> StrMember:
         """
         .. note::
@@ -1114,7 +1115,7 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param Reference i_direction:
-        :param int i_mode: enum cat_str_plane_mode
+        :param CatStrPlaneMode i_mode:
         :param str i_type:
         :rtype: StrMember
         """
@@ -1204,7 +1205,7 @@ class StrObjectFactory(AnyObject):
             i_def_extr1: AnyObject,
             i_def_extr2: AnyObject,
             i_plane: tuple,
-            i_plane_mode: int,
+            i_plane_mode: CatStrPlaneMode,
             i_type: str) -> StrMember:
         """
         .. note::
@@ -1252,7 +1253,7 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param tuple i_plane:
-        :param int i_plane_mode: enum cat_str_plane_mode
+        :param CatStrPlaneMode i_plane_mode:
         :param str i_type:
         :rtype: StrMember
         """
@@ -1415,7 +1416,7 @@ class StrObjectFactory(AnyObject):
             self,
             i_support: Reference,
             i_thickness: float,
-            i_orientation: int,
+            i_orientation: CatStrMaterialOrientation,
             i_contour: tuple,
             i_offset: float,
             i_type: str) -> StrPlate:
@@ -1453,7 +1454,7 @@ class StrObjectFactory(AnyObject):
 
         :param Reference i_support:
         :param float i_thickness:
-        :param int i_orientation: enum cat_str_material_orientation
+        :param CatStrMaterialOrientation i_orientation:
         :param tuple i_contour:
         :param float i_offset:
         :param str i_type:
@@ -1473,7 +1474,7 @@ class StrObjectFactory(AnyObject):
     def add_plate_on_surface(
             self,
             i_thickness: float,
-            i_orientation: int,
+            i_orientation: CatStrMaterialOrientation,
             i_surface: Reference,
             i_offset: float,
             i_type: str) -> StrPlate:
@@ -1507,7 +1508,7 @@ class StrObjectFactory(AnyObject):
                 |             added as an attribute on the plate.
 
         :param float i_thickness:
-        :param int i_orientation: enum cat_str_material_orientation
+        :param CatStrMaterialOrientation i_orientation:
         :param Reference i_surface:
         :param float i_offset:
         :param str i_type:
@@ -1526,11 +1527,11 @@ class StrObjectFactory(AnyObject):
     def add_rectangular_end_plate(
             self,
             i_member: StrMember,
-            i_side: int,
+            i_side: CatStrMemberExtremity,
             i_thickness: float,
             i_height: float,
             i_width: float,
-            i_orientation: int,
+            i_orientation: CatStrMaterialOrientation,
             i_type: str) -> StrPlate:
         """
         .. note::
@@ -1568,11 +1569,11 @@ class StrObjectFactory(AnyObject):
                 |             added as an attribute on the plate.
 
         :param StrMember i_member:
-        :param int i_side: enum cat_str_member_extremity
+        :param CatStrMemberExtremity
         :param float i_thickness:
         :param float i_height:
         :param float i_width:
-        :param int i_orientation: enum cat_str_material_orientation
+        :param CatStrMaterialOrientation i_orientation:
         :param str i_type:
         :rtype: StrPlate
         """

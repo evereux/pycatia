@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatScriptLibraryType
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -202,7 +202,7 @@ class SystemService(AnyObject):
     def execute_script(
             self,
             i_library_name: str,
-            i_type: int,
+            i_type: CatScriptLibraryType,
             i_program_name: str,
             i_function_name: str,
             i_parameters: list
@@ -245,7 +245,7 @@ class SystemService(AnyObject):
                 |          params
 
         :param str i_library_name:
-        :param int i_type: enum cat_script_library_type
+        :param int i_type: CatScriptLibraryType
         :param str i_program_name:
         :param str i_function_name:
         :param tuple i_parameters:

@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatClashExportType, CatClashInterferenceType, CatClashComputationType
 from pycatia.navigator_interfaces.annotated_views import AnnotatedViews
 from pycatia.navigator_interfaces.group import Group
 from pycatia.navigator_interfaces.marker_3Ds import Marker3Ds
@@ -104,7 +105,7 @@ class Clash(AnyObject):
         self.clash.Clearance = value
 
     @property
-    def computation_type(self) -> int:
+    def computation_type(self) -> CatClashComputationType:
         """
         .. note::
             :class: toggle
@@ -127,16 +128,15 @@ class Clash(AnyObject):
                 |
                 |            NewClash.ComputationType = catClashComputationTypeBetweenAll
 
-        :return: enum cat_clash_computation_type
-        :rtype: int
+        :return: CatClashComputationType
         """
 
         return self.clash.ComputationType
 
     @computation_type.setter
-    def computation_type(self, value: int):
+    def computation_type(self, value: CatClashComputationType):
         """
-        :param int value: enum cat_clash_computation_type
+        :param CatClashComputationType value:
         """
 
         self.clash.ComputationType = value
@@ -204,7 +204,7 @@ class Clash(AnyObject):
         self.clash.FirstGroup = group.com_object
 
     @property
-    def interference_type(self) -> int:
+    def interference_type(self) -> CatClashInterferenceType:
         """
         .. note::
             :class: toggle
@@ -228,16 +228,15 @@ class Clash(AnyObject):
                 |
                 |                 NewClash.InterferenceType = CatClashInterferenceTypeContact
 
-        :return: enum cat_clash_interference_type
-        :rtype: int
+        :return: CatClashInterferenceType
         """
 
         return self.clash.InterferenceType
 
     @interference_type.setter
-    def interference_type(self, value: int):
+    def interference_type(self, value: CatClashInterferenceType):
         """
-        :param int value:
+        :param CatClashInterferenceType value:
         """
 
         self.clash.InterferenceType = value
@@ -325,7 +324,7 @@ class Clash(AnyObject):
         """
         return self.clash.Compute()
 
-    def export(self, i_type: int, i_path: str) -> None:
+    def export(self, i_type: CatClashExportType, i_path: str) -> None:
         """
         .. note::
             :class: toggle
@@ -352,7 +351,7 @@ class Clash(AnyObject):
                 |             NewClash.Export CatClashExportTypeXMLResultOnly,
                 |             "c:\\tmp\\sample.xml"
 
-        :param int i_type: enum cat_clash_export_type
+        :param CatClashExportType i_type:
         :param str i_path:
         :rtype: None
         """

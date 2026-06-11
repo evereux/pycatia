@@ -11,6 +11,7 @@
 import inspect
 from typing import TYPE_CHECKING
 
+from pycatia import CatFilletVariation, CatFilletBitangencyType
 from pycatia.in_interfaces.reference import Reference
 from pycatia.in_interfaces.references import References
 from pycatia.knowledge_interfaces.length import Length
@@ -49,7 +50,7 @@ class VarRadEdgeFillet(EdgeFillet):
         self.var_rad_edge_fillet = com_object
 
     @property
-    def bitangency_type(self) -> int:
+    def bitangency_type(self) -> CatFilletBitangencyType:
         """
         .. note::
             :class: toggle
@@ -64,8 +65,7 @@ class VarRadEdgeFillet(EdgeFillet):
                 |         iType
                 |             The type used to perform the fillet : catSphereBitangencyType or catCircleBitangencyType
 
-        :return: enum cat_fillet_bitangency_type
-        :rtype: int
+        :return: CatFilletBitangencyType
         """
 
         return self.var_rad_edge_fillet.BitangencyType
@@ -131,7 +131,7 @@ class VarRadEdgeFillet(EdgeFillet):
         self.var_rad_edge_fillet.FilletSpine = value.com_object
 
     @property
-    def fillet_variation(self) -> int:
+    def fillet_variation(self) -> CatFilletVariation:
         """
         .. note::
             :class: toggle
@@ -150,16 +150,15 @@ class VarRadEdgeFillet(EdgeFillet):
                 |          mode = firstVarEdgeFillet.FilletVariation
                 |          firstVarEdgeFillet.FilletVariation = CATLinearFilletVariation
 
-        :return: enum cat_fillet_variation
-        :rtype: int
+        :return: CatFilletVariation
         """
 
         return self.var_rad_edge_fillet.FilletVariation
 
     @fillet_variation.setter
-    def fillet_variation(self, value: int):
+    def fillet_variation(self, value: CatFilletVariation):
         """
-        :param int value: enum cat_fillet_variation
+        :param CatFilletVariation value:
         """
 
         self.var_rad_edge_fillet.FilletVariation = value

@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatElectronicType
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -34,7 +34,7 @@ class PCBObject(AnyObject):
         self.pcb_object = com_object
 
     @property
-    def electronic_type(self) -> int:
+    def electronic_type(self) -> CatElectronicType:
         """
         .. note::
             :class: toggle
@@ -56,8 +56,7 @@ class PCBObject(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: enum cat_electronic_type
-        :rtype: int
+        :return: CatElectronicType
         """
 
         return self.pcb_object.ElectronicType
