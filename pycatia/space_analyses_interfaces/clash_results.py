@@ -42,7 +42,7 @@ class ClashResults(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=ClashResult)
         self.clash_results = com_object
 
     def add_from_xml(self, i_path: str, i_type: CatClashImportType) -> ClashResult:

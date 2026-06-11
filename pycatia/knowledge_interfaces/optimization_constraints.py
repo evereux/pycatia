@@ -34,7 +34,7 @@ class OptimizationConstraints(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OptimizationConstraint)
         self.optimization_constraints = com_object
 
     def add_constraint(self, constraint_expression: str) -> OptimizationConstraint:
