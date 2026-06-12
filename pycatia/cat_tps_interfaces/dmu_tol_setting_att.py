@@ -12,7 +12,7 @@
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
-class DmuTolSettingAtt(SettingController):
+class DMUTolSettingAtt(SettingController):
     """
         .. note::
             :class: toggle

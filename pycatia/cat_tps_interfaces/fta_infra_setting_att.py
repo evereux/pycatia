@@ -12,7 +12,7 @@ from pycatia import CATFTALeaderAssociativity
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
-class FtaInfraSettingAtt(SettingController):
+class FTAInfraSettingAtt(SettingController):
     """
         .. note::
             :class: toggle
@@ -317,7 +317,7 @@ class FtaInfraSettingAtt(SettingController):
         self.fta_infra_setting_att.LeaderAssociativity = value
 
     @property
-    def man_ref_siz(self) -> float:
+    def man_ref_size(self) -> float:
         """
         .. note::
             :class: toggle
@@ -336,8 +336,8 @@ class FtaInfraSettingAtt(SettingController):
 
         return self.fta_infra_setting_att.ManRefSiz
 
-    @man_ref_siz.setter
-    def man_ref_siz(self, value: float):
+    @man_ref_size.setter
+    def man_ref_size(self, value: float):
         """
         :param float value:
         """
