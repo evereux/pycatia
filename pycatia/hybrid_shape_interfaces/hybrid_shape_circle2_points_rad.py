@@ -281,7 +281,7 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IsGeodesic() As boolean
                 | 
                 |     Queries whether the circle is geodesic or not.
@@ -300,7 +300,7 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGeometryOnSupport()
                 | 
                 |     Sets GeometryOnSupport of circle.
@@ -315,7 +315,7 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub UnsetGeometryOnSupport()
                 | 
                 |     Inactivates GeometryOnSupport of circle.

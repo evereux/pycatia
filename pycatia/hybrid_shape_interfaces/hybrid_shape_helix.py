@@ -17,7 +17,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeHelix(HybridShape):
-
     """
         .. note::
             :class: toggle
@@ -396,7 +395,7 @@ class HybridShapeHelix(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetHeight(double iHeight)
                 | 
                 |     Sets the helix height.
@@ -416,7 +415,7 @@ class HybridShapeHelix(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPitch(double iPitch)
                 | 
                 |     Sets the helix pitch.
@@ -436,7 +435,7 @@ class HybridShapeHelix(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPitch2(double iPitch2)
                 | 
                 |     Changes the Helix pitch2 .
@@ -456,7 +455,7 @@ class HybridShapeHelix(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRevolutionNumber(double iNbRevol)
                 | 
                 |     Changes the Revolution Numbers.
@@ -476,7 +475,7 @@ class HybridShapeHelix(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetStartingAngle(double iStartingAngle)
                 | 
                 |     Sets the helix starting angle.
@@ -496,7 +495,7 @@ class HybridShapeHelix(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTaperAngle(double iTaperAngle)
                 | 
                 |     Sets the helix taper angle.
@@ -512,4 +511,4 @@ class HybridShapeHelix(HybridShape):
         return self.hybrid_shape_helix.SetTaperAngle(i_taper_angle)
 
     def __repr__(self):
-        return f'HybridShapeHelix(name="{ self.name }")'
+        return f'HybridShapeHelix(name="{self.name}")'

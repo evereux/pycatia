@@ -42,7 +42,7 @@ class Trim(BooleanShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFaceToKeep(Reference iFaceToKeep)
                 | 
                 |     Adds a new face to be kept (if face is not divided by
@@ -87,7 +87,7 @@ class Trim(BooleanShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFaceToKeep2(Reference iFaceToKeep,
                 | Reference iFaceAdjacentForKeep)
                 | 
@@ -138,7 +138,7 @@ class Trim(BooleanShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFaceToRemove(Reference iFaceToRemove)
                 | 
                 |     Adds a new face to be Removed (if face not divided by
@@ -183,7 +183,7 @@ class Trim(BooleanShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFaceToRemove2(Reference iFaceToRemove,
                 | Reference iFaceAdjacentForRemove)
                 | 
@@ -234,7 +234,7 @@ class Trim(BooleanShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub WithdrawFaceToKeep(Reference iFaceToWithdraw)
                 | 
                 |     Withdraws an existing Kept face (if face is not divided by operation)
@@ -279,7 +279,7 @@ class Trim(BooleanShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub WithdrawFaceToKeep2(Reference iFaceToWithdraw,
                 | Reference iFaceAdjacentForKeep)
                 | 
@@ -330,7 +330,7 @@ class Trim(BooleanShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub WithdrawFaceToRemove(Reference iFaceToWithdraw)
                 | 
                 |     Withdraws an existing Removed face (if face not divided by
@@ -375,7 +375,7 @@ class Trim(BooleanShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub WithdrawFaceToRemove2(Reference iFaceToWithdraw,
                 | Reference iFaceAdjacentForRemove)
                 | 

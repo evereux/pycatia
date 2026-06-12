@@ -70,7 +70,7 @@ class HybridBodies(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As HybridBody
                 | 
                 |     Returns a body using its index or its name from the Bodies

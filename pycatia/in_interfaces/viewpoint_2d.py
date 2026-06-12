@@ -79,7 +79,7 @@ class Viewpoint2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Gets the coordinates of the origin of the viewpoint.
@@ -116,7 +116,7 @@ class Viewpoint2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Sets the coordinates of the origin of the viewpoint.

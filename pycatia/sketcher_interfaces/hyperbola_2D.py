@@ -84,7 +84,7 @@ class Hyperbola2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetAxis(CATSafeArrayVariant oAxis)
                 | 
                 |     Returns the axis vector direction of the hyperbola in 2D
@@ -117,7 +117,7 @@ class Hyperbola2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCenter(CATSafeArrayVariant oCenter)
                 | 
                 |     Returns the center point of the hyperbola in 2D space
@@ -152,7 +152,7 @@ class Hyperbola2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetData(double iCenterX,
                 | double iCenterY,
                 | double iAxisX,

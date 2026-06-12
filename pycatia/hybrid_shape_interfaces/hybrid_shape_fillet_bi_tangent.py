@@ -471,7 +471,7 @@ class HybridShapeFilletBiTangent(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AppendNewFaceToKeep(Reference iFace)
                 | 
                 |     Append a new face to keep.
@@ -505,7 +505,7 @@ class HybridShapeFilletBiTangent(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetFaceToKeep(long iPos) As Reference
                 | 
                 |     Gets the face to keep for fillet operation.
@@ -527,7 +527,7 @@ class HybridShapeFilletBiTangent(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertFirstOrientation()
                 | 
                 |     Inverts first orientation used to specify fillet center position.
@@ -541,7 +541,7 @@ class HybridShapeFilletBiTangent(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertSecondOrientation()
                 | 
                 |     Inverts second orientation used to specify fillet center position.
@@ -555,7 +555,7 @@ class HybridShapeFilletBiTangent(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllFacesToKeep()
                 | 
                 |     Remove all the faces to keep.
@@ -569,7 +569,7 @@ class HybridShapeFilletBiTangent(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveFaceToKeep(Reference iFace)
                 | 
                 |     Remove a face to keep.

@@ -177,7 +177,7 @@ class HybridShapeCircle(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetAxis(long iPosition,
                 | Reference oAxis)
                 | 
@@ -225,7 +225,7 @@ class HybridShapeCircle(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCenter(double oCenterX,
                 | double oCenterY,
                 | double oCenterZ)
@@ -250,7 +250,7 @@ class HybridShapeCircle(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFreeCenter(CATSafeArrayVariant ioCenter)
                 | 
                 |     Returns the circle center.
@@ -295,7 +295,7 @@ class HybridShapeCircle(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFreeRadius(double oRadius)
                 | 
                 |     Returns the circle radius.
@@ -321,7 +321,7 @@ class HybridShapeCircle(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLimitation() As long
                 | 
                 |     Gets the limitation type for the circle.
@@ -340,7 +340,7 @@ class HybridShapeCircle(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLimitation(long iLimitation)
                 | 
                 |     Set the circle limitation type.

@@ -66,7 +66,7 @@ class ClashResult(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Export(CatClashExportType iType,
                 | CATBSTR iPath)
                 | 

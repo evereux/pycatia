@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class LightSource(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -44,7 +43,7 @@ class LightSource(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
                 |     Returns the lighting direction as an array of 3 variants. This value is
@@ -82,7 +81,7 @@ class LightSource(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutDirection(CATSafeArrayVariant oDirection)
                 | 
                 |     Defines the lighting direction as an array of 3 variants. This value can be
@@ -115,4 +114,4 @@ class LightSource(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'LightSource(name="{ self.name }")'
+        return f'LightSource(name="{self.name}")'

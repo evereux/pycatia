@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class SelectionSets(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -40,7 +39,7 @@ class SelectionSets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddCSOIntoSelectionSet(CATBSTR iSelSetName)
                 | 
                 |     Adds CSO's content in a Selection Set.
@@ -67,7 +66,7 @@ class SelectionSets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CreateSelectionSet(CATBSTR iSelSetName)
                 | 
                 |     Creates a new Selection Set.
@@ -94,7 +93,7 @@ class SelectionSets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub DeleteSelectionSet(CATBSTR iSelSetName)
                 | 
                 |     Deletes a Selection Set.
@@ -122,7 +121,7 @@ class SelectionSets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetListOfSelectionSet(CATSafeArrayVariant
                 | oListOfSelectionSet)
                 | 
@@ -164,7 +163,7 @@ class SelectionSets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutSelectionSetIntoCSO(CATBSTR iSelSetName)
                 | 
                 |     Puts Selection Set's content in the CSO.
@@ -192,7 +191,7 @@ class SelectionSets(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RenameSelectionSet(CATBSTR iOldSelSetName,
                 | CATBSTR iNewSelSetName)
                 | 
@@ -218,4 +217,4 @@ class SelectionSets(AnyObject):
         return self.selection_sets.RenameSelectionSet(i_old_sel_set_name, i_new_sel_set_name)
 
     def __repr__(self):
-        return f'SelectionSets(name="{ self.name }")'
+        return f'SelectionSets(name="{self.name}")'

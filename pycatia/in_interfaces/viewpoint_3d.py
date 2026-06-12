@@ -184,7 +184,7 @@ class ViewPoint3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant origin)
                 | 
                 |     Retrieves the coordinates of the origin of the viewpoint. These coordinates
@@ -216,7 +216,7 @@ class ViewPoint3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSightDirection(CATSafeArrayVariant oSight)
                 | 
                 |     Gets the components of the sight direction of the viewpoint. The sight
@@ -249,7 +249,7 @@ class ViewPoint3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetUpDirection(CATSafeArrayVariant oUp)
                 | 
                 |     Gets the components of the up direction of the viewpoint.
@@ -281,7 +281,7 @@ class ViewPoint3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutOrigin(CATSafeArrayVariant origin)
                 | 
                 |     Sets the coordinates of the origin of the viewpoint. These coordinates are
@@ -318,7 +318,7 @@ class ViewPoint3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutSightDirection(CATSafeArrayVariant oSight)
                 | 
                 |     Sets the components of the sight direction of the viewpoint. The sight
@@ -357,7 +357,7 @@ class ViewPoint3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutUpDirection(CATSafeArrayVariant oUp)
                 | 
                 |     Sets the components of the up direction of the viewpoint.

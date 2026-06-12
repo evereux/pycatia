@@ -149,7 +149,7 @@ class SystemConfiguration(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetProductNames(CATSafeArrayVariant ioProductNames)
                 | 
                 |     Returns the product names of all the licenses currently known to the
@@ -197,7 +197,7 @@ class SystemConfiguration(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IsProductAuthorized(CATBSTR iProductName) As boolean
                 | 
                 |     Returns True if the specified product is authorized, False

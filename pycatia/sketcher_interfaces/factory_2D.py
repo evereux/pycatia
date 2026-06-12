@@ -51,7 +51,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateCircle(double iCenterX,
                 | double iCenterY,
                 | double iRadius,
@@ -92,7 +92,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateClosedCircle(double iCenterX,
                 | double iCenterY,
                 | double iRadius) As Circle2D
@@ -121,7 +121,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateClosedEllipse(double iCenterX,
                 | double iCenterY,
                 | double iMajorX,
@@ -163,7 +163,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateControlPoint(double iX,
                 | double iY) As ControlPoint2D
                 | 
@@ -189,7 +189,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateEllipse(double iCenterX,
                 | double iCenterY,
                 | double iMajorX,
@@ -245,7 +245,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateHyperbola(double iCenterX,
                 | double iCenterY,
                 | double iAxisX,
@@ -286,7 +286,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateIntersection(Reference iGeometry) As Geometry2D
                 | 
                 |     Creates and returns the intersection of an object with the
@@ -307,7 +307,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateIntersections(Reference iGeometry) As
                 | GeometricElements
                 | 
@@ -329,7 +329,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateLine(double iX1,
                 | double iY1,
                 | double iX2,
@@ -361,7 +361,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateLineFromVector(double iX1,
                 | double iY1,
                 | double iUX,
@@ -394,7 +394,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateParabola(double iCenterX,
                 | double iCenterY,
                 | double iAxisX,
@@ -430,7 +430,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreatePoint(double iX,
                 | double iY) As Point2D
                 | 
@@ -454,7 +454,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateProjection(Reference iGeometry) As Geometry2D
                 | 
                 |     Creates and returns the projection of an object on the
@@ -475,7 +475,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateProjections(Reference iGeometry) As
                 | GeometricElements
                 | 
@@ -497,7 +497,7 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CreateSpline(CATSafeArrayVariant iPoles) As Spline2D
                 | 
                 |     Creates and returns a 2D b-spline.

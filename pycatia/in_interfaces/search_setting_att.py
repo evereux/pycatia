@@ -209,7 +209,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDeepSearchActivationInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -228,7 +228,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDefaultPowerInputContextPriorityInfo(CATBSTR
                 | oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -248,7 +248,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDefaultPowerInputContextScopeInfo(CATBSTR
                 | oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -268,7 +268,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDefaultPowerInputPrefixInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -287,7 +287,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMaxDisplayedResultsInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -306,7 +306,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMaxPreHighlightedElementsInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -325,7 +325,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDeepSearchActivationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Deep Search Activation setting
@@ -357,7 +357,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDefaultPowerInputContextPriorityLock(boolean
                 | iLocked)
                 | 
@@ -390,7 +390,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDefaultPowerInputContextScopeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Default Power Input Context Scope setting
@@ -422,7 +422,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDefaultPowerInputPrefixLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Default Power Input Prefix setting
@@ -454,7 +454,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMaxDisplayedResultsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Max Displayed Results setting
@@ -486,7 +486,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMaxPreHighlightedElementsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Max Displayed Results setting

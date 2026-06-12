@@ -14,7 +14,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class UserPattern(Pattern):
-
     """
         .. note::
             :class: toggle
@@ -98,7 +97,7 @@ class UserPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFeatureToLocatePositions(AnyObject
                 | iFeatureToLocatePositions)
                 | 
@@ -121,4 +120,4 @@ class UserPattern(Pattern):
         return self.user_pattern.AddFeatureToLocatePositions(i_feature_to_locate_positions.com_object)
 
     def __repr__(self):
-        return f'UserPattern(name="{ self.name }")'
+        return f'UserPattern(name="{self.name}")'

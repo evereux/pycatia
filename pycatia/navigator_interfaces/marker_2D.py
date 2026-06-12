@@ -333,7 +333,7 @@ class Marker2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPositions(CATSafeArrayVariant oCoordinates)
                 | 
                 |     Retrieves the coordinates of the positions of the
@@ -406,7 +406,7 @@ class Marker2D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPositions(CATSafeArrayVariant iCoordinates)
                 | 
                 |     Sets the coordinates of the positions of the Marker2D.

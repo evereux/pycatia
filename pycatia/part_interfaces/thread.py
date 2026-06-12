@@ -323,7 +323,7 @@ class Thread(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CreateStandardThreadDesignTable(CatThreadStandard
                 | iStandardType)
                 | 
@@ -353,7 +353,7 @@ class Thread(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CreateUserStandardDesignTable(CATBSTR iStandardName,
                 | CATBSTR iPath)
                 | 
@@ -395,7 +395,7 @@ class Thread(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReverseDirection()
                 | 
                 |     Swap the direction of the thread or the tap.
@@ -409,7 +409,7 @@ class Thread(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetExplicitPolarity(CatThreadPolarity iThreadPolarity)
                 | 
                 |     Sets the thread polarity explicit. Thread polarity is no more evaluated

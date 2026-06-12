@@ -43,7 +43,7 @@ class FixTogethers(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add() As FixTogether
                 | 
                 |     Creates a new FixTogether and adds it to the FixTogethers
@@ -66,7 +66,7 @@ class FixTogethers(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As FixTogether
                 | 
                 |     Returns a FixTogether using its index or its name from the FixTogethers
@@ -104,7 +104,7 @@ class FixTogethers(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a FixTogether from the FixTogethers collection.

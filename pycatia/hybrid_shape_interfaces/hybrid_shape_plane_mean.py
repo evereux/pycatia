@@ -52,7 +52,7 @@ class HybridShapePlaneMean(Plane):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddPoint(Reference iPassingPoint)
                 | 
                 |     Adds a point to the mean plane.
@@ -91,7 +91,7 @@ class HybridShapePlaneMean(Plane):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPoint(long iRank,
                 | Reference oPassingPoint)
                 | 
@@ -130,7 +130,7 @@ class HybridShapePlaneMean(Plane):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPos(Reference iPoint) As long
                 | 
                 |     Gets the position of an element in the list.
@@ -152,7 +152,7 @@ class HybridShapePlaneMean(Plane):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSize() As long
                 | 
                 |     Gets the size of the list (number of points).
@@ -171,7 +171,7 @@ class HybridShapePlaneMean(Plane):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAll()
                 | 
                 |     Removes all elements in the list of points.
@@ -185,7 +185,7 @@ class HybridShapePlaneMean(Plane):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveElement(long iRank)
                 | 
                 |     Removes a point in the list.
@@ -205,7 +205,7 @@ class HybridShapePlaneMean(Plane):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReplacePointAtPosition(Reference iPoint,
                 | long iPos)
                 | 

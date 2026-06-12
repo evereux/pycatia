@@ -44,7 +44,7 @@ class Sketches(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add(Reference iPlane) As Sketch
                 | 
                 |     Creates a new sketch and adds it to the sketch collection. The sketch
@@ -78,7 +78,7 @@ class Sketches(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetBoundary(CATBSTR iLabel) As Boundary
                 | 
                 |     Returns a boundary using its label.
@@ -102,7 +102,7 @@ class Sketches(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As Sketch
                 | 
                 |     Returns a sketch using its index or its name from the Sketches

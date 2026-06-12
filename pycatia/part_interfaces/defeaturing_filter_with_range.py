@@ -15,7 +15,6 @@ from pycatia.part_interfaces.defeaturing_filter import DefeaturingFilter
 
 
 class DefeaturingFilterWithRange(DefeaturingFilter):
-
     """
         .. note::
             :class: toggle
@@ -44,7 +43,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func getMaximumActivity(CATBSTR iRangeId) As boolean
 
         :param str i_range_id:
@@ -57,7 +56,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func getMaximumAngle(CATBSTR iRangeId) As Angle
 
         :param str i_range_id:
@@ -70,7 +69,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func getMaximumLength(CATBSTR iRangeId) As Length
 
         :param str i_range_id:
@@ -83,7 +82,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func getMaximumValue(CATBSTR iRangeId) As double
 
         :param str i_range_id:
@@ -96,7 +95,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func getMinimumActivity(CATBSTR iRangeId) As boolean
                 | 
                 |     Returns the minimum or maximum value activity of the filter for the given
@@ -133,7 +132,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func getMinimumAngle(CATBSTR iRangeId) As Angle
 
         :param str i_range_id:
@@ -146,7 +145,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func getMinimumLength(CATBSTR iRangeId) As Length
 
         :param str i_range_id:
@@ -159,7 +158,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func getMinimumValue(CATBSTR iRangeId) As double
                 | 
                 |     Returns the minimum or maximum value of the filter for the given range id,
@@ -211,7 +210,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub setMaximumActivity(CATBSTR iRangeId,
                 | boolean iValue)
 
@@ -241,7 +240,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub setMaximumValue(CATBSTR iRangeId,
                 | double iValue)
 
@@ -256,7 +255,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub setMinimumActivity(CATBSTR iRangeId,
                 | boolean iValue)
                 | 
@@ -312,7 +311,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub setMinimumValue(CATBSTR iRangeId,
                 | double iValue)
                 | 
@@ -352,4 +351,4 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         return self.defeaturing_filter_with_range.setMinimumValue(i_range_id, i_value)
 
     def __repr__(self):
-        return f'DefeaturingFilterWithRange(name="{ self.name }")'
+        return f'DefeaturingFilterWithRange(name="{self.name}")'

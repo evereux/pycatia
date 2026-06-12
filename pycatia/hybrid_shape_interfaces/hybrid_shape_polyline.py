@@ -116,7 +116,7 @@ class HybridShapePolyline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetElement(long iPosition,
                 | Reference oElement,
                 | Length oRadius)
@@ -169,7 +169,7 @@ class HybridShapePolyline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InsertElement(Reference iPoint,
                 | long iPosition)
                 | 
@@ -215,7 +215,7 @@ class HybridShapePolyline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveElement(long iPosition)
                 | 
                 |     Removes the element at a specified position in the
@@ -243,7 +243,7 @@ class HybridShapePolyline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReplaceElement(Reference iPoint,
                 | long iPosition)
                 | 
@@ -290,7 +290,7 @@ class HybridShapePolyline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRadius(long iPosition,
                 | double iRadius)
                 | 

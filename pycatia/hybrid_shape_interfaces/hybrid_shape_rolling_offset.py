@@ -110,7 +110,7 @@ class HybridShapeRollingOffset(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func getCurve(long iPos) As Reference
                 | 
                 |     Role: To get_Curve on the object.
@@ -143,7 +143,7 @@ class HybridShapeRollingOffset(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func getNbCurve() As long
                 | 
                 |     Role: To get_NbCurve on the object.
@@ -170,7 +170,7 @@ class HybridShapeRollingOffset(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func getOffset() As double
                 | 
                 |     Role: To getOffset on the object.
@@ -197,7 +197,7 @@ class HybridShapeRollingOffset(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub putCurve(Reference iCurve)
                 | 
                 |     Role: To add or remove a curve on the object.
@@ -239,7 +239,7 @@ class HybridShapeRollingOffset(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub putOffset(double iOffset)
                 | 
                 |     Role: To put_Offset on the object.

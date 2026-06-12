@@ -46,7 +46,7 @@ class Clashes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add() As Clash
                 | 
                 |     Creates a Clash object which takes all products into account and adds it to
@@ -71,7 +71,7 @@ class Clashes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddFromSel() As Clash
                 | 
                 |     Creates a Clash object which takes all products in the selection into
@@ -96,7 +96,7 @@ class Clashes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As Clash
                 | 
                 |     Returns a Clash object using its index or its name from the Clashes
@@ -133,7 +133,7 @@ class Clashes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a Clash object from the Clashes collection.

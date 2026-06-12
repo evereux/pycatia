@@ -45,7 +45,7 @@ class SettingControllers(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATBSTR iIndex) As SettingController
                 | 
                 |     Returns a setting controller using its name from the setting controllers

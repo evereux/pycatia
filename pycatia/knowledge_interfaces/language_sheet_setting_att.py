@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class LanguageSheetSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -207,7 +206,7 @@ class LanguageSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetKnowledgeBuildPathDirectoryInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -227,7 +226,7 @@ class LanguageSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetListOfPackagesToLoadInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -246,7 +245,7 @@ class LanguageSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLoadAllPackagesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -265,7 +264,7 @@ class LanguageSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLoadExtendedLanguageLibInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -284,7 +283,7 @@ class LanguageSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetReferenceDirectoryForTypesInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -304,7 +303,7 @@ class LanguageSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetKnowledgeBuildPathDirectoryLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CATKnowledgeBuildPath setting
@@ -321,7 +320,7 @@ class LanguageSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetListOfPackagesToLoadLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ListOfPackagesToLoad setting
@@ -338,7 +337,7 @@ class LanguageSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLoadAllPackagesLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the LoadAllPackages setting parameter.
@@ -354,7 +353,7 @@ class LanguageSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLoadExtendedLanguageLibLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the LoadExtendedLanguageLib setting
@@ -371,7 +370,7 @@ class LanguageSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetReferenceDirectoryForTypesLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ReferenceDirectoryForTypes setting

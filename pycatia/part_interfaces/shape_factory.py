@@ -95,7 +95,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewAdd(Body iBodyToAdd) As Add
                 | 
                 |     Creates and returns a new add operation within the current
@@ -119,7 +119,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewAffinity2(double XRatio,
                 | double YRatio,
                 | double ZRatio) As AnyObject
@@ -150,7 +150,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewAssemble(Body iBodyToAssemble) As Assemble
                 | 
                 |     Creates and returns a new assembly operation within the current
@@ -174,7 +174,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewAutoDraft(double iDraftAngle) As AutoDraft
                 | 
                 |     Creates and returns a new solid autodraft.
@@ -199,7 +199,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewAutoFillet(double iFilletRadius,
                 | double iRoundRadius) As AutoFillet
                 | 
@@ -228,7 +228,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewAxisToAxis2(Reference iReference,
                 | Reference iTarget) As AnyObject
                 | 
@@ -255,7 +255,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewBlend() As AnyObject
                 | 
                 |     Creates and returns a new Blend feature.
@@ -280,7 +280,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewChamfer(Reference iObjectToChamfer,
                 | CatChamferPropagation iPropagation,
                 | CatChamferMode iMode,
@@ -349,7 +349,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewCircPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInRadialDir,
                 | long iNbOfCopiesInAngularDir,
@@ -450,7 +450,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewCircPatternofList(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInRadialDir,
                 | long iNbOfCopiesInAngularDir,
@@ -545,7 +545,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewCloseSurface(Reference iCloseElement) As
                 | CloseSurface
                 | 
@@ -570,7 +570,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewDefeaturing() As Defeaturing
                 | 
                 |     Creates and returns a new defeaturing operation within the current
@@ -600,7 +600,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewDraft(Reference iFaceToDraft,
                 | Reference iNeutral,
                 | CatDraftNeutralPropagationMode iNeutralMode,
@@ -701,7 +701,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewEdgeFilletWithConstantRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -737,7 +737,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewEdgeFilletWithVaryingRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -770,7 +770,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewFaceFillet(Reference iF1,
                 | Reference iF2,
                 | double iRadius) As FaceFillet
@@ -796,7 +796,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewGSDCircPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInRadialDir,
                 | long iNbOfCopiesInAngularDir,
@@ -849,7 +849,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewGSDRectPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInDir1,
                 | long iNbOfCopiesInDir2,
@@ -895,7 +895,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewGroove(Sketch iSketch) As Groove
                 | 
                 |     Creates and returns a new groove within the current body.
@@ -923,7 +923,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewGrooveFromRef(Reference iProfileElt) As Groove
                 | 
                 |     Creates and returns a new groove within the current body.
@@ -947,7 +947,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewHole(Reference iSupport,
                 | double iDepth) As Hole
                 | 
@@ -981,7 +981,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewHoleFromPoint(double iX,
                 | double iY,
                 | double iZ,
@@ -1028,7 +1028,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewHoleFromRefPoint(Reference iOrigin,
                 | Reference iSupport,
                 | double iDepth) As Hole
@@ -1063,7 +1063,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewHoleFromSketch(Sketch iSketch,
                 | double iDepth) As Hole
                 | 
@@ -1097,7 +1097,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewHoleWith2Constraints(double iX,
                 | double iY,
                 | double iZ,
@@ -1155,7 +1155,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewHoleWithConstraint(double iX,
                 | double iY,
                 | double iZ,
@@ -1211,7 +1211,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewIntersect(Body iBodyToIntersect) As Intersect
                 | 
                 |     Creates and returns a new intersect operation within the current
@@ -1235,7 +1235,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewLoft() As AnyObject
                 | 
                 |     Creates and returns a new Loft feature.
@@ -1252,7 +1252,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewMirror(Reference iMirroringElement) As Mirror
                 | 
                 |     Creates and returns a new mirror within the current body.
@@ -1280,7 +1280,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewPad(Sketch iSketch,
                 | double iHeight) As Pad
                 | 
@@ -1307,7 +1307,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewPadFromRef(Reference iProfileElt,
                 | double iHeight) As Pad
                 | 
@@ -1335,7 +1335,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewPocket(Sketch iSketch,
                 | double iHeight) As Pocket
                 | 
@@ -1362,7 +1362,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewPocketFromRef(Reference iProfileElt,
                 | double iHeight) As Pocket
                 | 
@@ -1394,7 +1394,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewRectPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInDir1,
                 | long iNbOfCopiesInDir2,
@@ -1494,7 +1494,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewRectPatternofList(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInDir1,
                 | long iNbOfCopiesInDir2,
@@ -1588,7 +1588,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewRemove(Body iBodyToRemove) As Remove
                 | 
                 |     Creates and returns a new remove operation within the current
@@ -1612,7 +1612,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewRemoveFace(Reference iKeepFaces,
                 | Reference iRemoveFaces) As RemoveFace
                 | 
@@ -1639,7 +1639,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewRemovedBlend() As AnyObject
                 | 
                 |     Creates and returns a new Removed Blend feature.
@@ -1656,7 +1656,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewRemovedLoft() As AnyObject
                 | 
                 |     Creates and returns a new Removed Loft feature.
@@ -1678,7 +1678,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewReplaceFace(Reference iSplitPlane,
                 | Reference iRemoveFace,
                 | CatSplitSide iSplittingSide) As ReplaceFace
@@ -1717,7 +1717,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewRib(Sketch iSketch,
                 | Sketch iCenterCurve) As Rib
                 | 
@@ -1746,7 +1746,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewRibFromRef(Reference iProfile,
                 | Reference iCenterCurve) As Rib
                 | 
@@ -1775,7 +1775,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewScaling(Reference iScalingReference,
                 | double iFactor) As Scaling
                 | 
@@ -1828,7 +1828,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSewSurface(Reference iSewingElement,
                 | CatSplitSide iSewingSide) As SewSurface
                 | 
@@ -1863,7 +1863,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewShaft(Sketch iSketch) As Shaft
                 | 
                 |     Creates and returns a new shaft within the current body.
@@ -1899,7 +1899,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewShaftFromRef(Reference iProfileElt) As Shaft
                 | 
                 |     Creates and returns a new shaft within the current body.
@@ -1924,7 +1924,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewShell(Reference iFaceToRemove,
                 | double iInternalThickness,
                 | double iExternalThickness) As Shell
@@ -1962,7 +1962,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSlot(Sketch iSketch,
                 | Sketch iCenterCurve) As Slot
                 | 
@@ -1991,7 +1991,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSlotFromRef(Reference iProfile,
                 | Reference iCenterCurve) As Slot
                 | 
@@ -2020,7 +2020,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSolidCombine(Reference iProfileEltFirst,
                 | Reference iProfileEltSecond) As SolidCombine
                 | 
@@ -2055,7 +2055,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSolidEdgeFilletWithConstantRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -2103,7 +2103,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSolidEdgeFilletWithVaryingRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -2151,7 +2151,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSolidFaceFillet(Reference iF1,
                 | Reference iF2,
                 | double iRadius) As FaceFillet
@@ -2189,7 +2189,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSolidTritangentFillet(Reference iF1,
                 | Reference iF2,
                 | Reference iRemovedFace) As TritangentFillet
@@ -2231,7 +2231,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSplit(Reference iSplittingElement,
                 | CatSplitSide iSplitSide) As Split
                 | 
@@ -2262,7 +2262,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewStiffener(Sketch iSketch) As Stiffener
                 | 
                 |     Creates and returns a new stiffener within the current
@@ -2290,7 +2290,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewStiffenerFromRef(Reference iProfileElt) As
                 | Stiffener
                 | 
@@ -2321,7 +2321,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSurfaceEdgeFilletWithConstantRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -2369,7 +2369,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSurfaceEdgeFilletWithVaryingRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -2418,7 +2418,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSurfaceFaceFillet(Reference iF1,
                 | Reference iF2,
                 | double iRadius) As FaceFillet
@@ -2456,7 +2456,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSurfaceTritangentFillet(Reference iF1,
                 | Reference iF2,
                 | Reference iRemovedFace) As TritangentFillet
@@ -2498,7 +2498,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSurfacicAutoFillet(double iFilletRadius) As
                 | AutoFillet
                 | 
@@ -2530,7 +2530,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSurfacicCircPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInRadialDir,
                 | long iNbOfCopiesInAngularDir,
@@ -2639,7 +2639,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSurfacicRectPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInDir1,
                 | long iNbOfCopiesInDir2,
@@ -2742,7 +2742,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSurfacicSewSurface(long iType,
                 | Reference iSupportSurface,
                 | Reference iSewingElement,
@@ -2782,7 +2782,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewSurfacicUserPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopies) As UserPattern
                 | 
@@ -2837,7 +2837,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewThickSurface(Reference iOffsetElement,
                 | long iIsensOffset,
                 | double iTopOffset,
@@ -2878,7 +2878,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewThickness(Reference iFaceToThicken,
                 | double iOffset) As Thickness
                 | 
@@ -2912,7 +2912,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewThreadWithOutRef() As Thread
                 | 
                 |     Creates and returns a new thread\tap within the current
@@ -2930,7 +2930,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewThreadWithRef(Reference iLateralFace,
                 | Reference iLimitFace) As Thread
                 | 
@@ -2978,7 +2978,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewTrim(Body iBodyToTrim) As Trim
                 | 
                 |     Creates and returns a new Trim operation within the current
@@ -3003,7 +3003,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewTritangentFillet(Reference iF1,
                 | Reference iF2,
                 | Reference iRemovedFace) As TritangentFillet
@@ -3026,7 +3026,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewUserPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopies) As UserPattern
                 | 
@@ -3054,7 +3054,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewUserPatternofList(AnyObject iShapeToCopy,
                 | long iNbOfCopies) As UserPattern
                 | 
@@ -3083,7 +3083,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewVolumeAdd(Reference iBody1,
                 | Reference iBody2,
                 | double iType) As Add
@@ -3114,7 +3114,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewVolumeCloseSurface(Reference iCloseElement) As
                 | CloseSurface
                 | 
@@ -3139,7 +3139,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewVolumeIntersect(Reference iBody1,
                 | Reference iBody2,
                 | double iType) As Intersect
@@ -3170,7 +3170,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewVolumeRemove(Reference iBody1,
                 | Reference iBody2,
                 | double iType) As Remove
@@ -3207,7 +3207,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewVolumeSewSurface(long iType,
                 | Reference iSupportVolume,
                 | Reference iSewingElement,
@@ -3249,7 +3249,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewVolumeShell(Reference iFaceToRemove,
                 | double iInternalThickness,
                 | double iExternalThickness,
@@ -3293,7 +3293,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewVolumeThickSurface(Reference iOffsetElement,
                 | long iIsensOffset,
                 | double iTopOffset,
@@ -3335,7 +3335,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewVolumeThickness(Reference iFaceToThicken,
                 | double iOffset,
                 | long iType,
@@ -3378,7 +3378,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewVolumeTrim(Reference iSupportVolume,
                 | Reference iCuttingVolume) As Trim
                 | 
@@ -3420,7 +3420,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddNewVolumicDraft(Reference iFaceToDraft,
                 | Reference iNeutral,
                 | CatDraftNeutralPropagationMode iNeutralMode,

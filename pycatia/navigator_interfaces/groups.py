@@ -46,7 +46,7 @@ class Groups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add() As Group
                 | 
                 |     Creates an empty Group and adds it to the Groups
@@ -72,7 +72,7 @@ class Groups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddFromSel() As Group
                 | 
                 |     Creates a Group containing all products in the selection and adds it to the
@@ -99,7 +99,7 @@ class Groups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AllLeaves() As Group
                 | 
                 |     Returns a group which contains all the terminal nodes of the current root
@@ -123,7 +123,7 @@ class Groups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As Group
                 | 
                 |     Returns a group using its index or its name from the Groups
@@ -163,7 +163,7 @@ class Groups(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a group from the Groups collection.

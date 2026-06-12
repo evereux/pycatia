@@ -585,7 +585,7 @@ class HybridShapeCurvePar(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPlaneNormal(CATSafeArrayVariant oNormal)
                 | 
                 |     Returns the Normal of the plane created when the Support of the curve is
@@ -630,7 +630,7 @@ class HybridShapeCurvePar(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutPlaneNormal(CATSafeArrayVariant iNormal)
                 | 
                 |     Sets the Normal of the plane created when the Support of the curve is not

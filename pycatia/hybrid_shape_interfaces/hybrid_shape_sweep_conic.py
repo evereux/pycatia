@@ -414,7 +414,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetLongitudinalRelimiters(Reference opIAElem1,
                 | Reference opIAElem2)
                 | 
@@ -450,7 +450,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbGuides(long oNum)
                 | 
                 |     Gets the number of guides.
@@ -466,7 +466,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetParameterLaw(double oParamStart,
                 | double oParamEnd,
                 | long oLawType)
@@ -488,7 +488,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetRelimiters(Reference opIAElem1,
                 | long opOrient1,
                 | Reference opIAElem2,
@@ -541,7 +541,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetTangency(Reference opIAElem,
                 | Angle opIAAngleStart,
                 | Angle opIAAngleEnd,
@@ -586,7 +586,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetTangencyAngleLawInversion(long iIndex,
                 | long oInversion)
                 | 
@@ -606,7 +606,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetTangencyLaw(Reference opIAElem,
                 | Reference opIALaw,
                 | long iIndex)
@@ -644,7 +644,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveGuide(long iIndex)
                 | 
                 |     Removes a guide curve given its index.
@@ -661,7 +661,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveParameter()
                 | 
                 |     Removes conical sweep parameter, whether it is a single value or a law.
@@ -675,7 +675,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveTangency(long iIndex)
                 | 
                 |     removes tangency surface or curve and its angle given the guide curve
@@ -692,7 +692,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGuideDeviation(double iLength)
                 | 
                 |     Sets deviation value (length) from guide curves allowed during sweeping
@@ -709,7 +709,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLongitudinalRelimiters(Reference ipIAElem1,
                 | Reference ipIAElem2)
                 | 
@@ -745,7 +745,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetParameterLaw(double iParamStart,
                 | double iParamEnd,
                 | long iLawType)
@@ -768,7 +768,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRelimiters(Reference ipIAElem1,
                 | long ipOrient1,
                 | Reference ipIAElem2,
@@ -820,7 +820,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSmoothAngleThreshold(double iAngle)
                 | 
                 |     Sets angular threshold under which discontinuities.
@@ -839,7 +839,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTangency(Reference ipIAElem,
                 | double iAngleStart,
                 | double iAngleEnd,
@@ -884,7 +884,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTangencyAngleLawInversion(long iIndex,
                 | long iInversion)
                 | 
@@ -904,7 +904,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTangencyLaw(Reference ipIAElem,
                 | Reference ipIALaw,
                 | long iIndex)

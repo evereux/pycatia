@@ -48,7 +48,7 @@ class Point(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCoordinates(CATSafeArrayVariant oCoordinates)
                 | 
                 |     Gets cartesian coordinates of the Point.
@@ -80,7 +80,7 @@ class Point(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetCoordinates(CATSafeArrayVariant oCoordinates)
                 | 
                 |     Sets cartesian coordinates of the point.

@@ -280,7 +280,7 @@ class HybridShapeSphere(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetBeginMeridianAngle(double iAngle)
                 | 
                 |     Sets BeginMeridianAngle on the object.
@@ -304,7 +304,7 @@ class HybridShapeSphere(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetBeginParallelAngle(double iAngle)
                 | 
                 |     Sets BeginParallelAngle on the object.
@@ -328,7 +328,7 @@ class HybridShapeSphere(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetEndMeridianAngle(double iAngle)
                 | 
                 |     Sets EndMeridianAngle on the object.
@@ -352,7 +352,7 @@ class HybridShapeSphere(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetEndParallelAngle(double iAngle)
                 | 
                 |     Sets EndParallelAngle on the object.
@@ -376,7 +376,7 @@ class HybridShapeSphere(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRadius(double iRadius)
                 | 
                 |     Sets Radius on the object.

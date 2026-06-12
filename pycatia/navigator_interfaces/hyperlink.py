@@ -40,7 +40,7 @@ class Hyperlink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddUrl(CATBSTR iUrl)
                 | 
                 |     Adds a url to an Hyperlink.
@@ -68,7 +68,7 @@ class Hyperlink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CountObject() As long
                 | 
                 |     Returns the number of Url which are linked to the
@@ -92,7 +92,7 @@ class Hyperlink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func ItemObject(CATVariant iIndex) As CATBSTR
                 | 
                 |     Returns an Url which is linked to the Hyperlink using its
@@ -127,7 +127,7 @@ class Hyperlink(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveObject(CATVariant iIndex)
                 | 
                 |     Removes an Url which is linked to the Hyperlink using its

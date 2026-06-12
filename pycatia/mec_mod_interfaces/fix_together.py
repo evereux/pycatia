@@ -90,7 +90,7 @@ class FixTogether(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFixTogether(FixTogether iFixTogether)
                 | 
                 |     Add a fixTogether to a FixTogether. The fixTogether is fixed together with
@@ -127,7 +127,7 @@ class FixTogether(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddProduct(Product iProduct)
                 | 
                 |     Add a product to a FixTogether. The product is fixed together with the
@@ -164,7 +164,7 @@ class FixTogether(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetFixTogether(CATVariant iIndex) As FixTogether
                 | 
                 |     Returns a FixTogether using its index or its name in the
@@ -202,7 +202,7 @@ class FixTogether(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetProduct(CATVariant iIndex) As Product
                 | 
                 |     Returns a Product using its index or its name in the
@@ -240,7 +240,7 @@ class FixTogether(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveFixTogether(CATVariant iIndex)
                 | 
                 |     Removes a FixTogether from the FixTogether.
@@ -272,7 +272,7 @@ class FixTogether(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveProduct(CATVariant iIndex)
                 | 
                 |     Removes a Product from the FixTogether.

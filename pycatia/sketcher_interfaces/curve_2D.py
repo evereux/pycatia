@@ -146,7 +146,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCurvature(double iParam,
                 | CATSafeArrayVariant oCurvature)
                 | 
@@ -184,7 +184,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDerivatives(double iParam,
                 | CATSafeArrayVariant oDerivative)
                 | 
@@ -223,7 +223,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetEndPoints(CATSafeArrayVariant oEndPoints)
                 | 
                 |     Returns the end-points of the curve. The start point and the end point are
@@ -261,7 +261,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLengthAtParam(double iFromParam,
                 | double iToParam) As double
                 | 
@@ -290,7 +290,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetParamAtLength(double iFromParam,
                 | double iLength) As double
                 | 
@@ -322,7 +322,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetParamExtents(CATSafeArrayVariant oParams)
                 | 
                 |     Returns the parametric extents of the curve. This is the parametric
@@ -357,7 +357,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPointAtParam(double iParam,
                 | CATSafeArrayVariant oPoint)
                 | 
@@ -393,7 +393,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetRangeBox(CATSafeArrayVariant oBoundPoint)
                 | 
                 |     Returns the range box (or bounding box) of the object
@@ -431,7 +431,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetTangent(double iParam,
                 | CATSafeArrayVariant oTangency)
                 | 
@@ -467,7 +467,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IsPeriodic() As boolean
                 | 
                 |     Specifies whether a curve is periodic or not.

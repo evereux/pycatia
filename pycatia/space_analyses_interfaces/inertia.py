@@ -190,7 +190,7 @@ class Inertia(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCOGPosition(CATSafeArrayVariant oCoordinates)
                 | 
                 |     Retrieves the position of the center of gravity.
@@ -233,7 +233,7 @@ class Inertia(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetInertiaMatrix(CATSafeArrayVariant oMatrix)
                 | 
                 |     Retrieves the matrix of inertia.
@@ -281,7 +281,7 @@ class Inertia(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPrincipalAxes(CATSafeArrayVariant oComponents)
                 | 
                 |     Retrieves the principal axes of inertia.
@@ -329,7 +329,7 @@ class Inertia(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPrincipalMoments(CATSafeArrayVariant oValues)
                 | 
                 |     Retrieves the principal moments of inertia.

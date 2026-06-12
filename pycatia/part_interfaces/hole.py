@@ -574,7 +574,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CreateStandardThreadDesignTable(CatHoleThreadStandard
                 | iStandardType)
                 | 
@@ -605,7 +605,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CreateUserStandardDesignTable(CATBSTR iStandardName,
                 | CATBSTR iPath)
                 | 
@@ -648,7 +648,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDirection(CATSafeArrayVariant ioDirection)
                 | 
                 |     Returns the hole direction with absolute coordinates.
@@ -685,7 +685,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant ioOrigin)
                 | 
                 |     Returns the origin point which the hole is anchored to.
@@ -722,7 +722,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Reverse()
                 | 
                 |     Reverses the hole direction .
@@ -742,7 +742,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDirection(Reference iDirection)
                 | 
                 |     Sets the hole associative direction.
@@ -788,7 +788,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetOrigin(double iX,
                 | double iY,
                 | double iZ)

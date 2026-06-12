@@ -266,7 +266,7 @@ class Marker3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddObject(AnyObject iObject)
                 | 
                 |     Adds a link to an object.
@@ -294,7 +294,7 @@ class Marker3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CountObject() As long
                 | 
                 |     Returns the number of objects which are linked to the marker
@@ -318,7 +318,7 @@ class Marker3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetObjectPositions(CATVariant iIndex,
                 | CATSafeArrayVariant oCoordinates)
                 | 
@@ -361,7 +361,7 @@ class Marker3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetTextPositions(CATSafeArrayVariant oCoordinates)
                 | 
                 |     Retrieves the coordinates of the positions of a text marker 3D. The
@@ -412,7 +412,7 @@ class Marker3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func ItemObject(CATVariant iIndex) As CATBaseDispatch
                 | 
                 |     Returns an object which is linked to the marker 3D using its
@@ -447,7 +447,7 @@ class Marker3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveObject(CATVariant iIndex)
                 | 
                 |     Removes an object which is linked to the marker 3D using its
@@ -478,7 +478,7 @@ class Marker3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetObjectPositions(CATVariant iIndex,
                 | CATSafeArrayVariant iCoordinates)
                 | 
@@ -521,7 +521,7 @@ class Marker3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTextPositions(CATSafeArrayVariant iCoordinates)
                 | 
                 |     Sets the coordinates of the positions of a text marker 3D.
@@ -572,7 +572,7 @@ class Marker3D(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Update()
                 | 
                 |     Updates the the marker 3D: that is to take into account all modifications

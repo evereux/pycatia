@@ -42,7 +42,7 @@ class Line2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
                 |     Returns the unit-vector pointing in the direction of the
@@ -77,7 +77,7 @@ class Line2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Returns a point lying on the line
@@ -109,7 +109,7 @@ class Line2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetData(double iX,
                 | double iY,
                 | double iXDirection,

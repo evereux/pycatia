@@ -63,7 +63,7 @@ class Parabola2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetAxis(CATSafeArrayVariant oAxis)
                 | 
                 |     Returns the axis vector direction of the parabola in 2D
@@ -96,7 +96,7 @@ class Parabola2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCenter(CATSafeArrayVariant oCenter)
                 | 
                 |     Returns the center of the parabola in 2D space
@@ -131,7 +131,7 @@ class Parabola2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetData(double iCenterX,
                 | double iCenterY,
                 | double iAxisX,

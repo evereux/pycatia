@@ -379,7 +379,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetBoundary(long iPos) As Reference
                 | 
                 |     Returns or sets the iPos-th boundary of an extrapolated curve or surface
@@ -401,7 +401,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetContinuityType(long iPos) As long
                 | 
                 |     Returns or sets the continuity type between extrapolated element and
@@ -421,7 +421,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetElemUntil(long iPos) As Reference
                 | 
                 |     Returns or sets the surface or volume specifying the limit of the
@@ -440,7 +440,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetInternalEdgesElement(long iPos) As Reference
                 | 
                 |     Gets an element in the list of internal elements (vertex or
@@ -463,7 +463,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLength(long iPos) As Length
                 | 
                 |     Returns or sets the length specifying the limit of the extrapolation that
@@ -482,7 +482,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLimitType(long iPos) As long
                 | 
                 |     Returns or sets the limit type of the extrapolation that begins from the
@@ -502,7 +502,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNumberOfExtrapolations(long
                 | oNumberOfExtrapolations)
                 | 
@@ -519,7 +519,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IsAssemble() As boolean
                 | 
                 |     Retrieves whether extrapolation is assembled with extrapolated curve or
@@ -541,7 +541,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllExtrapolationsExceptTheFirstOne()
                 | 
                 |     Removes all extrapolations that may have been set, except the first one.
@@ -555,7 +555,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllInternalEdgesElement()
                 | 
                 |     Removes all internal elements.
@@ -569,7 +569,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveExtrapolation(long iPos)
                 | 
                 |     Removes the iPos-th extrapolation that has been set.
@@ -584,7 +584,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAssemble(boolean iAssemble)
                 | 
                 |     Sets whether extrapolation is to be assembled with extrapolated curve or
@@ -622,7 +622,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetBoundary(long iPos,
                 | Reference iBoundary)
 
@@ -652,7 +652,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetContinuityType(long iPos,
                 | long iLim)
 
@@ -667,7 +667,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetElemUntil(long iPos,
                 | Reference iElemUntil)
 
@@ -697,7 +697,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLength(long iPos,
                 | Length iLength)
                 | 
@@ -729,7 +729,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLengthD(long iPos,
                 | double iLength)
 
@@ -744,7 +744,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLimitType(long iPos,
                 | long iLim)
 

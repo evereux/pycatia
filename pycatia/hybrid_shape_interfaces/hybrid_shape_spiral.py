@@ -330,7 +330,7 @@ class HybridShapeSpiral(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAnglePitchParam(double iEndAngle,
                 | double iRevolNumber,
                 | double iPitch)
@@ -349,7 +349,7 @@ class HybridShapeSpiral(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAngleRadiusParam(double iEndAngle,
                 | double iRevolNumber,
                 | double iEndRadius)
@@ -368,7 +368,7 @@ class HybridShapeSpiral(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRadiusPitchParam(double iEndRadius,
                 | double iPitch)
                 | 

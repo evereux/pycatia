@@ -689,7 +689,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddDraftAngleDefinitionLocation(Reference ipIALocElem,
                 | double iAng)
                 | 
@@ -729,7 +729,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAngle(long iI) As Angle
                 | 
                 |     Returns the angle values useful in some linear sweep
@@ -753,7 +753,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetAngularLaw(Angle opStartAng,
                 | Angle opEndAng,
                 | long oLawType)
@@ -805,7 +805,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetChoiceNbSurfaces(long oSurfOri1,
                 | long oSurfOri2,
                 | long oSurfCouplOri1,
@@ -863,7 +863,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetChoiceNo(long oVal1,
                 | long oVal2,
                 | long oVal3)
@@ -894,7 +894,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDraftAngleDefinitionLocation(long iLoc,
                 | Reference opIAElement,
                 | Angle oAngle)
@@ -939,7 +939,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDraftAngleDefinitionLocationsNb(long oCount)
                 | 
                 |     Retrieves the draft angle location list size.
@@ -959,7 +959,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFirstLengthDefinitionType(long oFirstType,
                 | Reference opIAElem)
                 | 
@@ -1014,7 +1014,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFirstLengthLaw(Length oLength1,
                 | Length oLength2,
                 | long oLawType)
@@ -1065,7 +1065,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLength(long iI) As Length
                 | 
                 |     Returns the length values useful in some linear sweep
@@ -1089,7 +1089,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetLengthLawTypes(long oFirstType,
                 | long oSecondType)
                 | 
@@ -1119,7 +1119,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetLongitudinalRelimiters(Reference opIAElem1,
                 | Reference opIAElem2)
                 | 
@@ -1159,7 +1159,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbAngle(long oAng)
                 | 
                 |     Retrieves the number of angles.
@@ -1179,7 +1179,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbGuideCrv(long oNum)
                 | 
                 |     Retrieves the number of guides curves.
@@ -1199,7 +1199,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbGuideSur(long oNum)
                 | 
                 |     Retrieves the number of guide surfaces.
@@ -1219,7 +1219,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbLength(long oLen)
                 | 
                 |     Retrieves the number of lengths.
@@ -1239,7 +1239,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetRelimiters(Reference opIAElem1,
                 | long opOrient1,
                 | Reference opIAElem2,
@@ -1291,7 +1291,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSecondLengthDefinitionType(long oSecondType,
                 | Reference opIAElem)
                 | 
@@ -1346,7 +1346,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSecondLengthLaw(Length oLength1,
                 | Length oLength2,
                 | long oLawType)
@@ -1397,7 +1397,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InsertDraftAngleDefinitionLocation(Reference iElem,
                 | Angle iAngle,
                 | long iPos)
@@ -1442,7 +1442,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllDraftAngleDefinitionLocations()
                 | 
                 |     Removes all geometrical elements and values necessary for draft angle
@@ -1457,7 +1457,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAngle()
                 | 
                 |     Removes an angle.
@@ -1471,7 +1471,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveDraftAngleDefinitionLocationPosition(long iPos)
                 | 
                 |     Removes a draft angle location.
@@ -1492,7 +1492,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveGuideCrv()
                 | 
                 |     Removes a guide curve.
@@ -1506,7 +1506,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveGuideSur()
                 | 
                 |     Removes a guide surface.
@@ -1520,7 +1520,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveLength()
                 | 
                 |     Removes a length.
@@ -1534,7 +1534,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAngle(long iI,
                 | double iElem)
                 | 
@@ -1558,7 +1558,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAngularLaw(double iStartAng,
                 | double iEndAng,
                 | long iLawType)
@@ -1594,7 +1594,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetChoiceNbSurfaces(long iSurfOri1,
                 | long iSurfOri2,
                 | long iSurfCouplOri1,
@@ -1651,7 +1651,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetChoiceNo(long iVal1,
                 | long iVal2,
                 | long iVal3)
@@ -1682,7 +1682,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetFirstLengthDefinitionType(long iFirstType,
                 | Reference ipIAElem)
                 | 
@@ -1737,7 +1737,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetFirstLengthLaw(double iLength1,
                 | double iLength2,
                 | long iLawType)
@@ -1773,7 +1773,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGuideDeviation(double iLength)
                 | 
                 |     Sets the deviation value (length) from guide curves allowed during sweeping
@@ -1794,7 +1794,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLength(long iI,
                 | double iElem)
                 | 
@@ -1818,7 +1818,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLengthLawTypes(long iFirstType,
                 | long iSecondType)
                 | 
@@ -1848,7 +1848,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLongitudinalRelimiters(Reference ipIAElem1,
                 | Reference ipIAElem2)
                 | 
@@ -1888,7 +1888,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRelimiters(Reference ipIAElem1,
                 | long ipOrient1,
                 | Reference ipIAElem2,
@@ -1940,7 +1940,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSecondLengthDefinitionType(long iSecondType,
                 | Reference ipIAElem)
                 | 
@@ -1995,7 +1995,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSecondLengthLaw(double iLength1,
                 | double iLength2,
                 | long iLawType)
@@ -2031,7 +2031,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSmoothAngleThreshold(double iAngle)
                 | 
                 |     Sets the angular threshold.

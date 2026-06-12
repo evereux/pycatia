@@ -14,7 +14,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ShapeInstance(Shape):
-
     """
         .. note::
             :class: toggle
@@ -108,7 +107,7 @@ class ShapeInstance(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetInput(CATBSTR iName) As AnyObject
                 | 
                 |     Gets an input of a shape instance by its name.
@@ -138,7 +137,7 @@ class ShapeInstance(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetInputData(CATBSTR iName) As CATBaseDispatch
                 | 
                 |     Gets an input of a shape instance by its name. Use this method if you want
@@ -169,7 +168,7 @@ class ShapeInstance(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetInputDataFromPosition(long iPosition) As
                 | CATBaseDispatch
                 | 
@@ -201,7 +200,7 @@ class ShapeInstance(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetInputFromPosition(long iPosition) As AnyObject
                 | 
                 |     Gets an input of a hybrid shape instance from its
@@ -232,7 +231,7 @@ class ShapeInstance(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetOutput(CATBSTR iName) As AnyObject
                 | 
                 |     Gets a Ouput by its name.
@@ -262,7 +261,7 @@ class ShapeInstance(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetOutputFromPosition(long iPosition) As AnyObject
                 | 
                 |     Gets a Ouput from its position.
@@ -292,7 +291,7 @@ class ShapeInstance(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetParameter(CATBSTR iName) As AnyObject
                 | 
                 |     Gets a parameter of a shape instance by its name.
@@ -323,7 +322,7 @@ class ShapeInstance(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetParameterFromPosition(long iPosition) As AnyObject
                 | 
                 |     Gets a parameter of a hybrid shape instance from its
@@ -355,7 +354,7 @@ class ShapeInstance(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutInput(CATBSTR iName,
                 | AnyObject iInput)
                 | 
@@ -388,7 +387,7 @@ class ShapeInstance(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutInputData(CATBSTR iName,
                 | CATBaseDispatch iInput)
                 | 
@@ -418,4 +417,4 @@ class ShapeInstance(Shape):
         return self.shape_instance.PutInputData(i_name, i_input.com_object)
 
     def __repr__(self):
-        return f'ShapeInstance(name="{ self.name }")'
+        return f'ShapeInstance(name="{self.name}")'

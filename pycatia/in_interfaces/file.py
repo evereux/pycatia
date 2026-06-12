@@ -14,7 +14,6 @@ from pycatia.in_interfaces.text_stream import TextStream
 
 
 class File(FileComponent):
-
     """
         .. note::
             :class: toggle
@@ -93,7 +92,7 @@ class File(FileComponent):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func OpenAsTextStream(CATBSTR iMode) As TextStream
                 | 
                 |     Opens the file and retrieves it as a TextSteam object. Paramater iMode can
@@ -113,4 +112,4 @@ class File(FileComponent):
         return TextStream(self.file.OpenAsTextStream(i_mode))
 
     def __repr__(self):
-        return f'File(name="{ self.name }")'
+        return f'File(name="{self.name}")'

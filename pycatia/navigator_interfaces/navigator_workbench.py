@@ -242,7 +242,7 @@ class NavigatorWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetOrder(CATBaseDispatch iObject) As long
                 | 
                 |     Returns the order of an object.
@@ -280,7 +280,7 @@ class NavigatorWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetOrder(CATBaseDispatch iObject,
                 | long iNewRank)
                 | 
@@ -318,7 +318,7 @@ class NavigatorWorkbench(Workbench):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub View(AnnotatedView iAnnotatedView)
                 | 
                 |     Applies the annotated view to the current viewer.

@@ -73,7 +73,7 @@ class ControlPoint2D(Point2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetTangent(CATSafeArrayVariant oTangent)
                 | 
                 |     Returns the tangent properties of the spline control point
@@ -107,7 +107,7 @@ class ControlPoint2D(Point2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTangent(double iTangentX,
                 | double iTangentY)
                 | 
@@ -133,7 +133,7 @@ class ControlPoint2D(Point2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub UnsetCurvature()
                 | 
                 |     Unsets the curvature properties of the spline control point
@@ -147,7 +147,7 @@ class ControlPoint2D(Point2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub UnsetTangent()
                 | 
                 |     Unsets the tangent properties of the spline control point

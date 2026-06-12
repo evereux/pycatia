@@ -125,7 +125,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLayer(CatVisLayerType oLayerType,
                 | long oLayerValue) As CatVisPropertyStatus
                 | 
@@ -172,7 +172,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPick(CatVisPropertyPick oPick) As
                 | CatVisPropertyStatus
                 | 
@@ -199,7 +199,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetRealColor(long oRed,
                 | long oGreen,
                 | long oBlue) As CatVisPropertyStatus
@@ -245,7 +245,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetRealInheritance(CatVisPropertyType iPropertyType,
                 | long oInheritance) As CatVisPropertyStatus
                 | 
@@ -305,7 +305,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetRealLineType(long oLineType) As
                 | CatVisPropertyStatus
                 | 
@@ -351,7 +351,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetRealOpacity(long oOpacity) As CatVisPropertyStatus
                 | 
                 |     Retrieves the real opacity for the current selection.
@@ -395,7 +395,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetRealWidth(long oLineWidth) As CatVisPropertyStatus
                 | 
                 |     Retrieves the real line width for the current selection.
@@ -440,7 +440,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetShow(CatVisPropertyShow oShow) As
                 | CatVisPropertyStatus
                 | 
@@ -467,7 +467,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSymbolType(long oSymbolType) As
                 | CatVisPropertyStatus
                 | 
@@ -511,7 +511,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetVisibleColor(long oRed,
                 | long oGreen,
                 | long oBlue) As CatVisPropertyStatus
@@ -561,7 +561,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetVisibleInheritance(CatVisPropertyType
                 | iPropertyType,
                 | long oInheritance) As CatVisPropertyStatus
@@ -602,7 +602,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetVisibleLineType(long oLineType) As
                 | CatVisPropertyStatus
                 | 
@@ -647,7 +647,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetVisibleOpacity(long oOpacity) As
                 | CatVisPropertyStatus
                 | 
@@ -694,7 +694,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetVisibleWidth(long oLineWidth) As
                 | CatVisPropertyStatus
                 | 
@@ -739,7 +739,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLayer(CatVisLayerType iLayerType,
                 | long iLayerValue)
                 | 
@@ -775,7 +775,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPick(CatVisPropertyPick iPick)
                 | 
                 |     Sets the state pick mode for the current selection.
@@ -800,7 +800,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRealColor(long iRed,
                 | long iGreen,
                 | long iBlue,
@@ -847,7 +847,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRealLineType(long iLineType,
                 | long iInheritance)
                 | 
@@ -886,7 +886,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRealOpacity(long iOpacity,
                 | long iInheritance)
                 | 
@@ -924,7 +924,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRealWidth(long iLineWidth,
                 | long iInheritance)
                 | 
@@ -965,7 +965,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetShow(CatVisPropertyShow iShow)
                 | 
                 |     Sets the state show mode for the current selection.
@@ -990,7 +990,7 @@ class VisPropertySet(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSymbolType(long iSymbolType)
                 | 
                 |     Sets the symbol type.

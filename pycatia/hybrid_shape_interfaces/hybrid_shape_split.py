@@ -392,7 +392,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddCuttingElem(Reference iElem,
                 | long iOrientation)
                 | 
@@ -434,7 +434,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddElementToKeep(Reference iElement)
                 | 
                 |     Adds an element to specifications. This element will be
@@ -470,7 +470,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddElementToRemove(Reference iElement)
                 | 
                 |     Adds an element to specifications. This element will be
@@ -506,7 +506,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetCuttingElem(long iRank) As Reference
                 | 
                 |     Gets the cutting feature at a given index (a point, a curve or a
@@ -529,7 +529,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetIntersection(long iRank) As Reference
                 | 
                 |     Gets the intersection at a given index.
@@ -551,7 +551,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetKeptElem(long iRank) As Reference
                 | 
                 |     Gets the kept feature at a given index.
@@ -573,7 +573,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNbCuttingElem() As long
                 | 
                 |     Gets the number of cutting features.
@@ -592,7 +592,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNbElementsToKeep() As long
                 | 
                 |     Gets the number of elements to keep.
@@ -611,7 +611,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNbElementsToRemove() As long
                 | 
                 |     Gets the number of elements to remove.
@@ -630,7 +630,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetOrientation(long iRank) As long
                 | 
                 |     Gets Orientation used to compute the split.
@@ -656,7 +656,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetOtherSide() As Reference
                 | 
                 |     Gets the other side.
@@ -675,7 +675,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetRemovedElem(long iRank) As Reference
                 | 
                 |     Gets the removed feature at a given index.
@@ -697,7 +697,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertOrientation()
                 | 
                 |     Inverts the orientation used to compute the split.
@@ -711,7 +711,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveCuttingElem(Reference iElem)
                 | 
                 |     Removes a cutting feature.
@@ -746,7 +746,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveElementToKeep(long iRank)
                 | 
                 |     Removes an element from specifications.
@@ -766,7 +766,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveElementToRemove(long iRank)
                 | 
                 |     Removes an element from specifications.
@@ -786,7 +786,7 @@ class HybridShapeSplit(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetOrientation(long iRank,
                 | long iOrientation)
                 | 

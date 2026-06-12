@@ -14,7 +14,6 @@ from pycatia.part_interfaces.sketch_based_shape import SketchBasedShape
 
 
 class Stiffener(SketchBasedShape):
-
     """
         .. note::
             :class: toggle
@@ -162,7 +161,7 @@ class Stiffener(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReverseDepth()
                 | 
                 |     Reverses the stiffener direction. This is useful for finding the shape to
@@ -183,7 +182,7 @@ class Stiffener(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReverseThickness()
                 | 
                 |     Reverses the stiffener thickness direction. The stiffener thickness is
@@ -200,4 +199,4 @@ class Stiffener(SketchBasedShape):
         return self.stiffener.ReverseThickness()
 
     def __repr__(self):
-        return f'Stiffener(name="{ self.name }")'
+        return f'Stiffener(name="{self.name}")'

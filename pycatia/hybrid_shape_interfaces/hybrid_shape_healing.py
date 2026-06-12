@@ -16,7 +16,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeHealing(HybridShape):
-
     """
         .. note::
             :class: toggle
@@ -359,7 +358,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddBodyToHeal(Reference iBody)
                 | 
                 |     Adds the body to be healed to the list.
@@ -400,7 +399,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddEdgeToKeepSharp(Reference iEdge)
                 | 
                 |     Adds the edge to be kept sharp while healing, to the list.
@@ -442,7 +441,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddElementsToFreeze(Reference iElement)
                 | 
                 |     Adds the body to be freezed while healing, to the list.
@@ -483,7 +482,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetBodyToHeal(long iPosition) As Reference
                 | 
                 |     Returns the body to be healed from the list at specified
@@ -514,7 +513,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetEdgeToKeepSharp(long iPosition) As Reference
                 | 
                 |     Returns the edge to be kept sharp from the list at specified
@@ -545,7 +544,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetElementToFreeze(long iPosition) As Reference
                 | 
                 |     Returns the element to be freezed from the list at specified
@@ -576,7 +575,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveBodyToHeal(long iPosition)
                 | 
                 |     Removes the body to be healed from the list at specified
@@ -604,7 +603,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveEdgeToKeepSharp(long iPosition)
                 | 
                 |     Removes the edge from the list of edges to be kept sharp at specified
@@ -632,7 +631,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveElementToFreeze(long iPosition)
                 | 
                 |     Removes the element from the list of elements to be freezed at specified
@@ -660,7 +659,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReplaceToHealElement(long iIndex,
                 | Reference iNewHeal)
                 | 
@@ -699,7 +698,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDistanceObjective(double iDistanceObjective)
                 | 
                 |     Sets the distance objective for healing entity.
@@ -726,7 +725,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMergingDistance(double iMergingDistance)
                 | 
                 |     Sets the Merging distance for healing entity.
@@ -753,7 +752,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSharpnessAngle(double iSharpnessAngle)
                 | 
                 |     Sets the Sharpness Angle for healing entity.
@@ -780,7 +779,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTangencyAngle(double iTangencyAngle)
                 | 
                 |     Sets the distance objective for healing entity.
@@ -807,7 +806,7 @@ class HybridShapeHealing(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTangencyObjective(double iTangencyObjective)
                 | 
                 |     Sets the tangency objective for healing entity.
@@ -830,4 +829,4 @@ class HybridShapeHealing(HybridShape):
         return self.hybrid_shape_healing.SetTangencyObjective(i_tangency_objective)
 
     def __repr__(self):
-        return f'HybridShapeHealing(name="{ self.name }")'
+        return f'HybridShapeHealing(name="{self.name}")'

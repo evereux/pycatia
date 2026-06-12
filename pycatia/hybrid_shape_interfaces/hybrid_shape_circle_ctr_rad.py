@@ -16,7 +16,6 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapeCircleCtrRad(HybridShapeCircle):
-
     """
         .. note::
             :class: toggle
@@ -243,7 +242,7 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSecondDirection(double oDirX,
                 | double oDirY,
                 | double oDirZ)
@@ -273,7 +272,7 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IsGeodesic() As boolean
                 | 
                 |     Queries whether the circle is geodesic or not.
@@ -292,7 +291,7 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGeometryOnSupport()
                 | 
                 |     Sets GeometryOnSupport of circle.
@@ -307,7 +306,7 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSecondDirection(double iDirX,
                 | double iDirY,
                 | double iDirZ)
@@ -337,7 +336,7 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub UnsetGeometryOnSupport()
                 | 
                 |     Inactivates GeometryOnSupport of circle.
@@ -348,4 +347,4 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         return self.hybrid_shape_circle_ctr_rad.UnsetGeometryOnSupport()
 
     def __repr__(self):
-        return f'HybridShapeCircleCtrRad(name="{ self.name }")'
+        return f'HybridShapeCircleCtrRad(name="{self.name}")'

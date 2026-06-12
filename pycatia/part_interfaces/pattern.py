@@ -15,7 +15,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Pattern(TransformationShape):
-
     """
         .. note::
             :class: toggle
@@ -106,7 +105,7 @@ class Pattern(TransformationShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ActivatePosition(long iPosU,
                 | long iPosV)
                 | 
@@ -130,7 +129,7 @@ class Pattern(TransformationShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub DesactivatePosition(long iPosU,
                 | long iPosV)
                 | 
@@ -150,4 +149,4 @@ class Pattern(TransformationShape):
         return self.pattern.DesactivatePosition(i_pos_u, i_pos_v)
 
     def __repr__(self):
-        return f'Pattern(name="{ self.name }")'
+        return f'Pattern(name="{self.name}")'

@@ -318,7 +318,7 @@ class Prism(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDirection(CATSafeArrayVariant ioDirection)
                 | 
                 |     Returns the prism direction with absolute coordinates.
@@ -363,7 +363,7 @@ class Prism(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReverseInnerSide()
                 | 
                 |     Reverses the prism inner side when the profile is open. This is useful for
@@ -384,7 +384,7 @@ class Prism(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDirection(Reference iLine)
                 | 
                 |     Sets the prism associative direction.

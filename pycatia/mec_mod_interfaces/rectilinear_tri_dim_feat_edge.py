@@ -82,7 +82,7 @@ class RectilinearTriDimFeatEdge(TriDimFeatEdge):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
                 |     Returns the direction of the rectilinear edge
@@ -121,7 +121,7 @@ class RectilinearTriDimFeatEdge(TriDimFeatEdge):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Returns the origin of the the rectilinear edge.

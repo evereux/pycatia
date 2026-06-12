@@ -385,7 +385,7 @@ class Viewer3D(Viewer):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Rotate(CATSafeArrayVariant iAxis,
                 | double iAngle)
                 | 
@@ -426,7 +426,7 @@ class Viewer3D(Viewer):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Translate(CATSafeArrayVariant iVector)
                 | 
                 |     Applies a translation. The translation vector is iVector (an array of 3

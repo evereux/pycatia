@@ -43,7 +43,7 @@ class Position(Move):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetComponents(CATSafeArrayVariant
                 | oAxisComponentsArray)
                 | 
@@ -87,7 +87,7 @@ class Position(Move):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetComponents(CATSafeArrayVariant
                 | iAxisComponentsArray)
                 | 

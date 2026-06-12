@@ -159,7 +159,7 @@ class HybridShapeWrapCurve(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCurves(long iPosition,
                 | Reference oReferenceCurve,
                 | Reference oTargetCurve)
@@ -215,7 +215,7 @@ class HybridShapeWrapCurve(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNumberOfCurves() As long
                 | 
                 |     Returns the number of couples of curves of the WrapCurve.
@@ -239,7 +239,7 @@ class HybridShapeWrapCurve(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetReferenceDirection(long oDirectionType,
                 | HybridShapeDirection oDirection)
                 | 
@@ -290,7 +290,7 @@ class HybridShapeWrapCurve(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetReferenceSpine(long oSpineType,
                 | Reference oSpine)
                 | 
@@ -341,7 +341,7 @@ class HybridShapeWrapCurve(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InsertCurves(long iPosition,
                 | Reference iReferenceCurve,
                 | Reference iTargetCurve)
@@ -401,7 +401,7 @@ class HybridShapeWrapCurve(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InsertReferenceCurve(long iPosition,
                 | Reference iReferenceCurve)
                 | 
@@ -450,7 +450,7 @@ class HybridShapeWrapCurve(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveCurves(long iPosition)
                 | 
                 |     Removes a couple of reference curve and target curve from the
@@ -480,7 +480,7 @@ class HybridShapeWrapCurve(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetReferenceDirection(HybridShapeDirection iDirection)
                 | 
                 |     Sets the reference direction projection to the wrap curve
@@ -522,7 +522,7 @@ class HybridShapeWrapCurve(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetReferenceSpine(Reference iSpine)
                 | 
                 |     Sets the reference spine to the wrap curve feature.

@@ -230,7 +230,7 @@ class VarRadEdgeFillet(EdgeFillet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddEdgeToFillet(Reference iEdge,
                 | double iRadius)
                 | 
@@ -279,7 +279,7 @@ class VarRadEdgeFillet(EdgeFillet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddImposedVertex(Reference iVertex,
                 | double iRadius)
                 | 
@@ -326,7 +326,7 @@ class VarRadEdgeFillet(EdgeFillet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func ImposedVertexRadius(Reference iImposedVertex) As
                 | Length
                 | 
@@ -386,7 +386,7 @@ class VarRadEdgeFillet(EdgeFillet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub WithdrawEdgeToFillet(Reference iEdge)
                 | 
                 |     Withdraws an edge from the variable radius edge fillet.
@@ -430,7 +430,7 @@ class VarRadEdgeFillet(EdgeFillet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub WithdrawImposedVertex(Reference iVertex)
                 | 
                 |     Withdraws a control couple.

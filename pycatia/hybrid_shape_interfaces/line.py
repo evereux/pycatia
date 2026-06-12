@@ -111,7 +111,7 @@ class Line(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
                 |     Role: Returns the unit-vector pointing in the direction of the
@@ -155,7 +155,7 @@ class Line(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Role: Returns the origin of the line.
@@ -202,7 +202,7 @@ class Line(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutDirection(CATSafeArrayVariant iDirection)
                 | 
                 |     Role: Sets the unit-vector pointing in the direction of the

@@ -48,7 +48,7 @@ class Plane(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFirstAxis(CATSafeArrayVariant oFirstAxis)
                 | 
                 |     Returns the coordinates of the first plane axis.
@@ -83,7 +83,7 @@ class Plane(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Returns the origin of the plane.
@@ -119,7 +119,7 @@ class Plane(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPosition(double oX,
                 | double oY,
                 | double oZ)
@@ -167,7 +167,7 @@ class Plane(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSecondAxis(CATSafeArrayVariant oSecondAxis)
                 | 
                 |     Returns the coordinates of the second plane axis.
@@ -202,7 +202,7 @@ class Plane(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IsARefPlane() As long
                 | 
                 |     Queries whether the plane is a reference plane (fixed axis
@@ -220,7 +220,7 @@ class Plane(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutFirstAxis(CATSafeArrayVariant iFirstAxis)
                 | 
                 |     Sets the first axis. The first plane axis must be a point-direction
@@ -266,7 +266,7 @@ class Plane(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutOrigin(CATSafeArrayVariant iOrigin)
                 | 
                 |     Sets the origin of the plane.
@@ -313,7 +313,7 @@ class Plane(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutSecondAxis(CATSafeArrayVariant iSecondAxis)
                 | 
                 |     Sets the coordinates of the second plane axis. The second plane axis must
@@ -358,7 +358,7 @@ class Plane(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemovePosition()
                 | 
                 |     Removes reference position of a plane.
@@ -373,7 +373,7 @@ class Plane(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPosition(double iX,
                 | double iY,
                 | double iZ)

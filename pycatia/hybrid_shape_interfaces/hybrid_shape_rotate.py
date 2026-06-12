@@ -401,7 +401,7 @@ class HybridShapeRotate(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetCreationMode() As long
                 | 
                 |     Gets the creation mode.
@@ -430,7 +430,7 @@ class HybridShapeRotate(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetCreationMode(boolean iCreation)
                 | 
                 |     Sets the creation mode(creation or modification).

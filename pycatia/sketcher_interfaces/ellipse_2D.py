@@ -114,7 +114,7 @@ class Ellipse2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCenter(CATSafeArrayVariant oCenter)
                 | 
                 |     Returns the center of the ellipse in 2D space
@@ -148,7 +148,7 @@ class Ellipse2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetMajorAxis(CATSafeArrayVariant oMajorAxis)
                 | 
                 |     Returns the unit vector of the major axis of the ellipse in 2D
@@ -181,7 +181,7 @@ class Ellipse2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetMinorAxis(CATSafeArrayVariant oMajorAxis)
                 | 
                 |     Returns the unit vector of the minor axis of the ellipse in 2D
@@ -220,7 +220,7 @@ class Ellipse2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetData(double iCenterX,
                 | double iCenterY,
                 | double iMajorX,

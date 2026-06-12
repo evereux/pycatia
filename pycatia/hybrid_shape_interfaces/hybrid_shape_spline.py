@@ -59,7 +59,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddPoint(Reference ipIAPoint)
                 | 
                 |     Add a new point .
@@ -102,7 +102,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddPointWithConstraintExplicit(Reference ipIAPoint,
                 | HybridShapeDirection ipIADirTangency,
                 | double iTangencyNorm,
@@ -175,7 +175,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddPointWithConstraintFromCurve(Reference ipIAPoint,
                 | Reference ipIACurveCst,
                 | double iTangencyNorm,
@@ -229,7 +229,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetClosure() As long
                 | 
                 |     Gets whether the curve is closed.
@@ -253,7 +253,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetConstraintType(long iPos) As long
                 | 
                 |     Returns the ControlPoint type at the given position.
@@ -276,7 +276,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetCurvatureRadius(long iPos) As Length
                 | 
                 |     Returns the curvature radius value for each point of the
@@ -301,7 +301,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDirectionInversion(long iPos) As long
                 | 
                 |     Gets the orientation of the tangent direction .
@@ -324,7 +324,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNbControlPoint() As long
                 | 
                 |     Returns the number of control points.
@@ -343,7 +343,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPoint(long iPos) As Reference
                 | 
                 |     Returns the Point at the given position.
@@ -367,7 +367,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPointConstraintExplicit(long iPos,
                 | HybridShapeDirection opIADirTangency,
                 | double oTangencyNorm,
@@ -428,7 +428,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPointConstraintFromCurve(long iPos,
                 | Reference opIACurveCst,
                 | double oTangencyNorm,
@@ -483,7 +483,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPointPosition(Reference ipIAPoint) As long
                 | 
                 |     Returns the position of a given point.
@@ -505,7 +505,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSplineType() As long
                 | 
                 |     Gets the spline type.
@@ -524,7 +524,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSupport() As Reference
                 | 
                 |     Gets the support surface.
@@ -543,7 +543,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetTangentNorm(long iPos) As RealParam
                 | 
                 |     Returns the tension for each point of the spline.
@@ -568,7 +568,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertDirection(long iPos)
                 | 
                 |     Inverts the orientation of the tangent direction .
@@ -589,7 +589,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAll()
                 | 
                 |     Removes all elements in the list of points.
@@ -603,7 +603,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveControlPoint(long iPos)
                 | 
                 |     Removes a point at the given position.
@@ -623,7 +623,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveCurvatureRadiusDirection(long iPos)
                 | 
                 |     Removes Curvature Radius Direction for the given point of the
@@ -645,7 +645,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveCurvatureRadiusValue(long iPos)
                 | 
                 |     Removes Curvature Radius Value for the given point of the
@@ -667,7 +667,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveSupport()
                 | 
                 |     Removes the support surface.
@@ -681,7 +681,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveTangentDirection(long iPos)
                 | 
                 |     Removes tangent Direction for the given point of the
@@ -703,7 +703,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveTension(long iPos)
                 | 
                 |     Removes the Tension for the given point of the spline.
@@ -724,7 +724,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReplacePointAtPosition(long iPos,
                 | Reference iPoint)
                 | 
@@ -763,7 +763,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetClosing(long iClosingType)
                 | 
                 |     Activates the closing option of the spline.
@@ -783,7 +783,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPointAfter(long iPos,
                 | Reference ipIAPoint)
                 | 
@@ -822,7 +822,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPointBefore(long iPos,
                 | Reference ipIAPoint)
                 | 
@@ -863,7 +863,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPointConstraintExplicit(long iPos,
                 | HybridShapeDirection ipIADirTangency,
                 | double iTangencyNorm,
@@ -924,7 +924,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPointConstraintFromCurve(long iPos,
                 | Reference ipIACurveCst,
                 | double iTangencyNorm,
@@ -979,7 +979,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSplineType(long iSplineType)
                 | 
                 |     Sets the spline type.
@@ -1000,7 +1000,7 @@ class HybridShapeSpline(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSupport(Reference iSupport)
                 | 
                 |     Sets the spline support surface.

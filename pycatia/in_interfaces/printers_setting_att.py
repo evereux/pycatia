@@ -42,7 +42,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddPrinterDirectory(CATBSTR iPrinterDir,
                 | CatPrinterDirState iPrinterDirState)
                 | 
@@ -81,7 +81,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddPrinterGroup(CATBSTR iPrinterGroupName,
                 | CATSafeArrayVariant iPrinterNames)
                 | 
@@ -121,7 +121,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDriverConfigurationPath(CATBSTR oDriverCfgPath)
                 | 
                 |     Returns the driver configuration file.
@@ -141,7 +141,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDriverConfigurationPathInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -176,7 +176,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNewPrinterDirectory(CATBSTR oNewPrinterDir)
                 | 
                 |     Returns the directory where new printers will be added.
@@ -198,7 +198,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNewPrinterDirectoryInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -233,7 +233,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPrinterArrayForGroup(CATBSTR iPrinterGroupName) As
                 | CATSafeArrayVariant
                 | 
@@ -257,7 +257,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPrinterDirectories() As CATSafeArrayVariant
                 | 
                 |     Returns the directories of printer files.
@@ -274,7 +274,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPrinterDirectoriesInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -309,7 +309,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPrinterDirectoryState(CATBSTR iPrinterDir) As
                 | CatPrinterDirState
                 | 
@@ -345,7 +345,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPrinterGroups() As CATSafeArrayVariant
                 | 
                 |     Returns the printer groups.
@@ -362,7 +362,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPrinterGroupsInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -397,7 +397,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ModifyPrinterArrayForGroup(CATBSTR iPrinterGroupName,
                 | CATSafeArrayVariant iPrinterNames)
                 | 
@@ -437,7 +437,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ModifyPrinterDirectoryState(CATBSTR iPrinterDir,
                 | CatPrinterDirState iPrinterDirState)
                 | 
@@ -473,7 +473,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllPrinterDirectories()
                 | 
                 |     Remove all the directories including printer files.
@@ -487,7 +487,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllPrinterGroups()
                 | 
                 |     Remove all the groups of printers.
@@ -501,7 +501,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemovePrinterDirectory(CATBSTR iPrinterDir)
                 | 
                 |     Remove a directory of printer files from the directories
@@ -522,7 +522,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemovePrinterGroup(CATBSTR iPrinterGroupName)
                 | 
                 |     Remove a group of printers.
@@ -542,7 +542,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDriverConfigurationPath(CATBSTR iDriverCfgPath)
                 | 
                 |     Sets the driver configuration file.
@@ -562,7 +562,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDriverConfigurationPathLock(boolean iLock)
                 | 
                 |     Locks or unlocks the driver configuration file.
@@ -603,7 +603,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetNewPrinterDirectory(CATBSTR iNewPrinterDir)
                 | 
                 |     Sets the directory where new printers will be added.
@@ -625,7 +625,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetNewPrinterDirectoryLock(boolean iLock)
                 | 
                 |     Locks or unlocks the directory where printers will be
@@ -667,7 +667,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPrinterDirectoriesLock(boolean iLock)
                 | 
                 |     Locks or unlocks the directories of printer files and their
@@ -709,7 +709,7 @@ class PrintersSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPrinterGroupsLock(boolean iLock)
                 | 
                 |     Locks or unlocks the definition of each printer group.

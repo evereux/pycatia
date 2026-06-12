@@ -96,7 +96,7 @@ class ConstRadEdgeFillet(EdgeFillet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddObjectToFillet(Reference iObjectToFillet)
                 | 
                 |     Adds a new sub-element to be filleted. This sub-element is usually an
@@ -170,7 +170,7 @@ class ConstRadEdgeFillet(EdgeFillet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub WithdrawObjectToFillet(Reference iObjectToWithdraw)
                 | 
                 |     Withdraws a sub-element from those to be filleted. This sub-element is

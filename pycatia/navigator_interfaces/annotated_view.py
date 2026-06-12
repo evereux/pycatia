@@ -263,7 +263,7 @@ class AnnotatedView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Retrieves the coordinates of the origin of the 3D viewpoint of the
@@ -313,7 +313,7 @@ class AnnotatedView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSightDirection(CATSafeArrayVariant oSight)
                 | 
                 |     Retrieves the components of the sight direction of the 3D viewpoint of the
@@ -367,7 +367,7 @@ class AnnotatedView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetUpDirection(CATSafeArrayVariant oUp)
                 | 
                 |     Retrieves the components of the up direction of the 3D viewpoint of the
@@ -417,7 +417,7 @@ class AnnotatedView(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Update()
                 | 
                 |     Updates the annotated view: that is to take into account all modifications

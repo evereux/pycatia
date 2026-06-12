@@ -47,7 +47,7 @@ class Marker3Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add3DText(CATSafeArrayVariant iTextCoordinates,
                 | CATBSTR iText,
                 | CATSafeArrayVariant iObjectCoordinates,
@@ -110,7 +110,7 @@ class Marker3Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As Marker3D
                 | 
                 |     Returns a marker 3D using its index from the Marker3Ds
@@ -150,7 +150,7 @@ class Marker3Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a marker 3D from the Marker3Ds collection.

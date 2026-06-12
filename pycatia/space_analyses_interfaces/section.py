@@ -375,7 +375,7 @@ class Section(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Export() As Document
                 | 
                 |     Exports the sections curves of the section in a document.
@@ -400,7 +400,7 @@ class Section(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPosition(CATSafeArrayVariant oComponents)
                 | 
                 |     Retrieves the position of the section.
@@ -468,7 +468,7 @@ class Section(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IsEmpty() As long
                 | 
                 |     Indicates whether the section is empty.
@@ -493,7 +493,7 @@ class Section(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPosition(CATSafeArrayVariant iComponents)
                 | 
                 |     Sets the position of the section.

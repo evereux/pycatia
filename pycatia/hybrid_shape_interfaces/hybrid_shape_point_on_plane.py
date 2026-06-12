@@ -233,7 +233,7 @@ class HybridShapePointOnPlane(Point):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSecondDirection(double oDirX,
                 | double oDirY,
                 | double oDirZ)
@@ -263,7 +263,7 @@ class HybridShapePointOnPlane(Point):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSecondDirection(double iDirX,
                 | double iDirY,
                 | double iDirZ)

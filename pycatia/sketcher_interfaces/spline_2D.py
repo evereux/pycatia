@@ -44,7 +44,7 @@ class Spline2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetControlPoints(CATSafeArrayVariant oCtrlPoints)
                 | 
                 |     Returns the control points making up the spline.
@@ -81,7 +81,7 @@ class Spline2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNumberOfControlPoints() As double
                 | 
                 |     Returns the number of Control Points of the Spline
@@ -100,7 +100,7 @@ class Spline2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InsertControlPointAfter(Point2D iCtrlPoint,
                 | long iPosition)
                 | 

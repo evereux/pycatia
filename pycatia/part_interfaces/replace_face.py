@@ -87,7 +87,7 @@ class ReplaceFace(SurfaceBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddRemoveFace(Reference iRemoveFace)
                 | 
                 |     Sets the face to be removed.
@@ -117,7 +117,7 @@ class ReplaceFace(SurfaceBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddSplitPlane(Reference iSplitPlane)
                 | 
                 |     Sets the replacing element.
@@ -147,7 +147,7 @@ class ReplaceFace(SurfaceBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub DeleteRemoveFace(Reference iRemoveFace)
                 | 
                 |     Remove the face to be removed.

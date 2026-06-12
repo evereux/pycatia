@@ -88,7 +88,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddElement(Reference iElement)
                 | 
                 |     Adds an element to the hybrid shape assemble feature
@@ -135,7 +135,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddSubElement(Reference iSubElement)
                 | 
                 |     Adds a sub element to the hybrid shape assemble feature
@@ -172,7 +172,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AppendFederatedElement(Reference iElement)
                 | 
                 |     Appends an init to the list of elements to federate.
@@ -210,7 +210,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAngularTolerance() As double
                 | 
                 |     Get the angular tolerance.
@@ -229,7 +229,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAngularToleranceMode() As boolean
                 | 
                 |     Get the angular tolerance mode.
@@ -248,7 +248,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetConnex() As boolean
                 | 
                 |     Get the connex checker flag.
@@ -266,7 +266,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDeviation() As double
                 | 
                 |     Get the deviation value.
@@ -285,7 +285,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetElement(long iRank) As Reference
                 | 
                 |     Retrieves an element used by the hybrid shape assemble feature
@@ -313,7 +313,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetElementsSize() As long
                 | 
                 |     Returns the size of the list of elements to assemble in the hybrid shape
@@ -340,7 +340,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetFederatedElement(long iRank) As Reference
                 | 
                 |     Retrieves an federated inits used by the hybrid shape assemble feature
@@ -366,7 +366,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetFederatedElementsSize() As long
                 | 
                 |     Gets the number of federated inits.
@@ -385,7 +385,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetFederationPropagation() As long
                 | 
                 |     Gets the propagation mode of the federation.
@@ -433,7 +433,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetManifold() As boolean
                 | 
                 |     Get the manifold checker flag.
@@ -451,7 +451,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSimplify() As boolean
                 | 
                 |     Get the simplify flag.
@@ -469,7 +469,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSubElement(long iRank) As Reference
                 | 
                 |     Retrieves a sub element used by the hybrid shape assemble feature
@@ -490,7 +490,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSubElementsSize() As long
                 | 
                 |     Returns the size of the list of sub-elements to remove in the hybrid shape
@@ -517,7 +517,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSuppressMode() As boolean
                 | 
                 |     Get the SuppressMode flag.
@@ -535,7 +535,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetTangencyContinuity() As boolean
                 | 
                 |     Get the tangency continuity checker flag.
@@ -553,7 +553,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveElement(long iRank)
                 | 
                 |     Removes an element used by the hybrid shape assemble feature
@@ -580,7 +580,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveFederatedElement(long iRank)
                 | 
                 |     Removes an element to the list of elements to federate.
@@ -600,7 +600,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveSubElement(long iRank)
                 | 
                 |     Removes a sub element used by the hybrid shape assemble feature
@@ -621,7 +621,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReplaceElement(long iPos,
                 | Reference iElement)
                 | 
@@ -667,7 +667,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAngularTolerance(double iValue)
                 | 
                 |     Set the angular tolerance.
@@ -687,7 +687,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAngularToleranceMode(boolean iValue)
                 | 
                 |     Set the angular tolerance mode.
@@ -722,7 +722,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetConnex(boolean iConnex)
                 | 
                 |     Set the connex checker flag.
@@ -756,7 +756,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDeviation(double ideviation)
                 | 
                 |     Set the deviation value.
@@ -776,7 +776,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetFederationPropagation(long iMode)
                 | 
                 |     Sets the propagation mode of federation.
@@ -826,7 +826,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetManifold(boolean iManifold)
                 | 
                 |     Set the manifold checker flag.
@@ -860,7 +860,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSimplify(boolean iSimplify)
                 | 
                 |     Set the simplify flag.
@@ -894,7 +894,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSuppressMode(boolean iSuppressMode)
                 | 
                 |     Set the SuppressMode flag.
@@ -928,7 +928,7 @@ class HybridShapeAssemble(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTangencyContinuity(boolean iTangencyContinuity)
                 | 
                 |     Set the tangency continuity checker flag.

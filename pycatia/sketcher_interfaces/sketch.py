@@ -201,7 +201,7 @@ class Sketch(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CloseEdition()
                 | 
                 |     Closes the Sketch Edition. Once you have finished working with the sketch,
@@ -224,7 +224,7 @@ class Sketch(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Evaluate()
                 | 
                 |     Evaluate the constraint system of the sketch
@@ -238,7 +238,7 @@ class Sketch(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetAbsoluteAxisData(CATSafeArrayVariant oAxisData)
                 | 
                 |     Returns the sketch axis coordinates in 3D space. The matrix returned
@@ -290,7 +290,7 @@ class Sketch(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InverseOrientation()
                 | 
                 |     Inverse Orientation Of Sketch
@@ -304,7 +304,7 @@ class Sketch(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func OpenEdition() As Factory2D
                 | 
                 |     Opens the Sketch Edition. You must open edition on a sketch before you can
@@ -332,7 +332,7 @@ class Sketch(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAbsoluteAxisData(CATSafeArrayVariant iAxisData)
                 | 
                 |     Sets the absolute axis of the sketch in 3D space.

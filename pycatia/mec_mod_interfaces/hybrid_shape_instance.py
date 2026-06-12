@@ -14,7 +14,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class HybridShapeInstance(HybridShape):
-
     """
         .. note::
             :class: toggle
@@ -108,7 +107,7 @@ class HybridShapeInstance(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetInput(CATBSTR iIndex) As AnyObject
                 | 
                 |     Gets an input of a hybrid shape instance by its name.
@@ -139,7 +138,7 @@ class HybridShapeInstance(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetInputData(CATBSTR iName) As CATBaseDispatch
                 | 
                 |     Gets an input of a shape instance by its name. Use this method if you want
@@ -170,7 +169,7 @@ class HybridShapeInstance(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetInputDataFromPosition(long iPosition) As
                 | CATBaseDispatch
                 | 
@@ -202,7 +201,7 @@ class HybridShapeInstance(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetInputFromPosition(long iPosition) As AnyObject
                 | 
                 |     Gets an input of a hybrid shape instance from its
@@ -233,7 +232,7 @@ class HybridShapeInstance(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetOutput(CATBSTR iName) As AnyObject
                 | 
                 |     Gets a Ouput by its name.
@@ -263,7 +262,7 @@ class HybridShapeInstance(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetOutputFromPosition(long iPosition) As AnyObject
                 | 
                 |     Gets a Ouput from its position.
@@ -293,7 +292,7 @@ class HybridShapeInstance(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetParameter(CATBSTR iName) As AnyObject
                 | 
                 |     Gets a parameter of a hybrid shape instance by its name.
@@ -325,7 +324,7 @@ class HybridShapeInstance(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetParameterFromPosition(long iPosition) As AnyObject
                 | 
                 |     Gets a parameter of a hybrid shape instance from its
@@ -357,7 +356,7 @@ class HybridShapeInstance(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutInput(CATBSTR iIndex,
                 | AnyObject iInput)
                 | 
@@ -390,7 +389,7 @@ class HybridShapeInstance(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutInputData(CATBSTR iName,
                 | CATBaseDispatch iInput)
                 | 
@@ -420,4 +419,4 @@ class HybridShapeInstance(HybridShape):
         return self.hybrid_shape_instance.PutInputData(i_name, i_input.com_object)
 
     def __repr__(self):
-        return f'HybridShapeInstance(name="{ self.name }")'
+        return f'HybridShapeInstance(name="{self.name}")'

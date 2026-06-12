@@ -95,7 +95,7 @@ class HybridShapeSpine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddGuide(Reference iGuide)
                 | 
                 |     Adds a guide to the spine curve.
@@ -130,7 +130,7 @@ class HybridShapeSpine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddSection(Reference iSection)
                 | 
                 |     Adds a section or a plane to the spine curve.
@@ -169,7 +169,7 @@ class HybridShapeSpine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetGuide(long iIdx,
                 | Reference opIAGuide)
                 | 
@@ -208,7 +208,7 @@ class HybridShapeSpine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNumberOfGuides() As long
                 | 
                 |     Retrieves number of guides in a spine curve.
@@ -227,7 +227,7 @@ class HybridShapeSpine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNumberOfSections() As long
                 | 
                 |     Retrieves number of sections in a spine curve.
@@ -246,7 +246,7 @@ class HybridShapeSpine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSection(long iIdx,
                 | Reference oSection)
                 | 
@@ -285,7 +285,7 @@ class HybridShapeSpine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ModifyGuideCurve(Reference ipIAGuide,
                 | Reference ipIANewGuide)
                 | 
@@ -325,7 +325,7 @@ class HybridShapeSpine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ModifySectionCurve(Reference ipIASection,
                 | Reference ipIANewSection)
                 | 
@@ -365,7 +365,7 @@ class HybridShapeSpine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveGuide(Reference iGuide)
                 | 
                 |     Removes a guide from the spine curve.
@@ -400,7 +400,7 @@ class HybridShapeSpine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveSection(Reference iSection)
                 | 
                 |     Removes a section or a plane from the spine curve.
@@ -438,7 +438,7 @@ class HybridShapeSpine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetStartPoint(Reference iPoint)
                 | 
                 |     Sets the start point of the spine curve.

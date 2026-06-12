@@ -93,7 +93,7 @@ class Circle2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCenter(CATSafeArrayVariant oData)
                 | 
                 |     Returns the center of the circle
@@ -130,7 +130,7 @@ class Circle2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetData(double iCenterX,
                 | double iCenterY,
                 | double iRadius)
