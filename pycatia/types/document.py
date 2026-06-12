@@ -30,7 +30,7 @@ document_types = {
     },
     'CatalogDocument': {
         'extension': 'catalog',
-        'type': AnalysisDocument,
+        'type': CatalogDocument,
     },
     'CATMaterial': {
         'extension': 'CATMaterial',
