@@ -2,10 +2,14 @@
 
 ## 0.10.0
 
-Please note that if you're using the new IntEnum types added in 0.9.3 that some names have been changed.
+Please note that if you're using the new IntEnum types added in 0.9.3 that some
+names have been changed.
+Also, VisPropertySet.get_show() now returns a tuple (see source) instead of just
+an int so is consistent with the CATIA API. For a quick fix you can do
+VisPropertySet.get_show()[1] to get the show state.
 
-* Added child_object to inherited Collections() where missing. PR #307
-* Improved type hinting for enums. Type hints instead of using `int` now reference the
+* Added child_object to inherited Collections() were missing. PR #307 @rancy777
+* Improved type hinting for IntEnums. Type hints instead of using `int` now reference the
   new IntEnum types.
 * Some IntEnum types have been renamed to match those of it's VBA counterpart.
 
