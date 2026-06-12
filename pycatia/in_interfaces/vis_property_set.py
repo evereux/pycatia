@@ -120,7 +120,7 @@ class VisPropertySet(AnyObject):
         super().__init__(com_object)
         self.vis_property_set = com_object
 
-    def get_layer(self, oLayerType: CatVisLayerType, oLayerValue: int) -> CatVisPropertyStatus:
+    def get_layer(self) -> tuple[CatVisPropertyStatus, CatVisLayerType, int, int]:
         """
         .. note::
             :class: toggle
@@ -163,13 +163,11 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "layer =" & layer
                 |          End If
 
-        :param CatVisLayerType oLayerType:
-        :param int oLayerValue:
-        :return: CatVisPropertyStatus
+        :return: tuple[CatVisPropertyStatus, CatVisLayerType, int, int]
         """
-        return self.vis_property_set.GetLayer(oLayerType, oLayerValue)
+        return self.vis_property_set.GetLayer()
 
-    def get_pick(self, oPick: CatVisPropertyPick) -> CatVisPropertyStatus:
+    def get_pick(self) -> tuple[CatVisPropertyStatus, CatVisPropertyPick]:
         """
         .. note::
             :class: toggle
@@ -192,12 +190,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetPick pickstate
                 |          MsgBox "pick = " & pickstate
 
-        :param CatVisPropertyPick oPick:
-        :return: CatVisPropertyStatus
+        :return: tuple[CatVisPropertyStatus, CatVisPropertyPick]
         """
-        return self.vis_property_set.GetPick(oPick)
+        return self.vis_property_set.GetPick()
 
-    def get_real_color(self) -> tuple[int, int, int, int]:
+    def get_real_color(self) -> tuple[CatVisPropertyStatus, int, int, int]:
         """
         .. note::
             :class: toggle
@@ -239,11 +236,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealColor r, g, b 
                 |          MsgBox "r = " & r & " g = " & g & " b = " & b
 
-        :return: tuple
+        :return: tuple[CatVisPropertyStatus, int, int, int]
         """
         return self.vis_property_set.GetRealColor()
 
-    def get_real_inheritance(self, iPropertyType: CatVisPropertyType, oInheritance: int) -> CatVisPropertyStatus:
+    def get_real_inheritance(self, iPropertyType: CatVisPropertyType) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
             :class: toggle
@@ -258,7 +255,8 @@ class VisPropertySet(AnyObject):
                 |     Parameters:
                 | 
                 |         iPropertyType
-                |             The type of property: Color, Opacity, Line Width, Line Type
+                |             The type of property:
+                |                0 = Color, 1 = Opacity, 2 = Line Width, 3 = Line Type
                 |         oInheritance
                 |             0
                 |                 No heritance 
@@ -295,13 +293,14 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "Inheritance : linetype = " & inhLineType & "width =" & inhWidth & "Colour ="
                 |                 & inhColor & "Opacity =" & inhOpacity
 
-        :param iPropertyType iPropertyType:
-        :param int oInheritance:
-        :return: CatVisPropertyStatus
-        """
-        return self.vis_property_set.GetRealInheritance(iPropertyType, oInheritance)
+        # todo: this isn't working for me as expected.
 
-    def get_real_line_type(self) -> tuple[int, int]:
+        :param CatVisPropertyType iPropertyType:
+        :return: tuple[CatVisPropertyStatus, int]
+        """
+        return self.vis_property_set.GetRealInheritance(iPropertyType)
+
+    def get_real_line_type(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
             :class: toggle
@@ -343,11 +342,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealLineType linetype
                 |          MsgBox "linetype = " & linetype
 
-        :return: int
+        :return: tuple[CatVisPropertyStatus, int]
         """
         return self.vis_property_set.GetRealLineType()
 
-    def get_real_opacity(self) -> tuple[int, int]:
+    def get_real_opacity(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
             :class: toggle
@@ -387,11 +386,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealOpacity op 
                 |          MsgBox "opacity = " & op
 
-        :return: int
+        :return: tuple[CatVisPropertyStatus, int]
         """
         return self.vis_property_set.GetRealOpacity()
 
-    def get_real_width(self) -> tuple[int, int]:
+    def get_real_width(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
             :class: toggle
@@ -432,11 +431,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealWidth width
                 |          MsgBox "width = " & width
 
-        :return: int
+        :return: tuple[CatVisPropertyStatus, int]
         """
         return self.vis_property_set.GetRealWidth()
 
-    def get_show(self) -> CatVisPropertyShow:
+    def get_show(self) -> tuple[CatVisPropertyStatus, CatVisPropertyShow]:
         """
         .. note::
             :class: toggle
@@ -459,11 +458,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetShow showstate
                 |          MsgBox "show = " & showstate
 
-        :return: CatVisPropertyShow
+        :return: tuple[CatVisPropertyStatus, CatVisPropertyShow]
         """
-        return self.vis_property_set.GetShow()[1]
+        return self.vis_property_set.GetShow()
 
-    def get_symbol_type(self) -> tuple[int, int]:
+    def get_symbol_type(self) -> tuple[CatVisPropertyStatus, int, int, int, int]:
         """
         .. note::
             :class: toggle
@@ -503,11 +502,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetSymbolType symbol
                 |          MsgBox "Symbol = " & symbol
 
-        :return: int
+        :return: tuple[CatVisPropertyStatus, int, int, int, int]
         """
         return self.vis_property_set.GetSymbolType()
 
-    def get_visible_color(self) -> tuple[int, int, int, int]:
+    def get_visible_color(self) -> tuple[CatVisPropertyStatus, int, int, int]:
         """
         .. note::
             :class: toggle
@@ -553,11 +552,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleColor r, g, b 
                 |          MsgBox "r = " & r & " g = " & g & " b = " & b
 
-        :return: int
+        :return: tuple[CatVisPropertyStatus, int, int, int]
         """
         return self.vis_property_set.GetVisibleColor()
 
-    def get_visible_inheritance(self) -> CatVisPropertyType:
+    def get_visible_inheritance(self, iPropertyType: CatVisPropertyType) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
             :class: toggle
@@ -593,11 +592,12 @@ class VisPropertySet(AnyObject):
                 |                 The inheritance flag for iPropertyType is not the same for all
                 |                 elements of the current selection, so oInheritance is not valid
 
-        :return: CatVisPropertyType
+        :param CatVisPropertyType iPropertyType:
+        :return: tuple[CatVisPropertyStatus, int]
         """
-        return self.vis_property_set.GetVisibleInheritance()
+        return self.vis_property_set.GetVisibleInheritance(iPropertyType)
 
-    def get_visible_line_type(self) -> tuple[int, int]:
+    def get_visible_line_type(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
             :class: toggle
@@ -638,11 +638,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleLineType linetype
                 |          MsgBox "linetype = " & linetype
 
-        :return: int
+        :return: tuple[CatVisPropertyStatus, int]
         """
         return self.vis_property_set.GetVisibleLineType()
 
-    def get_visible_opacity(self) -> tuple[int, int]:
+    def get_visible_opacity(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
             :class: toggle
@@ -685,11 +685,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleOpacity op 
                 |          MsgBox "opacity = " & op
 
-        :return: int
+        :return: tuple[CatVisPropertyStatus, int]
         """
         return self.vis_property_set.GetVisibleOpacity()
 
-    def get_visible_width(self) -> tuple[int, int]:
+    def get_visible_width(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
             :class: toggle
@@ -730,11 +730,11 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "width = " & width
 
 
-        :return: int
+        :return: tuple[CatVisPropertyStatus, int]
         """
         return self.vis_property_set.GetVisibleWidth()
 
-    def set_layer(self, i_layer_type: int, i_layer_value: int) -> None:
+    def set_layer(self, i_layer_type: CatVisLayerType, i_layer_value: int) -> None:
         """
         .. note::
             :class: toggle
@@ -764,13 +764,13 @@ class VisPropertySet(AnyObject):
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.SetLayer catVisLayerBasic, 100
 
-        :param int i_layer_type: enum cat_vis_layer_type
+        :param CatVisLayerType i_layer_type:
         :param int i_layer_value:
         :return: None
         """
         return self.vis_property_set.SetLayer(i_layer_type, i_layer_value)
 
-    def set_pick(self, i_pick: int) -> None:
+    def set_pick(self, i_pick: CatVisPropertyPick) -> None:
         """
         .. note::
             :class: toggle
@@ -790,7 +790,7 @@ class VisPropertySet(AnyObject):
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.SetPick catVisPropertyNoPickAttr
 
-        :param int i_pick: enum cat_vis_property_pick
+        :param CatVisPropertyPick i_pick:
         :return: None
         """
         return self.vis_property_set.SetPick(i_pick)
