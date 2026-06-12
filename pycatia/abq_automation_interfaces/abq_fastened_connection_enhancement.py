@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import PositionTolerance_Type
 from pycatia.abq_automation_interfaces.abq_interaction import ABQInteraction
 from pycatia.analysis_interfaces.analysis_entity import AnalysisEntity
 
@@ -191,7 +192,7 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
         self.abq_fastened_connection_enhancement.InvertSlaveSurface = value
 
     @property
-    def position_tolerance(self) -> int:
+    def position_tolerance(self) -> PositionTolerance_Type:
         """
         .. note::
             :class: toggle
@@ -209,16 +210,15 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 |         COMPUTED
                 |         SPECIFIED
 
-        :return: enum position_tolerance_type
-        :rtype: int
+        :return: PositionTolerance_Type
         """
 
         return self.abq_fastened_connection_enhancement.PositionTolerance
 
     @position_tolerance.setter
-    def position_tolerance(self, value: int):
+    def position_tolerance(self, value: PositionTolerance_Type):
         """
-        :param int value: enum position_tolerance_type
+        :param PositionTolerance_Type value:
         """
 
         self.abq_fastened_connection_enhancement.PositionTolerance = value

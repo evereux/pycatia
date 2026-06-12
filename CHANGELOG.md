@@ -1,8 +1,13 @@
 # Changelog
 
-## 0.9.6
+## 0.10.0
 
-* Added child_object to inherited Collections() where missing.
+Please note that if you're using the new IntEnum types added in 0.9.3 that some names have been changed.
+
+* Added child_object to inherited Collections() where missing. PR #307
+* Improved type hinting for enums. Type hints instead of using `int` now reference the
+  new IntEnum types.
+* Some IntEnum types have been renamed to match those of it's VBA counterpart.
 
 ## 0.9.5
 

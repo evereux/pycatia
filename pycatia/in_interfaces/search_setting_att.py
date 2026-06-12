@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatSearchContextScope
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -94,7 +94,7 @@ class SearchSettingAtt(SettingController):
         self.search_setting_att.DefaultPowerInputContextPriority = value
 
     @property
-    def default_power_input_context_scope(self) -> int:
+    def default_power_input_context_scope(self) -> CatSearchContextScope:
         """
         .. note::
             :class: toggle
@@ -108,16 +108,15 @@ class SearchSettingAtt(SettingController):
                 |     Role: The Default Power Input Context Scope attribute manages the default
                 |     context scope to be used when none is typed in the Power Input field
 
-        :return: enum cat_search_context_scope
-        :rtype: int
+        :return: CatSearchContextScope
         """
 
         return self.search_setting_att.DefaultPowerInputContextScope
 
     @default_power_input_context_scope.setter
-    def default_power_input_context_scope(self, value: int):
+    def default_power_input_context_scope(self, value: CatSearchContextScope):
         """
-        :param int value: enum cat_search_context_scope
+        :param CatSearchContextScope value:
         """
 
         self.search_setting_att.DefaultPowerInputContextScope = value

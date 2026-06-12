@@ -3022,7 +3022,7 @@ class CatWorkModeType(IntEnum):
     DESIGN_MODE = 2
 
 
-class CatftaDimConfigureSnapping(IntEnum):
+class CATFTADimConfigureSnapping(IntEnum):
     """
     pycatia.cat_tps_interfaces.fta_setting_att.FTASettingAtt.dim_configure_snapping
     """
@@ -3032,7 +3032,7 @@ class CatftaDimConfigureSnapping(IntEnum):
     CATFTADimSnappingBoth = 3
 
 
-class CatftaDimCreateOn(IntEnum):
+class CATFTADimCreateOn(IntEnum):
     """
     pycatia.cat_tps_interfaces.fta_setting_att.FTASettingAtt.dim_create_on
     """
@@ -3041,7 +3041,7 @@ class CatftaDimCreateOn(IntEnum):
     CATFTADimCreateOnEdge = 2
 
 
-class CatftaLeaderAssociativity(IntEnum):
+class CATFTALeaderAssociativity(IntEnum):
     """
     pycatia.cat_tps_interfaces.fta_infra_setting_att.FtaInfraSettingAtt.leader_associativity
     """
@@ -3050,7 +3050,7 @@ class CatftaLeaderAssociativity(IntEnum):
     CATFTALeaderAssociativityPerpendicular = 2
 
 
-class Catv4Iv4V5SpecDraftMigrationEnum(IntEnum):
+class CATV4IV4V5SpecDraftMigrationEnum(IntEnum):
     """
     pycatia.catia_v4_interfaces.spec_v4_setting_att.SpecV4SettingAtt.draft_feature_migration_mode
     """
@@ -3058,7 +3058,7 @@ class Catv4Iv4V5SpecDraftMigrationEnum(IntEnum):
     coneMode = 1
 
 
-class Catv4Iv5V4AssociativityModeEnum(IntEnum):
+class CATV4IV5V4AssociativityModeEnum(IntEnum):
     """
     pycatia.catia_v4_interfaces.v4_writing_setting_att.V4WritingSettingAtt.asso_mode
     """
@@ -3067,7 +3067,7 @@ class Catv4Iv5V4AssociativityModeEnum(IntEnum):
     NonAssociativityModeAndNoSolidCreation = 2
 
 
-class Catv4Iv5V4ErrorFeatureCreationEnum(IntEnum):
+class CATV4IV5V4ErrorFeatureCreationEnum(IntEnum):
     """
     pycatia.catia_v4_interfaces.v4_writing_setting_att.V4WritingSettingAtt.mode_error_display
     """
@@ -3076,7 +3076,7 @@ class Catv4Iv5V4ErrorFeatureCreationEnum(IntEnum):
     AlwaysCreateErrorFeatures = 2
 
 
-class Catv4Iv5V4InternalCurveCreationEnum(IntEnum):
+class CATV4IV5V4InternalCurveCreationEnum(IntEnum):
     """
     pycatia.catia_v4_interfaces.v4_writing_setting_att.V4WritingSettingAtt.mode_create_display
     """
@@ -3085,7 +3085,7 @@ class Catv4Iv5V4InternalCurveCreationEnum(IntEnum):
     NoInternalCurveIsCreated = 2
 
 
-class Cd5SaveItem_Status(IntEnum):
+class CD5SaveItem_Status(IntEnum):
     """
     pycatia.eno_cd5_interfaces.cd5_save_item.CD5SaveItem.status
 
@@ -3100,7 +3100,7 @@ class Cd5SaveItem_Status(IntEnum):
     CD5SaveItem_NotFound = 7
 
 
-class Cd5SaveOperation_Scope(IntEnum):
+class CD5SaveOperation_Scope(IntEnum):
     """
     pycatia.eno_cd5_interfaces.cd5_engine_v6_r2014x.CD5EngineV6R2014x.create_save_operation
     """
@@ -3117,7 +3117,7 @@ class ContactStiffness_Type(IntEnum):
     STIFF_VALUE = 1
 
 
-class DistributionType(IntEnum):
+class Distribution_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_temperature.ABQTemperature.distribution
     pycatia.abq_automation_interfaces.abq_temperature.ABQTemperature.distribution
@@ -3128,7 +3128,7 @@ class DistributionType(IntEnum):
     JOB_USERDEFINED = 3
 
 
-class DmuTrackMoveMode(IntEnum):
+class DMUTrackMoveMode(IntEnum):
     """
     pycatia.fitting_interfaces.track.Track.move_mode
     """
@@ -3136,7 +3136,7 @@ class DmuTrackMoveMode(IntEnum):
     DMUTrackTimeMode = 1
 
 
-class DnbActBehaviorType(IntEnum):
+class DNBActBehaviorType(IntEnum):
     """
     ?
     """
@@ -3144,7 +3144,7 @@ class DnbActBehaviorType(IntEnum):
     DNBBehaviorParent = 1
 
 
-class DnbAnalysisLevel(IntEnum):
+class DNBAnalysisLevel(IntEnum):
     """
     ?
     """
@@ -3154,7 +3154,7 @@ class DnbAnalysisLevel(IntEnum):
     DNBAnalysisLevelInterrupt = 3
 
 
-class DnbAssignStatus(IntEnum):
+class DNBAssignStatus(IntEnum):
     """
     pycatia.dnb_fastener_interfaces.dnb_fastener_item_services.DnbFastenerItemServices.assign_fastener_to_process
     pycatia.dnb_fastener_interfaces.dnb_fastener_item_services.DnbFastenerItemServices.assign_fastener_to_resource
@@ -3167,7 +3167,7 @@ class DnbAssignStatus(IntEnum):
     DNBPartsNotLoaded = 5
 
 
-class DnbAuxilliaryDeviceType(IntEnum):
+class DNBAuxilliaryDeviceType(IntEnum):
     """
     pycatia.dnb_robot_interfaces.aux_devices_mgt.AuxDevicesMgt.define_aux_devices
     pycatia.dnb_robot_interfaces.aux_devices_mgt.AuxDevicesMgt.get_aux_devices_type
@@ -3178,7 +3178,7 @@ class DnbAuxilliaryDeviceType(IntEnum):
     AuxilliaryDeviceType_Conveyor = 3
 
 
-class DnbHlnkBehaviorType(IntEnum):
+class DNBHlnkBehaviorType(IntEnum):
     """
     ?
     """
@@ -3186,7 +3186,7 @@ class DnbHlnkBehaviorType(IntEnum):
     DNBBehaviorPause = 1
 
 
-class DnbSimGraphUpdateMode(IntEnum):
+class DNBSimGraphUpdateMode(IntEnum):
     """
     ?
     """
@@ -3194,7 +3194,7 @@ class DnbSimGraphUpdateMode(IntEnum):
     DNBSimGraphUpdateEnabled = 1
 
 
-class DnbSimInitStateAttr(IntEnum):
+class DNBSimInitStateAttr(IntEnum):
     """
     pycatia.dnb_simulation_interfaces.simulation_init_state.SimulationInitState.restore_initial_state
     pycatia.dnb_simulation_interfaces.simulation_init_state.SimulationInitState.restore_initial_state_list
@@ -3218,17 +3218,19 @@ class DnbSimInitStateAttr(IntEnum):
     DNBAllInitStateAttr = 14
 
 
-class DnbSimNavigationMode(IntEnum):
+class DNBSimNavigationMode(IntEnum):
     """
-    ?
+    ? pycatia.dnb_simulation_interfaces.simulation_setting_att.SimulationSettingAtt.get_as_navigation_mode_info
+    ? pycatia.dnb_simulation_interfaces.simulation_setting_att.SimulationSettingAtt.set_as_navigation_mode_lock
     """
     DNBSimNavigationModeStep = 0
     DNBSimNavigationModeAnimate = 1
 
 
-class DnbVisualizationMode(IntEnum):
+class DNBVisualizationMode(IntEnum):
     """
-    ?
+    ? pycatia.dnb_simulation_interfaces.analysis_setting_att.AnalysisSettingAtt.get_visualization_mode_info
+    ? pycatia.dnb_simulation_interfaces.analysis_setting_att.AnalysisSettingAtt.set_visualization_mode_lock
     """
     DNBVisualizationModeHighlight = 0
     DNBVisualizationModeCurves = 1
@@ -3577,18 +3579,13 @@ class MotionBasis(IntEnum):
     """
     pycatia.dnb_robot_interfaces.generic_motion_profile.GenericMotionProfile.get_motion_basis
     pycatia.dnb_robot_interfaces.generic_motion_profile.GenericMotionProfile.set_motion_basis
-    pycatia.dnb_device_activity_interfaces.move_home_act.MoveHomeAct.motion_basis
-    pycatia.dnb_device_activity_interfaces.move_joints_act.MoveJointsAct.motion_basis
-    pycatia.dnb_human_sim_interfaces.human_activity_group.HumanActivityGroup.motion_basis
-    pycatia.dnb_human_sim_interfaces.move_to_posture_activity.MoveToPostureActivity.motion_basis
-    pycatia.dnb_human_sim_interfaces.walk_activity.WalkActivity.motion_basis
     """
     MOTION_ABSOLUTE = 0
     MOTION_PERCENT = 1
     MOTION_TIME = 2
 
 
-class ParallelMethodStdType(IntEnum):
+class ParallelMethodStd_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_job.ABQJob.parallelization_method_standard
     """
@@ -3596,7 +3593,7 @@ class ParallelMethodStdType(IntEnum):
     SUPERNODE = 1
 
 
-class PositionToleranceType(IntEnum):
+class PositionTolerance_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_fastened_pair.ABQFastenedPair.position_tolerance
     pycatia.abq_automation_interfaces.abq_fastened_connection_enhancement.ABQFastenedConnectionEnhancement.position_tolerance
@@ -3626,7 +3623,7 @@ class RasterLevelOfDetail(IntEnum):
     Customize = 3
 
 
-class ResponseType(IntEnum):
+class Response_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_heat_transfer_step.ABQHeatTransferStep.response
     """
@@ -3683,7 +3680,7 @@ class SpringDof_Type(IntEnum):
     UR3_DOF = 5
 
 
-class SpringTypeType(IntEnum):
+class SpringType_Type(IntEnum):
     """
     pycatia.abq_automation_interfaces.abq_spring_connection_property.ABQSpringConnectionProperty.spring_type
     """

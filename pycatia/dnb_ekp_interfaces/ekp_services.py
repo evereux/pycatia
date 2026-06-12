@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import ItemAssignmentType
 from pycatia.dmaps_interfaces.activity import Activity
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -36,7 +37,13 @@ class EkpServices(AnyObject):
         super().__init__(com_object)
         self.ekp_services = com_object
 
-    def assign_er(self, i_geometric_feature: AnyObject, i_fta: AnyObject, i_operation: Activity, i_type: int) -> None:
+    def assign_er(
+            self,
+            i_geometric_feature: AnyObject,
+            i_fta: AnyObject,
+            i_operation: Activity,
+            i_type: ItemAssignmentType
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -69,7 +76,7 @@ class EkpServices(AnyObject):
         :param AnyObject i_geometric_feature:
         :param AnyObject i_fta:
         :param Activity i_operation:
-        :param int i_type: enum item_assignment_type
+        :param ItemAssignmentType i_type:
         :rtype: None
         """
         return self.ekp_services.AssignER(

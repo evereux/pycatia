@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import DNBAssignStatus
 from pycatia.dmaps_interfaces.activity import Activity
 from pycatia.dmaps_interfaces.resource import Resource
 from pycatia.dnb_fastener_interfaces.fastener import Fastener
@@ -36,7 +37,7 @@ class DnbFastenerItemServices(AnyObject):
         super().__init__(com_object)
         self.dnb_fastener_item_services = com_object
 
-    def assign_fastener_to_process(self, i_fastener: Fastener, i_process: Activity, e_status: int) -> None:
+    def assign_fastener_to_process(self, i_fastener: Fastener, i_process: Activity, e_status: DNBAssignStatus) -> None:
         """
         .. note::
             :class: toggle
@@ -55,7 +56,7 @@ class DnbFastenerItemServices(AnyObject):
 
         :param Fastener i_fastener:
         :param Activity i_process:
-        :param int e_status: enum dnb_assign_status
+        :param DNBAssignStatus e_status:
         :rtype: None
         """
         return self.dnb_fastener_item_services.AssignFastenerToProcess(i_fastener.com_object, i_process.com_object,
@@ -76,7 +77,12 @@ class DnbFastenerItemServices(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def assign_fastener_to_resource(self, i_fastener: Fastener, i_resource: Resource, e_status: int) -> None:
+    def assign_fastener_to_resource(
+            self,
+            i_fastener: Fastener,
+            i_resource: Resource,
+            e_status: DNBAssignStatus
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -94,7 +100,7 @@ class DnbFastenerItemServices(AnyObject):
 
         :param Fastener i_fastener:
         :param Resource i_resource:
-        :param int e_status: enum dnb_assign_status
+        :param DNBAssignStatus e_status:
         :rtype: None
         """
         return self.dnb_fastener_item_services.AssignFastenerToResource(

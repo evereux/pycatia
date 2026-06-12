@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import Sliding_Type
 from pycatia.abq_automation_interfaces.abq_interaction import ABQInteraction
 from pycatia.abq_automation_interfaces.abq_property import ABQProperty
 from pycatia.analysis_interfaces.analysis_entity import AnalysisEntity
@@ -253,7 +254,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
         self.abq_surface_to_surface_contact.InterferenceFitAmplitude = value
 
     @property
-    def sliding(self) -> int:
+    def sliding(self) -> Sliding_Type:
         """
         .. note::
             :class: toggle
@@ -271,16 +272,15 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         FINITE
                 |         SMALL
 
-        :return: enum sliding_type
-        :rtype: int
+        :return: Sliding_Type
         """
 
         return self.abq_surface_to_surface_contact.Sliding
 
     @sliding.setter
-    def sliding(self, value: int):
+    def sliding(self, value: Sliding_Type):
         """
-        :param int value: enum sliding_type
+        :param Sliding_Type value:
         """
 
         self.abq_surface_to_surface_contact.Sliding = value

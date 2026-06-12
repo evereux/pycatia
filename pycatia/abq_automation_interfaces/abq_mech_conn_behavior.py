@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import PressureOverclosure_Type, MaxStiffness_Type, Formulation_Type
 from pycatia.abq_automation_interfaces.abq_property import ABQProperty
 
 
@@ -151,7 +152,7 @@ class ABQMechConnBehavior(ABQProperty):
         self.abq_mech_conn_behavior.ClearanceContactPressureValue = value
 
     @property
-    def contact_stiffness(self) -> int:
+    def contact_stiffness(self) -> ContactStiffness_Type:
         """
         .. note::
             :class: toggle
@@ -170,7 +171,7 @@ class ABQMechConnBehavior(ABQProperty):
                 |         DEFAULT
                 |         STIFF_VALUE
 
-        :rtype: int
+        :return: ContactStiffness_Type
         """
 
         return self.abq_mech_conn_behavior.ContactStiffness
@@ -198,7 +199,7 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         contact stiffness scale factor value.
 
-        :rtype: float
+        :return: float
         """
 
         return self.abq_mech_conn_behavior.ContactStiffnessScaleFactorValue
@@ -226,7 +227,7 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         The stiffness value.
 
-        :rtype: float
+        :return: float
         """
 
         return self.abq_mech_conn_behavior.ContactStiffnessValue
@@ -253,7 +254,7 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         The description of the step.
 
-        :rtype: str
+        :return: str
         """
 
         return self.abq_mech_conn_behavior.Description
@@ -267,7 +268,7 @@ class ABQMechConnBehavior(ABQProperty):
         self.abq_mech_conn_behavior.Description = value
 
     @property
-    def formulation(self) -> int:
+    def formulation(self) -> Formulation_Type:
         """
         .. note::
             :class: toggle
@@ -286,16 +287,15 @@ class ABQMechConnBehavior(ABQProperty):
                 |         FRICTIONLESS
                 |         PENALTY
 
-        :return: enum formulation_type
-        :rtype: int
+        :return: Formulation_Type
         """
 
         return self.abq_mech_conn_behavior.Formulation
 
     @formulation.setter
-    def formulation(self, value: int):
+    def formulation(self, value: Formulation_Type):
         """
-        :param int value: enum formulation_type
+        :param Formulation_Type value:
         """
 
         self.abq_mech_conn_behavior.Formulation = value
@@ -315,7 +315,7 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         The friction coefficient.
 
-        :rtype: float
+        :return: float
         """
 
         return self.abq_mech_conn_behavior.FrictionCoefficient
@@ -329,7 +329,7 @@ class ABQMechConnBehavior(ABQProperty):
         self.abq_mech_conn_behavior.FrictionCoefficient = value
 
     @property
-    def max_stiffness(self) -> int:
+    def max_stiffness(self) -> MaxStiffness_Type:
         """
         .. note::
             :class: toggle
@@ -348,16 +348,15 @@ class ABQMechConnBehavior(ABQProperty):
                 |         DEFAULT
                 |         STIFF_VALUE
 
-        :return: enum max_stiffness_type
-        :rtype: int
+        :return: MaxStiffness_Type
         """
 
         return self.abq_mech_conn_behavior.MaxStiffness
 
     @max_stiffness.setter
-    def max_stiffness(self, value: int):
+    def max_stiffness(self, value: MaxStiffness_Type):
         """
-        :param int value: enum max_stiffness_type
+        :param MaxStiffness_Type value:
         """
 
         self.abq_mech_conn_behavior.MaxStiffness = value
@@ -377,7 +376,7 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         The stiffness value.
 
-        :rtype: float
+        :return: float
         """
 
         return self.abq_mech_conn_behavior.MaxStiffnessValue
@@ -405,7 +404,7 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         A boolean specifying whether penalty method formulation is applied.
 
-        :rtype: bool
+        :return: bool
         """
 
         return self.abq_mech_conn_behavior.PenaltyMethod
@@ -419,7 +418,7 @@ class ABQMechConnBehavior(ABQProperty):
         self.abq_mech_conn_behavior.PenaltyMethod = value
 
     @property
-    def pressure_overclosure(self) -> int:
+    def pressure_overclosure(self) -> PressureOverclosure_Type:
         """
         .. note::
             :class: toggle
@@ -440,16 +439,15 @@ class ABQMechConnBehavior(ABQProperty):
                 |         LINEAR
                 |         TABULAR
 
-        :return: enum pressure_overclosure_type
-        :rtype: int
+        :return: PressureOverclosure_Type
         """
 
         return self.abq_mech_conn_behavior.PressureOverclosure
 
     @pressure_overclosure.setter
-    def pressure_overclosure(self, value: int):
+    def pressure_overclosure(self, value: PressureOverclosure_Type):
         """
-        :param int value: enum pressure_overclosure_type
+        :param PressureOverclosure_Type value:
         """
 
         self.abq_mech_conn_behavior.PressureOverclosure = value
@@ -477,7 +475,7 @@ class ABQMechConnBehavior(ABQProperty):
 
         :param tuple i_pressure:
         :param tuple i_overclosure:
-        :rtype: None
+        :return: None
         """
         return self.abq_mech_conn_behavior.AddPressureOverclosureTable(i_pressure, i_overclosure)
         # # # # Autogenerated comment: 
@@ -518,7 +516,7 @@ class ABQMechConnBehavior(ABQProperty):
 
         :param tuple o_pressure:
         :param tuple o_overclosure:
-        :rtype: None
+        :return: None
         """
         return self.abq_mech_conn_behavior.GetPressureOverclosureTable(o_pressure, o_overclosure)
         # # # # Autogenerated comment: 

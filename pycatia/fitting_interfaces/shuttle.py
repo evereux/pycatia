@@ -10,6 +10,7 @@
 """
 from typing import TYPE_CHECKING
 
+from pycatia import CatShuttleMoveMode, CatShuttleVector
 from pycatia.in_interfaces.move import Move
 from pycatia.in_interfaces.position import Position
 from pycatia.navigator_interfaces.group import Group
@@ -149,7 +150,7 @@ class Shuttle(AnyObject):
         return Move(self.shuttle.Move)
 
     @property
-    def move_mode(self) -> int:
+    def move_mode(self) -> CatShuttleMoveMode:
         """
         .. note::
             :class: toggle
@@ -161,16 +162,15 @@ class Shuttle(AnyObject):
                 |     move mode. This can be either shuttle mode (to move the shuttle) or axis mode
                 |     (to simply move the shuttle axis).
 
-        :return: enum cat_shuttle_move_mode
-        :rtype: int
+        :return: CatShuttleMoveMode
         """
 
         return self.shuttle.MoveMode
 
     @move_mode.setter
-    def move_mode(self, value: int):
+    def move_mode(self, value: CatShuttleMoveMode):
         """
-        :param int value: enum cat_shuttle_move_mode
+        :param CatShuttleMoveMode value:
         """
 
         self.shuttle.MoveMode = value
@@ -246,7 +246,7 @@ class Shuttle(AnyObject):
         return Shuttles(self.shuttle.SubShuttles)
 
     @property
-    def vector(self) -> int:
+    def vector(self) -> CatShuttleVector:
         """
         .. note::
             :class: toggle
@@ -257,16 +257,15 @@ class Shuttle(AnyObject):
                 |     Returns/Stores the validation vector attribute. Role:/b> Retrieves/stores
                 |     the validation vector attribute.
 
-        :return: enum cat_shuttle_vector
-        :rtype: int
+        :return: CatShuttleVector
         """
 
         return self.shuttle.Vector
 
     @vector.setter
-    def vector(self, value: int):
+    def vector(self, value: CatShuttleVector):
         """
-        :param int value: enum cat_shuttle_vector
+        :param CatShuttleVector value:
         """
 
         self.shuttle.Vector = value

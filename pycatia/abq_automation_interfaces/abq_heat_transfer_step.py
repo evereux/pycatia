@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import Response_Type, Incrementation_Type
 from pycatia.abq_automation_interfaces.abq_boundary_conditions import ABQBoundaryConditions
 from pycatia.abq_automation_interfaces.abq_loads import ABQLoads
 from pycatia.abq_automation_interfaces.abq_step import ABQStep
@@ -314,7 +315,7 @@ class ABQHeatTransferStep(ABQStep):
         self.abq_heat_transfer_step.Mxdem = value
 
     @property
-    def response(self) -> int:
+    def response(self) -> Response_Type:
         """
         .. note::
             :class: toggle
@@ -333,22 +334,21 @@ class ABQHeatTransferStep(ABQStep):
                 |           STEADY_STATE  
                 |           TRANSIENT
 
-        :return: enum response_type
-        :rtype: int
+        :return: Response_Type
         """
 
         return self.abq_heat_transfer_step.Response
 
     @response.setter
-    def response(self, value: int):
+    def response(self, value: Response_Type):
         """
-        :param int value: enum response_type
+        :param Response_Type value:
         """
 
         self.abq_heat_transfer_step.Response = value
 
     @property
-    def time_incrementation_method(self) -> int:
+    def time_incrementation_method(self) -> Incrementation_Type:
         """
         .. note::
             :class: toggle
@@ -367,16 +367,15 @@ class ABQHeatTransferStep(ABQStep):
                 |           AUTO_INCREMENT
                 |           FIXED_INCREMENT
 
-        :return: enum incrementation_type
-        :rtype: int
+        :return: Incrementation_Type
         """
 
         return self.abq_heat_transfer_step.TimeIncrementationMethod
 
     @time_incrementation_method.setter
-    def time_incrementation_method(self, value: int):
+    def time_incrementation_method(self, value: Incrementation_Type):
         """
-        :param int value: enum incrementation_type
+        :param Incrementation_Type value:
         """
 
         self.abq_heat_transfer_step.TimeIncrementationMethod = value

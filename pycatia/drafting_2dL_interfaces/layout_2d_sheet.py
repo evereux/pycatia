@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatSheetProjectionMethod, CatVisuIn3DMode
 from pycatia.drafting_2dL_interfaces.layout_2d_views import Layout2DViews
 from pycatia.drafting_interfaces.drawing_page_setup import DrawingPageSetup
 from pycatia.drafting_interfaces.print_area import PrintArea
@@ -243,7 +243,7 @@ class Layout2DSheet(AnyObject):
         return PrintArea(self.layout_2d_sheet.PrintArea)
 
     @property
-    def projection_method(self) -> int:
+    def projection_method(self) -> CatSheetProjectionMethod:
         """
         .. note::
             :class: toggle
@@ -259,16 +259,15 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.ProjectionMethod = catFirstAngle
 
-        :return: enum cat_sheet_projection_method
-        :rtype: int
+        :return: CatSheetProjectionMethod
         """
 
         return self.layout_2d_sheet.ProjectionMethod
 
     @projection_method.setter
-    def projection_method(self, value: int):
+    def projection_method(self, value: CatSheetProjectionMethod):
         """
-        :param int value: enum cat_sheet_projection_method
+        :param CatSheetProjectionMethod value:
         """
 
         self.layout_2d_sheet.ProjectionMethod = value
@@ -328,7 +327,7 @@ class Layout2DSheet(AnyObject):
         return Layout2DViews(self.layout_2d_sheet.Views)
 
     @property
-    def visu_in_3d(self) -> int:
+    def visu_in_3d(self) -> CatVisuIn3DMode:
         """
         .. note::
             :class: toggle
@@ -343,16 +342,15 @@ class Layout2DSheet(AnyObject):
                 |     See also:
                 |         CatVisuIn3DMode
 
-        :return: enum cat_visu_in_3d_mode
-        :rtype: int
+        :return: CatVisuIn3DMode
         """
 
         return self.layout_2d_sheet.VisuIn3D
 
     @visu_in_3d.setter
-    def visu_in_3d(self, value: int):
+    def visu_in_3d(self, value: CatVisuIn3DMode):
         """
-        :param int value: enum cat_visu_in_3d_mode
+        :param CatVisuIn3DMode value:
         """
 
         self.layout_2d_sheet.VisuIn3D = value

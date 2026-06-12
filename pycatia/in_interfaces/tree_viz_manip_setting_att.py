@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatTreeTypeEnum, CatTreeSizeTypeEnum, CatTreeOrientationEnum
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -135,7 +135,7 @@ class TreeVizManipSettingAtt(SettingController):
         self.tree_viz_manip_setting_att.DisplayGeomOnScrolling = value
 
     @property
-    def orientation(self) -> int:
+    def orientation(self) -> CatTreeOrientationEnum:
         """
         .. note::
             :class: toggle
@@ -145,16 +145,15 @@ class TreeVizManipSettingAtt(SettingController):
                 | 
                 |     Retrieves or Sets the orientation applied to the specification tree.
 
-        :return: enum cat_tree_orientation_enum
-        :rtype: int
+        :return: CatTreeOrientationEnum
         """
 
         return self.tree_viz_manip_setting_att.Orientation
 
     @orientation.setter
-    def orientation(self, value: int):
+    def orientation(self, value: CatTreeOrientationEnum):
         """
-        :param int value: enum cat_tree_orientation_enum
+        :param CatTreeOrientationEnum value:
         """
 
         self.tree_viz_manip_setting_att.Orientation = value
@@ -210,7 +209,7 @@ class TreeVizManipSettingAtt(SettingController):
         self.tree_viz_manip_setting_att.Size = value
 
     @property
-    def size_type(self) -> int:
+    def size_type(self) -> CatTreeSizeTypeEnum:
         """
         .. note::
             :class: toggle
@@ -221,22 +220,21 @@ class TreeVizManipSettingAtt(SettingController):
                 |     Retrieves or Sets the type of size applied to the text of the specification
                 |     tree.
 
-        :return: enum cat_tree_size_type_enum
-        :rtype: int
+        :return: CatTreeSizeTypeEnum
         """
 
         return self.tree_viz_manip_setting_att.SizeType
 
     @size_type.setter
-    def size_type(self, value: int):
+    def size_type(self, value: CatTreeSizeTypeEnum):
         """
-        :param int value: enum cat_tree_size_type_enum
+        :param CatTreeSizeTypeEnum value:
         """
 
         self.tree_viz_manip_setting_att.SizeType = value
 
     @property
-    def type(self) -> int:
+    def type(self) -> CatTreeTypeEnum:
         """
         .. note::
             :class: toggle
@@ -246,16 +244,15 @@ class TreeVizManipSettingAtt(SettingController):
                 | 
                 |     Retrieves or Sets the type applied to the specification tree.
 
-        :return: enum cat_tree_type_enum
-        :rtype: int
+        :return: CatTreeTypeEnum
         """
 
         return self.tree_viz_manip_setting_att.Type
 
     @type.setter
-    def type(self, value: int):
+    def type(self, value: CatTreeTypeEnum):
         """
-        :param int value: enum cat_tree_type_enum
+        :param CatTreeTypeEnum value:
         """
 
         self.tree_viz_manip_setting_att.Type = value

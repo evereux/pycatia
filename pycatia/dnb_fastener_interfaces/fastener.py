@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import DNBPPRRemoveStatus
 from pycatia.dmaps_interfaces.activity import Activity
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
@@ -269,7 +270,7 @@ class Fastener(AnyObject):
         """
         return self.fastener.NumberOfJoiningParts()
 
-    def remove_from_ppr(self, i_force_remove_if_assigned: bool, e_status: int) -> None:
+    def remove_from_ppr(self, i_force_remove_if_assigned: bool, e_status: DNBPPRRemoveStatus) -> None:
         """
         .. note::
             :class: toggle
@@ -297,7 +298,7 @@ class Fastener(AnyObject):
                 |         RemoveStatus MsgBox RemoveStatus
 
         :param bool i_force_remove_if_assigned:
-        :param int e_status: enum dnbppr_remove_status
+        :param DNBPPRRemoveStatus e_status:
         :rtype: None
         """
         return self.fastener.RemoveFromPPR(i_force_remove_if_assigned, e_status)

@@ -10,6 +10,7 @@
 """
 from typing import Union
 
+from pycatia import GeometricalFeatureType
 from pycatia.hybrid_shape_interfaces.hybrid_shape_3d_curve_offset import HybridShape3DCurveOffset
 from pycatia.hybrid_shape_interfaces.hybrid_shape_affinity import HybridShapeAffinity
 from pycatia.hybrid_shape_interfaces.hybrid_shape_assemble import HybridShapeAssemble
@@ -6192,7 +6193,7 @@ class HybridShapeFactory(Factory):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_geometrical_feature_type(self, i_elem: Reference) -> int:
+    def get_geometrical_feature_type(self, i_elem: Reference) -> GeometricalFeatureType:
         """
         .. note::
             :class: toggle
@@ -6216,8 +6217,7 @@ class HybridShapeFactory(Factory):
         See enumeration.enumeration_types.geometrical_feature_type() for enums.
 
         :param Reference i_elem:
-        :return: 0 = Unknown, 1 = Point, 2 = Curve, 3 = Line, 4 = Circle, 5 = Surface, 6 = Plane, 7 = Solid, Volume
-        :rtype: int
+        :return: GeometricalFeatureType
         """
         return self.hybrid_shape_factory.GetGeometricalFeatureType(i_elem.com_object)
 

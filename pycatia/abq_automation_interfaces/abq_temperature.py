@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import Distribution_Type
 from pycatia.abq_automation_interfaces.abq_job import ABQJob
 from pycatia.in_interfaces.reference import Reference
 from pycatia.product_structure_interfaces.product import Product
@@ -69,7 +70,7 @@ class ABQTemperature(AnyObject):
         self.abq_temperature.ApplyUserSubroutine = value
 
     @property
-    def distribution(self) -> int:
+    def distribution(self) -> Distribution_Type:
         """
         .. note::
             :class: toggle
@@ -95,16 +96,15 @@ class ABQTemperature(AnyObject):
                 |          Dim abqTemperature As ABQTemperature
                 |          abqTemperature.Distribution = USERDEFINED
 
-        :return: enum distribution_type
-        :rtype: int
+        :return: Distribution_Type
         """
 
         return self.abq_temperature.Distribution
 
     @distribution.setter
-    def distribution(self, value: int):
+    def distribution(self, value: Distribution_Type):
         """
-        :param int value:
+        :param Distribution_Type value:
         """
 
         self.abq_temperature.Distribution = value

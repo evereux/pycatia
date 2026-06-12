@@ -10,6 +10,7 @@
 """
 import inspect
 
+from pycatia import CatSymbolType
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -36,7 +37,7 @@ class DrawingArrow(AnyObject):
         self.drawing_arrow = com_object
 
     @property
-    def head_symbol(self) -> int:
+    def head_symbol(self) -> CatSymbolType:
         """
         .. note::
             :class: toggle
@@ -52,16 +53,15 @@ class DrawingArrow(AnyObject):
                 | 
                 |          oSymbol = MyArrow.HeadSymbol
 
-        :return: enum cat_symbol_type
-        :rtype: int
+        :return: CatSymbolType
         """
 
         return self.drawing_arrow.HeadSymbol
 
     @head_symbol.setter
-    def head_symbol(self, value: int):
+    def head_symbol(self, value: CatSymbolType):
         """
-        :param int value: enum cat_symbol_type
+        :param CatSymbolType value:
         """
 
         self.drawing_arrow.HeadSymbol = value
@@ -83,7 +83,7 @@ class DrawingArrow(AnyObject):
                 | 
                 |          oTarget = MyArrow.HeadTarget
 
-        :rtype: AnyObject
+        :return: AnyObject
         """
 
         return AnyObject(self.drawing_arrow.HeadTarget)
@@ -113,7 +113,7 @@ class DrawingArrow(AnyObject):
                 | 
                 |          oNbInterruption = MyArrow.NbInterruption
 
-        :rtype: int
+        :return: int
         """
 
         return self.drawing_arrow.NbInterruption
@@ -135,7 +135,7 @@ class DrawingArrow(AnyObject):
                 | 
                 |          oNbPoint = MyArrow.NbPoint
 
-        :rtype: int
+        :return: int
         """
 
         return self.drawing_arrow.NbPoint
@@ -159,7 +159,7 @@ class DrawingArrow(AnyObject):
                 |
                 |          oScaleOnExtremities = MyArrow.ScaleOnExtremities
 
-        :rtype: bool
+        :return: bool
         """
 
         self.release_check(
@@ -179,7 +179,7 @@ class DrawingArrow(AnyObject):
         self.drawing_arrow.ScaleOnExtremities = value
 
     @property
-    def tail_symbol(self) -> int:
+    def tail_symbol(self) -> CatSymbolType:
         """
         .. note::
             :class: toggle
@@ -195,15 +195,15 @@ class DrawingArrow(AnyObject):
                 | 
                 |          oSymbol = MyArrow.TailSymbol
 
-        :rtype: int
+        :return: CatSymbolType
         """
 
         return self.drawing_arrow.TailSymbol
 
     @tail_symbol.setter
-    def tail_symbol(self, value: int):
+    def tail_symbol(self, value: CatSymbolType):
         """
-        :param int value:
+        :param CatSymbolType value:
         """
 
         self.drawing_arrow.TailSymbol = value
@@ -225,7 +225,7 @@ class DrawingArrow(AnyObject):
                 | 
                 |          oTarget = MyArrow.TailTarget
 
-        :rtype: AnyObject
+        :return: AnyObject
         """
 
         return AnyObject(self.drawing_arrow.TailTarget)
@@ -279,7 +279,7 @@ class DrawingArrow(AnyObject):
         :param float i_first_point_y:
         :param float i_second_point_x:
         :param float i_second_point_y:
-        :rtype: None
+        :return: None
         """
         return self.drawing_arrow.AddInterruption(i_first_point_x, i_first_point_y, i_second_point_x, i_second_point_y)
 
@@ -315,7 +315,7 @@ class DrawingArrow(AnyObject):
         :param int i_num:
         :param float i_x:
         :param float i_y:
-        :rtype: None
+        :return: None
         """
         return self.drawing_arrow.AddPoint(i_num, i_x, i_y)
 
@@ -344,7 +344,7 @@ class DrawingArrow(AnyObject):
                 |          oNbInterruptions = MyArrow.GetInterruptions(oInterruptions)
 
         :param tuple o_interruptions:
-        :rtype: int
+        :return: int
         """
         return self.drawing_arrow.GetInterruptions(o_interruptions)
 
@@ -377,7 +377,7 @@ class DrawingArrow(AnyObject):
         :param int i_num:
         :param float o_x:
         :param float o_y:
-        :rtype: None
+        :return: None
         """
         return self.drawing_arrow.GetPoint(i_num, o_x, o_y)
 
@@ -405,7 +405,7 @@ class DrawingArrow(AnyObject):
                 |          oNbPoints = MyArrow.GetPoints(oPoints)
 
         :param tuple o_points:
-        :rtype: int
+        :return: int
         """
         return self.drawing_arrow.GetPoints(o_points)
 
@@ -440,7 +440,7 @@ class DrawingArrow(AnyObject):
         :param int i_num:
         :param float i_x:
         :param float i_y:
-        :rtype: None
+        :return: None
         """
         return self.drawing_arrow.ModifyPoint(i_num, i_x, i_y)
 
@@ -467,7 +467,7 @@ class DrawingArrow(AnyObject):
                 |              MyArrow.RemoveInterruption iNum
 
         :param int i_num:
-        :rtype: None
+        :return: None
         """
         return self.drawing_arrow.RemoveInterruption(i_num)
 
@@ -492,7 +492,7 @@ class DrawingArrow(AnyObject):
                 |              MyArrow.RemovePoint iNum
 
         :param int i_num:
-        :rtype: None
+        :return: None
         """
         return self.drawing_arrow.RemovePoint(i_num)
 

@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatWindowState
 from pycatia.in_interfaces.page_setup import PageSetup
 from pycatia.in_interfaces.viewer import Viewer
 from pycatia.in_interfaces.viewers import Viewers
@@ -275,7 +275,7 @@ class Window(AnyObject):
         self.window.Width = value
 
     @property
-    def window_state(self) -> int:
+    def window_state(self) -> CatWindowState:
         """
         .. note::
             :class: toggle
@@ -291,16 +291,15 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.WindowState = catWindowStateMaximized
 
-        :return: enum cat_window_state
-        :rtype: int
+        :return: CatWindowState
         """
 
         return self.window.WindowState
 
     @window_state.setter
-    def window_state(self, value: int):
+    def window_state(self, value: CatWindowState):
         """
-        :param int value: enum cat_window_state
+        :param CatWindowState value:
         """
 
         self.window.WindowState = value

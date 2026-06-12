@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import SpringDef_Type
 from pycatia.abq_automation_interfaces.abq_property import ABQProperty
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
@@ -68,7 +69,7 @@ class ABQDamperConnectionProperty(ABQProperty):
         self.abq_damper_connection_property.Axis_sys = value
 
     @property
-    def damper_def(self) -> int:
+    def damper_def(self) -> SpringDef_Type:
         """
         .. note::
             :class: toggle
@@ -86,8 +87,7 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |         ABQ_LINE
                 |         ABQ_NON_LINEAR
 
-        :return: enum spring_def_type
-        :rtype: int
+        :return: SpringDef_Type
         """
 
         return self.abq_damper_connection_property.DamperDef

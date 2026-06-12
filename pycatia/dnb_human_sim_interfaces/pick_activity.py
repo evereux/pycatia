@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import HTSPickType, HTSHand
 from pycatia.dmaps_interfaces.activity import Activity
 from pycatia.dnb_dpm_interfaces.mfg_assembly import MfgAssembly
 from pycatia.dnb_human_sim_interfaces.worker_activity import WorkerActivity
@@ -39,7 +40,7 @@ class PickActivity(WorkerActivity):
         self.pick_activity = com_object
 
     @property
-    def pick_type(self) -> int:
+    def pick_type(self) -> HTSPickType:
         """
         .. note::
             :class: toggle
@@ -50,22 +51,21 @@ class PickActivity(WorkerActivity):
                 |     Returns or Sets "Pick Type" (see HTSPickType for list of possible values)
                 |     SINGLE_HAND for Single-Handed Pick, BOTH_HANDS for Double-Handed Pick
 
-        :return: enum hts_pick_type
-        :rtype: int
+        :return: HTSPickType
         """
 
         return self.pick_activity.PickType
 
     @pick_type.setter
-    def pick_type(self, value: int):
+    def pick_type(self, value: HTSPickType):
         """
-        :param int value: enum hts_pick_type
+        :param HTSPickType value:
         """
 
         self.pick_activity.PickType = value
 
     @property
-    def picking_hand(self) -> int:
+    def picking_hand(self) -> HTSHand:
         """
         .. note::
             :class: toggle
@@ -75,16 +75,15 @@ class PickActivity(WorkerActivity):
                 | 
                 |     Returns or Sets "Picking Hand" (see HTSHand for list of possible values )
 
-        :return: enum hts_hand
-        :rtype: int
+        :return: HTSHand
         """
 
         return self.pick_activity.PickingHand
 
     @picking_hand.setter
-    def picking_hand(self, value: int):
+    def picking_hand(self, value: HTSHand):
         """
-        :param int value: enum hts_hand
+        :param HTSHand value:
         """
 
         self.pick_activity.PickingHand = value

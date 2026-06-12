@@ -10,6 +10,7 @@
 """
 import inspect
 
+from pycatia import CatTextProperty, CatTextFrameType, CatTextAnchorPosition
 from pycatia.drafting_interfaces.drawing_leaders import DrawingLeaders
 from pycatia.drafting_interfaces.drawing_text_properties import DrawingTextProperties
 from pycatia.system_interfaces.any_object import AnyObject
@@ -38,7 +39,7 @@ class DrawingText(AnyObject):
         self.drawing_text = com_object
 
     @property
-    def anchor_position(self) -> int:
+    def anchor_position(self) -> CatTextAnchorPosition:
         """
         .. note::
             :class: toggle
@@ -54,16 +55,15 @@ class DrawingText(AnyObject):
                 | 
                 |          MyText.AnchorPosition = TopLeft
 
-        :return: enum cat_text_anchor_position
-        :rtype: int
+        :return: CatTextAnchorPosition
         """
 
         return self.drawing_text.AnchorPosition
 
     @anchor_position.setter
-    def anchor_position(self, value: int):
+    def anchor_position(self, value: CatTextAnchorPosition):
         """
-        :param int value: enum cat_text_anchor_position
+        :param CatTextAnchorPosition value:
         """
 
         self.drawing_text.AnchorPosition = value
@@ -135,7 +135,7 @@ class DrawingText(AnyObject):
         self.drawing_text.AssociativeElement = value
 
     @property
-    def frame_type(self) -> int:
+    def frame_type(self) -> CatTextFrameType:
         """
         .. note::
             :class: toggle
@@ -151,16 +151,15 @@ class DrawingText(AnyObject):
                 | 
                 |          MyText.FrameType = catEllipse
 
-        :return: enum cat_text_frame_type
-        :rtype: int
+        :return: CatTextFrameType
         """
 
         return self.drawing_text.FrameType
 
     @frame_type.setter
-    def frame_type(self, value: int):
+    def frame_type(self, value: CatTextFrameType):
         """
-        :param int value: enum cat_text_frame_type
+        :param CatTextFrameType value:
         """
 
         self.drawing_text.FrameType = value
@@ -411,7 +410,7 @@ class DrawingText(AnyObject):
 
         self.drawing_text.y = value
 
-    def activate_frame(self, itype: int) -> None:
+    def activate_frame(self, itype: CatTextFrameType) -> None:
         """
         .. note::
             :class: toggle
@@ -434,7 +433,7 @@ class DrawingText(AnyObject):
                 |          CatTextFrameType ityp = catNone
                 |          MyText.ActivateFrame(itype)
 
-        :param int itype: enum cat_text_frame_type
+        :param CatTextFrameType itype:
         :rtype: None
         """
         return self.drawing_text.ActivateFrame(itype)
@@ -581,7 +580,7 @@ class DrawingText(AnyObject):
 
         return self.drawing_text.GetParameterLink(i_index)
 
-    def get_parameter_on_sub_string(self, i_param: int, i_first: int, inb_character: int) -> int:
+    def get_parameter_on_sub_string(self, i_param: CatTextProperty, i_first: int, inb_character: int) -> int:
         """
         .. note::
             :class: toggle
@@ -615,7 +614,7 @@ class DrawingText(AnyObject):
                 |          inbCharacter = 0
                 |          oval = MyText.GetParameterOnsubString(iParam, iFirst, inbCharacter)
 
-        :param int i_param: enum cat_text_property
+        :param CatTextProperty i_param:
         :param int i_first:
         :param int inb_character:
         :rtype: int

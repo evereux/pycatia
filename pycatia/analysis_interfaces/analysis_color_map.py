@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import SPMDistributionMode
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.types.general import CATVariant
 
@@ -73,7 +73,7 @@ class AnalysisColorMap(AnyObject):
         self.analysis_color_map.DiscreteMode = value
 
     @property
-    def distribution_mode(self) -> int:
+    def distribution_mode(self) -> SPMDistributionMode:
         """
         .. note::
             :class: toggle
@@ -94,16 +94,15 @@ class AnalysisColorMap(AnyObject):
                 |          In this example, oDistMode is the output distribution mode for
                 |          analysisColorMap.
 
-        :return: enum spm_distribution_mode
-        :rtype: int
+        :return: SPMDistributionMode
         """
 
         return self.analysis_color_map.DistributionMode
 
     @distribution_mode.setter
-    def distribution_mode(self, value: int):
+    def distribution_mode(self, value: SPMDistributionMode):
         """
-        :param int value: enum spm_distribution_mode
+        :param SPMDistributionMode value:
         """
 
         self.analysis_color_map.DistributionMode = value

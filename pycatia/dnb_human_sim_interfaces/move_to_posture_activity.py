@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import HTSMotionBasis, HTSManikinReferential, HTSEndEffector
 from pycatia.dnb_human_modeling_interfaces.swkik_constraint import SWKIKConstraint
 from pycatia.dnb_human_sim_interfaces.worker_activity import WorkerActivity
 from pycatia.product_structure_interfaces.product import Product
@@ -89,7 +90,7 @@ class MoveToPostureActivity(WorkerActivity):
         self.move_to_posture_activity.CornerRounding = value
 
     @property
-    def motion_basis(self) -> int:
+    def motion_basis(self) -> HTSMotionBasis:
         """
         .. note::
             :class: toggle
@@ -100,22 +101,21 @@ class MoveToPostureActivity(WorkerActivity):
                 |     Returns or Sets Motion-Basis (see HTSMotionBasis for list of possible
                 |     values)
 
-        :return: enum hts_motion_basis
-        :rtype: int
+        :return: HTSMotionBasis
         """
 
         return self.move_to_posture_activity.MotionBasis
 
     @motion_basis.setter
-    def motion_basis(self, value: int):
+    def motion_basis(self, value: HTSMotionBasis):
         """
-        :param int value: enum hts_motion_basis
+        :param HTSMotionBasis value:
         """
 
         self.move_to_posture_activity.MotionBasis = value
 
     @property
-    def referential(self) -> int:
+    def referential(self) -> HTSManikinReferential:
         """
         .. note::
             :class: toggle
@@ -126,16 +126,15 @@ class MoveToPostureActivity(WorkerActivity):
                 |     Returns or Sets Manikin Referential (see HTSManikinReferential for list of
                 |     possible values)
 
-        :return: enum hts_manikin_referential
-        :rtype: int
+        :return: HTSManikinReferential
         """
 
         return self.move_to_posture_activity.Referential
 
     @referential.setter
-    def referential(self, value: int):
+    def referential(self, value: HTSManikinReferential):
         """
-        :param int value: enum hts_manikin_referential
+        :param HTSManikinReferential value:
         """
 
         self.move_to_posture_activity.Referential = value
@@ -295,7 +294,7 @@ class MoveToPostureActivity(WorkerActivity):
         """
         return self.move_to_posture_activity.GetNumberOfConstraints()
 
-    def get_part_relation(self, e_ee: int, o_product: Product, o_offset_trans: tuple) -> bool:
+    def get_part_relation(self, e_ee: HTSEndEffector, o_product: Product, o_offset_trans: tuple) -> bool:
         """
         .. note::
             :class: toggle
@@ -307,7 +306,7 @@ class MoveToPostureActivity(WorkerActivity):
                 | 
                 |     DEPRECATED. DO NOT USE
 
-        :param int e_ee: enum hts_end_effector
+        :param HTSEndEffector e_ee:
         :param Product o_product:
         :param tuple o_offset_trans:
         :rtype: bool
@@ -529,7 +528,7 @@ class MoveToPostureActivity(WorkerActivity):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_part_relation(self, e_ee: int, o_product: Product) -> None:
+    def set_part_relation(self, e_ee: HTSEndEffector, o_product: Product) -> None:
         """
         .. note::
             :class: toggle
@@ -540,7 +539,7 @@ class MoveToPostureActivity(WorkerActivity):
                 | 
                 |     DEPRECATED. DO NOT USE
 
-        :param int e_ee: enum hts_end_effector
+        :param HTSEndEffector e_ee:
         :param Product o_product:
         :rtype: None
         """

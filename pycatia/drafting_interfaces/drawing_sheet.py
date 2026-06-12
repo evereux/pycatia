@@ -12,6 +12,7 @@
 import os
 from pathlib import Path
 
+from pycatia import CatSheetGenViewsPosMode, CatPaperOrientation, CatSheetProjectionMethod
 from pycatia.drafting_interfaces.drawing_page_setup import DrawingPageSetup
 from pycatia.drafting_interfaces.drawing_views import DrawingViews
 from pycatia.drafting_interfaces.print_area import PrintArea
@@ -46,7 +47,7 @@ class DrawingSheet(AnyObject):
         self.drawing_sheet = com_object
 
     @property
-    def gen_views_pos_mode(self) -> int:
+    def gen_views_pos_mode(self) -> CatSheetGenViewsPosMode:
         """
         .. note::
             :class: toggle
@@ -66,22 +67,21 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.GenViewsPosMode = catFixedAxis
 
-        :return: enum cat_sheet_gen_views_pos_mode
-        :rtype: int
+        :return: CatSheetGenViewsPosMode
         """
 
         return self.drawing_sheet.GenViewsPosMode
 
     @gen_views_pos_mode.setter
-    def gen_views_pos_mode(self, value: int):
+    def gen_views_pos_mode(self, value: CatSheetGenViewsPosMode):
         """
-        :param int value: enum cat_sheet_gen_views_pos_mode
+        :param CatSheetGenViewsPosMode value:
         """
 
         self.drawing_sheet.GenViewsPosMode = value
 
     @property
-    def orientation(self) -> int:
+    def orientation(self) -> CatPaperOrientation:
         """
         .. note::
             :class: toggle
@@ -97,16 +97,16 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.Orientation = catPaperLandscape
 
-        :return: enum cat_paper_orientation
+        :return: CatPaperOrientation
         :rtype: int
         """
 
         return self.drawing_sheet.Orientation
 
     @orientation.setter
-    def orientation(self, value: int):
+    def orientation(self, value: CatPaperOrientation):
         """
-        :param int value: enum cat_paper_orientation
+        :param CatPaperOrientation value:
         """
 
         self.drawing_sheet.Orientation = value
@@ -189,7 +189,7 @@ class DrawingSheet(AnyObject):
         return PrintArea(self.drawing_sheet.PrintArea)
 
     @property
-    def projection_method(self) -> int:
+    def projection_method(self) -> CatSheetProjectionMethod:
         """
         .. note::
             :class: toggle
@@ -205,16 +205,15 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.ProjectionMethod = catFirstAngle
 
-        :return: enum cat_sheet_projection_method
-        :rtype: int
+        :return: CatSheetProjectionMethod
         """
 
         return self.drawing_sheet.ProjectionMethod
 
     @projection_method.setter
-    def projection_method(self, value: int):
+    def projection_method(self, value: CatSheetProjectionMethod):
         """
-        :param int value: enum cat_sheet_projection_method
+        :param CatSheetProjectionMethod value:
         """
 
         self.drawing_sheet.ProjectionMethod = value

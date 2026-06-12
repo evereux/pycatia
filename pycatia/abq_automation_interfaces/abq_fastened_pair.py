@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import PositionTolerance_Type, FormulationOption_Type
 from pycatia.abq_automation_interfaces.abq_interaction import ABQInteraction
 from pycatia.analysis_interfaces.analysis_entity import AnalysisEntity
 from pycatia.mec_mod_interfaces.constraint import Constraint
@@ -87,7 +88,7 @@ class ABQFastenedPair(ABQInteraction):
         self.abq_fastened_pair.ConnectionProperty = value
 
     @property
-    def formulation_option(self) -> int:
+    def formulation_option(self) -> FormulationOption_Type:
         """
         .. note::
             :class: toggle
@@ -106,16 +107,15 @@ class ABQFastenedPair(ABQInteraction):
                 |         SURFACETOSURFACE
                 |         NODETOSURFACE
 
-        :return: enum formulation_option_type
-        :rtype: int
+        :return: FormulationOption_Type
         """
 
         return self.abq_fastened_pair.FormulationOption
 
     @formulation_option.setter
-    def formulation_option(self, value: int):
+    def formulation_option(self, value: FormulationOption_Type):
         """
-        :param int value: enum formulation_option_type
+        :param FormulationOption_Type value:
         """
 
         self.abq_fastened_pair.FormulationOption = value
@@ -193,7 +193,7 @@ class ABQFastenedPair(ABQInteraction):
         self.abq_fastened_pair.InvertSlaveSurface = value
 
     @property
-    def position_tolerance(self) -> int:
+    def position_tolerance(self) -> PositionTolerance_Type:
         """
         .. note::
             :class: toggle
@@ -211,8 +211,7 @@ class ABQFastenedPair(ABQInteraction):
                 |         COMPUTED
                 |         SPECIFIED
 
-        :return: enum position_tolerance_type
-        :rtype: int
+        :return: PositionTolerance_Type
         """
 
         return self.abq_fastened_pair.PositionTolerance
@@ -220,7 +219,7 @@ class ABQFastenedPair(ABQInteraction):
     @position_tolerance.setter
     def position_tolerance(self, value: int):
         """
-        :param int value: enum position_tolerance_type
+        :param PositionTolerance_Type value:
         """
 
         self.abq_fastened_pair.PositionTolerance = value

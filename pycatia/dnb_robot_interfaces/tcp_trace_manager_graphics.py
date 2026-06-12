@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import DNBTCPTraceReps
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -66,7 +66,7 @@ class TCPTraceManagerGraphics(AnyObject):
         super().__init__(com_object)
         self.tcp_trace_manager_graphics = com_object
 
-    def set_next_thickness(self, i_rep: int, i_thickness: int) -> None:
+    def set_next_thickness(self, i_rep: DNBTCPTraceReps, i_thickness: int) -> None:
         """
         .. note::
             :class: toggle
@@ -92,13 +92,13 @@ class TCPTraceManagerGraphics(AnyObject):
                 |             index is pointing on the true width in pixel, recorded in the standard (if
                 |             there is one in the document) or in the setting. Input parameter.
 
-        :param int i_rep: enum dnbtcp_trace_reps
+        :param DNBTCPTraceReps i_rep:
         :param int i_thickness:
-        :rtype: None
+        :return: None
         """
         return self.tcp_trace_manager_graphics.SetNextThickness(i_rep, i_thickness)
 
-    def set_next_type(self, i_rep: int, i_type: int) -> None:
+    def set_next_type(self, i_rep: DNBTCPTraceReps, i_type: int) -> None:
         """
         .. note::
             :class: toggle
@@ -139,13 +139,13 @@ class TCPTraceManagerGraphics(AnyObject):
                 |     Returns:
                 |         HRESULT Returns S_OK if it succeeds, otherwise E_FAIL.
 
-        :param int i_rep: enum dnbtcp_trace_reps
+        :param DNBTCPTraceReps i_rep:
         :param int i_type:
         :rtype: None
         """
         return self.tcp_trace_manager_graphics.SetNextType(i_rep, i_type)
 
-    def set_trace_next_colour(self, i_rep: int, i_r: int, i_g: int, i_b: int, i_a: int) -> None:
+    def set_trace_next_colour(self, i_rep: DNBTCPTraceReps, i_r: int, i_g: int, i_b: int, i_a: int) -> None:
         """
         .. note::
             :class: toggle
@@ -180,7 +180,7 @@ class TCPTraceManagerGraphics(AnyObject):
                 |         iA
                 |             Long. Alpha color component from 0 to 255. Input parameter.
 
-        :param int i_rep: enum dnbtcp_trace_reps
+        :param DNBTCPTraceReps i_rep:
         :param int i_r:
         :param int i_g:
         :param int i_b:

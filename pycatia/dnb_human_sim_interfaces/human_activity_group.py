@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import HTSActivityGroupMotionBasis
 from pycatia.dnb_human_sim_interfaces.worker_activity import WorkerActivity
 
 
@@ -42,7 +43,7 @@ class HumanActivityGroup(WorkerActivity):
         self.human_activity_group = com_object
 
     @property
-    def motion_basis(self) -> int:
+    def motion_basis(self) -> HTSActivityGroupMotionBasis:
         """
         .. note::
             :class: toggle
@@ -53,16 +54,15 @@ class HumanActivityGroup(WorkerActivity):
                 |     Returns or Sets Motion-Basis (see HTSActivityGroupMotionBasis for list of
                 |     possible values)
 
-        :return: enum hts_activity_group_motion_basis
-        :rtype: int
+        :return: HTSActivityGroupMotionBasis
         """
 
         return self.human_activity_group.MotionBasis
 
     @motion_basis.setter
-    def motion_basis(self, value: int):
+    def motion_basis(self, value: HTSActivityGroupMotionBasis):
         """
-        :param int value: enum hts_activity_group_motion_basis
+        :param HTSActivityGroupMotionBasis value:
         """
 
         self.human_activity_group.MotionBasis = value

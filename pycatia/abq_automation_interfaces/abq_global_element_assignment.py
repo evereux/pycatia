@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import ElemIdEnum, ElemBehavEnum
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -39,8 +39,8 @@ class ABQGlobalElementAssignment(AnyObject):
 
     def get_element_properties(
             self,
-            i_elem_id: int,
-            o_elem_behav: int,
+            i_elem_id: ElemIdEnum,
+            o_elem_behav: ElemBehavEnum,
             o_mff_lag: bool,
             o_hf_flag: bool,
             o_ri_flag: bool,
@@ -127,8 +127,8 @@ class ABQGlobalElementAssignment(AnyObject):
                 |             true
                 |             false
 
-        :param int i_elem_id: enum elem_id_enum
-        :param int o_elem_behav: enum elem_behav_enum
+        :param ElemIdEnum i_elem_id:
+        :param ElemBehavEnum o_elem_behav:
         :param bool o_mff_lag:
         :param bool o_hf_flag:
         :param bool o_ri_flag:
@@ -162,8 +162,8 @@ class ABQGlobalElementAssignment(AnyObject):
 
     def set_element_properties(
             self,
-            i_elem_id: int,
-            i_elem_behav: int,
+            i_elem_id: ElemIdEnum,
+            i_elem_behav: ElemBehavEnum,
             i_mff_lag: bool,
             i_hf_flag: bool,
             i_ri_flag: bool,
@@ -256,8 +256,8 @@ class ABQGlobalElementAssignment(AnyObject):
                 |             SetElementValues TET_PARABOLI SOLID3D true true false false false
                 |             false.
 
-        :param int i_elem_id: enum elem_id_enum
-        :param int i_elem_behav: enum elem_behav_enum
+        :param ElemIdEnum i_elem_id:
+        :param ElemBehavEnum i_elem_behav:
         :param bool i_mff_lag:
         :param bool i_hf_flag:
         :param bool i_ri_flag:

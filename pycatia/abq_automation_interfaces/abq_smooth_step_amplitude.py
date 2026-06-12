@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import TimeSpan_Type
 from pycatia.abq_automation_interfaces.abq_property import ABQProperty
 
 
@@ -57,7 +58,7 @@ class ABQSmoothStepAmplitude(ABQProperty):
         return self.abq_smooth_step_amplitude.TimeAmplitudeTableSize
 
     @property
-    def time_span(self) -> int:
+    def time_span(self) -> TimeSpan_Type:
         """
         .. note::
             :class: toggle
@@ -75,15 +76,15 @@ class ABQSmoothStepAmplitude(ABQProperty):
                 |         STEP_TIME
                 |         TOTAL_TIME
 
-        :rtype: int
+        :rtype: TimeSpan_Type
         """
 
         return self.abq_smooth_step_amplitude.TimeSpan
 
     @time_span.setter
-    def time_span(self, value: int):
+    def time_span(self, value: TimeSpan_Type):
         """
-        :param int value:
+        :param TimeSpan_Type value:
         """
 
         self.abq_smooth_step_amplitude.TimeSpan = value

@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CATFTALeaderAssociativity
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -290,7 +290,7 @@ class FtaInfraSettingAtt(SettingController):
         self.fta_infra_setting_att.GridVSecondaryStep = value
 
     @property
-    def leader_associativity(self) -> int:
+    def leader_associativity(self) -> CATFTALeaderAssociativity:
         """
         .. note::
             :class: toggle
@@ -303,8 +303,7 @@ class FtaInfraSettingAtt(SettingController):
                 |     Role: The Leader Associativity setting parameter defines the associativity
                 |     of a leader with the pointed geometrical element.
 
-        :return: enum catfta_leader_associativity
-        :rtype: int
+        :return: CATFTALeaderAssociativity
         """
 
         return self.fta_infra_setting_att.LeaderAssociativity

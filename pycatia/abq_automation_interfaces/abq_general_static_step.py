@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import Stabilization_Type
 from pycatia.abq_automation_interfaces.abq_boundary_conditions import ABQBoundaryConditions
 from pycatia.abq_automation_interfaces.abq_fields import ABQFields
 from pycatia.abq_automation_interfaces.abq_loads import ABQLoads
@@ -366,7 +367,7 @@ class ABQGeneralStaticStep(ABQStep):
         self.abq_general_static_step.StabilizationMagnitude = value
 
     @property
-    def stabilization_method(self) -> int:
+    def stabilization_method(self) -> Stabilization_Type:
         """
         .. note::
             :class: toggle
@@ -385,16 +386,15 @@ class ABQGeneralStaticStep(ABQStep):
                 |           DISSIPATION
                 |           FACTOR
 
-        :rtype: enum stabilization_type
-        :rtype: int
+        :rtype: Stabilization_Type
         """
 
         return self.abq_general_static_step.StabilizationMethod
 
     @stabilization_method.setter
-    def stabilization_method(self, value: int):
+    def stabilization_method(self, value: Stabilization_Type):
         """
-        :param int value: enum stabilization_type
+        :param Stabilization_Type value:
         """
 
         self.abq_general_static_step.StabilizationMethod = value

@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatTextFrameType, CatTextFlipMode, CatTextAnchorPosition
 from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 
 
@@ -37,7 +38,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties = com_object
 
     @property
-    def anchor_point(self) -> int:
+    def anchor_point(self) -> CatTextAnchorPosition:
         """
         .. note::
             :class: toggle
@@ -53,16 +54,15 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.AnchorPoint = catRight
 
-        :return: enum cat_text_anchor_position
-        :rtype: int
+        :return: CatTextAnchorPosition
         """
 
         return self.drawing_text_properties.AnchorPoint
 
     @anchor_point.setter
-    def anchor_point(self, value: int):
+    def anchor_point(self, value: CatTextAnchorPosition):
         """
-        :param int value: enum cat_text_anchor_position
+        :param CatTextAnchorPosition value:
         """
 
         self.drawing_text_properties.AnchorPoint = value
@@ -223,7 +223,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.FontSize = value
 
     @property
-    def frame_type(self) -> int:
+    def frame_type(self) -> CatTextFrameType:
         """
         .. note::
             :class: toggle
@@ -239,16 +239,15 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.FrameType = catEllipse
 
-        :return: enum cat_text_frame_type
-        :rtype: int
+        :return: CatTextFrameType
         """
 
         return self.drawing_text_properties.FrameType
 
     @frame_type.setter
-    def frame_type(self, value: int):
+    def frame_type(self, value: CatTextFrameType):
         """
-        :param int value: enum cat_text_frame_type
+        :param CatTextFrameType value:
         """
 
         self.drawing_text_properties.FrameType = value
@@ -349,7 +348,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.Kerning = value
 
     @property
-    def mirror(self) -> int:
+    def mirror(self) -> CatTextFlipMode:
         """
         .. note::
             :class: toggle
@@ -365,16 +364,15 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Mirror = catTextNoFlip
 
-        :return: enum cat_text_flip_mode
-        :rtype: int
+        :return: CatTextFlipMode
         """
 
         return self.drawing_text_properties.Mirror
 
     @mirror.setter
-    def mirror(self, value: int):
+    def mirror(self, value: CatTextFlipMode):
         """
-        :param int value:
+        :param CatTextFlipMode value:
         """
 
         self.drawing_text_properties.Mirror = value
@@ -536,7 +534,7 @@ class DrawingTextProperties(CATBaseDispatch):
 
         self.drawing_text_properties.Underline = value
 
-    def activate_frame(self, i_type: int) -> None:
+    def activate_frame(self, i_type: CatTextFrameType) -> None:
         """
         .. note::
             :class: toggle
@@ -565,7 +563,7 @@ class DrawingTextProperties(CATBaseDispatch):
                 |      CatTextFrameType itype = catNone
                 |      MyText.ActivateFrame itype
 
-        :param int i_type: enum cat_text_frame_type
+        :param CatTextFrameType i_type:
         :rtype: None
         """
         return self.drawing_text_properties.ActivateFrame(i_type)

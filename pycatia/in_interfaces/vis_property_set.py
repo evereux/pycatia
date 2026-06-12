@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatVisPropertyType, CatVisPropertyStatus, CatVisLayerType, CatVisPropertyPick, CatVisPropertyShow
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -120,7 +120,7 @@ class VisPropertySet(AnyObject):
         super().__init__(com_object)
         self.vis_property_set = com_object
 
-    def get_layer(self) -> tuple[int, int, int]:
+    def get_layer(self, oLayerType: CatVisLayerType, oLayerValue: int) -> CatVisPropertyStatus:
         """
         .. note::
             :class: toggle
@@ -163,12 +163,13 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "layer =" & layer
                 |          End If
 
-        :return:
-        :rtype: tuple
+        :param CatVisLayerType oLayerType:
+        :param int oLayerValue:
+        :return: CatVisPropertyStatus
         """
-        return self.vis_property_set.GetLayer()
+        return self.vis_property_set.GetLayer(oLayerType, oLayerValue)
 
-    def get_pick(self) -> tuple[int, int]:
+    def get_pick(self, oPick: CatVisPropertyPick) -> CatVisPropertyStatus:
         """
         .. note::
             :class: toggle
@@ -191,10 +192,10 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetPick pickstate
                 |          MsgBox "pick = " & pickstate
 
-        :return: enum cat_vis_property_status
-        :rtype: int
+        :param CatVisPropertyPick oPick:
+        :return: CatVisPropertyStatus
         """
-        return self.vis_property_set.GetPick()
+        return self.vis_property_set.GetPick(oPick)
 
     def get_real_color(self) -> tuple[int, int, int, int]:
         """
@@ -238,11 +239,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealColor r, g, b 
                 |          MsgBox "r = " & r & " g = " & g & " b = " & b
 
-        :rtype: tuple
+        :return: tuple
         """
         return self.vis_property_set.GetRealColor()
 
-    def get_real_inheritance(self) -> tuple:
+    def get_real_inheritance(self, iPropertyType: CatVisPropertyType, oInheritance: int) -> CatVisPropertyStatus:
         """
         .. note::
             :class: toggle
@@ -294,9 +295,11 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "Inheritance : linetype = " & inhLineType & "width =" & inhWidth & "Colour ="
                 |                 & inhColor & "Opacity =" & inhOpacity
 
-        :rtype: tuple
+        :param iPropertyType iPropertyType:
+        :param int oInheritance:
+        :return: CatVisPropertyStatus
         """
-        return self.vis_property_set.GetRealInheritance()
+        return self.vis_property_set.GetRealInheritance(iPropertyType, oInheritance)
 
     def get_real_line_type(self) -> tuple[int, int]:
         """
@@ -340,7 +343,7 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealLineType linetype
                 |          MsgBox "linetype = " & linetype
 
-        :rtype: int
+        :return: int
         """
         return self.vis_property_set.GetRealLineType()
 
@@ -384,7 +387,7 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealOpacity op 
                 |          MsgBox "opacity = " & op
 
-        :rtype: int
+        :return: int
         """
         return self.vis_property_set.GetRealOpacity()
 
@@ -429,11 +432,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealWidth width
                 |          MsgBox "width = " & width
 
-        :rtype: int
+        :return: int
         """
         return self.vis_property_set.GetRealWidth()
 
-    def get_show(self) -> tuple[int, int]:
+    def get_show(self) -> CatVisPropertyShow:
         """
         .. note::
             :class: toggle
@@ -456,7 +459,7 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetShow showstate
                 |          MsgBox "show = " & showstate
 
-        :rtype: int
+        :return: CatVisPropertyShow
         """
         return self.vis_property_set.GetShow()[1]
 
@@ -500,7 +503,7 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetSymbolType symbol
                 |          MsgBox "Symbol = " & symbol
 
-        :rtype: int
+        :return: int
         """
         return self.vis_property_set.GetSymbolType()
 
@@ -550,11 +553,11 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleColor r, g, b 
                 |          MsgBox "r = " & r & " g = " & g & " b = " & b
 
-        :rtype: int
+        :return: int
         """
         return self.vis_property_set.GetVisibleColor()
 
-    def get_visible_inheritance(self) -> int:
+    def get_visible_inheritance(self) -> CatVisPropertyType:
         """
         .. note::
             :class: toggle
@@ -590,7 +593,7 @@ class VisPropertySet(AnyObject):
                 |                 The inheritance flag for iPropertyType is not the same for all
                 |                 elements of the current selection, so oInheritance is not valid
 
-        :rtype: int
+        :return: CatVisPropertyType
         """
         return self.vis_property_set.GetVisibleInheritance()
 
@@ -635,7 +638,7 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleLineType linetype
                 |          MsgBox "linetype = " & linetype
 
-        :rtype: int
+        :return: int
         """
         return self.vis_property_set.GetVisibleLineType()
 
@@ -682,7 +685,7 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleOpacity op 
                 |          MsgBox "opacity = " & op
 
-        :rtype: int
+        :return: int
         """
         return self.vis_property_set.GetVisibleOpacity()
 
@@ -727,7 +730,7 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "width = " & width
 
 
-        :rtype: int
+        :return: int
         """
         return self.vis_property_set.GetVisibleWidth()
 
@@ -763,7 +766,7 @@ class VisPropertySet(AnyObject):
 
         :param int i_layer_type: enum cat_vis_layer_type
         :param int i_layer_value:
-        :rtype: None
+        :return: None
         """
         return self.vis_property_set.SetLayer(i_layer_type, i_layer_value)
 
@@ -788,7 +791,7 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.SetPick catVisPropertyNoPickAttr
 
         :param int i_pick: enum cat_vis_property_pick
-        :rtype: None
+        :return: None
         """
         return self.vis_property_set.SetPick(i_pick)
 
@@ -835,7 +838,7 @@ class VisPropertySet(AnyObject):
         :param int i_green:
         :param int i_blue:
         :param int i_inheritance:
-        :rtype: None
+        :return: None
         """
         return self.vis_property_set.SetRealColor(i_red, i_green, i_blue, i_inheritance)
 
@@ -874,7 +877,7 @@ class VisPropertySet(AnyObject):
 
         :param int i_line_type:
         :param int i_inheritance:
-        :rtype: None
+        :return: None
         """
         return self.vis_property_set.SetRealLineType(i_line_type, i_inheritance)
 
@@ -912,7 +915,7 @@ class VisPropertySet(AnyObject):
 
         :param int i_opacity:
         :param int i_inheritance:
-        :rtype: None
+        :return: None
         """
         return self.vis_property_set.SetRealOpacity(i_opacity, i_inheritance)
 
@@ -953,11 +956,11 @@ class VisPropertySet(AnyObject):
 
         :param int i_line_width:
         :param int i_inheritance:
-        :rtype: None
+        :return: None
         """
         return self.vis_property_set.SetRealWidth(i_line_width, i_inheritance)
 
-    def set_show(self, i_show: int) -> None:
+    def set_show(self, i_show: CatVisPropertyShow) -> None:
         """
         .. note::
             :class: toggle
@@ -977,8 +980,8 @@ class VisPropertySet(AnyObject):
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.SetShow catVisPropertyNoShowAttr
 
-        :param int i_show: enum cat_vis_property_show
-        :rtype: None
+        :param CatVisPropertyShow i_show:
+        :return: None
         """
         return self.vis_property_set.SetShow(i_show)
 
@@ -1026,7 +1029,7 @@ class VisPropertySet(AnyObject):
                 |       visProperties1.SetSymbolType 4
 
         :param int i_symbol_type:
-        :rtype: None
+        :return: None
         """
         return self.vis_property_set.SetSymbolType(i_symbol_type)
 

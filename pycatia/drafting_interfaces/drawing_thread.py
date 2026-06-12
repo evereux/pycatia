@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatThreadType, CatThreadLinkedTo
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.types.general import CATVariant
 
@@ -36,7 +36,7 @@ class DrawingThread(AnyObject):
         self.drawing_thread = com_object
 
     @property
-    def type(self) -> int:
+    def type(self) -> CatThreadType:
         """
         .. note::
             :class: toggle
@@ -71,21 +71,20 @@ class DrawingThread(AnyObject):
                 | 
                 |      ThreadLinkType = MyThread.IsLinkedTo
 
-        :return: enum cat_thread_type
-        :rtype: int
+        :return: CatThreadType
         """
 
         return self.drawing_thread.Type
 
     @type.setter
-    def type(self, value: int):
+    def type(self, value: CatThreadType):
         """
-        :param int value: enum cat_thread_type
+        :param CatThreadType value:
         """
 
         self.drawing_thread.Type = value
 
-    def is_linked_to(self) -> int:
+    def is_linked_to(self) -> CatThreadLinkedTo:
         """
         .. note::
             :class: toggle
@@ -105,8 +104,7 @@ class DrawingThread(AnyObject):
                 |
                 |      ThreadLinkType = MyThread.IsLinkedTo
 
-        :return: enum cat_thread_linked_to
-        :rtype: int
+        :return: CatThreadLinkedTo
         """
 
         return self.drawing_thread.IsLinkedTo()

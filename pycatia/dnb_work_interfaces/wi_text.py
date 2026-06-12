@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import ItemAssignmentType
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -130,7 +130,8 @@ class WIText(AnyObject):
         """
         return self.wi_text.GetAttribute(i_attr_name)
 
-    def get_geom_associated_to_annotation(self, i_assignment_type: int, io_point_geom: AnyObject) -> None:
+    def get_geom_associated_to_annotation(self, i_assignment_type: ItemAssignmentType,
+                                          io_point_geom: AnyObject) -> None:
         """
         .. note::
             :class: toggle
@@ -157,7 +158,7 @@ class WIText(AnyObject):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_assignment_type: enum item_assignment_type
+        :param ItemAssignmentType i_assignment_type:
         :param AnyObject io_point_geom:
         :rtype: None
         """

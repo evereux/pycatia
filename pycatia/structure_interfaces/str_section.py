@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatStrSectionProperties
 from pycatia.knowledge_interfaces.parameter import Parameter
 from pycatia.structure_interfaces.str_anchor_points import StrAnchorPoints
 from pycatia.system_interfaces.any_object import AnyObject
@@ -174,7 +174,7 @@ class StrSection(AnyObject):
 
         return StrAnchorPoints(self.str_section.StrAnchorPoints)
 
-    def get_property(self, i_property: int, o_value: float) -> None:
+    def get_property(self, i_property: CatStrSectionProperties, o_value: float) -> None:
         """
         .. note::
             :class: toggle
@@ -192,7 +192,7 @@ class StrSection(AnyObject):
                 |          Dim type As Parameter
                 |          Set type = Section_1.GetProperty(CatStrArea)
 
-        :param int i_property: enum cat_str_section_properties
+        :param CatStrSectionProperties i_property:
         :param float o_value:
         :rtype: None
         """

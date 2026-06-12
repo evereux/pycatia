@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import DMUTrackMoveMode
 from pycatia.fitting_interfaces.sampled import Sampled
 
 
@@ -39,7 +40,7 @@ class Track(Sampled):
         self.track = com_object
 
     @property
-    def move_mode(self) -> int:
+    def move_mode(self) -> DMUTrackMoveMode:
         """
         .. note::
             :class: toggle
@@ -53,16 +54,15 @@ class Track(Sampled):
                 |     calculated so that the end of the track is reached by the end of the total
                 |     time. Uses enum DMUTrackMoveMode, which defined is in this interface.
 
-        :return: enum dmu_track_move_mode
-        :rtype: int
+        :return: DMUTrackMoveMode
         """
 
         return self.track.MoveMode
 
     @move_mode.setter
-    def move_mode(self, value: int):
+    def move_mode(self, value: DMUTrackMoveMode):
         """
-        :param int value: enum dmu_track_move_mode
+        :param DMUTrackMoveMode value:
         """
 
         self.track.MoveMode = value

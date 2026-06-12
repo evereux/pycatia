@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CD5SaveOperation_Scope
 from pycatia.eno_cd5_interfaces.cd5_engine import CD5Engine
 from pycatia.eno_cd5_interfaces.cd5_save_operation import CD5SaveOperation
 
@@ -50,7 +51,7 @@ class CD5EngineV6R2014x(CD5Engine):
         super().__init__(com_object)
         self.cd5_engine_v6_r2014x = com_object
 
-    def create_save_operation(self, i_scope: int) -> CD5SaveOperation:
+    def create_save_operation(self, i_scope: CD5SaveOperation_Scope) -> CD5SaveOperation:
         """
         .. note::
             :class: toggle
@@ -81,7 +82,7 @@ class CD5EngineV6R2014x(CD5Engine):
                 |          Dim SaveOperation As CD5SaveOperation
                 |          Set SaveOperation = oCD5Engine.CreateSaveOperation(CD5SaveOperation_Session)
 
-        :param int i_scope: enum cd5_save_operation_scope
+        :param CD5SaveOperation_Scope i_scope:
         :rtype: CD5SaveOperation
         """
         return CD5SaveOperation(self.cd5_engine_v6_r2014x.CreateSaveOperation(i_scope).com_object)
