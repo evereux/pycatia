@@ -71,8 +71,7 @@ class StrCutback(AssemblyFeature):
                 | 
                 |          Type = Member.Type
 
-        :return: enum cat_str_cutback_type
-        :rtype: CatStrCutbackType
+        :return: CatStrCutbackType
         """
 
         return self.str_cutback.Type

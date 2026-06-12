@@ -57,7 +57,7 @@ class SectioningSettingAtt(SettingController):
     @clipping_mode.setter
     def clipping_mode(self, value: int):
         """
-        :param int value: enum cat_section_clipping_mode
+        :param CatSectionClippingMode value:
         """
 
         self.sectioning_setting_att.ClippingMode = value
@@ -604,9 +604,9 @@ class SectioningSettingAtt(SettingController):
         return self.sectioning_setting_att.WindowOpenMode
 
     @window_open_mode.setter
-    def window_open_mode(self, value: int):
+    def window_open_mode(self, value: CatSecWindowOpenMode):
         """
-        :param int value: enum cat_sec_window_open_mode
+        :param CatSecWindowOpenMode value:
         """
 
         self.sectioning_setting_att.WindowOpenMode = value

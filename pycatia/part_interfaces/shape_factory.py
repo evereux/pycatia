@@ -666,7 +666,7 @@ class ShapeFactory(Factory):
 
         :param Reference i_face_to_draft:
         :param Reference i_neutral:
-        :param CatDraftNeutralPropagationMode i_neutral_mode: enum cat_draft_neutral_propagation_mode
+        :param CatDraftNeutralPropagationMode i_neutral_mode:
         :param Reference i_parting:
         :param float i_dir_x:
         :param float i_dir_y:
@@ -2133,7 +2133,7 @@ class ShapeFactory(Factory):
                 |         The created edge fillet
 
         :param Reference i_edge_to_fillet:
-        :param CatFilletEdgePropagation i_propag_mode: enum cat_fillet_edge_propagation
+        :param CatFilletEdgePropagation i_propag_mode:
         :param CatFilletVariation i_variation_mode:
         :param float i_default_radius:
         :rtype: VarRadEdgeFillet
@@ -2252,7 +2252,7 @@ class ShapeFactory(Factory):
                 |         The created split operation
 
         :param Reference i_splitting_element:
-        :param CatSplitSide i_split_side: enum cat_split_side
+        :param CatSplitSide i_split_side:
         :rtype: Split
         """
         return Split(self.shape_factory.AddNewSplit(i_splitting_element.com_object, i_split_side))

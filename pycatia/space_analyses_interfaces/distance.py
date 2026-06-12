@@ -327,9 +327,9 @@ class Distance(AnyObject):
         return self.distance.MeasureType
 
     @measure_type.setter
-    def measure_type(self, value: int):
+    def measure_type(self, value: CatDistanceMeasureType):
         """
-        :param int value: enum cat_distance_measure_type
+        :param CatDistanceMeasureType value:
         """
 
         self.distance.MeasureType = value

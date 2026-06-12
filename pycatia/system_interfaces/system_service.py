@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia import CatScriptLibraryType
+from pycatia import CatScriptLibraryType, CatScriptLanguage
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -60,7 +60,7 @@ class SystemService(AnyObject):
         """
         return str(self.system_service.Environ(i_env_string))
 
-    def evaluate(self, i_script_text: str, i_language: int, i_function_name: str, i_parameters: list):
+    def evaluate(self, i_script_text: str, i_language: CatScriptLanguage, i_function_name: str, i_parameters: list):
         """
         .. note::
             :class: toggle
@@ -100,7 +100,7 @@ class SystemService(AnyObject):
                 |          "CATMain", params
 
         :param str i_script_text:
-        :param int i_language: enum cat_script_language
+        :param CatScriptLanguage i_language:
         :param str i_function_name:
         :param list i_parameters:
         :return: None

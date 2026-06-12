@@ -671,7 +671,8 @@ class StrObjectFactory(AnyObject):
         """
         return AnyObject(self.str_object_factory.AddDefExtFromReference(i_reference.com_object, i_offset))
 
-    def add_def_ext_on_member(self, i_member: StrMember, i_side: int, i_distance: float, i_offset: float) -> AnyObject:
+    def add_def_ext_on_member(self, i_member: StrMember, i_side: CatStrMemberExtremity, i_distance: float,
+                              i_offset: float) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -698,7 +699,7 @@ class StrObjectFactory(AnyObject):
                 |             The offset on the extremity
 
         :param StrMember i_member:
-        :param int i_side: enum cat_str_member_extremity
+        :param CatStrMemberExtremity i_side:
         :param float i_distance:
         :param float i_offset:
         :rtype: AnyObject
@@ -776,7 +777,7 @@ class StrObjectFactory(AnyObject):
                                 i_def_extr1: AnyObject,
                                 i_def_extr2: AnyObject,
                                 i_direction: tuple,
-                                i_mode: int,
+                                i_mode: CatStrPlaneMode,
                                 i_length: float,
                                 i_type: str) -> StrMember:
         """
@@ -830,7 +831,7 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param tuple i_direction:
-        :param int i_mode: enum cat_str_plane_mode
+        :param CatStrPlaneMode i_mode:
         :param float i_length:
         :param str i_type:
         :rtype: StrMember

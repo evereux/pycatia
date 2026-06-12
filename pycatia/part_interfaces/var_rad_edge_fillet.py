@@ -71,9 +71,9 @@ class VarRadEdgeFillet(EdgeFillet):
         return self.var_rad_edge_fillet.BitangencyType
 
     @bitangency_type.setter
-    def bitangency_type(self, value: int):
+    def bitangency_type(self, value: CatFilletBitangencyType):
         """
-        :param int value: enum cat_fillet_bitangency_type
+        :param CatFilletBitangencyType value:
         """
 
         self.var_rad_edge_fillet.BitangencyType = value

@@ -217,9 +217,9 @@ class Thread(DressUpShape):
         return self.thread.Side
 
     @side.setter
-    def side(self, value: int):
+    def side(self, value: CatThreadSide):
         """
-        :param int value: enum cat_thread_side
+        :param CatThreadSide value:
         """
 
         self.thread.Side = value

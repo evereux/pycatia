@@ -526,9 +526,9 @@ class Product(AnyObject):
                 f'Prodcut "{self.name}" could not do get Product.Source. Check Product for broken links.')
 
     @source.setter
-    def source(self, value: int):
+    def source(self, value: CatProductSource):
         """
-        :param int value: enum cat_product_source
+        :param CatProductSource value:
         """
 
         try:
@@ -922,7 +922,7 @@ class Product(AnyObject):
                 |         iFile
                 |             File where the bill of material will be saved
 
-        :param CatFileType i_file_type: enum cat_file_type
+        :param CatFileType i_file_type:
         :param str i_file:
         :rtype: None
         """
