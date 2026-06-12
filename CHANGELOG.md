@@ -15,6 +15,7 @@ scripts you can do VisPropertySet.get_show()[1] to get the show state.
 * Improved type hinting for IntEnums. Type hints instead of using `int` now reference the
   new IntEnum types.
 * Some IntEnum types have been renamed to match those of it's VBA counterpart.
+* `document_types['CatalogDocument']` now returns the correct document type.
 
 ## 0.9.5
 
