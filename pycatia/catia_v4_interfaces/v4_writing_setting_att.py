@@ -8,7 +8,8 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CATV4IV5V4InternalCurveCreationEnum, CATV4IV5V4ErrorFeatureCreationEnum, \
+    CATV4IV5V4AssociativityModeEnum
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -56,7 +57,7 @@ class V4WritingSettingAtt(SettingController):
         self.v4_writing_setting_att = com_object
 
     @property
-    def asso_mode(self) -> int:
+    def asso_mode(self) -> CATV4IV5V4AssociativityModeEnum:
         """
         .. note::
             :class: toggle
@@ -68,8 +69,7 @@ class V4WritingSettingAtt(SettingController):
                 |     Role: Returns or sets the associativity mode of migration.If non
                 |     associative mode is chosen, it is possible to create or not the solid.
 
-        :return: enum catv4_iv5_v4_associativity_mode_enum
-        :rtype: int
+        :return: CATV4IV5V4AssociativityModeEnum
         """
 
         return self.v4_writing_setting_att.Asso_mode
@@ -213,7 +213,7 @@ class V4WritingSettingAtt(SettingController):
         self.v4_writing_setting_att.Layer_for_No_Asso = value
 
     @property
-    def mode_create_display(self) -> int:
+    def mode_create_display(self) -> CATV4IV5V4InternalCurveCreationEnum:
         """
         .. note::
             :class: toggle
@@ -227,22 +227,21 @@ class V4WritingSettingAtt(SettingController):
                 |     Role: Returns or sets the curves associated to faces'boundaries creation
                 |     option.
 
-        :return: enum catv4_iv5_v4_internal_curve_creation_enum
-        :rtype: int
+        :return: CATV4IV5V4InternalCurveCreationEnum
         """
 
         return self.v4_writing_setting_att.ModeCreateDisplay
 
     @mode_create_display.setter
-    def mode_create_display(self, value: int):
+    def mode_create_display(self, value: CATV4IV5V4InternalCurveCreationEnum):
         """
-        :param int value: enum catv4_iv5_v4_internal_curve_creation_enum
+        :param CATV4IV5V4InternalCurveCreationEnum value:
         """
 
         self.v4_writing_setting_att.ModeCreateDisplay = value
 
     @property
-    def mode_error_display(self) -> int:
+    def mode_error_display(self) -> CATV4IV5V4ErrorFeatureCreationEnum:
         """
         .. note::
             :class: toggle
@@ -254,16 +253,15 @@ class V4WritingSettingAtt(SettingController):
                 |     Returns or sets the error feature creation option.
                 |     Role: Returns or sets the error feature creation option.
 
-        :return: enum catv4_iv5_v4_error_feature_creation_enum
-        :rtype: int
+        :return: CATV4IV5V4ErrorFeatureCreationEnum
         """
 
         return self.v4_writing_setting_att.ModeErrorDisplay
 
     @mode_error_display.setter
-    def mode_error_display(self, value: int):
+    def mode_error_display(self, value: CATV4IV5V4ErrorFeatureCreationEnum):
         """
-        :param int value: enum catv4_iv5_v4_error_feature_creation_enum
+        :param CATV4IV5V4ErrorFeatureCreationEnum value:
         """
 
         self.v4_writing_setting_att.ModeErrorDisplay = value

@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import ItemAssignmentType
 from pycatia.dmaps_interfaces.item import Item
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import CATVariant
@@ -58,7 +59,7 @@ class Items(Collection):
         """
         return Item(self.items_.Add(i_product.com_object))
 
-    def add_by_assignment_type(self, i_item: Item, i_assignment_type: int) -> Item:
+    def add_by_assignment_type(self, i_item: Item, i_assignment_type: ItemAssignmentType) -> Item:
         """
         .. note::
             :class: toggle
@@ -81,7 +82,7 @@ class Items(Collection):
                 |         oitem The item
 
         :param Item i_item:
-        :param int i_assignment_type: enum item_assignment_type
+        :param ItemAssignmentType i_assignment_type:
         :rtype: Item
         """
         return Item(self.items_.AddByAssignmentType(i_item.com_object, i_assignment_type))

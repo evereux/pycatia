@@ -42,7 +42,7 @@ class Marker2Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add2DArrow(CATSafeArrayVariant iCoordinates) As
                 | Marker2D
                 | 
@@ -85,7 +85,7 @@ class Marker2Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add2DCircle(CATSafeArrayVariant iCoordinates,
                 | long iFillStatus) As Marker2D
                 | 
@@ -133,7 +133,7 @@ class Marker2Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add2DFreeHand(CATSafeArrayVariant iCoordinates) As
                 | Marker2D
                 | 
@@ -180,7 +180,7 @@ class Marker2Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add2DLine(CATSafeArrayVariant iCoordinates) As
                 | Marker2D
                 | 
@@ -223,7 +223,7 @@ class Marker2Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add2DPicture(CATSafeArrayVariant iCoordinates,
                 | CATBSTR iPath) As Marker2D
                 | 
@@ -270,7 +270,7 @@ class Marker2Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add2DRectangle(CATSafeArrayVariant iCoordinates,
                 | long iFillStatus) As Marker2D
                 | 
@@ -318,7 +318,7 @@ class Marker2Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add2DText(CATSafeArrayVariant iCoordinates,
                 | CATBSTR iText) As Marker2D
                 | 
@@ -361,7 +361,7 @@ class Marker2Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As Marker2D
                 | 
                 |     Returns a marker 2D using its index from the Marker2Ds
@@ -397,7 +397,7 @@ class Marker2Ds(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a marker 2D from the Marker2Ds collection.

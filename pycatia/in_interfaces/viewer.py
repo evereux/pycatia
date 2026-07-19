@@ -11,6 +11,7 @@
 
 from typing import TYPE_CHECKING
 
+from pycatia import CatScriptLanguage
 from pycatia.in_interfaces.camera import Camera
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -124,7 +125,7 @@ class Viewer(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Activate()
                 | 
                 |     Activates the viewer in the window.
@@ -144,7 +145,7 @@ class Viewer(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CaptureToFile(CatCaptureFormat iFormat,
                 | CATBSTR iFile)
                 | 
@@ -178,7 +179,7 @@ class Viewer(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetBackgroundColor(CATSafeArrayVariant color)
                 | 
                 |     Gets the viewer's background color. The color is expressed in the RGB color
@@ -204,7 +205,12 @@ class Viewer(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def create_viewer_2d(self) -> 'Viewer2D':
         from pycatia.in_interfaces.viewer_2d import Viewer2D
@@ -221,7 +227,7 @@ class Viewer(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func NewCamera() As Camera
                 | 
                 |     Creates a new camera from the viewpoint of the viewer.
@@ -242,7 +248,7 @@ class Viewer(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutBackgroundColor(CATSafeArrayVariant color)
                 | 
                 |     Sets the viewer's background color. The color is expressed in the RGB color
@@ -280,7 +286,7 @@ class Viewer(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Reframe()
                 | 
                 |     Reframes the viewer's contents (Fits all in). Reframing means that the
@@ -303,7 +309,7 @@ class Viewer(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Update()
                 | 
                 |     Updates the viewer's contents. Since the viewer is not automatically
@@ -325,7 +331,7 @@ class Viewer(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ZoomIn()
                 | 
                 |     Zooms in the viewer's contents.
@@ -345,7 +351,7 @@ class Viewer(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ZoomOut()
                 | 
                 |     Zooms out the viewer's contents.

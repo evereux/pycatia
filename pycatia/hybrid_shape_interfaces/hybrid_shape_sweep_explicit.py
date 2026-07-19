@@ -776,7 +776,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAngleRef(long ii) As Angle
                 | 
                 |     Gets the angle value associated to the reference surface.
@@ -804,7 +804,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFittingPoints(Reference opIAElemA,
                 | Reference opIAElemB)
                 | 
@@ -840,7 +840,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetLongitudinalRelimiters(Reference opIAElemA,
                 | Reference opIAElemB)
                 | 
@@ -877,7 +877,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbAngle(long oAng)
                 | 
                 |     Returns the number of Angles.
@@ -893,7 +893,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbGuide(long oNum)
                 | 
                 |     Gets the number of guides curves.
@@ -909,7 +909,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbPosAngle(long oPosAng)
                 | 
                 |     Gets the number of numerical positioning parameters corresponding to angles
@@ -926,7 +926,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbPosCoord(long oPosCoord)
                 | 
                 |     Gets the number of numerical positioning parameters corresponding to
@@ -943,7 +943,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPosAngle(long ii) As Angle
                 | 
                 |     Gets angles if both profile and first sweep plane axis systems from default
@@ -973,7 +973,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPosCoord(long ii) As Length
                 | 
                 |     Gets translations coordinates if both profile axis system and first sweep
@@ -1004,7 +1004,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPosDirection(long ii) As Reference
                 | 
                 |     Gets the positioning directions : profile plane or first sweep plane X-axis direction.
@@ -1032,7 +1032,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPosPoint(long ii) As Reference
                 | 
                 |     Gets the points designated as the origins of the profile plane and first
@@ -1061,7 +1061,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPosSwapAxes(long ii) As long
                 | 
                 |     Gets axes inversion from previous definition for both profile plane and
@@ -1093,7 +1093,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetRelimiters(Reference opIAElem1,
                 | long opOrient1,
                 | Reference opIAElem2,
@@ -1145,7 +1145,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub IsSketchAxisUsedAsDefault(boolean oBoolean)
                 | 
                 |     Queries status wherere Sketch axis used as default or not.
@@ -1179,7 +1179,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAngle()
                 | 
                 |     Removes an Angle.
@@ -1193,7 +1193,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveFittingPoints()
                 | 
                 |     Removes the fitting points.
@@ -1207,7 +1207,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveGuide()
                 | 
                 |     Removes a guide curve.
@@ -1221,7 +1221,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAngleRef(long ii,
                 | double Elem)
                 | 
@@ -1248,7 +1248,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetFittingPoints(Reference ipIAElemA,
                 | Reference ipIAElemB)
                 | 
@@ -1286,7 +1286,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGuideDeviation(double iLength)
                 | 
                 |     Sets deviation value (length) from guide curves allowed during sweeping.
@@ -1303,7 +1303,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLongitudinalRelimiters(Reference ipIAElemA,
                 | Reference ipIAElemB)
                 | 
@@ -1340,7 +1340,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPosAngle(long ii,
                 | double Elem)
                 | 
@@ -1369,7 +1369,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPosCoord(long ii,
                 | double Elem)
                 | 
@@ -1399,7 +1399,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPosDirection(long ii,
                 | Reference Elem)
                 | 
@@ -1443,7 +1443,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPosPoint(long ii,
                 | Reference Elem)
                 | 
@@ -1488,7 +1488,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPosSwapAxes(long ii,
                 | long Elem)
                 | 
@@ -1523,7 +1523,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRelimiters(Reference ipIAElem1,
                 | long ipOrient1,
                 | Reference ipIAElem2,
@@ -1575,7 +1575,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSmoothAngleThreshold(double iAngle)
                 | 
                 |     Sets angular threshold.
@@ -1591,7 +1591,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub UseSketchAxisAsDefault(boolean iBoolean)
                 | 
                 |     Uses Sketch Axis As Default.

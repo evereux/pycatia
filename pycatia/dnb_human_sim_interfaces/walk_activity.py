@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import HTSWalkMotionBasis, HTSStrideOptions, HTSSwingOptions, HTSBodyPoseOptions
 from pycatia.dnb_human_sim_interfaces.worker_activity import WorkerActivity
 
 
@@ -35,7 +36,7 @@ class WalkActivity(WorkerActivity):
         self.walk_activity = com_object
 
     @property
-    def body_pose(self) -> int:
+    def body_pose(self) -> HTSBodyPoseOptions:
         """
         .. note::
             :class: toggle
@@ -46,22 +47,21 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Body Posture option (see HTSBodyPoseOptions for list of
                 |     possible values)
 
-        :return: enum hts_body_pose_options
-        :rtype: int
+        :return: HTSBodyPoseOptions
         """
 
         return self.walk_activity.BodyPose
 
     @body_pose.setter
-    def body_pose(self, value: int):
+    def body_pose(self, value: HTSBodyPoseOptions):
         """
-        :param int value: enum hts_body_pose_options
+        :param HTSBodyPoseOptions value:
         """
 
         self.walk_activity.BodyPose = value
 
     @property
-    def motion_basis(self) -> int:
+    def motion_basis(self) -> HTSWalkMotionBasis:
         """
         .. note::
             :class: toggle
@@ -72,22 +72,21 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Motion-Basis (see HTSWalkMotionBasis for list of possible
                 |     values)
 
-        :return: enum hts_walk_motion_basis
-        :rtype: int
+        :return: HTSWalkMotionBasis
         """
 
         return self.walk_activity.MotionBasis
 
     @motion_basis.setter
-    def motion_basis(self, value: int):
+    def motion_basis(self, value: HTSWalkMotionBasis):
         """
-        :param int value: enum hts_walk_motion_basis
+        :param HTSWalkMotionBasis value:
         """
 
         self.walk_activity.MotionBasis = value
 
     @property
-    def stride(self) -> int:
+    def stride(self) -> HTSStrideOptions:
         """
         .. note::
             :class: toggle
@@ -98,22 +97,21 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Stride option (see HTSStrideOptions for list of possible
                 |     values)
 
-        :return: enum hts_stride_options
-        :rtype: int
+        :return: HTSStrideOptions
         """
 
         return self.walk_activity.Stride
 
     @stride.setter
-    def stride(self, value: int):
+    def stride(self, value: HTSStrideOptions):
         """
-        :param int value: enum hts_stride_options
+        :param HTSStrideOptions value:
         """
 
         self.walk_activity.Stride = value
 
     @property
-    def swing(self) -> int:
+    def swing(self) -> HTSSwingOptions:
         """
         .. note::
             :class: toggle
@@ -124,16 +122,15 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Swing option (see HTSSwingOptions for list of possible
                 |     values)
 
-        :return: enum hts_swing_options
-        :rtype: int
+        :return: HTSSwingOptions
         """
 
         return self.walk_activity.Swing
 
     @swing.setter
-    def swing(self, value: int):
+    def swing(self, value: HTSSwingOptions):
         """
-        :param int value: enum hts_swing_options
+        :param HTSSwingOptions value:
         """
 
         self.walk_activity.Swing = value

@@ -144,7 +144,7 @@ class HybridShapeLineBiTangent(Line):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetChoiceNo(long val1,
                 | long val2,
                 | long val3,
@@ -227,7 +227,7 @@ class HybridShapeLineBiTangent(Line):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLengthType() As long
                 | 
                 |     Gets the length type Default is 0.
@@ -249,7 +249,7 @@ class HybridShapeLineBiTangent(Line):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetChoiceNo(long val1,
                 | long val2,
                 | long val3,
@@ -337,7 +337,7 @@ class HybridShapeLineBiTangent(Line):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLengthType(long iType)
                 | 
                 |     Sets the length type Default is 0.

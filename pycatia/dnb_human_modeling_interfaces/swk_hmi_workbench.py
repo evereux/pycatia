@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from pycatia import SWKAnthroSex
 from pycatia.dnb_human_modeling_interfaces.swk_human_catalog import SWKHumanCatalog
 from pycatia.dnb_human_modeling_interfaces.swk_manikin import SWKManikin
 from pycatia.system_interfaces.any_object import AnyObject
@@ -74,7 +75,7 @@ class SWKHmiWorkbench(AnyObject):
     def create_left_forearm(
             self,
             pi_manikin_name: str,
-            pi_sex: int,
+            pi_sex: SWKAnthroSex,
             pi_percentile: float,
             pi_population: int
     ) -> SWKManikin:
@@ -90,7 +91,7 @@ class SWKHmiWorkbench(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHmiWorkbench
 
         :param str pi_manikin_name:
-        :param int pi_sex: enum swk_anthro_sex
+        :param SWKAnthroSex pi_sex:
         :param float pi_percentile:
         :param int pi_population:
         :rtype: SWKHumanCatalog

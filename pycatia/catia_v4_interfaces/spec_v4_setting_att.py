@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CATV4IV4V5SpecDraftMigrationEnum
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -48,7 +48,7 @@ class SpecV4SettingAtt(SettingController):
         self.spec_v4_setting_att = com_object
 
     @property
-    def draft_feature_migration_mode(self) -> int:
+    def draft_feature_migration_mode(self) -> CATV4IV4V5SpecDraftMigrationEnum:
         """
         .. note::
             :class: toggle
@@ -62,8 +62,8 @@ class SpecV4SettingAtt(SettingController):
                 |     Role: This setting parameter manages the activation of the mode of
                 |     migration for draft feature during a Copy/Paste As Spec.
 
-        :return: enum catv4_iv4_v5_spec_draft_migration_enum
-        :rtype: int
+        :return: CATV4IV4V5SpecDraftMigrationEnum
+        :rtype:
         """
 
         return self.spec_v4_setting_att.DraftFeatureMigrationMode

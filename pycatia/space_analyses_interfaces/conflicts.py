@@ -35,7 +35,7 @@ class Conflicts(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Conflict)
         self.conflicts = com_object
 
     def item(self, i_index: CATVariant) -> Conflict:
@@ -43,7 +43,7 @@ class Conflicts(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As Conflict
                 | 
                 |     Returns a Conflict object using its index from the Conflicts

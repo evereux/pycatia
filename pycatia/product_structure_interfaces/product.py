@@ -15,6 +15,7 @@ import warnings
 
 from pywintypes import com_error
 
+from pycatia import CatRepType, CatFileType, CatWorkModeType, CatProductSource
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.in_interfaces.move import Move
 from pycatia.in_interfaces.position import Position
@@ -491,7 +492,7 @@ class Product(AnyObject):
         self.product.Revision = value
 
     @property
-    def source(self) -> int:
+    def source(self) -> CatProductSource:
         """
         .. note::
             :class: toggle
@@ -515,8 +516,7 @@ class Product(AnyObject):
                 |
                 |          Engine.Source(catProductMade)
 
-        :return: enum cat_product_source
-        :rtype: int
+        :return: CatProductSource
         """
 
         try:
@@ -526,9 +526,9 @@ class Product(AnyObject):
                 f'Prodcut "{self.name}" could not do get Product.Source. Check Product for broken links.')
 
     @source.setter
-    def source(self, value: int):
+    def source(self, value: CatProductSource):
         """
-        :param int value: enum cat_product_source
+        :param CatProductSource value:
         """
 
         try:
@@ -674,7 +674,7 @@ class Product(AnyObject):
             self,
             i_shape_path_name: str,
             i_shape_name: str,
-            i_rep_behavior: int,
+            i_rep_behavior: CatRepType,
             i_context: bool
     ) -> None:
         """
@@ -725,7 +725,7 @@ class Product(AnyObject):
 
         :param str i_shape_path_name:
         :param str i_shape_name:
-        :param int i_rep_behavior: enum cat_rep_type
+        :param CatRepType i_rep_behavior:
         :param bool i_context:
         :rtype: None
         """
@@ -751,7 +751,7 @@ class Product(AnyObject):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def apply_work_mode(self, new_mode: int) -> None:
+    def apply_work_mode(self, new_mode: CatWorkModeType) -> None:
         """
         .. note::
             :class: toggle
@@ -766,7 +766,7 @@ class Product(AnyObject):
                 |         newMode
                 |             The new working mode.
 
-        :param int new_mode: enum cat_work_mode_type
+        :param CatWorkModeType new_mode:
         :rtype: None
         """
         return self.product.ApplyWorkMode(new_mode)
@@ -898,7 +898,7 @@ class Product(AnyObject):
         """
         return self.product.DesactivateShape(shape_name)
 
-    def extract_bom(self, i_file_type: int, i_file: str) -> None:
+    def extract_bom(self, i_file_type: CatFileType, i_file: str) -> None:
         """
         .. note::
             :class: toggle
@@ -922,7 +922,7 @@ class Product(AnyObject):
                 |         iFile
                 |             File where the bill of material will be saved
 
-        :param int i_file_type: enum cat_file_type
+        :param CatFileType i_file_type:
         :param str i_file:
         :rtype: None
         """
@@ -1155,7 +1155,7 @@ class Product(AnyObject):
             self,
             i_load_if_necessary: bool,
             i_shape_name: str,
-            i_rep_behavior: int,
+            i_rep_behavior: CatRepType,
             i_context: bool
     ) -> AnyObject:
         """
@@ -1198,7 +1198,7 @@ class Product(AnyObject):
 
         :param bool i_load_if_necessary:
         :param str i_shape_name:
-        :param int i_rep_behavior: enum cat_rep_type
+        :param CatRepType i_rep_behavior:
         :param bool i_context:
         :return: AnyObject
         """
@@ -1274,7 +1274,7 @@ class Product(AnyObject):
 
         return False
 
-    def has_shape_representation(self, i_shape_name: str, i_rep_behavior: int, i_context: bool) -> bool:
+    def has_shape_representation(self, i_shape_name: str, i_rep_behavior: CatRepType, i_context: bool) -> bool:
         """
         .. note::
             :class: toggle
@@ -1309,7 +1309,7 @@ class Product(AnyObject):
                 |          HasRep = Engine.HasRepresentation("PART",catRep3D,TRUE)
 
         :param str i_shape_name:
-        :param int i_rep_behavior: enum cat_rep_type
+        :param CatRepType i_rep_behavior:
         :param bool i_context:
         :rtype: bool
         """
@@ -1382,7 +1382,7 @@ class Product(AnyObject):
         """
         return self.product.RemoveMasterShapeRepresentation()
 
-    def remove_shape_representation(self, i_shape_name: str, i_rep_behavior: int, i_context: bool) -> None:
+    def remove_shape_representation(self, i_shape_name: str, i_rep_behavior: CatRepType, i_context: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -1421,7 +1421,7 @@ class Product(AnyObject):
                 |         ("PART",catRep3D,TRUE)
 
         :param str i_shape_name:
-        :param int i_rep_behavior: enum cat_rep_type
+        :param CatRepType i_rep_behavior:
         :param bool i_context:
         :rtype: None
         """

@@ -8,7 +8,8 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatSecWindowOpenMode, CatSectionPlaneOrigin, CatSectionPlaneNormal, CatSectionGridStyle, \
+    CatGridPositionMode, CatSectionClippingMode
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -36,7 +37,7 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att = com_object
 
     @property
-    def clipping_mode(self) -> int:
+    def clipping_mode(self) -> CatSectionClippingMode:
         """
         .. note::
             :class: toggle
@@ -48,8 +49,7 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_clipping_mode
-        :rtype: int
+        :return: CatSectionClippingMode
         """
 
         return self.sectioning_setting_att.ClippingMode
@@ -57,7 +57,7 @@ class SectioningSettingAtt(SettingController):
     @clipping_mode.setter
     def clipping_mode(self, value: int):
         """
-        :param int value: enum cat_section_clipping_mode
+        :param CatSectionClippingMode value:
         """
 
         self.sectioning_setting_att.ClippingMode = value
@@ -167,7 +167,7 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.GridHeightStep = value
 
     @property
-    def grid_position_mode(self) -> int:
+    def grid_position_mode(self) -> CatGridPositionMode:
         """
         .. note::
             :class: toggle
@@ -179,22 +179,21 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_grid_position_mode
-        :rtype: int
+        :return: CatGridPositionMode
         """
 
         return self.sectioning_setting_att.GridPositionMode
 
     @grid_position_mode.setter
-    def grid_position_mode(self, value: int):
+    def grid_position_mode(self, value: CatGridPositionMode):
         """
-        :param int value: enum cat_grid_position_mode
+        :param CatGridPositionMode value:
         """
 
         self.sectioning_setting_att.GridPositionMode = value
 
     @property
-    def grid_style(self) -> int:
+    def grid_style(self) -> CatSectionGridStyle:
         """
         .. note::
             :class: toggle
@@ -206,16 +205,15 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_grid_style
-        :rtype: int
+        :return: CatSectionGridStyle
         """
 
         return self.sectioning_setting_att.GridStyle
 
     @grid_style.setter
-    def grid_style(self, value: int):
+    def grid_style(self, value: CatSectionGridStyle):
         """
-        :param int value: enum cat_section_grid_style
+        :param CatSectionGridStyle value:
         """
 
         self.sectioning_setting_att.GridStyle = value
@@ -299,7 +297,7 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.HideResult = value
 
     @property
-    def plane_normal(self) -> int:
+    def plane_normal(self) -> CatSectionPlaneNormal:
         """
         .. note::
             :class: toggle
@@ -311,22 +309,21 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_plane_normal
-        :rtype: int
+        :return: CatSectionPlaneNormal
         """
 
         return self.sectioning_setting_att.PlaneNormal
 
     @plane_normal.setter
-    def plane_normal(self, value: int):
+    def plane_normal(self, value: CatSectionPlaneNormal):
         """
-        :param int value: enum cat_section_plane_normal
+        :param CatSectionPlaneNormal value:
         """
 
         self.sectioning_setting_att.PlaneNormal = value
 
     @property
-    def plane_origin(self) -> int:
+    def plane_origin(self) -> CatSectionPlaneOrigin:
         """
         .. note::
             :class: toggle
@@ -338,16 +335,15 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_plane_origin
-        :rtype: int
+        :return: CatSectionPlaneOrigin
         """
 
         return self.sectioning_setting_att.PlaneOrigin
 
     @plane_origin.setter
-    def plane_origin(self, value: int):
+    def plane_origin(self, value: CatSectionPlaneOrigin):
         """
-        :param int value: enum cat_section_plane_origin
+        :param CatSectionPlaneOrigin value:
         """
 
         self.sectioning_setting_att.PlaneOrigin = value
@@ -578,7 +574,7 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.WindowDefaultWidth = value
 
     @property
-    def window_open_mode(self) -> int:
+    def window_open_mode(self) -> CatSecWindowOpenMode:
         """
         .. note::
             :class: toggle
@@ -602,16 +598,15 @@ class SectioningSettingAtt(SettingController):
                 |         S_OK Successfully retieved the window open mode E_FAIL Failed to
                 |         retrieved the window open mode
 
-        :return: enum cat_sec_window_open_mode
-        :rtype: int
+        :return: CatSecWindowOpenMode
         """
 
         return self.sectioning_setting_att.WindowOpenMode
 
     @window_open_mode.setter
-    def window_open_mode(self, value: int):
+    def window_open_mode(self, value: CatSecWindowOpenMode):
         """
-        :param int value: enum cat_sec_window_open_mode
+        :param CatSecWindowOpenMode value:
         """
 
         self.sectioning_setting_att.WindowOpenMode = value
@@ -621,7 +616,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetClippingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -657,7 +652,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDisplayCutInWireframeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -693,7 +688,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetGridAutoFilteringInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -729,7 +724,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetGridAutoResizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -765,7 +760,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetGridHeightStepInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -801,7 +796,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetGridPositionModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -837,7 +832,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetGridStyleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -873,7 +868,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetGridWidthStepInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -909,7 +904,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetHidePlaneInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -945,7 +940,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetHideResultInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -981,7 +976,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPlaneColor(long oR,
                 | long oG,
                 | long oB)
@@ -1012,7 +1007,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPlaneColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1048,7 +1043,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPlaneNormalInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1084,7 +1079,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPlaneOriginInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1120,7 +1115,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSectionExportTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1156,7 +1151,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSectionFillInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1192,7 +1187,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetUpdateResultInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1228,7 +1223,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetViewerAutoOpenInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1264,7 +1259,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetViewerAutoReframeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1300,7 +1295,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetViewerLock2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1336,7 +1331,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetWindowDefaultHeightInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1372,7 +1367,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetWindowDefaultWidthInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1408,7 +1403,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetWindowOpenModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1444,7 +1439,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetClippingModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ClippingMode parameter.
@@ -1470,7 +1465,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDisplayCutInWireframeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DisplayCutInWireframe parameter.
@@ -1496,7 +1491,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGridAutoFilteringLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridAutoFiltering parameter.
@@ -1522,7 +1517,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGridAutoResizeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridAutoResize parameter.
@@ -1548,7 +1543,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGridHeightStepLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridHeightStep parameter.
@@ -1574,7 +1569,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGridPositionModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridPositionMode parameter.
@@ -1600,7 +1595,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGridStyleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridStyle parameter.
@@ -1626,7 +1621,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGridWidthStepLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridWidthStep parameter.
@@ -1652,7 +1647,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetHidePlaneLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the HidePlane parameter.
@@ -1678,7 +1673,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetHideResultLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the HideResult parameter.
@@ -1704,7 +1699,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPlaneColor(long iR,
                 | long iG,
                 | long iB)
@@ -1735,7 +1730,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPlaneColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PlaneColor parameter.
@@ -1761,7 +1756,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPlaneNormalLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PlaneNormal parameter.
@@ -1787,7 +1782,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPlaneOriginLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PlaneOrigin parameter.
@@ -1813,7 +1808,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSectionExportTypeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SectionExportType parameter.
@@ -1839,7 +1834,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSectionFillLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SectionFill parameter.
@@ -1865,7 +1860,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetUpdateResultLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the UpdateResult parameter.
@@ -1891,7 +1886,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetViewerAutoOpenLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ViewerAutoOpen parameter.
@@ -1917,7 +1912,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetViewerAutoReframeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ViewerAutoReframe parameter.
@@ -1943,7 +1938,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetViewerLock2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ViewerLock2D parameter.
@@ -1969,7 +1964,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetWindowDefaultHeightLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the WindowDefaultHeight parameter.
@@ -1995,7 +1990,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetWindowDefaultWidthLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the WindowDefaultWidth parameter.
@@ -2021,7 +2016,7 @@ class SectioningSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetWindowOpenModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the WindowOpenMode parameter.

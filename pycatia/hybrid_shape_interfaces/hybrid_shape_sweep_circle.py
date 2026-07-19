@@ -594,7 +594,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAngle(long iI) As Angle
                 | 
                 |     Returns the angle values useful in some circular sweep
@@ -618,7 +618,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetAngleLawTypes(long oFirstType,
                 | long oSecondType)
                 | 
@@ -651,7 +651,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFirstAngleLaw(Angle oElem1,
                 | Angle oElem2,
                 | long olLawType)
@@ -695,7 +695,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetLongitudinalRelimiters(Reference opIAElem1,
                 | Reference opIAElem2)
                 | 
@@ -735,7 +735,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbAngle(long oAng)
                 | 
                 |     Retrieves the number of angles.
@@ -755,7 +755,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbGuide(long oNum)
                 | 
                 |     Retrieves the number of guide curves.
@@ -775,7 +775,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbRadius(long oRad)
                 | 
                 |     Retrieves the number of radii.
@@ -795,7 +795,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetRadius(long iI) As Length
                 | 
                 |     Returns the radius value useful in some circular sweep
@@ -820,7 +820,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetRelimiters(Reference opIAElem1,
                 | long opOrient1,
                 | Reference opIAElem2,
@@ -872,7 +872,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSecondAngleLaw(Angle oElem1,
                 | Angle oElem2,
                 | long olLawType)
@@ -916,7 +916,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetTangencyChoiceNo(long oNo,
                 | long oShellOri,
                 | long oGuideOri)
@@ -958,7 +958,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAngle()
                 | 
                 |     Removes an angle.
@@ -972,7 +972,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveGuide()
                 | 
                 |     Removes a guide curve.
@@ -986,7 +986,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveRadius()
                 | 
                 |     Removes a radius.
@@ -1000,7 +1000,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAngle(long iI,
                 | double iElem)
                 | 
@@ -1024,7 +1024,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAngleLawTypes(long iFirstType,
                 | long iSecondType)
                 | 
@@ -1058,7 +1058,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetFirstAngleLaw(double iElem1,
                 | double iElem2,
                 | long ilLawType)
@@ -1087,7 +1087,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGuideDeviation(double iLength)
                 | 
                 |     Sets the deviation value (length) from guide curves allowed during sweeping
@@ -1108,7 +1108,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLongitudinalRelimiters(Reference ipIAElem1,
                 | Reference ipIAElem2)
                 | 
@@ -1148,7 +1148,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRadius(long iI,
                 | double iRadius)
                 | 
@@ -1173,7 +1173,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRelimiters(Reference ipIAElem1,
                 | long ipOrient1,
                 | Reference ipIAElem2,
@@ -1225,7 +1225,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSecondAngleLaw(double iElem1,
                 | double iElem2,
                 | long ilLawType)
@@ -1254,7 +1254,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSmoothAngleThreshold(double iAngle)
                 | 
                 |     Sets the angular threshold.
@@ -1274,7 +1274,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTangencyChoiceNo(long iShellOri,
                 | long iGuideOri,
                 | long iNo)

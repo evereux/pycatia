@@ -10,6 +10,7 @@
 """
 from typing import Iterator, Union
 
+from pycatia import CatScriptLanguage
 from pycatia.drafting_interfaces.drawing_dimension import DrawingDimension
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
@@ -202,7 +203,12 @@ class DrawingDimensions(Collection):
         i_geom_elem = [elem.com_object for elem in i_geom_elem]
 
         if i_ldc_ref_elem == vba_nothing:
-            i_ldc_ref_elem = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
+            i_ldc_ref_elem = self.application.system_service.evaluate(
+                vba_nothing,
+                CatScriptLanguage.CATVBScriptLanguage,
+                'N',
+                []
+            )
         else:
             i_ldc_ref_elem = i_ldc_ref_elem.com_object
 

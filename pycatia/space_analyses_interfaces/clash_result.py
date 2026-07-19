@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatClashExportType
 from pycatia.space_analyses_interfaces.conflicts import Conflicts
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -60,12 +61,12 @@ class ClashResult(AnyObject):
 
         return Conflicts(self.clash_result.Conflicts)
 
-    def export(self, i_type: int, i_path: str) -> None:
+    def export(self, i_type: CatClashExportType, i_path: str) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Export(CatClashExportType iType,
                 | CATBSTR iPath)
                 | 
@@ -87,7 +88,7 @@ class ClashResult(AnyObject):
                 |             NewClashResult.Export CatClashExportTypeXMLResultOnly,
                 |             "c:\\tmp\\sample.xml"
 
-        :param int i_type: enum cat_clash_export_type
+        :param CatClashExportType i_type:
         :param str i_path:
         :rtype: None
         """

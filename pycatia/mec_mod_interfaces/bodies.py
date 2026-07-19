@@ -42,7 +42,7 @@ class Bodies(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add() As Body
                 | 
                 |     Creates a new body and adds it to the Bodies collection. This body becomes
@@ -67,7 +67,7 @@ class Bodies(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As Body
                 | 
                 |     Returns a body using its index or its name from the Bodies

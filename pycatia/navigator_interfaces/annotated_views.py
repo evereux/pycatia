@@ -46,7 +46,7 @@ class AnnotatedViews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add() As AnnotatedView
                 | 
                 |     Creates an annotated view using the current viewpoint and adds it to the
@@ -72,7 +72,7 @@ class AnnotatedViews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddFromViewpoint(Viewpoint3D iViewpoint) As
                 | AnnotatedView
                 | 
@@ -106,7 +106,7 @@ class AnnotatedViews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As AnnotatedView
                 | 
                 |     Returns an annotated view using its index or its name from the
@@ -147,7 +147,7 @@ class AnnotatedViews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an annotated view from the AnnotatedViews

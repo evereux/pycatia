@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatScriptLanguage
 from pycatia.sketcher_interfaces.geometry_2D import Geometry2D
 from pycatia.sketcher_interfaces.point_2D import Point2D
 from pycatia.system_interfaces.system_service import SystemService
@@ -146,7 +147,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCurvature(double iParam,
                 | CATSafeArrayVariant oCurvature)
                 | 
@@ -177,14 +178,19 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object, i_param]
+        )
 
     def get_derivatives(self, i_param: float) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDerivatives(double iParam,
                 | CATSafeArrayVariant oDerivative)
                 | 
@@ -216,14 +222,19 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object, i_param]
+        )
 
     def get_end_points(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetEndPoints(CATSafeArrayVariant oEndPoints)
                 | 
                 |     Returns the end-points of the curve. The start point and the end point are
@@ -254,14 +265,19 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_length_at_param(self, i_from_param: float, i_to_param: float) -> float:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLengthAtParam(double iFromParam,
                 | double iToParam) As double
                 | 
@@ -290,7 +306,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetParamAtLength(double iFromParam,
                 | double iLength) As double
                 | 
@@ -322,7 +338,7 @@ class Curve2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetParamExtents(CATSafeArrayVariant oParams)
                 | 
                 |     Returns the parametric extents of the curve. This is the parametric
@@ -350,14 +366,19 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_point_at_param(self, i_param: float) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPointAtParam(double iParam,
                 | CATSafeArrayVariant oPoint)
                 | 
@@ -386,14 +407,19 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object, i_param]
+        )
 
     def get_range_box(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetRangeBox(CATSafeArrayVariant oBoundPoint)
                 | 
                 |     Returns the range box (or bounding box) of the object
@@ -424,14 +450,19 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_tangent(self, i_param: float) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetTangent(double iParam,
                 | CATSafeArrayVariant oTangency)
                 | 
@@ -460,14 +491,19 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object, i_param]
+        )
 
     def is_periodic(self) -> bool:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IsPeriodic() As boolean
                 | 
                 |     Specifies whether a curve is periodic or not.

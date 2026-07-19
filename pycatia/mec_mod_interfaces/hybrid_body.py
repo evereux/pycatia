@@ -182,7 +182,7 @@ class HybridBody(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AppendHybridShape(HybridShape iHybridShape)
                 | 
                 |     Appends a hybrid shape to the hybrid body.

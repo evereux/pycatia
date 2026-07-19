@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatScriptLanguage
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
@@ -48,7 +48,7 @@ class Point(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCoordinates(CATSafeArrayVariant oCoordinates)
                 | 
                 |     Gets cartesian coordinates of the Point.
@@ -73,14 +73,19 @@ class Point(HybridShape):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def set_coordinates(self, o_coordinates: tuple) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetCoordinates(CATSafeArrayVariant oCoordinates)
                 | 
                 |     Sets cartesian coordinates of the point.

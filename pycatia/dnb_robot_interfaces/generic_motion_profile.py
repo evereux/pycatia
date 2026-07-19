@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import MotionBasis
 from pycatia.dnb_robot_interfaces.rob_generic_controller import RobGenericController
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -164,7 +165,7 @@ class GenericMotionProfile(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_motion_basis(self, basis: int) -> None:
+    def get_motion_basis(self) -> MotionBasis:
         """
         .. note::
             :class: toggle
@@ -187,12 +188,11 @@ class GenericMotionProfile(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :param int basis: enum motion_basis
-        :rtype: None
+        :return: MotionBasis
         """
-        return self.generic_motion_profile.GetMotionBasis(basis)
+        return self.generic_motion_profile.GetMotionBasis()
 
-    def get_name(self, o_name: str) -> None:
+    def get_name(self) -> str:
         """
         .. note::
             :class: toggle
@@ -214,12 +214,11 @@ class GenericMotionProfile(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :param str o_name:
-        :rtype: None
+        :rtype: str
         """
-        return self.generic_motion_profile.GetName(o_name)
+        return self.generic_motion_profile.GetName()
 
-    def get_speed_value(self, value: float) -> None:
+    def get_speed_value(self) -> float:
         """
         .. note::
             :class: toggle
@@ -241,10 +240,9 @@ class GenericMotionProfile(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :param float value:
-        :rtype: None
+        :rtype: float
         """
-        return self.generic_motion_profile.GetSpeedValue(value)
+        return self.generic_motion_profile.GetSpeedValue()
 
     def set_acceleration_value(self, value: float) -> None:
         """
@@ -332,7 +330,7 @@ class GenericMotionProfile(AnyObject):
         """
         return self.generic_motion_profile.SetAngularSpeedValue(value)
 
-    def set_motion_basis(self, basis: int) -> None:
+    def set_motion_basis(self, basis: MotionBasis) -> None:
         """
         .. note::
             :class: toggle
@@ -355,7 +353,7 @@ class GenericMotionProfile(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :param int basis: enum motion_basis
+        :param MotionBasis basis:
         :rtype: None
         """
         return self.generic_motion_profile.SetMotionBasis(basis)

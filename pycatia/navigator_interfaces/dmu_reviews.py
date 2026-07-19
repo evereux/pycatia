@@ -76,7 +76,7 @@ class DMUReviews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add() As DMUReview
                 | 
                 |     Creates a DMUReview and adds it to the DMUReviews
@@ -101,7 +101,7 @@ class DMUReviews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func ImportFrom(Product iProduct) As DMUReview
                 | 
                 |     Imports Applicative data froma given product in a new DMU
@@ -132,7 +132,7 @@ class DMUReviews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As DMUReview
                 | 
                 |     Returns a DMUReview using its index or its name from the DMUReviews
@@ -170,7 +170,7 @@ class DMUReviews(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a DMUReview from the DMUReviews collection.

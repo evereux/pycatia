@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatSearchContextScope
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -94,7 +94,7 @@ class SearchSettingAtt(SettingController):
         self.search_setting_att.DefaultPowerInputContextPriority = value
 
     @property
-    def default_power_input_context_scope(self) -> int:
+    def default_power_input_context_scope(self) -> CatSearchContextScope:
         """
         .. note::
             :class: toggle
@@ -108,16 +108,15 @@ class SearchSettingAtt(SettingController):
                 |     Role: The Default Power Input Context Scope attribute manages the default
                 |     context scope to be used when none is typed in the Power Input field
 
-        :return: enum cat_search_context_scope
-        :rtype: int
+        :return: CatSearchContextScope
         """
 
         return self.search_setting_att.DefaultPowerInputContextScope
 
     @default_power_input_context_scope.setter
-    def default_power_input_context_scope(self, value: int):
+    def default_power_input_context_scope(self, value: CatSearchContextScope):
         """
-        :param int value: enum cat_search_context_scope
+        :param CatSearchContextScope value:
         """
 
         self.search_setting_att.DefaultPowerInputContextScope = value
@@ -210,7 +209,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDeepSearchActivationInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -229,7 +228,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDefaultPowerInputContextPriorityInfo(CATBSTR
                 | oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -249,7 +248,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDefaultPowerInputContextScopeInfo(CATBSTR
                 | oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -269,7 +268,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDefaultPowerInputPrefixInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -288,7 +287,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMaxDisplayedResultsInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -307,7 +306,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMaxPreHighlightedElementsInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -326,7 +325,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDeepSearchActivationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Deep Search Activation setting
@@ -358,7 +357,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDefaultPowerInputContextPriorityLock(boolean
                 | iLocked)
                 | 
@@ -391,7 +390,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDefaultPowerInputContextScopeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Default Power Input Context Scope setting
@@ -423,7 +422,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDefaultPowerInputPrefixLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Default Power Input Prefix setting
@@ -455,7 +454,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMaxDisplayedResultsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Max Displayed Results setting
@@ -487,7 +486,7 @@ class SearchSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMaxPreHighlightedElementsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Max Displayed Results setting

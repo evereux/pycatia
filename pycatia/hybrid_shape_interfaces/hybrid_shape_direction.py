@@ -150,7 +150,7 @@ class HybridShapeDirection(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func DirectionSpecification() As long
                 | 
                 |     Queries the direction specification status.
@@ -192,7 +192,7 @@ class HybridShapeDirection(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetXVal() As double
                 | 
                 |     Returns the direction X component as Double. This method succeeds
@@ -212,7 +212,7 @@ class HybridShapeDirection(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetY() As RealParam
                 | 
                 |     Returns the direction Y component. This method succeeds only when direction
@@ -234,7 +234,7 @@ class HybridShapeDirection(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetYVal() As double
                 | 
                 |     Returns the direction Y component as Double.This method succeeds
@@ -254,7 +254,7 @@ class HybridShapeDirection(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetZ() As RealParam
                 | 
                 |     Returns the direction Z component. This method succeeds only when direction
@@ -276,7 +276,7 @@ class HybridShapeDirection(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetZVal() As double
                 | 
                 |     Returns the direction Z component as Double.This method succeeds

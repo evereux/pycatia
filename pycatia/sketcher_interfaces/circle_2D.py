@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatScriptLanguage
 from pycatia.sketcher_interfaces.curve_2D import Curve2D
 from pycatia.sketcher_interfaces.point_2D import Point2D
 from pycatia.system_interfaces.system_service import SystemService
@@ -93,7 +94,7 @@ class Circle2D(Curve2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCenter(CATSafeArrayVariant oData)
                 | 
                 |     Returns the center of the circle
@@ -123,14 +124,19 @@ class Circle2D(Curve2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def set_data(self, i_center_x: float, i_center_y: float, i_radius: float) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetData(double iCenterX,
                 | double iCenterY,
                 | double iRadius)

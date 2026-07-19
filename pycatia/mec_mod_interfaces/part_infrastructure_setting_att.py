@@ -1763,7 +1763,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAlsoDeleteExclusiveParentsInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1800,7 +1800,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAxisSystemSizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1836,7 +1836,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetBodiesUnderOperationsInTreeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1873,7 +1873,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetColorSynchronizationEditabilityInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1910,7 +1910,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetColorSynchronizationModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1946,7 +1946,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetColorSynchronizationModeManageInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1983,7 +1983,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetColorSynchronizationModeOnFeatureInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2020,7 +2020,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetColorSynchronizationModeOnSubElementsInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2058,7 +2058,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetColors3DExperienceManagementInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2095,7 +2095,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetConstraintsInGeometryInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2131,7 +2131,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetConstraintsNodeInTreeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2167,7 +2167,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetContextualFeaturesSelectableAtCreationInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2205,7 +2205,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDefaultColorsEditabilityInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2241,7 +2241,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDeleteWarningBoxInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2277,7 +2277,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDisplayGeometryAfterCurrentInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2314,7 +2314,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetExpandSketchBasedFeaturesNodeAtCreationInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2352,7 +2352,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetExternalReferencesAsVisibleInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2389,7 +2389,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetExternalReferencesAssemblyRootContextInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2427,7 +2427,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetExternalReferencesNodeInTreeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2464,7 +2464,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetHybridDesignModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2500,7 +2500,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetKnowledgeInHybridDesignModeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2537,7 +2537,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLinkedExternalReferencesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2573,7 +2573,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLinkedExternalReferencesOnlyOnPublicationInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2611,7 +2611,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLinkedExternalReferencesWarningAtCreationInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2649,7 +2649,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNamingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2685,7 +2685,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNewWith3DSupportInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2721,7 +2721,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNewWithAxisSystemInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2757,7 +2757,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNewWithGSInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2793,7 +2793,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNewWithOGSInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2829,7 +2829,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNewWithPanelInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2865,7 +2865,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetOnlyCurrentOperatedSolidSetInGeometryInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2903,7 +2903,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetOnlyCurrentSolidSetInGeometryInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2940,7 +2940,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetParametersNodeInTreeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2976,7 +2976,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPublishTopologicalElementsInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3013,7 +3013,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetRelationsNodeInTreeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -3049,7 +3049,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetReplaceOnlyAfterCurrentInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -3085,7 +3085,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSurfaceElementsLocationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -3121,7 +3121,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetTrueColorModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -3157,7 +3157,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetUpdateElementsRefreshedInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -3193,7 +3193,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetUpdateLinkedExternalReferencesInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3230,7 +3230,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetUpdateModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -3266,7 +3266,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetUpdateStoppedOnErrorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -3302,7 +3302,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAlsoDeleteExclusiveParentsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "AlsoDeleteExclusiveParents"
@@ -3344,7 +3344,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAxisSystemSizeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "AxisSystemSize" parameter.
@@ -3385,7 +3385,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetBodiesUnderOperationsInTreeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "BodiesUnderOperationsInTree"
@@ -3427,7 +3427,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetColorSynchronizationEditabilityLock(boolean
                 | iLocked)
                 | 
@@ -3470,7 +3470,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetColorSynchronizationModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "ColorSynchronizationMode" parameter.
@@ -3511,7 +3511,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetColorSynchronizationModeManageLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "ColorSynchronizationModeManage"
@@ -3553,7 +3553,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetColorSynchronizationModeOnFeatureLock(boolean
                 | iLocked)
                 | 
@@ -3596,7 +3596,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetColorSynchronizationModeOnSubElementsLock(boolean
                 | iLocked)
                 | 
@@ -3639,7 +3639,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetColors3DExperienceManagementLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "Colors3DExperienceManagement"
@@ -3681,7 +3681,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetConstraintsInGeometryLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "ConstraintsInGeometry" parameter.
@@ -3722,7 +3722,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetConstraintsNodeInTreeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "ConstraintsNodeInTree" parameter.
@@ -3763,7 +3763,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetContextualFeaturesSelectableAtCreationLock(boolean
                 | iLocked)
                 | 
@@ -3806,7 +3806,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDefaultColorsEditabilityLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "DefaultColorsEditability" parameter.
@@ -3847,7 +3847,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDeleteWarningBoxLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "DeleteWarningBox" parameter.
@@ -3888,7 +3888,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDisplayGeometryAfterCurrentLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "DisplayGeometryAfterCurrent"
@@ -3930,7 +3930,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetExpandSketchBasedFeaturesNodeAtCreationLock(boolean
                 | iLocked)
                 | 
@@ -3973,7 +3973,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetExternalReferencesAsVisibleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "ExternalReferencesAsVisible"
@@ -4015,7 +4015,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetExternalReferencesAssemblyRootContextLock(boolean
                 | iLocked)
                 | 
@@ -4058,7 +4058,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetExternalReferencesNodeInTreeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "ExternalReferencesNodeInTree"
@@ -4100,7 +4100,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetHybridDesignModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "HybridDesignMode" parameter.
@@ -4141,7 +4141,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetKnowledgeInHybridDesignModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "KnowledgeInHybridDesignMode"
@@ -4183,7 +4183,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLinkedExternalReferencesLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "LinkedExternalReferences" parameter.
@@ -4224,7 +4224,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLinkedExternalReferencesOnlyOnPublicationLock(boolean
                 | iLocked)
                 | 
@@ -4267,7 +4267,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLinkedExternalReferencesWarningAtCreationLock(boolean
                 | iLocked)
                 | 
@@ -4310,7 +4310,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetNamingModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "NamingMode" parameter.
@@ -4351,7 +4351,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetNewWith3DSupportLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "NewWith3DSupport" parameter.
@@ -4392,7 +4392,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetNewWithAxisSystemLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "NewWithAxisSystem" parameter.
@@ -4433,7 +4433,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetNewWithGSLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "NewWithGS" parameter.
@@ -4474,7 +4474,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetNewWithOGSLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "NewWithOGS" parameter.
@@ -4515,7 +4515,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetNewWithPanelLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "NewWithPanel" parameter.
@@ -4556,7 +4556,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetOnlyCurrentOperatedSolidSetInGeometryLock(boolean
                 | iLocked)
                 | 
@@ -4599,7 +4599,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetOnlyCurrentSolidSetInGeometryLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "OnlyCurrentSolidSetInGeometry"
@@ -4641,7 +4641,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetParametersNodeInTreeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "ParametersNodeInTree" parameter.
@@ -4682,7 +4682,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPublishTopologicalElementsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "PublishTopologicalElements"
@@ -4724,7 +4724,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRelationsNodeInTreeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "RelationsNodeInTree" parameter.
@@ -4765,7 +4765,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetReplaceOnlyAfterCurrentLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "ReplaceOnlyAfterCurrent" parameter.
@@ -4806,7 +4806,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSurfaceElementsLocationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "SurfaceElementsLocation" parameter.
@@ -4847,7 +4847,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetUpdateElementsRefreshedLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "UpdateElementsRefreshed" parameter.
@@ -4888,7 +4888,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetUpdateLinkedExternalReferencesLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "UpdateLinkedExternalReferences"
@@ -4930,7 +4930,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetUpdateModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "UpdateMode" parameter.
@@ -4971,7 +4971,7 @@ class PartInfrastructureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetUpdateStoppedOnErrorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "UpdateStoppedOnError" parameter.

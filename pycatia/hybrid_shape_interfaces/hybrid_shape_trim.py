@@ -495,7 +495,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddElementToKeep(Reference iElement)
                 | 
                 |     Adds an element to specifications. This element will be
@@ -531,7 +531,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddElementToRemove(Reference iElement)
                 | 
                 |     Adds an element to specifications. This element will be
@@ -567,7 +567,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddPieceCutter(long iRank,
                 | long iCutterElem,
                 | long iOrientation)
@@ -598,7 +598,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetElem(long iRank) As Reference
                 | 
                 |     Gets the trimmed feature at a given index.
@@ -620,7 +620,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetKeptElem(long iRank) As Reference
                 | 
                 |     Gets the kept feature at a given index.
@@ -642,7 +642,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNbElem() As long
                 | 
                 |     Gets the number of elements: couple(element, index of portion to keep on
@@ -662,7 +662,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNbElementsToKeep() As long
                 | 
                 |     Gets the number of elements to keep.
@@ -681,7 +681,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNbElementsToRemove() As long
                 | 
                 |     Gets the number of elements to remove.
@@ -700,7 +700,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNextOrientation(long iRank) As long
                 | 
                 |     Gets Orientation used to compute the feature, referring to the next trimmed
@@ -724,7 +724,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPieceCutter(long iRank,
                 | long iCutterIndex,
                 | long oCutterElemIdx,
@@ -759,7 +759,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPieceDiscriminationIndex(long iRank,
                 | long oIndex)
                 | 
@@ -785,7 +785,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPieceNbCutters(long iRank) As long
                 | 
                 |     Gets the number of cutters of a piece. Used for trim pieces of shells
@@ -807,7 +807,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPortionToKeep(long iRank) As long
                 | 
                 |     Gets a portion to keep number, giving the index of the element. Used for
@@ -830,7 +830,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPreviousOrientation(long iRank) As long
                 | 
                 |     Gets Orientation used to compute the feature, referring to the previous
@@ -854,7 +854,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetRemovedElem(long iRank) As Reference
                 | 
                 |     Gets the removed feature at a given index.
@@ -876,7 +876,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertFirstOrientation()
                 | 
                 |     Deprecated:
@@ -899,7 +899,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertSecondOrientation()
                 | 
                 |     Deprecated:
@@ -919,7 +919,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveElementToKeep(long iRank)
                 | 
                 |     Removes an element from specifications.
@@ -939,7 +939,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveElementToRemove(long iRank)
                 | 
                 |     Removes an element from specifications.
@@ -959,7 +959,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemovePieceCutter(long iRank,
                 | long iCutterIndex)
                 | 
@@ -984,7 +984,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetElem(long iRank,
                 | Reference iElem)
                 | 
@@ -1024,7 +1024,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetNextOrientation(long iRank,
                 | long iOrientation)
                 | 
@@ -1050,7 +1050,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPieceDiscriminationIndex(long iRank,
                 | long iIndex)
                 | 
@@ -1076,7 +1076,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPortionToKeep(long iRank,
                 | long iPortionNumber)
                 | 
@@ -1101,7 +1101,7 @@ class HybridShapeTrim(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPreviousOrientation(long iRank,
                 | long iOrientation)
                 | 

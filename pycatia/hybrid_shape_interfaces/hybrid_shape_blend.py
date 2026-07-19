@@ -259,7 +259,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetBorderMode(long iBlendLimit) As long
                 | 
                 |     Returns the type of border to a limit of the blend.
@@ -300,7 +300,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetClosingPoint(long iBlendLimit) As Reference
                 | 
                 |     Returns the closing point of a closed curve of the blend.
@@ -334,7 +334,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetContinuity(long iBlendLimit) As long
                 | 
                 |     Retrieves the continuity of a limit of the blend.
@@ -374,7 +374,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetCurve(long iBlendLimit) As Reference
                 | 
                 |     Returns a curve from the blend.
@@ -407,7 +407,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetOrientation(long iBlendLimit) As long
                 | 
                 |     Returns the orientation of a curve of the blend.
@@ -440,7 +440,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetRuledDevelopableSurfaceConnection(long iBlendLimit) As
                 | long
                 | 
@@ -475,7 +475,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSupport(long iBlendLimit) As Reference
                 | 
                 |     Returns a support from the blend.
@@ -508,7 +508,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetTensionInDouble(long iBlendLimit,
                 | long iRank) As RealParam
                 | 
@@ -555,7 +555,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetTensionType(long iBlendLimit) As long
                 | 
                 |     Returns the tension type of a limit of the blend.
@@ -595,7 +595,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetTransition(long iBlendLimit) As long
                 | 
                 |     Returns the transition orientation from a limit of the
@@ -634,7 +634,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetTrimSupport(long iBlendLimit) As long
                 | 
                 |     Returns whether a support of the blend will be trimmed
@@ -675,7 +675,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InsertCoupling(long iPosition)
                 | 
                 |     Inserts a coupling into the blend.
@@ -703,7 +703,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InsertCouplingPoint(long iCouplingIndex,
                 | long iPosition,
                 | Reference iPoint)
@@ -760,7 +760,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetBorderMode(long iBlendLimit,
                 | long iBorder)
                 | 
@@ -815,7 +815,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetClosingPoint(long iBlendLimit,
                 | Reference iClosingPoint)
                 | 
@@ -867,7 +867,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetContinuity(long iBlendLimit,
                 | long iContinuity)
                 | 
@@ -908,7 +908,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetCurve(long iBlendLimit,
                 | Reference iCurve)
                 | 
@@ -959,7 +959,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetOrientation(long iBlendLimit,
                 | long iOrientation)
                 | 
@@ -993,7 +993,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRuledDevelopableSurfaceConnection(long iBlendLimit,
                 | long iBlendConnection)
 
@@ -1008,7 +1008,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSmoothAngleThreshold(double iAngle)
                 | 
                 |     Sets the angular threshold.
@@ -1028,7 +1028,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSmoothDeviation(double iLength)
                 | 
                 |     Sets the deviation value (length) from guide curves allowed during sweeping
@@ -1049,7 +1049,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSupport(long iBlendLimit,
                 | Reference iSupport)
                 | 
@@ -1101,7 +1101,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTensionInDouble(long iBlendLimit,
                 | long iTensionType,
                 | double iFirstTension,
@@ -1158,7 +1158,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTensionType(long iBlendLimit,
                 | long iTensionType)
                 | 
@@ -1201,7 +1201,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTransition(long iBlendLimit,
                 | long iTransition)
                 | 
@@ -1239,7 +1239,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTrimSupport(long iBlendLimit,
                 | long iTrimSupport)
                 | 
@@ -1280,7 +1280,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub UnsetClosingPoint(long iBlendLimit)
                 | 
                 |     Unsets the closing point of a closed curve of the blend.
@@ -1309,7 +1309,7 @@ class HybridShapeBlend(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub UnsetSupport(long iBlendLimit)
                 | 
                 |     Unsets a support from the blend.

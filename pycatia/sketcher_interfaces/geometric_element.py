@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatGeometricType
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -35,7 +35,7 @@ class GeometricElement(AnyObject):
         self.geometric_element = com_object
 
     @property
-    def geometric_type(self) -> int:
+    def geometric_type(self) -> CatGeometricType:
         """
         .. note::
             :class: toggle
@@ -50,8 +50,7 @@ class GeometricElement(AnyObject):
                 |         oType
                 |             Specific type of the geometric interface
 
-        :return: enum cat_geometric_type
-        :rtype: int
+        :return: CatGeometricType
         """
 
         return self.geometric_element.GeometricType

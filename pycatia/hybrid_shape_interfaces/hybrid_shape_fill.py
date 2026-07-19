@@ -284,7 +284,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddBound(Reference iBoundary)
                 | 
                 |     Adds an boundary to the hybrid shape fill feature object.
@@ -326,7 +326,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddSupportAtBound(Reference iBoundary,
                 | Reference iSupport)
                 | 
@@ -372,7 +372,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AppendConstraint(Reference iConstraint)
                 | 
                 |     Appends an constraint to the hybrid shape fill feature object. ========
@@ -414,7 +414,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetBoundAtPosition(long iPos) As Reference
                 | 
                 |     Retrieves the boundary at specified position in the hybrid shape fill
@@ -442,7 +442,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetBoundPosition(Reference iBoundary) As long
                 | 
                 |     Retrieves the position of a boundary used by the hybrid shape fill feature
@@ -470,7 +470,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetBoundSize() As long
                 | 
                 |     Returns the number of boundaries in the Fill object.
@@ -496,7 +496,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetBoundaryContinuity(long iPos) As long
                 | 
                 |     Returns the continuity mode for a boundary at specified position in the
@@ -535,7 +535,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetConstraintAtPosition(long iPos) As Reference
                 | 
                 |     Retrieves the constraint at specified position in the hybrid shape fill
@@ -563,7 +563,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetConstraintsSize() As long
                 | 
                 |     Returns the number of constraints in the Fill object.
@@ -589,7 +589,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSupportAtPosition(long iPos) As Reference
                 | 
                 |     Retrieves the support at specified position in the hybrid shape fill
@@ -617,7 +617,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InsertBoundAfterPosition(Reference iBoundary,
                 | long iPos)
                 | 
@@ -663,7 +663,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllBound()
                 | 
                 |     Removes all boundaries of the hybrid shape fill feature object.
@@ -684,7 +684,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllConstraints()
                 | 
                 |     Removes all constraints.
@@ -698,7 +698,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveBoundAtPosition(long iPos)
                 | 
                 |     Removes boundary at specified position in hybrid shape fill feature
@@ -725,7 +725,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveConstraint(long iPos)
                 | 
                 |     Removes constraint at specified position in hybrid shape fill feature
@@ -752,7 +752,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveSupportAtPosition(long iPos)
                 | 
                 |     Removes support at specified position in hybrid shape fill feature
@@ -779,7 +779,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReplaceBoundAtPosition(Reference iBoundary,
                 | long iPos)
                 | 
@@ -824,7 +824,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReplaceConstraint(long iPos,
                 | Reference iConstraint)
                 | 
@@ -870,7 +870,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReplaceSupportAtPosition(Reference iSupport,
                 | long iPos)
                 | 
@@ -915,7 +915,7 @@ class HybridShapeFill(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetBoundaryContinuity(long iContinuity,
                 | long iPos)
                 | 

@@ -42,7 +42,7 @@ class OrderedGeometricalSets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add() As OrderedGeometricalSet
                 | 
                 |     Creates a new ordered geometrical set and adds it to the
@@ -68,7 +68,7 @@ class OrderedGeometricalSets(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As OrderedGeometricalSet
                 | 
                 |     Returns a ordered geometrical set using its index or its name from the

@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatSplitSide
 from pycatia.in_interfaces.reference import Reference
 from pycatia.in_interfaces.references import References
 from pycatia.part_interfaces.surface_based_shape import SurfaceBasedShape
@@ -56,7 +57,7 @@ class ReplaceFace(SurfaceBasedShape):
         return References(self.replace_face.RemoveFace)
 
     @property
-    def splitting_side(self) -> int:
+    def splitting_side(self) -> CatSplitSide:
         """
         .. note::
             :class: toggle
@@ -68,16 +69,15 @@ class ReplaceFace(SurfaceBasedShape):
                 |     body kept after the splitting. A positive side refers to the same orientation
                 |     than the splitting element normal vector.
 
-        :return: enum cat_split_side
-        :rtype: int
+        :return: CatSplitSide
         """
 
         return self.replace_face.SplittingSide
 
     @splitting_side.setter
-    def splitting_side(self, value: int):
+    def splitting_side(self, value: CatSplitSide):
         """
-        :param int value: enum cat_split_side
+        :param CatSplitSide value:
         """
 
         self.replace_face.SplittingSide = value
@@ -87,7 +87,7 @@ class ReplaceFace(SurfaceBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddRemoveFace(Reference iRemoveFace)
                 | 
                 |     Sets the face to be removed.
@@ -117,7 +117,7 @@ class ReplaceFace(SurfaceBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddSplitPlane(Reference iSplitPlane)
                 | 
                 |     Sets the replacing element.
@@ -147,7 +147,7 @@ class ReplaceFace(SurfaceBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub DeleteRemoveFace(Reference iRemoveFace)
                 | 
                 |     Remove the face to be removed.

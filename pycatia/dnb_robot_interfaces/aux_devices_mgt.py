@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import DNBAuxilliaryDeviceType
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -36,7 +36,7 @@ class AuxDevicesMgt(AnyObject):
         super().__init__(com_object)
         self.aux_devices_mgt = com_object
 
-    def define_aux_devices(self, i_aux_device_obj: AnyObject, i_aux_device_type: int) -> None:
+    def define_aux_devices(self, i_aux_device_obj: AnyObject, i_aux_device_type: DNBAuxilliaryDeviceType) -> None:
         """
         .. note::
             :class: toggle
@@ -63,7 +63,7 @@ class AuxDevicesMgt(AnyObject):
                 |             E_FAIL otherwise
 
         :param AnyObject i_aux_device_obj:
-        :param int i_aux_device_type: enum dnb_auxilliary_device_type
+        :param DNBAuxilliaryDeviceType i_aux_device_type:
         :rtype: None
         """
         return self.aux_devices_mgt.DefineAuxDevices(i_aux_device_obj.com_object, i_aux_device_type)
@@ -141,7 +141,7 @@ class AuxDevicesMgt(AnyObject):
         """
         return AnyObject(self.aux_devices_mgt.GetAuxDevices(i_aux_device_num))
 
-    def get_aux_devices_type(self, i_aux_device_num: int) -> int:
+    def get_aux_devices_type(self, i_aux_device_num: int) -> DNBAuxilliaryDeviceType:
         """
         .. note::
             :class: toggle
@@ -169,8 +169,7 @@ class AuxDevicesMgt(AnyObject):
                 |             E_FAIL otherwise
 
         :param int i_aux_device_num:
-        :return: enum dnb_auxilliary_device_type
-        :rtype: int
+        :return: DnbAuxilliaryDeviceType
         """
         return self.aux_devices_mgt.GetAuxDevicesType(i_aux_device_num)
 

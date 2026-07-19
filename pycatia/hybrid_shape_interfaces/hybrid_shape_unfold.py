@@ -336,7 +336,7 @@ class HybridShapeUnfold(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddEdgeToTear(Reference iElement)
                 | 
                 |     Adds an edge to tear.
@@ -381,7 +381,7 @@ class HybridShapeUnfold(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddElementToTransfer(Reference iElement,
                 | long iTypeOfTransfer)
                 | 
@@ -424,7 +424,7 @@ class HybridShapeUnfold(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetEdgeToTear(long iRank) As Reference
                 | 
                 |     Retrieves an element used by the hybrid shape unfold feature
@@ -452,7 +452,7 @@ class HybridShapeUnfold(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetElementToTransfer(long iRank,
                 | Reference opElement,
                 | long oTypeOfTransfer)
@@ -499,7 +499,7 @@ class HybridShapeUnfold(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveEdgeToTear(long iRank)
                 | 
                 |     Removes an element used by the hybrid shape unfold feature
@@ -526,7 +526,7 @@ class HybridShapeUnfold(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveElementToTransfer(long iRank)
                 | 
                 |     Remove an elements to transfer.
@@ -546,7 +546,7 @@ class HybridShapeUnfold(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReplaceElementsToTransfer(long iRank,
                 | Reference iElement)
                 | 

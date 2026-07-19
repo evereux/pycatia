@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CD5SaveItem_Status
 from pycatia.eno_cd5_interfaces.cd5_id import CD5ID
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -301,7 +302,7 @@ class CD5SaveItem(AnyObject):
         self.cd5_save_item.Revision = value
 
     @property
-    def status(self) -> int:
+    def status(self) -> CD5SaveItem_Status:
         """
         .. note::
             :class: toggle
@@ -318,8 +319,7 @@ class CD5SaveItem(AnyObject):
                 |          Dim itemStatus As CD5SaveItem_Status
                 |          itemStatus = oSaveItem.Status
 
-        :return: enum cd5_save_item_status
-        :rtype: int
+        :return: CD5SaveItem_Status
         """
 
         return self.cd5_save_item.Status

@@ -307,7 +307,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetEndTangentDirectionFlag(long oOrientation)
                 | 
                 |     Retrieves the tangent direction orientation at the conic end
@@ -341,7 +341,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetIntermedTangent(long iIndexPoint) As
                 | HybridShapeDirection
                 | 
@@ -380,7 +380,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetIntermediatePoint(long iIndexPoint,
                 | Reference oEndPoint)
                 | 
@@ -433,7 +433,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetIntermediateTangentDirectionFlag(long iIndexPoint,
                 | long oOrientation)
                 | 
@@ -476,7 +476,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetStartTangentDirectionFlag(long oOrientation)
                 | 
                 |     Retrieves the tangent direction orientation at the conic start
@@ -511,7 +511,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetEndTangentDirectionFlag(long iOrientation)
                 | 
                 |     Sets the tangent direction orientation at the conic end
@@ -547,7 +547,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetIntermediatePoint(long iIndexPoint,
                 | Reference iEndPoint)
                 | 
@@ -603,7 +603,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetIntermediateTangent(long iIndexPoint,
                 | HybridShapeDirection iTgtDir)
                 | 
@@ -659,7 +659,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetIntermediateTangentDirectionFlag(long iIndexPoint,
                 | long iOrientation)
                 | 
@@ -705,7 +705,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetStartAndEndTangentsPlusConicParameter(HybridShapeDirection
                 | iStartTgt,
                 | HybridShapeDirection iEndTgt,
@@ -764,7 +764,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetStartAndEndTangentsPlusPassingPoint(HybridShapeDirection
                 | iStartTgt,
                 | HybridShapeDirection iEndTgt,
@@ -827,7 +827,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetStartTangentDirectionFlag(long iOrientation)
                 | 
                 |     Sets the tangent direction orientation at the conic start
@@ -864,7 +864,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTangentIntersectPointPlusConicParm(Reference
                 | iTgtInt,
                 | double iConicParam)
@@ -920,7 +920,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTangentIntersectPointPlusPassingPoint(Reference
                 | iTgtInt,
                 | Reference iPassingPt)
@@ -982,7 +982,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetThreeIntermediatePassingPoints(Reference iPassPt1,
                 | Reference iPassPt2,
                 | Reference iPassPt3)
@@ -1045,7 +1045,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTwoIntermediatePassingPointsPlusOneTangent(Reference
                 | iPassPt1,
                 | Reference iPassPt2,
@@ -1118,7 +1118,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SwitchEndTangentDirection()
                 | 
                 |     Inverts the tangent direction orientation at the conic end
@@ -1142,7 +1142,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SwitchIntermediateTangentDirection(long iIndexPoint)
                 | 
                 |     Inverts the tangent direction orientation of one of the conic intermediate
@@ -1177,7 +1177,7 @@ class HybridShapeConic(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SwitchStartTangentDirection()
                 | 
                 |     Inverts the tangent direction orientation at the conic start

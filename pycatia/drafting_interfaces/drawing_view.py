@@ -11,6 +11,7 @@
 import inspect
 from typing import TYPE_CHECKING, Tuple
 
+from pycatia import CatScriptLanguage
 from pycatia.drafting_interfaces.drawing_arrows import DrawingArrows
 from pycatia.drafting_interfaces.drawing_components import DrawingComponents
 from pycatia.drafting_interfaces.drawing_coord_dims import DrawingCoordDims
@@ -1128,7 +1129,10 @@ class DrawingView(AnyObject):
 
         system_service = self.application.system_service
         value = system_service.evaluate(
-            vba_code, 0, vba_function_name, [self.com_object]
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
         )
 
         # we don't return value directly as CATIA returns for example

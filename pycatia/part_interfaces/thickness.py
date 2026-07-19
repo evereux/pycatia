@@ -89,7 +89,7 @@ class Thickness(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFaceToThicken(Reference iFaceToThicken)
                 | 
                 |     Adds a new face to be thickened.
@@ -133,7 +133,7 @@ class Thickness(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFaceWithDifferentThickness(Reference
                 | iFaceToThicken)
                 | 
@@ -178,7 +178,7 @@ class Thickness(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveFaceWithDifferentThickness(Reference
                 | iFaceToRemove)
                 | 
@@ -223,7 +223,7 @@ class Thickness(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetVolumeSupport(Reference iVolumeSupport)
                 | 
                 |     Set support of Thickness feature.
@@ -253,7 +253,7 @@ class Thickness(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub WithdrawFaceToThicken(Reference iFaceToWithdraw)
                 | 
                 |     Withdraws an existing thickened face.

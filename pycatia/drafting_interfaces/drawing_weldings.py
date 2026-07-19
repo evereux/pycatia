@@ -10,6 +10,7 @@
 """
 from typing import Iterator
 
+from pycatia import CatWeldingSymbol
 from pycatia.drafting_interfaces.drawing_welding import DrawingWelding
 from pycatia.system_interfaces.collection import Collection
 
@@ -37,7 +38,7 @@ class DrawingWeldings(Collection):
         super().__init__(com_object, child_object=DrawingWelding)
         self.drawing_weldings = com_object
 
-    def add(self, i_symbol: int, i_position_x: float, i_position_y: float) -> DrawingWelding:
+    def add(self, i_symbol: CatWeldingSymbol, i_position_x: float, i_position_y: float) -> DrawingWelding:
         """
         .. note::
             :class: toggle
@@ -74,7 +75,7 @@ class DrawingWeldings(Collection):
                 |      Set MyWelding = 
                 |         MyView.Weldings.Add(catSquareWelding, 0., 0.)
 
-        :param int i_symbol: enum cat_welding_symbol
+        :param CatWeldingSymbol i_symbol:
         :param float i_position_x:
         :param float i_position_y:
         :rtype: DrawingWelding

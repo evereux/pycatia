@@ -259,7 +259,7 @@ class HybridShapeLineAngle(Line):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLengthType() As long
                 | 
                 |     Gets the length type Default is 0.
@@ -281,7 +281,7 @@ class HybridShapeLineAngle(Line):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSymmetricalExtension() As boolean
                 | 
                 |     Gets whether the symmetrical extension of the line is
@@ -301,7 +301,7 @@ class HybridShapeLineAngle(Line):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLengthType(long iType)
                 | 
                 |     Sets the length type Default is 0.
@@ -324,7 +324,7 @@ class HybridShapeLineAngle(Line):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSymmetricalExtension(boolean iSym)
                 | 
                 |     Sets the symmetrical extension of the line (start = -end).

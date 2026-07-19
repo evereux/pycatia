@@ -63,7 +63,7 @@ class BooleanShape(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetOperatedObject(Reference iReferenceObject)
                 | 
                 |     Modifies the Second Operand. input object to replace with Body or Volume
@@ -93,7 +93,7 @@ class BooleanShape(Shape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetOperatingVolume(Reference iReferenceObject)
                 | 
                 |     Swaps the operands. Both the Operands must be Volume. This is available

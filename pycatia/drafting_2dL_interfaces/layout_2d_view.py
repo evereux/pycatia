@@ -10,6 +10,7 @@
 """
 import inspect
 
+from pycatia import CatVisuIn3DMode, CatVisuBackgroundMode, CatView2DModeVisu
 from pycatia.drafting_interfaces.drawing_arrows import DrawingArrows
 from pycatia.drafting_interfaces.drawing_components import DrawingComponents
 from pycatia.drafting_interfaces.drawing_coord_dims import DrawingCoordDims
@@ -501,7 +502,7 @@ class Layout2DView(AnyObject):
         self.layout_2d_view.ViewScale = value
 
     @property
-    def visu_2d_mode(self) -> int:
+    def visu_2d_mode(self) -> CatView2DModeVisu:
         """
         .. note::
             :class: toggle
@@ -521,22 +522,21 @@ class Layout2DView(AnyObject):
                 |
                 |              View1.Visu2DMode = catView2DModeNoShow
 
-        :return: enum cat_view_2d_mode_visu
-        :rtype: int
+        :return: CatView2DModeVisu
         """
 
         return self.layout_2d_view.Visu2DMode
 
     @visu_2d_mode.setter
-    def visu_2d_mode(self, value: int):
+    def visu_2d_mode(self, value: CatView2DModeVisu):
         """
-        :param int value: enum cat_view_2d_mode_visu
+        :param CatView2DModeVisu value:
         """
 
         self.layout_2d_view.Visu2DMode = value
 
     @property
-    def visu_background(self) -> int:
+    def visu_background(self) -> CatVisuBackgroundMode:
         """
         .. note::
             :class: toggle
@@ -559,8 +559,7 @@ class Layout2DView(AnyObject):
                 | 
                 |              View1.VisuBackground = catLowIntPick
 
-        :return: enum cat_visu_background_mode
-        :rtype: int
+        :return: CatVisuBackgroundMode
         """
 
         return self.layout_2d_view.VisuBackground
@@ -574,7 +573,7 @@ class Layout2DView(AnyObject):
         self.layout_2d_view.VisuBackground = value
 
     @property
-    def visu_in_3d(self) -> int:
+    def visu_in_3d(self) -> CatVisuIn3DMode:
         """
         .. note::
             :class: toggle
@@ -595,16 +594,15 @@ class Layout2DView(AnyObject):
                 |
                 |              View1.HideIn3DSize = catShowAll
 
-        :return: enum cat_visu_in_3d_mode
-        :rtype: int
+        :return: CatVisuIn3DMode
         """
 
         return self.layout_2d_view.VisuIn3D
 
     @visu_in_3d.setter
-    def visu_in_3d(self, value: int):
+    def visu_in_3d(self, value: CatVisuIn3DMode):
         """
-        :param int value: enum cat_visu_in_3d_mode
+        :param CatVisuIn3DMode value:
         """
 
         self.layout_2d_view.VisuIn3D = value

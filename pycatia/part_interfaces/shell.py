@@ -112,7 +112,7 @@ class Shell(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFaceToRemove(Reference iFaceToRemove)
                 | 
                 |     Adds a new face to those to be removed by the shell
@@ -157,7 +157,7 @@ class Shell(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFaceWithDifferentThickness(Reference
                 | iFaceToThicken)
                 | 
@@ -204,7 +204,7 @@ class Shell(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveFaceWithDifferentThickness(Reference
                 | iFaceToRemove)
                 | 
@@ -251,7 +251,7 @@ class Shell(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetVolumeSupport(Reference iVolumeSupport)
                 | 
                 |     Set the Support Volume of the faces to modify during Shell operation.
@@ -281,7 +281,7 @@ class Shell(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub WithdrawFaceToRemove(Reference iFaceToWithdraw)
                 | 
                 |     Withdraws an existing face from those to be removed by the shell

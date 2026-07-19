@@ -50,7 +50,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddConstraint(Reference iConstraint,
                 | long iType,
                 | boolean iComplementaire,
@@ -125,7 +125,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddConstraintTolerant(Reference iConstraint,
                 | long iType,
                 | boolean iComplementaire,
@@ -208,7 +208,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAngularThreshold(long iPos) As double
                 | 
                 |     Returns the AngularThreshold of the list of constraints at specified
@@ -232,7 +232,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAngularThresholdActivity(long iPos) As boolean
                 | 
                 |     Returns the AngularThresholdActivity of the list of constraints at
@@ -256,7 +256,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetComplementaryExtractMulti(long iPos) As boolean
                 | 
                 |     Returns the Complementary flag checked/unchecked of the list of constraints
@@ -280,7 +280,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetCurvatureThreshold(long iPos) As double
                 | 
                 |     Returns the CurvatureThreshold of the list of constraints at specified
@@ -304,7 +304,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetCurvatureThresholdActivity(long iPos) As boolean
                 | 
                 |     Returns the CurvatureThresholdActivity of the list of constraints at
@@ -328,7 +328,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDistanceThreshold(long iPos) As double
                 | 
                 |     Returns the DistanceThreshold of the list of constraints at specified
@@ -352,7 +352,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDistanceThresholdActivity(long iPos) As boolean
                 | 
                 |     Returns the DistanceThresholdActivity of the list of constraints at
@@ -376,7 +376,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetElement(long iPos) As Reference
                 | 
                 |     Returns the sub element used as init for the propagation.
@@ -402,7 +402,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetIsFederated(long iPos) As boolean
                 | 
                 |     Returns the IsFederated flag checked/unchecked of the list of constraints
@@ -426,7 +426,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetListOfConstraints(CATSafeArrayVariant
                 | oListOfExtractedConstraints)
                 | 
@@ -481,7 +481,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetNbConstraints(long oNbConstraints)
                 | 
                 |     Returns number of constraints in the list of Extracted
@@ -511,7 +511,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPropagationType(long iPos) As long
                 | 
                 |     Returns the type of propagation of the list of constraints at specified
@@ -542,7 +542,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSupport(long iPos) As Reference
                 | 
                 |     Returns the support of the list of constraints at specified
@@ -563,7 +563,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveElement(long iPosition)
                 | 
                 |     Removes the body to be extracted from the list of constraints at specified
@@ -591,7 +591,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReplaceElement(Reference iExtractToReplace,
                 | Reference iNewExtract,
                 | long iPos)
@@ -646,7 +646,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAngularThreshold(long iPos,
                 | double iAngtreThsld)
                 | 
@@ -672,7 +672,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAngularThresholdActivity(long iPos,
                 | boolean iAngtreThsldActivity)
                 | 
@@ -714,7 +714,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetComplementaryExtractMulti(long iPos,
                 | boolean iComplementaire)
                 | 
@@ -756,7 +756,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetCurvatureThreshold(long iPos,
                 | double iCrvtreThsld)
                 | 
@@ -782,7 +782,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetCurvatureThresholdActivity(long iPos,
                 | boolean iCrvtreThsldActivity)
                 | 
@@ -825,7 +825,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDistanceThreshold(long iPos,
                 | double iDistreThsld)
                 | 
@@ -851,7 +851,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDistanceThresholdActivity(long iPos,
                 | boolean iDistreThsldActivity)
                 | 
@@ -894,7 +894,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetElement(long iPos,
                 | Reference iElem)
                 | 
@@ -938,7 +938,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetIsFederated(long iPos,
                 | boolean iIsFederated)
                 | 
@@ -980,7 +980,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPropagationType(long iPos,
                 | long iTypePropag)
                 | 
@@ -1014,7 +1014,7 @@ class HybridShapeExtractMulti(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSupport(long iPos,
                 | Reference iSupport)
                 | 

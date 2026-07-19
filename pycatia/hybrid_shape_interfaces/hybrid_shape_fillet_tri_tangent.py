@@ -14,7 +14,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeFilletTriTangent(HybridShape):
-
     """
         .. note::
             :class: toggle
@@ -276,7 +275,7 @@ class HybridShapeFilletTriTangent(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertFirstOrientation()
                 | 
                 |     Inverts first orientation used to specify fillet center position.
@@ -290,7 +289,7 @@ class HybridShapeFilletTriTangent(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertRemoveOrientation()
                 | 
                 |     Inverts third orientation used to specify fillet center position.
@@ -304,7 +303,7 @@ class HybridShapeFilletTriTangent(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertSecondOrientation()
                 | 
                 |     Inverts second orientation used to specify fillet center position.
@@ -314,4 +313,4 @@ class HybridShapeFilletTriTangent(HybridShape):
         return self.hybrid_shape_fillet_tri_tangent.InvertSecondOrientation()
 
     def __repr__(self):
-        return f'HybridShapeFilletTriTangent(name="{ self.name }")'
+        return f'HybridShapeFilletTriTangent(name="{self.name}")'

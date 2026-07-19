@@ -306,7 +306,7 @@ class HybridShapeReflectLine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertOrientationDirection()
                 | 
                 |     Inverts the orientation of direction. This example inverts the direction
@@ -324,7 +324,7 @@ class HybridShapeReflectLine(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertOrientationSupport()
                 | 
                 |     Inverts the orientation of support. This example inverts the support

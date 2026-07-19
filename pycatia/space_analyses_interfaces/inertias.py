@@ -48,7 +48,7 @@ class Inertias(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add(AnyObject iObject) As Inertia
                 | 
                 |     Creates an Inertia object from an object and adds it to the Inertias
@@ -80,7 +80,7 @@ class Inertias(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As Inertia
                 | 
                 |     Returns an Inertia object using its index or its name from the Inertias
@@ -117,7 +117,7 @@ class Inertias(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes an Inertia object from the Inertias collection.

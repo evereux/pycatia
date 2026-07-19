@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatSpecsLayout
 from pycatia.in_interfaces.viewer_2d import Viewer2D
 
 
@@ -43,7 +43,7 @@ class SpecsViewer(Viewer2D):
         self.specs_viewer = com_object
 
     @property
-    def layout(self) -> int:
+    def layout(self) -> CatSpecsLayout:
         """
         .. note::
             :class: toggle
@@ -60,16 +60,15 @@ class SpecsViewer(Viewer2D):
                 | 
                 |          SpecsTreeViewer.Layout = catSpecsViewerHorizontalCentered
 
-        :return: enum cat_specs_layout
-        :rtype: int
+        :return: CatSpecsLayout
         """
 
         return self.specs_viewer.Layout
 
     @layout.setter
-    def layout(self, value: int):
+    def layout(self, value: CatSpecsLayout):
         """
-        :param int value: enum cat_specs_layout
+        :param CatSpecsLayout value:
         """
 
         self.specs_viewer.Layout = value

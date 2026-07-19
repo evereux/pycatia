@@ -11,6 +11,7 @@
 
 from typing import Union
 
+from pycatia import CatScriptLanguage
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.length import Length
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
@@ -501,7 +502,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddGuide(Reference iGuide)
                 | 
                 |     Adds a guide curve to the lofted surface.
@@ -540,7 +541,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddGuideWithTangent(Reference iGuide,
                 | Reference iTangent)
                 | 
@@ -592,7 +593,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddSectionToLoft(Reference iCrv,
                 | long iOri,
                 | Reference iPoint)
@@ -615,7 +616,12 @@ class HybridShapeLoft(HybridShape):
         """
 
         if i_point == vba_nothing:
-            i_point = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
+            i_point = self.application.system_service.evaluate(
+                vba_nothing,
+                CatScriptLanguage.CATVBScriptLanguage,
+                'N',
+                []
+            )
         else:
             i_point = i_point.com_object
 
@@ -626,7 +632,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAreaLawToleranceParameter() As Length
                 | 
                 |     Gets the tolerance parameter applied to area law.
@@ -640,7 +646,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFacesForClosing(Reference oStartFace,
                 | Reference oEndFace)
                 | 
@@ -681,7 +687,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetGuide(long iPos,
                 | Reference oGuide,
                 | Reference oGuideTangent)
@@ -726,7 +732,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNbOfGuides() As long
                 | 
                 |     Returns the number of guides in the loft object.
@@ -752,7 +758,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSectionFromLoft(long iRank,
                 | Reference oCrv,
                 | long oOri,
@@ -799,7 +805,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSpine(long oSpineType,
                 | Reference oSpine)
                 | 
@@ -840,7 +846,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetStartAndEndSectionTangent(Reference
                 | oStartSectionTangent,
                 | Reference oEndSectionTangent)
@@ -882,7 +888,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InsertCoupling(long iPosition)
                 | 
                 |     Inserts a coupling to the loft.
@@ -907,7 +913,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InsertCouplingPoint(long iCouplingIndex,
                 | long iPosition,
                 | Reference iPoint)
@@ -959,7 +965,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InsertSectionToLoft(boolean iType,
                 | Reference iCrv,
                 | long iOri,
@@ -1013,7 +1019,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ModifyGuideCurve(Reference iGuide,
                 | Reference iNewGuide)
                 | 
@@ -1053,7 +1059,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ModifySectionCurve(Reference iSection,
                 | Reference iNewSection,
                 | Reference oCurveSection,
@@ -1115,7 +1121,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ModifySectionOrient(Reference iSection,
                 | long iOrient)
                 | 
@@ -1158,7 +1164,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveFaceForClosing(Reference iSection)
                 | 
                 |     Removes face used to close the lofted surface.
@@ -1193,7 +1199,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveGuide(Reference iGuide)
                 | 
                 |     Removes a guide curve from the lofted surface.
@@ -1232,7 +1238,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveGuideTangent(Reference iGuide)
                 | 
                 |     Removes a tangent surface of a guide from the lofted
@@ -1269,7 +1275,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveSection(Reference iSection)
                 | 
                 |     Removes a loft section from the lofted surface.
@@ -1308,7 +1314,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveSectionPoint(Reference iSection)
                 | 
                 |     Removes a closing point of a section from the lofted surface. The curve
@@ -1345,7 +1351,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveSectionTangent(Reference iSection)
                 | 
                 |     Removes the tangent surface of a section from the lofted surface. The
@@ -1383,7 +1389,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetEndFaceForClosing(Reference iFace)
                 | 
                 |     Sets a face to the end section from the lofted surface.
@@ -1421,7 +1427,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetEndSectionTangent(Reference iTangentSection)
                 | 
                 |     Sets a tangent surface to the end section from the lofted
@@ -1461,7 +1467,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSpine(Reference iSpine)
                 | 
                 |     Sets the spine to the lofted surface.
@@ -1499,7 +1505,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetStartFaceForClosing(Reference iFace)
                 | 
                 |     Sets a face to the start section from the lofted surface.
@@ -1537,7 +1543,7 @@ class HybridShapeLoft(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetStartSectionTangent(Reference iTangentSection)
                 | 
                 |     Sets a tangent surface to the start section from the lofted

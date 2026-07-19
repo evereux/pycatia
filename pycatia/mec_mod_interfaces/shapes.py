@@ -43,7 +43,7 @@ class Shapes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetBoundary(CATBSTR iLabel) As Boundary
                 | 
                 |     Returns a boundary using its label.
@@ -67,7 +67,7 @@ class Shapes(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As Shape
                 | 
                 |     Returns a shape using its index or its name from the Shapes

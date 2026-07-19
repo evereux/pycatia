@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatDistanceMeasureType, CatDistanceComputationType, CatScriptLanguage
 from pycatia.navigator_interfaces.annotated_views import AnnotatedViews
 from pycatia.navigator_interfaces.group import Group
 from pycatia.navigator_interfaces.marker_3Ds import Marker3Ds
@@ -105,7 +105,7 @@ class Distance(AnyObject):
         return AnnotatedViews(self.distance.AnnotatedViews)
 
     @property
-    def computation_type(self) -> int:
+    def computation_type(self) -> CatDistanceComputationType:
         """
         .. note::
             :class: toggle
@@ -128,7 +128,7 @@ class Distance(AnyObject):
                 |
                 |                 NewDistance.ComputationType = CatDistanceComputationTypeInsideOne
 
-        :rtype: int
+        :rtype: CatDistanceComputationType
         """
 
         return self.distance.ComputationType
@@ -297,7 +297,7 @@ class Distance(AnyObject):
         self.distance.MaximumDistance = value
 
     @property
-    def measure_type(self) -> int:
+    def measure_type(self) -> CatDistanceMeasureType:
         """
         .. note::
             :class: toggle
@@ -321,16 +321,15 @@ class Distance(AnyObject):
                 |
                 |             NewDistance.MeasureType = CatDistanceMeasureTypeMinimum
 
-        :return: enum cat_distance_measure_type
-        :rtype: int
+        :return: CatDistanceMeasureType
         """
 
         return self.distance.MeasureType
 
     @measure_type.setter
-    def measure_type(self, value: int):
+    def measure_type(self, value: CatDistanceMeasureType):
         """
-        :param int value: enum cat_distance_measure_type
+        :param CatDistanceMeasureType value:
         """
 
         self.distance.MeasureType = value
@@ -467,7 +466,7 @@ class Distance(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Compute()
                 | 
                 |     Computes the distance.
@@ -488,7 +487,7 @@ class Distance(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFirstPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
                 | 
@@ -525,14 +524,19 @@ class Distance(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_second_point_coordinates(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSecondPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
                 | 
@@ -569,7 +573,12 @@ class Distance(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def __repr__(self):
         return f'Distance(name="{self.name}")'

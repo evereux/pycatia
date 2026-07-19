@@ -106,7 +106,7 @@ class EdgeFillet(Fillet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddEdgeToKeep(Reference iEdgeToKeep)
                 | 
                 |     Adds a new edge to keep by the filleting operation. The edge to keep is not
@@ -151,7 +151,7 @@ class EdgeFillet(Fillet):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub WithdrawEdgeToKeep(Reference iEdgeToWithdraw)
                 | 
                 |     Withdraws an edge from those kept by a filleting

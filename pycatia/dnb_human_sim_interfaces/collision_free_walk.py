@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import HTSSearchIntensity
 from pycatia.dnb_human_sim_interfaces.walk_activity import WalkActivity
 
 
@@ -69,7 +70,7 @@ class CollisionFreeWalk(WalkActivity):
         self.collision_free_walk.CollisionClearance = value
 
     @property
-    def search_intensity(self) -> int:
+    def search_intensity(self) -> HTSSearchIntensity:
         """
         .. note::
             :class: toggle
@@ -87,16 +88,15 @@ class CollisionFreeWalk(WalkActivity):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: enum hts_search_intensity
-        :rtype: int
+        :return: HTSSearchIntensity
         """
 
         return self.collision_free_walk.SearchIntensity
 
     @search_intensity.setter
-    def search_intensity(self, value: int):
+    def search_intensity(self, value: HTSSearchIntensity):
         """
-        :param int value: enum hts_search_intensity
+        :param HTSSearchIntensity value:
         """
 
         self.collision_free_walk.SearchIntensity = value

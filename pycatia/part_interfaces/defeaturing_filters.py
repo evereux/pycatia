@@ -42,7 +42,7 @@ class DefeaturingFilters(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add(CATBSTR iFilterTypeToAdd) As long
                 | 
                 |     Creates a new filter and adds it to the Defeaturing filters
@@ -75,7 +75,7 @@ class DefeaturingFilters(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iFilterId) As DefeaturingFilter
                 | 
                 |     Returns the filter of the Defeaturing filters collection using its index or
@@ -108,7 +108,7 @@ class DefeaturingFilters(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Remove(CATVariant iFilterId)
                 | 
                 |     Removes a filter from the Defeaturing filters collection and deletes it,

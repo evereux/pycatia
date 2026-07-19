@@ -16,7 +16,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeCorner(HybridShape):
-
     """
         .. note::
             :class: toggle
@@ -588,7 +587,7 @@ class HybridShapeCorner(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertFirstOrientation()
                 | 
                 |     Inverts the first reference element orientation used to compute the
@@ -612,7 +611,7 @@ class HybridShapeCorner(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub InvertSecondOrientation()
                 | 
                 |     Inverts the second reference element orientation used to compute the
@@ -632,4 +631,4 @@ class HybridShapeCorner(HybridShape):
         return self.hybrid_shape_corner.InvertSecondOrientation()
 
     def __repr__(self):
-        return f'HybridShapeCorner(name="{ self.name }")'
+        return f'HybridShapeCorner(name="{self.name}")'

@@ -279,7 +279,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AppendNewPointAndParam(Reference iPoint,
                 | long iParam)
                 | 
@@ -319,7 +319,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPointAndParam(long iPos,
                 | Reference oPoint,
                 | Reference oParam)
@@ -364,7 +364,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSize() As long
                 | 
                 |     Gets the size of the list in the law i.e. number of points in the list of
@@ -384,7 +384,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllPointsAndParams()
                 | 
                 |     Removes all the points and associated parameters.
@@ -399,7 +399,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemovePointAndParam(Reference iPoint)
                 | 
                 |     Removes a point and its parameter. for law type = 5(Implicit)
@@ -434,7 +434,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetEndParam(long iEndParam)
                 | 
                 |     Sets end parameter.
@@ -455,7 +455,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetStartParam(long iStartParam)
                 | 
                 |     Sets start parameter.

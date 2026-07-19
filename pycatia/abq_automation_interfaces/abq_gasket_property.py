@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import StabilizationStiffness_Type, InitialThickness_Type
 from pycatia.abq_automation_interfaces.abq_property import ABQProperty
 from pycatia.analysis_interfaces.analysis_entity import AnalysisEntity
 
@@ -83,7 +84,7 @@ class ABQGasketProperty(ABQProperty):
         self.abq_gasket_property.InitialThickness = value
 
     @property
-    def initial_thickness_type(self) -> int:
+    def initial_thickness_type(self) -> InitialThickness_Type:
         """
         .. note::
             :class: toggle
@@ -93,16 +94,15 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Initial thickness type
 
-        :return: enum initial_thickness_type
-        :rtype: int
+        :return: InitialThickness_Type
         """
 
         return self.abq_gasket_property.InitialThicknessType
 
     @initial_thickness_type.setter
-    def initial_thickness_type(self, value: int):
+    def initial_thickness_type(self, value: InitialThickness_Type):
         """
-        :param int value: enum initial_thickness_type
+        :param InitialThickness_Type value:
         """
 
         self.abq_gasket_property.InitialThicknessType = value
@@ -156,7 +156,7 @@ class ABQGasketProperty(ABQProperty):
         self.abq_gasket_property.StabilizationStiffness = value
 
     @property
-    def stabilization_stiffness_type(self) -> int:
+    def stabilization_stiffness_type(self) -> StabilizationStiffness_Type:
         """
         .. note::
             :class: toggle
@@ -167,16 +167,15 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Stabilization stiffness type
 
-        :return: enum stabilization_stiffness_type
-        :rtype: int
+        :return: StabilizationStiffness_Type
         """
 
         return self.abq_gasket_property.StabilizationStiffnessType
 
     @stabilization_stiffness_type.setter
-    def stabilization_stiffness_type(self, value: int):
+    def stabilization_stiffness_type(self, value: StabilizationStiffness_Type):
         """
-        :param int value: enum stabilization_stiffness_type
+        :param StabilizationStiffness_Type value:
         """
 
         self.abq_gasket_property.StabilizationStiffnessType = value

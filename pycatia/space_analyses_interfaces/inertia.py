@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatScriptLanguage
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -190,7 +190,7 @@ class Inertia(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCOGPosition(CATSafeArrayVariant oCoordinates)
                 | 
                 |     Retrieves the position of the center of gravity.
@@ -226,14 +226,19 @@ class Inertia(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_inertia_matrix(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetInertiaMatrix(CATSafeArrayVariant oMatrix)
                 | 
                 |     Retrieves the matrix of inertia.
@@ -274,14 +279,19 @@ class Inertia(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_principal_axes(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPrincipalAxes(CATSafeArrayVariant oComponents)
                 | 
                 |     Retrieves the principal axes of inertia.
@@ -322,14 +332,19 @@ class Inertia(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_principal_moments(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPrincipalMoments(CATSafeArrayVariant oValues)
                 | 
                 |     Retrieves the principal moments of inertia.
@@ -367,7 +382,12 @@ class Inertia(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def __repr__(self):
         return f'Inertia(name="{self.name}")'

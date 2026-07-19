@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatScriptLanguage
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
@@ -111,7 +111,7 @@ class Line(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
                 |     Role: Returns the unit-vector pointing in the direction of the
@@ -148,14 +148,19 @@ class Line(HybridShape):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_origin(self, o_origin: tuple) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Role: Returns the origin of the line.
@@ -202,7 +207,7 @@ class Line(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutDirection(CATSafeArrayVariant iDirection)
                 | 
                 |     Role: Sets the unit-vector pointing in the direction of the

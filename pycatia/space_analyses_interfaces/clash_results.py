@@ -10,6 +10,7 @@
 """
 from typing import Iterator
 
+from pycatia import CatClashImportType
 from pycatia.space_analyses_interfaces.clash_result import ClashResult
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import CATVariant
@@ -41,10 +42,10 @@ class ClashResults(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=ClashResult)
         self.clash_results = com_object
 
-    def add_from_xml(self, i_path: str, i_type: int) -> ClashResult:
+    def add_from_xml(self, i_path: str, i_type: CatClashImportType) -> ClashResult:
         """
         .. note::
             :class: toggle
@@ -75,8 +76,8 @@ class ClashResults(Collection):
                 |                                                              CatClashImportTypeClashOnly)
 
         :param str i_path:
-        :param int i_type: enum cat_clash_import_type
-        :rtype: ClashResult
+        :param CatClashImportType i_type:
+        :return: ClashResult
         """
         return ClashResult(self.clash_results.AddFromXML(i_path, i_type))
 
@@ -122,7 +123,7 @@ class ClashResults(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a ClashResult object from the ClashResults

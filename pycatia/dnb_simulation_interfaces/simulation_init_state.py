@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import DNBSimInitStateAttr
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -47,7 +47,7 @@ class SimulationInitState(AnyObject):
         super().__init__(com_object)
         self.simulation_init_state = com_object
 
-    def restore_initial_state(self, i_attr_mask: int) -> None:
+    def restore_initial_state(self, i_attr_mask: DNBSimInitStateAttr) -> None:
         """
         .. note::
             :class: toggle
@@ -72,7 +72,7 @@ class SimulationInitState(AnyObject):
                 |         E_FAIL
                 |             The restore operation failed
 
-        :param int i_attr_mask: enum dnb_sim_init_state_attr
+        :param DNBSimInitStateAttr i_attr_mask:
         :rtype: None
         """
         return self.simulation_init_state.RestoreInitialState(i_attr_mask)
@@ -128,7 +128,7 @@ class SimulationInitState(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def save_initial_state(self, i_attr_mask: int) -> None:
+    def save_initial_state(self, i_attr_mask: DNBSimInitStateAttr) -> None:
         """
         .. note::
             :class: toggle
@@ -153,7 +153,7 @@ class SimulationInitState(AnyObject):
                 |         E_FAIL
                 |             The save operation failed
 
-        :param int i_attr_mask: enum dnb_sim_init_state_attr
+        :param DNBSimInitStateAttr i_attr_mask:
         :rtype: None
         """
         return self.simulation_init_state.SaveInitialState(i_attr_mask)

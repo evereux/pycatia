@@ -378,7 +378,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAllChecksReportInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -414,7 +414,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetCheckReportHtmlInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -450,7 +450,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDirectoryForInputXslInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -486,7 +486,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetReportCheckAdvisorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -522,7 +522,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetReportCheckExpertInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -558,7 +558,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetReportHtmlInCatiaSessionInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -594,7 +594,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetReportObjectsInformationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -630,7 +630,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetReportOutputDirectoryInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -666,7 +666,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetReportParametersInformationInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -703,7 +703,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetReportPassedObjectsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -739,7 +739,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAllChecksReportLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AllChecksReport parameter.
@@ -780,7 +780,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetCheckReportHtmlLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CheckReportHtml parameter.
@@ -821,7 +821,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDirectoryForInputXslLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DirectoryForInputXsl parameter.
@@ -862,7 +862,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetReportCheckAdvisorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ReportCheckAdvisor parameter.
@@ -903,7 +903,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetReportCheckExpertLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ReportCheckExpert parameter.
@@ -944,7 +944,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetReportHtmlInCatiaSessionLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ReportHtmlInCatiaSession parameter.
@@ -985,7 +985,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetReportObjectsInformationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ReportObjectsInformation parameter.
@@ -1026,7 +1026,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetReportOutputDirectoryLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ReportOutputDirectory parameter.
@@ -1067,7 +1067,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetReportParametersInformationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ReportParametersInformation
@@ -1109,7 +1109,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetReportPassedObjectsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ReportPassedObjects parameter.

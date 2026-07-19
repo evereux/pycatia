@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatMergeMode
 from pycatia.in_interfaces.reference import Reference
 from pycatia.part_interfaces.sketch_based_shape import SketchBasedShape
 from pycatia.sketcher_interfaces.sketch import Sketch
@@ -195,7 +195,7 @@ class Sweep(SketchBasedShape):
         self.sweep.MergeEnd = value
 
     @property
-    def merge_mode(self) -> int:
+    def merge_mode(self) -> CatMergeMode:
         """
         .. note::
             :class: toggle
@@ -205,16 +205,15 @@ class Sweep(SketchBasedShape):
                 | 
                 |     Returns or sets the end mode .
 
-        :return: enum cat_merge_mode
-        :rtype: int
+        :return: CatMergeMode
         """
 
         return self.sweep.MergeMode
 
     @merge_mode.setter
-    def merge_mode(self, value: int):
+    def merge_mode(self, value: CatMergeMode):
         """
-        :param int value: enum cat_merge_mode
+        :param CatMergeMode value:
         """
 
         self.sweep.MergeMode = value
@@ -380,7 +379,7 @@ class Sweep(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetKeepAngleOption()
                 | 
                 |     Actives KeepAngleOption.

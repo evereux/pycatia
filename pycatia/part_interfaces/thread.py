@@ -10,6 +10,7 @@
 """
 import inspect
 
+from pycatia import CatThreadPolarity, CatThreadStandard, CatThreadSide
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.str_param import StrParam
 from pycatia.part_interfaces.dress_up_shape import DressUpShape
@@ -190,7 +191,7 @@ class Thread(DressUpShape):
         self.thread.Pitch = value
 
     @property
-    def side(self) -> int:
+    def side(self) -> CatThreadSide:
         """
         .. note::
             :class: toggle
@@ -210,16 +211,15 @@ class Thread(DressUpShape):
                 | 
                 |              Set ThreadSide = firstthreadoThreadSide
 
-        :return: enum cat_thread_side
-        :rtype: int
+        :return: CatThreadSide
         """
 
         return self.thread.Side
 
     @side.setter
-    def side(self, value: int):
+    def side(self, value: CatThreadSide):
         """
-        :param int value: enum cat_thread_side
+        :param CatThreadSide value:
         """
 
         self.thread.Side = value
@@ -318,12 +318,12 @@ class Thread(DressUpShape):
 
         return StrParam(self.thread.ThreadDescription)
 
-    def create_standard_thread_design_table(self, i_standard_type: int) -> None:
+    def create_standard_thread_design_table(self, i_standard_type: CatThreadStandard) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CreateStandardThreadDesignTable(CatThreadStandard
                 | iStandardType)
                 | 
@@ -343,7 +343,7 @@ class Thread(DressUpShape):
                 |              firstthread.CreateStandardThreadDesignTable
                 |              catMetricThinPitch
 
-        :param int i_standard_type: enum cat_thread_standard
+        :param CatThreadStandard i_standard_type:
         :rtype: None
         """
         return self.thread.CreateStandardThreadDesignTable(i_standard_type)
@@ -353,7 +353,7 @@ class Thread(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CreateUserStandardDesignTable(CATBSTR iStandardName,
                 | CATBSTR iPath)
                 | 
@@ -395,7 +395,7 @@ class Thread(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReverseDirection()
                 | 
                 |     Swap the direction of the thread or the tap.
@@ -404,12 +404,12 @@ class Thread(DressUpShape):
         """
         return self.thread.ReverseDirection()
 
-    def set_explicit_polarity(self, i_thread_polarity: int) -> None:
+    def set_explicit_polarity(self, i_thread_polarity: CatThreadPolarity) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetExplicitPolarity(CatThreadPolarity iThreadPolarity)
                 | 
                 |     Sets the thread polarity explicit. Thread polarity is no more evaluated
@@ -428,7 +428,7 @@ class Thread(DressUpShape):
                 | 
                 |              firstthread.SetExplicitPolarity catTap
 
-        :param int i_thread_polarity: enum cat_thread_polarity
+        :param CatThreadPolarity i_thread_polarity:
         :rtype: None
         """
         return self.thread.SetExplicitPolarity(i_thread_polarity)

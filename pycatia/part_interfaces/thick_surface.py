@@ -14,7 +14,6 @@ from pycatia.part_interfaces.surface_based_shape import SurfaceBasedShape
 
 
 class ThickSurface(SurfaceBasedShape):
-
     """
         .. note::
             :class: toggle
@@ -114,7 +113,7 @@ class ThickSurface(SurfaceBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub swap_OffsetSide()
                 | 
                 |     Swap the side of the offset. 
@@ -134,4 +133,4 @@ class ThickSurface(SurfaceBasedShape):
         return self.thick_surface.swap_OffsetSide()
 
     def __repr__(self):
-        return f'ThickSurface(name="{ self.name }")'
+        return f'ThickSurface(name="{self.name}")'

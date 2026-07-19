@@ -244,7 +244,7 @@ class Chamfer(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddElementToChamfer(Reference iElementToChamfer)
                 | 
                 |     Adds a new geometrical element to be chamfered.
@@ -288,7 +288,7 @@ class Chamfer(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub WithdrawElementToChamfer(Reference iElementToWithdraw)
                 | 
                 |     Withdraws a geometrical element from those to be

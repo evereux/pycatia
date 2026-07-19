@@ -1,6 +1,7 @@
 #! /usr/bin/python3.9
 import inspect
 
+from pycatia import CatMeasurableName
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
@@ -85,7 +86,7 @@ class Measurable(AnyObject):
         return self.measurable.Area
 
     @property
-    def geometry_name(self) -> int:
+    def geometry_name(self) -> CatMeasurableName:
         """
         .. note::
             :class: toggle
@@ -100,8 +101,7 @@ class Measurable(AnyObject):
             |   AGeometryName = NewMeasurable.GeometryName
 
 
-        :return: enum cat_measurable_name
-        :return: int
+        :return: CatMeasurableName
         """
 
         return self.measurable.GeometryName

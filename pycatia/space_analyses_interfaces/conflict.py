@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatConflictType, CatConflictStatus, CatConflictComparison, CatScriptLanguage
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
@@ -77,7 +77,7 @@ class Conflict(AnyObject):
         self.conflict.Comment = value
 
     @property
-    def comparison_info(self) -> int:
+    def comparison_info(self) -> CatConflictComparison:
         """
         .. note::
             :class: toggle
@@ -97,8 +97,7 @@ class Conflict(AnyObject):
                 |             Dim anInfo As CatConflictComparison
                 |             anInfo = NewConflict.ComparisonInfo
 
-        :return: enum cat_conflict_comparison
-        :rtype: int
+        :return: CatConflictComparison
         """
 
         return self.conflict.ComparisonInfo
@@ -152,7 +151,7 @@ class Conflict(AnyObject):
         return Product(self.conflict.SecondProduct)
 
     @property
-    def status(self) -> int:
+    def status(self) -> CatConflictStatus:
         """
         .. note::
             :class: toggle
@@ -175,22 +174,21 @@ class Conflict(AnyObject):
                 |
                 |                 NewConflict.Status = CatConflictStatusIrrelevant
 
-        :return: enum cat_conflict_status
-        :rtype: int
+        :return: CatConflictStatus
         """
 
         return self.conflict.Status
 
     @status.setter
-    def status(self, value: int):
+    def status(self, value: CatConflictStatus):
         """
-        :param int value: enum cat_conflict_status
+        :param CatConflictStatus value:
         """
 
         self.conflict.Status = value
 
     @property
-    def type(self) -> int:
+    def type(self) -> CatConflictType:
         """
         .. note::
             :class: toggle
@@ -208,8 +206,7 @@ class Conflict(AnyObject):
                 |             Dim conflictType As CatConflictType
                 |             conflictType = NewConflict.Type
 
-        :return: enum cat_conflict_type
-        :rtype: int
+        :return: CatConflictType
         """
 
         return self.conflict.Type
@@ -246,7 +243,7 @@ class Conflict(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFirstPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
                 | 
@@ -283,14 +280,19 @@ class Conflict(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_second_point_coordinates(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSecondPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
                 | 
@@ -327,7 +329,12 @@ class Conflict(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def __repr__(self):
         return f'Conflict(name="{self.name}")'

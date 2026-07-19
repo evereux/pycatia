@@ -36,8 +36,7 @@ class AssemblyAnnotationSets(Collection):
     """
 
     def __init__(self, com_object):
-        # todo: what is the child_object for Collection?
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=AnnotationSet)
         self.assembly_annotation_sets = com_object
 
     def item(self, i_index: CATVariant) -> AnyObject:

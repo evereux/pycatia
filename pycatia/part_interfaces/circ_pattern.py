@@ -252,7 +252,7 @@ class CircPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetRotationAxis(CATSafeArrayVariant ioRotationAxis)
                 | 
                 |     Returns the rotation axis. The rotation axis is returned as an array
@@ -296,7 +296,7 @@ class CircPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetRotationCenter(CATSafeArrayVariant
                 | ioRotationCenter)
                 | 
@@ -343,7 +343,7 @@ class CircPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetInstanceAngularSpacing(long iInstanceNumber,
                 | double iAngularSpacing)
                 | 
@@ -371,7 +371,7 @@ class CircPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRotationAxis(Reference iRotationAxis)
                 | 
                 |     Sets the rotation axis.
@@ -419,7 +419,7 @@ class CircPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRotationCenter(Reference iRotationCenter)
                 | 
                 |     Sets the rotation center.
@@ -460,7 +460,7 @@ class CircPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetUnequalInstanceNumber(long iInstanceNumber)
                 | 
                 |     Sets the Instance Number.
@@ -484,7 +484,7 @@ class CircPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetUnequalStep(long iInstanceNumber)
                 | 
                 |     This method is deprecated Sets the UnequalStep.

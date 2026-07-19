@@ -70,7 +70,7 @@ class Windows(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As Window
                 | 
                 |     Returns a window using its index or its name from the Windows

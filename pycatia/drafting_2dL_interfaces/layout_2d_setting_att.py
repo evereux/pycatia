@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatViewFilterCreationMode, CatViewBackgroundMode
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -648,7 +648,7 @@ class Layout2DSettingAtt(SettingController):
         self.layout_2d_setting_att.TileLayoutWindow = value
 
     @property
-    def view_background_mode(self) -> int:
+    def view_background_mode(self) -> CatViewBackgroundMode:
         """
         .. note::
             :class: toggle
@@ -658,8 +658,7 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the ViewBackgroundMode parameter.
 
-        :return: enum cat_view_background_mode
-        :rtype: int
+        :return: CatViewBackgroundMode
         """
 
         return self.layout_2d_setting_att.ViewBackgroundMode
@@ -667,13 +666,13 @@ class Layout2DSettingAtt(SettingController):
     @view_background_mode.setter
     def view_background_mode(self, value: int):
         """
-        :param int value: enum cat_view_background_mode
+        :param CatViewBackgroundMode value:
         """
 
         self.layout_2d_setting_att.ViewBackgroundMode = value
 
     @property
-    def view_filter_creation_mode(self) -> int:
+    def view_filter_creation_mode(self) -> CatViewFilterCreationMode:
         """
         .. note::
             :class: toggle
@@ -684,16 +683,15 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the ViewFilterCreationMode parameter.
 
-        :return: enum cat_view_filter_creation_mode
-        :rtype: int
+        :return: CatViewFilterCreationMode
         """
 
         return self.layout_2d_setting_att.ViewFilterCreationMode
 
     @view_filter_creation_mode.setter
-    def view_filter_creation_mode(self, value: int):
+    def view_filter_creation_mode(self, value: CatViewFilterCreationMode):
         """
-        :param int value: enum cat_view_filter_creation_mode
+        :param CatViewFilterCreationMode value:
         """
 
         self.layout_2d_setting_att.ViewFilterCreationMode = value

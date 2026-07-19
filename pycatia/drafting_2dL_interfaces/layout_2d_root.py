@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatVisuIn3DMode
 from pycatia.knowledge_interfaces.parameters import Parameters
 from pycatia.knowledge_interfaces.relations import Relations
 from pycatia.drafting_2dL_interfaces.layout_2d_sheet import Layout2DSheet
@@ -228,7 +228,7 @@ class Layout2DRoot(AnyObject):
         self.layout_2d_root.Standard = value
 
     @property
-    def visu_in_3d(self) -> int:
+    def visu_in_3d(self) -> CatVisuIn3DMode:
         """
         .. note::
             :class: toggle
@@ -243,16 +243,15 @@ class Layout2DRoot(AnyObject):
                 |     See also:
                 |         CatVisuIn3DMode
 
-        :return: enum cat_visu_in_3d_mode
-        :rtype: int
+        :return: CatVisuIn3DMode
         """
 
         return self.layout_2d_root.VisuIn3D
 
     @visu_in_3d.setter
-    def visu_in_3d(self, value: int):
+    def visu_in_3d(self, value: CatVisuIn3DMode):
         """
-        :param int value: enum cat_visu_in_3d_mode
+        :param CatVisuIn3DMode value:
         """
 
         self.layout_2d_root.VisuIn3D = value

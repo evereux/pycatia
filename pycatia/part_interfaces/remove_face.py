@@ -137,7 +137,7 @@ class RemoveFace(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub remove_KeepFace(Reference iKeepFace)
                 | 
                 |     Removes a face to be Kept.
@@ -175,7 +175,7 @@ class RemoveFace(DressUpShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub remove_RemoveFace(Reference iRemoveFace)
                 | 
                 |     Removes a face to be removed.

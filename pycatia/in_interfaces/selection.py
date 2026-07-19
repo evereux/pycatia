@@ -12,6 +12,7 @@ from typing import Iterator
 
 from pywintypes import com_error
 
+from pycatia import CatScriptLanguage
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.selected_element import SelectedElement
@@ -226,7 +227,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Add(AnyObject iObject)
                 | 
                 |     Creates a SelectedElement object which Value property is the given
@@ -283,7 +284,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Clear()
                 | 
                 |     Clears the selection.
@@ -303,7 +304,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Copy()
                 | 
                 |     Copies, in a copy and paste operation.
@@ -338,7 +339,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Cut()
                 | 
                 |     Cuts, in a cut and paste operation.
@@ -374,7 +375,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Delete()
                 | 
                 |     Deletes all selected objects.
@@ -400,7 +401,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func FilterCorrespondence(CATSafeArrayVariant iFilterType) As
                 | boolean
                 | 
@@ -566,7 +567,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func FindObject(CATBSTR iObjectType) As AnyObject
                 | 
                 |     Finds an object in the current selection and deletes it from the
@@ -604,7 +605,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IndicateOrSelectElement2D(CATBSTR iMessage,
                 | CATSafeArrayVariant iFilterType,
                 | boolean iObjectSelectionBeforeCommandUsePossibility,
@@ -753,7 +754,7 @@ class Selection(AnyObject):
 
         system_service = self.application.system_service
         result = system_service.evaluate(vba_code,
-                                         0,
+                                         CatScriptLanguage.CATVBScriptLanguage,
                                          vba_function_name,
                                          [
                                              self.selection,
@@ -778,7 +779,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IndicateOrSelectElement3D(AnyObject
                 | iPlanarGeometricObject,
                 | CATBSTR iMessage,
@@ -936,7 +937,7 @@ class Selection(AnyObject):
         system_service = self.application.system_service
         result = system_service.evaluate(
             vba_code,
-            0,
+            CatScriptLanguage.CATVBScriptLanguage,
             vba_function_name,
             [
                 self.selection,
@@ -956,7 +957,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(long iIndex) As SelectedElement
                 | 
                 |     Deprecated:
@@ -975,7 +976,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item2(long iIndex) As SelectedElement
                 | 
                 |     Returns the iIndex-th SelectedElement object contained by the current
@@ -1021,7 +1022,7 @@ class Selection(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Paste()
                 | 
                 |     Puts the contents of the clipboard in the document at the indicated

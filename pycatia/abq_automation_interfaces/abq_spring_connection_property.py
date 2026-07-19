@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import SpringType_Type, SpringDof_Type, SpringDef_Type
 from pycatia.abq_automation_interfaces.abq_property import ABQProperty
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
@@ -68,7 +69,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         self.abq_spring_connection_property.Axis_sys = value
 
     @property
-    def spring_definition(self) -> int:
+    def spring_definition(self) -> SpringDef_Type:
         """
         .. note::
             :class: toggle
@@ -85,21 +86,21 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |         ABQ_LINE
                 |         ABQ_NON_LINEAR
 
-        :rtype: int
+        :return: SpringDef_Type
         """
 
         return self.abq_spring_connection_property.SpringDef
 
     @spring_definition.setter
-    def spring_definition(self, value: int):
+    def spring_definition(self, value: SpringDef_Type):
         """
-        :param int value:
+        :param SpringDef_Type value:
         """
 
         self.abq_spring_connection_property.SpringDef = value
 
     @property
-    def spring_type(self) -> int:
+    def spring_type(self) -> SpringType_Type:
         """
         .. note::
             :class: toggle
@@ -116,16 +117,15 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |         AXIAL
                 |         GENERAL
 
-        :return: enum spring_type_type
-        :rtype: int
+        :return: SpringType_Type
         """
 
         return self.abq_spring_connection_property.SpringType
 
     @spring_type.setter
-    def spring_type(self, value: int):
+    def spring_type(self, value: SpringType_Type):
         """
-        :param int value: enum spring_type_type
+        :param SpringType_Type value:
         """
 
         self.abq_spring_connection_property.SpringType = value
@@ -173,7 +173,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_linear_stiffness(self, i_dof: int) -> float:
+    def get_linear_stiffness(self, i_dof: SpringDof_Type) -> float:
         """
         .. note::
             :class: toggle
@@ -203,12 +203,12 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |         oStiffnessValue
                 |             The stiffnessvalue.
 
-        :param int i_dof: enum spring_dof_type
+        :param SpringDof_Type i_dof:
         :rtype: float
         """
         return self.abq_spring_connection_property.GetLinearStiffness(i_dof)
 
-    def get_non_linear_stiffness(self, i_dof: int, o_force_array: tuple, o_disp_array: tuple) -> None:
+    def get_non_linear_stiffness(self, i_dof: SpringDof_Type, o_force_array: tuple, o_disp_array: tuple) -> None:
         """
         .. note::
             :class: toggle
@@ -244,7 +244,7 @@ class ABQSpringConnectionProperty(ABQProperty):
                 | 
                 |             Refer: CATSafeArrayVariant
 
-        :param int i_dof: enum spring_dof_type
+        :param SpringDof_Type i_dof:
         :param tuple o_force_array:
         :param tuple o_disp_array:
         :rtype: None
@@ -266,7 +266,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def read_stiffness_data_from_file(self, i_dof: int, i_file_name: str) -> None:
+    def read_stiffness_data_from_file(self, i_dof: SpringDof_Type, i_file_name: str) -> None:
         """
         .. note::
             :class: toggle
@@ -296,7 +296,7 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |             The complete path of the text file which contains the stiffness
                 |             data.
 
-        :param int i_dof: enum spring_dof_type
+        :param SpringDof_Type i_dof:
         :param str i_file_name:
         :rtype: None
         """
@@ -314,7 +314,7 @@ class ABQSpringConnectionProperty(ABQProperty):
         """
         return self.abq_spring_connection_property.RemoveAxisSystem()
 
-    def remove_dof(self, i_dof: int) -> None:
+    def remove_dof(self, i_dof: SpringDof_Type) -> None:
         """
         .. note::
             :class: toggle
@@ -338,12 +338,12 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |             UR2_DOF
                 |             UR3_DOF
 
-        :param int i_dof: enum spring_dof_type
+        :param SpringDof_Type i_dof:
         :rtype: None
         """
         return self.abq_spring_connection_property.RemoveDof(i_dof)
 
-    def set_linear_stiffness(self, i_dof: int, i_stiffness_value: float) -> None:
+    def set_linear_stiffness(self, i_dof: SpringDof_Type, i_stiffness_value: float) -> None:
         """
         .. note::
             :class: toggle
@@ -371,13 +371,13 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |         iStiffnessValue
                 |             The stiffnessvalue.
 
-        :param int i_dof: enum spring_dof_type
+        :param SpringDof_Type i_dof:
         :param float i_stiffness_value:
         :rtype: None
         """
         return self.abq_spring_connection_property.SetLinearStiffness(i_dof, i_stiffness_value)
 
-    def set_non_linear_stiffness(self, i_dof: int, i_force_array: tuple, i_disp_array: tuple) -> None:
+    def set_non_linear_stiffness(self, i_dof: SpringDof_Type, i_force_array: tuple, i_disp_array: tuple) -> None:
         """
         .. note::
             :class: toggle
@@ -412,7 +412,7 @@ class ABQSpringConnectionProperty(ABQProperty):
                 | 
                 |             Refer: CATSafeArrayVariant
 
-        :param int i_dof: enum spring_dof_type
+        :param SpringDof_Type i_dof:
         :param tuple i_force_array:
         :param tuple i_disp_array:
         :rtype: None

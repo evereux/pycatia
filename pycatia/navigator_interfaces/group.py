@@ -112,7 +112,7 @@ class Group(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddExplicit(CATBaseDispatch iProduct)
                 | 
                 |     Adds a product to the group.
@@ -140,7 +140,7 @@ class Group(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CountExplicit() As long
                 | 
                 |     Returns the number of products in the group.
@@ -163,7 +163,7 @@ class Group(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CountExtract() As long
                 | 
                 |     Returns the number of products which can be extracted from the
@@ -195,7 +195,7 @@ class Group(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func CountInvert() As long
                 | 
                 |     Returns the number of terminal node products which cannot be extracted from
@@ -219,7 +219,7 @@ class Group(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub FillSelWithExtract()
                 | 
                 |     Fills the selection with all products which can be extracted from the
@@ -243,7 +243,7 @@ class Group(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub FillSelWithInvert()
                 | 
                 |     Fills the selection with all terminal node products which cannot be
@@ -267,7 +267,7 @@ class Group(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func ItemExplicit(CATVariant iIndex) As CATBaseDispatch
                 | 
                 |     Returns a product using its index in the group.
@@ -301,7 +301,7 @@ class Group(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func ItemExtract(CATVariant iIndex) As Product
                 | 
                 |     Returns a product which can be extracted from the group using its
@@ -336,7 +336,7 @@ class Group(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func ItemInvert(CATVariant iIndex) As Product
                 | 
                 |     Returns a terminal node product which cannot be extracted from the group
@@ -371,7 +371,7 @@ class Group(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveExplicit(CATVariant iIndex)
                 | 
                 |     Removes a product from the group using its index.

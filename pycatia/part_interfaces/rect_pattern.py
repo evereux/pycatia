@@ -288,7 +288,7 @@ class RectPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFirstDirection(CATSafeArrayVariant
                 | ioFirstDirection)
                 | 
@@ -335,7 +335,7 @@ class RectPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSecondDirection(CATSafeArrayVariant
                 | ioSecondDirection)
                 | 
@@ -381,7 +381,7 @@ class RectPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetFirstDirection(Reference iFirstDirection)
                 | 
                 |     Sets the first repartition direction.
@@ -430,7 +430,7 @@ class RectPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetInstanceSpacing(long iInstanceNumber,
                 | double iSpacing,
                 | long iDirection)
@@ -462,7 +462,7 @@ class RectPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSecondDirection(Reference iSecondDirection)
                 | 
                 |     Sets the second repartition direction.
@@ -511,7 +511,7 @@ class RectPattern(Pattern):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetUnequalInstanceNumber(long iInstanceNumber,
                 | long iDirection)
                 | 

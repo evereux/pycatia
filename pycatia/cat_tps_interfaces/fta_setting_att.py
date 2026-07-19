@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CATFTADimCreateOn, CATFTADimConfigureSnapping
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -516,7 +516,7 @@ class FTASettingAtt(SettingController):
         self.fta_setting_att.DimBlankingMod = value
 
     @property
-    def dim_configure_snapping(self) -> int:
+    def dim_configure_snapping(self) -> CATFTADimConfigureSnapping:
         """
         .. note::
             :class: toggle
@@ -529,16 +529,15 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum catfta_dim_configure_snapping
-        :rtype: int
+        :return: CATFTADimConfigureSnapping
         """
 
         return self.fta_setting_att.DimConfigureSnapping
 
     @dim_configure_snapping.setter
-    def dim_configure_snapping(self, value: int):
+    def dim_configure_snapping(self, value: CATFTADimConfigureSnapping):
         """
-        :param int value: enum catfta_dim_configure_snapping
+        :param CATFTADimConfigureSnapping value:
         """
 
         self.fta_setting_att.DimConfigureSnapping = value
@@ -570,7 +569,7 @@ class FTASettingAtt(SettingController):
         self.fta_setting_att.DimConstantOffset = value
 
     @property
-    def dim_create_on(self) -> int:
+    def dim_create_on(self) -> CATFTADimCreateOn:
         """
         .. note::
             :class: toggle
@@ -582,16 +581,15 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum catfta_dim_create_on
-        :rtype: int
+        :return: CATFTADimCreateOn
         """
 
         return self.fta_setting_att.DimCreateOn
 
     @dim_create_on.setter
-    def dim_create_on(self, value: int):
+    def dim_create_on(self, value: CATFTADimCreateOn):
         """
-        :param int value:
+        :param CATFTADimCreateOn value:
         """
 
         self.fta_setting_att.DimCreateOn = value

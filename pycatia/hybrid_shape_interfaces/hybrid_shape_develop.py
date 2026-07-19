@@ -280,7 +280,7 @@ class HybridShapeDevelop(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPlaneAxisAngle() As Angle
                 | 
                 |     Retrieves the rotation angle.
@@ -299,7 +299,7 @@ class HybridShapeDevelop(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPlaneAxisCoord(long iCoorIdx) As Length
                 | 
                 |     Retrieves the translation coordinates.
@@ -327,7 +327,7 @@ class HybridShapeDevelop(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPlaneAxisSwapAxes(long ii) As long
                 | 
                 |     Retrieves the inversion axes from their previous
@@ -361,7 +361,7 @@ class HybridShapeDevelop(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPlaneAxisAngle(double iAngle)
                 | 
                 |     Sets the rotation angle.
@@ -383,7 +383,7 @@ class HybridShapeDevelop(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPlaneAxisCoord(long iCoorIdx,
                 | double iCoordValue)
                 | 
@@ -412,7 +412,7 @@ class HybridShapeDevelop(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPlaneAxisSwapAxes(long iIdx,
                 | long iInversionValue)
                 | 

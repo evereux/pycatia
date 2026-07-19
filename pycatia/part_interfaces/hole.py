@@ -10,6 +10,7 @@
 """
 import inspect
 
+from pycatia import CatScriptLanguage
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.knowledge_interfaces.length import Length
@@ -574,7 +575,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CreateStandardThreadDesignTable(CatHoleThreadStandard
                 | iStandardType)
                 | 
@@ -605,7 +606,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CreateUserStandardDesignTable(CATBSTR iStandardName,
                 | CATBSTR iPath)
                 | 
@@ -648,7 +649,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDirection(CATSafeArrayVariant ioDirection)
                 | 
                 |     Returns the hole direction with absolute coordinates.
@@ -678,14 +679,19 @@ class Hole(SketchBasedShape):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_origin(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant ioOrigin)
                 | 
                 |     Returns the origin point which the hole is anchored to.
@@ -715,14 +721,19 @@ class Hole(SketchBasedShape):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def reverse(self) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Reverse()
                 | 
                 |     Reverses the hole direction .
@@ -742,7 +753,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDirection(Reference iDirection)
                 | 
                 |     Sets the hole associative direction.
@@ -788,7 +799,7 @@ class Hole(SketchBasedShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetOrigin(double iX,
                 | double iY,
                 | double iZ)

@@ -147,7 +147,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNbPosAngle() As long
                 | 
                 |     Gets the number of numerical positioning parameters : first axis direction angles.
@@ -166,7 +166,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetNbPosCoord() As long
                 | 
                 |     Gets the number of numerical positioning parameters : origin planar coordinates.
@@ -185,7 +185,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPosAngle(long iI) As Angle
                 | 
                 |     Returns angles of both initial and target coordinate systems from default
@@ -209,7 +209,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPosCoord(long ii) As Length
                 | 
                 |     Returns translation coordinates if both initial and target coordinate
@@ -233,7 +233,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPosPoint(long ii) As Reference
                 | 
                 |     Returns the points designated as the origins of the initial and target
@@ -257,7 +257,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPosSwapAxes(long ii) As long
                 | 
                 |     Returns axis inversion from previous definitions for both initial and
@@ -290,7 +290,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetPositionDirection(long iI) As HybridShapeDirection
                 | 
                 |     Returns the positioning directions.
@@ -315,7 +315,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllPosAngle()
                 | 
                 |     Removes all numerical positioning parameters : first axis direction angles.
@@ -329,7 +329,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllPosCoord()
                 | 
                 |     Removes all numerical positioning parameters : origin planar coordinates.
@@ -343,7 +343,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPosAngle(long iI,
                 | Angle iAngle)
                 | 
@@ -383,7 +383,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPosCoord(long iI,
                 | Length iCoordinate)
                 | 
@@ -424,7 +424,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPosPoint(long iI,
                 | Reference iElem)
                 | 
@@ -465,7 +465,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPosSwapAxes(long ii,
                 | long iInversion)
                 | 
@@ -500,7 +500,7 @@ class HybridShapePositionTransfo(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPositionDirection(long iI,
                 | HybridShapeDirection iElem)
                 | 

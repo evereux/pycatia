@@ -13,6 +13,7 @@ from typing import TYPE_CHECKING
 
 from pathlib import Path
 
+from pycatia import CatScriptLanguage
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.cameras import Cameras
 from pycatia.in_interfaces.reference import Reference
@@ -584,7 +585,7 @@ class Document(AnyObject):
         system_service = self.application.system_service
         return system_service.evaluate(
             vba_code,
-            0,
+            CatScriptLanguage.CATVBScriptLanguage,
             vba_function_name,
             [
                 self.document,
@@ -708,7 +709,7 @@ class Document(AnyObject):
         system_service = self.application.system_service
         return system_service.evaluate(
             vba_code,
-            0,
+            CatScriptLanguage.CATVBScriptLanguage,
             vba_function_name,
             [
                 self.document,

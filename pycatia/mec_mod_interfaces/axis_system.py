@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
 
 """
-
+from pycatia import CatScriptLanguage
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.system_interfaces.any_object import AnyObject
@@ -512,7 +512,7 @@ class AxisSystem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetEulerAngles(Angle oFirstAngle,
                 | Angle oSecondAngle,
                 | Angle ThirdAngle)
@@ -537,14 +537,19 @@ class AxisSystem(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_origin(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Returns the coordinates X,Y,Z of the origin point of the axis
@@ -578,14 +583,19 @@ class AxisSystem(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_vectors(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetVectors(CATSafeArrayVariant oVectorX,
                 | CATSafeArrayVariant oVectorY)
                 | 
@@ -629,14 +639,19 @@ class AxisSystem(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_x_axis(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetXAxis(CATSafeArrayVariant oXAxis)
                 | 
                 |     Returns the coordinates X,Y,Z of the X axis of the axis
@@ -670,14 +685,19 @@ class AxisSystem(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_y_axis(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetYAxis(CATSafeArrayVariant oYAxis)
                 | 
                 |     Returns the coordinates X,Y,Z of the Y axis of the axis
@@ -711,14 +731,19 @@ class AxisSystem(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_z_axis(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetZAxis(CATSafeArrayVariant oZAxis)
                 | 
                 |     Returns the coordinates X,Y,Z of the Z axis of the axis
@@ -752,14 +777,19 @@ class AxisSystem(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def put_origin(self, i_origin: tuple) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutOrigin(CATSafeArrayVariant iOrigin)
                 | 
                 |     Defines the coordinates X,Y,Z of the origin point of the axis
@@ -807,7 +837,7 @@ class AxisSystem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutVectors(CATSafeArrayVariant iVectorX,
                 | CATSafeArrayVariant iVectorY)
                 | 
@@ -866,7 +896,7 @@ class AxisSystem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutXAxis(CATSafeArrayVariant iXAxis)
                 | 
                 |     Defines the coordinates X,Y,Z of the X axis of the axis
@@ -914,7 +944,7 @@ class AxisSystem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutYAxis(CATSafeArrayVariant iYAxis)
                 | 
                 |     Defines the coordinates X,Y,Z of the Y axis of the axis
@@ -962,7 +992,7 @@ class AxisSystem(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutZAxis(CATSafeArrayVariant iZAxis)
                 | 
                 |     Defines the coordinates X,Y,Z of the Z axis of the axis

@@ -42,7 +42,7 @@ class Hyperlinks(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Add(AnyObject iObject) As Hyperlink
                 | 
                 |     Adds a Hyperlink to the Hyperlinks collection. Be careful: only one
@@ -74,7 +74,7 @@ class Hyperlinks(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetHyperlink(AnyObject iObject) As Hyperlink
                 | 
                 |     Retrieve an Hyperlink associated to an object
@@ -106,7 +106,7 @@ class Hyperlinks(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Item(CATVariant iIndex) As Hyperlink
                 | 
                 |     Returns an Hyperlink using its index from the Hyperlinks
@@ -146,7 +146,7 @@ class Hyperlinks(Collection):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a Hyperlink from the Hyperlinks collection.

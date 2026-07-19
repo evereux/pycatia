@@ -14,7 +14,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeSweep(HybridShape):
-
     """
         .. note::
             :class: toggle
@@ -124,7 +123,7 @@ class HybridShapeSweep(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddCutPoints(Reference iElement1,
                 | Reference iElement2)
                 | 
@@ -164,7 +163,7 @@ class HybridShapeSweep(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFillPoints(Reference iElement1,
                 | Reference iElement2)
                 | 
@@ -204,7 +203,7 @@ class HybridShapeSweep(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetCutPoint(long iRank) As Reference
 
         :param int i_rank:
@@ -217,7 +216,7 @@ class HybridShapeSweep(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetFillPoint(long iRank) As Reference
 
         :param int i_rank:
@@ -230,7 +229,7 @@ class HybridShapeSweep(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllCutPoints()
                 | 
                 |     Removes all cut points.
@@ -244,7 +243,7 @@ class HybridShapeSweep(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveAllFillPoints()
                 | 
                 |     Removes all fill points.
@@ -254,4 +253,4 @@ class HybridShapeSweep(HybridShape):
         return self.hybrid_shape_sweep.RemoveAllFillPoints()
 
     def __repr__(self):
-        return f'HybridShapeSweep(name="{ self.name }")'
+        return f'HybridShapeSweep(name="{self.name}")'

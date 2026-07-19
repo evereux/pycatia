@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import DNBIAMfgAssemblyType
 from pycatia.dmaps_interfaces.item import Item
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.types.general import CATVariant
@@ -123,7 +124,7 @@ class MfgAssemblyFactory(AnyObject):
         """
         return self.mfg_assembly_factory.GetNumberOfMfgAssemblies()
 
-    def get_number_of_all_mfg_assy(self, i_type: int, o_num_of_mfg_assemblies: int) -> None:
+    def get_number_of_all_mfg_assy(self, i_type: DNBIAMfgAssemblyType, o_num_of_mfg_assemblies: int) -> None:
         """
         .. note::
             :class: toggle
@@ -154,7 +155,7 @@ class MfgAssemblyFactory(AnyObject):
                 |                  matype,nbMfgAssemblies
                 |                  MsgBox  nbMfgAssemblies
 
-        :param int i_type: enum dnbia_mfg_assembly_type
+        :param DNBIAMfgAssemblyType i_type:
         :param int o_num_of_mfg_assemblies:
         :rtype: None
         """
@@ -311,7 +312,8 @@ class MfgAssemblyFactory(AnyObject):
         """
         return Item(self.mfg_assembly_factory.RetrieveMfgAssemblyAtIndex(i_index))
 
-    def retrive_all_mfg_assy(self, i_type: int, o_all_m_as: tuple, o_num_of_mfg_assemblies: int) -> AnyObject:
+    def retrive_all_mfg_assy(self, i_type: DNBIAMfgAssemblyType, o_all_m_as: tuple,
+                             o_num_of_mfg_assemblies: int) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -356,7 +358,7 @@ class MfgAssemblyFactory(AnyObject):
                 |                  objMAfact.RetriveALLMfgAssy
                 |                  matype,MAList,NbMA
 
-        :param int i_type: enum dnbia_mfg_assembly_type
+        :param DNBIAMfgAssemblyType i_type:
         :param tuple o_all_m_as:
         :param int o_num_of_mfg_assemblies:
         :rtype: AnyObject

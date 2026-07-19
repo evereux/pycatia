@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatScriptLanguage
 from pycatia.sketcher_interfaces.geometry_2D import Geometry2D
 from pycatia.system_interfaces.system_service import SystemService
 
@@ -41,7 +42,7 @@ class Point2D(Geometry2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCoordinates(CATSafeArrayVariant oPoint)
                 | 
                 |     Returns the coordinates of the point
@@ -66,14 +67,19 @@ class Point2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def set_data(self, i_x: float, i_y: float) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetData(double iX,
                 | double iY)
                 | 

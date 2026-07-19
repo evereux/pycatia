@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import DNBIAMfgAssemblyType
 from pycatia.dmaps_interfaces.item import Item
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.types.general import CATVariant
@@ -156,7 +157,7 @@ class MfgAssembly(AnyObject):
         self.mfg_assembly.MAPartNumber = value
 
     @property
-    def ma_type(self) -> int:
+    def ma_type(self) -> DNBIAMfgAssemblyType:
         """
         .. note::
             :class: toggle
@@ -179,8 +180,7 @@ class MfgAssembly(AnyObject):
                 |            MAtype = "Manufacturing Kit"
                 |          End If
 
-        :return: enum dnbia_mfg_assembly_type
-        :rtype: int
+        :return: DNBIAMfgAssemblyType
         """
 
         return self.mfg_assembly.MAType

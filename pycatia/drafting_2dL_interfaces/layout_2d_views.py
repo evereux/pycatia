@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatViewType, CatViewSide
 from pycatia.drafting_2dL_interfaces.layout_2d_view import Layout2DView
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import CATVariant
@@ -61,8 +62,16 @@ class Layout2DViews(Collection):
 
         return Layout2DView(self.layout2_d_views.ActiveView)
 
-    def add_auxiliary(self, i_reference_view: Layout2DView, i_bc_segment: tuple, i_xorient: float, i_yorient: float,
-                      i_section_type: int, i_x: float, i_y: float) -> Layout2DView:
+    def add_auxiliary(
+            self,
+            i_reference_view: Layout2DView,
+            i_bc_segment: tuple,
+            i_xorient: float,
+            i_yorient: float,
+            i_section_type: CatViewType,
+            i_x: float,
+            i_y: float
+    ) -> Layout2DView:
         """
         .. note::
             :class: toggle
@@ -150,14 +159,22 @@ class Layout2DViews(Collection):
         :param tuple i_bc_segment:
         :param float i_xorient:
         :param float i_yorient:
-        :param int i_section_type: enum cat_view_type
+        :param CatViewType i_section_type:
         :param float i_x:
         :param float i_y:
         :rtype: Layout2DView
         """
         return Layout2DView(
-            self.layout2_d_views.AddAuxiliary(i_reference_view.com_object, i_bc_segment, i_xorient, i_yorient,
-                                              i_section_type, i_x, i_y))
+            self.layout2_d_views.AddAuxiliary(
+                i_reference_view.com_object,
+                i_bc_segment,
+                i_xorient,
+                i_yorient,
+                i_section_type,
+                i_x,
+                i_y
+            )
+        )
 
     def add_detail(self, i_detail_name: str) -> Layout2DView:
         """
@@ -208,7 +225,7 @@ class Layout2DViews(Collection):
         """
         return Layout2DView(self.layout2_d_views.AddDetail(i_detail_name))
 
-    def add_from_3d_plane(self, i_plane: tuple, i_view_type: int, i_x: float, i_y: float) -> Layout2DView:
+    def add_from_3d_plane(self, i_plane: tuple, i_view_type: CatViewType, i_x: float, i_y: float) -> Layout2DView:
         """
         .. note::
             :class: toggle
@@ -263,7 +280,7 @@ class Layout2DViews(Collection):
                 |         The created Layout2D view
 
         :param tuple i_plane:
-        :param int i_view_type: enum cat_view_type
+        :param CatViewType i_view_type:
         :param float i_x:
         :param float i_y:
         :rtype: Layout2DView
@@ -312,7 +329,7 @@ class Layout2DViews(Collection):
         """
         return Layout2DView(self.layout2_d_views.AddPrimary(i_x, i_y))
 
-    def add_related(self, i_reference_view: Layout2DView, i_side: int, i_x: float, i_y: float) -> Layout2DView:
+    def add_related(self, i_reference_view: Layout2DView, i_side: CatViewSide, i_x: float, i_y: float) -> Layout2DView:
         """
         .. note::
             :class: toggle
@@ -364,7 +381,7 @@ class Layout2DViews(Collection):
                 |                   AddRelated(MyFirstView,catLeftSide, x, y)
 
         :param Layout2DView i_reference_view:
-        :param int i_side: enum cat_view_side
+        :param CatViewSide i_side:
         :param float i_x:
         :param float i_y:
         :rtype: Layout2DView

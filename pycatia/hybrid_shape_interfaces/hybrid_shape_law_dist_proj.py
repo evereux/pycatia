@@ -228,7 +228,7 @@ class HybridShapeLawDistProj(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetAppliedUnitSymbol(CATBSTR oSymbol)
                 | 
                 |     Returns the applied unit symbol.
@@ -255,7 +255,7 @@ class HybridShapeLawDistProj(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetMeasureUnitSymbol(CATBSTR oSymbol)
                 | 
                 |     Returns the measure unit symbol.
@@ -282,7 +282,7 @@ class HybridShapeLawDistProj(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPlaneNormal(CATSafeArrayVariant oNormal)
                 | 
                 |     Retrieves the support plane normal.
@@ -317,7 +317,7 @@ class HybridShapeLawDistProj(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IsHeterogeneousLaw() As boolean
                 | 
                 |     Queries whether Heterogeneous Law mode is active or not.
@@ -337,7 +337,7 @@ class HybridShapeLawDistProj(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutPlaneNormal(CATSafeArrayVariant iNormal)
                 | 
                 |     Sets the support plane normal.

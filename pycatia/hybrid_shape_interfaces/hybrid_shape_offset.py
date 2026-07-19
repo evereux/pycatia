@@ -154,7 +154,7 @@ class HybridShapeOffset(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddTrickyFace(Reference iTrickyFace)
                 | 
                 |     Adds a tricky face object on the object.
@@ -184,7 +184,7 @@ class HybridShapeOffset(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetTrickyFace(long iRank) As Reference
                 | 
                 |     Returns the invalid face object on the object.
@@ -200,7 +200,7 @@ class HybridShapeOffset(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveTrickyFace(long iRank)
                 | 
                 |     Remove the tricky face object on the object.
@@ -216,7 +216,7 @@ class HybridShapeOffset(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetOffsetValue(double iOffset)
                 | 
                 |     Set Offset value with input as double.

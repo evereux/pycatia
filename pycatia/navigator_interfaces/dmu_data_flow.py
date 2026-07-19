@@ -40,7 +40,7 @@ class DMUDataFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CacheExport(CATBSTR iDirectory,
                 | CATBSTR iPrefix,
                 | long iData)
@@ -72,7 +72,7 @@ class DMUDataFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub CacheImport(CATBSTR iDirectory)
                 | 
                 |     Imports in the cache of marked documents in a directory.
@@ -92,7 +92,7 @@ class DMUDataFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Collapse()
                 | 
                 |     Collapse the product by replacing all sub-product by corresponding
@@ -107,7 +107,7 @@ class DMUDataFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ReplaceByCGR(CATBSTR iDirectory,
                 | CATBSTR iPrefix)
                 | 
@@ -132,7 +132,7 @@ class DMUDataFlow(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SaveAsFrozen(CATBSTR iDirectory,
                 | CATBSTR iPrefix,
                 | long iData,

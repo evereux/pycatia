@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatTreeTypeEnum, CatTreeSizeTypeEnum, CatTreeOrientationEnum
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -135,7 +135,7 @@ class TreeVizManipSettingAtt(SettingController):
         self.tree_viz_manip_setting_att.DisplayGeomOnScrolling = value
 
     @property
-    def orientation(self) -> int:
+    def orientation(self) -> CatTreeOrientationEnum:
         """
         .. note::
             :class: toggle
@@ -145,16 +145,15 @@ class TreeVizManipSettingAtt(SettingController):
                 | 
                 |     Retrieves or Sets the orientation applied to the specification tree.
 
-        :return: enum cat_tree_orientation_enum
-        :rtype: int
+        :return: CatTreeOrientationEnum
         """
 
         return self.tree_viz_manip_setting_att.Orientation
 
     @orientation.setter
-    def orientation(self, value: int):
+    def orientation(self, value: CatTreeOrientationEnum):
         """
-        :param int value: enum cat_tree_orientation_enum
+        :param CatTreeOrientationEnum value:
         """
 
         self.tree_viz_manip_setting_att.Orientation = value
@@ -210,7 +209,7 @@ class TreeVizManipSettingAtt(SettingController):
         self.tree_viz_manip_setting_att.Size = value
 
     @property
-    def size_type(self) -> int:
+    def size_type(self) -> CatTreeSizeTypeEnum:
         """
         .. note::
             :class: toggle
@@ -221,22 +220,21 @@ class TreeVizManipSettingAtt(SettingController):
                 |     Retrieves or Sets the type of size applied to the text of the specification
                 |     tree.
 
-        :return: enum cat_tree_size_type_enum
-        :rtype: int
+        :return: CatTreeSizeTypeEnum
         """
 
         return self.tree_viz_manip_setting_att.SizeType
 
     @size_type.setter
-    def size_type(self, value: int):
+    def size_type(self, value: CatTreeSizeTypeEnum):
         """
-        :param int value: enum cat_tree_size_type_enum
+        :param CatTreeSizeTypeEnum value:
         """
 
         self.tree_viz_manip_setting_att.SizeType = value
 
     @property
-    def type(self) -> int:
+    def type(self) -> CatTreeTypeEnum:
         """
         .. note::
             :class: toggle
@@ -246,16 +244,15 @@ class TreeVizManipSettingAtt(SettingController):
                 | 
                 |     Retrieves or Sets the type applied to the specification tree.
 
-        :return: enum cat_tree_type_enum
-        :rtype: int
+        :return: CatTreeTypeEnum
         """
 
         return self.tree_viz_manip_setting_att.Type
 
     @type.setter
-    def type(self, value: int):
+    def type(self, value: CatTreeTypeEnum):
         """
-        :param int value: enum cat_tree_type_enum
+        :param CatTreeTypeEnum value:
         """
 
         self.tree_viz_manip_setting_att.Type = value
@@ -265,7 +262,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetArcSelectionActivationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -301,7 +298,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAutoExpandActivationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -337,7 +334,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetAutoScrollActivationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -373,7 +370,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetDisplayGeomOnScrollingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -409,7 +406,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetOrientationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -445,7 +442,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetShowActivationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -481,7 +478,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetSizeTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -519,7 +516,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -555,7 +552,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetArcSelectionActivationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the arc-selection mode applied to the specification
@@ -597,7 +594,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAutoExpandActivationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the automatic expand mode applied to the specification
@@ -639,7 +636,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetAutoScrollActivationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the automatic scrolling mode applied to the specification
@@ -681,7 +678,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDisplayGeomOnScrollingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the "display geometry on scrolling" mode.
@@ -722,7 +719,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetOrientationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the orientation applied to the specification
@@ -764,7 +761,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetShowActivationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the visualization Show/NoShow's mode applied to the
@@ -806,7 +803,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetSizeTypeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the type of size applied to the text of the specification
@@ -850,7 +847,7 @@ class TreeVizManipSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTypeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the type of the specification tree.

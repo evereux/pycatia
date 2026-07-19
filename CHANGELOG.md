@@ -1,8 +1,21 @@
 # Changelog
 
-## 0.9.6
+## 0.10.0
 
-* Added child_object to inherited Collections() where missing.
+Please note that if you're using the new IntEnum types added in 0.9.3 that some
+names have been changed.
+VisPropertySet.get_show() now returns a tuple (see source) instead of just
+an int so is now consistent with the CATIA API. For a quick fix to existing
+scripts you can do VisPropertySet.get_show()[1] to get the show state.
+
+* DMUTolSettingAtt was DmuTolSettingAtt
+* FTAInfraSettingAtt was FtaInfraSettingAtt
+* FTAInfraSettingAtt.man_ref_size was FtaInfraSettingAtt.man_ref_siz
+* Added child_object to inherited Collections() were missing. PR #307 @rancy777
+* Improved type hinting for IntEnums. Type hints instead of using `int` now reference the
+  new IntEnum types.
+* Some IntEnum types have been renamed to match those of it's VBA counterpart.
+* `document_types['CatalogDocument']` now returns the correct document type.
 
 ## 0.9.5
 

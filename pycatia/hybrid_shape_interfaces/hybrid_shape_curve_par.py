@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatScriptLanguage
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.length import Length
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
@@ -585,7 +585,7 @@ class HybridShapeCurvePar(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPlaneNormal(CATSafeArrayVariant oNormal)
                 | 
                 |     Returns the Normal of the plane created when the Support of the curve is
@@ -623,14 +623,19 @@ class HybridShapeCurvePar(HybridShape):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def put_plane_normal(self, i_normal: tuple) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutPlaneNormal(CATSafeArrayVariant iNormal)
                 | 
                 |     Sets the Normal of the plane created when the Support of the curve is not

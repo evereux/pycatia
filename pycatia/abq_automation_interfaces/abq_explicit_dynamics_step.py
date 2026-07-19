@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import Incrementation_Type, FixedTimeIncrementMethod
 from pycatia.abq_automation_interfaces.abq_boundary_conditions import ABQBoundaryConditions
 from pycatia.abq_automation_interfaces.abq_fields import ABQFields
 from pycatia.abq_automation_interfaces.abq_loads import ABQLoads
@@ -151,7 +152,7 @@ class ABQExplicitDynamicsStep(ABQStep):
         return ABQFields(self.abq_explicit_dynamics_step.Fields)
 
     @property
-    def fixed_time_increment_method(self) -> int:
+    def fixed_time_increment_method(self) -> FixedTimeIncrementMethod:
         """
         .. note::
             :class: toggle
@@ -165,16 +166,15 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |     ABQ_FTI_USER_DEFINED, the UserDefinedTimeIncrementValue property must be set to
                 |     specifiy the time increment value.
 
-        :return: enum fixed_time_increment_method
-        :rtype: int
+        :return: FixedTimeIncrementMethod
         """
 
         return self.abq_explicit_dynamics_step.FixedTimeIncrementMethod
 
     @fixed_time_increment_method.setter
-    def fixed_time_increment_method(self, value: int):
+    def fixed_time_increment_method(self, value: FixedTimeIncrementMethod):
         """
-        :param int value: enum fixed_time_increment_method
+        :param FixedTimeIncrementMethod value:
         """
 
         self.abq_explicit_dynamics_step.FixedTimeIncrementMethod = value
@@ -262,7 +262,7 @@ class ABQExplicitDynamicsStep(ABQStep):
         self.abq_explicit_dynamics_step.NLGeom = value
 
     @property
-    def time_incrementation_method(self) -> int:
+    def time_incrementation_method(self) -> Incrementation_Type:
         """
         .. note::
             :class: toggle
@@ -281,16 +281,15 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |           AUTO_INCREMENT
                 |           FIXED_INCREMENT
 
-        :return: enum incrementation_type
-        :rtype: int
+        :return: Incrementation_Type
         """
 
         return self.abq_explicit_dynamics_step.TimeIncrementationMethod
 
     @time_incrementation_method.setter
-    def time_incrementation_method(self, value: int):
+    def time_incrementation_method(self, value: Incrementation_Type):
         """
-        :param int value: enum incrementation_type
+        :param Incrementation_Type value:
         """
 
         self.abq_explicit_dynamics_step.TimeIncrementationMethod = value

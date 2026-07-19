@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class TextStream(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -89,7 +88,7 @@ class TextStream(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Close()
                 | 
                 |     Closes a text stream.
@@ -108,7 +107,7 @@ class TextStream(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Read(long iNumOfChar) As CATBSTR
                 | 
                 |     Returns a string which contains a given number of characters from the
@@ -139,7 +138,7 @@ class TextStream(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func ReadLine() As CATBSTR
                 | 
                 |     Returns a string which contains a line of charaters from the current
@@ -164,7 +163,7 @@ class TextStream(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Write(CATBSTR iWrittenString)
                 | 
                 |     Writes a string in the text stream.
@@ -186,4 +185,4 @@ class TextStream(AnyObject):
         return self.text_stream.Write(i_written_string)
 
     def __repr__(self):
-        return f'TextStream(name="{ self.name }")'
+        return f'TextStream(name="{self.name}")'

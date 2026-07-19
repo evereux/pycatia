@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import SWKPostureSpec
 from pycatia.dnb_human_modeling_interfaces.swk_body_element import SWKBodyElement
 from pycatia.dnb_human_modeling_interfaces.swk_center_of_gravity import SWKCenterOfGravity
 from pycatia.dnb_human_modeling_interfaces.swk_segment import SWKSegment
@@ -720,7 +721,7 @@ class SWKBody(SWKBodyElement):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_posture(self, pi_posture_spec: int, pi_keep_referential: bool) -> None:
+    def set_posture(self, pi_posture_spec: SWKPostureSpec, pi_keep_referential: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -741,7 +742,7 @@ class SWKBody(SWKBodyElement):
                 |             keeps the referential after the change of the
                 |             posture
 
-        :param int pi_posture_spec: enum swk_posture_spec
+        :param SWKPostureSpec pi_posture_spec:
         :param bool pi_keep_referential:
         :rtype: None
         """

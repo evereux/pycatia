@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatSplitSide
 from pycatia.part_interfaces.surface_based_shape import SurfaceBasedShape
 
 
@@ -39,7 +39,7 @@ class Split(SurfaceBasedShape):
         self.split = com_object
 
     @property
-    def splitting_side(self) -> int:
+    def splitting_side(self) -> CatSplitSide:
         """
         .. note::
             :class: toggle
@@ -59,16 +59,15 @@ class Split(SurfaceBasedShape):
                 |          Set sptSide = mySplit.SplittingSide
                 |          mySplit.SplittingSide = catPositiveSide
 
-        :return: enum cat_split_side
-        :rtype: int
+        :return: CatSplitSide
         """
 
         return self.split.SplittingSide
 
     @splitting_side.setter
-    def splitting_side(self, value: int):
+    def splitting_side(self, value: CatSplitSide):
         """
-        :param int value: enum cat_split_side
+        :param CatSplitSide value:
         """
 
         self.split.SplittingSide = value

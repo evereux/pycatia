@@ -14,7 +14,6 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class HybridShapeCircleCtrPt(HybridShapeCircle):
-
     """
         .. note::
             :class: toggle
@@ -153,7 +152,7 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func IsGeodesic() As boolean
                 | 
                 |     Queries whether the circle is geodesic or not.
@@ -172,7 +171,7 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetGeometryOnSupport()
                 | 
                 |     Sets GeometryOnSupport of circle.
@@ -187,7 +186,7 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub UnsetGeometryOnSupport()
                 | 
                 |     Inactivates GeometryOnSupport of circle.
@@ -198,4 +197,4 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         return self.hybrid_shape_circle_ctr_pt.UnsetGeometryOnSupport()
 
     def __repr__(self):
-        return f'HybridShapeCircleCtrPt(name="{ self.name }")'
+        return f'HybridShapeCircleCtrPt(name="{self.name}")'

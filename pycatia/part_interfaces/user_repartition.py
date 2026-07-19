@@ -14,7 +14,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class UserRepartition(Repartition):
-
     """
         .. note::
             :class: toggle
@@ -68,7 +67,7 @@ class UserRepartition(Repartition):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFeatureToLocatePositions(AnyObject
                 | iFeatureToLocatePositions)
                 | 
@@ -91,4 +90,4 @@ class UserRepartition(Repartition):
         return self.user_repartition.AddFeatureToLocatePositions(i_feature_to_locate_positions.com_object)
 
     def __repr__(self):
-        return f'UserRepartition(name="{ self.name }")'
+        return f'UserRepartition(name="{self.name}")'

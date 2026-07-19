@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatWindowState
 from pycatia.in_interfaces.page_setup import PageSetup
 from pycatia.in_interfaces.viewer import Viewer
 from pycatia.in_interfaces.viewers import Viewers
@@ -275,7 +275,7 @@ class Window(AnyObject):
         self.window.Width = value
 
     @property
-    def window_state(self) -> int:
+    def window_state(self) -> CatWindowState:
         """
         .. note::
             :class: toggle
@@ -291,16 +291,15 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.WindowState = catWindowStateMaximized
 
-        :return: enum cat_window_state
-        :rtype: int
+        :return: CatWindowState
         """
 
         return self.window.WindowState
 
     @window_state.setter
-    def window_state(self, value: int):
+    def window_state(self, value: CatWindowState):
         """
-        :param int value: enum cat_window_state
+        :param CatWindowState value:
         """
 
         self.window.WindowState = value
@@ -310,7 +309,7 @@ class Window(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Activate()
                 | 
                 |     Activates a window. The active window is deactivated and the window to
@@ -330,7 +329,7 @@ class Window(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ActivateNext()
                 | 
                 |     Activates the window following the current active one in the window
@@ -351,7 +350,7 @@ class Window(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub ActivatePrevious()
                 | 
                 |     Activates the window preceding the current active one in the window
@@ -372,7 +371,7 @@ class Window(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Close()
                 | 
                 |     Closes the window. This method displays the dialog box requesting whether
@@ -394,7 +393,7 @@ class Window(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func NewWindow() As Window
                 | 
                 |     Creates a new window. The new window displays the same document with the
@@ -417,7 +416,7 @@ class Window(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PrintOut()
                 | 
                 |     Prints the active viewer of the window according to the window's page setup
@@ -438,7 +437,7 @@ class Window(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PrintToFile(CATBSTR fileName)
                 | 
                 |     Prints the active viewer of the window according to the window's page setup

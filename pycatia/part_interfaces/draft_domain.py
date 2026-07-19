@@ -234,7 +234,7 @@ class DraftDomain(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFaceToDraft(Reference iFace)
                 | 
                 |     Adds a face to those to be drafted.
@@ -278,7 +278,7 @@ class DraftDomain(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetPullingDirection(CATSafeArrayVariant
                 | ioPullingDirection)
                 | 
@@ -323,7 +323,7 @@ class DraftDomain(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveFaceToDraft(Reference iFace)
                 | 
                 |     Removes a face from those to be drafted.
@@ -367,7 +367,7 @@ class DraftDomain(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetPullingDirection(double iX,
                 | double iY,
                 | double iZ)
@@ -399,7 +399,7 @@ class DraftDomain(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetVolumeSupport(Reference iVolumeSupport)
                 | 
                 |     Value the support of draft.

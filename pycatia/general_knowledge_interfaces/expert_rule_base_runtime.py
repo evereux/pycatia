@@ -10,6 +10,7 @@
 """
 from typing import TYPE_CHECKING
 
+from pycatia import CatShowResultType, CatSolveType, CatVisualizationType
 from pycatia.general_knowledge_interfaces.expert_rule_set import ExpertRuleSet
 from pycatia.knowledge_interfaces.relation import Relation
 from pycatia.system_interfaces.any_object import AnyObject
@@ -150,7 +151,7 @@ class ExpertRuleBaseRuntime(Relation):
         self.expert_rule_base_runtime.ReportPath = value
 
     @property
-    def report_show_result(self) -> int:
+    def report_show_result(self) -> CatShowResultType:
         """
         .. note::
             :class: toggle
@@ -167,16 +168,15 @@ class ExpertRuleBaseRuntime(Relation):
                 |     2
                 |         ByState
 
-        :return: enum cat_show_result_type
-        :rtype: int
+        :return: CatShowResultType
         """
 
         return self.expert_rule_base_runtime.ReportShowResult
 
     @report_show_result.setter
-    def report_show_result(self, value: int):
+    def report_show_result(self, value: CatShowResultType):
         """
-        :param int value: enum cat_show_result_type
+        :param CatShowResultType value:
         """
 
         self.expert_rule_base_runtime.ReportShowResult = value
@@ -226,7 +226,7 @@ class ExpertRuleBaseRuntime(Relation):
         return ExpertRuleSet(self.expert_rule_base_runtime.RuleSet)
 
     @property
-    def solve_type(self) -> int:
+    def solve_type(self) -> CatSolveType:
         """
         .. note::
             :class: toggle
@@ -236,22 +236,21 @@ class ExpertRuleBaseRuntime(Relation):
                 | 
                 |     Returns or sets the solve option.
 
-        :return: enum cat_solve_type
-        :rtype: int
+        :return: CatSolveType
         """
 
         return self.expert_rule_base_runtime.SolveType
 
     @solve_type.setter
-    def solve_type(self, value: int):
+    def solve_type(self, value: CatSolveType):
         """
-        :param int value: enum cat_solve_type
+        :param CatSolveType value:
         """
 
         self.expert_rule_base_runtime.SolveType = value
 
     @property
-    def text_visualization(self) -> int:
+    def text_visualization(self) -> CatVisualizationType:
         """
         .. note::
             :class: toggle
@@ -268,16 +267,15 @@ class ExpertRuleBaseRuntime(Relation):
                 |     2
                 |         Both
 
-        :return: enum cat_visualization_type
-        :rtype: int
+        :return: CatVisualizationType
         """
 
         return self.expert_rule_base_runtime.TextVisualization
 
     @text_visualization.setter
-    def text_visualization(self, value: int):
+    def text_visualization(self, value: CatVisualizationType):
         """
-        :param int value: enum cat_visualization_type
+        :param CatVisualizationType value:
         """
 
         self.expert_rule_base_runtime.TextVisualization = value

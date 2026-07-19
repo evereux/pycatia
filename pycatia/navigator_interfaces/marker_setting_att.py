@@ -389,7 +389,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarker2DAutoNamingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -425,7 +425,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarker3DAutoNamingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -461,7 +461,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetMarkerDefaultsColor(long oRed,
                 | long oGreen,
                 | long oBlue)
@@ -481,7 +481,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerDefaultsColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -517,7 +517,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerDefaultsDashedInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -553,7 +553,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerDefaultsWeightInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -589,7 +589,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetMarkerTextColor2D(long oRed,
                 | long oGreen,
                 | long oBlue)
@@ -609,7 +609,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerTextColor2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -645,7 +645,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetMarkerTextColor3D(long oRed,
                 | long oGreen,
                 | long oBlue)
@@ -665,7 +665,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerTextColor3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -701,7 +701,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerTextDashed2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -737,7 +737,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerTextDashed3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -773,7 +773,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerTextDefaultsFont2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -809,7 +809,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerTextDefaultsFont3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -845,7 +845,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerTextDefaultsSize2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -881,7 +881,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerTextDefaultsSize3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -917,7 +917,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerTextWeight2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -953,7 +953,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetMarkerTextWeight3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -989,7 +989,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarker2DAutoNamingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Marker2DAutoNaming parameter.
@@ -1030,7 +1030,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarker3DAutoNamingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Marker3DAutoNaming parameter.
@@ -1071,7 +1071,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerDefaultsColor(long iRed,
                 | long iGreen,
                 | long iBlue)
@@ -1091,7 +1091,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerDefaultsColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsColor parameter.
@@ -1132,7 +1132,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerDefaultsDashedLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsDashed parameter.
@@ -1173,7 +1173,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerDefaultsWeightLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsWeight parameter.
@@ -1214,7 +1214,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextColor2D(long iRed,
                 | long iGreen,
                 | long iBlue)
@@ -1234,7 +1234,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextColor2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextColor2D parameter.
@@ -1275,7 +1275,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextColor3D(long iRed,
                 | long iGreen,
                 | long iBlue)
@@ -1295,7 +1295,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextColor3DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextColor3D parameter.
@@ -1336,7 +1336,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextDashed2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextDashed parameter.
@@ -1377,7 +1377,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextDashed3DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextDashed3D parameter.
@@ -1418,7 +1418,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextDefaultsFont2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsFont2D parameter.
@@ -1459,7 +1459,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextDefaultsFont3DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsFont3D parameter.
@@ -1500,7 +1500,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextDefaultsSize2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsSize2D parameter.
@@ -1541,7 +1541,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextDefaultsSize3DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsSize3D parameter.
@@ -1582,7 +1582,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextWeight2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextWeight2D parameter.
@@ -1623,7 +1623,7 @@ class MarkerSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetMarkerTextWeight3DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextWeight3D parameter.

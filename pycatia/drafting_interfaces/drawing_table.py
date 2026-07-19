@@ -10,6 +10,7 @@
 """
 import inspect
 
+from pycatia import CatTablePosition, CatTableInvertMode, CatTableComputeMode, CatTableBorderType
 from pycatia.drafting_interfaces.drawing_leaders import DrawingLeaders
 from pycatia.drafting_interfaces.drawing_text import DrawingText
 from pycatia.drafting_interfaces.drawing_text_properties import DrawingTextProperties
@@ -39,7 +40,7 @@ class DrawingTable(AnyObject):
         self.drawing_table = com_object
 
     @property
-    def anchor_point(self) -> int:
+    def anchor_point(self) -> CatTablePosition:
         """
         .. note::
             :class: toggle
@@ -60,16 +61,15 @@ class DrawingTable(AnyObject):
                 | 
                 |                  MyTable.AnchorPoint = CatTableBottomLeft
 
-        :return: enum cat_table_position
-        :rtype: int
+        :return: CatTablePosition
         """
 
         return self.drawing_table.AnchorPoint
 
     @anchor_point.setter
-    def anchor_point(self, value: int):
+    def anchor_point(self, value: CatTablePosition):
         """
-        :param int value:
+        :param CatTablePosition value:
         """
 
         self.drawing_table.AnchorPoint = value
@@ -106,7 +106,7 @@ class DrawingTable(AnyObject):
         self.drawing_table.Angle = value
 
     @property
-    def compute_mode(self) -> int:
+    def compute_mode(self) -> CatTableComputeMode:
         """
         .. note::
             :class: toggle
@@ -125,8 +125,7 @@ class DrawingTable(AnyObject):
                 | 
                 |          MyTable.ComputeMode = CatTableOFF
 
-        :return: enum cat_table_compute_mode
-        :rtype: int
+        :return: CatTableComputeMode
         """
 
         return self.drawing_table.ComputeMode
@@ -401,7 +400,7 @@ class DrawingTable(AnyObject):
         """
         return self.drawing_table.AddRow(i_row)
 
-    def get_cell_alignment(self, i_row: int, i_col: int) -> int:
+    def get_cell_alignment(self, i_row: int, i_col: int) -> CatTablePosition:
         """
         .. note::
             :class: toggle
@@ -432,12 +431,11 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :param int i_col:
-        :return: enum cat_table_position
-        :rtype: int
+        :return: CatTablePosition
         """
         return self.drawing_table.GetCellAlignment(i_row, i_col)
 
-    def get_cell_border_type(self, i_row: int, i_col: int) -> int:
+    def get_cell_border_type(self, i_row: int, i_col: int) -> CatTableBorderType:
         """
         .. note::
             :class: toggle
@@ -473,8 +471,7 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :param int i_col:
-        :return: enum cat_table_border_type
-        :rtype: int
+        :return: CatTableBorderType
         """
         return self.drawing_table.GetCellBorderType(i_row, i_col)
 
@@ -737,7 +734,7 @@ class DrawingTable(AnyObject):
         """
         return self.drawing_table.GetRowSize(i_row)
 
-    def invert_mode(self, i_mode: int) -> None:
+    def invert_mode(self, i_mode: CatTableInvertMode) -> None:
         """
         .. note::
             :class: toggle
@@ -753,7 +750,7 @@ class DrawingTable(AnyObject):
                 | 
                 |          MyTable.InvertMode CatInvertColumn
 
-        :param int i_mode: enum cat_table_invert_mode
+        :param CatTableInvertMode i_mode:
         :rtype: None
         """
         return self.drawing_table.InvertMode(i_mode)
@@ -907,7 +904,7 @@ class DrawingTable(AnyObject):
         """
         return self.drawing_table.Rotate(i_delta_angle)
 
-    def set_cell_alignment(self, i_row: int, i_col: int, i_align: int) -> None:
+    def set_cell_alignment(self, i_row: int, i_col: int, i_align: CatTablePosition) -> None:
         """
         .. note::
             :class: toggle
@@ -939,7 +936,7 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :param int i_col:
-        :param int i_align: enum cat_table_position
+        :param CatTablePosition i_align:
         :rtype: None
         """
         return self.drawing_table.SetCellAlignment(i_row, i_col, i_align)

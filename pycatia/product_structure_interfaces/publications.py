@@ -40,7 +40,7 @@ class Publications(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Publication)
         self.publications = com_object
 
     def add(self, i_public_name: str) -> Publication:

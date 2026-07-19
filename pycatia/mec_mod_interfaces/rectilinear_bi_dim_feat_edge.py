@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.bi_dim_feat_edge import BiDimFeatEdge
 
 
 class RectilinearBiDimFeatEdge(BiDimFeatEdge):
-
     """
         .. note::
             :class: toggle
@@ -55,7 +54,7 @@ class RectilinearBiDimFeatEdge(BiDimFeatEdge):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
                 |     Returns the direction of the rectilinear edge.
@@ -94,7 +93,7 @@ class RectilinearBiDimFeatEdge(BiDimFeatEdge):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Returns the origin of the the rectilinear edge.
@@ -129,4 +128,4 @@ class RectilinearBiDimFeatEdge(BiDimFeatEdge):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'RectilinearBiDimFeatEdge(name="{ self.name }")'
+        return f'RectilinearBiDimFeatEdge(name="{self.name}")'

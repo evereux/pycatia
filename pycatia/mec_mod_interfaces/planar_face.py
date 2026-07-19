@@ -85,7 +85,7 @@ class PlanarFace(Face):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFirstAxis(CATSafeArrayVariant oFirstAxis)
                 | 
                 |     Returns the planar face first axis
@@ -124,7 +124,7 @@ class PlanarFace(Face):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Returns the origin of the planar face.
@@ -163,7 +163,7 @@ class PlanarFace(Face):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetSecondAxis(CATSafeArrayVariant oSecondAxis)
                 | 
                 |     Returns the planar face second axis.

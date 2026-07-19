@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import Cat3DXmlGeomRepresentationType
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
@@ -195,7 +195,7 @@ class Export3DXmlSettingAtt(SettingController):
         self.export_3d_xml_setting_att.DesignReview = value
 
     @property
-    def geometry_representation_format(self) -> int:
+    def geometry_representation_format(self) -> Cat3DXmlGeomRepresentationType:
         """
         .. note::
             :class: toggle
@@ -214,15 +214,15 @@ class Export3DXmlSettingAtt(SettingController):
                 |           export3DXmlSettingAtt.GeometryRepresentationFormat = cat3DXmlExact
 
         :return: enum cat_3d_xml_geom_representation_type
-        :rtype: int
+        :rtype: Cat3DXmlGeomRepresentationType
         """
 
         return self.export_3d_xml_setting_att.GeometryRepresentationFormat
 
     @geometry_representation_format.setter
-    def geometry_representation_format(self, value: int):
+    def geometry_representation_format(self, value: Cat3DXmlGeomRepresentationType):
         """
-        :param int value:
+        :param Cat3DXmlGeomRepresentationType value:
         """
 
         self.export_3d_xml_setting_att.GeometryRepresentationFormat = value

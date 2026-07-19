@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatScriptLanguage
 from pycatia.hybrid_shape_interfaces.hybrid_shape_direction import HybridShapeDirection
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.angle import Angle
@@ -177,7 +177,7 @@ class HybridShapeCircle(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetAxis(long iPosition,
                 | Reference oAxis)
                 | 
@@ -225,7 +225,7 @@ class HybridShapeCircle(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetCenter(double oCenterX,
                 | double oCenterY,
                 | double oCenterZ)
@@ -250,7 +250,7 @@ class HybridShapeCircle(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFreeCenter(CATSafeArrayVariant ioCenter)
                 | 
                 |     Returns the circle center.
@@ -288,14 +288,19 @@ class HybridShapeCircle(HybridShape):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_free_radius(self) -> float:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetFreeRadius(double oRadius)
                 | 
                 |     Returns the circle radius.
@@ -321,7 +326,7 @@ class HybridShapeCircle(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetLimitation() As long
                 | 
                 |     Gets the limitation type for the circle.
@@ -340,7 +345,7 @@ class HybridShapeCircle(HybridShape):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetLimitation(long iLimitation)
                 | 
                 |     Set the circle limitation type.

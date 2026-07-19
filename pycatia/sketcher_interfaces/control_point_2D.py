@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatScriptLanguage
 from pycatia.sketcher_interfaces.point_2D import Point2D
 from pycatia.system_interfaces.system_service import SystemService
 
@@ -73,7 +74,7 @@ class ControlPoint2D(Point2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetTangent(CATSafeArrayVariant oTangent)
                 | 
                 |     Returns the tangent properties of the spline control point
@@ -100,14 +101,19 @@ class ControlPoint2D(Point2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def set_tangent(self, i_tangent_x: float, i_tangent_y: float) -> None:
         """
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetTangent(double iTangentX,
                 | double iTangentY)
                 | 
@@ -133,7 +139,7 @@ class ControlPoint2D(Point2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub UnsetCurvature()
                 | 
                 |     Unsets the curvature properties of the spline control point
@@ -147,7 +153,7 @@ class ControlPoint2D(Point2D):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub UnsetTangent()
                 | 
                 |     Unsets the tangent properties of the spline control point

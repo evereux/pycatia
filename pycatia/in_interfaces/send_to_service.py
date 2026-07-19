@@ -45,7 +45,7 @@ class SendToService(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub AddFile(CATBSTR iPath)
                 | 
                 |     Adds a file to the list of the files 'to be copied'. This method verifies
@@ -69,7 +69,7 @@ class SendToService(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetLastSendToMethodError(CATBSTR oErrorParam,
                 | long oErrorCode)
                 | 
@@ -150,7 +150,7 @@ class SendToService(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub GetListOfToBeCopiedFiles(CATSafeArrayVariant
                 | oWillBeCopied)
                 | 
@@ -190,7 +190,7 @@ class SendToService(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub KeepDirectory(boolean iKeep)
                 | 
                 |     Controls the directory tree structure in the target
@@ -234,7 +234,7 @@ class SendToService(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub RemoveFile(CATBSTR iFile)
                 | 
                 |     Removes a file from the list of the files that will be
@@ -257,7 +257,7 @@ class SendToService(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub Run()
                 | 
                 |     Executes the copy action, according to previously set files and
@@ -274,7 +274,7 @@ class SendToService(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDirectoryFile(CATBSTR iDirectory)
                 | 
                 |     Positions the destination directory. This method verifies that the given
@@ -299,7 +299,7 @@ class SendToService(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetDirectoryOneFile(CATBSTR iFile,
                 | CATBSTR iDirectory)
                 | 
@@ -328,7 +328,7 @@ class SendToService(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetInitialFile(CATBSTR iPath)
                 | 
                 |     Sets the initial file to be copied. This method verifies that the given
@@ -357,7 +357,7 @@ class SendToService(AnyObject):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub SetRenameFile(CATBSTR iOldname,
                 | CATBSTR iNewName)
                 | 

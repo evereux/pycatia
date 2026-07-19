@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import ParallelMethodStd_Type, MemoryUnit_Type, Job_Type
 from pycatia.abq_automation_interfaces.abq_step import ABQStep
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -277,7 +278,7 @@ class ABQJob(AnyObject):
         self.abq_job.MaxMemory = value
 
     @property
-    def memory_unit(self) -> int:
+    def memory_unit(self) -> MemoryUnit_Type:
         """
         .. note::
             :class: toggle
@@ -301,16 +302,15 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.MemoryUnit = PERCENT
 
-        :return: enum memory_unit_type
-        :rtype: int
+        :return: MemoryUnit_Type
         """
 
         return self.abq_job.MemoryUnit
 
     @memory_unit.setter
-    def memory_unit(self, value: int):
+    def memory_unit(self, value: MemoryUnit_Type):
         """
-        :param int value: enum memory_unit_type
+        :param MemoryUnit_Type value:
         """
 
         self.abq_job.MemoryUnit = value
@@ -420,7 +420,7 @@ class ABQJob(AnyObject):
         self.abq_job.NumCpus = value
 
     @property
-    def parallelization_method_standard(self) -> int:
+    def parallelization_method_standard(self) -> ParallelMethodStd_Type:
         """
         .. note::
             :class: toggle
@@ -447,16 +447,15 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ParallelizationMethodStandard = TREE
 
-        :return: enum parallel_method_std_type
-        :rtype: int
+        :return: ParallelMethodStd_Type
         """
 
         return self.abq_job.ParallelizationMethodStandard
 
     @parallelization_method_standard.setter
-    def parallelization_method_standard(self, value: int):
+    def parallelization_method_standard(self, value: ParallelMethodStd_Type):
         """
-        :param int value: enum parallel_method_std_type
+        :param ParallelMethodStd_Type value:
         """
 
         self.abq_job.ParallelizationMethodStandard = value
@@ -982,7 +981,7 @@ class ABQJob(AnyObject):
         self.abq_job.Source = value
 
     @property
-    def type(self) -> int:
+    def type(self) -> Job_Type:
         """
         .. note::
             :class: toggle
@@ -1010,16 +1009,15 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.Type = ANALYSIS
 
-        :return: enum job_type
-        :rtype: int
+        :return: Job_Type
         """
 
         return self.abq_job.Type
 
     @type.setter
-    def type(self, value: int):
+    def type(self, value: Job_Type):
         """
-        :param int value: enum job_type
+        :param Job_Type value:
         """
 
         self.abq_job.Type = value

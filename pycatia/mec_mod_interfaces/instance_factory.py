@@ -135,7 +135,7 @@ class InstanceFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func AddInstance(AnyObject iReference) As AnyObject
                 | 
                 |     Creates a new instance of a shape or hybrid shape.
@@ -161,7 +161,7 @@ class InstanceFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub BeginInstanceFactory(CATBSTR iNameOfReference,
                 | CATBSTR iNameOfDocument)
                 | 
@@ -198,7 +198,7 @@ class InstanceFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub BeginInstantiate()
                 | 
                 |     Initializes the data of the reference.
@@ -222,7 +222,7 @@ class InstanceFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub EndInstanceFactory()
                 | 
                 |     Ends the instantiation process.
@@ -245,7 +245,7 @@ class InstanceFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub EndInstantiate()
                 | 
                 |     Ends the instantiation of the reference.
@@ -269,7 +269,7 @@ class InstanceFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func GetParameter(CATBSTR iName) As AnyObject
                 | 
                 |     Retrieves a parameter of the reference by its name.
@@ -303,7 +303,7 @@ class InstanceFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Func Instantiate() As AnyObject
                 | 
                 |     Instantiates the reference in the current document.
@@ -331,7 +331,7 @@ class InstanceFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Sub PutInputData(CATBSTR iName,
                 | CATBaseDispatch iInput)
                 | 
