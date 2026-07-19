@@ -11,6 +11,7 @@
 
 from typing import Union
 
+from pycatia import CatScriptLanguage
 from pycatia.cat_mat_interfaces.material import Material
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
@@ -210,7 +211,10 @@ class MaterialManager(AnyObject):
         system_service = self.application.system_service
         return Material(
             system_service.evaluate(
-                vba_code, 0, vba_function_name, [self.com_object, i_body.com_object]
+                vba_code,
+                CatScriptLanguage.CATVBScriptLanguage,
+                vba_function_name,
+                [self.com_object, i_body.com_object]
             )
         )
 
@@ -242,7 +246,7 @@ class MaterialManager(AnyObject):
         return Material(
             system_service.evaluate(
                 vba_code,
-                0,
+                CatScriptLanguage.CATVBScriptLanguage,
                 vba_function_name,
                 [self.com_object, i_hybrid_body.com_object],
             )
@@ -275,7 +279,10 @@ class MaterialManager(AnyObject):
         system_service = self.application.system_service
         return Material(
             system_service.evaluate(
-                vba_code, 0, vba_function_name, [self.com_object, i_part.com_object]
+                vba_code,
+                CatScriptLanguage.CATVBScriptLanguage,
+                vba_function_name,
+                [self.com_object, i_part.com_object]
             )
         )
 
@@ -306,7 +313,8 @@ class MaterialManager(AnyObject):
         system_service = self.application.system_service
         return Material(
             system_service.evaluate(
-                vba_code, 0, vba_function_name, [self.com_object, i_product.com_object]
+                vba_code, CatScriptLanguage.CATVBScriptLanguage, vba_function_name,
+                [self.com_object, i_product.com_object]
             )
         )
 
@@ -340,7 +348,7 @@ class MaterialManager(AnyObject):
         return Material(
             system_service.evaluate(
                 vba_code,
-                0,
+                CatScriptLanguage.CATVBScriptLanguage,
                 vba_function_name,
                 [self.com_object, i_user_material.com_object],
             )

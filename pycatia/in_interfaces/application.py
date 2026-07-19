@@ -6,7 +6,7 @@ from pywintypes import com_error
 
 from pathlib import Path
 
-from pycatia.enumeration.enumeration_types import cat_script_language
+from pycatia import CatScriptLanguage
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.in_interfaces.documents import Documents
 from pycatia.in_interfaces.documents import get_document_object
@@ -1177,7 +1177,7 @@ class Application(AnyObject):
 
         return self.system_service.evaluate(
             msg_box,
-            cat_script_language.index('CATVBScriptLanguage'),
+            CatScriptLanguage.CATVBScriptLanguage,
             function_name,
             [message_text, buttons, title]
         )
@@ -1208,7 +1208,7 @@ class Application(AnyObject):
                 "End Function"
         return self.system_service.evaluate(
             i_box,
-            cat_script_language.index('CATVBScriptLanguage'),
+            CatScriptLanguage.CATVBScriptLanguage,
             f_name,
             [prompt, title, default]
         )

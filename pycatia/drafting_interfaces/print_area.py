@@ -8,12 +8,11 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatScriptLanguage
 from pycatia.system_interfaces.any_object import AnyObject
 
 
 class PrintArea(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -269,7 +268,12 @@ class PrintArea(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def set_area(self, i_x: float, i_y: float, i_width: float, i_height: float) -> None:
         """
@@ -316,4 +320,4 @@ class PrintArea(AnyObject):
         return self.print_area.SetArea(i_x, i_y, i_width, i_height)
 
     def __repr__(self):
-        return f'PrintArea(name="{ self.name }")'
+        return f'PrintArea(name="{self.name}")'

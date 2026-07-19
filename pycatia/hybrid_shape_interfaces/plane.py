@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatScriptLanguage
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
@@ -76,7 +76,12 @@ class Plane(HybridShape):
         End Function
         """
 
-        return self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.application.system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_origin(self) -> tuple[float, float, float]:
         """
@@ -112,7 +117,12 @@ class Plane(HybridShape):
         End Function
         """
 
-        return self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.application.system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_position(self) -> tuple[float, float, float]:
         """
@@ -160,7 +170,12 @@ class Plane(HybridShape):
         End Function
         """
 
-        return self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.application.system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_second_axis(self) -> tuple[float, float, float]:
         """
@@ -195,7 +210,12 @@ class Plane(HybridShape):
         End Function
         """
 
-        return self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.application.system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def is_a_ref_plane(self) -> int:
         """

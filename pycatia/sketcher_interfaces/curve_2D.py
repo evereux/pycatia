@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia import CatScriptLanguage
 from pycatia.sketcher_interfaces.geometry_2D import Geometry2D
 from pycatia.sketcher_interfaces.point_2D import Point2D
 from pycatia.system_interfaces.system_service import SystemService
@@ -177,7 +178,12 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object, i_param]
+        )
 
     def get_derivatives(self, i_param: float) -> tuple:
         """
@@ -216,7 +222,12 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object, i_param]
+        )
 
     def get_end_points(self) -> tuple:
         """
@@ -254,7 +265,12 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_length_at_param(self, i_from_param: float, i_to_param: float) -> float:
         """
@@ -350,7 +366,12 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_point_at_param(self, i_param: float) -> tuple:
         """
@@ -386,7 +407,12 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object, i_param]
+        )
 
     def get_range_box(self) -> tuple:
         """
@@ -424,7 +450,12 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def get_tangent(self, i_param: float) -> tuple:
         """
@@ -460,7 +491,12 @@ class Curve2D(Geometry2D):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object, i_param]
+        )
 
     def is_periodic(self) -> bool:
         """

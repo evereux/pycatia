@@ -10,6 +10,7 @@
 """
 from pathlib import Path
 
+from pycatia import CatScriptLanguage
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.product_structure_interfaces.product import Product
 
@@ -80,7 +81,12 @@ class AssemblyConvertor(AnyObject):
         End Function
         """
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_file_type, str(i_file), i_product.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object, i_file_type, str(i_file), i_product.com_object]
+        )
 
     def set_current_format(self, ilist_props: tuple) -> None:
         """

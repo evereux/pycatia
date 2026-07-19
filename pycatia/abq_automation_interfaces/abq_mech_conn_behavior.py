@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia import PressureOverclosure_Type, MaxStiffness_Type, Formulation_Type
+from pycatia import PressureOverclosure_Type, MaxStiffness_Type, Formulation_Type, ContactStiffness_Type
 from pycatia.abq_automation_interfaces.abq_property import ABQProperty
 
 

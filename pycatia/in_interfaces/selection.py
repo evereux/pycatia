@@ -12,6 +12,7 @@ from typing import Iterator
 
 from pywintypes import com_error
 
+from pycatia import CatScriptLanguage
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.selected_element import SelectedElement
@@ -753,7 +754,7 @@ class Selection(AnyObject):
 
         system_service = self.application.system_service
         result = system_service.evaluate(vba_code,
-                                         0,
+                                         CatScriptLanguage.CATVBScriptLanguage,
                                          vba_function_name,
                                          [
                                              self.selection,
@@ -936,7 +937,7 @@ class Selection(AnyObject):
         system_service = self.application.system_service
         result = system_service.evaluate(
             vba_code,
-            0,
+            CatScriptLanguage.CATVBScriptLanguage,
             vba_function_name,
             [
                 self.selection,

@@ -19,8 +19,6 @@ areas I'm familiar. Any bugs that exist should be easy to fix. There are many
 examples of fixes within the git repository history that can be learned from to
 fix remaining issues.
 
-My ability to test and support can be limited.
-
 
 Requirements
 ------------

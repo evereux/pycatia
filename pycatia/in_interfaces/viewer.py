@@ -11,6 +11,7 @@
 
 from typing import TYPE_CHECKING
 
+from pycatia import CatScriptLanguage
 from pycatia.in_interfaces.camera import Camera
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -204,7 +205,12 @@ class Viewer(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def create_viewer_2d(self) -> 'Viewer2D':
         from pycatia.in_interfaces.viewer_2d import Viewer2D

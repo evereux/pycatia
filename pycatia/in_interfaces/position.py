@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatScriptLanguage
 from pycatia.in_interfaces.move import Move
 from pycatia.system_interfaces.system_service import SystemService
 
@@ -80,7 +80,12 @@ class Position(Move):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def set_components(self, i_axis_components_array: tuple) -> None:
         """

@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia import CatScriptLanguage
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -1209,7 +1209,10 @@ class RenderingMaterial(AnyObject):
         End Function
         """
         value = self.application.system_service.evaluate(
-            vba_code, 0, vba_function_name, [self.com_object, i_color_index]
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
         )
         return int(value[0]), int(value[1]), int(value[2])
 
@@ -1250,7 +1253,10 @@ class RenderingMaterial(AnyObject):
         End Function
         """
         value = self.application.system_service.evaluate(
-            vba_code, 0, vba_function_name, [self.com_object, i_color_index]
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
         )
         return int(value[0]), int(value[1]), int(value[2])
 
@@ -1283,7 +1289,12 @@ class RenderingMaterial(AnyObject):
             {vba_function_name} = o3DTextureOrientation
         End Function
         """
-        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        value = self.application.system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
         return value[0], value[1], value[2]
 
     def get_3d_texture_position(self) -> tuple[float, float, float]:
@@ -1315,7 +1326,12 @@ class RenderingMaterial(AnyObject):
             {vba_function_name} = o3DTexturePosition
         End Function
         """
-        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        value = self.application.system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
         return value[0], value[1], value[2]
 
     def get_3d_texture_scale(self) -> tuple[int, int, int]:
@@ -1346,7 +1362,12 @@ class RenderingMaterial(AnyObject):
             {vba_function_name} = o3DTextureScale
         End Function
         """
-        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        value = self.application.system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
         return int(value[0]), int(value[1]), int(value[2])
 
     def get_ambient_color(self) -> tuple[int, int, int]:
@@ -1376,7 +1397,12 @@ class RenderingMaterial(AnyObject):
             {vba_function_name} = oAmbientColor
         End Function
         """
-        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        value = self.application.system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
         return int(value[0]), int(value[1]), int(value[2])
 
     def get_diffuse_color(self) -> tuple[int, int, int]:
@@ -1406,7 +1432,12 @@ class RenderingMaterial(AnyObject):
             {vba_function_name} = oDiffuseColor
         End Function
         """
-        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        value = self.application.system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
         return int(value[0]), int(value[1]), int(value[2])
 
     def get_specular_color(self) -> tuple[int, int, int]:
@@ -1436,7 +1467,13 @@ class RenderingMaterial(AnyObject):
             {vba_function_name} = oSpecularColor
         End Function
         """
-        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        value = (self.application.system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
+        )
         return int(value[0]), int(value[1]), int(value[2])
 
     def get_transparency_color(self) -> tuple[int, int, int]:
@@ -1469,7 +1506,12 @@ class RenderingMaterial(AnyObject):
             {vba_function_name} = oTransparencyColor
         End Function
         """
-        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        value = self.application.system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
         return int(value[0]), int(value[1]), int(value[2])
 
     def put_3d_texture_color(self, i_color_index: int, i_3d_texture_color: tuple) -> None:

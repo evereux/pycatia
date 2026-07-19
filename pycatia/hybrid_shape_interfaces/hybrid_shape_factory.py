@@ -8,9 +8,10 @@
         and thus help debugging in pycatia.
 
 """
+import inspect
 from typing import Union
 
-from pycatia import GeometricalFeatureType
+from pycatia import GeometricalFeatureType, CatScriptLanguage
 from pycatia.hybrid_shape_interfaces.hybrid_shape_3d_curve_offset import HybridShape3DCurveOffset
 from pycatia.hybrid_shape_interfaces.hybrid_shape_affinity import HybridShapeAffinity
 from pycatia.hybrid_shape_interfaces.hybrid_shape_assemble import HybridShapeAssemble
@@ -5628,7 +5629,12 @@ class HybridShapeFactory(Factory):
         """
 
         if i_axis == vba_nothing:
-            i_axis = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
+            i_axis = self.application.system_service.evaluate(
+                vba_nothing,
+                CatScriptLanguage.CATVBScriptLanguage,
+                'N',
+                []
+            )
         else:
             i_axis = i_axis.com_object
 

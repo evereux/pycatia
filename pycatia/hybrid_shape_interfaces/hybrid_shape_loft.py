@@ -11,6 +11,7 @@
 
 from typing import Union
 
+from pycatia import CatScriptLanguage
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.length import Length
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
@@ -615,7 +616,12 @@ class HybridShapeLoft(HybridShape):
         """
 
         if i_point == vba_nothing:
-            i_point = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
+            i_point = self.application.system_service.evaluate(
+                vba_nothing,
+                CatScriptLanguage.CATVBScriptLanguage,
+                'N',
+                []
+            )
         else:
             i_point = i_point.com_object
 

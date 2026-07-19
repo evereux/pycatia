@@ -10,6 +10,7 @@
 """
 from typing import Union
 
+from pycatia import CatScriptLanguage
 from pycatia.hybrid_shape_interfaces.hybrid_shape_direction import HybridShapeDirection
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.length import Length
@@ -138,12 +139,22 @@ class HybridShapeSpline(HybridShape):
         """
 
         if ip_ia_dir_tangency == vba_nothing:
-            ip_ia_dir_tangency = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
+            ip_ia_dir_tangency = self.application.system_service.evaluate(
+                vba_nothing,
+                CatScriptLanguage.CATVBScriptLanguage,
+                'N',
+                []
+            )
         else:
             ip_ia_dir_tangency = ip_ia_dir_tangency.com_object
 
         if ip_ia_dir_curvature == vba_nothing:
-            ip_ia_dir_curvature = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
+            ip_ia_dir_curvature = self.application.system_service.evaluate(
+                vba_nothing,
+                CatScriptLanguage.CATVBScriptLanguage,
+                'N',
+                []
+            )
         else:
             ip_ia_dir_curvature = ip_ia_dir_tangency.com_object
 

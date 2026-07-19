@@ -11,7 +11,7 @@
 
 from typing import TYPE_CHECKING
 
-from pycatia import CatSectionType, CatSectionBehavior
+from pycatia import CatSectionType, CatSectionBehavior, CatScriptLanguage
 from pycatia.navigator_interfaces.annotated_views import AnnotatedViews
 from pycatia.navigator_interfaces.group import Group
 from pycatia.navigator_interfaces.marker_3Ds import Marker3Ds
@@ -461,7 +461,12 @@ class Section(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return system_service.evaluate(
+            vba_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
     def is_empty(self) -> int:
         """
