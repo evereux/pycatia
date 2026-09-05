@@ -3,6 +3,9 @@
 ## 0.10.1
 
 * Product.get_technological_object () return type docstring corrected. #312
+* Add V4MasterModel wrapper. PR #311 @rancy777
+* use child_object for collection indexing. PR #310 @rancy777
+* Fix CatalogDocument return values for create_catalog_from_library and create_catalog_from_csv. PR #308 @KaiUR
 
 ## 0.10.0
 
