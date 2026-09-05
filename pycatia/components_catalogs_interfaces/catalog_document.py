@@ -52,7 +52,7 @@ class CatalogDocument(Document):
                                     i_catalog_path: str,
                                     i_table_path: str,
                                     i_conv_format: int,
-                                    i_batch_mode: int) -> 'CatalogDocument':
+                                    i_batch_mode: int) -> None:
         """
         .. note::
             :class: toggle
@@ -97,16 +97,15 @@ class CatalogDocument(Document):
         :param int i_batch_mode:
         :rtype: None
         """
-        return CatalogDocument(
-            self.catalog_document.CreateCatalogFromLibrary(
-                i_library_path,
-                i_project_path,
-                i_catalog_path,
-                i_table_path,
-                i_conv_format,
-                i_batch_mode).com_object)
+        return self.catalog_document.CreateCatalogFromLibrary(
+            i_library_path,
+            i_project_path,
+            i_catalog_path,
+            i_table_path,
+            i_conv_format,
+            i_batch_mode)
 
-    def create_catalog_from_csv(self, i_init_data: str, i_new_catalog: str) -> 'CatalogDocument':
+    def create_catalog_from_csv(self, i_init_data: str, i_new_catalog: str) -> None:
         """
         .. note::
             :class: toggle
@@ -140,7 +139,7 @@ class CatalogDocument(Document):
         :param str i_init_data:
         :param str i_new_catalog:
         :return: None
-        :rtype: CatalogDocument
+        :rtype: None
         """
         return self.catalog_document.CreateCatalogFromcsv(i_init_data, i_new_catalog)
 
