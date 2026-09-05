@@ -9,5 +9,6 @@ pycatia.catia_v4_interfaces
    pycatia/catia_v4_interfaces/interop_setting_att
    pycatia/catia_v4_interfaces/migr_batch_setting_att
    pycatia/catia_v4_interfaces/spec_v4_setting_att
+   pycatia/catia_v4_interfaces/v4_master_model
    pycatia/catia_v4_interfaces/v4_v5_space_setting_att
    pycatia/catia_v4_interfaces/v4_writing_setting_att
