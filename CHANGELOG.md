@@ -1,25 +1,29 @@
 # Changelog
 
+## 0.10.1
+
+* Product.get_technological_object () return type docstring corrected. #312
+* Add V4MasterModel wrapper. PR #311 @rancy777
+* use child_object for collection indexing. PR #310 @rancy777
+* Fix CatalogDocument return values for create_catalog_from_library and create_catalog_from_csv. PR #308 @KaiUR
+
 ## 0.10.0
 
-Please note that if you're using the new IntEnum types added in 0.9.3 that some
-names have been changed.
-VisPropertySet.get_show() now returns a tuple (see source) instead of just
-an int so is now consistent with the CATIA API. For a quick fix to existing
-scripts you can do VisPropertySet.get_show()[1] to get the show state.
+Please note that if you're using the new IntEnum types added in 0.9.3 that some names have been changed.
+VisPropertySet.get_show () now returns a tuple (see source) instead of just an int so is now consistent with the CATIA
+API. For a quick fix to existing scripts you can do VisPropertySet.get_show ()[1] to get the show state.
 
 * DMUTolSettingAtt was DmuTolSettingAtt
 * FTAInfraSettingAtt was FtaInfraSettingAtt
 * FTAInfraSettingAtt.man_ref_size was FtaInfraSettingAtt.man_ref_siz
-* Added child_object to inherited Collections() were missing. PR #307 @rancy777
-* Improved type hinting for IntEnums. Type hints instead of using `int` now reference the
-  new IntEnum types.
+* Added child_object to inherited Collections () were missing. PR #307 @rancy777
+* Improved type hinting for IntEnums. Type hints instead of using `int` now reference the new IntEnum types.
 * Some IntEnum types have been renamed to match those of it's VBA counterpart.
 * `document_types['CatalogDocument']` now returns the correct document type.
 
 ## 0.9.5
 
-* fixed ProcessDocument.ppr_document so that it now returns a PPRDocument and not AnyObject().
+* fixed ProcessDocument.ppr_document so that it now returns a PPRDocument and not AnyObject ().
 * added the following new classes introduced in V5-6R2024.
     * ManufacturingPattern2
 
@@ -49,13 +53,11 @@ scripts you can do VisPropertySet.get_show()[1] to get the show state.
 
 ## 0.9.3
 
-* updated PageSetup() to add missing (all) class methods.
-* added `pycatia.enumeration.enums.py` - These are python IntEnum classes that can be
-  used in lieu of the tuples defined in `pycatia.enumeration.enumeration_types.py`.
-  To use these new Enum classes see the examples which have been updated. There
-  are no plans to remove `pycatia.enumeration.enumeration_types.py` so existing
-  scripts will continue to work.
-* Product.reference_product() improved message when getting reference_product fails.
+* updated PageSetup () to add missing (all) class methods.
+* added `pycatia.enumeration.enums.py` - These are python IntEnum classes that can be used in lieu of the tuples defined
+  in `pycatia.enumeration.enumeration_types.py`. To use these new Enum classes see the examples which have been updated.
+  There are no plans to remove `pycatia.enumeration.enumeration_types.py` so existing scripts will continue to work.
+* Product.reference_product () improved message when getting reference_product fails.
 
 ## 0.9.2
 
@@ -63,41 +65,37 @@ scripts you can do VisPropertySet.get_show()[1] to get the show state.
 
 ## 0.9.1
 
-* fixed DrawingDimValue.get_bault_text() and DrawingDimValue.get_ps_text().
-* introduced fixtures for pytest testing. tests now run much quicker due to not
-  opening and closing a document for each test.
-* Selection.select_element4() fixed. Removed broken o_document call up.
+* fixed DrawingDimValue.get_bault_text () and DrawingDimValue.get_ps_text ().
+* introduced fixtures for pytest testing. tests now run much quicker due to not opening and closing a document for each
+  test.
+* Selection.select_element4 () fixed. Removed broken o_document call up.
 
 ## 0.9.0
 
-Please note the change to VisPropertySet.get_show() will break existing scripts where this is used.
+Please note the change to VisPropertySet.get_show () will break existing scripts where this is used.
 
-* updated the following VisPropertySet() methods with fixed type hinting:
-  get_layer(), get_pick(), get_real_color(), get_real_inheritance(),
-  get_real_line_type(), get_real_opacity(), get_real_width(), get_show(),
-  get_symbol_type(), get_visible_color(), get_visible_line_type(),
-  get_visible_opacity(), get_visible_width().
-  Thanks to @HubertDomaros for pointing out the initial issue #269.
-* updated Selection.select_element4() type hints and the returned objects.
-  Thanks to @CossackLucas for reporting #263.
+* updated the following VisPropertySet () methods with fixed type hinting:
+  get_layer (), get_pick (), get_real_color (), get_real_inheritance (), get_real_line_type (), get_real_opacity (),
+  get_real_width (), get_show (), get_symbol_type (), get_visible_color (), get_visible_line_type (),
+  get_visible_opacity (), get_visible_width (). Thanks to @HubertDomaros for pointing out the initial issue #269.
+* updated Selection.select_element4 () type hints and the returned objects. Thanks to @CossackLucas for reporting #263.
 * updated ParameterSet.all_parameters to return a Parameters collection object.
-* fixed DrawingDimension.get_boundary_box(). #275
+* fixed DrawingDimension.get_boundary_box (). #275
 * many type hinting improvements / fixes.
 
 ## 0.8.3
 
-* fixed methods for Plane.get_first_axis(), Plane.get_origin(),
-  Plane.get_position(), Plane.get_second_axs(). @CossackLucas
+* fixed methods for Plane.get_first_axis (), Plane.get_origin (), Plane.get_position (), Plane.get_second_axs ().
+  @CossackLucas
 * fixed HyrbridShapeLoft.add_section_to_loft. #266
 
 ## 0.8.2
 
-* fixed Hole.get_direction() and Hole.get_origin().
+* fixed Hole.get_direction () and Hole.get_origin ().
 
 ## 0.8.1
 
-* updated Part.annotation_sets return type to be AnnotationSets in lieu of the
-  generic Collection object.
+* updated Part.annotation_sets return type to be AnnotationSets in lieu of the generic Collection object.
 * updated Annotations.item2 to return an Annotation2 object. Was AnyObject. Issue #236.
 * added CATIA version checks for several tps_interfaces.
 
@@ -131,9 +129,9 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
     * HybridShapeUnfold.target_direction
     * HybridShapeUnfold.target_origin
     * StepSettingAtt.att_annotation_export
-    * StepSettingAtt.get_att_annotation_export_info()
-    * StepSettingAtt.set_att_annotation_export_lock()
-    * Wrappings.compute_wrapping_with_convex_hull()
+    * StepSettingAtt.get_att_annotation_export_info ()
+    * StepSettingAtt.set_att_annotation_export_lock ()
+    * Wrappings.compute_wrapping_with_convex_hull ()
 
 * added the following enumeration types introduced in V5-6R2020:
     * cat_composites_type
@@ -149,18 +147,18 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
     * ManufacturingActivityToolPath
 * added the following new methods / properties introduced in V5-6R2019.
     * DxfSettingAtt.export_view_as_viewport
-    * DxfSettingAtt.get_export_view_as_viewport_info()
-    * DxfSettingAtt.set_export_view_as_viewport_lock()
-    * DxfSettingAtt.set_export_view_as_viewport()
+    * DxfSettingAtt.get_export_view_as_viewport_info ()
+    * DxfSettingAtt.set_export_view_as_viewport_lock ()
+    * DxfSettingAtt.set_export_view_as_viewport ()
     * Ig2SettingAtt.export_view_as_viewport
-    * Ig2SettingAtt.get_export_view_as_viewport_info()
-    * Ig2SettingAtt.set_export_view_as_viewport_lock()
-    * Ig2SettingAtt.set_export_view_as_viewport()
-    * HybridShapeAssemble.get_healing_mode()
-    * HybridShapeAssemble.set_healing_mode()
+    * Ig2SettingAtt.get_export_view_as_viewport_info ()
+    * Ig2SettingAtt.set_export_view_as_viewport_lock ()
+    * Ig2SettingAtt.set_export_view_as_viewport ()
+    * HybridShapeAssemble.get_healing_mode ()
+    * HybridShapeAssemble.set_healing_mode ()
     * HybridShapeRevol.begin_angle_offset
     * HybridShapeRevol.end_angle_offset
-    * Annotation.has_a_numerical_display_format()
+    * Annotation.has_a_numerical_display_format ()
     * Annotation.numerical_display_format
     * Annotation2.is_a_consumable_annotation
     * AnnotationSet.annotation_set_purpose
@@ -171,15 +169,15 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
     * TPSView.annotations
     * TPSView.display_ratio
     * TPSView.view_type
-    * Dimension3D.is_a_continuous_feature_applied()
-    * SemanticGDT.frame_extensions()
-    * SemanticGDT.has_a_centered_element()
-    * SemanticGDT.has_a_frame_extension()
-    * SemanticGDT.is_applied_on_multiple_entities()
-    * SemanticGDT.median_feature()
-    * SemanticGDT.nx_display()
-    * Application.begin_ur_concatenation()
-    * Application.stop_ur_concatenation()
+    * Dimension3D.is_a_continuous_feature_applied ()
+    * SemanticGDT.frame_extensions ()
+    * SemanticGDT.has_a_centered_element ()
+    * SemanticGDT.has_a_frame_extension ()
+    * SemanticGDT.is_applied_on_multiple_entities ()
+    * SemanticGDT.median_feature ()
+    * SemanticGDT.nx_display ()
+    * Application.begin_ur_concatenation ()
+    * Application.stop_ur_concatenation ()
 
 ### Introduced in V5-6R2018
 
@@ -191,49 +189,47 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
     * DrawingGDTs
 
 * added the following new methods / properties introduced in V5-6R2018.
-    * Annotation2.coordinate_dimension()
-    * AnnotationFactory2.create_coord_dimension()
-    * AnnotationFactory2.create_gdt()
-    * NonSemanticGDT.get_2d_annot()
+    * Annotation2.coordinate_dimension ()
+    * AnnotationFactory2.create_coord_dimension ()
+    * AnnotationFactory2.create_gdt ()
+    * NonSemanticGDT.get_2d_annot ()
     * Layout2DView.coord_dims
     * Layout2DView.gdts
     * DrawingLeader.anchor_symbol
     * DrawingView.coord_dims
     * DrawingView.gdts
     * DrawingText.nb_link
-    * DrawingText.get_parameter_link()
-    * DrawingArrow.scale_on_extremities() #230
+    * DrawingText.get_parameter_link ()
+    * DrawingArrow.scale_on_extremities () #230
     * VisualizationSettingAtt.pre_sel_navigator_started_by_arrow_keys
     * VisualizationSettingAtt.set_pre_sel_navigator_started_by_arrow_keys_lock
-    * VisualizationSettingAtt.get_pre_sel_navigator_started_by_arrow_keys_info()
+    * VisualizationSettingAtt.get_pre_sel_navigator_started_by_arrow_keys_info ()
     * Hole.counter_drilled_mode
     * VarRadEdgeFillet.sharp_edge_removal_mode
-    * VarRadEdgeFillet.switch_to_const_fillet_type()
-    * ConstRadEdgeFillet.switch_to_var_fillet_type()
-    * Measurable.get_angle_between_in_context()
-    * Measurable.get_minimum_distance_in_context()
-    * Measurable.get_minimum_distance_points_in_context()
-    * SPAWorkbench.get_measurable_in_context()
+    * VarRadEdgeFillet.switch_to_const_fillet_type ()
+    * ConstRadEdgeFillet.switch_to_var_fillet_type ()
+    * Measurable.get_angle_between_in_context ()
+    * Measurable.get_minimum_distance_in_context ()
+    * Measurable.get_minimum_distance_points_in_context ()
+    * SPAWorkbench.get_measurable_in_context ()
 
 * added the following enumeration types introduced in V5-6R2018:
     * cat_cd_hole_mode
 
 ## 0.7.4
 
-* fixed DrawingDimensions.add().
-* fixed DrawingDimensions.add2(). #229
-* fixed is_file() call-ups in Documents().
+* fixed DrawingDimensions.add ().
+* fixed DrawingDimensions.add2 (). #229
+* fixed is_file () call-ups in Documents ().
 
 ## 0.7.3
 
 * added missing type hints to `Relations.create_formula()`.
-* removed win_32 builds folder from repository to reduce repository size and
-  speed up cloning.
+* removed win_32 builds folder from repository to reduce repository size and speed up cloning.
 * fixed `Document.export_data()` were file alerts were not suppresed if requested. #221 @Zcaic
-* updated `Document.export_data()` and `Document.save_as()` to use the pycatia
-  methods to get and set `display_file_alerts`.
-* updated `Product.activate_terminal_mode()`. Previously, if there was a broken
-  link the method would fail.
+* updated `Document.export_data()` and `Document.save_as()` to use the pycatia methods to get and set
+  `display_file_alerts`.
+* updated `Product.activate_terminal_mode()`. Previously, if there was a broken link the method would fail.
 * updated `Document.open()`, `Document.read()` and `Application.active_document`
   to use a common method to determine document type.
 * updated the `Documents()` collection / iterator to now return a specific  
@@ -243,16 +239,16 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
 ## 0.7.2
 
 * added missing type hints to `Document()` methods.
-* fixed regression in Documents.open() Documents.read() and Documents.new_from()
-  where strings are passed in lieu of Path objects. It was the intention for both
-  strings and paths to work. Tests updated to test for both Path and str objects.
+* fixed regression in Documents.open () Documents.read () and Documents.new_from ()
+  where strings are passed in lieu of Path objects. It was the intention for both strings and paths to work. Tests
+  updated to test for both Path and str objects.
 
 ## 0.7.1
 
-* fixed Documents.read() method which was broken by changes made in 0.6.9.
-* updated Documents.open() so that filename should now be a Path object.
-* updated Documents.new_from() so that filename should now be a Path object.
-* updated Documents.open() so that filename should now be a Path object.
+* fixed Documents.read () method which was broken by changes made in 0.6.9.
+* updated Documents.open () so that filename should now be a Path object.
+* updated Documents.new_from () so that filename should now be a Path object.
+* updated Documents.open () so that filename should now be a Path object.
 * updated the examples so they use explicit path objects.
 * updated the examples to show how to better initialise documents.
 * updated the user_scripts to show how to better initialise documents.
@@ -260,8 +256,8 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
 
 ## 0.7.0
 
-* fixed the following Class methods so that the Reference.com_object is passed to
-  the setter method instead of just the Reference:
+* fixed the following Class methods so that the Reference.com_object is passed to the setter method instead of just the
+  Reference:
     * SFMMember2Points.end_point_on_crv_curve,
     * SFMMember2Points.end_point_spec,
     * SFMMember2Points.start_point_on_crv_curve,
@@ -314,64 +310,58 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
     * StrCutoutFeature.reference_surface,
     * StrMember.surface_reference,
     * StrPlate.support
-* added missing type hints in Product().
+* added missing type hints in Product ().
 
 ## 0.6.9
 
-* added the following document types that can be created with Document.add():
+* added the following document types that can be created with Document.add ():
   'Analysis', 'CatalogDocument', 'CATMaterial', 'CATProcess', 'cgm'
   'FeatureDictionary', 'gl', 'gl2', 'hpgl', 'FunctionalSystem', 'ProcessLibrary'
-* Rewrote how document types are detected and tested for. This makes adding
-  additional document types easier.
+* Rewrote how document types are detected and tested for. This makes adding additional document types easier.
 * fixed HybridShapeExtrapol.support. @HyberCa
 * fixed HybridShapeAxisLine.element.
 
 ## 0.6.8
 
-* added option to initialise the Application object with pythoncom.CoInitialize().
-  This is required for when using pycatia in a threaded context. To use this
-  feature you would do `caa = catia(co_initialise=True)`.
-* fixed name conflict in RemoveFace().
+* added option to initialise the Application object with pythoncom.CoInitialize (). This is required for when using
+  pycatia in a threaded context. To use this feature you would do `caa = catia(co_initialise=True)`.
+* fixed name conflict in RemoveFace ().
 
 ## 0.6.7
 
 * fix type hinting issue with python 3.9. #194 @mokrueger
-* updated Factory_2D.create_spline() so that it will now accept a tuple of
-  control_points instead of their com_objects. #199 @mokrueger
-* updated iter methods to use .Item instead of .item. The resolves issues where
-  the pycatia user is using a modified com interface provided by Dassault.
-  #195 @mokrueger.
-* added missing method ShapeFactory.add_new_translate2() #202 There is currently
-  a quirk with regard to its usage. See the GitHub issue #202 for further
-  information.
+* updated Factory_2D.create_spline () so that it will now accept a tuple of control_points instead of their com_objects.
+  #199 @mokrueger
+* updated iter methods to use .Item instead of .item. The resolves issues where the pycatia user is using a modified com
+  interface provided by Dassault. #195 @mokrueger.
+* added missing method ShapeFactory.add_new_translate2 () #202 There is currently a quirk with regard to its usage. See
+  the GitHub issue #202 for further information.
 * improved Parameters handling. #197 @mokrueger
 
 ## 0.6.6
 
-* fixed method document.indicate_2d()
-* fixed method document.indicate_3d()
-* fixed method selection.indicate_or_select_element_2d() @hitman061
+* fixed method document.indicate_2d ()
+* fixed method document.indicate_3d ()
+* fixed method selection.indicate_or_select_element_2d () @hitman061
 * renamed Outputs.count_ due to name clash with Collection.
-* fixes due to mypy checking. There are still errors report but not sure how
-  to fix at this time.
+* fixes due to mypy checking. There are still errors report but not sure how to fix at this time.
 
 ## 0.6.5
 
-* added ShapeFactory.add_new_rotate_2. This class method was missing in the
-  CATIA V5 Basic Help file.
+* added ShapeFactory.add_new_rotate_2. This class method was missing in the CATIA V5 Basic Help file.
 * Documentation: expanded api tree and corrected name refs.
 
 ## 0.6.4
 
-* corrected method name Camera3D.viewpoint_3d()
-* corrected class name ViewPoint3D().
-* fixed bug in Clash.first_group(). See issue #175. Thanks to @Raph-xyz.
+* corrected method name Camera3D.viewpoint_3d ()
+* corrected class name ViewPoint3D ().
+* fixed bug in Clash.first_group (). See issue #175. Thanks to @Raph-xyz.
 
 ## 0.6.3
 
 * renamed wrongly named enumeration_types where 2d or 3d are in name.
-* added references for all enumeration_types throughout pycatia where I could
-  find them. These are labelled for example `:param int value: enum cat_circular_pattern_parameters`.
+* added references for all enumeration_types throughout pycatia where I could find them. These are labelled for example
+  `:param int value: enum cat_circular_pattern_parameters`.
 * various type hinting additions where they were missing.
 * Extended `parameters.item()` for parameter type lists. @Mithro86
 
@@ -387,15 +377,15 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
 
 * Added human modelling classes SWKHmiWorkbench and SWKHumanCatalog. Please note these are not documented in the CATIA
   V5 Basic Help file. Example of usage also added.
-* Added new class method Application.input_box(). @ptm-tm
+* Added new class method Application.input_box (). @ptm-tm
 * fixed test issue with cat materials where catia env has multiple start-up paths.
 * fixed issue with HybridShapeFactory.add_new_sphere for cases where an axis isn't defined.
 * fixes to RenderingMaterials class methods. @deloarts
-* added new enum type geometrical_feature_type to support HybridShapeFactory.get_geometrical_feature_type().
+* added new enum type geometrical_feature_type to support HybridShapeFactory.get_geometrical_feature_type ().
 
 ## 0.6.0
 
-* Removed deprecated method Product.get_products() use Product.products instead.
+* Removed deprecated method Product.get_products () use Product.products instead.
 * Added the following new modules:
     * abq_automation_interfaces
     * analysis_interfaces
@@ -476,22 +466,22 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
 * fixed method for AxisSystem.origin_point, AxisSystem.x_axis_direction, AxisSystem.y_axis_direction and
   AxisSystem.z_axis_direction. (@Mithro86)
 * Added warning to example__assembly_convertor__001.py for when writing to files. (@deloarts)
-* fixed method for Limit.limiting_element(). (@ptm-tm)
+* fixed method for Limit.limiting_element (). (@ptm-tm)
 
 ## 0.5.7
 
-* fixed method for VisPropertySet.get_show(). (@Mithro86)
-* fixed method for AxisSystem.get_vectors(). (@Mithro86)
-* Partial fix to Selection.indicate_or_select_element_3d(). (@Mithro86)
-* added pathlib.Path to DrawingPictures.add().
+* fixed method for VisPropertySet.get_show (). (@Mithro86)
+* fixed method for AxisSystem.get_vectors (). (@Mithro86)
+* Partial fix to Selection.indicate_or_select_element_3d (). (@Mithro86)
+* added pathlib.Path to DrawingPictures.add ().
     * now tries to get the Windows absolute path from input as CATIA may not be able to otherwise find the file.
 * References to python 3.6 now updated to 3.9 due to type annotation support.
-* fixed method for Line.get_direction(). (@Mithro86)
+* fixed method for Line.get_direction (). (@Mithro86)
 
 ## 0.5.6
 
-* fixed method for DrawingDimension.get_tolerances()
-* fixed method for DrawingDimension.get_clip().
+* fixed method for DrawingDimension.get_tolerances ()
+* fixed method for DrawingDimension.get_clip ().
 * added new method shape_factory.add_new_symmetry_2 (@deloarts).
 * added example
 * restructured examples into categories.
@@ -499,8 +489,7 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
 ## 0.5.5
 
 * added material interfaces (@deloarts). See examples.
-* fixed Documents.read(). It now returns a pycatia document object
-  (@Alexander via email).
+* fixed Documents.read (). It now returns a pycatia document object (@Alexander via email).
 
 ## 0.5.4
 
@@ -518,12 +507,12 @@ Please note the change to VisPropertySet.get_show() will break existing scripts 
 
 ## 0.5.1
 
-* Fix bug with HybridShapeFactory.add_new_datums().
+* Fix bug with HybridShapeFactory.add_new_datums ().
 
 ## 0.5.0
 
 * Added tps_interfaces.
-* Document() no longer contains methods specific to Parts, Products and Drawings. This will most likely break your
+* Document () no longer contains methods specific to Parts, Products and Drawings. This will most likely break your
   scripts. Please see updated examples. These methods / properties are now only available in PartDocument,
   ProductDocument and DrawingDocument. Example:
 
@@ -563,16 +552,16 @@ Many thanks to Tian-Jionglu for his contributions.
 * Updated ViewPoint3D get methods so they now work.
 * Updated Viewer so Viewer2D and Viewer3D can be called.
 * Fix issue #58.
-    * Change file_name argument so that it now expects Path().
+    * Change file_name argument so that it now expects Path ().
     * Log warning to console if full path isn't provided.
     * Raise error if directory doesn't exist.
 
 ## 0.4.2
 
-* Added missing methods Parameter.rename(), Parameter.valuate_from_string(), and Parameter.value_as_string()
-* Added missing methods DrawingThread.is_linked().
+* Added missing methods Parameter.rename (), Parameter.valuate_from_string (), and Parameter.value_as_string ()
+* Added missing methods DrawingThread.is_linked ().
 * Added the following missing methods from the class HybridShapeCurveSmooth
-    * add_frozen_curve_segment()
+    * add_frozen_curve_segment ()
     * add_frozen_point
     * get_frozen_curve_segment
     * get_frozen_curve_segments_size
@@ -587,11 +576,11 @@ Many thanks to Tian-Jionglu for his contributions.
 
 ## 0.4.1
 
-* Document.save_as() If overwrite is to true DisplayFileAlerts is set to False.
-* Analyze added to Part().
-* Updates / fixes to SettingController(s) and LicenseSettingAtt. More work to be done here yet though.
-* Document.add() now accepts lowercase document_types.
-* Document.add() now correctly returns a document.
+* Document.save_as () If overwrite is to true DisplayFileAlerts is set to False.
+* Analyze added to Part ().
+* Updates / fixes to SettingController (s) and LicenseSettingAtt. More work to be done here yet though.
+* Document.add () now accepts lowercase document_types.
+* Document.add () now correctly returns a document.
 
 ## 0.4.0
 
@@ -612,7 +601,7 @@ Breaking changes.
 * Removed pycatia.workbenches folder. Functionality is provided for Document object.
 * Lots of bug/type fixes. Mypy is great!
 
-* Collection objects are now directly iterable (Product.get_products() will be deprecated in later release).
+* Collection objects are now directly iterable (Product.get_products () will be deprecated in later release).
 
 ```
 >>> from pycatia import catia
@@ -669,7 +658,7 @@ Breaking changes.
 ## 0.3.3
 
 * Many updates to doc strings for methods from earlier versions.
-* Product.apply_work_mode() now expects an integer. See example_010 on new usage.
+* Product.apply_work_mode () now expects an integer. See example_010 on new usage.
 * Many new modules and classes added.
 
 ## 0.3.2
@@ -684,7 +673,7 @@ Breaking changes.
 
 * Added basic logging.
 * Changed Point.point property name to prevent breakage of child classes.
-* Added spa_workbench method to Document().
+* Added spa_workbench method to Document ().
 
 ## 0.3.0a
 
@@ -699,7 +688,7 @@ Breaking changes.
 ## 0.2.1
 
 * Added knowledge_ware parameter features.
-* Object.path() now returns pathlib.Path() objects.
+* Object.path () now returns pathlib.Path () objects.
 
 ## 0.1.9
 
@@ -714,10 +703,11 @@ Breaking changes.
   These changes were made to allow for the future expansion of pycatia by having a more modular approach (hopefully).
 * module re-organisation.
 * updated get_hybrid_by_name to now raise a meaningful exception if the user has input a name that doesn't exist.
-* many updates to the Product class properties and methods. One of the more useful is probably Product.apply_work_mode()
+* many updates to the Product class properties and methods. One of the more useful is probably Product.apply_work_mode
+  ()
   . See example_4.py for example.
 * can now analyse (analyze) products for mass, volume, wet area, center of gravity and inertia. See example_10.py
-* enabled Product.move() method. See example_11.py
+* enabled Product.move () method. See example_11.py
 
 ## 0.1.7
 
@@ -742,10 +732,10 @@ Breaking changes.
 
 ## 0.1.3
 
-* Added in_work_object method to class Part().
-* Moved create_reference method to class Part(). It's proper home.
-* Added find_object_by_name method to class Part().
-* Added methods activate, deactivate and is_inactive to class Part().
+* Added in_work_object method to class Part ().
+* Moved create_reference method to class Part (). It's proper home.
+* Added find_object_by_name method to class Part ().
+* Added methods activate, deactivate and is_inactive to class Part ().
 
 ## 0.1.2
 

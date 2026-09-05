@@ -1209,7 +1209,7 @@ class Product(AnyObject):
             i_context
         )
 
-    def get_technological_object(self, i_application_type: str) -> AnyObject:
+    def get_technological_object(self, i_application_type: str):
         """
         .. note::
             :class: toggle
@@ -1237,7 +1237,7 @@ class Product(AnyObject):
                 |          Set EngineConstraints = Engine.GetTechnologicalObject("Constraints")
 
         :param str i_application_type:
-        :rtype: AnyObject
+        :rtype: com_object
         """
         return self.product.GetTechnologicalObject(i_application_type)
 
