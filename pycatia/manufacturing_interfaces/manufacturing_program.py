@@ -485,6 +485,21 @@ class ManufacturingProgram(ManufacturingActivity):
                 | 
                 |          call firstProgram.InsertOperation(ReferenceOperation,ExistingOperation)
 
+        .. warning::
+            Tested against V5-6R2024 SP3, this method would not reposition an activity that was
+            already in the program. A PPInstruction returned by
+            ManufacturingProgram.add_pp_instruction was refused for every reference tried, with
+            "The method InsertOperation failed", and with "Type mismatch" when the program's
+            Start activity was used as the reference. A PPInstruction is a ManufacturingActivity
+            rather than the ManufacturingOperation this method's CAA note specifies, so that may
+            be the reason; the ManufacturingOperation case was not tested.
+
+            To reorder an activity already in a program, use
+            ManufacturingProgram.move_operation - but note that it moves the activity to sit
+            **before** the reference, not after it as its own CAA note claims.
+
+            See https://github.com/evereux/pycatia/issues/313
+
         :param ManufacturingOperation i_reference_operation:
         :param ManufacturingOperation i_manufacturing_operation:
         :rtype: None
@@ -548,6 +563,23 @@ class ManufacturingProgram(ManufacturingActivity):
                 | 
                 |          call firstProgram.MoveOperation(ExistingOperation,
                 |          MovedOperation)
+
+        .. warning::
+            The CAA note above says the operation is moved *after* the reference. Tested against
+            V5-6R2024 SP3 it is moved to sit immediately **before** the reference instead.
+
+            Moving a PPInstruction into a program whose activities are
+            Start -> ToolChange -> Operation -> Stop::
+
+                # the instruction ends up between Start and ToolChange, not after ToolChange
+                program.move_operation(tool_change, pp_instruction)
+
+            The Start and Stop activities are rejected as the reference with a
+            "Type mismatch" error, so the reference has to be a real activity such as a
+            ToolChange or a machining operation. Placing an activity first in a program is
+            therefore done by using the first real activity as the reference.
+
+            See https://github.com/evereux/pycatia/issues/313
 
         :param ManufacturingActivity i_reference_operation:
         :param ManufacturingActivity i_manufacturing_operation:

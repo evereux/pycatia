@@ -2,6 +2,10 @@
 
 ## 0.10.1
 
+* ManufacturingProgram.move_operation docstring now warns that the activity is moved before the
+  reference, not after it as the CAA note says, and that Start / Stop are refused as the reference.
+  ManufacturingProgram.insert_operation docstring records that it would not reposition an activity
+  already in the program. #313
 * Product.get_technological_object () return type docstring corrected. #312
 * Add V4MasterModel wrapper. PR #311 @rancy777
 * use child_object for collection indexing. PR #310 @rancy777
