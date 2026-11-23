@@ -24,6 +24,7 @@ from pycatia.knowledge_interfaces.set_of_equation import SetOfEquation
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import CATVariant
+from pycatia.types.parameters import parameter_and_relation_types
 
 
 class Relations(Collection):
@@ -542,7 +543,12 @@ class Relations(Collection):
         :param CATVariant i_index:
         :rtype: Relation
         """
-        return Relation(self.relations.Item(i_index))
+        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(i_index)))
+
+        if type_name in parameter_and_relation_types:
+            return parameter_and_relation_types[type_name](self.com_object.Item(i_index))
+
+        return Relation(self.com_object.Item(i_index))
 
     def remove(self, i_index: CATVariant) -> None:
         """
@@ -624,12 +630,18 @@ class Relations(Collection):
     def __getitem__(self, n: int) -> Relation:
         if (n + 1) > self.count:
             raise StopIteration
+        from pycatia.helpers import return_real_object
+        hb = Relation(self.com_object.Item(n + 1))
+        real_object = return_real_object(self.application, hb)
 
-        return Relation(self.relations.Item(n + 1))
+        return real_object
 
     def __iter__(self) -> Iterator[Relation]:
+        from pycatia.helpers import return_real_object
         for i in range(self.count):
-            yield self.child_object(self.com_object.Item(i + 1))
+            hb = Relation(self.com_object.Item(i + 1))
+            real_object = return_real_object(self.application, hb)
+            yield real_object
 
     def __repr__(self):
         return f'Relations(name="{self.name}")'

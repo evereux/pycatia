@@ -145,7 +145,11 @@ class AnyObject(PyCATIA):
         :rtype: AnyObject
         """
 
-        return AnyObject(self.com_object.Parent)
+        from pycatia.helpers import return_real_object
+        any_object = AnyObject(self.com_object.Parent)
+        real_object = return_real_object(self.application, any_object)
+
+        return real_object
 
     def get_item(self, id_name: str) -> 'AnyObject':
         """

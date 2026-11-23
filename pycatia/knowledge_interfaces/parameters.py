@@ -16,7 +16,6 @@ from pywintypes import com_error
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.knowledge_interfaces.bool_param import BoolParam
 from pycatia.knowledge_interfaces.dimension import Dimension
-from pycatia.knowledge_interfaces.enum_param import EnumParam
 from pycatia.knowledge_interfaces.int_param import IntParam
 from pycatia.knowledge_interfaces.length import Length
 from pycatia.knowledge_interfaces.list_parameter import ListParameter
@@ -27,55 +26,10 @@ from pycatia.knowledge_interfaces.units import Units
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import CATVariant
-from pycatia.types.parameters import AnyParameter
+from pycatia.types.parameters import parameter_and_relation_types
 
 if TYPE_CHECKING:
     from pycatia.knowledge_interfaces.parameter_set import ParameterSet
-
-NAME_TO_PYTHON_CLASS_MAPPING = {
-    "Parameter": Parameter,
-    "EnumParam": EnumParam,
-    "BoolParam": BoolParam,
-    "IntParam": IntParam,
-    "ListParameter": ListParameter,
-    "RealParam": RealParam,
-    "Dimension": Dimension,
-    "Angle": Angle,
-    "Length": Length,
-    "StrParam": StrParam
-}
-
-
-def parse_to_parameter_subtype(com_object) -> AnyParameter:
-    try:
-        com_class_name = com_object._oleobj_.GetTypeInfo().GetDocumentation(-1)[0]
-        return NAME_TO_PYTHON_CLASS_MAPPING[com_class_name](com_object)
-    except (AttributeError, KeyError, com_error, IndexError):
-        # Fallback: if something goes wrong above try parsing based on Value
-        try:
-            if com_object.ValueList is not None:
-                return ListParameter(com_object)
-        except AttributeError:
-            pass
-
-        try:
-            if isinstance(com_object.Value, bool):
-                return BoolParam(com_object)
-
-            if isinstance(com_object.Value, int):
-                return IntParam(com_object)
-
-            if isinstance(com_object.Value, str):
-                return StrParam(com_object)
-
-            if isinstance(com_object.Value, float):
-                return RealParam(com_object)
-
-        except AttributeError:
-            # Parameter has no Value either
-            pass
-
-        return Parameter(com_object)
 
 
 class Parameters(Collection):
@@ -141,20 +95,6 @@ class Parameters(Collection):
         """
 
         return Units(self.parameters.Units)
-
-    def all_parameters(self) -> list[AnyParameter]:
-        """
-        :return: list(Parameter())
-        """
-
-        parameters = []
-
-        if self.has_parameters():
-            for i in range(self.parameters.Count):
-                para = parse_to_parameter_subtype(self.parameters.Item(i + 1))
-                parameters.append(para)
-
-        return parameters
 
     def create_boolean(self, i_name: str, i_value: bool) -> BoolParam:
         """
@@ -445,7 +385,7 @@ class Parameters(Collection):
         except AttributeError:
             return False
 
-    def item(self, index: CATVariant) -> AnyParameter:
+    def item(self, index: CATVariant) -> Parameter:
         """
         .. note::
             :class: toggle
@@ -480,7 +420,12 @@ class Parameters(Collection):
         :rtype: Parameter
         """
 
-        return parse_to_parameter_subtype(self.parameters.Item(index))
+        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(index)))
+
+        if type_name in parameter_and_relation_types:
+            return parameter_and_relation_types[type_name](self.com_object.Item(index))
+
+        return Parameter(self.com_object.Item(index))
 
     def remove(self, i_index: CATVariant) -> None:
         """
@@ -555,15 +500,21 @@ class Parameters(Collection):
         """
         return Parameters(self.parameters.SubList(i_object.com_object, i_recursively))
 
-    def __getitem__(self, n: int) -> AnyParameter:
+    def __getitem__(self, n: int) -> Parameter:
         if (n + 1) > self.count:
             raise StopIteration
+        from pycatia.helpers import return_real_object
+        hb = Parameter(self.com_object.Item(n + 1))
+        real_object = return_real_object(self.application, hb)
 
-        return parse_to_parameter_subtype(self.parameters.Item(n + 1))
+        return real_object
 
-    def __iter__(self) -> Iterator[AnyParameter]:
+    def __iter__(self) -> Iterator[Parameter]:
+        from pycatia.helpers import return_real_object
         for i in range(self.count):
-            yield parse_to_parameter_subtype(self.com_object.Item(i + 1))
+            hb = Parameter(self.com_object.Item(i + 1))
+            real_object = return_real_object(self.application, hb)
+            yield real_object
 
     def __repr__(self):
         return f'Parameters(name="{self.name}")'
