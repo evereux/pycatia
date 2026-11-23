@@ -1,5 +1,9 @@
 # Changelog
 
+# 0.11.0
+
+* fixed Capture.active_view, Capture.annotations, Capture.camera (#315),
+  Capture.tps_views setters.
 # 0.10.2
 
 * ManufacturingProgram.move_operation docstring now warns that the activity is moved before the

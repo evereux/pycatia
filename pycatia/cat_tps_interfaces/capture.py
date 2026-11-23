@@ -66,7 +66,7 @@ class Capture(AnyObject):
         :param TPSView value:
         """
 
-        self.capture.ActiveView = value
+        self.capture.ActiveView = value.com_object
 
     @property
     def active_view_state(self) -> bool:
@@ -116,7 +116,7 @@ class Capture(AnyObject):
         :param Annotations value:
         """
 
-        self.capture.Annotations = value
+        self.capture.Annotations = value.com_object
 
     @property
     def camera(self) -> Camera3D:
@@ -140,7 +140,7 @@ class Capture(AnyObject):
         :param Camera3D value:
         """
 
-        self.capture.Camera = value
+        self.capture.Camera = value.com_object
 
     @property
     def clipping_plane(self) -> bool:
@@ -274,7 +274,7 @@ class Capture(AnyObject):
         :param TPSViews value:
         """
 
-        self.capture.TPSViews = value
+        self.capture.TPSViews = value.com_object
 
     @property
     def view_point(self) -> bool:
