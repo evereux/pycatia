@@ -1,13 +1,33 @@
 # Changelog
 
-# 0.11.0
+## 0.11.0
 
 * fixed Capture.active_view, Capture.annotations, Capture.camera (#315),
   Capture.tps_views setters.
 * added Application.vba_type_name. Useful for determining the actual com_object
   returned.
+* The following collection objects now use Application.vba_type_name to
+  determine the real child object and return it.
+    * Bodies
+    * HybridShapes
+    * Parameters
+    * Relations
+    * Shapes
 
-# 0.10.2
+### Updated collection object usage
+
+For example the following code would originally return `HybridShape` when
+iterating through the `HybridShapes` collection object.
+
+``` python
+for hybrid_shape in hybid_shapes:
+    print(type(hybrid_shape)
+```
+
+Now, if the object is actually a `HybridShapeLinePtPt` that is what is now
+returned.
+
+## 0.10.2
 
 * ManufacturingProgram.move_operation docstring now warns that the activity is moved before the
   reference, not after it as the CAA note says, and that Start / Stop are refused as the reference.
