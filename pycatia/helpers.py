@@ -1,6 +1,7 @@
 from typing import Any
 
 from pycatia.types.hybrid_shapes import hybrid_shape_types
+from pycatia.types.shapes import shape_types
 
 
 def return_real_object(application: 'Application', any_object: 'AnyObject') -> Any:
@@ -10,6 +11,9 @@ def return_real_object(application: 'Application', any_object: 'AnyObject') -> A
 
     if type_string in hybrid_shape_types:
         return hybrid_shape_types[type_string](any_object.com_object)
+
+    if type_string in shape_types:
+        return shape_types[type_string](any_object.com_object)
 
     # todo: add more types
     application.logger.info(
