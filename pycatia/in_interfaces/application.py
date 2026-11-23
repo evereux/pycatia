@@ -21,6 +21,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
 from pycatia.in_interfaces.setting_controllers import SettingControllers
 from pycatia.types.document import AnyDocument
+from pycatia.scripts.vba import type_name_function_name
+from pycatia.scripts.vba import type_name_code
 
 
 class Application(AnyObject):
@@ -1317,6 +1319,22 @@ class Application(AnyObject):
         )
 
         return self.com_object.StopURConcatenation(i_undo_step_name_bstr)
+
+    def vba_type_name(self, object: AnyObject) -> str | None:
+        """
+        :param AnyObject object:
+        :return: str
+        """
+        type_name = self.system_service.evaluate(
+            type_name_code,
+            CatScriptLanguage.CATVBScriptLanguage,
+            type_name_function_name,
+            [object.com_object],
+        )
+
+        if isinstance(type_name, str):
+            return type_name
+        return None
 
     def __repr__(self):
         return f'Application(name="{self.name}")'

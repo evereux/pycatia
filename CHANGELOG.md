@@ -4,6 +4,9 @@
 
 * fixed Capture.active_view, Capture.annotations, Capture.camera (#315),
   Capture.tps_views setters.
+* added Application.vba_type_name. Useful for determining the actual com_object
+  returned.
+
 # 0.10.2
 
 * ManufacturingProgram.move_operation docstring now warns that the activity is moved before the
