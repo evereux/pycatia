@@ -34,7 +34,7 @@ class Text(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.text_com = com_object
+        self.com_object = com_object
 
     @property
     def text(self) -> str:
@@ -50,7 +50,7 @@ class Text(AnyObject):
         :rtype: str
         """
 
-        return self.text_com.Text
+        return self.com_object.Text
 
     @text.setter
     def text(self, value: str):
@@ -58,7 +58,7 @@ class Text(AnyObject):
         :param str value:
         """
 
-        self.text_com.Text = value
+        self.com_object.Text = value
 
     def get_2d_annot(self) -> DrawingText:
         """
@@ -72,7 +72,7 @@ class Text(AnyObject):
 
         :rtype: DrawingText
         """
-        return DrawingText(self.text_com.Get2dAnnot())
+        return DrawingText(self.com_object.Get2dAnnot())
 
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
@@ -86,7 +86,7 @@ class Text(AnyObject):
 
         :rtype: TPSParallelOnScreen
         """
-        return TPSParallelOnScreen(self.text_com.TPSParallelOnScreen())
+        return TPSParallelOnScreen(self.com_object.TPSParallelOnScreen())
 
     def __repr__(self):
         return f'Text(name="{self.name}")'

@@ -37,7 +37,7 @@ class UserSurfaces(Collection):
 
     def __init__(self, com_object):
         super().__init__(com_object, child_object=UserSurface)
-        self.user_surfaces = com_object
+        self.com_object = com_object
 
     def generate(self, i_support: Reference) -> UserSurface:
         """
@@ -69,7 +69,7 @@ class UserSurfaces(Collection):
         :param Reference i_support:
         :rtype: UserSurface
         """
-        return UserSurface(self.user_surfaces.Generate(i_support.com_object))
+        return UserSurface(self.com_object.Generate(i_support.com_object))
 
     def generate_in_a_product_ctx(self, i_product: Product, i_prod_inst: Product, i_support: Reference) -> UserSurface:
         """
@@ -103,8 +103,8 @@ class UserSurfaces(Collection):
         :param Reference i_support:
         :rtype: UserSurface
         """
-        return UserSurface(self.user_surfaces.GenerateInAProductCtx(i_product.com_object, i_prod_inst.com_object,
-                                                                    i_support.com_object))
+        return UserSurface(self.com_object.GenerateInAProductCtx(i_product.com_object, i_prod_inst.com_object,
+                                                                 i_support.com_object))
 
     def item(self, i_index: CATVariant) -> UserSurface:
         """
@@ -128,7 +128,7 @@ class UserSurfaces(Collection):
         :param CATVariant i_index:
         :rtype: UserSurface
         """
-        return UserSurface(self.user_surfaces.Item(i_index))
+        return UserSurface(self.com_object.Item(i_index))
 
     def make_user_surface_node(self, i_first_user_surf: UserSurface, i_second_user_surf: UserSurface) -> UserSurface:
         """
@@ -157,7 +157,7 @@ class UserSurfaces(Collection):
         :rtype: UserSurface
         """
         return UserSurface(
-            self.user_surfaces.MakeUserSurfaceNode(i_first_user_surf.com_object, i_second_user_surf.com_object))
+            self.com_object.MakeUserSurfaceNode(i_first_user_surf.com_object, i_second_user_surf.com_object))
 
     def make_user_surface_node_2(self, i_list_of_user_surfaces: tuple) -> UserSurface:
         """
@@ -182,13 +182,13 @@ class UserSurfaces(Collection):
         :param tuple i_list_of_user_surfaces:
         :rtype: UserSurface
         """
-        return UserSurface(self.user_surfaces.MakeUserSurfaceNode2(i_list_of_user_surfaces))
+        return UserSurface(self.com_object.MakeUserSurfaceNode2(i_list_of_user_surfaces))
 
     def __getitem__(self, n: int) -> UserSurface:
         if (n + 1) > self.count:
             raise StopIteration
 
-        return UserSurface(self.user_surfaces.Item(n + 1))
+        return UserSurface(self.com_object.Item(n + 1))
 
     def __iter__(self) -> Iterator[UserSurface]:
         for i in range(self.count):

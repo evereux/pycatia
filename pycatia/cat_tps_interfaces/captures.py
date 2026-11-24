@@ -37,7 +37,7 @@ class Captures(Collection):
 
     def __init__(self, com_object):
         super().__init__(com_object, child_object=Capture)
-        self.captures = com_object
+        self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> Capture:
         """
@@ -52,13 +52,13 @@ class Captures(Collection):
         :param CATVariant i_index:
         :rtype: AnyObject
         """
-        return Capture(self.captures.Item(i_index))
+        return Capture(self.com_object.Item(i_index))
 
     def __getitem__(self, n: int) -> Capture:
         if (n + 1) > self.count:
             raise StopIteration
 
-        return Capture(self.captures.Item(n + 1))
+        return Capture(self.com_object.Item(n + 1))
 
     def __iter__(self) -> Iterator[Capture]:
         for i in range(self.count):

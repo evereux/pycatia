@@ -38,7 +38,7 @@ class TPSViewFactory(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.tps_view_factory = com_object
+        self.com_object = com_object
 
     def create_view(self, i_plane: Reference, i_view_type: CATVariant) -> TPSView:
         """
@@ -67,7 +67,7 @@ class TPSViewFactory(AnyObject):
         :param CATVariant i_view_type:
         :rtype: TPSView
         """
-        return TPSView(self.tps_view_factory.CreateView(i_plane.com_object, i_view_type))
+        return TPSView(self.com_object.CreateView(i_plane.com_object, i_view_type))
 
     def __repr__(self):
         return f'TpsViewFactory(name="{self.name}")'

@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class FreeState(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class FreeState(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.free_state = com_object
+        self.com_object = com_object
 
     @property
     def modifier(self) -> str:
@@ -49,7 +48,7 @@ class FreeState(AnyObject):
         :rtype: str
         """
 
-        return self.free_state.Modifier
+        return self.com_object.Modifier
 
     @modifier.setter
     def modifier(self, value: str):
@@ -57,7 +56,7 @@ class FreeState(AnyObject):
         :param str value:
         """
 
-        self.free_state.Modifier = value
+        self.com_object.Modifier = value
 
     def __repr__(self):
-        return f'FreeState(name="{ self.name }")'
+        return f'FreeState(name="{self.name}")'

@@ -34,7 +34,7 @@ class ControlledRadius(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.controlled_radius = com_object
+        self.com_object = com_object
 
     @property
     def modifier(self) -> str:
@@ -50,7 +50,7 @@ class ControlledRadius(AnyObject):
         :rtype: str
         """
 
-        return self.controlled_radius.Modifier
+        return self.com_object.Modifier
 
     def __repr__(self):
         return f'ControlledRadius(name="{self.name}")'

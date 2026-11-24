@@ -114,7 +114,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
 
         :rtype: AnyObject
         """
-
         return AnyObject(self.drawing_view_generative_behavior.Document)
 
     @document.setter

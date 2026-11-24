@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class MaterialCondition(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class MaterialCondition(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.material_condition = com_object
+        self.com_object = com_object
 
     @property
     def modifier(self) -> str:
@@ -49,7 +48,7 @@ class MaterialCondition(AnyObject):
         :rtype: str
         """
 
-        return self.material_condition.Modifier
+        return self.com_object.Modifier
 
     def __repr__(self):
-        return f'MaterialCondition(name="{ self.name }")'
+        return f'MaterialCondition(name="{self.name}")'

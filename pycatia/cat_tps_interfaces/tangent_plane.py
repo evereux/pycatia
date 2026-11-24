@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class TangentPlane(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class TangentPlane(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.tangent_plane = com_object
+        self.com_object = com_object
 
     @property
     def modifier(self) -> str:
@@ -49,7 +48,7 @@ class TangentPlane(AnyObject):
         :rtype: str
         """
 
-        return self.tangent_plane.Modifier
+        return self.com_object.Modifier
 
     @modifier.setter
     def modifier(self, value: str):
@@ -57,7 +56,7 @@ class TangentPlane(AnyObject):
         :param str value:
         """
 
-        self.tangent_plane.Modifier = value
+        self.com_object.Modifier = value
 
     def __repr__(self):
-        return f'TangentPlane(name="{ self.name }")'
+        return f'TangentPlane(name="{self.name}")'

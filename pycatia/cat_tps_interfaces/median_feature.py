@@ -37,7 +37,7 @@ class MedianFeature(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.median_feature = com_object
+        self.com_object = com_object
 
     @property
     def modifier(self) -> str:
@@ -67,7 +67,7 @@ class MedianFeature(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.median_feature.Modifier
+        return self.com_object.Modifier
 
     def __repr__(self):
         return f'MedianFeature(name="{self.name}")'

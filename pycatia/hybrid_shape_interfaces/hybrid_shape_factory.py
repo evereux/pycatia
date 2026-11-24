@@ -89,7 +89,7 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_point_on_plane import HybridSh
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_on_surface import HybridShapePointOnSurface
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_tangent import HybridShapePointTangent
 from pycatia.hybrid_shape_interfaces.hybrid_shape_polyline import HybridShapePolyline
-from pycatia.hybrid_shape_interfaces.hybrid_shape_position_transfo import HybridShapePositionTransfo
+from pycatia.hybrid_shape_interfaces.hybrid_shape_position_transform import HybridShapePositionTransform
 from pycatia.hybrid_shape_interfaces.hybrid_shape_project import HybridShapeProject
 from pycatia.hybrid_shape_interfaces.hybrid_shape_reflect_line import HybridShapeReflectLine
 from pycatia.hybrid_shape_interfaces.hybrid_shape_revol import HybridShapeRevol
@@ -5263,7 +5263,7 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapePolyline(self.hybrid_shape_factory.AddNewPolyline())
 
-    def add_new_position_transfo(self, i_mode: int) -> HybridShapePositionTransfo:
+    def add_new_position_transform(self, i_mode: int) -> HybridShapePositionTransform:
         """
         .. note::
             :class: toggle
@@ -5283,9 +5283,9 @@ class HybridShapeFactory(Factory):
                 |             profile).
 
         :param int i_mode:
-        :rtype: HybridShapePositionTransfo
+        :rtype: HybridShapePositionTransform
         """
-        return HybridShapePositionTransfo(self.hybrid_shape_factory.AddNewPositionTransfo(i_mode))
+        return HybridShapePositionTransform(self.hybrid_shape_factory.AddNewPositionTransfo(i_mode))
 
     def add_new_project(self, i_element: Reference, i_support: Reference) -> HybridShapeProject:
         """

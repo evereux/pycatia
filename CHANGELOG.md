@@ -1,5 +1,45 @@
 # Changelog
 
+## 0.11.0
+
+* fixed Capture.active_view, Capture.annotations, Capture.camera (#315),
+  Capture.tps_views setters.
+* All classes in cat_tps_interfaces now have self.com_object as the com_object
+  reference. Previously it would be self.lower_case_class_name as well as
+  self.com_object which is initialized anyway in many cases by the
+  `super().__init__(com_object)` call. In those cases the line
+  `self.com_object = com_object` will likely be removed as it's redundant.
+* added Application.vba_type_name. Useful for determining the actual com_object
+  returned.
+* The following collection objects now use Application.vba_type_name to
+  determine the real child object and return it.
+    * Bodies
+    * HybridShapes
+    * Parameters
+    * Relations
+    * Shapes
+* `hybrid_shape_interfaces\hybrid_shape_position_transform.py::HybridShapePositionTransform` was
+  `hybrid_shape_interfaces\hybrid_shape_position_transfor.py::HybridShapePositionTransfor`
+
+### Updated collection object usage
+
+For example the following code would originally print the string `HybridShape`
+when iterating through the `HybridShapes` collection object.
+
+``` python
+for hybrid_shape in hybid_shapes:
+    print(type(hybrid_shape)
+```
+
+Now, if the object is actually a `HybridShapeLinePtPt` that is what is returned.
+
+## 0.10.2
+
+* ManufacturingProgram.move_operation docstring now warns that the activity is moved before the
+  reference, not after it as the CAA note says, and that Start / Stop are refused as the reference.
+  ManufacturingProgram.insert_operation docstring records that it would not reposition an activity
+  already in the program. #313
+
 ## 0.10.1
 
 * Product.get_technological_object () return type docstring corrected. #312

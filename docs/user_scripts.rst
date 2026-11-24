@@ -19,6 +19,8 @@ Index
 
 :ref:`DRAWING TEMPLATE<Drawing Template>`
 
+:ref:`GET 3D SHAPES LINKED TO DRAWING<Get 3D Shapes Linked To Drawing>`
+
 :ref:`POINT COORDINATES RELATIVE TO AXIS SYSTEM<Point Coordinates Relative To Axis System>`
 
 :ref:`RENAME INSTANCES IN PRODUCT<Rename Instances In Product>`
@@ -101,6 +103,14 @@ See script header for more information.
 .. image:: images/DrawingTemplate.png
 
 `drawing_template.py <https://github.com/evereux/pycatia/blob/master/user_scripts/drawing_template.py>`_
+
+
+GET 3D SHAPES LINKED TO DRAWING
+-------------------------------
+
+Get all the 3D shapes linked to a drawing.
+
+`get_3d_shapes_linked_to_drawing.py <https://github.com/evereux/pycatia/blob/master/user_scripts/get_3d_shapes_linked_to_drawing.py>`_
 
 
 

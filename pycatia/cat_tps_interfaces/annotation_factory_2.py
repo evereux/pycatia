@@ -43,7 +43,7 @@ class AnnotationFactory2(Factory):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.annotation_factory_2 = com_object
+        self.com_object = com_object
 
     def create_coord_dimension(self, i_surf: UserSurface) -> Annotation2:
         """
@@ -74,7 +74,7 @@ class AnnotationFactory2(Factory):
             28,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateCoordDimension(i_surf.com_object))
+        return Annotation2(self.com_object.CreateCoordDimension(i_surf.com_object))
 
     def create_datum(self, i_surf: UserSurface) -> Annotation2:
         """
@@ -102,7 +102,7 @@ class AnnotationFactory2(Factory):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateDatum(i_surf.com_object))
+        return Annotation2(self.com_object.CreateDatum(i_surf.com_object))
 
     def create_datum_reference_frame(self) -> Annotation2:
         """
@@ -112,7 +112,15 @@ class AnnotationFactory2(Factory):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateDatumReferenceFrame() As Annotation2
                 | 
-                |     Create a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
+                |     Create a Reference Frame (DRF). iType =
+                | 1 : Straightness
+                | 2 : AxisStraightness
+                | 3 : Flatness
+                | 4 : Circularity
+                | 5 : Cylindricity
+                | 6 : ProfileOfALine
+                | 7 : ProfileOfASurface
+                | 8 : Position
 
         :rtype: Annotation2
         """
@@ -121,7 +129,7 @@ class AnnotationFactory2(Factory):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateDatumReferenceFrame())
+        return Annotation2(self.com_object.CreateDatumReferenceFrame())
 
     def create_datum_target(self, i_surf: UserSurface, i_datum: Annotation2) -> Annotation2:
         """
@@ -154,7 +162,7 @@ class AnnotationFactory2(Factory):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateDatumTarget(i_surf.com_object, i_datum.com_object))
+        return Annotation2(self.com_object.CreateDatumTarget(i_surf.com_object, i_datum.com_object))
 
     def create_ditto_noa(
             self,
@@ -208,7 +216,7 @@ class AnnotationFactory2(Factory):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
         return Annotation2(
-            self.annotation_factory_2.CreateDittoNOA(
+            self.com_object.CreateDittoNOA(
                 i_surf.com_object,
                 i_noa_type,
                 i_ditto.com_object,
@@ -271,7 +279,7 @@ class AnnotationFactory2(Factory):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
         return Annotation2(
-            self.annotation_factory_2.CreateEvoluateDatum(
+            self.com_object.CreateEvoluateDatum(
                 i_surf.com_object,
                 i_x,
                 i_y,
@@ -334,7 +342,7 @@ class AnnotationFactory2(Factory):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
         return Annotation2(
-            self.annotation_factory_2.CreateEvoluateText(
+            self.com_object.CreateEvoluateText(
                 i_surf.com_object,
                 i_x,
                 i_y,
@@ -369,7 +377,7 @@ class AnnotationFactory2(Factory):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
         return Annotation2(
-            self.annotation_factory_2.CreateFlagNote(
+            self.com_object.CreateFlagNote(
                 i_surf.com_object
             )
         )
@@ -402,7 +410,7 @@ class AnnotationFactory2(Factory):
             28,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateGDT(i_surf.com_object))
+        return Annotation2(self.com_object.CreateGDT(i_surf.com_object))
 
     def create_non_semantic_dimension(
             self,
@@ -443,7 +451,7 @@ class AnnotationFactory2(Factory):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
         return Annotation2(
-            self.annotation_factory_2.CreateNonSemanticDimension(
+            self.com_object.CreateNonSemanticDimension(
                 i_surf.com_object,
                 i_type,
                 i_sub_type
@@ -475,7 +483,7 @@ class AnnotationFactory2(Factory):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateRoughness(i_surf.com_object))
+        return Annotation2(self.com_object.CreateRoughness(i_surf.com_object))
 
     def create_semantic_dimension(
             self,
@@ -510,7 +518,7 @@ class AnnotationFactory2(Factory):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
         return Annotation2(
-            self.annotation_factory_2.CreateSemanticDimension(
+            self.com_object.CreateSemanticDimension(
                 i_surf.com_object,
                 i_type,
                 i_sub_type
@@ -542,7 +550,7 @@ class AnnotationFactory2(Factory):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateText(i_surf.com_object))
+        return Annotation2(self.com_object.CreateText(i_surf.com_object))
 
     def create_text_noa(self, i_surf: UserSurface) -> Annotation2:
         """
@@ -570,7 +578,7 @@ class AnnotationFactory2(Factory):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateTextNOA(i_surf.com_object))
+        return Annotation2(self.com_object.CreateTextNOA(i_surf.com_object))
 
     def create_text_note_object_attribute(self, i_surf: UserSurface, i_noa_type: str) -> Annotation2:
         """
@@ -603,7 +611,7 @@ class AnnotationFactory2(Factory):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateTextNoteObjectAttribute(i_surf.com_object, i_noa_type))
+        return Annotation2(self.com_object.CreateTextNoteObjectAttribute(i_surf.com_object, i_noa_type))
 
     def create_text_on_annot(self, i_text: str, i_annot: Annotation2) -> Annotation2:
         """
@@ -634,7 +642,7 @@ class AnnotationFactory2(Factory):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateTextOnAnnot(i_text, i_annot.com_object))
+        return Annotation2(self.com_object.CreateTextOnAnnot(i_text, i_annot.com_object))
 
     def create_tolerance_with_drf(self, i_index: CATVariant, i_surf: UserSurface, i_drf: Annotation2) -> Annotation2:
         """
@@ -659,7 +667,7 @@ class AnnotationFactory2(Factory):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
         return Annotation2(
-            self.annotation_factory_2.CreateToleranceWithDRF(
+            self.com_object.CreateToleranceWithDRF(
                 i_index,
                 i_surf.com_object,
                 i_drf.com_object
@@ -686,7 +694,7 @@ class AnnotationFactory2(Factory):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateToleranceWithoutDRF(i_index, i_surf.com_object))
+        return Annotation2(self.com_object.CreateToleranceWithoutDRF(i_index, i_surf.com_object))
 
     def create_weld(self, i_surf: UserSurface) -> Annotation2:
         """
@@ -713,7 +721,7 @@ class AnnotationFactory2(Factory):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.CreateWeld(i_surf.com_object))
+        return Annotation2(self.com_object.CreateWeld(i_surf.com_object))
 
     def instantiate_noa(self, i_noa: Annotation2, i_surf: UserSurface) -> Annotation2:
         """
@@ -744,7 +752,7 @@ class AnnotationFactory2(Factory):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return Annotation2(self.annotation_factory_2.InstanciateNOA(i_noa.com_object, i_surf.com_object))
+        return Annotation2(self.com_object.InstanciateNOA(i_noa.com_object, i_surf.com_object))
 
     def __repr__(self):
         return f'AnnotationFactory2(name="{self.name}")'

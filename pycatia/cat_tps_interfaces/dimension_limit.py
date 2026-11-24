@@ -32,7 +32,7 @@ class DimensionLimit(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.dimension_limit = com_object
+        self.com_object = com_object
 
     @property
     def dimension_limit_type(self) -> str:

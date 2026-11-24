@@ -16,7 +16,7 @@ from pycatia.knowledge_interfaces.length import Length
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
-class HybridShapePositionTransfo(HybridShape):
+class HybridShapePositionTransform(HybridShape):
     """
         .. note::
             :class: toggle
@@ -50,7 +50,7 @@ class HybridShapePositionTransfo(HybridShape):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.hybrid_shape_position_transfo = com_object
+        self.com_object = com_object
 
     @property
     def initial_direction_computation_mode(self) -> int:
@@ -76,7 +76,7 @@ class HybridShapePositionTransfo(HybridShape):
         :rtype: int
         """
 
-        return self.hybrid_shape_position_transfo.InitialDirectionComputationMode
+        return self.com_object.InitialDirectionComputationMode
 
     @initial_direction_computation_mode.setter
     def initial_direction_computation_mode(self, value: int):
@@ -84,7 +84,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int value:
         """
 
-        self.hybrid_shape_position_transfo.InitialDirectionComputationMode = value
+        self.com_object.InitialDirectionComputationMode = value
 
     @property
     def mode(self) -> int:
@@ -108,7 +108,7 @@ class HybridShapePositionTransfo(HybridShape):
         :rtype: int
         """
 
-        return self.hybrid_shape_position_transfo.Mode
+        return self.com_object.Mode
 
     @mode.setter
     def mode(self, value: int):
@@ -116,7 +116,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int value:
         """
 
-        self.hybrid_shape_position_transfo.Mode = value
+        self.com_object.Mode = value
 
     @property
     def profile(self) -> Reference:
@@ -132,7 +132,7 @@ class HybridShapePositionTransfo(HybridShape):
         :rtype: Reference
         """
 
-        return Reference(self.hybrid_shape_position_transfo.Profile)
+        return Reference(self.com_object.Profile)
 
     @profile.setter
     def profile(self, reference_profile: Reference):
@@ -140,7 +140,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param Reference reference_profile:
         """
 
-        self.hybrid_shape_position_transfo.Profile = reference_profile.com_object
+        self.com_object.Profile = reference_profile.com_object
 
     def get_nb_pos_angle(self) -> int:
         """
@@ -159,7 +159,7 @@ class HybridShapePositionTransfo(HybridShape):
 
         :rtype: int
         """
-        return self.hybrid_shape_position_transfo.GetNbPosAngle()
+        return self.com_object.GetNbPosAngle()
 
     def get_nb_pos_coord(self) -> int:
         """
@@ -178,7 +178,7 @@ class HybridShapePositionTransfo(HybridShape):
 
         :rtype: int
         """
-        return self.hybrid_shape_position_transfo.GetNbPosCoord()
+        return self.com_object.GetNbPosCoord()
 
     def get_pos_angle(self, i_i: int) -> Angle:
         """
@@ -202,7 +202,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int i_i:
         :rtype: Angle
         """
-        return Angle(self.hybrid_shape_position_transfo.GetPosAngle(i_i))
+        return Angle(self.com_object.GetPosAngle(i_i))
 
     def get_pos_coord(self, ii: int) -> Length:
         """
@@ -226,7 +226,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int ii:
         :rtype: Length
         """
-        return Length(self.hybrid_shape_position_transfo.GetPosCoord(ii))
+        return Length(self.com_object.GetPosCoord(ii))
 
     def get_pos_point(self, ii: int) -> Reference:
         """
@@ -250,7 +250,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int ii:
         :rtype: Reference
         """
-        return Reference(self.hybrid_shape_position_transfo.GetPosPoint(ii))
+        return Reference(self.com_object.GetPosPoint(ii))
 
     def get_pos_swap_axes(self, ii: int) -> int:
         """
@@ -283,7 +283,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int ii:
         :rtype: int
         """
-        return self.hybrid_shape_position_transfo.GetPosSwapAxes(ii)
+        return self.com_object.GetPosSwapAxes(ii)
 
     def get_position_direction(self, i_i: int) -> HybridShapeDirection:
         """
@@ -308,7 +308,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int i_i:
         :rtype: HybridShapeDirection
         """
-        return HybridShapeDirection(self.hybrid_shape_position_transfo.GetPositionDirection(i_i))
+        return HybridShapeDirection(self.com_object.GetPositionDirection(i_i))
 
     def remove_all_pos_angle(self) -> None:
         """
@@ -322,7 +322,7 @@ class HybridShapePositionTransfo(HybridShape):
 
         :rtype: None
         """
-        return self.hybrid_shape_position_transfo.RemoveAllPosAngle()
+        return self.com_object.RemoveAllPosAngle()
 
     def remove_all_pos_coord(self) -> None:
         """
@@ -336,7 +336,7 @@ class HybridShapePositionTransfo(HybridShape):
 
         :rtype: None
         """
-        return self.hybrid_shape_position_transfo.RemoveAllPosCoord()
+        return self.com_object.RemoveAllPosCoord()
 
     def set_pos_angle(self, i_i: int, i_angle: Angle) -> None:
         """
@@ -361,7 +361,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param Angle i_angle:
         :rtype: None
         """
-        return self.hybrid_shape_position_transfo.SetPosAngle(i_i, i_angle.com_object)
+        return self.com_object.SetPosAngle(i_i, i_angle.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -402,7 +402,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param Length i_coordinate:
         :rtype: None
         """
-        return self.hybrid_shape_position_transfo.SetPosCoord(i_i, i_coordinate.com_object)
+        return self.com_object.SetPosCoord(i_i, i_coordinate.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -443,7 +443,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param Reference i_elem:
         :rtype: None
         """
-        return self.hybrid_shape_position_transfo.SetPosPoint(i_i, i_elem.com_object)
+        return self.com_object.SetPosPoint(i_i, i_elem.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -493,7 +493,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int i_inversion:
         :rtype: None
         """
-        return self.hybrid_shape_position_transfo.SetPosSwapAxes(ii, i_inversion)
+        return self.com_object.SetPosSwapAxes(ii, i_inversion)
 
     def set_position_direction(self, i_i: int, i_elem: HybridShapeDirection) -> None:
         """
@@ -520,7 +520,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param HybridShapeDirection i_elem:
         :rtype: None
         """
-        return self.hybrid_shape_position_transfo.SetPositionDirection(i_i, i_elem.com_object)
+        return self.com_object.SetPositionDirection(i_i, i_elem.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code

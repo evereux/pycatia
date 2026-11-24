@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class CompositeTolerance(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -34,7 +33,7 @@ class CompositeTolerance(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.composite_tolerance = com_object
+        self.com_object = com_object
 
     @property
     def box_count(self) -> float:
@@ -50,7 +49,7 @@ class CompositeTolerance(AnyObject):
         :rtype: float
         """
 
-        return self.composite_tolerance.BoxCount
+        return self.com_object.BoxCount
 
     @property
     def value(self) -> float:
@@ -71,7 +70,7 @@ class CompositeTolerance(AnyObject):
         :rtype: float
         """
 
-        return self.composite_tolerance.Value
+        return self.com_object.Value
 
     def __repr__(self):
-        return f'CompositeTolerance(name="{ self.name }")'
+        return f'CompositeTolerance(name="{self.name}")'

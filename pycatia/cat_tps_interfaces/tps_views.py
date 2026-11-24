@@ -37,7 +37,7 @@ class TPSViews(Collection):
 
     def __init__(self, com_object):
         super().__init__(com_object, child_object=TPSView)
-        self.tps_views = com_object
+        self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> TPSView:
         """
@@ -52,13 +52,13 @@ class TPSViews(Collection):
         :param CATVariant i_index:
         :rtype: AnyObject
         """
-        return TPSView(self.tps_views.Item(i_index))
+        return TPSView(self.com_object.Item(i_index))
 
     def __getitem__(self, n: int) -> TPSView:
         if (n + 1) > self.count:
             raise StopIteration
 
-        return TPSView(self.tps_views.Item(n + 1))
+        return TPSView(self.com_object.Item(n + 1))
 
     def __iter__(self) -> Iterator[TPSView]:
         for i in range(self.count):

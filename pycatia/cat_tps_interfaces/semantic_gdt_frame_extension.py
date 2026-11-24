@@ -40,7 +40,7 @@ class SemanticGDTFrameExtension(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.semantic_gdt_frame_extension = com_object
+        self.com_object = com_object
 
     @property
     def direction_specification(self) -> str:
@@ -76,7 +76,7 @@ class SemanticGDTFrameExtension(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.semantic_gdt_frame_extension.DirectionSpecification
+        return self.com_object.DirectionSpecification
 
     @property
     def type(self) -> str:
@@ -110,7 +110,7 @@ class SemanticGDTFrameExtension(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.semantic_gdt_frame_extension.Type
+        return self.com_object.Type
 
     def direction_reference(self) -> DatumSimple:
         """
@@ -139,7 +139,7 @@ class SemanticGDTFrameExtension(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return DatumSimple(self.semantic_gdt_frame_extension.DirectionReference())
+        return DatumSimple(self.com_object.DirectionReference())
 
     def orientation(self) -> float:
         """
@@ -169,7 +169,7 @@ class SemanticGDTFrameExtension(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.semantic_gdt_frame_extension.Orientation()
+        return self.com_object.Orientation()
 
     def __repr__(self):
         return f'SemanticGdtFrameExtension(name="{self.name}")'

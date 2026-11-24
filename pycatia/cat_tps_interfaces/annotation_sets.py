@@ -38,7 +38,7 @@ class AnnotationSets(Collection):
 
     def __init__(self, com_object):
         super().__init__(com_object, child_object=AnnotationSet)
-        self.annotation_sets = com_object
+        self.com_object = com_object
         self.child_object = AnnotationSet
 
     def add_in_a_product(self, i_product: Product, i_standard: str) -> AnnotationSet:
@@ -56,7 +56,7 @@ class AnnotationSets(Collection):
         :param str i_standard:
         :rtype: AnnotationSet
         """
-        return AnnotationSet(self.annotation_sets.AddInAProduct(i_product.com_object, i_standard))
+        return AnnotationSet(self.com_object.AddInAProduct(i_product.com_object, i_standard))
 
     def item(self, i_index: CATVariant) -> AnnotationSet:
         """
@@ -71,7 +71,7 @@ class AnnotationSets(Collection):
         :param CATVariant i_index:
         :rtype: AnyObject
         """
-        return AnnotationSet(self.annotation_sets.Item(i_index))
+        return AnnotationSet(self.com_object.Item(i_index))
 
     def load_annotation_sets_list(self) -> None:
         """
@@ -88,13 +88,13 @@ class AnnotationSets(Collection):
 
         :rtype: None
         """
-        return self.annotation_sets.LoadAnnotationSetsList()
+        return self.com_object.LoadAnnotationSetsList()
 
     def __getitem__(self, n: int) -> AnnotationSet:
         if (n + 1) > self.count:
             raise StopIteration
 
-        return AnnotationSet(self.annotation_sets.Item(n + 1))
+        return AnnotationSet(self.com_object.Item(n + 1))
 
     def __iter__(self) -> Iterator[AnnotationSet]:
         for i in range(self.count):

@@ -33,7 +33,7 @@ class TPSParallelOnScreen(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.tps_parallel_on_screen = com_object
+        self.com_object = com_object
 
     @property
     def parallel_on_screen(self) -> bool:
@@ -49,7 +49,7 @@ class TPSParallelOnScreen(AnyObject):
         :rtype: bool
         """
 
-        return self.tps_parallel_on_screen.ParallelOnScreen
+        return self.com_object.ParallelOnScreen
 
     @parallel_on_screen.setter
     def parallel_on_screen(self, value: bool):
@@ -57,7 +57,7 @@ class TPSParallelOnScreen(AnyObject):
         :param bool value:
         """
 
-        self.tps_parallel_on_screen.ParallelOnScreen = value
+        self.com_object.ParallelOnScreen = value
 
     @property
     def zoomable(self) -> bool:
@@ -73,7 +73,7 @@ class TPSParallelOnScreen(AnyObject):
         :rtype: bool
         """
 
-        return self.tps_parallel_on_screen.Zoomable
+        return self.com_object.Zoomable
 
     @zoomable.setter
     def zoomable(self, value: bool):
@@ -81,7 +81,7 @@ class TPSParallelOnScreen(AnyObject):
         :param bool value:
         """
 
-        self.tps_parallel_on_screen.Zoomable = value
+        self.com_object.Zoomable = value
 
     def __repr__(self):
         return f'TpsParallelOnScreen(name="{self.name}")'

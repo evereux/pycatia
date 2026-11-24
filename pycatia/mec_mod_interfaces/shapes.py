@@ -12,8 +12,10 @@ from typing import Iterator
 
 from pycatia.mec_mod_interfaces.boundary import Boundary
 from pycatia.mec_mod_interfaces.shape import Shape
+from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import CATVariant
+from pycatia.types.shapes import shape_types
 
 
 class Shapes(Collection):
@@ -96,17 +98,28 @@ class Shapes(Collection):
         :param CATVariant i_index:
         :rtype: Shape
         """
-        return Shape(self.shapes.Item(i_index))
+        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(i_index)))
+
+        if type_name in shape_types:
+            return shape_types[type_name](self.com_object.Item(i_index))
+
+        return Shape(self.com_object.Item(i_index))
 
     def __getitem__(self, n: int) -> Shape:
         if (n + 1) > self.count:
             raise StopIteration
+        from pycatia.helpers import return_real_object
+        hb = Shape(self.com_object.Item(n + 1))
+        real_object = return_real_object(self.application, hb)
 
-        return Shape(self.shapes.Item(n + 1))
+        return real_object
 
     def __iter__(self) -> Iterator[Shape]:
+        from pycatia.helpers import return_real_object
         for i in range(self.count):
-            yield self.child_object(self.com_object.Item(i + 1))
+            hb = Shape(self.com_object.Item(i + 1))
+            real_object = return_real_object(self.application, hb)
+            yield real_object
 
     def __repr__(self):
         return f'Shapes(name="{self.name}")'

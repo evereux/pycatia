@@ -34,7 +34,7 @@ class DefaultAnnotation(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.default_annotation = com_object
+        self.com_object = com_object
 
     @property
     def link_wi_geom_type(self) -> str:
@@ -56,7 +56,7 @@ class DefaultAnnotation(AnyObject):
         :rtype: str
         """
 
-        return self.default_annotation.LinkWiGeomType
+        return self.com_object.LinkWiGeomType
 
     @property
     def search_algo_type(self) -> str:
@@ -78,7 +78,7 @@ class DefaultAnnotation(AnyObject):
         :rtype: str
         """
 
-        return self.default_annotation.SearchAlgoType
+        return self.com_object.SearchAlgoType
 
     def is_in_automatic_search_mode(self) -> bool:
         """
@@ -98,7 +98,7 @@ class DefaultAnnotation(AnyObject):
 
         :rtype: bool
         """
-        return self.default_annotation.IsInAutomaticSearchMode()
+        return self.com_object.IsInAutomaticSearchMode()
 
     def __repr__(self):
         return f'DefaultAnnotation(name="{self.name}")'

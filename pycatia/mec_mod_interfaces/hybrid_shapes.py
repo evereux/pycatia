@@ -14,6 +14,8 @@ from pycatia.mec_mod_interfaces.boundary import Boundary
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import CATVariant
+from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.types.hybrid_shapes import hybrid_shape_types
 
 
 class HybridShapes(Collection):
@@ -98,17 +100,28 @@ class HybridShapes(Collection):
         :param CATVariant i_index:
         :rtype: HybridShape
         """
-        return HybridShape(self.hybrid_shapes.Item(i_index))
+        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(i_index)))
+
+        if type_name in hybrid_shape_types:
+            return hybrid_shape_types[type_name](self.com_object.Item(i_index))
+
+        return HybridShape(self.com_object.Item(i_index))
 
     def __getitem__(self, n: int) -> HybridShape:
         if (n + 1) > self.count:
             raise StopIteration
+        from pycatia.helpers import return_real_object
+        hb = HybridShape(self.com_object.Item(n + 1))
+        real_object = return_real_object(self.application, hb)
 
-        return HybridShape(self.hybrid_shapes.Item(n + 1))
+        return real_object
 
     def __iter__(self) -> Iterator[HybridShape]:
+        from pycatia.helpers import return_real_object
         for i in range(self.count):
-            yield self.child_object(self.com_object.Item(i + 1))
+            hb = HybridShape(self.com_object.Item(i + 1))
+            real_object = return_real_object(self.application, hb)
+            yield real_object
 
     def __repr__(self):
         return f'HybridShapes(name="{self.name}")'

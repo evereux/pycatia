@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ParticularTolElem(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -34,7 +33,7 @@ class ParticularTolElem(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.particular_tol_elem = com_object
+        self.com_object = com_object
 
     @property
     def particular_geometry(self) -> str:
@@ -55,7 +54,7 @@ class ParticularTolElem(AnyObject):
         :rtype: str
         """
 
-        return self.particular_tol_elem.ParticularGeometry
+        return self.com_object.ParticularGeometry
 
     def __repr__(self):
-        return f'ParticularTolElem(name="{ self.name }")'
+        return f'ParticularTolElem(name="{self.name}")'

@@ -37,7 +37,7 @@ class NumericalDisplayFormat(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.numerical_display_format = com_object
+        self.com_object = com_object
 
     @property
     def available_display_factor(self) -> int:
@@ -63,7 +63,7 @@ class NumericalDisplayFormat(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.numerical_display_format.AvilableDisplayFactor
+        return self.com_object.AvilableDisplayFactor
 
     @property
     def display_factor(self) -> int:
@@ -89,7 +89,7 @@ class NumericalDisplayFormat(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.numerical_display_format.DisplayFactor
+        return self.com_object.DisplayFactor
 
     @display_factor.setter
     def display_factor(self, value: int):
@@ -97,7 +97,7 @@ class NumericalDisplayFormat(AnyObject):
         :param int value:
         """
 
-        self.numerical_display_format.DisplayFactor = value
+        self.com_object.DisplayFactor = value
 
     @property
     def display_leading_zero(self) -> int:
@@ -126,7 +126,7 @@ class NumericalDisplayFormat(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.numerical_display_format.DisplayLeadingZero
+        return self.com_object.DisplayLeadingZero
 
     @display_leading_zero.setter
     def display_leading_zero(self, value: int):
@@ -134,7 +134,7 @@ class NumericalDisplayFormat(AnyObject):
         :param int value:
         """
 
-        self.numerical_display_format.DisplayLeadingZero = value
+        self.com_object.DisplayLeadingZero = value
 
     @property
     def display_trailing_zero(self) -> int:
@@ -163,7 +163,7 @@ class NumericalDisplayFormat(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.numerical_display_format.DisplayTrailingZero
+        return self.com_object.DisplayTrailingZero
 
     @display_trailing_zero.setter
     def display_trailing_zero(self, value: int):
@@ -171,7 +171,7 @@ class NumericalDisplayFormat(AnyObject):
         :param int value:
         """
 
-        self.numerical_display_format.DisplayTrailingZero = value
+        self.com_object.DisplayTrailingZero = value
 
     @property
     def format_name(self) -> str:
@@ -197,7 +197,7 @@ class NumericalDisplayFormat(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.numerical_display_format.FormatName
+        return self.com_object.FormatName
 
     @format_name.setter
     def format_name(self, value: str):
@@ -205,7 +205,7 @@ class NumericalDisplayFormat(AnyObject):
         :param str value:
         """
 
-        self.numerical_display_format.FormatName = value
+        self.com_object.FormatName = value
 
     @property
     def precision(self) -> int:
@@ -231,7 +231,7 @@ class NumericalDisplayFormat(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.numerical_display_format.Precision
+        return self.com_object.Precision
 
     @precision.setter
     def precision(self, value: int):
@@ -239,7 +239,7 @@ class NumericalDisplayFormat(AnyObject):
         :param int value:
         """
 
-        self.numerical_display_format.Precision = value
+        self.com_object.Precision = value
 
     @property
     def separator(self) -> int:
@@ -285,7 +285,7 @@ class NumericalDisplayFormat(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.numerical_display_format.Separator
+        return self.com_object.Separator
 
     @separator.setter
     def separator(self, value: int):
@@ -293,7 +293,7 @@ class NumericalDisplayFormat(AnyObject):
         :param int value:
         """
 
-        self.numerical_display_format.Separator = value
+        self.com_object.Separator = value
 
     def __repr__(self):
         return f'NumericalDisplayFormat(name="{self.name}")'

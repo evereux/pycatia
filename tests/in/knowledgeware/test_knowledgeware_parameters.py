@@ -27,20 +27,6 @@ def test_parameters_name(document_open):
 
 
 @pytest.mark.parametrize('file_name', [cat_part_measurable])
-def test_all_parameters(document_open):
-    part_document: PartDocument = application.active_document
-    part = part_document.part
-    parameters = part.parameters
-
-    all_parms = parameters.all_parameters()
-
-    assert all_parms[0].name in [
-        r"cat_part_measurable\PartBody\Pad.1\FirstLimit\Length",
-        r"cat_part_measurable\Hauptkörper\Block.1\Begrenzung1\Länge",
-    ]
-
-
-@pytest.mark.parametrize('file_name', [cat_part_measurable])
 def test_create_boolean(document_open):
     part_document: PartDocument = application.active_document
     part = part_document.part
@@ -198,16 +184,15 @@ def test_remove(document_open_test_close):
     bool_name = "new-boolean"
 
     parameters.create_boolean(bool_name, True)
-    all_params = parameters.all_parameters
     index = None
     # get all the parameters and find the index of the item called var name "bool_name".
-    for i, p in enumerate(all_params()):
+    for i, p in enumerate(parameters):
         if bool_name in p.name:
             # all calls to object.index() methods start at 1. so add 1.
             index = i + 1
     assert isinstance(index, int)
 
     parameters.remove(index)
-    gone = any(bool_name in x.name for x in all_params())
+    gone = any(bool_name in x.name for x in parameters)
 
     assert gone is False

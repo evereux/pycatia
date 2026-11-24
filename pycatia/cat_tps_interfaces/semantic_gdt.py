@@ -56,7 +56,7 @@ class SemanticGDT(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
         super().__init__(com_object)
-        self.semantic_gdt = com_object
+        self.com_object = com_object
 
     def associated_ref_frame(self) -> AssociatedRefFrame:
         """
@@ -76,7 +76,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: AssociatedRefFrame
         """
-        return AssociatedRefFrame(self.semantic_gdt.AssociatedRefFrame())
+        return AssociatedRefFrame(self.com_object.AssociatedRefFrame())
 
     def composite_tolerance(self) -> CompositeTolerance:
         """
@@ -95,7 +95,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: CompositeTolerance
         """
-        return CompositeTolerance(self.semantic_gdt.CompositeTolerance())
+        return CompositeTolerance(self.com_object.CompositeTolerance())
 
     def frame_extensions(self, i_frame_extent_index: int) -> SemanticGDTFrameExtension:
         """
@@ -130,7 +130,7 @@ class SemanticGDT(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return SemanticGDTFrameExtension(self.semantic_gdt.FrameExtensions(i_frame_extent_index))
+        return SemanticGDTFrameExtension(self.com_object.FrameExtensions(i_frame_extent_index))
 
     def free_state(self) -> FreeState:
         """
@@ -149,7 +149,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: FreeState
         """
-        return FreeState(self.semantic_gdt.FreeState())
+        return FreeState(self.com_object.FreeState())
 
     def has_a_centered_element(self) -> bool:
         """
@@ -184,7 +184,7 @@ class SemanticGDT(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.semantic_gdt.HasACenteredElement()
+        return self.com_object.HasACenteredElement()
 
     def has_a_frame_extension(self) -> int:
         """
@@ -220,7 +220,7 @@ class SemanticGDT(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.semantic_gdt.HasAFrameExtension()
+        return self.com_object.HasAFrameExtension()
 
     def has_a_free_state(self) -> bool:
         """
@@ -241,7 +241,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
-        return self.semantic_gdt.HasAFreeState()
+        return self.com_object.HasAFreeState()
 
     def has_a_material_condition(self) -> bool:
         """
@@ -262,7 +262,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
-        return self.semantic_gdt.HasAMaterialCondition()
+        return self.com_object.HasAMaterialCondition()
 
     def has_a_particular_tol_elem(self) -> bool:
         """
@@ -283,7 +283,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
-        return self.semantic_gdt.HasAParticularTolElem()
+        return self.com_object.HasAParticularTolElem()
 
     def has_a_tangent_plane(self) -> bool:
         """
@@ -304,7 +304,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
-        return self.semantic_gdt.HasATangentPlane()
+        return self.com_object.HasATangentPlane()
 
     def has_a_tolerance_per_unit_basis_restrictive_value(self) -> bool:
         """
@@ -328,7 +328,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
-        return self.semantic_gdt.HasATolerancePerUnitBasisRestrictiveValue()
+        return self.com_object.HasATolerancePerUnitBasisRestrictiveValue()
 
     def is_a_composite_tolerance(self) -> bool:
         """
@@ -349,7 +349,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
-        return self.semantic_gdt.IsACompositeTolerance()
+        return self.com_object.IsACompositeTolerance()
 
     def is_a_projected_tolerance_zone(self) -> bool:
         """
@@ -370,7 +370,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
-        return self.semantic_gdt.IsAProjectedToleranceZone()
+        return self.com_object.IsAProjectedToleranceZone()
 
     def is_a_shifted_profile_tolerance(self) -> bool:
         """
@@ -391,7 +391,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
-        return self.semantic_gdt.IsAShiftedProfileTolerance()
+        return self.com_object.IsAShiftedProfileTolerance()
 
     def is_a_tolerance_unit_basis_value(self) -> bool:
         """
@@ -412,7 +412,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
-        return self.semantic_gdt.IsAToleranceUnitBasisValue()
+        return self.com_object.IsAToleranceUnitBasisValue()
 
     def is_a_tolerance_zone(self) -> bool:
         """
@@ -433,7 +433,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
-        return self.semantic_gdt.IsAToleranceZone()
+        return self.com_object.IsAToleranceZone()
 
     def is_an_associated_ref_frame(self) -> bool:
         """
@@ -454,7 +454,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: bool
         """
-        return self.semantic_gdt.IsAnAssociatedRefFrame()
+        return self.com_object.IsAnAssociatedRefFrame()
 
     def is_applied_on_multiple_entities(self) -> bool:
         """
@@ -486,7 +486,7 @@ class SemanticGDT(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.semantic_gdt.IsAppliedOnMultipleEntities()
+        return self.com_object.IsAppliedOnMultipleEntities()
 
     def material_condition(self) -> MaterialCondition:
         """
@@ -505,7 +505,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: MaterialCondition
         """
-        return MaterialCondition(self.semantic_gdt.MaterialCondition())
+        return MaterialCondition(self.com_object.MaterialCondition())
 
     def median_feature(self) -> MedianFeature:
         """
@@ -534,7 +534,7 @@ class SemanticGDT(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return MedianFeature(self.semantic_gdt.MedianFeature())
+        return MedianFeature(self.com_object.MedianFeature())
 
     def nx_display(self) -> SemanticGDTNxDisplay:
         """
@@ -564,7 +564,7 @@ class SemanticGDT(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return SemanticGDTNxDisplay(self.semantic_gdt.NxDisplay())
+        return SemanticGDTNxDisplay(self.com_object.NxDisplay())
 
     def particular_tol_elem(self) -> ParticularTolElem:
         """
@@ -583,7 +583,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: ParticularTolElem
         """
-        return ParticularTolElem(self.semantic_gdt.ParticularTolElem())
+        return ParticularTolElem(self.com_object.ParticularTolElem())
 
     def projected_tolerance_zone(self) -> ProjectedToleranceZone:
         """
@@ -602,7 +602,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: ProjectedToleranceZone
         """
-        return ProjectedToleranceZone(self.semantic_gdt.ProjectedToleranceZone())
+        return ProjectedToleranceZone(self.com_object.ProjectedToleranceZone())
 
     def shifted_profile_tolerance(self) -> ShiftedProfileTolerance:
         """
@@ -621,7 +621,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: ShiftedProfileTolerance
         """
-        return ShiftedProfileTolerance(self.semantic_gdt.ShiftedProfileTolerance())
+        return ShiftedProfileTolerance(self.com_object.ShiftedProfileTolerance())
 
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
@@ -635,7 +635,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: TPSParallelOnScreen
         """
-        return TPSParallelOnScreen(self.semantic_gdt.TPSParallelOnScreen())
+        return TPSParallelOnScreen(self.com_object.TPSParallelOnScreen())
 
     def tangent_plane(self) -> TangentPlane:
         """
@@ -654,7 +654,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: TangentPlane
         """
-        return TangentPlane(self.semantic_gdt.TangentPlane())
+        return TangentPlane(self.com_object.TangentPlane())
 
     def tolerance_per_unit_basis_restrictive_value(self) -> TolerancePerUnitBasisRestrictiveValue:
         """
@@ -675,7 +675,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: TolerancePerUnitBasisRestrictiveValue
         """
-        return TolerancePerUnitBasisRestrictiveValue(self.semantic_gdt.TolerancePerUnitBasisRestrictiveValue())
+        return TolerancePerUnitBasisRestrictiveValue(self.com_object.TolerancePerUnitBasisRestrictiveValue())
 
     def tolerance_unit_basis_value(self) -> ToleranceUnitBasisValue:
         """
@@ -694,7 +694,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: ToleranceUnitBasisValue
         """
-        return ToleranceUnitBasisValue(self.semantic_gdt.ToleranceUnitBasisValue())
+        return ToleranceUnitBasisValue(self.com_object.ToleranceUnitBasisValue())
 
     def tolerance_zone(self) -> ToleranceZone:
         """
@@ -713,7 +713,7 @@ class SemanticGDT(AnyObject):
 
         :rtype: ToleranceZone
         """
-        return ToleranceZone(self.semantic_gdt.ToleranceZone())
+        return ToleranceZone(self.com_object.ToleranceZone())
 
     def __repr__(self):
         return f'SemanticGdt(name="{self.name}")'

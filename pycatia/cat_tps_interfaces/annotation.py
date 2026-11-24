@@ -65,7 +65,7 @@ class Annotation(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.annotation = com_object
+        self.com_object = com_object
 
     @property
     def super_type(self) -> str:
@@ -88,7 +88,7 @@ class Annotation(AnyObject):
         :rtype: str
         """
 
-        return self.annotation.SuperType
+        return self.com_object.SuperType
 
     @property
     def tps_status(self) -> str:
@@ -109,7 +109,7 @@ class Annotation(AnyObject):
         :rtype: str
         """
 
-        return self.annotation.TPSStatus
+        return self.com_object.TPSStatus
 
     @property
     def type(self) -> str:
@@ -171,7 +171,7 @@ class Annotation(AnyObject):
         :rtype: str
         """
 
-        return self.annotation.Type
+        return self.com_object.Type
 
     @property
     def z(self) -> float:
@@ -193,7 +193,7 @@ class Annotation(AnyObject):
         :rtype: float
         """
 
-        return self.annotation.Z
+        return self.com_object.Z
 
     @z.setter
     def z(self, value: float):
@@ -201,7 +201,7 @@ class Annotation(AnyObject):
         :param float value:
         """
 
-        self.annotation.Z = value
+        self.com_object.Z = value
 
     def add_leader(self) -> None:
         """
@@ -215,7 +215,7 @@ class Annotation(AnyObject):
 
         :rtype: None
         """
-        return self.annotation.AddLeader()
+        return self.com_object.AddLeader()
 
     def apply_referenced_geom_colour(self, i_releated_r: int, i_releated_g: int, i_releated_b: int) -> None:
         """
@@ -234,7 +234,7 @@ class Annotation(AnyObject):
         :param int i_releated_b:
         :rtype: None
         """
-        return self.annotation.ApplyReferencedGeomColor(i_releated_r, i_releated_g, i_releated_b)
+        return self.com_object.ApplyReferencedGeomColor(i_releated_r, i_releated_g, i_releated_b)
 
     def apply_referenced_init_colour(self) -> None:
         """
@@ -248,7 +248,7 @@ class Annotation(AnyObject):
 
         :rtype: None
         """
-        return self.annotation.ApplyReferencedInitColor()
+        return self.com_object.ApplyReferencedInitColor()
 
     def associated_ref_frame(self) -> AssociatedRefFrame:
         """
@@ -263,7 +263,7 @@ class Annotation(AnyObject):
         :rtype: AssociatedRefFrame
         """
 
-        return AssociatedRefFrame(self.annotation.AssociatedRefFrame())
+        return AssociatedRefFrame(self.com_object.AssociatedRefFrame())
 
     def composite_tolerance(self) -> CompositeTolerance:
         """
@@ -278,7 +278,7 @@ class Annotation(AnyObject):
         :rtype: CompositeTolerance
         """
 
-        return CompositeTolerance(self.annotation.CompositeTolerance())
+        return CompositeTolerance(self.com_object.CompositeTolerance())
 
     def controlled_radius(self) -> ControlledRadius:
         """
@@ -293,7 +293,7 @@ class Annotation(AnyObject):
         :rtype: ControledRadius
         """
 
-        return ControlledRadius(self.annotation.ControlledRadius())
+        return ControlledRadius(self.com_object.ControlledRadius())
 
     def datum_simple(self) -> DatumSimple:
         """
@@ -308,7 +308,7 @@ class Annotation(AnyObject):
         :rtype: DatumSimple
         """
 
-        return DatumSimple(self.annotation.DatumSimple())
+        return DatumSimple(self.com_object.DatumSimple())
 
     def datum_target(self) -> DatumTarget:
         """
@@ -323,7 +323,7 @@ class Annotation(AnyObject):
         :rtype: DatumTarget
         """
 
-        return DatumTarget(self.annotation.DatumTarget())
+        return DatumTarget(self.com_object.DatumTarget())
 
     def default_annotation(self) -> DefaultAnnotation:
         """
@@ -338,7 +338,7 @@ class Annotation(AnyObject):
         :rtype: DefaultAnnotation
         """
 
-        return DefaultAnnotation(self.annotation.DefaultAnnotation())
+        return DefaultAnnotation(self.com_object.DefaultAnnotation())
 
     def dimension_3d(self) -> Dimension3D:
         """
@@ -358,7 +358,7 @@ class Annotation(AnyObject):
         :rtype: Dimension3D
         """
 
-        return Dimension3D(self.annotation.Dimension3D())
+        return Dimension3D(self.com_object.Dimension3D())
 
     def dimension_limit(self) -> DimensionLimit:
         """
@@ -373,7 +373,7 @@ class Annotation(AnyObject):
         :rtype: DimensionLimit
         """
 
-        return DimensionLimit(self.annotation.DimensionLimit())
+        return DimensionLimit(self.com_object.DimensionLimit())
 
     def dimension_pattern(self) -> DimensionPattern:
         """
@@ -388,7 +388,7 @@ class Annotation(AnyObject):
         :rtype: DimensionPattern
         """
 
-        return DimensionPattern(self.annotation.DimensionPattern())
+        return DimensionPattern(self.com_object.DimensionPattern())
 
     def envelop_condition(self) -> EnvelopeCondition:
         """
@@ -403,7 +403,7 @@ class Annotation(AnyObject):
         :rtype: EnvelopCondition
         """
 
-        return EnvelopeCondition(self.annotation.EnvelopeCondition())
+        return EnvelopeCondition(self.com_object.EnvelopeCondition())
 
     def flag_note(self) -> FlagNote:
         """
@@ -423,7 +423,7 @@ class Annotation(AnyObject):
         :rtype: FlagNote
         """
 
-        return FlagNote(self.annotation.FlagNote())
+        return FlagNote(self.com_object.FlagNote())
 
     def free_state(self) -> FreeState:
         """
@@ -438,7 +438,7 @@ class Annotation(AnyObject):
         :rtype: FreeState
         """
 
-        return FreeState(self.annotation.FreeState())
+        return FreeState(self.com_object.FreeState())
 
     def get_geometrical_component_name(self, i_index: int) -> str:
         """
@@ -471,7 +471,7 @@ class Annotation(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.annotation.GetGeometricalComponentName(i_index)
+        return self.com_object.GetGeometricalComponentName(i_index)
 
     def get_nbr_of_geometrical_component(self) -> int:
         """
@@ -508,7 +508,7 @@ class Annotation(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.annotation.GetNbrOfGeometricalComponent()
+        return self.com_object.GetNbrOfGeometricalComponent()
 
     def get_surfaces(self, o_safe_array: tuple) -> tuple:
         """
@@ -523,7 +523,7 @@ class Annotation(AnyObject):
         :param tuple o_safe_array:
         :rtype: tuple
         """
-        return self.annotation.GetSurfaces(o_safe_array)
+        return self.com_object.GetSurfaces(o_safe_array)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -552,7 +552,7 @@ class Annotation(AnyObject):
 
         :rtype: float
         """
-        return self.annotation.GetSurfacesCount()
+        return self.com_object.GetSurfacesCount()
 
     def has_a_controlled_radius(self) -> bool:
         """
@@ -566,7 +566,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.HasAControledRadius()
+        return self.com_object.HasAControledRadius()
 
     def has_a_free_state(self) -> bool:
         """
@@ -580,7 +580,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.HasAFreeState()
+        return self.com_object.HasAFreeState()
 
     def has_a_material_condition(self) -> bool:
         """
@@ -594,7 +594,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.HasAMaterialCondition()
+        return self.com_object.HasAMaterialCondition()
 
     def has_a_numerical_display_format(self) -> bool:
         """
@@ -617,7 +617,7 @@ class Annotation(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.annotation.HasANumericalDisplayFormat()
+        return self.com_object.HasANumericalDisplayFormat()
 
     def has_a_particular_tol_elem(self) -> bool:
         """
@@ -631,7 +631,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.HasAParticularTolElem()
+        return self.com_object.HasAParticularTolElem()
 
     def has_a_tolerance_per_unit_basis_restrictive_value(self) -> bool:
         """
@@ -645,7 +645,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.HasATolerancePerUnitBasisRestrictiveValue()
+        return self.com_object.HasATolerancePerUnitBasisRestrictiveValue()
 
     def has_an_envelop_condition(self) -> bool:
         """
@@ -659,7 +659,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.HasAnEnvelopCondition()
+        return self.com_object.HasAnEnvelopCondition()
 
     def has_dimension_limit(self) -> bool:
         """
@@ -673,7 +673,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.HasDimensionLimit()
+        return self.com_object.HasDimensionLimit()
 
     def is_a_composite_tolerance(self) -> bool:
         """
@@ -687,7 +687,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.IsACompositeTolerance()
+        return self.com_object.IsACompositeTolerance()
 
     def is_a_default_annotation(self) -> bool:
         """
@@ -701,7 +701,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.IsADefaultAnnotation()
+        return self.com_object.IsADefaultAnnotation()
 
     def is_a_dimension_pattern(self) -> bool:
         """
@@ -715,7 +715,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.IsADimensionPattern()
+        return self.com_object.IsADimensionPattern()
 
     def is_a_projected_tolerance_zone(self) -> bool:
         """
@@ -729,7 +729,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.IsAProjectedToleranceZone()
+        return self.com_object.IsAProjectedToleranceZone()
 
     def is_a_shifted_profile_tolerance(self) -> bool:
         """
@@ -743,7 +743,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.IsAShiftedProfileTolerance()
+        return self.com_object.IsAShiftedProfileTolerance()
 
     def is_a_tangent_plane(self) -> bool:
         """
@@ -757,7 +757,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.IsATangentPlane()
+        return self.com_object.IsATangentPlane()
 
     def is_a_tolerance_unit_basis_value(self) -> bool:
         """
@@ -771,7 +771,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.IsAToleranceUnitBasisValue()
+        return self.com_object.IsAToleranceUnitBasisValue()
 
     def is_a_tolerance_zone(self) -> bool:
         """
@@ -785,7 +785,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.IsAToleranceZone()
+        return self.com_object.IsAToleranceZone()
 
     def is_an_associated_ref_frame(self) -> bool:
         """
@@ -799,7 +799,7 @@ class Annotation(AnyObject):
 
         :rtype: bool
         """
-        return self.annotation.IsAnAssociatedRefFrame()
+        return self.com_object.IsAnAssociatedRefFrame()
 
     def material_condition(self) -> MaterialCondition:
         """
@@ -814,7 +814,7 @@ class Annotation(AnyObject):
         :rtype: MaterialCondition
         """
 
-        return MaterialCondition(self.annotation.MaterialCondition())
+        return MaterialCondition(self.com_object.MaterialCondition())
 
     def modify_visualisation(self) -> None:
         """
@@ -828,7 +828,7 @@ class Annotation(AnyObject):
 
         :rtype: None
         """
-        return self.annotation.ModifyVisu()
+        return self.com_object.ModifyVisu()
 
     def noa(self) -> Noa:
         """
@@ -843,7 +843,7 @@ class Annotation(AnyObject):
         :rtype: Noa
         """
 
-        return Noa(self.annotation.Noa())
+        return Noa(self.com_object.Noa())
 
     def numerical_display_format(self) -> NumericalDisplayFormat:
         """
@@ -866,7 +866,7 @@ class Annotation(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return NumericalDisplayFormat(self.annotation.NumericalDisplayFormat())
+        return NumericalDisplayFormat(self.com_object.NumericalDisplayFormat())
 
     def particular_tol_elem(self) -> ParticularTolElem:
         """
@@ -881,7 +881,7 @@ class Annotation(AnyObject):
         :rtype: ParticularTolElem
         """
 
-        return ParticularTolElem(self.annotation.ParticularTolElem())
+        return ParticularTolElem(self.com_object.ParticularTolElem())
 
     def projected_tolerance_zone(self) -> ProjectedToleranceZone:
         """
@@ -896,7 +896,7 @@ class Annotation(AnyObject):
         :rtype: ProjectedToleranceZone
         """
         return ProjectedToleranceZone(
-            self.annotation.ProjectedToleranceZone())
+            self.com_object.ProjectedToleranceZone())
 
     def reference_frame(self) -> ReferenceFrame:
         """
@@ -911,7 +911,7 @@ class Annotation(AnyObject):
         :rtype: ReferenceFrame
         """
 
-        return ReferenceFrame(self.annotation.ReferenceFrame())
+        return ReferenceFrame(self.com_object.ReferenceFrame())
 
     def roughness(self) -> Roughness:
         """
@@ -926,7 +926,7 @@ class Annotation(AnyObject):
         :rtype: Roughness
         """
 
-        return Roughness(self.annotation.Roughness())
+        return Roughness(self.com_object.Roughness())
 
     def set_geometrical_component_name(self, i_index: int, i_new_name: str, i_check_name_unicity_option: bool) -> None:
         """
@@ -979,7 +979,7 @@ class Annotation(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.annotation.SetGeometricalComponentName(i_index, i_new_name, i_check_name_unicity_option)
+        return self.com_object.SetGeometricalComponentName(i_index, i_new_name, i_check_name_unicity_option)
 
     def set_xy(self, i_x: float, i_y: float) -> None:
         """
@@ -1004,7 +1004,7 @@ class Annotation(AnyObject):
         :param float i_y:
         :rtype: None
         """
-        return self.annotation.SetXY(i_x, i_y)
+        return self.com_object.SetXY(i_x, i_y)
 
     def shifted_profile_tolerance(self) -> ShiftedProfileTolerance:
         """
@@ -1019,7 +1019,7 @@ class Annotation(AnyObject):
         :rtype: ShiftedProfileTolerance
         """
 
-        return ShiftedProfileTolerance(self.annotation.ShiftedProfileTolerance())
+        return ShiftedProfileTolerance(self.com_object.ShiftedProfileTolerance())
 
     def tangent_plane(self) -> TangentPlane:
         """
@@ -1034,7 +1034,7 @@ class Annotation(AnyObject):
         :rtype: TangentPlane
         """
 
-        return TangentPlane(self.annotation.TangentPlane())
+        return TangentPlane(self.com_object.TangentPlane())
 
     def text(self) -> Text:
         """
@@ -1053,7 +1053,7 @@ class Annotation(AnyObject):
 
         :rtype: Text
         """
-        return Text(self.annotation.Text())
+        return Text(self.com_object.Text())
 
     def tolerance_per_unit_basis_restrictive_value(self) -> TolerancePerUnitBasisRestrictiveValue:
         """
@@ -1068,7 +1068,7 @@ class Annotation(AnyObject):
 
         :rtype: TolerancePerUnitBasisRestrictiveValue
         """
-        return TolerancePerUnitBasisRestrictiveValue(self.annotation.TolerancePerUnitBasisRestrictiveValue())
+        return TolerancePerUnitBasisRestrictiveValue(self.com_object.TolerancePerUnitBasisRestrictiveValue())
 
     def tolerance_unit_basis_value(self) -> ToleranceUnitBasisValue:
         """
@@ -1082,7 +1082,7 @@ class Annotation(AnyObject):
 
         :rtype: ToleranceUnitBasisValue
         """
-        return ToleranceUnitBasisValue(self.annotation.ToleranceUnitBasisValue())
+        return ToleranceUnitBasisValue(self.com_object.ToleranceUnitBasisValue())
 
     def tolerance_zone(self) -> ToleranceZone:
         """
@@ -1097,7 +1097,7 @@ class Annotation(AnyObject):
         :rtype: ToleranceZone
         """
 
-        return ToleranceZone(self.annotation.ToleranceZone())
+        return ToleranceZone(self.com_object.ToleranceZone())
 
     def transfert_to_view(self, i_view: 'TPSView') -> None:
         """
@@ -1117,7 +1117,7 @@ class Annotation(AnyObject):
         :param TPSView i_view:
         :rtype: None
         """
-        return self.annotation.TransfertToView(i_view.com_object)
+        return self.com_object.TransfertToView(i_view.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code

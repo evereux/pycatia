@@ -36,7 +36,7 @@ class CaptureFactory(Factory):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.capture_factory = com_object
+        self.com_object = com_object
 
     def create_capture(self) -> Capture:
         """
@@ -55,7 +55,7 @@ class CaptureFactory(Factory):
 
         :rtype: Capture
         """
-        return Capture(self.capture_factory.CreateCapture())
+        return Capture(self.com_object.CreateCapture())
 
     def __repr__(self):
         return f'CaptureFactory(name="{self.name}")'

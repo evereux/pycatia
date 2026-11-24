@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class TolerancePerUnitBasisRestrictiveValue(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -35,7 +34,7 @@ class TolerancePerUnitBasisRestrictiveValue(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.tolerance_per_unit_basis_restrictive_value = com_object
+        self.com_object = com_object
 
     @property
     def value(self) -> float:
@@ -56,7 +55,7 @@ class TolerancePerUnitBasisRestrictiveValue(AnyObject):
         :rtype: float
         """
 
-        return self.tolerance_per_unit_basis_restrictive_value.Value
+        return self.com_object.Value
 
     @value.setter
     def value(self, value: float):
@@ -64,7 +63,7 @@ class TolerancePerUnitBasisRestrictiveValue(AnyObject):
         :param float value:
         """
 
-        self.tolerance_per_unit_basis_restrictive_value.Value = value
+        self.com_object.Value = value
 
     def __repr__(self):
-        return f'TolerancePerUnitBasisRestrictiveValue(name="{ self.name }")'
+        return f'TolerancePerUnitBasisRestrictiveValue(name="{self.name}")'

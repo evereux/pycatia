@@ -42,7 +42,7 @@ class Capture(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.capture = com_object
+        self.com_object = com_object
 
     @property
     def active_view(self) -> TPSView:
@@ -58,7 +58,7 @@ class Capture(AnyObject):
         :rtype: TPSView
         """
 
-        return TPSView(self.capture.ActiveView)
+        return TPSView(self.com_object.ActiveView)
 
     @active_view.setter
     def active_view(self, value: TPSView):
@@ -66,7 +66,7 @@ class Capture(AnyObject):
         :param TPSView value:
         """
 
-        self.capture.ActiveView = value
+        self.com_object.ActiveView = value.com_object
 
     @property
     def active_view_state(self) -> bool:
@@ -84,7 +84,7 @@ class Capture(AnyObject):
         :rtype: bool
         """
 
-        return self.capture.ActiveViewState
+        return self.com_object.ActiveViewState
 
     @active_view_state.setter
     def active_view_state(self, value: bool):
@@ -92,7 +92,7 @@ class Capture(AnyObject):
         :param bool value:
         """
 
-        self.capture.ActiveViewState = value
+        self.com_object.ActiveViewState = value
 
     @property
     def annotations(self) -> 'Annotations':
@@ -108,7 +108,7 @@ class Capture(AnyObject):
         :rtype: Annotations
         """
         from pycatia.cat_tps_interfaces.annotations import Annotations
-        return Annotations(self.capture.Annotations)
+        return Annotations(self.com_object.Annotations)
 
     @annotations.setter
     def annotations(self, value: 'Annotations'):
@@ -116,7 +116,7 @@ class Capture(AnyObject):
         :param Annotations value:
         """
 
-        self.capture.Annotations = value
+        self.com_object.Annotations = value.com_object
 
     @property
     def camera(self) -> Camera3D:
@@ -132,7 +132,7 @@ class Capture(AnyObject):
         :rtype: Camera3D
         """
 
-        return Camera3D(self.capture.Camera)
+        return Camera3D(self.com_object.Camera)
 
     @camera.setter
     def camera(self, value: Camera3D):
@@ -140,7 +140,7 @@ class Capture(AnyObject):
         :param Camera3D value:
         """
 
-        self.capture.Camera = value
+        self.com_object.Camera = value.com_object
 
     @property
     def clipping_plane(self) -> bool:
@@ -164,7 +164,7 @@ class Capture(AnyObject):
         :rtype: bool
         """
 
-        return self.capture.ClippingPlane
+        return self.com_object.ClippingPlane
 
     @clipping_plane.setter
     def clipping_plane(self, value: bool):
@@ -172,7 +172,7 @@ class Capture(AnyObject):
         :param bool value:
         """
 
-        self.capture.ClippingPlane = value
+        self.com_object.ClippingPlane = value
 
     @property
     def current(self) -> bool:
@@ -195,7 +195,7 @@ class Capture(AnyObject):
         :rtype: bool
         """
 
-        return self.capture.Current
+        return self.com_object.Current
 
     @current.setter
     def current(self, value: bool):
@@ -203,7 +203,7 @@ class Capture(AnyObject):
         :param bool value:
         """
 
-        self.capture.Current = value
+        self.com_object.Current = value
 
     @property
     def manage_hide_show_body(self) -> bool:
@@ -226,7 +226,7 @@ class Capture(AnyObject):
         :rtype: bool
         """
 
-        return self.capture.ManageHideShowBody
+        return self.com_object.ManageHideShowBody
 
     @manage_hide_show_body.setter
     def manage_hide_show_body(self, value: bool):
@@ -234,7 +234,7 @@ class Capture(AnyObject):
         :param bool value:
         """
 
-        self.capture.ManageHideShowBody = value
+        self.com_object.ManageHideShowBody = value
 
     @property
     def set(self) -> 'AnnotationSet':
@@ -250,7 +250,7 @@ class Capture(AnyObject):
         :rtype: AnnotationSet
         """
         from pycatia.cat_tps_interfaces.annotation_set import AnnotationSet
-        return AnnotationSet(self.capture.Set)
+        return AnnotationSet(self.com_object.Set)
 
     @property
     def tps_views(self) -> TPSViews:
@@ -266,7 +266,7 @@ class Capture(AnyObject):
         :rtype: TPSViews
         """
 
-        return TPSViews(self.capture.TPSViews)
+        return TPSViews(self.com_object.TPSViews)
 
     @tps_views.setter
     def tps_views(self, value: TPSViews):
@@ -274,7 +274,7 @@ class Capture(AnyObject):
         :param TPSViews value:
         """
 
-        self.capture.TPSViews = value
+        self.com_object.TPSViews = value.com_object
 
     @property
     def view_point(self) -> bool:
@@ -292,7 +292,7 @@ class Capture(AnyObject):
         :rtype: bool
         """
 
-        return self.capture.ViewPoint
+        return self.com_object.ViewPoint
 
     @view_point.setter
     def view_point(self, value: bool):
@@ -300,7 +300,7 @@ class Capture(AnyObject):
         :param bool value:
         """
 
-        self.capture.ViewPoint = value
+        self.com_object.ViewPoint = value
 
     def display_capture(self) -> None:
         """
@@ -314,7 +314,7 @@ class Capture(AnyObject):
 
         :rtype: None
         """
-        return self.capture.DisplayCapture()
+        return self.com_object.DisplayCapture()
 
     def display_capture_2(self, ib_apply_mirror: bool) -> None:
         """
@@ -337,7 +337,7 @@ class Capture(AnyObject):
         :param bool ib_apply_mirror:
         :rtype: None
         """
-        return self.capture.DisplayCapture2(ib_apply_mirror)
+        return self.com_object.DisplayCapture2(ib_apply_mirror)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -366,7 +366,7 @@ class Capture(AnyObject):
 
         :rtype: TPSParallelOnScreen
         """
-        return TPSParallelOnScreen(self.capture.TPSParallelOnScreen())
+        return TPSParallelOnScreen(self.com_object.TPSParallelOnScreen())
 
     def get_nbr_of_part_inst_and_body(self) -> int:
         """
@@ -398,7 +398,7 @@ class Capture(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.capture.GetNbrOfPartInstAndBody()
+        return self.com_object.GetNbrOfPartInstAndBody()
 
     def get_part_inst_and_body(self, o_list_of_elements: tuple) -> None:
         """
@@ -436,7 +436,7 @@ class Capture(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.capture.GetPartInstAndBody(o_list_of_elements)
+        return self.com_object.GetPartInstAndBody(o_list_of_elements)
 
     def set_part_inst_and_body(self, i_list_of_elements: tuple, i_entity_count: int) -> None:
         """
@@ -472,7 +472,7 @@ class Capture(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.capture.SetPartInstAndBody(i_list_of_elements, i_entity_count)
+        return self.com_object.SetPartInstAndBody(i_list_of_elements, i_entity_count)
 
     def __repr__(self):
         return f'Capture(name="{self.name}")'

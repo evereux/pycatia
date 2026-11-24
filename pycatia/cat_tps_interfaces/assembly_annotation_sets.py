@@ -37,7 +37,7 @@ class AssemblyAnnotationSets(Collection):
 
     def __init__(self, com_object):
         super().__init__(com_object, child_object=AnnotationSet)
-        self.assembly_annotation_sets = com_object
+        self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> AnyObject:
         """
@@ -52,7 +52,7 @@ class AssemblyAnnotationSets(Collection):
         :param CATVariant i_index:
         :rtype: AnyObject
         """
-        return AnyObject(self.assembly_annotation_sets.Item(i_index))
+        return AnyObject(self.com_object.Item(i_index))
 
     def load_annotation_sets_list(self) -> None:
         """
@@ -69,13 +69,13 @@ class AssemblyAnnotationSets(Collection):
 
         :rtype: None
         """
-        return self.assembly_annotation_sets.LoadAnnotationSetsList()
+        return self.com_object.LoadAnnotationSetsList()
 
     def __getitem__(self, n: int) -> AnnotationSet:
         if (n + 1) > self.count:
             raise StopIteration
 
-        return AnnotationSet(self.assembly_annotation_sets.Item(n + 1))
+        return AnnotationSet(self.com_object.Item(n + 1))
 
     def __iter__(self) -> Iterator[AnnotationSet]:
         for i in range(self.count):

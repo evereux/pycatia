@@ -32,7 +32,7 @@ class EnvelopeCondition(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.envelope_condition = com_object
+        self.com_object = com_object
 
     @property
     def modifier(self) -> str:
@@ -48,7 +48,7 @@ class EnvelopeCondition(AnyObject):
         :rtype: str
         """
 
-        return self.envelope_condition.Modifier
+        return self.com_object.Modifier
 
     def __repr__(self):
         return f'EnvelopCondition(name="{self.name}")'

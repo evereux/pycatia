@@ -38,7 +38,7 @@ class DatumSimple(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.datum_simple = com_object
+        self.com_object = com_object
 
     @property
     def label(self) -> str:
@@ -54,7 +54,7 @@ class DatumSimple(AnyObject):
         :rtype: str
         """
 
-        return self.datum_simple.Label
+        return self.com_object.Label
 
     @label.setter
     def label(self, value: str):
@@ -62,7 +62,7 @@ class DatumSimple(AnyObject):
         :param str value:
         """
 
-        self.datum_simple.Label = value
+        self.com_object.Label = value
 
     @property
     def targets(self) -> 'Annotations':
@@ -79,7 +79,7 @@ class DatumSimple(AnyObject):
         :rtype: Annotations
         """
         from pycatia.cat_tps_interfaces.annotations import Annotations
-        return Annotations(self.datum_simple.Targets)
+        return Annotations(self.com_object.Targets)
 
     def __repr__(self):
         return f'DatumSimple(name="{self.name}")'

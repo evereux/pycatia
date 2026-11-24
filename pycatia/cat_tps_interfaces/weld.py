@@ -37,7 +37,7 @@ class Weld(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.weld = com_object
+        self.com_object = com_object
 
     def get_2d_annot(self) -> DrawingWelding:
         """
@@ -56,7 +56,7 @@ class Weld(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return DrawingWelding(self.weld.Get2dAnnot())
+        return DrawingWelding(self.com_object.Get2dAnnot())
 
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
@@ -75,7 +75,7 @@ class Weld(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return TPSParallelOnScreen(self.weld.TPSParallelOnScreen())
+        return TPSParallelOnScreen(self.com_object.TPSParallelOnScreen())
 
     def __repr__(self):
         return f'Weld(name="{self.name}")'

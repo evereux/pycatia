@@ -8,9 +8,13 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia.in_interfaces.reference import Reference
-from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.shape import Shape
+
+if TYPE_CHECKING:
+    from pycatia.mec_mod_interfaces.body import Body
 
 
 class BooleanShape(Shape):
@@ -43,7 +47,7 @@ class BooleanShape(Shape):
         self.boolean_shape = com_object
 
     @property
-    def body(self) -> Body:
+    def body(self) -> 'Body':
         """
         .. note::
             :class: toggle
@@ -55,6 +59,7 @@ class BooleanShape(Shape):
 
         :rtype: Body
         """
+        from pycatia.mec_mod_interfaces.body import Body
 
         return Body(self.boolean_shape.Body)
 

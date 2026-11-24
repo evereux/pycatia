@@ -11,8 +11,10 @@
 from typing import Iterator
 
 from pycatia.mec_mod_interfaces.body import Body
+from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import CATVariant
+from pycatia.types.bodies import body_types
 
 
 class Bodies(Collection):
@@ -97,17 +99,28 @@ class Bodies(Collection):
         :param CATVariant i_index:
         :rtype: Body
         """
-        return Body(self.bodies.Item(i_index))
+        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(i_index)))
+
+        if type_name in body_types:
+            return body_types[type_name](self.com_object.Item(i_index))
+
+        return Body(self.com_object.Item(i_index))
 
     def __getitem__(self, n: int) -> Body:
         if (n + 1) > self.count:
             raise StopIteration
+        from pycatia.helpers import return_real_object
+        hb = Body(self.com_object.Item(n + 1))
+        real_object = return_real_object(self.application, hb)
 
-        return Body(self.bodies.Item(n + 1))
+        return real_object
 
     def __iter__(self) -> Iterator[Body]:
+        from pycatia.helpers import return_real_object
         for i in range(self.count):
-            yield self.child_object(self.com_object.Item(i + 1))
+            hb = Body(self.com_object.Item(i + 1))
+            real_object = return_real_object(self.application, hb)
+            yield real_object
 
     def __repr__(self):
         return f'Bodies(name="{self.name}")'
