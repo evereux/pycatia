@@ -85,7 +85,7 @@ class FTAInfraSettingAtt(SettingController):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.fta_infra_setting_att = com_object
+        self.com_object = com_object
 
     @property
     def allow_distortions(self) -> bool:
@@ -107,7 +107,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.AllowDistortions
+        return self.com_object.AllowDistortions
 
     @allow_distortions.setter
     def allow_distortions(self, value: bool):
@@ -115,7 +115,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.AllowDistortions = value
+        self.com_object.AllowDistortions = value
 
     @property
     def grid_display(self) -> bool:
@@ -135,7 +135,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.GridDisplay
+        return self.com_object.GridDisplay
 
     @grid_display.setter
     def grid_display(self, value: bool):
@@ -143,7 +143,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.GridDisplay = value
+        self.com_object.GridDisplay = value
 
     @property
     def grid_primary_spacing(self) -> float:
@@ -162,7 +162,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: float
         """
 
-        return self.fta_infra_setting_att.GridPrimarySpacing
+        return self.com_object.GridPrimarySpacing
 
     @grid_primary_spacing.setter
     def grid_primary_spacing(self, value: float):
@@ -170,7 +170,7 @@ class FTAInfraSettingAtt(SettingController):
         :param float value:
         """
 
-        self.fta_infra_setting_att.GridPrimarySpacing = value
+        self.com_object.GridPrimarySpacing = value
 
     @property
     def grid_secondary_step(self) -> int:
@@ -189,7 +189,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: int
         """
 
-        return self.fta_infra_setting_att.GridSecondaryStep
+        return self.com_object.GridSecondaryStep
 
     @grid_secondary_step.setter
     def grid_secondary_step(self, value: int):
@@ -197,7 +197,7 @@ class FTAInfraSettingAtt(SettingController):
         :param int value:
         """
 
-        self.fta_infra_setting_att.GridSecondaryStep = value
+        self.com_object.GridSecondaryStep = value
 
     @property
     def grid_snap_point(self) -> bool:
@@ -217,7 +217,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.GridSnapPoint
+        return self.com_object.GridSnapPoint
 
     @grid_snap_point.setter
     def grid_snap_point(self, value: bool):
@@ -225,7 +225,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.GridSnapPoint = value
+        self.com_object.GridSnapPoint = value
 
     @property
     def grid_v_primary_spacing(self) -> float:
@@ -248,7 +248,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: float
         """
 
-        return self.fta_infra_setting_att.GridVPrimarySpacing
+        return self.com_object.GridVPrimarySpacing
 
     @grid_v_primary_spacing.setter
     def grid_v_primary_spacing(self, value: float):
@@ -256,7 +256,7 @@ class FTAInfraSettingAtt(SettingController):
         :param float value:
         """
 
-        self.fta_infra_setting_att.GridVPrimarySpacing = value
+        self.com_object.GridVPrimarySpacing = value
 
     @property
     def grid_v_secondary_step(self) -> int:
@@ -279,7 +279,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: int
         """
 
-        return self.fta_infra_setting_att.GridVSecondaryStep
+        return self.com_object.GridVSecondaryStep
 
     @grid_v_secondary_step.setter
     def grid_v_secondary_step(self, value: int):
@@ -287,7 +287,7 @@ class FTAInfraSettingAtt(SettingController):
         :param int value:
         """
 
-        self.fta_infra_setting_att.GridVSecondaryStep = value
+        self.com_object.GridVSecondaryStep = value
 
     @property
     def leader_associativity(self) -> CATFTALeaderAssociativity:
@@ -306,7 +306,7 @@ class FTAInfraSettingAtt(SettingController):
         :return: CATFTALeaderAssociativity
         """
 
-        return self.fta_infra_setting_att.LeaderAssociativity
+        return self.com_object.LeaderAssociativity
 
     @leader_associativity.setter
     def leader_associativity(self, value: int):
@@ -314,7 +314,7 @@ class FTAInfraSettingAtt(SettingController):
         :param int value: enum catfta_leader_associativity
         """
 
-        self.fta_infra_setting_att.LeaderAssociativity = value
+        self.com_object.LeaderAssociativity = value
 
     @property
     def man_ref_size(self) -> float:
@@ -334,7 +334,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: float
         """
 
-        return self.fta_infra_setting_att.ManRefSiz
+        return self.com_object.ManRefSiz
 
     @man_ref_size.setter
     def man_ref_size(self, value: float):
@@ -342,7 +342,7 @@ class FTAInfraSettingAtt(SettingController):
         :param float value:
         """
 
-        self.fta_infra_setting_att.ManRefSiz = value
+        self.com_object.ManRefSiz = value
 
     @property
     def man_zoo_cap(self) -> bool:
@@ -362,7 +362,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.ManZooCap
+        return self.com_object.ManZooCap
 
     @man_zoo_cap.setter
     def man_zoo_cap(self, value: bool):
@@ -370,7 +370,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.ManZooCap = value
+        self.com_object.ManZooCap = value
 
     @property
     def move_after_creation(self) -> bool:
@@ -392,7 +392,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.MoveAfterCreation
+        return self.com_object.MoveAfterCreation
 
     @move_after_creation.setter
     def move_after_creation(self, value: bool):
@@ -400,7 +400,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.MoveAfterCreation = value
+        self.com_object.MoveAfterCreation = value
 
     @property
     def save_in_cgr(self) -> bool:
@@ -419,7 +419,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.SaveInCGR
+        return self.com_object.SaveInCGR
 
     @save_in_cgr.setter
     def save_in_cgr(self, value: bool):
@@ -427,7 +427,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.SaveInCGR = value
+        self.com_object.SaveInCGR = value
 
     @property
     def standard(self) -> str:
@@ -453,7 +453,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: str
         """
 
-        return self.fta_infra_setting_att.Standard
+        return self.com_object.Standard
 
     @standard.setter
     def standard(self, value: str):
@@ -461,7 +461,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str value:
         """
 
-        self.fta_infra_setting_att.Standard = value
+        self.com_object.Standard = value
 
     @property
     def under_feature(self) -> bool:
@@ -482,7 +482,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.UnderFeature
+        return self.com_object.UnderFeature
 
     @under_feature.setter
     def under_feature(self, value: bool):
@@ -490,7 +490,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.UnderFeature = value
+        self.com_object.UnderFeature = value
 
     @property
     def under_set(self) -> bool:
@@ -512,7 +512,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.UnderSet
+        return self.com_object.UnderSet
 
     @under_set.setter
     def under_set(self, value: bool):
@@ -520,7 +520,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.UnderSet = value
+        self.com_object.UnderSet = value
 
     @property
     def under_view(self) -> bool:
@@ -541,7 +541,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.UnderView
+        return self.com_object.UnderView
 
     @under_view.setter
     def under_view(self, value: bool):
@@ -549,7 +549,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.UnderView = value
+        self.com_object.UnderView = value
 
     @property
     def view_associativity(self) -> bool:
@@ -573,7 +573,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.ViewAssociativity
+        return self.com_object.ViewAssociativity
 
     @view_associativity.setter
     def view_associativity(self, value: bool):
@@ -581,7 +581,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.ViewAssociativity = value
+        self.com_object.ViewAssociativity = value
 
     @property
     def view_profile(self) -> bool:
@@ -599,7 +599,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.ViewProfile
+        return self.com_object.ViewProfile
 
     @view_profile.setter
     def view_profile(self, value: bool):
@@ -607,7 +607,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.ViewProfile = value
+        self.com_object.ViewProfile = value
 
     @property
     def view_referential(self) -> bool:
@@ -626,7 +626,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.ViewReferential
+        return self.com_object.ViewReferential
 
     @view_referential.setter
     def view_referential(self, value: bool):
@@ -634,7 +634,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.ViewReferential = value
+        self.com_object.ViewReferential = value
 
     @property
     def view_referential_zoomable(self) -> bool:
@@ -653,7 +653,7 @@ class FTAInfraSettingAtt(SettingController):
         :rtype: bool
         """
 
-        return self.fta_infra_setting_att.ViewReferentialZoomable
+        return self.com_object.ViewReferentialZoomable
 
     @view_referential_zoomable.setter
     def view_referential_zoomable(self, value: bool):
@@ -661,7 +661,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool value:
         """
 
-        self.fta_infra_setting_att.ViewReferentialZoomable = value
+        self.com_object.ViewReferentialZoomable = value
 
     def get_allow_distortions_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -680,7 +680,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetAllowDistortionsInfo(admin_level, o_locked)
+        return self.com_object.GetAllowDistortionsInfo(admin_level, o_locked)
 
     def get_grid_display_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -699,7 +699,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetGridDisplayInfo(admin_level, o_locked)
+        return self.com_object.GetGridDisplayInfo(admin_level, o_locked)
 
     def get_grid_primary_spacing_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -718,7 +718,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetGridPrimarySpacingInfo(admin_level, o_locked)
+        return self.com_object.GetGridPrimarySpacingInfo(admin_level, o_locked)
 
     def get_grid_secondary_step_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -737,7 +737,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetGridSecondaryStepInfo(admin_level, o_locked)
+        return self.com_object.GetGridSecondaryStepInfo(admin_level, o_locked)
 
     def get_grid_snap_point_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -756,7 +756,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetGridSnapPointInfo(admin_level, o_locked)
+        return self.com_object.GetGridSnapPointInfo(admin_level, o_locked)
 
     def get_grid_v_primary_spacing_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -775,7 +775,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetGridVPrimarySpacingInfo(admin_level, o_locked)
+        return self.com_object.GetGridVPrimarySpacingInfo(admin_level, o_locked)
 
     def get_grid_v_secondary_step_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -794,7 +794,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetGridVSecondaryStepInfo(admin_level, o_locked)
+        return self.com_object.GetGridVSecondaryStepInfo(admin_level, o_locked)
 
     def get_leader_associativity_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -813,7 +813,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetLeaderAssociativityInfo(admin_level, o_locked)
+        return self.com_object.GetLeaderAssociativityInfo(admin_level, o_locked)
 
     def get_man_ref_size_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -832,7 +832,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetManRefSizInfo(admin_level, o_locked)
+        return self.com_object.GetManRefSizInfo(admin_level, o_locked)
 
     def get_man_zoo_cap_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -851,7 +851,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetManZooCapInfo(admin_level, o_locked)
+        return self.com_object.GetManZooCapInfo(admin_level, o_locked)
 
     def get_move_after_creation_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -870,7 +870,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetMoveAfterCreationInfo(admin_level, o_locked)
+        return self.com_object.GetMoveAfterCreationInfo(admin_level, o_locked)
 
     def get_save_in_cgr_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -889,7 +889,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetSaveInCGRInfo(admin_level, o_locked)
+        return self.com_object.GetSaveInCGRInfo(admin_level, o_locked)
 
     def get_standard_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -908,7 +908,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetStandardInfo(admin_level, o_locked)
+        return self.com_object.GetStandardInfo(admin_level, o_locked)
 
     def get_under_feature_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -927,7 +927,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetUnderFeatureInfo(admin_level, o_locked)
+        return self.com_object.GetUnderFeatureInfo(admin_level, o_locked)
 
     def get_under_set_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -946,7 +946,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetUnderSetInfo(admin_level, o_locked)
+        return self.com_object.GetUnderSetInfo(admin_level, o_locked)
 
     def get_under_view_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -965,7 +965,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetUnderViewInfo(admin_level, o_locked)
+        return self.com_object.GetUnderViewInfo(admin_level, o_locked)
 
     def get_view_associativity_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -984,7 +984,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetViewAssociativityInfo(admin_level, o_locked)
+        return self.com_object.GetViewAssociativityInfo(admin_level, o_locked)
 
     def get_view_profile_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -1003,7 +1003,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetViewProfileInfo(admin_level, o_locked)
+        return self.com_object.GetViewProfileInfo(admin_level, o_locked)
 
     def get_view_referential_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -1022,7 +1022,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetViewReferentialInfo(admin_level, o_locked)
+        return self.com_object.GetViewReferentialInfo(admin_level, o_locked)
 
     def get_view_referential_zoomable_info(self, admin_level: str, o_locked: str) -> bool:
         """
@@ -1041,7 +1041,7 @@ class FTAInfraSettingAtt(SettingController):
         :param str o_locked:
         :rtype: bool
         """
-        return self.fta_infra_setting_att.GetViewReferentialZoomableInfo(admin_level, o_locked)
+        return self.com_object.GetViewReferentialZoomableInfo(admin_level, o_locked)
 
     def set_allow_distortions_lock(self, i_locked: bool) -> None:
         """
@@ -1058,7 +1058,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetAllowDistortionsLock(i_locked)
+        return self.com_object.SetAllowDistortionsLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1089,7 +1089,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetGridDisplayLock(i_locked)
+        return self.com_object.SetGridDisplayLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1121,7 +1121,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetGridPrimarySpacingLock(i_locked)
+        return self.com_object.SetGridPrimarySpacingLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1153,7 +1153,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetGridSecondaryStepLock(i_locked)
+        return self.com_object.SetGridSecondaryStepLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1185,7 +1185,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetGridSnapPointLock(i_locked)
+        return self.com_object.SetGridSnapPointLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1217,7 +1217,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetGridVPrimarySpacingLock(i_locked)
+        return self.com_object.SetGridVPrimarySpacingLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1249,7 +1249,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetGridVSecondaryStepLock(i_locked)
+        return self.com_object.SetGridVSecondaryStepLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1281,7 +1281,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetLeaderAssociativityLock(i_locked)
+        return self.com_object.SetLeaderAssociativityLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1313,7 +1313,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetManRefSizLock(i_locked)
+        return self.com_object.SetManRefSizLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1345,7 +1345,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetManZooCapLock(i_locked)
+        return self.com_object.SetManZooCapLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1377,7 +1377,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetMoveAfterCreationLock(i_locked)
+        return self.com_object.SetMoveAfterCreationLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1408,7 +1408,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetSaveInCGRLock(i_locked)
+        return self.com_object.SetSaveInCGRLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1440,7 +1440,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetStandardLock(i_locked)
+        return self.com_object.SetStandardLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1472,7 +1472,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetUnderFeatureLock(i_locked)
+        return self.com_object.SetUnderFeatureLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1504,7 +1504,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetUnderSetLock(i_locked)
+        return self.com_object.SetUnderSetLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1536,7 +1536,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetUnderViewLock(i_locked)
+        return self.com_object.SetUnderViewLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1568,7 +1568,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetViewAssociativityLock(i_locked)
+        return self.com_object.SetViewAssociativityLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1599,7 +1599,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetViewProfileLock(i_locked)
+        return self.com_object.SetViewProfileLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1631,7 +1631,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetViewReferentialLock(i_locked)
+        return self.com_object.SetViewReferentialLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1663,7 +1663,7 @@ class FTAInfraSettingAtt(SettingController):
         :param bool i_locked:
         :rtype: None
         """
-        return self.fta_infra_setting_att.SetViewReferentialZoomableLock(i_locked)
+        return self.com_object.SetViewReferentialZoomableLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code

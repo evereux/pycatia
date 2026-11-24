@@ -36,7 +36,7 @@ class Camera3D(Camera):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.camera_3d = com_object
+        self.com_object = com_object
 
     @property
     def viewpoint_3d(self) -> ViewPoint3D:
@@ -64,7 +64,7 @@ class Camera3D(Camera):
         :rtype: ViewPoint3D
         """
 
-        return ViewPoint3D(self.camera_3d.Viewpoint3D)
+        return ViewPoint3D(self.com_object.Viewpoint3D)
 
     @viewpoint_3d.setter
     def viewpoint_3d(self, value: ViewPoint3D):
@@ -72,7 +72,7 @@ class Camera3D(Camera):
         :param ViewPoint3D value:
         """
 
-        self.camera_3d.Viewpoint3D = value
+        self.com_object.Viewpoint3D = value
 
     def __repr__(self):
         return f'Camera3D(name="{self.name}")'

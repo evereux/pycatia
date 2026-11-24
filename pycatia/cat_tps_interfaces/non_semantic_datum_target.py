@@ -36,7 +36,7 @@ class NonSemanticDatumTarget(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.non_semantic_datum_target = com_object
+        self.com_object = com_object
 
     @property
     def low_label(self) -> str:
@@ -56,7 +56,7 @@ class NonSemanticDatumTarget(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.non_semantic_datum_target.LowLabel
+        return self.com_object.LowLabel
 
     @low_label.setter
     def low_label(self, value: str):
@@ -64,7 +64,7 @@ class NonSemanticDatumTarget(AnyObject):
         :param str value:
         """
 
-        self.non_semantic_datum_target.LowLabel = value
+        self.com_object.LowLabel = value
 
     @property
     def type_specifier(self) -> str:
@@ -89,7 +89,7 @@ class NonSemanticDatumTarget(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.non_semantic_datum_target.TypeSpecifier
+        return self.com_object.TypeSpecifier
 
     @type_specifier.setter
     def type_specifier(self, value: str):
@@ -97,7 +97,7 @@ class NonSemanticDatumTarget(AnyObject):
         :param str value:
         """
 
-        self.non_semantic_datum_target.TypeSpecifier = value
+        self.com_object.TypeSpecifier = value
 
     @property
     def up_label(self) -> str:
@@ -117,7 +117,7 @@ class NonSemanticDatumTarget(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.non_semantic_datum_target.UpLabel
+        return self.com_object.UpLabel
 
     @up_label.setter
     def up_label(self, value: str):
@@ -125,7 +125,7 @@ class NonSemanticDatumTarget(AnyObject):
         :param str value:
         """
 
-        self.non_semantic_datum_target.UpLabel = value
+        self.com_object.UpLabel = value
 
     def __repr__(self):
         return f'NonSemanticDatumTarget(name="{self.name}")'

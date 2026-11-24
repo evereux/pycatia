@@ -38,7 +38,7 @@ class NonSemanticDimension(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.non_semantic_dimension = com_object
+        self.com_object = com_object
 
     def dimension_limit(self) -> DimensionLimit:
         """
@@ -62,7 +62,7 @@ class NonSemanticDimension(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return DimensionLimit(self.non_semantic_dimension.DimensionLimit())
+        return DimensionLimit(self.com_object.DimensionLimit())
 
     def get_2d_annot(self) -> DrawingDimension:
         """
@@ -86,7 +86,7 @@ class NonSemanticDimension(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return DrawingDimension(self.non_semantic_dimension.Get2dAnnot())
+        return DrawingDimension(self.com_object.Get2dAnnot())
 
     def has_dimension_limit(self) -> bool:
         """
@@ -112,7 +112,7 @@ class NonSemanticDimension(AnyObject):
             27,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return self.non_semantic_dimension.HasDimensionLimit()
+        return self.com_object.HasDimensionLimit()
 
     def __repr__(self):
         return f'NonSemanticDimension(name="{self.name}")'

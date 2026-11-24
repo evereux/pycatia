@@ -34,7 +34,7 @@ class Roughness(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.roughness = com_object
+        self.com_object = com_object
 
     @property
     def applicability(self) -> int:
@@ -50,7 +50,7 @@ class Roughness(AnyObject):
         :rtype: int
         """
 
-        return self.roughness.Applicability
+        return self.com_object.Applicability
 
     @applicability.setter
     @applicability.setter
@@ -59,7 +59,7 @@ class Roughness(AnyObject):
         :param int value:
         """
 
-        self.roughness.Applicability = value
+        self.com_object.Applicability = value
 
     @property
     def obtention(self) -> int:
@@ -75,7 +75,7 @@ class Roughness(AnyObject):
         :rtype: int
         """
 
-        return self.roughness.Obtention
+        return self.com_object.Obtention
 
     @obtention.setter
     def obtention(self, value: int):
@@ -83,7 +83,7 @@ class Roughness(AnyObject):
         :param int value:
         """
 
-        self.roughness.Obtention = value
+        self.com_object.Obtention = value
 
     def field(self, i_index: int) -> str:
         """
@@ -118,7 +118,7 @@ class Roughness(AnyObject):
         :param int i_index:
         :rtype: str
         """
-        return self.roughness.Field(i_index)
+        return self.com_object.Field(i_index)
 
     def set_field(self, i_index: int, i_field: str) -> None:
         """
@@ -155,7 +155,7 @@ class Roughness(AnyObject):
         :param str i_field:
         :rtype: None
         """
-        return self.roughness.SetField(i_index, i_field)
+        return self.com_object.SetField(i_index, i_field)
 
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
@@ -169,7 +169,7 @@ class Roughness(AnyObject):
 
         :rtype: TPSParallelOnScreen
         """
-        return TPSParallelOnScreen(self.roughness.TPSParallelOnScreen())
+        return TPSParallelOnScreen(self.com_object.TPSParallelOnScreen())
 
     def __repr__(self):
         return f'Roughness(name="{self.name}")'

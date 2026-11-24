@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class NonSemanticDatum(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class NonSemanticDatum(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.non_semantic_datum = com_object
+        self.com_object = com_object
 
     @property
     def label(self) -> str:
@@ -49,7 +48,7 @@ class NonSemanticDatum(AnyObject):
         :rtype: str
         """
 
-        return self.non_semantic_datum.Label
+        return self.com_object.Label
 
     @label.setter
     def label(self, value: str):
@@ -57,7 +56,7 @@ class NonSemanticDatum(AnyObject):
         :param str value:
         """
 
-        self.non_semantic_datum.Label = value
+        self.com_object.Label = value
 
     def __repr__(self):
-        return f'NonSemanticDatum(name="{ self.name }")'
+        return f'NonSemanticDatum(name="{self.name}")'

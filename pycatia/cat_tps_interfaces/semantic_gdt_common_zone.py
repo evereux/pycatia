@@ -37,7 +37,7 @@ class SemanticGDTCommonZone(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.semantic_gdt_common_zone = com_object
+        self.com_object = com_object
 
     @property
     def modifier(self) -> str:
@@ -62,7 +62,7 @@ class SemanticGDTCommonZone(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.semantic_gdt_common_zone.Modifier
+        return self.com_object.Modifier
 
     def __repr__(self):
         return f'SemanticGdtCommonZone(name="{self.name}")'

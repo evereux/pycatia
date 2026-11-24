@@ -43,7 +43,7 @@ class AnnotationFactory(Factory):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.annotation_factory = com_object
+        self.com_object = com_object
 
     def create_datum(self, i_surf: UserSurface) -> 'Annotation':
         """
@@ -67,7 +67,7 @@ class AnnotationFactory(Factory):
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
-        return Annotation(self.annotation_factory.CreateDatum(i_surf.com_object))
+        return Annotation(self.com_object.CreateDatum(i_surf.com_object))
 
     def create_datum_reference_frame(self) -> 'Annotation':
         """
@@ -77,12 +77,20 @@ class AnnotationFactory(Factory):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Func CreateDatumReferenceFrame() As Annotation
                 | 
-                |     Create a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
+                |     Create a Reference Frame (DRF). iType =
+                | 1 : Straightness
+                | 2 : AxisStraightness
+                | 3 : Flatness
+                | 4 : Circularity
+                | 5 : Cylindricity
+                | 6 : ProfileOfALine
+                | 7 : ProfileOfASurface
+                | 8 : Position
 
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
-        return Annotation(self.annotation_factory.CreateDatumReferenceFrame())
+        return Annotation(self.com_object.CreateDatumReferenceFrame())
 
     def create_datum_target(self, i_surf: UserSurface, i_datum: 'Annotation') -> 'Annotation':
         """
@@ -111,10 +119,16 @@ class AnnotationFactory(Factory):
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
-        return Annotation(self.annotation_factory.CreateDatumTarget(i_surf.com_object, i_datum.com_object))
+        return Annotation(self.com_object.CreateDatumTarget(i_surf.com_object, i_datum.com_object))
 
-    def create_evaluate_datum(self, i_surf: UserSurface, i_x: float, i_y: float, i_z: float,
-                              i_with_leader: bool) -> 'Annotation':
+    def create_evaluate_datum(
+            self,
+            i_surf: UserSurface,
+            i_x: float,
+            i_y: float,
+            i_z: float,
+            i_with_leader: bool
+    ) -> 'Annotation':
         """
         .. note::
             :class: toggle
@@ -157,10 +171,16 @@ class AnnotationFactory(Factory):
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
-        return Annotation(self.annotation_factory.CreateEvoluateDatum(i_surf.com_object, i_x, i_y, i_z, i_with_leader))
+        return Annotation(self.com_object.CreateEvoluateDatum(i_surf.com_object, i_x, i_y, i_z, i_with_leader))
 
-    def create_evaluate_text(self, i_surf: UserSurface, i_x: float, i_y: float, i_z: float,
-                             i_with_leader: bool) -> 'Annotation':
+    def create_evaluate_text(
+            self,
+            i_surf: UserSurface,
+            i_x: float,
+            i_y: float,
+            i_z: float,
+            i_with_leader: bool
+    ) -> 'Annotation':
         """
         .. note::
             :class: toggle
@@ -202,7 +222,7 @@ class AnnotationFactory(Factory):
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
-        return Annotation(self.annotation_factory.CreateEvoluateText(i_surf.com_object, i_x, i_y, i_z, i_with_leader))
+        return Annotation(self.com_object.CreateEvoluateText(i_surf.com_object, i_x, i_y, i_z, i_with_leader))
 
     def create_flag_note(self, i_surf: UserSurface) -> 'Annotation':
         """
@@ -225,7 +245,7 @@ class AnnotationFactory(Factory):
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
-        return Annotation(self.annotation_factory.CreateFlagNote(i_surf.com_object))
+        return Annotation(self.com_object.CreateFlagNote(i_surf.com_object))
 
     def create_non_semantic_dimension(self, i_surf: UserSurface, i_dimension_type: CATVariant,
                                       i_linear_dim_sub_type: CATVariant) -> 'Annotation':
@@ -258,8 +278,8 @@ class AnnotationFactory(Factory):
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
         return Annotation(
-            self.annotation_factory.CreateNonSemanticDimension(i_surf.com_object, i_dimension_type,
-                                                               i_linear_dim_sub_type))
+            self.com_object.CreateNonSemanticDimension(i_surf.com_object, i_dimension_type,
+                                                       i_linear_dim_sub_type))
 
     def create_roughness(self, i_surf: UserSurface) -> 'Annotation':
         """
@@ -282,7 +302,7 @@ class AnnotationFactory(Factory):
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
-        return Annotation(self.annotation_factory.CreateRoughness(i_surf.com_object))
+        return Annotation(self.com_object.CreateRoughness(i_surf.com_object))
 
     def create_semantic_dimension(self, i_surf: UserSurface, i_type: CATVariant,
                                   i_sub_type: CATVariant) -> 'Annotation':
@@ -308,8 +328,8 @@ class AnnotationFactory(Factory):
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
-        return Annotation(self.annotation_factory.CreateSemanticDimension(i_surf.com_object, i_type,
-                                                                          i_sub_type))
+        return Annotation(self.com_object.CreateSemanticDimension(i_surf.com_object, i_type,
+                                                                  i_sub_type))
 
     def create_text(self, i_surf: UserSurface) -> 'Annotation':
         """
@@ -333,7 +353,7 @@ class AnnotationFactory(Factory):
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
 
-        return Annotation(self.annotation_factory.CreateText(i_surf.com_object))
+        return Annotation(self.com_object.CreateText(i_surf.com_object))
 
     def create_text_noa(self, i_surf: UserSurface) -> Noa:
         """
@@ -356,7 +376,7 @@ class AnnotationFactory(Factory):
         :param UserSurface i_surf:
         :rtype: Noa
         """
-        return Noa(self.annotation_factory.CreateTextNOA(i_surf.com_object))
+        return Noa(self.com_object.CreateTextNOA(i_surf.com_object))
 
     def create_text_note_object_attribute(self, i_surf: UserSurface, i_noa_type: str) -> Noa:
         """
@@ -384,7 +404,7 @@ class AnnotationFactory(Factory):
         :param str i_noa_type:
         :rtype: Noa
         """
-        return Noa(self.annotation_factory.CreateTextNoteObjectAttribute(i_surf.com_object, i_noa_type))
+        return Noa(self.com_object.CreateTextNoteObjectAttribute(i_surf.com_object, i_noa_type))
 
     def create_text_on_annot(self, i_text: str, i_annot: 'Annotation') -> 'Annotation':
         """
@@ -411,7 +431,7 @@ class AnnotationFactory(Factory):
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
-        return Annotation(self.annotation_factory.CreateTextOnAnnot(i_text, i_annot.com_object))
+        return Annotation(self.com_object.CreateTextOnAnnot(i_text, i_annot.com_object))
 
     def create_tolerance_with_drf(self, i_index: CATVariant, i_surf: UserSurface, i_drf: 'Annotation') -> 'Annotation':
         """
@@ -432,7 +452,7 @@ class AnnotationFactory(Factory):
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
         return Annotation(
-            self.annotation_factory.CreateToleranceWithDRF(i_index, i_surf.com_object, i_drf.com_object))
+            self.com_object.CreateToleranceWithDRF(i_index, i_surf.com_object, i_drf.com_object))
 
     def create_tolerance_without_drf(self, i_index: CATVariant, i_surf: UserSurface) -> 'Annotation':
         """
@@ -450,7 +470,7 @@ class AnnotationFactory(Factory):
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
-        return Annotation(self.annotation_factory.CreateToleranceWithoutDRF(i_index, i_surf.com_object))
+        return Annotation(self.com_object.CreateToleranceWithoutDRF(i_index, i_surf.com_object))
 
     def instantiate_noa(self, i_noa: Noa, i_surf: UserSurface) -> 'Annotation':
         """
@@ -477,7 +497,7 @@ class AnnotationFactory(Factory):
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
-        return Annotation(self.annotation_factory.InstanciateNOA(i_noa.com_object, i_surf.com_object))
+        return Annotation(self.com_object.InstanciateNOA(i_noa.com_object, i_surf.com_object))
 
     def __repr__(self):
         return f'AnnotationFactory(name="{self.name}")'

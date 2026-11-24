@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ToleranceZone(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class ToleranceZone(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.tolerance_zone = com_object
+        self.com_object = com_object
 
     @property
     def form(self) -> str:
@@ -49,7 +48,7 @@ class ToleranceZone(AnyObject):
         :rtype: str
         """
 
-        return self.tolerance_zone.Form
+        return self.com_object.Form
 
     @form.setter
     def form(self, value: str):
@@ -57,7 +56,7 @@ class ToleranceZone(AnyObject):
         :param str value:
         """
 
-        self.tolerance_zone.Form = value
+        self.com_object.Form = value
 
     @property
     def value(self) -> float:
@@ -73,7 +72,7 @@ class ToleranceZone(AnyObject):
         :rtype: float
         """
 
-        return self.tolerance_zone.Value
+        return self.com_object.Value
 
     @value.setter
     def value(self, value: float):
@@ -81,7 +80,7 @@ class ToleranceZone(AnyObject):
         :param float value:
         """
 
-        self.tolerance_zone.Value = value
+        self.com_object.Value = value
 
     def __repr__(self):
-        return f'ToleranceZone(name="{ self.name }")'
+        return f'ToleranceZone(name="{self.name}")'

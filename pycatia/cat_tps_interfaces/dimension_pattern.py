@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DimensionPattern(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class DimensionPattern(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.dimension_pattern = com_object
+        self.com_object = com_object
 
     @property
     def instance_count(self) -> float:
@@ -49,7 +48,7 @@ class DimensionPattern(AnyObject):
         :rtype: float
         """
 
-        return self.dimension_pattern.InstanceCount
+        return self.com_object.InstanceCount
 
     def __repr__(self):
-        return f'DimensionPattern(name="{ self.name }")'
+        return f'DimensionPattern(name="{self.name}")'

@@ -45,7 +45,7 @@ class AnnotationSet(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.annotation_set = com_object
+        self.com_object = com_object
 
     @property
     def active_view(self) -> TPSView:
@@ -66,7 +66,7 @@ class AnnotationSet(AnyObject):
         :rtype: TPSView
         """
 
-        return TPSView(self.annotation_set.ActiveView)
+        return TPSView(self.com_object.ActiveView)
 
     @active_view.setter
     def active_view(self, value: TPSView):
@@ -74,7 +74,7 @@ class AnnotationSet(AnyObject):
         :param TPSView value:
         """
 
-        self.annotation_set.ActiveView = value
+        self.com_object.ActiveView = value
 
     @property
     def an_empty_annotations_list(self) -> Annotations:
@@ -96,7 +96,7 @@ class AnnotationSet(AnyObject):
         :rtype: Annotations
         """
 
-        return Annotations(self.annotation_set.AnEmptyAnnotationsList)
+        return Annotations(self.com_object.AnEmptyAnnotationsList)
 
     @property
     def annotation_factory(self) -> AnnotationFactory:
@@ -118,7 +118,7 @@ class AnnotationSet(AnyObject):
         :rtype: AnnotationFactory
         """
         import pycatia.cat_tps_interfaces.annotation_factory
-        return pycatia.cat_tps_interfaces.annotation_factory.AnnotationFactory(self.annotation_set.AnnotationFactory)
+        return pycatia.cat_tps_interfaces.annotation_factory.AnnotationFactory(self.com_object.AnnotationFactory)
 
     @property
     def annotation_factory_2(self) -> AnnotationFactory2:
@@ -139,7 +139,7 @@ class AnnotationSet(AnyObject):
 
         :rtype: AnnotationFactory2
         """
-        return AnnotationFactory2(self.annotation_set.AnnotationFactory2)
+        return AnnotationFactory2(self.com_object.AnnotationFactory2)
 
     @property
     def annotation_set_purpose(self) -> str:
@@ -173,7 +173,7 @@ class AnnotationSet(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.annotation_set.AnnotationSetPupose
+        return self.com_object.AnnotationSetPupose
 
     @property
     def annotation_set_type(self) -> int:
@@ -196,7 +196,7 @@ class AnnotationSet(AnyObject):
         :rtype: int
         """
 
-        return self.annotation_set.AnnotationSetType
+        return self.com_object.AnnotationSetType
 
     @property
     def annotations(self) -> Annotations:
@@ -217,7 +217,7 @@ class AnnotationSet(AnyObject):
         :rtype: Annotations
         """
 
-        return Annotations(self.annotation_set.Annotations)
+        return Annotations(self.com_object.Annotations)
 
     @property
     def capture_factory(self) -> CaptureFactory:
@@ -238,7 +238,7 @@ class AnnotationSet(AnyObject):
         :rtype: CaptureFactory
         """
 
-        return CaptureFactory(self.annotation_set.CaptureFactory)
+        return CaptureFactory(self.com_object.CaptureFactory)
 
     @property
     def captures(self) -> Captures:
@@ -258,7 +258,7 @@ class AnnotationSet(AnyObject):
 
         :rtype: Captures
         """
-        return Captures(self.annotation_set.Captures)
+        return Captures(self.com_object.Captures)
 
     @property
     def kind_of_set(self) -> str:
@@ -279,7 +279,7 @@ class AnnotationSet(AnyObject):
         :rtype: str
         """
 
-        return self.annotation_set.KindOfSet
+        return self.com_object.KindOfSet
 
     @property
     def standard(self) -> str:
@@ -303,7 +303,7 @@ class AnnotationSet(AnyObject):
         :rtype: str
         """
 
-        return self.annotation_set.Standard
+        return self.com_object.Standard
 
     @property
     def switch_on(self) -> bool:
@@ -324,7 +324,7 @@ class AnnotationSet(AnyObject):
         :rtype: bool
         """
 
-        return self.annotation_set.SwitchOn
+        return self.com_object.SwitchOn
 
     @switch_on.setter
     def switch_on(self, value: bool):
@@ -332,7 +332,7 @@ class AnnotationSet(AnyObject):
         :param bool value:
         """
 
-        self.annotation_set.SwitchOn = value
+        self.com_object.SwitchOn = value
 
     @property
     def tps_view_factory(self) -> TPSViewFactory:
@@ -352,7 +352,7 @@ class AnnotationSet(AnyObject):
 
         :rtype: TPSViewFactory
         """
-        return TPSViewFactory(self.annotation_set.TPSViewFactory)
+        return TPSViewFactory(self.com_object.TPSViewFactory)
 
     @property
     def tps_views(self) -> TPSViews:
@@ -373,7 +373,7 @@ class AnnotationSet(AnyObject):
         :rtype: TPSViews
         """
 
-        return TPSViews(self.annotation_set.TPSViews)
+        return TPSViews(self.com_object.TPSViews)
 
     def apply_result_with_link_when_copy_set_to(self) -> None:
         """
@@ -421,7 +421,7 @@ class AnnotationSet(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.annotation_set.ApplyResultWithLinkWhenCopySetTo()
+        return self.com_object.ApplyResultWithLinkWhenCopySetTo()
 
     def apply_view_re_use_when_copy_set_to(self) -> None:
         """
@@ -444,7 +444,7 @@ class AnnotationSet(AnyObject):
 
         :rtype: None
         """
-        return self.annotation_set.ApplyViewReUseWhenCopySetTo()
+        return self.com_object.ApplyViewReUseWhenCopySetTo()
 
     def global_copy_set_to(self, i_destination_part: 'Part') -> str:
         """
@@ -467,10 +467,9 @@ class AnnotationSet(AnyObject):
         :param Part i_destination_part:
         :rtype: str
         """
-        from pycatia.mec_mod_interfaces.part import Part
-        return self.annotation_set.GlobalCopySetTo(i_destination_part.com_object)
+        return self.com_object.GlobalCopySetTo(i_destination_part.com_object)
 
-    def global_copy_set_to_with_transformation(self, i_destination_part: 'Part', i_transfo: tuple) -> str:
+    def global_copy_set_to_with_transformation(self, i_destination_part: 'Part', i_transform: tuple) -> str:
         """
         .. note::
             :class: toggle
@@ -501,10 +500,10 @@ class AnnotationSet(AnyObject):
                 |             result of datums merge.
 
         :param Part i_destination_part:
-        :param tuple i_transfo:
+        :param tuple i_transform:
         :rtype: str
         """
-        return self.annotation_set.GlobalCopySetToWithTransformation(i_destination_part.com_object, i_transfo)
+        return self.com_object.GlobalCopySetToWithTransformation(i_destination_part.com_object, i_transform)
 
     def read_iso_default_properties(self, o_iso_defaults: tuple) -> int:
         """
@@ -550,7 +549,7 @@ class AnnotationSet(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.annotation_set.ReadISODefaultProperties(o_iso_defaults)
+        return self.com_object.ReadISODefaultProperties(o_iso_defaults)
 
     def __repr__(self):
         return f'AnnotationSet(name="{self.name}")'

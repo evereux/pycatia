@@ -38,7 +38,7 @@ class Dimension3D(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.dimension_3d = com_object
+        self.com_object = com_object
 
     def controled_radius(self) -> ControlledRadius:
         """
@@ -57,7 +57,7 @@ class Dimension3D(AnyObject):
 
         :rtype: ControledRadius
         """
-        return ControlledRadius(self.dimension_3d.ControlledRadius())
+        return ControlledRadius(self.com_object.ControlledRadius())
 
     def dimension_limit(self) -> DimensionLimit:
         """
@@ -76,7 +76,7 @@ class Dimension3D(AnyObject):
 
         :rtype: DimensionLimit
         """
-        return DimensionLimit(self.dimension_3d.DimensionLimit())
+        return DimensionLimit(self.com_object.DimensionLimit())
 
     def dimension_pattern(self) -> DimensionPattern:
         """
@@ -95,7 +95,7 @@ class Dimension3D(AnyObject):
 
         :rtype: DimensionPattern
         """
-        return DimensionPattern(self.dimension_3d.DimensionPattern())
+        return DimensionPattern(self.com_object.DimensionPattern())
 
     def envelope_condition(self) -> EnvelopeCondition:
         """
@@ -114,7 +114,7 @@ class Dimension3D(AnyObject):
 
         :rtype: EnvelopCondition
         """
-        return EnvelopeCondition(self.dimension_3d.EnvelopeCondition())
+        return EnvelopeCondition(self.com_object.EnvelopeCondition())
 
     def get_2d_annot(self) -> DrawingDimension:
         """
@@ -133,7 +133,7 @@ class Dimension3D(AnyObject):
 
         :rtype: DrawingDimension
         """
-        return DrawingDimension(self.dimension_3d.Get2dAnnot())
+        return DrawingDimension(self.com_object.Get2dAnnot())
 
     def has_a_controlled_radius(self) -> bool:
         """
@@ -155,7 +155,7 @@ class Dimension3D(AnyObject):
 
         :rtype: bool
         """
-        return self.dimension_3d.HasAControledRadius()
+        return self.com_object.HasAControledRadius()
 
     def has_an_envelope_condition(self) -> bool:
         """
@@ -177,7 +177,7 @@ class Dimension3D(AnyObject):
 
         :rtype: bool
         """
-        return self.dimension_3d.HasAnEnvelopCondition()
+        return self.com_object.HasAnEnvelopCondition()
 
     def has_dimension_limit(self) -> bool:
         """
@@ -198,7 +198,7 @@ class Dimension3D(AnyObject):
 
         :rtype: bool
         """
-        return self.dimension_3d.HasDimensionLimit()
+        return self.com_object.HasDimensionLimit()
 
     def is_a_continuous_feature_applied(self) -> bool:
         """
@@ -231,7 +231,7 @@ class Dimension3D(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.dimension_3d.IsAContinuousFeatureApplied()
+        return self.com_object.IsAContinuousFeatureApplied()
 
     def is_a_dimension_pattern(self) -> bool:
         """
@@ -253,7 +253,7 @@ class Dimension3D(AnyObject):
 
         :rtype: bool
         """
-        return self.dimension_3d.IsADimensionPattern()
+        return self.com_object.IsADimensionPattern()
 
     def move_value(self, x: float, y: float, sub_part: int, dim_angle_behavior: int) -> None:
         """
@@ -307,7 +307,7 @@ class Dimension3D(AnyObject):
         :param int dim_angle_behavior:
         :rtype: None
         """
-        return self.dimension_3d.MoveValue(x, y, sub_part, dim_angle_behavior)
+        return self.com_object.MoveValue(x, y, sub_part, dim_angle_behavior)
 
     def __repr__(self):
         return f'Dimension3D(name="{self.name}")'

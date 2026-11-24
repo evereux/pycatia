@@ -33,7 +33,7 @@ class TPSView(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.tps_view = com_object
+        self.com_object = com_object
 
     @property
     def annotation_plane(self) -> tuple:
@@ -62,7 +62,7 @@ class TPSView(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.tps_view.AnnotationPlane
+        return self.com_object.AnnotationPlane
 
     @property
     def annotation_sketch(self) -> AnyObject:
@@ -92,7 +92,7 @@ class TPSView(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return AnyObject(self.tps_view.AnnotationSketch)
+        return AnyObject(self.com_object.AnnotationSketch)
 
     @annotation_sketch.setter
     def annotation_sketch(self, value: AnyObject):
@@ -100,7 +100,7 @@ class TPSView(AnyObject):
         :param AnyObject value:
         """
 
-        self.tps_view.AnnotationSketch = value
+        self.com_object.AnnotationSketch = value
 
     @property
     def annotations(self) -> Annotations:
@@ -129,7 +129,7 @@ class TPSView(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return Annotations(self.tps_view.Annotations)
+        return Annotations(self.com_object.Annotations)
 
     @property
     def display_ratio(self) -> int:
@@ -158,7 +158,7 @@ class TPSView(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.tps_view.DisplayRatio
+        return self.com_object.DisplayRatio
 
     @display_ratio.setter
     def display_ratio(self, value: int):
@@ -166,7 +166,7 @@ class TPSView(AnyObject):
         :param False value:
         """
 
-        self.tps_view.DisplayRatio = value
+        self.com_object.DisplayRatio = value
 
     @property
     def view_type(self) -> int:
@@ -200,7 +200,7 @@ class TPSView(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.tps_view.ViewType
+        return self.com_object.ViewType
 
     def __repr__(self):
         return f'TpsView(name="{self.name}")'

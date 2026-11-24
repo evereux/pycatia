@@ -36,7 +36,7 @@ class CoordDim(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.coord_dim = com_object
+        self.com_object = com_object
 
     def get_2d_annot(self) -> DrawingCoordDim:
         """
@@ -58,7 +58,7 @@ class CoordDim(AnyObject):
             28,
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
-        return DrawingCoordDim(self.coord_dim.Get2dAnnot())
+        return DrawingCoordDim(self.com_object.Get2dAnnot())
 
     def __repr__(self):
         return f'CoordDim(name="{self.name}")'

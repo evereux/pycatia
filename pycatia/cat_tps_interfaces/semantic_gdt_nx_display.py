@@ -38,7 +38,7 @@ class SemanticGDTNxDisplay(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.semantic_gdt_nx_display = com_object
+        self.com_object = com_object
 
     @property
     def instance_count(self) -> int:
@@ -62,7 +62,7 @@ class SemanticGDTNxDisplay(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.semantic_gdt_nx_display.InstanceCount
+        return self.com_object.InstanceCount
 
     def common_zone(self) -> SemanticGDTCommonZone:
         """
@@ -92,7 +92,7 @@ class SemanticGDTNxDisplay(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return SemanticGDTCommonZone(self.semantic_gdt_nx_display.CommonZone())
+        return SemanticGDTCommonZone(self.com_object.CommonZone())
 
     def is_a_collection(self) -> bool:
         """
@@ -125,7 +125,7 @@ class SemanticGDTNxDisplay(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.semantic_gdt_nx_display.IsACollection()
+        return self.com_object.IsACollection()
 
     def is_a_separate(self) -> bool:
         """
@@ -158,7 +158,7 @@ class SemanticGDTNxDisplay(AnyObject):
             f'{self.__class__.__name__}.{inspect.stack()[0][3]}',
         )
 
-        return self.semantic_gdt_nx_display.IsASeparate()
+        return self.com_object.IsASeparate()
 
     def __repr__(self):
         return f'SemanticGdtNxDisplay(name="{self.name}")'
