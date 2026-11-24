@@ -18,6 +18,8 @@
     * Parameters
     * Relations
     * Shapes
+* `hybrid_shape_interfaces\hybrid_shape_position_transform.py::HybridShapePositionTransform` was
+  `hybrid_shape_interfaces\hybrid_shape_position_transfor.py::HybridShapePositionTransfor`
 
 ### Updated collection object usage
 
