@@ -115,7 +115,7 @@ class DrawingDimensions(Collection):
         :rtype: DrawingDimension
         """
 
-        i_geom_elem = [elem.com_object for elem in i_geom_elem]
+        i_geom_elem = tuple(elem.com_object for elem in i_geom_elem)
 
         return DrawingDimension(
             self.drawing_dimensions.Add(
@@ -200,7 +200,7 @@ class DrawingDimensions(Collection):
         :rtype: DrawingDimension
         """
 
-        i_geom_elem = [elem.com_object for elem in i_geom_elem]
+        i_geom_elem = tuple(elem.com_object for elem in i_geom_elem)
 
         if i_ldc_ref_elem == vba_nothing:
             i_ldc_ref_elem = self.application.system_service.evaluate(

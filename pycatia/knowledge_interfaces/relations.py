@@ -543,7 +543,7 @@ class Relations(Collection):
         :param CATVariant i_index:
         :rtype: Relation
         """
-        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(i_index)))
+        type_name = self.application.vba_type_name(Relation(self.com_object.Item(i_index)))
 
         if type_name in parameter_and_relation_types:
             return parameter_and_relation_types[type_name](self.com_object.Item(i_index))

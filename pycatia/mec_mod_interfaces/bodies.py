@@ -99,7 +99,7 @@ class Bodies(Collection):
         :param CATVariant i_index:
         :rtype: Body
         """
-        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(i_index)))
+        type_name = self.application.vba_type_name(Body(self.com_object.Item(i_index)))
 
         if type_name in body_types:
             return body_types[type_name](self.com_object.Item(i_index))

@@ -1,10 +1,14 @@
-from typing import Any
+from typing import Any, TYPE_CHECKING
 
 from pycatia.types.hybrid_shapes import hybrid_shape_types
 from pycatia.types.shapes import shape_types
 from pycatia.types.bodies import body_types
 from pycatia.types.parameters import parameter_and_relation_types
 from pycatia.types.document import document_types
+
+if TYPE_CHECKING:
+    from pycatia.system_interfaces.any_object import AnyObject
+    from pycatia.in_interfaces.application import Application
 
 
 def return_real_object(application: 'Application', any_object: 'AnyObject') -> Any:

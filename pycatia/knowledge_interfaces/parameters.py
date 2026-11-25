@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-from typing import Iterator, Union
+from typing import Iterator
 from typing import TYPE_CHECKING
 
 from pywintypes import com_error
@@ -420,7 +420,7 @@ class Parameters(Collection):
         :rtype: Parameter
         """
 
-        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(index)))
+        type_name = self.application.vba_type_name(Parameter(self.com_object.Item(index)))
 
         if type_name in parameter_and_relation_types:
             return parameter_and_relation_types[type_name](self.com_object.Item(index))
