@@ -54,7 +54,7 @@ class DimensionLimit(AnyObject):
         :rtype: str
         """
 
-        return self.dimension_limit.DimensionLimitType
+        return self.com_object.DimensionLimitType
 
     @dimension_limit_type.setter
     def dimension_limit_type(self, value: str):
@@ -62,7 +62,7 @@ class DimensionLimit(AnyObject):
         :param str value:
         """
 
-        self.dimension_limit.DimensionLimitType = value
+        self.com_object.DimensionLimitType = value
 
     @property
     def modifier(self) -> str:
@@ -78,7 +78,7 @@ class DimensionLimit(AnyObject):
         :rtype: str
         """
 
-        return self.dimension_limit.Modifier
+        return self.com_object.Modifier
 
     @modifier.setter
     def modifier(self, value: str):
@@ -86,7 +86,7 @@ class DimensionLimit(AnyObject):
         :param str value:
         """
 
-        self.dimension_limit.Modifier = value
+        self.com_object.Modifier = value
 
     @property
     def nominal_value(self) -> float:
@@ -103,7 +103,7 @@ class DimensionLimit(AnyObject):
         :rtype: float
         """
 
-        return self.dimension_limit.Nominalvalue
+        return self.com_object.Nominalvalue
 
     @property
     def symetric_value(self) -> bool:
@@ -120,7 +120,7 @@ class DimensionLimit(AnyObject):
         :rtype: bool
         """
 
-        return self.dimension_limit.SymetricValue
+        return self.com_object.SymetricValue
 
     @symetric_value.setter
     def symetric_value(self, value: bool):
@@ -128,7 +128,7 @@ class DimensionLimit(AnyObject):
         :param bool value:
         """
 
-        self.dimension_limit.SymetricValue = value
+        self.com_object.SymetricValue = value
 
     @property
     def tabulated_limit(self) -> str:
@@ -145,7 +145,7 @@ class DimensionLimit(AnyObject):
         :rtype: str
         """
 
-        return self.dimension_limit.TabulatedLimit
+        return self.com_object.TabulatedLimit
 
     @tabulated_limit.setter
     def tabulated_limit(self, value: str):
@@ -153,7 +153,7 @@ class DimensionLimit(AnyObject):
         :param str value:
         """
 
-        self.dimension_limit.TabulatedLimit = value
+        self.com_object.TabulatedLimit = value
 
     def limits(self, o_bottom: float, o_up: float) -> None:
         """
@@ -178,7 +178,7 @@ class DimensionLimit(AnyObject):
         :param float o_up:
         :rtype: None
         """
-        return self.dimension_limit.Limits(o_bottom, o_up)
+        return self.com_object.Limits(o_bottom, o_up)
 
     def put_limits(self, i_bottom: float, i_up: float) -> None:
         """
@@ -203,7 +203,7 @@ class DimensionLimit(AnyObject):
         :param float i_up:
         :rtype: None
         """
-        return self.dimension_limit.PutLimits(i_bottom, i_up)
+        return self.com_object.PutLimits(i_bottom, i_up)
 
     def __repr__(self):
         return f'DimensionLimit(name="{self.name}")'
