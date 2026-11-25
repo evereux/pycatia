@@ -12,7 +12,6 @@ from pycatia.funct_system_interfaces.functional_document import FunctionalDocume
 
 AnyDocument = Union[
     AnalysisDocument,
-    AnalysisDocument,
     MaterialDocument,
     ProcessDocument,
     Document,
@@ -24,64 +23,13 @@ AnyDocument = Union[
 ]
 
 document_types = {
-    'Analysis': {
-        'extension': 'CATAnalysis',
-        'type': AnalysisDocument,
-    },
-    'CatalogDocument': {
-        'extension': 'catalog',
-        'type': CatalogDocument,
-    },
-    'CATMaterial': {
-        'extension': 'CATMaterial',
-        'type': MaterialDocument,
-    },
-    'CATProcess': {
-        'extension': 'CATProcess',
-        'type': ProcessDocument,
-    },
-    'cgm': {
-        'extension': 'cgm',
-        'type': Document,
-    },
-    'Drawing': {
-        'extension': 'CATDrawing',
-        'type': DrawingDocument,
-    },
-    'FeatureDictionary': {
-        'extension': 'CATfct',
-        'type': Document
-    },
-    'gl': {
-        'extension': 'gl',
-        'type': Document,
-    },
-    'gl2': {
-        'extension': 'gl2',
-        'type': Document,
-    },
-    'hpgl': {
-        'extension': 'hpgl',
-        'type': Document
-    },
-    'FunctionalSystem': {
-        'extension': 'CATSystem',
-        'type': FunctionalDocument,
-    },
-    'Part': {
-        'extension': 'CATPart',
-        'type': PartDocument,
-    },
-    'Product': {
-        'extension': 'CATProduct',
-        'type': ProductDocument
-    },
-    'ProcessLibrary': {
-        'extension': 'act',
-        'type': ProcessDocument,
-    },
-    'Default': {
-        'extension': None,
-        'type': Document
-    }
+    'AnalysisDocument': AnalysisDocument,
+    'CatalogDocument': CatalogDocument,
+    'DrawingDocument': DrawingDocument,
+    'FunctionalDocument': FunctionalDocument,
+    'MaterialDocument': MaterialDocument,
+    'PartDocument': PartDocument,
+    'ProcessDocument': ProcessDocument,
+    'ProductDocument': ProductDocument,
+    'Document': Document,
 }

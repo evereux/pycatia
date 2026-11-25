@@ -1,8 +1,5 @@
-#! /usr/bin/python3.9
 from typing import Iterator
-import os
 from pathlib import Path
-import warnings
 
 from pywintypes import com_error
 
@@ -11,21 +8,6 @@ from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.document import document_types, AnyDocument
 from pycatia.types.general import CATVariant, list_str
-
-
-def get_document_object(doc_com) -> AnyDocument:
-    """
-
-    """
-    full_name = Path(doc_com.FullName)
-    extension = full_name.suffix[1:]
-    types = [document_types[k]['type'] for k in document_types if document_types[k]['extension'] == extension]
-    if not types:
-        document_type = document_types['Default']['type']
-    else:
-        document_type = types[0]
-
-    return document_type(doc_com)
 
 
 class Documents(Collection):
@@ -102,15 +84,14 @@ class Documents(Collection):
         :rtype: Document
         """
 
-        # see pycatia.types.document.py for supported Documents.
-
-        if document_type.lower() not in [t.lower() for t in document_types]:
-            raise CATIAApplicationException(
-                f'Document type {document_type} not supported. Allowed types are {[t for t in document_types]}.')
-
-        document = document_types[document_type]['type']
-
-        return document(self.documents.Add(document_type))
+        try:
+            doc_com_object = self.documents.Add(document_type)
+            type_name = self.application.vba_type_name(Document(doc_com_object))
+            if type_name in document_types:
+                return document_types[type_name](doc_com_object)
+            return Document(doc_com_object)
+        except:
+            raise CATIAApplicationException(f'Document type {document_type} could not be created.')
 
     def count_types(self, file_type_list: list_str) -> int:
         """
@@ -210,11 +191,12 @@ class Documents(Collection):
         :param CATVariant index:
         :rtype: Document
         """
-        try:
-            item_doc_com = self.documents.Item(index)
-            return get_document_object(item_doc_com)
-        except com_error:
-            raise IndexError('list index out of range')
+        type_name = self.application.vba_type_name(Document(self.com_object.Item(index)))
+
+        if type_name in document_types:
+            return document_types[type_name](self.com_object.Item(index))
+
+        return Document(self.com_object.Item(index))
 
     def num_open(self) -> int:
         """
@@ -276,7 +258,10 @@ class Documents(Collection):
         self.logger.info(f'Opening document "{file_name}".')
         try:
             open_doc_com = self.documents.Open(file_name)
-            return get_document_object(open_doc_com)
+            type_name = self.application.vba_type_name(Document(open_doc_com))
+            if type_name in document_types:
+                return document_types[type_name](open_doc_com)
+            return Document(open_doc_com)
         except com_error:
             raise CATIAApplicationException(
                 f'Could not OPEN document "{file_name}". '
@@ -329,7 +314,11 @@ class Documents(Collection):
         self.logger.info(f'Reading document "{file_name}".')
         try:
             read_doc_com = self.documents.Read(file_name)
-            return get_document_object(read_doc_com)
+
+            type_name = self.application.vba_type_name(Document(read_doc_com))
+            if type_name in document_types:
+                return document_types[type_name](read_doc_com)
+            return Document(read_doc_com)
         except com_error:
             raise CATIAApplicationException(
                 f'Could not READ document "{file_name}". '
@@ -338,12 +327,19 @@ class Documents(Collection):
     def __getitem__(self, n: int) -> Document:
         if (n + 1) > self.count:
             raise StopIteration
+        from pycatia.helpers import return_real_object
+        dt = Document(self.com_object.Item(n + 1))
+        real_object = return_real_object(self.application, dt)
 
-        return get_document_object(self.documents.Item(n + 1))
+        return real_object
 
     def __iter__(self) -> Iterator[Document]:
+        from pycatia.helpers import return_real_object
+
         for i in range(self.count):
-            yield get_document_object(self.com_object.Item(i + 1))
+            dt = Document(self.com_object.Item(i + 1))
+            real_object = return_real_object(self.application, dt)
+            yield real_object
 
     def __repr__(self):
         return f'Documents(name="{self.name}")'

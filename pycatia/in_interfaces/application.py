@@ -8,8 +8,8 @@ from pathlib import Path
 
 from pycatia import CatScriptLanguage
 from pycatia.exception_handling.exceptions import CATIAApplicationException
+from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.documents import Documents
-from pycatia.in_interfaces.documents import get_document_object
 from pycatia.in_interfaces.file_system import FileSystem
 from pycatia.in_interfaces.printer import Printer
 from pycatia.in_interfaces.printers import Printers
@@ -20,7 +20,7 @@ from pycatia.in_interfaces.windows import Windows
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
 from pycatia.in_interfaces.setting_controllers import SettingControllers
-from pycatia.types.document import AnyDocument
+from pycatia.types.document import AnyDocument, document_types
 from pycatia.scripts.vba import type_name_function_name
 from pycatia.scripts.vba import type_name_code
 
@@ -95,7 +95,10 @@ class Application(AnyObject):
         """
         try:
             active_doc_com = self.com_object.ActiveDocument
-            return get_document_object(active_doc_com)
+            type_name = self.application.vba_type_name(Document(active_doc_com))
+            if type_name in document_types:
+                return document_types[type_name](active_doc_com)
+            return Document(active_doc_com)
         except com_error:
             raise CATIAApplicationException('Is there an active document?')
 

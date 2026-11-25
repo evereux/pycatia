@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.11.1
+
+* The following now use Application.vba_type_name
+  to determine real child object and return it.
+    * Documents()
+    * Documents.add
+    * Documents.open
+    * Documents.read
+
 ## 0.11.0
 
 * fixed Capture.active_view, Capture.annotations, Capture.camera (#315),

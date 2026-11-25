@@ -44,13 +44,13 @@ def test_add_document():
     def add_document(document_type: str):
         documents = application.documents
         document = documents.add(document_type)
-        assert document_types[document_type]['extension'] in document.name
+        assert application.vba_type_name(document) == type(document).__name__
         document.close()
 
     add_document('Analysis')
     add_document('CatalogDocument')
     add_document('Drawing')
-    add_document('CATProcess')
+    add_document('Process')
     add_document('FeatureDictionary')
     add_document('Part')
     add_document('Product')

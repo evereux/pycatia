@@ -4,12 +4,16 @@ from pycatia.types.hybrid_shapes import hybrid_shape_types
 from pycatia.types.shapes import shape_types
 from pycatia.types.bodies import body_types
 from pycatia.types.parameters import parameter_and_relation_types
+from pycatia.types.document import document_types
 
 
 def return_real_object(application: 'Application', any_object: 'AnyObject') -> Any:
     TypeName = application.vba_type_name
 
     type_string = TypeName(any_object)
+
+    if type_string in document_types:
+        return document_types[type_string](any_object.com_object)
 
     if type_string in hybrid_shape_types:
         return hybrid_shape_types[type_string](any_object.com_object)
